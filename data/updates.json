@@ -1,5 +1,82 @@
 [
   {
+    "startedAt": "2026-10-11T11:16:57Z",
+    "date": "2026-10-11",
+    "newCount": 2,
+    "repairCount": 5,
+    "checkedCount": 10,
+    "failures": [
+      {
+        "doi": "10.1038/s41467-025-67369-1",
+        "stage": "ai",
+        "error": "ai: authentication_error"
+      },
+      {
+        "doi": "10.1038/s41467-024-51855-z",
+        "stage": "ai",
+        "error": "ai: authentication_error"
+      },
+      {
+        "doi": "10.1038/s43587-024-00613-3",
+        "stage": "ai",
+        "error": "ai: authentication_error"
+      },
+      {
+        "doi": "10.1038/s43587-022-00335-4",
+        "stage": "ai",
+        "error": "ai: authentication_error"
+      },
+      {
+        "doi": "10.1093/bioinformatics/btag706",
+        "stage": "ai",
+        "error": "ai: authentication_error"
+      },
+      {
+        "doi": "10.1038/s41588-026-02776-8",
+        "stage": "ai",
+        "error": "ai: budget_exhausted"
+      },
+      {
+        "doi": "10.1111/1755-0998.70213",
+        "stage": "ai",
+        "error": "ai: budget_exhausted"
+      }
+    ],
+    "discoveryStatus": "budget_exhausted",
+    "authorCodeExecuted": false,
+    "aiRepairCount": 0,
+    "collectionBudgetExhausted": true,
+    "maxRequests": 150,
+    "maxAiCalls": 5,
+    "reservedAiRequests": 5,
+    "stageCounts": {
+      "metadata": {
+        "matched": 7
+      },
+      "article": {
+        "inspected": 7
+      },
+      "repository": {
+        "inspected": 7
+      },
+      "metrics": {
+        "matched": 7
+      },
+      "ai": {
+        "authentication_error": 5,
+        "budget_exhausted": 2
+      }
+    },
+    "missingKeys": [],
+    "finishedAt": "2026-10-11T11:17:55Z",
+    "requests": 150,
+    "aiAttempts": 5,
+    "collectionRequests": 145,
+    "totalCount": 55,
+    "dailyNewCount": 5,
+    "status": "partial"
+  },
+  {
     "startedAt": "2026-10-11T10:47:29Z",
     "date": "2026-10-11",
     "newCount": 3,
