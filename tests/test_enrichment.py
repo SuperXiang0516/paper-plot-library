@@ -115,8 +115,56 @@ class EnrichmentTests(unittest.TestCase):
     def test_metrics_provider_application_code_is_not_an_http_status(self):
         client = FakeClient(self.temp.name, {"code": 401, "msg": "fixture-secret DO_NOT_LEAK"})
         result = enrich_metrics(client, self.record, settings())
-        self.assertEqual((result["status"], result["error_reason"]), ("error", "error"))
+        self.assertEqual((result["status"], result["error_reason"]), ("error", "metrics_provider_error"))
         self.assertNotIn("http_status", result)
+        self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
+
+    def test_metrics_response_reasons_are_safe_and_specific(self):
+        cases = ((["DO_NOT_LEAK"], "metrics_response_shape_invalid"),
+                 ({"msg": "DO_NOT_LEAK"}, "metrics_response_shape_invalid"),
+                 ({"code": True}, "metrics_response_shape_invalid"),
+                 ({"code": 200, "msg": ["DO_NOT_LEAK"]}, "metrics_response_shape_invalid"),
+                 ({"code": "https://example.com?key=DO_NOT_LEAK"}, "metrics_provider_error"),
+                 ({"code": 200, "msg": "DO_NOT_LEAK"}, "metrics_provider_error"),
+                 ({"code": 200, "data": ["DO_NOT_LEAK"]}, "metrics_rank_shape_invalid"),
+                 ({"code": 200, "data": {"officialRank": {"all": "DO_NOT_LEAK"}}}, "metrics_rank_shape_invalid"),
+                 (metrics_payload(), "metrics_not_found"))
+        for payload, reason in cases:
+            with self.subTest(reason=reason), tempfile.TemporaryDirectory() as folder:
+                client = FakeClient(folder, payload)
+                result = enrich_metrics(client, self.record, settings())
+                self.assertEqual(result["error_reason"], reason)
+                self.assertEqual(result["status"], "not_found" if reason == "metrics_not_found" else "error")
+                self.assertEqual(len(client.calls), 1)
+                self.assertNotIn("http_status", result)
+                saved = json.dumps(result) + "".join(p.read_text() for p in Path(folder).rglob("*.json"))
+                self.assertNotIn("DO_NOT_LEAK", saved)
+                self.assertNotIn("https://", saved)
+                self.assertNotIn("fixture-secret", saved)
+
+    def test_metrics_missing_journal_has_reason_without_network(self):
+        client = FakeClient(self.temp.name)
+        result = enrich_metrics(client, dict(self.record, journal=""), settings())
+        self.assertEqual((result["status"], result["error_reason"]), ("missing_journal", "missing_journal"))
+        self.assertEqual(client.calls, [])
+
+    def test_metrics_not_found_cached_reason_survives_without_key(self):
+        client = FakeClient(self.temp.name, metrics_payload())
+        enrich_metrics(client, self.record, settings())
+        result = enrich_metrics(client, self.record, settings(easyscholar_key=""))
+        self.assertEqual((result["status"], result["error_reason"]), ("not_found", "metrics_not_found"))
+        self.assertTrue(result["cache_hit"])
+        self.assertEqual(len(client.calls), 1)
+
+    def test_metrics_invalid_provider_refresh_keeps_previous_evidence(self):
+        old = {"status": "matched", "if": "5", "jcr": "Q1", "cas": "1区", "source": "EasyScholar",
+               "retrieved_at": "2000-01-01T00:00:00Z", "metric_year": "unknown"}
+        client = FakeClient(self.temp.name, {"code": 200, "data": "fixture-secret DO_NOT_LEAK"})
+        result = enrich_metrics(client, dict(self.record, metrics=old), settings())
+        self.assertEqual((result["status"], result["last_attempt_status"], result["error_reason"]),
+                         ("matched", "error", "metrics_rank_shape_invalid"))
+        self.assertEqual((result["if"], result["retrieved_at"]), (old["if"], old["retrieved_at"]))
+        self.assertTrue(result["stale"])
         self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
 
     def test_metrics_budget_or_http_refresh_retains_previous_evidence(self):
@@ -216,6 +264,63 @@ class EnrichmentTests(unittest.TestCase):
             self.assertEqual(summarize(client, self.record, self.evidence, settings())["status"], "invalid_response")
         client = FakeClient(self.temp.name, {"choices": [{"finish_reason": "stop", "message": "bad"}]})
         self.assertEqual(summarize(client, self.record, self.evidence, settings())["status"], "invalid_response")
+
+    def test_summary_invalid_response_reasons_without_extra_paid_calls_or_content(self):
+        def content_payload(content, finish_reason="stop"):
+            return {"choices": [{"finish_reason": finish_reason, "message": {"content": content}}]}
+
+        good_content = ai_payload()["choices"][0]["message"]["content"]
+        duplicate_fields = good_content[:-1] + ', "summary_zh": "DO_NOT_LEAK"}'
+        missing_field = json.loads(good_content)
+        del missing_field["limitations"]
+        cases = (({"choices": ["DO_NOT_LEAK"]}, "response_shape_invalid"),
+                 ({"choices": [None, None]}, "response_shape_invalid"),
+                 (content_payload("DO_NOT_LEAK", "length"), "response_truncated"),
+                 (content_payload("DO_NOT_LEAK", "DO_NOT_LEAK"), "response_finish_reason_invalid"),
+                 (content_payload(None), "response_content_invalid"),
+                 (content_payload("  "), "response_content_invalid"),
+                 (content_payload("DO_NOT_LEAK" * 2001), "response_content_too_long"),
+                 (content_payload("```json\n" + good_content + "\n```"), "response_markdown_fence"),
+                 (content_payload("{DO_NOT_LEAK"), "response_json_malformed"),
+                 (content_payload(duplicate_fields), "response_json_malformed"),
+                 (content_payload('["DO_NOT_LEAK"]'), "summary_shape_invalid"),
+                 (content_payload(json.dumps(missing_field)), "summary_fields_invalid"),
+                 (ai_payload(secret="https://example.com?key=DO_NOT_LEAK"), "summary_fields_invalid"),
+                 (ai_payload(title_zh=123), "summary_text_invalid"),
+                 (ai_payload(summary_zh="  "), "summary_text_invalid"),
+                 (ai_payload(title_zh="DO_NOT_LEAK", summary_zh="English only"), "summary_chinese_missing"),
+                 (ai_payload(learning_points="DO_NOT_LEAK"), "summary_list_invalid"),
+                 (ai_payload(limitations=[None]), "summary_list_invalid"),
+                 (ai_payload(evidence_ids=[]), "summary_evidence_invalid"),
+                 (ai_payload(evidence_ids=["DO_NOT_LEAK"]), "summary_evidence_invalid"),
+                 (ai_payload(summary_zh="作者代码运行成功，与原图完全一致。"), "summary_reproduction_claim"),
+                 (ai_payload(title_zh="已复现原图"), "summary_reproduction_claim"),
+                 (ai_payload(limitations=["已执行作者代码。"]), "summary_reproduction_claim"))
+        for payload, reason in cases:
+            with self.subTest(reason=reason), tempfile.TemporaryDirectory() as folder:
+                client = FakeClient(folder, payload)
+                result = summarize(client, self.record, self.evidence, settings())
+                self.assertEqual((result["status"], result["error_reason"]), ("invalid_response", reason))
+                self.assertEqual(client.post_attempts, 1)
+                self.assertEqual(list(Path(folder).rglob("*.json")), [])
+                serialized = json.dumps(result)
+                self.assertNotIn("DO_NOT_LEAK", serialized)
+                self.assertNotIn("fixture-ai-secret", serialized)
+                self.assertNotIn("https://", serialized)
+
+    def test_summary_invalid_response_keeps_previous_summary_stale_with_reason(self):
+        good = summarize(FakeClient(self.temp.name, ai_payload()), self.record, self.evidence, settings())
+        changed = [{"id": "script-1", "text": "Updated script inputs are not verified"}]
+        payload = ai_payload()
+        payload["choices"][0]["finish_reason"] = "length"
+        client = FakeClient(self.temp.name, payload)
+        result = summarize(client, dict(self.record, ai=good), changed, settings())
+        self.assertEqual((result["status"], result["last_attempt_status"], result["error_reason"]),
+                         ("stale", "invalid_response", "response_truncated"))
+        self.assertEqual(result["summary_zh"], good["summary_zh"])
+        self.assertEqual(result["source_fingerprint"], good["source_fingerprint"])
+        self.assertNotEqual(result["current_source_fingerprint"], good["source_fingerprint"])
+        self.assertEqual(client.post_attempts, 1)
 
     def test_summary_bad_endpoint_and_budget_are_recoverable(self):
         client = FakeClient(self.temp.name, ai_payload())

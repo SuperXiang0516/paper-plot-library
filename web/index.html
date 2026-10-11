@@ -7,8 +7,8 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>论文绘图案例库 · Paper Plot Library</title>
-  <link rel="stylesheet" href="styles.css?v=20261011-3">
-  <script defer src="app.js?v=20261011-3"></script>
+  <link rel="stylesheet" href="styles.css?v=20261011-4">
+  <script defer src="app.js?v=20261011-4"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到案例</a>
@@ -19,7 +19,7 @@
       <button type="button" data-view="papers">文献索引</button>
       <button type="button" data-view="updates">更新日志</button>
     </nav>
-    <span class="version">本地第一版 · v1</span>
+    <span class="version">静态来源核查 · v0.2.0</span>
   </header>
   <section class="hero" aria-labelledby="hero-title">
     <div><p class="eyebrow">FROM THE PAPER, BACK TO THE INPUT</p><h1 id="hero-title">好图的背后，<br>是可以追溯的输入。</h1><p class="hero-description">原图、作者绘图入口、数据结构与中文核查笔记。<br>把“这个图怎么画”拆成有来源、能检查的步骤。</p></div>
@@ -30,9 +30,10 @@
     <section class="collection-tools" aria-label="筛选案例">
       <div class="collection-heading"><h2 id="view-title">绘图案例</h2><p id="collection-summary"></p></div>
       <div class="filters" id="filters">
+        <label>内容范围<select id="collection-filter"><option value="browsable">可浏览案例</option><option value="candidates">候选池 · 待补齐</option><option value="all">全部记录</option></select></label>
         <label>图形形态<select id="form-filter"><option value="">全部图形</option></select></label>
         <label>分析功能<select id="function-filter"><option value="">全部功能</option></select></label>
-        <label>核查状态<select id="status-filter"><option value="">全部有效状态</option><option value="ready">核查就绪</option><option value="partial">部分完成</option><option value="pending">候选 / 待核</option><option value="error">本轮异常</option><option value="excluded">已排除（审计）</option></select></label>
+        <label>资料筛选<select id="status-filter"><option value="">全部有效记录</option><option value="ready">原图—代码—输入对应已核</option><option value="needs_input">真实输入表头尚未观察</option><option value="needs_ai">AI 注释待补齐</option><option value="error">最近检查有接口 / 来源错误</option><option value="excluded">已排除（审计）</option></select></label>
         <label class="search-label">搜索<input id="search" type="search" placeholder="标题、主题、DOI…" autocomplete="off"></label>
         <label>排序<select id="sort"><option value="evidence">证据完整度</option><option value="date">发表时间</option><option value="citations">引用数（仅选文偏好）</option></select></label>
         <button id="reset" type="button" class="button secondary">重置</button>

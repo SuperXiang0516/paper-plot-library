@@ -41,12 +41,20 @@ _PUBLIC_STATUSES = {
     "budget_exhausted", "authentication_error", "payment_required", "permission_denied", "invalid_request",
     "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error", "network_error",
     "invalid_doi", "doi_mismatch", "retracted", "no_final_version", "no_scripts_found", "partial_failure",
+    "daily_quota_reached", "missing_journal",
 }
 _SAFE_REASONS = {
     "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "network_error", "error",
     "invalid_endpoint", "invalid_response", "missing_key", "missing_model", "missing_evidence", "missing_endpoint",
+    "response_truncated", "response_shape_invalid", "response_finish_reason_invalid", "response_content_invalid",
+    "response_content_too_long", "response_markdown_fence", "response_json_malformed", "summary_shape_invalid",
+    "summary_fields_invalid", "summary_text_invalid", "summary_chinese_missing", "summary_list_invalid",
+    "summary_evidence_invalid", "summary_reproduction_claim", "metrics_response_shape_invalid",
+    "metrics_provider_error", "metrics_rank_shape_invalid", "metrics_not_found", "missing_journal",
 }
-_REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount"}
+_REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount",
+                    "untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount",
+                    "automaticCompleteCount", "incompleteCount"}
 
 
 def _safe_http_status(value: object) -> bool:
@@ -98,6 +106,11 @@ def _public(value: object, depth: int = 0) -> object:
     if isinstance(value, dict):
         result = {}
         for key, item in list(value.items())[:2000]:
+            if key == "headerSHA256":
+                # A content digest is provenance, not private HTTP headers.
+                if isinstance(item, str) and re.fullmatch(r"[a-fA-F0-9]{64}", item):
+                    result[key] = item
+                continue
             if not isinstance(key, str) or _PRIVATE_KEY.search(key):
                 continue
             if key == "error_reason":
@@ -297,6 +310,93 @@ def _check_public_readiness(public: dict, source: dict) -> None:
             warnings.append("公开构建时原图资产缺失或当前阶段依据不足；已从静态核查就绪降为部分完成。")
 
 
+def _public_availability(public: dict) -> None:
+    """Describe published evidence, not execution or precise figure/code binding.
+
+    This must run after the asset checks: an allowed filename in persistent data
+    alone does not prove the image made it into the public release.
+    """
+    from .figures import figure_reference
+    failures = {"error", "unavailable", "metadata_unavailable", "partial_failure", "authentication_error",
+                "payment_required", "permission_denied", "invalid_request", "endpoint_not_found", "rate_limited",
+                "service_unavailable", "other_http_error", "network_error", "invalid_endpoint", "invalid_response"}
+    deferred = {"budget_exhausted", "missing_key", "missing_model", "missing_endpoint", "deferred", "deferred_until_selection"}
+    def values(value):
+        return value if isinstance(value, list) else []
+    def object_value(value):
+        return value if isinstance(value, dict) else {}
+    counts = {"total": 0, "browsable": 0, "candidates": 0, "excluded": 0, "verified": 0, "errors": 0}
+    for paper in public["papers"]:
+        images = [figure for figure in values(object_value(paper.get("article")).get("figures")) if isinstance(figure, dict)]
+        selected = figure_reference(paper.get("figure"))
+        if selected:
+            matching = []
+            for figure in images:
+                reference = figure.get("reference")
+                if not (isinstance(reference, dict) and reference.get("scope") in {"main", "extended", "supplementary"}
+                        and re.fullmatch(r"\d+", str(reference.get("number", "")))):
+                    reference = figure_reference(figure.get("label"))
+                if (reference and reference["scope"] == selected["scope"]
+                        and int(reference["number"]) == int(selected["number"])):
+                    matching.append(figure)
+            images = matching
+        elif str(paper.get("figure") or "").strip():
+            images = []  # Do not substitute an unrelated image for an unparsed selected figure.
+        has_image = any(figure.get("reuseStatus") == "allowed" and _asset(figure.get("asset")) for figure in images)
+        repository = object_value(paper.get("repository"))
+        commit = repository.get("commit", "")
+        def fixed_script(script):
+            if not isinstance(script, dict) or not re.fullmatch(r"[a-fA-F0-9]{64}", str(script.get("sha256", ""))):
+                return False
+            url = urlsplit(_public_url(script.get("url")))
+            return url.hostname == "github.com" and f"/blob/{commit}/" in url.path
+        has_code = (repository.get("status") == "inspected" and isinstance(commit, str)
+                    and bool(re.fullmatch(r"[a-fA-F0-9]{40}", commit))
+                    and any(fixed_script(script) for script in values(repository.get("scripts"))))
+        spec = object_value(public.get("inputSpecs", {}).get(paper["id"]))
+        selected_inputs = values(spec.get("files"))
+        automatic = values(object_value(spec.get("automaticInputs")).get("files"))
+        repository_inputs = values(repository.get("inputs"))
+        inputs = selected_inputs or repository_inputs
+        has_input_schema = any(isinstance(file, dict) and (values(file.get("fields")) or values(file.get("columns"))) for file in inputs + automatic)
+        has_observed_header = any(file.get("status") == "header_observed"
+                                  and re.fullmatch(r"[a-fA-F0-9]{64}", str(file.get("headerSHA256", "")))
+                                  and any(isinstance(field, dict) and field.get("kind") == "actual_file_header"
+                                          for field in values(file.get("fields")))
+                                  for file in repository_inputs if isinstance(file, dict))
+        input_state = "observed_header" if has_observed_header else "documented" if has_input_schema else "code_candidates" if inputs or automatic else "missing"
+        ai = object_value(paper.get("ai"))
+        has_ai = ai.get("status") == "generated" and isinstance(ai.get("summary_zh"), str) and bool(ai["summary_zh"].strip())
+        has_old_ai = ai.get("status") == "stale" and isinstance(ai.get("summary_zh"), str) and bool(ai["summary_zh"].strip())
+        metrics = object_value(paper.get("metrics"))
+        has_metrics = any(metrics.get(field) not in (None, "") for field in ("if", "jcr") if field in metrics)
+        automation = object_value(paper.get("automation"))
+        stages = automation.get("stages")
+        if isinstance(stages, dict):
+            statuses = [value.get("last_attempt_status") or value.get("status") if isinstance(value, dict) else value for value in stages.values()]
+        else:
+            statuses = [object_value(paper.get(stage)).get("last_attempt_status") or object_value(paper.get(stage)).get("status")
+                        for stage in ("article", "repository", "ai", "metrics")]
+        has_errors = any(isinstance(status, str) and status in failures for status in statuses)
+        health = "error" if has_errors else "deferred" if any(isinstance(status, str) and status in deferred for status in statuses) else "ok" if isinstance(stages, dict) and stages else "uninspected"
+        excluded = automation.get("status") == "excluded"
+        available = {"hasImage": bool(has_image), "hasCode": bool(has_code), "hasInputSchema": bool(has_input_schema),
+                     "hasInputNotes": bool(inputs or automatic), "hasObservedHeaders": has_observed_header,
+                     "inputState": input_state, "hasAi": bool(has_ai), "hasOldAi": bool(has_old_ai),
+                     "hasMetrics": has_metrics, "browsable": bool(not excluded and has_image and has_code),
+                     "verification": "verified" if not excluded and automation.get("status") == "ready" else "unverified",
+                     "health": health}
+        paper["availability"] = available
+        counts["total"] += 1
+        if excluded:
+            counts["excluded"] += 1
+            continue
+        counts["browsable" if available["browsable"] else "candidates"] += 1
+        counts["verified"] += available["verification"] == "verified"
+        counts["errors"] += health == "error"
+    public["availabilityCounts"] = counts
+
+
 def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
     """Generate ``site/``. Persistent ``data/`` and the aging site stay untouched."""
     root = Path(root)
@@ -312,6 +412,7 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
         shutil.copyfile(source, destination)
     _publish_assets(root, output, public)
     _check_public_readiness(public, catalog)
+    _public_availability(public)
     report_fields = {"mode", "date", "startedAt", "finishedAt", "generatedAt", "timestamp", "newCount", "repairCount", "status", "note", "errors", "warnings", "records", "results", "processed", "counts", "summary", "demo", "synthetic", "checkedCount", "requests", "aiAttempts", "totalCount", "dailyNewCount", "discoveryStatus", "failures", "stageCounts", "missingKeys", "collectionBudgetExhausted"} | _REPORT_COUNTERS
     values = reports if isinstance(reports, list) else reports.get("reports", [reports]) if isinstance(reports, dict) else []
     values = sorted([report for report in values if isinstance(report, dict)], key=lambda report: str(report.get("finishedAt") or report.get("startedAt") or report.get("date") or ""), reverse=True)[:90]

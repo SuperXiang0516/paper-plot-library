@@ -114,15 +114,23 @@ def _empty_metrics(status):
 
 def _parse_metrics(payload):
     result = _empty_metrics("error")
-    if not isinstance(payload, dict) or str(payload.get("code")) != "200":
-        return result
-    if payload.get("msg") is not None and str(payload["msg"]).upper() != "SUCCESS":
-        return result
-    data = payload.get("data", {})
-    official = data.get("officialRank", {}) if isinstance(data, dict) else {}
+
+    def invalid(reason):
+        return dict(result, error_reason=reason)
+
+    if not isinstance(payload, dict) or type(payload.get("code")) not in (int, str):
+        return invalid("metrics_response_shape_invalid")
+    if str(payload["code"]) != "200":
+        return invalid("metrics_provider_error")
+    if payload.get("msg") is not None and not isinstance(payload["msg"], str):
+        return invalid("metrics_response_shape_invalid")
+    if payload.get("msg") is not None and payload["msg"].upper() != "SUCCESS":
+        return invalid("metrics_provider_error")
+    data = payload.get("data")
+    official = data.get("officialRank") if isinstance(data, dict) else None
     ranks = official.get("all") if isinstance(official, dict) else None
     if not isinstance(ranks, dict):
-        return result
+        return invalid("metrics_rank_shape_invalid")
     sci, ssci = _quartile(ranks.get("sci")), _quartile(ranks.get("ssci"))
     result.update({"if": _impact(ranks.get("sciif")),
                    "jcr": f"SCI {sci} / SSCI {ssci}" if sci and ssci and sci != ssci else sci or ssci,
@@ -132,6 +140,8 @@ def _parse_metrics(payload):
                    "retrieved_at": _stamp()})
     # Do not infer metric year from the current year, publication year, or as-of date.
     result["status"] = "matched" if any(result[k] for k in ("if", "jcr", "cas")) else "not_found"
+    if result["status"] == "not_found":
+        result["error_reason"] = "metrics_not_found"
     return result
 
 
@@ -163,6 +173,8 @@ def _valid_metrics(raw):
                   "source": "preprint" if raw.get("source") == "preprint" else "EasyScholar"})
     if raw["status"] == "matched" and not any(value[k] for k in ("if", "jcr", "cas")):
         return None
+    if raw["status"] == "not_found":
+        value["error_reason"] = "metrics_not_found"
     try:
         dt.datetime.strptime(value["retrieved_at"], "%Y-%m-%dT%H:%M:%SZ")
     except ValueError:
@@ -205,7 +217,7 @@ def enrich_metrics(client, record, settings):
         result.update(source="preprint", retrieved_at=_stamp())
         return result
     if not name:
-        return _empty_metrics("missing_journal")
+        return dict(_empty_metrics("missing_journal"), error_reason="missing_journal")
     cache_path = Path(client.cache_dir) / "journal-metrics.json"
     raw_cache = _load_json(cache_path).get("journals", {})
     cache = {k: v for k, raw in raw_cache.items()
@@ -238,7 +250,7 @@ def enrich_metrics(client, record, settings):
             # Never expose exception text: a third-party exception may contain the secret query.
             result = _empty_metrics("error")
         if result["status"] == "error":
-            result["error_reason"] = "error"
+            result.setdefault("error_reason", "error")
     if result["status"] == "matched" and previous and previous["status"] == "matched":
         retained = {}
         for field in ("if", "jcr", "cas"):
@@ -282,12 +294,19 @@ def _empty_summary(status):
             "limitations": [_STATIC_LIMITATION], "evidence_ids": []}
 
 
-def _validate_summary(value, allowed_ids):
-    if not isinstance(value, dict) or set(value) != _SUMMARY_FIELDS:
-        return None
+def _validate_summary_with_reason(value, allowed_ids):
+    """Return validated prose or a fixed reason code, never provider content."""
+    if not isinstance(value, dict):
+        return None, "summary_shape_invalid"
+    if set(value) != _SUMMARY_FIELDS:
+        return None, "summary_fields_invalid"
+    if not isinstance(value["title_zh"], str) or not isinstance(value["summary_zh"], str):
+        return None, "summary_text_invalid"
     title, summary = _text(value["title_zh"], 300), _text(value["summary_zh"], 3000)
-    if not title or not summary or not re.search(r"[\u3400-\u9fff]", title + summary):
-        return None
+    if not title or not summary:
+        return None, "summary_text_invalid"
+    if not re.search(r"[\u3400-\u9fff]", title + summary):
+        return None, "summary_chinese_missing"
     arrays = {}
     for key, limit, count in (("learning_points", 600, 8), ("limitations", 600, 10), ("evidence_ids", 100, 20)):
         raw = value[key]
@@ -295,21 +314,36 @@ def _validate_summary(value, allowed_ids):
         # provider validation. Accept that same disclaimer on later cache reads.
         if key == "limitations" and isinstance(raw, list) and _STATIC_LIMITATION in raw:
             count += 1
+        reason = "summary_evidence_invalid" if key == "evidence_ids" else "summary_list_invalid"
         if not isinstance(raw, list) or not 1 <= len(raw) <= count:
-            return None
+            return None, reason
         if any(not isinstance(x, str) or not _text(x, limit) for x in raw):
-            return None
+            return None, reason
         arrays[key] = list(dict.fromkeys(_text(x, limit) for x in raw))
-    if any(eid not in allowed_ids for eid in arrays["evidence_ids"]):
-        return None
+    if any(not _EVIDENCE_ID.fullmatch(eid) or eid not in allowed_ids for eid in arrays["evidence_ids"]):
+        return None, "summary_evidence_invalid"
     # Prose cannot assert execution while the pipeline intentionally never runs author code.
-    combined = " ".join([summary, *arrays["learning_points"]])
+    combined = " ".join([title, summary, *arrays["learning_points"], *arrays["limitations"]])
     if re.search(r"(?:已成功复现|已复现原图|代码运行成功|与原图完全一致|已执行作者代码)", combined):
-        return None
+        return None, "summary_reproduction_claim"
     if _STATIC_LIMITATION not in arrays["limitations"]:
         arrays["limitations"].append(_STATIC_LIMITATION)
-    return {"status": "generated", "title_zh": title, "summary_zh": summary, **arrays,
-            "review_required": True, "author_code_executed": False}
+    return ({"status": "generated", "title_zh": title, "summary_zh": summary, **arrays,
+             "review_required": True, "author_code_executed": False}, None)
+
+
+def _validate_summary(value, allowed_ids):
+    return _validate_summary_with_reason(value, allowed_ids)[0]
+
+
+def _unique_json_object(pairs):
+    """Reject ambiguous duplicate fields rather than silently keeping the last one."""
+    value = {}
+    for key, item in pairs:
+        if key in value:
+            raise ValueError("duplicate JSON field")
+        value[key] = item
+    return value
 
 
 def summarize(client, record, evidence, settings):
@@ -391,23 +425,31 @@ def summarize(client, record, evidence, settings):
         response = client.post_json(url, payload, headers={"Authorization": "Bearer " + key}, max_bytes=1_000_000)
         choices = response.get("choices") if isinstance(response, dict) else None
         choice = choices[0] if isinstance(choices, list) and len(choices) == 1 else None
-        if not isinstance(choice, dict) or choice.get("finish_reason") != "stop":
-            return failed("invalid_response")
+        if not isinstance(choice, dict):
+            return failed("invalid_response", "response_shape_invalid")
+        if choice.get("finish_reason") == "length":
+            return failed("invalid_response", "response_truncated")
+        if choice.get("finish_reason") != "stop":
+            return failed("invalid_response", "response_finish_reason_invalid")
         message = choice.get("message")
         content = message.get("content") if isinstance(message, dict) else None
-        if not isinstance(content, str) or len(content) > 20_000:
-            return failed("invalid_response")
+        if not isinstance(content, str) or not content.strip():
+            return failed("invalid_response", "response_content_invalid")
+        if len(content) > 20_000:
+            return failed("invalid_response", "response_content_too_long")
+        if content.lstrip().startswith("```"):
+            return failed("invalid_response", "response_markdown_fence")
         try:
-            decoded = json.loads(content)
-        except json.JSONDecodeError:
-            return failed("invalid_response")
-        result = _validate_summary(decoded, allowed)
+            decoded = json.loads(content, object_pairs_hook=_unique_json_object)
+        except (ValueError, RecursionError):
+            return failed("invalid_response", "response_json_malformed")
+        result, reason = _validate_summary_with_reason(decoded, allowed)
     except (BudgetExceeded, FetchError) as error:
         return failed(**_fetch_failure(error))
     except Exception:
         return failed("error")
     if not result:
-        return failed("invalid_response")
+        return failed("invalid_response", reason)
     result.update(generated_at=_stamp(), model=model, source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
     try:
         _save_json(cache_path, result)

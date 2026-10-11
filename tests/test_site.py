@@ -165,6 +165,80 @@ class SiteTests(unittest.TestCase):
         output = build_site(self.root, sample(), [report])
         self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{}])
 
+    def test_detailed_ai_and_metric_reasons_are_public_without_provider_dumps(self):
+        reasons = ("response_truncated", "response_shape_invalid", "response_finish_reason_invalid", "response_content_invalid",
+                   "response_content_too_long", "response_markdown_fence", "response_json_malformed", "summary_shape_invalid",
+                   "summary_fields_invalid", "summary_text_invalid", "summary_chinese_missing", "summary_list_invalid",
+                   "summary_evidence_invalid", "summary_reproduction_claim", "metrics_response_shape_invalid",
+                   "metrics_provider_error", "metrics_rank_shape_invalid", "metrics_not_found", "missing_journal")
+        for reason in reasons:
+            catalog = sample()
+            for field in ("ai", "metrics"):
+                catalog["papers"][0][field].update(status="invalid_response", error_reason=reason, raw_response="must-not-publish")
+            projected = public_catalog(catalog)["papers"][0]
+            for field in ("ai", "metrics"):
+                self.assertEqual(projected[field]["error_reason"], reason)
+                self.assertNotIn("raw_response", projected[field])
+
+    def test_published_availability_uses_valid_assets_fixed_code_and_distinct_binding(self):
+        catalog = sample()
+        paper = catalog["papers"][0]
+        commit = "a" * 40
+        paper["figure"] = "Figure 1a"
+        paper["repository"].update(status="inspected", commit=commit)
+        paper["repository"]["scripts"][0].update(url=f"https://github.com/author/repo/blob/{commit}/plot.R", sha256="b" * 64)
+        paper["automation"] = {"status": "partial", "stages": {"metadata": "matched", "article": "inspected", "repository": "inspected", "ai": "authentication_error"}}
+        original = copy.deepcopy(catalog)
+        output = build_site(self.root, catalog, [])
+        published = json.loads((output / "data" / "catalog.json").read_text())
+        availability = published["papers"][0]["availability"]
+        self.assertTrue(availability["browsable"])
+        self.assertEqual(availability["verification"], "unverified")
+        self.assertEqual(availability["health"], "error")
+        self.assertTrue(availability["hasInputSchema"])
+        self.assertFalse(availability["hasObservedHeaders"], "Curated notes do not prove a real file header.")
+        self.assertEqual(availability["inputState"], "documented")
+        self.assertEqual(published["availabilityCounts"], {"total": 1, "browsable": 1, "candidates": 0, "excluded": 0, "verified": 0, "errors": 1})
+        self.assertEqual(catalog, original)
+        if Path(NODE).exists():
+            test = "const u=require(process.argv[1]),c=require(process.argv[2]);for(const p of c.papers){const a=u.availabilityOf(p,c.inputSpecs[p.id]);for(const [k,v] of Object.entries(p.availability))require('assert').deepEqual(a[k],v,k);}require('assert').deepEqual(u.collectionCounts(c.papers,c.inputSpecs),c.availabilityCounts);"
+            subprocess.run([NODE, "-e", test, str(PROJECT / "web" / "app.js"), str(output / "data" / "catalog.json")], check=True, capture_output=True)
+        for override in ({"figure": "Figure 2a"}, {"figure": "unparsed figure"}):
+            paper.update(override)
+            output = build_site(self.root, catalog, [])
+            availability = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["availability"]
+            self.assertFalse(availability["browsable"])
+        paper["figure"] = "Figure 1a"
+        paper["article"]["figures"][0]["asset"] = "assets/missing.png"
+        output = build_site(self.root, catalog, [])
+        availability = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["availability"]
+        self.assertFalse(availability["hasImage"])
+        self.assertFalse(availability["browsable"])
+
+    def test_published_observed_header_requires_digest_and_source_header_status(self):
+        catalog = sample()
+        source_input = {"name": "input.csv", "status": "header_observed", "headerSHA256": "a" * 64,
+                        "fields": [{"name": "age", "kind": "actual_file_header"}]}
+        catalog["papers"][0]["repository"]["inputs"] = [source_input]
+        output = build_site(self.root, catalog, [])
+        availability = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["availability"]
+        self.assertTrue(availability["hasObservedHeaders"])
+        self.assertEqual(availability["inputState"], "observed_header")
+        source_input["headerSHA256"] = ""
+        output = build_site(self.root, catalog, [])
+        availability = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["availability"]
+        self.assertFalse(availability["hasObservedHeaders"])
+
+    def test_schedule_report_counts_survive_export_but_are_type_bounded(self):
+        fields = ("untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount", "automaticCompleteCount", "incompleteCount")
+        report = {field: index for index, field in enumerate(fields)}
+        report["discoveryStatus"] = "daily_quota_reached"
+        output = build_site(self.root, sample(), [report])
+        self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [report])
+        report.update({field: True for field in fields})
+        output = build_site(self.root, sample(), [report])
+        self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{"discoveryStatus": "daily_quota_reached"}])
+
     def test_build_downgrades_ready_when_published_reviewed_asset_missing(self):
         catalog = sample()
         paper = catalog["papers"][0]
@@ -400,6 +474,62 @@ assert(!ui.updateBudgetLines({reservedAiRequests:true,maxRequests:'credentials-i
 assert.deepEqual(ui.updateBudgetLines({}),[]);
 '''
         subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_separates_available_cases_candidates_binding_and_runtime_errors(self):
+        test_code = r'''
+const assert=require('assert'), ui=require(process.argv[1]);
+const commit='a'.repeat(40), hash='b'.repeat(64);
+const image={id:'fig1',label:'Figure 1',reuseStatus:'allowed',asset:'assets/paper/fig1.png'};
+const script={path:'plot.R',sha256:hash,url:'https://github.com/author/repo/blob/'+commit+'/plot.R'};
+const paper={id:'case',figure:'Figure 1a',article:{status:'inspected',figures:[image]},repository:{status:'inspected',commit,scripts:[script]},automation:{status:'partial',stages:{metadata:'matched',article:'inspected',repository:'inspected',ai:'generated',metrics:'not_found'}},ai:{status:'generated',summary_zh:'中文学习笔记'}};
+const available=ui.availabilityOf(paper);
+assert(available.browsable && available.hasImage && available.hasCode && available.hasAi);
+assert.equal(available.verification,'unverified');assert.equal(available.health,'ok');
+assert.equal(ui.availabilityOf({...paper,automation:{...paper.automation,status:'ready'}}).verification,'verified');
+assert(!ui.availabilityOf({...paper,figure:'Figure 2a'}).browsable);
+assert(!ui.availabilityOf({...paper,figure:'unparsed selection'}).hasImage);
+assert(!ui.availabilityOf({...paper,article:{figures:[{...image,reuseStatus:'link_only'}]}}).browsable);
+assert(!ui.availabilityOf({...paper,repository:{...paper.repository,commit:''}}).browsable);
+assert(!ui.availabilityOf({...paper,repository:{...paper.repository,scripts:[{...script,url:'https://evil.example/blob/'+commit+'/plot.R'}]}}).hasCode);
+assert(!ui.availabilityOf({...paper,repository:{...paper.repository,scripts:[{...script,sha256:''}]}}).hasCode);
+assert(!ui.availabilityOf({id:'seed',codeURL:'https://github.com/author/repo',description:'人工候选介绍'}).browsable);
+const failed={...paper,ai:{status:'authentication_error'},automation:{...paper.automation,stages:{...paper.automation.stages,ai:'authentication_error'}}};
+assert(ui.availabilityOf(failed).browsable);assert.equal(ui.availabilityOf(failed).health,'error');assert.equal(ui.availabilityOf(failed).hasAi,false);
+const deferred={...paper,automation:{...paper.automation,stages:{...paper.automation.stages,ai:'budget_exhausted'}}};
+assert.equal(ui.availabilityOf(deferred).health,'deferred');
+assert.equal(ui.availabilityOf({...paper,automation:{...paper.automation,stages:{...paper.automation.stages,ai:'missing_key'}}}).health,'deferred');
+const old={...paper,ai:{status:'stale',summary_zh:'旧笔记',last_attempt_status:'invalid_response'}};
+assert.equal(ui.availabilityOf(old).hasAi,false);assert.equal(ui.availabilityOf(old).hasOldAi,true);
+assert.equal(ui.availabilityOf(old).health,'ok','Current stage evidence takes precedence over legacy old-error data.');
+const candidate={id:'seed',automation:{status:'seed'}};
+const excluded={...paper,id:'excluded',automation:{...paper.automation,status:'excluded'}};
+assert.equal(ui.matchesCollection(paper,'browsable'),true);assert.equal(ui.matchesCollection(candidate,'browsable'),false);
+assert.equal(ui.matchesCollection(candidate,'candidates'),true);assert.equal(ui.matchesCollection(excluded,'browsable'),false);
+assert.deepEqual(ui.collectionCounts([paper,candidate,excluded]),{total:3,browsable:1,candidates:1,excluded:1,verified:0,errors:0});
+assert.equal(ui.contentBadges({...paper,article:{figures:[{...image,reuseStatus:'link_only'}]}})[0].label,'仅官方链接');
+assert.equal(ui.contentBadges(paper,{automaticInputs:{files:[{name:'data.csv',fields:[],observedFieldReferences:[{name:'age'}]}]}})[2].label,'读取候选待核');
+assert.equal(ui.contentBadges(paper,{files:[{name:'input.csv',fields:[['age','numeric','真实表头','年龄']]}]})[2].label,'字段 / 结构笔记 · 表头待核');
+const headerPaper={...paper,repository:{...paper.repository,inputs:[{status:'header_observed',headerSHA256:hash,fields:[{name:'age',kind:'actual_file_header'}]}]}};
+assert.equal(ui.availabilityOf(headerPaper).hasObservedHeaders,true);
+assert.equal(ui.availabilityOf({...headerPaper,repository:{...headerPaper.repository,inputs:[{status:'header_observed',fields:[{name:'age',kind:'actual_file_header'}]}]}}).hasObservedHeaders,false);
+assert(ui.contentBadges(headerPaper)[2].label.includes('候选表头已观察'));
+assert.equal(ui.detailFigures({...paper,figure:'Figure 2'}).selected,null);
+assert.equal(ui.detailFigures({...paper,figure:'Figure 2'}).other[0],image);
+assert(ui.updateBudgetLines({untouchedRepairCount:3,retryRepairCount:2,cooldownSkippedCount:1,untouchedRemainingCount:40,automaticCompleteCount:4,incompleteCount:1}).join('\n').includes('尚未首次自动核查：40'));
+assert.equal(ui.statusLabel('daily_quota_reached'),'今日新收录名额已用完');
+assert(ui.reasonLabel('response_truncated').includes('截断'));
+assert(ui.reasonLabel('summary_evidence_invalid').includes('证据'));
+assert(ui.reasonLabel('metrics_provider_error').includes('业务错误'));
+assert.equal(ui.reasonLabel('secret-provider-message'),'');
+assert(!ui.diagnosticLabel({status:'invalid_response',error_reason:'summary_reproduction_claim'}).includes('summary_reproduction_claim'));
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
+        html = (PROJECT / "web" / "index.html").read_text()
+        self.assertIn('id="collection-filter"', html)
+        self.assertIn('value="browsable"', html)
+        self.assertIn('value="candidates"', html)
+        self.assertNotIn('<option value="partial">', html)
 
     def test_large_figure_responsive_layout_rules(self):
         css = (PROJECT / "web" / "styles.css").read_text()

@@ -15,14 +15,15 @@
   const str = (value, fallback = '待核') => value === undefined || value === null || value === '' ? fallback : Array.isArray(value) ? value.map(item => str(item, '')).filter(Boolean).join(' · ') : typeof value === 'object' ? fallback : String(value);
   const list = value => Array.isArray(value) ? value : [];
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
-  const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
+  const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
   const stageLabel = name => typeof name === 'string' && Object.hasOwn(STAGE_LABELS,name) ? STAGE_LABELS[name] : '未分类阶段';
   const statusLabel = value => typeof value === 'string' && Object.hasOwn(STAGE_STATUS_LABELS,value) ? STAGE_STATUS_LABELS[value] : '状态待核';
   const validHTTP = value => Number.isInteger(value) && value >= 400 && value <= 599;
   const httpStatusLabel = value => validHTTP(value) ? statusLabel(({400:'invalid_request',401:'authentication_error',402:'payment_required',403:'permission_denied',404:'endpoint_not_found',429:'rate_limited'})[value] || (value >= 500 ? 'service_unavailable' : 'other_http_error')) + ([400,401,402,403,404,429].includes(value) ? '' : ' · HTTP '+value) : '';
   const reasonLabel = value => {
     const budgets={network_budget_exhausted:'本轮本地总 HTTP 请求上限已到',collection_budget_exhausted:'本轮本地采集请求上限已到',ai_budget_exhausted:'本轮本地 AI 尝试上限已到'};
-    return typeof value === 'string' && Object.hasOwn(budgets,value) ? budgets[value] : typeof value === 'string' && /^http_[45]\d{2}$/.test(value) ? httpStatusLabel(Number(value.slice(5))) : ['error','network_error','invalid_endpoint','invalid_response','missing_key','missing_model','missing_evidence','missing_endpoint'].includes(value) ? statusLabel(value) : '';
+    const responses={response_truncated:'AI 输出被截断，未接收不完整注释',response_shape_invalid:'接口外层结构不符合约定',response_finish_reason_invalid:'接口未正常完成输出',response_content_invalid:'接口内容不是可读取文本',response_content_too_long:'接口内容超过本轮安全长度',response_markdown_fence:'AI 返回代码围栏，未按纯 JSON 格式输出',response_json_malformed:'AI 内容不是合法 JSON',summary_shape_invalid:'注释不是约定的 JSON 对象',summary_fields_invalid:'注释字段不符合约定',summary_text_invalid:'注释标题或摘要为空、过长或类型错误',summary_chinese_missing:'注释未提供所需中文内容',summary_list_invalid:'学习要点或限制列表不符合约定',summary_evidence_invalid:'注释证据标识不在本轮提供的来源内',summary_reproduction_claim:'注释含未经验证的运行或复现声明',metrics_response_shape_invalid:'期刊接口结构不符合约定',metrics_provider_error:'期刊服务返回业务错误',metrics_rank_shape_invalid:'期刊分区内容结构不符合约定',metrics_not_found:'期刊服务未返回匹配记录',missing_journal:'文献缺少可查询的期刊名称'};
+    return typeof value === 'string' && Object.hasOwn(budgets,value) ? budgets[value] : typeof value === 'string' && Object.hasOwn(responses,value) ? responses[value] : typeof value === 'string' && /^http_[45]\d{2}$/.test(value) ? httpStatusLabel(Number(value.slice(5))) : ['error','network_error','invalid_endpoint','invalid_response','missing_key','missing_model','missing_evidence','missing_endpoint'].includes(value) ? statusLabel(value) : '';
   };
   const diagnosticLabel = value => {
     if (!value || typeof value !== 'object') return statusLabel(value);
@@ -47,6 +48,11 @@
     if(requests !== null || collection !== null || ai !== null)lines.push('总 HTTP 请求：'+(requests ?? '未报告')+(maximum === null ? '' : ' / '+maximum)+' 次 · 采集 GET：'+(collection ?? '未报告')+' 次 · AI HTTP 尝试：'+(ai ?? '未报告')+(maxAi === null ? '' : ' / '+maxAi)+' 次（失败重试也计数）');
     if(reserved !== null && reserved > 0)lines.push('本轮为 AI 预留 '+reserved+' 个总请求名额；采集上限'+(maximum === null ? '由预留名额限制' : '为 '+Math.max(0,maximum-reserved)+' 次')+'。预留不代表已经调用或扣费。');
     if(repaired !== null)lines.push('既有案例 AI 修补成功：'+repaired+' 条；本轮已匹配正式文献、已检查全文与作者代码的缺失、旧版或失败注释优先处理。');
+    const untouched=counter(report.untouchedRepairCount), retry=counter(report.retryRepairCount), cooldown=counter(report.cooldownSkippedCount), remaining=counter(report.untouchedRemainingCount), automatic=counter(report.automaticCompleteCount), incomplete=counter(report.incompleteCount);
+    if(untouched!==null || retry!==null)lines.push('既有记录处理：首次核查 '+(untouched??'未报告')+' 条 · 修补 / 复查 '+(retry??'未报告')+' 条。首次核查与失败修补分配名额，避免反复处理同几篇。');
+    if(cooldown!==null && cooldown>0)lines.push(cooldown+' 条记录正在延后复查 / 重试，不占用本轮普通修补名额；其中可能是重复失败，也可能是暂时无法补齐的资料。');
+    if(remaining!==null)lines.push('尚未首次自动核查：'+remaining+' 条；这不是接口失败数量。');
+    if(automatic!==null || incomplete!==null)lines.push('本轮自动步骤完整：'+(automatic??'未报告')+' 条 · 自动步骤未完整：'+(incomplete??'未报告')+' 条。自动步骤完整不等于原图与输入已齐全、人工精确对应已核或复现成功。');
     if(report.collectionBudgetExhausted === true)lines.push('采集达到本轮本地请求上限并停止扩展。'+(reserved > 0 ? '已为 AI 预留名额；实际使用情况见 AI HTTP 尝试计数。' : '后续采集等待下次更新。'));
     const aiBudgetSkipped=counter(report.stageCounts?.ai?.budget_exhausted)>0 || list(report.failures).some(failure=>['ai','summary'].includes(failure?.stage) && (failure?.status === 'budget_exhausted' || failure?.error === 'budget_exhausted'));
     if(ai === 0 && aiBudgetSkipped)lines.push('本轮 AI 因本地请求上限跳过，实际 AI HTTP 尝试为 0 次；未发起付费 AI 请求。');
@@ -60,7 +66,7 @@
     return [...new Set(list(paper[field]).filter(value => typeof value === 'string' && value))];
   };
   const matchAxis = (paper, axis, selected) => !selected || (selected === '__pending' ? !approvedTags(paper, axis).length : approvedTags(paper, axis).includes(selected));
-  const safeFigures = paper => list(paper.article?.figures).filter(figure => figure.reuseStatus === 'allowed' && safeAsset(figure.asset));
+  const safeFigures = paper => list(paper.article?.figures).filter(figure => figure && typeof figure==='object' && figure.reuseStatus === 'allowed' && safeAsset(figure.asset));
   const figureReference = label => {
     const value=str(label,'');if(!value.trim())return null;
     let scope=/extended\s*(?:data|fig)|扩展/i.test(value)?'extended':/supplement|supporting|补充|附图/i.test(value)?'supplementary':'main';
@@ -71,12 +77,13 @@
   };
   const figureNumber = label => {const reference=figureReference(label);return reference?Number(reference.number):null;};
   const cardFigure = paper => {
-    const selected=figureReference(paper.figure), figures=list(paper.article?.figures);
+    const selected=figureReference(paper.figure), figures=list(paper.article?.figures).filter(figure=>figure && typeof figure==='object');
     const matching=figure=>{const reference=figure.reference&&['main','extended','supplementary'].includes(figure.reference.scope)&&/^\d+$/.test(str(figure.reference.number,''))?figure.reference:figureReference(figure.label);return reference&&reference.scope===selected.scope&&String(Number(reference.number))===selected.number;};
     if(selected)return figures.find(figure=>matching(figure)&&figure.reuseStatus==='allowed'&&safeAsset(figure.asset)) || figures.find(matching) || null;
     if(str(paper.figure,'').trim())return null; // An unparsed selected label must never substitute another figure.
     return safeFigures(paper)[0] || null;
   };
+  const detailFigures = paper => {const figure=cardFigure(paper), selected=figure?.reuseStatus==='allowed' && safeAsset(figure.asset)?figure:null;return {selected,other:safeFigures(paper).filter(value=>value!==selected)};};
   const inputSections = (spec, repositoryInputs = []) => ({
     selected:list(spec?.files).length ? spec.files : list(repositoryInputs),
     automatic:list(spec?.automaticInputs?.files),
@@ -104,12 +111,51 @@
     parts.push('指标年份：' + (['unknown','未知',''].includes(str(metrics.metric_year,'')) ? '接口未提供' : str(metrics.metric_year, '接口未提供')));
     return parts.join(' · ');
   };
-  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,figureReference,viewFromHash,stageLabel,statusLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines};
+  const API_FAILURES = new Set(['error','unavailable','metadata_unavailable','partial_failure','authentication_error','payment_required','permission_denied','invalid_request','endpoint_not_found','rate_limited','service_unavailable','other_http_error','network_error','invalid_endpoint','invalid_response']);
+  const DEFERRED_STATES = new Set(['budget_exhausted','missing_key','missing_model','missing_endpoint','deferred','deferred_until_selection']);
+  const currentFailures = paper => {
+    const stages=paper.automation?.stages;
+    if(stages && typeof stages === 'object' && !Array.isArray(stages))return Object.entries(stages).filter(([,value])=>API_FAILURES.has(typeof value === 'object' ? value?.last_attempt_status || value?.status : value)).map(([stage,value])=>({stage,status:typeof value === 'object' ? value?.last_attempt_status || value?.status : value}));
+    return ['article','repository','ai','metrics'].flatMap(stage=>{const value=paper[stage],status=value?.last_attempt_status || value?.status;return API_FAILURES.has(status)?[{stage,status}]:[];});
+  };
+  const availabilityOf = (paper, spec={}) => {
+    // Derive from the public evidence; neither a legacy "partial" status nor a seed link proves availability.
+    const figure=cardFigure(paper), hasImage=!!(figure?.reuseStatus === 'allowed' && safeAsset(figure.asset));
+    const repository=paper.repository || {}, commit=typeof repository.commit === 'string' && /^[a-f0-9]{40}$/i.test(repository.commit) ? repository.commit : '';
+    const hasCode=repository.status === 'inspected' && !!commit && list(repository.scripts).some(script=>{const url=safeURL(script?.url);return url && /^[a-f0-9]{64}$/i.test(str(script?.sha256,'')) && new URL(url).hostname==='github.com' && new URL(url).pathname.includes('/blob/'+commit+'/');});
+    const selected=list(spec?.files), automatic=list(spec?.automaticInputs?.files), inputs=selected.length?selected:list(repository.inputs);
+    const observed=files=>files.some(file=>list(file?.fields).length || list(file?.columns).length);
+    const hasInputSchema=observed(inputs) || observed(automatic);
+    const hasInputNotes=selected.length>0 || automatic.length>0 || inputs.length>0;
+    const hasObservedHeaders=list(repository.inputs).some(file=>file?.status==='header_observed' && /^[a-f0-9]{64}$/i.test(str(file.headerSHA256,'')) && list(file.fields).some(field=>field?.kind==='actual_file_header'));
+    const inputState=hasObservedHeaders?'observed_header':hasInputSchema?'documented':hasInputNotes?'code_candidates':'missing';
+    const hasAi=paper.ai?.status === 'generated' && typeof paper.ai?.summary_zh === 'string' && !!paper.ai.summary_zh.trim();
+    const hasOldAi=paper.ai?.status === 'stale' && typeof paper.ai?.summary_zh === 'string' && !!paper.ai.summary_zh.trim();
+    const hasMetrics=!!(str(paper.metrics?.if,'') || str(paper.metrics?.jcr,''));
+    const excluded=statusOf(paper)==='excluded', failures=currentFailures(paper);
+    const stageValues=Object.values(paper.automation?.stages || {}).map(value=>typeof value==='object'?value?.last_attempt_status || value?.status:value);
+    const recentValues=paper.automation?.stages?stageValues:['article','repository','ai','metrics'].map(stage=>paper[stage]?.last_attempt_status || paper[stage]?.status);
+    const health=failures.length?'error':recentValues.some(status=>DEFERRED_STATES.has(status))?'deferred':stageValues.length?'ok':'uninspected';
+    return {hasImage,hasCode,hasInputSchema,hasInputNotes,hasObservedHeaders,inputState,hasAi,hasOldAi,hasMetrics,browsable:!excluded && hasImage && hasCode,verification:!excluded && statusOf(paper)==='ready'?'verified':'unverified',health,failures};
+  };
+  const matchesCollection = (paper, collection='browsable', spec={}) => collection==='all' || (collection==='candidates'?!availabilityOf(paper,spec).browsable:availabilityOf(paper,spec).browsable);
+  const collectionCounts = (papers, specs={}) => list(papers).reduce((counts,paper)=>{counts.total++;if(statusOf(paper)==='excluded'){counts.excluded++;return counts;}const available=availabilityOf(paper,specs[paper.id]);counts[available.browsable?'browsable':'candidates']++;if(available.verification==='verified')counts.verified++;if(available.health==='error')counts.errors++;return counts;},{total:0,browsable:0,candidates:0,excluded:0,verified:0,errors:0});
+  const contentBadges = (paper,spec={}) => {
+    const available=availabilityOf(paper,spec), figure=cardFigure(paper), ai=paper.ai || {}, metrics=paper.metrics || {};
+    return [
+      {name:'原图',label:available.hasImage?'已展示':figure?.reuseStatus==='link_only'?'仅官方链接':'待采集 / 许可待核',tone:available.hasImage?'available':'pending'},
+      {name:'代码',label:available.hasCode?'固定版本已检查':safeURL(paper.repository?.url || paper.codeURL)?'入口待检查':'待定位',tone:available.hasCode?'available':'pending'},
+      {name:'输入',label:available.hasObservedHeaders?'候选表头已观察 · 对应待核':available.hasInputSchema?'字段 / 结构笔记 · 表头待核':available.hasInputNotes?'读取候选待核':'待定位',tone:available.hasInputSchema?'available':'pending'},
+      {name:'AI',label:available.hasAi?'已生成 · 待核':available.hasOldAi?'旧注释 · 待更新':API_FAILURES.has(ai.last_attempt_status || ai.status)?'最近生成失败':'待生成',tone:available.hasAi?'available':API_FAILURES.has(ai.last_attempt_status || ai.status)?'error':'pending'},
+      {name:'期刊',label:available.hasMetrics?metrics.last_attempt_status?'沿用旧指标':'已有指标':API_FAILURES.has(metrics.last_attempt_status || metrics.status)?'最近查询失败':'待匹配',tone:available.hasMetrics?'available':API_FAILURES.has(metrics.last_attempt_status || metrics.status)?'error':'pending'},
+    ];
+  };
+  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures};
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null;
   const $ = id => document.getElementById(id);
-  const state = {form:'',function:'',status:'',search:'',sort:'evidence'};
+  const state = {collection:'browsable',form:'',function:'',status:'',search:'',sort:'evidence'};
   const labels = {forms:new Map(),functions:new Map()};
   const el = (tag, text, className) => {
     const node = document.createElement(tag);
@@ -130,7 +176,23 @@
     for (const value of values) ul.append(el('li', typeof value === 'object' ? str(value.message || value.reason || value.evidence || value.status) : str(value)));
     parent.append(ul);
   }
-  function pill(paper) { const status = statusOf(paper); return el('span', STATUS[status], 'status-pill ' + status); }
+  const paperSpec=paper=>catalog?.inputSpecs?.[paper.id] || {};
+  function pill(paper) {
+    const available=availabilityOf(paper,paperSpec(paper));
+    if(statusOf(paper)==='excluded')return el('span','已排除 · 检查未通过','status-pill error');
+    if(available.verification==='verified')return el('span','原图—代码—输入对应已核','status-pill ready');
+    return el('span',available.browsable?'可浏览 · 精确对应待核':'候选 · 资料待补齐','status-pill '+(available.browsable?'browsable':'candidate'));
+  }
+  function availabilityBadges(paper) {
+    const group=el('div',null,'availability-badges');group.setAttribute('aria-label','各项资料状态');
+    for(const badge of contentBadges(paper,paperSpec(paper)))group.append(el('span',badge.name+'：'+badge.label,'availability-badge '+badge.tone));
+    return group;
+  }
+  function healthNote(paper,parent) {
+    const available=availabilityOf(paper,paperSpec(paper));
+    if(available.health==='error')paragraph(parent,'最近检查有异常：'+available.failures.map(failure=>stageLabel(failure.stage)+' · '+diagnosticLabel(paper[failure.stage] || failure)).join('；')+'。已收集资料仍保留。','health-note');
+    else if(available.health==='deferred')paragraph(parent,'部分任务在等待配置或下轮名额；不代表已有资料不可用。','small');
+  }
   function tagGroup(paper) {
     const group = el('div', null, 'tag-group');
     for (const axis of ['forms','functions']) {
@@ -183,9 +245,10 @@
     const body = el('div', null, 'card-body');
     const kicker = el('div', null, 'card-kicker'); kicker.append(el('span', str(paper.journal) + ' · ' + str(paper.year)), pill(paper)); body.append(kicker);
     heading(body, str(paper.name || paper.ai?.title_zh || paper.paper), 3);
-    paragraph(body, str(paper.paper), 'paper-title'); body.append(tagGroup(paper));
+    paragraph(body, str(paper.paper), 'paper-title'); body.append(tagGroup(paper),availabilityBadges(paper));
     paragraph(body, paper.ai?.summary_zh || paper.description || '精确图号、绘图输入与终稿对应正在核查。', 'card-summary');
     if (aiStateLabel(paper)) paragraph(body,aiStateLabel(paper),'small');
+    healthNote(paper,body);
     body.append(el('div', metricLabel(paper), 'metrics-line'));
     const bottom = el('div', null, 'card-bottom'); bottom.append(el('span', str(paper.lang, '语言待核') + ' · 未运行'), openButton(paper)); body.append(bottom);
     card.append(body); return card;
@@ -193,7 +256,13 @@
   function baseMatches(paper) {
     const status = statusOf(paper);
     if(status === 'excluded' && state.status !== 'excluded')return false;
-    if (state.status && !(state.status === 'pending' ? ['seed','pending'].includes(status) : status === state.status)) return false;
+    const available=availabilityOf(paper,paperSpec(paper));
+    if(state.status!=='excluded' && !matchesCollection(paper,state.collection,paperSpec(paper)))return false;
+    if(state.status==='ready' && available.verification!=='verified')return false;
+    if(state.status==='needs_input' && available.hasObservedHeaders)return false;
+    if(state.status==='needs_ai' && available.hasAi)return false;
+    if(state.status==='error' && available.health!=='error')return false;
+    if(state.status==='excluded' && status!=='excluded')return false;
     if (state.search) {
       const haystack = [paper.name,paper.paper,paper.doi,paper.topic,paper.journal,paper.lang,paper.ai?.title_zh].map(value => str(value,'')).join(' ').toLocaleLowerCase();
       if (!haystack.includes(state.search.toLocaleLowerCase())) return false;
@@ -218,17 +287,16 @@
   }
   function sortedPapers() {
     const result = catalog.papers.filter(paper => baseMatches(paper) && matchAxis(paper, 'forms', state.form) && matchAxis(paper, 'functions', state.function));
-    const priorities = {ready:0,partial:1,pending:2,seed:3,error:4,excluded:5};
     result.sort((a,b) => {
       if (state.sort === 'citations') { const delta = (citationCount(b) ?? -1) - (citationCount(a) ?? -1); if (delta) return delta; }
-      if (state.sort === 'evidence') { const delta = priorities[statusOf(a)] - priorities[statusOf(b)]; if (delta) return delta; }
+      if (state.sort === 'evidence') {const score=paper=>{const available=availabilityOf(paper,paperSpec(paper));return (available.verification==='verified'?20:0)+(available.hasImage?5:0)+(available.hasCode?5:0)+(available.hasInputSchema?2:0)+(available.hasAi?2:0)+(available.hasMetrics?1:0);};const delta=score(b)-score(a);if(delta)return delta;}
       return str(b.date,'').localeCompare(str(a.date,'')) || str(a.id,'').localeCompare(str(b.id,''));
     });
     return result;
   }
   function renderPaperRow(paper) {
     const row = el('article', null, 'paper-row'); row.append(el('div', str(paper.year), 'year'));
-    const title = el('div'); heading(title, str(paper.paper), 3); paragraph(title, str(paper.journal) + ' · DOI ' + str(paper.doi)); title.append(pill(paper)); row.append(title);
+    const title = el('div'); heading(title, str(paper.paper), 3); paragraph(title, str(paper.journal) + ' · DOI ' + str(paper.doi)); title.append(pill(paper),availabilityBadges(paper));healthNote(paper,title);row.append(title);
     const metrics = el('div', null, 'paper-metrics'); paragraph(metrics, metricLabel(paper)); const count = citationCount(paper); paragraph(metrics, count === null ? '引用数未获取' : 'OpenAlex 引用 ' + count); row.append(metrics, openButton(paper,'button')); return row;
   }
   function renderUpdates() {
@@ -264,8 +332,13 @@
     $('filters').hidden = view === 'updates';
     if (view === 'updates') { $('result-count').textContent = reports.length + ' 次运行记录'; $('content').replaceChildren(renderUpdates()); return; }
     refreshAxis('forms'); refreshAxis('functions');
-    const papers = sortedPapers(); $('result-count').textContent = '显示 ' + papers.length + ' / ' + catalog.papers.length + ' 个案例';
-    if (!papers.length) { $('content').replaceChildren(el('div','没有同时符合当前图形与功能的案例。可放宽条件，或选择“分类待核”。','empty-state')); return; }
+    const papers = sortedPapers(), counts=collectionCounts(catalog.papers,catalog.inputSpecs), poolTotal=state.status==='excluded'?counts.excluded:state.collection==='browsable'?counts.browsable:state.collection==='candidates'?counts.candidates:counts.total-counts.excluded;
+    $('result-count').textContent = '显示 ' + papers.length + ' / ' + poolTotal + ' 条'+(state.status==='excluded'?'排除记录':state.collection==='browsable'?'可浏览案例':state.collection==='candidates'?'候选记录':'有效记录');
+    if (!papers.length) {
+      const empty=el('div',state.collection==='browsable'?'当前条件下还没有同时具备可展示原图与固定版本代码的案例。其余记录保留在候选池，不代表采集已全部完成。':'没有符合当前筛选的记录。可放宽条件，或选择“分类待核”。','empty-state');
+      if(state.collection==='browsable'){const button=el('button','查看候选池（'+counts.candidates+'）','button secondary');button.type='button';button.addEventListener('click',()=>{state.collection='candidates';state.status='';$('collection-filter').value='candidates';$('status-filter').value='';render();});empty.append(button);}
+      $('content').replaceChildren(empty);return;
+    }
     const content = el('div', null, view === 'gallery' ? 'gallery' : 'paper-list');
     for (const paper of papers) content.append(view === 'gallery' ? renderCard(paper) : renderPaperRow(paper));
     $('content').replaceChildren(content);
@@ -366,6 +439,10 @@
   }
   function renderNotes(paper, panel) {
     heading(panel,'核查笔记'); paragraph(panel,'未执行作者代码。未验证生成结果与论文原图一致。','callout');
+    const available=availabilityOf(paper,paperSpec(paper));
+    heading(panel,'资料与精确对应分别核查',4);panel.append(availabilityBadges(paper));
+    paragraph(panel,available.verification==='verified'?'原图、固定版本代码和输入的人工对应记录已通过当前静态核查；仍未执行或验证复现。':'原图、代码或结构笔记的可读取状态，不等于它们与选定分面已精确对应。该对应仍需人工核查。','callout');
+    healthNote(paper,panel);
     if (paper.notes) panel.append(el('pre',paper.notes));
     heading(panel,'尚待确认',4); items(panel,[...list(paper.limitations),...list(paper.repository?.limitations),...list(paper.article?.limitations)],'仍需人工核对完整环境、图号与终稿版本。');
     if (paper.automation?.errors?.length) { heading(panel,'本轮异常',4); items(panel,paper.automation.errors.map(errorLabel)); }
@@ -389,18 +466,20 @@
   }
   function openDetail(paper) {
     previousFocus=document.activeElement; activePaper=paper; activeTab='inputs'; $('detail-title').textContent=str(paper.name || paper.ai?.title_zh || paper.paper);
-    const meta=$('detail-meta');meta.replaceChildren();meta.className='detail-meta';paragraph(meta,str(paper.paper));paragraph(meta,str(paper.journal)+' · '+str(paper.date)+' · DOI '+str(paper.doi));meta.append(pill(paper),tagGroup(paper));
-    const figurePanel=$('detail-figure');figurePanel.replaceChildren();const figures=safeFigures(paper);
-    if (!figures.length) {
-      figurePanel.append(figurePreview(paper,list(paper.article?.figures)[0]));paragraph(figurePanel,'此处不使用示意图代替原图。原图许可、出处或下载尚未满足展示条件。');
+    const meta=$('detail-meta');meta.replaceChildren();meta.className='detail-meta';paragraph(meta,str(paper.paper));paragraph(meta,str(paper.journal)+' · '+str(paper.date)+' · DOI '+str(paper.doi));meta.append(pill(paper),tagGroup(paper),availabilityBadges(paper));
+    const figurePanel=$('detail-figure');figurePanel.replaceChildren();const figures=detailFigures(paper);
+    if (!figures.selected) {
+      figurePanel.append(figurePreview(paper,cardFigure(paper)));paragraph(figurePanel,'选定原图的许可、出处或下载尚未满足展示条件。不使用其它图或示意图替代当前选图。');
       if (paper.figureLicense || paper.article?.license) paragraph(figurePanel,'图像许可：'+str(paper.article?.license || paper.figureLicense));
     }
-    for (const figure of figures.slice(0,3)) {
+    const figureItem=figure=>{
       const item=el('div',null,'figure-item');item.append(figurePreview(paper,figure),link('查看官方原图',figure.sourceURL));
       if(figure.caption)paragraph(item,figure.caption,'caption');paragraph(item,'许可：'+str(figure.license)+' · '+str(figure.attribution,'出处待核'));
       if(figure.licenseURL)item.append(link('阅读许可条款',figure.licenseURL));
-      paragraph(item,'尺寸：'+str(figure.width)+' × '+str(figure.height)+' px；未宣称已复现。','small');figurePanel.append(item);
-    }
+      paragraph(item,'尺寸：'+str(figure.width)+' × '+str(figure.height)+' px；未宣称已复现。','small');return item;
+    };
+    if(figures.selected)figurePanel.append(figureItem(figures.selected));
+    if(figures.other.length){const fold=el('details');fold.append(el('summary','其它已采集整图（'+figures.other.length+' 张 · 非当前选图）'));paragraph(fold,'以下仅供阅读文章其它官方整图，不代表它们与当前选图代码或输入已经对应。','small');for(const figure of figures.other.slice(0,3))fold.append(figureItem(figure));figurePanel.append(fold);}
     renderDetailPanel(); $('detail').showModal(); $('close-detail').focus();
   }
   $('close-detail').addEventListener('click',()=> $('detail').close());
@@ -413,17 +492,18 @@
   });
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{view=button.dataset.view;history.replaceState(null,'','#'+view);render();}));
   window.addEventListener('hashchange',()=>{view=viewFromHash(location.hash,view);render();});
-  for (const [id,key] of [['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
+  for (const [id,key] of [['collection-filter','collection'],['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
   $('search').addEventListener('input',event=>{state.search=event.target.value.trim();render();});
-  $('reset').addEventListener('click',()=>{Object.assign(state,{form:'',function:'',status:'',search:'',sort:'evidence'});$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
+  $('reset').addEventListener('click',()=>{Object.assign(state,{collection:'browsable',form:'',function:'',status:'',search:'',sort:'evidence'});$('collection-filter').value='browsable';$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
   Promise.all([fetch('data/catalog.json',{cache:'no-store'}).then(response=>{if(!response.ok)throw Error('catalog HTTP '+response.status);return response.json();}),fetch('data/updates.json',{cache:'no-store'}).then(response=>response.ok?response.json():[]).catch(()=>[])])
     .then(([data,updates])=>{
       if(!Array.isArray(data.papers)||data.authorCodeExecuted!==false)throw Error('目录结构不符合静态核查约定');
       catalog=data;reports=Array.isArray(updates)?updates:list(updates.reports);
       for(const axis of ['forms','functions'])for(const definition of list(data.dimensions?.[axis]?.all || data.dimensions?.[axis]?.active))labels[axis].set(definition.id,definition.label || definition.id);
-      const ready=data.papers.filter(paper=>statusOf(paper)==='ready').length;
-      $('collection-summary').textContent=data.papers.length+' 个案例 · '+ready+' 个静态核查就绪';
-      $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'每次最多收录 5 篇新文献；失败或证据不足的记录保留待核。所有案例均未执行作者代码，未验证原图复现。';
+      const counts=collectionCounts(data.papers,data.inputSpecs);
+      $('collection-summary').textContent=counts.browsable+' 个可浏览 · '+counts.candidates+' 个候选待补齐 · '+counts.verified+' 个精确对应已核'+(counts.excluded?' · '+counts.excluded+' 个排除记录':'');
+      for(const [value,label,count] of [['browsable','可浏览案例',counts.browsable],['candidates','候选池 · 待补齐',counts.candidates],['all','全部记录',counts.total]]){const option=[...$('collection-filter').options].find(option=>option.value===value);if(option)option.textContent=label+'（'+count+'）';}
+      $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'可浏览案例已有可展示原图与固定版本代码；AI、输入字段、期刊指标各自标注缺口。候选池保留待补齐记录与只允许链接的原图。所有记录均未执行作者代码；可浏览不等于精确对应或复现成功。';
       $('generated-at').textContent='目录构建：'+str(data.generatedAt || data.checkedAt,'未报告');
       view=viewFromHash(location.hash,view);
       render();

@@ -15,7 +15,7 @@ from .enrichment import enrich_metrics, summarize
 from .figures import inspect_article
 from .http import BudgetExceeded, HttpClient
 from .repository import inspect_repository
-from .site import build_site
+from .site import build_site, _safe_reason, _safe_http_status
 from .sources import discover, lookup_paper, normalize_doi, paper_id
 from .storage import project_lock, read_json, write_json
 
@@ -51,8 +51,126 @@ def _can_summarize(record):
 
 
 def _summary_backlog(record):
-    """A checked case missing AI comes before untouched seeds, never before safety checks."""
+    """Identify checked AI work; it must share repair slots with untouched seeds."""
     return _can_summarize(record) and record.get("ai", {}).get("status") != "generated"
+
+
+def _safe_repair_schedule(record):
+    """Only bounded scheduling facts persist; never provider messages or credentials."""
+    raw = record.get("automation", {}).get("repairSchedule", {})
+    if not isinstance(raw, dict):
+        return {}
+    result = {}
+    failures = raw.get("consecutiveFailures")
+    if type(failures) is int and 0 <= failures <= 30:
+        result["consecutiveFailures"] = failures
+    last_attempt = raw.get("lastAttemptAt")
+    if _valid_timestamp(last_attempt) and "T" in last_attempt:
+        result["lastAttemptAt"] = last_attempt
+    next_attempt = raw.get("nextAttemptAt")
+    if result.get("lastAttemptAt") and _valid_timestamp(next_attempt) and "T" in next_attempt:
+        start = datetime.fromisoformat(result["lastAttemptAt"].replace("Z", "+00:00"))
+        end = datetime.fromisoformat(next_attempt.replace("Z", "+00:00"))
+        if timedelta(0) <= end - start <= timedelta(hours=24):
+            result["nextAttemptAt"] = next_attempt
+    outcome = raw.get("lastOutcome")
+    if isinstance(outcome, str) and outcome in {"automatic_complete", "failure", "incomplete", "deferred", "excluded"}:
+        result["lastOutcome"] = outcome
+    return result
+
+
+def _untouched(record):
+    automation = record.get("automation", {})
+    return not _valid_timestamp(automation.get("lastCheckedAt")) and not automation.get("stages")
+
+
+def _automatic_outcome(record, settings):
+    """Pipeline completion is separate from human approval of exact figure binding."""
+    stages = record.get("automation", {}).get("stages", {})
+    if record.get("automation", {}).get("status") == "excluded":
+        return "excluded"
+    if any(value in _FAILED_STAGES - {"budget_exhausted"} for value in stages.values()):
+        return "failure"
+    if "budget_exhausted" in stages.values():
+        return "deferred"
+    source_complete = (stages.get("metadata") == "matched" and stages.get("article") == "inspected"
+                       and stages.get("repository") == "inspected"
+                       and bool(record.get("repository", {}).get("scripts")))
+    if not source_complete:
+        return "incomplete"
+    if settings.llm_api_key and settings.llm_model and stages.get("ai") != "generated":
+        return "incomplete"
+    if settings.easyscholar_key and stages.get("metrics") not in {"matched", "not_found"}:
+        return "incomplete"
+    return "automatic_complete"
+
+
+def _has_content_gaps(record):
+    """Missing reusable assets/real headers need another scan, not a false ready flag."""
+    return (not any(f.get("asset") and f.get("reuseStatus") == "allowed"
+                    for f in record.get("article", {}).get("figures", []))
+            or not any(item.get("fields") for item in record.get("repository", {}).get("inputs", [])))
+
+
+def _update_repair_schedule(record, settings, previous, attempted_at, exception=False):
+    outcome = "failure" if exception else _automatic_outcome(record, settings)
+    previous_failures = previous.get("consecutiveFailures", 0)
+    failures = min(30, previous_failures + 1) if outcome == "failure" else 0
+    # One immediate retry permits recovery after a corrected key/transient outage;
+    # repeated failures then back off. Budget/configuration skips are not failures.
+    delay = min(24, 2 ** min(5, failures - 2)) if failures >= 2 else 0
+    if outcome == "incomplete" or (outcome == "automatic_complete" and _has_content_gaps(record)):
+        delay = 24
+    schedule = {"consecutiveFailures": failures, "lastAttemptAt": attempted_at, "lastOutcome": outcome}
+    if delay:
+        next_attempt = datetime.fromisoformat(attempted_at.replace("Z", "+00:00")) + timedelta(hours=delay)
+        schedule["nextAttemptAt"] = next_attempt.isoformat().replace("+00:00", "Z")
+    record["automation"]["repairSchedule"] = schedule
+    return outcome
+
+
+def _repair_plan(papers, limit, now, ledger, backlog_ids, only_dois=None):
+    """Bounded fair lanes: seeds advance while known gaps get repair opportunities."""
+    explicit = bool(only_dois)
+    wanted = {normalize_doi(doi) for doi in only_dois} if explicit else None
+    eligible, skipped = [], 0
+    for paper in papers:
+        if wanted is not None and paper["doi"] not in wanted:
+            continue
+        schedule = _safe_repair_schedule(paper)
+        if not explicit and paper.get("automation", {}).get("status") == "excluded":
+            continue
+        # A forged future lastAttemptAt cannot freeze a case, even if its relative
+        # cooldown interval otherwise looks valid. Parse UTC values, not spellings.
+        last_attempt = schedule.get("lastAttemptAt", "")
+        next_attempt = schedule.get("nextAttemptAt", "")
+        active_cooldown = bool(last_attempt and next_attempt and
+            datetime.fromisoformat(last_attempt.replace("Z", "+00:00"))
+            <= datetime.fromisoformat(now.replace("Z", "+00:00"))
+            < datetime.fromisoformat(next_attempt.replace("Z", "+00:00")))
+        if not explicit and active_cooldown:
+            skipped += 1
+            continue
+        eligible.append(paper)
+    seeds = sorted((p for p in eligible if _untouched(p)), key=lambda p: p["id"])
+    retries = sorted((p for p in eligible if not _untouched(p)), key=lambda p: (
+        _safe_repair_schedule(p).get("lastOutcome") == "automatic_complete" and not _has_content_gaps(p),
+        p.get("automation", {}).get("lastCheckedAt", ""), p["id"] not in backlog_ids, p["id"]))
+    if limit <= 0:
+        return [], skipped
+    if limit == 1 and seeds and retries:
+        state = ledger.get("scheduler", {})
+        group = state.get("nextGroup", "retry") if isinstance(state, dict) else "retry"
+        chosen = [seeds[0]] if group == "seed" else [retries[0]]
+        ledger["scheduler"] = {"nextGroup": "retry" if group == "seed" else "seed"}
+        return chosen, skipped
+    seed_slots = (limit + 1) // 2 if retries else limit
+    retry_slots = limit - seed_slots if seeds else limit
+    chosen = seeds[:seed_slots] + retries[:retry_slots]
+    chosen_ids = {p["id"] for p in chosen}
+    remainder = [p for p in seeds + retries if p["id"] not in chosen_ids]
+    chosen.extend(remainder[:max(0, limit - len(chosen))])
+    return chosen, skipped
 
 
 def _retain_unchecked_summary(record):
@@ -358,14 +476,32 @@ def complete_summary(client, record, settings, adapters):
     return record
 
 
+def _stage_failure(record, error):
+    """Attach classified diagnostics, never raw third-party response text."""
+    stage = error.split(":", 1)[0] if isinstance(error, str) else "unknown"
+    result = {"doi": record["doi"], "stage": stage, "error": error}
+    current = record.get("automation", {}).get("stages", {}).get(stage)
+    if isinstance(current, str) and current in _FAILED_STAGES:
+        result["status"] = current
+        evidence = record.get(stage, {})
+        if isinstance(evidence, dict):
+            if _safe_reason(evidence.get("error_reason")):
+                result["error_reason"] = evidence["error_reason"]
+            if _safe_http_status(evidence.get("http_status")):
+                result["http_status"] = evidence["http_status"]
+    return result
+
+
 def inspect_record(client, record, root, settings, adapters=None, generate_ai=True):
     adapters = adapters or {}
+    repair_schedule = _safe_repair_schedule(record)
     record = dict(record)
     stages, errors = {}, []
     metadata = adapters.get("lookup", lookup_paper)(client, record["doi"])
     stages["metadata"] = metadata.get("status", "unknown")
     if stages["metadata"] in {"excluded", "doi_mismatch", "invalid_doi"} or metadata.get("isRetracted"):
         record["automation"] = {"status": "excluded", "stages": stages, "errors": ["正式版本/撤稿检查未通过"], "lastCheckedAt": stamp()}
+        record["automation"]["repairSchedule"] = repair_schedule
         # A revoked article must not keep previously public images.
         record["article"] = {"status": "excluded", "figures": [], "supplements": []}
         return record
@@ -376,6 +512,7 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
         # Keep curated id/selected figure/script; never relabel unknown title as a new case.
     else:
         record["automation"] = {"status": "pending", "stages": stages, "errors": ["metadata: " + stages["metadata"]], "lastCheckedAt": stamp()}
+        record["automation"]["repairSchedule"] = repair_schedule
         _retain_unchecked_summary(record)
         return record
     record["maxFigureDownloads"] = settings.max_images
@@ -409,6 +546,7 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
         if value in _FAILED_STAGES:
             errors.append(f"{stage}: {value}")
     record["automation"] = {"status": "pending", "stages": stages, "errors": errors, "lastCheckedAt": stamp()}
+    record["automation"]["repairSchedule"] = repair_schedule
     refresh_status(record)
     record["selectionScore"] = editorial_score(record)
     return record
@@ -439,7 +577,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
               "aiRepairCount": 0, "collectionBudgetExhausted": False,
               "maxRequests": getattr(client, "max_requests", settings.max_requests),
               "maxAiCalls": settings.max_ai_calls,
-              "reservedAiRequests": getattr(client, "reserved_post_requests", reserved_ai)}
+              "reservedAiRequests": getattr(client, "reserved_post_requests", reserved_ai),
+              "untouchedRepairCount": 0, "retryRepairCount": 0, "cooldownSkippedCount": 0,
+              "untouchedRemainingCount": 0, "automaticCompleteCount": 0, "incompleteCount": 0}
     with project_lock(root):
         catalog = validate_catalog(read_json(root / "data" / "catalog.json"))
         ledger = validate_ledger(read_json(root / "data" / "ledger.json", {"days": {}, "candidates": {}}), report["date"])
@@ -449,6 +589,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         day = ledger.setdefault("days", {}).setdefault(report["date"], {"newDOIs": []})
         seen = {p["doi"] for p in catalog["papers"]}
         repaired_ids = []
+        checked_ids = set()
+        original_schedules = {}
+        failed_ids = set()
         summarized_ids = set()
         backlog_ids = {p["id"] for p in catalog["papers"] if _summary_backlog(p)} if reserved_ai else set()
 
@@ -457,22 +600,23 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             write_json(root / "data" / "catalog.json", persistent_catalog(validate_catalog(catalog)))
             write_json(root / "data" / "ledger.json", validate_ledger(ledger, report["date"]))
 
-        repairs = sorted(catalog["papers"], key=lambda p: (
-            p["id"] not in backlog_ids, p.get("automation", {}).get("lastCheckedAt", "")))
-        if only_dois:
-            wanted = {normalize_doi(d) for d in only_dois}
-            repairs = [p for p in repairs if p["doi"] in wanted]
-        for old in repairs[:settings.repair_limit]:
+        repairs, report["cooldownSkippedCount"] = _repair_plan(
+            catalog["papers"], settings.repair_limit, report["startedAt"], ledger, backlog_ids, only_dois)
+        for old in repairs:
             if _collection_budget_exhausted(client):
                 report["collectionBudgetExhausted"] = True
                 break
             try:
+                original_schedules[old["id"]] = _safe_repair_schedule(old)
                 revised = inspect_record(client, old, root, settings, adapters, generate_ai=False)
                 catalog["papers"][catalog["papers"].index(old)] = revised
                 catalog.setdefault("inputSpecs", {})[old["id"]] = input_spec(revised, catalog.get("inputSpecs", {}).get(old["id"]))
                 report["repairCount"] += 1
+                report["untouchedRepairCount" if _untouched(old) else "retryRepairCount"] += 1
                 repaired_ids.append(old["id"])
+                checked_ids.add(old["id"])
                 report["collectionBudgetExhausted"] |= _collection_budget_exhausted(client)
+                _update_repair_schedule(revised, settings, original_schedules[old["id"]], revised["automation"]["lastCheckedAt"])
                 checkpoint()
                 # Previously admitted cases must not starve behind fresh discoveries.
                 # Recheck their sources first; do not summarize stale/retracted evidence.
@@ -483,17 +627,32 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                         if revised.get("ai", {}).get("status") == "generated":
                             report["aiRepairCount"] += 1
                     except Exception as exc:
+                        failed_ids.add(old["id"])
                         report["failures"].append({"doi": old["doi"], "stage": "summary", "error": type(exc).__name__})
+                    _update_repair_schedule(revised, settings, original_schedules[old["id"]], revised["automation"]["lastCheckedAt"], old["id"] in failed_ids)
                     checkpoint()
             except Exception as exc:
+                # Persist only a classified current failure and a bounded retry time.
+                # The old sources remain retained but cannot become fresh paid input.
+                revised = deepcopy(old)
+                reason = "budget_exhausted" if isinstance(exc, BudgetExceeded) else "error"
+                revised["automation"] = {"status": "pending", "stages": {"metadata": reason},
+                                         "errors": ["repair: " + reason], "lastCheckedAt": stamp()}
+                _retain_unchecked_summary(revised)
+                _update_repair_schedule(revised, settings, original_schedules.get(old["id"], {}), revised["automation"]["lastCheckedAt"])
+                catalog["papers"][catalog["papers"].index(old)] = revised
+                checked_ids.add(old["id"])
                 report["failures"].append({"doi": old["doi"], "stage": "repair", "error": type(exc).__name__})
+                checkpoint()
             report["checkedCount"] += 1
 
         # Admission time also carried in records: stale/missing ledger cannot create >5/day.
         admitted_today = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
         daily = set(day["newDOIs"]) | admitted_today
         allowance = max(0, settings.max_new_per_day - len(daily))
-        if discover_new and allowance and _collection_budget_exhausted(client):
+        if discover_new and not allowance:
+            report["discoveryStatus"] = "daily_quota_reached"
+        elif discover_new and allowance and _collection_budget_exhausted(client):
             report["discoveryStatus"] = "budget_exhausted"
             report["collectionBudgetExhausted"] = True
         elif discover_new and allowance:
@@ -553,12 +712,16 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     daily.add(revised["doi"])
                     day["newDOIs"] = sorted(daily)
                     report["newCount"] += 1
+                    checked_ids.add(revised["id"])
+                    original_schedules[revised["id"]] = {}
                     # Commit admission BEFORE a paid call; interrupted runs can safely repair it.
                     checkpoint()
                     try:
                         complete_summary(client, revised, settings, adapters)
                     except Exception as exc:
+                        failed_ids.add(revised["id"])
                         revised["automation"]["errors"].append("summary: " + type(exc).__name__)
+                    _update_repair_schedule(revised, settings, {}, revised["automation"]["lastCheckedAt"], revised["id"] in failed_ids)
                     checkpoint()
             except Exception as exc:
                 report["discoveryStatus"] = "partial_failure"
@@ -571,13 +734,19 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 complete_summary(client, record, settings, adapters)
                 checkpoint()
             except Exception as exc:
+                failed_ids.add(record["id"])
                 report["failures"].append({"doi": record["doi"], "stage": "summary", "error": type(exc).__name__})
+            _update_repair_schedule(record, settings, original_schedules.get(record["id"], {}), record["automation"]["lastCheckedAt"], record["id"] in failed_ids)
         catalog["generatedAt"] = stamp()
         catalog["checkedAt"] = report["date"]
-        checked_records = [p for p in catalog["papers"] if p.get("automation", {}).get("lastCheckedAt", "") >= report["startedAt"]]
+        checked_records = [p for p in catalog["papers"] if p["id"] in checked_ids]
+        outcomes = Counter(_automatic_outcome(p, settings) for p in checked_records)
+        report["automaticCompleteCount"] = outcomes["automatic_complete"]
+        report["incompleteCount"] = outcomes["incomplete"]
+        report["untouchedRemainingCount"] = sum(_untouched(p) for p in catalog["papers"])
         for record in checked_records:
             for error in record.get("automation", {}).get("errors", []):
-                report["failures"].append({"doi": record["doi"], "stage": error.split(":")[0], "error": error})
+                report["failures"].append(_stage_failure(record, error))
         report["stageCounts"] = {stage: dict(Counter(
             p.get("automation", {}).get("stages", {}).get(stage, "not_checked") for p in checked_records))
                                  for stage in ("metadata", "article", "repository", "metrics", "ai")}
@@ -585,7 +754,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         report.update(finishedAt=stamp(), requests=getattr(client, "requests", 0), aiAttempts=getattr(client, "post_attempts", 0),
                       collectionRequests=max(0, getattr(client, "requests", 0) - getattr(client, "post_attempts", 0)),
                       totalCount=len(catalog["papers"]), dailyNewCount=len(daily),
-                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or any(p.get("automation", {}).get("status") != "ready" for p in checked_records) else "completed")
+                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or outcomes["deferred"] or outcomes["incomplete"] else "completed")
         reports = [report] + reports[:89]
         checkpoint()
         write_json(root / "data" / "updates.json", reports)
