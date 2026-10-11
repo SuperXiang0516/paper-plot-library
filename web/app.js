@@ -14,6 +14,44 @@
   const safeAsset = value => typeof value === 'string' && /^assets\/[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(value) && !value.includes('//') && value.split('/').every(part => part !== '..' && part !== '.') ? value : '';
   const str = (value, fallback = '待核') => value === undefined || value === null || value === '' ? fallback : Array.isArray(value) ? value.map(item => str(item, '')).filter(Boolean).join(' · ') : typeof value === 'object' ? fallback : String(value);
   const list = value => Array.isArray(value) ? value : [];
+  const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
+  const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
+  const stageLabel = name => typeof name === 'string' && Object.hasOwn(STAGE_LABELS,name) ? STAGE_LABELS[name] : '未分类阶段';
+  const statusLabel = value => typeof value === 'string' && Object.hasOwn(STAGE_STATUS_LABELS,value) ? STAGE_STATUS_LABELS[value] : '状态待核';
+  const validHTTP = value => Number.isInteger(value) && value >= 400 && value <= 599;
+  const httpStatusLabel = value => validHTTP(value) ? statusLabel(({400:'invalid_request',401:'authentication_error',402:'payment_required',403:'permission_denied',404:'endpoint_not_found',429:'rate_limited'})[value] || (value >= 500 ? 'service_unavailable' : 'other_http_error')) + ([400,401,402,403,404,429].includes(value) ? '' : ' · HTTP '+value) : '';
+  const reasonLabel = value => {
+    const budgets={network_budget_exhausted:'本轮本地总 HTTP 请求上限已到',collection_budget_exhausted:'本轮本地采集请求上限已到',ai_budget_exhausted:'本轮本地 AI 尝试上限已到'};
+    return typeof value === 'string' && Object.hasOwn(budgets,value) ? budgets[value] : typeof value === 'string' && /^http_[45]\d{2}$/.test(value) ? httpStatusLabel(Number(value.slice(5))) : ['error','network_error','invalid_endpoint','invalid_response','missing_key','missing_model','missing_evidence','missing_endpoint'].includes(value) ? statusLabel(value) : '';
+  };
+  const diagnosticLabel = value => {
+    if (!value || typeof value !== 'object') return statusLabel(value);
+    const status=value.last_attempt_status || value.status, label=statusLabel(status), reason=reasonLabel(value.error_reason) || httpStatusLabel(value.http_status);
+    return reason && (status === 'budget_exhausted' || label === '状态待核' || reason.startsWith(label)) ? reason : reason && reason !== label ? label+' · '+reason : label;
+  };
+  const errorLabel = value => {
+    if (value && typeof value === 'object') return value.error_reason || validHTTP(value.http_status) || value.status ? diagnosticLabel({...value,status:value.status || value.error}) : errorLabel(value.error);
+    if (value === '正式版本/撤稿检查未通过') return value;
+    if (typeof value !== 'string') return '本轮异常（原因未分类）';
+    const match=value.match(/^([a-z_]+):\s*([a-z_]+)$/);
+    if(match && Object.hasOwn(STAGE_LABELS,match[1]) && Object.hasOwn(STAGE_STATUS_LABELS,match[2]))return stageLabel(match[1])+'：'+statusLabel(match[2]);
+    return Object.hasOwn(STAGE_STATUS_LABELS,value) ? statusLabel(value) : '本轮异常（原因未分类）';
+  };
+  const failureLabel = failure => {
+    const doi=typeof failure?.doi === 'string' && /^10\.\d{4,9}\/[^\s<>]{1,200}$/i.test(failure.doi) ? failure.doi+' · ' : '';
+    return doi+stageLabel(failure?.stage)+' · '+errorLabel(failure);
+  };
+  const counter = value => Number.isInteger(value) && value >= 0 && value <= 1000000 ? value : null;
+  const updateBudgetLines = report => {
+    const lines=[], requests=counter(report.requests), collection=counter(report.collectionRequests), ai=counter(report.aiAttempts), maximum=counter(report.maxRequests), maxAi=counter(report.maxAiCalls), reserved=counter(report.reservedAiRequests), repaired=counter(report.aiRepairCount);
+    if(requests !== null || collection !== null || ai !== null)lines.push('总 HTTP 请求：'+(requests ?? '未报告')+(maximum === null ? '' : ' / '+maximum)+' 次 · 采集 GET：'+(collection ?? '未报告')+' 次 · AI HTTP 尝试：'+(ai ?? '未报告')+(maxAi === null ? '' : ' / '+maxAi)+' 次（失败重试也计数）');
+    if(reserved !== null && reserved > 0)lines.push('本轮为 AI 预留 '+reserved+' 个总请求名额；采集上限'+(maximum === null ? '由预留名额限制' : '为 '+Math.max(0,maximum-reserved)+' 次')+'。预留不代表已经调用或扣费。');
+    if(repaired !== null)lines.push('既有案例 AI 修补成功：'+repaired+' 条；本轮已匹配正式文献、已检查全文与作者代码的缺失、旧版或失败注释优先处理。');
+    if(report.collectionBudgetExhausted === true)lines.push('采集达到本轮本地请求上限并停止扩展。'+(reserved > 0 ? '已为 AI 预留名额；实际使用情况见 AI HTTP 尝试计数。' : '后续采集等待下次更新。'));
+    const aiBudgetSkipped=counter(report.stageCounts?.ai?.budget_exhausted)>0 || list(report.failures).some(failure=>['ai','summary'].includes(failure?.stage) && (failure?.status === 'budget_exhausted' || failure?.error === 'budget_exhausted'));
+    if(ai === 0 && aiBudgetSkipped)lines.push('本轮 AI 因本地请求上限跳过，实际 AI HTTP 尝试为 0 次；未发起付费 AI 请求。');
+    return lines;
+  };
   const statusOf = paper => STATUS[paper.automation?.status] ? paper.automation.status : 'seed';
   const approvedTags = (paper, axis) => {
     const field = axis === 'forms' ? 'graphForms' : 'analysisFunctions';
@@ -43,7 +81,7 @@
     selected:list(spec?.files).length ? spec.files : list(repositoryInputs),
     automatic:list(spec?.automaticInputs?.files),
   });
-  const aiStateLabel = paper => paper.ai?.status === 'stale' ? '旧注释 · 来源已更新，待重生成' : paper.ai?.review_required || paper.ai?.reviewRequired ? 'AI 学习注释待核' : '';
+  const aiStateLabel = paper => paper.ai?.status === 'stale' ? paper.ai.last_attempt_status ? '旧注释 · 本轮重生成未完成' : '旧注释 · 来源已更新，待重生成' : paper.ai?.review_required || paper.ai?.reviewRequired ? 'AI 学习注释待核' : '';
   const viewFromHash = (hash,current='gallery') => ['gallery','papers','updates'].includes(String(hash).replace(/^#/,'')) ? String(hash).replace(/^#/,'') : current;
   const facetCounts = (papers, axis, otherSelected = '', predicate = () => true) => {
     const other = axis === 'forms' ? 'functions' : 'forms';
@@ -66,7 +104,7 @@
     parts.push('指标年份：' + (['unknown','未知',''].includes(str(metrics.metric_year,'')) ? '接口未提供' : str(metrics.metric_year, '接口未提供')));
     return parts.join(' · ');
   };
-  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,figureReference,viewFromHash};
+  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,figureReference,viewFromHash,stageLabel,statusLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines};
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null;
@@ -203,16 +241,17 @@
       if (typeof summary === 'string') paragraph(card, summary);
       else {
         const counts = report.counts || report;
-        paragraph(card, '新收录：' + str(counts.new ?? counts.newCases ?? counts.added ?? report.newCount, '未报告') + ' · 既有修补：' + str(counts.repaired ?? counts.updated ?? report.repairCount, '未报告') + ' · 状态：' + str(report.status, '详见记录'));
+        paragraph(card, '新收录：' + str(counts.new ?? counts.newCases ?? counts.added ?? report.newCount, '未报告') + ' · 既有修补：' + str(counts.repaired ?? counts.updated ?? report.repairCount, '未报告') + ' · 状态：' + statusLabel(report.status));
       }
       if (report.demo || report.synthetic || report.mode === 'demo') paragraph(card, '模拟演示：该记录仅用于离线功能验证，不代表真实文献抓取。', 'callout');
-      items(card, report.errors || report.warnings || []);
-      if(report.checkedCount !== undefined)paragraph(card,'检查 '+str(report.checkedCount)+' 条 · HTTP 请求 '+str(report.requests)+' 次 · AI 请求尝试 '+str(report.aiAttempts)+' 次 · 新文献发现：'+str(report.discoveryStatus),'small');
-      if(list(report.failures).length)items(card,report.failures.map(failure=>str(failure.doi,'')+' · '+str(failure.stage)+' · '+str(failure.error)));
+      items(card, list(report.errors).map(errorLabel));items(card,report.warnings);
+      if(report.checkedCount !== undefined)paragraph(card,'检查 '+str(report.checkedCount)+' 条 · 新文献发现：'+statusLabel(report.discoveryStatus),'small');
+      for(const line of updateBudgetLines(report))paragraph(card,line,'small');
+      if(list(report.failures).length)items(card,report.failures.map(failureLabel));
       if(list(report.missingKeys).length)paragraph(card,'尚未配置：'+report.missingKeys.join(' · ')+'。这里只显示配置名，不显示密钥值。','callout');
-      if(report.stageCounts){const fold=el('details');fold.append(el('summary','查看各阶段状态统计'));for(const [stage,counts]of Object.entries(report.stageCounts)){heading(fold,stage,4);addSpec(fold,Object.entries(counts));}card.append(fold);}
+      if(report.stageCounts){const fold=el('details');fold.append(el('summary','查看各阶段状态统计'));for(const [stage,counts]of Object.entries(report.stageCounts)){heading(fold,stageLabel(stage),4);addSpec(fold,Object.entries(counts).filter(([,count])=>counter(count)!==null).map(([status,count])=>[statusLabel(status),count]));}card.append(fold);}
       const entries = report.records || report.results || report.processed;
-      if (Array.isArray(entries)) items(card, entries.map(entry => typeof entry === 'object' ? str(entry.name || entry.doi || entry.id) + ' · ' + str(entry.status) : entry));
+      if (Array.isArray(entries)) items(card, entries.map(entry => typeof entry === 'object' ? str(entry.name || entry.doi || entry.id) + ' · ' + statusLabel(entry.status) : entry));
       if (report.note) paragraph(card, report.note);
       node.append(card);
     }
@@ -283,17 +322,18 @@
   function renderExplanation(paper, panel) {
     heading(panel,'中文解读'); const ai = paper.ai || {};
     if (ai.status === 'stale' && ai.summary_zh) {
-      paragraph(panel,'旧注释 · 来源已更新，待重生成。'+str(ai.stale_reason,'本条旧说明不能视为当前证据的解读。'),'callout');
+      paragraph(panel,aiStateLabel(paper)+'。保留的旧说明不能作为本轮证据的解读。','callout');
       const fold=el('details');fold.append(el('summary','查看保留的旧注释（不代表本轮生成成功）'));paragraph(fold,ai.summary_zh);items(fold,ai.learning_points);panel.append(fold);
-      paragraph(panel,'最近重生成状态：'+str(ai.last_attempt_status)+' · 旧生成时间：'+str(ai.generated_at),'small');
+      paragraph(panel,'最近重生成状态：'+diagnosticLabel(ai)+' · 旧生成时间：'+str(ai.generated_at),'small');
     }
     else if (ai.summary_zh && ['ok','success','generated','complete','completed','ready'].includes(ai.status)) { paragraph(panel,ai.summary_zh); heading(panel,'值得学习的步骤',4); items(panel,ai.learning_points); paragraph(panel,ai.reviewRequired || ai.review_required ? 'AI 学习注释待核：仅依据已收集的文本证据，不证明代码已运行或生成了原图。' : 'AI 解读仅依据已收集的文本证据，不证明代码已运行或生成了原图。','callout'); }
-    else { paragraph(panel,'AI 中文解读尚未完成：' + str(ai.status,'未配置 / 未运行') + '。缺失时保留来源核查，不补造解读。','callout'); if (paper.description) { heading(panel,'人工种子概述（不是本轮 AI 结果）',4); paragraph(panel,paper.description); } }
+    else { paragraph(panel,'AI 中文解读尚未完成：' + diagnosticLabel(ai) + '。缺失时保留来源核查，不补造解读。','callout'); if (paper.description) { heading(panel,'人工种子概述（不是本轮 AI 结果）',4); paragraph(panel,paper.description); } }
     if (list(ai.evidence_ids).length) paragraph(panel,'证据标识：' + ai.evidence_ids.join(' · '),'small');
     if (list(ai.limitations).length) { heading(panel,'解读限制',4); items(panel,ai.limitations); }
     heading(panel,'期刊与引用注释',4); paragraph(panel,metricLabel(paper));
     addSpec(panel,[['指标来源',paper.metrics?.source || '未获取'],['获取时间',paper.metrics?.retrieved_at || '未报告'],['中科院分区',paper.metrics?.cas || '未获取']]);
-    if(paper.metrics?.last_attempt_status)paragraph(panel,'本轮指标获取：'+str(paper.metrics.last_attempt_status)+'；当前显示的历史指标不代表本轮匹配成功。','callout');
+    if(paper.metrics?.last_attempt_status)paragraph(panel,'本轮指标获取：'+diagnosticLabel(paper.metrics)+'；当前显示的历史指标不代表本轮匹配成功。','callout');
+    else if(paper.metrics?.status && !['matched','ok','success'].includes(paper.metrics.status))paragraph(panel,'期刊指标状态：'+diagnosticLabel(paper.metrics),'callout');
     if(paper.metrics?.persistent_cache_hit)paragraph(panel,'本轮使用持久化指标缓存，不是重新查询。','small');
     if(paper.metrics?.retained_field_asof) {heading(panel,'沿用字段的原获取时间',4);addSpec(panel,Object.entries(paper.metrics.retained_field_asof));}
     const count = citationCount(paper); paragraph(panel,count === null ? '引用数未获取；不会按 0 次引用处理。' : 'OpenAlex 引用数：' + count + '（' + str(paper.citations?.retrievedAt || paper.citations?.retrieved_at || paper.citationMetrics?.retrieved_at,'获取时间未报告') + '）。');
@@ -302,8 +342,8 @@
   function renderSources(paper, panel) {
     heading(panel,'作者代码与静态对应'); const repository = paper.repository || {};
     paragraph(panel,repository.commit ? '已固定代码提交：' + repository.commit : '代码提交尚未固定；旧种子的 main / master 链接可能随作者更新变化。','callout');
-    if(repository.retained_from_previous||repository.last_attempt_status)paragraph(panel,'本轮代码读取：'+str(repository.last_attempt_status || repository.status)+'；显示上次保留的静态核查，不代表本轮读取成功。','callout');
-    if(repository.lastError||repository.errorStatus)paragraph(panel,'代码来源异常：'+str(repository.lastError,'未知')+' · HTTP '+str(repository.errorStatus,'未报告'),'callout');
+    if(repository.retained_from_previous||repository.last_attempt_status)paragraph(panel,'本轮代码读取：'+diagnosticLabel(repository)+'；显示上次保留的静态核查，不代表本轮读取成功。','callout');
+    if(validHTTP(repository.errorStatus))paragraph(panel,'代码来源异常：'+httpStatusLabel(repository.errorStatus),'callout');
     const links = el('div',null,'inline-links'); for (const [label,url] of [['论文',paper.paperURL],['作者仓库',repository.url || paper.codeURL],['种子脚本入口',paper.scriptURL],['数据声明',paper.dataURL]]) if (url) links.append(link(label,url)); panel.append(links);
     addSpec(panel,[['代码许可',repository.license || paper.codeLicense || '未核'],['图像许可',paper.article?.license || paper.figureLicense || '未核'],['对应范围',paper.dimensionLinkScope || '待核']]);
     if(paper.article?.licenseURL)panel.append(link('文章许可条款',paper.article.licenseURL));
@@ -328,7 +368,7 @@
     heading(panel,'核查笔记'); paragraph(panel,'未执行作者代码。未验证生成结果与论文原图一致。','callout');
     if (paper.notes) panel.append(el('pre',paper.notes));
     heading(panel,'尚待确认',4); items(panel,[...list(paper.limitations),...list(paper.repository?.limitations),...list(paper.article?.limitations)],'仍需人工核对完整环境、图号与终稿版本。');
-    if (paper.automation?.errors?.length) { heading(panel,'本轮异常',4); items(panel,paper.automation.errors); }
+    if (paper.automation?.errors?.length) { heading(panel,'本轮异常',4); items(panel,paper.automation.errors.map(errorLabel)); }
     if (paper.automation?.warnings?.length) { heading(panel,'构建 / 核查提醒',4); items(panel,paper.automation.warnings); }
     if(list(paper.suggestedGraphForms).length||list(paper.suggestedAnalysisFunctions).length){
       const fold=el('details');fold.append(el('summary','自动分类建议（未批准，不进入筛选目录）'));
@@ -337,7 +377,7 @@
       panel.append(fold);
     }
     if(paper.selectionScore){const fold=el('details');fold.append(el('summary','自动选文偏好评分（不是研究质量评分）'));paragraph(fold,paper.selectionScore.meaning);addSpec(fold,[['合计',paper.selectionScore.total],...Object.entries(paper.selectionScore.components||{})]);panel.append(fold);}
-    if (paper.automation?.stages) { heading(panel,'流水线阶段',4); addSpec(panel,Object.entries(paper.automation.stages).map(([name,value])=>[name,typeof value==='object'?value.status:value])); }
+    if (paper.automation?.stages) { heading(panel,'流水线阶段',4); addSpec(panel,Object.entries(paper.automation.stages).map(([name,value])=>[stageLabel(name),diagnosticLabel(value)])); }
     paragraph(panel,'最后核查：' + str(paper.automation?.lastCheckedAt || paper.checkedAt),'small');
     paragraph(panel,paper.dimensionLinkEvidence || '分类连接同一个选图记录；复合图中逐分面“图形—功能—脚本”的关系尚未自动验证。','small');
   }

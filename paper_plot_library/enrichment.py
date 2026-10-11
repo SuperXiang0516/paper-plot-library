@@ -19,7 +19,8 @@ import os
 from pathlib import Path
 import re
 import unicodedata
-from urllib.parse import urlsplit
+
+from .http import BudgetExceeded, FetchError, validate_url
 
 
 METRICS_URL = "https://www.easyscholar.cc/open/getPublicationRank"
@@ -31,6 +32,22 @@ _EVIDENCE_ID = re.compile(r"^[A-Za-z0-9_.:-]{1,100}$")
 _SUMMARY_FIELDS = {"title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids"}
 _PREPRINTS = {"arxiv", "biorxiv", "medrxiv", "research square", "ssrn"}
 _STATIC_LIMITATION = "作者代码未运行；静态检查不等于图形复现或结果验证。"
+_BUDGET_REASONS = {"network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted"}
+_HTTP_FAILURE_STATUSES = {400: "invalid_request", 401: "authentication_error", 402: "payment_required",
+                          403: "permission_denied", 404: "endpoint_not_found", 429: "rate_limited"}
+
+
+def _fetch_failure(error):
+    """Project only trusted reason codes and HTTP integers, never transport text."""
+    if isinstance(error, BudgetExceeded):
+        reason = getattr(error, "reason", None)
+        return {"status": "budget_exhausted", "error_reason":
+                reason if isinstance(reason, str) and reason in _BUDGET_REASONS else "network_budget_exhausted"}
+    status = getattr(error, "status", None)
+    if isinstance(status, int) and not isinstance(status, bool) and 400 <= status <= 599:
+        return {"status": _HTTP_FAILURE_STATUSES.get(status, "service_unavailable" if status >= 500 else "other_http_error"),
+                "error_reason": f"http_{status}", "http_status": status}
+    return {"status": "network_error", "error_reason": "network_error"}
 
 
 def _stamp():
@@ -209,13 +226,19 @@ def enrich_metrics(client, record, settings):
     secret = getattr(settings, "easyscholar_key", "")
     failure = "missing_key" if not secret else "error"
     result = _empty_metrics(failure)
+    result["error_reason"] = failure
     if secret:
         try:
             result = _parse_metrics(client.get_json(METRICS_URL, params={"secretKey": secret, "publicationName": name},
                                                     ttl=0, max_bytes=1_000_000))
+        except (BudgetExceeded, FetchError) as error:
+            result = _empty_metrics("error")
+            result.update(_fetch_failure(error))
         except Exception:
             # Never expose exception text: a third-party exception may contain the secret query.
             result = _empty_metrics("error")
+        if result["status"] == "error":
+            result["error_reason"] = "error"
     if result["status"] == "matched" and previous and previous["status"] == "matched":
         retained = {}
         for field in ("if", "jcr", "cas"):
@@ -225,7 +248,10 @@ def enrich_metrics(client, record, settings):
         if retained:
             result["retained_field_asof"] = retained
     elif result["status"] not in {"matched", "not_applicable"} and previous and previous["status"] == "matched":
-        return dict(previous, last_attempt_status=result["status"], stale=not _fresh(previous))
+        diagnostics = {"last_attempt_status": result["status"], "error_reason": result.get("error_reason", result["status"])}
+        if "http_status" in result:
+            diagnostics["http_status"] = result["http_status"]
+        return dict(previous, **diagnostics, stale=not _fresh(previous))
     if result["status"] in {"matched", "not_found"}:
         for key in keys:
             cache[key] = result
@@ -300,27 +326,33 @@ def summarize(client, record, evidence, settings):
     previous = _validate_summary({k: existing.get(k) for k in _SUMMARY_FIELDS}, old_ids) if isinstance(existing, dict) and existing.get("status") in {"generated", "stale"} else None
     fingerprint = ""
 
-    def failed(status):
+    def failed(status, error_reason=None, http_status=None):
+        diagnostics = {"error_reason": error_reason or status}
+        if http_status is not None:
+            diagnostics["http_status"] = http_status
         if previous:
-            return dict(previous, status="stale", last_attempt_status=status,
+            return dict(previous, status="stale", last_attempt_status=status, **diagnostics,
                         generated_at=_text(existing.get("generated_at"), 32), model=_text(existing.get("model"), 100),
                         source_fingerprint=_text(existing.get("source_fingerprint"), 64),
                         summary_fingerprint=_text(existing.get("summary_fingerprint"), 64),
                         current_source_fingerprint=source_fingerprint,
                         stale_reason="证据或模型配置已变更，旧说明未重新生成；不能作为当前证据的解读。")
-        return dict(_empty_summary(status), source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
+        return dict(_empty_summary(status), **diagnostics,
+                    source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
 
     if not items:
         return failed("missing_evidence")
     key, model, url = (getattr(settings, name, "") for name in ("llm_api_key", "llm_model", "llm_api_url"))
     if not model or not _text(model, 100):
         return failed("missing_key" if not key else "missing_model")
+    if not url:
+        return failed("missing_endpoint")
     try:
-        parsed = urlsplit(url)
-    except (TypeError, ValueError):
-        return failed("missing_endpoint")
-    if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment:
-        return failed("missing_endpoint")
+        parsed = validate_url(url)
+    except (FetchError, TypeError, ValueError, AttributeError):
+        return failed("invalid_endpoint")
+    if parsed.query or parsed.fragment:
+        return failed("invalid_endpoint")
     fingerprint = hashlib.sha256(json.dumps({"version": PROMPT_VERSION, "model": model, "endpoint": url,
                                            "source_fingerprint": source_fingerprint}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     if (previous and existing.get("source_fingerprint") == source_fingerprint
@@ -339,10 +371,11 @@ def summarize(client, record, evidence, settings):
         return failed("missing_key")
     try:
         maximum = max(0, int(getattr(settings, "max_ai_calls", 3)))
-    except (TypeError, ValueError):
-        return failed("budget_exhausted")
-    if int(getattr(client, "post_attempts", 0)) >= maximum:
-        return failed("budget_exhausted")
+        attempts = max(0, int(getattr(client, "post_attempts", 0)))
+    except (TypeError, ValueError, OverflowError):
+        return failed("budget_exhausted", "ai_budget_exhausted")
+    if attempts >= maximum:
+        return failed("budget_exhausted", "ai_budget_exhausted")
     payload = {"model": model, "max_tokens": 1800, "temperature": 0.2,
                "response_format": {"type": "json_object"},
                "messages": [{"role": "system", "content":
@@ -369,6 +402,8 @@ def summarize(client, record, evidence, settings):
         except json.JSONDecodeError:
             return failed("invalid_response")
         result = _validate_summary(decoded, allowed)
+    except (BudgetExceeded, FetchError) as error:
+        return failed(**_fetch_failure(error))
     except Exception:
         return failed("error")
     if not result:

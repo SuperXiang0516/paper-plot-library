@@ -29,10 +29,36 @@ _PAPER_FIELDS = {
 _NESTED_FIELDS = {
     "repository": {"status", "url", "commit", "license", "scripts", "inputs", "figureMappings", "limitations", "lastError", "errorStatus", "last_attempt_status", "retained_from_previous"},
     "article": {"status", "license", "licenseURL", "version", "xmlURL", "figures", "supplements", "codeURLs", "codeURLEvidence", "limitations", "last_attempt_status", "retained_from_previous"},
-    "metrics": {"status", "if", "jcr", "cas", "source", "retrieved_at", "metric_year", "query_name", "retained_field_asof", "persistent_cache_hit", "last_attempt_status", "stale"},
-    "ai": {"status", "title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids", "reviewRequired", "review_required", "stale_reason", "last_attempt_status", "generated_at"},
+    "metrics": {"status", "if", "jcr", "cas", "source", "retrieved_at", "metric_year", "query_name", "retained_field_asof", "persistent_cache_hit", "last_attempt_status", "stale", "error_reason", "http_status"},
+    "ai": {"status", "title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids", "reviewRequired", "review_required", "stale_reason", "last_attempt_status", "generated_at", "error_reason", "http_status"},
     "automation": {"status", "stages", "lastCheckedAt", "errors", "warnings", "attempts"},
 }
+_PUBLIC_STATUSES = {
+    "seed", "pending", "ready", "partial", "error", "excluded", "unknown", "ok", "success", "generated",
+    "complete", "completed", "matched", "inspected", "stale", "deferred", "deferred_until_selection",
+    "disabled", "not_checked", "not_found", "not_applicable", "unavailable", "metadata_unavailable",
+    "missing_key", "missing_model", "missing_evidence", "missing_endpoint", "invalid_endpoint", "invalid_response",
+    "budget_exhausted", "authentication_error", "payment_required", "permission_denied", "invalid_request",
+    "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error", "network_error",
+    "invalid_doi", "doi_mismatch", "retracted", "no_final_version", "no_scripts_found", "partial_failure",
+}
+_SAFE_REASONS = {
+    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "network_error", "error",
+    "invalid_endpoint", "invalid_response", "missing_key", "missing_model", "missing_evidence", "missing_endpoint",
+}
+_REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount"}
+
+
+def _safe_http_status(value: object) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool) and 400 <= value <= 599
+
+
+def _safe_reason(value: object) -> bool:
+    return isinstance(value, str) and (value in _SAFE_REASONS or re.fullmatch(r"http_[45]\d{2}", value) is not None)
+
+
+def _safe_status(value: object) -> str:
+    return value if isinstance(value, str) and value in _PUBLIC_STATUSES else "unknown"
 
 
 def _public_url(value: object) -> str:
@@ -74,7 +100,15 @@ def _public(value: object, depth: int = 0) -> object:
         for key, item in list(value.items())[:2000]:
             if not isinstance(key, str) or _PRIVATE_KEY.search(key):
                 continue
-            if key in _URL_FIELDS or key.endswith("URL"):
+            if key == "error_reason":
+                if _safe_reason(item):
+                    result[key] = item
+            elif key in {"http_status", "errorStatus"}:
+                if _safe_http_status(item):
+                    result[key] = item
+            elif key == "last_attempt_status":
+                result[key] = _safe_status(item)
+            elif key in _URL_FIELDS or key.endswith("URL"):
                 result[key] = _public_url(item)
             elif key == "asset":
                 result[key] = _asset(item)
@@ -104,6 +138,8 @@ def public_catalog(catalog: dict) -> dict:
         for key, fields in _NESTED_FIELDS.items():
             if isinstance(paper.get(key), dict):
                 record[key] = _public({name: value for name, value in paper[key].items() if name in fields})
+                if key in {"ai", "metrics"} and "status" in record[key]:
+                    record[key]["status"] = _safe_status(record[key]["status"])
         for script in record.get("repository", {}).get("scripts", []):
             if isinstance(script, dict):
                 for evidence in script.get("evidence", []):
@@ -276,10 +312,16 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
         shutil.copyfile(source, destination)
     _publish_assets(root, output, public)
     _check_public_readiness(public, catalog)
-    report_fields = {"mode", "date", "startedAt", "finishedAt", "generatedAt", "timestamp", "newCount", "repairCount", "status", "note", "errors", "warnings", "records", "results", "processed", "counts", "summary", "demo", "synthetic", "checkedCount", "requests", "aiAttempts", "totalCount", "dailyNewCount", "discoveryStatus", "failures", "stageCounts", "missingKeys"}
+    report_fields = {"mode", "date", "startedAt", "finishedAt", "generatedAt", "timestamp", "newCount", "repairCount", "status", "note", "errors", "warnings", "records", "results", "processed", "counts", "summary", "demo", "synthetic", "checkedCount", "requests", "aiAttempts", "totalCount", "dailyNewCount", "discoveryStatus", "failures", "stageCounts", "missingKeys", "collectionBudgetExhausted"} | _REPORT_COUNTERS
     values = reports if isinstance(reports, list) else reports.get("reports", [reports]) if isinstance(reports, dict) else []
     values = sorted([report for report in values if isinstance(report, dict)], key=lambda report: str(report.get("finishedAt") or report.get("startedAt") or report.get("date") or ""), reverse=True)[:90]
     public_reports = [_public({key: value for key, value in report.items() if key in report_fields}) for report in values]
+    for report in public_reports:
+        for key in _REPORT_COUNTERS:
+            if key in report and (not isinstance(report[key], int) or isinstance(report[key], bool) or not 0 <= report[key] <= 1000000):
+                report.pop(key)
+        if "collectionBudgetExhausted" in report and not isinstance(report["collectionBudgetExhausted"], bool):
+            report.pop("collectionBudgetExhausted")
     _atomic_json(output / "data" / "catalog.json", public)
     _atomic_json(output / "data" / "updates.json", public_reports)
     return output

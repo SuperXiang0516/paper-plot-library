@@ -13,7 +13,7 @@ from urllib.parse import quote, unquote, urlsplit
 from .config import load_settings
 from .enrichment import enrich_metrics, summarize
 from .figures import inspect_article
-from .http import HttpClient
+from .http import BudgetExceeded, HttpClient
 from .repository import inspect_repository
 from .site import build_site
 from .sources import discover, lookup_paper, normalize_doi, paper_id
@@ -22,6 +22,50 @@ from .storage import project_lock, read_json, write_json
 
 def stamp():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+_FAILED_STAGES = {
+    "error", "unavailable", "metadata_unavailable", "invalid_response", "budget_exhausted",
+    "authentication_error", "payment_required", "permission_denied", "invalid_request",
+    "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error",
+    "network_error", "invalid_endpoint",
+}
+
+
+def _collection_budget_exhausted(client):
+    """Stop source scans before they consume the slots held for paid requests."""
+    if not isinstance(client, HttpClient):
+        return False  # Adapter-only offline clients do not implement transport budgets.
+    reserved = min(client.reserved_post_requests, max(0, client.max_post_attempts - client.post_attempts))
+    return client.requests >= client.max_requests - reserved
+
+
+def _can_summarize(record):
+    return (record.get("automation", {}).get("stages", {}).get("metadata") == "matched"
+            and record.get("automation", {}).get("stages", {}).get("article") == "inspected"
+            and record.get("automation", {}).get("stages", {}).get("repository") == "inspected"
+            and record.get("automation", {}).get("status") != "excluded"
+            and record.get("article", {}).get("status") == "inspected"
+            and record.get("repository", {}).get("status") == "inspected"
+            and bool(record.get("repository", {}).get("scripts")))
+
+
+def _summary_backlog(record):
+    """A checked case missing AI comes before untouched seeds, never before safety checks."""
+    return _can_summarize(record) and record.get("ai", {}).get("status") != "generated"
+
+
+def _retain_unchecked_summary(record):
+    """Keep old prose visible as old, never as a successful current source check."""
+    previous = record.get("ai", {})
+    if previous.get("summary_zh") and previous.get("status") in {"generated", "stale"}:
+        retained = dict(previous, status="stale", last_attempt_status="missing_evidence",
+                        error_reason="missing_evidence",
+                        stale_reason="本轮文献、原图或作者代码未通过来源复查；保留旧注释，不生成新说明。")
+        retained.pop("http_status", None)
+        record["ai"] = retained
+        return True
+    return False
 
 
 def validate_catalog(catalog):
@@ -176,6 +220,9 @@ def enrich_citations(client, record, settings):
             result["citation_normalized_percentile"] = value
         result["normalization"] = "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
         return result
+    except BudgetExceeded:
+        return (dict(old, last_attempt_status="budget_exhausted") if old.get("status") == "matched"
+                else {"status": "budget_exhausted"})
     except Exception:
         return dict(old, last_attempt_status="error") if old.get("status") == "matched" else {"status": "unavailable"}
 
@@ -294,10 +341,19 @@ def refresh_status(record):
 
 
 def complete_summary(client, record, settings, adapters):
-    record["ai"] = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
-    record["automation"]["stages"]["ai"] = record["ai"].get("status", "unknown")
-    if record["ai"].get("status") in {"error", "invalid_response"}:
-        record["automation"]["errors"].append("ai: " + record["ai"]["status"])
+    if _can_summarize(record):
+        record["ai"] = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
+    else:
+        # Do not pay to describe retained captions/scripts as fresh source evidence.
+        if not _retain_unchecked_summary(record):
+            record["ai"] = {"status": "missing_evidence", "error_reason": "missing_evidence"}
+    current_status = record["ai"].get("last_attempt_status") or record["ai"].get("status", "unknown")
+    record["automation"]["stages"]["ai"] = current_status
+    # A successful retry must not keep yesterday's AI error in today's report.
+    errors = record["automation"].setdefault("errors", [])
+    errors[:] = [error for error in errors if not isinstance(error, str) or not error.startswith("ai:")]
+    if current_status in _FAILED_STAGES:
+        errors.append("ai: " + current_status)
     refresh_status(record)
     return record
 
@@ -320,6 +376,7 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
         # Keep curated id/selected figure/script; never relabel unknown title as a new case.
     else:
         record["automation"] = {"status": "pending", "stages": stages, "errors": ["metadata: " + stages["metadata"]], "lastCheckedAt": stamp()}
+        _retain_unchecked_summary(record)
         return record
     record["maxFigureDownloads"] = settings.max_images
     record["maxSupplementDownloads"] = settings.max_supplements
@@ -330,20 +387,26 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
     ):
         value = adapter(*args)
         stages[stage] = value.get("status", "unknown")
-        if stages[stage] in {"error", "unavailable"} and record.get(stage, {}).get("status") == "inspected":
+        if stages[stage] in _FAILED_STAGES and record.get(stage, {}).get("status") == "inspected":
             record[stage] = dict(record[stage], retained_from_previous=True, last_attempt_status=stages[stage])
         else:
             record[stage] = value
     record["metrics"] = adapters.get("metrics", enrich_metrics)(client, record, settings)
-    stages["metrics"] = record["metrics"].get("status", "unknown")
+    stages["metrics"] = record["metrics"].get("last_attempt_status") or record["metrics"].get("status", "unknown")
     record["citations"] = adapters.get("citations", enrich_citations)(client, record, settings)
-    if generate_ai:
+    current_sources = (stages.get("article") == "inspected" and stages.get("repository") == "inspected"
+                       and bool(record.get("repository", {}).get("scripts")))
+    if not current_sources:
+        _retain_unchecked_summary(record)
+    if generate_ai and current_sources:
         record["ai"] = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
-    stages["ai"] = record.get("ai", {}).get("status", "deferred_until_selection")
+        stages["ai"] = record["ai"].get("last_attempt_status") or record["ai"].get("status", "unknown")
+    else:
+        stages["ai"] = "missing_evidence" if generate_ai else "deferred_until_selection"
     classify(record)
     record["runPerformed"] = False
     for stage, value in stages.items():
-        if value in {"error", "unavailable", "metadata_unavailable", "invalid_response"}:
+        if value in _FAILED_STAGES:
             errors.append(f"{stage}: {value}")
     record["automation"] = {"status": "pending", "stages": stages, "errors": errors, "lastCheckedAt": stamp()}
     refresh_status(record)
@@ -364,10 +427,19 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
     root = Path(root)
     settings = settings or load_settings(root)
     adapters = adapters or {}
-    client = client or HttpClient(root / ".ppl" / "cache", settings.max_requests, max_post_attempts=settings.max_ai_calls)
+    reserved_ai = min(settings.max_ai_calls, settings.max_requests) if settings.llm_api_key and settings.llm_model else 0
+    client = client or HttpClient(root / ".ppl" / "cache", settings.max_requests,
+                                  max_post_attempts=settings.max_ai_calls, reserved_post_requests=reserved_ai)
+    if isinstance(client, HttpClient):
+        # Injected test/local clients obey the same reservation policy as cloud clients.
+        client.reserved_post_requests = min(reserved_ai, client.max_requests, client.max_post_attempts)
     client.github_token = settings.github_token
     report = {"startedAt": stamp(), "date": stamp()[:10], "newCount": 0, "repairCount": 0, "checkedCount": 0,
-              "failures": [], "discoveryStatus": "disabled", "authorCodeExecuted": False}
+              "failures": [], "discoveryStatus": "disabled", "authorCodeExecuted": False,
+              "aiRepairCount": 0, "collectionBudgetExhausted": False,
+              "maxRequests": getattr(client, "max_requests", settings.max_requests),
+              "maxAiCalls": settings.max_ai_calls,
+              "reservedAiRequests": getattr(client, "reserved_post_requests", reserved_ai)}
     with project_lock(root):
         catalog = validate_catalog(read_json(root / "data" / "catalog.json"))
         ledger = validate_ledger(read_json(root / "data" / "ledger.json", {"days": {}, "candidates": {}}), report["date"])
@@ -377,24 +449,42 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         day = ledger.setdefault("days", {}).setdefault(report["date"], {"newDOIs": []})
         seen = {p["doi"] for p in catalog["papers"]}
         repaired_ids = []
+        summarized_ids = set()
+        backlog_ids = {p["id"] for p in catalog["papers"] if _summary_backlog(p)} if reserved_ai else set()
 
         def checkpoint():
             # Catalog is authoritative for daily admissions if a crash happened between these atomic files.
             write_json(root / "data" / "catalog.json", persistent_catalog(validate_catalog(catalog)))
             write_json(root / "data" / "ledger.json", validate_ledger(ledger, report["date"]))
 
-        repairs = sorted(catalog["papers"], key=lambda p: p.get("automation", {}).get("lastCheckedAt", ""))
+        repairs = sorted(catalog["papers"], key=lambda p: (
+            p["id"] not in backlog_ids, p.get("automation", {}).get("lastCheckedAt", "")))
         if only_dois:
             wanted = {normalize_doi(d) for d in only_dois}
             repairs = [p for p in repairs if p["doi"] in wanted]
         for old in repairs[:settings.repair_limit]:
+            if _collection_budget_exhausted(client):
+                report["collectionBudgetExhausted"] = True
+                break
             try:
                 revised = inspect_record(client, old, root, settings, adapters, generate_ai=False)
                 catalog["papers"][catalog["papers"].index(old)] = revised
                 catalog.setdefault("inputSpecs", {})[old["id"]] = input_spec(revised, catalog.get("inputSpecs", {}).get(old["id"]))
                 report["repairCount"] += 1
                 repaired_ids.append(old["id"])
+                report["collectionBudgetExhausted"] |= _collection_budget_exhausted(client)
                 checkpoint()
+                # Previously admitted cases must not starve behind fresh discoveries.
+                # Recheck their sources first; do not summarize stale/retracted evidence.
+                if old["id"] in backlog_ids and _can_summarize(revised):
+                    summarized_ids.add(old["id"])
+                    try:
+                        complete_summary(client, revised, settings, adapters)
+                        if revised.get("ai", {}).get("status") == "generated":
+                            report["aiRepairCount"] += 1
+                    except Exception as exc:
+                        report["failures"].append({"doi": old["doi"], "stage": "summary", "error": type(exc).__name__})
+                    checkpoint()
             except Exception as exc:
                 report["failures"].append({"doi": old["doi"], "stage": "repair", "error": type(exc).__name__})
             report["checkedCount"] += 1
@@ -403,7 +493,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         admitted_today = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
         daily = set(day["newDOIs"]) | admitted_today
         allowance = max(0, settings.max_new_per_day - len(daily))
-        if discover_new and allowance:
+        if discover_new and allowance and _collection_budget_exhausted(client):
+            report["discoveryStatus"] = "budget_exhausted"
+            report["collectionBudgetExhausted"] = True
+        elif discover_new and allowance:
             try:
                 candidates = adapters.get("discover", discover)(client, settings)
                 report["discoveryStatus"] = "success"
@@ -411,6 +504,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 checked = []
                 checked_dois = set()
                 for candidate in candidates:
+                    if _collection_budget_exhausted(client):
+                        report["collectionBudgetExhausted"] = True
+                        report["discoveryStatus"] = "budget_exhausted"
+                        break
                     doi = normalize_doi(candidate.get("doi"))
                     if not doi or doi in seen or doi in checked_dois or candidate.get("isPreprint") or candidate.get("isRetracted"):
                         continue
@@ -442,6 +539,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                                                   "reason": "作者代码声明和可读脚本已定位" if acceptable else "正式文献/作者代码/脚本依据尚不齐全"}
                     checked.append(revised)
                     report["checkedCount"] += 1
+                    report["collectionBudgetExhausted"] |= _collection_budget_exhausted(client)
                     checkpoint()
                 counts = Counter(tag for p in catalog["papers"] for tag in p.get("graphForms", []))
                 usable = [p for p in checked if not p.get("skip") and ledger["candidates"][p["doi"]]["status"] == "source_confirmed"]
@@ -465,9 +563,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             except Exception as exc:
                 report["discoveryStatus"] = "partial_failure"
                 report["failures"].append({"stage": "discovery", "error": type(exc).__name__})
-        # New selected cases get the first AI budget; then old-case repairs.
+        # Checked AI backlog was already serviced; new cases precede fresh-seed AI.
         for record in catalog["papers"]:
-            if record["id"] not in repaired_ids or record["automation"]["stages"].get("metadata") != "matched" or record["automation"]["status"] == "excluded":
+            if record["id"] not in repaired_ids or record["id"] in summarized_ids or not _can_summarize(record):
                 continue
             try:
                 complete_summary(client, record, settings, adapters)
@@ -480,12 +578,14 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         for record in checked_records:
             for error in record.get("automation", {}).get("errors", []):
                 report["failures"].append({"doi": record["doi"], "stage": error.split(":")[0], "error": error})
-        report["stageCounts"] = {stage: dict(Counter(p.get("automation", {}).get("stages", {}).get(stage, "not_checked") for p in checked_records))
+        report["stageCounts"] = {stage: dict(Counter(
+            p.get("automation", {}).get("stages", {}).get(stage, "not_checked") for p in checked_records))
                                  for stage in ("metadata", "article", "repository", "metrics", "ai")}
         report["missingKeys"] = [key for key, value in (("LLM_API_KEY", settings.llm_api_key), ("LLM_MODEL", settings.llm_model), ("EASYSCHOLAR_SECRET_KEY", settings.easyscholar_key)) if not value]
         report.update(finishedAt=stamp(), requests=getattr(client, "requests", 0), aiAttempts=getattr(client, "post_attempts", 0),
+                      collectionRequests=max(0, getattr(client, "requests", 0) - getattr(client, "post_attempts", 0)),
                       totalCount=len(catalog["papers"]), dailyNewCount=len(daily),
-                      status="partial" if report["failures"] or any(p.get("automation", {}).get("status") != "ready" for p in checked_records) else "completed")
+                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or any(p.get("automation", {}).get("status") != "ready" for p in checked_records) else "completed")
         reports = [report] + reports[:89]
         checkpoint()
         write_json(root / "data" / "updates.json", reports)

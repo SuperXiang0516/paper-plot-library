@@ -12,6 +12,7 @@ import time
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from typing import Literal
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit, urlunsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
@@ -29,6 +30,27 @@ class FetchError(RuntimeError):
     def __init__(self, message, status=None):
         super().__init__(message)
         self.status = status
+
+
+BudgetReason = Literal[
+    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted",
+]
+
+
+class BudgetExceeded(FetchError):
+    """Safe machine-readable reason for a request blocked before transport."""
+
+    _MESSAGES = {
+        "network_budget_exhausted": "本次网络请求预算已用完",
+        "collection_budget_exhausted": "本次资料采集预算已用完；剩余请求为 AI 调用保留",
+        "ai_budget_exhausted": "本次 AI 调用预算已用完",
+    }
+
+    def __init__(self, reason: BudgetReason):
+        if not isinstance(reason, str) or reason not in self._MESSAGES:
+            raise ValueError("请求预算原因无效")
+        self.reason: BudgetReason = reason
+        super().__init__(self._MESSAGES[reason])
 
 
 def validate_url(url):
@@ -56,7 +78,10 @@ class SafeRedirect(HTTPRedirectHandler):
 
 class HttpClient:
     def __init__(self, cache_dir, max_requests=150, timeout=25, retries=3,
-                 opener=None, sleep=time.sleep, clock=time.time, max_post_attempts=5):
+                 opener=None, sleep=time.sleep, clock=time.time, max_post_attempts=5,
+                 reserved_post_requests=0):
+        if type(reserved_post_requests) is not int or reserved_post_requests < 0:
+            raise ValueError("reserved_post_requests 必须为非负整数")
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.max_requests = max_requests
@@ -68,6 +93,7 @@ class HttpClient:
         self.requests = 0
         self.post_attempts = 0
         self.max_post_attempts = max_post_attempts
+        self.reserved_post_requests = max(0, min(reserved_post_requests, max_requests, max_post_attempts))
         self._last_host_call = {}
 
     def _request(self, url, params=None, headers=None, ttl=86400, max_bytes=6000000, payload=None):
@@ -97,9 +123,13 @@ class HttpClient:
             request_headers["Content-Type"] = "application/json"
         for attempt in range(self.retries):
             if self.requests >= self.max_requests:
-                raise FetchError("本次网络请求预算已用完")
+                raise BudgetExceeded("network_budget_exhausted")
             if body is not None and self.post_attempts >= self.max_post_attempts:
-                raise FetchError("本次 AI 调用预算已用完")
+                raise BudgetExceeded("ai_budget_exhausted")
+            if body is None:
+                reserved = min(self.reserved_post_requests, max(0, self.max_post_attempts - self.post_attempts))
+                if self.requests >= self.max_requests - reserved:
+                    raise BudgetExceeded("collection_budget_exhausted")
             host = parts.hostname
             # NCBI key or no key: shared 3 req/s conservative default; other APIs also paced.
             interval = .36 if host == "eutils.ncbi.nlm.nih.gov" else .5 if host == "www.easyscholar.cc" else .12

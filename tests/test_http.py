@@ -6,10 +6,11 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from urllib.error import HTTPError, URLError
 from urllib.request import Request
 
-from paper_plot_library.http import FetchError, HttpClient, SafeRedirect, validate_url
+from paper_plot_library.http import BudgetExceeded, FetchError, HttpClient, SafeRedirect, validate_url
 
 
 class Clock:
@@ -123,16 +124,204 @@ class HttpTests(unittest.TestCase):
 
     def test_retry_attempts_consume_global_request_budget(self):
         client, opener = self.client([http_error(500), Response()], max_requests=1)
-        with self.assertRaises(FetchError):
+        with self.assertRaises(BudgetExceeded) as caught:
             client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "network_budget_exhausted")
         self.assertEqual((client.requests, len(opener.calls)), (1, 1))
 
     def test_post_retry_attempts_consume_paid_budget(self):
         client, opener = self.client([http_error(500), http_error(500), Response()], max_post_attempts=2)
-        with self.assertRaises(FetchError):
+        with self.assertRaises(BudgetExceeded) as caught:
             client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}, headers={"Authorization": "Bearer DO_NOT_LEAK"})
+        self.assertEqual(caught.exception.reason, "ai_budget_exhausted")
+        self.assertNotIn("DO_NOT_LEAK", str(caught.exception))
         self.assertEqual((client.post_attempts, len(opener.calls)), (2, 2))
         self.assertEqual(list(Path(self.temp.name).glob("http-*.json")), [])
+
+    def test_budget_reasons_are_typed_safe_fetch_errors(self):
+        reasons = ("network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted")
+        for reason in reasons:
+            with self.subTest(reason=reason):
+                error = BudgetExceeded(reason)
+                self.assertIsInstance(error, FetchError)
+                self.assertEqual(error.reason, reason)
+                self.assertIsNone(error.status)
+                self.assertNotIn("DO_NOT_LEAK", str(error))
+        for reason in ("DO_NOT_LEAK", None, {}, True):
+            with self.subTest(reason=reason), self.assertRaises(ValueError) as caught:
+                BudgetExceeded(reason)
+            self.assertNotIn("DO_NOT_LEAK", str(caught.exception))
+
+    def test_default_reservation_keeps_full_get_budget(self):
+        client, opener = self.client([Response(), Response()], max_requests=2)
+        self.assertEqual(client.reserved_post_requests, 0)
+        for _ in range(2):
+            client.get_json("https://api.github.com/test", ttl=0)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(caught.exception.reason, "network_budget_exhausted")
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (2, 0, 2))
+
+    def test_gets_leave_reserved_attempts_for_post(self):
+        client, opener = self.client([Response()] * 4, max_requests=4, max_post_attempts=2,
+                                     reserved_post_requests=2)
+        for _ in range(2):
+            client.get_json("https://api.github.com/test", ttl=0)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test?api_key=DO_NOT_LEAK", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        self.assertNotIn("DO_NOT_LEAK", str(caught.exception))
+        self.assertEqual((client.requests, len(opener.calls)), (2, 2))
+        for _ in range(2):
+            self.assertEqual(client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}), {"ok": True})
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (4, 2, 4))
+
+    def test_reservation_shrinks_with_remaining_paid_attempts(self):
+        client, opener = self.client([Response()] * 6, max_requests=6, max_post_attempts=3,
+                                     reserved_post_requests=3)
+        for _ in range(2):
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        for _ in range(3):
+            client.get_json("https://api.github.com/test", ttl=0)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        self.assertEqual((client.requests, client.post_attempts), (5, 2))
+        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (6, 3, 6))
+
+    def test_reservation_ceiling_stays_while_more_paid_attempts_remain(self):
+        client, opener = self.client([Response()] * 4, max_requests=6, max_post_attempts=4,
+                                     reserved_post_requests=2)
+        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        for _ in range(3):
+            client.get_json("https://api.github.com/test", ttl=0)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (4, 1, 4))
+
+    def test_failed_paid_attempts_also_release_the_reservation(self):
+        client, opener = self.client([http_error(500), http_error(500), Response(), Response()],
+                                     max_requests=4, max_post_attempts=2, reserved_post_requests=2)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(caught.exception.reason, "ai_budget_exhausted")
+        for _ in range(2):
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (4, 2, 4))
+
+    def test_get_retries_cannot_use_reserved_attempts(self):
+        client, opener = self.client([http_error(500), http_error(500), Response()],
+                                     max_requests=3, max_post_attempts=1, reserved_post_requests=1)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (2, 0, 2))
+        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (3, 1, 3))
+
+    def test_post_retries_use_reserved_attempts_and_respect_total_cap(self):
+        client, opener = self.client([Response(), Response(), http_error(500), http_error(500), Response()],
+                                     max_requests=5, max_post_attempts=3, reserved_post_requests=3)
+        for _ in range(2):
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}), {"ok": True})
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (5, 3, 5))
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(caught.exception.reason, "network_budget_exhausted")
+        self.assertEqual(len(opener.calls), 5)
+
+    def test_post_retry_cannot_exceed_total_budget_when_paid_budget_remains(self):
+        client, opener = self.client([http_error(500), Response()], max_requests=1,
+                                     max_post_attempts=3, reserved_post_requests=3)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(caught.exception.reason, "network_budget_exhausted")
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (1, 1, 1))
+
+    def test_fresh_get_cache_works_at_collection_and_total_limits(self):
+        client, opener = self.client([Response(), Response(), Response()], max_requests=3,
+                                     max_post_attempts=1, reserved_post_requests=1)
+        url = "https://api.github.com/test?api_key=DO_NOT_LEAK"
+        client.get_json(url)
+        client.get_json("https://api.github.com/other", ttl=0)
+        self.assertEqual(client.get_json(url), {"ok": True})
+        self.assertEqual((client.requests, len(opener.calls)), (2, 2))
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/other", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(client.get_json(url), {"ok": True})
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (3, 1, 3))
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/uncached", ttl=0)
+        self.assertEqual(caught.exception.reason, "network_budget_exhausted")
+
+    def test_budget_guards_run_before_request_creation_pacing_or_open(self):
+        cases = (({"max_requests": 0}, "get", "network_budget_exhausted"),
+                 ({"max_requests": 1, "max_post_attempts": 1, "reserved_post_requests": 1},
+                  "get", "collection_budget_exhausted"),
+                 ({"max_post_attempts": 0}, "post", "ai_budget_exhausted"))
+        for kwargs, method, reason in cases:
+            with self.subTest(reason=reason):
+                client, opener = self.client([], **kwargs)
+                with patch("paper_plot_library.http.Request") as request, self.assertRaises(BudgetExceeded) as caught:
+                    if method == "post":
+                        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+                    else:
+                        client.get_json("https://api.github.com/test", ttl=0)
+                self.assertEqual(caught.exception.reason, reason)
+                request.assert_not_called()
+                self.assertEqual(opener.calls, [])
+                self.assertEqual(self.clock.sleeps, [])
+                self.assertEqual((client.requests, client.post_attempts), (0, 0))
+
+    def test_reservation_is_bounded_by_total_and_paid_caps(self):
+        cases = ((2, 5, 5, 2), (5, 2, 5, 2), (0, 5, 5, 0), (5, 0, 5, 0),
+                 (2, 5, 10 ** 100, 2))
+        for total, paid, reserved, expected in cases:
+            with self.subTest(total=total, paid=paid, reserved=reserved):
+                client, opener = self.client([], max_requests=total, max_post_attempts=paid,
+                                             reserved_post_requests=reserved)
+                self.assertEqual(client.reserved_post_requests, expected)
+                self.assertEqual(opener.calls, [])
+
+    def test_reservation_above_total_does_not_increase_the_hard_cap(self):
+        client, opener = self.client([Response()], max_requests=1, max_post_attempts=5,
+                                     reserved_post_requests=5)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "collection_budget_exhausted")
+        client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        for method in ("get", "post"):
+            with self.subTest(method=method), self.assertRaises(BudgetExceeded) as caught:
+                if method == "post":
+                    client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+                else:
+                    client.get_json("https://api.github.com/test", ttl=0)
+            self.assertEqual(caught.exception.reason, "network_budget_exhausted")
+        self.assertEqual((client.max_requests, client.requests, client.post_attempts, len(opener.calls)), (1, 1, 1, 1))
+
+    def test_zero_paid_cap_removes_reservation_and_keeps_get_budget(self):
+        client, opener = self.client([Response(), Response()], max_requests=2, max_post_attempts=0,
+                                     reserved_post_requests=5)
+        self.assertEqual(client.reserved_post_requests, 0)
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1})
+        self.assertEqual(caught.exception.reason, "ai_budget_exhausted")
+        for _ in range(2):
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (2, 0, 2))
+
+    def test_invalid_reservation_is_rejected_without_opener_creation(self):
+        for reserved in (-1, True, 1.5, float("nan"), float("inf"), "DO_NOT_LEAK", None, {}):
+            with self.subTest(reserved=reserved), patch("paper_plot_library.http.build_opener") as build:
+                with self.assertRaises(ValueError) as caught:
+                    HttpClient(self.temp.name, reserved_post_requests=reserved)
+                self.assertNotIn("DO_NOT_LEAK", str(caught.exception))
+                build.assert_not_called()
 
     def test_hashed_cache_has_no_request_url_or_credentials(self):
         client, opener = self.client([Response()])

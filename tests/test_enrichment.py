@@ -7,6 +7,7 @@ from types import SimpleNamespace
 import unittest
 
 from paper_plot_library.enrichment import enrich_metrics, summarize
+from paper_plot_library.http import BudgetExceeded, FetchError, HttpClient
 
 
 class FakeClient:
@@ -111,6 +112,40 @@ class EnrichmentTests(unittest.TestCase):
         self.assertEqual(result["if"], "12")
         self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
 
+    def test_metrics_provider_application_code_is_not_an_http_status(self):
+        client = FakeClient(self.temp.name, {"code": 401, "msg": "fixture-secret DO_NOT_LEAK"})
+        result = enrich_metrics(client, self.record, settings())
+        self.assertEqual((result["status"], result["error_reason"]), ("error", "error"))
+        self.assertNotIn("http_status", result)
+        self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
+
+    def test_metrics_budget_or_http_refresh_retains_previous_evidence(self):
+        old = {"status": "matched", "if": "5", "jcr": "Q1", "cas": "1区", "source": "EasyScholar",
+               "retrieved_at": "2000-01-01T00:00:00Z", "metric_year": "unknown"}
+        failures = ((BudgetExceeded("collection_budget_exhausted"), "budget_exhausted", "collection_budget_exhausted", None),
+                    (FetchError("fixture-secret DO_NOT_LEAK", 402), "payment_required", "http_402", 402),
+                    (FetchError("fixture-secret DO_NOT_LEAK"), "network_error", "network_error", None))
+        for failure, status, reason, code in failures:
+            with self.subTest(status=status):
+                result = enrich_metrics(FakeClient(self.temp.name, failure=failure), dict(self.record, metrics=old), settings())
+                self.assertEqual(result["status"], "matched")
+                self.assertTrue(result["stale"])
+                self.assertEqual((result["if"], result["jcr"], result["cas"], result["retrieved_at"]),
+                                 ("5", "Q1", "1区", old["retrieved_at"]))
+                self.assertEqual((result["last_attempt_status"], result["error_reason"], result.get("http_status")),
+                                 (status, reason, code))
+                self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
+
+    def test_metrics_success_discards_old_failure_diagnostics(self):
+        old = {"status": "matched", "if": "5", "jcr": "Q1", "cas": "1区", "source": "EasyScholar",
+               "retrieved_at": "2000-01-01T00:00:00Z", "metric_year": "unknown", "stale": True,
+               "last_attempt_status": "payment_required", "error_reason": "http_402", "http_status": 402}
+        result = enrich_metrics(FakeClient(self.temp.name, metrics_payload(sciif="6", sci="Q1", sciUp="1区")),
+                                dict(self.record, metrics=old), settings())
+        self.assertEqual(result["if"], "6")
+        for field in ("last_attempt_status", "error_reason", "http_status", "stale"):
+            self.assertNotIn(field, result)
+
     def test_metrics_partial_refresh_retains_other_fields(self):
         old = {"status": "matched", "if": "5", "jcr": "Q1", "cas": "1区", "source": "EasyScholar",
                "retrieved_at": "2000-01-01T00:00:00Z", "metric_year": "unknown"}
@@ -141,7 +176,8 @@ class EnrichmentTests(unittest.TestCase):
         for overrides, evidence, expected in (({"llm_api_key": ""}, self.evidence, "missing_key"),
                                                ({"llm_model": ""}, self.evidence, "missing_model"),
                                                ({}, [], "missing_evidence"),
-                                               ({"llm_api_url": "http://unsafe.example/api"}, self.evidence, "missing_endpoint")):
+                                               ({"llm_api_url": ""}, self.evidence, "missing_endpoint"),
+                                               ({"llm_api_url": "http://unsafe.example/api"}, self.evidence, "invalid_endpoint")):
             self.assertEqual(summarize(client, self.record, evidence, settings(**overrides))["status"], expected)
         self.assertEqual(client.calls, [])
 
@@ -183,8 +219,9 @@ class EnrichmentTests(unittest.TestCase):
 
     def test_summary_bad_endpoint_and_budget_are_recoverable(self):
         client = FakeClient(self.temp.name, ai_payload())
-        self.assertEqual(summarize(client, self.record, self.evidence, settings(llm_api_url="https://[bad"))["status"], "missing_endpoint")
-        self.assertEqual(summarize(client, self.record, self.evidence, settings(max_ai_calls="bad"))["status"], "budget_exhausted")
+        self.assertEqual(summarize(client, self.record, self.evidence, settings(llm_api_url="https://[bad"))["status"], "invalid_endpoint")
+        result = summarize(client, self.record, self.evidence, settings(max_ai_calls="bad"))
+        self.assertEqual((result["status"], result["error_reason"]), ("budget_exhausted", "ai_budget_exhausted"))
 
     def test_summary_sanitizes_provider_error(self):
         client = FakeClient(self.temp.name, failure=RuntimeError("Bearer fixture-ai-secret"))
@@ -197,7 +234,68 @@ class EnrichmentTests(unittest.TestCase):
         client.post_attempts = 3
         result = summarize(client, self.record, self.evidence, settings(max_ai_calls=3))
         self.assertEqual(result["status"], "budget_exhausted")
+        self.assertEqual(result["error_reason"], "ai_budget_exhausted")
         self.assertEqual(client.calls, [])
+
+    def test_summary_validates_paid_endpoint_before_post(self):
+        client = FakeClient(self.temp.name, ai_payload())
+        for endpoint in ("https://unlisted.example/chat/completions", "https://api.deepseek.com:444/chat/completions",
+                         "https://fixture-ai-secret@api.deepseek.com/chat/completions",
+                         "https://api.deepseek.com/chat/completions?key=fixture-ai-secret",
+                         "https://api.deepseek.com/chat/completions#fixture-ai-secret"):
+            with self.subTest(endpoint=endpoint):
+                result = summarize(client, self.record, self.evidence, settings(llm_api_url=endpoint))
+                self.assertEqual((result["status"], result["error_reason"]), ("invalid_endpoint", "invalid_endpoint"))
+                self.assertNotIn("fixture-ai-secret", json.dumps(result))
+                self.assertNotIn("https://", json.dumps(result))
+        self.assertEqual(client.post_attempts, 0)
+        self.assertEqual(client.calls, [])
+
+    def test_shared_network_budget_exhaustion_does_not_attempt_ai(self):
+        class NoNetwork:
+            def open(self, *args, **kwargs):
+                raise AssertionError("budget guard must prevent network access")
+
+        client = HttpClient(self.temp.name, max_requests=150, opener=NoNetwork(), sleep=lambda _: None)
+        client.requests = 150
+        result = summarize(client, self.record, self.evidence, settings())
+        self.assertEqual((result["status"], result["error_reason"]), ("budget_exhausted", "network_budget_exhausted"))
+        self.assertEqual((client.requests, client.post_attempts), (150, 0))
+
+    def test_transport_budget_reasons_are_explicit_for_both_enrichments(self):
+        for reason in ("network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted"):
+            with self.subTest(reason=reason):
+                client = FakeClient(self.temp.name, failure=BudgetExceeded(reason))
+                for result in (summarize(client, self.record, self.evidence, settings()),
+                               enrich_metrics(client, self.record, settings())):
+                    self.assertEqual((result["status"], result["error_reason"]), ("budget_exhausted", reason))
+                    self.assertNotIn("http_status", result)
+
+    def test_http_failures_have_safe_specific_classifications(self):
+        classifications = {400: "invalid_request", 401: "authentication_error", 402: "payment_required",
+                           403: "permission_denied", 404: "endpoint_not_found", 429: "rate_limited",
+                           500: "service_unavailable", 503: "service_unavailable", 422: "other_http_error"}
+        for code, status in classifications.items():
+            with self.subTest(code=code):
+                client = FakeClient(self.temp.name, failure=FetchError(
+                    "https://api.deepseek.com?key=fixture-ai-secret HTTP body: DO_NOT_LEAK", code))
+                for result in (summarize(client, self.record, self.evidence, settings()),
+                               enrich_metrics(client, self.record, settings())):
+                    self.assertEqual((result["status"], result["error_reason"], result["http_status"]),
+                                     (status, f"http_{code}", code))
+                    serialized = json.dumps(result)
+                    self.assertNotIn("fixture-ai-secret", serialized)
+                    self.assertNotIn("DO_NOT_LEAK", serialized)
+                    self.assertNotIn("https://", serialized)
+
+    def test_transport_without_safe_http_status_is_network_error(self):
+        for code in (None, "401 fixture-ai-secret", True, 600):
+            client = FakeClient(self.temp.name, failure=FetchError("secret body fixture-ai-secret", code))
+            for result in (summarize(client, self.record, self.evidence, settings()),
+                           enrich_metrics(client, self.record, settings())):
+                self.assertEqual((result["status"], result["error_reason"]), ("network_error", "network_error"))
+                self.assertNotIn("http_status", result)
+                self.assertNotIn("fixture-ai-secret", json.dumps(result))
 
     def test_summary_fingerprint_changes_with_evidence(self):
         client = FakeClient(self.temp.name, ai_payload())
@@ -243,6 +341,43 @@ class EnrichmentTests(unittest.TestCase):
         self.assertEqual(result["last_attempt_status"], "missing_key")
         self.assertNotEqual(result["current_source_fingerprint"], result["source_fingerprint"])
         self.assertEqual(result["summary_zh"], good["summary_zh"])
+
+    def test_summary_budget_or_http_failure_keeps_previous_summary_stale(self):
+        good = summarize(FakeClient(self.temp.name, ai_payload()), self.record, self.evidence, settings())
+        changed = [{"id": "script-1", "text": "new repository commit changed the observed script"}]
+        failures = ((BudgetExceeded("network_budget_exhausted"), "budget_exhausted", "network_budget_exhausted", None),
+                    (FetchError("fixture-ai-secret DO_NOT_LEAK", 401), "authentication_error", "http_401", 401),
+                    (FetchError("fixture-ai-secret DO_NOT_LEAK"), "network_error", "network_error", None))
+        for failure, status, reason, code in failures:
+            with self.subTest(status=status):
+                result = summarize(FakeClient(self.temp.name, failure=failure), dict(self.record, ai=good), changed, settings())
+                self.assertEqual(result["status"], "stale")
+                self.assertEqual(result["summary_zh"], good["summary_zh"])
+                self.assertEqual(result["source_fingerprint"], good["source_fingerprint"])
+                self.assertNotEqual(result["current_source_fingerprint"], good["source_fingerprint"])
+                self.assertEqual((result["last_attempt_status"], result["error_reason"], result.get("http_status")),
+                                 (status, reason, code))
+                self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
+
+    def test_summary_invalid_endpoint_keeps_previous_summary_stale(self):
+        good = summarize(FakeClient(self.temp.name, ai_payload()), self.record, self.evidence, settings())
+        client = FakeClient(self.temp.name, ai_payload())
+        result = summarize(client, dict(self.record, ai=good), self.evidence,
+                           settings(llm_api_url="https://unlisted.example/fixture-ai-secret"))
+        self.assertEqual((result["status"], result["last_attempt_status"], result["error_reason"]),
+                         ("stale", "invalid_endpoint", "invalid_endpoint"))
+        self.assertEqual(result["summary_zh"], good["summary_zh"])
+        self.assertNotIn("fixture-ai-secret", json.dumps(result))
+        self.assertEqual(client.post_attempts, 0)
+
+    def test_summary_success_discards_old_failure_diagnostics(self):
+        good = summarize(FakeClient(self.temp.name, ai_payload()), self.record, self.evidence, settings())
+        old = dict(good, status="stale", last_attempt_status="authentication_error", error_reason="http_401", http_status=401)
+        result = summarize(FakeClient(self.temp.name), dict(self.record, ai=old), self.evidence, settings())
+        self.assertEqual(result["status"], "generated")
+        self.assertTrue(result["persistent_cache_hit"])
+        for field in ("last_attempt_status", "error_reason", "http_status", "stale_reason", "current_source_fingerprint"):
+            self.assertNotIn(field, result)
 
     def test_summary_changed_model_recomputes_instead_of_persistent_reuse(self):
         client = FakeClient(self.temp.name, ai_payload())

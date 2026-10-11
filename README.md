@@ -31,9 +31,20 @@ cd /Users/xiangzhoufu/Documents/Codex/paper-plot-library
 IF/JCR/引用注释 → 持久化目录 → 独立网站。
 
 每个 UTC 自然日最多新增5篇不同论文（不是必须当天发表5篇）。不足不凑数。
-重复运行不会重复新增。新入选案例优先获得 AI 预算，旧种子另行逐批修补。
+重复运行不会重复新增。配置模型与密钥且调用预算非零时，已匹配正式文献、已检查全文和作者代码，
+但 AI 注释缺失、过期或失败的既有案例优先修补；本轮文献匹配、全文和代码检查均通过后
+立即尝试生成，再开展新文献发现。
+没有这类积压时，新入选案例优先于尚未完成来源检查的旧种子。
 每次最多5次AI HTTP尝试，含失败重试；不是5篇×无限次重试。配置上限可以降低。
+默认总 HTTP 上限仍为150次；配置 AI 时先为 AI 预留最多5个请求名额，初始采集 GET
+上限为145次。预留只是本地计数限制，不会提前调用或扣费；失败重试计入总请求和 AI 尝试。
+达到采集上限后，未用完的 AI 预留名额仍可用于注释；实际是否已调用以日志中的尝试计数为准。
+因本地上限跳过 AI 时，实际尝试为0就是未发起付费请求，
+不能据此判断账户余额不足。HTTP 401/402/403、429及服务方错误在日志中分别显示。
 单篇失败不拖垮其它候选，失败保留状态；临时中断保留既有可用证据，并标明旧状态。
+旧 AI 注释标为待更新并显示最近尝试状态；历史指标可保留已匹配状态，同时注明本轮获取失败。
+本轮文献、全文或代码核查失败时，不为该案例发起付费 AI 请求；保留的旧注释标为过期。
+日志阶段统计只反映本轮实际检查的状态，不把此前保留的失败状态重复算入本轮。
 
 选文首先重视脚本、输入和原图可用性，再考虑混合图、多组学/工具/生物计算、衰老主题、
 期刊偏好和归一化引用偏好。IF/引用数不是研究质量判断。无许可证、第三方原图、
@@ -76,7 +87,7 @@ python3 -m paper_plot_library update --no-discovery --repair-limit 1 --max-ai-ca
 - `data/assets/`：带源哈希名的许可允许原图。
 - `site/`：可重新构建的本机预览；发布时再通过 `export` 白名单导出。
 - `.ppl/`：私有缓存、补充文件、运行锁；不提交、不整目录部署。发布只上传 `export` 生成的白名单子目录。
-- `.github/workflows/site.yml`：以后上传GitHub后的每日更新/发布工作流，当前未启用。
+- `.github/workflows/site.yml`：GitHub 每日更新与发布工作流；每次结果以 Actions 运行记录为准。
 - `docs/acceptance.md`、`docs/iterations.md`：验收范围、真实限制与迭代记录。
 
 ## 状态与人工核对边界
@@ -89,7 +100,9 @@ python3 -m paper_plot_library update --no-discovery --repair-limit 1 --max-ai-ca
 目录支持多对多、分别筛选、动态计数。可以新增审核后的类型，但初版没有无人值守
 视觉模型分面定位；复杂新图、动态路径和非公开数据需要人工确认。
 
-## 以后上传 GitHub（本次未执行）
+## GitHub 云端配置（新用户）
+
+云端更新与部署已由用户启用。以下步骤用于新用户独立配置；本地离线测试不证明云端 API 调用成功。
 
 1. GitHub Desktop → File → New Repository：Name填 `paper-plot-library`，Local path选父目录 `/Users/xiangzhoufu/Documents/Codex`。最终路径应为 `/Users/xiangzhoufu/Documents/Codex/paper-plot-library`，不要多套一层同名目录。已有README、LICENSE、.gitignore，不重新生成或覆盖它们。
 2. 确认 `.env`、`.ppl`、`site` 未出现在待提交列表，提交并 Publish repository。
@@ -99,7 +112,8 @@ python3 -m paper_plot_library update --no-discovery --repair-limit 1 --max-ai-ca
 
 工作流日程为 UTC 01:47；洛杉矶夏令时前一日18:47、冬令时前一日17:47（北京时间09:47）。
 GitHub定时任务可能延迟，公开仓库长期不活动可能停用定时任务，需查看Actions实际记录。
-放到GitHub后云端运行，不要求你的电脑全天在线；目前仅本地代码，尚不会自动每天运行。
+完成 GitHub 配置后由云端运行，不要求你的电脑全天在线。查看 Actions 的实际请求计数、
+阶段状态和 Pages 发布结果，确认每次更新的完成范围。
 
 ## 回归测试
 

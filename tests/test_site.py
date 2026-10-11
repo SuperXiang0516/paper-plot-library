@@ -8,6 +8,7 @@ import tempfile
 import unittest
 
 from paper_plot_library.site import build_site, public_catalog
+from paper_plot_library.release_export import export_site
 
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -107,6 +108,62 @@ class SiteTests(unittest.TestCase):
         self.assertTrue(projected["repository"]["retained_from_previous"])
         self.assertEqual(projected["metrics"]["retained_field_asof"]["if"], "2025-01-01T00:00:00Z")
         self.assertTrue(projected["metrics"]["persistent_cache_hit"])
+
+    def test_allows_only_safe_enrichment_diagnostics(self):
+        for status, http in (("invalid_request", 400), ("authentication_error", 401), ("payment_required", 402),
+                             ("permission_denied", 403), ("endpoint_not_found", 404), ("rate_limited", 429),
+                             ("service_unavailable", 503), ("other_http_error", 418)):
+            catalog = sample()
+            catalog["papers"][0]["ai"].update(status="stale", last_attempt_status=status, error_reason=f"http_{http}", http_status=http)
+            catalog["papers"][0]["metrics"].update(status="matched", last_attempt_status=status, error_reason=f"http_{http}", http_status=http)
+            projected = public_catalog(catalog)["papers"][0]
+            self.assertEqual(projected["ai"]["status"], "stale")
+            self.assertEqual(projected["metrics"]["status"], "matched")
+            for field in ("ai", "metrics"):
+                self.assertEqual(projected[field]["last_attempt_status"], status)
+                self.assertEqual(projected[field]["error_reason"], f"http_{http}")
+                self.assertEqual(projected[field]["http_status"], http)
+        for reason in ("network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "invalid_endpoint", "network_error", "error"):
+            catalog = sample()
+            catalog["papers"][0]["ai"].update(status="budget_exhausted", error_reason=reason)
+            self.assertEqual(public_catalog(catalog)["papers"][0]["ai"]["error_reason"], reason)
+        for status in (True, 399, 600, "401", float("nan")):
+            catalog = sample()
+            catalog["papers"][0]["ai"].update(status="credentials-in-exception", last_attempt_status="credentials-in-exception",
+                                               error_reason="Fetch failed with credentials-in-exception", http_status=status)
+            projected = public_catalog(catalog)["papers"][0]["ai"]
+            self.assertEqual(projected["status"], "unknown")
+            self.assertEqual(projected["last_attempt_status"], "unknown")
+            self.assertNotIn("error_reason", projected)
+            self.assertNotIn("http_status", projected)
+            self.assertNotIn("credentials-in-exception", json.dumps(projected))
+
+    def test_export_keeps_budget_counters_and_safe_retained_diagnostics(self):
+        catalog = sample()
+        catalog["papers"][0]["ai"].update(status="stale", last_attempt_status="budget_exhausted", error_reason="collection_budget_exhausted")
+        catalog["papers"][0]["metrics"].update(status="matched", last_attempt_status="rate_limited", error_reason="http_429", http_status=429)
+        report = {"startedAt": "2026-10-11T12:00:00Z", "status": "partial", "requests": 145, "aiAttempts": 0,
+                  "reservedAiRequests": 5, "collectionRequests": 145, "maxRequests": 150, "maxAiCalls": 5,
+                  "aiRepairCount": 0, "collectionBudgetExhausted": True,
+                  "stageCounts": {"ai": {"budget_exhausted": 1}}, "privateDiagnostic": "credentials-in-exception"}
+        (self.root / "data" / "catalog.json").write_text(json.dumps(catalog))
+        (self.root / "data" / "updates.json").write_text(json.dumps([report]))
+        output = export_site(self.root)
+        projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]
+        self.assertEqual(projected["ai"]["error_reason"], "collection_budget_exhausted")
+        self.assertEqual(projected["metrics"]["http_status"], 429)
+        exported_report = json.loads((output / "data" / "updates.json").read_text())[0]
+        for field in ("reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount", "collectionBudgetExhausted"):
+            self.assertEqual(exported_report[field], report[field])
+        self.assertNotIn("privateDiagnostic", exported_report)
+        self.assertEqual(json.loads((self.root / "data" / "catalog.json").read_text()), catalog)
+        self.assertEqual(json.loads((self.root / "data" / "updates.json").read_text()), [report])
+
+    def test_drops_invalid_new_report_budget_counters(self):
+        report = {"reservedAiRequests": True, "collectionRequests": -1, "maxRequests": 1000001,
+                  "maxAiCalls": "5", "aiRepairCount": float("nan"), "collectionBudgetExhausted": "yes"}
+        output = build_site(self.root, sample(), [report])
+        self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{}])
 
     def test_build_downgrades_ready_when_published_reviewed_asset_missing(self):
         catalog = sample()
@@ -303,6 +360,46 @@ assert.equal(ui.viewFromHash('#main','papers'),'papers');
         html = (PROJECT / "web" / "index.html").read_text()
         self.assertIn('<div id="content"></div>', html)
         self.assertIn('<span id="result-count" aria-live="polite">', html)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_safe_chinese_diagnostics_and_budget_log(self):
+        test_code = r'''
+const assert = require('assert');
+const ui = require(process.argv[1]);
+for (const status of ['budget_exhausted','authentication_error','payment_required','permission_denied','invalid_request','endpoint_not_found','rate_limited','service_unavailable','other_http_error','network_error','invalid_endpoint','missing_key','missing_model','missing_evidence','missing_endpoint','invalid_response','generated','stale','deferred_until_selection']) {
+  assert(/[\u4e00-\u9fff]/.test(ui.statusLabel(status)),status);
+  assert(!ui.statusLabel(status).includes(status),status);
+}
+assert.equal(ui.statusLabel('credentials-in-exception'),'状态待核');
+assert.equal(ui.statusLabel('toString'),'状态待核');
+assert.equal(ui.stageLabel('toString'),'未分类阶段');
+assert.equal(ui.stageLabel('ai'),'AI 中文注释');
+assert(ui.errorLabel('ai: invalid_response').includes('接口响应未通过校验'));
+assert(!ui.errorLabel('Fetch failed with credentials-in-exception').includes('credentials-in-exception'));
+assert(!ui.failureLabel({doi:'https://private.example/?secret=value',stage:'credentials-in-exception',error:'credentials-in-exception'}).includes('credentials-in-exception'));
+assert(ui.diagnosticLabel({status:'stale',last_attempt_status:'budget_exhausted',error_reason:'ai_budget_exhausted'}).includes('本轮本地 AI 尝试上限'));
+assert(ui.diagnosticLabel({status:'matched',last_attempt_status:'rate_limited',http_status:429,error_reason:'http_429'}).includes('HTTP 429'));
+assert(ui.diagnosticLabel({status:'payment_required',error_reason:'http_402'}).includes('HTTP 402'));
+assert(!ui.diagnosticLabel({status:'budget_exhausted',error_reason:'network_budget_exhausted'}).includes('余额不足'));
+assert(!ui.diagnosticLabel({status:'network_error',error_reason:'credentials-in-exception',http_status:'secret'}).includes('credentials-in-exception'));
+assert.equal(ui.diagnosticLabel({status:'network_error',error_reason:'toString',http_status:true}),ui.statusLabel('network_error'));
+const skipped={requests:145,collectionRequests:145,aiAttempts:0,maxRequests:150,maxAiCalls:5,reservedAiRequests:5,aiRepairCount:2,collectionBudgetExhausted:true,stageCounts:{ai:{budget_exhausted:2}}};
+const lines=ui.updateBudgetLines(skipped).join('\n');
+assert(lines.includes('145 / 150') && lines.includes('采集 GET：145') && lines.includes('AI HTTP 尝试：0 / 5'));
+assert(lines.includes('预留 5') && lines.includes('上限为 145') && lines.includes('预留不代表已经调用或扣费'));
+assert(lines.includes('修补成功：2') && lines.includes('未发起付费 AI 请求'));
+assert(lines.includes('本轮已匹配正式文献、已检查全文与作者代码'));
+const exhaustedAfterAI=ui.updateBudgetLines({...skipped,requests:150,aiAttempts:5}).join('\n');
+assert(exhaustedAfterAI.includes('150 / 150') && exhaustedAfterAI.includes('AI HTTP 尝试：5 / 5'));
+assert(exhaustedAfterAI.includes('实际使用情况见 AI HTTP 尝试计数'));
+assert(!exhaustedAfterAI.includes('仍可用于') && !exhaustedAfterAI.includes('未发起付费 AI 请求'));
+assert(!ui.updateBudgetLines({...skipped,aiAttempts:1}).join('\n').includes('未发起付费 AI 请求'));
+assert(!ui.updateBudgetLines({...skipped,stageCounts:{ai:{payment_required:2}}}).join('\n').includes('未发起付费 AI 请求'));
+assert(!ui.updateBudgetLines({requests:0,aiAttempts:0}).join('\n').includes('预留 5'));
+assert(!ui.updateBudgetLines({reservedAiRequests:true,maxRequests:'credentials-in-exception'}).join('\n').includes('credentials-in-exception'));
+assert.deepEqual(ui.updateBudgetLines({}),[]);
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
 
     def test_large_figure_responsive_layout_rules(self):
         css = (PROJECT / "web" / "styles.css").read_text()
