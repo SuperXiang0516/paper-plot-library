@@ -27,6 +27,8 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(result.max_new_per_day, 5)
         self.assertEqual(result.llm_model, "")
         self.assertEqual(result.llm_api_key, "")
+        self.assertFalse(result.initialize_existing_first)
+        self.assertEqual(result.bootstrap_batch_limit, 20)
         self.write_config({"max_new_per_day": 0, "max_ai_calls": 0, "repair_limit": 0, "candidate_checks": 0,
                            "max_images": 0, "max_supplements": 0})
         result = load_settings(self.root)
@@ -41,6 +43,19 @@ class ConfigTests(unittest.TestCase):
     def test_unknown_fields_and_wrong_types_rejected(self):
         for value in ({"typo": 1}, {"max_new_per_day": 6}, {"max_new_per_day": True}, {"max_ai_calls": -1},
                       {"include_supplements": "true"}, {"max_requests": 0}, {"discovery_limit": 101}, {"max_file_bytes": 10000001}):
+            self.write_config(value)
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                load_settings(self.root)
+
+    def test_initialization_settings_are_explicit_and_bounded(self):
+        self.write_config({"initialize_existing_first": True, "bootstrap_batch_limit": 50})
+        result = load_settings(self.root)
+        self.assertTrue(result.initialize_existing_first)
+        self.assertEqual(result.bootstrap_batch_limit, 50)
+        self.assertEqual((result.repair_limit, result.max_ai_calls, result.max_requests), (5, 5, 150))
+        for value in ({"initialize_existing_first": "true"}, {"initialize_existing_first": 1},
+                      {"bootstrap_batch_limit": True}, {"bootstrap_batch_limit": 0},
+                      {"bootstrap_batch_limit": 51}, {"bootstrap_batch_limit": "20"}):
             self.write_config(value)
             with self.subTest(value=value), self.assertRaises(ValueError):
                 load_settings(self.root)

@@ -42,6 +42,7 @@ _PUBLIC_STATUSES = {
     "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error", "network_error",
     "invalid_doi", "doi_mismatch", "retracted", "no_final_version", "no_scripts_found", "partial_failure",
     "daily_quota_reached", "missing_journal",
+    "bootstrap_in_progress", "bootstrap_needs_attention", "bootstrap_complete_next_run",
 }
 _SAFE_REASONS = {
     "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "network_error", "error",
@@ -55,6 +56,34 @@ _SAFE_REASONS = {
 _REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount",
                     "untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount",
                     "automaticCompleteCount", "incompleteCount"}
+
+
+def _public_bootstrap(value: object) -> dict | None:
+    """Public cohort progress is a strict summary, never a raw state dump."""
+    if (not isinstance(value, dict) or not isinstance(value.get("status"), str)
+            or value["status"] not in {"active", "needs_attention", "complete"}):
+        return None
+    fields = ("totalCount", "completeCount", "pendingCount", "attentionCount")
+    if any(type(value.get(field)) is not int or not 0 <= value[field] <= 10000 for field in fields):
+        return None
+    if value["completeCount"] + value["pendingCount"] + value["attentionCount"] != value["totalCount"]:
+        return None
+    if value["status"] == "complete" and (value["pendingCount"] or value["attentionCount"]):
+        return None
+    from .bootstrap import BOOTSTRAP_REASON_CODES
+    result = {"status": value["status"], **{field: value[field] for field in fields}, "issues": []}
+    if isinstance(value.get("startedAt"), str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z", value["startedAt"]):
+        result["startedAt"] = value["startedAt"]
+    for issue in value.get("issues", [])[:100] if isinstance(value.get("issues"), list) else []:
+        if not isinstance(issue, dict) or not isinstance(issue.get("doi"), str) or not re.fullmatch(r"10\.\d{4,9}/[^\s<>]{1,200}", issue["doi"], re.I):
+            continue
+        reasons = issue.get("reasonCodes", [])
+        reasons = list(dict.fromkeys(reason for reason in reasons[:20] if isinstance(reason, str) and reason in BOOTSTRAP_REASON_CODES)) if isinstance(reasons, list) else []
+        if reasons:
+            result["issues"].append({"doi": issue["doi"], "reasonCodes": reasons})
+    if result["status"] == "complete" and result["issues"]:
+        return None
+    return result
 
 
 def _safe_http_status(value: object) -> bool:
@@ -163,7 +192,7 @@ def public_catalog(catalog: dict) -> dict:
                 evidence.pop("text", None)
         record["runPerformed"] = False
         records.append(record)
-    return {
+    result = {
         "schemaVersion": 4, "papers": records,
         "inputSpecs": _public({key: value for key, value in (catalog.get("inputSpecs") or {}).items() if key in ids}),
         "dimensions": _public(catalog.get("dimensions", {})),
@@ -172,6 +201,10 @@ def public_catalog(catalog: dict) -> dict:
         "authorCodeExecuted": False, "method": "static-source-review",
         "synthetic": catalog.get("synthetic") is True,
     }
+    bootstrap = _public_bootstrap(catalog.get("bootstrap"))
+    if bootstrap is not None:
+        result["bootstrap"] = bootstrap
+    return result
 
 
 def _atomic_json(path: Path, value: object) -> None:
@@ -417,7 +450,10 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
     values = reports if isinstance(reports, list) else reports.get("reports", [reports]) if isinstance(reports, dict) else []
     values = sorted([report for report in values if isinstance(report, dict)], key=lambda report: str(report.get("finishedAt") or report.get("startedAt") or report.get("date") or ""), reverse=True)[:90]
     public_reports = [_public({key: value for key, value in report.items() if key in report_fields}) for report in values]
-    for report in public_reports:
+    for report, original in zip(public_reports, values):
+        bootstrap = _public_bootstrap(original.get("bootstrap"))
+        if bootstrap is not None:
+            report["bootstrap"] = bootstrap
         for key in _REPORT_COUNTERS:
             if key in report and (not isinstance(report[key], int) or isinstance(report[key], bool) or not 0 <= report[key] <= 1000000):
                 report.pop(key)

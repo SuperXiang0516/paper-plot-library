@@ -22,6 +22,8 @@ class Settings:
     max_ai_calls: int = 5
     max_requests: int = 150
     repair_limit: int = 5
+    initialize_existing_first: bool = False
+    bootstrap_batch_limit: int = 20
     candidate_checks: int = 8
     max_images: int = 2
     max_supplements: int = 3
@@ -64,12 +66,13 @@ def load_settings(root, overrides=None):
     settings = Settings(**values)
     bounds = {"max_new_per_day": (0, 5), "max_ai_calls": (0, 20), "max_requests": (1, 500),
               "discovery_limit": (1, 100), "repair_limit": (0, 20), "candidate_checks": (0, 20),
+              "bootstrap_batch_limit": (1, 50),
               "max_images": (0, 5), "max_supplements": (0, 5), "max_file_bytes": (1024, 10000000)}
     for key, (low, high) in bounds.items():
         value = getattr(settings, key)
         if type(value) is not int or not low <= value <= high:
             raise ValueError(f"{key} 必须为 {low}—{high} 的整数")
-    for key in ("include_supplements", "citation_enrichment"):
+    for key in ("include_supplements", "citation_enrichment", "initialize_existing_first"):
         if type(getattr(settings, key)) is not bool:
             raise ValueError(f"{key} 必须为布尔值")
     if not isinstance(settings.discovery_query, str) or not 1 <= len(settings.discovery_query.strip()) <= 20000:

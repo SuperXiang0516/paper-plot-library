@@ -125,7 +125,7 @@ class RequestBudgetRegressionTests(unittest.TestCase):
         self.assertTrue(paper["repository"].get("retained_from_previous"))
         self.assertEqual(report["aiAttempts"], 0)
         self.assertEqual(self.opener.methods, [])
-        self.assertEqual(report["stageCounts"]["ai"], {"deferred_until_selection": 1})
+        self.assertEqual(report["stageCounts"]["ai"], {"missing_evidence": 1})
         self.assertFalse(any(f.get("stage") == "ai" for f in report["failures"]))
 
     def test_backlog_does_not_pay_to_summarize_retained_article_captions(self):
@@ -178,7 +178,7 @@ class RequestBudgetRegressionTests(unittest.TestCase):
         self.assertEqual(paper["ai"]["last_attempt_status"], "missing_evidence")
         self.assertNotIn("http_status", paper["ai"])
         self.assertEqual(report["aiAttempts"], 0)
-        self.assertEqual(report["stageCounts"]["ai"], {"deferred_until_selection": 1})
+        self.assertEqual(report["stageCounts"]["ai"], {"missing_evidence": 1})
 
     def test_no_ai_configuration_does_not_hold_source_request_slots(self):
         self.settings.llm_api_key = ""

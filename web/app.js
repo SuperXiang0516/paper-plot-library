@@ -16,6 +16,7 @@
   const list = value => Array.isArray(value) ? value : [];
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
   const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
+  Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'优先补齐已有候选 · 暂停新发现',bootstrap_needs_attention:'已有候选需要处理 · 暂停新发现',bootstrap_complete_next_run:'已有候选资料已补齐 · 下次进入日更'});
   const stageLabel = name => typeof name === 'string' && Object.hasOwn(STAGE_LABELS,name) ? STAGE_LABELS[name] : '未分类阶段';
   const statusLabel = value => typeof value === 'string' && Object.hasOwn(STAGE_STATUS_LABELS,value) ? STAGE_STATUS_LABELS[value] : '状态待核';
   const validHTTP = value => Number.isInteger(value) && value >= 400 && value <= 599;
@@ -150,7 +151,29 @@
       {name:'期刊',label:available.hasMetrics?metrics.last_attempt_status?'沿用旧指标':'已有指标':API_FAILURES.has(metrics.last_attempt_status || metrics.status)?'最近查询失败':'待匹配',tone:available.hasMetrics?'available':API_FAILURES.has(metrics.last_attempt_status || metrics.status)?'error':'pending'},
     ];
   };
-  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures};
+  const BOOTSTRAP_REASONS = {metadata_unchecked:'正式文献尚未核查',source_refresh_failed:'本轮来源复查未完成',article_unchecked:'全文来源尚未核查',no_final_version:'尚未找到可核实正式版本',selected_figure_missing:'尚未定位选定原图',figure_reuse_blocked:'原图许可仅允许链接或尚未许可',figure_asset_unverified:'原图文件或完整性尚未核实',code_unchecked:'作者代码尚未检查',code_not_pinned:'代码未固定到有效提交',script_integrity_missing:'脚本完整性依据不足',author_code_link_unverified:'论文与作者代码声明关系尚未核实',input_undocumented:'绘图输入结构尚未定位',ai_missing:'AI 注释尚未生成',ai_stale:'旧 AI 注释等待更新',ai_configuration_missing:'AI 配置尚未齐全',ai_authentication_failed:'AI 密钥认证失败',ai_payment_required:'AI 服务要求付款或余额不足',ai_transient_failure:'AI 接口暂时异常',ai_response_invalid:'AI 输出未通过格式与证据校验',metrics_unchecked:'期刊指标尚未查询',metrics_configuration_missing:'期刊指标密钥尚未配置',metrics_query_failed:'期刊指标查询失败',source_transient_failure:'文献或代码来源暂时异常',case_excluded:'记录已排除，需要确认候选池处理',cohort_record_missing:'候选池记录缺失，需要检查',request_budget_deferred:'请求名额已用完，等待后续批次'};
+  const bootstrapSummary = value => {
+    if(!value || typeof value!=='object' || !['active','needs_attention','complete'].includes(value.status))return null;
+    const fields=['totalCount','completeCount','pendingCount','attentionCount'];
+    if(fields.some(field=>!Number.isInteger(value[field]) || value[field]<0 || value[field]>10000) || value.completeCount+value.pendingCount+value.attentionCount!==value.totalCount || value.status==='complete' && (value.pendingCount || value.attentionCount))return null;
+    const summary={status:value.status,...Object.fromEntries(fields.map(field=>[field,value[field]])),issues:[]};
+    if(typeof value.startedAt==='string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z$/.test(value.startedAt))summary.startedAt=value.startedAt;
+    for(const issue of list(value.issues).slice(0,100)){if(!issue || typeof issue.doi!=='string' || !/^10\.\d{4,9}\/[^\s<>]{1,200}$/i.test(issue.doi))continue;const reasonCodes=[...new Set(list(issue.reasonCodes).slice(0,20).filter(reason=>typeof reason==='string' && Object.hasOwn(BOOTSTRAP_REASONS,reason)))];if(reasonCodes.length)summary.issues.push({doi:issue.doi,reasonCodes});}
+    if(summary.status==='complete' && summary.issues.length)return null;
+    return summary;
+  };
+  const bootstrapLines = (value,mode='backfill') => {
+    const summary=bootstrapSummary(value);if(!summary)return [];
+    const title=summary.status==='complete'?mode==='daily'?'当前阶段：每日自动发现新文献':'已有候选资料收集已完成 · 下次运行进入日更':summary.status==='needs_attention'?'已有候选需要处理 · 新文献发现仍暂停':'当前阶段：分批补齐已有候选 · 暂停新文献发现';
+    return [title,'自动材料收集完成 '+summary.completeCount+' / '+summary.totalCount+' 条 · 待处理 '+summary.pendingCount+' 条 · 需要检查 '+summary.attentionCount+' 条',summary.status==='complete'?'本轮候选材料阶段已通过，不代表人工精确对应已核或原图复现成功。':'仅在这批已有候选的材料缺口真正处理完成后，才进入每日新文献发现。许可受限或缺少输入不会自动改成完成。'];
+  };
+  const bootstrapIssueLabel = issue => {const safe=bootstrapSummary({status:'needs_attention',totalCount:1,completeCount:0,pendingCount:0,attentionCount:1,issues:[issue]})?.issues[0];return safe?safe.doi+' · '+safe.reasonCodes.map(reason=>BOOTSTRAP_REASONS[reason]).join('；'):'未分类的候选池缺口';};
+  const latestBootstrap = (data,updates=[]) => {
+    const reports=list(updates).filter(report=>bootstrapSummary(report?.bootstrap)).sort((a,b)=>str(b.finishedAt || b.startedAt,'').localeCompare(str(a.finishedAt || a.startedAt,'')));
+    const summary=bootstrapSummary(data?.bootstrap);if(summary)return {summary,mode:reports[0]?.mode==='daily'?'daily':'backfill'};
+    return reports.length?{summary:bootstrapSummary(reports[0].bootstrap),mode:reports[0].mode==='daily'?'daily':'backfill'}:null;
+  };
+  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS};
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null;
@@ -315,6 +338,8 @@
       items(card, list(report.errors).map(errorLabel));items(card,report.warnings);
       if(report.checkedCount !== undefined)paragraph(card,'检查 '+str(report.checkedCount)+' 条 · 新文献发现：'+statusLabel(report.discoveryStatus),'small');
       for(const line of updateBudgetLines(report))paragraph(card,line,'small');
+      const bootstrap=bootstrapSummary(report.bootstrap);
+      if(bootstrap){for(const line of bootstrapLines(bootstrap,report.mode))paragraph(card,line,'small');if(bootstrap.issues.length){const fold=el('details');fold.append(el('summary','查看本批候选材料缺口（最多显示 100 条）'));items(fold,bootstrap.issues.map(bootstrapIssueLabel));card.append(fold);}}
       if(list(report.failures).length)items(card,report.failures.map(failureLabel));
       if(list(report.missingKeys).length)paragraph(card,'尚未配置：'+report.missingKeys.join(' · ')+'。这里只显示配置名，不显示密钥值。','callout');
       if(report.stageCounts){const fold=el('details');fold.append(el('summary','查看各阶段状态统计'));for(const [stage,counts]of Object.entries(report.stageCounts)){heading(fold,stageLabel(stage),4);addSpec(fold,Object.entries(counts).filter(([,count])=>counter(count)!==null).map(([status,count])=>[statusLabel(status),count]));}card.append(fold);}
@@ -324,6 +349,16 @@
       node.append(card);
     }
     return node;
+  }
+  function renderCollectionPhase() {
+    const node=$('collection-phase'), phase=latestBootstrap(catalog,reports);node.replaceChildren();node.hidden=!phase;
+    if(!phase)return;
+    node.classList.toggle('needs-attention',phase.summary.status==='needs_attention');
+    const lines=bootstrapLines(phase.summary,phase.mode);heading(node,lines[0],2);paragraph(node,lines[1],'phase-counts');
+    if(phase.summary.totalCount){const progress=el('progress');progress.max=phase.summary.totalCount;progress.value=phase.summary.completeCount;progress.setAttribute('aria-label','已有候选自动材料收集进度');node.append(progress);}
+    paragraph(node,lines[2]);
+    if(phase.summary.startedAt)paragraph(node,'本批建立：'+phase.summary.startedAt,'small');
+    if(phase.summary.issues.length){const fold=el('details');fold.append(el('summary','查看待补齐 / 需要检查的原因（最多显示 100 条）'));items(fold,phase.summary.issues.map(bootstrapIssueLabel));node.append(fold);}
   }
   function render() {
     if (!catalog) return;
@@ -504,6 +539,7 @@
       $('collection-summary').textContent=counts.browsable+' 个可浏览 · '+counts.candidates+' 个候选待补齐 · '+counts.verified+' 个精确对应已核'+(counts.excluded?' · '+counts.excluded+' 个排除记录':'');
       for(const [value,label,count] of [['browsable','可浏览案例',counts.browsable],['candidates','候选池 · 待补齐',counts.candidates],['all','全部记录',counts.total]]){const option=[...$('collection-filter').options].find(option=>option.value===value);if(option)option.textContent=label+'（'+count+'）';}
       $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'可浏览案例已有可展示原图与固定版本代码；AI、输入字段、期刊指标各自标注缺口。候选池保留待补齐记录与只允许链接的原图。所有记录均未执行作者代码；可浏览不等于精确对应或复现成功。';
+      renderCollectionPhase();
       $('generated-at').textContent='目录构建：'+str(data.generatedAt || data.checkedAt,'未报告');
       view=viewFromHash(location.hash,view);
       render();

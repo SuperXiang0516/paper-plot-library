@@ -239,6 +239,44 @@ class SiteTests(unittest.TestCase):
         output = build_site(self.root, sample(), [report])
         self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{"discoveryStatus": "daily_quota_reached"}])
 
+    def test_bootstrap_public_summary_preserves_progress_not_private_cohort_state(self):
+        catalog = sample()
+        bootstrap = {"status": "active", "totalCount": 3, "completeCount": 1, "pendingCount": 1, "attentionCount": 1,
+                     "startedAt": "2026-10-11T12:00:00Z", "cohortIDs": ["must-not-publish"], "api_key": "must-not-publish",
+                     "issues": [{"doi": "10.1000/test", "reasonCodes": ["figure_reuse_blocked", "input_undocumented", "must-not-publish"],
+                                 "raw_response": "must-not-publish"},
+                                {"doi": "https://provider.example/?secret=must-not-publish", "reasonCodes": ["ai_missing"]}]}
+        catalog["bootstrap"] = copy.deepcopy(bootstrap)
+        report = {"mode": "backfill", "bootstrap": bootstrap, "discoveryStatus": "bootstrap_in_progress"}
+        original = copy.deepcopy(catalog)
+        output = build_site(self.root, catalog, [report])
+        published = json.loads((output / "data" / "catalog.json").read_text())
+        exported_report = json.loads((output / "data" / "updates.json").read_text())[0]
+        expected = {"status": "active", "totalCount": 3, "completeCount": 1, "pendingCount": 1, "attentionCount": 1,
+                    "startedAt": "2026-10-11T12:00:00Z", "issues": [{"doi": "10.1000/test", "reasonCodes": ["figure_reuse_blocked", "input_undocumented"]}]}
+        self.assertEqual(published["bootstrap"], expected)
+        self.assertEqual(exported_report["bootstrap"], expected)
+        self.assertNotIn("must-not-publish", json.dumps(published))
+        self.assertNotIn("must-not-publish", json.dumps(exported_report))
+        self.assertEqual(catalog, original)
+        self.assertFalse(published["papers"][0]["runPerformed"])
+
+    def test_bootstrap_counts_cannot_claim_completion_with_remaining_issues(self):
+        invalid = [None, {}, {"status": []}, {"status": {}}, {"status": "needs_attention", "totalCount": True, "completeCount": 0, "pendingCount": 0, "attentionCount": 1},
+                   {"status": "complete", "totalCount": 2, "completeCount": 1, "pendingCount": 1, "attentionCount": 0},
+                   {"status": "complete", "totalCount": 2, "completeCount": 2, "pendingCount": 0, "attentionCount": 0,
+                    "issues": [{"doi": "10.1000/test", "reasonCodes": ["figure_reuse_blocked"]}]},
+                   {"status": "active", "totalCount": 2, "completeCount": 0, "pendingCount": 1, "attentionCount": 0},
+                   {"status": "complete", "totalCount": 10001, "completeCount": 10001, "pendingCount": 0, "attentionCount": 0}]
+        for bootstrap in invalid:
+            catalog = sample()
+            catalog["bootstrap"] = bootstrap
+            output = build_site(self.root, catalog, [{"bootstrap": bootstrap}])
+            published = json.loads((output / "data" / "catalog.json").read_text())
+            report = json.loads((output / "data" / "updates.json").read_text())[0]
+            self.assertNotIn("bootstrap", published)
+            self.assertNotIn("bootstrap", report)
+
     def test_build_downgrades_ready_when_published_reviewed_asset_missing(self):
         catalog = sample()
         paper = catalog["papers"][0]
@@ -530,6 +568,39 @@ assert(!ui.diagnosticLabel({status:'invalid_response',error_reason:'summary_repr
         self.assertIn('value="browsable"', html)
         self.assertIn('value="candidates"', html)
         self.assertNotIn('<option value="partial">', html)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_bootstrap_phase_progress_is_safe_and_not_false_completion(self):
+        from paper_plot_library.bootstrap import BOOTSTRAP_REASON_CODES
+        test_code = r'''
+const assert=require('assert'),ui=require(process.argv[1]);
+const active={status:'active',totalCount:50,completeCount:4,pendingCount:44,attentionCount:2,startedAt:'2026-10-11T12:00:00Z',issues:[{doi:'10.1000/test',reasonCodes:['figure_reuse_blocked','input_undocumented','secret-provider-message'],raw_response:'secret-provider-message'}]};
+const safe=ui.bootstrapSummary(active);
+assert.equal(safe.completeCount,4);assert.equal(safe.pendingCount,44);assert.equal(safe.attentionCount,2);
+assert.deepEqual(safe.issues[0].reasonCodes,['figure_reuse_blocked','input_undocumented']);
+assert(!JSON.stringify(safe).includes('secret-provider-message'));
+const lines=ui.bootstrapLines(safe).join('\n');assert(lines.includes('暂停新文献发现') && lines.includes('4 / 50') && lines.includes('需要检查 2'));
+assert(lines.includes('许可受限或缺少输入不会自动改成完成'));
+assert(ui.bootstrapIssueLabel(safe.issues[0]).includes('原图许可'));
+assert(!ui.bootstrapIssueLabel({doi:'https://private/?secret=value',reasonCodes:['figure_reuse_blocked']}).includes('private'));
+assert.equal(ui.bootstrapSummary({...active,status:'complete'}),null);
+assert.equal(ui.bootstrapSummary({...active,totalCount:51}),null);
+assert.equal(ui.bootstrapSummary({...active,totalCount:true}),null);
+const complete={status:'complete',totalCount:50,completeCount:50,pendingCount:0,attentionCount:0,issues:[]};
+assert(ui.bootstrapLines(complete).join('\n').includes('下次运行进入日更'));
+assert(ui.bootstrapLines(complete).join('\n').includes('不代表人工精确对应已核'));
+assert(ui.bootstrapLines(complete,'daily')[0].includes('每日自动发现'));
+assert.equal(ui.bootstrapSummary({...complete,issues:[{doi:'10.1000/test',reasonCodes:['figure_reuse_blocked']}]}),null);
+assert.equal(ui.latestBootstrap({papers:[]},[]),null);
+assert.equal(ui.latestBootstrap({bootstrap:active},[]).summary.status,'active');
+assert.equal(ui.latestBootstrap({},[{startedAt:'2026-10-11T12:00:00Z',mode:'backfill',bootstrap:active},{startedAt:'2026-10-11T13:00:00Z',mode:'daily',bootstrap:complete}]).summary.status,'complete');
+assert(ui.statusLabel('bootstrap_in_progress').includes('暂停'));
+assert(ui.statusLabel('bootstrap_needs_attention').includes('需要处理'));
+assert(ui.statusLabel('bootstrap_complete_next_run').includes('下次'));
+assert.deepEqual(Object.keys(ui.BOOTSTRAP_REASONS).sort(),JSON.parse(process.argv[2]).sort());
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js"), json.dumps(sorted(BOOTSTRAP_REASON_CODES))], check=True, capture_output=True)
+        self.assertIn('id="collection-phase"', (PROJECT / "web" / "index.html").read_text())
 
     def test_large_figure_responsive_layout_rules(self):
         css = (PROJECT / "web" / "styles.css").read_text()

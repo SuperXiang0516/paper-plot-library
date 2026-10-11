@@ -7,8 +7,8 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>论文绘图案例库 · Paper Plot Library</title>
-  <link rel="stylesheet" href="styles.css?v=20261011-4">
-  <script defer src="app.js?v=20261011-4"></script>
+  <link rel="stylesheet" href="styles.css?v=20261011-5">
+  <script defer src="app.js?v=20261011-5"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到案例</a>
@@ -19,7 +19,7 @@
       <button type="button" data-view="papers">文献索引</button>
       <button type="button" data-view="updates">更新日志</button>
     </nav>
-    <span class="version">静态来源核查 · v0.2.0</span>
+    <span class="version">先补齐 · 再日更 · v0.3.0</span>
   </header>
   <section class="hero" aria-labelledby="hero-title">
     <div><p class="eyebrow">FROM THE PAPER, BACK TO THE INPUT</p><h1 id="hero-title">好图的背后，<br>是可以追溯的输入。</h1><p class="hero-description">原图、作者绘图入口、数据结构与中文核查笔记。<br>把“这个图怎么画”拆成有来源、能检查的步骤。</p></div>
@@ -27,6 +27,7 @@
   </section>
   <main id="main" tabindex="-1">
     <div id="notice" class="notice" role="status">正在读取案例目录…</div>
+    <section id="collection-phase" class="collection-phase" aria-label="资料收集阶段" hidden></section>
     <section class="collection-tools" aria-label="筛选案例">
       <div class="collection-heading"><h2 id="view-title">绘图案例</h2><p id="collection-summary"></p></div>
       <div class="filters" id="filters">

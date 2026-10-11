@@ -20,9 +20,12 @@ def main(argv=None):
     seed = sub.add_parser("seed", help="首次导入已有人工核查案例（不覆盖已有库）")
     seed.add_argument("source", type=Path)
     run = sub.add_parser("update", help="有预算的完整自动更新；密钥缺失则降级")
+    run.add_argument("--mode", choices=("auto", "backfill", "daily"), default="auto",
+                     help="auto 先初始化当前案例；backfill 只补齐当前案例；daily 初始化完成后日更")
     run.add_argument("--no-discovery", action="store_true")
     run.add_argument("--doi", action="append", help="只修补指定已有 DOI")
     run.add_argument("--repair-limit", type=int)
+    run.add_argument("--bootstrap-batch-limit", type=int, help="补库阶段每轮最多检查的既有案例数（1—50）")
     run.add_argument("--max-ai-calls", type=int)
     run.add_argument("--max-requests", type=int)
     sub.add_parser("build", help="离线构建网站，不调用 API")
@@ -38,8 +41,10 @@ def main(argv=None):
     elif args.command == "update":
         if args.doi and any(not normalize_doi(doi) for doi in args.doi):
             parser.error("--doi 必须为有效 DOI；未开始更新")
-        overrides = {key: getattr(args, key) for key in ("repair_limit", "max_ai_calls", "max_requests") if getattr(args, key) is not None}
-        report = run_pipeline(root, load_settings(root, overrides), only_dois=args.doi, discover_new=not args.no_discovery and not args.doi)
+        overrides = {key: getattr(args, key) for key in ("repair_limit", "bootstrap_batch_limit", "max_ai_calls", "max_requests") if getattr(args, key) is not None}
+        report = run_pipeline(root, load_settings(root, overrides), only_dois=args.doi,
+                              discover_new=not args.no_discovery and not args.doi and args.mode != "backfill",
+                              mode=args.mode)
         print(json.dumps(report, ensure_ascii=False, indent=2))
     elif args.command == "build":
         output = build_site(root, validate_catalog(read_json(root / "data" / "catalog.json")), read_json(root / "data" / "updates.json", []))
@@ -51,7 +56,9 @@ def main(argv=None):
         catalog = validate_catalog(read_json(root / "data" / "catalog.json"))
         print(json.dumps({"project": "paper-plot-library", "cases": len(catalog["papers"]), "authorCodeExecuted": False,
                           "configured": {name: bool(getattr(settings, name)) for name in ("llm_api_key", "llm_model", "easyscholar_key", "ncbi_api_key", "openalex_key", "github_token")},
-                          "daily_new_cap": settings.max_new_per_day, "ai_attempt_cap": settings.max_ai_calls}, ensure_ascii=False, indent=2))
+                          "daily_new_cap": settings.max_new_per_day, "ai_attempt_cap": settings.max_ai_calls,
+                          "initialize_existing_first": settings.initialize_existing_first,
+                          "bootstrap_batch_limit": settings.bootstrap_batch_limit}, ensure_ascii=False, indent=2))
     elif args.command == "serve":
         if not 1024 <= args.port <= 65535:
             parser.error("port 必须在 1024—65535")
