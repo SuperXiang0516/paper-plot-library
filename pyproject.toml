@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-plot-library"
+version = "0.1.0"
+description = "An evidence-first, automated library of published-paper plotting cases"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10,<13", "pypdf>=5,<7"]
+
+[project.scripts]
+paper-plot-library = "paper_plot_library.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["paper_plot_library*"]

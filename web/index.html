@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="从正式发表的组学与生物计算论文收集原图、作者代码入口与输入结构。静态核查，不执行作者代码。">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>论文绘图案例库 · Paper Plot Library</title>
+  <link rel="stylesheet" href="styles.css?v=20261011-3">
+  <script defer src="app.js?v=20261011-3"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到案例</a>
+  <header class="site-header">
+    <a class="brand" href="#gallery" aria-label="论文绘图案例库首页"><span class="brand-mark" aria-hidden="true">P</span><span>论文绘图案例库<small>Paper Plot Library</small></span></a>
+    <nav aria-label="网站栏目">
+      <button type="button" data-view="gallery" aria-current="page">绘图案例</button>
+      <button type="button" data-view="papers">文献索引</button>
+      <button type="button" data-view="updates">更新日志</button>
+    </nav>
+    <span class="version">本地第一版 · v1</span>
+  </header>
+  <section class="hero" aria-labelledby="hero-title">
+    <div><p class="eyebrow">FROM THE PAPER, BACK TO THE INPUT</p><h1 id="hero-title">好图的背后，<br>是可以追溯的输入。</h1><p class="hero-description">原图、作者绘图入口、数据结构与中文核查笔记。<br>把“这个图怎么画”拆成有来源、能检查的步骤。</p></div>
+    <aside class="hero-note"><span class="note-index">01 / STUDY THE WORKFLOW</span><p>先读结构，再理解代码。<br>不把收录当作复现成功。</p><span>组学 · 方法学 · 生物计算</span></aside>
+  </section>
+  <main id="main" tabindex="-1">
+    <div id="notice" class="notice" role="status">正在读取案例目录…</div>
+    <section class="collection-tools" aria-label="筛选案例">
+      <div class="collection-heading"><h2 id="view-title">绘图案例</h2><p id="collection-summary"></p></div>
+      <div class="filters" id="filters">
+        <label>图形形态<select id="form-filter"><option value="">全部图形</option></select></label>
+        <label>分析功能<select id="function-filter"><option value="">全部功能</option></select></label>
+        <label>核查状态<select id="status-filter"><option value="">全部有效状态</option><option value="ready">核查就绪</option><option value="partial">部分完成</option><option value="pending">候选 / 待核</option><option value="error">本轮异常</option><option value="excluded">已排除（审计）</option></select></label>
+        <label class="search-label">搜索<input id="search" type="search" placeholder="标题、主题、DOI…" autocomplete="off"></label>
+        <label>排序<select id="sort"><option value="evidence">证据完整度</option><option value="date">发表时间</option><option value="citations">引用数（仅选文偏好）</option></select></label>
+        <button id="reset" type="button" class="button secondary">重置</button>
+      </div>
+      <div class="results-line"><span id="result-count" aria-live="polite"></span><span>图形 × 功能：同一选图的多对多索引，非逐分面验证</span></div>
+    </section>
+    <div id="content"></div>
+    <noscript><p>请启用 JavaScript 以浏览本地生成的案例目录。网站不调用私人 API。</p></noscript>
+  </main>
+  <footer><span>论文绘图案例库 · 独立于衰老文献日报</span><p>仅做来源与代码静态核查；未执行作者代码，未验证与原图一致。IF、分区与引用数不代表研究质量。</p><span id="generated-at"></span></footer>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="detail-top"><div><p class="eyebrow">CASE NOTES / 静态核查</p><h2 id="detail-title"></h2></div><button id="close-detail" type="button" class="icon-button" aria-label="关闭案例详情">×</button></div>
+    <div id="detail-meta"></div>
+    <div class="detail-layout"><aside id="detail-figure"></aside><section class="detail-reading"><div class="detail-tabs" role="tablist" aria-label="案例资料"><button type="button" role="tab" id="tab-inputs" data-tab="inputs" aria-controls="detail-panel">输入文档</button><button type="button" role="tab" id="tab-explanation" data-tab="explanation" aria-controls="detail-panel">中文解读</button><button type="button" role="tab" id="tab-source" data-tab="source" aria-controls="detail-panel">代码与来源</button><button type="button" role="tab" id="tab-notes" data-tab="notes" aria-controls="detail-panel">核查笔记</button></div><div id="detail-panel" role="tabpanel" tabindex="0"></div></section></div>
+  </dialog>
+  <dialog id="image-viewer" aria-labelledby="image-viewer-title">
+    <div class="detail-top"><div><p class="eyebrow">OFFICIAL FIGURE / 保留原图比例</p><h2 id="image-viewer-title"></h2></div><button id="close-image-viewer" type="button" class="icon-button" aria-label="关闭原图大图">×</button></div>
+    <div class="image-controls"><button id="image-size-toggle" type="button" class="button secondary" aria-pressed="false">切换到 100% 原始尺寸</button><span id="image-viewer-source"></span></div>
+    <div id="image-viewer-stage" class="full-image-stage"></div><p id="image-viewer-caption"></p>
+  </dialog>
+</body>
+</html>
