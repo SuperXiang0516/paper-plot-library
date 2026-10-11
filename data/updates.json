@@ -1,5 +1,54 @@
 [
   {
+    "startedAt": "2026-10-11T12:02:21Z",
+    "date": "2026-10-11",
+    "newCount": 0,
+    "repairCount": 5,
+    "checkedCount": 5,
+    "failures": [],
+    "discoveryStatus": "daily_quota_reached",
+    "authorCodeExecuted": false,
+    "aiRepairCount": 0,
+    "collectionBudgetExhausted": false,
+    "maxRequests": 150,
+    "maxAiCalls": 5,
+    "reservedAiRequests": 5,
+    "untouchedRepairCount": 3,
+    "retryRepairCount": 2,
+    "cooldownSkippedCount": 0,
+    "untouchedRemainingCount": 40,
+    "automaticCompleteCount": 3,
+    "incompleteCount": 2,
+    "stageCounts": {
+      "metadata": {
+        "matched": 5
+      },
+      "article": {
+        "inspected": 4,
+        "no_final_version": 1
+      },
+      "repository": {
+        "inspected": 4,
+        "no_scripts_found": 1
+      },
+      "metrics": {
+        "matched": 5
+      },
+      "ai": {
+        "generated": 3,
+        "deferred_until_selection": 2
+      }
+    },
+    "missingKeys": [],
+    "finishedAt": "2026-10-11T12:06:15Z",
+    "requests": 91,
+    "aiAttempts": 3,
+    "collectionRequests": 88,
+    "totalCount": 55,
+    "dailyNewCount": 5,
+    "status": "partial"
+  },
+  {
     "startedAt": "2026-10-11T11:23:14Z",
     "date": "2026-10-11",
     "newCount": 0,
