@@ -93,12 +93,10 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "authentication_error"
+          "ai": "generated"
         },
-        "errors": [
-          "ai: authentication_error"
-        ],
-        "lastCheckedAt": "2026-10-11T11:17:01Z"
+        "errors": [],
+        "lastCheckedAt": "2026-10-11T11:23:37Z"
       },
       "pmcid": "PMC12820199",
       "pmid": "41554691",
@@ -347,7 +345,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T11:16:58.966479+00:00",
+        "retrievedAt": "2026-10-11T11:23:35.740002+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -497,16 +495,48 @@
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
-        "status": "authentication_error",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "整合表观遗传学与转录组学识别人类血液中的衰老基因",
+        "summary_zh": "该论文提出一种整合表观遗传与转录组年龄相关变化的方法,利用高分辨率多组学数据识别血液中同时具有表观遗传和转录组年龄依赖变化的基因组区域。摘要称这些多组学衰老基因富集适应性免疫功能,在多样人群中复制更稳健,且与衰老相关结局的关联强于单独使用表观遗传或转录组数据识别的基因,并可能作为表观遗传编辑的靶点。提供的证据包含论文元数据、图注(Fig.1–Fig.4)以及作者代码仓库的静态观察记录;作者代码未被执行,静态检查不构成复现验证。",
+        "learning_points": [
+          "论文主题为整合表观遗传(DNA甲基化)与转录组数据识别人类血液中的衰老基因,发表于 Nature Communications。",
+          "Fig.1 展示6个RNA-seq队列(MESA1、MESA2、PPMI、GC6、500FG、JenAge)的年龄分布、前10个年龄相关转录本,以及CD248表达随年龄的负相关(各队列Pearson r 约 -0.34 至 -0.56)。",
+          "Fig.2 比较年龄相关DNAm增益区域与基因表达随年龄的相关性,并展示年龄相关下调基因启动子DNAm与年龄的相关性,涉及MESA1、MESA2、PPMI队列。",
+          "Fig.3 在MGB队列中展示年龄与衰老CpG处DNAm水平的相关性,并比较不同队列(含RA、Grady、GENOA)的CpG位点样本量。",
+          "Fig.4 用火山图和森林图展示DNAm水平与死亡率的关联,采用Cox比例风险回归并按年龄、性别调整,使用Benjamini-Hochberg FDR校正。",
+          "作者代码仓库固定提交为54c8c2336be354a8a74a5f87a8d3c120b42ca921,包含R脚本与多个Jupyter notebook;静态观察显示部分notebook无法解析,需人工复核。",
+          "curated-note 指出某notebook含Fig.1-c标题、读取1c.csv并保存1c.png,可作为图与代码对应关系的有限线索。"
+        ],
         "limitations": [
+          "作者代码未执行,静态检查不等于复现验证,不能宣称已复现或结果一致。",
+          "输入数据尺度、图号与代码的完整对应关系未明示,保持未知。",
+          "多个notebook(01_rna_corr.ipynb、02_dnam_corr.ipynb、03_top_genes.ipynb)无法被解析,含magic或动态语法,需人工复核。",
+          "证据仅包含图注与代码静态观察,未提供实际运行结果、统计输出或数据文件内容。",
+          "图注中部分样本量与统计细节被截断(如Fig.1-d、Fig.2-c、Fig.3-d),无法完整核对。",
+          "未观察到许可、期刊指标或独立复现结果,相关信息未知。",
+          "AI注释仅为待核学习材料,不能作为事实依据。",
+          "各队列样本量与人群构成差异可能影响跨队列比较,但证据未提供相关分析。",
+          "证据未说明表观遗传编辑靶点验证的实验结果。",
+          "证据未提供多组学衰老基因列表或具体基因名称(除CD248外)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
-        "error_reason": "http_401",
-        "http_status": 401,
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-11T11:23:42Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "4b1ceb07384b6e6779373e7e59f063c7130ff45f7b05e2231b9730308b55665b",
         "summary_fingerprint": "05a19277ec3e8caca09e91fc2e600f433df6fede6d8a5c10f5b7d18319b197a5"
       }
@@ -601,12 +631,12 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "authentication_error"
+          "ai": "invalid_response"
         },
         "errors": [
-          "ai: authentication_error"
+          "ai: invalid_response"
         ],
-        "lastCheckedAt": "2026-10-11T11:17:07Z"
+        "lastCheckedAt": "2026-10-11T11:23:47Z"
       },
       "pmcid": "PMC11405513",
       "pmid": "39285199",
@@ -884,7 +914,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T11:17:02.878661+00:00",
+        "retrievedAt": "2026-10-11T11:23:43.272406+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -5763,7 +5793,7 @@
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
-        "status": "authentication_error",
+        "status": "invalid_response",
         "title_zh": "",
         "summary_zh": "",
         "learning_points": [],
@@ -5771,8 +5801,7 @@
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [],
-        "error_reason": "http_401",
-        "http_status": 401,
+        "error_reason": "invalid_response",
         "source_fingerprint": "6144c33142bd0a26e57f83c33c31495b58f9aa912385569bfb69d2f7e4fdff01",
         "summary_fingerprint": "2d6b2c8b2499016b1e15eac133d2d4ef7a6793e38df46adf42ed204a57089cc0"
       }
@@ -10005,12 +10034,10 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "authentication_error"
+          "ai": "generated"
         },
-        "errors": [
-          "ai: authentication_error"
-        ],
-        "lastCheckedAt": "2026-10-11T11:17:14Z"
+        "errors": [],
+        "lastCheckedAt": "2026-10-11T11:23:58Z"
       },
       "pmcid": "PMC11108788",
       "pmid": "38622407",
@@ -10640,7 +10667,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T11:17:09.242445+00:00",
+        "retrievedAt": "2026-10-11T11:23:54.472664+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -12667,16 +12694,47 @@
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
-        "status": "authentication_error",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "人类骨骼肌衰老图谱(Human skeletal muscle aging atlas)",
+        "summary_zh": "该资料为发表于 Nature Aging(2024-04-15,DOI:10.1038/s43587-024-00613-3)的论文条目,摘要称对成人肋间肌进行单细胞与单核转录组分析(90,902 个单细胞与 92,259 个单核,来自 17 位供体),刻画各肌肉区室的衰老变化,并给出在线资源与配套小鼠肌肉图谱。提供的证据包含 Fig. 1–Fig. 4 的图注文本、若干 DE_analysis 脚本的静态观察片段,以及一条关于 Notebook 文件名与 Fig. 1d 对应关系的注释。作者代码未被执行,因此本条目仅作待核学习注释,不构成复现验证。",
+        "learning_points": [
+          "论文主题为人类骨骼肌衰老图谱,期刊为 Nature Aging,时间为 2024-04-15(evidence: publication)。",
+          "摘要称研究覆盖 90,902 个单细胞与 92,259 个单核、17 位供体,取材为成人肋间肌,并给出在线资源与配套小鼠肌肉图谱(evidence: publication)。",
+          "Fig. 1 展示实验设计与研究方向的视觉概览、跨年龄采样时间轴(scRNA-seq/snRNA-seq 为 8 年轻 vs 9 年老;肌纤维分型为 7 年轻 vs 4 年老)、UMAP 注释可视化,以及细胞簇丰度随年龄的 log2 倍数变化与细胞/细胞核富集比较(evidence: figure-0)。",
+          "Fig. 2 聚焦人 MuSC 衰老机制,包含 MuSC 亚群 UMAP、GO 词条树、Milo 蜂群图、核糖体生物发生富集评分(5 年轻 vs 7 年老,双尾 Mann–Whitney–Wilcoxon 检验)、核糖体生物发生与 RNA 聚合酶 I 复合体基因点图,以及衰老相关与核糖体组装基因表达(evidence: figure-1)。",
+          "Fig. 3 为整合的单细胞与单核肌纤维图谱,含整合/分别的 UMAP、剪接与未剪接转录本比例饼图、肌核群体 Milo 蜂群图(注明供体 343B 因 II-OTU 状态比例异常被剔除)、FAM189A2+ 与 OTUD1+ 状态的标记基因谱与 RNAscope 染色、NMJ 及辅助标记基因点图与 RNAscope 染色(evidence: figure-2)。",
+          "Fig. 4 关注对抗衰老中快肌纤维丢失的机制,含肌纤维类别与对应肌核示意图、免疫荧光染色与比例变化(7 年轻 vs 4 年老)、基于 MYH1/MYH2/MYH7 的三维肌核散点图与比例变化(5 年轻 vs 5 年老,剔除 3 位未分类比例 >75% 的供体)、RNAscope 联合免疫荧光,以及快肌结构基因小提琴图(evidence: figure-3)。",
+          "DE_analysis 下四个 run.R 脚本(human scell coarse/granular、human snuclei coarse/granular)的静态观察显示读取 features.csv 与 metadata.csv、以 Y.Rbin 为转置表达矩阵,但脚本未被执行(evidence: script-0、script-1、script-2、script-3)。",
+          "有一条注释称 Notebook 文件名直接标记 Fig1d,图注说明细胞组成 fold change 与 LTSR,与 Notebook 的 CellTypeCompositionAnalysis 和点图函数一致(evidence: curated-note)。"
+        ],
         "limitations": [
+          "作者代码未被执行,静态检查不构成复现验证,不能宣称已复现或结果一致(evidence: inspection-boundary)。",
+          "输入数据的尺度、图号与代码的对应关系在证据未明示处保持未知(evidence: inspection-boundary)。",
+          "AI 输出仅为待核学习注释,不能作为已验证结论使用(evidence: inspection-boundary)。",
+          "摘要中的细胞数、供体数、在线资源与小鼠图谱等信息来自论文摘要文本,未在本次证据中独立核验(evidence: publication)。",
+          "Fig. 1–Fig. 4 的描述均来自图注文本,图注中部分内容被截断,完整细节未知(evidence: figure-0、figure-1、figure-2、figure-3)。",
+          "脚本静态观察仅显示读取 features.csv、metadata.csv 与 Y.Rbin 的片段,未展示完整分析流程、参数与统计模型(evidence: script-0、script-1、script-2、script-3)。",
+          "关于 Notebook 文件名与 Fig. 1d 对应关系的注释为整理性说明,未提供可独立核验的原始文件内容(evidence: curated-note)。",
+          "证据未提供期刊指标、许可信息或数据可获取性细节,这些内容未知(evidence: publication、inspection-boundary)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
-        "error_reason": "http_401",
-        "http_status": 401,
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-11T11:24:05Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "cd3ccd0b8541b0d353da66d75e515dd05df32da8b0d745b41c5951d3584b5eaf",
         "summary_fingerprint": "c5e5eeb48329284a55f17ce71c71935e7ca3914361bfdd1e5dc5f4c1af75abe9"
       }
@@ -19849,7 +19907,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T10:48:18.874461+00:00",
+        "retrievedAt": "2026-10-11T11:23:24.703125+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -20360,7 +20418,8 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T10:48:18Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -20383,12 +20442,10 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "error"
+          "ai": "generated"
         },
-        "errors": [
-          "ai: error"
-        ],
-        "lastCheckedAt": "2026-10-11T10:48:22Z"
+        "errors": [],
+        "lastCheckedAt": "2026-10-11T11:23:28Z"
       },
       "selectionScore": {
         "total": 78.70784905,
@@ -20406,14 +20463,48 @@
       },
       "admittedAt": "2026-10-11T10:48:24Z",
       "ai": {
-        "status": "error",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "DeCoRE:利用直接RNA测序的结构探测数据解析RNA结构异质性的计算方法",
+        "summary_zh": "该资料介绍了一种名为DeCoRE(deconvolving complex RNA structural ensembles)的计算方法,旨在利用直接RNA测序(direct RNA sequencing)在单个转录本水平上解析RNA结构异质性与动态变化。摘要称DeCoRE结合增强的结构信号检测与测序读段直接聚类,可在单核苷酸分辨率下解析RNA结构集合,并展示其在赖氨酸与TPP核糖开关已知替代构象以及细菌核糖体RNA共转录折叠路径上的应用。所提供的证据包含四张图的图注(涉及方法流程、核糖开关聚类、16S rRNA转录中间体结构转变与异质性)以及若干脚本的静态观察记录。作者代码未执行,输入尺度与图号对应关系未明示处保持未知,AI注释仅为待核学习材料。",
+        "learning_points": [
+          "DeCoRE被描述为一种面向直接RNA测序结构探测数据的计算方法,目标是在单个转录本水平解析RNA结构异质性与动态(evidence: publication)。",
+          "Fig. 1图注描述了DeCoRE从纳米孔测序数据提取结构信息的流程:RNA经结构探测化学试剂(如NAI-N3)或对照试剂(DMSO)处理,经纳米孔DRS测序后,将读段及其原始电流信号比对到参考RNA,并对每个核苷酸使用三特征one-class SVM模型识别化学处理读段中的电流信号异常(evidence: figure-0)。",
+          "Fig. 1图注提到增强结构谱整合了误判碱基(miscalled bases)与修饰碱基(modified bases),并在150 mM Aclm处理的RNA中评估性能,ROC曲线分析显示与pri-miR-17∼92a RNA已知结构模型具有较强一致性(evidence: figure-0)。",
+          "Fig. 2图注描述了用于解析异质结构的聚类方法:将每条读段的结构谱编码为向量,碱基分为0(匹配碱基)、1(修饰碱基)、2(误判碱基),并填充至参考RNA长度L;随后对赖氨酸核糖开关化学处理样本的向量化结构谱进行UMAP降维,按DeCoRE识别的簇着色,并用轮廓系数评估聚类质量(evidence: figure-1)。",
+          "Fig. 2图注还显示DeCoRE在赖氨酸核糖开关中识别出两个结构簇,并在包含抗终止子与转录终止子两种互斥构象的区域展示其反应性评分,三个关键区分区域被高亮标注(evidence: figure-1)。",
+          "Fig. 3图注描述了在体外生成枯草芽孢杆菌16S rRNA转录中间体并用纳米孔DRS结构探测方法检测其结构的实验流程,并展示各中间体与全长16S rRNA在共享核苷酸区域反应性评分的PCC,以及136个中间体的反应性评分热图(按3′端比对位置以10-nt分辨率分类)(evidence: figure-2)。",
+          "Fig. 4图注描述了五个高覆盖度16S rRNA转录中间体化学处理样本读段向量化结构谱的UMAP,以及1–270 nt、1–320 nt、1–670 nt区域各构象反应性评分的PCA散点图,点大小反映构象在相应转录中间体中的相对丰度(evidence: figure-3)。",
+          "提供的脚本静态观察记录包含固定提交894bd3d6d71671d39b9c6a5a252598b6a1da6a17下的若干文件路径与SHA256,其中dataprocessing.py的静态观察显示以分块方式读取事件文件(chunksize=50000)(evidence: script-0, script-1, script-2, script-3)。"
+        ],
         "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致(evidence: inspection-boundary)。",
+          "输入数据尺度、图号与代码的对应关系未明示,相关细节保持未知(evidence: inspection-boundary)。",
+          "所提供的脚本静态观察记录仅列出文件路径、SHA256与极少量代码片段,未展示完整实现或运行结果(evidence: script-0, script-1, script-2, script-3)。",
+          "各图注文本在提供的证据中存在截断,部分图注内容不完整,无法据此判断完整图表信息(evidence: figure-0, figure-1, figure-2, figure-3)。",
+          "未观察到关于数据许可、期刊指标或独立复现结果的信息,这些内容未知(evidence: publication, inspection-boundary)。",
+          "摘要中关于赖氨酸与TPP核糖开关替代构象、细菌核糖体RNA共转录折叠路径的结论来自论文自述,未在本次证据中独立验证(evidence: publication)。",
+          "Fig. 1中ROC曲线分析的具体数值、样本量与统计细节未在证据中给出(evidence: figure-0)。",
+          "Fig. 2中轮廓系数具体数值、各簇相对比例数值未在证据中给出(evidence: figure-1)。",
+          "Fig. 3中PCC具体数值、136个中间体的覆盖度与统计细节未在证据中给出(evidence: figure-2)。",
+          "Fig. 4中PCA解释方差、自由能数值与滑动窗口PCC具体结果未在证据中给出(evidence: figure-3)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-11T11:23:34Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "38c24f720570a13f62abf172c7ec2f3112330e2a2a8836bad58d5485470ac6b4",
         "summary_fingerprint": "003768c52de79d7289d92044d41e990fe5393b7f39f4189815e08bd7d9b6c6ac"
       }
@@ -20677,7 +20768,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T10:48:10.670673+00:00",
+        "retrievedAt": "2026-10-11T11:23:15.287070+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -20825,7 +20916,8 @@
         "cas": "",
         "source": "EasyScholar",
         "retrieved_at": "",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "error_reason": "error"
       },
       "citations": {
         "status": "matched",
@@ -20848,13 +20940,12 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "error",
-          "ai": "error"
+          "ai": "generated"
         },
         "errors": [
-          "metrics: error",
-          "ai: error"
+          "metrics: error"
         ],
-        "lastCheckedAt": "2026-10-11T10:48:14Z"
+        "lastCheckedAt": "2026-10-11T11:23:19Z"
       },
       "selectionScore": {
         "total": 56.12168955,
@@ -20872,14 +20963,48 @@
       },
       "admittedAt": "2026-10-11T10:48:24Z",
       "ai": {
-        "status": "error",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "面向抽象与推理语料库的向量符号代数方法",
+        "summary_zh": "该论文提出一种受认知科学启发的 ARC-AGI 求解器,将 System 1 直觉与 System 2 推理结合,采用基于向量符号代数(VSA)的神经符号方法,通过以对象为中心的程序合成来表征抽象对象、引导解搜索并支持样本高效的神经学习。摘要报告了初步结果:ARC-AGI-1-Train 得分 10.8%、ARC-AGI-1-Eval 得分 3.0%,Sort-of-ARC 得分 94.5%、1D-ARC 得分 83.1%,并称后者以极小计算成本超过 GPT-4。论文发表于 Npj unconventional computing(2026-10-01),DOI 为 10.1038/s44335-026-00100-5,作者代码位于 https://github.com/ijoffe/ARC-VSA-2025。提供的证据还包含四张 ARC-AGI 任务图注(0962bcdd、54d9e175、a61f2674、a61ba2ce)以及若干源码文件的静态观察记录。",
+        "learning_points": [
+          "论文将 ARC-AGI 定位为生成式、少样本的流体智力基准,并指出其对当前最先进 AI 系统仍极难。",
+          "求解器采用神经符号方法,基于向量符号代数(VSA),并整合 System 1 直觉与 System 2 推理,强调高效与可解释。",
+          "核心机制是以对象为中心的程序合成,用 VSA 表征抽象对象、引导解搜索并支持样本高效的神经学习。",
+          "摘要报告初步结果:ARC-AGI-1-Train 10.8%、ARC-AGI-1-Eval 3.0%、Sort-of-ARC 94.5%、1D-ARC 83.1%。",
+          "论文称 1D-ARC 结果以极小计算成本超过 GPT-4,并认为自己是首个将 VSA 应用于 ARC-AGI 的工作。",
+          "证据中的图注展示了四类 ARC-AGI 任务模式:多色对象变换为特定更大对象、按中心像素颜色为灰色像素分隔的黑色区域着色、将最短条纹重着色为红、最高条纹为蓝、把四个块重排为小网格上的空心方框。",
+          "提供的源码静态观察涉及 src/grid.py、src/object.py、src/objobj_solver.py、src/perception.py,固定提交为 c031a9c6b4885ab03b28fbfdcd97b6b3693df564。",
+          "作者代码未被执行,静态检查不构成复现验证,因此上述性能数字与实现细节均未在本证据范围内得到独立验证。"
+        ],
         "limitations": [
+          "作者代码未运行,静态检查不是复现验证,不能宣称已复现或结果一致。",
+          "摘要中的性能数字(10.8%、3.0%、94.5%、83.1%)为论文自报的初步结果,未在本证据范围内独立验证。",
+          "证据未明示输入尺度、图号与具体数据结构的对应关系,相关细节保持未知。",
+          "证据未提供各源码文件的具体静态观察内容,仅给出路径、提交与哈希,无法据此推断实现逻辑。",
+          "证据未说明 VSA 的具体编码方式、维度或超参数,也未说明 System 1/System 2 的具体交互机制。",
+          "证据未提供与 GPT-4 对比的计算成本量化数据,无法核实“极小计算成本”的说法。",
+          "证据未提供数据集划分、评测协议或统计显著性信息。",
+          "证据未提供许可、期刊指标或同行评审状态等信息。",
+          "证据未说明四张图注与求解器内部模块的对应关系。",
+          "证据未说明代码仓库的可用性、依赖或运行环境。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-11T11:23:23Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "57fa9e8f23108bc0d27c9acc5f7a2114a0a163e73057e89437033ea0e7eea538",
         "summary_fingerprint": "eee9441a23ecb171f99731ec8b10e2e0938d0fb559224369bdb605520767031d"
       }
@@ -36877,7 +37002,183 @@
             }
           ]
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+        "files": [
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/dataprocessing.py；读取行 37；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/dataprocessing.py",
+            "observedFieldReferences": [
+              {
+                "name": "event_stdv",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "event_length",
+                "line": 47,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/pickIntermediate.py；读取行 10；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/pickIntermediate.py",
+            "observedFieldReferences": [
+              {
+                "name": "contig",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "position",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/pickIntermediate.py；读取行 33；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/pickIntermediate.py",
+            "observedFieldReferences": [
+              {
+                "name": "contig",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "position",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/predictModbase.py；读取行 101；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/predictModbase.py",
+            "observedFieldReferences": [
+              {
+                "name": "Predict",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "position",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "read_name",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "reference_kmer",
+                "line": 28,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/predictModbase.py；读取行 102；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/huangyon20/DeCoRe/blob/894bd3d6d71671d39b9c6a5a252598b6a1da6a17/predictModbase.py",
+            "observedFieldReferences": [
+              {
+                "name": "Predict",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "position",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "read_name",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "reference_kmer",
+                "line": 28,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "doi-4906bd146834e6cb": {
       "tree": "输入待定位",
@@ -39885,5 +40186,5 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-11T11:17:55Z"
+  "generatedAt": "2026-10-11T11:24:05Z"
 }

@@ -1,5 +1,58 @@
 [
   {
+    "startedAt": "2026-10-11T11:23:14Z",
+    "date": "2026-10-11",
+    "newCount": 0,
+    "repairCount": 5,
+    "checkedCount": 5,
+    "failures": [
+      {
+        "doi": "10.1038/s41467-024-51855-z",
+        "stage": "ai",
+        "error": "ai: invalid_response"
+      },
+      {
+        "doi": "10.1038/s44335-026-00100-5",
+        "stage": "metrics",
+        "error": "metrics: error"
+      }
+    ],
+    "discoveryStatus": "disabled",
+    "authorCodeExecuted": false,
+    "aiRepairCount": 4,
+    "collectionBudgetExhausted": false,
+    "maxRequests": 150,
+    "maxAiCalls": 5,
+    "reservedAiRequests": 5,
+    "stageCounts": {
+      "metadata": {
+        "matched": 5
+      },
+      "article": {
+        "inspected": 5
+      },
+      "repository": {
+        "inspected": 5
+      },
+      "metrics": {
+        "matched": 4,
+        "error": 1
+      },
+      "ai": {
+        "generated": 4,
+        "invalid_response": 1
+      }
+    },
+    "missingKeys": [],
+    "finishedAt": "2026-10-11T11:24:05Z",
+    "requests": 82,
+    "aiAttempts": 5,
+    "collectionRequests": 77,
+    "totalCount": 55,
+    "dailyNewCount": 5,
+    "status": "partial"
+  },
+  {
     "startedAt": "2026-10-11T11:16:57Z",
     "date": "2026-10-11",
     "newCount": 2,
