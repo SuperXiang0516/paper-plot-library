@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import hashlib
+import io
 import os
 from pathlib import Path, PurePosixPath
 import re
@@ -288,73 +289,161 @@ def _directory(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
-def _raster_file(path: Path) -> bool:
-    if not path.is_file() or path.is_symlink() or path.stat().st_size > 24000000:
-        return False
-    with path.open("rb") as stream:
-        header = stream.read(16)
-    return header.startswith((b"\x89PNG\r\n\x1a\n", b"\xff\xd8\xff", b"GIF87a", b"GIF89a")) or header.startswith(b"RIFF") and header[8:12] == b"WEBP"
+def _verified_raster(root: Path, figure: dict, article_license: str) -> bytes | None:
+    """Return only the exact, licensed, digest-checked, decodable image bytes."""
+    from .figures import reuse_allowed
+    asset = _asset(figure.get("asset"))
+    digest = figure.get("assetSHA256") if "assetSHA256" in figure else figure.get("sha256")
+    if (figure.get("reuseStatus") != "allowed" or not asset
+            or not _public_url(figure.get("sourceURL"))
+            or not reuse_allowed(article_license, str(figure.get("caption") or "") + " " + str(figure.get("credit") or ""),
+                                 str(figure.get("license") or ""))
+            or not isinstance(digest, str) or not re.fullmatch(r"[a-fA-F0-9]{64}", digest)):
+        figure.pop("asset", None)
+        return None
+    source_root = root / "data" / "assets"
+    source = root / "data" / asset
+    try:
+        # Check the whole project-local parent chain, including data/. A
+        # resolved-within-assets check alone accepts aliases inside that tree.
+        for path in (source, *source.parents):
+            if path.is_symlink():
+                raise ValueError("Symlinked source image path")
+            if path == root:
+                break
+        source.resolve().relative_to(source_root.resolve())
+        if not source.is_file() or not 0 < source.stat().st_size <= 24000000:
+            raise ValueError("Missing or oversized image")
+        with source.open("rb") as stream:
+            raw = stream.read(24000001)
+        if not 0 < len(raw) <= 24000000 or hashlib.sha256(raw).hexdigest() != digest.lower():
+            raise ValueError("Image digest mismatch")
+        raster = (raw.startswith((b"\x89PNG\r\n\x1a\n", b"\xff\xd8\xff", b"GIF87a", b"GIF89a"))
+                  or raw.startswith(b"RIFF") and raw[8:12] == b"WEBP")
+        if not raster:
+            raise ValueError("Not a displayable raster")
+        from PIL import Image
+        with Image.open(io.BytesIO(raw)) as image:
+            if image.format not in {"PNG", "JPEG", "GIF", "WEBP"} or not 0 < image.width * image.height <= 64000000:
+                raise ValueError("Unsupported or oversized raster")
+            image.verify()
+        # verify() checks structure; load() also catches truncated pixels that
+        # a browser could not display. Neither executes author code.
+        with Image.open(io.BytesIO(raw)) as image:
+            image.load()
+        return raw
+    except Exception:
+        figure.pop("asset", None)
+        figure["reuseStatus"] = "asset_unavailable"
+        return None
+
+
+def _body_reference(figure: dict) -> dict | None:
+    """A supplemental/extended namespace must never be promoted to main."""
+    from .figures import figure_reference
+    if re.search(r"\b(?:supplement(?:ary|al|s)?|supporting|extended)\b|补充|附图|扩展", str(figure.get("label") or ""), re.I):
+        return None
+    label_reference = figure_reference(figure.get("label"))
+    declared = figure.get("reference")
+    if declared is not None:
+        if (not isinstance(declared, dict) or declared.get("scope") != "main"
+                or not re.fullmatch(r"[0-9]{1,6}", str(declared.get("number", "")))):
+            return None
+        reference = declared
+        if label_reference and (label_reference["scope"] != "main"
+                                or int(label_reference["number"]) != int(reference["number"])):
+            return None
+    else:
+        reference = label_reference
+    if not reference or reference.get("scope") != "main":
+        return None
+    if not isinstance(figure.get("id"), str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._:-]{0,159}", figure["id"]):
+        return None
+    return {"scope": "main", "number": str(int(reference["number"]))}
 
 
 def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
-    source_root, target_root = root / "data" / "assets", output / "assets"
+    from .figures import figure_reference
+    target_root = output / "assets"
     _directory(target_root)
-    if source_root.is_symlink():
-        raise ValueError("Refusing to publish a symlinked source asset directory.")
     manifest_path = output / "data" / "assets-manifest.json"
     previous = []
-    if manifest_path.is_file() and not manifest_path.is_symlink():
+    if manifest_path.is_symlink():
+        raise ValueError("Refusing a symlinked asset manifest.")
+    if manifest_path.exists():
         try:
+            if not manifest_path.is_file() or manifest_path.stat().st_size > 16000000:
+                raise ValueError("Invalid asset manifest")
             previous = json.loads(manifest_path.read_text(encoding="utf-8"))
-        except (OSError, ValueError):
-            previous = []
-    published = set()
+            if not isinstance(previous, list) or any(not _asset(asset) for asset in previous):
+                raise ValueError("Invalid asset manifest")
+        except (OSError, ValueError) as exc:
+            # Silently forgetting ownership would leave previously published
+            # images accessible after their article was removed.
+            raise ValueError("Cannot safely replace a malformed asset manifest.") from exc
+    published, retained = set(), []
+    total = len(catalogue["papers"])
+
+    def copy_verified(figure, raw):
+        asset = _asset(figure.get("asset"))
+        destination = target_root / PurePosixPath(asset).relative_to("assets")
+        for parent in destination.parents:
+            if parent == target_root.parent:
+                break
+            if parent.is_symlink():
+                raise ValueError("Refusing a symlink in asset output.")
+        _directory(destination.parent)
+        if destination.is_symlink():
+            raise ValueError("Refusing a symlinked output image.")
+        handle, temporary = tempfile.mkstemp(prefix=".ppl-asset-", dir=destination.parent)
+        try:
+            with os.fdopen(handle, "wb") as stream:
+                stream.write(raw)
+            os.replace(temporary, destination)
+        finally:
+            if os.path.exists(temporary):
+                os.unlink(temporary)
+        published.add(asset)
+
     for paper in catalogue["papers"]:
-        for figure in paper.get("article", {}).get("figures", []):
-            if not isinstance(figure, dict):
-                continue
-            asset = _asset(figure.get("asset"))
-            if figure.get("reuseStatus") != "allowed" or not asset:
-                figure.pop("asset", None)
-                continue
-            relative = PurePosixPath(asset).relative_to("assets")
-            source, destination = source_root / relative, target_root / relative
-            try:
-                source.resolve().relative_to(source_root.resolve())
-            except ValueError:
-                figure.pop("asset", None)
-                figure["reuseStatus"] = "source_path_rejected"
-                continue
-            if not _raster_file(source):
-                figure.pop("asset", None)
-                figure["reuseStatus"] = "asset_unavailable"
-                continue
-            raw = source.read_bytes()
-            expected = figure.get("assetSHA256") if "assetSHA256" in figure else figure.get("sha256")
-            if "assetSHA256" in figure or "sha256" in figure:
-                if not isinstance(expected, str) or not re.fullmatch(r"[a-fA-F0-9]{64}", expected) or hashlib.sha256(raw).hexdigest() != expected.lower():
-                    figure.pop("asset", None)
-                    figure["reuseStatus"] = "asset_integrity_failed"
-                    continue
-            for parent in list(destination.parents):
-                if parent == target_root.parent:
+        if paper.get("automation", {}).get("status") == "excluded":
+            continue
+        figures = paper.get("article", {}).get("figures", [])
+        figures = [figure for figure in figures if isinstance(figure, dict)] if isinstance(figures, list) else []
+        article_license = str(paper.get("article", {}).get("license") or "")
+        selected = figure_reference(paper.get("figure"))
+        def preferred(figure):
+            reference = _body_reference(figure)
+            return bool(selected and reference and selected["scope"] == "main"
+                        and int(selected["number"]) == int(reference["number"]))
+        body, body_bytes, reference = None, None, None
+        for figure in sorted(figures, key=preferred, reverse=True):
+            reference = _body_reference(figure)
+            if reference is not None:
+                body_bytes = _verified_raster(root, figure, article_license)
+                if body_bytes is not None:
+                    body = figure
                     break
-                if parent.is_symlink():
-                    raise ValueError("Refusing a symlink in asset output.")
-            _directory(destination.parent)
-            if destination.is_symlink():
-                raise ValueError("Refusing a symlinked output image.")
-            # Write exactly the verified bytes, never reopen a source that may
-            # have changed between digest verification and copy.
-            handle, temporary = tempfile.mkstemp(prefix=".ppl-asset-", dir=destination.parent)
-            try:
-                with os.fdopen(handle, "wb") as stream:
-                    stream.write(raw)
-                os.replace(temporary, destination)
-            finally:
-                if os.path.exists(temporary):
-                    os.unlink(temporary)
-            published.add(asset)
+        if body is None:
+            continue  # Internal queue entries never become public placeholder cards.
+        copy_verified(body, body_bytes)
+        paper["displayFigure"] = {"id": body["id"], "label": str(body.get("label") or "")[:600],
+                                  "reference": reference}
+        # This preview is independent of the originally selected figure and
+        # its code/input mapping; publishing it does not verify that mapping.
+        for figure in figures:
+            if figure is body:
+                continue
+            raw = _verified_raster(root, figure, article_license)
+            if raw is not None:
+                copy_verified(figure, raw)
+        retained.append(paper)
+    catalogue["papers"] = retained
+    ids = {paper["id"] for paper in retained}
+    catalogue["inputSpecs"] = {key: value for key, value in catalogue["inputSpecs"].items() if key in ids}
+    catalogue["publicationPolicy"] = "body-images-only"
+    catalogue["publicationSummary"] = {"publishedCount": len(retained), "hiddenCount": total - len(retained), "totalCount": total}
+    _filter_public_issues(catalogue.get("bootstrap"), retained)
     # Remove only files this builder previously published, never arbitrary user files.
     for obsolete in previous if isinstance(previous, list) else []:
         asset = _asset(obsolete)
@@ -375,6 +464,75 @@ def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
                 path.unlink()
     _atomic_json(manifest_path, sorted(published))
     return sorted(published)
+
+
+def _filter_public_issues(summary: object, papers: list[dict]) -> None:
+    """Keep aggregate queue counts, but no hidden candidate identifiers."""
+    if isinstance(summary, dict) and isinstance(summary.get("issues"), list):
+        dois = {str(paper.get("doi", "")).strip().lower() for paper in papers}
+        summary["issues"] = [issue for issue in summary["issues"] if isinstance(issue, dict)
+                             and str(issue.get("doi", "")).strip().lower() in dois]
+
+
+def _public_report(value: dict, papers: list[dict]) -> dict:
+    """Typed aggregate logs, never a second route to publish the private queue."""
+    result = {}
+    counters = _REPORT_COUNTERS | {"newCount", "repairCount", "checkedCount", "requests", "aiAttempts", "totalCount", "dailyNewCount"}
+    for field in counters:
+        count = value.get(field)
+        if type(count) is int and 0 <= count <= 1000000:
+            result[field] = count
+    for field in ("date", "startedAt", "finishedAt", "generatedAt", "timestamp"):
+        timestamp = value.get(field)
+        if isinstance(timestamp, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z)?", timestamp):
+            result[field] = timestamp
+    for field in ("status", "discoveryStatus"):
+        status = value.get(field)
+        if isinstance(status, str) and status in _PUBLIC_STATUSES:
+            result[field] = status
+    if isinstance(value.get("mode"), str) and value["mode"] in {"auto", "backfill", "daily", "demo", "offline"}:
+        result["mode"] = value["mode"]
+    for field in ("demo", "synthetic", "collectionBudgetExhausted"):
+        if type(value.get(field)) is bool:
+            result[field] = value[field]
+    if isinstance(value.get("missingKeys"), list):
+        names = {"LLM_API_KEY", "LLM_MODEL", "LLM_API_URL", "EASYSCHOLAR_SECRET_KEY", "NCBI_API_KEY", "NCBI_EMAIL", "OPENALEX_API_KEY", "GH_TOKEN"}
+        result["missingKeys"] = list(dict.fromkeys(name for name in value["missingKeys"][:100] if isinstance(name, str) and name in names))
+    if isinstance(value.get("stageCounts"), dict):
+        result["stageCounts"] = {
+            stage: {status: count for status, count in counts.items()
+                    if isinstance(status, str) and status in _PUBLIC_STATUSES
+                    and type(count) is int and 0 <= count <= 10000}
+            for stage, counts in value["stageCounts"].items()
+            if stage in {"metadata", "article", "repository", "metrics", "ai"} and isinstance(counts, dict)
+        }
+    if isinstance(value.get("failures"), list):
+        dois = {str(paper.get("doi", "")).strip().lower() for paper in papers}
+        failures = []
+        for failure in value["failures"][:2000]:
+            if not isinstance(failure, dict):
+                continue
+            doi, stage = failure.get("doi"), failure.get("stage")
+            if doi is not None and (not isinstance(doi, str) or doi.strip().lower() not in dois):
+                continue
+            if not isinstance(stage, str) or stage not in {"metadata", "article", "repository", "metrics", "ai", "summary", "repair", "candidate", "discovery"}:
+                continue
+            item = {"stage": stage}
+            if doi is not None:
+                item["doi"] = doi
+            status = failure.get("status")
+            if not isinstance(status, str) or status not in _PUBLIC_STATUSES:
+                raw_error = failure.get("error")
+                status = raw_error.rsplit(":", 1)[-1].strip() if isinstance(raw_error, str) else "error"
+                status = status if status in _PUBLIC_STATUSES else "error"
+            item["status"] = status
+            if _safe_reason(failure.get("error_reason")):
+                item["error_reason"] = failure["error_reason"]
+            if _safe_http_status(failure.get("http_status")):
+                item["http_status"] = failure["http_status"]
+            failures.append(item)
+        result["failures"] = failures
+    return result
 
 
 def _check_public_readiness(public: dict, source: dict) -> None:
@@ -493,7 +651,7 @@ def _public_availability(public: dict) -> None:
 
 def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
     """Generate ``site/``. Persistent ``data/`` and the aging site stay untouched."""
-    root = Path(root)
+    root = Path(root).absolute()
     output = root / "site"
     public = public_catalog(catalog)
     json.dumps(public, allow_nan=False)  # Fail before changing output if values are not valid JSON.
@@ -507,13 +665,13 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
     _publish_assets(root, output, public)
     _check_public_readiness(public, catalog)
     _public_availability(public)
-    report_fields = {"mode", "date", "startedAt", "finishedAt", "generatedAt", "timestamp", "newCount", "repairCount", "status", "note", "errors", "warnings", "records", "results", "processed", "counts", "summary", "demo", "synthetic", "checkedCount", "requests", "aiAttempts", "totalCount", "dailyNewCount", "discoveryStatus", "failures", "stageCounts", "missingKeys", "collectionBudgetExhausted"} | _REPORT_COUNTERS
     values = reports if isinstance(reports, list) else reports.get("reports", [reports]) if isinstance(reports, dict) else []
     values = sorted([report for report in values if isinstance(report, dict)], key=lambda report: str(report.get("finishedAt") or report.get("startedAt") or report.get("date") or ""), reverse=True)[:90]
-    public_reports = [_public({key: value for key, value in report.items() if key in report_fields}) for report in values]
+    public_reports = [_public_report(report, public["papers"]) for report in values]
     for report, original in zip(public_reports, values):
         bootstrap = _public_bootstrap(original.get("bootstrap"))
         if bootstrap is not None:
+            _filter_public_issues(bootstrap, public["papers"])
             report["bootstrap"] = bootstrap
         session = _public_session(original.get("session"))
         if session is not None:
@@ -524,11 +682,6 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
             report["dailySession"] = daily
         if isinstance(original.get("aiStoppedStatus"), str) and original["aiStoppedStatus"] in _AI_STOP_STATUSES:
             report["aiStoppedStatus"] = original["aiStoppedStatus"]
-        for key in _REPORT_COUNTERS:
-            if key in report and (not isinstance(report[key], int) or isinstance(report[key], bool) or not 0 <= report[key] <= 1000000):
-                report.pop(key)
-        if "collectionBudgetExhausted" in report and not isinstance(report["collectionBudgetExhausted"], bool):
-            report.pop("collectionBudgetExhausted")
     _atomic_json(output / "data" / "catalog.json", public)
     _atomic_json(output / "data" / "updates.json", public_reports)
     return output

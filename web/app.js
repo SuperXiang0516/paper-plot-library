@@ -94,6 +94,43 @@
     return safeFigures(paper)[0] || null;
   };
   const detailFigures = paper => {const figure=cardFigure(paper), selected=figure?.reuseStatus==='allowed' && safeAsset(figure.asset)?figure:null;return {selected,other:safeFigures(paper).filter(value=>value!==selected)};};
+  const bodyReference = figure => {
+    if(!figure || typeof figure!=='object' || typeof figure.id!=='string' || !/^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$/.test(figure.id))return null;
+    const label=str(figure.label,''), labelReference=figureReference(label), declared=figure.reference;
+    // An explicit namespace cannot promote Supplemental / Extended labels.
+    if(/\b(?:supplement(?:ary|al|s)?|supporting|extended)\b|补充|附图|扩展/i.test(label))return null;
+    let reference=labelReference;
+    if(declared!==undefined && declared!==null){
+      if(typeof declared!=='object' || Array.isArray(declared) || declared.scope!=='main' || !['string','number'].includes(typeof declared.number) || !/^[0-9]{1,6}$/.test(String(declared.number)))return null;
+      reference={scope:'main',number:String(Number(declared.number))};
+      if(labelReference && (labelReference.scope!=='main' || labelReference.number!==reference.number))return null;
+    }
+    return reference?.scope==='main'?{scope:'main',number:String(Number(reference.number))}:null;
+  };
+  const bodyFigure = paper => {
+    // The publishing gateway adds this marker only after official body-image
+    // bytes, reuse permission and digest validation. Never infer it from a seed.
+    const preview=paper?.displayFigure;
+    const previewReference=bodyReference(preview);if(!previewReference)return null;
+    return list(paper.article?.figures).find(figure=>{
+      if(!figure || figure.id!==preview.id || figure.reuseStatus!=='allowed' || !safeAsset(figure.asset) || !safeURL(figure.sourceURL) || !/^[a-f0-9]{64}$/i.test(str(Object.hasOwn(figure,'assetSHA256')?figure.assetSHA256:figure.sha256,'')))return false;
+      const reference=bodyReference(figure);
+      return reference && reference.number===previewReference.number;
+    }) || null;
+  };
+  const bodyDisplayEligible = (paper,failedIds=new Set()) => statusOf(paper)!=='excluded' && !!bodyFigure(paper) && !failedIds.has(paper.id);
+  const bodyPreviewNote = paper => {
+    const preview=bodyFigure(paper);if(!preview)return '';
+    const shown=preview.reference || figureReference(preview.label), selected=figureReference(paper.figure);
+    if(shown && selected && shown.scope===selected.scope && String(Number(shown.number))===String(Number(selected.number)))return '';
+    return '正文预览：'+str(preview.label,'正文整图')+'；原选案例：'+str(paper.figure,'选图待核')+'。'+(selected?'这不是同一选图':'两者尚未核实为同一图')+'，不把原脚本、输入或分类自动绑定到此正文预览。';
+  };
+  const bodyCounts = (papers,failedIds=new Set(),specs={}) => list(papers).reduce((counts,paper)=>{
+    if(statusOf(paper)==='excluded' || !bodyFigure(paper))return counts;
+    counts.published++;if(failedIds.has(paper.id)){counts.failed++;return counts;}
+    counts.visible++;if(availabilityOf(paper,specs[paper.id]).verification==='verified')counts.verified++;
+    return counts;
+  },{published:0,visible:0,failed:0,verified:0});
   const inputSections = (spec, repositoryInputs = []) => ({
     selected:list(spec?.files).length ? spec.files : list(repositoryInputs),
     automatic:list(spec?.automaticInputs?.files),
@@ -226,12 +263,14 @@
     return Object.fromEntries(['date','status','endReason','localCheckpointSaved',...Object.keys(DAILY_BOUNDS)].map(key=>[key,value[key]]));
   };
   const dailyLines=value=>{const data=dailySummary(value);return data?['UTC '+data.date+' · 今日成功收录 '+data.dailyNewCount+' / '+data.targetCount+' 篇 · 已处理 '+data.batchCount+' 批',data.endReason?DAILY_END_LABELS[data.endReason]:'日更连续整理中；这是最后保存的快照，不是实时监控','已确认 HTTP：'+data.requests+' / '+data.maxRequests+' 次 · AI 尝试：'+data.aiAttempts+' / '+data.maxAiAttempts+' 次；重跑不重置当天累计上限。','不完整候选不占成功名额；接口失败、候选不足或达到安全上限时不足 5 篇也会如实显示。']:[];};
-  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS,sessionSummary,sessionLines,latestSession,SESSION_STATUSES,SESSION_END_REASONS,SESSION_COUNTERS,dailySummary,dailyLines,DAILY_END_LABELS,DAILY_BOUNDS};
+  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS,sessionSummary,sessionLines,latestSession,SESSION_STATUSES,SESSION_END_REASONS,SESSION_COUNTERS,dailySummary,dailyLines,DAILY_END_LABELS,DAILY_BOUNDS,bodyFigure,bodyDisplayEligible,bodyPreviewNote,bodyCounts,bodyReference};
   if (typeof document === 'undefined') return;
 
-  let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null;
+  let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null, viewerPaperId = null;
+  let baseNotice='',imageFailureRenderPending=false;
+  const failedImagePapers=new Set(),imageChecks=new Map();
   const $ = id => document.getElementById(id);
-  const state = {collection:'browsable',form:'',function:'',status:'',search:'',sort:'evidence'};
+  const state = {form:'',function:'',status:'',search:'',sort:'evidence'};
   const labels = {forms:new Map(),functions:new Map()};
   const el = (tag, text, className) => {
     const node = document.createElement(tag);
@@ -256,12 +295,12 @@
   function pill(paper) {
     const available=availabilityOf(paper,paperSpec(paper));
     if(statusOf(paper)==='excluded')return el('span','已排除 · 检查未通过','status-pill error');
-    if(available.verification==='verified')return el('span','原图—代码—输入对应已核','status-pill ready');
-    return el('span',available.browsable?'可浏览 · 精确对应待核':'候选 · 资料待补齐','status-pill '+(available.browsable?'browsable':'candidate'));
+    if(available.verification==='verified')return el('span',bodyPreviewNote(paper)?'原选图对应已核 · 正文另图未绑定':'原图—代码—输入对应已核','status-pill '+(bodyPreviewNote(paper)?'browsable':'ready'));
+    return el('span','正文原图 · 精确对应待核','status-pill browsable');
   }
   function availabilityBadges(paper) {
     const group=el('div',null,'availability-badges');group.setAttribute('aria-label','各项资料状态');
-    for(const badge of contentBadges(paper,paperSpec(paper)))group.append(el('span',badge.name+'：'+badge.label,'availability-badge '+badge.tone));
+    for(const badge of contentBadges(paper,paperSpec(paper))){if(badge.name==='原图' && bodyFigure(paper)){badge.label=bodyPreviewNote(paper)?'正文已展示 · 原选图另核':'正文已展示';badge.tone='available';}group.append(el('span',badge.name+'：'+badge.label,'availability-badge '+badge.tone));}
     return group;
   }
   function healthNote(paper,parent) {
@@ -278,50 +317,72 @@
     }
     return group;
   }
-  function figurePlaceholder(paper, figure) {
-    const placeholder = el('div', null, 'figure-placeholder');
-    placeholder.append(el('span', str(figure?.label || paper.figure, '原图待定位'), 'figure-label'));
-    placeholder.append(el('span', figure ? '图像许可或下载状态未满足展示条件' : '未附可再发布的官方原图', 'placeholder-caption'));
-    placeholder.append(link('查看官方图 / 论文', figure?.sourceURL || paper.figureURL || paper.paperURL));
-    return placeholder;
+  function updateCollectionSummary() {
+    if(!catalog)return;
+    const counts=bodyCounts(catalog.papers,failedImagePapers,catalog.inputSpecs);
+    $('collection-summary').textContent=counts.visible+' 篇正文原图文章 · '+counts.verified+' 个原选案例精确对应已核'+(counts.failed?' · 当前页面隐藏 '+counts.failed+' 篇图片加载失败文章':'');
+    $('notice').textContent=baseNotice+(counts.failed?' 本页面有 '+counts.failed+' 篇正文图片加载失败，已从绘图案例和文献索引临时隐藏；不删除后台记录，刷新页面可重新尝试。':'');
+    $('notice').classList.toggle('error',counts.failed>0);
+  }
+  function bodyImageFailed(paper) {
+    if(failedImagePapers.has(paper.id))return;
+    failedImagePapers.add(paper.id);
+    if(viewerPaperId===paper.id && $('image-viewer').open)$('image-viewer').close();
+    if(activePaper?.id===paper.id && $('detail').open)$('detail').close();
+    // An index probe can fail while a render is building rows. Defer the redraw
+    // until that render finishes so its stale row cannot be appended afterwards.
+    if(!imageFailureRenderPending){imageFailureRenderPending=true;Promise.resolve().then(()=>{imageFailureRenderPending=false;updateCollectionSummary();render();});}
+  }
+  function probeBodyImage(paper) {
+    if(imageChecks.has(paper.id) || failedImagePapers.has(paper.id))return;
+    const figure=bodyFigure(paper);if(!figure)return;
+    // Check the index's local body asset once per page session, without showing
+    // an empty thumbnail. Load failure hides both gallery and index rows.
+    const image=el('img');imageChecks.set(paper.id,image);
+    image.addEventListener('error',()=>bodyImageFailed(paper),{once:true});image.src=figure.asset;
   }
   function figurePreview(paper, figure) {
     const node = el('div', null, 'figure-preview');
     const verified = figure && figure.reuseStatus === 'allowed' && safeAsset(figure.asset);
     if (verified) {
       node.classList.add('has-image');
-      const image = el('img'); image.src = verified; image.alt = str(figure.label || paper.figure) + ' · 作者论文原图'; image.loading = 'lazy'; image.decoding = 'async';
-      image.addEventListener('error', () => { image.remove(); node.classList.remove('has-image'); node.replaceChildren(figurePlaceholder(paper, figure)); }, {once:true});
+      const image = el('img');image.alt = str(figure.label || paper.figure) + ' · 作者论文原图'; image.loading = 'lazy'; image.decoding = 'async';
+      image.addEventListener('error', () => {if(bodyFigure(paper)?.asset===figure.asset)bodyImageFailed(paper);else {image.remove();node.classList.remove('has-image');node.replaceChildren(el('p','这张其它整图未能载入；正文文章保留，刷新页面可重试。','small'));}}, {once:true});
       const zoom=el('button','放大原图 ↗','figure-zoom');zoom.type='button';zoom.addEventListener('click',()=>openImageViewer(paper,figure));
       const actions=el('div',null,'figure-actions');actions.append(el('span', str(figure.label,'整图')+' · 官方原图', 'image-status'),zoom);
+      image.src=verified; // Attach the failure listener before starting a load.
       node.append(image,actions);
-    } else node.append(figurePlaceholder(paper, figure));
+    } else node.append(el('p','这张整图没有满足展示条件。','small'));
     return node;
   }
   function openImageViewer(paper,figure){
+    if(!bodyDisplayEligible(paper,failedImagePapers))return;
     const asset=figure.reuseStatus==='allowed'&&safeAsset(figure.asset);if(!asset)return;
+    viewerPaperId=paper.id;
     previousImageFocus=document.activeElement;
     $('image-viewer-title').textContent=str(figure.label || paper.figure)+' · 作者论文原图';
     $('image-viewer-stage').classList.remove('native-size');
-    const image=el('img');image.src=asset;image.alt=str(figure.label)+' · '+str(paper.paper);$('image-viewer-stage').replaceChildren(image);
-    $('image-viewer-caption').textContent='完整官方整图，未自动裁剪。原选分面与代码的精确对应仍以核查记录为准。许可：'+str(figure.license)+'。 '+str(figure.caption,'');
+    const image=el('img'),stage=$('image-viewer-stage');image.addEventListener('error',()=>{if(bodyFigure(paper)?.asset===figure.asset)bodyImageFailed(paper);else if(stage.contains(image))stage.replaceChildren(el('p','这张其它整图未能载入，请刷新页面重试。'));},{once:true});image.alt=str(figure.label)+' · '+str(paper.paper);stage.replaceChildren(image);image.src=asset;
+    if(failedImagePapers.has(paper.id))return;
+    $('image-viewer-caption').textContent=(bodyFigure(paper)?.asset===figure.asset?bodyPreviewNote(paper)+' ':'')+'完整官方整图，未自动裁剪。原选分面与代码的精确对应仍以核查记录为准。许可：'+str(figure.license)+'。 '+str(figure.caption,'');
     $('image-viewer-source').replaceChildren(link('查看官方出处',figure.sourceURL));
     $('image-size-toggle').textContent='切换到 100% 原始尺寸';$('image-size-toggle').setAttribute('aria-pressed','false');
     $('image-viewer').showModal();$('close-image-viewer').focus();
   }
   $('close-image-viewer').addEventListener('click',()=> $('image-viewer').close());
-  $('image-viewer').addEventListener('close',()=>{if(previousImageFocus?.isConnected)previousImageFocus.focus();});
+  $('image-viewer').addEventListener('close',()=>{if($('image-viewer').open)return;viewerPaperId=null;if(previousImageFocus?.isConnected)previousImageFocus.focus();});
   $('image-size-toggle').addEventListener('click',()=>{const native=$('image-viewer-stage').classList.toggle('native-size');$('image-size-toggle').textContent=native?'切换到适应窗口':'切换到 100% 原始尺寸';$('image-size-toggle').setAttribute('aria-pressed',String(native));});
   function openButton(paper, className) {
     const button = el('button', '查看输入与代码 →', className); button.type = 'button'; button.addEventListener('click', () => openDetail(paper)); return button;
   }
   function renderCard(paper) {
     const card = el('article', null, 'case-card');
-    card.append(figurePreview(paper, cardFigure(paper)));
+    card.append(figurePreview(paper, bodyFigure(paper)));
     const body = el('div', null, 'card-body');
     const kicker = el('div', null, 'card-kicker'); kicker.append(el('span', str(paper.journal) + ' · ' + str(paper.year)), pill(paper)); body.append(kicker);
     heading(body, str(paper.name || paper.ai?.title_zh || paper.paper), 3);
     paragraph(body, str(paper.paper), 'paper-title'); body.append(tagGroup(paper),availabilityBadges(paper));
+    if(bodyPreviewNote(paper))paragraph(body,bodyPreviewNote(paper),'small');
     paragraph(body, paper.ai?.summary_zh || paper.description || '精确图号、绘图输入与终稿对应正在核查。', 'card-summary');
     if (aiStateLabel(paper)) paragraph(body,aiStateLabel(paper),'small');
     healthNote(paper,body);
@@ -330,15 +391,12 @@
     card.append(body); return card;
   }
   function baseMatches(paper) {
-    const status = statusOf(paper);
-    if(status === 'excluded' && state.status !== 'excluded')return false;
+    if(!bodyDisplayEligible(paper,failedImagePapers))return false;
     const available=availabilityOf(paper,paperSpec(paper));
-    if(state.status!=='excluded' && !matchesCollection(paper,state.collection,paperSpec(paper)))return false;
     if(state.status==='ready' && available.verification!=='verified')return false;
     if(state.status==='needs_input' && available.hasObservedHeaders)return false;
     if(state.status==='needs_ai' && available.hasAi)return false;
     if(state.status==='error' && available.health!=='error')return false;
-    if(state.status==='excluded' && status!=='excluded')return false;
     if (state.search) {
       const haystack = [paper.name,paper.paper,paper.doi,paper.topic,paper.journal,paper.lang,paper.ai?.title_zh].map(value => str(value,'')).join(' ').toLocaleLowerCase();
       if (!haystack.includes(state.search.toLocaleLowerCase())) return false;
@@ -371,6 +429,7 @@
     return result;
   }
   function renderPaperRow(paper) {
+    probeBodyImage(paper);
     const row = el('article', null, 'paper-row'); row.append(el('div', str(paper.year), 'year'));
     const title = el('div'); heading(title, str(paper.paper), 3); paragraph(title, str(paper.journal) + ' · DOI ' + str(paper.doi)); title.append(pill(paper),availabilityBadges(paper));healthNote(paper,title);row.append(title);
     const metrics = el('div', null, 'paper-metrics'); paragraph(metrics, metricLabel(paper)); const count = citationCount(paper); paragraph(metrics, count === null ? '引用数未获取' : 'OpenAlex 引用 ' + count); row.append(metrics, openButton(paper,'button')); return row;
@@ -406,10 +465,11 @@
     return node;
   }
   function renderCollectionPhase() {
-    const node=$('collection-phase'), phase=latestBootstrap(catalog,reports), session=latestSession(catalog,reports),daily=dailySummary(catalog?.dailySession);node.replaceChildren();node.hidden=!phase&&!session&&!daily;
+    const container=$('collection-phase'), phase=latestBootstrap(catalog,reports), session=latestSession(catalog,reports),daily=dailySummary(catalog?.dailySession);container.replaceChildren();container.hidden=!phase&&!session&&!daily;
     if(!phase&&!session&&!daily)return;
+    const node=el('details');node.append(el('summary','后台采集进度（后台队列数，不是网页展示文章数）'));container.append(node);
     if(daily){const section=el('div',null,'daily-progress'),lines=dailyLines(daily);heading(section,lines[0],2);for(const line of lines.slice(1))paragraph(section,line);node.append(section);}
-    node.classList.toggle('needs-attention',phase?.summary.status==='needs_attention' || session?.materialsStatus==='needs_attention' || session?.status==='paused');
+    container.classList.toggle('needs-attention',phase?.summary.status==='needs_attention' || session?.materialsStatus==='needs_attention' || session?.status==='paused');
     if(session){const section=el('div',null,'session-progress'),lines=sessionLines(session);heading(section,lines[0],2);paragraph(section,lines[1],'phase-counts');if(session.targetCount){const progress=el('progress');progress.max=session.targetCount;progress.value=session.processedCount;progress.setAttribute('aria-label','本次会话已核查论文进度，不代表材料收齐');section.append(progress);}const fold=el('details');fold.append(el('summary','查看会话预算、保存状态与结束原因'));for(const line of lines.slice(2))paragraph(fold,line);section.append(fold);node.append(section);}
     if(!phase)return;
     const lines=bootstrapLines(phase.summary,phase.mode);heading(node,lines[0],2);paragraph(node,lines[1],'phase-counts');
@@ -426,11 +486,10 @@
     $('filters').hidden = view === 'updates';
     if (view === 'updates') { $('result-count').textContent = reports.length + ' 次运行记录'; $('content').replaceChildren(renderUpdates()); return; }
     refreshAxis('forms'); refreshAxis('functions');
-    const papers = sortedPapers(), counts=collectionCounts(catalog.papers,catalog.inputSpecs), poolTotal=state.status==='excluded'?counts.excluded:state.collection==='browsable'?counts.browsable:state.collection==='candidates'?counts.candidates:counts.total-counts.excluded;
-    $('result-count').textContent = '显示 ' + papers.length + ' / ' + poolTotal + ' 条'+(state.status==='excluded'?'排除记录':state.collection==='browsable'?'可浏览案例':state.collection==='candidates'?'候选记录':'有效记录');
+    const papers = sortedPapers(), counts=bodyCounts(catalog.papers,failedImagePapers,catalog.inputSpecs);
+    $('result-count').textContent = '显示 ' + papers.length + ' / ' + counts.visible + ' 篇正文原图文章';
     if (!papers.length) {
-      const empty=el('div',state.collection==='browsable'?'当前条件下还没有同时具备可展示原图与固定版本代码的案例。其余记录保留在候选池，不代表采集已全部完成。':'没有符合当前筛选的记录。可放宽条件，或选择“分类待核”。','empty-state');
-      if(state.collection==='browsable'){const button=el('button','查看候选池（'+counts.candidates+'）','button secondary');button.type='button';button.addEventListener('click',()=>{state.collection='candidates';state.status='';$('collection-filter').value='candidates';$('status-filter').value='';render();});empty.append(button);}
+      const empty=el('div',counts.failed?'当前条件下没有可载入正文原图的文章。图片加载失败的文章已在本页面隐藏；刷新可重试。':'当前条件下没有正文原图文章。缺正文图、仅补充图或仅官方链接的记录不在网页展示；可放宽图形、功能或资料筛选。','empty-state');
       $('content').replaceChildren(empty);return;
     }
     const content = el('div', null, view === 'gallery' ? 'gallery' : 'paper-list');
@@ -470,6 +529,7 @@
     }
   }
   function renderInputs(paper, panel) {
+    if(bodyPreviewNote(paper))paragraph(panel,'以下输入结构记录属于原选案例；正文预览另图不自动绑定这些输入。','callout');
     const spec = catalog.inputSpecs?.[paper.id] || {}, sections = inputSections(spec,paper.repository?.inputs);
     heading(panel,'原代码的输入文档'); paragraph(panel, spec.status || '直接绘图输入尚未完整核实。公开原始数据入口不等于当前图的输入已经齐全。', 'callout');
     if (spec.tree) panel.append(el('pre', spec.tree));
@@ -538,7 +598,8 @@
     heading(panel,'核查笔记'); paragraph(panel,'未执行作者代码。未验证生成结果与论文原图一致。','callout');
     const available=availabilityOf(paper,paperSpec(paper));
     heading(panel,'资料与精确对应分别核查',4);panel.append(availabilityBadges(paper));
-    paragraph(panel,available.verification==='verified'?'原图、固定版本代码和输入的人工对应记录已通过当前静态核查；仍未执行或验证复现。':'原图、代码或结构笔记的可读取状态，不等于它们与选定分面已精确对应。该对应仍需人工核查。','callout');
+    paragraph(panel,available.verification==='verified'?'原选案例图、固定版本代码和输入的人工对应记录已通过当前静态核查；仍未执行或验证复现。':'原图、代码或结构笔记的可读取状态，不等于它们与选定分面已精确对应。该对应仍需人工核查。','callout');
+    if(bodyPreviewNote(paper))paragraph(panel,bodyPreviewNote(paper),'callout');
     healthNote(paper,panel);
     if (paper.notes) panel.append(el('pre',paper.notes));
     heading(panel,'尚待确认',4); items(panel,[...list(paper.limitations),...list(paper.repository?.limitations),...list(paper.article?.limitations)],'仍需人工核对完整环境、图号与终稿版本。');
@@ -562,21 +623,21 @@
     ({inputs:renderInputs,explanation:renderExplanation,source:renderSources,notes:renderNotes}[activeTab])(activePaper,panel);
   }
   function openDetail(paper) {
+    if(!bodyDisplayEligible(paper,failedImagePapers))return;
     previousFocus=document.activeElement; activePaper=paper; activeTab='inputs'; $('detail-title').textContent=str(paper.name || paper.ai?.title_zh || paper.paper);
     const meta=$('detail-meta');meta.replaceChildren();meta.className='detail-meta';paragraph(meta,str(paper.paper));paragraph(meta,str(paper.journal)+' · '+str(paper.date)+' · DOI '+str(paper.doi));meta.append(pill(paper),tagGroup(paper),availabilityBadges(paper));
-    const figurePanel=$('detail-figure');figurePanel.replaceChildren();const figures=detailFigures(paper);
-    if (!figures.selected) {
-      figurePanel.append(figurePreview(paper,cardFigure(paper)));paragraph(figurePanel,'选定原图的许可、出处或下载尚未满足展示条件。不使用其它图或示意图替代当前选图。');
-      if (paper.figureLicense || paper.article?.license) paragraph(figurePanel,'图像许可：'+str(paper.article?.license || paper.figureLicense));
-    }
+    const figurePanel=$('detail-figure');figurePanel.replaceChildren();const figures=detailFigures(paper),preview=bodyFigure(paper);
     const figureItem=figure=>{
       const item=el('div',null,'figure-item');item.append(figurePreview(paper,figure),link('查看官方原图',figure.sourceURL));
       if(figure.caption)paragraph(item,figure.caption,'caption');paragraph(item,'许可：'+str(figure.license)+' · '+str(figure.attribution,'出处待核'));
       if(figure.licenseURL)item.append(link('阅读许可条款',figure.licenseURL));
       paragraph(item,'尺寸：'+str(figure.width)+' × '+str(figure.height)+' px；未宣称已复现。','small');return item;
     };
-    if(figures.selected)figurePanel.append(figureItem(figures.selected));
-    if(figures.other.length){const fold=el('details');fold.append(el('summary','其它已采集整图（'+figures.other.length+' 张 · 非当前选图）'));paragraph(fold,'以下仅供阅读文章其它官方整图，不代表它们与当前选图代码或输入已经对应。','small');for(const figure of figures.other.slice(0,3))fold.append(figureItem(figure));figurePanel.append(fold);}
+    figurePanel.append(figureItem(preview));
+    if(bodyPreviewNote(paper))paragraph(figurePanel,bodyPreviewNote(paper),'callout');
+    if(!figures.selected)paragraph(figurePanel,'案例原选图尚未取得可展示资料；正文预览不替代原选图，也不证明原代码或输入对应此正文图。','small');
+    const others=safeFigures(paper).filter(figure=>figure!==preview);
+    if(others.length){const fold=el('details');fold.append(el('summary','其它已采集整图（'+others.length+' 张 · 对应关系另核）'));paragraph(fold,'包含案例原选图时仍按原记录核查；其它整图不自动绑定到当前案例代码、输入或图形 / 功能分类。','small');for(const figure of others.slice(0,3))fold.append(figureItem(figure));figurePanel.append(fold);}
     renderDetailPanel(); $('detail').showModal(); $('close-detail').focus();
   }
   $('close-detail').addEventListener('click',()=> $('detail').close());
@@ -589,18 +650,16 @@
   });
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{view=button.dataset.view;history.replaceState(null,'','#'+view);render();}));
   window.addEventListener('hashchange',()=>{view=viewFromHash(location.hash,view);render();});
-  for (const [id,key] of [['collection-filter','collection'],['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
+  for (const [id,key] of [['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
   $('search').addEventListener('input',event=>{state.search=event.target.value.trim();render();});
-  $('reset').addEventListener('click',()=>{Object.assign(state,{collection:'browsable',form:'',function:'',status:'',search:'',sort:'evidence'});$('collection-filter').value='browsable';$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
+  $('reset').addEventListener('click',()=>{Object.assign(state,{form:'',function:'',status:'',search:'',sort:'evidence'});$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
   Promise.all([fetch('data/catalog.json',{cache:'no-store'}).then(response=>{if(!response.ok)throw Error('catalog HTTP '+response.status);return response.json();}),fetch('data/updates.json',{cache:'no-store'}).then(response=>response.ok?response.json():[]).catch(()=>[])])
     .then(([data,updates])=>{
       if(!Array.isArray(data.papers)||data.authorCodeExecuted!==false)throw Error('目录结构不符合静态核查约定');
       catalog=data;reports=Array.isArray(updates)?updates:list(updates.reports);
       for(const axis of ['forms','functions'])for(const definition of list(data.dimensions?.[axis]?.all || data.dimensions?.[axis]?.active))labels[axis].set(definition.id,definition.label || definition.id);
-      const counts=collectionCounts(data.papers,data.inputSpecs);
-      $('collection-summary').textContent=counts.browsable+' 个可浏览 · '+counts.candidates+' 个候选待补齐 · '+counts.verified+' 个精确对应已核'+(counts.excluded?' · '+counts.excluded+' 个排除记录':'');
-      for(const [value,label,count] of [['browsable','可浏览案例',counts.browsable],['candidates','候选池 · 待补齐',counts.candidates],['all','全部记录',counts.total]]){const option=[...$('collection-filter').options].find(option=>option.value===value);if(option)option.textContent=label+'（'+count+'）';}
-      $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'既有候选先核查补齐，重复核查仍无法取得必要材料的文章自动移除；临时接口故障不会删文。日更新文章达到原图、代码、输入与注释要求后才计为成功收录。所有记录均未执行作者代码；资料齐全不等于精确对应或复现成功。';
+      baseNotice=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'网页只展示已取得许可允许、完整性已核的正文原图文章；没有正文图、仅补充图或仅官方链接的记录不展示。代码、输入、AI 与期刊指标仍分别核查；正文预览不自动等同于原选案例与代码的精确绑定。所有记录均未执行作者代码。';
+      updateCollectionSummary();
       renderCollectionPhase();
       $('generated-at').textContent='目录构建：'+str(data.generatedAt || data.checkedAt,'未报告');
       view=viewFromHash(location.hash,view);

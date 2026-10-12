@@ -1,5 +1,6 @@
 import copy
 import hashlib
+import io
 import json
 from pathlib import Path
 import shutil
@@ -7,12 +8,18 @@ import subprocess
 import tempfile
 import unittest
 
+from PIL import Image
+
 from paper_plot_library.site import build_site, public_catalog
 from paper_plot_library.release_export import export_site
 
 
 PROJECT = Path(__file__).resolve().parents[1]
 NODE = shutil.which("node") or "/Users/xiangzhoufu/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+_raster_stream = io.BytesIO()
+Image.new("RGB", (2000, 1200), "white").save(_raster_stream, "PNG")
+RASTER = _raster_stream.getvalue()  # Synthetic asset, never a publication image.
+RASTER_SHA256 = hashlib.sha256(RASTER).hexdigest()
 
 
 def sample():
@@ -27,6 +34,7 @@ def sample():
             "article": {"status": "ok", "license": "CC BY 4.0", "figures": [{
                 "id": "fig-1", "label": "Figure 1", "asset": "assets/paper-1/fig-1.png",
                 "reuseStatus": "allowed", "sourceURL": "https://example.org/image.png", "width": 2000, "height": 1200,
+                "sha256": RASTER_SHA256,
             }], "raw_response": "must-not-publish"},
             "repository": {"status": "partial", "scripts": [{"path": "plot.py", "url": "https://github.com/author/repo/blob/123/plot.py", "raw_code": "must-not-publish", "evidence": ["L2: input-file read"]}]},
             "metrics": {"status": "ok", "if": "5.2", "jcr": "Q1", "source": "https://example.org/metrics?secret=must-not-publish"},
@@ -56,10 +64,16 @@ class SiteTests(unittest.TestCase):
         shutil.copytree(PROJECT / "web", self.root / "web")
         image = self.root / "data" / "assets" / "paper-1" / "fig-1.png"
         image.parent.mkdir(parents=True)
-        image.write_bytes(b"\x89PNG\r\n\x1a\n" + b"fixture-image-header")
+        image.write_bytes(RASTER)
 
     def tearDown(self):
         self.temporary.cleanup()
+
+    def assert_fixture_not_published(self, output):
+        public = json.loads((output / "data" / "catalog.json").read_text())
+        self.assertEqual(public["papers"], [], "A case without a verified reusable main figure is not a public gallery entry.")
+        self.assertNotIn("paper-1", public["inputSpecs"])
+        self.assertEqual(json.loads((output / "data" / "assets-manifest.json").read_text()), [])
 
     def test_builds_static_site_and_whitelisted_data(self):
         catalog = sample()
@@ -85,16 +99,41 @@ class SiteTests(unittest.TestCase):
         build_site(self.root, catalog, [])
         self.assertFalse((output / "assets" / "paper-1" / "fig-1.png").exists())
         self.assertEqual(user_file.read_text(), "leave untouched")
-        result = json.loads((output / "data" / "catalog.json").read_text())
-        self.assertNotIn("asset", result["papers"][0]["article"]["figures"][0])
+        self.assert_fixture_not_published(output)
 
     def test_missing_image_cannot_be_displayed_as_available(self):
         catalog = sample()
         catalog["papers"][0]["article"]["figures"][0]["asset"] = "assets/absent.png"
+        original = copy.deepcopy(catalog)
         output = build_site(self.root, catalog, [])
-        figure = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["article"]["figures"][0]
-        self.assertEqual(figure["reuseStatus"], "asset_unavailable")
-        self.assertNotIn("asset", figure)
+        self.assert_fixture_not_published(output)
+        self.assertEqual(catalog, original, "Publication filtering must not remove persistent source records.")
+
+    def test_public_catalog_remains_pure_sanitization_without_file_admission(self):
+        catalog = sample()
+        catalog["papers"][0]["article"]["figures"][0]["asset"] = "assets/absent.png"
+        self.assertEqual(len(public_catalog(catalog)["papers"]), 1)
+        self.assert_fixture_not_published(build_site(self.root, catalog, []))
+
+    def test_valid_body_image_admission_does_not_require_ai_code_or_metrics(self):
+        catalog = sample()
+        paper = catalog["papers"][0]
+        for field in ("ai", "repository", "metrics"):
+            paper.pop(field)
+        catalog["inputSpecs"] = {}
+        original = copy.deepcopy(catalog)
+        output = build_site(self.root, catalog, [])
+        public = json.loads((output / "data" / "catalog.json").read_text())
+        self.assertEqual(len(public["papers"]), 1)
+        published = public["papers"][0]
+        self.assertTrue(published["availability"]["hasImage"])
+        self.assertFalse(published["availability"]["hasCode"])
+        self.assertFalse(published["availability"]["hasAi"])
+        self.assertFalse(published["availability"]["hasMetrics"])
+        self.assertEqual(published["availability"]["verification"], "unverified")
+        self.assertFalse(published["runPerformed"])
+        self.assertFalse(public["authorCodeExecuted"])
+        self.assertEqual(catalog, original)
 
     def test_preserves_selected_inputs_automatic_candidates_and_stale_ai_separately(self):
         catalog = sample()
@@ -223,9 +262,7 @@ class SiteTests(unittest.TestCase):
         paper["figure"] = "Figure 1a"
         paper["article"]["figures"][0]["asset"] = "assets/missing.png"
         output = build_site(self.root, catalog, [])
-        availability = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["availability"]
-        self.assertFalse(availability["hasImage"])
-        self.assertFalse(availability["browsable"])
+        self.assert_fixture_not_published(output)
 
     def test_published_observed_header_requires_digest_and_source_header_status(self):
         catalog = sample()
@@ -369,7 +406,7 @@ class SiteTests(unittest.TestCase):
         session.update(maxRequests=100, maxAiAttempts=10, maxBatches=2)
         self.assertEqual(public_catalog({**sample(), "session": session})["session"], session)
 
-    def test_build_downgrades_ready_when_published_reviewed_asset_missing(self):
+    def test_build_omits_ready_case_when_reviewed_body_asset_is_invalid_or_missing(self):
         catalog = sample()
         paper = catalog["papers"][0]
         paper["automation"] = {"status": "ready", "stages": {"metadata": "matched", "article": "inspected", "repository": "inspected", "ai": "generated"}}
@@ -387,16 +424,12 @@ class SiteTests(unittest.TestCase):
         original = source.read_bytes()
         source.write_bytes(original + b"tampered local asset")
         build_site(self.root, catalog, [])
-        projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]
-        self.assertEqual(projected["automation"]["status"], "partial")
-        self.assertEqual(projected["article"]["figures"][0]["reuseStatus"], "asset_integrity_failed")
+        self.assert_fixture_not_published(output)
+        self.assertFalse((output / "assets" / "paper-1" / "fig-1.png").exists())
         source.write_bytes(original)
         source.unlink()
         build_site(self.root, catalog, [])
-        projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]
-        self.assertEqual(projected["automation"]["status"], "partial")
-        self.assertTrue(projected["automation"]["warnings"])
-        self.assertNotIn("mappingReview", projected)
+        self.assert_fixture_not_published(output)
         self.assertEqual(catalog["papers"][0]["automation"]["status"], "ready", "No source catalogue mutation.")
 
     def test_tampered_asset_digest_is_not_published_and_old_output_removed(self):
@@ -409,9 +442,7 @@ class SiteTests(unittest.TestCase):
         self.assertTrue((output / figure["asset"]).is_file())
         source.write_bytes(source.read_bytes() + b"changed local image content")
         build_site(self.root, catalog, [])
-        projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["article"]["figures"][0]
-        self.assertEqual(projected["reuseStatus"], "asset_integrity_failed")
-        self.assertNotIn("asset", projected)
+        self.assert_fixture_not_published(output)
         self.assertFalse((output / figure["asset"]).exists())
         self.assertEqual(figure["sha256"], expected, "Source hash must never be replaced by local edited bytes.")
 
@@ -428,16 +459,21 @@ class SiteTests(unittest.TestCase):
         self.assertNotEqual(projected["assetSHA256"], projected["sha256"])
         figure["assetSHA256"] = ""
         build_site(self.root, catalog, [])
-        projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["article"]["figures"][0]
-        self.assertEqual(projected["reuseStatus"], "asset_integrity_failed")
+        self.assert_fixture_not_published(output)
+        self.assertFalse((output / figure["asset"]).exists())
+        self.assertEqual(figure["sha256"], "a" * 64)
 
     def test_invalid_provided_asset_hash_fails_closed(self):
         for digest in (None, "", "not-a-hash", "a" * 63, "a" * 65, 123):
             catalog = sample()
             catalog["papers"][0]["article"]["figures"][0]["sha256"] = digest
             output = build_site(self.root, catalog, [])
-            projected = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["article"]["figures"][0]
-            self.assertEqual(projected["reuseStatus"], "asset_integrity_failed")
+            self.assert_fixture_not_published(output)
+
+    def test_missing_asset_digest_fails_closed_even_for_a_real_png(self):
+        catalog = sample()
+        catalog["papers"][0]["article"]["figures"][0].pop("sha256")
+        self.assert_fixture_not_published(build_site(self.root, catalog, []))
 
     def test_build_downgrades_ready_with_invalid_current_stage(self):
         for stage, status in (("metadata", "metadata_unavailable"), ("repository", "unavailable"), ("ai", "stale")):
@@ -481,12 +517,26 @@ class SiteTests(unittest.TestCase):
             catalog = sample()
             catalog["papers"][0]["article"]["figures"][0]["asset"] = path
             output = build_site(self.root, catalog, [])
-            figure = json.loads((output / "data" / "catalog.json").read_text())["papers"][0]["article"]["figures"][0]
-            self.assertNotIn("asset", figure)
+            self.assert_fixture_not_published(output)
         file = self.root / "data" / "assets" / "paper-1" / "fig-1.png"
         file.write_text("<html>not a PNG</html>")
         output = build_site(self.root, sample(), [])
-        self.assertEqual(json.loads((output / "data" / "assets-manifest.json").read_text()), [])
+        self.assert_fixture_not_published(output)
+
+    def test_matching_digest_cannot_admit_a_signature_only_png(self):
+        catalog = sample()
+        corrupt = b"\x89PNG\r\n\x1a\nfixture-image-header"
+        (self.root / "data" / "assets" / "paper-1" / "fig-1.png").write_bytes(corrupt)
+        catalog["papers"][0]["article"]["figures"][0]["sha256"] = hashlib.sha256(corrupt).hexdigest()
+        self.assert_fixture_not_published(build_site(self.root, catalog, []))
+
+    def test_source_parent_symlink_cannot_admit_an_otherwise_valid_image(self):
+        parent = self.root / "data" / "assets" / "paper-1"
+        original_parent = parent.with_name("original-paper-1")
+        parent.rename(original_parent)
+        parent.symlink_to(original_parent, target_is_directory=True)
+        self.assert_fixture_not_published(build_site(self.root, sample(), []))
+        self.assertEqual((original_parent / "fig-1.png").read_bytes(), RASTER)
 
     def test_refuses_execution_claims_duplicates_and_nan_before_build(self):
         for mutation in (lambda c: c.update(authorCodeExecuted=True), lambda c: c["papers"].append(copy.deepcopy(c["papers"][0])), lambda c: c["papers"][0].update(runPerformed=True), lambda c: c["papers"][0].update(year=float("nan"))):
@@ -657,10 +707,117 @@ assert(!ui.diagnosticLabel({status:'invalid_response',error_reason:'summary_repr
 '''
         subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
         html = (PROJECT / "web" / "index.html").read_text()
-        self.assertIn('id="collection-filter"', html)
-        self.assertIn('value="browsable"', html)
-        self.assertIn('value="candidates"', html)
+        self.assertNotIn('id="collection-filter"', html)
+        self.assertNotIn('value="candidates"', html)
+        self.assertNotIn('value="all"', html)
+        self.assertIn('id="form-filter"', html)
+        self.assertIn('id="function-filter"', html)
         self.assertNotIn('<option value="partial">', html)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_body_preview_has_separate_gate_from_selected_figure_binding(self):
+        test_code = r'''
+const assert=require('assert'),ui=require(process.argv[1]);
+const main={id:'fig-1',label:'Figure 1',reference:{scope:'main',number:'1'},reuseStatus:'allowed',asset:'assets/paper/main.png',assetSHA256:'a'.repeat(64),sourceURL:'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC123/fullTextXML'};
+const supplement={...main,id:'supp-12',label:'Supplementary Figure 12',reference:{scope:'supplementary',number:'12'},asset:'assets/paper/supp.png'};
+const paper={id:'paper',figure:'Supplementary Figure 12',article:{figures:[supplement,main]},displayFigure:{id:'fig-1',label:'Figure 1',reference:{scope:'main',number:'1'}},repository:{status:'not_found'},ai:{status:'invalid_response'},automation:{status:'partial'}};
+assert.equal(ui.bodyFigure(paper),main);assert(ui.bodyDisplayEligible(paper));
+assert.equal(ui.cardFigure(paper),supplement);assert(!ui.availabilityOf(paper).hasCode);
+assert.equal(ui.bodyPreviewNote(paper),'正文预览：Figure 1；原选案例：Supplementary Figure 12。这不是同一选图，不把原脚本、输入或分类自动绑定到此正文预览。');
+assert.equal(ui.bodyPreviewNote({...paper,figure:'Figure 1a'}),'');
+assert.equal(ui.bodyPreviewNote({...paper,figure:'Figure 01a'}),'');
+assert.equal(ui.bodyPreviewNote({...paper,figure:'Figure 1a',article:{figures:[{...main,reference:{scope:'main',number:'01'}}]}}),'');
+assert(ui.bodyPreviewNote({...paper,figure:'Figure one'}).includes('尚未核实为同一图'));
+assert.equal(ui.bodyFigure({...paper,displayFigure:undefined}),null);
+assert.equal(ui.bodyFigure({...paper,displayFigure:{id:'supp-12',reference:{scope:'main',number:'12'}}}),null);
+assert.equal(ui.bodyFigure({...paper,displayFigure:{id:'missing',reference:{scope:'main',number:'1'}}}),null);
+assert.equal(ui.bodyFigure({...paper,displayFigure:{id:'fig-1',reference:{scope:'supplementary',number:'1'}}}),null);
+for(const bad of [{...main,reuseStatus:'link_only'},{...main,asset:'assets/../private.png'},{...main,assetSHA256:'invalid'},{...main,sourceURL:'http://example.org/img.png'},{...main,reference:{scope:'extended',number:'1'}},{...main,label:'Supplementary Figure 1'},{...main,label:'Extended Data Fig. 1'},{...main,label:'Supplementary plate'},{...main,label:'Extended unknown'},{...main,label:'Figure 2'},{...main,reference:{scope:'main',number:'2'}},{...main,reference:{scope:'main',number:['1']}}]){
+  assert.equal(ui.bodyFigure({...paper,article:{figures:[bad]}}),null);
+}
+const onlySI={...paper,id:'si-only',displayFigure:undefined,article:{figures:[supplement]}};
+const noImage={...paper,id:'missing',displayFigure:undefined,article:{figures:[]}};
+const failed=new Set(['paper']);assert(!ui.bodyDisplayEligible(paper,failed));
+assert.deepEqual(ui.bodyCounts([paper,onlySI,noImage]),{published:1,visible:1,failed:0,verified:0});
+assert.deepEqual(ui.bodyCounts([paper,onlySI,noImage],failed),{published:1,visible:0,failed:1,verified:0});
+const tags={...paper,graphForms:['heatmap'],formClassificationStatus:'approved',analysisFunctions:['integration'],functionClassificationStatus:'approved'};
+assert.deepEqual(ui.approvedTags(tags,'forms'),['heatmap']);assert.deepEqual(ui.approvedTags(tags,'functions'),['integration']);
+assert.deepEqual(ui.facetCounts([tags,onlySI],'forms','',record=>ui.bodyDisplayEligible(record)).total,1);
+const excluded={...paper,id:'excluded',automation:{status:'excluded'}};
+assert(!ui.bodyDisplayEligible(excluded));
+assert.deepEqual(ui.bodyCounts([paper,excluded,onlySI,noImage]),{published:1,visible:1,failed:0,verified:0});
+assert.equal(ui.bodyReference({...main,label:'Supplemental Figure 1'}),null);
+assert.equal(ui.bodyReference({...main,label:'Figure 1',reference:{scope:'main',number:'01'}}).number,'1');
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_body_image_failure_hides_gallery_and_index_without_mutating_catalog(self):
+        test_code = r'''
+const assert=require('assert'),fs=require('fs'),vm=require('vm');
+const source=fs.readFileSync(process.argv[1],'utf8');
+class Element {
+  constructor(tag){this.tagName=tag;this.children=[];this.listeners={};this.dataset={};this.attributes={};this.className='';this.value='';this.open=false;this._text='';this.isConnected=true;this.classList={add:(...names)=>{this.className=[...new Set(this.className.split(' ').filter(Boolean).concat(names))].join(' ');},remove:(...names)=>{this.className=this.className.split(' ').filter(name=>!names.includes(name)).join(' ');},toggle:(name,forced)=>{const has=this.className.split(' ').includes(name),next=forced===undefined?!has:!!forced;if(next)this.classList.add(name);else this.classList.remove(name);return next;}};}
+  set textContent(value){this._text=String(value);this.children=[];} get textContent(){return this._text+this.children.map(child=>child.textContent).join('');}
+  get options(){return this.children.filter(child=>child.tagName==='option');}
+  append(...children){for(const child of children){child.parent=this;this.children.push(child);}}
+  replaceChildren(...children){this.children=[];this._text='';this.append(...children);}
+  setAttribute(key,value){this.attributes[key]=value;}
+  addEventListener(name,fn){(this.listeners[name]??=[]).push(fn);}
+  set src(value){this._src=value;if(this.onSrcAssigned)this.onSrcAssigned(value);}get src(){return this._src;}
+  dispatch(name,event={}){for(const fn of this.listeners[name]||[])fn({...event,target:event.target||this});}
+  remove(){if(this.parent)this.parent.children=this.parent.children.filter(child=>child!==this);this.isConnected=false;}
+  contains(node){return this===node || this.children.some(child=>child.contains(node));}
+  showModal(){this.open=true;}close(){this.open=false;this.dispatch('close');}focus(){}
+}
+const descendants=node=>[node,...node.children.flatMap(descendants)];
+async function check(startInIndex,loadFailsImmediately=false,viewerFromGallery=false){
+  const ids=new Map(),created=[],nav=['gallery','papers','updates'].map(view=>{const node=new Element('button');node.dataset.view=view;return node;}),tabs=['inputs','explanation','source','notes'].map(tab=>{const node=new Element('button');node.dataset.tab=tab;return node;});
+  const document={activeElement:null,createElement:tag=>{const node=new Element(tag);created.push(node);if(tag==='img'&&loadFailsImmediately)node.onSrcAssigned=value=>{if(value.endsWith('/main.png'))node.dispatch('error');};return node;},getElementById:id=>{if(!ids.has(id))ids.set(id,new Element(['detail','image-viewer'].includes(id)?'dialog':'div'));return ids.get(id);},querySelectorAll:selector=>selector==='[data-view]'?nav:selector==='[data-tab]'?tabs:[]};
+  const main={id:'fig-1',label:'Figure 1',reference:{scope:'main',number:'1'},reuseStatus:'allowed',asset:'assets/paper/main.png',assetSHA256:'a'.repeat(64),sourceURL:'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC123/fullTextXML'};
+  const supplement={...main,id:'supp-12',label:'Supplementary Figure 12',reference:{scope:'supplementary',number:'12'},asset:'assets/paper/supp.png'};
+  const paper={id:'paper',paper:'Body article',figure:'Supplementary Figure 12',displayFigure:{id:'fig-1',label:'Figure 1',reference:{scope:'main',number:'1'}},article:{figures:[main,supplement]},automation:{status:'partial'}};
+  const catalog={authorCodeExecuted:false,papers:[paper,{id:'no-body',paper:'Not shown',article:{figures:[]}},{...paper,id:'excluded',paper:'Excluded article',automation:{status:'excluded'}}],inputSpecs:{},dimensions:{},generatedAt:'2026-10-11T12:00:00Z',bootstrap:{status:'active',totalCount:55,completeCount:2,pendingCount:53,attentionCount:0,issues:[]}},before=JSON.stringify(catalog);
+  const updates=[{startedAt:'2026-10-11T12:00:00Z',status:'partial',newCount:0}];
+  const sandbox={document,URL,console,location:{hash:startInIndex?'#papers':''},history:{replaceState(){}},window:{addEventListener(){}},fetch:url=>Promise.resolve({ok:true,json:()=>Promise.resolve(url.includes('catalog')?catalog:updates)}),module:{exports:{}}};
+  vm.runInNewContext(source,sandbox);await new Promise(setImmediate);await new Promise(setImmediate);
+  assert(document.getElementById('result-count').textContent.includes(loadFailsImmediately?'0 / 0':'1 / 1'));
+  assert(!document.getElementById('content').textContent.includes('Not shown'));
+  assert(!document.getElementById('content').textContent.includes('Excluded article'));
+  const fold=document.getElementById('collection-phase').children[0];assert.equal(fold.tagName,'details');assert(!fold.open);
+  const image=startInIndex||loadFailsImmediately?created.find(node=>node.tagName==='img' && node.src===main.asset):descendants(document.getElementById('content')).find(node=>node.tagName==='img');
+  assert(image);assert.equal(image.src,main.asset);
+  if(!loadFailsImmediately){
+    if(viewerFromGallery){
+      const zoom=descendants(document.getElementById('content')).find(node=>node.className==='figure-zoom');assert(zoom);zoom.dispatch('click');
+      assert(document.getElementById('image-viewer').open);assert(!document.getElementById('detail').open);
+      document.getElementById('image-viewer').dispatch('close'); // Late close event from a previous dialog instance must not forget the open viewer.
+      const viewerImage=document.getElementById('image-viewer-stage').children[0];assert.equal(viewerImage.src,main.asset);viewerImage.dispatch('error');
+    }else{
+      const open=descendants(document.getElementById('content')).find(node=>node.tagName==='button'&&node.textContent.startsWith('查看输入'));
+      assert(open);open.dispatch('click');
+      const zooms=descendants(document.getElementById('detail-figure')).filter(node=>node.className==='figure-zoom');assert.equal(zooms.length,2);
+      zooms[1].dispatch('click');const oldImage=document.getElementById('image-viewer-stage').children[0];assert.equal(oldImage.src,supplement.asset);
+      zooms[0].dispatch('click');const currentImage=document.getElementById('image-viewer-stage').children[0];assert.equal(currentImage.src,main.asset);
+      oldImage.dispatch('error');assert.equal(document.getElementById('image-viewer-stage').children[0],currentImage);
+      image.dispatch('error');
+    }
+    await new Promise(setImmediate);
+    assert(!document.getElementById('detail').open);assert(!document.getElementById('image-viewer').open);
+  }
+  assert(document.getElementById('notice').textContent.includes('临时隐藏'));
+  assert(document.getElementById('notice').textContent.includes('刷新页面可重新尝试'));
+  assert(!descendants(document.getElementById('content')).some(node=>node.className==='case-card' || node.className==='paper-row' || node.className==='figure-placeholder'));
+  nav.find(node=>node.dataset.view===(startInIndex?'gallery':'papers')).dispatch('click');
+  assert(document.getElementById('result-count').textContent.includes('0 / 0'));
+  assert(!document.getElementById('content').textContent.includes('Body article'));
+  nav.find(node=>node.dataset.view==='updates').dispatch('click');assert.equal(document.getElementById('result-count').textContent,'1 次运行记录');
+  assert.equal(JSON.stringify(catalog),before);assert.equal(updates.length,1);
+}
+(async()=>{await check(false);await check(true);await check(false,true);await check(true,true);await check(false,false,true);})().catch(error=>{console.error(error);process.exitCode=1;});
+'''
+        result = subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
     def test_js_bootstrap_phase_progress_is_safe_and_not_false_completion(self):
