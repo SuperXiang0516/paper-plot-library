@@ -12,12 +12,14 @@ class WorkflowModeTests(unittest.TestCase):
     def setUp(self):
         self.workflow = (PROJECT / ".github" / "workflows" / "site.yml").read_text(encoding="utf-8")
 
-    def test_project_initializes_existing_cases_without_raising_api_budgets(self):
+    def test_project_uses_five_paper_batches_and_fifteen_bounded_ai_attempts(self):
         config = json.loads((PROJECT / "config.json").read_text(encoding="utf-8"))
         self.assertTrue(config["initialize_existing_first"])
-        self.assertEqual(config["bootstrap_batch_limit"], 20)
+        self.assertEqual(config["bootstrap_batch_limit"], 5)
+        self.assertEqual(config["max_papers_per_run"], 5)
+        self.assertEqual(config["max_ai_attempts_per_paper"], 3)
         self.assertEqual((config["repair_limit"], config["max_ai_calls"], config["max_requests"],
-                          config["max_new_per_day"]), (5, 5, 150, 5))
+                          config["max_new_per_day"]), (5, 15, 150, 5))
 
     def test_dispatch_preserves_collect_switch_and_exposes_only_known_modes(self):
         inputs = self.workflow.split("    inputs:\n", 1)[1].split("  schedule:\n", 1)[0]

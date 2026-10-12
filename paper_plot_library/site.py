@@ -30,7 +30,7 @@ _NESTED_FIELDS = {
     "repository": {"status", "url", "commit", "license", "scripts", "inputs", "figureMappings", "limitations", "lastError", "errorStatus", "last_attempt_status", "retained_from_previous"},
     "article": {"status", "license", "licenseURL", "version", "xmlURL", "figures", "supplements", "codeURLs", "codeURLEvidence", "limitations", "last_attempt_status", "retained_from_previous"},
     "metrics": {"status", "if", "jcr", "cas", "source", "retrieved_at", "metric_year", "query_name", "retained_field_asof", "persistent_cache_hit", "last_attempt_status", "stale", "error_reason", "http_status"},
-    "ai": {"status", "title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids", "reviewRequired", "review_required", "stale_reason", "last_attempt_status", "generated_at", "error_reason", "http_status"},
+    "ai": {"status", "title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids", "reviewRequired", "review_required", "stale_reason", "last_attempt_status", "generated_at", "error_reason", "http_status", "ai_attempts", "max_ai_attempts", "retry_success_count"},
     "automation": {"status", "stages", "lastCheckedAt", "errors", "warnings", "attempts"},
 }
 _PUBLIC_STATUSES = {
@@ -41,7 +41,7 @@ _PUBLIC_STATUSES = {
     "budget_exhausted", "authentication_error", "payment_required", "permission_denied", "invalid_request",
     "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error", "network_error",
     "invalid_doi", "doi_mismatch", "retracted", "no_final_version", "no_scripts_found", "partial_failure",
-    "daily_quota_reached", "missing_journal",
+    "daily_quota_reached", "paper_batch_limit_reached", "missing_journal",
     "bootstrap_in_progress", "bootstrap_needs_attention", "bootstrap_complete_next_run",
 }
 _SAFE_REASONS = {
@@ -55,7 +55,11 @@ _SAFE_REASONS = {
 }
 _REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount",
                     "untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount",
-                    "automaticCompleteCount", "incompleteCount"}
+                    "automaticCompleteCount", "incompleteCount", "paperBatchLimit", "maxAiAttemptsPerPaper",
+                    "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount"}
+_AI_STOP_STATUSES = {"authentication_error", "payment_required", "permission_denied", "invalid_request",
+                     "endpoint_not_found", "missing_key", "missing_model", "missing_endpoint", "invalid_endpoint"}
+_AI_COUNTERS = {"ai_attempts", "max_ai_attempts", "retry_success_count"}
 
 
 def _public_bootstrap(value: object) -> dict | None:
@@ -182,6 +186,10 @@ def public_catalog(catalog: dict) -> dict:
                 record[key] = _public({name: value for name, value in paper[key].items() if name in fields})
                 if key in {"ai", "metrics"} and "status" in record[key]:
                     record[key]["status"] = _safe_status(record[key]["status"])
+                if key == "ai":
+                    for name in _AI_COUNTERS:
+                        if name in record[key] and (type(record[key][name]) is not int or not 0 <= record[key][name] <= 5):
+                            record[key].pop(name)
         for script in record.get("repository", {}).get("scripts", []):
             if isinstance(script, dict):
                 for evidence in script.get("evidence", []):
@@ -454,6 +462,8 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
         bootstrap = _public_bootstrap(original.get("bootstrap"))
         if bootstrap is not None:
             report["bootstrap"] = bootstrap
+        if isinstance(original.get("aiStoppedStatus"), str) and original["aiStoppedStatus"] in _AI_STOP_STATUSES:
+            report["aiStoppedStatus"] = original["aiStoppedStatus"]
         for key in _REPORT_COUNTERS:
             if key in report and (not isinstance(report[key], int) or isinstance(report[key], bool) or not 0 <= report[key] <= 1000000):
                 report.pop(key)

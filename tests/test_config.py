@@ -28,7 +28,9 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(result.llm_model, "")
         self.assertEqual(result.llm_api_key, "")
         self.assertFalse(result.initialize_existing_first)
-        self.assertEqual(result.bootstrap_batch_limit, 20)
+        self.assertEqual(result.bootstrap_batch_limit, 5)
+        self.assertEqual(result.max_ai_attempts_per_paper, 3)
+        self.assertEqual(result.max_papers_per_run, 5)
         self.write_config({"max_new_per_day": 0, "max_ai_calls": 0, "repair_limit": 0, "candidate_checks": 0,
                            "max_images": 0, "max_supplements": 0})
         result = load_settings(self.root)
@@ -57,6 +59,24 @@ class ConfigTests(unittest.TestCase):
                       {"bootstrap_batch_limit": True}, {"bootstrap_batch_limit": 0},
                       {"bootstrap_batch_limit": 51}, {"bootstrap_batch_limit": "20"}):
             self.write_config(value)
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                load_settings(self.root)
+
+    def test_per_paper_paid_attempt_limit_is_explicit_and_bounded(self):
+        self.write_config({"max_ai_calls": 15, "max_ai_attempts_per_paper": 3, "bootstrap_batch_limit": 5})
+        configured = load_settings(self.root)
+        self.assertEqual((configured.max_ai_calls, configured.max_ai_attempts_per_paper, configured.bootstrap_batch_limit), (15, 3, 5))
+        for value in (0, 6, True, 1.5, "3", None):
+            self.write_config({"max_ai_attempts_per_paper": value})
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                load_settings(self.root)
+
+    def test_shared_source_paper_batch_cap_is_explicit_and_bounded(self):
+        for value in (1, 5, 20):
+            self.write_config({"max_papers_per_run": value})
+            self.assertEqual(load_settings(self.root).max_papers_per_run, value)
+        for value in (0, 21, True, 1.5, "5", None):
+            self.write_config({"max_papers_per_run": value})
             with self.subTest(value=value), self.assertRaises(ValueError):
                 load_settings(self.root)
 

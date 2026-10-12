@@ -47,7 +47,8 @@ class BootstrapPipelineTests(unittest.TestCase):
         (self.root / "data" / "assets" / "fixture.png").write_bytes(RASTER)
         self.settings = Settings(initialize_existing_first=True, bootstrap_batch_limit=20,
             repair_limit=5, max_ai_calls=5, max_requests=150, citation_enrichment=False,
-            llm_api_key="offline-fixture-key", llm_model="offline-fixture-model")
+            llm_api_key="offline-fixture-key", llm_model="offline-fixture-model",
+            max_papers_per_run=20, max_ai_attempts_per_paper=1)
         self.opener = BudgetFixtureOpener()
         source = materials()
         self.active = adapters(article=lambda *args: deepcopy(source["article"]),

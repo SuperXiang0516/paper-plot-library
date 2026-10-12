@@ -32,6 +32,9 @@ _FAILED_STAGES = {
     "endpoint_not_found", "rate_limited", "service_unavailable", "other_http_error",
     "network_error", "invalid_endpoint",
 }
+_AI_RUN_FATAL = {"missing_key", "missing_model", "missing_endpoint", "invalid_endpoint",
+                 "authentication_error", "payment_required", "permission_denied",
+                 "invalid_request", "endpoint_not_found"}
 
 
 def _collection_budget_exhausted(client):
@@ -584,11 +587,15 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         # Injected test/local clients obey the same reservation policy as cloud clients.
         client.reserved_post_requests = min(reserved_ai, client.max_requests, client.max_post_attempts)
     client.github_token = settings.github_token
+    client.ai_stopped_status = ""
     report = {"startedAt": stamp(), "date": stamp()[:10], "newCount": 0, "repairCount": 0, "checkedCount": 0,
               "failures": [], "discoveryStatus": "disabled", "authorCodeExecuted": False,
               "aiRepairCount": 0, "collectionBudgetExhausted": False,
               "maxRequests": getattr(client, "max_requests", settings.max_requests),
               "maxAiCalls": settings.max_ai_calls,
+              "paperBatchLimit": settings.max_papers_per_run,
+              "maxAiAttemptsPerPaper": settings.max_ai_attempts_per_paper,
+              "aiCasesAttempted": 0, "aiRetriedCaseCount": 0, "aiRetrySuccessCount": 0,
               "reservedAiRequests": getattr(client, "reserved_post_requests", reserved_ai),
               "untouchedRepairCount": 0, "retryRepairCount": 0, "cooldownSkippedCount": 0,
               "untouchedRemainingCount": 0, "automaticCompleteCount": 0, "incompleteCount": 0}
@@ -624,6 +631,16 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         failed_ids = set()
         summarized_ids = set()
         backlog_ids = {p["id"] for p in catalog["papers"] if _summary_backlog(p)} if reserved_ai else set()
+        summary_attempts = Counter()
+
+        def summarize_case(item):
+            before_attempts = getattr(client, "post_attempts", 0)
+            try:
+                return complete_summary(client, item, settings, adapters)
+            finally:
+                after_attempts = getattr(client, "post_attempts", 0)
+                if type(before_attempts) is int and type(after_attempts) is int:
+                    summary_attempts[item["id"]] += max(0, after_attempts - before_attempts)
 
         def checkpoint():
             # Catalog is authoritative for daily admissions if a crash happened between these atomic files.
@@ -631,17 +648,40 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             write_json(root / "data" / "ledger.json", validate_ledger(ledger, report["date"]))
 
         if is_backfill:
-            repairs = bootstrap_plan(catalog, ledger, settings.bootstrap_batch_limit, report["startedAt"],
+            batch_limit = min(settings.bootstrap_batch_limit, settings.max_papers_per_run)
+            repairs = bootstrap_plan(catalog, ledger, batch_limit, report["startedAt"],
                                      root=root, retry_attention=mode == "backfill" or bool(only_dois))
             if only_dois:
                 wanted = {normalize_doi(doi) for doi in only_dois}
                 # Explicit selection cannot be lost behind the batch limit.
                 selected = dict(catalog, papers=[p for p in catalog["papers"] if p["doi"] in wanted])
-                repairs = bootstrap_plan(selected, ledger, settings.bootstrap_batch_limit, report["startedAt"],
+                repairs = bootstrap_plan(selected, ledger, batch_limit, report["startedAt"],
                                          root=root, retry_attention=True)
         else:
+            repair_slots = min(settings.repair_limit, settings.max_papers_per_run)
+            next_workload = None
+            # Maintenance and discovery share a paper cap. Leave room for new
+            # candidates instead of spending the whole batch refreshing old ones.
+            today_admitted = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
+            today_has_room = len(set(day["newDOIs"]) | today_admitted) < settings.max_new_per_day
+            if discover_new and not only_dois and today_has_room and settings.candidate_checks:
+                if settings.max_papers_per_run == 1:
+                    scheduler = ledger.get("scheduler", {})
+                    group = scheduler.get("nextWorkload", "repair") if isinstance(scheduler, dict) else "repair"
+                    repair_slots = 0 if group == "discovery" else repair_slots
+                    next_workload = "repair" if group == "discovery" else "discovery"
+                else:
+                    candidate_slots = min(3, settings.max_papers_per_run - 1)
+                    repair_slots = min(repair_slots, settings.max_papers_per_run - candidate_slots)
             repairs, report["cooldownSkippedCount"] = _repair_plan(
-                catalog["papers"], settings.repair_limit, report["startedAt"], ledger, backlog_ids, only_dois)
+                catalog["papers"], repair_slots, report["startedAt"], ledger, backlog_ids, only_dois)
+            if next_workload:
+                raw = ledger.get("scheduler", {})
+                state = {"nextWorkload": next_workload}
+                group = raw.get("nextGroup") if isinstance(raw, dict) else None
+                if isinstance(group, str) and group in {"seed", "retry"}:
+                    state["nextGroup"] = group
+                ledger["scheduler"] = state
         for old in repairs:
             if _collection_budget_exhausted(client):
                 report["collectionBudgetExhausted"] = True
@@ -664,7 +704,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 if (initialization or old["id"] in backlog_ids) and _can_summarize(revised):
                     summarized_ids.add(old["id"])
                     try:
-                        complete_summary(client, revised, settings, adapters)
+                        summarize_case(revised)
                         if revised.get("ai", {}).get("status") == "generated":
                             report["aiRepairCount"] += 1
                     except Exception as exc:
@@ -729,6 +769,8 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         elif discover_new and allowance and _collection_budget_exhausted(client):
             report["discoveryStatus"] = "budget_exhausted"
             report["collectionBudgetExhausted"] = True
+        elif discover_new and allowance and report["checkedCount"] >= settings.max_papers_per_run:
+            report["discoveryStatus"] = "paper_batch_limit_reached"
         elif discover_new and allowance:
             try:
                 candidates = adapters.get("discover", discover)(client, settings)
@@ -737,6 +779,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 checked = []
                 checked_dois = set()
                 for candidate in candidates:
+                    if report["checkedCount"] >= settings.max_papers_per_run:
+                        report["discoveryStatus"] = "paper_batch_limit_reached"
+                        break
                     if _collection_budget_exhausted(client):
                         report["collectionBudgetExhausted"] = True
                         report["discoveryStatus"] = "budget_exhausted"
@@ -791,7 +836,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     # Commit admission BEFORE a paid call; interrupted runs can safely repair it.
                     checkpoint()
                     try:
-                        complete_summary(client, revised, settings, adapters)
+                        summarize_case(revised)
                     except Exception as exc:
                         failed_ids.add(revised["id"])
                         revised["automation"]["errors"].append("summary: " + type(exc).__name__)
@@ -805,7 +850,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             if record["id"] not in repaired_ids or record["id"] in summarized_ids or not _can_summarize(record):
                 continue
             try:
-                complete_summary(client, record, settings, adapters)
+                summarize_case(record)
                 checkpoint()
             except Exception as exc:
                 failed_ids.add(record["id"])
@@ -833,6 +878,15 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             p.get("automation", {}).get("stages", {}).get(stage, "not_checked") for p in checked_records))
                                  for stage in ("metadata", "article", "repository", "metrics", "ai")}
         report["missingKeys"] = [key for key, value in (("LLM_API_KEY", settings.llm_api_key), ("LLM_MODEL", settings.llm_model), ("EASYSCHOLAR_SECRET_KEY", settings.easyscholar_key)) if not value]
+        report["aiCasesAttempted"] = sum(count > 0 for count in summary_attempts.values())
+        report["aiRetriedCaseCount"] = sum(count > 1 for count in summary_attempts.values())
+        report["aiRetrySuccessCount"] = sum(
+            summary_attempts[item["id"]] > 1 and item.get("ai", {}).get("status") == "generated"
+            and item.get("automation", {}).get("stages", {}).get("ai") == "generated"
+            for item in catalog["papers"] if item["id"] in summary_attempts)
+        stopped = getattr(client, "ai_stopped_status", "")
+        if isinstance(stopped, str) and stopped in _AI_RUN_FATAL:
+            report["aiStoppedStatus"] = stopped
         report.update(finishedAt=stamp(), requests=getattr(client, "requests", 0), aiAttempts=getattr(client, "post_attempts", 0),
                       collectionRequests=max(0, getattr(client, "requests", 0) - getattr(client, "post_attempts", 0)),
                       totalCount=len(catalog["papers"]), dailyNewCount=len(daily),

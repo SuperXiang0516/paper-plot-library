@@ -30,7 +30,8 @@ class RequestBudgetRegressionTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.settings = Settings(llm_api_key="offline-fixture-key", llm_model="offline-fixture-model",
-                                 citation_enrichment=False)
+                                 citation_enrichment=False, max_papers_per_run=20,
+                                 max_ai_attempts_per_paper=1)
         self.opener = BudgetFixtureOpener()
 
     def catalog(self, papers):

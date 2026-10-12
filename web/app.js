@@ -16,7 +16,7 @@
   const list = value => Array.isArray(value) ? value : [];
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
   const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
-  Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'优先补齐已有候选 · 暂停新发现',bootstrap_needs_attention:'已有候选需要处理 · 暂停新发现',bootstrap_complete_next_run:'已有候选资料已补齐 · 下次进入日更'});
+  Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'优先补齐已有候选 · 暂停新发现',bootstrap_needs_attention:'已有候选需要处理 · 暂停新发现',bootstrap_complete_next_run:'已有候选资料已补齐 · 下次进入日更',paper_batch_limit_reached:'达到本轮文章处理上限'});
   const stageLabel = name => typeof name === 'string' && Object.hasOwn(STAGE_LABELS,name) ? STAGE_LABELS[name] : '未分类阶段';
   const statusLabel = value => typeof value === 'string' && Object.hasOwn(STAGE_STATUS_LABELS,value) ? STAGE_STATUS_LABELS[value] : '状态待核';
   const validHTTP = value => Number.isInteger(value) && value >= 400 && value <= 599;
@@ -44,11 +44,17 @@
     return doi+stageLabel(failure?.stage)+' · '+errorLabel(failure);
   };
   const counter = value => Number.isInteger(value) && value >= 0 && value <= 1000000 ? value : null;
+  const AI_STOP_STATUSES=new Set(['missing_key','missing_model','missing_endpoint','invalid_endpoint','authentication_error','payment_required','permission_denied','invalid_request','endpoint_not_found']);
   const updateBudgetLines = report => {
     const lines=[], requests=counter(report.requests), collection=counter(report.collectionRequests), ai=counter(report.aiAttempts), maximum=counter(report.maxRequests), maxAi=counter(report.maxAiCalls), reserved=counter(report.reservedAiRequests), repaired=counter(report.aiRepairCount);
     if(requests !== null || collection !== null || ai !== null)lines.push('总 HTTP 请求：'+(requests ?? '未报告')+(maximum === null ? '' : ' / '+maximum)+' 次 · 采集 GET：'+(collection ?? '未报告')+' 次 · AI HTTP 尝试：'+(ai ?? '未报告')+(maxAi === null ? '' : ' / '+maxAi)+' 次（失败重试也计数）');
     if(reserved !== null && reserved > 0)lines.push('本轮为 AI 预留 '+reserved+' 个总请求名额；采集上限'+(maximum === null ? '由预留名额限制' : '为 '+Math.max(0,maximum-reserved)+' 次')+'。预留不代表已经调用或扣费。');
-    if(repaired !== null)lines.push('既有案例 AI 修补成功：'+repaired+' 条；本轮已匹配正式文献、已检查全文与作者代码的缺失、旧版或失败注释优先处理。');
+    const papers=counter(report.paperBatchLimit), perPaper=counter(report.maxAiAttemptsPerPaper), attempted=counter(report.aiCasesAttempted), retried=counter(report.aiRetriedCaseCount), retrySuccess=counter(report.aiRetrySuccessCount), checked=counter(report.checkedCount);
+    if(papers!==null || perPaper!==null)lines.push('本轮论文处理上限：'+(papers??'未报告')+' 篇 · 实际核查：'+(checked??'未报告')+' 条 · 每篇 AI 最多 '+(perPaper??'未报告')+' 次实际 HTTP 尝试（传输重试、响应校验重试都计数）。选中论文不等于材料已经完成。');
+    if(attempted!==null || retried!==null || retrySuccess!==null)lines.push('本轮实际发起 AI HTTP 的论文：'+(attempted??'未报告')+' 篇 · 发生至少 2 次 HTTP 尝试：'+(retried??'未报告')+' 篇 · 重试后注释生成成功：'+(retrySuccess??'未报告')+' 篇。AI 成功不等于原图、代码、输入材料已齐全。');
+    if(maxAi!==null && perPaper!==null)lines.push('AI 上限按本轮计算，不是每日额度；手动重新运行可能再次调用并增加费用。实际费用以服务方账单为准。');
+    if(typeof report.aiStoppedStatus==='string' && AI_STOP_STATUSES.has(report.aiStoppedStatus))lines.push('AI 配置 / 凭据检查：'+statusLabel(report.aiStoppedStatus)+'。本轮已停止余下论文的付费 AI 队列；请修正后再运行 backfill，重复请求不能修正此类问题。');
+    if(repaired !== null)lines.push('既有案例 AI 修补成功：'+repaired+' 条；仅对本轮已匹配正式文献、已检查全文与作者代码的记录生成注释，材料是否收齐另见本批进度。');
     const untouched=counter(report.untouchedRepairCount), retry=counter(report.retryRepairCount), cooldown=counter(report.cooldownSkippedCount), remaining=counter(report.untouchedRemainingCount), automatic=counter(report.automaticCompleteCount), incomplete=counter(report.incompleteCount);
     if(untouched!==null || retry!==null)lines.push('既有记录处理：首次核查 '+(untouched??'未报告')+' 条 · 修补 / 复查 '+(retry??'未报告')+' 条。首次核查与失败修补分配名额，避免反复处理同几篇。');
     if(cooldown!==null && cooldown>0)lines.push(cooldown+' 条记录正在延后复查 / 重试，不占用本轮普通修补名额；其中可能是重复失败，也可能是暂时无法补齐的资料。');
@@ -438,6 +444,9 @@
     else { paragraph(panel,'AI 中文解读尚未完成：' + diagnosticLabel(ai) + '。缺失时保留来源核查，不补造解读。','callout'); if (paper.description) { heading(panel,'人工种子概述（不是本轮 AI 结果）',4); paragraph(panel,paper.description); } }
     if (list(ai.evidence_ids).length) paragraph(panel,'证据标识：' + ai.evidence_ids.join(' · '),'small');
     if (list(ai.limitations).length) { heading(panel,'解读限制',4); items(panel,ai.limitations); }
+    const aiCounter=value=>Number.isInteger(value) && value>=0 && value<=5?value:null;
+    const attempts=aiCounter(ai.ai_attempts), cap=aiCounter(ai.max_ai_attempts), recovered=aiCounter(ai.retry_success_count);
+    if(attempts!==null)paragraph(panel,'本篇最近整理记录的实际 AI HTTP 尝试：'+attempts+(cap===null?'':' / '+cap)+' 次（传输与响应校验重试均计数）'+(recovered>0?'；重试后注释生成成功。':'。')+'该计数不表示原图或输入材料已补齐。','small');
     heading(panel,'期刊与引用注释',4); paragraph(panel,metricLabel(paper));
     addSpec(panel,[['指标来源',paper.metrics?.source || '未获取'],['获取时间',paper.metrics?.retrieved_at || '未报告'],['中科院分区',paper.metrics?.cas || '未获取']]);
     if(paper.metrics?.last_attempt_status)paragraph(panel,'本轮指标获取：'+diagnosticLabel(paper.metrics)+'；当前显示的历史指标不代表本轮匹配成功。','callout');

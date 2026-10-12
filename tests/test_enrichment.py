@@ -34,7 +34,8 @@ class FakeClient:
 
 def settings(**overrides):
     values = dict(easyscholar_key="fixture-secret", llm_api_url="https://api.deepseek.com/chat/completions",
-                  llm_api_key="fixture-ai-secret", llm_model="fixture-model", max_ai_calls=3)
+                  llm_api_key="fixture-ai-secret", llm_model="fixture-model", max_ai_calls=3,
+                  max_ai_attempts_per_paper=1)
     values.update(overrides)
     return SimpleNamespace(**values)
 
@@ -325,6 +326,7 @@ class EnrichmentTests(unittest.TestCase):
     def test_summary_bad_endpoint_and_budget_are_recoverable(self):
         client = FakeClient(self.temp.name, ai_payload())
         self.assertEqual(summarize(client, self.record, self.evidence, settings(llm_api_url="https://[bad"))["status"], "invalid_endpoint")
+        client.ai_stopped_status = ""  # Separate run after fixing its endpoint configuration.
         result = summarize(client, self.record, self.evidence, settings(max_ai_calls="bad"))
         self.assertEqual((result["status"], result["error_reason"]), ("budget_exhausted", "ai_budget_exhausted"))
 

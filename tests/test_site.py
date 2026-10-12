@@ -238,6 +238,37 @@ class SiteTests(unittest.TestCase):
         report.update({field: True for field in fields})
         output = build_site(self.root, sample(), [report])
         self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{"discoveryStatus": "daily_quota_reached"}])
+        output = build_site(self.root, sample(), [{"discoveryStatus": "paper_batch_limit_reached"}])
+        self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{"discoveryStatus": "paper_batch_limit_reached"}])
+
+    def test_paid_retry_report_counters_and_fatal_statuses_are_controlled(self):
+        fields = ("paperBatchLimit", "maxAiAttemptsPerPaper", "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount")
+        report = {"paperBatchLimit": 5, "maxAiAttemptsPerPaper": 3, "aiCasesAttempted": 5, "aiRetriedCaseCount": 2,
+                  "aiRetrySuccessCount": 1, "aiStoppedStatus": "authentication_error"}
+        output = build_site(self.root, sample(), [report])
+        self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [report])
+        for status in ("missing_key", "missing_model", "missing_endpoint", "invalid_endpoint", "authentication_error",
+                       "payment_required", "permission_denied", "invalid_request", "endpoint_not_found"):
+            output = build_site(self.root, sample(), [{"aiStoppedStatus": status}])
+            self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{"aiStoppedStatus": status}])
+        for invalid in (True, -1, 1000001, "secret-provider-response", float("nan")):
+            output = build_site(self.root, sample(), [{**{field: invalid for field in fields}, "aiStoppedStatus": invalid}])
+            self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{}])
+        for status in ([], {}, "network_error", "budget_exhausted", "secret-provider-response"):
+            output = build_site(self.root, sample(), [{"aiStoppedStatus": status}])
+            self.assertEqual(json.loads((output / "data" / "updates.json").read_text()), [{}])
+
+    def test_ai_per_paper_retry_counters_are_integer_bounded_without_secrets(self):
+        fields = ("ai_attempts", "max_ai_attempts", "retry_success_count")
+        catalog = sample()
+        catalog["papers"][0]["ai"].update(ai_attempts=3, max_ai_attempts=3, retry_success_count=1)
+        ai = public_catalog(catalog)["papers"][0]["ai"]
+        self.assertEqual({field: ai[field] for field in fields}, {"ai_attempts": 3, "max_ai_attempts": 3, "retry_success_count": 1})
+        for invalid in (True, -1, 6, "secret-provider-response", float("nan")):
+            catalog["papers"][0]["ai"].update({field: invalid for field in fields})
+            ai = public_catalog(catalog)["papers"][0]["ai"]
+            self.assertTrue(all(field not in ai for field in fields))
+            self.assertNotIn("secret-provider-response", json.dumps(ai))
 
     def test_bootstrap_public_summary_preserves_progress_not_private_cohort_state(self):
         catalog = sample()
@@ -556,6 +587,7 @@ assert.equal(ui.detailFigures({...paper,figure:'Figure 2'}).selected,null);
 assert.equal(ui.detailFigures({...paper,figure:'Figure 2'}).other[0],image);
 assert(ui.updateBudgetLines({untouchedRepairCount:3,retryRepairCount:2,cooldownSkippedCount:1,untouchedRemainingCount:40,automaticCompleteCount:4,incompleteCount:1}).join('\n').includes('尚未首次自动核查：40'));
 assert.equal(ui.statusLabel('daily_quota_reached'),'今日新收录名额已用完');
+assert.equal(ui.statusLabel('paper_batch_limit_reached'),'达到本轮文章处理上限');
 assert(ui.reasonLabel('response_truncated').includes('截断'));
 assert(ui.reasonLabel('summary_evidence_invalid').includes('证据'));
 assert(ui.reasonLabel('metrics_provider_error').includes('业务错误'));
@@ -601,6 +633,31 @@ assert.deepEqual(Object.keys(ui.BOOTSTRAP_REASONS).sort(),JSON.parse(process.arg
 '''
         subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js"), json.dumps(sorted(BOOTSTRAP_REASON_CODES))], check=True, capture_output=True)
         self.assertIn('id="collection-phase"', (PROJECT / "web" / "index.html").read_text())
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_paid_retry_budget_and_fatal_configuration_circuit_are_explicit(self):
+        test_code = r'''
+const assert=require('assert'),ui=require(process.argv[1]);
+const report={requests:135,collectionRequests:126,aiAttempts:9,maxRequests:150,maxAiCalls:15,reservedAiRequests:15,paperBatchLimit:5,maxAiAttemptsPerPaper:3,checkedCount:5,aiCasesAttempted:4,aiRetriedCaseCount:2,aiRetrySuccessCount:1};
+const lines=ui.updateBudgetLines(report).join('\n');
+assert(lines.includes('AI HTTP 尝试：9 / 15'));
+assert(lines.includes('预留 15') && lines.includes('上限为 135'));
+assert(lines.includes('论文处理上限：5 篇') && lines.includes('实际核查：5 条'));
+assert(lines.includes('每篇 AI 最多 3 次') && lines.includes('传输重试、响应校验重试都计数'));
+assert(lines.includes('实际发起 AI HTTP 的论文：4 篇') && lines.includes('至少 2 次 HTTP 尝试：2 篇') && lines.includes('重试后注释生成成功：1 篇'));
+assert(lines.includes('AI 成功不等于原图、代码、输入材料已齐全'));
+assert(lines.includes('不是每日额度') && lines.includes('重新运行可能再次调用并增加费用'));
+for(const status of ['missing_key','missing_model','missing_endpoint','invalid_endpoint','authentication_error','payment_required','permission_denied','invalid_request','endpoint_not_found']){
+  const fatal=ui.updateBudgetLines({...report,aiStoppedStatus:status}).join('\n');
+  assert(fatal.includes('本轮已停止余下论文的付费 AI 队列'),status);assert(fatal.includes('修正后再运行 backfill'),status);
+}
+for(const status of ['network_error','budget_exhausted','secret-provider-response',{},[]]){
+  const safe=ui.updateBudgetLines({...report,aiStoppedStatus:status}).join('\n');
+  assert(!safe.includes('本轮已停止余下论文') && !safe.includes('secret-provider-response'));
+}
+assert.deepEqual(ui.updateBudgetLines({paperBatchLimit:true,maxAiAttemptsPerPaper:'secret-provider-response',aiCasesAttempted:-1,aiRetriedCaseCount:NaN,aiRetrySuccessCount:1000001}),[]);
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js")], check=True, capture_output=True)
 
     def test_large_figure_responsive_layout_rules(self):
         css = (PROJECT / "web" / "styles.css").read_text()

@@ -197,7 +197,7 @@ class PipelineEndToEndTests(unittest.TestCase):
             self.assertEqual(first["newCount"], 5, first)
             self.assertEqual(first["dailyNewCount"], 5)
             self.assertEqual(first["aiAttempts"], 5)
-            self.assertEqual(first["discoveryStatus"], "success")
+            self.assertEqual(first["discoveryStatus"], "paper_batch_limit_reached")
             catalog = read_json(root / "data" / "catalog.json")
             self.assertEqual(len(catalog["papers"]), 5)
             for paper in catalog["papers"]:

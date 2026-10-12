@@ -20,10 +20,12 @@ class Settings:
     discovery_query: str = '(aging OR ageing OR multiomics OR "single cell" OR bioinformatics) AND (software OR tool OR computational OR sequencing) AND (GitHub OR "source code" OR "code availability") AND FIRST_PDATE:[2020-01-01 TO 3000-01-01] AND HAS_FT:Y'
     max_new_per_day: int = 5
     max_ai_calls: int = 5
+    max_ai_attempts_per_paper: int = 3
     max_requests: int = 150
+    max_papers_per_run: int = 5
     repair_limit: int = 5
     initialize_existing_first: bool = False
-    bootstrap_batch_limit: int = 20
+    bootstrap_batch_limit: int = 5
     candidate_checks: int = 8
     max_images: int = 2
     max_supplements: int = 3
@@ -65,6 +67,8 @@ def load_settings(root, overrides=None):
     values.update(overrides or {})
     settings = Settings(**values)
     bounds = {"max_new_per_day": (0, 5), "max_ai_calls": (0, 20), "max_requests": (1, 500),
+              "max_ai_attempts_per_paper": (1, 5),
+              "max_papers_per_run": (1, 20),
               "discovery_limit": (1, 100), "repair_limit": (0, 20), "candidate_checks": (0, 20),
               "bootstrap_batch_limit": (1, 50),
               "max_images": (0, 5), "max_supplements": (0, 5), "max_file_bytes": (1024, 10000000)}

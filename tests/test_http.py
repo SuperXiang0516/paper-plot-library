@@ -138,6 +138,36 @@ class HttpTests(unittest.TestCase):
         self.assertEqual((client.post_attempts, len(opener.calls)), (2, 2))
         self.assertEqual(list(Path(self.temp.name).glob("http-*.json")), [])
 
+    def test_explicit_post_attempt_limit_prevents_nested_transport_retries(self):
+        client, opener = self.client([http_error(500, "7"), Response()], max_post_attempts=15)
+        with self.assertRaises(FetchError) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}, attempt_limit=1)
+        self.assertEqual((caught.exception.status, caught.exception.retry_delay), (500, 7))
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (1, 1, 1))
+        self.assertEqual(self.clock.sleeps, [])
+        self.assertEqual(client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}), {"ok": True})
+
+    def test_invalid_explicit_transport_attempt_limit_is_rejected_before_network(self):
+        client, opener = self.client([])
+        for value in (0, -1, 11, True, 1.5, "1", {}, []):
+            with self.subTest(value=value), self.assertRaises(FetchError):
+                client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}, attempt_limit=value)
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (0, 0, 0))
+
+    def test_post_json_parse_failure_has_only_safe_controlled_reason(self):
+        client, opener = self.client([Response(data=b'{"DO_NOT_LEAK')])
+        with self.assertRaises(FetchError) as caught:
+            client.post_json("https://api.deepseek.com/chat/completions", {"x": 1}, attempt_limit=1)
+        self.assertEqual(caught.exception.reason, "response_json_malformed")
+        self.assertNotIn("DO_NOT_LEAK", str(caught.exception))
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (1, 1, 1))
+
+    def test_retry_delay_metadata_is_bounded_and_finite(self):
+        for value in (0, 7.5, 30):
+            self.assertEqual(FetchError("safe", retry_delay=value).retry_delay, value)
+        for value in (-1, 31, True, float("inf"), float("nan"), "DO_NOT_LEAK", {}):
+            self.assertFalse(hasattr(FetchError("safe", retry_delay=value), "retry_delay"))
+
     def test_budget_reasons_are_typed_safe_fetch_errors(self):
         reasons = ("network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted")
         for reason in reasons:

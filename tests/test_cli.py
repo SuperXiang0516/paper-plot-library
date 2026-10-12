@@ -18,6 +18,14 @@ class CliTests(unittest.TestCase):
             main(["--root", folder, "update", "--mode", "backfill", "--bootstrap-batch-limit", "1"])
             self.assertEqual(load.call_args.args[1], {"bootstrap_batch_limit": 1})
 
+    def test_shared_source_paper_cap_is_forwarded_without_changing_daily_new_quota(self):
+        with tempfile.TemporaryDirectory() as folder, \
+                patch("paper_plot_library.__main__.load_settings", return_value=Settings()) as load, \
+                patch("paper_plot_library.__main__.run_pipeline", return_value={}), \
+                contextlib.redirect_stdout(io.StringIO()):
+            main(["--root", folder, "update", "--max-papers-per-run", "5"])
+            self.assertEqual(load.call_args.args[1], {"max_papers_per_run": 5})
+
     def test_explicit_doi_repair_does_not_also_discover_new_papers(self):
         with tempfile.TemporaryDirectory() as folder, patch("paper_plot_library.__main__.load_settings", return_value=Settings()), patch("paper_plot_library.__main__.run_pipeline", return_value={}) as run, contextlib.redirect_stdout(io.StringIO()):
             main(["--root", folder, "update", "--doi", "10.1234/fixture"])

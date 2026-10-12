@@ -35,6 +35,8 @@ _STATIC_LIMITATION = "作者代码未运行；静态检查不等于图形复现�
 _BUDGET_REASONS = {"network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted"}
 _HTTP_FAILURE_STATUSES = {400: "invalid_request", 401: "authentication_error", 402: "payment_required",
                           403: "permission_denied", 404: "endpoint_not_found", 429: "rate_limited"}
+_AI_RUN_FATAL = {"authentication_error", "payment_required", "permission_denied", "invalid_request",
+                 "endpoint_not_found", "missing_key", "missing_model", "missing_endpoint", "invalid_endpoint"}
 
 
 def _fetch_failure(error):
@@ -43,6 +45,8 @@ def _fetch_failure(error):
         reason = getattr(error, "reason", None)
         return {"status": "budget_exhausted", "error_reason":
                 reason if isinstance(reason, str) and reason in _BUDGET_REASONS else "network_budget_exhausted"}
+    if getattr(error, "reason", None) == "response_json_malformed":
+        return {"status": "invalid_response", "error_reason": "response_json_malformed"}
     status = getattr(error, "status", None)
     if isinstance(status, int) and not isinstance(status, bool) and 400 <= status <= 599:
         return {"status": _HTTP_FAILURE_STATUSES.get(status, "service_unavailable" if status >= 500 else "other_http_error"),
@@ -346,8 +350,62 @@ def _unique_json_object(pairs):
     return value
 
 
+def _decode_summary_response(response, allowed):
+    """Project an AI response to validated prose or a controlled reason only."""
+    choices = response.get("choices") if isinstance(response, dict) else None
+    choice = choices[0] if isinstance(choices, list) and len(choices) == 1 else None
+    if not isinstance(choice, dict):
+        return None, "response_shape_invalid"
+    if choice.get("finish_reason") == "length":
+        return None, "response_truncated"
+    if choice.get("finish_reason") != "stop":
+        return None, "response_finish_reason_invalid"
+    message = choice.get("message")
+    content = message.get("content") if isinstance(message, dict) else None
+    if not isinstance(content, str) or not content.strip():
+        return None, "response_content_invalid"
+    if len(content) > 20_000:
+        return None, "response_content_too_long"
+    if content.lstrip().startswith("```"):
+        return None, "response_markdown_fence"
+    try:
+        decoded = json.loads(content, object_pairs_hook=_unique_json_object)
+    except (ValueError, RecursionError):
+        return None, "response_json_malformed"
+    return _validate_summary_with_reason(decoded, allowed)
+
+
+def _summary_correction(reason, allowed):
+    """Never quote, execute, or replay an invalid provider response in a retry."""
+    known = {"response_shape_invalid", "response_truncated", "response_finish_reason_invalid",
+             "response_content_invalid", "response_content_too_long", "response_markdown_fence",
+             "response_json_malformed", "summary_shape_invalid", "summary_fields_invalid", "summary_text_invalid",
+             "summary_chinese_missing", "summary_list_invalid", "summary_evidence_invalid", "summary_reproduction_claim"}
+    code = reason if isinstance(reason, str) and reason in known else "summary_fields_invalid"
+    correction = ("本地校验未通过，受控错误类别：" + code + "。重新根据原始 evidence 生成；"
+                  "只返回一个 JSON 对象，不要 Markdown 或解释性前后文。必须且只能包含 title_zh、summary_zh、"
+                  "learning_points、limitations、evidence_ids；后三个字段必须是非空文字数组，分别为1至8、1至10、1至20条，"
+                  "仅引用提供的证据，不补造输入、图号对应、许可或复现结果。")
+    if code == "summary_evidence_invalid":
+        correction += "evidence_ids 只能从这个已提供的 ID 集合选取：" + json.dumps(sorted(allowed), ensure_ascii=False) + "。"
+    if code == "summary_reproduction_claim":
+        correction += "作者代码从未执行；禁止宣称运行成功、复现完成或与原图一致。"
+    if code in {"response_truncated", "response_content_too_long"}:
+        correction += "请精简：摘要不超过约600字，learning_points和limitations各不超过3条，确保完整闭合JSON。"
+    return correction
+
+
 def summarize(client, record, evidence, settings):
     """Generate grounded Chinese notes, or an explicit recoverable state; never infer factual fields."""
+    initial_attempts = getattr(client, "post_attempts", 0)
+    initial_attempts = initial_attempts if type(initial_attempts) is int and initial_attempts >= 0 else 0
+    paper_limit = getattr(settings, "max_ai_attempts_per_paper", 3)
+    paper_limit = paper_limit if type(paper_limit) is int and 1 <= paper_limit <= 5 else 0
+    def attempt_diagnostics(success=False):
+        current = getattr(client, "post_attempts", initial_attempts)
+        used = max(0, current - initial_attempts) if type(current) is int else 0
+        return {"ai_attempts": used, "max_ai_attempts": paper_limit,
+                "retry_success_count": int(success and used > 1)}
     items = _evidence_items(evidence)
     allowed = {x["id"] for x in items}
     facts = {"title": _text(record.get("paper", ""), 600), "doi": _text(record.get("doi", ""), 200),
@@ -361,7 +419,12 @@ def summarize(client, record, evidence, settings):
     fingerprint = ""
 
     def failed(status, error_reason=None, http_status=None):
-        diagnostics = {"error_reason": error_reason or status}
+        if status in _AI_RUN_FATAL:
+            client.ai_stopped_status = status
+            # No further paid request is allowed in this run. Release unused
+            # reservation for collection; the overall HTTP cap is unchanged.
+            client.reserved_post_requests = 0
+        diagnostics = {"error_reason": error_reason or status, **attempt_diagnostics()}
         if http_status is not None:
             diagnostics["http_status"] = http_status
         if previous:
@@ -394,13 +457,16 @@ def summarize(client, record, evidence, settings):
             and set(previous["evidence_ids"]) <= allowed):
         return dict(previous, cache_hit=True, persistent_cache_hit=True,
                     generated_at=_text(existing.get("generated_at"), 32), model=model,
-                    source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
+                    source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint, **attempt_diagnostics())
     cache_path = Path(client.cache_dir) / "summaries" / (fingerprint + ".json")
     cached = _load_json(cache_path)
     valid = _validate_summary({k: cached.get(k) for k in _SUMMARY_FIELDS}, allowed) if cached.get("summary_fingerprint") == fingerprint and cached.get("source_fingerprint") == source_fingerprint else None
     if valid:
         return dict(valid, cache_hit=True, generated_at=_text(cached.get("generated_at"), 32), model=model,
-                    source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
+                    source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint, **attempt_diagnostics())
+    stopped_status = getattr(client, "ai_stopped_status", "")
+    if isinstance(stopped_status, str) and stopped_status in _AI_RUN_FATAL:
+        return failed("deferred", "ai_run_stopped")
     if not key:
         return failed("missing_key")
     try:
@@ -408,7 +474,7 @@ def summarize(client, record, evidence, settings):
         attempts = max(0, int(getattr(client, "post_attempts", 0)))
     except (TypeError, ValueError, OverflowError):
         return failed("budget_exhausted", "ai_budget_exhausted")
-    if attempts >= maximum:
+    if attempts >= maximum or not paper_limit:
         return failed("budget_exhausted", "ai_budget_exhausted")
     payload = {"model": model, "max_tokens": 1800, "temperature": 0.2,
                "response_format": {"type": "json_object"},
@@ -421,38 +487,47 @@ def summarize(client, record, evidence, settings):
                             {"role": "user", "content": json.dumps(facts, ensure_ascii=False)}]}
     if parsed.hostname == "api.deepseek.com":
         payload["thinking"] = {"type": "disabled"}
-    try:
-        response = client.post_json(url, payload, headers={"Authorization": "Bearer " + key}, max_bytes=1_000_000)
-        choices = response.get("choices") if isinstance(response, dict) else None
-        choice = choices[0] if isinstance(choices, list) and len(choices) == 1 else None
-        if not isinstance(choice, dict):
-            return failed("invalid_response", "response_shape_invalid")
-        if choice.get("finish_reason") == "length":
-            return failed("invalid_response", "response_truncated")
-        if choice.get("finish_reason") != "stop":
-            return failed("invalid_response", "response_finish_reason_invalid")
-        message = choice.get("message")
-        content = message.get("content") if isinstance(message, dict) else None
-        if not isinstance(content, str) or not content.strip():
-            return failed("invalid_response", "response_content_invalid")
-        if len(content) > 20_000:
-            return failed("invalid_response", "response_content_too_long")
-        if content.lstrip().startswith("```"):
-            return failed("invalid_response", "response_markdown_fence")
+    retryable = {"network_error", "rate_limited", "service_unavailable", "invalid_response"}
+    last_failure, correction = None, ""
+    for attempt in range(paper_limit):
+        current = getattr(client, "post_attempts", initial_attempts)
+        if type(current) is not int or current < initial_attempts or current >= maximum:
+            return failed("budget_exhausted", "ai_budget_exhausted")
+        if current - initial_attempts >= paper_limit:
+            break
+        request_payload = dict(payload, messages=[dict(message) for message in payload["messages"]])
+        if correction:
+            request_payload["messages"][0]["content"] += "\n" + correction
+        retry_delay = min(30, 2 ** attempt)
         try:
-            decoded = json.loads(content, object_pairs_hook=_unique_json_object)
-        except (ValueError, RecursionError):
-            return failed("invalid_response", "response_json_malformed")
-        result, reason = _validate_summary_with_reason(decoded, allowed)
-    except (BudgetExceeded, FetchError) as error:
-        return failed(**_fetch_failure(error))
-    except Exception:
-        return failed("error")
-    if not result:
-        return failed("invalid_response", reason)
-    result.update(generated_at=_stamp(), model=model, source_fingerprint=source_fingerprint, summary_fingerprint=fingerprint)
-    try:
-        _save_json(cache_path, result)
-    except OSError:
-        result["cache_write_failed"] = True
-    return result
+            # One logical attempt is exactly one transport attempt, not three
+            # nested HTTP retries; both hard global budgets still apply.
+            response = client.post_json(url, request_payload, headers={"Authorization": "Bearer " + key},
+                                        max_bytes=1_000_000, attempt_limit=1)
+            result, reason = _decode_summary_response(response, allowed)
+            if result:
+                result.update(generated_at=_stamp(), model=model, source_fingerprint=source_fingerprint,
+                              summary_fingerprint=fingerprint, **attempt_diagnostics(success=True))
+                try:
+                    _save_json(cache_path, result)
+                except OSError:
+                    result["cache_write_failed"] = True
+                return result
+            last_failure = {"status": "invalid_response", "error_reason": reason}
+        except (BudgetExceeded, FetchError) as error:
+            last_failure = _fetch_failure(error)
+            if getattr(error, "retryable", None) is False:
+                return failed(**last_failure)
+            delay = getattr(error, "retry_delay", None)
+            if type(delay) in (int, float) and 0 <= delay <= 30 and math.isfinite(delay):
+                retry_delay = delay
+        except Exception:
+            return failed("error")
+        if last_failure["status"] not in retryable or attempt + 1 >= paper_limit:
+            return failed(**last_failure)
+        if last_failure["status"] == "invalid_response":
+            correction = _summary_correction(last_failure.get("error_reason"), allowed)
+        sleep = getattr(client, "sleep", None)
+        if callable(sleep):
+            sleep(retry_delay)
+    return failed(**last_failure) if last_failure else failed("budget_exhausted", "ai_budget_exhausted")

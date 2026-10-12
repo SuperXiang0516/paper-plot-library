@@ -37,7 +37,8 @@ class CatalogSchedulerTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.settings = Settings(llm_api_key="offline-fixture-key", llm_model="offline-fixture-model",
-                                 easyscholar_key="offline-metric-key", citation_enrichment=False)
+                                 easyscholar_key="offline-metric-key", citation_enrichment=False,
+                                 max_papers_per_run=20)
         self.clock = datetime(2026, 10, 11, 12, 0, tzinfo=timezone.utc)
 
     def catalog(self, papers):
