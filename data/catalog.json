@@ -41348,22 +41348,26 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T00:36:30Z",
+        "lastCheckedAt": "2026-10-12T07:24:43Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T00:36:30Z",
+          "lastAttemptAt": "2026-10-12T07:24:43Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T00:36:30Z"
+          "nextAttemptAt": "2026-10-13T07:24:43Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T00:36:43Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:44Z",
           "status": "pending",
           "reasonCodes": [
-            "selected_figure_missing"
+            "selected_figure_missing",
+            "ai_response_invalid"
           ],
-          "nextAttemptAt": "2026-10-12T01:36:43Z"
+          "sourceGapScans": {
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T09:24:44Z"
         }
       },
       "pmcid": "PMC13577925",
@@ -41811,7 +41815,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T00:36:27.321877+00:00",
+        "retrievedAt": "2026-10-12T07:24:41.794878+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -42800,7 +42804,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -42809,7 +42814,9 @@
         "cas": "医学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T00:36:30Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -42861,6 +42868,7 @@
           "研究涉及的许可、期刊指标与复现结果在证据中未提供,无法确认。",
           "证据未说明组织时钟在独立队列中的具体验证指标,相关性能未知。",
           "证据未提供从血液样本预测组织特异性年龄差的具体方法细节与验证结果。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -42878,13 +42886,15 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T00:36:43Z",
         "model": "deepseek-flash",
         "source_fingerprint": "0bb203162da5ed1439fb9fcb10e61020f2a6eff3cfcff504e473023a40c19307",
         "summary_fingerprint": "8220699e49847ffdbe7942fe27f497d577de58034580bd657c8460407481c4e2",
-        "ai_attempts": 2,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
-        "retry_success_count": 1
+        "retry_success_count": 0
       }
     },
     {
@@ -42992,22 +43002,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T00:36:19Z",
+        "lastCheckedAt": "2026-10-12T07:24:38Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T00:36:19Z",
+          "lastAttemptAt": "2026-10-12T07:24:38Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T00:36:19Z"
+          "nextAttemptAt": "2026-10-13T07:24:38Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T00:36:26Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:38Z",
           "status": "pending",
           "reasonCodes": [
-            "selected_figure_missing"
+            "selected_figure_missing",
+            "ai_response_invalid"
           ],
-          "nextAttemptAt": "2026-10-12T01:36:26Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:38Z"
         }
       },
       "pmcid": "PMC13091796",
@@ -43431,7 +43443,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T00:36:13.381766+00:00",
+        "retrievedAt": "2026-10-12T07:24:35.589180+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -43629,7 +43641,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -43638,7 +43651,9 @@
         "cas": "综合性期刊1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T00:36:19Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -43690,6 +43705,7 @@
           "未观察到样本量、重复数之外的效应量或置信区间信息。",
           "未观察到原图与脚本之间的对应关系,图号与脚本的映射未明示。",
           "未观察到任何独立重复或外部验证信息。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -43707,11 +43723,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T00:36:26Z",
         "model": "deepseek-flash",
         "source_fingerprint": "939da9b7bf557a06cdd9069e03d99f175013d9649404bda0ef843daa4a765e85",
         "summary_fingerprint": "e181709364ca47b4849f27211cd9fc01a25e170f8321fbb7727f25d011f05771",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -90176,22 +90194,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T00:36:47Z",
+        "lastCheckedAt": "2026-10-12T07:24:49Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T00:36:47Z",
+          "lastAttemptAt": "2026-10-12T07:24:49Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T00:36:47Z"
+          "nextAttemptAt": "2026-10-13T07:24:49Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T00:36:56Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:49Z",
           "status": "pending",
           "reasonCodes": [
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
-          "nextAttemptAt": "2026-10-12T01:36:56Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:49Z"
         }
       },
       "pmcid": "PMC8012210",
@@ -90592,7 +90612,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T00:36:43.944472+00:00",
+        "retrievedAt": "2026-10-12T07:24:46.626993+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -92805,7 +92825,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -92814,7 +92835,9 @@
         "cas": "生物学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T00:36:47Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -92868,6 +92891,7 @@
           "Fig.4 图注文本在基因组轨迹可视化描述处被截断,后续内容未知(evidence: figure-3)。",
           "资料未提供期刊指标、许可信息或原图与代码的精确对应关系,这些信息未知(evidence: publication, inspection-boundary)。",
           "curated-note 为整理性说明,其关于 README 与 Fig. 3i 的陈述未在所提供的其他证据中独立验证(evidence: curated-note)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -92885,11 +92909,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T00:36:56Z",
         "model": "deepseek-flash",
         "source_fingerprint": "5cd983621adaae2d6f7b1d310723ae17969b0b71766f974eceb95ed373255737",
         "summary_fingerprint": "ca67c7395707c0cae577794a85c386df8143ad7bbfaae83ca934813a7e39a07c",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -171022,7 +171048,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T07:24:28Z",
+  "generatedAt": "2026-10-12T07:24:50Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -171080,13 +171106,15 @@
       {
         "doi": "10.1038/s41591-026-04566-5",
         "reasonCodes": [
-          "selected_figure_missing"
+          "selected_figure_missing",
+          "ai_response_invalid"
         ]
       },
       {
         "doi": "10.1038/s41467-026-71508-7",
         "reasonCodes": [
-          "selected_figure_missing"
+          "selected_figure_missing",
+          "ai_response_invalid"
         ]
       },
       {
@@ -171344,7 +171372,8 @@
       {
         "doi": "10.1038/s41588-021-00790-6",
         "reasonCodes": [
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       },
       {
@@ -171416,12 +171445,12 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:24:32Z",
-    "status": "active",
-    "endReason": "",
+    "updatedAt": "2026-10-12T07:24:51Z",
+    "status": "finished",
+    "endReason": "cohort_traversed",
     "batchCount": 11,
-    "checkpointCount": 22,
-    "requests": 750,
+    "checkpointCount": 23,
+    "requests": 795,
     "aiAttempts": 25,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -171430,9 +171459,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 53,
-    "processedCount": 50,
-    "remainingCount": 3,
-    "inFlightCount": 3,
+    "processedCount": 53,
+    "remainingCount": 0,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
