@@ -142,15 +142,16 @@
     "startedAt": "2026-10-11T15:08:16Z",
     "status": "active",
     "totalCount": 55,
-    "completeCount": 2,
-    "pendingCount": 53,
-    "attentionCount": 0
+    "completeCount": 3,
+    "pendingCount": 52,
+    "attentionCount": 0,
+    "removedCount": 0
   },
   "backfillSession": {
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:16:44Z",
+    "updatedAt": "2026-10-12T07:17:26Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -217,36 +218,23 @@
       "10.1038/s41592-021-01346-6",
       "10.1038/s41587-022-01272-8"
     ],
-    "processedDOIs": [],
+    "processedDOIs": [
+      "10.1038/s41467-025-67369-1",
+      "10.1038/s43587-026-01104-3",
+      "10.1038/s41587-021-01139-4",
+      "10.1038/s41592-021-01346-6",
+      "10.1038/s41587-022-01272-8"
+    ],
     "batchCount": 1,
-    "checkpointCount": 2,
-    "requests": 0,
-    "aiAttempts": 0,
+    "checkpointCount": 3,
+    "requests": 78,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 1,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41467-025-67369-1",
-        "10.1038/s43587-026-01104-3",
-        "10.1038/s41587-021-01139-4",
-        "10.1038/s41592-021-01346-6",
-        "10.1038/s41587-022-01272-8"
-      ],
-      "startedAt": "2026-10-12T07:16:44Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41467-025-67369-1": "2026-10-11T11:23:37Z",
-        "10.1038/s43587-026-01104-3": "",
-        "10.1038/s41587-021-01139-4": "",
-        "10.1038/s41592-021-01346-6": "",
-        "10.1038/s41587-022-01272-8": ""
-      }
-    }
+    "elapsedSeconds": 43
   }
 }

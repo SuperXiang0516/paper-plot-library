@@ -96,7 +96,27 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T11:23:37Z"
+        "lastCheckedAt": "2026-10-12T07:16:49Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:16:49Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:16:49Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:16:49Z",
+          "status": "pending",
+          "reasonCodes": [
+            "figure_reuse_blocked",
+            "ai_response_invalid"
+          ],
+          "sourceGapScans": {
+            "figure_reuse_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:16:49Z"
+        }
       },
       "pmcid": "PMC12820199",
       "pmid": "41554691",
@@ -345,7 +365,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T11:23:35.740002+00:00",
+        "retrievedAt": "2026-10-12T07:16:46.933120+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -456,7 +476,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -472,7 +493,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T10:47:38Z",
+        "retrievedAt": "2026-10-12T07:16:49Z",
         "url": "https://openalex.org/W7124731680",
         "cited_by_count": 16,
         "fwci": 13.5337,
@@ -518,6 +539,7 @@
           "各队列样本量与人群构成差异可能影响跨队列比较,但证据未提供相关分析。",
           "证据未说明表观遗传编辑靶点验证的实验结果。",
           "证据未提供多组学衰老基因列表或具体基因名称(除CD248外)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -535,10 +557,15 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-11T11:23:42Z",
         "model": "deepseek-flash",
         "source_fingerprint": "4b1ceb07384b6e6779373e7e59f063c7130ff45f7b05e2231b9730308b55665b",
-        "summary_fingerprint": "05a19277ec3e8caca09e91fc2e600f433df6fede6d8a5c10f5b7d18319b197a5"
+        "summary_fingerprint": "05a19277ec3e8caca09e91fc2e600f433df6fede6d8a5c10f5b7d18319b197a5",
+        "ai_attempts": 0,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -19499,13 +19526,1096 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:16:58Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:16:58Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:16:58Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 0,
+          "lastAttemptAt": "2026-10-12T07:17:04Z",
+          "status": "complete",
+          "reasonCodes": [],
+          "sourceGapScans": {}
+        }
       },
-      "pmcid": "PMC13099655"
+      "pmcid": "PMC13099655",
+      "pmid": "41917190",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2662-8465",
+      "eissn": "2662-8465",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/PMC13099655.1.xml?md5=896a1be4fbca0cea3c2e841a08899dd1",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Multiplexed proteomic imaging of the normal breast.a, A schematic of the normal breast study with an age distribution histogram. b, A flowchart of high-parameter imaging and schematic of analysis levels (scale bar, 150 µm). c, Antibody panel targeting 40 markers. d, A heat map of median expression values for 11 epithelial cell phenotypes clustered using the proteins on the x axis. Right: the bar chart depicts the number of cells per phenotype, and the heatmaps depict positive fractions of markers. e, As in d for 14 microenvironment cell phenotypes. HR, hormone receptor; Mϕ, macrophage; ToF, time-of-flight.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig1_HTML.jpg?md5=59b434e64907a75ed5a9dbb918d68885",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "assets/pmc13099655-4b02e22b60bc7da9.jpg",
+            "sha256": "4b02e22b60bc7da971d557b41a70806a63ddfb46b3eb26c75a669ab1aac409ea",
+            "width": 703,
+            "height": 1375,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "requestedReference": {
+              "scope": "main",
+              "number": "1",
+              "panel": "d"
+            },
+            "selectionNote": "Whole original figure retained; requested panel d is not cropped or verified against code.",
+            "assetSHA256": "4b02e22b60bc7da971d557b41a70806a63ddfb46b3eb26c75a669ab1aac409ea",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Luminal heterogeneity of the breast epithelium.a, Hex density plots of rescaled raw intensities between luminal markers. ρ is the Spearman rank correlation coefficient; loess regression lines are depicted. b, UpSet plot of luminal marker combination frequencies and numbers of patients with more than ten cells of each combination. Top right: the bar plot is the total cell counts positive for each marker. c, Representative images of the top two populations in the bar plot from b; scale bar, 20 µm. Representative images are shown from patients selected from the full cohort; similar staining patterns were observed across all patients included in the analysis. d, The relationship between proportion of positive luminal marker fraction and age. Correlation coefficients (ρ) and P values are derived from two-sided Spearman rank correlation coefficient tests, with loess regression lines shown.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig2_HTML.jpg?md5=cdcdf13e720774f2cca3b72e38a3162b",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Phenotypic composition of the normal breast.a, The proportion of epithelial, immune and stromal cells per patient. b, Cellular density as a function of age for each cellular compartment. Correlation coefficients (ρ) and P values are derived from two-sided Spearman rank correlation coefficient tests; the linear model line is shown. c, The number and proportion of cell phenotypes by compartment (epithelial or microenvironment) are depicted for each patient, along with age. Rolling average of age is shown as a loess line. d, Effect sizes for associations between epithelial cell density and age (patients aged <50 versus ≥50 years; n shown per group). The circles represent Cliff’s delta point estimates and whiskers indicate the 95% confidence intervals. The P values are derived from two-sided Mann–Whitney U tests performed at the patient level and corrected for multiple testing with the Benjamini–Hochberg method. Left: the bar charts show the mean epithelial phenotype proportions across patients. e, Same as d for microenvironment cell densities and proportions (patient-level analysis). f, The boxplots of cell densities for selected phenotypes with statistical tests from d and e. The boxes show 25th, 50th and 75th centiles; the whiskers indicate 25th/75th centiles ± 1.5× interquartile range; points beyond whiskers are outliers. Beneath the boxes are the absolute numbers of patients in each category. NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig3_HTML.jpg?md5=2cc5e9b69334be71f113b85ebeba890f",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Aging is associated with breast cell-level changes in proliferation and morphology.a, Boxplots of proliferative cell fractions for each cellular compartment. The boxes show the 25th, 50th and 75th centiles; the whiskers indicate the 25th/75th centiles ± 1.5× interquartile range; the points beyond whiskers are outliers. Beneath the boxes are absolute numbers of patients in each category. b, Ki67+ proportion as a function of age for the compartments in a. Correlation coefficients (ρ) and P values are derived from two-sided Spearman rank correlation coefficient tests; loess regression lines are shown. c, Effect sizes for associations between proliferative fraction and age (patients aged <50 versus ≥50 years). The circles represent Cliff’s delta point estimates (median difference between groups) and whiskers indicate 95% confidence intervals. The P values are derived from two-sided Mann–Whitney U tests and corrected using the Benjamini–Hochberg method. Right: the bar plots show the number of patients in each age group (biological replicates) (see Supplementary Table 4 for exact values).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig4_HTML.jpg?md5=3fc0fc685371f3789ac1eb77f3c4667c",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Breast microenvironment spatial structure.a, Boxplots depicting the shortest distances from microenvironment cells to any epithelial cell. The boxes show the 25th, 50th and 75th centiles; whiskers indicate the 25th/75th centiles ± 1.5× interquartile range; right: the bar plots show the total numbers of cells included. Random samples of 10,000 cells of each phenotype are also plotted for illustration. The fraction of significant images from bivariate Ripley’s K analysis and the number of images used in the analysis for each phenotype are also depicted. b, Representative image depicting distribution analysis for selected microenvironment phenotypes. Representative images are shown from one patient; similar spatial patterns were observed across all images included in the analysis. Top: the plots display comparisons between observed Kcross function values (solid black lines) and Kcross values under CSR (dashed red lines). Shaded confidence envelopes are derived from 199 Monte Carlo simulations of CSR, representing the upper and lower bounds for a significance level of P < 0.01 based on two-tailed tests. Bottom: the images depict epithelium in green and corresponding microenvironment phenotypes as point objects; scale bar, 200 µm. c, Effect sizes for associations between shortest distances and age: circles represent point estimates (median difference between age groups) and whiskers indicate 95% confidence intervals. The depicted P values are derived from two-sided Mann–Whitney U tests and are corrected for multiple testing with the Benjamini–Hochberg method. Right: the bar plots show the number of patients in each age group included in analyses (see Supplementary Table 4 for exact values). d, Boxplots of median distances for selected phenotypes. Beneath boxes are absolute numbers of patients in each category.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig5_HTML.jpg?md5=99bfead8b7b65358ff407b0ed980db25",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Recurrent multicellular neighborhoods in the normal breast.a, A schematic of spatial clustering with CellCharter, followed by network-based community identification. b, Representative examples of spatial clustering and structure identification; scale bars, 100 µm. c, An enrichment heat map of phenotypes (x axis) in neighborhood categories (y axis). Enrichments are equivalent to the ratio of observed counts to expected counts; expected counts are based on the proportion of cells in each phenotype and neighborhood. Only enrichments ≥1 are plotted. Right: the heat maps depict positive fractions of markers among total cells. d, Number and proportion of cells in each spatial cluster are depicted per patient, along with age. e, Boxplots depicting shortest distances from individual spatial-cluster-assigned cells to the nearest epithelial cell. Each data point represents a single cell pooled across all images and patients. Random samples of 10,000 cells per spatial cluster are shown for visualization only and were not used for statistical testing. f, Boxplots depicting per-community characteristics, including number of cells, Shannon diversity and mean vertex degree. Each data point represents a single multicellular community (connected component) identified from spatial graphs across all patients. Right: the bar plots indicate the total number of communities contributing to each spatial cluster category. g, Effect sizes for associations between community density and age: circles represent point estimates (median difference between age groups) and whiskers indicate 95% confidence intervals. The depicted P values are derived from two-sided Mann–Whitney U tests and are corrected for multiple testing with the Benjamini–Hochberg method. h, Boxplots of community densities for selected spatial clusters. For e, f and h, the boxes show the 25th, 50th and 75th centiles; the whiskers indicate the 25th/75th centiles ± 1.5× interquartile range; the points beyond the whiskers are outliers. Beneath the boxes in h are the absolute numbers of patients in each category. Mϕ, macrophage; n.s., not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig6_HTML.jpg?md5=b7c466fd016221a38fd1c7baa0d56c75",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Aging is associated with breast tissue-level remodeling of epithelial structures.a, A schematic of epithelial cell classification; scale bar, 150 µm. b, Effect sizes for comparisons between epithelial proportion and structure compartment (duct or lobule): circles represent point estimates (median paired difference) and whiskers indicate 95% confidence intervals. The depicted P values are derived from two-sided paired Wilcoxon signed-rank tests and are corrected for multiple testing with the Benjamini–Hochberg method. Right: the boxplots depict epithelial proportions for selected phenotypes; the points beyond whiskers are outliers. c, Same as b for microenvironment cell proportions. For b and c, the boxes show 25th, 50th and 75th centiles; the whiskers indicate 25th/75th centiles ± 1.5× interquartile range. d, Duct and lobule density and cells per structure as functions of age. Correlation coefficients (ρ) and P values are derived from two-sided Spearman rank correlation coefficient tests; loess regression lines are shown",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig7_HTML.jpg?md5=b0d25612a3e98bd8b92128e72940329b",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Nonlinear patterns in breast tissue aging.Nonlinear sliding window analysis demonstrating the number of significant features out of 233 as a function of age, with different q-value cutoffs displayed and a window size of 10 years.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig8_HTML.jpg?md5=9f4a594684d27a0b50f2a3b8c767d9dd",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Image processing and phenotyping workflow.Flowchart showing (a) image processing and single-cell measurements, (b) epithelial histology annotation workflow, and (c) detailed phenotyping by compartment. All scale bars, 150 µm, except for the two segmentation image scale bars, 20 µm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig9_ESM.jpg?md5=f1e3ba02949cfb75961c94d7ae1a08f4",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Representative threshold calls for Ki67 and luminal markers and IHC validation of IMC data.a, Ki67, FOXA1, GATA3, ER, PR, AR, and HER2-positive cells depicted with white cell borders. Representative images are shown from patients selected from the cohort; similar staining patterns were observed across all patients included in the study. Scale bars for full images, 150 µm; scale bars for zoomed insets and HER2 images, 50 µm. b, Relationship between positive cell percentages as assessed by IHC and corresponding IMC normalised mean intensity for 6 markers. Correlation coefficients (ρ) and p-values are derived from two-sided Spearman rank correlation coefficient tests; loess regression lines are shown. IHC, immunohistochemistry; IMC, imaging mass cytometry.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig10_ESM.jpg?md5=bacb3e83405edbbe104548ffbd20b3b0",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Variation in core-to-core sampling.a, Number of cores per patient. b, Boxplots of the mean Pearson’s correlation coefficients of cell phenotype proportions for epithelial and microenvironment cell phenotypes, per patient. c, Boxplots of the variance in cell phenotype proportions across imaging cores, computed per patient. Each data point represents one patient (biological replicate), with variance calculated across multiple imaging cores from the same patient (technical replicates). For all boxplots, boxes show 25th, 50th, and 75th centiles; whiskers indicate 75th centile ± 1.5 × IQR; points beyond whiskers are outliers. d, Mean epithelial phenotype correlation for three example patients with four cores sampled for each patient. All epithelial phenotypes have a unique colour; all other cells are outlined in grey. Scale bar, 150 µm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig11_ESM.jpg?md5=238280d358bdef28826a90d084dd3d3e",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Combined analysis of ER+/FOXA1−/GATA3− cells, duct/lobule-adjusted phenotypes, and NK/T cell composition.a, Identification of HR+ (FOXA1+/GATA3+/ER+/PR+/AR+) and ER+ only populations. b, Effect sizes for associations between HR-populations and epithelial phenotype presence (p-values from two-sided paired Wilcoxon signed-rank tests) with right-side boxplots showing HR phenotype proportions. c, Relationship between HR-population proportion of epithelial compartment and age (two-sided Spearman rank correlation coefficient tests performed). d, Boxplots comparing proliferative fraction, cell area, and axis ratio between HR+ and ER+ cells (paired Wilcoxon tests). e, Boxplots of duct vs. lobule assignment of HR+ and ER+ populations; p-values are from paired Wilcoxon tests from patients with both ductal and lobular cells. f, Odds ratios for epithelial phenotype proportions based on an age cutoff of 50, adjusted for duct/lobule epithelial cell proportions in each image (unadjusted and adjusted estimates shown, 95% CIs, p-values from two-sided binomial generalised linear mixed-effects models with Benjamini-Hochberg correction). g, As in f, for microenvironment phenotypes. h, Bar plots of cells expressing CD45 and/or CD56. i, Relationship between NK cell density and age, as in c. j, Bar plots of TCF1, PD-1, and GZMB status for CD4+T and CD8+T phenotypes. k, Effect sizes for associations between marker positivity of the CD4+T or CD8+T compartment and age (two sided Mann-Whitney U tests, BH-corrected, with right-side boxplots of compartment proportions). For all effect size plots, circles represent point estimates corresponding to median differences between groups, and whiskers indicate 95% confidence intervals with p-values corrected for multiple testing with the BH method. For all scatterplots, correlation coefficients (ρ) and p-values are derived from Spearman rank correlation coefficient tests; loess regression lines are shown. For all boxplots, boxes show 25th, 50th, and 75th centiles; whiskers indicate 25th/75th centiles ± 1.5 × interquartile range; points beyond whiskers are outliers.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig12_ESM.jpg?md5=ba279f18537e3de813cb03c6ad64891b",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cell area and axis ratio highlight age-related differences in phenotype morphologies.a, Mean cell area as a function of age for each cellular compartment. Correlation coefficients (ρ) and p-values are derived from two-sided Spearman rank correlation coefficient tests; loess regression lines are shown. b, Effect sizes for associations between cell size and age: circles represent point estimates corresponding to median differences between groups and whiskers indicate 95% confidence intervals. Depicted p-values are derived from two-sided Mann-Whitney U tests and are corrected for multiple testing with the Benjamini-Hochberg method. Right-sided bar plots show the number of patients in each age group included in analyses (exact values provided in Supplementary Table 4). c, Boxplots of mean cell area for selected phenotypes. Representative H&E sections from two different patients are shown; scale bar, 50 µm. d, As for b, for associations between cell size and Ki67 status. Depicted p-values are derived from two-sided paired Wilcoxon signed-rank tests and are corrected for multiple testing with the Benjamini-Hochberg method. e, As for b, for Ki67- cells only. f, Boxplots of compartment and phenotype mean major/minor axis ratios. g, As for b, for associations between axis ratio and age. h, Boxplots of mean axis ratio for selected phenotypes. For c, f, h, boxes show 25th, 50th, and 75th centiles; whiskers indicate 25th/75th centiles ± 1.5 × interquartile range; points beyond whiskers are outliers. Adjacent to boxes are absolute numbers of patients in each category.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig13_ESM.jpg?md5=762ff87fd5632f3085ae29d217c6a44c",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Analysis of adjacent cell-cell interactions and representative epithelial spatial neighbourhood examples.a, Schematic of cell-cell interaction identification; scale bar, 100 µm. b, Relationship between cell-cell interactions and age; interactions are normalised by dividing interaction counts by the number of cells in the epithelial and/or microenvironment compartments, depending on the interaction type being considered. Correlation coefficients (ρ) and p-values are derived from two-sided Spearman rank correlation coefficient tests; linear regression lines are shown. c, Fowlkes-Mallows indices; shaded envelope is the 95% confidence interval from five repetitions for each cluster number. d, Depictions of the five epithelial-enriched neighbourhoods; each cell colour represents a unique spatial cluster assignment. Representative images are shown from patients selected from the cohort; similar spatial clustering patterns were observed across all patients analysed. Scale bars, 150 µm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig14_ESM.jpg?md5=3a281289907d4742d6f1109c965fff39",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Representative immune and stromal spatial neighbourhood examples.a, Depictions of the two immune-enriched neighbourhoods; each cell colour represents a unique spatial cluster assignment. Scale bars, 150 µm; scale bar for zoomed inset, 50 µm. b, As for a, for the three stromal-enriched neighbourhoods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig15_ESM.jpg?md5=68f7b18c4ddd093203b8bafccf1fb875",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig16",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Aging is associated with breast tissue-level remodelling of stromal structures.a, Schematic of myoepithelial layer identification. Myoepithelial pixel to edge refers to shortest distance from each white pixel (myoepithelial pixel) to any black pixel (non-myoepithelial pixel). b, Relationship between thickness and age for the myoepithelial layer surrounding ducts vs. lobules; p-value above boxplot is derived from a paired Wilcoxon signed-rank test. Representative example images of myoepithelium from young and old patients are shown. c, Identification of adipose tissue: in order are the H&E stain, raw marker channel, and final mask. Scatterplots display adipose tissue area as a proportion of total area, mean individual adipocyte area, and the mean shortest distance from epithelial cells to the mask as functions of age. d, e, As for c, for vascular and lymphatic compartments. For b–e, correlation coefficients (ρ) and p-values are derived from two-sided Spearman rank correlation coefficient tests; loess regression lines are shown. For b, boxes show 25th, 50th, and 75th centiles; whiskers indicate 25th/75th centiles ± 1.5 × interquartile range. All scale bars, 150 µm. RF, random forest.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig16_ESM.jpg?md5=fc806c9e95b71892a38f01c4e0651126",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig17",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Identification of adipocytes, vasculature, and lymphatic tissue.a, Schematic of adipocyte identification. b, Representative example images of adipocytes from young and old patients. Representative images are shown from patients selected from the cohort; similar adipocyte morphology and segmentation performance were observed across all patients included in the analysis. c, Schematic of vascular and lymphatic structure identification; representative examples are shown from patients selected from the cohort, with consistent segmentation performance observed across all analysed images. d, Boxplots depicting shortest distances from individual microenvironment phenotype cells to adipose, vascular, or lymphatic tissue masks. Each data point represents a single cell (technical measurement) pooled across all images and patients. Right-sided bar charts indicate total numbers of cells included per phenotype-structure pair. These analyses are descriptive only and were not used for statistical inference. Boxes show 25th, 50th, and 75th centiles; whiskers indicate 25th/75th centiles ± 1.5 × interquartile range. All scale bars, 150 µm. RF, random forest.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig17_ESM.jpg?md5=02afea127e3b666ebe08e0ceba1588c3",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig18",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Spatial sampling sensitivity testing.a, Sensitivity test of imaging area to the identification of epithelial, immune, and stromal cell distributions. Plotted are KL divergences between cell type distributions of a 1200 µm × 1200 µm image and down sampled images ranging from widths of 400-1200 µm. b, Sensitivity test of imaging area to the interaction affinity between cell types as in a, with cosine similarities plotted. c, Sensitivity tests of number of images to the identification of cell phenotype and neighbourhood distributions. Linear regression curves depict prediction accuracies of classifying phenotypes and neighbourhoods with training sets varying from 5 to 1400 images. d, Sensitivity test of age effect to image area and number of images. Plotted are ductal proportions of the epithelium as a function of age, with both quadratic spline curve and linear regression lines shown. Goodness of fit is indicated by p-values assessed from log likelihood ratio tests. KL, Kullback–Leibler.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_Fig18_ESM.jpg?md5=b7e29219cd6a1cd99bbea32235baec3e",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01104-3",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al.. Single-cell spatial atlas of the aging human breast. DOI: 10.1038/s43587-026-01104-3. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_MOESM1_ESM.pdf?md5=fc2424a171f4ca1e1d5a8055dab83064",
+            "license": "CC BY",
+            "sha256": "e977f942763997af6a6fdf7b889a5732a48fa0c4d5b5c0b0496a541332464a59",
+            "status": "downloaded_private",
+            "bytes": 2722071,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 10,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_MOESM2_ESM.pdf?md5=55f52314e399c28a40416228b1dafa7b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13099655.1/43587_2026_1104_MOESM3_ESM.xlsx?md5=1b92f72ed73d120646a4c93fd5d5e0c2",
+            "license": "CC BY",
+            "sha256": "bdf1a9fa1ff405b5fa7ec3466f55b2595cba2551170dcacacca564c277b14b7a",
+            "status": "downloaded_private",
+            "bytes": 45661,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-12T07:16:50.105568+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Pulkit Gupta; Eric Lee; Neus Masqué Soler; Ellen Schrader; Xiao Qian Wang; Shimrit Mayer; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas",
+        "commit": "7125deebb8c7f1488c6e63cad752a4906ef4ac03",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "main/Fig1/mkClusterHeatmaps.R",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/main/Fig1/mkClusterHeatmaps.R",
+            "sha256": "f43bf9963ec77e233c07633817c764fe1f15117bf16e9c6b8fda3167463dad9d",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "panel",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variable",
+                "line": 103,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ClusterID",
+                "line": 104,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PDGFR",
+                "line": 122,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BackupTeXClusterLabel",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "normalizedID",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "N.pos",
+                "line": 207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "ext/Fig10/plotSensitivityAgeRatios.R",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/plotSensitivityAgeRatios.R",
+            "sha256": "e7b81b2fdb99ed1069bb07e5d19d9f4067fb593b86816868cee2fff48456811d",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ImageID",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 54,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "ext/Fig10/plotSensitivityTests.R",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/plotSensitivityTests.R",
+            "sha256": "556f51cca8dec723abd2850199ad94ad169a77d9e9369d0e249f4c6d178f8347",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "ext/Fig10/prepareSensitivityAgeRatios.py",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "sha256": "e0e8d90e082522cd21a1844293e0c96830a1ea22df67ba57845f37022001402d",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 120,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 121,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 122,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 120,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py#L120"
+              },
+              {
+                "type": "io_reference",
+                "line": 121,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py#L121"
+              },
+              {
+                "type": "io_reference",
+                "line": 122,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py#L122"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "ext/Fig10/prepareSensitivityCLF.py",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py",
+            "sha256": "b9d8fd79b1157d88928c459ba1eadbf05f7f7e324a627d06d6f50785d55f3f84",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 137,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 138,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ImageID",
+                "line": 154,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 137,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py#L137"
+              },
+              {
+                "type": "io_reference",
+                "line": 138,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py#L138"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "ext/Fig10/prepareSensitivityCS.py",
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCS.py",
+            "sha256": "1b02ef9c7d74efba6b3e61980629ee938ca24ac4e7e894d7061560491e98652c",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 181,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "spatial",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 184,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variable",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Y",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "zscore",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ImageID",
+                "line": 188,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ClusterID",
+                "line": 184,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 181,
+                "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCS.py#L181"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "line": 120,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "line": 121,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "line": 122,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 154,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py",
+            "line": 137,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 154,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py",
+            "line": 138,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "spatial",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 184,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variable",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Y",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "zscore",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ImageID",
+                "line": 188,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ClusterID",
+                "line": 184,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCS.py",
+            "line": 181,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "25.0",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:16:58Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:16:58Z",
+        "url": "https://openalex.org/W7143679910",
+        "cited_by_count": 3,
+        "fwci": 5.7824,
+        "citation_normalized_percentile": 0.96132532,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 96.8066266,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.8066266,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "衰老人类乳腺的单细胞空间图谱",
+        "summary_zh": "该研究使用成像质谱流式技术(imaging mass cytometry)对40种蛋白的空间表达进行检测,分析了527例缩乳术样本中超过300万个细胞,以刻画正常乳腺组织随年龄发生的重塑。摘要指出衰老乳腺组织细胞密度更低、各细胞类型(上皮、基质、免疫)增殖更少,组织结构发生重构,异型上皮细胞间相互作用减少、小叶数量大幅减少、脂肪增多;老年组织呈现更炎症性的微环境,M2巨噬细胞和颗粒酶B阳性T细胞增多,而年轻组织中B细胞最为富集。所提供的证据包含论文元数据、图注(Fig. 1至Fig. 4)以及若干脚本的静态观察记录。",
+        "learning_points": [
+          "研究采用成像质谱流式技术,对40种蛋白标记进行空间表达检测(见Fig. 1图注中的抗体panel与40 markers)。",
+          "样本规模为527例缩乳术、超过300万个细胞(来自摘要描述)。",
+          "Fig. 1展示了研究流程示意、年龄分布直方图、高参数成像流程图、40标记抗体panel,以及11种上皮细胞表型和14种微环境细胞表型的中位表达热图、每表型细胞数与阳性比例(见Fig. 1图注)。",
+          "Fig. 2聚焦乳腺上皮的luminal异质性,使用六边形密度图、UpSet图展示luminal标记组合频率,并分析阳性luminal标记比例与年龄的关系(见Fig. 2图注)。",
+          "Fig. 3展示正常乳腺的表型组成,包括各患者上皮/免疫/基质细胞比例、各细胞区室密度随年龄的变化,以及按年龄(<50岁与≥50岁)比较的效应量(Cliff's delta)与统计检验(见Fig. 3图注)。",
+          "Fig. 4分析与年龄相关的细胞增殖与形态变化,包括各区室增殖细胞比例箱线图、Ki67阳性比例随年龄变化,以及增殖比例与年龄关联的效应量(见Fig. 4图注)。",
+          "静态观察显示脚本main/Fig1/mkClusterHeatmaps.R位于固定提交7125deebb8c7f1488c6e63cad752a4906ef4ac03,另有ext/Fig10下的若干脚本(见script-0至script-3)。",
+          "curated-note指出README举例该脚本用于Fig1,且论文官方XML图注d/e与该脚本两个输出相匹配(见curated-note)。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或结果一致(见inspection-boundary)。",
+          "输入尺度与图号对应关系在未明示时保持未知(见inspection-boundary)。",
+          "AI注释仅为待核学习材料,不能作为事实依据(见inspection-boundary)。",
+          "所提供的证据未包含期刊指标、许可信息或复现结果,这些信息未知。",
+          "脚本静态观察记录中未给出具体代码内容细节,无法据此推断实现逻辑。",
+          "Fig. 2图注文本在输入中未完整给出来源哈希,部分字段缺失。",
+          "Fig. 3图注文本在输入中被截断,末尾内容不完整。",
+          "Fig. 4图注文本在输入中未完整给出来源哈希,部分字段缺失。",
+          "各图注中提到的补充表(如Supplementary Table 4)内容未在证据中提供,无法核实具体数值。",
+          "摘要中关于年龄相关差异的结论来自论文文本,未在所提供的证据中展示对应的原始数据或统计输出。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:17:04Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "278fe53f46a96eba4405b6b995f6ed5735da24c7ab9fb60aa3e0f10d3e71877d",
+        "summary_fingerprint": "234c135ea85a5003ae820b9b0f7c28695ea83859a492a2fa76d92915b9b3cd6d",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     },
     {
       "id": "dimelo-seq-2022",
@@ -51714,11 +52824,206 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "not_found",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:17:11Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:17:11Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:17:11Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:17:11Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "article_unchecked",
+            "selected_figure_missing",
+            "input_undocumented",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:17:11Z"
+        }
+      },
+      "pmid": "35027729",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "issn": "1087-0156",
+      "eissn": "1546-1696",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "not_found",
+        "license": "unknown",
+        "version": "",
+        "xmlURL": "",
+        "figures": [],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No exact PMCID and DOI pair resolved; original images are link-only."
+        ],
+        "retrievedAt": "2026-10-12T07:17:05.531628+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": []
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/vitkl/cell2location_paper",
+        "commit": "458b12eac3c38319bb632b6181f4348d4ca68175",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "notebooks/benchmarking/Fig1BCDE_FigS1S2S3_synthetic_data_improved_hyperparameter_testing_fixed_param.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/benchmarking/Fig1BCDE_FigS1S2S3_synthetic_data_improved_hyperparameter_testing_fixed_param.ipynb",
+            "sha256": "3ff9bdce6525b476628a70b494dc2cc66dbe033f2a30d18cbb83a10610f41a06",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/gut/Fig1BCDE_FigS1S2S3_synthetic_data_improved_hyperparameter_testing_fixed.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/gut/Fig1BCDE_FigS1S2S3_synthetic_data_improved_hyperparameter_testing_fixed.ipynb",
+            "sha256": "90c8b63446bea923a5bee0f151e461bc5d455494f46cdb62586dc5c434fde72f",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/gut/FigS25_barplots_features.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/gut/FigS25_barplots_features.ipynb",
+            "sha256": "ba9d5ea77bb635e8fa57fd78f25aaa062fcd435f09c6f10fd630c2ef1fd0985d",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/lymph_nodes_analysis/analysis_3_factorization_tissue_compartments.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/lymph_nodes_analysis/analysis_3_factorization_tissue_compartments.ipynb",
+            "sha256": "52a730381e13ce523711ea63f218927a889145df31ec7ff47ea72a97148ec5e6",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/lymph_nodes_analysis/other_methods/benchmarking_analysis_3_factorization_tissue_compartments_RCTD.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/lymph_nodes_analysis/other_methods/benchmarking_analysis_3_factorization_tissue_compartments_RCTD.ipynb",
+            "sha256": "aba184ba8271ae2e08fe1826443f07c8877fa799be64d87895ef3dc8f766612c",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/lymph_nodes_analysis/other_methods/benchmarking_analysis_3_factorization_tissue_compartments_scvi_stereoscope.ipynb",
+            "url": "https://github.com/vitkl/cell2location_paper/blob/458b12eac3c38319bb632b6181f4348d4ca68175/notebooks/lymph_nodes_analysis/other_methods/benchmarking_analysis_3_factorization_tissue_compartments_scvi_stereoscope.ipynb",
+            "sha256": "6ab6a52903d2c784bc561a8c5a9028210466f525fd4bd55cb9d29d637c32daed",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "44.5",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:17:10Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:17:11Z",
+        "url": "https://openalex.org/W4205817967",
+        "cited_by_count": 1258,
+        "fwci": 63.4567,
+        "citation_normalized_percentile": 0.99974396,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 54.9987198,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 0,
+          "usability": 25,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9987198,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       }
     },
     {
@@ -52198,13 +53503,950 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "no_final_version",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:17:25Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:17:25Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:17:25Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:17:25Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "no_final_version",
+            "selected_figure_missing",
+            "input_undocumented",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:17:25Z"
+        }
       },
-      "pmcid": "PMC9756396"
+      "pmcid": "PMC9756396",
+      "pmid": "35449415",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "1087-0156",
+      "eissn": "1546-1696",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "no_final_version",
+        "license": "unknown",
+        "version": "",
+        "xmlURL": "",
+        "figures": [],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No DOI-matched non-manuscript publisher version available in current PMC cloud."
+        ],
+        "retrievedAt": "2026-10-12T07:17:22.442134+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": []
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/romain-lopez/DestVI-reproducibility",
+        "commit": "74c198ac78075a62380b6311a50da33b7e2506f4",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "embryo/benchmark_embryo.py",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "sha256": "454731940f60866ae870ac7681d15b6d40dce5a289993cc8d15beed6ee0da256",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 42,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 43,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 174,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "index_col": 0
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 164,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "index_col": 0
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 42,
+                "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py#L42"
+              },
+              {
+                "type": "io_reference",
+                "line": 43,
+                "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py#L43"
+              },
+              {
+                "type": "io_reference",
+                "line": 174,
+                "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py#L174"
+              },
+              {
+                "type": "io_reference",
+                "line": 164,
+                "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py#L164"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "embryo/open file.ipynb",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb",
+            "sha256": "0b3786aa00c5eb586fa5cde425ca793c7289cfd6a19157438e9b994afad88101",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "GSE166692_sciSpace_cell_metadata.tsv.gz",
+                "reader": "pd.read_csv",
+                "line": 14,
+                "status": "literal_path",
+                "format": "gz",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "GSE166692_sciSpace_gene_metadata.tsv.gz",
+                "reader": "pd.read_csv",
+                "line": 17,
+                "status": "literal_path",
+                "format": "gz",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 17,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "embryo/utils.py",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/utils.py",
+            "sha256": "ba6c44aa26fa1cfe4b2d21b756e1526b156a286db2d21a7e6eba0b8f249e2904",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "avg_spearman",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "avg_pearson",
+                "line": 53,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "w_spearman",
+                "line": 55,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "w_pearson",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "iw_spearman",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "iw_pearson",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "median_l1",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mse",
+                "line": 64,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "w_median_l1",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "w_mse",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "iw_median_l1",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "iw_mse",
+                "line": 70,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lymph_node/deconvolution/utils.py",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/lymph_node/deconvolution/utils.py",
+            "sha256": "ce49b2edf3df7ef82fa39a3df49ed4e3c431a8e5628c4cebf1595e6372d87e95",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "svg.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pdf.fonttype",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "savefig.transparent",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.figsize",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.titlesize",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.titleweight",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.titlepad",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.labelsize",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.labelweight",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.labelpad",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.spines.top",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.spines.right",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.size",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 37,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.weight",
+                "line": 38,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.labelsize",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.minor.size",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.major.size",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.major.pad",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.minor.pad",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.labelsize",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.minor.size",
+                "line": 47,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.major.size",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.major.pad",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.minor.pad",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "legend.fontsize",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "legend.handlelength",
+                "line": 53,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "legend.numpoints",
+                "line": 54,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "legend.scatterpoints",
+                "line": 55,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lines.linewidth",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "location",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Z",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "left",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bottom",
+                "line": 100,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scope-seq-liver/open_liver_scRNA_bader.R",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_liver_scRNA_bader.R",
+            "sha256": "bfe46d33f576a97b2a94a5987658fbe0a35d039b02165bb2007be9291d57b684",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "RNA",
+                "line": 13,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AnnData",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "write",
+                "line": 27,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scope-seq-liver/open_RSD.R",
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_RSD.R",
+            "sha256": "2b810d77bad8176c8a35e58b05fb53bdef36d38cb2d43e5ce31bc0fc593ceef3",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "destVI-paper-code/scope-seq-liver/Liver_normal_10um_annotated.rds",
+                "reader": "readRDS",
+                "line": 8,
+                "status": "literal_path",
+                "format": "rds",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Spatial",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SCT",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "umap",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AnnData",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "write",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 8,
+                "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_RSD.R#L8"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "line": 42,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "line": 43,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "line": 174,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "line": 164,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0
+            }
+          },
+          {
+            "name": "GSE166692_sciSpace_cell_metadata.tsv.gz",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "gz",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb",
+            "line": 14,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "GSE166692_sciSpace_gene_metadata.tsv.gz",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "gz",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb",
+            "line": 17,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "destVI-paper-code/scope-seq-liver/Liver_normal_10um_annotated.rds",
+            "path": "",
+            "reader": "readRDS",
+            "format": "rds",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Spatial",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SCT",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "umap",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AnnData",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "write",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_RSD.R",
+            "line": 8,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "44.5",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:17:10Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:17:25Z",
+        "url": "https://openalex.org/W4224218779",
+        "cited_by_count": 276,
+        "fwci": 14.7236,
+        "citation_normalized_percentile": 0.9964225,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 54.9821125,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 0,
+          "usability": 25,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9821124999999995,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      }
     },
     {
       "id": "archr-2021",
@@ -55384,13 +57626,824 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:17:16Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:17:16Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:17:16Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:17:21Z",
+          "status": "pending",
+          "reasonCodes": [
+            "input_undocumented"
+          ],
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T08:17:21Z"
+        }
       },
-      "pmcid": "PMC8828480"
+      "pmcid": "PMC8828480",
+      "pmid": "35027767",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1548-7091",
+      "eissn": "1548-7105",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/PMC8828480.1.xml?md5=00e31e0b6cb542b84d7ba07c527352b9",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Combining RNA velocity with cell–cell similarity to determine initial and terminal states and compute a global map of cellular fate potential.a, 3D UMAP of 1,000 simulated cells with their velocity vectors, using DynGen66. Colors reflect DynGen ground truth branch assignment. CellRank models cell state transitions directly in high-dimensional gene expression space. b, A reference cell i with velocity vector vi and its nearest neighbors. The vector δi,j is the difference in gene expression between cells j and i. To assign probability pi,j to cell i transitioning to cell j in the neighborhood Ni of cell i, we transform correlations between the transcriptomic difference vectors δi,j and the velocity vector vi, essentially considering the angle α between these vectors. c, The directed transition matrix is coarse-grained into four macrostates. Heatmaps show transition probabilities among cells (left) and macrostates (right); sorting cells according to macrostate membership recovers block structure in the cell–cell transition matrix. We recover initial, intermediate and two terminal states. The 30 colored cells are mostly likely to belong to each macrostate in the UMAP. d, For each cell, we compute its probability of reaching A or B. We show these fate probabilities in a fate map, where each cell is colored according to the terminal state it is most likely to reach. Color intensity reflects the degree of lineage priming. e, Using these fate probabilities and a pseudotime, we plot gene expression trends, which are specific to either A or B. Left, each cell is colored based on the expression of the indicated genes; right, respective trends along pseudotime towards each fate. f, Expression trends in pseudotime of the top 50 genes whose expression correlates best with the probability of reaching B in a heatmap. Genes have been sorted according to their smoothed peak in pseudotime. One early gene (X), one intermediate gene (Y) and one late gene (Z) are highlighted by showing expression in the UMAP.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig1_HTML.jpg?md5=c98076a3ed4e3e986d22b6616c5898ed",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Delineating fate choice in pancreatic development.a, UMAP of murine pancreatic development at E15.5 with scVelo-projected velocities, shown as streamlines. Colors correspond to published cluster annotations24. CellRank provides further insights regarding (i) the fate of early cells, (ii) the identification of terminal states and (iii) likely progenitors of terminal populations (boxed insets). b, Soft assignment of cells to macrostates. Cells colored by most probable macrostate; color intensity reflects degree of confidence, and gray cells reside between several macrostates. c, Coarse-grained transition probabilities among macrostates. Terminal macrostates are outlined in red and the initial Ngn3low EP_1 macrostate is outlined in yellow. d, Highlight of the 30 cells most confidently assigned to each initial and terminal macrostate, colored as in b. e, UMAP showing probabilities for reaching alpha, beta, epsilon and delta terminal fates. Fates colored as in b, with darker color indicating higher probability. Inset shows average fate probabilities of cells in the Ngn3high EP cluster marked with a dashed line. f, Smoothed gene expression trends in pseudotime, each colored trend is weighted by CellRank fate probabilities as indicated for the lineage determinants Arx33 (alpha), Pdx1 (ref. 34) (beta) and Hhex35 (delta) as well as the lineage-associated gene Irs4 (ref. 36) (epsilon). The trend for each gene is shown for each trajectory leading to the indicated terminal population. Right column, expression values for the corresponding gene in the UMAP.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig2_HTML.jpg?md5=d2f1f1aaeab5ab245bd6f3a2be6d6caa",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "assets/pmc8828480-13899dc57fbe8cd2.jpg",
+            "sha256": "13899dc57fbe8cd2793e64fcbdd0c18b1a8bceec47ddcb8e50a3e6aa96cca3d3",
+            "width": 728,
+            "height": 546,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "requestedReference": {
+              "scope": "main",
+              "number": "2",
+              "panel": "a"
+            },
+            "selectionNote": "Whole original figure retained; requested panel a is not cropped or verified against code.",
+            "assetSHA256": "13899dc57fbe8cd2793e64fcbdd0c18b1a8bceec47ddcb8e50a3e6aa96cca3d3",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Zooming into the delta state to explain differentiation paths.a, Orthogonal subclustering of Fev+ hormone-negative endocrine cells from Bastidas-Ponce et al.24. Delta cells are indicated by the black outline. b, CellRank probabilities for acquiring the terminal delta cell fate. Cells are colored by the probability of reaching the delta state. Inset, group of cells likely to become delta, showing differentiation path predicted by CellRank. Fev+ subclusters are marked by outlines, colored as in a. Delta cells are marked with a black outline. c, CellRank probabilities in each Fev+ subcluster. Note that this does not include the delta cluster itself. Cells in the Fev+ delta subcluster are assigned significantly higher probability by CellRank (two-sided Welch’s t-test, 51 Fev+ Delta cells versus 536 other Fev+ cells, t = 8.6, P = 1.7 × 10−11; Methods). d, Smoothed gene expression trends of the top 50 genes whose expression values correlate best with delta fate probabilities, sorted according to peak in pseudotime. Not all gene names are shown (see Supplementary Fig. 11 for full list). Right, UMAP projected MAGIC67 imputed expression values of Hhex and Cd24a, examples of known regulators that were identified automatically, as well as of Hadh. e, Smoothed gene expression trends along the delta lineage for all 12,987 genes that are expressed in at least ten cells, clustered using louvain68. Cluster 1 contains transiently upregulated genes. The solid line denotes mean trend, dashed lines denote 1 s.d. Genes in cluster 1 are sorted according to their correlation with delta fate probabilities. Right, expression on the UMAP of Map2k4, Msi1 and Nefl, among the genes that correlated best.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig3_HTML.jpg?md5=8bb67b4e4f2efa9d528ea946f4eea489",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "CellRank predicts reprogramming outcome.a, t-SNE26,27 embeddings of 48,515 MEFs reprogramming to iEPs48,69. Each dot represents a cell, colored by day after reprogramming induction by retroviral overexpression of Foxa1 and Hnf4a49; expression of iEP marker Apoa1, indicative of reprogramming success; expression of MEF marker Col1a2, indicative of reprogramming failure; or original cluster annotations from Biddy et al.49. Clusters 1 and 3 (dashed lines) represent successful and dead-end states, respectively49. b, scVelo15 velocities, projected on the t-SNE embedding in a and shown as streamlines. Velocities do not disclose a route towards successful reprogramming (i) and falsely show a transition from successful to dead-end states (ii). c, CellRank-computed macrostates, colored by cluster from a that they mostly overlap with. d, Distribution over reprogramming day (left) and cluster (right), colored by the same labels as in a. Macrostates 1 and 3 contain only late-stage cells (days 21 and 28) from clusters 1 and 3, respectively, thus representing the successful and dead-end states. e, CellRank’s fate probabilities towards the successful macrostate 1 (top) and ground truth labels from CellTagging49 lineage tracing (bottom). For 3,049 cells across all days in the time course, these labels show the likely reprogramming outcome49. f, AUC of CellRank fate probabilities at days 12, 15 and 21, based on classifiers trained to predict reprogramming outcome using CellTag labels (e) as ground truth (Methods).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig4_HTML.jpg?md5=32fbe3c7faa2fac8bdfd1fa1d16c3f94",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "CellRank outperforms other cell-fate inference methods.a–c, Methods were compared on pancreas data. CellRank automatically identified the terminal alpha, beta and epsilon states as well as the initial Ngn3low EP state (a). Delta cells were picked up as a macrostate and given the terminal label manually. Palantir21 identified terminal beta and delta states. The velocyto14 state distribution is depicted as overlapping with beta (terminal, orange) and Ngn3low EP (initial, yellow) cells, respectively (Supplementary Note 2). Only CellRank and Palantir correctly predict beta to be the dominant fate among Ngn3high EP cells (b). Velocyto does not compute fate probabilities. Gene expression trends for the beta-regulator Pdx134,70,71 (c). On the x axis is the pseudotime used by the corresponding method, on the y axis is gene expression. For FateID51, the x axis is given by the cell indices, which are assigned to the beta lineage, sorted by DPT7. We show one smoothed trend per lineage for CellRank and Palantir, and a smoothed trend along just the beta lineage for FateID because it does not allow one gene to be visualized simultaneously along several lineages. CellRank and Palantir correctly identify upregulation of Pdx1 along the beta lineage. FateID fails to do so while STEMNET50 and velocyto do not offer options to visualize lineage-specific gene expression trends (Supplementary Note 2). d,e, Boxplots comparing methods in terms of computational runtime (d) and peak memory usage (e) on a 100,000 cell reprogramming dataset49 (Supplementary Note 2). We split the datasets into ten subsets of increasing size and ran each method ten times on each subset. Boxes cover 25% to 75% quantiles, line indicates median, whiskers extend to 1.5× the interquartile range, and dots represent outliers; dashed lines connect the medians. CellRank’s peak memory usages for initial/terminal states and fate probabilities are very similar and thus the lines overlap.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig5_HTML.jpg?md5=b99600bbc3c157c8656442bfa8f6ad6f",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "CellRank predicts a new dedifferentiation trajectory in murine lung regeneration.a, UMAP of 24,882 epithelial cells from 13 timepoints, spanning days 2–15 after lung injury by bleomycin treatment in mice colored according to original cluster annotations52. Streamlines show averaged and projected scVelo velocities and the box highlights a subset of airway cells. b, CellRank-computed macrostates, showing the 30 most confidently assigned cells for each state. Names and colors were assigned to macrostates according to the clusters from a that they overlapped most with. c, Circular projection50,72 of cells according to fate probabilities towards the macrostates shown in b, colored by cluster annotations from a. Macrostates are arranged on the edge of a circle; each cell is placed inside the circle according to its probability of reaching any of the terminal states (Methods). Cells in the center have higher multilineage potential, whereas cells closer to one of the corners are committed. Boxes highlight goblet cells likely to reach the basal terminal state (i), MHC-II+ club cells with high multilineage potential (ii) and club cells likely to transition to ciliated cells (iii). d, Cells in UMAP colored by CellRank-computed fate probabilities towards the basal cell macrostate, showing a route from goblet to basal cells. e, CellRank fate probabilities and Palantir pseudotime21 are used to define three stages of the dedifferentiation trajectory (top, Methods). Dedifferentiation stages are characterized by expression of Bpifb1 (goblet), Krt5 (early basal) and Trp63 (late basal); stage 1 corresponds to goblet, stage 2 to intermediate and stage 3 to basal cells (bottom). f, Immunofluorescence stainings for Bpifb1 (green), Krt5 (red), Trp63 (white) and 4′,6-diamidino-2-phenylindole (blue) in mouse lung tissue sections 10 days after bleomycin injury. We find cells from the intermediate stage 2 (Bpfib1+/Krt5+/Trp63–) in bleomycin-injured lungs (yellow squares and arrow heads). Scale bars, 50 μm; 10 μm for enlarged images. In each panel, dotted-line boxes are magnified at the bottom, and solid-line boxed cells are magnified to the right, showing individual and merged channels. Representative images are derived from two independent biological replicates. g, Quantification of cell abundances by stage in wild type (PBS), 10 days after bleomycin injury (bleo d10) and 22 days postinjury (bleo d22) mice. Ten independent pulmonary airway regions per condition examined over two biologically independent experiments were quantified. Bleo d10 is significantly enriched for stage 2 cells (nested one-way analysis of variance with Tukey’s multiple comparison test, P < 10−3).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig6_HTML.jpg?md5=47b0d1cd1fe20ecdb5d62b0b008c5019",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The CellRank algorithm.a–h. CellRank combines transcriptional similarity with velocity information to infer cell state trajectories. The algorithm starts with a pair of count matrices containing spliced and unspliced mRNA counts (a), computes a kNN graph in the space of principal components (b), uses scVelo or velocyto to compute RNA velocity vectors (c), and then combines the kNN graph with the velocity vectors to assign transition probabilities to graph edges (d). Arrow thickness indicates transition probability. A cell–cell transition matrix summarizes these probabilities. CellRank coarse-grains this matrix to compute macrostates, which it classifies as initial, intermediate or terminal (e), and then computes fate probabilities towards the terminal macrostates (f). Pseudotime is determined using an imported method such as Palantir, scVelo’s latent time or an alternative, based on macrostates defined by CellRank (g). The CellRank toolbox offers a number of downstream functionalities to visualize and extract information from pseudotime and cell fate probability vectors (see Methods), including the ability to combine these two quantities to chart smooth gene expression trends (h).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig7_ESM.jpg?md5=b8cceee30af02a62f67701b25d404bff",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "GPCCA and fate probabilities extract the essence of cellular state transitions.a. Markov transition graph of a toy example of cellular state changes. Starting from a cyclic initial state, cells transition via an intermediate state into either one of two terminal states, both of which are cycling again. Note that cell number 3 is more likely to go to cell number 4 than 5, which results in a global fate bias towards the first terminal state. b. The corresponding transition matrix can be decomposed into real Schur vectors, each corresponding to one eigenvalue. The 4 eigenvalues close to one are associated with the initial, terminal and intermediate states. Complex eigenvalues appear because the transition matrix is nonsymmetric. c. The original transition matrix. The block structure shows the separation into the 4 macrostates and the possible transitions between them. d. The coarse-grained transition matrix, identifying the different macrostates and their transition probabilities relative to one another. The initial state is the macrostate with almost no incoming but large outgoing transition probability. The intermediate state is the state with both large incoming and large outgoing transition probability, and relatively little self-transition probability. The terminal states are the states with large incoming, but almost no outgoing and large self-transition probability. e. Each macrostate is associated with a membership vector that assigns cells to the state in a soft fashion, that is using weights that sum to one. We show the 4 membership vectors in a heatmap. f. Fate probabilities towards the two terminal states. We correctly recover the global bias towards the first terminal state.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig8_ESM.jpg?md5=ab9ac6f22d085f0de5a260f4a86ea0ce",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Uncertainty propagation adjusts for noise in RNA velocity vectors.a. When predicting the future state of cell x0, CellRank takes uncertainty in the velocity vector v in the high-dimensional gene space into account. b. Propagating noise changes the transition probabilities from one cell to its nearest neighbors. c. The adjusted transition probabilities agglomerate over longer paths to result in adjusted fate probabilities. d. Effect of noise propagation, illustrated using pancreas data. One cell from a low noise region, where velocity vectors from neighboring cells tend to point in the same direction (top), and one from a high noise region, where vectors from neighboring cells point in different directions (bottom), are highlighted. e. Transition probabilities from the reference cell to its 10 nearest neighbors using a deterministic or stochastic (analytical approximation or Monte Carlo sampling-based) formulation, for both the low and high noise cell. Corrections applied by stochastic approaches are larger in the high noise region. f. Subclustering of the Fev+ cluster in the pancreas data24. g. Comparing average fate probabilities per subcluster. These were obtained from not propagating (‘deterministic’) or propagating (‘stochastic – analytical’ and ‘stochastic – sampling’) velocity uncertainty. Both stochastic approaches agree in down-weighting probability towards the dominant beta fate and up-weighting probability towards the alpha, delta and epsilon fates.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig9_ESM.jpg?md5=e5b62aae4399ca42044f0f4247143c05",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Recovering structure in the transition matrix.a. Heatmap of the transition matrix for the pancreas dataset from Fig. 2a. The ordering of cells (rows and columns) in the matrix is arbitrary. The colorbar has been adjusted such that values larger than the 90th percentile are clipped to the 90th percentile to avoid skewing the colorbar towards extreme values. However, there is still no visible structure in the matrix because of sparsity, noise and the random order of cells. b. Same matrix as in (a), just re-ordered such that cells which likely belong to the same macrostate are next to each other. This recovers the structure of the developmental dynamics. Note that the sparsity structure of the matrix is symmetric (KNN graph is symmetric) while the actual values are not (RNA velocity infused directionality). c. Coarse-grained transition matrix from Fig. 2. Macrostates defined in this matrix were used to reorder cells in (b).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig10_ESM.jpg?md5=3bbd667296371c904db736461274f1c2",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Marker genes confirm CellRanks initial and terminal state annotations in the pancreas data.a. CellRank-computed initial and terminal states from Fig. 2d. b. Cells are colored based on the expression level of the indicated gene in each UMAP. The terminal states express the key marker genes relevant for each respective cell type. Showing for beta: Ins1 and Ins2 (insulin), alpha: Gcg (glucagon), epsilon: Ghrl (ghrelin), delta: Sst (somatostatin)33. For the initial state, we show expression of ductal cell markers Sox9, Anxa2 and Bicc124,33.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig11_ESM.jpg?md5=4119f5e0c8c7789a2ff2aa9b94d04c82",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "CellRank recovers ductal and endocrine maturation.a. Published15 UMAP of the pancreas data24, colored by original cluster annotations, including all clusters in Fig. 2 as well as ductal cells. Streamlines show scVelo15 velocities. b. Cell cycle scores for S and G2M phase, computed using scanpy76 based on the gene set from ref. 107. Cycling cells mainly map to the ductal cluster. c. Spectrum of the CellRank-computed transition matrix. An eigengap appears after the first 5 eigenvalues, suggestive of 5 macrostates. d. UMAP showing 5 macrostates. e. Coarse-grained transition matrix. Diagonal elements give the stability index (SI) values. These automatically identify the Ductal 2, Epsilon, Alpha and Beta macrostates to be terminal. f. Fate probabilities towards the Ductal 2 state (‘ductal fate probability’). Among the 25 genes that correlate best with ductal fate probability in the ductal/Ngn3low clusters is Sox9, an established marker for ductal cell maturation33. g. Combined fate probabilities towards the Alpha, Beta and Epsilon macrostates (‘endocrine fate probability’). Among the 10 genes that correlate best with endocrine fate probability in the ductal/Ngn3low clusters are Ngn3 and Insm1, which are established endocrine progenitor markers33. Inset shows endocrine fate probabilities in the ductal/Ngn3low clusters. h. Ngn3 expression for the subset of cells shown in (g). Ngn3 expression correlates best with endocrine fate probabilities (Pearson correlation = 0.66).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig12_ESM.jpg?md5=76258bd99952e9ce4185f99d2c7e0a73",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Splicing kinetics do not capture delta cell development.a. Phase portraits of the top 30 genes which are assigned the highest likelihoods by scVelo’s dynamical model of the mRNA lifecycle. Unspliced counts are on the x-axis, spliced counts are on the y-axis. Cells are colored according to the clusters from Fig. 2a. The solid purple curve is scVelo’s dynamical fit and the dashed purple line is scVelo’s inferred steady-state ratio. The top 30 genes are dominated by drivers for the alpha (Gcg33), epsilon (Ghrl33) and beta (Gng12108, Pdx134,70) lineages while delta drivers are not present. b. Phase portraits of known delta-associated genes Hhex35 and Cd24a38,39 as well as the CellRank-identified putative lineage driver Hadh. Cd24a was filtered out by scVelo’s gene filtering threshold because it only had unspliced counts in 3 cells (see box). Hhex could not be fit by scVelo because of too little expression and too large noise levels. Hadh could be fit by scVelo, however, delta cells are an outlier in this fit (see box) and were not correctly assigned to the steady-state. Thus, all three genes do not meaningfully contribute to velocity vectors towards delta cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig13_ESM.jpg?md5=e4c06f72e72e8b5aa8c7430c61368716",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Projected velocities do not reveal how delta cells are generated.scVelo velocities projected onto the UMAP do not reveal a likely path towards delta cells. Velocities reveal short-range fate relationships but cannot be combined to give long-range fate predictions from looking at an embedding.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig14_ESM.jpg?md5=b5baac07665d4dd007617e3625ee9858",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Cluster labels and timepoint annotations for lung data.a. Original cluster labels for the lung regeneration data52 in a UMAP projection. The data contains 24,882 murine lung epithelial cells sequenced using the Drop-seq workflow53 at 13 timepoints spanning days 2–15 past bleomycin injury. The ‘activated’ label refers to cell states that emerge after bleomycin injury. b. Same as (a) with timepoints colored in. Time points refer to time passed since bleomycin injury. c. Expression of goblet cell markers Muc5b, Muc5ac and Bpifb1 agrees with the goblet annotation of (a).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig15_ESM.jpg?md5=311a0ef652a705bd9b49dc47d2f952c9",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig16",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "CellRank predicts a goblet to basal dedifferentiation trajectory.a. Cellrank identifies 9 macrostates. Airway cells, including club, goblet and basal cells, are highlighted. b. Single-cell fate probabilities of transitioning towards the basal state. A ‘band’ of cells within the goblet cluster exhibits high basal probability. c. Single-cell fate probabilities of transitioning towards the goblet state. Basal cells do not show any probability of transitioning towards the goblet state. d. Quantification of the results from (b) and (c). Goblet cells have a large probability of transitioning towards basal cells, but basal cells have no probability of transitioning towards the goblet state, confirming that the recovered trajectory proceeds from goblet to basal.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_Fig16_ESM.jpg?md5=cc2559fd410d82a727b9bf9c08bc6f23",
+            "articleURL": "https://www.nature.com/articles/s41592-021-01346-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al.. CellRank for directed single-cell fate mapping. DOI: 10.1038/s41592-021-01346-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_MOESM1_ESM.pdf?md5=be47a9d8df784396e15011bcea691ac3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8828480.1/41592_2021_1346_MOESM2_ESM.pdf?md5=7cdd754a8bbc5efc144fb9377a55fcc2",
+            "license": "CC BY",
+            "sha256": "0d0dc551065fd69eeb19b44c6aec37fc52f62a04beb1dbe8300d51e4a678c824",
+            "status": "downloaded_private",
+            "bytes": 77563,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 3,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-12T07:17:11.896219+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Marius Lange; Volker Bergen; Michal Klein; Manu Setty; Bernhard Reuter; Mostafa Bakhti; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/theislab/cellrank_reproducibility",
+        "commit": "c1b9232caacd15fdd16914007fab4890b136109f",
+        "license": "BSD-3-Clause",
+        "scripts": [
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_fateid.r",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_fateid.r",
+            "sha256": "75f6ec33741825421180e398b6195b452c8f1c68a77ccacccfd1ccc906e2ce1f",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "X",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "obs",
+                "line": 62,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "features",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "part",
+                "line": 101,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "tar",
+                "line": 102,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_gpcca.ipynb",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_gpcca.ipynb",
+            "sha256": "e46c67fa99751f631dfb0c7d95b9e65fca57bfb146b188a6e7014fcf1fd2bf64",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_palantir.ipynb",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_palantir.ipynb",
+            "sha256": "dafaabbf4d35cab2b167dc528bf62718cd3acbd56472da4d58ed6dff82f47419",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 34,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "index_col": 0,
+                  "header": 2
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "genes_cleaned",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Reprogramming Day",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lin_probs",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "terminal_states",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "core_ts",
+                "line": 160,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 34,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_STEMNET.ipynb",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_STEMNET.ipynb",
+            "sha256": "141233a7854676b96f57d1531dcad22794dd0b4b651fe6f6b84444745530b1b4",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "terminal_states",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "adata",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cluster_pop",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stem_time",
+                "line": 92,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/MK_2021-01-11_velocyto.ipynb",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2021-01-11_velocyto.ipynb",
+            "sha256": "f7ce5c5a0aa89442fa813127a102d26bed1750dc8e2fe500783ffe4c4a748e88",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "unspliced",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ambiguous",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "velocity",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "spliced",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ms",
+                "line": 46,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "notebooks/compute_time_benchmark/analysis_notebooks/utils/MK_2020-10-16_save_drivers.ipynb",
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/utils/MK_2020-10-16_save_drivers.ipynb",
+            "sha256": "063d45cdc79be93fc4b75a4cbfa478cbeac6d867d26a8ac8c318586d0e0e0552",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "lin_drivers",
+                "line": 21,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "genes_cleaned",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Reprogramming Day",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lin_probs",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "terminal_states",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "core_ts",
+                "line": 160,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_palantir.ipynb",
+            "line": 34,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0,
+              "header": 2
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "28.3",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:17:15Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:17:16Z",
+        "url": "https://openalex.org/W4205496949",
+        "cited_by_count": 782,
+        "fwci": 41.5441,
+        "citation_normalized_percentile": 0.99940968,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 84.9970484,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9970484,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "CellRank:面向单细胞命运图谱的有向推断方法",
+        "summary_zh": "该资料介绍发表于 Nature Methods 的 CellRank 方法,用于在方向未知的场景(如再生、重编程和疾病)中进行单细胞命运图谱构建。方法将轨迹推断的稳健性与 RNA 速度提供的方向信息结合,考虑细胞命运决定的渐进性与随机性以及速度向量的不确定性。在胰腺发育数据上,CellRank 可自动识别初始、中间和终末群体,预测命运潜能并沿谱系可视化连续基因表达趋势;在谱系示踪的细胞重编程数据上,预测的命运概率可恢复重编程结果;在损伤后肺再生中预测出一条新的去分化轨迹及此前未知的中间细胞状态,并经实验确认。",
+        "learning_points": [
+          "CellRank 将轨迹推断的稳健性与 RNA 速度的方向信息结合,用于方向未知的单细胞命运图谱构建。",
+          "方法建模时考虑细胞命运决定的渐进性与随机性,以及速度向量本身的不确定性。",
+          "在模拟数据(Fig. 1)中,CellRank 在高维基因表达空间直接建模细胞状态转移,通过转录组差异向量与速度向量的相关性(角度)分配转移概率,并将有向转移矩阵粗粒化为宏状态。",
+          "在胰腺发育数据(Fig. 2)中,CellRank 可识别初始与终末宏状态、给出细胞对宏状态的软分配,并展示到达 alpha、beta、epsilon、delta 终末命运的概率。",
+          "在 Fev+ 内分泌细胞子聚类(Fig. 3)中,CellRank 给出获得 delta 终末命运的概率,并展示与 delta 命运概率相关性最高的基因表达趋势。",
+          "在重编程数据(Fig. 4)中,CellRank 计算的宏状态与成功/死胡同状态对应,并给出向成功宏状态的命运概率。",
+          "仓库中的 Jupyter notebooks 用于分析与图件生成,部分脚本涉及 fateid、gpcca、palantir、STEMNET 等基准分析。",
+          "资料中部分脚本仅有静态观察记录,未提供可核验的运行结果。"
+        ],
+        "limitations": [
+          "作者代码未被执行,静态检查不等同于复现验证,不能宣称已复现或结果一致。",
+          "输入数据尺度与图号对应关系在未明示处保持未知。",
+          "AI 注释仅为待核学习材料,不能作为事实依据。",
+          "部分脚本(如 fateid、gpcca、STEMNET)的静态观察内容为空,无法据此判断其具体实现。",
+          "资料未提供各图对应的具体数据文件、参数设置或运行环境信息。",
+          "资料未说明各方法的性能比较结果或基准测试结论。",
+          "资料未提供许可、期刊指标或独立复现结果等信息。",
+          "Fig. 1 图注文本在 d 处被截断,后续内容未知。",
+          "Fig. 2 图注文本在 f 处被截断,后续内容未知。",
+          "Fig. 4 图注文本在 e 处被截断,后续内容未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:17:21Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "173ad7a4706e4620676fd2dee94362b0ff46782e9fc8a44cfc2dfe74232a39ef",
+        "summary_fingerprint": "7a8012694ee6cf0fdae2b35757a4a29d6ec0f3a98d349c0f0863e8e1b211d8bc",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     },
     {
       "id": "milo-2022",
@@ -74348,7 +77401,243 @@
           ],
           "url": "https://doi.org/10.5281/zenodo.18418221"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+        "files": [
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py；读取行 120；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py；读取行 121；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py；读取行 122；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityAgeRatios.py",
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Ratio",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Age",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Size",
+                "line": 187,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py；读取行 137；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py",
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 154,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py；读取行 138；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCLF.py",
+            "observedFieldReferences": [
+              {
+                "name": "ImageID",
+                "line": 154,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCS.py；读取行 181；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/HRazaAliLab/IMCBreastAgeingAtlas/blob/7125deebb8c7f1488c6e63cad752a4906ef4ac03/ext/Fig10/prepareSensitivityCS.py",
+            "observedFieldReferences": [
+              {
+                "name": "spatial",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 184,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variable",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Y",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "zscore",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ImageID",
+                "line": 188,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ClusterID",
+                "line": 184,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "dimelo-seq-2022": {
       "tree": "ctcf_and_h3k9me3/single_molecule_roi_meg_winnow_guppy_ctcf_center.py\nmod_mappings.sorted.bam + mod_mappings.sorted.bam.bai\nbeds/intersection.motifs.chip.formatted.chm13.bed",
@@ -85343,7 +88632,356 @@
           ],
           "url": "https://github.com/romain-lopez/DestVI-reproducibility"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\nGSE166692_sciSpace_cell_metadata.tsv.gz\nGSE166692_sciSpace_gene_metadata.tsv.gz\ndestVI-paper-code/scope-seq-liver/Liver_normal_10um_annotated.rds",
+        "files": [
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py；读取行 42；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py；读取行 43；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py；读取行 174；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py；读取行 164；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/benchmark_embryo.py",
+            "observedFieldReferences": [
+              {
+                "name": "interest_genes",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Neuron",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Radial glia",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "proportions",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_list",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_sc",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "embedding_st",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key_clustering",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 211,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "GSE166692_sciSpace_cell_metadata.tsv.gz",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "gz",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb；读取行 14；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb",
+            "observedFieldReferences": []
+          },
+          {
+            "name": "GSE166692_sciSpace_gene_metadata.tsv.gz",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "gz",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb；读取行 17；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/embryo/open%20file.ipynb",
+            "observedFieldReferences": []
+          },
+          {
+            "name": "destVI-paper-code/scope-seq-liver/Liver_normal_10um_annotated.rds",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "rds",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_RSD.R；读取行 8；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/romain-lopez/DestVI-reproducibility/blob/74c198ac78075a62380b6311a50da33b7e2506f4/scope-seq-liver/open_RSD.R",
+            "observedFieldReferences": [
+              {
+                "name": "Spatial",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SCT",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "umap",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AnnData",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "write",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "archr-2021": {
       "tree": "Save-Large-Heme-ArchRProject.tar.gz\nSE-scATAC-Large-Heme-Peaks.rds",
@@ -87319,7 +90957,63 @@
           ],
           "url": "https://github.com/theislab/cellrank_reproducibility"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "dynamic input path",
+        "files": [
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_palantir.ipynb；读取行 34；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/theislab/cellrank_reproducibility/blob/c1b9232caacd15fdd16914007fab4890b136109f/notebooks/compute_time_benchmark/analysis_notebooks/MK_2020-10-16_palantir.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "genes_cleaned",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Reprogramming Day",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lin_probs",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "terminal_states",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "core_ts",
+                "line": 160,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "milo-2022": {
       "tree": "选图直接输入待定位",
@@ -90967,19 +94661,21 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T00:36:56Z",
+  "generatedAt": "2026-10-12T07:17:25Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
-    "completeCount": 2,
-    "pendingCount": 53,
+    "completeCount": 3,
+    "pendingCount": 52,
     "attentionCount": 0,
+    "removedCount": 0,
     "startedAt": "2026-10-11T15:08:16Z",
     "issues": [
       {
         "doi": "10.1038/s41467-025-67369-1",
         "reasonCodes": [
-          "figure_reuse_blocked"
+          "figure_reuse_blocked",
+          "ai_response_invalid"
         ]
       },
       {
@@ -91001,21 +94697,6 @@
         "doi": "10.1038/s43587-022-00335-4",
         "reasonCodes": [
           "ai_authentication_failed"
-        ]
-      },
-      {
-        "doi": "10.1038/s43587-026-01104-3",
-        "reasonCodes": [
-          "metadata_unchecked",
-          "source_refresh_failed",
-          "article_unchecked",
-          "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "ai_missing",
-          "metrics_unchecked"
         ]
       },
       {
@@ -91391,17 +95072,11 @@
       {
         "doi": "10.1038/s41587-021-01139-4",
         "reasonCodes": [
-          "metadata_unchecked",
           "source_refresh_failed",
           "article_unchecked",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
           "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "ai_missing"
         ]
       },
       {
@@ -91470,17 +95145,11 @@
       {
         "doi": "10.1038/s41587-022-01272-8",
         "reasonCodes": [
-          "metadata_unchecked",
           "source_refresh_failed",
-          "article_unchecked",
+          "no_final_version",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
           "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "ai_missing"
         ]
       },
       {
@@ -91539,17 +95208,7 @@
       {
         "doi": "10.1038/s41592-021-01346-6",
         "reasonCodes": [
-          "metadata_unchecked",
-          "source_refresh_failed",
-          "article_unchecked",
-          "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "input_undocumented"
         ]
       },
       {
@@ -91611,13 +95270,13 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:16:44Z",
+    "updatedAt": "2026-10-12T07:17:26Z",
     "status": "active",
     "endReason": "",
     "batchCount": 1,
-    "checkpointCount": 2,
-    "requests": 0,
-    "aiAttempts": 0,
+    "checkpointCount": 3,
+    "requests": 78,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -91625,11 +95284,11 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 5,
-    "processedCount": 0,
-    "remainingCount": 53,
-    "inFlightCount": 5,
-    "completeCount": 2,
-    "pendingCount": 53,
+    "processedCount": 5,
+    "remainingCount": 48,
+    "inFlightCount": 0,
+    "completeCount": 3,
+    "pendingCount": 52,
     "attentionCount": 0,
     "removedCount": 0,
     "materialsStatus": "active",
