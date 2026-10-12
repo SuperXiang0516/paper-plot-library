@@ -142,8 +142,8 @@
     "startedAt": "2026-10-11T15:08:16Z",
     "status": "active",
     "totalCount": 55,
-    "completeCount": 6,
-    "pendingCount": 49,
+    "completeCount": 7,
+    "pendingCount": 48,
     "attentionCount": 0,
     "removedCount": 0
   },
@@ -151,7 +151,7 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:21:06Z",
+    "updatedAt": "2026-10-12T07:21:50Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -268,37 +268,23 @@
       "10.1038/s41592-023-01909-9",
       "10.1126/science.abo0510",
       "10.15252/msb.20209620",
-      "10.1038/s41592-024-02308-4"
+      "10.1038/s41592-024-02308-4",
+      "10.1038/s41592-023-01938-4",
+      "10.1038/s41592-025-02847-4",
+      "10.1038/s41592-021-01336-8",
+      "10.1038/s41587-020-0591-3",
+      "10.1038/s41592-018-0229-2"
     ],
     "batchCount": 6,
-    "checkpointCount": 12,
-    "requests": 392,
-    "aiAttempts": 16,
+    "checkpointCount": 13,
+    "requests": 463,
+    "aiAttempts": 19,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 263,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41592-023-01938-4",
-        "10.1038/s41592-025-02847-4",
-        "10.1038/s41592-021-01336-8",
-        "10.1038/s41587-020-0591-3",
-        "10.1038/s41592-018-0229-2"
-      ],
-      "startedAt": "2026-10-12T07:21:06Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41592-023-01938-4": "",
-        "10.1038/s41592-025-02847-4": "",
-        "10.1038/s41592-021-01336-8": "",
-        "10.1038/s41587-020-0591-3": "",
-        "10.1038/s41592-018-0229-2": ""
-      }
-    }
+    "elapsedSeconds": 308
   }
 }
