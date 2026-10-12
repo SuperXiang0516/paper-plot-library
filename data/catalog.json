@@ -43802,23 +43802,26 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T00:36:02Z",
+        "lastCheckedAt": "2026-10-12T07:24:24Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T00:36:02Z",
+          "lastAttemptAt": "2026-10-12T07:24:24Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T00:36:02Z"
+          "nextAttemptAt": "2026-10-13T07:24:24Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T00:36:08Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:25Z",
           "status": "pending",
           "reasonCodes": [
             "figure_reuse_blocked",
             "input_undocumented"
           ],
-          "nextAttemptAt": "2026-10-12T01:36:08Z"
+          "sourceGapScans": {
+            "figure_reuse_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T09:24:25Z"
         }
       },
       "pmcid": "PMC12350168",
@@ -44420,7 +44423,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T00:35:57.391706+00:00",
+        "retrievedAt": "2026-10-12T07:24:23.059172+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -45237,7 +45240,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -45246,7 +45250,9 @@
         "cas": "医学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T00:36:01Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -45294,6 +45300,7 @@
           "script-0、script-1、script-3 的静态观察内容为空,无法据此判断其绘图逻辑(evidence: script-0, script-1, script-3)。",
           "未观察到期刊指标、许可信息或数据可获取性声明,相关内容未知(evidence: publication, curated-note)。",
           "本条目为 AI 待核学习注释,不能替代对原文与代码的人工核查(evidence: inspection-boundary)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -45311,11 +45318,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T00:36:08Z",
         "model": "deepseek-flash",
         "source_fingerprint": "e70110dd41793891c4cf2c996098e7812e34b6043b131cf64a8e15d64515ac7f",
         "summary_fingerprint": "5a36f989d4e2c918cf869e329f8b2e9e03b2408c79cba359c4f3c625a9c5fb99",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -45415,22 +45424,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:09:34Z",
+        "lastCheckedAt": "2026-10-12T07:24:15Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:09:34Z",
+          "lastAttemptAt": "2026-10-12T07:24:15Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-12T15:09:34Z"
+          "nextAttemptAt": "2026-10-13T07:24:15Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:09:41Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:16Z",
           "status": "pending",
           "reasonCodes": [
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:41Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:16Z"
         }
       },
       "pmcid": "PMC10798888",
@@ -45758,7 +45769,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:09:29.728348+00:00",
+        "retrievedAt": "2026-10-12T07:24:12.896190+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -46520,7 +46531,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -46530,12 +46542,13 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:09:09Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:09:34Z",
+        "retrievedAt": "2026-10-12T07:24:15Z",
         "url": "https://openalex.org/W4389298254",
         "cited_by_count": 30,
         "fwci": 2.2548,
@@ -46584,6 +46597,7 @@
           "证据未包含样本量、物种数量或统计检验的具体数值。",
           "证据未说明血液与皮肤分析之间结果差异的原因。",
           "证据未提供甲基化速率与最大寿命因果关系的验证,仅提示可能存在进化约束的关联。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -46601,10 +46615,15 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-11T15:09:41Z",
         "model": "deepseek-flash",
         "source_fingerprint": "476855aa67f7a56d037798a0cb7ce30a7d80b731da5482b7acd2d719853fe082",
-        "summary_fingerprint": "b19d970fb69489e0e26568108299bbc9968f3f98be2f49faab40a42fd78596d9"
+        "summary_fingerprint": "b19d970fb69489e0e26568108299bbc9968f3f98be2f49faab40a42fd78596d9",
+        "ai_attempts": 0,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -48585,37 +48604,33 @@
         "status": "pending",
         "stages": {
           "metadata": "matched",
-          "article": "unavailable",
-          "repository": "unavailable",
+          "article": "inspected",
+          "repository": "no_scripts_found",
           "metrics": "matched",
           "ai": "missing_evidence"
         },
-        "errors": [
-          "article: unavailable",
-          "repository: unavailable"
-        ],
-        "lastCheckedAt": "2026-10-11T15:09:42Z",
+        "errors": [],
+        "lastCheckedAt": "2026-10-12T07:24:21Z",
         "repairSchedule": {
-          "consecutiveFailures": 1,
-          "lastAttemptAt": "2026-10-11T15:09:42Z",
-          "lastOutcome": "failure"
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:24:21Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:24:21Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 0,
-          "lastAttemptAt": "2026-10-11T15:09:42Z",
+          "attempts": 2,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:24:22Z",
           "status": "pending",
           "reasonCodes": [
-            "source_transient_failure",
             "source_refresh_failed",
-            "article_unchecked",
             "selected_figure_missing",
             "code_unchecked",
-            "code_not_pinned",
             "script_integrity_missing",
             "ai_missing"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:42Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:22Z"
         }
       },
       "pmcid": "PMC13375584",
@@ -48632,34 +48647,394 @@
       "maxSupplementDownloads": 3,
       "maxFileBytes": 6000000,
       "article": {
-        "status": "unavailable",
+        "status": "inspected",
         "license": "CC BY",
         "version": "1",
         "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/PMC13375584.1.xml?md5=ff337c7baf97ad8bd03b576880dab255",
-        "figures": [],
-        "supplements": [],
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "DMPs with age across 17 human tissues.Each volcano plot depicts a unique tissue and its methylation changes with age. Each dot corresponds to a distinct CpG; colored dots indicate a significant association with age at an FDR <0.005, while black dots indicate CpGs that do not exhibit significant age-associated changes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig1_HTML.jpg?md5=eea7c467ddb096d5d1200802be51b0e9",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Methylation state and directional change of age-associated DMPs across 13 human tissues.a, The direction of methylation change in older individuals (>60 years). For each tissue, bars show the proportion of DMPs exhibiting increased methylation (red) or decreased methylation (blue) with age. b, The methylation-state distribution in younger individuals (<30 years) for the same DMPs. Bars show the proportion of DMPs classified as low methylation (<25%; green), intermediate methylation (25–75%; orange) or high methylation (>75%; purple). Tissues shown are adipose, brain, breast, buccal, cervix, colon, heart, kidney, liver, lung, pancreas, retina and skin. Prostate, rectum and stomach had insufficient samples from individuals under 30 years and are not included. For example, in adipose tissue, 13,868 age-associated DMPs were identified; in younger individuals for b, 65% showed low methylation, 25.3% showed intermediate methylation and 9.5% showed high methylation, while in older individuals for a, the majority of these DMPs showed increased methylation with age.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig2_HTML.jpg?md5=d3379dd54f0f07fbf5fc8f6038ac486b",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Age-related changes in VMPs across 17 human tissues.Each scatter plot illustrates age-associated VMPs for a specific tissue. Only brain, buccal, cervix, liver, lung and skin tissues had significant age-associated VMPs at FDR <0.005; the remaining 11 tissues showed no significant VMPs and are displayed for reference. Each dot represents a unique individual, with the x axis showing age and the y axis showing methylation level (β value). Individual data points are shown throughout; no summary statistics or error bars are presented.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig3_HTML.jpg?md5=8ca58f7c6f59502f73f4cc91c5c36005",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Shannon entropy of DNAm with age across 17 human tissues.Each plot represents a specific tissue using the largest available datasets. Tissues are grouped into three categories on the basis of the presence of age-associated DMPs and VMPs. Tissues without VMPs (adipose, breast, cervix, colon, heart, kidney, skeletal muscle, pancreas, rectum and retina) show two conditions: ‘Entropy_all’ (entropy calculated across all CpGs genome-wide; shown in yellow) and ‘Entropy_none’ (entropy calculated across CpGs not associated with age; shown in gray). Tissues with both DMPs and VMPs (brain, buccal, liver, lung and skin) show three conditions: ‘Entropy_DMPsonly’ (entropy at CpGs that are DMPs only; shown in blue), ‘Entropy_VMPsonly’ (entropy at CpGs that are VMPs only; shown in orange) and ‘Entropy_DMPVMP’ (entropy at CpGs that are both DMPs and VMPs; shown in pink). Prostate and stomach tissues showed no age-related DMPs or VMPs and are therefore not represented. Lines show fit regression of entropy against age; shaded bands represent 95% confidence intervals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig4_HTML.jpg?md5=0e971aba53a2a032a1a6b3c0fb2c38f1",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "WGCNA co-methylation network analysis across four tissues.a,b,d,e, The leading enriched pathways for positive (hypermethylated with age; a,d) and negative (hypomethylated with age; b,e) co-methylation modules in adipose tissue (a,b) and brain (d,e), respectively. Each panel corresponds to a distinct tissue, with colors indicating module affiliation. Those identified as module-influential are highlighted in green and represented as triangles; associated pathways are highlighted in gray. c,f, Dot plots of the frequency with which individual genes were ranked among the top module-influential genes across age-associated WGCNA modules for adipose tissue (c) and brain tissue (f), stratified by direction of module–age associations. The y axis indicates gene names and the x axis reflects the number of pathways influenced by each gene within its module. kME was used to define module-influential genes as those with the highest intramodular connectivity and strongest association with age. Recurrently identified module-influential genes represent network-central loci consistently implicated in aging-associated methylation programs across tissues.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig5_HTML.jpg?md5=9b38105c3fd9543f93162a0e9e5ebbd8",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Cross-tissue overlap of age-associated DMPs reveals both conserved and tissue-specific aging signatures.a, A combined similarity heat map of pairwise DMP overlap across 17 human tissues. The lower diagonal shows pairwise Jaccard indices of DMP overlap; darker blue indicates greater overlap. The upper diagonal shows effect-size correlation across tissues to assess directionality concordance of overlapping DMPs; darker red indicates greater concordance. b, Pathway enrichment analysis of CpGs identified as DMPs in nine or more tissues. Dot color indicates FDR strength and dot size reflects the number of genes associated with each pathway. c, A heat map of the 50 most enriched pathways from the mitch multi-tissue pathway enrichment analysis. Red indicates hypermethylation and blue indicates hypomethylation of genes within each pathway. Enriched pathways are listed on the y axis and tissues are shown on the x axis.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig6_HTML.jpg?md5=23ca578d46ae0d5f9c6bbe99b171e0da",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Effect of cell-type correction on age-associated methylation signatures across tissues.Correlation plots compare t-statistics for differentially methylated positions (DMPs) identified with and without cell-type correction across all tissues for which reference deconvolution panels were available. The x-axis shows t-statistics from cell-type corrected models and the y-axis shows t-statistics from uncorrected models. Pearson correlation coefficients (r) are shown for each tissue, with values ranging from r = 0.81 to r = 0.99, indicating that the majority of age-associated methylation signals are robust to cell-type composition correction. Bar plots show the number of variably methylated positions (VMPs) identified before and after cell-type correction per tissue. Cell-type proportions were estimated using EPISCORE for all tissues except buccal, where EpiDISH was used.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig7_ESM.jpg?md5=29fb8f44b985a2e7756d1bb0aaf9efa4",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Distribution of age-associated DMPs across CpG island contexts.Significant age-associated CpGs (FDR < 0.005) were classified according to their genomic CpG context (Island, Shore, Shelf, and Open Sea) and stratified by direction of age association based on the sign of the effect size. Hypermethylated CpGs (increasing methylation with age) and hypomethylated CpGs (decreasing methylation with age) are shown separately. Bars represent the percentage of significant DMPs within each CpG context per tissue. Hypermethylated DMPs were more frequently located within CpG islands and shores, while hypomethylated DMPs were predominantly enriched in CpG-poor regions including shores and open sea across tissues.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig8_ESM.jpg?md5=c61a8ad3233b8d5b462f3fa2978dc993",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Sensitivity analyses examining the relationship between DMP and VMP detection and cohort characteristics across tissues.Top scatterplots showing the relationship between VMP count and three cohort characteristics: age range (R = −0.058, p = 0.84), median age (R = 0.051, p = 0.86), and mean age (R = 0.044, p = 0.87). No significant associations were identified, supporting the biological tissue specificity of VMPs rather than technical artifact. Bottom scatterplots showing the relationship between DMP count and the same cohort characteristics: age range (R = 0.66, p = 0.0072), median age (R = 0.22, p = 0.43), and mean age (R = 0.13, p = 0.65). Each point represents one tissue dataset. Only age range showed a significant association with DMP yield, indicating that broader lifespan sampling enhances statistical power to detect age-related methylation changes without introducing systematic bias related to mean or median age.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig9_ESM.jpg?md5=15e0a3ee0454fadffc07a69f87d95ff7",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cross-tissue overlap of age-associated VMPs reveals predominantly tissue-specific aging signatures.Combined similarity heat map of pairwise VMP overlap across 17 human tissues. The lower diagonal shows pairwise Jaccard indices of VMP overlap; darker blue indicates greater overlap, with hierarchical clustering revealing groups of tissues with shared age-associated VMPs. Most tissues show low overlap, reflecting predominantly tissue-specific VMP patterns consistent with locally stochastic epigenetic drift. The upper diagonal shows effect-size correlation across tissues to assess the directionality concordance of overlapping VMPs; darker red indicates greater concordance in the direction of variance change. Non-chance overlaps were identified between brain–buccal, buccal–cervix, buccal–lung, brain–skin, and buccal–skin tissue pairs based on permutation testing (Supplementary Table 5).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig10_ESM.jpg?md5=62739fcf98d73f46fb1e7c2f3f1113f8",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "WGCNA soft-thresholding power selection and co-methylation modules identification across tissues.(A,C,E,G) Scale-free topology fit index (y-axis) plotted against a range of soft-thresholding powers (x-axis) for skeletal muscle, adipose tissue, blood, and brain respectively. The selected soft-thresholding power corresponds to the value at which the scale-free topology fit index approached or exceeded R2 ≥ 0.85, indicating a robust scale-free network structure. Mean connectivity across the same range of powers is also shown, illustrating the trade-off between network sparsity and connectivity used to guide power selection. (B, D, F, H) Hierarchical clustering dendrograms of CpGs grouped by topological overlap matrix for each tissue, with module colours representing distinct co-methylation modules identified by dynamic tree cutting. Each branch of the dendrogram corresponds to a module of highly co-methylated CpGs. The number and size of modules varied across tissues, reflecting tissue-specific biological complexity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig11_ESM.jpg?md5=762387e707b7a33a2232c37162a4c34d",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "WGCNA module eigengene correlations with age and pathway enrichment across four tissues.(A, C, E, G) Module eigengene–age correlation plots for skeletal muscle, adipose tissue, blood, and brain respectively. Each row represents a co-methylation module, and each column represents age correlation statistics. Modules are classified as positive (hypermethylated with age, shown in red) or negative (hypomethylated with age, shown in blue) based on the direction of the module eigengene–age correlation. Only statistically significant modules (p < 0.05) were retained for functional interpretation. (B, D, F, H) Dot plots showing the top enriched Gene Ontology (GO) biological process pathways for positive and negative age-associated modules in each tissue. Dot size reflects the number of genes associated with each pathway and dot colour indicates FDR strength; more saturated colours indicate stronger enrichment. Pathways are separated by module direction to facilitate comparison of hypermethylated and hypomethylated aging programs within each tissue.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig12_ESM.jpg?md5=7259e9ab560770a570ae4cc8a0965f94",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Cross-tissue perturbation analysis network of universal co-methylation module identified across all tissues (Module 5).Each node represents a gene within the module, with edges reflecting the strength of gene–gene correlation across tissues; edge thickness is proportional to correlation strength. Module-influential genes, defined by high intramodular connectivity (kME) combined with strong average t-statistic signal across tissues, reflecting consistent age-associated methylation changes, are shown in red and represent genes most likely to have functional impact on aging-associated methylation programs. Hub genes, defined by high correlation strength to other genes within the module, functioning as coordinators or integrators of module-level co-methylation activity, are shown in blue. PCDHGA1, a member of the Protocadherin Gamma (PCDHG) gene family, was identified as the top module-influential gene in this universal module, consistent with its cross-tissue role in aging-associated methylation networks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_Fig13_ESM.jpg?md5=2c19b60e56ebe612a70b94466fe79bf8",
+            "articleURL": "https://www.nature.com/articles/s43587-026-01164-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al.. Meta-analysis of DNA methylation aging signatures in 17 human tissues. DOI: 10.1038/s43587-026-01164-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_MOESM1_ESM.pdf?md5=e5f4613fba1c8bc076dc6bf289f7028c",
+            "license": "CC BY",
+            "sha256": "221d5c72b4253fe8d9a6ca6a3a65407f73d9d8dac7a4797669c0f0f5f9be2af7",
+            "status": "downloaded_private",
+            "bytes": 972140,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 5,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_MOESM2_ESM.pdf?md5=33f6b1469d2b4e4a32a41a71df73a6ab",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_MOESM3_ESM.pdf?md5=1592d9c0ceb8d7c717241d2fb835dea0",
+            "license": "CC BY",
+            "sha256": "28f003f1552bf96bf4410b5b9036c0a58c24640f870db0c13ee30e626204d396",
+            "status": "downloaded_private",
+            "bytes": 1134008,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 27,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13375584.1/43587_2026_1164_MOESM4_ESM.xlsx?md5=bb1fdead9cabe747f11397c02079708e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
         "codeURLs": [],
         "limitations": [
-          "PMC cloud inspection failed: BudgetExceeded"
+          "Requested figure reference could not be resolved; no substitute figure downloaded.",
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:09:42.264951+00:00",
+        "retrievedAt": "2026-10-12T07:24:19.188471+00:00",
         "source": "PMC OA Cloud",
-        "codeURLEvidence": []
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Macsue Jacques; Kirsten Seale; Sarah Voisin; Anna Lysenko; Robin Grolaux; Bernadette Jones-Freeman; et al."
       },
       "repository": {
-        "status": "unavailable",
+        "status": "no_scripts_found",
         "url": "https://github.com/MacsueJacques/DNA-Methylation-Aging-Atlas-Across-17-Human-Tissues",
-        "commit": "",
+        "commit": "108524143a92124e536f73222631dc6130bcd136",
         "license": "unknown",
         "scripts": [],
         "inputs": [],
         "figureMappings": [],
         "limitations": [
-          "GitHub inspection failed: BudgetExceeded"
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
         "authorCodeExecuted": false,
-        "errorStatus": null,
-        "lastError": "本次资料采集预算已用完；剩余请求为 AI 调用保留"
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -48669,22 +49044,30 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:09:09Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
-        "status": "budget_exhausted"
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:24:21Z",
+        "url": "https://openalex.org/W7166173666",
+        "cited_by_count": 4,
+        "fwci": 3.6196,
+        "citation_normalized_percentile": 0.93839836,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 22,
+        "total": 46.6919918,
         "components": {
           "topic": 12,
           "method": 0,
-          "composite": 0,
+          "composite": 20,
           "usability": 0,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 0,
+          "normalizedCitationPreference": 4.6919918,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -58127,17 +58510,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:09:28Z",
+        "lastCheckedAt": "2026-10-12T07:24:11Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:09:28Z",
+          "lastAttemptAt": "2026-10-12T07:24:11Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-12T15:09:28Z"
+          "nextAttemptAt": "2026-10-13T07:24:11Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:09:28Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:12Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -58147,7 +58530,8 @@
             "author_code_link_unverified",
             "ai_missing"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:28Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:12Z"
         }
       },
       "pmcid": "PMC12494969",
@@ -58457,7 +58841,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:09:25.596022+00:00",
+        "retrievedAt": "2026-10-12T07:24:10.756842+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -58474,7 +58858,8 @@
         "limitations": [
           "No exact public GitHub repository URL found in supplied evidence."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -58484,12 +58869,13 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:08:56Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:09:28Z",
+        "retrievedAt": "2026-10-12T07:24:11Z",
         "url": "https://openalex.org/W4414777478",
         "cited_by_count": 5,
         "fwci": 2.8416,
@@ -58627,17 +59013,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T00:36:12Z",
+        "lastCheckedAt": "2026-10-12T07:24:27Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T00:36:12Z",
+          "lastAttemptAt": "2026-10-12T07:24:27Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-13T00:36:12Z"
+          "nextAttemptAt": "2026-10-13T07:24:27Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T00:36:12Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:28Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -58645,7 +59031,8 @@
             "script_integrity_missing",
             "ai_missing"
           ],
-          "nextAttemptAt": "2026-10-12T01:36:12Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:28Z"
         }
       },
       "pmcid": "PMC6516149",
@@ -58832,7 +59219,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T00:36:09.478405+00:00",
+        "retrievedAt": "2026-10-12T07:24:26.337831+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -58850,7 +59237,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -58859,7 +59247,9 @@
         "cas": "医学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T00:36:12Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
@@ -170632,7 +171022,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T07:24:00Z",
+  "generatedAt": "2026-10-12T07:24:28Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -170709,7 +171099,8 @@
       {
         "doi": "10.1038/s43587-023-00535-6",
         "reasonCodes": [
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       },
       {
@@ -170740,12 +171131,9 @@
       {
         "doi": "10.1038/s43587-026-01164-5",
         "reasonCodes": [
-          "source_transient_failure",
           "source_refresh_failed",
-          "article_unchecked",
           "selected_figure_missing",
           "code_unchecked",
-          "code_not_pinned",
           "script_integrity_missing",
           "ai_missing"
         ]
@@ -171028,12 +171416,12 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:24:04Z",
+    "updatedAt": "2026-10-12T07:24:29Z",
     "status": "active",
     "endReason": "",
     "batchCount": 10,
-    "checkpointCount": 20,
-    "requests": 689,
+    "checkpointCount": 21,
+    "requests": 750,
     "aiAttempts": 25,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -171042,9 +171430,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 50,
-    "processedCount": 45,
-    "remainingCount": 8,
-    "inFlightCount": 5,
+    "processedCount": 50,
+    "remainingCount": 3,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
