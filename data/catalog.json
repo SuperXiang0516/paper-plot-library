@@ -10910,12 +10910,33 @@
           "article": "no_final_version",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "error"
+          "ai": "missing_evidence"
         },
-        "errors": [
-          "ai: error"
-        ],
-        "lastCheckedAt": "2026-10-11T10:47:49Z"
+        "errors": [],
+        "lastCheckedAt": "2026-10-12T07:23:00Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:23:00Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:23:00Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:23:01Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "no_final_version",
+            "selected_figure_missing",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:23:01Z"
+        }
       },
       "pmcid": "PMC8240505",
       "pmid": "32669714",
@@ -10943,7 +10964,7 @@
         "limitations": [
           "No DOI-matched non-manuscript publisher version available in current PMC cloud."
         ],
-        "retrievedAt": "2026-10-11T10:47:44.797499+00:00",
+        "retrievedAt": "2026-10-12T07:22:58.804114+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": []
       },
@@ -14473,7 +14494,8 @@
         "limitations": [
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -14482,21 +14504,23 @@
         "cas": "综合性期刊1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T10:47:49Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T10:47:49Z",
+        "retrievedAt": "2026-10-12T07:23:00Z",
         "url": "https://openalex.org/W3179857518",
         "cited_by_count": 1243,
-        "fwci": 44.2011,
-        "citation_normalized_percentile": 0.99946658,
+        "fwci": 44.1838,
+        "citation_normalized_percentile": 0.99946636,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 61.9973329,
+        "total": 61.9973318,
         "components": {
           "topic": 12,
           "method": 15,
@@ -14504,7 +14528,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.9973329,
+          "normalizedCitationPreference": 4.9973317999999995,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -29434,22 +29458,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:08:30Z",
+        "lastCheckedAt": "2026-10-12T07:23:15Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:08:30Z",
+          "lastAttemptAt": "2026-10-12T07:23:15Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-12T15:08:30Z"
+          "nextAttemptAt": "2026-10-13T07:23:15Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:08:30Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:16Z",
           "status": "pending",
           "reasonCodes": [
             "input_undocumented"
           ],
-          "nextAttemptAt": "2026-10-11T16:08:30Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:23:16Z"
         }
       },
       "pmcid": "PMC9021023",
@@ -30044,7 +30069,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:08:24.044840+00:00",
+        "retrievedAt": "2026-10-12T07:23:13.076182+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -30949,7 +30974,8 @@
         "limitations": [
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -30965,7 +30991,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:08:30Z",
+        "retrievedAt": "2026-10-12T07:23:15Z",
         "url": "https://openalex.org/W4225246272",
         "cited_by_count": 475,
         "fwci": 25.6364,
@@ -31034,7 +31060,10 @@
         "generated_at": "2026-10-11T12:06:10Z",
         "model": "deepseek-flash",
         "source_fingerprint": "187758cecbc5589e8f3726726f95db7aea8f995963783aed4825fa4cdd69f8d1",
-        "summary_fingerprint": "1737353515459a8d2727da59341897a9b125c1e496520185f08c360892cd4c3f"
+        "summary_fingerprint": "1737353515459a8d2727da59341897a9b125c1e496520185f08c360892cd4c3f",
+        "ai_attempts": 0,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -46658,17 +46687,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:08:23Z",
+        "lastCheckedAt": "2026-10-12T07:23:11Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:08:23Z",
+          "lastAttemptAt": "2026-10-12T07:23:11Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-12T15:08:23Z"
+          "nextAttemptAt": "2026-10-13T07:23:11Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:08:23Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:12Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -46677,7 +46706,8 @@
             "script_integrity_missing",
             "ai_missing"
           ],
-          "nextAttemptAt": "2026-10-11T16:08:23Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:23:12Z"
         }
       },
       "pmcid": "PMC10148951",
@@ -46808,7 +46838,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:08:18.478662+00:00",
+        "retrievedAt": "2026-10-12T07:23:09.822949+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -46834,7 +46864,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -46850,7 +46881,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:08:23Z",
+        "retrievedAt": "2026-10-12T07:23:11Z",
         "url": "https://openalex.org/W4319946457",
         "cited_by_count": 187,
         "fwci": 7.9852,
@@ -70624,13 +70655,2091 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:22:45Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:45Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:22:45Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:22:55Z",
+          "status": "pending",
+          "reasonCodes": [
+            "input_undocumented"
+          ],
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T08:22:55Z"
+        }
       },
-      "pmcid": "PMC11578893"
+      "pmcid": "PMC11578893",
+      "pmid": "39567784",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/PMC11578893.1.xml?md5=fbb9386327d3184b5c22374473430bd3",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Human thymus spatial atlas data composition and methodology.a, Schematic of the combined use of spatial and dissociated datasets. b, The proportional contributions of different studies to main cell types and age groups, n = 29 donors. HTSA, human thymus spatial atlas. c, The composition of dissociated and spatial datasets containing both newly generated and previously published data spanning fetal and early paediatric human life. Each dot represents a sample and the stacked dots within a technology panel represent samples from the same donor. The dot colour indicates data source. Further information is provided in Supplementary Tables 1 and 2 and Extended Data Fig. 1a. d, Representative H&E image of a paediatric thymus (7 days old) showing the major anatomical compartments. Scale bar, 0.5 mm. e, Overview of the functionalities available in the TissueTag software. Details of histology annotations and derivation of the OrganAxis framework are provided in Supplementary Notes 1 and 2.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig1_HTML.jpg?md5=51c15a696da7a37804637b9848e96453",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Multimodal data integration using tissue landmarks and a continuous CMA CCF.a, Representative H&E sections (left) of fetal (p.c.w. 15) and paediatric (3 months old) Visium data, and virtual H&E for paediatric IBEX (7 days old). Corresponding discrete annotations (right) curated with TissueTag for cortex, medulla, edge (capsule + septa), tissue artefacts and fetal thymus-associated lymphoid aggregates (TALA). b, Illustration of the CMA derivation. P, spot in space. Details of OrganAxis construction are provided in Supplementary Note 2. c, CMA mapping for sections shown in a and a magnified region with the corresponding (virtual) H&E image. Axis parameters: r = 15 μm, K = 10. d, Batch-corrected UMAP embeddings of all Visium and IBEX samples in the study coloured by tissue annotations presented in a. Each dot corresponds to a Visium spot or IBEX cell. The total numbers of spots or cells, detected genes or markers and samples per dataset are indicated. e, UMAP embedding from d coloured according to CMA values. f, The contributions of CMA, technical factor (number of genes per spot or total signal per cell) and other sources of variability to the cumulative variance explained by first ten PCs in each spatial dataset: fetal Visium (12 samples), paediatric Visium (16 samples) and paediatric IBEX (8 samples). For a and c, scale bars, 1 mm.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig2_HTML.jpg?md5=0d10e08358115b349a2df910f695d94b",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "assets/pmc11578893-05d654064b3c1d7b.jpg",
+            "sha256": "05d654064b3c1d7b90717bfd6d2c77b16ed6981569eae1d8c0abcb3ffe9abb0f",
+            "width": 707,
+            "height": 616,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "requestedReference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "assetSHA256": "05d654064b3c1d7b90717bfd6d2c77b16ed6981569eae1d8c0abcb3ffe9abb0f",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "CMA mapping of fetal and paediatric thymocytes reveals early establishment of T-lineage trajectories and cytokine landscape.a, Schematic of the continuous CMA and the binned representation. b, Binned CMA space on fetal (p.c.w. 15) and paediatric (3 months) Visium sections with magnified regions showing H&E, continuous CMA and binned CMA (from left to right). Scale bars, 1 mm. c, Schematic of the analysis workflow: Visium spots are mapped to the CMA and deconvolved using the integrated fetal and paediatric scRNA-seq atlas. d, UMAP embedding of the main stages of developing αβ T lineage cells in fetal and paediatric scRNA-seq. Annotation of all T-lineage cells is provided in Supplementary Note 4. e, Binned CMA mapping of the main αβ T lineage differentiation stages for fetal and paediatric Visium. The cut-off indicates the minimum abundance threshold for inclusion of a Visium spot. The rare ETP and DN(early) stages were plotted with an adjusted cut-off to aid visualization. f, Spatial pattern of chemokine/cytokine transcripts across CMA bins derived from Visium data. Cytokines are clustered according to their spatial pattern in the fetal thymus. The bars indicate the cosine similarity between fetal and paediatric spatial gene expression patterns and the dots show an interaction effect between CMA bin and age-group. P values were calculated using two-way ANOVA with Bonferroni correction. Cytokines/chemokines that are critical for thymocyte migration are highlighted in orange. The boxes indicate clustered genes that diverge between ages.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig3_HTML.jpg?md5=dc4e6e906b76b285118ed49717f1169f",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "CMA mapping pinpoints divergence in progenitor TEC localization across development.a, UMAP embedding of integrated fetal and paediatric scRNA-seq data for TECs coloured by cell type. b, TEC marker gene expression according to scRNA-seq data. The bars indicate the total number of cells per cell type. c, The relative TEC distribution and enrichment in CMA bins based on Visium spot deconvolution. The boxes highlight mcTECs. Proliferating mcTECs were found only in fetal thymus and cTECIII was exclusively detected in paediatric data. The cut-off levels indicate the minimum cell abundance threshold for inclusion of a Visium spot. d, Schematic of the annotation workflow of segmented IBEX nuclei based on matching to the paediatric scRNA-seq reference. e, The spatial distribution patterns of TEC subsets in IBEX data. The dot size represents the relative abundance and the colour depicts the local enrichments in the CMA bin. KNN indicates the cut-off for the percentage of KNNs that correspond to the eventually assigned majority cell type agreement (Methods). f, IBEX images from 7-day-old male thymus (IBEX_02) showing expression of five different keratins. Images are representative of eight donors/samples. Scale bars, 100 μm (top) and 25 μm (middle and bottom). g, The transcript levels of the corresponding keratins in the major paediatric TEC subtypes shown in c.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig4_HTML.jpg?md5=9b1b0247ae37c8b6ed85803462ac6656",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Specialized mTECs are organized around HCs in the paediatric medulla.a, Representative paediatric (3 months old) Visium H&E image overlaid with minimal distance to HC (maximum cut-off, 350 μm). Scale bar, 1 mm. b, Illustration of the distance to the HC as opposed to the CMA, which is parallel to medullary depth. c, The distribution of medullary cells around HCs based on deconvolved paediatric Visium data. HC distance was split into 25 μm bins. The bars show the absolute spot numbers. Cells are sorted by the mean distance to, 25 cell types closest to HC are shown. d, The weighted mean position of medullary cells along the two axes based on deconvolved paediatric Visium data. The red line connects major mTEC subtypes. e, The workflow for identifying SGs and their spatial mapping using paediatric Visium data. f, The weighted mean position of all 867 medullary genes along the CMA and HC distance axes. SGs are represented by large dots and coloured according to the cell type in which they are uniquely expressed. g, UMAP embedding for mTECs; the mTECII/mTECIII lineage is highlighted. h, Trajectory analysis of the mTECII/III lineage. Colour indicates pseudotime, the arrows were manually added to illustrate direction. i, Trajectory embeddings showing the expression of canonical mTECII and mTECIII markers, mucosal and skin SGs. Colour scales represent expression levels. j, Annotation of mTECII/III states, highlighting the mTECIII-muc and mTECIII-skin subtypes, guided by mucosal and skin SGs. Bmem, memory B cells; medFB, medullary fibroblasts; NK, natural killer cells; EC-Art-ELN, elastin-expressing arterial endothelial cells.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig5_HTML.jpg?md5=c0c2d603b0d99ae2367ac25c2c9f87c4",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "High-resolution annotation and CMA mapping of single-positive thymocytes reveals spatiotemporal differences in their corticomedullary migration.a, Cell abundances of αβ T lineage thymocytes after positive selection along the binned CMA based on deconvolved paediatric Visium data. The minimum-abundance cut-off for the inclusion of a Visium spot was 0.5%. b, Weighted nearest-neighbour (WNN) UMAP representation of paediatric CITE-seq data for conventional αβ T lineage cells from positive selection to full maturity (top). Developmental pseudotimes for the CD4 and CD8 lineage (bottom). c, CITE-seq cells ordered along CD4 (left) and CD8 (right) lineage pseudotime with the colour indicating discrete annotations. d–f, Spatial mapping of pseudotime-ordered CD4 (left) and CD8 (right) lineage cells to the CMA. Median values and the 0.05–0.95 quantiles of both the CMA and the pseudotime value for each annotated substage are shown. d, Cell localization inferred from Visium deconvolution using hyperclustered CITE-seq data. e, The position of IBEX cells after segmentation and CITE-seq-derived annotation. f, Direct comparison of the Visium (circle) and IBEX CMA mapping (diamond) shown in d and e. g, RNA and surface protein levels of relevant chemokine receptors along the pseudotimes for CD4 (left) and CD8 lineage (right) cells. Lines represent the smoothed mean ± s.e.m. h, The spatial distribution of chemokine transcripts along the CMA in paediatric Visium data.Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig6_HTML.jpg?md5=37c23e2e0852b8b624a04419e5f2665e",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Composition of fetal and paediatric scRNA-seq data.a. Sample enrichment strategy for dissociated datasets as indicated by colour. Each dot represents a sample and stacked dots within a technology panel represent samples from the same donor. For samples marked by a black circle, αβTCR-seq was carried out. See Fig. 1c for sample source. b. Relative cell contribution to the dissociated dataset per donor, split by age group. Sample origin is indicated for all donors. n = 12 fetal donors, n = 17 paediatric donors. HTSA: Human Thymus Spatial Atlas. c. Relative contribution of published and newly generated scRNA-seq datasets by broad cell type (cell type level 1). n = 29 donors. d. UMAP embedding of the full, integrated scRNA-seq dataset with annotations of the major cell lineages (cell type level 0). e. UMAP embedding of the full, integrated scRNA-seq dataset with more detailed lineage annotations (cell type level 1). See Supplementary Notes 3 and 4 for complete annotation of T lineage, hematopoietic and stromal cells. “See_lv4_explore” refers to cells which could not confidently be assigned to a unique cell type based on literature or cell markers but can be explored in the provided AnnData object (Data availability). DC, dendritic cell; EC, endothelial cell; Fb, fibroblast; Mast, mast cell; Mono, monocyte; Neut, neutrophil; RBC, red blood cell; DN, double negative thymocyte; DP, double positive thymocyte; NK, natural killer cell. Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig7_ESM.jpg?md5=65394bb1ba774b5e2996075f26f52bc6",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Annotation of secondary structures in the thymus and distance measurements to region boundaries.a. Representative H&E sections (left) of fetal (p.c.w. 15) and paediatric (3 months) Visium data, and IBEX virtual H&E (7 days old). Corresponding discrete annotation (annotation level 1, right) curated with TissueTag for Hassall’s corpuscles (HC), perivascular space (PVS), and additional small vessels. b. UMAP embedding of integrated samples for the three spatial datasets coloured by annotation level 1. c. UMAP embedding of integrated samples for the three spatial datasets coloured by min. L2 distances of each spot/cell to the cortex (right) and to the capsule/septum (“Edge”, left) demonstrating distinct spatial variance. d. CMA projected to Visium spot data and IBEX single cells on the same sections as shown in a.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig8_ESM.jpg?md5=50bf4a19083266a4f968ac26282c8489",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Spatial sample composition and variance.a-b. UMAP embeddings of integrated Visium spots coloured by donor, sample (Visium capture region), Visium slide, SpaceRanger version, age, number of genes captured, and section thickness. a. Integrated UMAP embeddings for fetal Visium samples. Age is indicated as post-conception weeks (p.c.w.) − 40. b. Integrated UMAP embeddings for paediatric Visium samples. c. UMAP embedding of integrated IBEX single nuclei data coloured by sample (one sample per donor). d. Cumulative explained variance of the ten first PCA components correlated to the spot CMA level for fetal and paediatric Visium, and paediatric IBEX samples. Samples are sorted by age from left to right and coloured by donor. Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig9_ESM.jpg?md5=0a71480f33b6136cbba37de5e3d48782",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "T cell markers and cytokine/chemokine expression profiles in fetal and paediatric single-cell and spatial datasets.a. Dotplot showing expression of key cell type markers in the αβ T lineage differentiation stages depicted in Fig. 3d. Cells are arranged from most immature (left) to mature (right). Bar graphs indicate the total number of cells per subset. b. Boxplots showing the mean expression of selected chemokine genes in each CMA bin across different fetal vs. paediatric samples. Box boundary extends from the first to the third quartile of distribution with median in between, whiskers indicate min and max ranges with the exception of outliers (outside an inter-quartile range(IQR) of 1.5, indicated by diamonds). Cosine similarity between the mean fetal and paediatric expression values is indicated. n = 16 paediatric Visium samples, n = 12 fetal Visium samples c. Dotplot for chemokines/cytokines with differential distribution across the CMA bins for fetal vs. paediatric tissue as indicated either by low cosine similarity and/or a significant interaction effect. Bars show total number of cells per subset. Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig10_ESM.jpg?md5=91616dda6e0620356c3b16bd650521a0",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Identification of stromal and TEC subtypes using IBEX imaging.a. IBEX confocal images from 2 month-old female thymus (IBEX_08) showing anatomical structures and cell types defined by 44-plex antibody panel. Images are representative of 8 samples/donors. Not shown: CD15 and LYVE-1. Large overview image shows a typical region of interest captured in each IBEX experiment (2-3 lobules). ANXA I, Annexin I; CHGA, Chromogranin A; Pan-CK, Pan-Cytokeratin; KRT, Keratin. b. Dot plot showing expression of proteins in IBEX data and of corresponding genes in scRNA-seq data for annotated TEC subsets. Depicted cell types represent cells in paediatric scRNA-seq data (“_gex”) and the corresponding cell types predicted in IBEX data based on KNN matching (“_ibex”). Expression was normalized per row. Boxes highlight corresponding cell types in the two datasets. KKNf is the fraction of mapped target KNN cells that come from the same cell type. c. Same as in b. but with rows clustered by mutual similarity dendrogram linkage to show similarity level between cell types within and across datasets. Boxes highlight cell types with highest similarity according to dendrogram.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig11_ESM.jpg?md5=d6c1a8272c1bc472cf17350a97fae886",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Distribution of TEC subtypes in the fetal and paediatric thymus.a. Dot plots showing the relative cell abundance of specialized TECs across the CMA bins in fetal and paediatric deconvolved Visium datasets. In all Visium dot plots, cutoff indicates the minimum proportion of the respective cell type in a Visium spot for the spot to be included. b. Dotplots showing relative cell abundance of specialized TECs across the CMA bins in paediatric IBEX KNN-mapped single nuclei datasets. For IBEX datasets KNN cutoff indicates the minimum percentage of KNNs that corresponded to the eventually assigned majority cell type agreement (see Methods). c. Relative cell distribution of TECs in CMA bins and spots associated with perivascular space (PVS) based on deconvolved Visium data. Boxes highlight mcTECs and PVS annotations. Note that proliferating mcTECs were only found in fetal thymus and cTECIII was exclusively detected in paediatric data. d. Relative cell distribution of TECs in CMA bins as well as PVS region based on paediatric IBEX KNN-mapped single nuclei datasets. Boxes highlight mcTECs and PVS annotations. e. 4-plex RNAscope staining of a fetal thymus tissue section (p.c.w. 13) for mcTECs (DLK2, IGFBP6), cTECs (LY75) and mTECs (EPCAM). DAPI was used to identify nuclei. White frame in the left image indicates magnified regions shown on the right. Lines in the left image indicate the CMJ, dashed lines in the right images highlight the capsule. Arrows indicate capsular mcTECs. Images are representative of four independent replicates. f-g. RareCyte protein staining of fetal and paediatric thymus sections with Ki-67, Pan-Cytokeratin (PanCK), and CD45 antibodies and DAPI. White frame in the left image indicates magnified regions on the right. f. Fetal thymus sample (p.c.w. 12). Arrows highlight a subcapsular niche with Ki-67+ non-lymphoid (CD45−) epithelial (PanCK+) cells. Images are representative of a total of 10 replicates from 6 donors. g. Paediatric thymus sample (1 month old). Arrows highlight epithelial (PanCK+) cells in a lymphocyte-free (CD45−) region in the PVS, which show little proliferation (Ki-67+/−). Images are representative of a total of 3 replicates from 3 donors. Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig12_ESM.jpg?md5=058bfdd6ca99f8628f14ae3fd99e8a1b",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Expression of mucosa- and skin-related genes in differentiated mTECIII subtypes.a. Histogram showing the number of Visium spots with medullary annotation by their distance to the nearest HCs. The red dashed line indicates the maximum distance cutoff for Visium spots to be included. Note that around 90% of medullary Visium spots fall within this window. b. Multiscale diffusion space embedding of the mTECII/mTECIII populations generated using Palantir (coloured according to cell populations) with trajectory generated using scFates overlaid on top (colour indicates pseudotime stretching from dark violet to yellow). c. Heatmap showcasing differentially expressed genes between three different branches of the mTECII/TECIII trajectory, namely mTECII, mTECIII-skin and mTECIII-muc. See Methods for details on derivation of DE genes and source data for p-values. Specialization genes (SGs) are labelled. Source Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig13_ESM.jpg?md5=0f7fd56b4e032e0e10a187c02cd8deaa",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Annotation and expression profiling of developing human thymocytes using CITE-seq.a. UMAP embedding of the full paediatric CITE-seq dataset with high-resolution annotation of T cell maturation stages as well as several non-T cell subtypes. Supplementary Note 6 provides additional details on CITE-seq-derived annotation of T lineage cells. DP, double positive; (P), proliferating; (Q), quiescent; rearr, TCR-rearranging; pos sel, positive selected; SP, single positive; recirc, recirculating; tr, tissue resident; circ, circulating; itg, integrin. b. Surface expression levels of lineage and maturation markers along predicted pseudotimes for CD4 (left) and CD8 lineage (right). Line plots represent smoothed means ± s.e.m. of the expression levels in cells shown in Fig. 6c. Shaded boxes indicate the migration window and CD8SP cortical stage identified in Fig. 6d–f. c. Dot plot depicting expression of relevant chemokines in hematopoietic and stromal cells according to the paediatric scRNA-seq dataset. Colour coding indicates corresponding ligands to the receptors shown in Fig. 6g. Bar graphs indicate total number of cells per cell type. medFB, medullary fibroblast; EC, endothelial cell; Art, arterial; Ven, venous; Cap, capillary; Mac, macrophage; DC, dendritic cell.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_Fig14_ESM.jpg?md5=0ce17406bbbecc63c97aec4c1e1d8da8",
+            "articleURL": "https://www.nature.com/articles/s41586-024-07944-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al.. A spatial human thymus cell atlas mapped to a continuous tissue axis. DOI: 10.1038/s41586-024-07944-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM1_ESM.pdf?md5=1815219545b9bc39ac3be3cab0d21956",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM2_ESM.pdf?md5=220613b190a5adce025c0e57799ca194",
+            "license": "CC BY",
+            "sha256": "b891523e61110ef4b11fe384dbabfe5e1c26e7e123eca44018d28a3ebe815b92",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 966506,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 5,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM3_ESM.pdf?md5=b9f467f9c51d429d1a7a055549f4cc40",
+            "license": "CC BY",
+            "sha256": "c6cc12d681c804703d93ad8035ceb69c6f44c4a9594333bebf23d530adef53d9",
+            "status": "downloaded_private",
+            "bytes": 339148,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 37,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM4_ESM.zip?md5=08400950d9759e2d751cc32629eb3d9c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM5_ESM.xlsx?md5=a54b0286e5ee2d4a786afed861f6a079",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM6_ESM.xlsx?md5=cd1fc281711ceceb1186b8e05b19159a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM7_ESM.xlsx?md5=10c6f68be4d976a66b2d45f443d8cbdd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM8_ESM.xlsx?md5=bf1de4be26e59e34ff65447f732690fb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM9_ESM.xlsx?md5=dd82719247a8ea937f3181a3bd8900e3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM10_ESM.xlsx?md5=5a07d3133ce8ffb92a21c547e71e7b43",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM11_ESM.xlsx?md5=091392f7c6c4f967a00deb4ab046d048",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM12",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM12_ESM.xlsx?md5=abe31a550d9cbc8f2786c4b3a01bb9aa",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM13",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM13_ESM.xlsx?md5=2acf69f78c6054d937d24bf86758343d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM14",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM14_ESM.xlsx?md5=814c647b99d00e96b8b9a39b8bc342de",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM15",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/41586_2024_7944_MOESM15_ESM.xlsx?md5=26be6c49592a8236b23bf4b48ad55002",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Teichlab/iss_patcher"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-12T07:22:42.306663+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Teichlab/iss_patcher",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "Par74",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11578893.1/PMC11578893.1.xml?md5=fbb9386327d3184b5c22374473430bd3"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Nadav Yayon; Veronika R. Kedlian; Lena Boehme; Chenqu Suo; Brianna T. Wachter; Rebecca T. Beuschel; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Teichlab/thymus_spatial_atlas",
+        "commit": "24c1a479f19d3847e5c0a307d43fe8b051fd6817",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "manuscript/Annotation and loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "sha256": "c14214fe7a6faae1de6b81adac569cf87193b1bc428d10de5968f4810c57b982",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "adata_full_rev_2_clean.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 29,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": ".../clean/HTSA_CITE_anno.csv",
+                "reader": "pd.read_csv",
+                "line": 35,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "index_col": 0
+                }
+              },
+              {
+                "path": "adata_full_rev_3_clean.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 467,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 485,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": ".../HTSA_CITE_anno.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 489,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": "adata_full_rev_4_clean.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 527,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": "adata_full_rev_4_clean.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 721,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": "adata_full_rev_4_clean_scvi.h5ad",
+                "reader": "sc.read_h5ad",
+                "line": 742,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "figures/study_groups_cell_type_level_0.pdf",
+                "writer": "fig.savefig",
+                "line": 614
+              }
+            ],
+            "fields": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 29,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 35,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 467,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 485,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 489,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 527,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 721,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 742,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 614,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "manuscript/Annotation and loading/Step_6_fine_annotation_plot_B-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_6_fine_annotation_plot_B-github.ipynb",
+            "sha256": "ccb091e13fb7bcf01689efbf282edf572b43a91d17d904a921fa1f6aec9d3434",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.sans-serif",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pdf.fonttype",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "counts",
+                "line": 183,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scVI",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_umap",
+                "line": 118,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vae",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sex",
+                "line": 173,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 180,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 158,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cite",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "manuscript/Annotation and loading/Step_6_fine_annotation_plot_EC-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_6_fine_annotation_plot_EC-github.ipynb",
+            "sha256": "7fd55046152bb74241111c58829313f33cbaa84d45195309e39d3a69783e77ad",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.sans-serif",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pdf.fonttype",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "counts",
+                "line": 201,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scVI",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_umap",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vae",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 188,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sex",
+                "line": 191,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 185,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cite",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 94,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "manuscript/Annotation and loading/Step_6_fine_annotation_plot_FBs-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_6_fine_annotation_plot_FBs-github.ipynb",
+            "sha256": "f8ec0f0f732b6114a3f63128313b3cd6832a7aaacd2c5889ad42e41349286fa0",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "pdf.fonttype",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "counts",
+                "line": 178,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scVI",
+                "line": 102,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_umap",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 133,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vae",
+                "line": 134,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 165,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sex",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 175,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 159,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cite",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 88,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "manuscript/Annotation and loading/Step_6_fine_annotation_plot_Myeloid_p1-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_6_fine_annotation_plot_Myeloid_p1-github.ipynb",
+            "sha256": "a136122f4b0cc0c294edbd43be3db4f3f91b734b2bba88f8805771b752c49d6a",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.sans-serif",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pdf.fonttype",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "counts",
+                "line": 186,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scVI",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_umap",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vae",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 173,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sex",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 183,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 163,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cite",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 94,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "manuscript/Annotation and loading/Step_6_fine_annotation_plot_Myeloid_p2-github.ipynb",
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_6_fine_annotation_plot_Myeloid_p2-github.ipynb",
+            "sha256": "0b3180a5e62f80e09574efad33ebf638ee3f252ba713b66d111939afc047aea0",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.sans-serif",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pdf.fonttype",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "counts",
+                "line": 183,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scVI",
+                "line": 108,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_umap",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vae",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 167,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sex",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 173,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 180,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cite",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 94,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "adata_full_rev_2_clean.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 29,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": ".../clean/HTSA_CITE_anno.csv",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 35,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0
+            }
+          },
+          {
+            "name": "adata_full_rev_3_clean.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 467,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 485,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": ".../HTSA_CITE_anno.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 489,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "adata_full_rev_4_clean.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 527,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "adata_full_rev_4_clean.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 721,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "adata_full_rev_4_clean_scvi.h5ad",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "line": 742,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "56.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:18:23Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:22:45Z",
+        "url": "https://openalex.org/W4404566936",
+        "cited_by_count": 92,
+        "fwci": 10.8043,
+        "citation_normalized_percentile": 0.99326656,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [
+        "integration"
+      ],
+      "selectionScore": {
+        "total": 96.9663328,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9663328,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "映射到连续组织轴的人类胸腺空间细胞图谱",
+        "summary_zh": "该论文发表于 Nature(2024-11-20),题为 A spatial human thymus cell atlas mapped to a continuous tissue axis(DOI:10.1038/s41586-024-07944-6)。摘要称作者建立了胸腺的定量形态学框架——皮质-髓质轴(Cortico-Medullary Axis, CMA),并将其应用于多模态单细胞图谱、空间转录组学与高分辨率多重成像数据,以在产前与产后早期阶段绘制胸腺微解剖结构。摘要还提到识别出胸腺上皮细胞祖细胞的组织生态位、与哈氏小体相关的亚型,以及 CD4 与 CD8 T 细胞谱系进入髓质时间的差异,并提供了跨平台成像数据分析、注释与 OrganAxis 构建的工具包 TissueTag。所提供的证据仅包含论文元数据、图注(Fig. 1–4)与代码仓库的静态观察记录,未包含正文方法、结果数值或复现验证。",
+        "learning_points": [
+          "论文提出以皮质-髓质轴(CMA)作为连续组织轴来定量描述胸腺微解剖结构,并用于空间分辨分析(见 figure-1、figure-2)。",
+          "Fig. 1 展示人类胸腺空间图谱的数据组成与方法学:空间与解离数据集的联合使用、不同研究对主要细胞类型与年龄组的贡献(n = 29 donors)、含新生成与已发表数据的数据集构成,以及 TissueTag 功能概览(figure-0)。",
+          "Fig. 2 展示利用组织标志与连续 CMA 进行多模态数据整合,包括胎儿(p.c.w. 15)与儿童(3 个月)Visium 及儿童 IBEX(7 天)的 H&E 与虚拟 H&E、离散注释(皮质、髓质、边缘、组织伪影、TALA)、CMA 推导示意与参数(r = 15 μm, K = 10)、批次校正 UMAP 与 CMA 值着色,以及 CMA、技术因素与其他变异来源对方差解释的贡献(figure-1)。",
+          "Fig. 3 展示胎儿与儿童胸小细胞的 CMA 映射,提示 T 谱系轨迹与细胞因子景观的早期建立,包括分箱 CMA 空间、将 Visium 点映射到 CMA 并用整合的胎儿与儿童 scRNA-seq 图谱去卷积的分析流程、αβ T 谱系主要分化阶段的 UMAP 与分箱 CMA 映射,以及趋化因子/细胞因子转录本沿 CMA 分箱的空间模式(figure-2)。",
+          "Fig. 4 展示 CMA 映射用于定位发育过程中 TEC 祖细胞定位的分歧,包括 TEC 的整合 UMAP、标记基因表达、基于 Visium 去卷积的 TEC 相对分布与富集(突出 mcTEC;增殖 mcTEC 仅见于胎儿胸腺,cTECIII 仅在儿童数据中检出)、基于匹配儿童 scRNA-seq 参考的 IBEX 分割核注释流程、TEC 亚群在 IBEX 数据中的空间分布,以及 7 天龄男性胸腺(IBEX_02)五种角蛋白表达的 IBEX 图像(figure-3)。",
+          "代码可用性方面,论文明示分析与绘图代码位于该仓库;制图目录包含 Step_1_cell2location_thymus_atlas_rev_v1_fetal-github.ipynb 及儿童对应版本、Step_2_arrange_visium 与 Step_3_visium_cma 的胎儿/儿童版本(curated-note)。",
+          "对固定提交 24c1a479f19d3847e5c0a307d43fe8b051fd6817 的静态观察显示,manuscript/Annotation and loading 目录下存在 Step_5_update_multilevel_annotation_and_plot-github.ipynb(读取 adata_full_rev_2_clean.h5ad、HTSA_CITE_anno.csv、adata_full_rev_3_clean.h5ad、HTSA_CITE_anno.h5ad、adata_full_rev_4_clean.h5ad、adata_full_rev_4_clean_scvi.h5ad 等文件)以及 Step_6_fine_annotation_plot_B/EC/FBs-github.ipynb(script-0、script-1、script-2、script-3)。"
+        ],
+        "limitations": [
+          "作者代码未被执行,静态检查不构成复现验证,不能据此宣称已复现论文结果或与原文一致(inspection-boundary、script-0 至 script-3)。",
+          "所提供的证据仅含论文元数据、图注与代码静态观察,未包含正文方法细节、统计结果或数值,因此无法核实摘要中关于细胞因子网络、胸小细胞轨迹与 TEC 分布等结论的具体依据。",
+          "输入数据的尺度、图号与代码的对应关系未明示,保持未知(inspection-boundary)。",
+          "Fig. 1–4 图注中部分内容在证据文本中被截断(如 Fig. 3 的 cosine 指标、Fig. 4 的 IBEX 图像描述结尾),无法据此完整描述相应分析。",
+          "各数据集的具体样本数、检测基因或标记数、每数据集样本数等仅在图注中被提及存在,但证据未给出具体数值,故未知。",
+          "论文的许可、期刊指标(如影响因子)等信息未在证据中出现,未知。",
+          "TissueTag 工具的实际可用性、依赖环境与运行结果未在证据中验证,未知。",
+          "代码仓库中 Step_1 至 Step_3 等制图脚本的具体内容未在证据中给出,仅有目录与文件名层面的描述(curated-note)。",
+          "证据未说明 CMA 参数(r = 15 μm, K = 10)是否适用于所有样本或平台,未知。",
+          "证据未提供任何原图与代码输出之间的对应关系,无法判断图件是否可由所给代码生成。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:22:54Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "fd7b69924356f9f612b0e155df1c6537c4522bf9762ef6de9fc1800414090c16",
+        "summary_fingerprint": "28350536a2ad8e2f6c42b0ab53d619edb3643baa893f919985876c5d8439ab7f",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     },
     {
       "id": "human-lung2020",
@@ -84961,13 +87070,1020 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "no_final_version",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:23:07Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:23:07Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:23:07Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:23:07Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "no_final_version",
+            "selected_figure_missing",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:23:07Z"
+        }
       },
-      "pmcid": "PMC7954949"
+      "pmcid": "PMC7954949",
+      "pmid": "33589839",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "1548-7091",
+      "eissn": "1548-7105",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "no_final_version",
+        "license": "unknown",
+        "version": "",
+        "xmlURL": "",
+        "figures": [],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No DOI-matched non-manuscript publisher version available in current PMC cloud."
+        ],
+        "retrievedAt": "2026-10-12T07:23:04.896369+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": []
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/YosefLab/totalVI_reproducibility",
+        "commit": "27d65a9c49182f39df0c4325249bc7dc8e663dd0",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "background/pbmc_trimodal.ipynb",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/background/pbmc_trimodal.ipynb",
+            "sha256": "966285fce366c0647805410a32fc841ef078e2a94bead6ae670a5f248b0790ae",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "data/data_filtering_scripts/malt.py",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/malt.py",
+            "sha256": "94f7a7f5c42f4d9cf9d38fbc854cf9096489291d56ec634c1bc800df64008162",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [
+              {
+                "path": "data/metadata/malt_doublets.npy",
+                "writer": "np.save",
+                "line": 51
+              }
+            ],
+            "fields": [
+              {
+                "name": "protein_expression",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_counts",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_genes",
+                "line": 66,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 51,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/malt.py#L51"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/data_filtering_scripts/pbmc_10k/pbmc_10k.py",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/pbmc_10k/pbmc_10k.py",
+            "sha256": "8eaebcec40269157b718839e25c8ed8721d097ff98233f900234d2b780dfec09",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [
+              {
+                "path": "data/metadata/pbmc10kdoublets.npy",
+                "writer": "np.save",
+                "line": 51
+              }
+            ],
+            "fields": [
+              {
+                "name": "protein_expression",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_counts",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_genes",
+                "line": 66,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 51,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/pbmc_10k/pbmc_10k.py#L51"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/data_filtering_scripts/pbmc_5k_v3/pbmc_5k_v3.py",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/pbmc_5k_v3/pbmc_5k_v3.py",
+            "sha256": "b4b7875ca8bae16f8a7b76100c890dfbc3a91c005a535470257065a066896adc",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [
+              {
+                "path": "data/metadata/pbmc5kdoublets.npy",
+                "writer": "np.save",
+                "line": 51
+              }
+            ],
+            "fields": [
+              {
+                "name": "protein_expression",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_counts",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_genes",
+                "line": 66,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 51,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/pbmc_5k_v3/pbmc_5k_v3.py#L51"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/data_filtering_scripts/spleen_lymph.py",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py",
+            "sha256": "82e6a83fd794513b737dc3d8b947a32a33401c88744de8a619acdea2bb33fcd2",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "data/metadata/spleenLN111/hashtag_labels.csv",
+                "reader": "pd.read_csv",
+                "line": 47,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/metadata/spleenLN206/hashtag_labels.csv",
+                "reader": "pd.read_csv",
+                "line": 48,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+                "reader": "pd.read_csv",
+                "line": 49,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+                "reader": "pd.read_csv",
+                "line": 52,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 47,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py#L47"
+              },
+              {
+                "type": "io_reference",
+                "line": 48,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py#L48"
+              },
+              {
+                "type": "io_reference",
+                "line": 49,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py#L49"
+              },
+              {
+                "type": "io_reference",
+                "line": 52,
+                "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py#L52"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/metadata/spleenLN111/HTO_SLN111_D1.Rmd",
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/spleenLN111/HTO_SLN111_D1.Rmd",
+            "sha256": "9ce99f9cd9c16b769f82de819d95d7073538d8721e7b87df64427f6dc5943014",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "V3",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "V2",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "V1",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ADT",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HTO",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HTO_classification.global",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash.ID",
+                "line": 186,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 192,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "data/metadata/spleenLN111/hashtag_labels.csv",
+            "path": "data/metadata/spleenLN111/hashtag_labels.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py",
+            "line": 47,
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/spleenLN111/hashtag_labels.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/metadata/spleenLN206/hashtag_labels.csv",
+            "path": "data/metadata/spleenLN206/hashtag_labels.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py",
+            "line": 48,
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/spleenLN206/hashtag_labels.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+            "path": "data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "TotalSeq_Barcode",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "name_206",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "name_111",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py",
+            "line": 49,
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+            "readerOptions": {},
+            "headerSHA256": "73524d060d971788eaf036df9a8c8d89a450aa80175a80d35eaeee5c3c20567a"
+          },
+          {
+            "name": "data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+            "path": "data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "Barcode",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Specificity",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Reactivity",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Barcode_Sequence",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Clone",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "name",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "RNA",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py",
+            "line": 52,
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+            "readerOptions": {},
+            "headerSHA256": "b06d0aa8c2c6d0b9c8393795f63ab2ae675d3f5dc2ac9a1f1d9e8a539d52f8c4"
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "28.3",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:17:15Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:23:07Z",
+        "url": "https://openalex.org/W3129866267",
+        "cited_by_count": 596,
+        "fwci": 21.9722,
+        "citation_normalized_percentile": 0.99829983,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 69.99149915,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 0,
+          "usability": 40,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.99149915,
+          "categoryGap": 5
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      }
     },
     {
       "id": "scvi-2018",
@@ -144147,7 +147263,853 @@
           ],
           "url": "https://github.com/Teichlab/thymus_spatial_atlas/tree/main/manuscript/ManuscriptFigures/Figure2"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "adata_full_rev_2_clean.h5ad\n.../clean/HTSA_CITE_anno.csv\nadata_full_rev_3_clean.h5ad\ndynamic input path\n.../HTSA_CITE_anno.h5ad\nadata_full_rev_4_clean.h5ad\nadata_full_rev_4_clean.h5ad\nadata_full_rev_4_clean_scvi.h5ad",
+        "files": [
+          {
+            "name": "adata_full_rev_2_clean.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 29；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": ".../clean/HTSA_CITE_anno.csv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "csv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 35；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "adata_full_rev_3_clean.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 467；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "dynamic input path",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "unknown",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 485；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": ".../HTSA_CITE_anno.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 489；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "adata_full_rev_4_clean.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 527；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "adata_full_rev_4_clean.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 721；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "adata_full_rev_4_clean_scvi.h5ad",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "h5ad",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb；读取行 742；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/thymus_spatial_atlas/blob/24c1a479f19d3847e5c0a307d43fe8b051fd6817/manuscript/Annotation%20and%20loading/Step_5_update_multilevel_annotation_and_plot-github.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "pdf.fonttype",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.sans-serif",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4_explore",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_cell_type_level_4",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_4",
+                "line": 168,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_3",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_2",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_1",
+                "line": 399,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0",
+                "line": 437,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_new",
+                "line": 450,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "anno_CITE_4v5",
+                "line": 454,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_level_0_old",
+                "line": 455,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation_level_4",
+                "line": 456,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_expression",
+                "line": 511,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ps.fonttype",
+                "line": 674,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "study",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "human-lung2020": {
       "tree": "patient-specific annotated Seurat objects（具体文件名待核）",
@@ -149021,7 +152983,535 @@
           ],
           "url": "https://github.com/YosefLab/totalVI_reproducibility"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "data/metadata/spleenLN111/hashtag_labels.csv\ndata/metadata/spleenLN206/hashtag_labels.csv\ndata/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv\ndata/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+        "files": [
+          {
+            "name": "data/metadata/spleenLN111/hashtag_labels.csv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "csv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py；读取行 47；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/spleenLN111/hashtag_labels.csv",
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "data/metadata/spleenLN206/hashtag_labels.csv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "csv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py；读取行 48；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/spleenLN206/hashtag_labels.csv",
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "csv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "真实文件表头已读取；含义/单位仍待核",
+            "fields": [
+              [
+                "TotalSeq_Barcode",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "name_206",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "name_111",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ]
+            ],
+            "preview": "仅真实列名，不含虚构示例值",
+            "csv": "TotalSeq_Barcode\nname_206\nname_111",
+            "mapping": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py；读取行 49；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/protein_metadata/TotalSeq_ADT206_ADT111_matched.csv",
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "csv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "真实文件表头已读取；含义/单位仍待核",
+            "fields": [
+              [
+                "Barcode",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Specificity",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Reactivity",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Barcode_Sequence",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Clone",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "name",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "RNA",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ]
+            ],
+            "preview": "仅真实列名，不含虚构示例值",
+            "csv": "Barcode\nSpecificity\nReactivity\nBarcode_Sequence\nClone\nname\nRNA",
+            "mapping": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/data_filtering_scripts/spleen_lymph.py；读取行 52；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/YosefLab/totalVI_reproducibility/blob/27d65a9c49182f39df0c4325249bc7dc8e663dd0/data/metadata/protein_metadata/TotalSeq_ADT111_barcodes_RNA_20190717.csv",
+            "observedFieldReferences": [
+              {
+                "name": "protein_expression",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "protein_names",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_protein_counts",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_proteins",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_hash_id",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch_indices",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hash_id",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "percent_mito",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "batch",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable_mean_variance",
+                "line": 257,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "encode",
+                "line": 275,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hvg_encode",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "version",
+                "line": 305,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hash_ID",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_206",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name_111",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature_types",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 84,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "scvi-2018": {
       "tree": "选图直接输入待定位",
@@ -166077,7 +170567,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T07:22:33Z",
+  "generatedAt": "2026-10-12T07:23:16Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -166100,7 +170590,7 @@
           "source_refresh_failed",
           "no_final_version",
           "selected_figure_missing",
-          "ai_transient_failure"
+          "ai_missing"
         ]
       },
       {
@@ -166242,17 +170732,7 @@
       {
         "doi": "10.1038/s41586-024-07944-6",
         "reasonCodes": [
-          "metadata_unchecked",
-          "source_refresh_failed",
-          "article_unchecked",
-          "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "input_undocumented"
         ]
       },
       {
@@ -166383,17 +170863,10 @@
       {
         "doi": "10.1038/s41592-020-01050-x",
         "reasonCodes": [
-          "metadata_unchecked",
           "source_refresh_failed",
-          "article_unchecked",
+          "no_final_version",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "ai_missing"
         ]
       },
       {
@@ -166491,13 +170964,13 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:22:36Z",
+    "updatedAt": "2026-10-12T07:23:17Z",
     "status": "active",
     "endReason": "",
     "batchCount": 8,
-    "checkpointCount": 16,
-    "requests": 529,
-    "aiAttempts": 22,
+    "checkpointCount": 17,
+    "requests": 606,
+    "aiAttempts": 23,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -166505,9 +170978,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 40,
-    "processedCount": 35,
-    "remainingCount": 18,
-    "inFlightCount": 5,
+    "processedCount": 40,
+    "remainingCount": 13,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
