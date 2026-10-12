@@ -17401,12 +17401,24 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "authentication_error"
+          "ai": "generated"
         },
-        "errors": [
-          "ai: authentication_error"
-        ],
-        "lastCheckedAt": "2026-10-11T11:17:21Z"
+        "errors": [],
+        "lastCheckedAt": "2026-10-12T07:22:20Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:20Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:22:20Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 0,
+          "lastAttemptAt": "2026-10-12T07:22:27Z",
+          "status": "complete",
+          "reasonCodes": [],
+          "sourceGapScans": {}
+        }
       },
       "pmcid": "PMC10154228",
       "pmid": "37118510",
@@ -17902,7 +17914,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T11:17:16.083730+00:00",
+        "retrievedAt": "2026-10-12T07:22:17.760646+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -19427,7 +19439,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -19443,11 +19456,11 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T10:48:02Z",
+        "retrievedAt": "2026-10-12T07:22:20Z",
         "url": "https://openalex.org/W4313430490",
         "cited_by_count": 188,
-        "fwci": 10.2413,
-        "citation_normalized_percentile": 0.99273216,
+        "fwci": 10.2305,
+        "citation_normalized_percentile": 0.99272409,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [
@@ -19455,7 +19468,7 @@
         "prediction"
       ],
       "selectionScore": {
-        "total": 96.9636608,
+        "total": 96.96362045,
         "components": {
           "topic": 12,
           "method": 15,
@@ -19463,24 +19476,59 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.9636607999999995,
+          "normalizedCitationPreference": 4.96362045,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
-        "status": "authentication_error",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "脑神经发生区域的细胞类型特异性衰老时钟:量化衰老与年轻化",
+        "summary_zh": "该论文发表于 Nature Aging(2022-12-19,DOI:10.1038/s43587-022-00335-4),基于单细胞转录组构建细胞类型特异性衰老时钟,用于刻画脑神经发生区域的衰老与年轻化。研究对 28 只小鼠(3.3 至 29 月龄)的 SVZ 神经发生区域进行 10x Genomics 单细胞转录组测序,共获得 21,458 个高质量细胞(至少检测到 500 个基因),并训练单细胞回归模型预测实际年龄与生物学年龄(神经干细胞增殖能力)。图注显示时钟可推广至独立队列、其他脑区(海马齿状回)及其他物种,并用于量化异时异体共生与运动两种干预带来的转录组年轻化。提供的证据还包含若干绘图脚本的静态观察(如 UpSet 图与效应比较点图/柱状图脚本),但作者代码未运行,静态检查不构成复现验证。",
+        "learning_points": [
+          "以单细胞转录组数据构建细胞类型特异性的衰老时钟,可区分不同细胞类型的衰老特征(Fig. 1 图注)。",
+          "训练数据来自 4 个独立小鼠队列的 SVZ 神经发生区域,年龄覆盖 3.3 至 29 月龄,同一队列样本用 LMO 标记(MULTI-seq)多重混样(Fig. 1a 图注)。",
+          "UMAP 展示 21,458 个高质量细胞,每个点代表一个至少检测到 500 个基因的细胞转录组,并按年龄与预测细胞周期状态着色(Fig. 1b–d 图注)。",
+          "采用 BootstrapCells 策略:每个细胞类型与样本组合抽样 15 个细胞合并为一个 BootstrapCell,重复 100 次,使各 SVZ 样本在训练数据中权重相等(Fig. 1e 图注)。",
+          "时钟可推广至独立数据集(Dulken 等数据)与其他神经发生区域(Harris 等海马齿状回数据),用于区分年龄并评估生物学年龄预测(Fig. 2 图注)。",
+          "可分析时钟所依赖的基因:以环形图展示各基因权重与随年龄表达变化方向,并用 UpSet 图展示细胞类型特异性时钟基因集的交集(Fig. 3 图注)。",
+          "可用于量化干预效果:异时异体共生与运动均能逆转神经发生区域的转录组衰老,但方式不同(Fig. 4 图注及摘要)。",
+          "绘图脚本静态观察显示,UpSet 图与效应比较图分别读取模型/预测结果 RDS 与 CSV 文件并输出 PDF(script-0 至 script-3)。"
+        ],
         "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或结果一致(inspection-boundary)。",
+          "输入数据的尺度、图号与具体图表的对应关系在证据未明示处保持未知(inspection-boundary)。",
+          "AI 注释仅为待核学习材料,不能替代原始论文与代码的核验(inspection-boundary)。",
+          "Fig. 1 图注文本在 f 处被截断,SVZ 增殖比例的具体内容未知(figure-0)。",
+          "Fig. 3 图注文本在末尾被截断,其他时钟的对应内容未知(figure-2)。",
+          "Fig. 4 图注文本在末尾被截断,各小鼠密度图与队列细节未知(figure-3)。",
+          "脚本仅提供静态观察到的读取与保存路径,未展示统计方法、参数与运行结果(script-0 至 script-3)。",
+          "证据未提供期刊指标、许可信息或原图与代码的逐图对应关系,相关事项未知。",
+          "证据未包含其他物种推广的具体数据与结果,无法评估其可推广程度(figure-1 仅涉及小鼠数据)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
-        "error_reason": "http_401",
-        "http_status": 401,
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:22:27Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "9498c9fc0f78794db25e6af30355f2c6d0111998155586baac24f7b2972cd257",
-        "summary_fingerprint": "28eedefcbb787a12973eb302d05b8c548296f27e981f81e87db90f1af95adeb8"
+        "summary_fingerprint": "28eedefcbb787a12973eb302d05b8c548296f27e981f81e87db90f1af95adeb8",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -76679,11 +76727,861 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:22:10Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:10Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:22:10Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:22:17Z",
+          "status": "pending",
+          "reasonCodes": [
+            "selected_figure_missing"
+          ],
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T08:22:17Z"
+        }
+      },
+      "pmcid": "PMC8426186",
+      "pmid": "34497389",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/PMC8426186.1.xml?md5=544aa80cf7191c3a0f378980f13598b6",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Intestinal cellular census throughout life.a, Schematic of human gut tissue sampling. Number of donors sampled for scRNA-seq is given. Mid., middle; prox., proximal; term., terminal; mLN, mesenteric lymph node; jej., jejunum; duo., duodenum; trans., transverse; asc., ascending; desc., descending; sig., sigmoid. b, Relative proportions of cell lineages at each developmental stage. NK, natural killer; CD, inflammatory bowel disease. c, Proportions of BEST4-expressing enterocytes among epithelial cells in scRNA-seq data of each tissue region and at each developmental stage. Ile., ileum; app., appendix; cae., caecum; rec., rectum. d, Expression of BEST4 in histological sections, from https://proteinatlas.org48 (Supplementary Table 8, n = 2 biologically independent samples for each region). Scale bars, 50 µm. e, Dot plot with relative expression of selected genes within BEST4 epithelial cells from different locations and ages. Key genes are highlighted in red, and the full Milo analysis can be found in Extended Data Fig. 3d.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig1_HTML.jpg?md5=a7d48cd1630d36e52e223e16720380bb",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Epithelial cells and FCGR2A signalling in tuft cells.a, b, Uniform manifold approximation and projection (UMAP) of fetal (a) and postnatal (b) epithelial cell types. Key cell types are circled with a dashed line and arrows depict paths of differentiation towards secretory and absorptive enterocytes as determined by scVelo. M cells, microfold cells; TA, transit-amplifying. c, Dot plot of TMPRSS2 and ACE2 expression in epithelial cells in the fetal intestine as in a. d, UMAP of enteroendocrine (EEC) and enterochromaffin (EC) cell subsets. Arrows depict summarised scVelo differentiation trajectories. C9orf16 is also known as BBLN. e, Heat map of genes that change along the differentiation trajectory from NEUROG3-expressing progenitors to enterochromaffin cells (red arrow in d). Arrows indicate genes that have known associations with enterochromaffin cell differentiation. f, Dot plot with expression of molecules upstream or downstream of the PLCG2 pathway in tuft cells and pooled absorptive (TA and enterocytes) and secretory (Paneth, goblet and EEC) cells. g, Per cent expression of Fcγ receptor by SiglecF+EpCAM+ and SiglecF−EpCAM+ cells in wild-type mice determined by flow cytometry (individual points represent biological replicates; n = 4). Using a two-way ANOVA we observe significant interaction between Fcγ receptor expression (F(3, 39) = 42.29, P = 3.05 × 10−11). Post-hoc analysis showed significant differences between non-Tuft epithelial cells and Tuft cells for FcγRIIB (mean difference = 2.80, 95% CI [1.80, 3.81], P < 0.0001) and FcγRIIB/III (mean difference = 4.88, 95% CI [3.88, 5.89], P < 0.0001) expression. ****Padj < 0.0001 values corrected with Tukey’s test for multiple comparisons. h, Schematic of proposed signalling pathways in tuft cells. RTK, receptor tyrosine kinases.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig2_HTML.jpg?md5=9088f5750bfc3fbcd87d0be54f96b5c0",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cells of the developing enteric nervous system.a, b, UMAP of enteric neural crest cells (ENCC) and their progeny at 6–11 (a) and 12–17 (b) PCW. Overlaid arrows depict scVelo trajectories, with major neuronal branches shown as A and B. Marker genes for populations are listed. Branch A2 and A3 subsets were not observed at 12–17 PCW, possibly because they were outnumbered by the glial populations. c, d, Multiplex smFISH staining of SCGN branch A1, GRP branch A2/A3 and BNC2 branch B1/2 developing ELAVL4 neurons (arrows, n = 2) in the 15 PCW ileum (scale bars, 100 µm) (c) and glia 1 (DHH, MPZ, SOX10) cells in the mesentery (scale bars: main, 100 µm; expansion, 30 µm. n = 2 (d)). n represents the number of biological replicates across regions. e, Heat map showing the mean expression of genes associated with HSCR across intestinal regions and developmental stages. iMN, inhibitory motor neuron; IPAN, primary afferent neurons; IN, interneurons, int., intestine.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig3_HTML.jpg?md5=c05dba548b27b3e7cd86caf48aa17eb5",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Lymphoid tissue organogenesis programs adopted in Crohn’s disease.a, UMAP of T and innate cells in scRNA-seq data across development. Dotted line denotes LTi-like cells and listed are characteristic genes. b, Schematic showing expression signatures of identified LTi-like states. c, Multiplex smFISH of 15 PCW ileum showing proximity of RORCCXCR5-expressing LTi-like cells to CXCL13-expressing mLTo cells (n = 2 biological replicates across regions). Arrows highlight cells of interest. Scale bars: main, 100 μm; expansion, 50 μm. d, UMAP of stromal cell types across development. The dotted line highlights key lineages. e, Spatial mapping of cell types from the scRNA-seq data to spatial transcriptomics data of 17 PCW terminal ileum using cell2location34. Estimated abundance for cell types (colour intensity) across locations (dots) is overlaid on a histology image for LEC2 (left), LTi-like ILC3 (middle) and microfold (right) cells. f, Heat map showing top cell types across fetal, paediatric (healthy and Crohn’s disease) and adult data that are enriched for gene expression associated with either Crohn’s disease or ulcerative colitis (UC). All cell types listed are FDR < 10% for Crohn’s disease. Asterisks denote cell types with FDR < 10% for ulcerative colitis. CLP, common lymphoid progenitor.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig4_HTML.jpg?md5=0356c7648a459ff4a89ba48e142d9662",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Data quality control.a, Schematic showing tissue processing strategy for second trimester fetal, paediatric and adult scRNA-seq samples. After enzymatic dissociation, either total fraction was loaded onto a 10x Genomics Chromium chip or CD45+/− cell fractions were separated using magnetic cell sorting (MACS) and both fractions were loaded on the 10x Genomics Chromium chip separately. Lymph nodes were processed without enrichment. Second trimester fetal and adult cell samples were processed using 5ʹ v2 10x Genomics Chromium kits (Methods). b, Pre-processing and quality control of single-cell RNA-seq data generated in this study and described previously1. In short, four datasets—namely first trimester fetal, second trimester fetal, paediatric healthy and Crohn’s disease, and adult—were pre-processed separately (including quality control, soupX analysis and scrublet doublet removal). Firstly, dimension reduction, clustering and annotation by cell lineage was performed on each dataset separately. Each cell lineage was sub-clustered and a fine-grained cell type and cell state annotation was performed based on marker gene expression. The four datasets were then merged together and each lineage was sub-clustered to unify cell type labels where appropriate. UMAP visualizations show the combined dataset coloured by sample age, enrichment fraction and donor name. c, UMAP visualization of cellular landscape of the human intestinal tract coloured by cellular lineage. d, Forest plot showing the relative importance (explained standard deviation) of each technical/biological factor on the cell type proportion. The 95% confidence intervals were computed from n = 1,431 data points (9 cell types × 159 samples). See Method section for more details. e, Dot plot in which the fold change represents the enrichment (or depletion, low fold change in blue) of cells compared with baseline. The LTSR value represents statistical significance of the fold change estimate ranging from 0 to 1, where 1 represents a confident estimate. See Method section for more details. f, Bar plots with relative proportion of cell lineages in each 10x Genomics Chromium run grouped by anatomical region within the scRNA-seq dataset as in Fig. 1b. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig5_ESM.jpg?md5=c85b02cc992860de0dc7de4d43cc3f37",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Cell types defined in the study.a, Dot plot for expression of marker genes of cell types and states in each cell lineage in the scRNA-seq dataset. Relates to Supplementary Tables 3, 4.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig6_ESM.jpg?md5=488d3f72339dd9d8f79d12a017cddc55",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Region variability in BEST4 enterocytes.a, Expression of CSTE (antibody: CAB032687, n = 3 biologically independent samples for each region) in gut histological sections from proteinatlas.org. Scale bar = 50 µm. b, UMAP visualization of BEST4 enterocytes in scRNA-seq dataset coloured by key marker BEST4/OTOP2 expression and region group (fetal and paediatric/adult). c, Volcano plot for differential abundance (DA) between cells from the small intestine and large intestine as in b. Each point represents a neighbourhood of BEST4 enterocytes (FDR: False Discovery Rate, logFC: log-Fold Change) for adult (red) and fetal samples (blue). The dotted line indicates the significance threshold of 10% FDR. d, Heat map showing the average neighbourhood expression of genes differentially expressed between DA neighbourhoods in adult BEST4 enterocytes (1,502 genes) as in c. Expression values for each gene are scaled between 0 and 1. Neighbourhoods are ranked by log-fold change in abundance between conditions. Positive log-fold change is small intestine neighbourhoods and negative is large intestine neighbourhoods. e, Expression of CFTR (antibody: CAB001951/HPA021939, n = 3 biologically independent samples for each region) in small intestinal (top) and colonic (bottom) histological sections from Human Protein Atlas (proteinatlas.org). Scale bar = 50 µm. f, Immunohistochemistry staining of BEST4 (HPA058564) and CFTR (HPA021939) in small intestinal sections as in e. Black arrows point to cells with goblet cell morphology and red arrows point to cells expressing either BEST4 or CFTR. Scale bar = 20 µm. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig7_ESM.jpg?md5=f89b6a3da80e6f1718b76645647ee11a",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Function of BEST4 epithelial cells.a, b, Gene ontology terms from genes upregulated in BEST4 enterocytes from adult small (a) versus large (b) intestines as determined from Milo analysis13. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig8_ESM.jpg?md5=d946b05bfc273f2e2a6cdb545a96e0c1",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "BEST2+ goblet cells.a, UMAP visualization of expression of MUC2 (indicating goblet cells) and BEST2 in paediatric/adult epithelial cells from scRNA-seq dataset. b, Bar plot of the number of goblet cells captured across paediatric/adult intestinal tissues. c, Dot plot of gene expression correlating with BEST2 expression across epithelial cell types from scRNA-seq dataset calculated using Jaccard Similarity measure. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig9_ESM.jpg?md5=30ab677bc41f008d36e0dbb1a5bf5778",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Epithelial cell types throughout intestinal life.a, UMAP of fetal (top) and pooled paediatric and adult (bottom) epithelial cells as in Fig. 2a, b coloured by gut region. b, Relative proportions of cell subtypes within total epithelial lineage as in Fig. 2a, b separated by donor age (row). Unit of age is years unless specified as weeks. c, Dot plot of TMPRSS2 and ACE2 expression by epithelial cells of the paediatric (left) and adult (right) intestine. d, e, UMAP of enteroendocrine cells (subsetted from Fig. 2a, b) coloured by d, (top) developmental age of donor and (bottom) normalised expression of key genes of NPW+ enterochromaffin cells and e, overlaid with calculated RNA velocity (arrows) and pseudotime (colour). f, Immunohistochemical staining of KLK12 (antibody: CAB025473, n = 3), AFP (antibody; HPA010607, n = 4), CES1 (antibody; HPA012023, n = 10), SLC18A1 (antibody; HPA063797, n = 12), GCH1 (antibody; HPA028612, n = 8), NPW (antibody; HPA064874, n = 8) in intestinal sections from Human Protein Atlas (proteinatlas.org). Red arrows highlight positive staining and n represents biological replicates across intestinal regions. g, Heat map of top differentially expressed genes in tuft cells across epithelial cell types in scRNA-seq dataset. The legend indicates whether the gene has a known association with tuft cells (purple) or are novel (orange). h, Immunohistochemical staining of HPGDS (antibody: HPA024035, n = 8), PSTPIP2 (antibody: HPA040944, n = 8), BMX (antibody: CAB032495, n = 7), MYO1B (antibody: HPA060144, n = 6), FYB1 (antibody: CAB025336, n = 7), SH2D7 (antibody: HPA076728, n = 7), PLCG2 (antibody: HPA020099, n = 8) protein expression in small intestine from Human Protein Atlas (proteinatlas.org). n represents biological replicates across intestinal regions. i, Dot plot showing expression of ITAM- and ITIM-linked receptors and receptor tyrosine kinases across tuft cells and pooled absorptive (TA and enterocytes) and secretory (Paneth, goblet and EECs) epithelial cells. j, Representative flow cytometry plots of FcγRII/III staining on EpCAM+SiglecF− (non-tuft epithelial cells) and EpCAM+SiglecF+ (tuft cells) cells and isotype staining of EpCAM+SiglecF+ cells. Numbers show the percentage of cells within the gate out of the total population. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig10_ESM.jpg?md5=189893051648896ad29f6d7f99590015",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Tuft cells and PLCG2 activation.a, Heat map of expression of FCGR2A and downstream signalling molecules for epithelial cells with B and myeloid cell types included for reference. b, Representative brightfield images of paediatric intestinal organoid line (derived from healthy donors) in culture medium (undifferentiated) or differentiation medium (differentiated). Scale bar = 400 μm. c, Bar plot of relative expression of LGR5 and MUC2 (left) (n = 3 from one patient) and other key mRNA (right) by intestinal organoids as in b (n = 6 from two patients). Mean with standard error of the mean (s.e.m.) is shown in bar plots, and statistics are calculated by multiple t-test analysis: *P < 0.05 and **P < 0.005. d, Representative bright-field images of paediatric intestinal organoid line (derived from healthy donors) without (NT) or with stimulation with inflammatory recombinant human proteins IFNγ or TNF. e, Heat map of normalised gene expression in scRNA-seq data of organoids from Crohn’s disease (n = 1) and control (n = 3) paediatric biopsies stimulated with inflammatory cytokines as in d. f, Per cent expression of indicated Fcγ receptors by SiglecF+EpCAM+ small intestinal tuft cells in wild type (n = 5) and DSS-treated (n = 3) mice from a single experiment determined by flow cytometry. Mean with standard deviation is shown and statistics are calculated by multiple t-test analysis **P < 0.01; NS = not significant. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig11_ESM.jpg?md5=b9a821160648a4ff47d75623e7834ac8",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Cell types in the developing enteric nervous system.a, Multiplex smFISH images of SOX10,ERBB3,MPZ,PLP1 expressing ENCCs in the human small and large intestine at 6.5 PCW (Scale bar panels: main = 100 µm, zoom = 20 µm, n = 6). n here and below are biological replicates across regions. b, UMAP visualization of neural lineage cells in 6–11 and 12–17 PCW timepoints coloured by glial or neuronal score (left), cell cycle phase (middle) or pseudotime (right). Arrows show differentiation trajectory inferred from scVelo arrows as in Fig. 3a, b. c, Bar plot with relative abundance of cell types among ENCC-lineage populations as described in (Figure 3a, b) across intestinal regions and developmental timepoints. d, Heat map showing percentage of neural cells (6–17 PCW) described in this study (columns) matching with cells described in ref. 3 (rows). e, Multiplex smFISH imaging of SCGN/BNC2-expressing enteric neurons (left, scale bar = 50 µm) and BMP8B-expressing Glia 2 subtype (right, scale bar panels main = 100 µm, zoom = 50 µm) in the adult sample (55-60 years, terminal ileum, n=1) and f, Multiplex smFISH of DHH -expressing Glia 1 cells (n=2, left, scale bar panels main = 100 µm, zoom = 10 µm) and BMP8B-expressing Glia 2 subtype (n=2, right, scale bar panels main = 100 µm, zoom = 50 µm) in the fetal myenteric plexus from 15 PCW small intestines. The boxed area is shown at higher magnification below, and n represents biological replicates across regions. g, HOX gene expression across neural subsets in 6–11 PCW samples. In the red box are Glia 1 (DHH) cells from all regions. Genes highlighted in red are colon-specific. h, Dot plot of key HSCR-associated ligand-receptor genes across the entire fetal scRNA-seq dataset. FPIL, fetal proximal ileum; FMIL, fetal middle ileum; FTIL, fetal terminal ileum; FLI, fetal large intestine. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig12_ESM.jpg?md5=e2e3f172352a71529ed91a4f18babc0e",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Annotation of developing enteric neural cells.a, b, UMAP visualization of neural subsets combined from 6–17 PCW coloured by cell type annotation (a) or developmental stage (b). c, Bar plot showing regional distribution of neural subsets at 6–17 PCW. d, Dot plots with expression of key genes used to define enteric neuron subsets found at 6–11 PCW (above) and 12–17 PCW (middle) and glial cells across 6–17 PCW. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig13_ESM.jpg?md5=948182daaeaffe6b8c06d62f9dcedeee",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Identification of LTi-cell-like subset.a, Photo images of human intestinal gut and developing lymph nodes (arrows) at 8–17 PCW. Scale bar = 1 cm. b, Heat map of relative expression of key LTi defining and marker genes expressed by LTi-like cell types, NK cells and adult ILC3 as in Fig. 4a. Genes in red are highlighted in the schematic in Fig. 4b. c, Bar plot with productive TCRαβ chain in fetal T and innate lymphoid cell types as determined by V(D)J sequencing paired with scRNA-seq data. d, Dot plot of scaled expression of selected differentially expressed genes in fetal immune subsets from scRNA-seq dataset. e, Dot plot of expression of selected LTi-like genes in fetal liver ILCPs compared to LTi-like subsets in the gut. f, Bar graph showing the relative proportion of cell types among total T and innate lymphocyte population across developmental and adult gut regions and ages. FPIL, fetal proximal ileum; FMIL, fetal middle ileum; FTIL, fetal terminal ileum; FLI, fetal large intestine; FMLN, fetal mesenteric lymph node; DUO, duodenum; JEJ, jejunum; ILE, ileum; APD, appendix; CAE, caecum; ACL, ascending colon; TCL,transverse colon; DCL,descending colon; SCL,sigmoid colon; REC, rectum; MLN, mesenteric lymph node. g, Representative multiplex smFISH staining of fetal ileum tissue at 15 PCW showing three LTi-like subsets: NCR2+ ILC3, IL17A-expressing NCR− ILC3and SCN1B-expressing ILCP cells (Scale bar panels: main = 20 µm, zoom =5 µm, n = 2, biological replicates across regions). h, UMAP visualization of fetal T and innate lymphoid cells (subsetted from Fig. 4a) coloured by cell type and overlaid with RNA velocity arrows. Inset panel shows ILCP and LTi-like NCR+ ILC3 cells. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig14_ESM.jpg?md5=4e1bfdd2f4e32924385e67ef1affb942",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 11",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "11",
+              "panel": ""
+            },
+            "caption": "LTi-like cells in plate based single-cell sequencing data of sorted cells from the human fetal intestine.a, UMAP visualization and feature plots of full-length Smart-seq2 data of flow cytometry-sorted CD45+ cells from second-trimester fetal tissue coloured by intestinal region or Leiden clustering. b, Dot plot of key marker gene expression in T and innate lymphoid cell subsets captured in Smart-seq2 experiment as in a. c, Bar plot of productive TCRαβ and TCRγδ chain in fetal T and innate lymphoid cell types as in a. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig15_ESM.jpg?md5=701ec585e7572a81e8bf2be9142c92f5",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig16",
+            "label": "Extended Data Fig. 12",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "12",
+              "panel": ""
+            },
+            "caption": "Endothelial populations in the intestinal tract.a, UMAP visualization of endothelial cell populations in fetal, paediatric and adult scRNA-seq data coloured by cell-cycle score (left) or annotation (right). Dashed line outlines lymphatic endothelial cell (LEC) subsets. b, Relative proportions of subtypes within total endothelial lineage separated by intestinal region (above) and intestinal region (below). Unit of age is years unless specified as weeks. Region names are: FPIL, fetal proximal ileum; FMIL, fetal middle ileum; FTIL, fetal terminal ileum; FLI, fetal large intestine; FMLN, fetal mesenteric lymph node; DUO, duodenum; JEJ, jejunum; ILE, ileum; APD, appendix; CAE, caecum; ACL, ascending colon; TCL, transverse colon; DCL, descending colon; SCL, sigmoid colon; REC, rectum; MLN, mesenteric lymph node. c, Heat map with top differentially expressed genes in the LEC subsets. d, Violin plot of NF-kB signalling activation score across endothelial subpopulations. e, Dot plot with scaled expression of selected genes involved in lymphoid tissue organization and immune cell recruitment amongst lymphatic endothelial cell subsets and mLTo cells. f, H&E staining of cross-section of fetal colon (15 PCW). Magnified panels show developing vessels (Scale bar panels: main = 200 µm, zoom = 20 µm, n = 9). g, Representative multiplex smFISH of PROX1 lymphatic vessels, CXCR5 ILC3 subsets and CXCL13-expressing mLTo cells in the human fetal intestine at 15 PCW (scale bar = 100 µm, n = 1). For f, g, n represents biological replicates across regions. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig16_ESM.jpg?md5=23a86d764f9cf0a276056d36a5d6d80d",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig17",
+            "label": "Extended Data Fig. 13",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "13",
+              "panel": ""
+            },
+            "caption": "Stromal in the intestinal tract.a, Heat map of top differentially expressed genes between follicular dendritic cells (FDCs) and T reticular cells (TRCs) and related stromal subsets. Each row is a cell. Arrows highlight key genes discussed in the text. b, Bar graph showing the relative proportion of cell types among the total stromal lineage across fetal and adult gut regions (top) and developmental ages (bottom). Unit of age is years unless specified as weeks. Region names are: FPIL, fetal proximal ileum; FMIL, fetal middle ileum; FTIL, fetal terminal ileum; FLI, fetal large intestine; FMLN, fetal mesenteric lymph node; DUO, duodenum; JEJ, jejunum; ILE, ileum; APD, appendix; CAE, caecum; ACL, ascending colon; TCL, transverse colon; DCL, descending colon; SCL, sigmoid colon; REC, rectum; MLN, mesenteric lymph node. c, Dot plot comparing key defining genes expressed across populations in a and fetal mesenchymal lymphoid tissue organiser (mLTo) cells. d, Bar plot showing number of mLTo in scRNA-seq dataset and coloured by gut region. e, UMAP visualization of stromal cells as in Fig. 4d showing co-expression of CXCL13, CCL19, and CCL21. f, Heat map of top differentially expressed genes of mLTo cells between different intestinal regions. Each row is a cell. g, Heat map of mean expression of ligand-receptor pairs in mLTo, LTi-like and LEC subset from scRNA-seq dataset as identified using CellphoneDB. h, Heat maps showing mean expression of curated immune recruitment signal genes by selected fetal stromal, epithelial and endothelial cell types (top) and their receptor expression in the immune cell types of the fetal gut and mLNs. Red arrows in f and h link cognate ligand receptor pairs. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig17_ESM.jpg?md5=91a72b1f7e95621975d3e10575b8831b",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig18",
+            "label": "Extended Data Fig. 14",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "14",
+              "panel": ""
+            },
+            "caption": "Intestinal B cells and BCR analysis.a, UMAP visualizations of scRNA-seq of subsetted B lineage cells from fetal samples. CLP, common lymphoid progenitor. b, Heat map with mean expression of differentially expressed gene in fetal B cell populations as in a. c, Violin plot of MHCII expression score of fetal B cell subsets as in a. c–e, UMAP visualization of fetal B lineage cells as in a coloured by (d) BCR isotype retrieved from 10x Genomics Chromium V(D)J sequencing and (e) 10x Genomics technology. f, UMAP visualizations of subsetted B lineage cells from paediatric and adult scRNA-seq samples. LZ, light zone; DZ, dark zone; GC, germinal centre. g, Relative proportions of subtypes within total B cell factions in the gut (above) and lymph nodes (below) separated by donor age (row) as in a and f. Unit of age is years unless specified as weeks. h, Estimated clonal abundances per donor for members of expanded B lineage cell clones in fetal and adult scRNA-seq datasets. i, Quantification of somatic hypermutation frequencies of IgH sequences from B lineage cells in fetal and adult scRNA-seq datasets as in h. j, k, Quantification of somatic hypermutation frequencies of IgH sequences (j) and estimated clonal abundances per donor for members of expanded B lineage cell clones (k) across fetal and adult gut regions. FPIL, fetal proximal ileum; FMIL, fetal middle ileum; FTIL, fetal terminal ileum; FLI, fetal large intestine; FMLN, fetal mesenteric lymph node; DUO, duodenum; JEJ, jejunum; ILE, ileum; APD,appendix; CAE, caecum; ACL,ascending colon; TCL, transverse colon; DCL, descending colon; SCL, sigmoid colon; REC, rectum; MLN, mesenteric lymph node. l, Binary count of co-occurrence of expanded B cell clones identified by single-cell V(D)J analysis shared across gut regions and donors. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig18_ESM.jpg?md5=76e537fa9d4081868f49a6a234237943",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig19",
+            "label": "Extended Data Fig. 15",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "15",
+              "panel": ""
+            },
+            "caption": "Ectopic lymphoid tissue formation in paediatric Crohn’s disease.a, Expression of mLTo gene markers by spatial coordinates in 10x Genomics Visium data (left) and abundance of mLTo and ILC3 cells as estimated by cell2location34 (right) across 17 PCW (top) and 13 PCW fetal ileum (bottom). White boxes highlight predicted developing SLO tissue zones. b, Spatial mapping of scRNA-seq data to 10x Genomics Visium data showing estimated abundance (colour intensity) of cell subsets (colour) in fetal terminal ileum from 17 PCW (top), ileum from 13 PCW (bottom). c, Abundances of cell types as identified using non-negative matrix factorization (NMF) in tissue zones from Visium data as in b. Dot plot shows NMF weights of cell types (columns) across NMF factors (rows), which correspond to tissue zones (normalized across factors per cell type by dividing by maximum values). d, Heat map showing mean probability of immune and stromal cell types matching between fetal and Crohn’s disease scRNA-seq datasets. e, Heat map with expression of cytokines and chemokines in cells involved in tertiary lymphoid organ development of fetal (black) and functionally related cell types in paediatric Crohn’s disease (red). f, Forest plot of top cell types across fetal, paediatric (healthy and IBD), and adult data enriched for expression of genes associated with either Crohn’s disease or ulcerative colitis. All cell types in red have FDR < 10%. The number of cells for each sample (n = 159 samples in total with complete metadata) and coarse-grain cell type (9 different cell types in total) combination was modelled with a generalised linear mixed model with a Poisson outcome. Error bars show standard error for each factor as estimated using the numDeriv package. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_Fig19_ESM.jpg?md5=35026a0ef556c58bb6ed48948725046f",
+            "articleURL": "https://www.nature.com/articles/s41586-021-03852-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al.. Cells of the human intestinal tract mapped across space and time. DOI: 10.1038/s41586-021-03852-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM1_ESM.pdf?md5=a3abc5ba14439166941c9ea93f69f735",
+            "license": "CC BY",
+            "sha256": "f15158f034fdb9b751ede37f688ee6b3f2a65221bb75dc84b99c47a26b024afe",
+            "status": "downloaded_private",
+            "bytes": 551222,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 10,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM2_ESM.pdf?md5=7e279241e93c4a6c1603eb78f3c22084",
+            "license": "CC BY",
+            "sha256": "c3e7ed3349300772c91799121e30da13f8c8bb77d793a91e754b4d5760da4bc9",
+            "status": "downloaded_private",
+            "bytes": 91750,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM3_ESM.xls?md5=374d1ce8956cdb1a16e2d3eca322c7e1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM4_ESM.xls?md5=4d2cde533473bd0acf3306e551595791",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM5_ESM.xls?md5=9f44edee648a16d788243a9ccfd7d22f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM6_ESM.xls?md5=97c05b67d3b8c72289ef41a4e2390b5f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM7_ESM.xls?md5=7ad1bd98e2b19994eec01269700d4113",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM8_ESM.xls?md5=f8b78f7ed1e8d0ed1bbe7a860e47a983",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM9_ESM.xls?md5=d920b03fd36ea75620bc28450d002cd8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM10_ESM.xls?md5=6c5de22ecbb2b0a9bab9094832c2ff46",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8426186.1/41586_2021_3852_MOESM11_ESM.pdf?md5=77174e5e6eac5a791019f7fd952d0277",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Requested figure reference could not be resolved; no substitute figure downloaded.",
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-12T07:22:08.269401+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Rasa Elmentaite; Natsuhiko Kumasaka; Kenny Roberts; Aaron Fleming; Emma Dann; Hamish W. King; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Teichlab/SpaceTimeGut",
+        "commit": "7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "08_MGT_heatmap_IBD_enrichment.ipynb",
+            "url": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb",
+            "sha256": "1c6160353d41745d7ac8c79869ec7f97b395af80c3c8986a5dd93b59f12adac0",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "/mnt/2021Jan02/figures/forest_GCST004132_CD.tsv",
+                "reader": "pd.read_table",
+                "line": 9,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {}
+              },
+              {
+                "path": "/mnt/2021Jan02/figures/forest_GCST004133_UC.tsv",
+                "reader": "pd.read_table",
+                "line": 10,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "/mnt/2021Jan02/figures/FDR.pdf",
+                "writer": "ax.figure.savefig",
+                "line": 36
+              }
+            ],
+            "fields": [
+              {
+                "name": "log OR_x",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FDR_x",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 9,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 10,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 36,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "01_MGT_Scrublet-soupx.ipynb",
+            "url": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/01_MGT_Scrublet-soupx.ipynb",
+            "sha256": "014937312c096bff32750484139da3444e588d5b04ba043a2a349f0eae74bab6",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "/mnt/2021Jan02/figures/forest_GCST004132_CD.tsv",
+            "path": "",
+            "reader": "pd.read_table",
+            "format": "tsv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "log OR_x",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FDR_x",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb",
+            "line": 9,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/mnt/2021Jan02/figures/forest_GCST004133_UC.tsv",
+            "path": "",
+            "reader": "pd.read_table",
+            "format": "tsv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "log OR_x",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FDR_x",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb",
+            "line": 10,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "56.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:18:23Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:22:10Z",
+        "url": "https://openalex.org/W3149417142",
+        "cited_by_count": 703,
+        "fwci": 26.2858,
+        "citation_normalized_percentile": 0.99872317,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 69.99361585,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.99361585,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "人类肠道细胞在空间与时间上的图谱绘制",
+        "summary_zh": "该论文(Nature,2021-09-08,DOI:10.1038/s41586-021-03852-1)利用单细胞RNA测序与抗原受体分析,对发育期及健康儿童和成人肠道多个解剖区域的近五十万个细胞进行细胞谱系绘制。图注显示其内容涵盖全生命周期的肠道细胞普查、上皮细胞与簇细胞中的FCGR2A信号、发育中肠神经系统的细胞、以及克罗恩病中采用的淋巴组织发生程序。作者代码未运行,仅做静态检查,因此不构成复现验证。",
+        "learning_points": [
+          "论文以单细胞RNA测序和抗原受体分析绘制人类肠道细胞图谱,覆盖发育期与儿童、成人多个解剖区域(evidence: publication, figure-0)。",
+          "Fig. 1 展示全生命周期肠道细胞普查,包括采样示意图、各发育阶段细胞谱系相对比例,以及BEST4表达肠上皮细胞在各组织区域和发育阶段上皮细胞中的比例(evidence: figure-0)。",
+          "Fig. 1 还包含BEST4在组织切片中的表达(引用proteinatlas.org,每个区域n=2个生物学独立样本)以及BEST4上皮细胞中选定基因相对表达的点图(evidence: figure-0)。",
+          "Fig. 2 聚焦上皮细胞与簇细胞中的FCGR2A信号,含胎儿与出生后上皮细胞类型的UMAP、TMPRSS2与ACE2表达点图、肠内分泌与肠嗜铬细胞亚群UMAP及分化轨迹热图(evidence: figure-1)。",
+          "Fig. 3 展示发育中肠神经系统的细胞,含6–11与12–17 PCW的肠神经嵴细胞及其子代UMAP、多重smFISH染色,以及与HSCR相关基因在各肠道区域和发育阶段平均表达的热图(evidence: figure-2)。",
+          "Fig. 4 展示克罗恩病中采用的淋巴组织发生程序,含T细胞与先天细胞UMAP、LTi样状态表达特征示意、多重smFISH、基质细胞类型UMAP、空间映射及胎儿/儿童/成人数据中与克罗恩病或溃疡性结肠炎相关基因富集的热图(evidence: figure-3)。",
+          "静态检查显示存在notebook 08_MGT_heatmap_IBD_enrichment.ipynb,读取forest_GCST004132_CD.tsv与forest_GCST004133_UC.tsv并保存FDR.pdf;另一notebook 01_MGT_Scrublet-soupx.ipynb无法解析(evidence: script-0, script-1)。",
+          "整理说明称作者notebook markdown描述生成UC-CD富集热图,读入两个forest文件并按索引合并,CD筛选log OR>0且FDR<0.1,列重命名为CD、UC(evidence: curated-note)。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不等于复现验证,不能宣称已复现或结果一致(evidence: inspection-boundary, script-0, script-1)。",
+          "输入数据尺度与图号对应关系未明示时保持未知(evidence: inspection-boundary)。",
+          "AI输出仅为待核学习注释,需人工核验(evidence: inspection-boundary)。",
+          "notebook 01_MGT_Scrublet-soupx.ipynb无法解析,其magic或动态语法需进一步审查(evidence: script-1)。",
+          "整理说明为notebook markdown的二手描述,未在本次检查中运行验证(evidence: curated-note)。",
+          "图注中部分内容(如Fig. 2 g)在提供的证据文本中被截断,完整细节未知(evidence: figure-1)。",
+          "各图对应的具体数据文件、参数与统计方法未在证据中完整给出,无法确认(evidence: figure-0, figure-1, figure-2, figure-3)。",
+          "未观察到期刊指标、许可或复现结果信息,均属未知(evidence: publication, inspection-boundary)。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:22:16Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "5023703938ce72d0058d11082cb9e6306533fb882c39f4ec06741cab4b30cab5",
+        "summary_fingerprint": "478ad3dedf40bbb90e5feb28255f4f94dd6d3beea23f1790a5a81a9fb574ae0c",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -76762,11 +77660,987 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:22:00Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:00Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:22:00Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:22:07Z",
+          "status": "pending",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "input_undocumented"
+          ],
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T08:22:07Z"
+        }
+      },
+      "pmcid": "PMC11166909",
+      "pmid": "38862494",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/PMC11166909.1.xml?md5=b30a45ad77c7ea4b522c176083666478",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Experimental design and overall pre- and post-timepoint comparisons.a Experimental design and workflow with representative tissue staining images (created with BioRender.com), b Uniform Manifold Approximation and Projection (UMAP) of all ROIs collected, c Volcano plot of overall post- vs. pre-spaceflight DEGs (using DESeq2 method), d Pathway enrichment analysis comparing DEGs from pre- and post-spaceflight skin tissues, visualizing normalized enrichment scores of MSigDB Hallmark pathways, and e Cell proportion comparisons between pre- and post-spaceflight samples (ns non-significant, *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, and ****p ≤ 0.0001 by Wilcoxon test, two-sided; boxplot shows median/horizontal line inside the box, the interquartile range/box boundaries, whiskers extending to 1.5 times the interquartile range, and outliers as individual points outside the whiskers; exact p values are included in the Source Data). Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_Fig1_HTML.jpg?md5=99b385919e2dafb97e94ee6a77f2081c",
+            "articleURL": "https://www.nature.com/articles/s41467-024-48625-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al.. Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight. DOI: 10.1038/s41467-024-48625-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Region-specific gene expression profile and cellular composition changes.a Volcano plot showing DEGs by ROI types—OE, IE, OD, and VA respectively; the number of DEGs were determined by cutoffs of adjusted p value < 0.1 and |log2FC| > 0.5 (using DESeq2 method), b UpSet plots comparing the intersections of region-specific DEGs, c Hallmark, non-germline gene set enrichment analysis across four ROI types; NES Normalized Enrichment Scores; Arrow indicates tissue locations, where OE is the outermost layer and VA is the innermost layer. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_Fig2_HTML.jpg?md5=08d43d7267128aec7b2a5ad8a5d6d579",
+            "articleURL": "https://www.nature.com/articles/s41467-024-48625-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al.. Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight. DOI: 10.1038/s41467-024-48625-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cellular microenvironment changes from spaceflight by tissue region.a Gene expression changes of interest, b fold change of proportions in post-flight samples relative to pre-flight samples, by compartments, c cell type correlation matrix changes. Black boxes represent undetermined spots (due to minimal cell counts); boxes with X marks represent correlations that did not pass statistical testing (p value < 0.05, Pearson correlation, two-sided). Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_Fig3_HTML.jpg?md5=edf9133de34cd3f76eb0148bbad101bf",
+            "articleURL": "https://www.nature.com/articles/s41467-024-48625-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al.. Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight. DOI: 10.1038/s41467-024-48625-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Skin metagenomics and transcriptomics analysis for skin-microbiota interaction map.a PCA across all metagenomic and metatranscriptomic (bacterial and viral reads) relative abundance features and all crew members pre- and post-flight, b Total number of bacterial and viral species with nonzero counts, c Relative abundances by sample and timepoint, grouped by family, d Changes in relative abundance before and after spaceflight, grouped by genus; statistically significant or previously reported microbes are visualized (two-sided Wilcoxon test across four crew members was performed to compare means between pre- and post-flight samples and to obtain p values, and error bars represent the standard error of the mean), and e Correlation across relative abundance of bacterial phyla identified by metagenomics data and known barrier/immune genes associated with skin diseases and disruptions. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_Fig4_HTML.jpg?md5=971488933e01085b8af8ead43010f7ab",
+            "articleURL": "https://www.nature.com/articles/s41467-024-48625-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al.. Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight. DOI: 10.1038/s41467-024-48625-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Changes in the skin immune system relates to peripheral blood immune cell changes.a Notable cytokine changes and locations from (a) skin transcriptomics data by region and, b cytokine assay from serum samples (sig. Indicates overall statistical significance of the cytokine levels in the postflight samples relative to the preflight samples, where red indicates significantly increased, and green means stable/no change; two-sided Wilcoxon test was done with the p value cutoff of 0.05), c Comparison of DEGs between PBMC multiome data and spatial transcriptomics data from VA ROIs, d Dot plots visualizing mRNA transcript expression levels (left) and gene activity score from ATAC signals (right), where preflight samples were collected 44 days before launch (L-44) and postflight samples were collected 1, 45, and 82 days post return (R + 1, R + 45, and R + 82, respectively), e Flight and cell type specific gene signature enrichment in spatial data by timepoint and ROI types, f gene signature enrichment analysis using gene signatures built from skin disease-related gene expression profiles; two-sided Wilcoxon test across four crew members and 95 ROIs was performed to obtain p value, where *p ≤ 0.05 and **p ≤ 0.01, and error bars represents standard deviation of the mean. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_Fig5_HTML.jpg?md5=7d726e0b56aa502cf8903897688e3a07",
+            "articleURL": "https://www.nature.com/articles/s41467-024-48625-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al.. Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight. DOI: 10.1038/s41467-024-48625-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM1_ESM.pdf?md5=54b5647ea69791a4da03f9b891cb6b2b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM2_ESM.pdf?md5=8bcce7532e6e3904efb7116906e0b2c6",
+            "license": "CC BY",
+            "sha256": "3eb560524dce0b8e5812accdbf2bc465e20d7922ab5e22cf25f043199c0c8653",
+            "status": "downloaded_private",
+            "bytes": 3455498,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 15,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM3_ESM.pdf?md5=c199257b2f55422f5fd6e9993cac1cbc",
+            "license": "CC BY",
+            "sha256": "bf58fbe141508cff2df38e2fe347d1aa6a7bfb0c6c833b1d612a583b5eb2b4c2",
+            "status": "downloaded_private",
+            "bytes": 55189,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM4_ESM.xlsx?md5=b993011ac10e56b76f436589b8a4deeb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM5_ESM.xlsx?md5=95128aca7c4bfb3ead38e37fde907b6a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM6_ESM.xlsx?md5=dbed6936015ed2e8478b5bc467c9daf5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM7_ESM.pdf?md5=a1d979c27846f8476e0c7749e744b6cb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11166909.1/41467_2024_48625_MOESM8_ESM.xlsx?md5=23fc58bd2d520c69c39d020918289068",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Requested figure reference could not be resolved; no substitute figure downloaded.",
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-12T07:21:57.274868+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jiwoon Park; Eliah G. Overbey; S. Anand Narayanan; JangKeun Kim; Braden T. Tierney; Namita Damle; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/jpark-lab/SpatialAnalysis",
+        "commit": "b27c71165cbd27fbd2dccba42370524e083f8d4b",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "sha256": "d8b3d13d3cc17060058ec0ed177a11c75edb32bf88ea7d2f5a4f1ce400ff7bff",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "../Data/GeoMx_merged_pub.RDS",
+                "reader": "readRDS",
+                "line": 31,
+                "status": "literal_path",
+                "format": "RDS",
+                "readerOptions": {}
+              },
+              {
+                "path": "../Data/i4GeoMxData_cellproportionestimates.RDS",
+                "reader": "readRDS",
+                "line": 32,
+                "status": "literal_path",
+                "format": "RDS",
+                "readerOptions": {}
+              },
+              {
+                "path": "../Data/Custom_GeneSets.RDS",
+                "reader": "readRDS",
+                "line": 315,
+                "status": "literal_path",
+                "format": "RDS",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 31,
+                "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd#L31"
+              },
+              {
+                "type": "io_reference",
+                "line": 32,
+                "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd#L32"
+              },
+              {
+                "type": "io_reference",
+                "line": 315,
+                "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd#L315"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "Park-CellReportsMedicine2022-Fig6/Fig6_plot.R",
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-CellReportsMedicine2022-Fig6/Fig6_plot.R",
+            "sha256": "aa9042d9a8eee5700e7612c4f6b8f749ff19a64fe14137a866ae9358a008cbfc",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "Fig3_data1.RData",
+                "reader": "load",
+                "line": 7,
+                "status": "literal_path",
+                "format": "RData",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "diseases",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltypes",
+                "line": 77,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 7,
+                "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-CellReportsMedicine2022-Fig6/Fig6_plot.R#L7"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "Park-NatureComms2022/HelperFunctions.R",
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/HelperFunctions.R",
+            "sha256": "73d90083d014bc36d40f72a036fe04c6ed5a64a59227078df8900e311a8383e1",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "padj",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 38,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvalue",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stat",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "../Data/GeoMx_merged_pub.RDS",
+            "path": "",
+            "reader": "readRDS",
+            "format": "RDS",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "line": 31,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../Data/i4GeoMxData_cellproportionestimates.RDS",
+            "path": "",
+            "reader": "readRDS",
+            "format": "RDS",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "line": 32,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../Data/Custom_GeneSets.RDS",
+            "path": "",
+            "reader": "readRDS",
+            "format": "RDS",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "line": 315,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "Fig3_data1.RData",
+            "path": "",
+            "reader": "load",
+            "format": "RData",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "diseases",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltypes",
+                "line": 77,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-CellReportsMedicine2022-Fig6/Fig6_plot.R",
+            "line": 7,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:22:00Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:22:00Z",
+        "url": "https://openalex.org/W4399535373",
+        "cited_by_count": 38,
+        "fwci": 9.0799,
+        "citation_normalized_percentile": 0.98642673,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 81.93213365,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.93213365,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "人类皮肤空间多组学揭示航天飞行相关的KRAS与炎症反应",
+        "summary_zh": "该论文研究短时航天飞行对人类皮肤的影响,对Inspiration4乘组在飞行前(L-44)与飞行后(R+1)进行皮肤活检,结合GeoMx数字空间分析、单细胞RNA/ATAC测序及宏基因组/宏转录组学,在四个皮肤区室(外表皮、内表皮、外真皮、血管)的95个皮肤区域评估空间基因表达及相关微生物与免疫变化。飞行后样本显示炎症与KRAS信号相关基因在所有皮肤区域显著上调,并映射到干扰素反应、DNA损伤、上皮屏障破坏、T细胞迁移与再生受阻等细胞反应,主要位于外层组织区室。",
+        "learning_points": [
+          "研究采用飞行前(L-44)与飞行后(R+1)配对时间点,对同一乘组进行皮肤活检采样。",
+          "多组学组合包括GeoMx数字空间分析、单细胞RNA/ATAC测序以及宏基因组/宏转录组学。",
+          "空间分析覆盖四个区室:外表皮、内表皮、外真皮、血管,共95个皮肤区域。",
+          "Fig. 1 展示实验设计与整体飞行前后比较,含ROI的UMAP、DESeq2差异表达火山图、MSigDB Hallmark通路富集与细胞比例比较。",
+          "Fig. 2 展示区域特异基因表达谱与细胞组成变化,差异基因判定采用校正p值<0.1且|log2FC|>0.5,并用UpSet图比较区域特异差异基因交集。",
+          "Fig. 3 展示按组织区室的细胞微环境变化,包括基因表达变化、细胞比例倍数变化与细胞类型相关矩阵变化。",
+          "Fig. 4 展示皮肤宏基因组与转录组分析,包括PCA、细菌与病毒物种数、按科/属的相对丰度变化及与屏障/免疫基因的相关性。",
+          "作者代码仓库静态观察显示存在GeoMx_EDA_v1.Rmd等脚本,读取GeoMx合并RDS、细胞比例估计RDS与自定义基因集RDS文件。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或结果一致。",
+          "输入数据尺度与图号对应关系未明示时保持未知。",
+          "AI注释仅为待核学习材料,不能替代原文与原始数据的核对。",
+          "目录名仍为Park-NatureComms2022,但论文于2024年发表,不能由旧目录名推定出版年份。",
+          "未观察到许可、期刊指标或复现结果等信息,均属未知。",
+          "样本量有限(四个乘组成员),证据中未提供更广泛的推广性验证。",
+          "证据仅来自图注与脚本静态观察,未包含原始数据或统计输出细节。",
+          "Fig. 3 中黑色框代表因细胞计数极少而无法确定的位点,X标记代表未通过统计检验的相关性,说明部分区域数据受限。",
+          "Fig. 4 中仅可视化统计显著或既往报道的微生物,可能未覆盖全部微生物变化。",
+          "证据未说明飞行时长以外的其他混杂因素控制情况。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:22:06Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "b96461468909351eb8b834d8e0d266c84e77198f29ce7fd8aadc8ab366a8276f",
+        "summary_fingerprint": "d975f765b637a6b92e73745fbc644111d4c8dde72c5a2fe7434c633bb4b485a8",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -76849,13 +78723,375 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "no_final_version",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:22:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:30Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:22:30Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:22:31Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "no_final_version",
+            "selected_figure_missing",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:22:31Z"
+        }
       },
-      "pmcid": "PMC9812260"
+      "pmcid": "PMC9812260",
+      "pmid": "35549404",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0036-8075",
+      "eissn": "1095-9203",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "no_final_version",
+        "license": "unknown",
+        "version": "",
+        "xmlURL": "",
+        "figures": [],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No DOI-matched non-manuscript publisher version available in current PMC cloud."
+        ],
+        "retrievedAt": "2026-10-12T07:22:28.550092+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": []
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/czbiohub-sf/tabula-sapiens",
+        "commit": "14de8b082a25dba79e12c39626843543ab92e5b5",
+        "license": "BSD-3-Clause",
+        "scripts": [
+          {
+            "path": "paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
+            "sha256": "8010e3312e96c365cd09044c73c34e6947accdde5af5f16314cfff50b2882b23",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
+            "sha256": "9c26fde373d2861ffec9a1b48370f1f078b4693080709f36c67dca40762a9607",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
+            "sha256": "e324689171f5a674cedbfc7c75467d162c60c5e6057b9a8fccfe9cbdf3580ea5",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
+            "sha256": "3b418aee2d7a4a18e889cbcd4f2cef6ce74b7f06ce6483c111e46353e957dcac",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
+            "sha256": "869ce67a666808d7b3aa7a38c16d9e26e80d9efe341ce2c59d6c5baef80f0c60",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "sha256": "bac44304609186ac1f92c91d9f2a9ce496b8b011ce8b860168382167b1c74e8d",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "IGHC_annotations.tsv",
+                "reader": "pd.read_table",
+                "line": 3,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 3,
+                "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py#L3"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "IGHC_annotations.tsv",
+            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "reader": "pd.read_table",
+            "format": "tsv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "IMGT label",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Orientation",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Gene",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "line": 3,
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "readerOptions": {},
+            "headerSHA256": "efad6e97b19b94d7c33d56aac170cfb2df4471689a19e20ef31ece08d19e76e7"
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "47.3",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:20:27Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:22:30Z",
+        "url": "https://openalex.org/W4280598116",
+        "cited_by_count": 1056,
+        "fwci": 61.3139,
+        "citation_normalized_percentile": 0.99972262,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 64.9986131,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 0,
+          "usability": 40,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9986131,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      }
     },
     {
       "id": "immune-health-aging-2025",
@@ -81374,11 +83610,370 @@
       "dimensionLinkScope": "selected-case",
       "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
       "automation": {
-        "status": "seed",
-        "stages": {},
-        "lastCheckedAt": "",
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "not_found",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
         "errors": [],
-        "source": "人工核查种子；不等于自动验证通过"
+        "lastCheckedAt": "2026-10-12T07:22:32Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:22:32Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-13T07:22:32Z"
+        },
+        "bootstrap": {
+          "attempts": 1,
+          "unsuccessfulScans": 1,
+          "lastAttemptAt": "2026-10-12T07:22:32Z",
+          "status": "pending",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "article_unchecked",
+            "selected_figure_missing",
+            "ai_missing"
+          ],
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T08:22:32Z"
+        }
+      },
+      "pmid": "42685689",
+      "publicationTypes": [
+        "Journal Article"
+      ],
+      "issn": "0092-8674",
+      "eissn": "1097-4172",
+      "metadataSource": "Europe PMC",
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "not_found",
+        "license": "unknown",
+        "version": "",
+        "xmlURL": "",
+        "figures": [],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No exact PMCID and DOI pair resolved; original images are link-only."
+        ],
+        "retrievedAt": "2026-10-12T07:22:31.807875+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": []
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/czbiohub-sf/tabula-sapiens",
+        "commit": "14de8b082a25dba79e12c39626843543ab92e5b5",
+        "license": "BSD-3-Clause",
+        "scripts": [
+          {
+            "path": "paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
+            "sha256": "8010e3312e96c365cd09044c73c34e6947accdde5af5f16314cfff50b2882b23",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
+            "sha256": "9c26fde373d2861ffec9a1b48370f1f078b4693080709f36c67dca40762a9607",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
+            "sha256": "e324689171f5a674cedbfc7c75467d162c60c5e6057b9a8fccfe9cbdf3580ea5",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
+            "sha256": "3b418aee2d7a4a18e889cbcd4f2cef6ce74b7f06ce6483c111e46353e957dcac",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
+            "sha256": "869ce67a666808d7b3aa7a38c16d9e26e80d9efe341ce2c59d6c5baef80f0c60",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "sha256": "bac44304609186ac1f92c91d9f2a9ce496b8b011ce8b860168382167b1c74e8d",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "IGHC_annotations.tsv",
+                "reader": "pd.read_table",
+                "line": 3,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 3,
+                "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py#L3"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "IGHC_annotations.tsv",
+            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "reader": "pd.read_table",
+            "format": "tsv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "IMGT label",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Orientation",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Gene",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
+            "line": 3,
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "readerOptions": {},
+            "headerSHA256": "efad6e97b19b94d7c33d56aac170cfb2df4471689a19e20ef31ece08d19e76e7"
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "45.1",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-12T07:22:32Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-12T07:22:32Z",
+        "url": "https://openalex.org/W7205709388",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.62608316,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedAnalysisFunctions": [],
+      "selectionScore": {
+        "total": 75.1304158,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 0,
+          "usability": 40,
+          "image": 0,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.1304157999999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       }
     },
     {
@@ -144637,7 +147232,73 @@
           ],
           "url": "https://github.com/Teichlab/SpaceTimeGut/blob/main/08_MGT_heatmap_IBD_enrichment.ipynb"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "/mnt/2021Jan02/figures/forest_GCST004132_CD.tsv\n/mnt/2021Jan02/figures/forest_GCST004133_UC.tsv",
+        "files": [
+          {
+            "name": "/mnt/2021Jan02/figures/forest_GCST004132_CD.tsv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "tsv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb；读取行 9；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "log OR_x",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FDR_x",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "/mnt/2021Jan02/figures/forest_GCST004133_UC.tsv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "tsv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb；读取行 10；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/Teichlab/SpaceTimeGut/blob/7834cb93aa1c6a82e45b9d86a1ce14d6b00a3c55/08_MGT_heatmap_IBD_enrichment.ipynb",
+            "observedFieldReferences": [
+              {
+                "name": "log OR_x",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FDR_x",
+                "line": 20,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "skin-spaceflight-2024": {
       "tree": "Park-NatureComms2022/GeoMx_merged_pub.RDS\nPark-NatureComms2022/Custom_GeneSets.RDS\nPark-NatureComms2022/i4GeoMxData_cellproportionestimates.RDS",
@@ -144725,7 +147386,403 @@
           ],
           "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/main/Park-NatureComms2022/GeoMx_EDA_v1.Rmd"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "../Data/GeoMx_merged_pub.RDS\n../Data/i4GeoMxData_cellproportionestimates.RDS\n../Data/Custom_GeneSets.RDS\nFig3_data1.RData",
+        "files": [
+          {
+            "name": "../Data/GeoMx_merged_pub.RDS",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "RDS",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd；读取行 31；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "../Data/i4GeoMxData_cellproportionestimates.RDS",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "RDS",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd；读取行 32；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "../Data/Custom_GeneSets.RDS",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "RDS",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd；读取行 315；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-NatureComms2022/GeoMx_EDA_v1.Rmd",
+            "observedFieldReferences": [
+              {
+                "name": "set",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROInameJP",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Timepoint",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROIType",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SlideName",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "layout",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "crew",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 113,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "GENENAME",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AveragePropFC",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AverageProp",
+                "line": 194,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ROITime",
+                "line": 214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sdev",
+                "line": 360,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 360,
+                "kind": "code_field_reference"
+              }
+            ]
+          },
+          {
+            "name": "Fig3_data1.RData",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "RData",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "代码读取路径已观察；未读真实表头",
+            "fields": [],
+            "preview": "真实表头未知",
+            "csv": "# 未核实表头",
+            "mapping": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-CellReportsMedicine2022-Fig6/Fig6_plot.R；读取行 7；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/jpark-lab/SpatialAnalysis/blob/b27c71165cbd27fbd2dccba42370524e083f8d4b/Park-CellReportsMedicine2022-Fig6/Fig6_plot.R",
+            "observedFieldReferences": [
+              {
+                "name": "diseases",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltypes",
+                "line": 77,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "tabula-sapiens-2022": {
       "tree": "paper1/Fig2/TSsequencing_pathology-nobalance_xy.csv\npaper1/Fig2/serena_tsp1_tsp2_count_per_cell_type.csv",
@@ -144786,7 +147843,118 @@
           ],
           "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper1/Fig2/Fig2_cell_fractions.ipynb"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "IGHC_annotations.tsv",
+        "files": [
+          {
+            "name": "IGHC_annotations.tsv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "tsv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "真实文件表头已读取；含义/单位仍待核",
+            "fields": [
+              [
+                "IMGT label",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Positions in NCBI Accession number",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Orientation",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Gene",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ]
+            ],
+            "preview": "仅真实列名，不含虚构示例值",
+            "csv": "IMGT label\nPositions in NCBI Accession number\nOrientation\nGene",
+            "mapping": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py；读取行 3；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "observedFieldReferences": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "immune-health-aging-2025": {
       "tree": "Dataset/scRNA/BRI（具体文件待核）\nDataset/Olink（具体文件待核）",
@@ -145594,7 +148762,118 @@
           ],
           "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper2/Figure1/Figure1.ipynb"
         }
-      ]
+      ],
+      "automaticInputs": {
+        "tree": "IGHC_annotations.tsv",
+        "files": [
+          {
+            "name": "IGHC_annotations.tsv",
+            "role": "脚本输入候选；不等于选图直接输入已核",
+            "format": "tsv",
+            "orientation": "未知",
+            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+            "scale": "未知；不推断归一化",
+            "note": "真实文件表头已读取；含义/单位仍待核",
+            "fields": [
+              [
+                "IMGT label",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Positions in NCBI Accession number",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Orientation",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ],
+              [
+                "Gene",
+                "类型未核",
+                "真实文件表头",
+                "列含义/尺度未核"
+              ]
+            ],
+            "preview": "仅真实列名，不含虚构示例值",
+            "csv": "IMGT label\nPositions in NCBI Accession number\nOrientation\nGene",
+            "mapping": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py；读取行 3；图号对应仍待核",
+            "checks": [
+              "核对直接绘图对象与作者脚本版本",
+              "核对连接键、矩阵方向、单位、缺失值与变换"
+            ],
+            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
+            "observedFieldReferences": [
+              {
+                "name": "sequence",
+                "line": 5,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "phase",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attributes",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IMGT label",
+                "line": 7,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Positions in NCBI Accession number",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Orientation",
+                "line": 11,
+                "kind": "code_field_reference"
+              }
+            ]
+          }
+        ],
+        "status": "全仓库静态输入候选；与原选图输入分开"
+      }
     },
     "cell2location-2022": {
       "tree": "单核表达参考与 Visium 空间数据（精确对象名待核）",
@@ -162798,12 +166077,12 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T07:21:49Z",
+  "generatedAt": "2026-10-12T07:22:33Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
-    "completeCount": 7,
-    "pendingCount": 48,
+    "completeCount": 8,
+    "pendingCount": 47,
     "attentionCount": 0,
     "removedCount": 0,
     "startedAt": "2026-10-11T15:08:16Z",
@@ -162822,12 +166101,6 @@
           "no_final_version",
           "selected_figure_missing",
           "ai_transient_failure"
-        ]
-      },
-      {
-        "doi": "10.1038/s43587-022-00335-4",
-        "reasonCodes": [
-          "ai_authentication_failed"
         ]
       },
       {
@@ -163001,48 +166274,23 @@
       {
         "doi": "10.1038/s41586-021-03852-1",
         "reasonCodes": [
-          "metadata_unchecked",
-          "source_refresh_failed",
-          "article_unchecked",
-          "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "ai_missing",
-          "metrics_unchecked"
+          "selected_figure_missing"
         ]
       },
       {
         "doi": "10.1038/s41467-024-48625-2",
         "reasonCodes": [
-          "metadata_unchecked",
-          "source_refresh_failed",
-          "article_unchecked",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "input_undocumented"
         ]
       },
       {
         "doi": "10.1126/science.abl4896",
         "reasonCodes": [
-          "metadata_unchecked",
           "source_refresh_failed",
-          "article_unchecked",
+          "no_final_version",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "ai_missing"
         ]
       },
       {
@@ -163093,17 +166341,10 @@
       {
         "doi": "10.1016/j.cell.2026.08.010",
         "reasonCodes": [
-          "metadata_unchecked",
           "source_refresh_failed",
           "article_unchecked",
           "selected_figure_missing",
-          "code_unchecked",
-          "code_not_pinned",
-          "script_integrity_missing",
-          "author_code_link_unverified",
-          "input_undocumented",
-          "ai_missing",
-          "metrics_unchecked"
+          "ai_missing"
         ]
       },
       {
@@ -163250,13 +166491,13 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:21:53Z",
+    "updatedAt": "2026-10-12T07:22:33Z",
     "status": "active",
     "endReason": "",
     "batchCount": 7,
-    "checkpointCount": 14,
-    "requests": 463,
-    "aiAttempts": 19,
+    "checkpointCount": 15,
+    "requests": 529,
+    "aiAttempts": 22,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -163264,11 +166505,11 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 35,
-    "processedCount": 30,
-    "remainingCount": 23,
-    "inFlightCount": 5,
-    "completeCount": 7,
-    "pendingCount": 48,
+    "processedCount": 35,
+    "remainingCount": 18,
+    "inFlightCount": 0,
+    "completeCount": 8,
+    "pendingCount": 47,
     "attentionCount": 0,
     "removedCount": 0,
     "materialsStatus": "active",
