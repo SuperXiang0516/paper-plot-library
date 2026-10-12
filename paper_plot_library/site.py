@@ -43,9 +43,10 @@ _PUBLIC_STATUSES = {
     "invalid_doi", "doi_mismatch", "retracted", "no_final_version", "no_scripts_found", "partial_failure",
     "daily_quota_reached", "paper_batch_limit_reached", "missing_journal",
     "bootstrap_in_progress", "bootstrap_needs_attention", "bootstrap_complete_next_run",
+    "existing_materials_pending",
 }
 _SAFE_REASONS = {
-    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "network_error", "error",
+    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "session_time_exhausted", "network_error", "error",
     "invalid_endpoint", "invalid_response", "missing_key", "missing_model", "missing_evidence", "missing_endpoint",
     "response_truncated", "response_shape_invalid", "response_finish_reason_invalid", "response_content_invalid",
     "response_content_too_long", "response_markdown_fence", "response_json_malformed", "summary_shape_invalid",
@@ -56,10 +57,50 @@ _SAFE_REASONS = {
 _REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount",
                     "untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount",
                     "automaticCompleteCount", "incompleteCount", "paperBatchLimit", "maxAiAttemptsPerPaper",
-                    "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount"}
+                    "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount", "rejectedCandidateCount", "removedCount"}
 _AI_STOP_STATUSES = {"authentication_error", "payment_required", "permission_denied", "invalid_request",
                      "endpoint_not_found", "missing_key", "missing_model", "missing_endpoint", "invalid_endpoint"}
 _AI_COUNTERS = {"ai_attempts", "max_ai_attempts", "retry_success_count"}
+
+
+def _public_session(value: object) -> dict | None:
+    """Expose session progress, never private DOI queues or callback payloads."""
+    if not isinstance(value, dict) or type(value.get("version")) is not int or value["version"] != 1:
+        return None
+    from .session import SESSION_COUNTERS, SESSION_END_REASONS, SESSION_STATUSES
+    value = {**value, "removedCount": value.get("removedCount", 0)}
+    if (not isinstance(value.get("status"), str) or value["status"] not in SESSION_STATUSES
+            or not isinstance(value.get("id"), str) or not re.fullmatch(r"[a-fA-F0-9]{1,64}", value["id"])
+            or not isinstance(value.get("materialsStatus"), str)
+            or value["materialsStatus"] not in {"active", "needs_attention", "complete", "complete_with_removals"}
+            or type(value.get("localCheckpointSaved")) is not bool):
+        return None
+    reason = value.get("endReason", "")
+    if (not isinstance(reason, str) or reason and reason not in SESSION_END_REASONS
+            or value["status"] != "active" and not reason):
+        return None
+    if any(type(value.get(field)) is not int or not 0 <= value[field] <= 1000000 for field in SESSION_COUNTERS):
+        return None
+    count_fields = ("targetCount", "plannedCount", "processedCount", "remainingCount", "inFlightCount",
+                    "completeCount", "pendingCount", "attentionCount", "removedCount", "checkpointCount")
+    if any(value[field] > 10000 for field in count_fields):
+        return None
+    if (value["completeCount"] + value["pendingCount"] + value["attentionCount"] + value["removedCount"] != value["targetCount"]
+            or not value["processedCount"] <= value["plannedCount"] <= value["targetCount"]
+            or value["remainingCount"] > value["targetCount"] or value["inFlightCount"] > value["targetCount"]
+            or value["materialsStatus"] in {"complete", "complete_with_removals"} and (value["pendingCount"] or value["attentionCount"])
+            or value["materialsStatus"] == "complete" and value["removedCount"]
+            or value["materialsStatus"] == "complete_with_removals" and not value["removedCount"]):
+        return None
+    # A resumed session can lower its limits after historical usage. Do not
+    # conceal that usage or equate checkpoints with completed batches/pushes.
+    result = {"version": 1, "id": value["id"], "status": value["status"], "endReason": reason,
+              "materialsStatus": value["materialsStatus"], "localCheckpointSaved": value["localCheckpointSaved"],
+              **{field: value[field] for field in sorted(SESSION_COUNTERS)}}
+    for field in ("startedAt", "updatedAt"):
+        if isinstance(value.get(field), str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z", value[field]):
+            result[field] = value[field]
+    return result
 
 
 def _public_bootstrap(value: object) -> dict | None:
@@ -70,12 +111,17 @@ def _public_bootstrap(value: object) -> dict | None:
     fields = ("totalCount", "completeCount", "pendingCount", "attentionCount")
     if any(type(value.get(field)) is not int or not 0 <= value[field] <= 10000 for field in fields):
         return None
-    if value["completeCount"] + value["pendingCount"] + value["attentionCount"] != value["totalCount"]:
+    removed = value.get("removedCount", 0)
+    if type(removed) is not int or not 0 <= removed <= 10000:
+        return None
+    if value["completeCount"] + value["pendingCount"] + value["attentionCount"] + removed != value["totalCount"]:
         return None
     if value["status"] == "complete" and (value["pendingCount"] or value["attentionCount"]):
         return None
     from .bootstrap import BOOTSTRAP_REASON_CODES
     result = {"status": value["status"], **{field: value[field] for field in fields}, "issues": []}
+    if "removedCount" in value:
+        result["removedCount"] = removed
     if isinstance(value.get("startedAt"), str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z", value["startedAt"]):
         result["startedAt"] = value["startedAt"]
     for issue in value.get("issues", [])[:100] if isinstance(value.get("issues"), list) else []:
@@ -212,6 +258,13 @@ def public_catalog(catalog: dict) -> dict:
     bootstrap = _public_bootstrap(catalog.get("bootstrap"))
     if bootstrap is not None:
         result["bootstrap"] = bootstrap
+    session = _public_session(catalog.get("session"))
+    if session is not None:
+        result["session"] = session
+    from .cloud_update import public_daily_summary
+    daily = public_daily_summary(catalog.get("dailySession"))
+    if daily is not None:
+        result["dailySession"] = daily
     return result
 
 
@@ -462,6 +515,13 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
         bootstrap = _public_bootstrap(original.get("bootstrap"))
         if bootstrap is not None:
             report["bootstrap"] = bootstrap
+        session = _public_session(original.get("session"))
+        if session is not None:
+            report["session"] = session
+        from .cloud_update import public_daily_summary
+        daily = public_daily_summary(original.get("dailySession"))
+        if daily is not None:
+            report["dailySession"] = daily
         if isinstance(original.get("aiStoppedStatus"), str) and original["aiStoppedStatus"] in _AI_STOP_STATUSES:
             report["aiStoppedStatus"] = original["aiStoppedStatus"]
         for key in _REPORT_COUNTERS:

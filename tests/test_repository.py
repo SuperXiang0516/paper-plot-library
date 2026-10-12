@@ -36,8 +36,31 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(record["inputs"][0]["fields"][1]["name"], "age")
         self.assertEqual(record["figureMappings"][0]["status"], "candidate")
         self.assertFalse(record["authorCodeExecuted"])
+        self.assertFalse(record["sourceScanLimited"])
         self.assertNotIn("patient1", json.dumps(record))
         self.assertFalse(any("escape" in url or "execute.py" in url for url in client.calls))
+
+    def test_bounded_source_scan_persists_limitation_for_safe_pruning(self):
+        class ManyScripts(FakeClient):
+            def get_json(self, url, **kwargs):
+                if "/git/trees/" in url:
+                    self.calls.append(url)
+                    return {"truncated": False, "tree": [{"path": "plot" + str(i) + ".py", "type": "blob", "size": 100} for i in range(13)]}
+                return super().get_json(url, **kwargs)
+        client = ManyScripts(raw=b"x=1\n")
+        result = inspect_repository(client, {"codeURL": "https://github.com/a/b"}, max_files=12)
+        self.assertTrue(result["sourceScanLimited"])
+        self.assertEqual(len(result["scripts"]), 12)
+
+    def test_truncated_tree_is_not_exhaustive_source_scan(self):
+        class Truncated(FakeClient):
+            def get_json(self, url, **kwargs):
+                result = super().get_json(url, **kwargs)
+                if "/git/trees/" in url:
+                    result["truncated"] = True
+                return result
+        result = inspect_repository(Truncated(), {"codeURL": "https://github.com/a/b"})
+        self.assertTrue(result["sourceScanLimited"])
 
     def test_no_unknown_license_author_code_redistribution(self):
         record = inspect_repository(FakeClient(license="NOASSERTION"), {"codeURL": "https://github.com/a/b"})

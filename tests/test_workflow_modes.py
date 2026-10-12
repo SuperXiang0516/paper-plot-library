@@ -31,15 +31,18 @@ class WorkflowModeTests(unittest.TestCase):
         self.assertIn("        default: auto\n", modes)
         self.assertEqual(re.findall(r"^          - (\S+)$", modes, re.MULTILINE), ["auto", "backfill", "daily"])
 
-    def test_mode_is_passed_as_quoted_environment_not_inline_shell_expression(self):
+    def test_mode_is_passed_as_environment_to_safe_cloud_wrapper(self):
         self.assertIn("UPDATE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}", self.workflow)
-        command = next(line.strip() for line in self.workflow.splitlines() if "run: python -m paper_plot_library update" in line)
-        self.assertEqual(command, 'run: python -m paper_plot_library update --mode "$UPDATE_MODE"')
+        command = next(line.strip() for line in self.workflow.splitlines() if "run: python scripts/cloud_collect.py" in line)
+        self.assertEqual(command, 'run: python scripts/cloud_collect.py')
         self.assertNotIn("${{", command)
+        self.assertIn("timeout-minutes: 90", self.workflow)
+        self.assertIn("continue-on-error: true", self.workflow)
+        self.assertIn("!cancelled()", self.workflow)
 
     def test_push_builds_without_collection_and_keeps_one_daily_schedule(self):
         condition = "if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.collect)"
-        self.assertEqual(self.workflow.count(condition), 2)
+        self.assertEqual(self.workflow.count(condition), 1)
         self.assertIn("  push:\n    branches: [main]\n", self.workflow)
         self.assertEqual(re.findall(r"^    - cron: (.+)$", self.workflow, re.MULTILINE), ["'47 1 * * *'"])
 

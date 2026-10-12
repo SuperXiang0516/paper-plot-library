@@ -26,6 +26,10 @@ BOOTSTRAP_REASON_CODES = frozenset({
     "metrics_query_failed", "source_transient_failure", "case_excluded", "cohort_record_missing",
     "request_budget_deferred",
 })
+REMOVAL_REASON_CODES = frozenset({
+    "formal_version_unavailable", "selected_figure_unavailable", "figure_reuse_unavailable",
+    "author_scripts_unavailable", "input_basis_unavailable",
+})
 _HUMAN_ACTION = {"ai_configuration_missing", "ai_authentication_failed", "ai_payment_required",
                  "metrics_configuration_missing", "case_excluded"}
 _TRANSIENT = {"error", "unavailable", "metadata_unavailable", "network_error", "rate_limited",
@@ -91,13 +95,36 @@ def _safe_record_state(record):
         result["nextAttemptAt"] = upcoming
     result["reasonCodes"] = [code for code in _list(raw.get("reasonCodes"))[:30]
                              if isinstance(code, str) and code in BOOTSTRAP_REASON_CODES][:20]
+    source_scans = _object(raw.get("sourceGapScans"))
+    result["sourceGapScans"] = {code: value for code, value in source_scans.items()
+                                if isinstance(code, str) and code in REMOVAL_REASON_CODES
+                                and type(value) is int and 0 <= value <= _COUNT_LIMIT}
     return result
+
+
+def safe_removed_dois(ledger):
+    """Validate minimal public tombstones; never infer removal from a missing record."""
+    if not isinstance(ledger, dict):
+        raise ValueError("自动移除记录格式无效；不能忽略或重建移除记录")
+    removed = ledger.get("removedPapers", {})
+    if not isinstance(removed, dict) or len(removed) > _COUNT_LIMIT:
+        raise ValueError("自动移除记录格式无效；不能忽略或重建移除记录")
+    for doi, item in removed.items():
+        if (not isinstance(doi, str) or not normalize_doi(doi) or normalize_doi(doi) != doi
+                or not isinstance(item, dict) or set(item) != {"reasonCode", "removedAt"}
+                or not isinstance(item.get("reasonCode"), str) or item["reasonCode"] not in REMOVAL_REASON_CODES
+                or not _timestamp(item.get("removedAt"))):
+            raise ValueError("自动移除记录格式无效；只允许规范 DOI、受控原因和 UTC 时间")
+    return frozenset(removed)
 
 
 def ensure_bootstrap(catalog, ledger, now):
     """Capture the cohort once; never silently add later daily admissions."""
     now = _now(now)
     papers = _list(catalog.get("papers"))
+    removed = safe_removed_dois(ledger)
+    if removed & {_object(paper).get("doi") for paper in papers if isinstance(_object(paper).get("doi"), str)}:
+        raise ValueError("已移除 DOI 与现有案例冲突；恢复案例时请同时恢复其账本记录")
     if len(papers) > _COUNT_LIMIT:
         raise ValueError("初始化案例数超过安全上限")
     raw = ledger.get("bootstrap")
@@ -120,6 +147,15 @@ def ensure_bootstrap(catalog, ledger, now):
                 or not isinstance(status, str) or status not in {"active", "needs_attention", "complete"}):
             raise ValueError("初始化队列记录无效；不能自动重置固定队列")
         state = {"version": 1, "cohortDOIs": list(cohort), "startedAt": raw["startedAt"], "status": status}
+        removed_cohort = raw.get("removedDOIs", [])
+        if (not isinstance(removed_cohort, list) or len(removed_cohort) > len(cohort)
+                or any(not isinstance(doi, str) or doi not in cohort or doi not in removed for doi in removed_cohort)
+                or len(set(removed_cohort)) != len(removed_cohort)):
+            raise ValueError("初始化移除记录无效；移除 DOI 必须属于固定队列并有合法墓碑")
+        if removed & set(cohort) != set(removed_cohort):
+            raise ValueError("初始化移除记录不一致；不能把缺失案例自动视为合法移除")
+        if removed_cohort:
+            state["removedDOIs"] = list(removed_cohort)
     ledger["bootstrap"] = state
     return state
 
@@ -340,14 +376,26 @@ def note_bootstrap_attempt(record, spec, now, root=None, attempt_status=None):
     assessment = bootstrap_assessment(record, spec, root)
     budget = assessment["budgetDeferred"] or attempt_status == "budget_exhausted"
     attempts, scans = previous["attempts"], previous["unsuccessfulScans"]
+    source_gap_scans = dict(previous.get("sourceGapScans", {}))
     if previous.get("status") == "complete":
         # A later regression is a new unresolved cycle. Historical attempts
         # before successful collection must not exhaust its retry allowance.
         attempts, scans = 0, 0
+        source_gap_scans = {}
     if not budget and (assessment["attemptPerformed"] or attempt_status == "error"):
         attempts = min(_COUNT_LIMIT, attempts + 1)
         if assessment["status"] != "complete" and assessment["sourceScanCompleted"]:
             scans = min(_COUNT_LIMIT, scans + 1)
+    if not budget and assessment["sourceScanCompleted"]:
+        # AI/metric failures alone cannot authorize a later material deletion.
+        # Count each current material gap only after a clean completed source scan.
+        from .pruning import uncollectable_reasons
+        current_reasons = uncollectable_reasons(record, spec, root)
+        if current_reasons:
+            source_gap_scans = {code: min(_COUNT_LIMIT, source_gap_scans.get(code, 0) + 1)
+                                for code in current_reasons}
+        elif "source_transient_failure" not in assessment["reasonCodes"]:
+            source_gap_scans = {}
     status = assessment["status"]
     reasons = assessment["reasonCodes"]
     if budget and "request_budget_deferred" not in reasons:
@@ -357,7 +405,7 @@ def note_bootstrap_attempt(record, spec, now, root=None, attempt_status=None):
     elif status != "complete" and (set(reasons) & _HUMAN_ACTION or scans >= 3 or attempts >= 3):
         status = "needs_attention"
     state = {"attempts": attempts, "unsuccessfulScans": scans, "lastAttemptAt": now,
-             "status": status, "reasonCodes": reasons}
+             "status": status, "reasonCodes": reasons, "sourceGapScans": source_gap_scans}
     if status == "pending" and not budget and attempts:
         state["nextAttemptAt"] = (_timestamp(now) + timedelta(hours=min(24, 2 ** min(4, attempts - 1)))).isoformat().replace("+00:00", "Z")
     if not isinstance(record.get("automation"), dict):
@@ -372,7 +420,11 @@ def bootstrap_report(catalog, ledger, root=None, now=None):
     papers = {paper.get("doi"): paper for paper in _list(catalog.get("papers")) if isinstance(paper, dict)}
     specs = _object(catalog.get("inputSpecs"))
     counts, issues = Counter(), []
+    removed_cohort = set(state.get("removedDOIs", []))
     for doi in state["cohortDOIs"]:
+        if doi in removed_cohort:
+            counts["removed"] += 1
+            continue
         paper = papers.get(doi)
         assessment = (bootstrap_assessment(paper, specs.get(paper.get("id")), root) if paper
                       else {"status": "needs_attention", "reasonCodes": ["cohort_record_missing"]})
@@ -381,7 +433,7 @@ def bootstrap_report(catalog, ledger, root=None, now=None):
             issues.append({"doi": doi, "reasonCodes": assessment["reasonCodes"]})
     status = "needs_attention" if counts["needs_attention"] else "active" if counts["pending"] else "complete"
     summary = {"status": status, "totalCount": len(state["cohortDOIs"]), "completeCount": counts["complete"],
-               "pendingCount": counts["pending"], "attentionCount": counts["needs_attention"],
+               "pendingCount": counts["pending"], "attentionCount": counts["needs_attention"], "removedCount": counts["removed"],
                "startedAt": state["startedAt"], "issues": issues}
     state.update({key: value for key, value in summary.items() if key != "issues"})
     return summary

@@ -26,6 +26,12 @@ class Settings:
     repair_limit: int = 5
     initialize_existing_first: bool = False
     bootstrap_batch_limit: int = 5
+    session_max_batches: int = 12
+    session_max_ai_attempts: int = 165
+    session_max_requests: int = 1800
+    session_max_seconds: int = 2700
+    auto_remove_uncollectable: bool = False
+    require_complete_new_cases: bool = False
     candidate_checks: int = 8
     max_images: int = 2
     max_supplements: int = 3
@@ -71,12 +77,14 @@ def load_settings(root, overrides=None):
               "max_papers_per_run": (1, 20),
               "discovery_limit": (1, 100), "repair_limit": (0, 20), "candidate_checks": (0, 20),
               "bootstrap_batch_limit": (1, 50),
+              "session_max_batches": (1, 12), "session_max_ai_attempts": (0, 165),
+              "session_max_requests": (1, 1800), "session_max_seconds": (60, 3300),
               "max_images": (0, 5), "max_supplements": (0, 5), "max_file_bytes": (1024, 10000000)}
     for key, (low, high) in bounds.items():
         value = getattr(settings, key)
         if type(value) is not int or not low <= value <= high:
             raise ValueError(f"{key} 必须为 {low}—{high} 的整数")
-    for key in ("include_supplements", "citation_enrichment", "initialize_existing_first"):
+    for key in ("include_supplements", "citation_enrichment", "initialize_existing_first", "auto_remove_uncollectable", "require_complete_new_cases"):
         if type(getattr(settings, key)) is not bool:
             raise ValueError(f"{key} 必须为布尔值")
     if not isinstance(settings.discovery_query, str) or not 1 <= len(settings.discovery_query.strip()) <= 20000:

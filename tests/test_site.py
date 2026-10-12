@@ -37,6 +37,18 @@ def sample():
     }
 
 
+def sample_session():
+    return {"version": 1, "id": "a" * 32, "status": "paused", "endReason": "time_limit_reached",
+            "startedAt": "2026-10-11T12:00:00Z", "updatedAt": "2026-10-11T12:45:00Z",
+            "targetCount": 55, "plannedCount": 10, "processedCount": 8, "remainingCount": 45,
+            "batchCount": 2, "checkpointCount": 7, "requests": 190, "aiAttempts": 17,
+            "uncertainRequests": 150, "uncertainAiAttempts": 15, "inFlightCount": 2,
+            "maxBatches": 12, "maxRequests": 1800, "maxAiAttempts": 165,
+            "completeCount": 2, "pendingCount": 53, "attentionCount": 0,
+            "removedCount": 0,
+            "materialsStatus": "active", "localCheckpointSaved": True}
+
+
 class SiteTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
@@ -307,6 +319,55 @@ class SiteTests(unittest.TestCase):
             report = json.loads((output / "data" / "updates.json").read_text())[0]
             self.assertNotIn("bootstrap", published)
             self.assertNotIn("bootstrap", report)
+
+    def test_public_session_projects_only_progress_and_never_private_queue(self):
+        catalog, session = sample(), sample_session()
+        private = {"cohortDOIs": ["must-not-publish"], "plannedDOIs": ["must-not-publish"],
+                   "processedDOIs": ["must-not-publish"], "inFlight": {"raw_response": "must-not-publish"},
+                   "callback": "must-not-publish", "api_key": "must-not-publish", "githubCheckpointSaved": True}
+        catalog["session"] = {**session, **private}
+        catalog["backfillSession"] = {**session, **private}
+        original = copy.deepcopy(catalog)
+        output = build_site(self.root, catalog, [{"session": {**session, **private}, "backfillSession": private}])
+        published = json.loads((output / "data" / "catalog.json").read_text())
+        report = json.loads((output / "data" / "updates.json").read_text())[0]
+        self.assertEqual(published["session"], session)
+        self.assertEqual(report["session"], session)
+        self.assertNotIn("must-not-publish", json.dumps(published))
+        self.assertNotIn("must-not-publish", json.dumps(report))
+        self.assertNotIn("githubCheckpointSaved", report["session"])
+        self.assertNotIn("backfillSession", published)
+        self.assertEqual(catalog, original)
+
+    def test_public_session_rejects_invalid_counts_statuses_and_false_material_completion(self):
+        invalid = [None, {}, {**sample_session(), "status": []}, {**sample_session(), "status": {}},
+                   {**sample_session(), "materialsStatus": []}, {**sample_session(), "materialsStatus": "complete"},
+                   {**sample_session(), "id": "https://private/?token=must-not-publish"},
+                   {**sample_session(), "endReason": "raw-provider-message"},
+                   {**sample_session(), "processedCount": 11}, {**sample_session(), "plannedCount": 56},
+                   {**sample_session(), "targetCount": 54}, {**sample_session(), "remainingCount": 56},
+                   {**sample_session(), "inFlightCount": 56}, {**sample_session(), "version": True},
+                   {**sample_session(), "localCheckpointSaved": "must-not-publish"}]
+        for field in ("targetCount", "plannedCount", "processedCount", "remainingCount", "batchCount",
+                      "checkpointCount", "requests", "aiAttempts", "uncertainRequests", "uncertainAiAttempts",
+                      "inFlightCount", "maxBatches", "maxRequests", "maxAiAttempts", "completeCount", "pendingCount", "attentionCount", "removedCount"):
+            invalid.extend({**sample_session(), field: value} for value in (True, -1, 1000001, "must-not-publish", float("nan")))
+        for value in invalid:
+            self.assertNotIn("session", public_catalog({**sample(), "session": value}))
+        output = build_site(self.root, sample(), [{"session": invalid[-1]}])
+        self.assertNotIn("session", json.loads((output / "data" / "updates.json").read_text())[0])
+
+    def test_session_finished_and_checkpoint_counts_do_not_fake_material_completion(self):
+        session = {**sample_session(), "status": "finished", "endReason": "cohort_traversed",
+                   "plannedCount": 55, "processedCount": 55, "remainingCount": 0,
+                   "inFlightCount": 0, "checkpointCount": 30, "batchCount": 11}
+        projected = public_catalog({**sample(), "session": session})["session"]
+        self.assertEqual(projected, session)
+        self.assertEqual(projected["materialsStatus"], "active")
+        self.assertEqual(projected["pendingCount"], 53)
+        # Resuming with reduced caps must not conceal historical confirmed use.
+        session.update(maxRequests=100, maxAiAttempts=10, maxBatches=2)
+        self.assertEqual(public_catalog({**sample(), "session": session})["session"], session)
 
     def test_build_downgrades_ready_when_published_reviewed_asset_missing(self):
         catalog = sample()
@@ -633,6 +694,50 @@ assert.deepEqual(Object.keys(ui.BOOTSTRAP_REASONS).sort(),JSON.parse(process.arg
 '''
         subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js"), json.dumps(sorted(BOOTSTRAP_REASON_CODES))], check=True, capture_output=True)
         self.assertIn('id="collection-phase"', (PROJECT / "web" / "index.html").read_text())
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
+    def test_js_session_progress_and_safe_projection_match_controlled_contract(self):
+        from paper_plot_library.session import SESSION_COUNTERS, SESSION_END_REASONS, SESSION_STATUSES
+        session = sample_session()
+        test_code = r'''
+const assert=require('assert'),ui=require(process.argv[1]),value=JSON.parse(process.argv[2]);
+const safe=ui.sessionSummary({...value,cohortDOIs:['must-not-publish'],inFlight:{raw_response:'must-not-publish'},githubCheckpointSaved:true,callback:'must-not-publish'});
+assert.deepEqual(safe,value);assert(!JSON.stringify(safe).includes('must-not-publish'));assert(!Object.hasOwn(safe,'githubCheckpointSaved'));
+const lines=ui.sessionLines(safe).join('\n');
+assert(lines.includes('8 / 55') && lines.includes('已结束批次 2 / 12'));
+assert(lines.includes('本地 JSON 检查点：已写入') && lines.includes('不能由本地写入推定'));
+assert(lines.includes('本会话确认的实际 HTTP：190 / 1800') && lines.includes('AI HTTP 尝试：17 / 165'));
+assert(lines.includes('保守占用 HTTP 150') && lines.includes('不是已确认实际请求或扣费次数'));
+assert(lines.includes('达到本次会话时间限制') && lines.includes('不代表原图、许可、代码、输入已齐全'));
+assert(lines.includes('完成 2 / 55') && lines.includes('待处理 53'));
+assert(lines.includes('不是正在运行会话的实时监控'));
+const finished={...value,status:'finished',endReason:'cohort_traversed',plannedCount:55,processedCount:55,remainingCount:0,inFlightCount:0};
+assert(ui.sessionLines(finished)[0].includes('不等于材料已全部收齐'));assert.equal(ui.sessionSummary(finished).pendingCount,53);
+assert(ui.sessionLines({...value,localCheckpointSaved:false}).join('\n').includes('尚未确认写入'));
+assert.equal(ui.sessionSummary({...value,materialsStatus:'complete'}),null);
+assert.equal(ui.sessionSummary({...value,materialsStatus:[]}),null);
+assert.equal(ui.sessionSummary({...value,status:[]}),null);
+assert.equal(ui.sessionSummary({...value,endReason:'must-not-publish'}),null);
+assert.equal(ui.sessionSummary({...value,processedCount:11}),null);
+assert.equal(ui.sessionSummary({...value,plannedCount:56}),null);
+assert.equal(ui.sessionSummary({...value,targetCount:54}),null);
+assert.equal(ui.sessionSummary({...value,checkpointCount:true}),null);
+assert.equal(ui.sessionSummary({...value,id:'https://private/?token=must-not-publish'}),null);
+assert.equal(ui.sessionSummary({...value,localCheckpointSaved:'yes'}),null);
+assert.equal(ui.sessionSummary({...value,version:true}),null);
+assert(ui.sessionSummary({...value,maxRequests:100,maxAiAttempts:10,maxBatches:1}));
+assert.equal(ui.latestSession({},[]),null);
+assert.deepEqual(ui.latestSession({session:value},[]),value);
+const newer={...value,updatedAt:'2026-10-11T13:00:00Z',processedCount:9};
+assert.deepEqual(ui.latestSession({session:value},[{session:newer}]),newer);
+assert.deepEqual(ui.SESSION_COUNTERS.slice().sort(),JSON.parse(process.argv[3]).sort());
+assert.deepEqual(Object.keys(ui.SESSION_END_REASONS).sort(),JSON.parse(process.argv[4]).sort());
+assert.deepEqual(ui.SESSION_STATUSES.slice().sort(),JSON.parse(process.argv[5]).sort());
+'''
+        subprocess.run([NODE, "-e", test_code, str(PROJECT / "web" / "app.js"), json.dumps(session),
+                        json.dumps(sorted(SESSION_COUNTERS)), json.dumps(sorted(SESSION_END_REASONS)),
+                        json.dumps(sorted(SESSION_STATUSES))], check=True, capture_output=True)
+        self.assertIn('.session-progress progress', (PROJECT / "web" / "styles.css").read_text())
 
     @unittest.skipUnless(Path(NODE).exists(), "Node unavailable: Python build tests still run.")
     def test_js_paid_retry_budget_and_fatal_configuration_circuit_are_explicit(self):

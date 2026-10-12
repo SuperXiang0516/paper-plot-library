@@ -40,7 +40,7 @@ class FetchError(RuntimeError):
 
 
 BudgetReason = Literal[
-    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted",
+    "network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "session_time_exhausted",
 ]
 
 
@@ -51,6 +51,7 @@ class BudgetExceeded(FetchError):
         "network_budget_exhausted": "本次网络请求预算已用完",
         "collection_budget_exhausted": "本次资料采集预算已用完；剩余请求为 AI 调用保留",
         "ai_budget_exhausted": "本次 AI 调用预算已用完",
+        "session_time_exhausted": "连续补库已达到安全运行时间上限",
     }
 
     def __init__(self, reason: BudgetReason):
@@ -102,6 +103,30 @@ class HttpClient:
         self.max_post_attempts = max_post_attempts
         self.reserved_post_requests = max(0, min(reserved_post_requests, max_requests, max_post_attempts))
         self._last_host_call = {}
+        self.session_deadline = None
+        self.deadline_clock = time.monotonic
+        self.time_budget_exhausted = False
+
+    def _time_remaining(self):
+        deadline = self.session_deadline
+        if deadline is None:
+            return None
+        try:
+            remaining = deadline - self.deadline_clock()
+        except (TypeError, ValueError, OverflowError):
+            remaining = 0
+        if not isinstance(remaining, (int, float)) or not math.isfinite(remaining) or remaining <= 0:
+            self.time_budget_exhausted = True
+            raise BudgetExceeded("session_time_exhausted")
+        return remaining
+
+    def bounded_sleep(self, seconds):
+        remaining = self._time_remaining()
+        if remaining is not None and seconds >= remaining:
+            self.time_budget_exhausted = True
+            raise BudgetExceeded("session_time_exhausted")
+        self.sleep(seconds)
+        self._time_remaining()
 
     def _request(self, url, params=None, headers=None, ttl=86400, max_bytes=6000000, payload=None,
                  attempt_limit=None):
@@ -133,6 +158,7 @@ class HttpClient:
         if body is not None:
             request_headers["Content-Type"] = "application/json"
         for attempt in range(transport_attempts):
+            self._time_remaining()
             if self.requests >= self.max_requests:
                 raise BudgetExceeded("network_budget_exhausted")
             if body is not None and self.post_attempts >= self.max_post_attempts:
@@ -146,14 +172,16 @@ class HttpClient:
             interval = .36 if host == "eutils.ncbi.nlm.nih.gov" else .5 if host == "www.easyscholar.cc" else .12
             delay = interval - (self.clock() - self._last_host_call.get(host, 0))
             if delay > 0:
-                self.sleep(delay)
+                self.bounded_sleep(delay)
+            remaining = self._time_remaining()
             self.requests += 1
             if body is not None:
                 self.post_attempts += 1
             self._last_host_call[host] = self.clock()
             try:
                 request = Request(url, data=body, headers=request_headers)
-                with self.opener.open(request, timeout=self.timeout) as response:
+                timeout = min(self.timeout, remaining) if remaining is not None else self.timeout
+                with self.opener.open(request, timeout=timeout) as response:
                     final = response.geturl() if hasattr(response, "geturl") else url
                     validate_url(final)
                     length = response.headers.get("Content-Length")
@@ -162,6 +190,7 @@ class HttpClient:
                     if length and int(length) > max_bytes:
                         raise FetchError(f"{host}: 文件超过体积上限", retryable=False)
                     value = response.read(max_bytes + 1)
+                    self._time_remaining()
                     if len(value) > max_bytes:
                         raise FetchError(f"{host}: 响应超过体积上限", retryable=False)
                 if body is None and ttl > 0:
@@ -188,11 +217,11 @@ class HttpClient:
                 if not retry or attempt + 1 == transport_attempts:
                     raise FetchError(f"{host}: HTTP {status}", status,
                                      retry_delay=advised_delay if retry else None) from None
-                self.sleep(delay)
+                self.bounded_sleep(delay)
             except (URLError, TimeoutError, OSError, http.client.HTTPException):
                 if attempt + 1 == transport_attempts:
                     raise FetchError(f"{host}: 网络暂不可达") from None
-                self.sleep(2 ** attempt)
+                self.bounded_sleep(2 ** attempt)
         raise FetchError("网络请求未完成")
 
     def get_bytes(self, url, params=None, headers=None, ttl=86400, max_bytes=6000000):

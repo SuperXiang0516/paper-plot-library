@@ -10,6 +10,27 @@ from paper_plot_library.config import Settings
 
 
 class CliTests(unittest.TestCase):
+    def test_bounded_session_command_forwards_caps_and_explicit_new_pass(self):
+        with tempfile.TemporaryDirectory() as folder, \
+                patch("paper_plot_library.__main__.load_settings", return_value=Settings()) as load, \
+                patch("paper_plot_library.__main__.run_backfill_session", return_value={"status": "finished"}) as run, \
+                patch("paper_plot_library.__main__.run_pipeline") as pipeline, \
+                contextlib.redirect_stdout(io.StringIO()):
+            main(["--root", folder, "backfill-session", "--max-batches", "2", "--session-max-ai-attempts", "20",
+                  "--session-max-requests", "200", "--max-seconds", "60", "--new-session"])
+            self.assertEqual(load.call_args.args[1], {"session_max_batches": 2, "session_max_ai_attempts": 20,
+                "session_max_requests": 200, "session_max_seconds": 60})
+            self.assertEqual(run.call_args.kwargs, {"new_session": True})
+            pipeline.assert_not_called()
+
+    def test_finished_session_does_not_silently_start_a_new_paid_pass(self):
+        with tempfile.TemporaryDirectory() as folder, \
+                patch("paper_plot_library.__main__.load_settings", return_value=Settings()), \
+                patch("paper_plot_library.__main__.run_backfill_session", return_value={}) as run, \
+                contextlib.redirect_stdout(io.StringIO()):
+            main(["--root", folder, "backfill-session"])
+            self.assertFalse(run.call_args.kwargs["new_session"])
+
     def test_bootstrap_batch_override_is_forwarded_separately_from_daily_repairs(self):
         with tempfile.TemporaryDirectory() as folder, \
                 patch("paper_plot_library.__main__.load_settings", return_value=Settings()) as load, \

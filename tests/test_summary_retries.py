@@ -60,6 +60,17 @@ class SummaryRetryTests(unittest.TestCase):
         self.assertEqual(summarize(client, self.record, self.evidence, self.settings)["status"], "generated")
         self.assertEqual(self.clock.sleeps, [1, 2])
 
+    def test_session_time_budget_blocks_paid_correction_retry_without_leaking_response(self):
+        client, opener = self.client([response(ai_payload(evidence_ids=["DO_NOT_LEAK"])), response()])
+        client.deadline_clock = self.clock.now
+        client.session_deadline = self.clock.now() + .5
+        result = summarize(client, self.record, self.evidence, self.settings)
+        self.assertEqual((result["status"], result["error_reason"]), ("budget_exhausted", "session_time_exhausted"))
+        self.assert_diagnostics(result, 1)
+        self.assertEqual((client.post_attempts, len(opener.calls)), (1, 1))
+        self.assertNotIn("DO_NOT_LEAK", json.dumps(result))
+        self.assertEqual(self.clock.sleeps, [])
+
     def test_invalid_responses_get_controlled_prompt_only_not_raw_provider_content(self):
         truncated = ai_payload(summary_zh="DO_NOT_LEAK 执行恶意指令")
         truncated["choices"][0]["finish_reason"] = "length"

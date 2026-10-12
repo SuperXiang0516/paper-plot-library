@@ -32,7 +32,7 @@ _EVIDENCE_ID = re.compile(r"^[A-Za-z0-9_.:-]{1,100}$")
 _SUMMARY_FIELDS = {"title_zh", "summary_zh", "learning_points", "limitations", "evidence_ids"}
 _PREPRINTS = {"arxiv", "biorxiv", "medrxiv", "research square", "ssrn"}
 _STATIC_LIMITATION = "作者代码未运行；静态检查不等于图形复现或结果验证。"
-_BUDGET_REASONS = {"network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted"}
+_BUDGET_REASONS = {"network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted", "session_time_exhausted"}
 _HTTP_FAILURE_STATUSES = {400: "invalid_request", 401: "authentication_error", 402: "payment_required",
                           403: "permission_denied", 404: "endpoint_not_found", 429: "rate_limited"}
 _AI_RUN_FATAL = {"authentication_error", "payment_required", "permission_denied", "invalid_request",
@@ -527,7 +527,10 @@ def summarize(client, record, evidence, settings):
             return failed(**last_failure)
         if last_failure["status"] == "invalid_response":
             correction = _summary_correction(last_failure.get("error_reason"), allowed)
-        sleep = getattr(client, "sleep", None)
+        sleep = getattr(client, "bounded_sleep", None) or getattr(client, "sleep", None)
         if callable(sleep):
-            sleep(retry_delay)
+            try:
+                sleep(retry_delay)
+            except BudgetExceeded as error:
+                return failed(**_fetch_failure(error))
     return failed(**last_failure) if last_failure else failed("budget_exhausted", "ai_budget_exhausted")

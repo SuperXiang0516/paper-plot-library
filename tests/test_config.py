@@ -31,6 +31,8 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(result.bootstrap_batch_limit, 5)
         self.assertEqual(result.max_ai_attempts_per_paper, 3)
         self.assertEqual(result.max_papers_per_run, 5)
+        self.assertEqual((result.session_max_batches, result.session_max_ai_attempts, result.session_max_requests,
+                          result.session_max_seconds, result.auto_remove_uncollectable), (12, 165, 1800, 2700, False))
         self.write_config({"max_new_per_day": 0, "max_ai_calls": 0, "repair_limit": 0, "candidate_checks": 0,
                            "max_images": 0, "max_supplements": 0})
         result = load_settings(self.root)
@@ -79,6 +81,27 @@ class ConfigTests(unittest.TestCase):
             self.write_config({"max_papers_per_run": value})
             with self.subTest(value=value), self.assertRaises(ValueError):
                 load_settings(self.root)
+
+    def test_session_budgets_cannot_be_unbounded_or_wrong_types(self):
+        bounds = {"session_max_batches": (1, 12), "session_max_ai_attempts": (0, 165),
+                  "session_max_requests": (1, 1800), "session_max_seconds": (60, 3300)}
+        for name, (low, high) in bounds.items():
+            for value in (low, high):
+                self.write_config({name: value})
+                self.assertEqual(getattr(load_settings(self.root), name), value)
+            for value in (low - 1, high + 1, True, 1.5, "12", None):
+                self.write_config({name: value})
+                with self.subTest(name=name, value=value), self.assertRaises(ValueError):
+                    load_settings(self.root)
+        self.assertFalse(load_settings(self.root, {"session_max_seconds": 60}).require_complete_new_cases)
+        for field in ("auto_remove_uncollectable", "require_complete_new_cases"):
+            for value in (True, False):
+                self.write_config({field: value})
+                self.assertEqual(getattr(load_settings(self.root), field), value)
+            for value in ("true", 1, None):
+                self.write_config({field: value})
+                with self.subTest(field=field, value=value), self.assertRaises(ValueError):
+                    load_settings(self.root)
 
     def test_only_current_project_env_is_loaded(self):
         (Path(self.temp.name) / ".env").write_text("LLM_API_KEY=unrelated-secret\n")

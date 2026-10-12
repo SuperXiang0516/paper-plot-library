@@ -16,13 +16,13 @@
   const list = value => Array.isArray(value) ? value : [];
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
   const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
-  Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'优先补齐已有候选 · 暂停新发现',bootstrap_needs_attention:'已有候选需要处理 · 暂停新发现',bootstrap_complete_next_run:'已有候选资料已补齐 · 下次进入日更',paper_batch_limit_reached:'达到本轮文章处理上限'});
+  Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'优先补齐已有候选 · 暂停新发现',bootstrap_needs_attention:'已有候选需要处理 · 暂停新发现',bootstrap_complete_next_run:'保留候选资料已补齐 · 下次进入日更',paper_batch_limit_reached:'达到本轮文章处理上限',existing_materials_pending:'既有案例材料需要修补 · 暂停新增'});
   const stageLabel = name => typeof name === 'string' && Object.hasOwn(STAGE_LABELS,name) ? STAGE_LABELS[name] : '未分类阶段';
   const statusLabel = value => typeof value === 'string' && Object.hasOwn(STAGE_STATUS_LABELS,value) ? STAGE_STATUS_LABELS[value] : '状态待核';
   const validHTTP = value => Number.isInteger(value) && value >= 400 && value <= 599;
   const httpStatusLabel = value => validHTTP(value) ? statusLabel(({400:'invalid_request',401:'authentication_error',402:'payment_required',403:'permission_denied',404:'endpoint_not_found',429:'rate_limited'})[value] || (value >= 500 ? 'service_unavailable' : 'other_http_error')) + ([400,401,402,403,404,429].includes(value) ? '' : ' · HTTP '+value) : '';
   const reasonLabel = value => {
-    const budgets={network_budget_exhausted:'本轮本地总 HTTP 请求上限已到',collection_budget_exhausted:'本轮本地采集请求上限已到',ai_budget_exhausted:'本轮本地 AI 尝试上限已到'};
+    const budgets={network_budget_exhausted:'本轮本地总 HTTP 请求上限已到',collection_budget_exhausted:'本轮本地采集请求上限已到',ai_budget_exhausted:'本轮本地 AI 尝试上限已到',session_time_exhausted:'连续整理已达到安全运行时间上限'};
     const responses={response_truncated:'AI 输出被截断，未接收不完整注释',response_shape_invalid:'接口外层结构不符合约定',response_finish_reason_invalid:'接口未正常完成输出',response_content_invalid:'接口内容不是可读取文本',response_content_too_long:'接口内容超过本轮安全长度',response_markdown_fence:'AI 返回代码围栏，未按纯 JSON 格式输出',response_json_malformed:'AI 内容不是合法 JSON',summary_shape_invalid:'注释不是约定的 JSON 对象',summary_fields_invalid:'注释字段不符合约定',summary_text_invalid:'注释标题或摘要为空、过长或类型错误',summary_chinese_missing:'注释未提供所需中文内容',summary_list_invalid:'学习要点或限制列表不符合约定',summary_evidence_invalid:'注释证据标识不在本轮提供的来源内',summary_reproduction_claim:'注释含未经验证的运行或复现声明',metrics_response_shape_invalid:'期刊接口结构不符合约定',metrics_provider_error:'期刊服务返回业务错误',metrics_rank_shape_invalid:'期刊分区内容结构不符合约定',metrics_not_found:'期刊服务未返回匹配记录',missing_journal:'文献缺少可查询的期刊名称'};
     return typeof value === 'string' && Object.hasOwn(budgets,value) ? budgets[value] : typeof value === 'string' && Object.hasOwn(responses,value) ? responses[value] : typeof value === 'string' && /^http_[45]\d{2}$/.test(value) ? httpStatusLabel(Number(value.slice(5))) : ['error','network_error','invalid_endpoint','invalid_response','missing_key','missing_model','missing_evidence','missing_endpoint'].includes(value) ? statusLabel(value) : '';
   };
@@ -59,6 +59,9 @@
     if(untouched!==null || retry!==null)lines.push('既有记录处理：首次核查 '+(untouched??'未报告')+' 条 · 修补 / 复查 '+(retry??'未报告')+' 条。首次核查与失败修补分配名额，避免反复处理同几篇。');
     if(cooldown!==null && cooldown>0)lines.push(cooldown+' 条记录正在延后复查 / 重试，不占用本轮普通修补名额；其中可能是重复失败，也可能是暂时无法补齐的资料。');
     if(remaining!==null)lines.push('尚未首次自动核查：'+remaining+' 条；这不是接口失败数量。');
+    const rejected=counter(report.rejectedCandidateCount),removed=counter(report.removedCount);
+    if(rejected!==null)lines.push('本批未收录的不完整新候选：'+rejected+' 篇；不进入网站目录、不占今日成功收录名额。');
+    if(removed!==null && removed>0)lines.push('本批自动移除不可用既有文章：'+removed+' 篇；移除不是材料收集成功，可通过 Git 历史恢复。');
     if(automatic!==null || incomplete!==null)lines.push('本轮自动步骤完整：'+(automatic??'未报告')+' 条 · 自动步骤未完整：'+(incomplete??'未报告')+' 条。自动步骤完整不等于原图与输入已齐全、人工精确对应已核或复现成功。');
     if(report.collectionBudgetExhausted === true)lines.push('采集达到本轮本地请求上限并停止扩展。'+(reserved > 0 ? '已为 AI 预留名额；实际使用情况见 AI HTTP 尝试计数。' : '后续采集等待下次更新。'));
     const aiBudgetSkipped=counter(report.stageCounts?.ai?.budget_exhausted)>0 || list(report.failures).some(failure=>['ai','summary'].includes(failure?.stage) && (failure?.status === 'budget_exhausted' || failure?.error === 'budget_exhausted'));
@@ -161,8 +164,10 @@
   const bootstrapSummary = value => {
     if(!value || typeof value!=='object' || !['active','needs_attention','complete'].includes(value.status))return null;
     const fields=['totalCount','completeCount','pendingCount','attentionCount'];
-    if(fields.some(field=>!Number.isInteger(value[field]) || value[field]<0 || value[field]>10000) || value.completeCount+value.pendingCount+value.attentionCount!==value.totalCount || value.status==='complete' && (value.pendingCount || value.attentionCount))return null;
+    const removed=value.removedCount??0;
+    if(fields.some(field=>!Number.isInteger(value[field]) || value[field]<0 || value[field]>10000) || !Number.isInteger(removed) || removed<0 || removed>10000 || value.completeCount+value.pendingCount+value.attentionCount+removed!==value.totalCount || value.status==='complete' && (value.pendingCount || value.attentionCount))return null;
     const summary={status:value.status,...Object.fromEntries(fields.map(field=>[field,value[field]])),issues:[]};
+    if(Object.hasOwn(value,'removedCount'))summary.removedCount=removed;
     if(typeof value.startedAt==='string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z$/.test(value.startedAt))summary.startedAt=value.startedAt;
     for(const issue of list(value.issues).slice(0,100)){if(!issue || typeof issue.doi!=='string' || !/^10\.\d{4,9}\/[^\s<>]{1,200}$/i.test(issue.doi))continue;const reasonCodes=[...new Set(list(issue.reasonCodes).slice(0,20).filter(reason=>typeof reason==='string' && Object.hasOwn(BOOTSTRAP_REASONS,reason)))];if(reasonCodes.length)summary.issues.push({doi:issue.doi,reasonCodes});}
     if(summary.status==='complete' && summary.issues.length)return null;
@@ -170,8 +175,9 @@
   };
   const bootstrapLines = (value,mode='backfill') => {
     const summary=bootstrapSummary(value);if(!summary)return [];
-    const title=summary.status==='complete'?mode==='daily'?'当前阶段：每日自动发现新文献':'已有候选资料收集已完成 · 下次运行进入日更':summary.status==='needs_attention'?'已有候选需要处理 · 新文献发现仍暂停':'当前阶段：分批补齐已有候选 · 暂停新文献发现';
-    return [title,'自动材料收集完成 '+summary.completeCount+' / '+summary.totalCount+' 条 · 待处理 '+summary.pendingCount+' 条 · 需要检查 '+summary.attentionCount+' 条',summary.status==='complete'?'本轮候选材料阶段已通过，不代表人工精确对应已核或原图复现成功。':'仅在这批已有候选的材料缺口真正处理完成后，才进入每日新文献发现。许可受限或缺少输入不会自动改成完成。'];
+    const removed=summary.removedCount || 0, retained=summary.totalCount-removed;
+    const title=summary.status==='complete'?mode==='daily'?'当前阶段：每日自动发现新文献':'保留候选资料收集已完成 · 下次运行进入日更':summary.status==='needs_attention'?'已有候选需要处理 · 新文献发现仍暂停':'当前阶段：分批补齐已有候选 · 暂停新文献发现';
+    return [title,'自动材料收集完成 '+summary.completeCount+' / '+retained+' 条保留案例 · 初始候选 '+summary.totalCount+' 条 · 待处理 '+summary.pendingCount+' 条 · 需要检查 '+summary.attentionCount+' 条 · 已移除 '+removed+' 条',summary.status==='complete'?'保留案例的材料阶段已通过；已移除文章不计为收集完成，不代表人工精确对应已核或原图复现成功。':'仅在保留候选的材料缺口真正处理完成后，才进入每日新文献发现。许可受限或缺少输入不会自动改成完成；达到受控移除条件的记录另计为已移除，可从 Git 历史恢复。'];
   };
   const bootstrapIssueLabel = issue => {const safe=bootstrapSummary({status:'needs_attention',totalCount:1,completeCount:0,pendingCount:0,attentionCount:1,issues:[issue]})?.issues[0];return safe?safe.doi+' · '+safe.reasonCodes.map(reason=>BOOTSTRAP_REASONS[reason]).join('；'):'未分类的候选池缺口';};
   const latestBootstrap = (data,updates=[]) => {
@@ -179,7 +185,48 @@
     const summary=bootstrapSummary(data?.bootstrap);if(summary)return {summary,mode:reports[0]?.mode==='daily'?'daily':'backfill'};
     return reports.length?{summary:bootstrapSummary(reports[0].bootstrap),mode:reports[0].mode==='daily'?'daily':'backfill'}:null;
   };
-  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS};
+  const SESSION_STATUSES=['active','paused','finished'];
+  const SESSION_END_REASONS={cohort_traversed:'本次候选池已遍历',no_eligible_cases:'目前没有可继续处理的记录（可能仍有延后或需检查的缺口）',batch_limit_reached:'达到本次会话批次数上限',ai_budget_exhausted:'达到本次会话 AI 尝试预算',http_budget_exhausted:'达到本次会话 HTTP 请求预算',time_limit_reached:'达到本次会话时间限制',ai_configuration_blocked:'AI 配置或凭据问题，需要修正',checkpoint_callback_failed:'逐批保存回调未成功，请检查 Actions 提交 / 推送日志',batch_failed:'本批未正常结束，等待安全续接',interrupted:'会话中断，等待安全续接'};
+  const SESSION_COUNTERS=['targetCount','plannedCount','processedCount','remainingCount','batchCount','checkpointCount','requests','aiAttempts','uncertainRequests','uncertainAiAttempts','inFlightCount','maxBatches','maxRequests','maxAiAttempts','completeCount','pendingCount','attentionCount','removedCount'];
+  const sessionSummary = value => {
+    if(!value || typeof value!=='object' || Array.isArray(value) || value.version!==1 || !SESSION_STATUSES.includes(value.status) || typeof value.id!=='string' || !/^[a-f0-9]{1,64}$/i.test(value.id) || !['active','needs_attention','complete','complete_with_removals'].includes(value.materialsStatus) || typeof value.localCheckpointSaved!=='boolean')return null;
+    value={...value,removedCount:value.removedCount??0};
+    const reason=value.endReason??'';if(typeof reason!=='string' || reason && !Object.hasOwn(SESSION_END_REASONS,reason) || value.status!=='active' && !reason)return null;
+    if(SESSION_COUNTERS.some(field=>counter(value[field])===null))return null;
+    if(['targetCount','plannedCount','processedCount','remainingCount','inFlightCount','completeCount','pendingCount','attentionCount','removedCount','checkpointCount'].some(field=>value[field]>10000))return null;
+    if(value.completeCount+value.pendingCount+value.attentionCount+value.removedCount!==value.targetCount || value.processedCount>value.plannedCount || value.plannedCount>value.targetCount || value.remainingCount>value.targetCount || value.inFlightCount>value.targetCount || ['complete','complete_with_removals'].includes(value.materialsStatus) && (value.pendingCount || value.attentionCount) || value.materialsStatus==='complete' && value.removedCount || value.materialsStatus==='complete_with_removals' && !value.removedCount)return null;
+    const summary={version:1,id:value.id,status:value.status,endReason:reason,materialsStatus:value.materialsStatus,localCheckpointSaved:value.localCheckpointSaved,...Object.fromEntries(SESSION_COUNTERS.map(field=>[field,value[field]]))};
+    for(const field of ['startedAt','updatedAt'])if(typeof value[field]==='string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?Z$/.test(value[field]))summary[field]=value[field];
+    return summary;
+  };
+  const sessionLines = value => {
+    const summary=sessionSummary(value);if(!summary)return [];
+    const title=summary.status==='active'?'连续补齐会话：上次保存时正在处理':summary.status==='paused'?'连续补齐会话：已暂停 · 可安全续接':'连续补齐会话：本次已结束（不等于材料已全部收齐）';
+    const lines=[title,'本次已核查 '+summary.processedCount+' / '+summary.targetCount+' 条 · 已选择 '+summary.plannedCount+' 条 · 剩余待处理 '+summary.remainingCount+' 条 · 已结束批次 '+summary.batchCount+' / '+summary.maxBatches+'。已有完整材料可跳过，已核查不等于材料完成。'];
+    if(summary.inFlightCount)lines.push('有 '+summary.inFlightCount+' 条处于已预留、结果尚未确认的批次；续接以持久检查点为准，不直接重复付费调用。');
+    lines.push('本会话确认的实际 HTTP：'+summary.requests+' / '+summary.maxRequests+' 次 · 其中 AI HTTP 尝试：'+summary.aiAttempts+' / '+summary.maxAiAttempts+' 次。失败重试计数，费用以服务方账单为准。');
+    if(summary.uncertainRequests || summary.uncertainAiAttempts)lines.push('中断批次用量尚待确认：保守占用 HTTP '+summary.uncertainRequests+' 次、AI '+summary.uncertainAiAttempts+' 次可用预算；这不是已确认实际请求或扣费次数。');
+    lines.push('本地 JSON 检查点：'+(summary.localCheckpointSaved?'已写入':'尚未确认写入')+' · 累计写入 '+summary.checkpointCount+' 次。GitHub 远端保存是否成功，需查看 Actions 逐批提交 / 推送日志，不能由本地写入推定。');
+    if(summary.endReason)lines.push('本次结束原因：'+SESSION_END_REASONS[summary.endReason]+'。未处理记录和真实材料缺口保留，修正问题后从保存进度续接。');
+    lines.push('严格材料验收：完成 '+summary.completeCount+' / '+(summary.targetCount-summary.removedCount)+' 条保留案例 · 待处理 '+summary.pendingCount+' 条 · 需要检查 '+summary.attentionCount+' 条 · 已移除 '+summary.removedCount+' 条（初始目标 '+summary.targetCount+' 条）。遍历结束、移除记录或 AI 成功不代表原图、许可、代码、输入已齐全，也不代表人工精确对应已核或已复现。');
+    if(summary.updatedAt)lines.push('已保存快照：'+summary.updatedAt+'；页面不是正在运行会话的实时监控。');
+    return lines;
+  };
+  const latestSession = (data,updates=[]) => {
+    const candidates=[{summary:sessionSummary(data?.session),time:data?.session?.updatedAt || data?.generatedAt || ''},...list(updates).map(report=>({summary:sessionSummary(report?.session),time:report?.session?.updatedAt || report?.finishedAt || report?.startedAt || ''}))];
+    return candidates.filter(item=>item.summary).sort((a,b)=>str(b.time,'').localeCompare(str(a.time,'')))[0]?.summary || null;
+  };
+  const DAILY_END_LABELS={target_reached:'今日成功收录目标已达到',batch_limit_reached:'达到今日连续批次数上限',ai_budget_exhausted:'达到今日累计 AI 调用上限',http_budget_exhausted:'达到今日累计 HTTP 上限',time_limit_reached:'达到今日连续整理时间上限',ai_configuration_blocked:'API 配置或账户问题需要处理',checkpoint_callback_failed:'GitHub 批次保存失败',batch_failed:'批次未正常结束',interrupted:'运行中断，检查点已保留',no_progress:'未找到可继续检查的新候选',initialization_pending:'既有材料仍需先处理',day_changed:'UTC 日期改变，停止本轮'};
+  const DAILY_BOUNDS={batchCount:[0,12],requests:[0,1800],aiAttempts:[0,165],uncertainRequests:[0,1800],uncertainAiAttempts:[0,165],dailyNewCount:[0,5],maxBatches:[1,12],maxRequests:[1,1800],maxAiAttempts:[0,165],targetCount:[0,5],inFlightCount:[0,1]};
+  const dailySummary=value=>{
+    if(!value || typeof value!=='object' || typeof value.date!=='string' || !/^\d{4}-\d{2}-\d{2}$/.test(value.date) || !['active','paused','finished'].includes(value.status) || typeof value.endReason!=='string' || value.endReason!==''&&!Object.hasOwn(DAILY_END_LABELS,value.endReason) || typeof value.localCheckpointSaved!=='boolean')return null;
+    const date=new Date(value.date+'T00:00:00Z');if(!Number.isFinite(date.getTime()) || date.getUTCFullYear()<1 || date.toISOString().slice(0,10)!==value.date)return null;
+    for(const [key,[low,high]]of Object.entries(DAILY_BOUNDS))if(!Number.isInteger(value[key]) || value[key]<low || value[key]>high)return null;
+    if(value.requests+value.uncertainRequests>value.maxRequests || value.aiAttempts+value.uncertainAiAttempts>value.maxAiAttempts || value.aiAttempts>value.requests || value.uncertainAiAttempts>value.uncertainRequests || value.batchCount>value.maxBatches || (value.status==='finished')!==(value.endReason==='target_reached') || value.status==='finished'&&value.dailyNewCount<value.targetCount || value.status==='active'&&value.endReason!=='' || value.status==='paused'&&!value.endReason || value.status!=='active'&&value.inFlightCount&&!(value.status==='paused'&&value.endReason==='checkpoint_callback_failed'))return null;
+    return Object.fromEntries(['date','status','endReason','localCheckpointSaved',...Object.keys(DAILY_BOUNDS)].map(key=>[key,value[key]]));
+  };
+  const dailyLines=value=>{const data=dailySummary(value);return data?['UTC '+data.date+' · 今日成功收录 '+data.dailyNewCount+' / '+data.targetCount+' 篇 · 已处理 '+data.batchCount+' 批',data.endReason?DAILY_END_LABELS[data.endReason]:'日更连续整理中；这是最后保存的快照，不是实时监控','已确认 HTTP：'+data.requests+' / '+data.maxRequests+' 次 · AI 尝试：'+data.aiAttempts+' / '+data.maxAiAttempts+' 次；重跑不重置当天累计上限。','不完整候选不占成功名额；接口失败、候选不足或达到安全上限时不足 5 篇也会如实显示。']:[];};
+  if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS,sessionSummary,sessionLines,latestSession,SESSION_STATUSES,SESSION_END_REASONS,SESSION_COUNTERS,dailySummary,dailyLines,DAILY_END_LABELS,DAILY_BOUNDS};
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null;
@@ -344,6 +391,8 @@
       items(card, list(report.errors).map(errorLabel));items(card,report.warnings);
       if(report.checkedCount !== undefined)paragraph(card,'检查 '+str(report.checkedCount)+' 条 · 新文献发现：'+statusLabel(report.discoveryStatus),'small');
       for(const line of updateBudgetLines(report))paragraph(card,line,'small');
+      const session=sessionSummary(report.session);
+      if(session){const fold=el('details');fold.append(el('summary','查看连续会话进度与保存状态'));for(const line of sessionLines(session))paragraph(fold,line,'small');card.append(fold);}
       const bootstrap=bootstrapSummary(report.bootstrap);
       if(bootstrap){for(const line of bootstrapLines(bootstrap,report.mode))paragraph(card,line,'small');if(bootstrap.issues.length){const fold=el('details');fold.append(el('summary','查看本批候选材料缺口（最多显示 100 条）'));items(fold,bootstrap.issues.map(bootstrapIssueLabel));card.append(fold);}}
       if(list(report.failures).length)items(card,report.failures.map(failureLabel));
@@ -357,13 +406,17 @@
     return node;
   }
   function renderCollectionPhase() {
-    const node=$('collection-phase'), phase=latestBootstrap(catalog,reports);node.replaceChildren();node.hidden=!phase;
+    const node=$('collection-phase'), phase=latestBootstrap(catalog,reports), session=latestSession(catalog,reports),daily=dailySummary(catalog?.dailySession);node.replaceChildren();node.hidden=!phase&&!session&&!daily;
+    if(!phase&&!session&&!daily)return;
+    if(daily){const section=el('div',null,'daily-progress'),lines=dailyLines(daily);heading(section,lines[0],2);for(const line of lines.slice(1))paragraph(section,line);node.append(section);}
+    node.classList.toggle('needs-attention',phase?.summary.status==='needs_attention' || session?.materialsStatus==='needs_attention' || session?.status==='paused');
+    if(session){const section=el('div',null,'session-progress'),lines=sessionLines(session);heading(section,lines[0],2);paragraph(section,lines[1],'phase-counts');if(session.targetCount){const progress=el('progress');progress.max=session.targetCount;progress.value=session.processedCount;progress.setAttribute('aria-label','本次会话已核查论文进度，不代表材料收齐');section.append(progress);}const fold=el('details');fold.append(el('summary','查看会话预算、保存状态与结束原因'));for(const line of lines.slice(2))paragraph(fold,line);section.append(fold);node.append(section);}
     if(!phase)return;
-    node.classList.toggle('needs-attention',phase.summary.status==='needs_attention');
     const lines=bootstrapLines(phase.summary,phase.mode);heading(node,lines[0],2);paragraph(node,lines[1],'phase-counts');
-    if(phase.summary.totalCount){const progress=el('progress');progress.max=phase.summary.totalCount;progress.value=phase.summary.completeCount;progress.setAttribute('aria-label','已有候选自动材料收集进度');node.append(progress);}
+    const retained=phase.summary.totalCount-(phase.summary.removedCount || 0);
+    if(retained){const progress=el('progress');progress.max=retained;progress.value=phase.summary.completeCount;progress.setAttribute('aria-label','保留候选自动材料收集进度，移除记录不计为完成');node.append(progress);}
     paragraph(node,lines[2]);
-    if(phase.summary.startedAt)paragraph(node,'本批建立：'+phase.summary.startedAt,'small');
+    if(phase.summary.startedAt)paragraph(node,'固定候选池建立：'+phase.summary.startedAt,'small');
     if(phase.summary.issues.length){const fold=el('details');fold.append(el('summary','查看待补齐 / 需要检查的原因（最多显示 100 条）'));items(fold,phase.summary.issues.map(bootstrapIssueLabel));node.append(fold);}
   }
   function render() {
@@ -547,7 +600,7 @@
       const counts=collectionCounts(data.papers,data.inputSpecs);
       $('collection-summary').textContent=counts.browsable+' 个可浏览 · '+counts.candidates+' 个候选待补齐 · '+counts.verified+' 个精确对应已核'+(counts.excluded?' · '+counts.excluded+' 个排除记录':'');
       for(const [value,label,count] of [['browsable','可浏览案例',counts.browsable],['candidates','候选池 · 待补齐',counts.candidates],['all','全部记录',counts.total]]){const option=[...$('collection-filter').options].find(option=>option.value===value);if(option)option.textContent=label+'（'+count+'）';}
-      $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'可浏览案例已有可展示原图与固定版本代码；AI、输入字段、期刊指标各自标注缺口。候选池保留待补齐记录与只允许链接的原图。所有记录均未执行作者代码；可浏览不等于精确对应或复现成功。';
+      $('notice').textContent=(data.synthetic?'离线模拟目录：记录不是实际文献。 ':'')+'既有候选先核查补齐，重复核查仍无法取得必要材料的文章自动移除；临时接口故障不会删文。日更新文章达到原图、代码、输入与注释要求后才计为成功收录。所有记录均未执行作者代码；资料齐全不等于精确对应或复现成功。';
       renderCollectionPhase();
       $('generated-at').textContent='目录构建：'+str(data.generatedAt || data.checkedAt,'未报告');
       view=viewFromHash(location.hash,view);

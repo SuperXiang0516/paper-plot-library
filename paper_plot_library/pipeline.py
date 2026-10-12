@@ -11,8 +11,8 @@ import re
 from urllib.parse import quote, unquote, urlsplit
 
 from .config import load_settings
-from .bootstrap import (bootstrap_plan, bootstrap_report, note_bootstrap_attempt,
-                        _safe_record_state)
+from .bootstrap import (bootstrap_assessment, bootstrap_plan, bootstrap_report, note_bootstrap_attempt,
+                        _safe_record_state, safe_removed_dois)
 from .enrichment import enrich_metrics, summarize
 from .figures import inspect_article
 from .http import BudgetExceeded, HttpClient
@@ -574,12 +574,18 @@ def new_case(record):
     return result
 
 
-def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None, discover_new=True, mode="auto"):
+def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None, discover_new=True, mode="auto", session_dois=None):
     root = Path(root)
     settings = settings or load_settings(root)
     adapters = adapters or {}
     if not isinstance(mode, str) or mode not in {"auto", "backfill", "daily"}:
         raise ValueError("更新模式必须为 auto、backfill 或 daily")
+    if session_dois is not None:
+        if (mode != "backfill" or discover_new or not isinstance(session_dois, list)
+                or not 1 <= len(session_dois) <= min(5, settings.max_papers_per_run, settings.bootstrap_batch_limit)
+                or any(not isinstance(doi, str) or normalize_doi(doi) != doi for doi in session_dois)
+                or len(set(session_dois)) != len(session_dois)):
+            raise ValueError("连续补库批次必须是最多5篇既有规范 DOI；不得发现新文献")
     reserved_ai = min(settings.max_ai_calls, settings.max_requests) if settings.llm_api_key and settings.llm_model else 0
     client = client or HttpClient(root / ".ppl" / "cache", settings.max_requests,
                                   max_post_attempts=settings.max_ai_calls, reserved_post_requests=reserved_ai)
@@ -605,6 +611,8 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         reports = read_json(root / "data" / "updates.json", [])
         if not isinstance(reports, list) or any(not isinstance(entry, dict) for entry in reports):
             raise ValueError("更新历史格式无效；未修改案例库，请检查 data/updates.json")
+        if session_dois is not None and not set(session_dois) <= {p["doi"] for p in catalog["papers"]}:
+            raise ValueError("连续补库批次包含非既有文章；未开始请求")
         initialization = (settings.initialize_existing_first or mode == "backfill"
                           or "bootstrap" in ledger or "bootstrap" in catalog)
         bootstrap_created = initialization and "bootstrap" not in ledger
@@ -624,9 +632,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             discover_new = False
             report["discoveryStatus"] = "bootstrap_needs_attention" if before["status"] == "needs_attention" else "bootstrap_in_progress"
         day = ledger.setdefault("days", {}).setdefault(report["date"], {"newDOIs": []})
-        seen = {p["doi"] for p in catalog["papers"]}
+        seen = {p["doi"] for p in catalog["papers"]} | safe_removed_dois(ledger)
         repaired_ids = []
         checked_ids = set()
+        checked_doi_order = []
         original_schedules = {}
         failed_ids = set()
         summarized_ids = set()
@@ -647,7 +656,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             write_json(root / "data" / "catalog.json", persistent_catalog(validate_catalog(catalog)))
             write_json(root / "data" / "ledger.json", validate_ledger(ledger, report["date"]))
 
-        if is_backfill:
+        if session_dois is not None:
+            by_doi = {paper["doi"]: paper for paper in catalog["papers"]}
+            repairs = [by_doi[doi] for doi in session_dois]
+        elif is_backfill:
             batch_limit = min(settings.bootstrap_batch_limit, settings.max_papers_per_run)
             repairs = bootstrap_plan(catalog, ledger, batch_limit, report["startedAt"],
                                      root=root, retry_attention=mode == "backfill" or bool(only_dois))
@@ -738,6 +750,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 report["failures"].append({"doi": old["doi"], "stage": "repair", "error": type(exc).__name__})
                 checkpoint()
             report["checkedCount"] += 1
+            checked_doi_order.append(old["doi"])
 
         # A completed cohort can regress during today's maintenance. Reassess
         # before admitting anything new, not only after discovery has finished.
@@ -759,6 +772,16 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             catalog["bootstrap"] = refreshed
             report["bootstrap"] = refreshed
             checkpoint()
+
+        if settings.require_complete_new_cases and not is_backfill:
+            specs = catalog.get("inputSpecs", {})
+            if any(bootstrap_assessment(paper, specs.get(paper["id"]), root)["status"] != "complete"
+                   for paper in catalog["papers"]):
+                # Later daily admissions can regress outside the original frozen
+                # bootstrap cohort too. Do not continue adding while they need
+                # repair; the next cloud invocation routes all present cases.
+                discover_new = False
+                report["discoveryStatus"] = "existing_materials_pending"
 
         # Admission time also carried in records: stale/missing ledger cannot create >5/day.
         admitted_today = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
@@ -822,7 +845,35 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 counts = Counter(tag for p in catalog["papers"] for tag in p.get("graphForms", []))
                 usable = [p for p in checked if not p.get("skip") and ledger["candidates"][p["doi"]]["status"] == "source_confirmed"]
                 usable.sort(key=lambda p: editorial_score(p, counts)["total"], reverse=True)
-                for revised in usable[:allowance]:
+                for revised in usable:
+                    if len(daily) >= settings.max_new_per_day:
+                        break
+                    if settings.require_complete_new_cases:
+                        # Incomplete candidates are not public admissions and do
+                        # not consume today's five-success quota. Paid attempts
+                        # are still accounted even when a candidate is rejected.
+                        spec = input_spec(revised)
+                        source_assessment = bootstrap_assessment(revised, spec, root=root)
+                        # Do not spend on annotations for candidates already
+                        # lacking required non-AI materials.
+                        non_ai_gaps = set(source_assessment["reasonCodes"]) - {
+                            "ai_missing", "ai_stale", "ai_configuration_missing",
+                            "ai_authentication_failed", "ai_payment_required",
+                            "ai_transient_failure", "ai_response_invalid"}
+                        if not non_ai_gaps:
+                            try:
+                                summarize_case(revised)
+                            except Exception:
+                                revised.setdefault("automation", {}).setdefault("errors", []).append("summary: error")
+                        assessment = bootstrap_assessment(revised, spec, root=root)
+                        if assessment["status"] != "complete":
+                            ledger["candidates"][revised["doi"]] = {
+                                "checkedAt": stamp(), "status": "pending",
+                                "reason": "所需原图、代码、输入或注释不完整；未收录、不占成功名额"}
+                            report.setdefault("rejectedCandidateCount", 0)
+                            report["rejectedCandidateCount"] += 1
+                            checkpoint()
+                            continue
                     revised["admittedAt"] = stamp()
                     revised["selectionScore"] = editorial_score(revised, counts)
                     catalog["papers"].append(revised)
@@ -833,13 +884,15 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     report["newCount"] += 1
                     checked_ids.add(revised["id"])
                     original_schedules[revised["id"]] = {}
-                    # Commit admission BEFORE a paid call; interrupted runs can safely repair it.
+                    # Durable successful admission before advancing to another
+                    # candidate. Legacy library mode can still repair paid work.
                     checkpoint()
-                    try:
-                        summarize_case(revised)
-                    except Exception as exc:
-                        failed_ids.add(revised["id"])
-                        revised["automation"]["errors"].append("summary: " + type(exc).__name__)
+                    if not settings.require_complete_new_cases:
+                        try:
+                            summarize_case(revised)
+                        except Exception as exc:
+                            failed_ids.add(revised["id"])
+                            revised["automation"]["errors"].append("summary: " + type(exc).__name__)
                     _update_repair_schedule(revised, settings, {}, revised["automation"]["lastCheckedAt"], revised["id"] in failed_ids)
                     checkpoint()
             except Exception as exc:
@@ -858,6 +911,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             _update_repair_schedule(record, settings, original_schedules.get(record["id"], {}), record["automation"]["lastCheckedAt"], record["id"] in failed_ids)
         catalog["generatedAt"] = stamp()
         catalog["checkedAt"] = report["date"]
+        if settings.auto_remove_uncollectable:
+            from .pruning import prune_uncollectable
+            report["removedPapers"] = prune_uncollectable(catalog, ledger, root, stamp())
+            report["removedCount"] = report["removedPapers"]["removedCount"]
         if initialization:
             after = bootstrap_report(catalog, ledger, root=root, now=stamp())
             catalog["bootstrap"] = after
@@ -871,6 +928,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         report["automaticCompleteCount"] = outcomes["automatic_complete"]
         report["incompleteCount"] = outcomes["incomplete"]
         report["untouchedRemainingCount"] = sum(_untouched(p) for p in catalog["papers"])
+        report["checkedDOIs"] = checked_doi_order
         for record in checked_records:
             for error in record.get("automation", {}).get("errors", []):
                 report["failures"].append(_stage_failure(record, error))
@@ -890,7 +948,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         report.update(finishedAt=stamp(), requests=getattr(client, "requests", 0), aiAttempts=getattr(client, "post_attempts", 0),
                       collectionRequests=max(0, getattr(client, "requests", 0) - getattr(client, "post_attempts", 0)),
                       totalCount=len(catalog["papers"]), dailyNewCount=len(daily),
-                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or outcomes["deferred"] or outcomes["incomplete"] or (is_backfill and report["bootstrap"]["status"] != "complete") else "completed")
+                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or outcomes["deferred"] or outcomes["incomplete"] or report["discoveryStatus"] == "existing_materials_pending" or (is_backfill and report["bootstrap"]["status"] != "complete") else "completed")
         reports = [report] + reports[:89]
         checkpoint()
         write_json(root / "data" / "updates.json", reports)

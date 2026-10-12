@@ -188,7 +188,7 @@ def inspect_repository(client, record, max_files=6):
     found = _repository_url(record)
     base_result = {"status": "not_found", "url": "", "commit": "", "license": "unknown",
                    "scripts": [], "inputs": [], "figureMappings": [], "limitations": [],
-                   "authorCodeExecuted": False}
+                   "authorCodeExecuted": False, "sourceScanLimited": False}
     if not found:
         base_result["limitations"] = ["No exact public GitHub repository URL found in supplied evidence."]
         return base_result
@@ -223,8 +223,10 @@ def inspect_repository(client, record, max_files=6):
             lower = path.lower()
             return (path != selected_path, not bool(re.search(r"fig|plot|visual|analysis|paper", lower)), lower)
         candidates.sort(key=priority)
+        source_limit = min(12, max(1, int(max_files)))
+        base_result["sourceScanLimited"] = bool(tree.get("truncated") or len(candidates) > source_limit)
         header_fetches = 0
-        for path in candidates[:min(12, max(1, int(max_files)))]:
+        for path in candidates[:source_limit]:
             raw_url = "https://raw.githubusercontent.com/" + owner + "/" + repo + "/" + commit + "/" + quote(path, safe="/")
             source_url = base_result["url"] + "/blob/" + commit + "/" + quote(path, safe="/")
             try:

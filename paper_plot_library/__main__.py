@@ -10,6 +10,7 @@ from .release_export import export_site
 from .site import build_site
 from .storage import read_json
 from .sources import normalize_doi
+from .session import run_backfill_session
 
 
 def main(argv=None):
@@ -29,6 +30,12 @@ def main(argv=None):
     run.add_argument("--max-papers-per-run", type=int, help="本轮来源检查总篇数上限；补库、修补和新候选共享")
     run.add_argument("--max-ai-calls", type=int)
     run.add_argument("--max-requests", type=int)
+    session = sub.add_parser("backfill-session", help="连续补齐现有案例：每批最多5篇，有限预算与逐批保存，不发现新文献")
+    session.add_argument("--max-batches", type=int)
+    session.add_argument("--session-max-ai-attempts", type=int)
+    session.add_argument("--session-max-requests", type=int)
+    session.add_argument("--max-seconds", type=int)
+    session.add_argument("--new-session", action="store_true", help="显式开启下一轮固定队列复查；保留材料缺口与冷却规则")
     sub.add_parser("build", help="离线构建网站，不调用 API")
     sub.add_parser("export", help="白名单导出可发布文件；不带入预览目录中的用户文件")
     sub.add_parser("check", help="检查配置/数据；只报告密钥是否存在，不显示值")
@@ -47,6 +54,12 @@ def main(argv=None):
                               discover_new=not args.no_discovery and not args.doi and args.mode != "backfill",
                               mode=args.mode)
         print(json.dumps(report, ensure_ascii=False, indent=2))
+    elif args.command == "backfill-session":
+        fields = {"max_batches": "session_max_batches", "session_max_ai_attempts": "session_max_ai_attempts",
+                  "session_max_requests": "session_max_requests", "max_seconds": "session_max_seconds"}
+        overrides = {field: getattr(args, argument) for argument, field in fields.items() if getattr(args, argument) is not None}
+        summary = run_backfill_session(root, load_settings(root, overrides), new_session=args.new_session)
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
     elif args.command == "build":
         output = build_site(root, validate_catalog(read_json(root / "data" / "catalog.json")), read_json(root / "data" / "updates.json", []))
         print("已构建：" + str(output))

@@ -168,6 +168,47 @@ class HttpTests(unittest.TestCase):
         for value in (-1, 31, True, float("inf"), float("nan"), "DO_NOT_LEAK", {}):
             self.assertFalse(hasattr(FetchError("safe", retry_delay=value), "retry_delay"))
 
+    def test_session_deadline_blocks_before_transport_and_sleep(self):
+        client, opener = self.client([])
+        client.deadline_clock = self.clock.now
+        client.session_deadline = self.clock.now()
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "session_time_exhausted")
+        self.assertTrue(client.time_budget_exhausted)
+        self.assertEqual((client.requests, client.post_attempts, len(opener.calls)), (0, 0, 0))
+        self.assertEqual(self.clock.sleeps, [])
+
+    def test_session_deadline_clamps_each_socket_timeout(self):
+        client, opener = self.client([Response()])
+        client.deadline_clock = self.clock.now
+        client.session_deadline = self.clock.now() + .25
+        self.assertEqual(client.get_json("https://api.github.com/test", ttl=0), {"ok": True})
+        self.assertEqual(opener.calls[0][1], .25)
+
+    def test_session_deadline_does_not_sleep_past_remaining_time_for_retry_after(self):
+        client, opener = self.client([http_error(429, "30"), Response()])
+        client.deadline_clock = self.clock.now
+        client.session_deadline = self.clock.now() + 10
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "session_time_exhausted")
+        self.assertEqual((client.requests, len(opener.calls)), (1, 1))
+        self.assertEqual(self.clock.sleeps, [])
+
+    def test_session_deadline_rechecks_after_a_slow_response(self):
+        class SlowResponse(Response):
+            def read(response, maximum):
+                self.clock.value += 2
+                return response.data[:maximum]
+        client, opener = self.client([SlowResponse()])
+        client.deadline_clock = self.clock.now
+        client.session_deadline = self.clock.now() + 1
+        with self.assertRaises(BudgetExceeded) as caught:
+            client.get_json("https://api.github.com/test", ttl=0)
+        self.assertEqual(caught.exception.reason, "session_time_exhausted")
+        self.assertEqual((client.requests, len(opener.calls)), (1, 1))
+
     def test_budget_reasons_are_typed_safe_fetch_errors(self):
         reasons = ("network_budget_exhausted", "collection_budget_exhausted", "ai_budget_exhausted")
         for reason in reasons:

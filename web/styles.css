@@ -34,6 +34,11 @@ main{max-width:1660px;padding:0 40px 56px;margin:auto}
 .collection-phase.needs-attention{border-color:#e7d2b9;background:#fffaf2}
 .collection-phase .phase-counts{color:var(--ink);font-weight:600}
 .collection-phase li{font-size:11px;line-height:1.8;color:var(--muted)}
+.collection-phase .session-progress{margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.collection-phase .session-progress:only-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.collection-phase .session-progress progress{accent-color:#507a99}
+.collection-phase details{margin-top:8px}
+.collection-phase details summary{font-size:12px;color:var(--muted);cursor:pointer}
 .collection-heading{display:flex;align-items:baseline;gap:16px;margin-bottom:20px}
 .collection-heading h2{font-size:20px;margin:0;font-weight:650}
 .collection-heading p{font-size:12px;color:var(--muted);margin:0}
