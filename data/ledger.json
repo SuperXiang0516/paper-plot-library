@@ -142,8 +142,8 @@
     "startedAt": "2026-10-11T15:08:16Z",
     "status": "active",
     "totalCount": 55,
-    "completeCount": 3,
-    "pendingCount": 52,
+    "completeCount": 4,
+    "pendingCount": 51,
     "attentionCount": 0,
     "removedCount": 0
   },
@@ -151,7 +151,7 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:18:03Z",
+    "updatedAt": "2026-10-12T07:18:59Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -238,37 +238,23 @@
       "10.1126/sciadv.aef0670",
       "10.1038/s44335-026-00100-5",
       "10.1093/bioinformatics/btag706",
-      "10.1111/1755-0998.70213"
+      "10.1111/1755-0998.70213",
+      "10.1038/s41588-026-02776-8",
+      "10.1038/s41586-023-06806-x",
+      "10.1038/s41467-024-51855-z",
+      "10.1038/s41586-023-06252-9",
+      "10.1038/s41588-024-01873-w"
     ],
     "batchCount": 3,
-    "checkpointCount": 6,
-    "requests": 161,
-    "aiAttempts": 4,
+    "checkpointCount": 7,
+    "requests": 247,
+    "aiAttempts": 8,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 80,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41588-026-02776-8",
-        "10.1038/s41586-023-06806-x",
-        "10.1038/s41467-024-51855-z",
-        "10.1038/s41586-023-06252-9",
-        "10.1038/s41588-024-01873-w"
-      ],
-      "startedAt": "2026-10-12T07:18:03Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41588-026-02776-8": "2026-10-11T11:17:52Z",
-        "10.1038/s41586-023-06806-x": "",
-        "10.1038/s41467-024-51855-z": "2026-10-11T11:23:47Z",
-        "10.1038/s41586-023-06252-9": "",
-        "10.1038/s41588-024-01873-w": ""
-      }
-    }
+    "elapsedSeconds": 136
   }
 }
