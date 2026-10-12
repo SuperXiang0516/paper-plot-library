@@ -31161,23 +31161,25 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:09:18Z",
+        "lastCheckedAt": "2026-10-12T07:23:59Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:09:18Z",
+          "lastAttemptAt": "2026-10-12T07:23:59Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-12T15:09:18Z"
+          "nextAttemptAt": "2026-10-13T07:23:59Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:09:24Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:24:00Z",
           "status": "pending",
           "reasonCodes": [
             "selected_figure_missing",
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:24Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:24:00Z"
         }
       },
       "pmcid": "PMC11564093",
@@ -31499,7 +31501,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:09:10.340085+00:00",
+        "retrievedAt": "2026-10-12T07:23:55.167155+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -41157,7 +41159,8 @@
         "limitations": [
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -41167,12 +41170,13 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:09:09Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:09:18Z",
+        "retrievedAt": "2026-10-12T07:23:59Z",
         "url": "https://openalex.org/W4401585036",
         "cited_by_count": 485,
         "fwci": 50.4231,
@@ -41219,6 +41223,7 @@
           "未观察到许可、期刊指标或复现结果相关信息,均未知。",
           "AI 注释仅为待核学习材料,不能作为事实依据。",
           "Fig.2、Fig.3 中部分统计(如通路富集)使用 Benjamini–Hochberg 校正,但其他分析的校正情况未在证据中完整说明。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -41236,10 +41241,15 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-11T15:09:24Z",
         "model": "deepseek-flash",
         "source_fingerprint": "a29241ebaa20c06b1890c0841ee3568054a2225ffbe115310dd9fce0e77612de",
-        "summary_fingerprint": "f5fa26ba944ffbf97ac44e20f2fd7f07a61eb352260eef8444d3dad754592286"
+        "summary_fingerprint": "f5fa26ba944ffbf97ac44e20f2fd7f07a61eb352260eef8444d3dad754592286",
+        "ai_attempts": 0,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -47002,17 +47012,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:09:09Z",
+        "lastCheckedAt": "2026-10-12T07:23:54Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:09:09Z",
+          "lastAttemptAt": "2026-10-12T07:23:54Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-12T15:09:09Z"
+          "nextAttemptAt": "2026-10-13T07:23:54Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:09:09Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:54Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -47020,7 +47030,11 @@
             "selected_figure_missing",
             "ai_missing"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:09Z"
+          "sourceGapScans": {
+            "formal_version_unavailable": 1,
+            "selected_figure_unavailable": 1
+          },
+          "nextAttemptAt": "2026-10-12T09:23:54Z"
         }
       },
       "pmcid": "PMC12699518",
@@ -47046,7 +47060,7 @@
         "limitations": [
           "No DOI-matched non-manuscript publisher version available in current PMC cloud."
         ],
-        "retrievedAt": "2026-10-11T15:09:04.180362+00:00",
+        "retrievedAt": "2026-10-12T07:23:52.214124+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": []
       },
@@ -47161,7 +47175,8 @@
         "limitations": [
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -47170,12 +47185,14 @@
         "cas": "医学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:09:09Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:09:09Z",
+        "retrievedAt": "2026-10-12T07:23:54Z",
         "url": "https://openalex.org/W4402007218",
         "cited_by_count": 17,
         "fwci": 1.7711,
@@ -47291,27 +47308,26 @@
           "article": "inspected",
           "repository": "inspected",
           "metrics": "matched",
-          "ai": "invalid_response"
+          "ai": "generated"
         },
-        "errors": [
-          "ai: invalid_response"
-        ],
-        "lastCheckedAt": "2026-10-11T15:08:57Z",
+        "errors": [],
+        "lastCheckedAt": "2026-10-12T07:23:43Z",
         "repairSchedule": {
-          "consecutiveFailures": 1,
-          "lastAttemptAt": "2026-10-11T15:08:57Z",
-          "lastOutcome": "failure"
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-12T07:23:43Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-13T07:23:43Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:09:03Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:51Z",
           "status": "pending",
           "reasonCodes": [
-            "selected_figure_missing",
-            "ai_response_invalid"
+            "selected_figure_missing"
           ],
-          "nextAttemptAt": "2026-10-11T16:09:03Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:23:51Z"
         }
       },
       "pmcid": "PMC11284234",
@@ -47706,7 +47722,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:08:50.192254+00:00",
+        "retrievedAt": "2026-10-12T07:23:40.594065+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -48389,7 +48405,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
       },
       "metrics": {
         "status": "matched",
@@ -48398,12 +48415,14 @@
         "cas": "综合性期刊1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:08:56Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:08:57Z",
+        "retrievedAt": "2026-10-12T07:23:43Z",
         "url": "https://openalex.org/W4401062695",
         "cited_by_count": 27,
         "fwci": 3.1758,
@@ -48426,17 +48445,54 @@
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
-        "status": "invalid_response",
-        "title_zh": "",
-        "summary_zh": "",
-        "learning_points": [],
+        "status": "generated",
+        "title_zh": "基因体DNA羟甲基化限制衰老过程中转录变化的幅度",
+        "summary_zh": "该论文(DOI:10.1038/s41467-024-50725-y,Nature Communications,2024-07-28)研究DNA羟甲基化(5hmC)在小鼠肝脏与小脑中的分布及其与衰老的关系。摘要指出5hmC在组织特异性和转录活跃基因的基因体与增强子富集,随衰老在基因体中积累,并限制基因表达变化的幅度;机制上5hmC降低剪接相关因子的结合并与年龄相关可变剪接事件相关;长期静息与衰老等情境可驱动5hmC积累,且该功能在小鼠与人组织中保守。图注显示:Fig.1用nLC-MS/MS、dot blot与免疫荧光展示衰老肝脏中5hmC全局积累;Fig.2用PCA、QSEA鉴定的DHMR、metaplot、基因组浏览器轨迹、GO与CpG/基因间注释展示5hmC在肝脏代谢相关基因区积累;Fig.3将基因体5hmC信号与mRNA计数、mRNA倍数变化方差及上下调基因关联;Fig.4用寡核苷酸质谱pull-down与rMATS差异剪接分析探讨剪接因子结合与可变剪接。作者代码未运行,仅做静态观察。",
+        "learning_points": [
+          "论文主题为基因体5hmC随衰老积累并限制转录变化幅度,研究对象包括小鼠肝脏与小脑(依据publication摘要)。",
+          "Fig.1通过nLC-MS/MS、dot blot与免疫荧光三种方式展示衰老肝脏中5hmC的全局积累,并给出统计方法与重复数(依据figure-0)。",
+          "Fig.2使用PCA、QSEA鉴定的差异羟甲基化区域(DHMRs,FDR<0.05,FC阈值±2)、metaplot、基因组浏览器轨迹、GREAT GO富集与CpG/基因间注释来刻画5hmC在基因区的分布(依据figure-1)。",
+          "Fig.3将基因体5hmC信号与mRNA表达水平、mRNA倍数变化方差(Spearman相关)以及上下调/变化极小或极大基因进行关联分析(依据figure-2)。",
+          "Fig.4采用寡核苷酸质谱pull-down比较老年5hmC与对照/mC的蛋白富集,并用rMATS在p<0.05下检测差异剪接事件,按基因体5hmC信号分组(依据figure-3)。",
+          "静态观察显示作者代码仓库固定提交为b1b4bc635d225b97814267098cf804b0b7232397,包含GTEx数据处理、可变剪接分析、MeDIP/hMeDIP处理与小鼠RNA-seq处理等Rmd文件(依据script-0、script-1、script-2、script-3)。",
+          "静态观察显示GTEx_data_processingandanalysis.Rmd中包含读取蛋白编码基因名文件以及输出肝脏、脑、左心室热图的pdf调用(依据script-0)。",
+          "整理注释提到真实Rmd的'Plots of normalized gene expression across different age groups'章节含ggplot、geom_line、geom_errorbar(依据curated-note)。"
+        ],
         "limitations": [
+          "作者代码未执行,静态检查不等于复现验证,不能宣称已复现或结果一致(依据inspection-boundary)。",
+          "输入数据尺度、图号与代码的对应关系未明示时保持未知(依据inspection-boundary)。",
+          "AI注释仅为待核学习材料,不能作为事实结论(依据inspection-boundary)。",
+          "Fig.1中dot blot与免疫荧光的生物学重复数较少(dot blot n=4每组,免疫荧光n=2每组),图注未说明更广泛组织或时间点的验证(依据figure-0)。",
+          "Fig.2的DHMR鉴定依赖QSEA与FDR<0.05、FC±2阈值,图注未说明其他阈值下结果是否稳健(依据figure-1)。",
+          "Fig.3的相关性分析基于分组排序(100个排名组)与Spearman相关,图注未说明因果方向(依据figure-2)。",
+          "Fig.4的寡核苷酸pull-down与rMATS分析基于特定重复数(n=4或n=3),图注未说明蛋白互作是否经独立方法验证(依据figure-3)。",
+          "script-1、script-2、script-3的静态观察文本为空,无法据此判断其具体分析内容(依据script-1、script-2、script-3)。",
+          "curated-note仅提及ggplot、geom_line、geom_errorbar等绘图函数,未提供图形输出或数值结果(依据curated-note)。",
+          "未观察到期刊指标、许可信息或原图与代码的逐图对应关系,相关事项未知(依据inspection-boundary)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
-        "evidence_ids": [],
-        "error_reason": "summary_list_invalid",
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3",
+          "curated-note"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-12T07:23:50Z",
+        "model": "deepseek-flash",
         "source_fingerprint": "c9d0fc18c5359487d91b496570e37c31c5486933c3309b0c79e635c5001a29f5",
-        "summary_fingerprint": "1567ff28ac700f00e2d532e636b88bc93811fe2b352da3ee1ac5e6c7504faf45"
+        "summary_fingerprint": "1567ff28ac700f00e2d532e636b88bc93811fe2b352da3ee1ac5e6c7504faf45",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -48717,23 +48773,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:08:44Z",
+        "lastCheckedAt": "2026-10-12T07:23:39Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:08:44Z",
+          "lastAttemptAt": "2026-10-12T07:23:39Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-12T15:08:44Z"
+          "nextAttemptAt": "2026-10-13T07:23:39Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:08:49Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:39Z",
           "status": "pending",
           "reasonCodes": [
             "selected_figure_missing",
             "input_undocumented"
           ],
-          "nextAttemptAt": "2026-10-11T16:08:49Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:23:39Z"
         }
       },
       "pmcid": "PMC8880995",
@@ -50011,7 +50068,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:08:37.269559+00:00",
+        "retrievedAt": "2026-10-12T07:23:36.207610+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -53576,7 +53633,8 @@
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
           "Repository license unverified: link-only, no copied or redistributed annotated author code."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -53585,12 +53643,14 @@
         "cas": "生物学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-11T15:08:44Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:08:44Z",
+        "retrievedAt": "2026-10-12T07:23:39Z",
         "url": "https://openalex.org/W4210639503",
         "cited_by_count": 54,
         "fwci": 3.071,
@@ -53635,6 +53695,7 @@
           "证据未说明DiCo在人类数据中的具体验证方式与样本规模。",
           "证据未提供组织细胞类型组成改变与细胞自主变化各自的贡献比例。",
           "证据未说明发育期与衰老期划分阈值(61天与90天之间)的生物学依据。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -53652,10 +53713,15 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-11T15:08:49Z",
         "model": "deepseek-flash",
         "source_fingerprint": "25aba0796b5d3dda5f997e50e3643eb3335f444c7f664819ba17749b13a7e24e",
-        "summary_fingerprint": "07a296b26cfec59f16e25217ee99f4efd221cc77d5b7f5d58930b19557d8b0b4"
+        "summary_fingerprint": "07a296b26cfec59f16e25217ee99f4efd221cc77d5b7f5d58930b19557d8b0b4",
+        "ai_attempts": 0,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -53743,24 +53809,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-11T15:08:36Z",
+        "lastCheckedAt": "2026-10-12T07:23:28Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-11T15:08:36Z",
+          "lastAttemptAt": "2026-10-12T07:23:28Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-12T15:08:36Z"
+          "nextAttemptAt": "2026-10-13T07:23:28Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-11T15:08:36Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-12T07:23:35Z",
           "status": "pending",
           "reasonCodes": [
             "selected_figure_missing",
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
-          "nextAttemptAt": "2026-10-11T16:08:36Z"
+          "sourceGapScans": {},
+          "nextAttemptAt": "2026-10-12T09:23:35Z"
         }
       },
       "pmcid": "PMC9725749",
@@ -54268,7 +54334,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-11T15:08:31.135418+00:00",
+        "retrievedAt": "2026-10-12T07:23:26.485399+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -57887,7 +57953,8 @@
         "limitations": [
           "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
         ],
-        "authorCodeExecuted": false
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
       },
       "metrics": {
         "status": "matched",
@@ -57903,7 +57970,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-11T15:08:36Z",
+        "retrievedAt": "2026-10-12T07:23:28Z",
         "url": "https://openalex.org/W4309514412",
         "cited_by_count": 15,
         "fwci": 0.8494,
@@ -57927,30 +57994,27 @@
       },
       "ai": {
         "status": "generated",
-        "title_zh": "小鼠与人类二元健康属性的损伤与修复测量:稳健性与恢复力随年龄下降、作用于广泛时间尺度且受干预影响不同",
-        "summary_zh": "该论文基于小鼠与人类二元健康属性的重复观测,提取损伤与修复的转换率,用以刻画稳健性(抵抗损伤)与恢复力(从损伤中恢复)。论文报告在小鼠和人类中稳健性与恢复力随年龄出现保守性下降,二者均与衰弱指数(FI)随年龄恶化相关;其中稳健性下降对FI随年龄加速上升的影响更大,且与生存率降低的关联更强。论文还报告缺陷在从最短测量尺度到个体寿命尺度的广泛时间范围内被损伤和修复,并探索了依那普利与自愿运动(小鼠)以及家庭财富(人类)等系统性干预或因素对损伤率与修复率的影响,发现这些影响随年龄和性别而异。所提供的证据仅包含论文元数据、若干图注与绘图脚本的静态观察,未包含可核验的数值结果或复现验证。",
+        "title_zh": "小鼠与人类二元健康属性的损伤与修复测量:稳健性和韧性随年龄下降、跨越广泛时间尺度且受干预影响不同",
+        "summary_zh": "该论文基于小鼠与人类重复观测的二元健康属性,提取损伤与修复的转换率,用以刻画稳健性(抵抗损伤)与韧性(从损伤中恢复)。摘要指出,小鼠和人类中稳健性与韧性均随年龄下降,且稳健性下降对衰弱指数加速上升及生存下降的影响更大;缺陷在从最短测量尺度到个体寿命尺度的广泛时间范围内被损伤和修复;依那普利、自愿运动及家庭财富等因素以年龄和性别依赖的方式影响损伤率与修复率。提供的证据包含论文元数据、图注(修复率随年龄下降、损伤率随年龄上升;联合模型后验预测检查;衰弱指数随年龄上升且雌性高于雄性)以及若干绘图脚本的静态观察,但作者代码未运行,未进行复现验证。",
         "learning_points": [
-          "论文以二元健康属性的重复观测为基础,通过损伤率与修复率两个转换率分别刻画稳健性与恢复力,而非仅用横断面健康状态。",
-          "图注显示修复率随年龄下降、损伤率随年龄上升,并给出各数据集速率与年龄的Spearman秩相关中位数及95%后验可信区间(Figure 2)。",
-          "Figure 2 覆盖三个小鼠数据集(Keller et al., 2019;Bisset et al., 2022;Schultz et al., 2020)与ELSA人类数据集(Phelps et al., 2020;Steptoe et al., 2014),按基线年龄的十年分组展示。",
-          "Figure 2 的(e-g)以小提琴图展示小鼠数据集中损伤率与修复率对死亡风险比的后验分布,对应速率增加1个标准差。",
-          "Figure 2—figure supplement 1 通过后验预测检查比较观测的修复计数、损伤计数、总缺陷计数与生存概率同模型后验样本,并报告R2统计量与残差包含零的95%可信区间比例。",
-          "Figure 2—figure supplement 2 展示小鼠与人类衰弱指数随年龄的上升,并报告雌性(绿色)FI高于雄性(橙色)。",
-          "绘图脚本静态观察显示人类相关图使用human_data.csv、human_repair_deficits.csv、human_damage_deficits.csv,以及long_human_fit_chain1/chain2.RDS中的lambda_r、lambda_d、deriv_r、deriv_d等参数。",
-          "论文摘要称稳健性与恢复力随年龄的下降在小鼠与人类中保守,且稳健性下降对FI加速上升与生存率降低的影响更大。"
+          "论文主题为从重复观测的二元健康属性中提取损伤率与修复率,以分别表征稳健性与韧性(evidence: publication)。",
+          "图注显示修复率随年龄下降、损伤率随年龄上升,并覆盖三个小鼠数据集与 ELSA 人类数据集(evidence: figure-1)。",
+          "图注给出各图中率与年龄的 Spearman 秩相关以中位数及 95% 后验可信区间表示,并展示小鼠数据集中损伤率与修复率对死亡风险比的后验分布(evidence: figure-1)。",
+          "联合模型的后验预测检查比较观测的修复计数、损伤计数、总缺陷计数与生存概率同模型后验样本,并报告 R2 与残差包含零的可信区间比例(evidence: figure-2)。",
+          "图注显示小鼠与人类衰弱指数随年龄上升,且雌性高于雄性(evidence: figure-3)。",
+          "绘图脚本静态观察显示人类相关脚本读取 human_data.csv 并加载 long_human_fit_chain1/2.RDS 中的 lambda_r、lambda_d 等参数,输出 PDF 图(evidence: script-0、script-1、script-2)。",
+          "human_timescale.r 静态观察显示其读取 human_repair_deficits.csv 与 human_damage_deficits.csv,并输出 Human_wealth_timescale.pdf(evidence: script-3)。",
+          "整理说明指出作者 README 提及 mouse_timescales.r 与 human_timescales.r,根目录含 figure_data 与 plotting_code(evidence: curated-note)。"
         ],
         "limitations": [
-          "作者代码未被执行,静态检查不构成复现验证,不能宣称已复现论文结果或与原文一致。",
-          "证据中未提供任何数值结果、效应量或统计显著性,摘要与图注中的结论无法在本次分析中独立核验。",
-          "输入数据的具体列名、数据结构与预处理方式未在证据中明示,相关细节保持未知。",
-          "图号与脚本输出文件之间的对应关系未在证据中明示,不能断言某脚本生成某图。",
-          "证据未包含期刊指标、许可信息或数据可获得性声明,相关事项未知。",
-          "Figure 2 图注中数据集引用(如Keller et al., 2019等)为图注文本所述,未在本次分析中核对原始数据。",
-          "后验预测检查中R2统计量与可信区间覆盖比例的具体数值未在证据中给出,无法评估模型拟合优度。",
-          "干预(依那普利、自愿运动)与家庭财富的分析细节、样本量与统计模型未在证据中提供。",
-          "证据仅覆盖部分图与脚本,论文其他图表与分析方法未在本次分析中涉及。",
-          "所有结论均基于论文自述与静态脚本观察,未进行任何独立计算或数据再分析。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致(evidence: inspection-boundary)。",
+          "输入数据的具体列名、数据结构与尺度未在证据中明示,保持未知(evidence: inspection-boundary)。",
+          "图号与脚本输出之间的对应关系未明示,保持未知(evidence: inspection-boundary)。",
+          "未观察到许可、期刊指标或复现结果相关信息,均属未知(evidence: inspection-boundary)。",
+          "图注中引用的原始数据集(Keller et al., 2019;Bisset et al., 2022;Schultz et al., 2020;Phelps et al., 2020;Steptoe et al., 2014)在证据中仅以引用形式出现,其内容未提供。",
+          "摘要中关于依那普利、自愿运动与家庭财富的具体效应量未在证据中给出,无法量化。",
+          "证据未提供模型拟合细节、先验设定或收敛诊断信息。",
+          "证据未提供图表的具体数值或源数据内容。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -57967,12 +58031,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-11T12:06:15Z",
+        "generated_at": "2026-10-12T07:23:35Z",
         "model": "deepseek-flash",
         "source_fingerprint": "3e38c6bd03b60ce3002fd72678c15d56dad44758d6f52a3dbf0a93fe1a4f043f",
-        "summary_fingerprint": "df7721c90ad9c8f40f412a32d63c1c4b3932da99f00fbfa23af0a25b26abe2ac"
+        "summary_fingerprint": "df7721c90ad9c8f40f412a32d63c1c4b3932da99f00fbfa23af0a25b26abe2ac",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
       }
     },
     {
@@ -170567,7 +170632,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-12T07:23:16Z",
+  "generatedAt": "2026-10-12T07:24:00Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -170618,7 +170683,8 @@
         "doi": "10.1038/s43587-024-00692-2",
         "reasonCodes": [
           "selected_figure_missing",
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       },
       {
@@ -170668,8 +170734,7 @@
       {
         "doi": "10.1038/s41467-024-50725-y",
         "reasonCodes": [
-          "selected_figure_missing",
-          "ai_response_invalid"
+          "selected_figure_missing"
         ]
       },
       {
@@ -170696,8 +170761,7 @@
         "doi": "10.7554/elife.77632",
         "reasonCodes": [
           "selected_figure_missing",
-          "input_undocumented",
-          "ai_response_invalid"
+          "input_undocumented"
         ]
       },
       {
@@ -170964,13 +171028,13 @@
     "version": 1,
     "id": "abaec16831db3cd4d7bc7ebc07615b7c",
     "startedAt": "2026-10-12T07:16:43Z",
-    "updatedAt": "2026-10-12T07:23:20Z",
+    "updatedAt": "2026-10-12T07:24:01Z",
     "status": "active",
     "endReason": "",
     "batchCount": 9,
-    "checkpointCount": 18,
-    "requests": 606,
-    "aiAttempts": 23,
+    "checkpointCount": 19,
+    "requests": 689,
+    "aiAttempts": 25,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -170978,9 +171042,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 45,
-    "processedCount": 40,
-    "remainingCount": 13,
-    "inFlightCount": 5,
+    "processedCount": 45,
+    "remainingCount": 8,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
