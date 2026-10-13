@@ -112127,7 +112127,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:17:41.684116+00:00",
+        "retrievedAt": "2026-10-13T08:30:40.119838+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -112594,11 +112594,11 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:17:44Z",
+        "retrievedAt": "2026-10-13T08:30:45Z",
         "url": "https://openalex.org/W4411721707",
         "cited_by_count": 0,
         "fwci": 0.0,
-        "citation_normalized_percentile": 0.00349298,
+        "citation_normalized_percentile": 0.00340897,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedGraphForms": [
@@ -112617,27 +112617,27 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:17:44Z",
+        "lastCheckedAt": "2026-10-13T08:30:45Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:17:44Z",
+          "lastAttemptAt": "2026-10-13T08:30:45Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:17:44Z"
+          "nextAttemptAt": "2026-10-14T08:30:45Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:17:50Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:30:45Z",
           "status": "pending",
           "reasonCodes": [
             "input_undocumented"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:17:50Z"
+          "nextAttemptAt": "2026-10-13T10:30:45Z"
         }
       },
       "selectionScore": {
-        "total": 82.0174649,
+        "total": 82.01704485,
         "components": {
           "topic": 12,
           "method": 15,
@@ -112645,7 +112645,7 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 0,
-          "normalizedCitationPreference": 0.017464900000000002,
+          "normalizedCitationPreference": 0.01704485,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -112675,6 +112675,7 @@
           "未观察到关于许可、期刊指标或复现结果的信息,均属未知。",
           "证据仅覆盖图注与脚本静态观察,未提供数据列名或数据结构细节。",
           "AI 注释仅为待核学习材料,不能作为事实依据。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -112691,11 +112692,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:17:50Z",
         "model": "deepseek-flash",
         "source_fingerprint": "cf1cbb052a3777e5954587ddf030287b29e33099c5f774bf2411c47be14ddd07",
         "summary_fingerprint": "10d76067a9da43d8034eeaa36b60fd9528825b5b757d3b82336c09a4e42ff344",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -112869,7 +112872,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:17:33.481122+00:00",
+        "retrievedAt": "2026-10-13T08:29:52.222998+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -113387,7 +113390,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:17:36Z",
+        "retrievedAt": "2026-10-13T08:29:56Z",
         "url": "https://openalex.org/W7216008979",
         "cited_by_count": 0,
         "fwci": 0.0,
@@ -113408,24 +113411,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:17:36Z",
+        "lastCheckedAt": "2026-10-13T08:29:56Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:17:36Z",
+          "lastAttemptAt": "2026-10-13T08:29:56Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:17:36Z"
+          "nextAttemptAt": "2026-10-14T08:29:56Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:17:36Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:30:20Z",
           "status": "pending",
           "reasonCodes": [
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:17:36Z"
+          "nextAttemptAt": "2026-10-13T10:30:20Z"
         }
       },
       "selectionScore": {
@@ -113445,30 +113447,25 @@
       "admittedAt": "2026-10-11T10:48:24Z",
       "ai": {
         "status": "generated",
-        "title_zh": "DeCoRE:利用直接RNA测序的结构探测数据解析RNA结构异质性的计算方法",
-        "summary_zh": "该资料介绍了一种名为DeCoRE(deconvolving complex RNA structural ensembles)的计算方法,旨在利用直接RNA测序(direct RNA sequencing)在单个转录本水平上解析RNA结构异质性与动态变化。摘要称DeCoRE结合增强的结构信号检测与测序读段直接聚类,可在单核苷酸分辨率下解析RNA结构集合,并展示其在赖氨酸与TPP核糖开关已知替代构象以及细菌核糖体RNA共转录折叠路径上的应用。所提供的证据包含四张图的图注(涉及方法流程、核糖开关聚类、16S rRNA转录中间体结构转变与异质性)以及若干脚本的静态观察记录。作者代码未执行,输入尺度与图号对应关系未明示处保持未知,AI注释仅为待核学习材料。",
+        "title_zh": "DeCoRE:利用直接RNA测序解析RNA结构异质性的计算方法",
+        "summary_zh": "该资料介绍了一种名为DeCoRE的计算方法,旨在利用直接RNA测序(DRS)数据解析单个转录本层面的RNA结构异质性与动态变化。摘要称DeCoRE结合增强的结构信号检测与测序读段直接聚类,可在单核苷酸分辨率下解析RNA结构集合,并以赖氨酸核糖开关、TPP核糖开关及细菌核糖体RNA共转录折叠路径作为展示案例。所提供的证据包含论文题录信息、四张图的图注以及若干脚本的静态观察记录,未包含作者代码运行结果或复现验证。",
         "learning_points": [
-          "DeCoRE被描述为一种面向直接RNA测序结构探测数据的计算方法,目标是在单个转录本水平解析RNA结构异质性与动态(evidence: publication)。",
-          "Fig. 1图注描述了DeCoRE从纳米孔测序数据提取结构信息的流程:RNA经结构探测化学试剂(如NAI-N3)或对照试剂(DMSO)处理,经纳米孔DRS测序后,将读段及其原始电流信号比对到参考RNA,并对每个核苷酸使用三特征one-class SVM模型识别化学处理读段中的电流信号异常(evidence: figure-0)。",
-          "Fig. 1图注提到增强结构谱整合了误判碱基(miscalled bases)与修饰碱基(modified bases),并在150 mM Aclm处理的RNA中评估性能,ROC曲线分析显示与pri-miR-17∼92a RNA已知结构模型具有较强一致性(evidence: figure-0)。",
-          "Fig. 2图注描述了用于解析异质结构的聚类方法:将每条读段的结构谱编码为向量,碱基分为0(匹配碱基)、1(修饰碱基)、2(误判碱基),并填充至参考RNA长度L;随后对赖氨酸核糖开关化学处理样本的向量化结构谱进行UMAP降维,按DeCoRE识别的簇着色,并用轮廓系数评估聚类质量(evidence: figure-1)。",
-          "Fig. 2图注还显示DeCoRE在赖氨酸核糖开关中识别出两个结构簇,并在包含抗终止子与转录终止子两种互斥构象的区域展示其反应性评分,三个关键区分区域被高亮标注(evidence: figure-1)。",
-          "Fig. 3图注描述了在体外生成枯草芽孢杆菌16S rRNA转录中间体并用纳米孔DRS结构探测方法检测其结构的实验流程,并展示各中间体与全长16S rRNA在共享核苷酸区域反应性评分的PCC,以及136个中间体的反应性评分热图(按3′端比对位置以10-nt分辨率分类)(evidence: figure-2)。",
-          "Fig. 4图注描述了五个高覆盖度16S rRNA转录中间体化学处理样本读段向量化结构谱的UMAP,以及1–270 nt、1–320 nt、1–670 nt区域各构象反应性评分的PCA散点图,点大小反映构象在相应转录中间体中的相对丰度(evidence: figure-3)。",
-          "提供的脚本静态观察记录包含固定提交894bd3d6d71671d39b9c6a5a252598b6a1da6a17下的若干文件路径与SHA256,其中dataprocessing.py的静态观察显示以分块方式读取事件文件(chunksize=50000)(evidence: script-0, script-1, script-2, script-3)。"
+          "DeCoRE被描述为面向直接RNA测序的结构探测数据计算方法,目标是在单个转录本层面解析RNA结构异质性与动态(证据:publication)。",
+          "图1图注描述了DeCoRE从纳米孔测序数据提取结构信息的流程:RNA经结构探测化学试剂(如NAI-N3)或对照试剂(DMSO)处理后进行纳米孔DRS测序,读段连同原始电流信号比对到参考RNA(证据:figure-0)。",
+          "图1图注提到对参考序列每个核苷酸使用三特征单类SVM模型,通过比较化学处理读段中的匹配碱基来识别电流信号异常,并将其指定为修饰碱基(证据:figure-0)。",
+          "图1图注说明增强的结构谱整合了误判碱基与修饰碱基,并在150 mM Aclm处理的RNA中评估其性能,ROC曲线分析显示与pri-miR-17∼92a RNA已知结构模型具有较强一致性(证据:figure-0)。",
+          "图2图注描述了从增强结构谱解析异质结构的聚类方法:每条读段的结构谱编码为向量,碱基分为0(匹配)、1(修饰)、2(误判)三类,并填充至参考RNA长度L(证据:figure-1)。",
+          "图2图注提到对赖氨酸核糖开关化学处理样本中各读段向量化结构谱进行UMAP降维,按DeCoRE识别的簇着色,并用轮廓系数评估聚类质量(证据:figure-1)。",
+          "图3图注描述了在体外生成枯草芽孢杆菌16S rRNA转录中间体并用基于纳米孔DRS的结构探测方法检测其结构的实验流程,以及136个中间体的反应性评分热图与读段计数分布(证据:figure-2)。",
+          "图4图注提到对五个高覆盖度16S rRNA转录中间体的化学处理样本读段向量化结构谱进行UMAP分析,并按DeCoRE识别的簇着色,同时展示PCA分析与50-nt滑窗PCC计算(证据:figure-3)。"
         ],
         "limitations": [
-          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致(evidence: inspection-boundary)。",
-          "输入数据尺度、图号与代码的对应关系未明示,相关细节保持未知(evidence: inspection-boundary)。",
-          "所提供的脚本静态观察记录仅列出文件路径、SHA256与极少量代码片段,未展示完整实现或运行结果(evidence: script-0, script-1, script-2, script-3)。",
-          "各图注文本在提供的证据中存在截断,部分图注内容不完整,无法据此判断完整图表信息(evidence: figure-0, figure-1, figure-2, figure-3)。",
-          "未观察到关于数据许可、期刊指标或独立复现结果的信息,这些内容未知(evidence: publication, inspection-boundary)。",
-          "摘要中关于赖氨酸与TPP核糖开关替代构象、细菌核糖体RNA共转录折叠路径的结论来自论文自述,未在本次证据中独立验证(evidence: publication)。",
-          "Fig. 1中ROC曲线分析的具体数值、样本量与统计细节未在证据中给出(evidence: figure-0)。",
-          "Fig. 2中轮廓系数具体数值、各簇相对比例数值未在证据中给出(evidence: figure-1)。",
-          "Fig. 3中PCC具体数值、136个中间体的覆盖度与统计细节未在证据中给出(evidence: figure-2)。",
-          "Fig. 4中PCA解释方差、自由能数值与滑动窗口PCC具体结果未在证据中给出(evidence: figure-3)。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未执行,输入尺度与图号对应关系未明示时保持未知;AI注释仅为待核学习材料(证据:inspection-boundary)。",
+          "所提供的脚本证据仅为静态观察记录,未包含运行结果,不能据此宣称已复现或与原文结果一致(证据:script-0、script-1、script-2、script-3)。",
+          "脚本静态观察中仅见dataprocessing.py包含读取事件文件的代码片段,其余脚本的静态观察内容为空,无法据此推断具体实现细节(证据:script-3、script-0、script-1、script-2)。",
+          "证据未提供论文的许可信息、期刊指标或独立复现结果,相关事项未知(证据:publication)。",
+          "图注文本存在截断(如figure-0、figure-1、figure-2、figure-3的末尾),部分细节无法从现有证据完整获知(证据:figure-0、figure-1、figure-2、figure-3)。",
+          "证据未说明各图与具体输入数据文件、参数设置之间的对应关系,相关对应关系未知(证据:inspection-boundary)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -113485,15 +113482,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-11T11:23:34Z",
+        "generated_at": "2026-10-13T08:30:19Z",
         "model": "deepseek-flash",
         "source_fingerprint": "38c24f720570a13f62abf172c7ec2f3112330e2a2a8836bad58d5485470ac6b4",
         "summary_fingerprint": "003768c52de79d7289d92044d41e990fe5393b7f39f4189815e08bd7d9b6c6ac",
-        "ai_attempts": 0,
+        "ai_attempts": 3,
         "max_ai_attempts": 3,
-        "retry_success_count": 0
+        "retry_success_count": 1
       }
     },
     {
@@ -113755,7 +113750,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:17:37.007002+00:00",
+        "retrievedAt": "2026-10-13T08:30:21.315856+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -113910,7 +113905,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:17:40Z",
+        "retrievedAt": "2026-10-13T08:30:26Z",
         "url": "https://openalex.org/W7105641681",
         "cited_by_count": 0,
         "fwci": 0.0,
@@ -113933,27 +113928,27 @@
         "errors": [
           "metrics: error"
         ],
-        "lastCheckedAt": "2026-10-12T07:17:40Z",
+        "lastCheckedAt": "2026-10-13T08:30:26Z",
         "repairSchedule": {
-          "consecutiveFailures": 1,
-          "lastAttemptAt": "2026-10-12T07:17:40Z",
-          "lastOutcome": "failure"
+          "consecutiveFailures": 2,
+          "lastAttemptAt": "2026-10-13T08:30:26Z",
+          "lastOutcome": "failure",
+          "nextAttemptAt": "2026-10-13T09:30:26Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:17:41Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:30:39Z",
           "status": "pending",
           "reasonCodes": [
             "figure_reuse_blocked",
             "input_undocumented",
-            "ai_response_invalid",
             "metrics_query_failed"
           ],
           "sourceGapScans": {
-            "figure_reuse_unavailable": 1
+            "figure_reuse_unavailable": 2
           },
-          "nextAttemptAt": "2026-10-12T08:17:41Z"
+          "nextAttemptAt": "2026-10-13T10:30:39Z"
         }
       },
       "selectionScore": {
@@ -113974,29 +113969,28 @@
       "ai": {
         "status": "generated",
         "title_zh": "面向抽象与推理语料库的向量符号代数方法",
-        "summary_zh": "该论文提出一种受认知科学启发的 ARC-AGI 求解器,将 System 1 直觉与 System 2 推理结合,采用基于向量符号代数(VSA)的神经符号方法,通过以对象为中心的程序合成来表征抽象对象、引导解搜索并支持样本高效的神经学习。摘要报告了初步结果:ARC-AGI-1-Train 得分 10.8%、ARC-AGI-1-Eval 得分 3.0%,Sort-of-ARC 得分 94.5%、1D-ARC 得分 83.1%,并称后者以极小计算成本超过 GPT-4。论文发表于 Npj unconventional computing(2026-10-01),DOI 为 10.1038/s44335-026-00100-5,作者代码位于 https://github.com/ijoffe/ARC-VSA-2025。提供的证据还包含四张 ARC-AGI 任务图注(0962bcdd、54d9e175、a61f2674、a61ba2ce)以及若干源码文件的静态观察记录。",
+        "summary_zh": "该论文提出一种受认知启发的 ARC-AGI 求解器,将 System 1 直觉与 System 2 推理结合,采用基于向量符号代数(VSA)的神经符号方法,通过以对象为中心的程序合成,利用 VSA 表示抽象对象、引导解搜索并支持样本高效的神经学习。摘要报告了初步结果:在 ARC-AGI-1-Train 上得分 10.8%,在 ARC-AGI-1-Eval 上得分 3.0%,在 Sort-of-ARC 上 94.5%,在 1D-ARC 上 83.1%。论文称其为首个将 VSA 应用于 ARC-AGI 的工作,并提供了代码链接。所提供的证据还包含四个 ARC-AGI 任务的图注描述,以及若干源码文件的静态观察记录。",
         "learning_points": [
-          "论文将 ARC-AGI 定位为生成式、少样本的流体智力基准,并指出其对当前最先进 AI 系统仍极难。",
-          "求解器采用神经符号方法,基于向量符号代数(VSA),并整合 System 1 直觉与 System 2 推理,强调高效与可解释。",
-          "核心机制是以对象为中心的程序合成,用 VSA 表征抽象对象、引导解搜索并支持样本高效的神经学习。",
+          "论文将 ARC-AGI 描述为生成式、少样本的流体智力基准,人类可轻松解决但对先进 AI 系统仍极困难。",
+          "求解器整合 System 1 直觉与 System 2 推理,采用基于向量符号代数(VSA)的神经符号方法,强调高效与可解释。",
+          "求解流程为以对象为中心的程序合成,用 VSA 表示抽象对象、引导解搜索并支持样本高效的神经学习。",
           "摘要报告初步结果:ARC-AGI-1-Train 10.8%、ARC-AGI-1-Eval 3.0%、Sort-of-ARC 94.5%、1D-ARC 83.1%。",
-          "论文称 1D-ARC 结果以极小计算成本超过 GPT-4,并认为自己是首个将 VSA 应用于 ARC-AGI 的工作。",
-          "证据中的图注展示了四类 ARC-AGI 任务模式:多色对象变换为特定更大对象、按中心像素颜色为灰色像素分隔的黑色区域着色、将最短条纹重着色为红、最高条纹为蓝、把四个块重排为小网格上的空心方框。",
-          "提供的源码静态观察涉及 src/grid.py、src/object.py、src/objobj_solver.py、src/perception.py,固定提交为 c031a9c6b4885ab03b28fbfdcd97b6b3693df564。",
-          "作者代码未被执行,静态检查不构成复现验证,因此上述性能数字与实现细节均未在本证据范围内得到独立验证。"
+          "论文称 1D-ARC 上的表现以极小计算成本超过 GPT-4,并认为自己是首个将 VSA 应用于 ARC-AGI 的工作。",
+          "证据中的图注给出四个 ARC-AGI 任务的隐式模式示例:0962bcdd 将每个多色对象变换为特定更大对象;54d9e175 按中心孤立像素颜色为灰色像素分隔的黑色区域着色;a61f2674 将最短条纹重着色为红色、最高条纹为蓝色;a61ba2ce 将四个块重排为小网格上的空心方形。",
+          "证据记录了固定提交 c031a9c6b4885ab03b28fbfdcd97b6b3693df564 下若干源码路径及其 SHA256,但静态观察内容为空。",
+          "论文发表于 Npj unconventional computing,时间为 2026-10-01,DOI 为 10.1038/s44335-026-00100-5。"
         ],
         "limitations": [
-          "作者代码未运行,静态检查不是复现验证,不能宣称已复现或结果一致。",
-          "摘要中的性能数字(10.8%、3.0%、94.5%、83.1%)为论文自报的初步结果,未在本证据范围内独立验证。",
-          "证据未明示输入尺度、图号与具体数据结构的对应关系,相关细节保持未知。",
-          "证据未提供各源码文件的具体静态观察内容,仅给出路径、提交与哈希,无法据此推断实现逻辑。",
-          "证据未说明 VSA 的具体编码方式、维度或超参数,也未说明 System 1/System 2 的具体交互机制。",
-          "证据未提供与 GPT-4 对比的计算成本量化数据,无法核实“极小计算成本”的说法。",
-          "证据未提供数据集划分、评测协议或统计显著性信息。",
-          "证据未提供许可、期刊指标或同行评审状态等信息。",
-          "证据未说明四张图注与求解器内部模块的对应关系。",
-          "证据未说明代码仓库的可用性、依赖或运行环境。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未运行,静态检查不构成复现验证,不能宣称已复现或结果一致。",
+          "证据中的源码静态观察内容为空,无法据此描述实现细节或数据结构。",
+          "输入尺度与图号对应关系未明示,保持未知。",
+          "摘要中的得分仅为初步结果,未提供完整实验设置、基线比较或统计细节。",
+          "论文称 1D-ARC 表现超过 GPT-4,但未提供计算成本的具体数值或对比条件。",
+          "论文称自己是首个将 VSA 应用于 ARC-AGI 的工作,该新颖性主张未在所提供的证据中独立验证。",
+          "所提供的证据未包含许可信息、期刊指标或复现结果,这些内容未知。",
+          "图注仅描述四个 ARC-AGI 任务的隐式模式,未说明这些任务与求解器性能之间的对应关系。",
+          "证据未说明 VSA 的具体编码方式、维度或神经学习组件细节。",
+          "证据未提供 Sort-of-ARC 与 1D-ARC 基准的详细定义或评估协议。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -114013,15 +114007,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-11T11:23:23Z",
+        "generated_at": "2026-10-13T08:30:38Z",
         "model": "deepseek-flash",
         "source_fingerprint": "57fa9e8f23108bc0d27c9acc5f7a2114a0a163e73057e89437033ea0e7eea538",
         "summary_fingerprint": "eee9441a23ecb171f99731ec8b10e2e0938d0fb559224369bdb605520767031d",
-        "ai_attempts": 0,
+        "ai_attempts": 2,
         "max_ai_attempts": 3,
-        "retry_success_count": 0
+        "retry_success_count": 1
       }
     },
     {
@@ -114711,7 +114703,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:18:07.127460+00:00",
+        "retrievedAt": "2026-10-13T08:30:53.803469+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -116830,11 +116822,11 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:18:10Z",
+        "retrievedAt": "2026-10-13T08:31:00Z",
         "url": "https://openalex.org/W7216272782",
         "cited_by_count": 0,
         "fwci": 0.0,
-        "citation_normalized_percentile": 0.73860583,
+        "citation_normalized_percentile": 0.73367873,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedGraphForms": [],
@@ -116851,27 +116843,27 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:18:10Z",
+        "lastCheckedAt": "2026-10-13T08:31:00Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:18:10Z",
+          "lastAttemptAt": "2026-10-13T08:31:00Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:18:10Z"
+          "nextAttemptAt": "2026-10-14T08:31:00Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:18:18Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:31:00Z",
           "status": "pending",
           "reasonCodes": [
             "input_undocumented"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:18:18Z"
+          "nextAttemptAt": "2026-10-13T10:31:00Z"
         }
       },
       "selectionScore": {
-        "total": 63.69302915,
+        "total": 63.66839365,
         "components": {
           "topic": 0,
           "method": 0,
@@ -116879,7 +116871,7 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 5,
-          "normalizedCitationPreference": 3.69302915,
+          "normalizedCitationPreference": 3.6683936499999996,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -116908,6 +116900,7 @@
           "脚本证据仅覆盖少量读取语句,未展示数据处理逻辑、参数或输出,不能据此评估分析正确性(evidence: script-0, script-1, script-2, script-3)。",
           "未观察到期刊指标、许可信息或原图与数据的对应关系,均属未知(evidence: publication, inspection-boundary)。",
           "AI 注释仅为待核学习材料,不能作为事实依据(evidence: inspection-boundary)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -116924,11 +116917,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:18:18Z",
         "model": "deepseek-flash",
         "source_fingerprint": "1ad4e6025d5f7c052854ec9dd03ab6e6c06eeec1a3c29610fd8a8d9969380dda",
         "summary_fingerprint": "039a0ac2c015cec8a2623069136998fb766af9855a818245b8b4630ab63baddd",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -117262,7 +117257,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:17:51.570695+00:00",
+        "retrievedAt": "2026-10-13T08:30:46.584612+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -117746,11 +117741,11 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:17:54Z",
+        "retrievedAt": "2026-10-13T08:30:52Z",
         "url": "https://openalex.org/W7220367709",
         "cited_by_count": 0,
         "fwci": 0.0,
-        "citation_normalized_percentile": 0.82023595,
+        "citation_normalized_percentile": 0.81613361,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedGraphForms": [],
@@ -117767,27 +117762,28 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:17:54Z",
+        "lastCheckedAt": "2026-10-13T08:30:52Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:17:54Z",
+          "lastAttemptAt": "2026-10-13T08:30:52Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:17:54Z"
+          "nextAttemptAt": "2026-10-14T08:30:52Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:18:00Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:30:52Z",
           "status": "pending",
           "reasonCodes": [
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:18:00Z"
+          "nextAttemptAt": "2026-10-13T10:30:52Z"
         }
       },
       "selectionScore": {
-        "total": 62.10117975,
+        "total": 62.08066805,
         "components": {
           "topic": 0,
           "method": 15,
@@ -117795,7 +117791,7 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 0,
-          "normalizedCitationPreference": 4.10117975,
+          "normalizedCitationPreference": 4.08066805,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -117826,6 +117822,7 @@
           "证据未说明斜体步骤被省略后对结果的影响,该影响未知。",
           "证据未提供生物信息学流程的具体参数或软件版本,无法评估其可重复性。",
           "AI注释仅为待核学习材料,不能替代原文与作者代码的核验。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -117842,11 +117839,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:18:00Z",
         "model": "deepseek-flash",
         "source_fingerprint": "eaf6c97a5ea4012ffedd1dc3d1f05f17e21e4ba7bf0702febb26ef958aa44396",
         "summary_fingerprint": "b249050b61259d0b2f41eeb0ef86869970a18b6a23b56c7085af005e41f306bd",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -171054,7 +171053,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-13T08:29:44Z",
+  "generatedAt": "2026-10-13T08:31:01Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -171420,8 +171419,7 @@
       {
         "doi": "10.1126/sciadv.aef0670",
         "reasonCodes": [
-          "input_undocumented",
-          "ai_response_invalid"
+          "input_undocumented"
         ]
       },
       {
@@ -171429,7 +171427,6 @@
         "reasonCodes": [
           "figure_reuse_blocked",
           "input_undocumented",
-          "ai_response_invalid",
           "metrics_query_failed"
         ]
       },
@@ -171442,7 +171439,8 @@
       {
         "doi": "10.1111/1755-0998.70213",
         "reasonCodes": [
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       }
     ]
@@ -171451,13 +171449,13 @@
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:29:48Z",
+    "updatedAt": "2026-10-13T08:31:02Z",
     "status": "active",
     "endReason": "",
     "batchCount": 2,
-    "checkpointCount": 4,
-    "requests": 70,
-    "aiAttempts": 1,
+    "checkpointCount": 5,
+    "requests": 162,
+    "aiAttempts": 6,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -171465,9 +171463,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 10,
-    "processedCount": 5,
-    "remainingCount": 42,
-    "inFlightCount": 5,
+    "processedCount": 10,
+    "remainingCount": 37,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
