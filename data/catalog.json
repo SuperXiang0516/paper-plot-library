@@ -31162,25 +31162,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:23:59Z",
+        "lastCheckedAt": "2026-10-13T08:34:36Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:23:59Z",
+          "lastAttemptAt": "2026-10-13T08:34:36Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:23:59Z"
+          "nextAttemptAt": "2026-10-14T08:34:36Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:24:00Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:34:42Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "selected_figure_missing",
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T09:24:00Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC11564093",
@@ -31502,7 +31500,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:23:55.167155+00:00",
+        "retrievedAt": "2026-10-13T08:34:28.505973+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -41177,10 +41175,10 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:23:59Z",
+        "retrievedAt": "2026-10-13T08:34:36Z",
         "url": "https://openalex.org/W4401585036",
-        "cited_by_count": 485,
-        "fwci": 50.4231,
+        "cited_by_count": 480,
+        "fwci": 49.6069,
         "citation_normalized_percentile": 1.0,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
@@ -41202,29 +41200,26 @@
       "ai": {
         "status": "generated",
         "title_zh": "人类衰老过程中多组学谱的非线性动态变化",
-        "summary_zh": "该论文发表于 Nature Aging(2024-08-14,DOI:10.1038/s43587-024-00692-2),对 108 名 25 至 75 岁、居住于美国加州的参与者进行纵向多组学分析,中位随访 1.7 年、最长 6.8 年。摘要指出分子衰老标志呈现一致的非线性模式,在约 44 岁与 60 岁出现两个主要失调时期,并识别出与这些时期相关的分子与功能通路(如 60 岁转变期的免疫调节与碳水化合物代谢、40 岁转变期的心血管疾病及脂质与酒精代谢变化)。图注显示:Fig.1 描述参与者人口学、样本采集与多组学数据获取、采集时间范围与样本数、显著变化分子/微生物、不同年龄段差异表达分子、线性变化分子占比及非线性变化热图;Fig.2 通过聚类展示非线性变化,包括各 omics 第一主成分与年龄的 Spearman 相关、11 个聚类的分子轨迹热图及三个显著非线性聚类;Fig.3 对各聚类非线性变化分子做功能分析,含转录组通路富集与模块分析、代谢组通路富集及四项临床检验指标;Fig.4 展示衰老过程中分子与微生物的“波”,在 44 岁与 60 岁识别出两个局部峰值,并用不同 q 值与窗口截断验证,以及不同 omics 类型的差异表达数量。静态检查的脚本仅显示 load() 载入若干数据对象(如 phenotype_data、各 omics object、cor_data、final_cluster_info 及 cluster 通路结果),未运行代码。",
+        "summary_zh": "该论文发表于 Nature Aging(2024-08-14,DOI:10.1038/s43587-024-00692-2),对 108 名 25 至 75 岁、居住于美国加州的参与者进行纵向多组学分析,中位随访 1.7 年、最长 6.8 年。摘要指出分子衰老标志呈现一致的非线性模式,在约 44 岁与 60 岁出现两个主要失调时期,并识别出与这些时期相关的分子与功能通路,例如 60 岁转变期的免疫调节与碳水化合物代谢、40 岁转变期的心血管疾病及脂质与酒精代谢变化。图注显示研究采集四类生物样本、获得十类组学数据,使用 Spearman 相关检测显著变化分子/微生物,并通过聚类、通路富集与差异表达分析刻画非线性轨迹与分子波。作者代码未运行,仅做静态观察,未进行复现验证。",
         "learning_points": [
           "论文主题为人类衰老过程中多组学谱的非线性动态变化,发表于 Nature Aging(2024-08-14)。",
-          "研究队列为 108 名 25–75 岁、居住于美国加州的参与者,中位随访 1.7 年,最长 6.8 年。",
-          "摘要报告分子衰老标志呈非线性模式,在约 44 岁与 60 岁出现两个主要失调时期。",
-          "摘要指出 60 岁转变期涉及免疫调节与碳水化合物代谢,40 岁转变期涉及心血管疾病及脂质与酒精代谢变化。",
-          "Fig.1 图注涵盖参与者人口学、四类生物样本与十类 omics 数据采集、采集时间范围与样本数、显著变化分子/微生物、不同年龄段差异表达分子、线性变化分子占比及非线性变化热图。",
-          "Fig.2 图注显示通过聚类揭示非线性变化,包括各 omics 第一主成分与年龄的 Spearman 相关、11 个聚类的分子轨迹热图及三个显著非线性聚类。",
-          "Fig.3 图注显示对各聚类非线性变化分子进行功能分析,包括转录组通路富集与模块分析、代谢组通路富集及四项临床检验指标。",
-          "Fig.4 图注显示衰老过程中分子与微生物的波,在 44 岁与 60 岁识别出两个局部峰值,并用不同 q 值与窗口截断验证,以及不同 omics 类型的差异表达数量。"
+          "队列为 108 名 25 至 75 岁参与者,居住于美国加州,中位随访 1.7 年、最长 6.8 年。",
+          "研究采集四类生物样本并获取十类组学数据(Fig. 1b)。",
+          "使用 Spearman 相关方法检测衰老过程中显著变化的分子与微生物,P < 0.05 且未校正(Fig. 1d)。",
+          "以 25–40 岁为基线,用双侧 Wilcoxon 检验比较不同年龄段的差异表达分子/微生物,P < 0.05 且未校正(Fig. 1e)。",
+          "线性变化分子仅占至少一个年龄段失调分子的一小部分,提示非线性变化占主导(Fig. 1f)。",
+          "聚类分析揭示 11 个分子轨迹簇,其中三个簇呈现清晰直接的非线性变化(Fig. 2b、2c)。",
+          "差异表达分子/微生物数量在约 44 岁与 60 岁出现两个局部峰值,且在不同 q 值与窗口阈值下可重复检测(Fig. 4a–c)。"
         ],
         "limitations": [
-          "作者代码未运行,静态检查不构成复现验证,不能宣称已复现或与原文一致。",
-          "输入数据尺度、图号与具体代码的对应关系未明示,保持未知。",
-          "脚本静态观察仅见 load() 载入若干数据对象,未观察到具体绘图或统计实现细节。",
-          "Fig.1 图注中显著变化分子检测的 P 值未做多重校正,差异表达分析同样未校正 P 值。",
-          "队列仅 108 名参与者、居住于美国加州,中位随访 1.7 年,外推性未知。",
-          "摘要与图注中未提供各 omics 数据的具体平台、样本量分布或质控细节,均未知。",
-          "未观察到原图与代码输出之间的对应关系,无法确认图表由所给脚本生成。",
-          "未观察到许可、期刊指标或复现结果相关信息,均未知。",
+          "作者代码未执行,静态检查不等于复现验证,不能宣称已复现或结果一致。",
+          "输入数据尺度与图号对应关系未明示,保持未知。",
           "AI 注释仅为待核学习材料,不能作为事实依据。",
-          "Fig.2、Fig.3 中部分统计(如通路富集)使用 Benjamini–Hochberg 校正,但其他分析的校正情况未在证据中完整说明。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "摘要与图注中部分统计检验的 P 值未做多重校正,需注意其推断强度。",
+          "队列仅 108 人且居住于美国加州,中位随访 1.7 年,外推性未知。",
+          "未观察到期刊指标、许可信息或原图与代码的精确对应关系,均属未知。",
+          "脚本静态观察仅显示 load 语句与部分绘图函数(如 ggplot、geom_bar、circos.track、geom_boxplot),未验证其输出与论文图表的对应。",
+          "通路富集分析中仅代谢组明确标注 Benjamini–Hochberg 校正 P < 0.05,其他组学校正方式未在证据中完整说明。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -41242,13 +41237,11 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-11T15:09:24Z",
+        "generated_at": "2026-10-13T08:34:42Z",
         "model": "deepseek-flash",
         "source_fingerprint": "a29241ebaa20c06b1890c0841ee3568054a2225ffbe115310dd9fce0e77612de",
         "summary_fingerprint": "f5fa26ba944ffbf97ac44e20f2fd7f07a61eb352260eef8444d3dad754592286",
-        "ai_attempts": 0,
+        "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -47049,18 +47042,18 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:23:54Z",
+        "lastCheckedAt": "2026-10-13T08:34:26Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:23:54Z",
+          "lastAttemptAt": "2026-10-13T08:34:26Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-13T07:23:54Z"
+          "nextAttemptAt": "2026-10-14T08:34:26Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:23:54Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:34:27Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "source_refresh_failed",
             "no_final_version",
@@ -47068,10 +47061,9 @@
             "ai_missing"
           ],
           "sourceGapScans": {
-            "formal_version_unavailable": 1,
-            "selected_figure_unavailable": 1
-          },
-          "nextAttemptAt": "2026-10-12T09:23:54Z"
+            "formal_version_unavailable": 2,
+            "selected_figure_unavailable": 2
+          }
         }
       },
       "pmcid": "PMC12699518",
@@ -47097,7 +47089,7 @@
         "limitations": [
           "No DOI-matched non-manuscript publisher version available in current PMC cloud."
         ],
-        "retrievedAt": "2026-10-12T07:23:52.214124+00:00",
+        "retrievedAt": "2026-10-13T08:34:24.146330+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": []
       },
@@ -47229,16 +47221,16 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:23:54Z",
+        "retrievedAt": "2026-10-13T08:34:26Z",
         "url": "https://openalex.org/W4402007218",
-        "cited_by_count": 17,
-        "fwci": 1.7711,
-        "citation_normalized_percentile": 0.87528517,
+        "cited_by_count": 16,
+        "fwci": 1.657,
+        "citation_normalized_percentile": 0.86471945,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 61.37642585,
+        "total": 61.32359725,
         "components": {
           "topic": 12,
           "method": 15,
@@ -47246,7 +47238,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.3764258499999995,
+          "normalizedCitationPreference": 4.32359725,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -47348,23 +47340,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:23:43Z",
+        "lastCheckedAt": "2026-10-13T08:34:22Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:23:43Z",
+          "lastAttemptAt": "2026-10-13T08:34:22Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:23:43Z"
+          "nextAttemptAt": "2026-10-14T08:34:22Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:23:51Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:34:23Z",
+          "status": "needs_attention",
           "reasonCodes": [
-            "selected_figure_missing"
+            "selected_figure_missing",
+            "ai_response_invalid"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T09:23:51Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC11284234",
@@ -47759,7 +47751,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:23:40.594065+00:00",
+        "retrievedAt": "2026-10-13T08:34:16.609158+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -48459,7 +48451,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:23:43Z",
+        "retrievedAt": "2026-10-13T08:34:22Z",
         "url": "https://openalex.org/W4401062695",
         "cited_by_count": 27,
         "fwci": 3.1758,
@@ -48506,6 +48498,7 @@
           "script-1、script-2、script-3的静态观察文本为空,无法据此判断其具体分析内容(依据script-1、script-2、script-3)。",
           "curated-note仅提及ggplot、geom_line、geom_errorbar等绘图函数,未提供图形输出或数值结果(依据curated-note)。",
           "未观察到期刊指标、许可信息或原图与代码的逐图对应关系,相关事项未知(依据inspection-boundary)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -48523,11 +48516,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:23:50Z",
         "model": "deepseek-flash",
         "source_fingerprint": "c9d0fc18c5359487d91b496570e37c31c5486933c3309b0c79e635c5001a29f5",
         "summary_fingerprint": "1567ff28ac700f00e2d532e636b88bc93811fe2b352da3ee1ac5e6c7504faf45",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -49174,24 +49169,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:23:39Z",
+        "lastCheckedAt": "2026-10-13T08:34:14Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:23:39Z",
+          "lastAttemptAt": "2026-10-13T08:34:14Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:23:39Z"
+          "nextAttemptAt": "2026-10-14T08:34:14Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:23:39Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:34:15Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "selected_figure_missing",
             "input_undocumented"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T09:23:39Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC8880995",
@@ -50469,7 +50463,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:23:36.207610+00:00",
+        "retrievedAt": "2026-10-13T08:34:08.837955+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -54051,16 +54045,16 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:23:39Z",
+        "retrievedAt": "2026-10-13T08:34:14Z",
         "url": "https://openalex.org/W4210639503",
         "cited_by_count": 54,
-        "fwci": 3.071,
-        "citation_normalized_percentile": 0.93739703,
+        "fwci": 3.0628,
+        "citation_normalized_percentile": 0.93656093,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 76.68698515,
+        "total": 76.68280465,
         "components": {
           "topic": 12,
           "method": 15,
@@ -54068,7 +54062,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 0,
-          "normalizedCitationPreference": 4.68698515,
+          "normalizedCitationPreference": 4.68280465,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -58530,18 +58524,18 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:24:11Z",
+        "lastCheckedAt": "2026-10-13T08:34:46Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:24:11Z",
+          "lastAttemptAt": "2026-10-13T08:34:46Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-13T07:24:11Z"
+          "nextAttemptAt": "2026-10-14T08:34:46Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:24:12Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:34:46Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "source_refresh_failed",
             "code_unchecked",
@@ -58550,8 +58544,7 @@
             "author_code_link_unverified",
             "ai_missing"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T09:24:12Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC12494969",
@@ -58861,7 +58854,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:24:10.756842+00:00",
+        "retrievedAt": "2026-10-13T08:34:43.635502+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -58895,7 +58888,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:24:11Z",
+        "retrievedAt": "2026-10-13T08:34:46Z",
         "url": "https://openalex.org/W4414777478",
         "cited_by_count": 5,
         "fwci": 2.8416,
@@ -171141,13 +171134,13 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-13T08:34:01Z",
+  "generatedAt": "2026-10-13T08:34:47Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 44,
-    "attentionCount": 3,
+    "pendingCount": 39,
+    "attentionCount": 8,
     "removedCount": 0,
     "startedAt": "2026-10-11T15:08:16Z",
     "issues": [
@@ -171192,8 +171185,7 @@
         "doi": "10.1038/s43587-024-00692-2",
         "reasonCodes": [
           "selected_figure_missing",
-          "input_undocumented",
-          "ai_response_invalid"
+          "input_undocumented"
         ]
       },
       {
@@ -171246,7 +171238,8 @@
       {
         "doi": "10.1038/s41467-024-50725-y",
         "reasonCodes": [
-          "selected_figure_missing"
+          "selected_figure_missing",
+          "ai_response_invalid"
         ]
       },
       {
@@ -171540,13 +171533,13 @@
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:34:05Z",
+    "updatedAt": "2026-10-13T08:34:48Z",
     "status": "active",
     "endReason": "",
     "batchCount": 8,
-    "checkpointCount": 16,
-    "requests": 494,
-    "aiAttempts": 7,
+    "checkpointCount": 17,
+    "requests": 568,
+    "aiAttempts": 8,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -171554,12 +171547,12 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 40,
-    "processedCount": 35,
-    "remainingCount": 12,
-    "inFlightCount": 5,
+    "processedCount": 40,
+    "remainingCount": 7,
+    "inFlightCount": 0,
     "completeCount": 8,
-    "pendingCount": 44,
-    "attentionCount": 3,
+    "pendingCount": 39,
+    "attentionCount": 8,
     "removedCount": 0,
     "materialsStatus": "needs_attention",
     "localCheckpointSaved": true
