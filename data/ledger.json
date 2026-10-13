@@ -146,17 +146,17 @@
     "status": "needs_attention",
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 34,
-    "attentionCount": 13,
+    "pendingCount": 32,
+    "attentionCount": 15,
     "removedCount": 0
   },
   "backfillSession": {
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:35:42Z",
-    "status": "active",
-    "endReason": "",
+    "updatedAt": "2026-10-13T08:36:16Z",
+    "status": "finished",
+    "endReason": "cohort_traversed",
     "cohortDOIs": [
       "10.1038/s41467-025-67369-1",
       "10.1038/s41467-024-51855-z",
@@ -308,31 +308,20 @@
       "10.1038/s43587-026-01164-5",
       "10.1038/s43587-025-00890-6",
       "10.1111/acel.12924",
-      "10.1038/s41467-026-71508-7"
+      "10.1038/s41467-026-71508-7",
+      "10.1038/s41591-026-04566-5",
+      "10.1038/s41588-021-00790-6"
     ],
     "batchCount": 10,
-    "checkpointCount": 20,
-    "requests": 641,
-    "aiAttempts": 10,
+    "checkpointCount": 21,
+    "requests": 674,
+    "aiAttempts": 12,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 399,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41591-026-04566-5",
-        "10.1038/s41588-021-00790-6"
-      ],
-      "startedAt": "2026-10-13T08:35:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41591-026-04566-5": "2026-10-12T07:24:43Z",
-        "10.1038/s41588-021-00790-6": "2026-10-12T07:24:49Z"
-      }
-    }
+    "elapsedSeconds": 432
   }
 }

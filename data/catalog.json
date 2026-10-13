@@ -41342,26 +41342,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:24:43Z",
+        "lastCheckedAt": "2026-10-13T08:35:49Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:24:43Z",
+          "lastAttemptAt": "2026-10-13T08:35:49Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:24:43Z"
+          "nextAttemptAt": "2026-10-14T08:35:49Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:24:44Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:35:58Z",
+          "status": "needs_attention",
           "reasonCodes": [
-            "selected_figure_missing",
-            "ai_response_invalid"
+            "selected_figure_missing"
           ],
           "sourceGapScans": {
-            "selected_figure_unavailable": 1
-          },
-          "nextAttemptAt": "2026-10-12T09:24:44Z"
+            "selected_figure_unavailable": 2
+          }
         }
       },
       "pmcid": "PMC13577925",
@@ -41809,7 +41807,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:24:41.794878+00:00",
+        "retrievedAt": "2026-10-13T08:35:46.406000+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -42815,16 +42813,16 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T00:36:30Z",
+        "retrievedAt": "2026-10-13T08:35:49Z",
         "url": "https://openalex.org/W7165296922",
         "cited_by_count": 2,
-        "fwci": 3.1986,
-        "citation_normalized_percentile": 0.92720588,
+        "fwci": 3.1281,
+        "citation_normalized_percentile": 0.92606149,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 71.6360294,
+        "total": 71.63030745,
         "components": {
           "topic": 12,
           "method": 0,
@@ -42832,7 +42830,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.6360294,
+          "normalizedCitationPreference": 4.63030745,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -42840,29 +42838,28 @@
       "ai": {
         "status": "generated",
         "title_zh": "组织学衰老特征用于监测组织特异性衰老与疾病",
-        "summary_zh": "该研究基于Genotype-Tissue Expression队列中983名个体、40种组织类型的25,712张全切片组织病理图像,利用深度学习量化组织形态学改变,构建反映生物学年龄的“组织时钟”。摘要称这些时钟与端粒损耗、亚临床病理和共病等衰老标志相关,并系统评估了器官层面的生物学衰老速率,将组织特异性年龄加速与人口学、生活方式和医学因素关联。研究还整合配对的组织学与转录组数据,提出从血液样本预测组织特异性年龄差的策略,并在八种疾病的独立队列中识别疾病相关器官衰老。提供的证据仅包含论文元数据、图注与作者代码的静态观察,未包含可核验的数值结果。",
+        "summary_zh": "该论文题为《Histological aging signatures for monitoring tissue-specific aging and disease》,发表于 Nature Medicine(DOI:10.1038/s41591-026-04566-5,时间 2026-08-14)。摘要称研究使用 GTEx 队列中 983 名个体、40 种组织类型的 25,712 张全切片组织病理图像,借助深度学习量化形态学改变并构建反映生物学年龄的“组织时钟”,并报告其与端粒损耗、亚临床病理和共病等衰老标志相关;还评估了器官间生物学衰老速率差异、组织特异性年龄加速与人口学/生活方式/医学因素的关联,以及整合配对组织学与转录组数据从血液样本预测组织特异性年龄差的策略,并在独立队列中对八种疾病进行验证。图注证据显示:Fig.1 涉及 GTEx 队列组织采集(29 个器官、40 种组织、983 人)、WSI 图像处理流程、UMAP 可视化、主动脉组织时钟示例、小脑与主动脉年龄差散点图、病理基础模型性能比较及脑组织时钟独立队列验证(n=70);Fig.2 涉及视觉-语言模型查询文本-图像多模态病理模型、组织学文本术语 UMAP、随年龄变化术语热图及示例;Fig.3 涉及组织学与基因表达数据整合、与年龄差协同变化的基因、信号通路富集及转录特征变化量比较;Fig.4 涉及个体内与个体间衰老多样性、五种衰老模式、UMAP 展示组织间年龄差变异,以及人口学、临床和生活方式因素与组织特异性年龄差的关联。作者代码未运行,仅做静态观察:固定提交 89fbd20dc289c8a21c42b1d54c263c8c9df6f4db 下存在 src/visualize_age_gaps.py、src/revision/ecm_analysis.py、src/revision/plot_blood_metrics.py、src/visualize_morbidities.py 等脚本,其中读取 GTEx Portal.csv、predictions_residuals.pq、log_cpm 系列 parquet 等文件;curated-note 称 visualize_age_gaps.py 使用 ax.scatter 绘制 Age 与 residuals_adj 并以 ax.imshow 叠加组织切片,输出 scatter_overlay 图。以上均为待核学习注释,未验证复现结果。",
         "learning_points": [
-          "研究使用GTEx队列的25,712张全切片组织病理图像,覆盖983名个体的40种组织类型(Fig. 1a)。",
-          "研究提出“组织时钟”概念,用深度学习从全切片图像特征估计生物学年龄,并以主动脉为例展示其性能(Fig. 1d)。",
-          "Fig. 1e、1f以散点图展示小脑和主动脉的时序年龄与年龄差,图注称极端年龄差与病理改变相关。",
-          "Fig. 1g比较了多种病理基础模型的性能与富集指标,图注称误差更低、剩余指标更高表示性能提升。",
-          "Fig. 2描述使用视觉-语言模型查询文本-图像多模态病理模型,测量文本词与图像相似度随年龄的变化。",
-          "Fig. 3描述整合组织学与基因表达数据,通过线性回归识别与年龄差协同变化的基因,并展示与年龄相关的信号通路。",
-          "Fig. 4展示个体内与个体间衰老的多样性,包括五种衰老模式,以及人口学、临床和生活方式因素与组织特异性年龄差的关联。",
-          "作者代码的静态观察显示,src/visualize_age_gaps.py读取GTEx Portal.csv与predictions_residuals.pq,并以散点叠加组织切片的方式输出图。"
+          "论文提出以全切片组织病理图像构建“组织时钟”,将组织形态结构作为生物学年龄的量化指标(依据 publication、figure-0)。",
+          "研究规模在摘要中描述为 983 名个体、40 种组织类型、25,712 张 WSI,覆盖 GTEx 队列(依据 publication、figure-0)。",
+          "Fig.1 展示从原始 WSI 到结构化特征集的图像处理流程,并用 UMAP 按器官类型和年龄对样本着色(依据 figure-0)。",
+          "Fig.1 以主动脉组织时钟为例展示从 WSI 特征估计生物学年龄,并给出小脑与主动脉的年龄差散点图(依据 figure-0)。",
+          "Fig.2 描述使用预训练视觉-语言模型嵌入文本术语并度量其与图像相似度随年龄的变化,以热图汇总各器官常见变化术语(依据 figure-1)。",
+          "Fig.3 描述将组织学与基因表达数据整合,通过线性回归识别与年龄差协同变化的基因,并展示信号通路富集结果(依据 figure-2)。",
+          "Fig.4 描述个体内与个体间衰老多样性,展示五种衰老模式,并关联人口学、临床和生活方式因素与组织特异性年龄差(依据 figure-3)。",
+          "静态代码观察显示存在多个可视化与分析脚本,读取 GTEx Portal.csv、predictions_residuals.pq 及 log_cpm 系列 parquet 文件(依据 script-0、script-1、script-2、script-3)。"
         ],
         "limitations": [
-          "作者代码未运行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致。",
-          "输入数据的尺度、图号与具体脚本的对应关系在证据中未明示,保持未知。",
-          "证据仅包含论文元数据、图注和代码静态观察,未提供可核验的数值结果或统计输出。",
-          "Fig. 1h的验证队列描述在提供的图注文本中被截断,其完整内容与结论未知。",
-          "Fig. 2、Fig. 3、Fig. 4的图注文本在证据中存在截断,部分细节无法确认。",
-          "curated-note中关于脚本绘图方式的描述属于静态观察,未经运行验证。",
-          "各图注中提及的样本量、统计检验与置信区间等细节,未在证据中给出可核验的完整数值。",
-          "研究涉及的许可、期刊指标与复现结果在证据中未提供,无法确认。",
-          "证据未说明组织时钟在独立队列中的具体验证指标,相关性能未知。",
-          "证据未提供从血液样本预测组织特异性年龄差的具体方法细节与验证结果。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现论文结果或与原文一致(依据 inspection-boundary)。",
+          "输入数据尺度、图号与代码的对应关系在证据中未明示,保持未知(依据 inspection-boundary)。",
+          "摘要中关于与端粒损耗、亚临床病理、共病相关的结论,以及从血液预测组织年龄差和八种疾病独立队列验证的结论,仅来自摘要文字,未在提供的图注或代码证据中验证(依据 publication)。",
+          "Fig.1 图注在“h, Validation of tissue clocks in independent cohorts of brain (n = 70), ”处截断,后续验证细节未知(依据 figure-0)。",
+          "Fig.2 图注来源哈希字段为空,且未提供具体统计方法细节(依据 figure-1)。",
+          "Fig.3 图注在“The d”处截断,转录特征比较的完整描述未知(依据 figure-2)。",
+          "Fig.4 图注明确说明未进行统计检验(No statistical testing was performed),相关关联的统计显著性未知(依据 figure-3)。",
+          "script-3 的静态观察文本为空,无法据此判断该脚本的具体内容(依据 script-3)。",
+          "curated-note 关于 visualize_age_gaps.py 使用 ax.scatter 与 ax.imshow 并输出 scatter_overlay 图的描述属于注释性说明,未通过运行验证(依据 curated-note)。",
+          "证据未提供期刊指标、许可信息或原图与代码的精确对应关系,这些信息未知(依据 publication、inspection-boundary)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -42880,13 +42877,11 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-12T00:36:43Z",
+        "generated_at": "2026-10-13T08:35:58Z",
         "model": "deepseek-flash",
         "source_fingerprint": "0bb203162da5ed1439fb9fcb10e61020f2a6eff3cfcff504e473023a40c19307",
         "summary_fingerprint": "8220699e49847ffdbe7942fe27f497d577de58034580bd657c8460407481c4e2",
-        "ai_attempts": 0,
+        "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -90222,24 +90217,22 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:24:49Z",
+        "lastCheckedAt": "2026-10-13T08:36:05Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:24:49Z",
+          "lastAttemptAt": "2026-10-13T08:36:05Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:24:49Z"
+          "nextAttemptAt": "2026-10-14T08:36:05Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-12T07:24:49Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-13T08:36:14Z",
+          "status": "needs_attention",
           "reasonCodes": [
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T09:24:49Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC8012210",
@@ -90640,7 +90633,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:24:46.626993+00:00",
+        "retrievedAt": "2026-10-13T08:35:59.643003+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -92870,18 +92863,18 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T00:36:47Z",
+        "retrievedAt": "2026-10-13T08:36:05Z",
         "url": "https://openalex.org/W3131634425",
-        "cited_by_count": 1398,
-        "fwci": 54.5935,
-        "citation_normalized_percentile": 0.99959715,
+        "cited_by_count": 1374,
+        "fwci": 52.9505,
+        "citation_normalized_percentile": 0.99959123,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [
         "differential"
       ],
       "selectionScore": {
-        "total": 84.99798575,
+        "total": 84.99795615,
         "components": {
           "topic": 0,
           "method": 15,
@@ -92889,37 +92882,36 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.99798575,
+          "normalizedCitationPreference": 4.99795615,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       },
       "ai": {
         "status": "generated",
-        "title_zh": "ArchR:用于整合性单细胞染色质可及性分析的可扩展软件包",
-        "summary_zh": "该资料为 Nature Genetics 2021 年论文《ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis》(DOI:10.1038/s41588-021-00790-6)的图注与代码静态观察汇总。论文摘要描述 ArchR 为 R 语言软件套件,支持双细胞去除、单细胞聚类与细胞类型鉴定、统一 peak 集生成、细胞轨迹识别、DNA 元件-基因连接、转录因子足迹、由染色质可及性预测 mRNA 表达水平以及与 scRNA-seq 的多组学整合,并声称可在标准 Unix 笔记本上 8 小时内分析超过 120 万个单细胞。提供的图注覆盖 Fig.1 至 Fig.4,涉及工作流程示意、运行时间与内存对比、双细胞识别、基因评分模型比较、大规模 scATAC-seq 分析以及 scATAC-seq 与 scRNA-seq 整合。代码部分仅给出固定提交 fe290efeecfa346552853c4ba24fe353b866a995 下若干 R 脚本的路径、SHA256 与部分静态观察(如读取 RDS/TSV 文件、输出 PDF 绘图),未执行代码。",
+        "title_zh": "ArchR:面向整合式单细胞染色质可及性分析的可扩展软件包",
+        "summary_zh": "该资料为 Nature Genetics 2021 年发表的 ArchR 软件论文条目,摘要称 ArchR 是用于单细胞调控染色质分析的 R 软件套件,提供双细胞去除、聚类与细胞类型鉴定、统一 peak 集生成、细胞轨迹识别、DNA 元件-基因连接、转录因子足迹、由染色质可及性预测 mRNA 表达水平以及与 scRNA-seq 的多组学整合等功能,并称可在标准 Unix 笔记本上 8 小时内分析超过 120 万个单细胞。提供的证据包含论文元数据、四张主图的图注文字、若干作者代码文件的静态观察记录以及一条整理说明。作者代码未被执行,静态检查不构成复现验证,因此本条目不对结果一致性或可复现性作任何断言。",
         "learning_points": [
-          "论文提出 ArchR 作为 R 语言单细胞染色质可及性分析软件套件,摘要列出其功能包括双细胞去除、聚类与细胞类型鉴定、统一 peak 集生成、轨迹识别、DNA 元件-基因连接、转录因子足迹、mRNA 表达预测及与 scRNA-seq 的多组学整合(evidence: publication)。",
-          "Fig.1 图注展示 ArchR 工作流程示意,并从 BAM 或 fragment 文件出发;同时给出 ArchR、Signac 与 SnapATAC 在约 20,000 PBMCs(32 GB RAM、八核)和约 70,000 PBMCs(128 GB RAM、20 核)下的运行时间与内存对比,点表示基准分析重复(n=3),OoM 表示内存不足(evidence: figure-0)。",
-          "Fig.1 图注还涉及细胞系混合实验的初始 UMAP 嵌入(n=38,072 个细胞,来自十种细胞系)、ArchR 双细胞识别示意(KNN)、合成双细胞富集与基于 SNP 的 demuxlet 标签着色,以及双细胞预测的 ROC 曲线(evidence: figure-0)。",
-          "Fig.2 图注说明优化基因评分推断模型可改善由 scATAC-seq 数据预测基因表达,比较了 PBMC 与骨髓细胞数据上 56 种基因评分模型在 top 1,000 差异表达基因与 top 2,000 可变基因上的 Pearson 相关性,并指出模型 42(从 TSS 上游延伸 5 kb 与 TTS 双向指数衰减并考虑邻近基因边界)比其他模型(如模型 21 指数衰减)更准确(evidence: figure-1)。",
-          "Fig.3 图注展示 ArchR 对大规模 scATAC-seq 数据的分析,包括超过 220,000 与 1,200,000 个单细胞的运行时间(分别在小集群环境与个人 MacBook Pro 笔记本上),以及基于 25,000 个 landmark 细胞 LSI 估计构建的造血数据集 UMAP(21 个造血簇)、215,916 个 ATAC-seq marker peaks 热图、motif 超几何富集校正 P 值热图与基因评分/motif 偏差评分 UMAP(evidence: figure-2)。",
-          "Fig.4 图注描述 ArchR 整合 scATAC-seq 与 scRNA-seq 以识别造血分化基因调控轨迹,包括将 m 个切片中 n 个单细胞独立比对到参考 scRNA-seq 数据集后合并的整合设计,以及 B 细胞轨迹中 11,999 个 peak-to-gene 连接热图和 HMGA1、BLK 位点的基因组轨迹可视化(evidence: figure-3)。",
-          "代码静态观察显示,在固定提交 fe290efeecfa346552853c4ba24fe353b866a995 下,Code/ArchR_PostAnalysis_Large_Heme_Analysis.R 读取 RDS 与 TSV 文件并输出 PDF 绘图;另有 ArchR_Make_Gene_Models.R、ArchR_PreProcess_Laptop_LargeHeme_220k.R、ArchR_PreProcess_Laptop_SimulatedPBMC_1M.R 等脚本路径与 SHA256 记录(evidence: script-0, script-1, script-2, script-3)。",
-          "资料中 curated-note 提到作者官方 publication 仓库 README 列出真实 Code 文件并提供带 Arrow 的 ArchRProject,且 Fig. 3i 由正式图注确认(evidence: curated-note)。"
+          "ArchR 定位为单细胞染色质可及性(scATAC-seq)的端到端分析软件套件,摘要列举了双细胞去除、聚类与细胞类型鉴定、统一 peak 集生成、细胞轨迹识别、DNA 元件-基因连接、转录因子足迹、由染色质可及性预测 mRNA 表达以及与 scRNA-seq 多组学整合等功能。",
+          "Fig. 1 图注展示了从预比对 BAM 或 fragment 文件出发的 ArchR 工作流示意,并在约 20,000 PBMC(32 GB 内存、8 核)与约 70,000 PBMC(128 GB 内存、20 核)条件下与 Signac、SnapATAC 比较运行时间与内存占用,标注 OoM 表示内存不足。",
+          "Fig. 1 图注还描述了细胞系混合实验两个重复共 38,072 个细胞(来自十种细胞系)的初始 UMAP、ArchR 双细胞识别示意(KNN)、合成双细胞富集与基于 SNP 基因型的 demuxlet 标签着色,以及双细胞预测的 ROC 曲线。",
+          "Fig. 2 图注聚焦基因评分推断模型优化:以 PBMC 与骨髓细胞的 scATAC-seq 与 scRNA-seq 聚类对齐作为基准,在 56 个基因评分模型上以 Pearson 相关衡量准确性,并指出模型 42(TSS 上游延伸 5 kb 与 TTS 的双向指数衰减并考虑邻近基因边界)比其他模型(如模型 21 的指数衰减)更准确。",
+          "Fig. 3 图注展示大规模 scATAC-seq 分析:在 32 GB 内存、8 核的小集群环境与个人 MacBook Pro 笔记本上分别分析超过 220,000 与 1,200,000 个单细胞,并给出 21 个造血簇的 UMAP、215,916 个 ATAC-seq marker peak 热图、motif 超几何富集校正 P 值热图以及基因评分与 motif 偏差评分的并排 UMAP。",
+          "Fig. 4 图注描述 scATAC-seq 与 scRNA-seq 的整合:将数据切分为 m 个含 n 个细胞的切片分别比对到参考 scRNA-seq 数据集后合并,以降低内存需求;并给出造血数据集的 UMAP 着色、B 细胞轨迹上 11,999 个 peak-to-gene 连接热图,以及 HMGA1 与 BLK 位点的基因组轨迹可视化。",
+          "作者代码仓库在固定提交 fe290efeecfa346552853c4ba24fe353b866a995 下包含多个脚本,静态观察到的路径包括 Code/ArchR_PostAnalysis_Large_Heme_Analysis.R、Code/ArchR_Make_Gene_Models.R、Code/ArchR_PreProcess_Laptop_LargeHeme_220k.R 与 Code/ArchR_PreProcess_Laptop_SimulatedPBMC_1M.R,并记录了各文件的 SHA256。",
+          "静态观察显示 ArchR_PostAnalysis_Large_Heme_Analysis.R 中读取了 RDS 与 TSV 输入(如 All_Immune_Filter3-ArchR-3-ReduceDimsNoDoub2-25000-Save.rds、Save-Correlations-TF-To-GS.tsv、scRNA-Healthy-Hematopoiesis-191120.rds)并输出 PDF 图(Plot-Cor-TF-GS-2.pdf、Plot-Cor-TF-RNA.pdf),但未执行,无法据此判断运行结果。"
         ],
         "limitations": [
-          "作者代码未执行,静态检查不等于复现验证,不能据此宣称已复现论文结果或与论文一致(evidence: inspection-boundary)。",
-          "输入数据尺度、图号与代码的对应关系在资料未明示处保持未知,不得推断(evidence: inspection-boundary)。",
-          "AI 注释仅为待核学习材料,不能作为事实依据(evidence: inspection-boundary)。",
-          "script-1、script-2、script-3 的静态观察内容为空,无法据此描述其具体操作(evidence: script-1, script-2, script-3)。",
-          "Fig.1 图注文本在双细胞预测 ROC 曲线处被截断,后续内容未知(evidence: figure-0)。",
-          "Fig.2 图注文本在侧边 UMAP 描述处被截断,后续内容未知(evidence: figure-1)。",
-          "Fig.3 图注文本在 motif 偏差评分描述处被截断,后续内容未知(evidence: figure-2)。",
-          "Fig.4 图注文本在基因组轨迹可视化描述处被截断,后续内容未知(evidence: figure-3)。",
-          "资料未提供期刊指标、许可信息或原图与代码的精确对应关系,这些信息未知(evidence: publication, inspection-boundary)。",
-          "curated-note 为整理性说明,其关于 README 与 Fig. 3i 的陈述未在所提供的其他证据中独立验证(evidence: curated-note)。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未被执行,静态检查不等于复现验证;本条目不宣称已复现论文结果或与原文一致。",
+          "输入数据的完整尺度、各图号与具体代码块或数据文件之间的对应关系未在证据中明示,保持未知。",
+          "证据仅包含论文元数据、四张主图(Fig. 1–4)的图注文字与部分脚本的静态观察,未提供补充图、方法细节或完整代码内容。",
+          "Fig. 1 图注文本在双细胞预测 ROC 曲线处被截断(h 项描述不完整),无法获知该子图的完整信息。",
+          "Fig. 2 图注文本在 PBMC 与骨髓细胞并排 UMAP 处被截断(d 项描述不完整),无法获知该子图的完整信息。",
+          "Fig. 3 图注文本在基因评分与 motif 偏差评分并排 UMAP 处被截断(e 项描述不完整),无法获知该子图的完整信息。",
+          "Fig. 4 图注文本在 HMGA1 与 BLK 位点基因组轨迹可视化处被截断(f、g 项描述不完整),无法获知该子图的完整信息。",
+          "script-1、script-2、script-3 的静态观察字段为空,除路径与 SHA256 外无可用内容。",
+          "证据未提供任何期刊指标、许可信息或性能基准的独立验证,相关数值仅来自论文摘要与图注的自述。",
+          "整理说明(curated-note)提到官方仓库 README 列出真实 Code 文件并提供带 Arrow 的 ArchRProject,但该说明本身为二手整理,未附原始 README 文本。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -92937,13 +92929,11 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-12T00:36:56Z",
+        "generated_at": "2026-10-13T08:36:14Z",
         "model": "deepseek-flash",
         "source_fingerprint": "5cd983621adaae2d6f7b1d310723ae17969b0b71766f974eceb95ed373255737",
         "summary_fingerprint": "ca67c7395707c0cae577794a85c386df8143ad7bbfaae83ca934813a7e39a07c",
-        "ai_attempts": 0,
+        "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -171120,13 +171110,13 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-13T08:35:38Z",
+  "generatedAt": "2026-10-13T08:36:14Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 34,
-    "attentionCount": 13,
+    "pendingCount": 32,
+    "attentionCount": 15,
     "removedCount": 0,
     "startedAt": "2026-10-11T15:08:16Z",
     "issues": [
@@ -171177,8 +171167,7 @@
       {
         "doi": "10.1038/s41591-026-04566-5",
         "reasonCodes": [
-          "selected_figure_missing",
-          "ai_response_invalid"
+          "selected_figure_missing"
         ]
       },
       {
@@ -171445,8 +171434,7 @@
       {
         "doi": "10.1038/s41588-021-00790-6",
         "reasonCodes": [
-          "input_undocumented",
-          "ai_response_invalid"
+          "input_undocumented"
         ]
       },
       {
@@ -171517,13 +171505,13 @@
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:35:42Z",
-    "status": "active",
-    "endReason": "",
+    "updatedAt": "2026-10-13T08:36:16Z",
+    "status": "finished",
+    "endReason": "cohort_traversed",
     "batchCount": 10,
-    "checkpointCount": 20,
-    "requests": 641,
-    "aiAttempts": 10,
+    "checkpointCount": 21,
+    "requests": 674,
+    "aiAttempts": 12,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -171531,12 +171519,12 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 47,
-    "processedCount": 45,
-    "remainingCount": 2,
-    "inFlightCount": 2,
+    "processedCount": 47,
+    "remainingCount": 0,
+    "inFlightCount": 0,
     "completeCount": 8,
-    "pendingCount": 34,
-    "attentionCount": 13,
+    "pendingCount": 32,
+    "attentionCount": 15,
     "removedCount": 0,
     "materialsStatus": "needs_attention",
     "localCheckpointSaved": true
