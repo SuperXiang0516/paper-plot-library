@@ -143,18 +143,18 @@
       "10.1111/1755-0998.70213"
     ],
     "startedAt": "2026-10-11T15:08:16Z",
-    "status": "active",
+    "status": "needs_attention",
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 47,
-    "attentionCount": 0,
+    "pendingCount": 44,
+    "attentionCount": 3,
     "removedCount": 0
   },
   "backfillSession": {
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:33:28Z",
+    "updatedAt": "2026-10-13T08:34:02Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -281,11 +281,16 @@
       "10.1038/s41586-021-03852-1",
       "10.1126/science.abl4896",
       "10.1016/j.cell.2026.08.010",
-      "10.1038/s41586-024-07944-6"
+      "10.1038/s41586-024-07944-6",
+      "10.1038/s41586-020-2496-1",
+      "10.1038/s41592-020-01050-x",
+      "10.1038/s43587-022-00357-y",
+      "10.1038/s41586-022-04618-z",
+      "10.7554/elife.77632"
     ],
     "batchCount": 7,
-    "checkpointCount": 14,
-    "requests": 419,
+    "checkpointCount": 15,
+    "requests": 494,
     "aiAttempts": 7,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -293,25 +298,6 @@
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 264,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41586-020-2496-1",
-        "10.1038/s41592-020-01050-x",
-        "10.1038/s43587-022-00357-y",
-        "10.1038/s41586-022-04618-z",
-        "10.7554/elife.77632"
-      ],
-      "startedAt": "2026-10-13T08:33:28Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41586-020-2496-1": "2026-10-12T07:23:00Z",
-        "10.1038/s41592-020-01050-x": "2026-10-12T07:23:07Z",
-        "10.1038/s43587-022-00357-y": "2026-10-12T07:23:11Z",
-        "10.1038/s41586-022-04618-z": "2026-10-12T07:23:15Z",
-        "10.7554/elife.77632": "2026-10-12T07:23:28Z"
-      }
-    }
+    "elapsedSeconds": 298
   }
 }
