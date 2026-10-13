@@ -71140,23 +71140,24 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:22:45Z",
+        "lastCheckedAt": "2026-10-13T08:33:23Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:22:45Z",
+          "lastAttemptAt": "2026-10-13T08:33:23Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:22:45Z"
+          "nextAttemptAt": "2026-10-14T08:33:23Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:22:55Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:33:23Z",
           "status": "pending",
           "reasonCodes": [
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:22:55Z"
+          "nextAttemptAt": "2026-10-13T10:33:23Z"
         }
       },
       "pmcid": "PMC11578893",
@@ -71693,7 +71694,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:22:42.306663+00:00",
+        "retrievedAt": "2026-10-13T08:33:17.310019+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -73138,23 +73139,24 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T07:18:23Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:22:45Z",
+        "retrievedAt": "2026-10-13T08:33:23Z",
         "url": "https://openalex.org/W4404566936",
         "cited_by_count": 92,
-        "fwci": 10.8043,
-        "citation_normalized_percentile": 0.99326656,
+        "fwci": 10.732,
+        "citation_normalized_percentile": 0.99326298,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [
         "integration"
       ],
       "selectionScore": {
-        "total": 96.9663328,
+        "total": 96.9663149,
         "components": {
           "topic": 12,
           "method": 15,
@@ -73162,7 +73164,7 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.9663328,
+          "normalizedCitationPreference": 4.9663149,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -73191,6 +73193,7 @@
           "代码仓库中 Step_1 至 Step_3 等制图脚本的具体内容未在证据中给出,仅有目录与文件名层面的描述(curated-note)。",
           "证据未说明 CMA 参数(r = 15 μm, K = 10)是否适用于所有样本或平台,未知。",
           "证据未提供任何原图与代码输出之间的对应关系,无法判断图件是否可由所给代码生成。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -73208,11 +73211,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:22:54Z",
         "model": "deepseek-flash",
         "source_fingerprint": "fd7b69924356f9f612b0e155df1c6537c4522bf9762ef6de9fc1800414090c16",
         "summary_fingerprint": "28350536a2ad8e2f6c42b0ab53d619edb3643baa893f919985876c5d8439ab7f",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -79327,23 +79332,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:22:10Z",
+        "lastCheckedAt": "2026-10-13T08:33:08Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:22:10Z",
+          "lastAttemptAt": "2026-10-13T08:33:08Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:22:10Z"
+          "nextAttemptAt": "2026-10-14T08:33:08Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:22:17Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:33:08Z",
           "status": "pending",
           "reasonCodes": [
             "selected_figure_missing"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:22:17Z"
+          "nextAttemptAt": "2026-10-13T10:33:08Z"
         }
       },
       "pmcid": "PMC8426186",
@@ -79942,7 +79947,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:22:08.269401+00:00",
+        "retrievedAt": "2026-10-13T08:33:03.365503+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -80101,21 +80106,22 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T07:18:23Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:22:10Z",
+        "retrievedAt": "2026-10-13T08:33:08Z",
         "url": "https://openalex.org/W3149417142",
-        "cited_by_count": 703,
-        "fwci": 26.2858,
-        "citation_normalized_percentile": 0.99872317,
+        "cited_by_count": 700,
+        "fwci": 25.9391,
+        "citation_normalized_percentile": 0.99870439,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 69.99361585,
+        "total": 69.99352195,
         "components": {
           "topic": 0,
           "method": 15,
@@ -80123,7 +80129,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.99361585,
+          "normalizedCitationPreference": 4.99352195,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -80151,6 +80157,7 @@
           "图注中部分内容(如Fig. 2 g)在提供的证据文本中被截断,完整细节未知(evidence: figure-1)。",
           "各图对应的具体数据文件、参数与统计方法未在证据中完整给出,无法确认(evidence: figure-0, figure-1, figure-2, figure-3)。",
           "未观察到期刊指标、许可或复现结果信息,均属未知(evidence: publication, inspection-boundary)。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -80166,11 +80173,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:22:16Z",
         "model": "deepseek-flash",
         "source_fingerprint": "5023703938ce72d0058d11082cb9e6306533fb882c39f4ec06741cab4b30cab5",
         "summary_fingerprint": "478ad3dedf40bbb90e5feb28255f4f94dd6d3beea23f1790a5a81a9fb574ae0c",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -80260,24 +80269,25 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:22:00Z",
+        "lastCheckedAt": "2026-10-13T08:33:01Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:22:00Z",
+          "lastAttemptAt": "2026-10-13T08:33:01Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-13T07:22:00Z"
+          "nextAttemptAt": "2026-10-14T08:33:01Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:22:07Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:33:02Z",
           "status": "pending",
           "reasonCodes": [
             "selected_figure_missing",
-            "input_undocumented"
+            "input_undocumented",
+            "ai_response_invalid"
           ],
           "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-12T08:22:07Z"
+          "nextAttemptAt": "2026-10-13T10:33:02Z"
         }
       },
       "pmcid": "PMC11166909",
@@ -80521,7 +80531,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-12T07:21:57.274868+00:00",
+        "retrievedAt": "2026-10-13T08:32:56.583695+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -81157,12 +81167,14 @@
         "cas": "综合性期刊1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T07:22:00Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:22:00Z",
+        "retrievedAt": "2026-10-13T08:33:01Z",
         "url": "https://openalex.org/W4399535373",
         "cited_by_count": 38,
         "fwci": 9.0799,
@@ -81209,6 +81221,7 @@
           "Fig. 3 中黑色框代表因细胞计数极少而无法确定的位点,X标记代表未通过统计检验的相关性,说明部分区域数据受限。",
           "Fig. 4 中仅可视化统计显著或既往报道的微生物,可能未覆盖全部微生物变化。",
           "证据未说明飞行时长以外的其他混杂因素控制情况。",
+          "作者代码未运行;静态检查不等于图形复现或结果验证。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -81225,11 +81238,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
+        "cache_hit": true,
+        "persistent_cache_hit": true,
         "generated_at": "2026-10-12T07:22:06Z",
         "model": "deepseek-flash",
         "source_fingerprint": "b96461468909351eb8b834d8e0d266c84e77198f29ce7fd8aadc8ab366a8276f",
         "summary_fingerprint": "d975f765b637a6b92e73745fbc644111d4c8dde72c5a2fe7434c633bb4b485a8",
-        "ai_attempts": 1,
+        "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -81323,17 +81338,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:22:30Z",
+        "lastCheckedAt": "2026-10-13T08:33:13Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:22:30Z",
+          "lastAttemptAt": "2026-10-13T08:33:13Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-13T07:22:30Z"
+          "nextAttemptAt": "2026-10-14T08:33:13Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:22:31Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:33:13Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -81342,10 +81357,10 @@
             "ai_missing"
           ],
           "sourceGapScans": {
-            "formal_version_unavailable": 1,
-            "selected_figure_unavailable": 1
+            "formal_version_unavailable": 2,
+            "selected_figure_unavailable": 2
           },
-          "nextAttemptAt": "2026-10-12T08:22:31Z"
+          "nextAttemptAt": "2026-10-13T10:33:13Z"
         }
       },
       "pmcid": "PMC9812260",
@@ -81372,7 +81387,7 @@
         "limitations": [
           "No DOI-matched non-manuscript publisher version available in current PMC cloud."
         ],
-        "retrievedAt": "2026-10-12T07:22:28.550092+00:00",
+        "retrievedAt": "2026-10-13T08:33:10.294159+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": []
       },
@@ -81656,21 +81671,22 @@
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T07:20:27Z",
         "metric_year": "unknown",
-        "cache_hit": true
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:22:30Z",
+        "retrievedAt": "2026-10-13T08:33:13Z",
         "url": "https://openalex.org/W4280598116",
-        "cited_by_count": 1056,
-        "fwci": 61.3139,
-        "citation_normalized_percentile": 0.99972262,
+        "cited_by_count": 1042,
+        "fwci": 60.3863,
+        "citation_normalized_percentile": 0.99971976,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 64.9986131,
+        "total": 64.9985988,
         "components": {
           "topic": 0,
           "method": 15,
@@ -81678,7 +81694,7 @@
           "usability": 40,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.9986131,
+          "normalizedCitationPreference": 4.9985988,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -86225,17 +86241,17 @@
           "ai": "missing_evidence"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-12T07:22:32Z",
+        "lastCheckedAt": "2026-10-13T08:33:15Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-12T07:22:32Z",
+          "lastAttemptAt": "2026-10-13T08:33:15Z",
           "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-13T07:22:32Z"
+          "nextAttemptAt": "2026-10-14T08:33:15Z"
         },
         "bootstrap": {
-          "attempts": 1,
-          "unsuccessfulScans": 1,
-          "lastAttemptAt": "2026-10-12T07:22:32Z",
+          "attempts": 2,
+          "unsuccessfulScans": 2,
+          "lastAttemptAt": "2026-10-13T08:33:15Z",
           "status": "pending",
           "reasonCodes": [
             "source_refresh_failed",
@@ -86244,10 +86260,10 @@
             "ai_missing"
           ],
           "sourceGapScans": {
-            "formal_version_unavailable": 1,
-            "selected_figure_unavailable": 1
+            "formal_version_unavailable": 2,
+            "selected_figure_unavailable": 2
           },
-          "nextAttemptAt": "2026-10-12T08:22:32Z"
+          "nextAttemptAt": "2026-10-13T10:33:15Z"
         }
       },
       "pmid": "42685689",
@@ -86271,7 +86287,7 @@
         "limitations": [
           "No exact PMCID and DOI pair resolved; original images are link-only."
         ],
-        "retrievedAt": "2026-10-12T07:22:31.807875+00:00",
+        "retrievedAt": "2026-10-13T08:33:15.183825+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": []
       },
@@ -86554,21 +86570,23 @@
         "cas": "生物学1区",
         "source": "EasyScholar",
         "retrieved_at": "2026-10-12T07:22:32Z",
-        "metric_year": "unknown"
+        "metric_year": "unknown",
+        "cache_hit": true,
+        "persistent_cache_hit": true
       },
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-12T07:22:32Z",
+        "retrievedAt": "2026-10-13T08:33:15Z",
         "url": "https://openalex.org/W7205709388",
         "cited_by_count": 0,
         "fwci": 0.0,
-        "citation_normalized_percentile": 0.62608316,
+        "citation_normalized_percentile": 0.6215288,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 75.1304158,
+        "total": 75.107644,
         "components": {
           "topic": 12,
           "method": 15,
@@ -86576,7 +86594,7 @@
           "usability": 40,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 3.1304157999999997,
+          "normalizedCitationPreference": 3.107644,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -171122,7 +171140,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-13T08:32:49Z",
+  "generatedAt": "2026-10-13T08:33:24Z",
   "bootstrap": {
     "status": "active",
     "totalCount": 55,
@@ -171286,7 +171304,8 @@
       {
         "doi": "10.1038/s41586-024-07944-6",
         "reasonCodes": [
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       },
       {
@@ -171315,7 +171334,8 @@
         "doi": "10.1038/s41467-024-48625-2",
         "reasonCodes": [
           "selected_figure_missing",
-          "input_undocumented"
+          "input_undocumented",
+          "ai_response_invalid"
         ]
       },
       {
@@ -171519,12 +171539,12 @@
     "version": 1,
     "id": "27e2f34ed5a5611ad66f92fb7f4ab2e5",
     "startedAt": "2026-10-13T08:29:04Z",
-    "updatedAt": "2026-10-13T08:32:53Z",
+    "updatedAt": "2026-10-13T08:33:25Z",
     "status": "active",
     "endReason": "",
     "batchCount": 6,
-    "checkpointCount": 12,
-    "requests": 358,
+    "checkpointCount": 13,
+    "requests": 419,
     "aiAttempts": 7,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -171533,9 +171553,9 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 30,
-    "processedCount": 25,
-    "remainingCount": 22,
-    "inFlightCount": 5,
+    "processedCount": 30,
+    "remainingCount": 17,
+    "inFlightCount": 0,
     "completeCount": 8,
     "pendingCount": 47,
     "attentionCount": 0,
