@@ -144,6 +144,7 @@
     "status": "needs_attention",
     "removedDOIs": [
       "10.1038/s41467-025-67369-1",
+      "10.1038/s41586-020-2496-1",
       "10.1038/s41592-022-01475-6",
       "10.1038/s41592-025-02847-4",
       "10.1038/s41586-023-06252-9",
@@ -155,6 +156,7 @@
       "10.1016/j.cell.2026.08.010",
       "10.1038/s41587-021-01139-4",
       "10.1038/s41587-020-0591-3",
+      "10.1038/s41592-020-01050-x",
       "10.1038/s41592-018-0229-2",
       "10.1038/s41587-022-01272-8",
       "10.1038/s41587-021-01033-z",
@@ -162,17 +164,17 @@
     ],
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 2,
+    "pendingCount": 0,
     "attentionCount": 29,
-    "removedCount": 16
+    "removedCount": 18
   },
   "backfillSession": {
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:47:22Z",
-    "status": "active",
-    "endReason": "",
+    "updatedAt": "2026-10-14T06:47:33Z",
+    "status": "finished",
+    "endReason": "no_eligible_cases",
     "cohortDOIs": [
       "10.1038/s41467-025-67369-1",
       "10.1038/s41467-024-51855-z",
@@ -294,11 +296,13 @@
       "10.1038/s41586-021-03852-1",
       "10.1126/science.abl4896",
       "10.1016/j.cell.2026.08.010",
-      "10.1038/s41586-024-07944-6"
+      "10.1038/s41586-024-07944-6",
+      "10.1038/s41586-020-2496-1",
+      "10.1038/s41592-020-01050-x"
     ],
     "batchCount": 7,
-    "checkpointCount": 14,
-    "requests": 418,
+    "checkpointCount": 15,
+    "requests": 446,
     "aiAttempts": 7,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -306,20 +310,7 @@
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 202,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41586-020-2496-1",
-        "10.1038/s41592-020-01050-x"
-      ],
-      "startedAt": "2026-10-14T06:47:22Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41586-020-2496-1": "2026-10-13T08:33:35Z",
-        "10.1038/s41592-020-01050-x": "2026-10-13T08:33:39Z"
-      }
-    }
+    "elapsedSeconds": 213
   },
   "removedPapers": {
     "10.1038/s41467-025-67369-1": {
@@ -385,6 +376,14 @@
     "10.1016/j.cell.2026.08.010": {
       "reasonCode": "formal_version_unavailable",
       "removedAt": "2026-10-14T06:47:19Z"
+    },
+    "10.1038/s41586-020-2496-1": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:47:32Z"
+    },
+    "10.1038/s41592-020-01050-x": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:47:32Z"
     }
   }
 }
