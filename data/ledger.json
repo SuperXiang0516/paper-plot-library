@@ -145,21 +145,24 @@
     "removedDOIs": [
       "10.1038/s41467-025-67369-1",
       "10.1038/s41592-022-01475-6",
+      "10.1038/s41586-023-06252-9",
+      "10.1038/s41586-020-2922-4",
+      "10.1038/s41586-025-09686-5",
       "10.1038/s41587-021-01139-4",
       "10.1038/s41587-022-01272-8",
       "10.1038/s44335-026-00100-5"
     ],
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 22,
-    "attentionCount": 20,
-    "removedCount": 5
+    "pendingCount": 17,
+    "attentionCount": 22,
+    "removedCount": 8
   },
   "backfillSession": {
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:45:20Z",
+    "updatedAt": "2026-10-14T06:45:50Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -246,38 +249,24 @@
       "10.1038/s44335-026-00100-5",
       "10.1093/bioinformatics/btag706",
       "10.1111/1755-0998.70213",
-      "10.1038/s41588-026-02776-8"
+      "10.1038/s41588-026-02776-8",
+      "10.1038/s41586-023-06806-x",
+      "10.1038/s41586-023-06252-9",
+      "10.1038/s41588-024-01873-w",
+      "10.1038/s41586-020-2922-4",
+      "10.1038/s41586-025-09686-5"
     ],
     "batchCount": 3,
-    "checkpointCount": 6,
-    "requests": 158,
-    "aiAttempts": 3,
+    "checkpointCount": 7,
+    "requests": 229,
+    "aiAttempts": 4,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 81,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41586-023-06806-x",
-        "10.1038/s41586-023-06252-9",
-        "10.1038/s41588-024-01873-w",
-        "10.1038/s41586-020-2922-4",
-        "10.1038/s41586-025-09686-5"
-      ],
-      "startedAt": "2026-10-14T06:45:20Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41586-023-06806-x": "2026-10-13T08:31:13Z",
-        "10.1038/s41586-023-06252-9": "2026-10-13T08:31:19Z",
-        "10.1038/s41588-024-01873-w": "2026-10-13T08:31:26Z",
-        "10.1038/s41586-020-2922-4": "2026-10-13T08:31:31Z",
-        "10.1038/s41586-025-09686-5": "2026-10-13T08:31:36Z"
-      }
-    }
+    "elapsedSeconds": 110
   },
   "removedPapers": {
     "10.1038/s41467-025-67369-1": {
@@ -299,6 +288,18 @@
     "10.1038/s44335-026-00100-5": {
       "reasonCode": "figure_reuse_unavailable",
       "removedAt": "2026-10-14T06:45:16Z"
+    },
+    "10.1038/s41586-023-06252-9": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:45:49Z"
+    },
+    "10.1038/s41586-020-2922-4": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:45:49Z"
+    },
+    "10.1038/s41586-025-09686-5": {
+      "reasonCode": "figure_reuse_unavailable",
+      "removedAt": "2026-10-14T06:45:49Z"
     }
   }
 }
