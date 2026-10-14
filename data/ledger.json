@@ -75,11 +75,6 @@
       "status": "pending",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s44335-026-00100-5": {
-      "checkedAt": "2026-10-11T10:48:14Z",
-      "status": "source_confirmed",
-      "reason": "作者代码声明和可读脚本已定位"
-    },
     "10.1093/bioinformatics/btag706": {
       "checkedAt": "2026-10-11T10:48:10Z",
       "status": "source_confirmed",
@@ -151,19 +146,20 @@
       "10.1038/s41467-025-67369-1",
       "10.1038/s41592-022-01475-6",
       "10.1038/s41587-021-01139-4",
-      "10.1038/s41587-022-01272-8"
+      "10.1038/s41587-022-01272-8",
+      "10.1038/s44335-026-00100-5"
     ],
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 27,
-    "attentionCount": 16,
-    "removedCount": 4
+    "pendingCount": 22,
+    "attentionCount": 20,
+    "removedCount": 5
   },
   "backfillSession": {
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:44:36Z",
+    "updatedAt": "2026-10-14T06:45:18Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -240,38 +236,24 @@
       "10.1038/s41587-021-01139-4",
       "10.1038/s41592-021-01346-6",
       "10.1038/s41587-022-01272-8",
-      "10.1038/s41592-022-01475-6"
+      "10.1038/s41592-022-01475-6",
+      "10.1126/sciadv.aef0670",
+      "10.1038/s44335-026-00100-5",
+      "10.1093/bioinformatics/btag706",
+      "10.1111/1755-0998.70213",
+      "10.1038/s41588-026-02776-8"
     ],
     "batchCount": 2,
-    "checkpointCount": 4,
-    "requests": 69,
-    "aiAttempts": 1,
+    "checkpointCount": 5,
+    "requests": 158,
+    "aiAttempts": 3,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 36,
-    "inFlight": {
-      "dois": [
-        "10.1126/sciadv.aef0670",
-        "10.1038/s44335-026-00100-5",
-        "10.1093/bioinformatics/btag706",
-        "10.1111/1755-0998.70213",
-        "10.1038/s41588-026-02776-8"
-      ],
-      "startedAt": "2026-10-14T06:44:36Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1126/sciadv.aef0670": "2026-10-13T08:29:56Z",
-        "10.1038/s44335-026-00100-5": "2026-10-13T08:30:26Z",
-        "10.1093/bioinformatics/btag706": "2026-10-13T08:30:45Z",
-        "10.1111/1755-0998.70213": "2026-10-13T08:30:52Z",
-        "10.1038/s41588-026-02776-8": "2026-10-13T08:31:00Z"
-      }
-    }
+    "elapsedSeconds": 78
   },
   "removedPapers": {
     "10.1038/s41467-025-67369-1": {
@@ -289,6 +271,10 @@
     "10.1038/s41587-022-01272-8": {
       "reasonCode": "formal_version_unavailable",
       "removedAt": "2026-10-14T06:44:32Z"
+    },
+    "10.1038/s44335-026-00100-5": {
+      "reasonCode": "figure_reuse_unavailable",
+      "removedAt": "2026-10-14T06:45:16Z"
     }
   }
 }
