@@ -148,9 +148,11 @@
       "10.1038/s41592-025-02847-4",
       "10.1038/s41586-023-06252-9",
       "10.1038/s41586-020-2922-4",
+      "10.1126/science.abl4896",
       "10.1038/s41586-025-09686-5",
       "10.1126/science.abo0510",
       "10.1038/s41586-025-09053-4",
+      "10.1016/j.cell.2026.08.010",
       "10.1038/s41587-021-01139-4",
       "10.1038/s41587-020-0591-3",
       "10.1038/s41592-018-0229-2",
@@ -160,15 +162,15 @@
     ],
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 7,
-    "attentionCount": 26,
-    "removedCount": 14
+    "pendingCount": 2,
+    "attentionCount": 29,
+    "removedCount": 16
   },
   "backfillSession": {
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:46:46Z",
+    "updatedAt": "2026-10-14T06:47:20Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -285,38 +287,24 @@
       "10.1038/s41592-025-02847-4",
       "10.1038/s41592-021-01336-8",
       "10.1038/s41587-020-0591-3",
-      "10.1038/s41592-018-0229-2"
+      "10.1038/s41592-018-0229-2",
+      "10.1038/s41467-024-48625-2",
+      "10.1038/s41586-021-03852-1",
+      "10.1126/science.abl4896",
+      "10.1016/j.cell.2026.08.010",
+      "10.1038/s41586-024-07944-6"
     ],
     "batchCount": 6,
-    "checkpointCount": 12,
-    "requests": 355,
-    "aiAttempts": 5,
+    "checkpointCount": 13,
+    "requests": 418,
+    "aiAttempts": 7,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 167,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41467-024-48625-2",
-        "10.1038/s41586-021-03852-1",
-        "10.1126/science.abl4896",
-        "10.1016/j.cell.2026.08.010",
-        "10.1038/s41586-024-07944-6"
-      ],
-      "startedAt": "2026-10-14T06:46:46Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41467-024-48625-2": "2026-10-13T08:33:01Z",
-        "10.1038/s41586-021-03852-1": "2026-10-13T08:33:08Z",
-        "10.1126/science.abl4896": "2026-10-13T08:33:13Z",
-        "10.1016/j.cell.2026.08.010": "2026-10-13T08:33:15Z",
-        "10.1038/s41586-024-07944-6": "2026-10-13T08:33:23Z"
-      }
-    }
+    "elapsedSeconds": 200
   },
   "removedPapers": {
     "10.1038/s41467-025-67369-1": {
@@ -374,6 +362,14 @@
     "10.1038/s41592-018-0229-2": {
       "reasonCode": "formal_version_unavailable",
       "removedAt": "2026-10-14T06:46:43Z"
+    },
+    "10.1126/science.abl4896": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:47:19Z"
+    },
+    "10.1016/j.cell.2026.08.010": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:47:19Z"
     }
   }
 }

@@ -51874,24 +51874,22 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-13T08:33:23Z",
+        "lastCheckedAt": "2026-10-14T06:47:12Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-13T08:33:23Z",
+          "lastAttemptAt": "2026-10-14T06:47:12Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-14T08:33:23Z"
+          "nextAttemptAt": "2026-10-15T06:47:12Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-13T08:33:23Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-14T06:47:18Z",
+          "status": "needs_attention",
           "reasonCodes": [
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-13T10:33:23Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC11578893",
@@ -52428,7 +52426,7 @@
         "limitations": [
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-13T08:33:17.310019+00:00",
+        "retrievedAt": "2026-10-14T06:47:09.265166+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [
           {
@@ -53879,18 +53877,18 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-13T08:33:23Z",
+        "retrievedAt": "2026-10-14T06:47:12Z",
         "url": "https://openalex.org/W4404566936",
         "cited_by_count": 92,
-        "fwci": 10.732,
-        "citation_normalized_percentile": 0.99326298,
+        "fwci": 10.7107,
+        "citation_normalized_percentile": 0.99322143,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [
         "integration"
       ],
       "selectionScore": {
-        "total": 96.9663149,
+        "total": 96.96610715,
         "components": {
           "topic": 12,
           "method": 15,
@@ -53898,7 +53896,7 @@
           "usability": 25,
           "image": 10,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.9663149,
+          "normalizedCitationPreference": 4.96610715,
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -53906,28 +53904,25 @@
       "ai": {
         "status": "generated",
         "title_zh": "映射到连续组织轴的人类胸腺空间细胞图谱",
-        "summary_zh": "该论文发表于 Nature(2024-11-20),题为 A spatial human thymus cell atlas mapped to a continuous tissue axis(DOI:10.1038/s41586-024-07944-6)。摘要称作者建立了胸腺的定量形态学框架——皮质-髓质轴(Cortico-Medullary Axis, CMA),并将其应用于多模态单细胞图谱、空间转录组学与高分辨率多重成像数据,以在产前与产后早期阶段绘制胸腺微解剖结构。摘要还提到识别出胸腺上皮细胞祖细胞的组织生态位、与哈氏小体相关的亚型,以及 CD4 与 CD8 T 细胞谱系进入髓质时间的差异,并提供了跨平台成像数据分析、注释与 OrganAxis 构建的工具包 TissueTag。所提供的证据仅包含论文元数据、图注(Fig. 1–4)与代码仓库的静态观察记录,未包含正文方法、结果数值或复现验证。",
+        "summary_zh": "该论文发表于 Nature(2024-11-20),题为 A spatial human thymus cell atlas mapped to a continuous tissue axis。研究建立了胸腺的定量形态学框架——皮质-髓质轴(Cortico-Medullary Axis, CMA),并将其应用于多模态单细胞图谱、空间转录组学和高分辨率多重成像数据,以在胎儿和早期出生后阶段解析胸腺微解剖结构。图注显示研究整合了空间与解离数据集(n = 29 名供体),涵盖胎儿和早期儿童期样本,并介绍了 TissueTag 软件用于跨平台成像数据分析、注释和 OrganAxis 构建。",
         "learning_points": [
-          "论文提出以皮质-髓质轴(CMA)作为连续组织轴来定量描述胸腺微解剖结构,并用于空间分辨分析(见 figure-1、figure-2)。",
-          "Fig. 1 展示人类胸腺空间图谱的数据组成与方法学:空间与解离数据集的联合使用、不同研究对主要细胞类型与年龄组的贡献(n = 29 donors)、含新生成与已发表数据的数据集构成,以及 TissueTag 功能概览(figure-0)。",
-          "Fig. 2 展示利用组织标志与连续 CMA 进行多模态数据整合,包括胎儿(p.c.w. 15)与儿童(3 个月)Visium 及儿童 IBEX(7 天)的 H&E 与虚拟 H&E、离散注释(皮质、髓质、边缘、组织伪影、TALA)、CMA 推导示意与参数(r = 15 μm, K = 10)、批次校正 UMAP 与 CMA 值着色,以及 CMA、技术因素与其他变异来源对方差解释的贡献(figure-1)。",
-          "Fig. 3 展示胎儿与儿童胸小细胞的 CMA 映射,提示 T 谱系轨迹与细胞因子景观的早期建立,包括分箱 CMA 空间、将 Visium 点映射到 CMA 并用整合的胎儿与儿童 scRNA-seq 图谱去卷积的分析流程、αβ T 谱系主要分化阶段的 UMAP 与分箱 CMA 映射,以及趋化因子/细胞因子转录本沿 CMA 分箱的空间模式(figure-2)。",
-          "Fig. 4 展示 CMA 映射用于定位发育过程中 TEC 祖细胞定位的分歧,包括 TEC 的整合 UMAP、标记基因表达、基于 Visium 去卷积的 TEC 相对分布与富集(突出 mcTEC;增殖 mcTEC 仅见于胎儿胸腺,cTECIII 仅在儿童数据中检出)、基于匹配儿童 scRNA-seq 参考的 IBEX 分割核注释流程、TEC 亚群在 IBEX 数据中的空间分布,以及 7 天龄男性胸腺(IBEX_02)五种角蛋白表达的 IBEX 图像(figure-3)。",
-          "代码可用性方面,论文明示分析与绘图代码位于该仓库;制图目录包含 Step_1_cell2location_thymus_atlas_rev_v1_fetal-github.ipynb 及儿童对应版本、Step_2_arrange_visium 与 Step_3_visium_cma 的胎儿/儿童版本(curated-note)。",
-          "对固定提交 24c1a479f19d3847e5c0a307d43fe8b051fd6817 的静态观察显示,manuscript/Annotation and loading 目录下存在 Step_5_update_multilevel_annotation_and_plot-github.ipynb(读取 adata_full_rev_2_clean.h5ad、HTSA_CITE_anno.csv、adata_full_rev_3_clean.h5ad、HTSA_CITE_anno.h5ad、adata_full_rev_4_clean.h5ad、adata_full_rev_4_clean_scvi.h5ad 等文件)以及 Step_6_fine_annotation_plot_B/EC/FBs-github.ipynb(script-0、script-1、script-2、script-3)。"
+          "论文提出并使用了胸腺的定量形态学框架——皮质-髓质轴(CMA),用于空间分辨分析(evidence: publication, figure-1)。",
+          "研究整合了空间转录组学(Visium)、多重成像(IBEX)和解离单细胞数据,涵盖胎儿和早期儿童期样本(evidence: figure-0, figure-1)。",
+          "Fig. 1 展示了人类胸腺空间图谱的数据组成和方法学,包括不同研究对主要细胞类型和年龄组的比例贡献,n = 29 名供体(evidence: figure-0)。",
+          "Fig. 2 展示了使用组织标志和连续 CMA 进行多模态数据整合,包括皮质、髓质、边缘(被膜+隔膜)、组织伪影和胎儿胸腺相关淋巴聚集(TALA)的离散注释(evidence: figure-1)。",
+          "Fig. 3 显示 CMA 映射揭示了 T 系轨迹和细胞因子景观的早期建立,包括胎儿和儿童 Visium 切片的 CMA 分箱表示(evidence: figure-2)。",
+          "Fig. 4 显示 CMA 映射定位了发育过程中 TEC 祖细胞定位的分歧,包括 mcTEC、增殖 mcTEC(仅胎儿)和 cTECIII(仅儿童)的分布(evidence: figure-3)。",
+          "论文提供了 TissueTag 软件工具包,用于跨平台成像数据分析、注释和 OrganAxis 构建(evidence: publication, figure-0)。",
+          "代码可用性表明分析和绘图代码位于指定仓库,制图目录包含多个 Jupyter notebook 文件(evidence: curated-note, script-0)。"
         ],
         "limitations": [
-          "作者代码未被执行,静态检查不构成复现验证,不能据此宣称已复现论文结果或与原文一致(inspection-boundary、script-0 至 script-3)。",
-          "所提供的证据仅含论文元数据、图注与代码静态观察,未包含正文方法细节、统计结果或数值,因此无法核实摘要中关于细胞因子网络、胸小细胞轨迹与 TEC 分布等结论的具体依据。",
-          "输入数据的尺度、图号与代码的对应关系未明示,保持未知(inspection-boundary)。",
-          "Fig. 1–4 图注中部分内容在证据文本中被截断(如 Fig. 3 的 cosine 指标、Fig. 4 的 IBEX 图像描述结尾),无法据此完整描述相应分析。",
-          "各数据集的具体样本数、检测基因或标记数、每数据集样本数等仅在图注中被提及存在,但证据未给出具体数值,故未知。",
-          "论文的许可、期刊指标(如影响因子)等信息未在证据中出现,未知。",
-          "TissueTag 工具的实际可用性、依赖环境与运行结果未在证据中验证,未知。",
-          "代码仓库中 Step_1 至 Step_3 等制图脚本的具体内容未在证据中给出,仅有目录与文件名层面的描述(curated-note)。",
-          "证据未说明 CMA 参数(r = 15 μm, K = 10)是否适用于所有样本或平台,未知。",
-          "证据未提供任何原图与代码输出之间的对应关系,无法判断图件是否可由所给代码生成。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未执行,静态检查不是复现验证;不得宣称已复现或结果一致(evidence: inspection-boundary)。",
+          "输入尺度、图号对应关系未明示时保持未知(evidence: inspection-boundary)。",
+          "AI 仅为待核学习注释,未观察到的信息必须说明未知(evidence: inspection-boundary)。",
+          "部分脚本(如 Step_6_fine_annotation_plot_B-github.ipynb、Step_6_fine_annotation_plot_EC-github.ipynb、Step_6_fine_annotation_plot_FBs-github.ipynb)的静态观察为空,无法确认其内容(evidence: script-1, script-2, script-3)。",
+          "未观察到期刊指标、许可或复现结果的信息,这些内容未知(evidence: inspection-boundary)。",
+          "图注中部分描述被截断(如 Fig. 3 的 cosine 后内容、Fig. 4 的 Images are representative o 后内容),无法获取完整信息(evidence: figure-2, figure-3)。",
+          "未观察到原图与代码的具体对应关系,该信息未知(evidence: inspection-boundary)。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -53945,13 +53940,11 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-12T07:22:54Z",
+        "generated_at": "2026-10-14T06:47:18Z",
         "model": "deepseek-flash",
         "source_fingerprint": "fd7b69924356f9f612b0e155df1c6537c4522bf9762ef6de9fc1800414090c16",
         "summary_fingerprint": "28350536a2ad8e2f6c42b0ab53d619edb3643baa893f919985876c5d8439ab7f",
-        "ai_attempts": 0,
+        "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
@@ -59108,23 +59101,22 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-13T08:33:08Z",
+        "lastCheckedAt": "2026-10-14T06:47:02Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-13T08:33:08Z",
+          "lastAttemptAt": "2026-10-14T06:47:02Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-14T08:33:08Z"
+          "nextAttemptAt": "2026-10-15T06:47:02Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-13T08:33:08Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-14T06:47:02Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "selected_figure_missing"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-13T10:33:08Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC8426186",
@@ -59723,7 +59715,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-13T08:33:03.365503+00:00",
+        "retrievedAt": "2026-10-14T06:46:59.589329+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -59888,16 +59880,16 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-13T08:33:08Z",
+        "retrievedAt": "2026-10-14T06:47:02Z",
         "url": "https://openalex.org/W3149417142",
         "cited_by_count": 700,
-        "fwci": 25.9391,
-        "citation_normalized_percentile": 0.99870439,
+        "fwci": 25.9377,
+        "citation_normalized_percentile": 0.99870428,
         "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
       },
       "suggestedAnalysisFunctions": [],
       "selectionScore": {
-        "total": 69.99352195,
+        "total": 69.9935214,
         "components": {
           "topic": 0,
           "method": 15,
@@ -59905,7 +59897,7 @@
           "usability": 25,
           "image": 0,
           "journalPreference": 5,
-          "normalizedCitationPreference": 4.99352195,
+          "normalizedCitationPreference": 4.9935214,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -60045,25 +60037,23 @@
           "ai": "generated"
         },
         "errors": [],
-        "lastCheckedAt": "2026-10-13T08:33:01Z",
+        "lastCheckedAt": "2026-10-14T06:46:52Z",
         "repairSchedule": {
           "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-13T08:33:01Z",
+          "lastAttemptAt": "2026-10-14T06:46:52Z",
           "lastOutcome": "automatic_complete",
-          "nextAttemptAt": "2026-10-14T08:33:01Z"
+          "nextAttemptAt": "2026-10-15T06:46:52Z"
         },
         "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-13T08:33:02Z",
-          "status": "pending",
+          "attempts": 3,
+          "unsuccessfulScans": 3,
+          "lastAttemptAt": "2026-10-14T06:46:58Z",
+          "status": "needs_attention",
           "reasonCodes": [
             "selected_figure_missing",
-            "input_undocumented",
-            "ai_response_invalid"
+            "input_undocumented"
           ],
-          "sourceGapScans": {},
-          "nextAttemptAt": "2026-10-13T10:33:02Z"
+          "sourceGapScans": {}
         }
       },
       "pmcid": "PMC11166909",
@@ -60307,7 +60297,7 @@
           "No verified reusable image downloaded; figure links remain available.",
           "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
         ],
-        "retrievedAt": "2026-10-13T08:32:56.583695+00:00",
+        "retrievedAt": "2026-10-14T06:46:49.883030+00:00",
         "source": "PMC OA Cloud",
         "codeURLEvidence": [],
         "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
@@ -60950,7 +60940,7 @@
       "citations": {
         "status": "matched",
         "source": "OpenAlex",
-        "retrievedAt": "2026-10-13T08:33:01Z",
+        "retrievedAt": "2026-10-14T06:46:52Z",
         "url": "https://openalex.org/W4399535373",
         "cited_by_count": 38,
         "fwci": 9.0799,
@@ -60974,30 +60964,27 @@
       },
       "ai": {
         "status": "generated",
-        "title_zh": "人类皮肤空间多组学揭示航天飞行相关的KRAS与炎症反应",
-        "summary_zh": "该论文研究短时航天飞行对人类皮肤的影响,对Inspiration4乘组在飞行前(L-44)与飞行后(R+1)进行皮肤活检,结合GeoMx数字空间分析、单细胞RNA/ATAC测序及宏基因组/宏转录组学,在四个皮肤区室(外表皮、内表皮、外真皮、血管)的95个皮肤区域评估空间基因表达及相关微生物与免疫变化。飞行后样本显示炎症与KRAS信号相关基因在所有皮肤区域显著上调,并映射到干扰素反应、DNA损伤、上皮屏障破坏、T细胞迁移与再生受阻等细胞反应,主要位于外层组织区室。",
+        "title_zh": "空间多组学揭示人类皮肤对太空飞行的KRAS与炎症反应",
+        "summary_zh": "该论文对Inspiration4乘组在飞行前(L-44)与飞行后(R+1)进行皮肤活检,结合GeoMx数字空间分析、单细胞RNA/ATAC测序及宏基因组/宏转录组,评估四个皮肤区室(外表皮、内表皮、外真皮、血管)共95个区域的基因表达及微生物与免疫变化;飞行后样本在全部皮肤区域显示炎症与KRAS信号相关基因上调,并映射到干扰素反应、DNA损伤、上皮屏障破坏、T细胞迁移与再生受阻等细胞反应,主要位于外层组织区室。",
         "learning_points": [
-          "研究采用飞行前(L-44)与飞行后(R+1)配对时间点,对同一乘组进行皮肤活检采样。",
-          "多组学组合包括GeoMx数字空间分析、单细胞RNA/ATAC测序以及宏基因组/宏转录组学。",
-          "空间分析覆盖四个区室:外表皮、内表皮、外真皮、血管,共95个皮肤区域。",
-          "Fig. 1 展示实验设计与整体飞行前后比较,含ROI的UMAP、DESeq2差异表达火山图、MSigDB Hallmark通路富集与细胞比例比较。",
-          "Fig. 2 展示区域特异基因表达谱与细胞组成变化,差异基因判定采用校正p值<0.1且|log2FC|>0.5,并用UpSet图比较区域特异差异基因交集。",
-          "Fig. 3 展示按组织区室的细胞微环境变化,包括基因表达变化、细胞比例倍数变化与细胞类型相关矩阵变化。",
-          "Fig. 4 展示皮肤宏基因组与转录组分析,包括PCA、细菌与病毒物种数、按科/属的相对丰度变化及与屏障/免疫基因的相关性。",
-          "作者代码仓库静态观察显示存在GeoMx_EDA_v1.Rmd等脚本,读取GeoMx合并RDS、细胞比例估计RDS与自定义基因集RDS文件。"
+          "论文发表于Nature Communications,时间为2024-06-11,DOI为10.1038/s41467-024-48625-2。",
+          "研究设计为对Inspiration4乘组在飞行前L-44与飞行后R+1两个时间点采集皮肤活检,并整合GeoMx数字空间分析、单细胞RNA/ATAC测序与宏基因组/宏转录组。",
+          "分析覆盖四个皮肤区室(外表皮OE、内表皮IE、外真皮OD、血管VA)共95个区域。",
+          "Fig. 1展示实验设计与整体飞行前后比较,包括ROI的UMAP、DESeq2差异表达火山图、MSigDB Hallmark通路富集及细胞比例比较。",
+          "Fig. 2按ROI类型展示区域特异差异表达基因(阈值adjusted p < 0.1且|log2FC| > 0.5)、UpSet交集与Hallmark基因集富集分析。",
+          "Fig. 3展示按组织区室的细胞微环境变化,包括基因表达变化、细胞比例倍数变化与细胞类型相关矩阵变化。",
+          "Fig. 4展示皮肤宏基因组与宏转录组分析,包括PCA、细菌与病毒物种数、按科/属的相对丰度变化及与屏障/免疫基因的相关性。",
+          "作者代码仓库的静态观察显示GeoMx_EDA_v1.Rmd读取GeoMx_merged_pub.RDS、i4GeoMxData_cellproportionestimates.RDS与Custom_GeneSets.RDS等文件,但未执行,不能视为复现验证。"
         ],
         "limitations": [
-          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或结果一致。",
-          "输入数据尺度与图号对应关系未明示时保持未知。",
-          "AI注释仅为待核学习材料,不能替代原文与原始数据的核对。",
-          "目录名仍为Park-NatureComms2022,但论文于2024年发表,不能由旧目录名推定出版年份。",
-          "未观察到许可、期刊指标或复现结果等信息,均属未知。",
-          "样本量有限(四个乘组成员),证据中未提供更广泛的推广性验证。",
-          "证据仅来自图注与脚本静态观察,未包含原始数据或统计输出细节。",
-          "Fig. 3 中黑色框代表因细胞计数极少而无法确定的位点,X标记代表未通过统计检验的相关性,说明部分区域数据受限。",
-          "Fig. 4 中仅可视化统计显著或既往报道的微生物,可能未覆盖全部微生物变化。",
-          "证据未说明飞行时长以外的其他混杂因素控制情况。",
-          "作者代码未运行;静态检查不等于图形复现或结果验证。",
+          "作者代码未运行,静态检查不等于复现验证,不能宣称已复现或结果一致。",
+          "输入数据尺度与图号对应关系未明示,保持未知。",
+          "AI注释仅为待核学习材料,不能替代原文与原始数据核查。",
+          "目录名仍为Park-NatureComms2022,但论文2024年发表,不能从旧目录名推定出版年。",
+          "未观察到原图与代码输出之间的对应关系,相关映射未知。",
+          "未观察到许可、期刊指标或复现结果信息,均属未知。",
+          "样本量较小(四个乘组成员、两个时间点),但此点需以原文为准,此处仅依据摘要所述乘组人数。",
+          "证据中未提供具体统计数值与源数据内容,无法据此核验具体效应量。",
           "作者代码未运行；静态检查不等于图形复现或结果验证。"
         ],
         "evidence_ids": [
@@ -61014,466 +61001,13 @@
         ],
         "review_required": true,
         "author_code_executed": false,
-        "cache_hit": true,
-        "persistent_cache_hit": true,
-        "generated_at": "2026-10-12T07:22:06Z",
+        "generated_at": "2026-10-14T06:46:58Z",
         "model": "deepseek-flash",
         "source_fingerprint": "b96461468909351eb8b834d8e0d266c84e77198f29ce7fd8aadc8ab366a8276f",
         "summary_fingerprint": "d975f765b637a6b92e73745fbc644111d4c8dde72c5a2fe7434c633bb4b485a8",
-        "ai_attempts": 0,
+        "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
-      }
-    },
-    {
-      "id": "tabula-sapiens-2022",
-      "name": "Cell-fraction plots",
-      "paper": "The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans",
-      "journal": "Science",
-      "date": "2022-05-13",
-      "year": 2022,
-      "doi": "10.1126/science.abl4896",
-      "paperURL": "https://www.science.org/doi/10.1126/science.abl4896",
-      "figureURL": "https://www.science.org/doi/10.1126/science.abl4896",
-      "figureURLScope": "来源明确的整图 / 图页入口；分面可能仍待核",
-      "codeURL": "https://github.com/czbiohub-sf/tabula-sapiens",
-      "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper1/Fig2/Fig2_cell_fractions.ipynb",
-      "dataURL": "https://figshare.com/projects/Tabula_Sapiens/100973",
-      "figure": "Fig.2 细胞比例图（子面板待核）",
-      "kind": "pending",
-      "chartTypes": [],
-      "classificationStatus": "pending",
-      "classificationEvidence": "只确认研究主题 / 制图入口，实际图型待核",
-      "suggestedChartTypes": [],
-      "data": "unknown",
-      "label": "逐图输入结构待核",
-      "match": "已核作者paper1/Fig2目录及具体制图文件；子面板与计算单元待核",
-      "lang": "Python · R",
-      "langs": [
-        "Python",
-        "R"
-      ],
-      "topic": "人类多器官图谱 · 细胞组成",
-      "method": "Cell-fraction plots",
-      "description": "比较不同组织中的细胞类型组成；图的精确分母与是否按供者平衡须读取notebook后再说明。",
-      "required": "paper1/Fig2/TSsequencing_pathology-nobalance_xy.csv；paper1/Fig2/serena_tsp1_tsp2_count_per_cell_type.csv",
-      "file": "paper1/Fig2/Fig2_cell_fractions.ipynb",
-      "evidence": "作者仓库paper1按Fig1—Fig6组织。 · Fig2目录实际包含Fig2_cell_fractions.ipynb，以及TSsequencing_pathology-nobalance_xy.csv和serena_tsp1_tsp2_count_per_cell_type.csv。",
-      "environment": "作者完整依赖与版本待核；本次未执行",
-      "source": "作者文件 / 目录：paper1/Fig2/Fig2_cell_fractions.ipynb\n\n对应依据：作者仓库paper1按Fig1—Fig6组织。 · Fig2目录实际包含Fig2_cell_fractions.ipynb，以及TSsequencing_pathology-nobalance_xy.csv和serena_tsp1_tsp2_count_per_cell_type.csv。\n\n已核作者paper1/Fig2目录及具体制图文件；子面板与计算单元待核",
-      "notes": "# 来源可追踪的中文核查笔记，不是可运行的注释版脚本\n# 1：比较不同组织中的细胞类型组成；图的精确分母与是否按供者平衡须读取notebook后再说明。\n# 2：作者仓库paper1按Fig1—Fig6组织。 · Fig2目录实际包含Fig2_cell_fractions.ipynb，以及TSsequencing_pathology-nobalance_xy.csv和serena_tsp1_tsp2_count_per_cell_type.csv。\n# 3：已核作者paper1/Fig2目录及具体制图文件；子面板与计算单元待核\n# 4：未确认的输入字段不补猜测值；仍需核对原作者代码。",
-      "codeLicense": "BSD-3-Clause（仓库标示）",
-      "figureLicense": "本次未核图像再发布许可；仅链接官方图页",
-      "limitations": [
-        "输入文件可定位，未读到实际表头/绘图单元。",
-        "同仓库paper2为后续论文，不能混用。",
-        "原始数据门户可能有访问协议；处理数据与原始数据分开标记。",
-        "未执行作者代码。"
-      ],
-      "dataDescription": "作者Fig2目录有该文件；作者Fig2目录有该文件",
-      "sources": [
-        {
-          "label": "正式Science论文",
-          "url": "https://www.science.org/doi/10.1126/science.abl4896"
-        },
-        {
-          "label": "官方全文",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9812260/"
-        },
-        {
-          "label": "作者制图目录",
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/tree/master/paper1/Fig2"
-        },
-        {
-          "label": "作者仓库许可与数据链接",
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens"
-        }
-      ],
-      "runPerformed": false,
-      "checkedAt": "2026-10-10",
-      "collectionGroup": "单细胞 / 空间图谱",
-      "collectionBatch": "added40",
-      "graphForms": [],
-      "formClassificationStatus": "pending",
-      "formClassificationEvidence": "拆分原有已核图注 / 绘图函数标签，只保留图形形态。只确认研究主题 / 制图入口，实际图型待核",
-      "suggestedGraphForms": [],
-      "analysisFunctions": [
-        "composition"
-      ],
-      "functionClassificationStatus": "approved",
-      "functionClassificationEvidence": "人工依据当前选图 / 制图目录描述标注分析目的；不扩展到整篇论文或声称运行完成。 比较不同组织中的细胞类型组成；图的精确分母与是否按供者平衡须读取notebook后再说明。",
-      "dimensionLinkScope": "selected-case",
-      "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
-      "automation": {
-        "status": "partial",
-        "stages": {
-          "metadata": "matched",
-          "article": "no_final_version",
-          "repository": "inspected",
-          "metrics": "matched",
-          "ai": "missing_evidence"
-        },
-        "errors": [],
-        "lastCheckedAt": "2026-10-13T08:33:13Z",
-        "repairSchedule": {
-          "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-13T08:33:13Z",
-          "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-14T08:33:13Z"
-        },
-        "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-13T08:33:13Z",
-          "status": "pending",
-          "reasonCodes": [
-            "source_refresh_failed",
-            "no_final_version",
-            "selected_figure_missing",
-            "ai_missing"
-          ],
-          "sourceGapScans": {
-            "formal_version_unavailable": 2,
-            "selected_figure_unavailable": 2
-          },
-          "nextAttemptAt": "2026-10-13T10:33:13Z"
-        }
-      },
-      "pmcid": "PMC9812260",
-      "pmid": "35549404",
-      "publicationTypes": [
-        "Research Support, Non-U.S. Gov't",
-        "research-article",
-        "Journal Article"
-      ],
-      "issn": "0036-8075",
-      "eissn": "1095-9203",
-      "metadataSource": "Europe PMC",
-      "maxFigureDownloads": 2,
-      "maxSupplementDownloads": 3,
-      "maxFileBytes": 6000000,
-      "article": {
-        "status": "no_final_version",
-        "license": "unknown",
-        "version": "",
-        "xmlURL": "",
-        "figures": [],
-        "supplements": [],
-        "codeURLs": [],
-        "limitations": [
-          "No DOI-matched non-manuscript publisher version available in current PMC cloud."
-        ],
-        "retrievedAt": "2026-10-13T08:33:10.294159+00:00",
-        "source": "PMC OA Cloud",
-        "codeURLEvidence": []
-      },
-      "repository": {
-        "status": "inspected",
-        "url": "https://github.com/czbiohub-sf/tabula-sapiens",
-        "commit": "14de8b082a25dba79e12c39626843543ab92e5b5",
-        "license": "BSD-3-Clause",
-        "scripts": [
-          {
-            "path": "paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
-            "sha256": "8010e3312e96c365cd09044c73c34e6947accdde5af5f16314cfff50b2882b23",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
-            "sha256": "9c26fde373d2861ffec9a1b48370f1f078b4693080709f36c67dca40762a9607",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
-            "sha256": "e324689171f5a674cedbfc7c75467d162c60c5e6057b9a8fccfe9cbdf3580ea5",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
-            "sha256": "3b418aee2d7a4a18e889cbcd4f2cef6ce74b7f06ce6483c111e46353e957dcac",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
-            "sha256": "869ce67a666808d7b3aa7a38c16d9e26e80d9efe341ce2c59d6c5baef80f0c60",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "sha256": "bac44304609186ac1f92c91d9f2a9ce496b8b011ce8b860168382167b1c74e8d",
-            "language": "Python",
-            "inputs": [
-              {
-                "path": "IGHC_annotations.tsv",
-                "reader": "pd.read_table",
-                "line": 3,
-                "status": "literal_path",
-                "format": "tsv",
-                "readerOptions": {}
-              }
-            ],
-            "outputs": [],
-            "fields": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ],
-            "evidence": [
-              {
-                "type": "io_reference",
-                "line": 3,
-                "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py#L3"
-              }
-            ],
-            "lineScope": "source file"
-          }
-        ],
-        "inputs": [
-          {
-            "name": "IGHC_annotations.tsv",
-            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "reader": "pd.read_table",
-            "format": "tsv",
-            "status": "header_observed",
-            "orientation": "unknown",
-            "scale": "unknown",
-            "fields": [
-              {
-                "name": "IMGT label",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Orientation",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Gene",
-                "kind": "actual_file_header"
-              }
-            ],
-            "observedFieldReferences": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ],
-            "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "line": 3,
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "readerOptions": {},
-            "headerSHA256": "efad6e97b19b94d7c33d56aac170cfb2df4471689a19e20ef31ece08d19e76e7"
-          }
-        ],
-        "figureMappings": [],
-        "limitations": [
-          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
-        ],
-        "authorCodeExecuted": false,
-        "sourceScanLimited": true
-      },
-      "metrics": {
-        "status": "matched",
-        "if": "47.3",
-        "jcr": "Q1",
-        "cas": "综合性期刊1区",
-        "source": "EasyScholar",
-        "retrieved_at": "2026-10-12T07:20:27Z",
-        "metric_year": "unknown",
-        "cache_hit": true,
-        "persistent_cache_hit": true
-      },
-      "citations": {
-        "status": "matched",
-        "source": "OpenAlex",
-        "retrievedAt": "2026-10-13T08:33:13Z",
-        "url": "https://openalex.org/W4280598116",
-        "cited_by_count": 1042,
-        "fwci": 60.3863,
-        "citation_normalized_percentile": 0.99971976,
-        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
-      },
-      "suggestedAnalysisFunctions": [],
-      "selectionScore": {
-        "total": 64.9985988,
-        "components": {
-          "topic": 0,
-          "method": 15,
-          "composite": 0,
-          "usability": 40,
-          "image": 0,
-          "journalPreference": 5,
-          "normalizedCitationPreference": 4.9985988,
-          "categoryGap": 0
-        },
-        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
       }
     },
     {
@@ -63323,452 +62857,6 @@
           "image": 0,
           "journalPreference": 5,
           "normalizedCitationPreference": 4.96123245,
-          "categoryGap": 0
-        },
-        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
-      }
-    },
-    {
-      "id": "tabula-sapiens2-2026",
-      "name": "Atlas overview（实际几何图型待核）",
-      "paper": "Tabula Sapiens 2.0: A comprehensive transcriptomic atlas of human cell types",
-      "journal": "Cell",
-      "date": "2026-09-02",
-      "year": 2026,
-      "doi": "10.1016/j.cell.2026.08.010",
-      "paperURL": "https://www.sciencedirect.com/science/article/pii/S0092867426009372",
-      "figureURL": "https://www.sciencedirect.com/science/article/pii/S0092867426009372",
-      "figureURLScope": "来源明确的整图 / 图页入口；分面可能仍待核",
-      "codeURL": "https://github.com/czbiohub-sf/tabula-sapiens",
-      "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper2/Figure1/Figure1.ipynb",
-      "dataURL": "https://tabula-sapiens-portal.ds.czbiohub.org/",
-      "figure": "Fig.1（作者目录对应；正式图注与子面板待核）",
-      "kind": "pending",
-      "chartTypes": [],
-      "classificationStatus": "pending",
-      "classificationEvidence": "只确认研究主题 / 制图入口，实际图型待核",
-      "suggestedChartTypes": [],
-      "data": "unknown",
-      "label": "逐图输入结构待核",
-      "match": "正式Cell2026在线论文已由出版商和PubMed核；作者paper2逐图目录与具体notebook已核，正式图注待核",
-      "lang": "Python · R",
-      "langs": [
-        "Python",
-        "R"
-      ],
-      "topic": "人类多组织图谱 · 细胞衰老 · 转录因子",
-      "method": "Atlas overview（实际几何图型待核）",
-      "description": "该后续论文扩展人体图谱，并研究CDKN2A+细胞衰老表型；选取作者paper2/Figure1案例展示版本与输入文档分离，当前不推定其图型。",
-      "required": "Tabula Sapiens2.0处理数据（精确文件待核）",
-      "file": "paper2/Figure1/Figure1.ipynb",
-      "evidence": "出版商页面标题、DOI、Available online2September2026、In PressCorrected Proof一致；PubMed42685689为JournalArticle/aheadofprint，不是2024预印本。 · 作者paper2目录含Figure1、Figure2_3、Figure4、Figure5、Figure6/ChatTS。 · paper2/Figure1目录含Figure1.ipynb、circos、supplementary_figures_123456.ipynb；不得与Science2022的paper1混用。",
-      "environment": "作者完整依赖与版本待核；本次未执行",
-      "source": "作者文件 / 目录：paper2/Figure1/Figure1.ipynb\n\n对应依据：出版商页面标题、DOI、Available online2September2026、In PressCorrected Proof一致；PubMed42685689为JournalArticle/aheadofprint，不是2024预印本。 · 作者paper2目录含Figure1、Figure2_3、Figure4、Figure5、Figure6/ChatTS。 · paper2/Figure1目录含Figure1.ipynb、circos、supplementary_figures_123456.ipynb；不得与Science2022的paper1混用。\n\n正式Cell2026在线论文已由出版商和PubMed核；作者paper2逐图目录与具体notebook已核，正式图注待核",
-      "notes": "# 来源可追踪的中文核查笔记，不是可运行的注释版脚本\n# 1：该后续论文扩展人体图谱，并研究CDKN2A+细胞衰老表型；选取作者paper2/Figure1案例展示版本与输入文档分离，当前不推定其图型。\n# 2：出版商页面标题、DOI、Available online2September2026、In PressCorrected Proof一致；PubMed42685689为JournalArticle/aheadofprint，不是2024预印本。 · 作者paper2目录含Figure1、Figure2_3、Figure4、Figure5、Figure6/ChatTS。 · paper2/Figure1目录含Figure1.ipynb、circos、supplementary_figures_123456.ipynb；不得与Science2022的paper1混用。\n# 3：正式Cell2026在线论文已由出版商和PubMed核；作者paper2逐图目录与具体notebook已核，正式图注待核\n# 4：未确认的输入字段不补猜测值；仍需核对原作者代码。",
-      "codeLicense": "BSD-3-Clause（仓库级标示；paper2文件单独许可未逐一核）",
-      "figureLicense": "本次未核图像再发布许可；仅链接官方图页",
-      "limitations": [
-        "是正式期刊在线发表但仍InPressCorrectedProof，卷期未确定。",
-        "主仓库paper1与paper2是不同论文/数据版本，不作为重复DOI。",
-        "该例仅作者逐图代码定位，实际图型与输入单元pending。",
-        "未执行作者代码。"
-      ],
-      "dataDescription": "出版商称公开交互门户；具体notebook输入与门户文件对应待核",
-      "sources": [
-        {
-          "label": "正式出版商页面",
-          "url": "https://www.sciencedirect.com/science/article/pii/S0092867426009372"
-        },
-        {
-          "label": "PubMed正式期刊元数据",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/42685689/"
-        },
-        {
-          "label": "作者paper2制图目录",
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/tree/master/paper2"
-        },
-        {
-          "label": "作者Figure1具体代码",
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/tree/master/paper2/Figure1"
-        }
-      ],
-      "runPerformed": false,
-      "checkedAt": "2026-10-10",
-      "collectionGroup": "单细胞 / 空间图谱",
-      "collectionBatch": "added40",
-      "graphForms": [],
-      "formClassificationStatus": "pending",
-      "formClassificationEvidence": "拆分原有已核图注 / 绘图函数标签，只保留图形形态。只确认研究主题 / 制图入口，实际图型待核",
-      "suggestedGraphForms": [],
-      "analysisFunctions": [],
-      "functionClassificationStatus": "pending",
-      "functionClassificationEvidence": "选图内容尚未核实，保留功能待核；不直接套用整篇论文主题。",
-      "dimensionLinkScope": "selected-case",
-      "dimensionLinkEvidence": "双向索引连接同一个选图记录；复合图的逐分面图形—功能对应仍需进一步核查。",
-      "automation": {
-        "status": "partial",
-        "stages": {
-          "metadata": "matched",
-          "article": "not_found",
-          "repository": "inspected",
-          "metrics": "matched",
-          "ai": "missing_evidence"
-        },
-        "errors": [],
-        "lastCheckedAt": "2026-10-13T08:33:15Z",
-        "repairSchedule": {
-          "consecutiveFailures": 0,
-          "lastAttemptAt": "2026-10-13T08:33:15Z",
-          "lastOutcome": "incomplete",
-          "nextAttemptAt": "2026-10-14T08:33:15Z"
-        },
-        "bootstrap": {
-          "attempts": 2,
-          "unsuccessfulScans": 2,
-          "lastAttemptAt": "2026-10-13T08:33:15Z",
-          "status": "pending",
-          "reasonCodes": [
-            "source_refresh_failed",
-            "article_unchecked",
-            "selected_figure_missing",
-            "ai_missing"
-          ],
-          "sourceGapScans": {
-            "formal_version_unavailable": 2,
-            "selected_figure_unavailable": 2
-          },
-          "nextAttemptAt": "2026-10-13T10:33:15Z"
-        }
-      },
-      "pmid": "42685689",
-      "publicationTypes": [
-        "Journal Article"
-      ],
-      "issn": "0092-8674",
-      "eissn": "1097-4172",
-      "metadataSource": "Europe PMC",
-      "maxFigureDownloads": 2,
-      "maxSupplementDownloads": 3,
-      "maxFileBytes": 6000000,
-      "article": {
-        "status": "not_found",
-        "license": "unknown",
-        "version": "",
-        "xmlURL": "",
-        "figures": [],
-        "supplements": [],
-        "codeURLs": [],
-        "limitations": [
-          "No exact PMCID and DOI pair resolved; original images are link-only."
-        ],
-        "retrievedAt": "2026-10-13T08:33:15.183825+00:00",
-        "source": "PMC OA Cloud",
-        "codeURLEvidence": []
-      },
-      "repository": {
-        "status": "inspected",
-        "url": "https://github.com/czbiohub-sf/tabula-sapiens",
-        "commit": "14de8b082a25dba79e12c39626843543ab92e5b5",
-        "license": "BSD-3-Clause",
-        "scripts": [
-          {
-            "path": "paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/b_cells/isotype_counting.ipynb",
-            "sha256": "8010e3312e96c365cd09044c73c34e6947accdde5af5f16314cfff50b2882b23",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_graphs.ipynb",
-            "sha256": "9c26fde373d2861ffec9a1b48370f1f078b4693080709f36c67dca40762a9607",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_sankey.ipynb",
-            "sha256": "e324689171f5a674cedbfc7c75467d162c60c5e6057b9a8fccfe9cbdf3580ea5",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/clonal_stats.ipynb",
-            "sha256": "3b418aee2d7a4a18e889cbcd4f2cef6ce74b7f06ce6483c111e46353e957dcac",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/notebooks/clonality/scirpy_integrate_metadata.ipynb",
-            "sha256": "869ce67a666808d7b3aa7a38c16d9e26e80d9efe341ce2c59d6c5baef80f0c60",
-            "language": "Python notebook",
-            "inputs": [],
-            "outputs": [],
-            "fields": [],
-            "evidence": [
-              {
-                "type": "limitation"
-              }
-            ],
-            "lineScope": "notebook code-cell concatenation"
-          },
-          {
-            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "sha256": "bac44304609186ac1f92c91d9f2a9ce496b8b011ce8b860168382167b1c74e8d",
-            "language": "Python",
-            "inputs": [
-              {
-                "path": "IGHC_annotations.tsv",
-                "reader": "pd.read_table",
-                "line": 3,
-                "status": "literal_path",
-                "format": "tsv",
-                "readerOptions": {}
-              }
-            ],
-            "outputs": [],
-            "fields": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ],
-            "evidence": [
-              {
-                "type": "io_reference",
-                "line": 3,
-                "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py#L3"
-              }
-            ],
-            "lineScope": "source file"
-          }
-        ],
-        "inputs": [
-          {
-            "name": "IGHC_annotations.tsv",
-            "path": "paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "reader": "pd.read_table",
-            "format": "tsv",
-            "status": "header_observed",
-            "orientation": "unknown",
-            "scale": "unknown",
-            "fields": [
-              {
-                "name": "IMGT label",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Orientation",
-                "kind": "actual_file_header"
-              },
-              {
-                "name": "Gene",
-                "kind": "actual_file_header"
-              }
-            ],
-            "observedFieldReferences": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ],
-            "scriptURL": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py",
-            "line": 3,
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "readerOptions": {},
-            "headerSHA256": "efad6e97b19b94d7c33d56aac170cfb2df4471689a19e20ef31ece08d19e76e7"
-          }
-        ],
-        "figureMappings": [],
-        "limitations": [
-          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
-        ],
-        "authorCodeExecuted": false,
-        "sourceScanLimited": true
-      },
-      "metrics": {
-        "status": "matched",
-        "if": "45.1",
-        "jcr": "Q1",
-        "cas": "生物学1区",
-        "source": "EasyScholar",
-        "retrieved_at": "2026-10-12T07:22:32Z",
-        "metric_year": "unknown",
-        "cache_hit": true,
-        "persistent_cache_hit": true
-      },
-      "citations": {
-        "status": "matched",
-        "source": "OpenAlex",
-        "retrievedAt": "2026-10-13T08:33:15Z",
-        "url": "https://openalex.org/W7205709388",
-        "cited_by_count": 0,
-        "fwci": 0.0,
-        "citation_normalized_percentile": 0.6215288,
-        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
-      },
-      "suggestedAnalysisFunctions": [],
-      "selectionScore": {
-        "total": 75.107644,
-        "components": {
-          "topic": 12,
-          "method": 15,
-          "composite": 0,
-          "usability": 40,
-          "image": 0,
-          "journalPreference": 5,
-          "normalizedCitationPreference": 3.107644,
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
@@ -111520,178 +110608,6 @@
         "status": "全仓库静态输入候选；与原选图输入分开"
       }
     },
-    "tabula-sapiens-2022": {
-      "tree": "paper1/Fig2/TSsequencing_pathology-nobalance_xy.csv\npaper1/Fig2/serena_tsp1_tsp2_count_per_cell_type.csv",
-      "shape": "待核；不能从文件名推定行列；细胞类型计数；真实列/方向待核",
-      "status": "未知结构保留为空；来源 / 数据入口已收录，不等于输入齐全",
-      "files": [
-        {
-          "name": "paper1/Fig2/TSsequencing_pathology-nobalance_xy.csv",
-          "role": "来源提及的输入或中间对象；直接绘图关系待核",
-          "format": "CSV",
-          "orientation": "待核；不能从文件名推定行列",
-          "encoding": "未核（不假设为 UTF-8 或可直接读入）",
-          "scale": "具体单位与归一化待实际读取步骤确认",
-          "note": "作者Fig2目录有该文件",
-          "fields": [
-            [
-              "未核实",
-              "未知",
-              "待核",
-              "本次没有观察到实际表头 / 对象字段，不从图注猜造作者数据列。"
-            ]
-          ],
-          "csv": "# 未读取真实文件表头或对象字段\n# 不提供虚构数据行；先核对作者读取步骤和公开文件。",
-          "preview": "无真实表头；保留待核状态",
-          "mapping": "已核作者paper1/Fig2目录及具体制图文件；子面板与计算单元待核；作者仓库paper1按Fig1—Fig6组织。 · Fig2目录实际包含Fig2_cell_fractions.ipynb，以及TSsequencing_pathology-nobalance_xy.csv和serena_tsp1_tsp2_count_per_cell_type.csv。",
-          "checks": [
-            "核对论文图号与作者脚本标记、代码版本。",
-            "核对直接绘图输入的文件名、对象层级、连接键和矩阵方向。",
-            "确认数据访问权限与文件校验值，不把原始数据入口当作绘图成品。",
-            "确认单位、数值尺度、缺失值与变换；未核字段不自动补默认值。"
-          ],
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper1/Fig2/Fig2_cell_fractions.ipynb"
-        },
-        {
-          "name": "paper1/Fig2/serena_tsp1_tsp2_count_per_cell_type.csv",
-          "role": "来源提及的输入或中间对象；直接绘图关系待核",
-          "format": "CSV",
-          "orientation": "细胞类型计数；真实列/方向待核",
-          "encoding": "未核（不假设为 UTF-8 或可直接读入）",
-          "scale": "具体单位与归一化待实际读取步骤确认",
-          "note": "作者Fig2目录有该文件",
-          "fields": [
-            [
-              "未核实",
-              "未知",
-              "待核",
-              "本次没有观察到实际表头 / 对象字段，不从图注猜造作者数据列。"
-            ]
-          ],
-          "csv": "# 未读取真实文件表头或对象字段\n# 不提供虚构数据行；先核对作者读取步骤和公开文件。",
-          "preview": "无真实表头；保留待核状态",
-          "mapping": "已核作者paper1/Fig2目录及具体制图文件；子面板与计算单元待核；作者仓库paper1按Fig1—Fig6组织。 · Fig2目录实际包含Fig2_cell_fractions.ipynb，以及TSsequencing_pathology-nobalance_xy.csv和serena_tsp1_tsp2_count_per_cell_type.csv。",
-          "checks": [
-            "核对论文图号与作者脚本标记、代码版本。",
-            "核对直接绘图输入的文件名、对象层级、连接键和矩阵方向。",
-            "确认数据访问权限与文件校验值，不把原始数据入口当作绘图成品。",
-            "确认单位、数值尺度、缺失值与变换；未核字段不自动补默认值。"
-          ],
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper1/Fig2/Fig2_cell_fractions.ipynb"
-        }
-      ],
-      "automaticInputs": {
-        "tree": "IGHC_annotations.tsv",
-        "files": [
-          {
-            "name": "IGHC_annotations.tsv",
-            "role": "脚本输入候选；不等于选图直接输入已核",
-            "format": "tsv",
-            "orientation": "未知",
-            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
-            "scale": "未知；不推断归一化",
-            "note": "真实文件表头已读取；含义/单位仍待核",
-            "fields": [
-              [
-                "IMGT label",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Positions in NCBI Accession number",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Orientation",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Gene",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ]
-            ],
-            "preview": "仅真实列名，不含虚构示例值",
-            "csv": "IMGT label\nPositions in NCBI Accession number\nOrientation\nGene",
-            "mapping": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py；读取行 3；图号对应仍待核",
-            "checks": [
-              "核对直接绘图对象与作者脚本版本",
-              "核对连接键、矩阵方向、单位、缺失值与变换"
-            ],
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "observedFieldReferences": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ]
-          }
-        ],
-        "status": "全仓库静态输入候选；与原选图输入分开"
-      }
-    },
     "heca-endometrium-2024": {
       "tree": "Visium cell2location预测对象（具体文件名待核）",
       "shape": "需要空间spot坐标与各细胞群估计丰度；实际对象字段待核",
@@ -111945,151 +110861,6 @@
           "url": "https://github.com/Peng-He-Lab/limbcellatlas/blob/main/running_pyscenic_and_visualization.ipynb"
         }
       ]
-    },
-    "tabula-sapiens2-2026": {
-      "tree": "Tabula Sapiens2.0处理数据（精确文件待核）",
-      "shape": "待核；不假定与paper1字段一致",
-      "status": "未知结构保留为空；来源 / 数据入口已收录，不等于输入齐全",
-      "files": [
-        {
-          "name": "Tabula Sapiens2.0处理数据（精确文件待核）",
-          "role": "来源提及的输入或中间对象；直接绘图关系待核",
-          "format": "待核",
-          "orientation": "待核；不假定与paper1字段一致",
-          "encoding": "未核（不假设为 UTF-8 或可直接读入）",
-          "scale": "具体单位与归一化待实际读取步骤确认",
-          "note": "出版商称公开交互门户；具体notebook输入与门户文件对应待核",
-          "fields": [
-            [
-              "未核实",
-              "未知",
-              "待核",
-              "本次没有观察到实际表头 / 对象字段，不从图注猜造作者数据列。"
-            ]
-          ],
-          "csv": "# 未读取真实文件表头或对象字段\n# 不提供虚构数据行；先核对作者读取步骤和公开文件。",
-          "preview": "无真实表头；保留待核状态",
-          "mapping": "正式Cell2026在线论文已由出版商和PubMed核；作者paper2逐图目录与具体notebook已核，正式图注待核；出版商页面标题、DOI、Available online2September2026、In PressCorrected Proof一致；PubMed42685689为JournalArticle/aheadofprint，不是2024预印本。 · 作者paper2目录含Figure1、Figure2_3、Figure4、Figure5、Figure6/ChatTS。 · paper2/Figure1目录含Figure1.ipynb、circos、supplementary_figures_123456.ipynb；不得与Science2022的paper1混用。",
-          "checks": [
-            "核对论文图号与作者脚本标记、代码版本。",
-            "核对直接绘图输入的文件名、对象层级、连接键和矩阵方向。",
-            "确认数据访问权限与文件校验值，不把原始数据入口当作绘图成品。",
-            "确认单位、数值尺度、缺失值与变换；未核字段不自动补默认值。"
-          ],
-          "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/master/paper2/Figure1/Figure1.ipynb"
-        }
-      ],
-      "automaticInputs": {
-        "tree": "IGHC_annotations.tsv",
-        "files": [
-          {
-            "name": "IGHC_annotations.tsv",
-            "role": "脚本输入候选；不等于选图直接输入已核",
-            "format": "tsv",
-            "orientation": "未知",
-            "encoding": "仅表头 UTF-8 检查；全文件编码未核",
-            "scale": "未知；不推断归一化",
-            "note": "真实文件表头已读取；含义/单位仍待核",
-            "fields": [
-              [
-                "IMGT label",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Positions in NCBI Accession number",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Orientation",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ],
-              [
-                "Gene",
-                "类型未核",
-                "真实文件表头",
-                "列含义/尺度未核"
-              ]
-            ],
-            "preview": "仅真实列名，不含虚构示例值",
-            "csv": "IMGT label\nPositions in NCBI Accession number\nOrientation\nGene",
-            "mapping": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/annotations_tsv_to_gtf.py；读取行 3；图号对应仍待核",
-            "checks": [
-              "核对直接绘图对象与作者脚本版本",
-              "核对连接键、矩阵方向、单位、缺失值与变换"
-            ],
-            "url": "https://github.com/czbiohub-sf/tabula-sapiens/blob/14de8b082a25dba79e12c39626843543ab92e5b5/paper1/Fig3/preprocessing/tabula_sapiens_workflow/db/IGHC/IGHC_annotations.tsv",
-            "observedFieldReferences": [
-              {
-                "name": "sequence",
-                "line": 5,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "source",
-                "line": 6,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "feature",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "start",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "end",
-                "line": 9,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "score",
-                "line": 10,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "strand",
-                "line": 11,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "phase",
-                "line": 12,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "attributes",
-                "line": 14,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "IMGT label",
-                "line": 7,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Positions in NCBI Accession number",
-                "line": 8,
-                "kind": "code_field_reference"
-              },
-              {
-                "name": "Orientation",
-                "line": 11,
-                "kind": "code_field_reference"
-              }
-            ]
-          }
-        ],
-        "status": "全仓库静态输入候选；与原选图输入分开"
-      }
     },
     "multivi-2023": {
       "tree": "选图直接输入待定位",
@@ -122309,14 +121080,14 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-14T06:46:43Z",
+  "generatedAt": "2026-10-14T06:47:19Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 7,
-    "attentionCount": 26,
-    "removedCount": 14,
+    "pendingCount": 2,
+    "attentionCount": 29,
+    "removedCount": 16,
     "startedAt": "2026-10-11T15:08:16Z",
     "issues": [
       {
@@ -122439,8 +121210,7 @@
       {
         "doi": "10.1038/s41586-024-07944-6",
         "reasonCodes": [
-          "input_undocumented",
-          "ai_response_invalid"
+          "input_undocumented"
         ]
       },
       {
@@ -122459,17 +121229,7 @@
         "doi": "10.1038/s41467-024-48625-2",
         "reasonCodes": [
           "selected_figure_missing",
-          "input_undocumented",
-          "ai_response_invalid"
-        ]
-      },
-      {
-        "doi": "10.1126/science.abl4896",
-        "reasonCodes": [
-          "source_refresh_failed",
-          "no_final_version",
-          "selected_figure_missing",
-          "ai_missing"
+          "input_undocumented"
         ]
       },
       {
@@ -122486,15 +121246,6 @@
           "code_unchecked",
           "script_integrity_missing",
           "input_undocumented",
-          "ai_missing"
-        ]
-      },
-      {
-        "doi": "10.1016/j.cell.2026.08.010",
-        "reasonCodes": [
-          "source_refresh_failed",
-          "article_unchecked",
-          "selected_figure_missing",
           "ai_missing"
         ]
       },
@@ -122574,13 +121325,13 @@
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:46:46Z",
+    "updatedAt": "2026-10-14T06:47:20Z",
     "status": "active",
     "endReason": "",
     "batchCount": 6,
-    "checkpointCount": 12,
-    "requests": 355,
-    "aiAttempts": 5,
+    "checkpointCount": 13,
+    "requests": 418,
+    "aiAttempts": 7,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
@@ -122588,13 +121339,13 @@
     "maxAiAttempts": 165,
     "targetCount": 55,
     "plannedCount": 30,
-    "processedCount": 25,
-    "remainingCount": 22,
-    "inFlightCount": 5,
+    "processedCount": 30,
+    "remainingCount": 17,
+    "inFlightCount": 0,
     "completeCount": 8,
-    "pendingCount": 7,
-    "attentionCount": 26,
-    "removedCount": 14,
+    "pendingCount": 2,
+    "attentionCount": 29,
+    "removedCount": 16,
     "materialsStatus": "needs_attention",
     "localCheckpointSaved": true
   }
