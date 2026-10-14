@@ -14,6 +14,9 @@
     },
     "2026-10-13": {
       "newDOIs": []
+    },
+    "2026-10-14": {
+      "newDOIs": []
     }
   },
   "candidates": {
@@ -144,17 +147,23 @@
     ],
     "startedAt": "2026-10-11T15:08:16Z",
     "status": "needs_attention",
+    "removedDOIs": [
+      "10.1038/s41467-025-67369-1",
+      "10.1038/s41592-022-01475-6",
+      "10.1038/s41587-021-01139-4",
+      "10.1038/s41587-022-01272-8"
+    ],
     "totalCount": 55,
     "completeCount": 8,
-    "pendingCount": 32,
-    "attentionCount": 15,
-    "removedCount": 0
+    "pendingCount": 27,
+    "attentionCount": 16,
+    "removedCount": 4
   },
   "backfillSession": {
     "version": 1,
     "id": "310616f680e1fc6b6a760fbf0bcdece8",
     "startedAt": "2026-10-14T06:44:00Z",
-    "updatedAt": "2026-10-14T06:44:01Z",
+    "updatedAt": "2026-10-14T06:44:33Z",
     "status": "active",
     "endReason": "",
     "cohortDOIs": [
@@ -221,36 +230,41 @@
       "10.1038/s41587-022-01272-8",
       "10.1038/s41592-022-01475-6"
     ],
-    "processedDOIs": [],
+    "processedDOIs": [
+      "10.1038/s41467-025-67369-1",
+      "10.1038/s41587-021-01139-4",
+      "10.1038/s41592-021-01346-6",
+      "10.1038/s41587-022-01272-8",
+      "10.1038/s41592-022-01475-6"
+    ],
     "batchCount": 1,
-    "checkpointCount": 2,
-    "requests": 0,
-    "aiAttempts": 0,
+    "checkpointCount": 3,
+    "requests": 69,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 12,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 2,
-    "inFlight": {
-      "dois": [
-        "10.1038/s41467-025-67369-1",
-        "10.1038/s41587-021-01139-4",
-        "10.1038/s41592-021-01346-6",
-        "10.1038/s41587-022-01272-8",
-        "10.1038/s41592-022-01475-6"
-      ],
-      "startedAt": "2026-10-14T06:44:01Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s41467-025-67369-1": "2026-10-13T08:29:13Z",
-        "10.1038/s41587-021-01139-4": "2026-10-13T08:29:27Z",
-        "10.1038/s41592-021-01346-6": "2026-10-13T08:29:33Z",
-        "10.1038/s41587-022-01272-8": "2026-10-13T08:29:39Z",
-        "10.1038/s41592-022-01475-6": "2026-10-13T08:29:43Z"
-      }
+    "elapsedSeconds": 33
+  },
+  "removedPapers": {
+    "10.1038/s41467-025-67369-1": {
+      "reasonCode": "figure_reuse_unavailable",
+      "removedAt": "2026-10-14T06:44:32Z"
+    },
+    "10.1038/s41592-022-01475-6": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:44:32Z"
+    },
+    "10.1038/s41587-021-01139-4": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:44:32Z"
+    },
+    "10.1038/s41587-022-01272-8": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-14T06:44:32Z"
     }
   }
 }
