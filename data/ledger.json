@@ -19,10 +19,42 @@
       "newDOIs": []
     },
     "2026-10-15": {
-      "newDOIs": []
+      "newDOIs": [
+        "10.1111/1755-0998.70188"
+      ]
     }
   },
   "candidates": {
+    "10.1126/sciadv.aec7970": {
+      "checkedAt": "2026-10-15T07:29:59Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1158/2159-8290.cd-25-2001": {
+      "checkedAt": "2026-10-15T07:29:52Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1111/1755-0998.70188": {
+      "checkedAt": "2026-10-15T07:29:48Z",
+      "status": "source_confirmed",
+      "retryClass": "materials",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1002/alz.71841": {
+      "checkedAt": "2026-10-15T07:29:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-77702-x": {
+      "checkedAt": "2026-10-15T07:29:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1111/acel.70656": {
       "checkedAt": "2026-10-15T07:29:17Z",
       "status": "pending",
@@ -360,8 +392,8 @@
   },
   "dailyCollectionSession": {
     "startedAt": "2026-10-15T07:28:26Z",
-    "updatedAt": "2026-10-15T07:29:21Z",
-    "dailyNewCount": 0,
+    "updatedAt": "2026-10-15T07:30:00Z",
+    "dailyNewCount": 1,
     "maxBatches": 12,
     "status": "active",
     "date": "2026-10-15",
@@ -372,14 +404,9 @@
     "uncertainRequests": 0,
     "maxSeconds": 2700,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 55,
+    "elapsedSeconds": 95,
     "batchCount": 2,
-    "requests": 68,
-    "aiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-10-15T07:29:21Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 128,
+    "aiAttempts": 1
   }
 }
