@@ -25,6 +25,36 @@
     }
   },
   "candidates": {
+    "10.1002/advs.77857": {
+      "checkedAt": "2026-10-15T07:33:10Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1371/journal.pone.0358972": {
+      "checkedAt": "2026-10-15T07:33:10Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s44324-026-00132-2": {
+      "checkedAt": "2026-10-15T07:33:05Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7554/elife.105930": {
+      "checkedAt": "2026-10-15T07:33:02Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1162/imag.a.1378": {
+      "checkedAt": "2026-10-15T07:32:50Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1162/imag.a.1384": {
       "checkedAt": "2026-10-15T07:32:40Z",
       "status": "pending",
@@ -250,20 +280,10 @@
       "status": "pending",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s44324-026-00132-2": {
-      "checkedAt": "2026-10-11T11:17:38Z",
-      "status": "pending",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1111/1755-0998.70213": {
       "checkedAt": "2026-10-11T11:17:35Z",
       "status": "source_confirmed",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.7554/elife.105930": {
-      "checkedAt": "2026-10-11T10:48:24Z",
-      "status": "pending",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1126/sciadv.aef0670": {
       "checkedAt": "2026-10-11T10:48:22Z",
@@ -522,7 +542,7 @@
   },
   "dailyCollectionSession": {
     "startedAt": "2026-10-15T07:28:26Z",
-    "updatedAt": "2026-10-15T07:32:43Z",
+    "updatedAt": "2026-10-15T07:33:11Z",
     "dailyNewCount": 1,
     "maxBatches": 12,
     "status": "active",
@@ -534,14 +554,9 @@
     "uncertainRequests": 0,
     "maxSeconds": 2700,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 258,
+    "elapsedSeconds": 286,
     "batchCount": 8,
-    "requests": 400,
-    "aiAttempts": 1,
-    "inFlight": {
-      "startedAt": "2026-10-15T07:32:43Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 447,
+    "aiAttempts": 1
   }
 }
