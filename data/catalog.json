@@ -15,7 +15,7 @@
       "match": "Rmd 明示 Figure 1",
       "notes": "# 1：输入表每行一个犬品种，不是每行一个样本。\n# 2：LifespanMedianScaled=2×LifespanMedianHorvath；横轴不是原始寿命中位数。\n# 3：脚本按 R2>0.2、AROCM<0.5 筛选；图上标号来自 Breed.Index。\n# 4：公开 v4 中间表与最终版本仍需比对；原脚本绝对路径不能直接沿用。",
       "figure": "Figure 1a",
-      "paper": "Fundamental equations linking methylation dynamics to maximum lifespan in mammals",
+      "paper": "Fundamental equations linking methylation dynamics to maximum lifespan in mammals.",
       "journal": "Nature Communications",
       "date": "2024-09-16",
       "year": 2024,
@@ -5319,6 +5319,21 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "0f294fab9352338cb82e52baf49acffbad8e2f458bc88f842ad0ae409ffbc9ed"
       }
     },
     {
@@ -5330,7 +5345,7 @@
       "match": "Notebook 明示 Fig1.c",
       "notes": "# 1：每行一个 LMR 区域；pr 是 PRC2 结合指标。\n# 2：代码计算老年列103减去年轻列0，以 PRC2 结合为对数横轴。\n# 3：公开 t.csv 有100列，没有103列；这是静态检查发现的实际冲突。\n# 4：不能自动把100改成103：必须确认是否同一生物样本及数据版本。",
       "figure": "Figure 1c（CD4 T-cell子面板）",
-      "paper": "PRC2-AgeIndex as a universal biomarker of aging and rejuvenation",
+      "paper": "PRC2-AgeIndex as a universal biomarker of aging and rejuvenation.",
       "journal": "Nature Communications",
       "date": "2024-07-16",
       "year": 2024,
@@ -10249,6 +10264,22 @@
         "model": "deepseek-flash",
         "source_fingerprint": "aa7e8cf480a1e364550b218ece21efa0b5c6673e1f604e5e3e6562cbb8cd538f",
         "summary_fingerprint": "41b25c7de5fe62c925a15f2fbcda2a4dc6980f6bb7b4cc0906105b42242f8edc"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "80c11fe49f7d9c87740ad0c97184a97dae63138639a24de91372fecfffd15d7a"
       }
     },
     {
@@ -10260,7 +10291,7 @@
       "match": "文件名与图注明示 Fig1d",
       "notes": "# 1：原始 CSV 每行一个细胞或细胞核，先汇总成样本×细胞类型计数。\n# 2：控制 chemistry 并使用组成模型；这不是对表达量直接绘图。\n# 3：颜色体现 fold change，点大小体现 LTSR；图注中的映射要保留。\n# 4：chemistry 按第11列重命名：迁移时应核对列名，不按位置盲目套用。",
       "figure": "Figure 1d",
-      "paper": "Human skeletal muscle aging atlas",
+      "paper": "Human skeletal muscle aging atlas.",
       "journal": "Nature Aging",
       "date": "2024-04-15",
       "year": 2024,
@@ -13041,6 +13072,21 @@
         "model": "deepseek-flash",
         "source_fingerprint": "cd3ccd0b8541b0d353da66d75e515dd05df32da8b0d745b41c5951d3584b5eaf",
         "summary_fingerprint": "c5e5eeb48329284a55f17ce71c71935e7ca3914361bfdd1e5dc5f4c1af75abe9"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "7071be3bab035ea537515cde6de6e1f4c0f57e45c11599181ac8002e80441a46"
       }
     },
     {
@@ -13052,7 +13098,7 @@
       "match": "正式图注与 UpSet 脚本对应",
       "notes": "# 1：输入是按细胞类型组织的 cv.glmnet 模型，不是直接画表达矩阵。\n# 2：在 lambda.min 提取非零系数，剔除截距，得到各细胞类型的时钟基因。\n# 3：汇总为基因×6种细胞类型的0/1矩阵，再调用 ComplexHeatmap 绘制 UpSet。\n# 4：模型第二列的对象结构、冻结软件中的文件和绝对路径均需核对。",
       "figure": "Figure 3b",
-      "paper": "Cell-type-specific aging clocks to quantify aging and rejuvenation in neurogenic regions of the brain",
+      "paper": "Cell-type-specific aging clocks to quantify aging and rejuvenation in neurogenic regions of the brain.",
       "journal": "Nature Aging",
       "date": "2022-12-19",
       "year": 2023,
@@ -15258,6 +15304,21 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "c56f4c20f8707cc0365375e0563ac0e7bed71788a9c7dbbac8b244c54cf9545c"
       }
     },
     {
@@ -15269,7 +15330,7 @@
       "match": "作者 README 与 Fig1 目录对应",
       "notes": "# 1：cells.parquet 每行一个细胞；以 ClusterID 连接细胞群注释表。\n# 2：每个 cluster 对蛋白标志取中位数，再对每个标志跨 cluster 做 min–max 缩放。\n# 3：阳性比例另外乘100；不要把0–1热图值当作原始蛋白强度。\n# 4：panel 与 metalReadOrder 决定通道对应和列名；这一案例是成像质谱，不是测序。",
       "figure": "Figure 1d–e",
-      "paper": "Single-cell spatial atlas of the aging human breast",
+      "paper": "Single-cell spatial atlas of the aging human breast.",
       "journal": "Nature Aging",
       "date": "2026-03-31",
       "year": 2026,
@@ -16442,6 +16503,19 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "omics_not_supported",
+        "methodMatches": [],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "1e5283460f432c9e47ea3adb87ad15847749606099269624bb198c03615a4001"
       }
     },
     {
@@ -16453,7 +16527,7 @@
       "match": "作者公开制图目录 · 逐图待核",
       "notes": "# 1：已读上游 post_mapping_analysis.R：输入位置表使用 cell、chr、bp、strand、readlength、allele。\n# 2：这只是上游格式，不等于 Figure1f 的直接绘图输入。\n# 3：还需要细胞 S 期排序与分窗计数对象；确切文件名尚未核实。\n# 4：本例暂不生成可执行注释版；待具体绘图文件和归一化顺序确认。",
       "figure": "Figure 1f",
-      "paper": "Quantifying DNA replication speeds in single cells by scEdU-seq",
+      "paper": "Quantifying DNA replication speeds in single cells by scEdU-seq.",
       "journal": "Nature Methods",
       "date": "2024-06-17",
       "year": 2024,
@@ -18140,12 +18214,26 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "91968d9edc2275704082161affbe61125e46cc68b183c7444368480440780227"
       }
     },
     {
       "id": "aging_cross_species_mutation2022",
       "name": "回归散点 / 模型比较",
-      "paper": "Somatic mutation rates scale with lifespan across mammals",
+      "paper": "Somatic mutation rates scale with lifespan across mammals.",
       "journal": "Nature",
       "date": "2022-04-13",
       "year": 2022,
@@ -19846,12 +19934,28 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "88e31b18f7c579d496ca85b396fca72bdb5e0b884c20c56175b6b5adcef0a739"
       }
     },
     {
       "id": "aging_ipop_nonlinear2024",
       "name": "柱状图 / 环形图 / 箱线图",
-      "paper": "Nonlinear dynamics of multi-omics profiles during human aging",
+      "paper": "Nonlinear dynamics of multi-omics profiles during human aging.",
       "journal": "Nature Aging",
       "date": "2024-08-14",
       "year": 2024,
@@ -30025,12 +30129,27 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "cd72ee38bea4224986f07b8fee56b1c35dc577f5bbee4e5acf9876312d9461b8"
       }
     },
     {
       "id": "aging_mt_pemt2026",
       "name": "按组织分组的小提琴图叠加箱线图",
-      "paper": "Aging-associated decline of phosphatidylcholine synthesis is a malleable trigger of natural mitochondrial aging",
+      "paper": "Aging-associated decline of phosphatidylcholine synthesis is a malleable trigger of natural mitochondrial aging.",
       "journal": "Nature Communications",
       "date": "2026-04-18",
       "year": 2026,
@@ -30857,12 +30976,27 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "daa90cfe7e2973b73cfa8151ea1969c0d70fa23169998bdc62a040362b2a20d9"
       }
     },
     {
       "id": "aging_meth_scaling2023",
       "name": "log-log 回归散点",
-      "paper": "DNA methylation rates scale with maximum lifespan across mammals",
+      "paper": "DNA methylation rates scale with maximum lifespan across mammals.",
       "journal": "Nature Aging",
       "date": "2023-12-04",
       "year": 2024,
@@ -32148,12 +32282,27 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "8f959cf6ea0a373aa7a474e1c9fcbbffcca81ea9d18518fd7c083b08240f6b91"
       }
     },
     {
       "id": "aging_calerie2023",
       "name": "纵向边际均值 / 置信区间",
-      "paper": "Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial",
+      "paper": "Effect of long-term caloric restriction on DNA methylation measures of biological aging in healthy adults from the CALERIE trial.",
       "journal": "Nature Aging",
       "date": "2023-02-09",
       "year": 2023,
@@ -32454,12 +32603,28 @@
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "53ef45150572886ad1ea43f1935dabae4646fe277877846f24bb0b790a31639c"
       }
     },
     {
       "id": "aging_hydroxymethylation2024",
       "name": "分组折线 / 均值标准误",
-      "paper": "Gene body DNA hydroxymethylation restricts the magnitude of transcriptional changes during aging",
+      "paper": "Gene body DNA hydroxymethylation restricts the magnitude of transcriptional changes during aging.",
       "journal": "Nature Communications",
       "date": "2024-07-28",
       "year": 2024,
@@ -33737,12 +33902,28 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "2660f39a5bc6bcc73d520f169059a94f9f037e1a9a2efe2fd5c5a08e25d20863"
       }
     },
     {
       "id": "aging_methylation_atlas2026",
       "name": "散点 / 线性拟合",
-      "paper": "Meta-analysis of DNA methylation aging signatures in 17 human tissues",
+      "paper": "Meta-analysis of DNA methylation aging signatures in 17 human tissues.",
       "journal": "Nature Aging",
       "date": "2026-06-26",
       "year": 2026,
@@ -34295,12 +34476,27 @@
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "986e7b2f54d745b058c4ba93cd753edbc6d7fe5ff8b65116cd6827f5680fa160"
       }
     },
     {
       "id": "aging_dico2022",
       "name": "组织间表达变化制图（具体几何类型待核）",
-      "paper": "Inter-tissue convergence of gene expression during ageing suggests age-related loss of tissue and cellular identity",
+      "paper": "Inter-tissue convergence of gene expression during ageing suggests age-related loss of tissue and cellular identity.",
       "journal": "eLife",
       "date": "2022-01-31",
       "year": 2022,
@@ -39328,12 +39524,27 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "516c6c819fb28d1a7ae908850215c934b95f90240177b6bc14d1c21f6d2e9d50"
       }
     },
     {
       "id": "aging_damage_repair2022",
       "name": "损伤/修复时间尺度制图（具体几何类型待核）",
-      "paper": "Measurements of damage and repair of binary health attributes in aging mice and humans reveal that robustness and resilience decrease with age, operate over broad timescales, and are affected differently by interventions",
+      "paper": "Measurements of damage and repair of binary health attributes in aging mice and humans reveal that robustness and resilience decrease with age, operate over broad timescales, and are affected differently by interventions.",
       "journal": "eLife",
       "date": "2022-11-21",
       "year": 2022,
@@ -43646,12 +43857,25 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "omics_not_supported",
+        "methodMatches": [],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "04d8e41853cb6c4f37a54cfd479e8e46879f02287a384cf2d4ef3e8d4e048485"
       }
     },
     {
       "id": "aging_mec_spatial_coding2025",
       "name": "基因表达与空间编码质量的关联图（具体样式待核）",
-      "paper": "Spatial coding dysfunction and network instability in the aging medial entorhinal cortex",
+      "paper": "Spatial coding dysfunction and network instability in the aging medial entorhinal cortex.",
       "journal": "Nature Communications",
       "date": "2025-10-03",
       "year": 2025,
@@ -44123,12 +44347,27 @@
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "85b6d719a7a4ef60731a8002f86ce5dd0b49995fdf64dcb2f46a7e0d34bc267e"
       }
     },
     {
       "id": "aging_mitochondria_systems_biology2019",
       "name": "箱线图叠加散点",
-      "paper": "Systems biology identifies preserved integrity but impaired metabolism of mitochondria due to a glycolytic defect in Alzheimer's disease neurons",
+      "paper": "Systems biology identifies preserved integrity but impaired metabolism of mitochondria due to a glycolytic defect in Alzheimer's disease neurons.",
       "journal": "Aging Cell",
       "date": "2019-02-21",
       "year": 2019,
@@ -44500,12 +44739,23 @@
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f6e11647436c2be86d364246546c95963fe093387afd4c6a3a11dcd9f05ed373"
       }
     },
     {
       "id": "thymus-spatial2024",
       "name": "空间细胞类型映射 / 连续皮髓质轴整合图",
-      "paper": "A spatial human thymus cell atlas mapped to a continuous tissue axis",
+      "paper": "A spatial human thymus cell atlas mapped to a continuous tissue axis.",
       "journal": "Nature",
       "date": "2024-11-20",
       "year": 2024,
@@ -46662,12 +46912,26 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "637ccb3bf00c768fb09de0b8d4e39fbfebbc6097620db9f11c1d59e34645608c"
       }
     },
     {
       "id": "kidney-state-atlas-2023",
       "name": "Dot plot",
-      "paper": "An atlas of healthy and injured cell states and niches in the human kidney",
+      "paper": "An atlas of healthy and injured cell states and niches in the human kidney.",
       "journal": "Nature",
       "date": "2023-07-19",
       "year": 2023,
@@ -50872,12 +51136,27 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "0a7e2c311effab32df34aafa846cf2ee32b8754b7cb68b3ed26cbcdc319b0d98"
       }
     },
     {
       "id": "integrated-lung-atlas-2023",
       "name": "GWAS-cell type association plot",
-      "paper": "An integrated cell atlas of the lung in health and disease",
+      "paper": "An integrated cell atlas of the lung in health and disease.",
       "journal": "Nature Medicine",
       "date": "2023-06-08",
       "year": 2023,
@@ -51722,12 +52001,25 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "0e18ba3a6cc4a4bd149df3d8ba65a4955705847107157a8eccf37d8b40709f22"
       }
     },
     {
       "id": "spacetime-gut-2021",
       "name": "Heatmap / enrichment",
-      "paper": "Cells of the human intestinal tract mapped across space and time",
+      "paper": "Cells of the human intestinal tract mapped across space and time.",
       "journal": "Nature",
       "date": "2021-09-08",
       "year": 2021,
@@ -52665,12 +52957,25 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "8865e5fa904b5a769aa1129c5894eabbb37779bb5939b0c97fde54cb1e004282"
       }
     },
     {
       "id": "skin-spaceflight-2024",
       "name": "Spatial-expression / pathway plots",
-      "paper": "Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight",
+      "paper": "Spatial multi-omics of human skin reveals KRAS and inflammatory responses to spaceflight.",
       "journal": "Nature Communications",
       "date": "2024-06-11",
       "year": 2024,
@@ -53723,12 +54028,26 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "multiomics"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "924f74b6231523035f492d416dcec742d2d0e9bbbff21cf57abd336cd3686967"
       }
     },
     {
       "id": "heca-endometrium-2024",
       "name": "Spatial cell-density map",
-      "paper": "An integrated single-cell reference atlas of the human endometrium",
+      "paper": "An integrated single-cell reference atlas of the human endometrium.",
       "journal": "Nature Genetics",
       "date": "2024-08-28",
       "year": 2024,
@@ -54780,12 +55099,26 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "7bcd6d54a51cb3e4b75cd56ec30d487de9ce2153ec3b918a5aab4990ac0e317e"
       }
     },
     {
       "id": "embryonic-limb-2023",
       "name": "Regulon visualization（几何类型待核）",
-      "paper": "A human embryonic limb cell atlas resolved in space and time",
+      "paper": "A human embryonic limb cell atlas resolved in space and time.",
       "journal": "Nature",
       "date": "2023-12-06",
       "year": 2024,
@@ -55575,12 +55908,27 @@
           "categoryGap": 0
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "918ebffdd6282a8675a3c70744cf1fa19283e07e876eff87d0e2bf18176e0b19"
       }
     },
     {
       "id": "multivi-2023",
       "name": "RNA / ATAC 多模态 UMAP",
-      "paper": "MultiVI: deep generative model for the integration of multimodal data",
+      "paper": "MultiVI: deep generative model for the integration of multimodal data.",
       "journal": "Nature Methods",
       "date": "2023-06-29",
       "year": 2023,
@@ -55974,12 +56322,28 @@
           "categoryGap": 5
         },
         "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "033292a7b9520a225574a216bd54f6cf3ae7d474f2234d2a7f4f6fcf3a4cccbd"
       }
     },
     {
       "id": "archr-2021",
       "name": "可及性轨迹＋共可及性连接",
-      "paper": "ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis",
+      "paper": "ArchR is a scalable software package for integrative single-cell chromatin accessibility analysis.",
       "journal": "Nature Genetics",
       "date": "2021-02-25",
       "year": 2021,
@@ -58785,12 +59149,28 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "epigenetic_profile",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "c58e0af23316df64710f5ed1f4ee9adf5a6cbffe85bbbbb4f6d9493f1a8e5d04"
       }
     },
     {
       "id": "scenicplus-2023",
       "name": "转录因子–区域–基因网络",
-      "paper": "SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks",
+      "paper": "SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks.",
       "journal": "Nature Methods",
       "date": "2023-07-13",
       "year": 2023,
@@ -66130,12 +66510,28 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "3c1d54cdc82e4c9a4f22801b477549a2fc5ea88a051f937fa1e64bfac6e31460"
       }
     },
     {
       "id": "scib-2022",
       "name": "多指标方法性能比较",
-      "paper": "Benchmarking atlas-level data integration in single-cell genomics",
+      "paper": "Benchmarking atlas-level data integration in single-cell genomics.",
       "journal": "Nature Methods",
       "date": "2021-12-23",
       "year": 2022,
@@ -67032,12 +67428,28 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "7a6918f93c392e8af99b9d9fae13fcbaeefc13254ac25d369d300e91d92a4006"
       }
     },
     {
       "id": "scanvi-2021",
       "name": "发育轨迹 UMAP",
-      "paper": "Probabilistic harmonization and annotation of single-cell transcriptomics data with deep generative models",
+      "paper": "Probabilistic harmonization and annotation of single-cell transcriptomics data with deep generative models.",
       "journal": "Molecular Systems Biology",
       "date": "2021-01",
       "year": 2021,
@@ -68279,12 +68691,26 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "a39da7023932d681df658b4a11f7b0ae07e2e96b8ef623b615aca1ece87bc1a9"
       }
     },
     {
       "id": "cellrank-2022",
       "name": "UMAP 流场＋细胞命运",
-      "paper": "CellRank for directed single-cell fate mapping",
+      "paper": "CellRank for directed single-cell fate mapping.",
       "journal": "Nature Methods",
       "date": "2022-01-13",
       "year": 2022,
@@ -69196,6 +69622,19 @@
         "ai_attempts": 1,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "3075c92afc0188fe2a6d23c8fe3c2da89b3d9378ee6b835ac0c2b3d02ec64405"
       }
     },
     {
@@ -69972,6 +70411,19 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "a63dd8eab0e7e28cf288aa582634e5270726aab34ae4ce223168d29afad953e3"
       }
     },
     {
@@ -70762,6 +71214,20 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "short_read",
+          "sequencing"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "0f6155dc09e3f15d423c6837ba39d0a6c2ba750ba048d2cd42a2d98af2a51568"
       }
     },
     {
@@ -73673,6 +74139,19 @@
         "ai_attempts": 0,
         "max_ai_attempts": 3,
         "retry_success_count": 0
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "topic_not_supported",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "64e4f933e087d4304001b026be4f03cdc8ace9ad9dfc5f6df64603fd020d5476"
       }
     },
     {
@@ -74590,6 +75069,17 @@
         "ai_attempts": 2,
         "max_ai_attempts": 3,
         "retry_success_count": 1
+      },
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "non_biomedical",
+        "methodMatches": [],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "64c4b2767eee5271e181e9f028e0bb5a881823e2154f51865caedffe39d1aa34"
       }
     },
     {
@@ -75711,7 +76201,18 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       },
-      "admittedAt": "2026-10-15T07:29:59Z"
+      "admittedAt": "2026-10-15T07:29:59Z",
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "non_biomedical",
+        "methodMatches": [],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "eba70a4eda81d3f678a36cb09e8287224c98eb89e7ee7b1ca2d8574a554bf464"
+      }
     }
   ],
   "inputSpecs": {
@@ -109392,7 +109893,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-15T07:35:12Z",
+  "generatedAt": "2026-10-15T09:33:17Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -109626,9 +110127,9 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-15T07:28:26Z",
-    "updatedAt": "2026-10-15T09:32:31Z",
+    "updatedAt": "2026-10-15T09:33:17Z",
     "batchCount": 13,
-    "requests": 667,
+    "requests": 727,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -109637,7 +110138,8 @@
     "maxAiAttempts": 165,
     "dailyNewCount": 0,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
-  }
+  },
+  "researchScopePolicy": "aging-sequencing-metabolic"
 }
