@@ -125,7 +125,7 @@ def lookup_paper(client, doi):
         return {"status": "metadata_unavailable", "doi": doi}
 
 
-def _ncbi_discover(client, settings, limit):
+def _ncbi_discover(client, settings, limit, exclude_dois=frozenset()):
     """NCBI fallback; bounded PubMed metadata, not article/PDF scraping."""
     term = getattr(settings, "ncbi_query", None) or (
         '(genomics OR "single cell" OR "multi omics" OR bioinformatics) '
@@ -165,12 +165,18 @@ def _ncbi_discover(client, settings, limit):
         record["codeURLs"] = sorted(set(re.findall(r"https://github\.com/[\w.-]+/[\w.-]+", record["abstract"])))
         if _usable(record) and _published_not_future(record, today):
             result.append(record)
-    return result
+    return [record for record in result if record["doi"] not in exclude_dois]
 
 
-def discover(client, settings):
-    """Return at most discovery_limit unique formal candidates; no filler papers."""
+def discover(client, settings, exclude_dois=None):
+    """Return bounded unseen candidates, paging past known/cooling papers.
+
+    Europe PMC documents cursorMark/nextCursorMark pagination. Never follow a
+    provider-supplied URL: only the opaque cursor is sent to the fixed endpoint.
+    At most five metadata pages are inspected per batch, within HTTP budgets.
+    """
     limit = min(100, max(1, int(getattr(settings, "discovery_limit", 30))))
+    excluded = frozenset(normalize_doi(value) for value in (exclude_dois or ()))
     query = getattr(settings, "discovery_query", None) or DEFAULT_QUERY
     today = _utc_today()
     # Filter BEFORE newest-first pagination. Filtering future rows only after
@@ -179,14 +185,31 @@ def discover(client, settings):
     # records or reviews can occupy the newest-first page before local filtering.
     query = ("(" + query + ') AND HAS_DOI:Y AND SRC:MED AND NOT PUB_TYPE:"Review"'
              " AND FIRST_PDATE:[1900-01-01 TO " + today.isoformat() + "]")
+    unique, cursors, cursor = {}, set(), "*"
     try:
-        response = client.get_json(EPMC, params={"query": query, "format": "json", "resultType": "core",
-                                               "pageSize": limit, "sort": "FIRST_PDATE_D desc"}, ttl=3600)
-        records = [_paper(row) for row in response.get("resultList", {}).get("result", [])]
-        unique = {}
-        for record in records:
-            if _usable(record) and _published_not_future(record, today):
-                unique.setdefault(record["doi"], record)
+        for _ in range(5):
+            cursors.add(cursor)
+            response = client.get_json(EPMC, params={"query": query, "format": "json", "resultType": "core",
+                "pageSize": limit, "sort": "FIRST_PDATE_D desc", "cursorMark": cursor}, ttl=3600)
+            rows = response.get("resultList", {}).get("result", [])
+            if not isinstance(rows, list):
+                raise ValueError("Invalid metadata page")
+            for row in rows[:limit]:
+                if not isinstance(row, dict):
+                    continue
+                record = _paper(row)
+                if (record["doi"] not in excluded and _usable(record)
+                        and _published_not_future(record, today)):
+                    unique.setdefault(record["doi"], record)
+            if len(unique) >= limit:
+                break
+            following = response.get("nextCursorMark")
+            if (not rows or not isinstance(following, str) or not 1 <= len(following) <= 8192
+                    or any(ord(char) < 32 or ord(char) > 126 for char in following) or following in cursors):
+                break
+            cursor = following
         return list(unique.values())[:limit]
     except Exception:
-        return _ncbi_discover(client, settings, limit)
+        if unique:
+            return list(unique.values())[:limit]
+        return _ncbi_discover(client, settings, limit, excluded)

@@ -22,7 +22,7 @@ def main(argv=None):
     seed.add_argument("source", type=Path)
     run = sub.add_parser("update", help="有预算的完整自动更新；密钥缺失则降级")
     run.add_argument("--mode", choices=("auto", "backfill", "daily"), default="auto",
-                     help="auto 先初始化当前案例；backfill 只补齐当前案例；daily 初始化完成后日更")
+                     help="auto / daily 优先新增，不受旧材料缺口阻塞；backfill 仅补齐已有案例")
     run.add_argument("--no-discovery", action="store_true")
     run.add_argument("--doi", action="append", help="只修补指定已有 DOI")
     run.add_argument("--repair-limit", type=int)

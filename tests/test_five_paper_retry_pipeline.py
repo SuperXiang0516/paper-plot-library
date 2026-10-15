@@ -76,6 +76,7 @@ class FivePaperRetryPipelineTests(unittest.TestCase):
             "authorCodeExecuted": False, "papers": papers, "inputSpecs": {}, "dimensions": {}})
 
     def run_fixture(self, opener=None, active=None, **kwargs):
+        kwargs.setdefault("mode", "backfill")
         self.opener = opener or PaperRetryOpener()
         client = HttpClient(self.root / ".ppl" / "cache", self.settings.max_requests,
             max_post_attempts=self.settings.max_ai_calls, retries=3,
@@ -144,7 +145,7 @@ class FivePaperRetryPipelineTests(unittest.TestCase):
     def test_daily_discovery_and_maintenance_share_five_source_slots(self):
         self.settings.initialize_existing_first = False
         self.catalog([dict(record(i), figure="Figure 1") for i in range(1, 11)])
-        report = self.run_fixture(PaperRetryOpener(invalid_before_success=0))
+        report = self.run_fixture(PaperRetryOpener(invalid_before_success=0), mode="auto")
         self.assertEqual((report["repairCount"], report["newCount"], report["checkedCount"]), (2, 3, 5))
         self.assertEqual(self.sources["article"], 5)
         self.assertEqual(report["discoveryStatus"], "paper_batch_limit_reached")
@@ -167,9 +168,9 @@ class FivePaperRetryPipelineTests(unittest.TestCase):
     def test_single_paper_daily_batch_alternates_maintenance_and_discovery(self):
         self.settings.initialize_existing_first = False
         self.settings.max_papers_per_run = 1
-        first = self.run_fixture(PaperRetryOpener(invalid_before_success=0))
-        second = self.run_fixture(PaperRetryOpener(invalid_before_success=0))
-        third = self.run_fixture(PaperRetryOpener(invalid_before_success=0))
+        first = self.run_fixture(PaperRetryOpener(invalid_before_success=0), mode="auto")
+        second = self.run_fixture(PaperRetryOpener(invalid_before_success=0), mode="auto")
+        third = self.run_fixture(PaperRetryOpener(invalid_before_success=0), mode="auto")
         self.assertEqual((first["repairCount"], first["newCount"], first["checkedCount"]), (1, 0, 1))
         self.assertEqual((second["repairCount"], second["newCount"], second["checkedCount"]), (0, 1, 1))
         self.assertEqual((third["repairCount"], third["newCount"], third["checkedCount"]), (1, 0, 1))
@@ -181,7 +182,7 @@ class FivePaperRetryPipelineTests(unittest.TestCase):
                 self.settings.max_papers_per_run = cap
                 self.catalog([dict(record(i), figure="Figure 1") for i in range(1, 11)])
                 write_json(self.root / "data" / "ledger.json", {"days": {}, "candidates": {}})
-                report = self.run_fixture(PaperRetryOpener(invalid_before_success=0))
+                report = self.run_fixture(PaperRetryOpener(invalid_before_success=0), mode="auto")
                 self.assertEqual(report["repairCount"], 1)
                 self.assertEqual(report["newCount"], cap - 1)
                 self.assertEqual(report["checkedCount"], cap)

@@ -95,6 +95,40 @@ class SourcesTests(unittest.TestCase):
         self.assertIn('NOT PUB_TYPE:"Review"', query)
         self.assertIn("bioinformatics AND HAS_FT:Y", query)
 
+    def test_pages_past_known_or_cooling_first_page_without_following_provider_url(self):
+        class Paged(FakeClient):
+            def get_json(self, url, **kwargs):
+                self.calls.append((url, kwargs))
+                cursor = kwargs["params"]["cursorMark"]
+                if cursor == "*":
+                    return {"resultList": {"result": [row("10.1234/old")]},
+                            "nextCursorMark": "opaque-next", "nextPageUrl": "https://private.example/never-follow"}
+                return {"resultList": {"result": [row("10.1234/new")]}, "nextCursorMark": "opaque-next"}
+        client = Paged()
+        result = discover(client, SimpleNamespace(discovery_limit=1), exclude_dois={"10.1234/old"})
+        self.assertEqual([record["doi"] for record in result], ["10.1234/new"])
+        self.assertEqual([kwargs["params"]["cursorMark"] for _, kwargs in client.calls], ["*", "opaque-next"])
+        self.assertTrue(all(url.startswith("https://www.ebi.ac.uk/") for url, _ in client.calls))
+
+    def test_metadata_page_limit_bounds_all_known_results(self):
+        class Many(FakeClient):
+            def get_json(self, url, **kwargs):
+                self.calls.append((url, kwargs))
+                return {"resultList": {"result": [row("10.1234/old")]}, "nextCursorMark": str(len(self.calls))}
+        client = Many()
+        self.assertEqual(discover(client, SimpleNamespace(discovery_limit=1), {"10.1234/old"}), [])
+        self.assertEqual(len(client.calls), 5)
+
+    def test_repeated_or_invalid_cursor_stops_without_network_loop(self):
+        for cursor in ("*", [], "secret\nvalue", "a" * 8193):
+            class Invalid(FakeClient):
+                def get_json(self, url, **kwargs):
+                    self.calls.append((url, kwargs))
+                    return {"resultList": {"result": [row()]}, "nextCursorMark": cursor}
+            client = Invalid()
+            discover(client, SimpleNamespace(discovery_limit=2))
+            self.assertEqual(len(client.calls), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

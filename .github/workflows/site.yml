@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       collect:
-        description: 本次是否调用接口整理案例（先补齐当前案例）
+        description: 本次是否调用接口采集（日更新增优先；未勾选则只发布）
         type: boolean
         default: true
       mode:
-        description: auto 先初始化当前案例；backfill 只补齐当前案例；daily 初始化完成后日更
+        description: auto 和 daily 优先新增；backfill 仅维护旧案例，不进行日更
         type: choice
         default: auto
         options:
@@ -18,8 +18,12 @@ on:
           - backfill
           - daily
   schedule:
-    # UTC 01:47 daily (Beijing 09:47). Schedule may be delayed by GitHub.
+    # Beijing 09:47, 15:47, 21:47. Later runs top up the same UTC-day target
+    # and share its durable success quota/budgets; they do not each add five.
+    # GitHub may delay scheduled runs; reaching the target makes reruns no-op.
     - cron: '47 1 * * *'
+    - cron: '47 7 * * *'
+    - cron: '47 13 * * *'
 
 concurrency:
   group: paper-plot-library-main
@@ -43,12 +47,12 @@ jobs:
         run: python -m pip install .
       - name: 离线回归测试
         run: python -m unittest discover -s tests
-      - name: 连续分批整理（先清理既有；日更目标成功5篇）
+      - name: 日更新增优先（同日目标成功5篇，后续触发仅补足；旧库维护须显式选择）
         id: collect
         continue-on-error: true
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.collect)
         env:
-          UPDATE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}
+          UPDATE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}
           LLM_API_URL: ${{ secrets.LLM_API_URL }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}

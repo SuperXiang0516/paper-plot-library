@@ -46,6 +46,7 @@ class DailySessionTests(unittest.TestCase):
             self.calls.append(count)
             self.assertTrue(settings.require_complete_new_cases)
             self.assertEqual(settings.discovery_limit, 100)
+            self.assertEqual(settings.repair_limit, 0)
             self.assertLessEqual(settings.max_papers_per_run, 5)
             self.assertLessEqual(settings.max_ai_calls, 15)
             self.assertLessEqual(settings.max_ai_attempts_per_paper, 3)
@@ -137,6 +138,14 @@ class DailySessionTests(unittest.TestCase):
         result = self.run_fixture(expired)
         self.assertEqual((result["endReason"], result["batchCount"]), ("time_limit_reached", 1))
 
+    def test_failed_discovery_is_not_misreported_as_no_candidates(self):
+        base = self.runner([0], candidates=0)
+        def failed(*args, **kwargs):
+            return dict(base(*args, **kwargs), discoveryStatus="partial_failure")
+        result = self.run_fixture(failed)
+        self.assertEqual((result["status"], result["dailyNewCount"], result["endReason"]),
+                         ("paused", 0, "discovery_failed"))
+
     def test_actual_client_usage_mismatch_is_unknown_not_false_zero(self):
         base = self.runner([0])
         def mismatch(*args, **kwargs):
@@ -225,13 +234,13 @@ class DailySessionTests(unittest.TestCase):
         self.assertEqual(seen, [("2026-10-12", 0, 1)])
         self.assertEqual(result["requests"], 1)
 
-    def test_pending_initialization_does_not_start_a_daily_batch(self):
+    def test_pending_initialization_does_not_block_daily_admissions(self):
         self.settings.initialize_existing_first = True
         write_json(self.root / "data" / "catalog.json", {"authorCodeExecuted": False, "papers": [record(1)], "inputSpecs": {}})
-        result = self.run_fixture(lambda *args, **kwargs: self.fail("initialization must block daily"))
-        self.assertEqual((result["endReason"], result["batchCount"], result["requests"]), ("initialization_pending", 0, 0))
+        result = self.run_fixture(self.runner([5]))
+        self.assertEqual((result["endReason"], result["batchCount"], result["dailyNewCount"]), ("target_reached", 1, 5))
 
-    def test_complete_old_cohort_does_not_hide_incomplete_later_admission(self):
+    def test_incomplete_later_admission_does_not_block_the_next_daily_work(self):
         asset = self.root / "data" / "assets" / "fixture.png"
         asset.parent.mkdir(parents=True)
         asset.write_bytes(RASTER)
@@ -241,15 +250,15 @@ class DailySessionTests(unittest.TestCase):
         catalog["papers"].append(record(2))
         write_json(self.root / "data" / "catalog.json", catalog)
         write_json(self.root / "data" / "ledger.json", ledger)
-        result = self.run_fixture(lambda *args, **kwargs: self.fail("later material gap must block daily"))
-        self.assertEqual((result["endReason"], result["batchCount"], result["requests"]), ("initialization_pending", 0, 0))
+        result = self.run_fixture(self.runner([5]))
+        self.assertEqual((result["endReason"], result["batchCount"], result["dailyNewCount"]), ("target_reached", 1, 5))
 
-    def test_existing_material_regression_report_has_explicit_stop_reason(self):
+    def test_legacy_material_regression_label_cannot_reenable_daily_blocking(self):
         base = self.runner([0], candidates=0)
         def regressed(*args, **kwargs):
             return dict(base(*args, **kwargs), discoveryStatus="existing_materials_pending")
         result = self.run_fixture(regressed)
-        self.assertEqual((result["endReason"], result["batchCount"]), ("initialization_pending", 1))
+        self.assertEqual((result["endReason"], result["batchCount"]), ("no_progress", 1))
 
     def test_real_pipeline_rejects_first_five_then_admits_five_and_stops_same_day(self):
         # Real inspection/admission/AI validation and actual HttpClient accounting,

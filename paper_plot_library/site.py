@@ -362,8 +362,44 @@ def _body_reference(figure: dict) -> dict | None:
     return {"scope": "main", "number": str(int(reference["number"]))}
 
 
-def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
+def _select_body_figure(root: Path, paper: dict) -> tuple | None:
+    """Use one gate for both successful admissions and the public gallery."""
     from .figures import figure_reference
+    if paper.get("automation", {}).get("status") == "excluded":
+        return None
+    figures = paper.get("article", {}).get("figures", [])
+    figures = [figure for figure in figures if isinstance(figure, dict)] if isinstance(figures, list) else []
+    article_license = str(paper.get("article", {}).get("license") or "")
+    selected = figure_reference(paper.get("figure"))
+
+    def preferred(figure):
+        reference = _body_reference(figure)
+        return bool(selected and reference and selected["scope"] == "main"
+                    and int(selected["number"]) == int(reference["number"]))
+
+    for figure in sorted(figures, key=preferred, reverse=True):
+        reference = _body_reference(figure)
+        if reference is not None:
+            raw = _verified_raster(root, figure, article_license)
+            if raw is not None:
+                return figure, raw, reference
+    return None
+
+
+def has_publishable_body_figure(root: Path, paper: dict) -> bool:
+    """Read-only check: a counted new paper must really be displayable.
+
+    Sanitize just as publication does, and verify on a copy because invalid
+    rasters are stripped from the public projection, never the source record.
+    """
+    try:
+        public = public_catalog({"authorCodeExecuted": False, "papers": [paper], "inputSpecs": {}})
+        return _select_body_figure(Path(root), public["papers"][0]) is not None
+    except (ValueError, TypeError, KeyError, AttributeError):
+        return False
+
+
+def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
     target_root = output / "assets"
     _directory(target_root)
     manifest_path = output / "data" / "assets-manifest.json"
@@ -406,26 +442,13 @@ def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
         published.add(asset)
 
     for paper in catalogue["papers"]:
-        if paper.get("automation", {}).get("status") == "excluded":
-            continue
+        selected = _select_body_figure(root, paper)
+        if selected is None:
+            continue  # Internal queue entries never become public placeholder cards.
+        body, body_bytes, reference = selected
         figures = paper.get("article", {}).get("figures", [])
         figures = [figure for figure in figures if isinstance(figure, dict)] if isinstance(figures, list) else []
         article_license = str(paper.get("article", {}).get("license") or "")
-        selected = figure_reference(paper.get("figure"))
-        def preferred(figure):
-            reference = _body_reference(figure)
-            return bool(selected and reference and selected["scope"] == "main"
-                        and int(selected["number"]) == int(reference["number"]))
-        body, body_bytes, reference = None, None, None
-        for figure in sorted(figures, key=preferred, reverse=True):
-            reference = _body_reference(figure)
-            if reference is not None:
-                body_bytes = _verified_raster(root, figure, article_license)
-                if body_bytes is not None:
-                    body = figure
-                    break
-        if body is None:
-            continue  # Internal queue entries never become public placeholder cards.
         copy_verified(body, body_bytes)
         paper["displayFigure"] = {"id": body["id"], "label": str(body.get("label") or "")[:600],
                                   "reference": reference}

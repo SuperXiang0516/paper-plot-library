@@ -12,12 +12,12 @@ from urllib.parse import quote, unquote, urlsplit
 
 from .config import load_settings
 from .bootstrap import (bootstrap_assessment, bootstrap_plan, bootstrap_report, note_bootstrap_attempt,
-                        _safe_record_state, safe_removed_dois)
+                        _safe_record_state, safe_removed_dois, effective_collection_mode)
 from .enrichment import enrich_metrics, summarize
 from .figures import inspect_article
 from .http import BudgetExceeded, HttpClient
 from .repository import inspect_repository
-from .site import build_site, _safe_reason, _safe_http_status
+from .site import build_site, has_publishable_body_figure, _safe_reason, _safe_http_status
 from .sources import discover, lookup_paper, normalize_doi, paper_id
 from .storage import project_lock, read_json, write_json
 
@@ -578,8 +578,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
     root = Path(root)
     settings = settings or load_settings(root)
     adapters = adapters or {}
-    if not isinstance(mode, str) or mode not in {"auto", "backfill", "daily"}:
-        raise ValueError("更新模式必须为 auto、backfill 或 daily")
+    effective_mode = effective_collection_mode(mode)
     if session_dois is not None:
         if (mode != "backfill" or discover_new or not isinstance(session_dois, list)
                 or not 1 <= len(session_dois) <= min(5, settings.max_papers_per_run, settings.bootstrap_batch_limit)
@@ -617,14 +616,12 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                           or "bootstrap" in ledger or "bootstrap" in catalog)
         bootstrap_created = initialization and "bootstrap" not in ledger
         before = bootstrap_report(catalog, ledger, root=root, now=report["startedAt"]) if initialization else None
-        if mode == "daily" and before and before["status"] != "complete":
-            raise ValueError("现有案例尚未补齐，不能跳到日更；请使用 auto 或 backfill，并查看补库缺口清单。")
         if bootstrap_created:
             # Save the fixed cohort before any catalog checkpoint can publish its
             # progress. Interruption must not leave a summary without its cohort.
             write_json(root / "data" / "ledger.json", validate_ledger(ledger, report["date"]))
-        is_backfill = mode == "backfill" or bool(before and before["status"] != "complete")
-        report["mode"] = "backfill" if is_backfill else "daily"
+        is_backfill = effective_mode == "backfill"
+        report["mode"] = effective_mode
         if before:
             catalog["bootstrap"] = before
             report["bootstrap"] = before
@@ -752,36 +749,13 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             report["checkedCount"] += 1
             checked_doi_order.append(old["doi"])
 
-        # A completed cohort can regress during today's maintenance. Reassess
-        # before admitting anything new, not only after discovery has finished.
+        # Maintenance may reveal old material gaps. Report them honestly without
+        # switching today's independent discovery back into initialization.
         if initialization and not is_backfill:
             refreshed = bootstrap_report(catalog, ledger, root=root, now=stamp())
-            if refreshed["status"] != "complete":
-                is_backfill = True
-                discover_new = False
-                report["mode"] = "backfill"
-                cohort_dois = set(ledger["bootstrap"]["cohortDOIs"])
-                for item in catalog["papers"]:
-                    if item["id"] in repaired_ids and item["doi"] in cohort_dois:
-                        note_bootstrap_attempt(item, catalog.get("inputSpecs", {}).get(item["id"]),
-                                               stamp(), root=root,
-                                               attempt_status="error" if item["id"] in failed_ids else None)
-                refreshed = bootstrap_report(catalog, ledger, root=root, now=stamp())
-                report["discoveryStatus"] = ("bootstrap_needs_attention" if refreshed["status"] == "needs_attention"
-                                             else "bootstrap_in_progress")
             catalog["bootstrap"] = refreshed
             report["bootstrap"] = refreshed
             checkpoint()
-
-        if settings.require_complete_new_cases and not is_backfill:
-            specs = catalog.get("inputSpecs", {})
-            if any(bootstrap_assessment(paper, specs.get(paper["id"]), root)["status"] != "complete"
-                   for paper in catalog["papers"]):
-                # Later daily admissions can regress outside the original frozen
-                # bootstrap cohort too. Do not continue adding while they need
-                # repair; the next cloud invocation routes all present cases.
-                discover_new = False
-                report["discoveryStatus"] = "existing_materials_pending"
 
         # Admission time also carried in records: stale/missing ledger cannot create >5/day.
         admitted_today = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
@@ -796,7 +770,18 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             report["discoveryStatus"] = "paper_batch_limit_reached"
         elif discover_new and allowance:
             try:
-                candidates = adapters.get("discover", discover)(client, settings)
+                # Known material gaps cool for a week, not a fresh scan of the
+                # same first sixty failures every UTC morning. Transient/AI/
+                # configuration failures remain eligible on the next UTC day.
+                earliest_retry = (date.fromisoformat(report["date"]) - timedelta(days=7)).isoformat()
+                cooling = {doi for doi, state in ledger["candidates"].items()
+                           if state["checkedAt"].startswith(report["date"])
+                           or settings.require_complete_new_cases and state.get("retryClass") == "materials"
+                               and state["checkedAt"][:10] > earliest_retry}
+                if adapters.get("discover"):
+                    candidates = adapters["discover"](client, settings)
+                else:
+                    candidates = discover(client, settings, exclude_dois=seen | cooling)
                 report["discoveryStatus"] = "success"
                 candidates = sorted(candidates, key=lambda p: editorial_score(p)["total"], reverse=True)
                 checked = []
@@ -816,7 +801,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     if candidate.get("date", "")[:10] > report["date"]:
                         continue
                     state = ledger.setdefault("candidates", {}).get(doi, {})
-                    if state.get("checkedAt", "").startswith(report["date"]) and state.get("status") == "pending":
+                    # A checked but unadmitted candidate must not consume every
+                    # following batch. Per-paper AI retries happen inside the
+                    # bounded summary attempt, not by restarting source scans.
+                    if doi in cooling:
                         continue
                     if len(checked) >= settings.candidate_checks:
                         break
@@ -825,7 +813,8 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                         revised = inspect_record(client, new_case(candidate), root, settings, adapters, generate_ai=False)
                     except Exception as exc:
                         report["failures"].append({"doi": doi, "stage": "candidate", "error": type(exc).__name__})
-                        ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "pending", "reason": "本篇临时失败；未中断其它候选"}
+                        ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "pending", "retryClass": "transient",
+                                                      "reason": "本篇临时失败；未中断其它候选"}
                         report["checkedCount"] += 1
                         checked.append({"doi": doi, "skip": True})
                         checkpoint()
@@ -837,6 +826,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                                   and revised["automation"]["status"] != "excluded"
                                   and actual_repo in declared and bool(revised.get("repository", {}).get("scripts")))
                     ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "source_confirmed" if acceptable else "pending",
+                                                  "retryClass": "transient" if any(
+                                                      value in _FAILED_STAGES or value in {"not_checked", "deferred"}
+                                                      for value in revised["automation"]["stages"].values()) else "materials",
                                                   "reason": "作者代码声明和可读脚本已定位" if acceptable else "正式文献/作者代码/脚本依据尚不齐全"}
                     checked.append(revised)
                     report["checkedCount"] += 1
@@ -860,16 +852,35 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                             "ai_missing", "ai_stale", "ai_configuration_missing",
                             "ai_authentication_failed", "ai_payment_required",
                             "ai_transient_failure", "ai_response_invalid"}
-                        if not non_ai_gaps:
+                        if not has_publishable_body_figure(root, revised):
+                            non_ai_gaps.add("body_figure_unavailable")
+                        # A materials-complete supplement alone is not a visible
+                        # new website entry. Use the exact publication gate and
+                        # do not pay for AI when no main-text image can appear.
+                        if not non_ai_gaps and has_publishable_body_figure(root, revised):
                             try:
                                 summarize_case(revised)
                             except Exception:
                                 revised.setdefault("automation", {}).setdefault("errors", []).append("summary: error")
                         assessment = bootstrap_assessment(revised, spec, root=root)
-                        if assessment["status"] != "complete":
+                        if assessment["status"] != "complete" or not has_publishable_body_figure(root, revised):
+                            temporary_gaps = {"source_transient_failure", "source_refresh_failed", "ai_missing", "ai_stale",
+                                "ai_configuration_missing", "ai_authentication_failed", "ai_payment_required",
+                                "ai_transient_failure", "ai_response_invalid", "metrics_configuration_missing", "metrics_query_failed",
+                                "metrics_unchecked", "request_budget_deferred"}
+                            material_gaps = non_ai_gaps - temporary_gaps
+                            source_deferred = bool(set(source_assessment["reasonCodes"]) & {
+                                "source_transient_failure", "source_refresh_failed", "request_budget_deferred"})
+                            # A resolved permitted image that failed in transit
+                            # is not evidence that the paper has no body image.
+                            failed_download = any(isinstance(figure, dict) and figure.get("downloadStatus") == "failed"
+                                and figure.get("reuseStatus") == "allowed"
+                                and isinstance(figure.get("sourceURL"), str) and figure["sourceURL"].startswith("https://")
+                                for figure in revised.get("article", {}).get("figures", []))
                             ledger["candidates"][revised["doi"]] = {
                                 "checkedAt": stamp(), "status": "pending",
-                                "reason": "所需原图、代码、输入或注释不完整；未收录、不占成功名额"}
+                                "retryClass": "materials" if material_gaps and not source_deferred and not failed_download else "transient",
+                                "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"}
                             report.setdefault("rejectedCandidateCount", 0)
                             report["rejectedCandidateCount"] += 1
                             checkpoint()
@@ -948,7 +959,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         report.update(finishedAt=stamp(), requests=getattr(client, "requests", 0), aiAttempts=getattr(client, "post_attempts", 0),
                       collectionRequests=max(0, getattr(client, "requests", 0) - getattr(client, "post_attempts", 0)),
                       totalCount=len(catalog["papers"]), dailyNewCount=len(daily),
-                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or outcomes["deferred"] or outcomes["incomplete"] or report["discoveryStatus"] == "existing_materials_pending" or (is_backfill and report["bootstrap"]["status"] != "complete") else "completed")
+                      status="partial" if report["failures"] or report["collectionBudgetExhausted"] or outcomes["deferred"] or outcomes["incomplete"] or (is_backfill and report["bootstrap"]["status"] != "complete") else "completed")
         reports = [report] + reports[:89]
         checkpoint()
         write_json(root / "data" / "updates.json", reports)

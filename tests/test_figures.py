@@ -47,6 +47,26 @@ class FakeClient:
         return b"<html>not image</html>" if self.badimage else png()
 
 
+class MixedScopeClient(FakeClient):
+    """Synthetic JATS with richer supplements than either usable body figure."""
+    def get_json(self, url, **kwargs):
+        result = super().get_json(url, **kwargs)
+        result["media_urls"].extend(result["media_urls"][0].replace("g001", value)
+                                    for value in ("g003", "g009", "g010"))
+        return result
+
+    def get_bytes(self, url, **kwargs):
+        raw = super().get_bytes(url, **kwargs)
+        if not url.endswith(".xml"):
+            return raw
+        extra = b'<fig id="F3"><label>Fig. 3</label><caption><p>a, b, c, d, body panels.</p></caption><graphic xlink:href="image-g003"/></fig>'
+        # The bare Fig. 9 label is still supplementary because of its JATS
+        # ancestry, and must not compete in the main-text namespace.
+        extra += b'<supplementary-material id="SI"><fig id="SF9"><label>Fig. 9</label><caption><p>a, b, c, d, e, f, g, h, supplement panels.</p></caption><graphic xlink:href="image-g009"/></fig></supplementary-material>'
+        extra += b'<fig id="EF9"><label>Extended Data Fig. 9</label><caption><p>a, b, c, d, e, f, g, h, extended panels.</p></caption><graphic xlink:href="image-g010"/></fig>'
+        return raw.replace(b"</body>", extra + b"</body>")
+
+
 class FiguresTests(unittest.TestCase):
     def test_cloud_strict_url_and_licenses(self):
         self.assertEqual(cloud_url("s3://pmc-oa-opendata/PMC123.1/a.jpg?md5=abc"), CLOUD + "/PMC123.1/a.jpg?md5=abc")
@@ -99,6 +119,34 @@ class FiguresTests(unittest.TestCase):
         self.assertFalse(any(f["asset"] for f in result["figures"]))
         self.assertFalse(any(url.endswith(".png") for url in client.calls))
         self.assertTrue(any("no substitute" in note for note in result["limitations"]))
+
+    def test_automatic_candidate_downloads_main_before_richer_supplements(self):
+        client = MixedScopeClient()
+        with tempfile.TemporaryDirectory() as directory:
+            result = inspect_article(client, {"doi": "10.1234/example", "pmcid": "PMC123",
+                "collectionBatch": "automatic", "figure": "", "maxFigureDownloads": 2},
+                Path(directory) / "data" / "assets", False)
+        self.assertEqual(result["status"], "inspected")
+        downloads = [url.rsplit("/", 1)[-1] for url in client.calls if url.endswith(".png")]
+        self.assertEqual(downloads, ["image-g003.png", "image-g001.png"])
+        self.assertTrue(all(item["reference"]["scope"] == "main" for item in result["figures"] if item["asset"]))
+        self.assertEqual(next(item for item in result["figures"] if item["id"] == "SF9")["reference"]["scope"], "supplementary")
+
+    def test_automatic_candidate_preserves_explicit_supplement_or_extended_selection(self):
+        for selected, expected, scope in (("Supplementary Figure 9", "image-g009.png", "supplementary"),
+                                           ("Extended Data Fig. 9", "image-g010.png", "extended")):
+            with self.subTest(selected=selected):
+                client = MixedScopeClient()
+                with tempfile.TemporaryDirectory() as directory:
+                    result = inspect_article(client, {"doi": "10.1234/example", "pmcid": "PMC123",
+                        "collectionBatch": "automatic", "figure": selected, "maxFigureDownloads": 1},
+                        Path(directory) / "data" / "assets", False)
+                downloads = [url.rsplit("/", 1)[-1] for url in client.calls if url.endswith(".png")]
+                self.assertEqual(downloads, [expected])
+                figures = [item for item in result["figures"] if item["asset"]]
+                self.assertEqual(len(figures), 1)
+                self.assertEqual(figures[0]["reference"]["scope"], scope)
+                self.assertEqual(figures[0]["requestedReference"]["scope"], scope)
 
     def test_missing_label_cannot_prove_requested_number(self):
         class NoLabelClient(FakeClient):

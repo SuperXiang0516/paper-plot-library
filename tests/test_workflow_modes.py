@@ -1,4 +1,4 @@
-"""Offline initialization mode and workflow execution boundary checks."""
+"""Offline daily-priority mode and workflow execution boundary checks."""
 import json
 from pathlib import Path
 import re
@@ -14,12 +14,13 @@ class WorkflowModeTests(unittest.TestCase):
 
     def test_project_uses_five_paper_batches_and_fifteen_bounded_ai_attempts(self):
         config = json.loads((PROJECT / "config.json").read_text(encoding="utf-8"))
-        self.assertTrue(config["initialize_existing_first"])
+        self.assertTrue(config["require_complete_new_cases"])
+        self.assertFalse(config["initialize_existing_first"])
         self.assertEqual(config["bootstrap_batch_limit"], 5)
         self.assertEqual(config["max_papers_per_run"], 5)
         self.assertEqual(config["max_ai_attempts_per_paper"], 3)
         self.assertEqual((config["repair_limit"], config["max_ai_calls"], config["max_requests"],
-                          config["max_new_per_day"]), (5, 15, 150, 5))
+                          config["max_new_per_day"]), (0, 15, 150, 5))
 
     def test_dispatch_preserves_collect_switch_and_exposes_only_known_modes(self):
         inputs = self.workflow.split("    inputs:\n", 1)[1].split("  schedule:\n", 1)[0]
@@ -32,7 +33,7 @@ class WorkflowModeTests(unittest.TestCase):
         self.assertEqual(re.findall(r"^          - (\S+)$", modes, re.MULTILINE), ["auto", "backfill", "daily"])
 
     def test_mode_is_passed_as_environment_to_safe_cloud_wrapper(self):
-        self.assertIn("UPDATE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'auto' }}", self.workflow)
+        self.assertIn("UPDATE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'daily' }}", self.workflow)
         command = next(line.strip() for line in self.workflow.splitlines() if "run: python scripts/cloud_collect.py" in line)
         self.assertEqual(command, 'run: python scripts/cloud_collect.py')
         self.assertNotIn("${{", command)
@@ -40,11 +41,14 @@ class WorkflowModeTests(unittest.TestCase):
         self.assertIn("continue-on-error: true", self.workflow)
         self.assertIn("!cancelled()", self.workflow)
 
-    def test_push_builds_without_collection_and_keeps_one_daily_schedule(self):
+    def test_push_builds_without_collection_and_has_bounded_same_day_topups(self):
         condition = "if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.collect)"
         self.assertEqual(self.workflow.count(condition), 1)
         self.assertIn("  push:\n    branches: [main]\n", self.workflow)
-        self.assertEqual(re.findall(r"^    - cron: (.+)$", self.workflow, re.MULTILINE), ["'47 1 * * *'"])
+        self.assertEqual(re.findall(r"^    - cron: (.+)$", self.workflow, re.MULTILINE),
+                         ["'47 1 * * *'", "'47 7 * * *'", "'47 13 * * *'"])
+        self.assertIn("share its durable success quota/budgets", self.workflow)
+        self.assertIn("cancel-in-progress: false", self.workflow)
 
 
 if __name__ == "__main__":

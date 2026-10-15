@@ -1,4 +1,4 @@
-"""Fixed-cohort, evidence-gated initialization before daily discovery.
+"""Fixed-cohort, evidence-gated material checks independent of daily discovery.
 
 No author code is executed. Complete means the required static materials exist,
 not that a person approved exact figure/script/input binding or reproduced a plot.
@@ -36,6 +36,18 @@ _TRANSIENT = {"error", "unavailable", "metadata_unavailable", "network_error", "
               "service_unavailable", "other_http_error", "partial_failure"}
 _DEFERRED = {"budget_exhausted", "deferred", "deferred_until_selection", "not_checked"}
 _COUNT_LIMIT = 10000
+
+
+def effective_collection_mode(mode):
+    """Only explicit backfill repairs the old cohort instead of discovering papers.
+
+    Material completeness is still an evidence claim, never a prerequisite for
+    the next day's collection. In particular, needs_attention must not turn an
+    automatic daily run into an endlessly blocked initialization session.
+    """
+    if not isinstance(mode, str) or mode not in {"auto", "backfill", "daily"}:
+        raise ValueError("更新模式必须为 auto、backfill 或 daily")
+    return "backfill" if mode == "backfill" else "daily"
 
 
 def _object(value):

@@ -399,14 +399,20 @@ def inspect_article(client, record, asset_dir, include_supplements=True):
                 "reuseStatus": "allowed" if allowed and source_url else "link_only",
                 "downloadStatus": "pending" if allowed and source_url else "not_permitted_or_unresolved",
                 "limitations": []})
-        # Prioritize mixed multi-panel figures; this is a curation preference, not
-        # a claim that the image has been classified or mapped to a script.
+        # New automatic cases need a publishable main-text image. Prefer the
+        # main namespace before panel richness so two elaborate supplements
+        # cannot exhaust the download slots while a usable body figure exists.
+        # Explicit curated selections retain their original namespace/number.
+        prefer_body = (record.get("collectionBatch") == "automatic"
+                       and not str(record.get("figure") or "").strip())
         def figure_priority(figure):
             preferred = str(record.get("figure") or "").lower()
             label = figure["label"].lower().replace(".", "")
             preferred_match = bool(preferred and label and label in preferred)
             panels = len(set(re.findall(r"(?:^|[\s(,;])([a-h])(?:[),.;]|\s)", figure["caption"].lower())))
-            return (not preferred_match, -panels)
+            reference = figure.get("reference") or {}
+            non_body = prefer_body and reference.get("scope") != "main"
+            return (not preferred_match, non_body, -panels)
         eligible = sorted([f for f in result["figures"] if f["reuseStatus"] == "allowed"], key=figure_priority)
         requested = figure_reference(record.get("figure"))
         if requested:

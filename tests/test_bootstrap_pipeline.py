@@ -22,6 +22,7 @@ def materials(index=1, complete=False):
     value = dict(record(index), figure="Figure 1")
     article = article_good()
     article["figures"][0]["sha256"] = hashlib.sha256(RASTER).hexdigest()
+    article["figures"][0]["sourceURL"] = "https://example.org/synthetic-figure.png"
     repo = repo_good()
     repo["scripts"][0]["url"] = repo["url"] + "/blob/" + repo["commit"] + "/plot.py"
     repo["inputs"] = [{"name": "input.csv", "format": "csv", "status": "header_observed",
@@ -62,6 +63,7 @@ class BootstrapPipelineTests(unittest.TestCase):
             "authorCodeExecuted": False, "papers": papers, "inputSpecs": {}, "dimensions": {}})
 
     def run_fixture(self, active=None, now=NOW, **kwargs):
+        kwargs.setdefault("mode", "backfill")
         client = HttpClient(self.root / ".ppl" / "cache", self.settings.max_requests,
             max_post_attempts=self.settings.max_ai_calls, opener=self.opener,
             retries=1, sleep=lambda delay: None)
@@ -72,7 +74,7 @@ class BootstrapPipelineTests(unittest.TestCase):
     def current(self):
         return read_json(self.root / "data" / "catalog.json")
 
-    def test_fifty_existing_cases_finish_before_any_discovery_then_next_auto_is_daily(self):
+    def test_explicit_backfill_finishes_old_cases_without_discovery_then_auto_is_daily(self):
         self.catalog([dict(record(index), figure="Figure 1") for index in range(1, 51)])
         discovery_calls = []
         active = dict(self.active, discover=lambda *args: discovery_calls.append(True) or [record(i) for i in range(100, 110)])
@@ -91,7 +93,7 @@ class BootstrapPipelineTests(unittest.TestCase):
         self.assertEqual(report["discoveryStatus"], "bootstrap_complete_next_run")
         self.assertEqual(self.opener.methods.count("POST"), 50)
         self.settings.repair_limit = 0
-        daily = self.run_fixture(active, now="2026-10-21T12:00:00Z")
+        daily = self.run_fixture(active, now="2026-10-21T12:00:00Z", mode="auto")
         self.assertEqual((daily["mode"], daily["newCount"]), ("daily", 5))
         self.assertEqual(discovery_calls, [True])
         self.assertEqual(daily["bootstrap"]["totalCount"], 50)
@@ -117,17 +119,16 @@ class BootstrapPipelineTests(unittest.TestCase):
         self.assertEqual(len(deferred), 1)
         self.assertEqual(deferred[0]["automation"]["bootstrap"]["attempts"], 0)
 
-    def test_daily_cannot_bypass_initialization_and_leaves_data_untouched(self):
+    def test_daily_can_discover_without_falsely_completing_old_initialization(self):
         self.catalog([dict(record(1), figure="Figure 1")])
-        path = self.root / "data" / "catalog.json"
-        before = path.read_bytes()
-        with self.assertRaisesRegex(ValueError, "尚未补齐"):
-            self.run_fixture(mode="daily")
-        self.assertEqual(path.read_bytes(), before)
-        self.assertFalse((self.root / "data" / "ledger.json").exists())
-        self.assertEqual(self.opener.methods, [])
+        self.settings.repair_limit = 0
+        report = self.run_fixture(mode="daily")
+        self.assertEqual((report["mode"], report["newCount"], report["repairCount"]), ("daily", 5, 0))
+        self.assertEqual((report["bootstrap"]["status"], report["bootstrap"]["pendingCount"]), ("active", 1))
+        self.assertEqual(self.current()["papers"][0]["automation"]["status"], "seed")
+        self.assertEqual(self.opener.methods, ["POST"] * 5)
 
-    def test_attention_stops_auto_discovery_but_manual_retry_can_recover(self):
+    def test_attention_does_not_stop_auto_discovery_and_explicit_backfill_can_recover(self):
         self.catalog([dict(record(1), figure="Figure 1")])
         article = dict(materials()["article"], status="no_final_version", figures=[])
         active = dict(self.active, article=lambda *args: deepcopy(article))
@@ -139,13 +140,14 @@ class BootstrapPipelineTests(unittest.TestCase):
             self.assertEqual(report["aiAttempts"], 0)
         self.assertEqual(report["bootstrap"]["status"], "needs_attention")
         self.assertEqual(report["bootstrap"]["completeCount"], 0)
-        stopped = self.run_fixture(now="2026-10-12T12:00:00Z")
-        self.assertEqual((stopped["checkedCount"], stopped["newCount"]), (0, 0))
-        self.assertEqual(stopped["discoveryStatus"], "bootstrap_needs_attention")
+        self.settings.repair_limit = 0
+        daily = self.run_fixture(now="2026-10-12T12:00:00Z", mode="auto")
+        self.assertEqual((daily["repairCount"], daily["newCount"]), (0, 5))
+        self.assertEqual(daily["bootstrap"]["status"], "needs_attention")
         recovered = self.run_fixture(mode="backfill")
         self.assertEqual(recovered["bootstrap"]["status"], "complete")
         self.assertEqual(recovered["newCount"], 0)
-        self.assertEqual(self.opener.methods.count("POST"), 1)
+        self.assertEqual(self.opener.methods.count("POST"), 6)
 
     def test_source_exceptions_preserve_attempt_history_despite_old_budget_diagnostics(self):
         old = dict(record(1), figure="Figure 1", ai={"status": "budget_exhausted"}, metrics={"status": "budget_exhausted"})
@@ -160,17 +162,17 @@ class BootstrapPipelineTests(unittest.TestCase):
         self.assertEqual((state["status"], report["bootstrap"]["attentionCount"]), ("needs_attention", 1))
         self.assertEqual(self.opener.methods, [])
 
-    def test_complete_cohort_regression_blocks_discovery_in_same_run(self):
+    def test_complete_cohort_regression_does_not_block_discovery_in_same_run(self):
         self.catalog([materials(1, complete=True)])
         self.settings.repair_limit = 1
         discovery_calls = []
         active = dict(self.active, article=lambda *args: {"status": "unavailable", "figures": []},
                       discover=lambda *args: discovery_calls.append(True) or [record(100)])
-        report = self.run_fixture(active)
-        self.assertEqual(report["mode"], "backfill")
+        report = self.run_fixture(active, mode="auto")
+        self.assertEqual(report["mode"], "daily")
         self.assertEqual(report["newCount"], 0)
         self.assertNotEqual(report["bootstrap"]["status"], "complete")
-        self.assertEqual(discovery_calls, [])
+        self.assertEqual(discovery_calls, [True])
         self.assertEqual(self.opener.methods, [])
         self.assertEqual(self.current()["papers"][0]["ai"]["status"], "stale")
 
@@ -179,7 +181,7 @@ class BootstrapPipelineTests(unittest.TestCase):
         self.settings.repair_limit = 1
         discovery_calls = []
         active = dict(self.active, discover=lambda *args: discovery_calls.append(True) or [])
-        report = self.run_fixture(active)
+        report = self.run_fixture(active, mode="auto")
         self.assertEqual(report["mode"], "daily")
         self.assertEqual(report["bootstrap"]["status"], "complete")
         self.assertEqual(discovery_calls, [True])

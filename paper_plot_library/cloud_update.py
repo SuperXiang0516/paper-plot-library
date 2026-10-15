@@ -15,7 +15,7 @@ import math
 from pathlib import Path
 import time
 
-from .bootstrap import _timestamp, bootstrap_assessment, bootstrap_report
+from .bootstrap import _timestamp
 from .config import load_settings
 from .http import HttpClient
 from .session import _limits
@@ -25,7 +25,7 @@ from .storage import project_lock, read_json, write_json
 DAILY_SESSION_STATUSES = frozenset({"active", "paused", "finished"})
 DAILY_SESSION_REASONS = frozenset({"", "target_reached", "batch_limit_reached", "ai_budget_exhausted", "http_budget_exhausted",
             "time_limit_reached", "ai_configuration_blocked", "checkpoint_callback_failed", "batch_failed",
-            "interrupted", "no_progress", "initialization_pending", "day_changed"})
+            "interrupted", "no_progress", "discovery_failed", "initialization_pending", "day_changed"})
 _STATUS = DAILY_SESSION_STATUSES
 _REASONS = DAILY_SESSION_REASONS
 _FATAL = {"missing_key", "missing_model", "missing_endpoint", "invalid_endpoint", "authentication_error",
@@ -56,6 +56,17 @@ def public_daily_summary(value):
     except ValueError:
         return None
     result = {key: value[key] for key in ("date", "status", "endReason")}
+    # Older published summaries did not include timestamps. When provided,
+    # expose only controlled UTC values, never arbitrary status/provider text.
+    for key in ("startedAt", "updatedAt"):
+        if key in value:
+            if not _timestamp(value[key]):
+                return None
+            result[key] = value[key]
+    if ("startedAt" in result and result["startedAt"][:10] != result["date"]
+            or "startedAt" in result and "updatedAt" in result
+                and _timestamp(result["updatedAt"]) < _timestamp(result["startedAt"])):
+        return None
     for key, (low, high) in _PUBLIC_BOUNDS.items():
         number = value.get(key)
         if type(number) is not int or not low <= number <= high:
@@ -137,7 +148,7 @@ def _count(catalog, ledger, day):
 
 
 def _summary(state, target):
-    result = {key: state[key] for key in ("date", "status", "endReason", "batchCount", "requests", "aiAttempts",
+    result = {key: state[key] for key in ("date", "startedAt", "updatedAt", "status", "endReason", "batchCount", "requests", "aiAttempts",
         "uncertainRequests", "uncertainAiAttempts", "dailyNewCount", "maxBatches", "maxRequests", "maxAiAttempts")}
     result.update(targetCount=target, inFlightCount=int("inFlight" in state), localCheckpointSaved=True)
     return result
@@ -226,10 +237,6 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
             else:
                 _recover(state)
                 state["dailyNewCount"] = max(state["dailyNewCount"], _count(catalog, ledger, day))
-            initialized = (settings.initialize_existing_first or "bootstrap" in ledger or "bootstrap" in catalog)
-            pending_initialization = (initialized and bootstrap_report(catalog, ledger, root, moment)["status"] != "complete"
-                or any(bootstrap_assessment(paper, catalog.get("inputSpecs", {}).get(paper["id"]), root)["status"] != "complete"
-                       for paper in catalog["papers"]))
         elapsed_before = state["elapsedSeconds"]
         state.update(status="active", endReason="")
         state = _save(root, state, moment, target)
@@ -241,8 +248,6 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
 
         if state["dailyNewCount"] >= target:
             return stop("target_reached", finished=True)
-        if pending_initialization:
-            return stop("initialization_pending")
         while True:
             moment = now()
             if not _timestamp(moment):
@@ -266,7 +271,10 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
                 return stop("http_budget_exhausted")
             if ai_left <= 0 and settings.llm_api_key and settings.llm_model:
                 return stop("ai_budget_exhausted")
-            batch_settings = replace(settings, require_complete_new_cases=True, discovery_limit=100,
+            # Daily collection has its own work and budget. Old material gaps
+            # remain visible in bootstrap reports but cannot take new-paper
+            # slots or paid attempts away from today's successful admissions.
+            batch_settings = replace(settings, require_complete_new_cases=True, discovery_limit=100, repair_limit=0,
                 max_papers_per_run=min(5, settings.max_papers_per_run),
                 max_ai_attempts_per_paper=min(3, settings.max_ai_attempts_per_paper),
                 max_requests=min(150, settings.max_requests, requests_left),
@@ -327,9 +335,7 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
                 return stop("time_limit_reached")
             if isinstance(report.get("aiStoppedStatus"), str) and report["aiStoppedStatus"] in _FATAL:
                 return stop("ai_configuration_blocked")
-            if report.get("discoveryStatus") == "existing_materials_pending":
-                return stop("initialization_pending")
             if state["dailyNewCount"] >= target:
                 return stop("target_reached", finished=True)
             if report["checkedCount"] <= report["repairCount"]:
-                return stop("no_progress")
+                return stop("discovery_failed" if report.get("discoveryStatus") == "partial_failure" else "no_progress")

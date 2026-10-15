@@ -7,7 +7,7 @@ import shutil
 import tempfile
 import unittest
 
-from paper_plot_library.site import build_site
+from paper_plot_library.site import build_site, has_publishable_body_figure
 from test_bootstrap import NOW, RASTER
 
 
@@ -43,12 +43,16 @@ class BodyGalleryTests(unittest.TestCase):
         if bootstrap is not None:
             catalog["bootstrap"] = bootstrap
         original = deepcopy(catalog)
+        eligible = [paper["id"] for paper in papers if has_publishable_body_figure(self.root, paper)]
+        self.assertEqual(catalog, original, "Admission image checks must be read-only.")
         reports = reports or []
         original_reports = deepcopy(reports)
         output = build_site(self.root, catalog, reports)
         self.assertEqual(catalog, original, "Publishing must not physically prune private source records.")
         self.assertEqual(reports, original_reports, "Internal failure/recovery reports must remain intact.")
         public = json.loads((output / "data" / "catalog.json").read_text())
+        self.assertEqual([paper["id"] for paper in public["papers"]], eligible,
+                         "A counted admission and the gallery must use exactly the same image gate.")
         manifest = json.loads((output / "data" / "assets-manifest.json").read_text())
         return public, manifest, output
 

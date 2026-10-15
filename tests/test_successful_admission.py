@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+from paper_plot_library.bootstrap import bootstrap_assessment
 from paper_plot_library.config import Settings
 from paper_plot_library.pipeline import run_pipeline
 from paper_plot_library.storage import read_json, write_json
@@ -75,6 +76,50 @@ class SuccessfulAdmissionTests(unittest.TestCase):
             value["figures"][0]["reuseStatus"] = "link_only"
             return value
         self.assertEqual(self.run_batch(dict(self.active, article=article))["newCount"], 0)
+
+    def test_supplement_only_cannot_consume_visible_success_or_paid_summary(self):
+        calls = []
+        original = self.active["article"]
+        def article(*args):
+            value = original(*args)
+            for figure in value["figures"]:
+                figure.update(id="S1", label="Supplementary Figure 1",
+                              reference={"scope": "supplementary", "number": "1"})
+            return value
+        def summary(*args):
+            calls.append(True)
+            return self.active["summary"](*args)
+        # The old material-completeness check alone can accept this licensed
+        # supplement, so it cannot substitute for the website's main-image gate.
+        otherwise_complete = materials(complete=True)
+        otherwise_complete["figure"] = "Supplementary Figure 1"
+        otherwise_complete["article"] = article()
+        self.assertEqual(bootstrap_assessment(otherwise_complete, root=self.root)["status"], "complete")
+        report = self.run_batch(dict(self.active, article=article, summary=summary))
+        self.assertEqual((report["newCount"], report["dailyNewCount"], report["rejectedCandidateCount"]), (0, 0, 5))
+        self.assertEqual(calls, [])
+        self.assertEqual(read_json(self.root / "data" / "catalog.json")["papers"], [])
+
+    def test_missing_publisher_source_url_cannot_count_as_visible_success(self):
+        calls = []
+        original = self.active["article"]
+        def article(*args):
+            value = original(*args)
+            value["figures"][0].pop("sourceURL")
+            return value
+        report = self.run_batch(dict(self.active, article=article,
+            summary=lambda *args: calls.append(True) or self.active["summary"](*args)))
+        self.assertEqual((report["newCount"], report["dailyNewCount"]), (0, 0))
+        self.assertEqual(calls, [])
+
+    def test_main_image_is_rechecked_after_ai_before_success_is_committed(self):
+        def changed_image(*args):
+            (self.root / "data" / "assets" / "fixture.png").unlink(missing_ok=True)
+            return self.active["summary"](*args)
+        report = self.run_batch(dict(self.active, summary=changed_image,
+            discover=lambda *args: [record(1)]))
+        self.assertEqual((report["newCount"], report["dailyNewCount"], report["rejectedCandidateCount"]), (0, 0, 1))
+        self.assertEqual(read_json(self.root / "data" / "catalog.json")["papers"], [])
 
     def test_removed_doi_never_reappears_or_causes_source_or_ai_calls(self):
         write_json(self.root / "data" / "ledger.json", {"days": {}, "candidates": {},
