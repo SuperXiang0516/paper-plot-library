@@ -97,6 +97,30 @@ class ScopeTests(unittest.TestCase):
                       "Plant transcriptomics integration framework", "Coral genomics toolkit"):
             self.assertFalse(matches_scope(self.paper(title, "We introduce a framework for analysis.")))
 
+    def test_mycorrhizal_symbiosis_is_not_rescued_by_abstract_aging_mentions(self):
+        record = self.paper("Spatiotemporal regulation of arbuscular mycorrhizal symbiosis at cellular resolution.",
+                            "Single-cell RNA sequencing compared aging cells during symbiosis.")
+        self.assertEqual(assess_scope(record)["reason"], "non_biomedical")
+        self.assertFalse(matches_scope(record))
+
+    def test_old_mycorrhizal_inclusion_is_not_reused_or_counted_as_daily_aging(self):
+        record = self.paper("Spatiotemporal regulation of arbuscular mycorrhizal symbiosis at cellular resolution.",
+                            "Aging transcriptomics using RNA sequencing.")
+        # Simulate a formerly admitted metadata-bound v1 decision, without
+        # changing or deleting its original materials or admission history.
+        record["researchScope"] = dict(assess_scope(record, source="verified-metadata"),
+                                      version=1, status="included", tier="primary", reason="eligible")
+        record["admittedAt"] = "2026-10-15T09:41:15Z"
+        record.pop("abstract")
+        self.assertFalse(has_verified_scope(record))
+        self.assertFalse(matches_scope(record))
+        self.assertEqual(eligible_daily_dois({"papers": [record]}, [record["doi"]], "2026-10-15", POLICY), set())
+
+    def test_mycorrhizal_comparator_does_not_exclude_explicit_human_omics_tools(self):
+        record = self.paper("Human transcriptomics software benchmark against arbuscular mycorrhizal data")
+        self.assertEqual(assess_scope(record)["tier"], "tools")
+        self.assertTrue(matches_scope(record))
+
     def test_named_contributions_and_method_benchmarks_across_sentences(self):
         for title, abstract in (
             ("CellRank for directed single-cell fate mapping.",

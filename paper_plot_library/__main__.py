@@ -12,6 +12,7 @@ from .storage import read_json
 from .sources import normalize_doi
 from .session import run_backfill_session
 from .offline_scope import refresh_scope_offline
+from .data_validation import DataValidationError, validate_data
 
 
 def main(argv=None):
@@ -40,6 +41,7 @@ def main(argv=None):
     sub.add_parser("build", help="离线构建网站，不调用 API")
     sub.add_parser("export", help="白名单导出可发布文件；不带入预览目录中的用户文件")
     sub.add_parser("check", help="检查配置/数据；只报告密钥是否存在，不显示值")
+    sub.add_parser("validate-data", help="离线只读校验实际案例库、配额与运行记录；不加载 API 设置")
     scope_refresh = sub.add_parser("scope-refresh", help="仅用已缓存正式元数据复核旧条目的研究方向；不抓取、不计新增")
     scope_refresh.add_argument("--offline", required=True, action="store_true", help="明确禁止网络、AI 与全文下载")
     serve = sub.add_parser("serve", help="仅监听本机的网页预览")
@@ -78,6 +80,12 @@ def main(argv=None):
                           "max_ai_attempts_per_paper": settings.max_ai_attempts_per_paper,
                           "initialize_existing_first": settings.initialize_existing_first,
                           "bootstrap_batch_limit": settings.bootstrap_batch_limit}, ensure_ascii=False, indent=2))
+    elif args.command == "validate-data":
+        try:
+            result = validate_data(root)
+        except DataValidationError as exc:
+            parser.exit(1, f"数据校验失败：{exc}\n")
+        print(json.dumps(result, ensure_ascii=False, indent=2))
     elif args.command == "scope-refresh":
         print(json.dumps(refresh_scope_offline(root), ensure_ascii=False, indent=2))
     elif args.command == "serve":

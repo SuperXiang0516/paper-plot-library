@@ -10,6 +10,28 @@ from paper_plot_library.config import Settings
 
 
 class CliTests(unittest.TestCase):
+    def test_validate_data_does_not_load_settings_or_start_collection(self):
+        with tempfile.TemporaryDirectory() as folder, \
+                patch("paper_plot_library.__main__.load_settings") as load, \
+                patch("paper_plot_library.__main__.validate_data", return_value={"status": "valid"}) as validate, \
+                patch("paper_plot_library.__main__.run_pipeline") as pipeline, \
+                contextlib.redirect_stdout(io.StringIO()):
+            main(["--root", folder, "validate-data"])
+            validate.assert_called_once_with(Path(folder).resolve())
+            load.assert_not_called()
+            pipeline.assert_not_called()
+
+    def test_validate_data_error_is_nonzero_with_clear_file_location(self):
+        from paper_plot_library.data_validation import DataValidationError
+        error = io.StringIO()
+        with patch("paper_plot_library.__main__.validate_data", side_effect=DataValidationError("data/catalog.json:2:3: JSON 格式无效")), \
+                patch("paper_plot_library.__main__.load_settings") as load, \
+                contextlib.redirect_stderr(error), self.assertRaises(SystemExit) as caught:
+            main(["validate-data"])
+        self.assertEqual(caught.exception.code, 1)
+        self.assertIn("data/catalog.json:2:3:", error.getvalue())
+        load.assert_not_called()
+
     def test_offline_scope_refresh_is_explicit_and_never_loads_api_settings(self):
         with tempfile.TemporaryDirectory() as folder, \
                 patch("paper_plot_library.__main__.load_settings") as load, \

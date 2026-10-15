@@ -204,8 +204,13 @@ AI 响应失败区分输出截断、JSON 格式、字段、证据或未经验证
 ## 上传本次修复（已有仓库）
 
 GitHub Desktop 选择 `paper-plot-library`，确认 Changes 是本项目代码与测试。
-Summary 填 `fix: focus on aging omics and metabolic research`，点击 Commit to main。
+Summary 填 `fix: resolve catalog merge conflicts and validate data`，点击 Commit to main。
 然后 Fetch origin，若提示 Pull origin 先拉取云端自动生成的数据，再 Push origin；不要丢弃云端数据或强制推送。
+若提示冲突，不要在文件仍含 `<<<<<<<`、`=======`、`>>>>>>>` 时标记已解决或继续提交；
+应同时保留云端新增文献和当前有效分类，无法判断时先停止并核对。
+新增离线命令 `python -m paper_plot_library validate-data`，会检查实际的目录、账本和运行记录，
+不读取 API 设置、不调用接口、不改写数据。Actions 现在也在回归测试前先运行它；
+遇到冲突或无效 JSON 会指出文件名与行列，并在采集前停止，不通过重跑自动选边。
 Push 只构建发布新代码和界面，不抓取论文。待发布成功，在 Actions 打开
 “论文绘图案例库 · 自动更新与发布” → Run workflow，勾选 `collect`，`mode` 选择 `daily`，
 点击运行即可立即开始当天新增；以后按三个时点自动运行，不需要每批手工点击。

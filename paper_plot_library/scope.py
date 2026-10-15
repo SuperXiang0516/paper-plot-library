@@ -81,7 +81,7 @@ _TOPICS = {
     "metabolic_disease": r"\b(?:obesity|obese|metabolic\s+(?:diseases?|disorders?|syndrome|dysfunction)|nafld|masld|non[\s-]alcoholic\s+fatty\s+liver)\b|肥胖|代谢性疾病|代谢病|代谢综合征|代谢紊乱|脂肪肝",
 }
 _NON_BIOMEDICAL = re.compile(
-    r"\b(?:marine|coral|reef|biodiversity|phytoplankton|zooplankton|soil|crops?|plants?|arabidopsis|rice|wheat|maize|aquaculture|environmental\s+dna)\b|海洋|珊瑚|农作物|植物", re.I)
+    r"\b(?:marine|coral|reef|biodiversity|phytoplankton|zooplankton|soil|crops?|plants?|arabidopsis|rice|wheat|maize|aquaculture|environmental\s+dna|arbuscular\s+mycorrhizal|mycorrhizal\s+symbiosis)\b|海洋|珊瑚|农作物|植物|丛枝菌根", re.I)
 _BIOMEDICAL = re.compile(
     r"\b(?:humans?|patients?|mammal\w*|mice|mouse|murine|rats?|clinical|pancrea\w*|islets?|adipose|caenorhabditis|elegans|drosophila|yeast|saccharomyces)\b|人类|患者|小鼠|大鼠|线虫|果蝇|酵母", re.I)
 
