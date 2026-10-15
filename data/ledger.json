@@ -1147,17 +1147,22 @@
     "uncertainAiAttempts": 0,
     "date": "2026-10-15",
     "startedAt": "2026-10-15T07:28:26Z",
-    "elapsedSeconds": 968,
+    "elapsedSeconds": 970,
     "uncertainRequests": 0,
     "maxBatches": 36,
-    "updatedAt": "2026-10-15T09:41:48Z",
-    "batchCount": 28,
+    "updatedAt": "2026-10-15T09:41:50Z",
+    "batchCount": 29,
     "aiAttempts": 2,
     "status": "active",
     "version": 1,
     "endReason": "",
     "dailyNewCount": 1,
     "maxAiAttempts": 165,
-    "requests": 1418
+    "requests": 1418,
+    "inFlight": {
+      "startedAt": "2026-10-15T09:41:50Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
