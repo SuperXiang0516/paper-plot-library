@@ -14,11 +14,13 @@
   const safeAsset = value => typeof value === 'string' && /^assets\/[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(value) && !value.includes('//') && value.split('/').every(part => part !== '..' && part !== '.') ? value : '';
   const str = (value, fallback = '待核') => value === undefined || value === null || value === '' ? fallback : Array.isArray(value) ? value.map(item => str(item, '')).filter(Boolean).join(' · ') : typeof value === 'object' ? fallback : String(value);
   const list = value => Array.isArray(value) ? value : [];
-  const scopeTierLabel = paper => {
+  const scopeTier = paper => {
     const scope=paper?.researchScope;
     if(scope?.policy!=='aging-sequencing-metabolic' || scope.status!=='included')return '';
-    return scope.tier==='primary'?'衰老 · 核心方向':scope.tier==='expansion'?'糖尿病/代谢相关 · 扩展方向':'';
+    return ['primary','expansion','tools'].includes(scope.tier)?scope.tier:'';
   };
+  const scopeTierLabel = paper => ({primary:'衰老 · 核心研究',expansion:'糖尿病/代谢相关 · 扩展研究',tools:'通用组学 · 方法与工具'}[scopeTier(paper)] || '');
+  const matchesResearchScope = (paper,selected) => !selected || (['primary','expansion','tools'].includes(selected) && scopeTier(paper)===selected);
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
   const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
   Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'已有候选继续补齐 · 不阻塞日更',bootstrap_needs_attention:'已有候选需要检查 · 不阻塞日更',bootstrap_complete_next_run:'保留候选资料已补齐 · 日更独立运行',paper_batch_limit_reached:'达到本轮文章处理上限',existing_materials_pending:'既有案例材料需要修补 · 不阻塞日更'});
@@ -293,14 +295,14 @@
   };
   const beijingTimestamp=value=>{const safe=dailyTimestamp(value);return safe?new Date(Date.parse(safe)+8*60*60*1000).toISOString().slice(0,19).replace('T',' ')+'（北京时间）':'';};
   if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS,sessionSummary,sessionLines,latestSession,SESSION_STATUSES,SESSION_END_REASONS,SESSION_COUNTERS,dailySummary,dailyLines,dailyOverview,dailyTimestamp,beijingTimestamp,DAILY_END_LABELS,DAILY_BOUNDS,bodyFigure,bodyDisplayEligible,bodyPreviewNote,bodyCounts,bodyReference};
-  if (typeof module !== 'undefined' && module.exports) module.exports.scopeTierLabel = scopeTierLabel;
+  if (typeof module !== 'undefined' && module.exports) Object.assign(module.exports,{scopeTier,scopeTierLabel,matchesResearchScope});
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null, viewerPaperId = null;
   let baseNotice='',imageFailureRenderPending=false;
   const failedImagePapers=new Set(),imageChecks=new Map();
   const $ = id => document.getElementById(id);
-  const state = {form:'',function:'',status:'',search:'',sort:'evidence'};
+  const state = {scope:'',form:'',function:'',status:'',search:'',sort:'evidence'};
   const labels = {forms:new Map(),functions:new Map()};
   const el = (tag, text, className) => {
     const node = document.createElement(tag);
@@ -423,6 +425,7 @@
   }
   function baseMatches(paper) {
     if(!bodyDisplayEligible(paper,failedImagePapers))return false;
+    if(!matchesResearchScope(paper,state.scope))return false;
     const available=availabilityOf(paper,paperSpec(paper));
     if(state.status==='ready' && available.verification!=='verified')return false;
     if(state.status==='needs_input' && available.hasObservedHeaders)return false;
@@ -697,9 +700,9 @@
   });
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{view=button.dataset.view;history.replaceState(null,'','#'+view);render();}));
   window.addEventListener('hashchange',()=>{view=viewFromHash(location.hash,view);render();});
-  for (const [id,key] of [['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
+  for (const [id,key] of [['scope-filter','scope'],['form-filter','form'],['function-filter','function'],['status-filter','status'],['sort','sort']]) $(id).addEventListener('change',event=>{state[key]=event.target.value;render();});
   $('search').addEventListener('input',event=>{state.search=event.target.value.trim();render();});
-  $('reset').addEventListener('click',()=>{Object.assign(state,{form:'',function:'',status:'',search:'',sort:'evidence'});$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
+  $('reset').addEventListener('click',()=>{Object.assign(state,{scope:'',form:'',function:'',status:'',search:'',sort:'evidence'});$('scope-filter').value='';$('search').value='';$('status-filter').value='';$('sort').value='evidence';render();});
   Promise.all([fetch('data/catalog.json',{cache:'no-store'}).then(response=>{if(!response.ok)throw Error('catalog HTTP '+response.status);return response.json();}),fetch('data/updates.json',{cache:'no-store'}).then(response=>response.ok?response.json():[]).catch(()=>[])])
     .then(([data,updates])=>{
       if(!Array.isArray(data.papers)||data.authorCodeExecuted!==false)throw Error('目录结构不符合静态核查约定');

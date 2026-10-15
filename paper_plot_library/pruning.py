@@ -8,6 +8,7 @@ from __future__ import annotations
 from .bootstrap import (REMOVAL_REASON_CODES, _object, _list, _now, _safe_record_state,
                         bootstrap_assessment, ensure_bootstrap, safe_removed_dois)
 from .sources import normalize_doi
+from .retention import protected_library_record
 
 
 _TERMINAL_REPOSITORY = {"no_scripts_found", "not_found", "link_only_private"}
@@ -100,6 +101,12 @@ def prune_uncollectable(catalog, ledger, root=None, now=None):
     decisions = []
     for record in catalog["papers"]:
         doi = record["doi"]
+        # Pruning is candidate cleanup, not maintenance of the published
+        # library. Missing code/input details or repeated source 404s must not
+        # erase earlier admitted/real-image records. Safety quarantine and the
+        # publication gate remain independent and can still hide unsafe media.
+        if protected_library_record(record, root, timestamp):
+            continue
         previous = _safe_record_state(record)
         if previous["unsuccessfulScans"] < 3 or not previous.get("lastAttemptAt"):
             continue

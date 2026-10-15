@@ -135,7 +135,7 @@ class SourcesTests(unittest.TestCase):
                              row("10.1234/imaging", title="Imaging genomics in healthy human tissues")])
         records = discover(client, SimpleNamespace(discovery_limit=5, research_scope=POLICY))
         self.assertEqual(records, [])
-        self.assertEqual(len(client.calls), 2)
+        self.assertEqual(len(client.calls), 3)
 
     def test_scoped_discovery_aging_precedes_newer_metabolic_work(self):
         client = FakeClient([row("10.1234/diabetes", title="Diabetes multiomics in patients", pubYear="2025"),
@@ -156,7 +156,7 @@ class SourcesTests(unittest.TestCase):
         client = Expansion()
         records = discover(client, SimpleNamespace(discovery_limit=2, research_scope=POLICY))
         self.assertEqual([record["doi"] for record in records], ["10.1234/diabetes"])
-        self.assertEqual(len(client.calls), 2)
+        self.assertEqual(len(client.calls), 3)
 
     def test_scoped_custom_query_cannot_remove_title_abstract_gate(self):
         client = FakeClient([row("10.1234/marine", title="Marine biodiversity DNA sequencing")])
@@ -182,9 +182,43 @@ class SourcesTests(unittest.TestCase):
         self.assertEqual(records, [])
         self.assertEqual(len(client.calls), 5)
         self.assertEqual(["TITLE_ABS:(diabetes" in kwargs["params"]["query"] for _, kwargs in client.calls],
-                         [False, False, False, True, True])
+                         [False, False, True, False, False])
         self.assertEqual([kwargs["params"]["cursorMark"] for _, kwargs in client.calls],
-                         ["*", "opaque-1", "opaque-2", "*", "opaque-4"])
+                         ["*", "opaque-1", "*", "*", "opaque-4"])
+
+    def test_tool_lane_is_queried_even_when_primary_page_is_full(self):
+        class ThreeLanes(FakeClient):
+            def get_json(self, url, **kwargs):
+                self.calls.append((url, kwargs))
+                query = kwargs["params"]["query"]
+                if "TITLE_ABS:(toolkit" in query:
+                    rows = [row("10.1234/tool", title="A genomics toolkit")]
+                elif "TITLE_ABS:(diabetes" in query:
+                    rows = [row("10.1234/diabetes", title="Diabetes genomics")]
+                else:
+                    rows = [row("10.1234/core" + str(number), title="Aging genomics") for number in range(5)]
+                return {"resultList": {"result": rows}}
+        client = ThreeLanes()
+        records = discover(client, SimpleNamespace(discovery_limit=5, research_scope=POLICY))
+        self.assertEqual(len(client.calls), 3)
+        self.assertEqual([record["doi"] for record in records],
+                         ["10.1234/core0", "10.1234/core1", "10.1234/core2", "10.1234/diabetes", "10.1234/tool"])
+
+    def test_ncbi_fallback_accepts_omics_tools_not_unrelated_plotting(self):
+        for title, abstract, expected in (
+            ("A genomics toolkit", "Software for genomics analysis.", ["10.1234/example"]),
+            ("CellRank", "We introduce a framework for single-cell RNA-seq fate mapping.", ["10.1234/example"]),
+            ("A general plotting toolkit", "We introduce visualization software.", []),
+            ("Marine metagenomics software", "We introduce a toolkit for biodiversity.", []),
+        ):
+            class NCBI(FakeClient):
+                def get_text(self, url, **kwargs):
+                    return super().get_text(url, **kwargs).replace("<ArticleTitle>Example</ArticleTitle>",
+                        "<ArticleTitle>" + title + "</ArticleTitle>").replace(
+                        "<AbstractText>Code https://github.com/a/b</AbstractText>",
+                        "<AbstractText>" + abstract + "</AbstractText>")
+            records = discover(NCBI(fail=True), SimpleNamespace(discovery_limit=5, research_scope=POLICY))
+            self.assertEqual([record["doi"] for record in records], expected)
 
     def test_scoped_ncbi_fallback_never_loosens_domain(self):
         for title, expected in (("Marine biodiversity imaging with DNA sequencing", []),

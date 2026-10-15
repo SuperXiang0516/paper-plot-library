@@ -1,5 +1,6 @@
 """Offline cloud-budget regressions; no provider traffic or real credentials."""
 import json
+import hashlib
 from pathlib import Path
 import tempfile
 import unittest
@@ -11,7 +12,22 @@ from paper_plot_library.pipeline import complete_summary, run_pipeline
 from paper_plot_library.storage import read_json, write_json
 from test_enrichment import ai_payload
 from test_http import Response
-from test_pipeline_audit import adapters, article_good, record, repo_good
+from test_pipeline_audit import adapters as _adapters, article_good as _article_good, record, repo_good
+from test_bootstrap import RASTER
+
+
+def article_good():
+    """Fresh source evidence includes a real hash-verified synthetic raster."""
+    article = _article_good()
+    article["figures"][0].update(sha256=hashlib.sha256(RASTER).hexdigest(),
+                                sourceURL="https://example.org/fixture.png")
+    return article
+
+
+def adapters(**changes):
+    active = _adapters(article=lambda *args: article_good())
+    active.update(changes)
+    return active
 
 
 class BudgetFixtureOpener:
@@ -29,6 +45,8 @@ class RequestBudgetRegressionTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix="ppl-budget-regression-")
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        (self.root / "data" / "assets").mkdir(parents=True)
+        (self.root / "data" / "assets" / "fixture.png").write_bytes(RASTER)
         self.settings = Settings(llm_api_key="offline-fixture-key", llm_model="offline-fixture-model",
                                  citation_enrichment=False, max_papers_per_run=20,
                                  max_ai_attempts_per_paper=1)

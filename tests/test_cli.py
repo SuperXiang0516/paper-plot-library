@@ -10,6 +10,21 @@ from paper_plot_library.config import Settings
 
 
 class CliTests(unittest.TestCase):
+    def test_offline_scope_refresh_is_explicit_and_never_loads_api_settings(self):
+        with tempfile.TemporaryDirectory() as folder, \
+                patch("paper_plot_library.__main__.load_settings") as load, \
+                patch("paper_plot_library.__main__.refresh_scope_offline", return_value={"httpRequests": 0}) as refresh, \
+                patch("paper_plot_library.__main__.run_pipeline") as pipeline, \
+                contextlib.redirect_stdout(io.StringIO()):
+            main(["--root", folder, "scope-refresh", "--offline"])
+            refresh.assert_called_once_with(Path(folder).resolve())
+            load.assert_not_called()
+            pipeline.assert_not_called()
+        with patch("paper_plot_library.__main__.refresh_scope_offline") as refresh, \
+                contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            main(["scope-refresh"])
+        refresh.assert_not_called()
+
     def test_bounded_session_command_forwards_caps_and_explicit_new_pass(self):
         with tempfile.TemporaryDirectory() as folder, \
                 patch("paper_plot_library.__main__.load_settings", return_value=Settings()) as load, \

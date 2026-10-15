@@ -23,7 +23,9 @@ class PruningTests(unittest.TestCase):
         self.ledger = {"days": {}, "candidates": {}}
 
     def full_case(self, index=1):
-        return bootstrap_fixtures.BootstrapTests.full_case(self, index)
+        result = bootstrap_fixtures.BootstrapTests.full_case(self, index)
+        result["article"]["figures"][0]["sourceURL"] = "https://example.org/fixture.png"
+        return result
 
     def catalog(self, papers):
         return {"authorCodeExecuted": False, "papers": papers,
@@ -36,6 +38,9 @@ class PruningTests(unittest.TestCase):
     def test_three_clean_same_gap_scans_remove_record_and_input_not_asset(self):
         case = self.full_case()
         case["repository"]["inputs"] = []
+        # This is an unadmitted failed candidate, not a previously displayable
+        # legacy library record. Real-image records are protected below.
+        case["article"]["figures"][0]["sha256"] = "0" * 64
         catalog = self.catalog([case, self.full_case(2)])
         ensure_bootstrap(catalog, self.ledger, NOW)
         self.ledger["candidates"][case["doi"]] = {"title": "DO_NOT_RETAIN"}
@@ -75,6 +80,10 @@ class PruningTests(unittest.TestCase):
                 ensure_bootstrap(catalog, ledger, NOW)
                 self.scans(case)
                 result = prune_uncollectable(catalog, ledger, self.root, NOW)
+                if gap in {"figure", "scripts", "private"}:
+                    self.assertEqual(result["removedCount"], 0)
+                    self.assertEqual(len(catalog["papers"]), 1)
+                    continue
                 self.assertEqual(result["reasons"][case["doi"]], expected)
                 self.assertEqual(catalog["papers"], [])
                 self.assertEqual(bootstrap_report(catalog, ledger, self.root, NOW)["removedCount"], 1)
@@ -169,7 +178,7 @@ class PruningTests(unittest.TestCase):
         self.scans(case, 1)
         self.assertEqual(case["automation"]["bootstrap"]["sourceGapScans"], {"input_basis_unavailable": 1})
 
-    def test_noncohort_admission_can_remove_without_expanding_original_cohort(self):
+    def test_noncohort_real_image_is_retained_without_expanding_original_cohort(self):
         original = self.full_case(1)
         catalog = self.catalog([original])
         ensure_bootstrap(catalog, self.ledger, NOW)
@@ -179,8 +188,9 @@ class PruningTests(unittest.TestCase):
         catalog["inputSpecs"][later["id"]] = {}
         self.scans(later)
         result = prune_uncollectable(catalog, self.ledger, self.root, NOW)
-        self.assertEqual(result["deletedDOIs"], [later["doi"]])
-        self.assertEqual(safe_removed_dois(self.ledger), frozenset({later["doi"]}))
+        self.assertEqual(result["deletedDOIs"], [])
+        self.assertEqual(safe_removed_dois(self.ledger), frozenset())
+        self.assertEqual(len(catalog["papers"]), 2)
         report = bootstrap_report(catalog, self.ledger, self.root, NOW)
         self.assertEqual((report["totalCount"], report["completeCount"], report["removedCount"]), (1, 1, 0))
 

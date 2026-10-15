@@ -7,7 +7,7 @@ import re
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 
-from .scope import POLICIES, assess_scope, matches_scope, query_constraint, scope_priority
+from .scope import POLICIES, assess_scope, matches_scope, query_constraint, select_scope_candidates
 
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 NCBI = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
@@ -239,7 +239,7 @@ def _ncbi_discover(client, settings, limit, exclude_dois=frozenset()):
                 and matches_scope(record, policy)):
             result.append(record)
     result = [record for record in result if record["doi"] not in exclude_dois]
-    return sorted(result, key=lambda record: scope_priority(record, policy), reverse=True)
+    return select_scope_candidates(result, limit, policy)
 
 
 def discover(client, settings, exclude_dois=None):
@@ -252,7 +252,8 @@ def discover(client, settings, exclude_dois=None):
     policy = _research_policy(settings)
     limit = min(100, max(1, int(getattr(settings, "discovery_limit", 30))))
     excluded = frozenset(normalize_doi(value) for value in (exclude_dois or ()))
-    query = getattr(settings, "discovery_query", None) or DEFAULT_QUERY
+    query = getattr(settings, "discovery_query", None) or (
+        DEFAULT_QUERY if policy == "unrestricted" else '("source code" OR GitHub OR "code availability")')
     today = _utc_today()
     # Filter BEFORE newest-first pagination. Filtering future rows only after
     # retrieval would allow forthcoming Nov/Dec issues to starve older papers.
@@ -262,13 +263,15 @@ def discover(client, settings, exclude_dois=None):
              " AND FIRST_PDATE:[1900-01-01 TO " + today.isoformat() + "]")
     unique = {}
     # Scope is a mandatory AND constraint even when the query is customized.
-    # Reserve the first three metadata pages for aging, then at most two for
-    # metabolic expansion. Known/cooling and off-topic rows never take slots.
-    lanes = [(None, 5)] if policy == "unrestricted" else [("primary", 3), ("expansion", 2)]
+    # Each lane is queried even if a primary page fills the metadata limit.
+    # Two aging, one metabolic and two tool pages share the old five-page cap.
+    # Known/cooling and off-topic rows never take successful candidate slots.
+    lanes = [(None, 5)] if policy == "unrestricted" else [("primary", 2), ("expansion", 1), ("tools", 2)]
     try:
         for tier, page_limit in lanes:
             lane_query = query if tier is None else "(" + query + ") AND (" + query_constraint("epmc", tier) + ")"
             cursors, cursor = set(), "*"
+            lane_count = 0
             for _ in range(page_limit):
                 cursors.add(cursor)
                 response = client.get_json(EPMC, params={"query": lane_query, "format": "json", "resultType": "core",
@@ -283,19 +286,18 @@ def discover(client, settings, exclude_dois=None):
                     assessment = assess_scope(record, policy)
                     if (record["doi"] not in excluded and _usable(record)
                             and _published_not_future(record, today) and assessment["status"] == "included"
-                            and (tier != "primary" or assessment["tier"] == "primary")):
+                            and (tier is None or assessment["tier"] == tier)):
+                        lane_count += int(record["doi"] not in unique)
                         unique.setdefault(record["doi"], record)
-                if len(unique) >= limit:
+                if lane_count >= limit:
                     break
                 following = response.get("nextCursorMark")
                 if (not rows or not isinstance(following, str) or not 1 <= len(following) <= 8192
                         or any(ord(char) < 32 or ord(char) > 126 for char in following) or following in cursors):
                     break
                 cursor = following
-            if len(unique) >= limit:
-                break
-        return sorted(unique.values(), key=lambda record: scope_priority(record, policy), reverse=True)[:limit]
+        return select_scope_candidates(unique.values(), limit, policy)
     except Exception:
         if unique:
-            return sorted(unique.values(), key=lambda record: scope_priority(record, policy), reverse=True)[:limit]
+            return select_scope_candidates(unique.values(), limit, policy)
         return _ncbi_discover(client, settings, limit, excluded)

@@ -422,7 +422,7 @@ class SessionTests(unittest.TestCase):
         self.assertEqual(opener.methods.count("POST"), 6)
         self.assertEqual(result["endReason"], "cohort_traversed")
 
-    def test_legacy_ai_attempt_limit_does_not_freeze_clean_source_gap_before_third_scan_and_removal(self):
+    def test_legacy_ai_attempt_limit_allows_gap_rechecks_but_keeps_real_body_library_record(self):
         from paper_plot_library.pipeline import run_pipeline
         from test_request_budget import BudgetFixtureOpener
         source = materials()
@@ -459,10 +459,16 @@ class SessionTests(unittest.TestCase):
         immediate = session("2026-10-12T12:01:00Z")
         self.assertEqual(immediate["batchCount"], 0)
         third = session("2026-10-13T12:00:00Z")
-        self.assertEqual((third["batchCount"], third["processedCount"], third["removedCount"], third["completeCount"]), (1, 1, 1, 0))
-        self.assertEqual((third["materialsStatus"], third["endReason"]), ("complete_with_removals", "cohort_traversed"))
-        self.assertEqual(read_json(self.root / "data" / "catalog.json")["papers"], [])
-        self.assertEqual(read_json(self.root / "data" / "ledger.json")["removedPapers"][old["doi"]]["reasonCode"], "selected_figure_unavailable")
+        self.assertEqual((third["batchCount"], third["processedCount"], third["removedCount"], third["completeCount"]), (1, 1, 0, 0))
+        self.assertEqual(third["endReason"], "cohort_traversed")
+        retained = read_json(self.root / "data" / "catalog.json")["papers"]
+        self.assertEqual([paper["doi"] for paper in retained], [old["doi"]])
+        # Selected Figure 2 is still a gap, but another real licensed body
+        # figure remains publicly displayable. A maintenance gap must not
+        # erase the existing library record under the new retention policy.
+        from paper_plot_library.site import has_publishable_body_figure
+        self.assertTrue(has_publishable_body_figure(self.root, retained[0]))
+        self.assertNotIn(old["doi"], read_json(self.root / "data" / "ledger.json").get("removedPapers", {}))
 
     def test_source_gap_attention_rechecks_require_auto_removal_opt_in(self):
         paper = materials(1, complete=True)

@@ -17,10 +17,13 @@ from .enrichment import enrich_metrics, summarize
 from .figures import inspect_article
 from .http import BudgetExceeded, HttpClient
 from .repository import inspect_repository
+from .retention import archive_sources, article_safety_failure, retain_enrichment, retain_source, sanitized_archive
 from .site import build_site, has_publishable_body_figure, _safe_reason, _safe_http_status
 from .sources import discover, lookup_paper, lookup_scope_metadata, normalize_doi, paper_id
 from .storage import project_lock, read_json, write_json
-from .scope import POLICIES, assess_scope, eligible_daily_dois, has_verified_scope, matches_scope, scope_priority
+from .scope import (POLICIES, assess_scope, eligible_daily_dois, has_verified_scope,
+                    matches_scope, scope_priority, select_scope_candidates)
+from .candidate_resume import CandidateResume, validate_checkpoint
 
 
 def stamp():
@@ -53,6 +56,8 @@ def _can_summarize(record):
             and record.get("automation", {}).get("status") != "excluded"
             and record.get("article", {}).get("status") == "inspected"
             and record.get("repository", {}).get("status") == "inspected"
+            and not record.get("article", {}).get("retained_from_previous")
+            and not record.get("repository", {}).get("retained_from_previous")
             and bool(record.get("repository", {}).get("scripts")))
 
 
@@ -101,6 +106,8 @@ def _automatic_outcome(record, settings):
         return "deferred"
     source_complete = (stages.get("metadata") == "matched" and stages.get("article") == "inspected"
                        and stages.get("repository") == "inspected"
+                       and not record.get("article", {}).get("retained_from_previous")
+                       and not record.get("repository", {}).get("retained_from_previous")
                        and bool(record.get("repository", {}).get("scripts")))
     if not source_complete:
         return "incomplete"
@@ -230,6 +237,8 @@ def validate_ledger(ledger, today):
                 or not isinstance(value, dict) or not isinstance(value.get("status"), str)
                 or not _valid_timestamp(value.get("checkedAt"))):
             raise ValueError(error)
+        if "checkpoint" in value:
+            validate_checkpoint(value["checkpoint"], doi)
     earliest = (date.fromisoformat(today) - timedelta(days=89)).isoformat()
     bounded = deepcopy(ledger)
     bounded["days"] = {day_key: value for day_key, value in ledger["days"].items() if earliest <= day_key <= today}
@@ -253,6 +262,12 @@ def persistent_catalog(catalog):
     value = deepcopy(catalog)
     for paper in value["papers"]:
         paper.pop("abstract", None)
+        if "retentionArchive" in paper:
+            archive = sanitized_archive(paper)
+            if archive is None:
+                paper.pop("retentionArchive", None)
+            else:
+                paper["retentionArchive"] = archive
         for script in paper.get("repository", {}).get("scripts", []):
             for evidence in script.get("evidence", []):
                 evidence.pop("text", None)  # Publish line links, never cached author source excerpts.
@@ -465,9 +480,24 @@ def refresh_status(record):
     record["automation"]["status"] = status
 
 
+def _summary_result(client, record, settings, adapters):
+    """Roll back unsuccessful provider side effects; keep post-success gates."""
+    before = deepcopy(record)
+    try:
+        value = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
+    except Exception:
+        record.clear()
+        record.update(before)
+        raise
+    if value.get("status") != "generated":
+        record.clear()
+        record.update(before)
+    return retain_enrichment(before.get("ai", {}), value, "ai")
+
+
 def complete_summary(client, record, settings, adapters):
     if _can_summarize(record):
-        record["ai"] = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
+        record["ai"] = _summary_result(client, record, settings, adapters)
     else:
         # Do not pay to describe retained captions/scripts as fresh source evidence.
         if not _retain_unchecked_summary(record):
@@ -504,11 +534,16 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
     repair_schedule = _safe_repair_schedule(record)
     bootstrap_state = (_safe_record_state(record)
                        if isinstance(record.get("automation", {}).get("bootstrap"), dict) else None)
-    record = dict(record)
+    # Inspectors may append nested evidence before raising. Never let a failed
+    # transaction mutate the caller's last-good source record in place.
+    record = deepcopy(record)
     stages, errors = {}, []
     metadata = adapters.get("lookup", lookup_paper)(client, record["doi"])
     stages["metadata"] = metadata.get("status", "unknown")
+    if (metadata.get("doi") and normalize_doi(metadata["doi"]) != normalize_doi(record["doi"])):
+        stages["metadata"] = "doi_mismatch"
     if stages["metadata"] in {"excluded", "doi_mismatch", "invalid_doi"} or metadata.get("isRetracted"):
+        archive_sources(record, "retracted" if metadata.get("isRetracted") else stages["metadata"], stamp())
         record["automation"] = {"status": "excluded", "stages": stages, "errors": ["正式版本/撤稿检查未通过"], "lastCheckedAt": stamp()}
         record["automation"]["repairSchedule"] = repair_schedule
         if bootstrap_state is not None:
@@ -531,12 +566,25 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
     if settings.research_scope != "unrestricted":
         # The discovery payload, curated tags and previous AI prose are not
         # sufficient evidence. Re-evaluate the exact DOI's current metadata.
+        if not metadata.get("abstract") and record.get("article", {}).get("figures"):
+            # Missing new scope evidence is not affirmative evidence that an
+            # existing paper became unrelated. Keep its previous DOI/title
+            # decision pending, but do not bill AI against retained sources.
+            stages["researchScope"] = "metadata_unavailable"
+            record["automation"] = {"status": "pending", "stages": stages,
+                "errors": ["researchScope: metadata_unavailable"], "lastCheckedAt": stamp(),
+                "repairSchedule": repair_schedule}
+            if bootstrap_state is not None:
+                record["automation"]["bootstrap"] = bootstrap_state
+            _retain_unchecked_summary(record)
+            return record
         if metadata.get("paper"):
             record["paper"] = metadata["paper"]
         record["abstract"] = metadata.get("abstract") or ""
         record["researchScope"] = assess_scope(record, settings.research_scope,
             allow_saved=False, source="verified-metadata")
         if not matches_scope(record, settings.research_scope):
+            archive_sources(record, "scope_excluded", stamp())
             stages["researchScope"] = "excluded"
             record["automation"] = {"status": "excluded", "stages": stages,
                 "errors": ["当前正式文献元数据不符合测序/组学与衰老/代谢主题要求"], "lastCheckedAt": stamp(),
@@ -548,25 +596,44 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
     record["maxFigureDownloads"] = settings.max_images
     record["maxSupplementDownloads"] = settings.max_supplements
     record["maxFileBytes"] = settings.max_file_bytes
-    for stage, adapter, args in (
-        ("article", adapters.get("article", inspect_article), (client, record, Path(root) / "data" / "assets", settings.include_supplements)),
-        ("repository", adapters.get("repository", inspect_repository), (client, record)),
+    for stage, adapter in (
+        ("article", adapters.get("article", inspect_article)),
+        ("repository", adapters.get("repository", inspect_repository)),
     ):
+        args = ((client, deepcopy(record), Path(root) / "data" / "assets", settings.include_supplements)
+                if stage == "article" else (client, deepcopy(record)))
         value = adapter(*args)
         stages[stage] = value.get("status", "unknown")
-        if stages[stage] in _FAILED_STAGES and record.get(stage, {}).get("status") == "inspected":
-            record[stage] = dict(record[stage], retained_from_previous=True, last_attempt_status=stages[stage])
-        else:
-            record[stage] = value
-    record["metrics"] = adapters.get("metrics", enrich_metrics)(client, record, settings)
+        safety = article_safety_failure(value, record.get(stage, {})) if stage == "article" else ""
+        if safety:
+            archive_sources(record, safety, stamp())
+            record["article"] = dict(value, status="excluded", figures=[], supplements=[])
+            stages["article"] = safety if safety in {"retracted", "doi_mismatch", "excluded"} else "excluded"
+            record["automation"] = {"status": "excluded", "stages": stages,
+                "errors": ["article: " + safety], "lastCheckedAt": stamp(),
+                "repairSchedule": repair_schedule}
+            if bootstrap_state is not None:
+                record["automation"]["bootstrap"] = bootstrap_state
+            _retain_unchecked_summary(record)
+            return record
+        current_usable = None
+        if stage == "article" and record.get(stage, {}).get("figures") and value.get("status") == "inspected":
+            current_usable = has_publishable_body_figure(Path(root), dict(record, article=value,
+                automation={"status": "partial"}))
+        record[stage] = retain_source(record.get(stage), value, stage, current_usable)
+    old_metrics = deepcopy(record.get("metrics", {}))
+    record["metrics"] = retain_enrichment(old_metrics,
+        adapters.get("metrics", enrich_metrics)(client, record, settings), "metrics")
     stages["metrics"] = record["metrics"].get("last_attempt_status") or record["metrics"].get("status", "unknown")
     record["citations"] = adapters.get("citations", enrich_citations)(client, record, settings)
     current_sources = (stages.get("article") == "inspected" and stages.get("repository") == "inspected"
+                       and not record.get("article", {}).get("retained_from_previous")
+                       and not record.get("repository", {}).get("retained_from_previous")
                        and bool(record.get("repository", {}).get("scripts")))
     if not current_sources:
         _retain_unchecked_summary(record)
     if generate_ai and current_sources:
-        record["ai"] = adapters.get("summary", summarize)(client, record, evidence_for(record), settings)
+        record["ai"] = _summary_result(client, record, settings, adapters)
         stages["ai"] = record["ai"].get("last_attempt_status") or record["ai"].get("status", "unknown")
     else:
         stages["ai"] = "missing_evidence" if not current_sources else "deferred_until_selection"
@@ -714,10 +781,10 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         backlog_ids = {p["id"] for p in catalog["papers"] if _summary_backlog(p)} if reserved_ai else set()
         summary_attempts = Counter()
 
-        def summarize_case(item):
+        def summarize_case(item, stage_adapters=None):
             before_attempts = getattr(client, "post_attempts", 0)
             try:
-                return complete_summary(client, item, settings, adapters)
+                return complete_summary(client, item, settings, adapters if stage_adapters is None else stage_adapters)
             finally:
                 after_attempts = getattr(client, "post_attempts", 0)
                 if type(before_attempts) is int and type(after_attempts) is int:
@@ -852,17 +919,62 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                            if state["checkedAt"].startswith(report["date"])
                            or settings.require_complete_new_cases and state.get("retryClass") == "materials"
                                and state["checkedAt"][:10] > earliest_retry}
-                if adapters.get("discover"):
-                    candidates = adapters["discover"](client, settings)
-                else:
-                    candidates = discover(client, settings, exclude_dois=seen | cooling)
+                # Unadmitted drafts are not a public catalog or paid cache. They
+                # retain only a controlled seed and immutable stage products,
+                # and still pass fresh DOI/retraction/source checks below.
+                resumable = [deepcopy(state["checkpoint"]["seed"])
+                             for doi, state in ledger["candidates"].items()
+                             if "checkpoint" in state and doi not in seen | cooling]
+                try:
+                    if adapters.get("discover"):
+                        candidates = adapters["discover"](client, settings)
+                    else:
+                        candidates = discover(client, settings, exclude_dois=seen | cooling)
+                except Exception as exc:
+                    if not resumable:
+                        raise
+                    candidates = []
+                    report["failures"].append({"stage": "discovery", "error": type(exc).__name__})
+                    # A search outage must not discard a previously checkpointed
+                    # DOI. Canonical metadata/source probes still run normally.
+                candidates = resumable + candidates
                 report["discoveryStatus"] = "success"
-                candidates = sorted(candidates, key=lambda p: (
-                    scope_priority(p, settings.research_scope), editorial_score(p)["total"]), reverse=True)
+                # Reserve lanes only after real eligibility/deduplication. An
+                # already seen or cooling DOI cannot occupy the tools slot.
+                available = {}
+                for candidate in candidates:
+                    doi = normalize_doi(candidate.get("doi"))
+                    if (not doi or doi in seen | cooling or candidate.get("isPreprint")
+                            or candidate.get("isRetracted") or candidate.get("date", "")[:10] > report["date"]):
+                        continue
+                    state = ledger["candidates"].get(doi, {})
+                    if not matches_scope(candidate, settings.research_scope) and "checkpoint" not in state:
+                        report["scopeRejectedCount"] = report.get("scopeRejectedCount", 0) + 1
+                        continue
+                    # The saved seed omits abstracts. Prefer richer fresh
+                    # metadata for the same DOI, never a duplicate paper slot.
+                    if doi not in available or candidate.get("abstract") and not available[doi].get("abstract"):
+                        available[doi] = dict(candidate, doi=doi)
+                ordered = sorted(available.values(), key=lambda p: editorial_score(p)["total"], reverse=True)
+                slots = min(settings.candidate_checks, max(0, settings.max_papers_per_run - report["checkedCount"]))
+                # An abstract-only verified candidate may no longer match its
+                # title after redaction. Give pending provenance rechecks one
+                # slot; do not invent scope evidence merely to resume it.
+                pending_scope = [p for p in ordered if not matches_scope(p, settings.research_scope)]
+                reserve_pending = min(1, slots, len(pending_scope))
+                candidates = select_scope_candidates(
+                    [p for p in ordered if matches_scope(p, settings.research_scope)],
+                    slots - reserve_pending, settings.research_scope)
+                candidates = pending_scope[:reserve_pending] + candidates
+                if len(candidates) < slots:
+                    candidates.extend(pending_scope[reserve_pending:reserve_pending + slots - len(candidates)])
                 checked = []
                 checked_dois = set()
+                candidate_adapters = {}
                 for candidate in candidates:
-                    if not matches_scope(candidate, settings.research_scope):
+                    candidate_doi = normalize_doi(candidate.get("doi"))
+                    candidate_state = ledger["candidates"].get(candidate_doi, {})
+                    if not matches_scope(candidate, settings.research_scope) and "checkpoint" not in candidate_state:
                         report["scopeRejectedCount"] = report.get("scopeRejectedCount", 0) + 1
                         continue  # No download, paid attempt or five-paper slot.
                     if report["checkedCount"] >= settings.max_papers_per_run:
@@ -887,12 +999,20 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     if len(checked) >= settings.candidate_checks:
                         break
                     checked_dois.add(doi)
+                    def save_candidate(value, current_doi=doi):
+                        entry = ledger["candidates"].setdefault(current_doi, {"checkedAt": stamp(), "status": "pending",
+                            "retryClass": "transient", "reason": "候选阶段已保存；尚未准入"})
+                        entry["checkpoint"] = value
+                        checkpoint()
+                    resume = CandidateResume(root, doi, state.get("checkpoint"), save_candidate, settings, adapters, stamp)
+                    active_adapters = resume.wrapped(adapters.get("lookup", lookup_paper))
+                    candidate_adapters[candidate["id"]] = active_adapters
                     try:
-                        revised = inspect_record(client, new_case(candidate), root, settings, adapters, generate_ai=False)
+                        revised = inspect_record(client, new_case(candidate), root, settings, active_adapters, generate_ai=False)
                     except Exception as exc:
                         report["failures"].append({"doi": doi, "stage": "candidate", "error": type(exc).__name__})
-                        ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "pending", "retryClass": "transient",
-                                                      "reason": "本篇临时失败；未中断其它候选"}
+                        ledger["candidates"][doi] = dict(ledger["candidates"].get(doi, {}), checkedAt=stamp(), status="pending",
+                                                      retryClass="transient", reason="本篇临时失败；未中断其它候选")
                         report["checkedCount"] += 1
                         checked.append({"doi": doi, "skip": True})
                         checkpoint()
@@ -904,15 +1024,21 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                                   and revised["automation"]["status"] != "excluded"
                                   and matches_scope(revised, settings.research_scope)
                                   and actual_repo in declared and bool(revised.get("repository", {}).get("scripts")))
+                    retained_checkpoint = ledger["candidates"].get(doi, {}).get("checkpoint")
                     ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "source_confirmed" if acceptable else "pending",
-                                                  "retryClass": "transient" if any(
+                                                  "retryClass": "transient" if acceptable or any(
                                                       value in _FAILED_STAGES or value in {"not_checked", "deferred"}
                                                       for value in revised["automation"]["stages"].values()) else "materials",
                                                   "reason": "作者代码声明和可读脚本已定位" if acceptable else "正式文献/作者代码/脚本依据尚不齐全"}
+                    if retained_checkpoint:
+                        ledger["candidates"][doi]["checkpoint"] = retained_checkpoint
                     checked.append(revised)
                     report["checkedCount"] += 1
                     report["collectionBudgetExhausted"] |= _collection_budget_exhausted(client)
                     checkpoint()
+                if (len(available) > len(candidates) and report["checkedCount"] >= settings.max_papers_per_run
+                        and report["discoveryStatus"] == "success"):
+                    report["discoveryStatus"] = "paper_batch_limit_reached"
                 counts = Counter(tag for p in catalog["papers"] for tag in p.get("graphForms", []))
                 usable = [p for p in checked if not p.get("skip") and ledger["candidates"][p["doi"]]["status"] == "source_confirmed"]
                 usable.sort(key=lambda p: (scope_priority(p, settings.research_scope),
@@ -941,7 +1067,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                         # do not pay for AI when no main-text image can appear.
                         if not non_ai_gaps and has_publishable_body_figure(root, revised):
                             try:
-                                summarize_case(revised)
+                                summarize_case(revised, candidate_adapters[revised["id"]])
                             except Exception:
                                 revised.setdefault("automation", {}).setdefault("errors", []).append("summary: error")
                         assessment = bootstrap_assessment(revised, spec, root=root)
@@ -959,10 +1085,13 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                                 and figure.get("reuseStatus") == "allowed"
                                 and isinstance(figure.get("sourceURL"), str) and figure["sourceURL"].startswith("https://")
                                 for figure in revised.get("article", {}).get("figures", []))
+                            retained_checkpoint = ledger["candidates"][revised["doi"]].get("checkpoint")
                             ledger["candidates"][revised["doi"]] = {
                                 "checkedAt": stamp(), "status": "pending",
                                 "retryClass": "materials" if material_gaps and not source_deferred and not failed_download else "transient",
                                 "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"}
+                            if retained_checkpoint:
+                                ledger["candidates"][revised["doi"]]["checkpoint"] = retained_checkpoint
                             report.setdefault("rejectedCandidateCount", 0)
                             report["rejectedCandidateCount"] += 1
                             checkpoint()
@@ -972,6 +1101,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     revised["admittedAt"] = stamp()
                     revised["selectionScore"] = editorial_score(revised, counts)
                     catalog["papers"].append(revised)
+                    ledger["candidates"][revised["doi"]].pop("checkpoint", None)
                     catalog.setdefault("inputSpecs", {})[revised["id"]] = input_spec(revised)
                     seen.add(revised["doi"])
                     daily.add(revised["doi"])
@@ -986,11 +1116,12 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     checkpoint()
                     if not settings.require_complete_new_cases:
                         try:
-                            summarize_case(revised)
+                            summarize_case(revised, candidate_adapters[revised["id"]])
                         except Exception as exc:
                             failed_ids.add(revised["id"])
                             revised["automation"]["errors"].append("summary: " + type(exc).__name__)
                     _update_repair_schedule(revised, settings, {}, revised["automation"]["lastCheckedAt"], revised["id"] in failed_ids)
+                    ledger["candidates"][revised["doi"]].pop("checkpoint", None)
                     checkpoint()
             except Exception as exc:
                 report["discoveryStatus"] = "partial_failure"

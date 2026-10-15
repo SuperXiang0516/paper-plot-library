@@ -1,5 +1,6 @@
 """Whole-catalog fair scheduling and bounded retry regressions, entirely offline."""
 from datetime import datetime, timedelta, timezone
+import hashlib
 from pathlib import Path
 import tempfile
 import unittest
@@ -10,8 +11,23 @@ from paper_plot_library.enrichment import summarize
 from paper_plot_library.http import HttpClient
 from paper_plot_library.pipeline import _repair_plan, _safe_repair_schedule, run_pipeline
 from paper_plot_library.storage import read_json, write_json
-from test_pipeline_audit import Client, adapters, article_good, record, repo_good
+from test_pipeline_audit import Client, adapters as _adapters, article_good as _article_good, record, repo_good
+from test_bootstrap import RASTER
 from test_request_budget import BudgetFixtureOpener
+
+
+def article_good():
+    """Scheduler tests must not call an absent/fake image fresh evidence."""
+    article = _article_good()
+    article["figures"][0].update(sha256=hashlib.sha256(RASTER).hexdigest(),
+                                sourceURL="https://example.org/fixture.png")
+    return article
+
+
+def adapters(**changes):
+    active = _adapters(article=lambda *args: article_good())
+    active.update(changes)
+    return active
 
 
 def checked_case(index, ai_status="invalid_response"):
@@ -36,6 +52,8 @@ class CatalogSchedulerTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix="ppl-scheduler-fixture-")
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        (self.root / "data" / "assets").mkdir(parents=True)
+        (self.root / "data" / "assets" / "fixture.png").write_bytes(RASTER)
         self.settings = Settings(llm_api_key="offline-fixture-key", llm_model="offline-fixture-model",
                                  easyscholar_key="offline-metric-key", citation_enrichment=False,
                                  max_papers_per_run=20)
