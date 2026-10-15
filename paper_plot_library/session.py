@@ -32,7 +32,7 @@ SESSION_END_REASONS = frozenset({"cohort_traversed", "no_eligible_cases", "batch
 SESSION_COUNTERS = frozenset({"targetCount", "plannedCount", "processedCount", "remainingCount",
     "batchCount", "checkpointCount", "requests", "aiAttempts", "uncertainRequests", "uncertainAiAttempts",
     "inFlightCount", "maxBatches", "maxRequests", "maxAiAttempts", "completeCount", "pendingCount", "attentionCount", "removedCount"})
-_LIMITS = {"session_max_batches": (1, 12), "session_max_ai_attempts": (0, 165),
+_LIMITS = {"session_max_batches": (1, 36), "session_max_ai_attempts": (0, 165),
            "session_max_requests": (1, 1800), "session_max_seconds": (60, 3300)}
 _FATAL = {"missing_key", "missing_model", "missing_endpoint", "invalid_endpoint", "authentication_error",
           "payment_required", "permission_denied", "invalid_request", "endpoint_not_found"}
@@ -42,13 +42,17 @@ def stamp():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def _limits(settings):
+def _limits(settings, *, daily=False):
     values = {}
     for name, (low, high) in _LIMITS.items():
         value = getattr(settings, name)
         if type(value) is not int or not low <= value <= high:
             raise ValueError("连续补库预算无效；未开始请求")
         values[name] = value
+    # The shared project setting may give new-paper discovery more small
+    # batches. Explicit old-library passes retain their established ceiling.
+    if not daily:
+        values["session_max_batches"] = min(12, values["session_max_batches"])
     return values
 
 

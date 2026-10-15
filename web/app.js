@@ -14,6 +14,11 @@
   const safeAsset = value => typeof value === 'string' && /^assets\/[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(value) && !value.includes('//') && value.split('/').every(part => part !== '..' && part !== '.') ? value : '';
   const str = (value, fallback = '待核') => value === undefined || value === null || value === '' ? fallback : Array.isArray(value) ? value.map(item => str(item, '')).filter(Boolean).join(' · ') : typeof value === 'object' ? fallback : String(value);
   const list = value => Array.isArray(value) ? value : [];
+  const scopeTierLabel = paper => {
+    const scope=paper?.researchScope;
+    if(scope?.policy!=='aging-sequencing-metabolic' || scope.status!=='included')return '';
+    return scope.tier==='primary'?'衰老 · 核心方向':scope.tier==='expansion'?'糖尿病/代谢相关 · 扩展方向':'';
+  };
   const STAGE_LABELS = {metadata:'正式文献核查',article:'全文与原图',repository:'作者代码静态检查',metrics:'期刊指标',ai:'AI 中文注释',citations:'引用指标',discovery:'新文献发现',repair:'既有案例修补',candidate:'候选核查',summary:'AI 中文注释'};
   const STAGE_STATUS_LABELS = {...STATUS,unknown:'状态待核',ok:'完成',success:'完成',generated:'已生成',complete:'完成',completed:'完成',matched:'已匹配',inspected:'已静态检查',stale:'保留旧结果 · 待更新',deferred:'等待后续处理',deferred_until_selection:'等待入选后生成',disabled:'本轮未启用',daily_quota_reached:'今日新收录名额已用完',not_checked:'本轮未检查',not_found:'未找到匹配结果',not_applicable:'不适用',unavailable:'本轮来源不可用',metadata_unavailable:'正式文献来源不可用',missing_key:'尚未配置 API 密钥',missing_model:'尚未配置模型',missing_journal:'缺少可查询期刊名',missing_evidence:'已核来源证据不足',missing_endpoint:'尚未配置接口地址',invalid_endpoint:'接口地址未通过校验',invalid_response:'接口响应未通过校验',budget_exhausted:'达到本轮本地请求上限',authentication_error:'身份认证失败（HTTP 401）',payment_required:'服务方要求付款或账户额度不足（HTTP 402）',permission_denied:'接口拒绝访问（HTTP 403）',invalid_request:'请求参数被接口拒绝（HTTP 400）',endpoint_not_found:'接口路径不存在（HTTP 404）',rate_limited:'服务方限流（HTTP 429）',service_unavailable:'服务方暂时不可用（HTTP 5xx）',other_http_error:'其它 HTTP 请求失败',network_error:'网络请求失败',invalid_doi:'DOI 无效',doi_mismatch:'DOI 与来源不一致',retracted:'已撤稿',no_final_version:'尚未核实正式版本',no_scripts_found:'未找到可检查脚本',partial_failure:'本轮部分失败'};
   Object.assign(STAGE_STATUS_LABELS,{bootstrap_in_progress:'已有候选继续补齐 · 不阻塞日更',bootstrap_needs_attention:'已有候选需要检查 · 不阻塞日更',bootstrap_complete_next_run:'保留候选资料已补齐 · 日更独立运行',paper_batch_limit_reached:'达到本轮文章处理上限',existing_materials_pending:'既有案例材料需要修补 · 不阻塞日更'});
@@ -254,7 +259,7 @@
     return candidates.filter(item=>item.summary).sort((a,b)=>str(b.time,'').localeCompare(str(a.time,'')))[0]?.summary || null;
   };
   const DAILY_END_LABELS={target_reached:'今日成功收录目标已达到',batch_limit_reached:'达到今日连续批次数上限',ai_budget_exhausted:'达到今日累计 AI 调用上限',http_budget_exhausted:'达到今日累计 HTTP 上限',time_limit_reached:'达到今日连续整理时间上限',ai_configuration_blocked:'API 配置或账户问题需要处理',checkpoint_callback_failed:'GitHub 批次保存失败',batch_failed:'批次未正常结束',interrupted:'运行中断，检查点已保留',no_progress:'未找到可继续检查的新候选',discovery_failed:'文献发现接口暂时失败，等待下一次补足',initialization_pending:'历史运行曾被旧文献补齐阻塞',day_changed:'UTC 日期改变，停止本轮'};
-  const DAILY_BOUNDS={batchCount:[0,12],requests:[0,1800],aiAttempts:[0,165],uncertainRequests:[0,1800],uncertainAiAttempts:[0,165],dailyNewCount:[0,5],maxBatches:[1,12],maxRequests:[1,1800],maxAiAttempts:[0,165],targetCount:[0,5],inFlightCount:[0,1]};
+  const DAILY_BOUNDS={batchCount:[0,36],requests:[0,1800],aiAttempts:[0,165],uncertainRequests:[0,1800],uncertainAiAttempts:[0,165],dailyNewCount:[0,5],maxBatches:[1,36],maxRequests:[1,1800],maxAiAttempts:[0,165],targetCount:[0,5],inFlightCount:[0,1]};
   const dailyTimestamp=value=>{
     if(typeof value!=='string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|\+00:00)$/.test(value))return '';
     const date=new Date(value);return Number.isFinite(date.getTime()) && date.getUTCFullYear()>0 && date.toISOString().slice(0,19)===value.slice(0,19)?value:'';
@@ -269,7 +274,7 @@
     if(result.startedAt && result.startedAt.slice(0,10)!==result.date || result.startedAt && result.updatedAt && Date.parse(result.updatedAt)<Date.parse(result.startedAt))return null;
     return result;
   };
-  const dailyLines=value=>{const data=dailySummary(value);return data?['UTC '+data.date+' · 今日成功收录 '+data.dailyNewCount+' / '+data.targetCount+' 篇 · 已处理 '+data.batchCount+' 批',data.endReason?DAILY_END_LABELS[data.endReason]:'日更连续整理中；这是最后保存的快照，不是实时监控','已确认 HTTP：'+data.requests+' / '+data.maxRequests+' 次 · AI 尝试：'+data.aiAttempts+' / '+data.maxAiAttempts+' 次；重跑不重置当天累计上限。','不完整候选不占成功名额；接口失败、候选不足或达到安全上限时不足 5 篇也会如实显示。']:[];};
+  const dailyLines=(value,scopeReview=false)=>{const data=dailySummary(value);return data?['UTC '+data.date+' · '+(scopeReview?'领域调整后历史新增计数待复核':'今日成功收录 '+data.dailyNewCount+' / '+data.targetCount+' 篇')+' · 已处理 '+data.batchCount+' 批',scopeReview?'历史保存的停止原因：'+(data.endReason?DAILY_END_LABELS[data.endReason]:'上次保存时仍在采集')+'；不是新研究领域的达标结论。':data.endReason?DAILY_END_LABELS[data.endReason]:'日更连续整理中；这是最后保存的快照，不是实时监控','已确认 HTTP：'+data.requests+' / '+data.maxRequests+' 次 · AI 尝试：'+data.aiAttempts+' / '+data.maxAiAttempts+' 次；重跑不重置当天累计上限。','不完整候选不占成功名额；接口失败、候选不足或达到安全上限时不足 5 篇也会如实显示。']:[];};
   const dailyOverview=(data,updates=[],now=new Date())=>{
     if(!(now instanceof Date) || !Number.isFinite(now.getTime()) || now.getUTCFullYear()<1)return null;
     const day=now.toISOString().slice(0,10), cutoff=now.getTime(), reports=list(updates).filter(report=>report && !report.demo && !report.synthetic && report.mode!=='demo');
@@ -279,6 +284,8 @@
     const times=reports.filter(report=>report.mode==='daily').map(report=>dailyTimestamp(report.finishedAt)).filter(value=>value && Date.parse(value)<=cutoff).sort((a,b)=>Date.parse(b)-Date.parse(a));
     const latestCollectionAt=times[0] || '';
     const hasCurrentRun=reports.some(report=>{const time=dailyTimestamp(report.finishedAt) || dailyTimestamp(report.startedAt);return report.mode==='daily' && time.slice(0,10)===day && Date.parse(time)<=cutoff;});
+    const catalogSnapshot=candidates[0];
+    if(current && data?.researchScopeDailyReviewDate===day && catalogSnapshot.summary?.date===day && (!catalogSnapshot.time || Date.parse(catalogSnapshot.time)<=cutoff))return {date:day,state:'unverified',status:'研究领域已调整 · 今日新增计数待复核',reason:'历史新增需按当前研究领域重新核实；不把旧计数当作新领域的成功收录。原有请求用量与预算保留，等待实际采集复核。',count:null,target:current.targetCount,latestCollectionAt,snapshotAt:current.updatedAt || '',summary:current,scopeReviewRequired:true};
     const state=current?(current.status==='finished'?'reached':current.status==='active'?'in_progress':'shortfall'):hasCurrentRun?'unverified':'not_run';
     const status={reached:'今日目标已达到',in_progress:'今日尚未达标 · 上次保存时仍在采集',shortfall:'今日尚未达标',not_run:'今日尚无日更运行记录',unverified:'今日新增计数尚未核实'}[state];
     const reason=current?(current.endReason?DAILY_END_LABELS[current.endReason]:'上次保存时仍在采集；请以新的检查点确认进展。'):hasCurrentRun?'已有日更运行记录，但缺少通过校验的成功计数；不把检查、部署或旧文献修补数当作新增。':'当前公开数据尚未记录今天的日更采集；旧文献补齐不再阻塞每日新增。';
@@ -286,6 +293,7 @@
   };
   const beijingTimestamp=value=>{const safe=dailyTimestamp(value);return safe?new Date(Date.parse(safe)+8*60*60*1000).toISOString().slice(0,19).replace('T',' ')+'（北京时间）':'';};
   if (typeof module !== 'undefined' && module.exports) module.exports = {safeURL,safeAsset,approvedTags,matchAxis,safeFigures,citationCount,metricLabel,statusOf,inputSections,aiStateLabel,facetCounts,figureNumber,cardFigure,detailFigures,figureReference,viewFromHash,stageLabel,statusLabel,reasonLabel,diagnosticLabel,errorLabel,failureLabel,updateBudgetLines,availabilityOf,matchesCollection,collectionCounts,contentBadges,currentFailures,bootstrapSummary,bootstrapLines,bootstrapIssueLabel,latestBootstrap,BOOTSTRAP_REASONS,sessionSummary,sessionLines,latestSession,SESSION_STATUSES,SESSION_END_REASONS,SESSION_COUNTERS,dailySummary,dailyLines,dailyOverview,dailyTimestamp,beijingTimestamp,DAILY_END_LABELS,DAILY_BOUNDS,bodyFigure,bodyDisplayEligible,bodyPreviewNote,bodyCounts,bodyReference};
+  if (typeof module !== 'undefined' && module.exports) module.exports.scopeTierLabel = scopeTierLabel;
   if (typeof document === 'undefined') return;
 
   let catalog = null, reports = [], view = 'gallery', activePaper = null, activeTab = 'inputs', previousFocus = null, previousImageFocus = null, viewerPaperId = null;
@@ -322,6 +330,7 @@
   }
   function availabilityBadges(paper) {
     const group=el('div',null,'availability-badges');group.setAttribute('aria-label','各项资料状态');
+    const scope=scopeTierLabel(paper);if(scope)group.append(el('span',scope,'availability-badge available'));
     for(const badge of contentBadges(paper,paperSpec(paper))){if(badge.name==='原图' && bodyFigure(paper)){badge.label=bodyPreviewNote(paper)?'正文已展示 · 原选图另核':'正文已展示';badge.tone='available';}group.append(el('span',badge.name+'：'+badge.label,'availability-badge '+badge.tone));}
     return group;
   }
@@ -471,6 +480,8 @@
       if (report.demo || report.synthetic || report.mode === 'demo') paragraph(card, '模拟演示：该记录仅用于离线功能验证，不代表真实文献抓取。', 'callout');
       items(card, list(report.errors).map(errorLabel));items(card,report.warnings);
       if(report.checkedCount !== undefined)paragraph(card,'检查 '+str(report.checkedCount)+' 条 · 新文献发现：'+statusLabel(report.discoveryStatus),'small');
+      if(counter(report.scopeRejectedCount)!==null)paragraph(card,'领域预筛排除 '+report.scopeRejectedCount+' 条，不占来源检查或成功名额。','small');
+      if(counter(report.scopeMetadataCheckedCount)>0)paragraph(card,'旧条目领域元数据复核 '+report.scopeMetadataCheckedCount+' 条，仅查询正式标题/摘要，不是新增或完整材料处理。','small');
       for(const line of updateBudgetLines(report))paragraph(card,line,'small');
       const session=sessionSummary(report.session);
       if(session){const fold=el('details');fold.append(el('summary','查看连续会话进度与保存状态'));for(const line of sessionLines(session))paragraph(fold,line,'small');card.append(fold);}
@@ -498,13 +509,13 @@
     paragraph(details,overview.latestCollectionAt?'最近日更采集记录：'+beijingTimestamp(overview.latestCollectionAt)+' · UTC '+overview.latestCollectionAt:'最近日更采集记录：尚未记录（网站部署时间不是采集时间）。','daily-date');
     if(overview.snapshotAt)paragraph(details,'日更检查点：'+beijingTimestamp(overview.snapshotAt)+'。这是已保存快照，不是实时运行状态。','daily-date');
     container.append(details);
-    if(overview.summary){const fold=el('details'),summary=el('summary','查看今日累计请求与停止原因');fold.append(summary);for(const line of dailyLines(overview.summary).slice(1))paragraph(fold,line,'small');details.append(fold);}
+    if(overview.summary){const fold=el('details'),summary=el('summary','查看今日累计请求与停止原因');fold.append(summary);for(const line of dailyLines(overview.summary,overview.scopeReviewRequired).slice(1))paragraph(fold,line,'small');details.append(fold);}
   }
   function renderCollectionPhase() {
     const container=$('collection-phase'), phase=latestBootstrap(catalog,reports), session=latestSession(catalog,reports),daily=dailySummary(catalog?.dailySession);container.replaceChildren();container.hidden=!phase&&!session&&!daily;
     if(!phase&&!session&&!daily)return;
     const node=el('details');node.append(el('summary','后台采集进度（后台队列数，不是网页展示文章数）'));container.append(node);
-    if(daily){const section=el('div',null,'daily-progress'),lines=dailyLines(daily);heading(section,lines[0],2);for(const line of lines.slice(1))paragraph(section,line);node.append(section);}
+    if(daily){const section=el('div',null,'daily-progress'),lines=dailyLines(daily,catalog?.researchScopeDailyReviewDate===daily.date);heading(section,lines[0],2);for(const line of lines.slice(1))paragraph(section,line);node.append(section);}
     container.classList.toggle('needs-attention',phase?.summary.status==='needs_attention' || session?.materialsStatus==='needs_attention' || session?.status==='paused');
     if(session){const section=el('div',null,'session-progress'),lines=sessionLines(session);heading(section,lines[0],2);paragraph(section,lines[1],'phase-counts');if(session.targetCount){const progress=el('progress');progress.max=session.targetCount;progress.value=session.processedCount;progress.setAttribute('aria-label','本次会话已核查论文进度，不代表材料收齐');section.append(progress);}const fold=el('details');fold.append(el('summary','查看会话预算、保存状态与结束原因'));for(const line of lines.slice(2))paragraph(fold,line);section.append(fold);node.append(section);}
     if(!phase)return;

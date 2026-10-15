@@ -18,6 +18,7 @@ class Settings:
     include_supplements: bool = True
     discovery_limit: int = 20
     discovery_query: str = '(aging OR ageing OR multiomics OR "single cell" OR bioinformatics) AND (software OR tool OR computational OR sequencing) AND (GitHub OR "source code" OR "code availability") AND FIRST_PDATE:[2020-01-01 TO 3000-01-01] AND HAS_FT:Y'
+    research_scope: str = "unrestricted"
     max_new_per_day: int = 5
     max_ai_calls: int = 5
     max_ai_attempts_per_paper: int = 3
@@ -77,7 +78,7 @@ def load_settings(root, overrides=None):
               "max_papers_per_run": (1, 20),
               "discovery_limit": (1, 100), "repair_limit": (0, 20), "candidate_checks": (0, 20),
               "bootstrap_batch_limit": (1, 50),
-              "session_max_batches": (1, 12), "session_max_ai_attempts": (0, 165),
+              "session_max_batches": (1, 36), "session_max_ai_attempts": (0, 165),
               "session_max_requests": (1, 1800), "session_max_seconds": (60, 3300),
               "max_images": (0, 5), "max_supplements": (0, 5), "max_file_bytes": (1024, 10000000)}
     for key, (low, high) in bounds.items():
@@ -89,6 +90,9 @@ def load_settings(root, overrides=None):
             raise ValueError(f"{key} 必须为布尔值")
     if not isinstance(settings.discovery_query, str) or not 1 <= len(settings.discovery_query.strip()) <= 20000:
         raise ValueError("discovery_query 必须是 1—20000 字的检索式")
+    from .scope import POLICIES
+    if not isinstance(settings.research_scope, str) or settings.research_scope not in POLICIES:
+        raise ValueError("research_scope 必须是已支持的研究领域策略")
     for key in ENV_FIELDS.values():
         value = getattr(settings, key)
         if not isinstance(value, str) or len(value) > 20000 or any(c in value for c in "\r\n\x00"):

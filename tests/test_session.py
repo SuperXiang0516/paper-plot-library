@@ -241,6 +241,25 @@ class SessionTests(unittest.TestCase):
                          ("paused", "batch_limit_reached", 2, 10))
         self.assertEqual(self.run_session()["processedCount"], 10)
 
+    def test_daily_extended_shared_setting_keeps_backfill_at_twelve_batches(self):
+        self.settings.session_max_batches = 36
+        self.ai_per_paper = 0
+        self.catalog([record(index) for index in range(1, 66)])
+        result = self.run_session()
+        self.assertEqual((result["endReason"], result["batchCount"], result["maxBatches"], result["processedCount"]),
+                         ("batch_limit_reached", 12, 12, 60))
+        self.assertEqual((result["requests"], result["aiAttempts"]), (60, 0))
+        self.assertEqual(self.state()["maxSeconds"], 2700)
+
+    def test_shared_batch_setting_above_thirty_six_fails_before_any_transport(self):
+        for value in (37, True):
+            with self.subTest(value=value):
+                self.settings.session_max_batches = value
+                with self.assertRaises(ValueError):
+                    self.run_session()
+                self.assertEqual(self.clients, [])
+                self.assertEqual(self.selected, [])
+
     def test_global_ai_ceiling_applies_across_fresh_batch_clients(self):
         self.settings.session_max_ai_attempts = 20
         result = self.run_session()

@@ -5,10 +5,11 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from paper_plot_library.cloud_update import run_daily_session
+from paper_plot_library.cloud_update import _count, run_daily_session
 from paper_plot_library.bootstrap import bootstrap_assessment, ensure_bootstrap
 from paper_plot_library.config import Settings
 from paper_plot_library.http import HttpClient
+from paper_plot_library.scope import assess_scope
 from paper_plot_library.storage import read_json, write_json
 from test_bootstrap import RASTER
 from test_bootstrap_pipeline import materials
@@ -70,6 +71,15 @@ class DailySessionTests(unittest.TestCase):
             return report
         return batch
 
+    def legacy_ledger(self):
+        self.run_fixture(self.runner([1], requests=1, ai=1, candidates=0))
+        ledger = read_json(self.root / "data" / "ledger.json")
+        ledger["dailyCollectionSession"].update(batchCount=12, requests=667, aiAttempts=1,
+            uncertainRequests=30, uncertainAiAttempts=2, elapsedSeconds=900,
+            status="paused", endReason="batch_limit_reached")
+        write_json(self.root / "data" / "ledger.json", ledger)
+        return ledger
+
     def test_failed_candidates_are_not_counted_but_later_batches_reach_five(self):
         callbacks = []
         result = self.run_fixture(self.runner([0, 2, 3]), batch_callback=lambda report, summary: callbacks.append(summary))
@@ -128,6 +138,136 @@ class DailySessionTests(unittest.TestCase):
         self.settings.session_max_ai_attempts = 6
         result = self.run_fixture(self.runner([0, 0]))
         self.assertEqual((result["endReason"], result["aiAttempts"], result["batchCount"]), ("ai_budget_exhausted", 6, 2))
+
+    def test_daily_thirty_six_batch_ceiling_allows_more_low_yield_candidates(self):
+        self.settings.session_max_batches = 36
+        result = self.run_fixture(self.runner([0] * 36, requests=1, ai=0))
+        self.assertEqual((result["endReason"], result["batchCount"], result["maxBatches"]),
+                         ("batch_limit_reached", 36, 36))
+        self.assertEqual((len(self.calls), result["requests"], result["aiAttempts"]), (36, 36, 0))
+        self.assertEqual((result["maxRequests"], result["maxAiAttempts"]), (1800, 165))
+        self.assertEqual(read_json(self.root / "data" / "ledger.json")["dailyCollectionSession"]["maxSeconds"], 2700)
+
+    def test_legacy_twelve_batch_session_resumes_without_resetting_any_spent_budget(self):
+        original = self.legacy_ledger()["dailyCollectionSession"]
+        self.settings.session_max_batches = 36
+        checkpoints = []
+        def checkpoint(summary):
+            saved = read_json(self.root / "data" / "ledger.json")["dailyCollectionSession"]
+            for field in ("requests", "aiAttempts", "uncertainRequests", "uncertainAiAttempts", "elapsedSeconds",
+                          "maxRequests", "maxAiAttempts", "maxSeconds", "dailyNewCount", "startedAt"):
+                self.assertEqual(saved[field], original[field], field)
+            self.assertEqual((saved["batchCount"], saved["maxBatches"]), (13, 36))
+            self.assertEqual(saved["inFlight"]["reservedRequests"], 150)
+            checkpoints.append(summary)
+        def no_fresh_work(root, settings, client, **kwargs):
+            self.assertEqual(client.session_deadline, self.time + 2700 - 900)
+            client.requests = client.post_attempts = 0
+            return {"requests": 0, "aiAttempts": 0, "checkedCount": 0, "repairCount": 0}
+        result = self.run_fixture(no_fresh_work, batch_start_callback=checkpoint)
+        self.assertEqual((len(checkpoints), result["batchCount"], result["endReason"]), (1, 13, "no_progress"))
+        self.assertEqual((result["requests"], result["aiAttempts"], result["uncertainRequests"],
+                          result["uncertainAiAttempts"], result["dailyNewCount"]), (667, 1, 30, 2, 1))
+
+    def test_batch_migration_does_not_raise_saved_network_paid_or_time_ceiling(self):
+        original = self.legacy_ledger()
+        self.settings.session_max_batches = 36
+        for changes, reason in (({"maxRequests": 697}, "http_budget_exhausted"),
+                                ({"maxAiAttempts": 3}, "ai_budget_exhausted"),
+                                ({"maxSeconds": 900}, "time_limit_reached")):
+            with self.subTest(changes=changes):
+                ledger = deepcopy(original)
+                ledger["dailyCollectionSession"].update(changes)
+                write_json(self.root / "data" / "ledger.json", ledger)
+                result = self.run_fixture(lambda *args, **kwargs: self.fail("exhausted budget cannot collect"),
+                    client_factory=lambda *args: self.fail("exhausted budget cannot create a client"))
+                self.assertEqual((result["batchCount"], result["maxBatches"], result["endReason"]), (12, 36, reason))
+                saved = read_json(self.root / "data" / "ledger.json")["dailyCollectionSession"]
+                for field in ("requests", "aiAttempts", "uncertainRequests", "uncertainAiAttempts", "elapsedSeconds",
+                              "maxRequests", "maxAiAttempts", "maxSeconds", "dailyNewCount"):
+                    self.assertEqual(saved[field], ledger["dailyCollectionSession"][field], field)
+
+    def test_lower_configured_or_custom_saved_batch_cap_is_not_migrated_upward(self):
+        original = self.legacy_ledger()
+        for configured, saved_limit, batches in ((6, 12, 12), (36, 6, 6), (36, 20, 20)):
+            with self.subTest(configured=configured, saved_limit=saved_limit):
+                self.settings.session_max_batches = configured
+                ledger = deepcopy(original)
+                ledger["dailyCollectionSession"].update(maxBatches=saved_limit, batchCount=batches)
+                write_json(self.root / "data" / "ledger.json", ledger)
+                result = self.run_fixture(lambda *args, **kwargs: self.fail("effective batch ceiling already spent"),
+                    client_factory=lambda *args: self.fail("no client after effective batch ceiling"))
+                self.assertEqual((result["batchCount"], result["maxBatches"], result["endReason"]),
+                                 (batches, saved_limit, "batch_limit_reached"))
+
+    def test_scope_change_recounts_qualified_admissions_without_refunding_any_cost(self):
+        original = self.legacy_ledger()["dailyCollectionSession"]
+        catalog = read_json(self.root / "data" / "catalog.json")
+        catalog["papers"][0]["paper"] = "Marine biodiversity sequencing atlas"
+        write_json(self.root / "data" / "catalog.json", catalog)
+        self.settings.research_scope = "aging-sequencing-metabolic"
+        self.settings.session_max_batches = 36
+        seen = []
+        def eligible_batch(root, settings, client, **kwargs):
+            saved = read_json(root / "data" / "ledger.json")["dailyCollectionSession"]
+            self.assertEqual(saved["dailyNewCount"], 0)
+            self.assertEqual((saved["requests"], saved["aiAttempts"]), (original["requests"], original["aiAttempts"]))
+            current = read_json(root / "data" / "catalog.json")
+            ledger = read_json(root / "data" / "ledger.json")
+            for index in range(1, 6):
+                paper = record(2000 + index)
+                paper.update(paper="Long-read sequencing of human aging", admittedAt=NOW)
+                paper["researchScope"] = assess_scope(paper, source="verified-metadata")
+                current["papers"].append(paper)
+                ledger["days"][NOW[:10]]["newDOIs"].append(paper["doi"])
+            write_json(root / "data" / "catalog.json", current)
+            write_json(root / "data" / "ledger.json", ledger)
+            client.requests = client.post_attempts = 5
+            seen.append(True)
+            return {"requests": 5, "aiAttempts": 5, "checkedCount": 5, "repairCount": 0}
+        result = self.run_fixture(eligible_batch)
+        self.assertEqual((result["endReason"], result["dailyNewCount"], result["batchCount"], len(seen)),
+                         ("target_reached", 5, 13, 1))
+        self.assertEqual((result["requests"], result["aiAttempts"], result["uncertainRequests"],
+                          result["uncertainAiAttempts"]), (672, 6, 30, 2))
+        ledger = read_json(self.root / "data" / "ledger.json")
+        self.assertEqual(len(ledger["days"][NOW[:10]]["newDOIs"]), 6, "raw admission history is not deleted")
+        repeated = self.run_fixture(lambda *args, **kwargs: self.fail("five qualified admissions already durable"))
+        self.assertEqual((repeated["requests"], repeated["dailyNewCount"], repeated["batchCount"]), (672, 5, 13))
+
+    def test_scoped_count_uses_only_current_qualified_papers_not_raw_history_size(self):
+        papers = [dict(record(1), paper="Human aging long-read sequencing", admittedAt=NOW)]
+        papers[0]["researchScope"] = assess_scope(papers[0], source="verified-metadata")
+        history = [record(index)["doi"] for index in range(1, 8)]
+        catalog = {"papers": papers}
+        ledger = {"days": {NOW[:10]: {"newDOIs": history}}}
+        self.assertEqual(_count(catalog, ledger, NOW[:10], "aging-sequencing-metabolic"), 1)
+        with self.assertRaises(ValueError):
+            _count(catalog, ledger, NOW[:10])
+
+    def test_five_title_only_legacy_admissions_cannot_skip_verified_scope_work(self):
+        self.run_fixture(self.runner([5], requests=5, ai=5))
+        current = read_json(self.root / "data" / "catalog.json")
+        for paper in current["papers"]:
+            paper["paper"] = "Human aging long-read sequencing"
+        write_json(self.root / "data" / "catalog.json", current)
+        self.settings.research_scope = "aging-sequencing-metabolic"
+        checked = []
+        def canonical_exclusion(root, settings, client, **kwargs):
+            state = read_json(root / "data" / "ledger.json")["dailyCollectionSession"]
+            self.assertEqual((state["dailyNewCount"], state["requests"], state["aiAttempts"]), (0, 5, 5))
+            catalog = read_json(root / "data" / "catalog.json")
+            for paper in catalog["papers"]:
+                paper["paper"] = "Marine biodiversity sequencing atlas"
+                paper["researchScope"] = assess_scope(paper, source="verified-metadata")
+            write_json(root / "data" / "catalog.json", catalog)
+            checked.append(True)
+            client.requests, client.post_attempts = 1, 0
+            return {"requests": 1, "aiAttempts": 0, "checkedCount": 0, "repairCount": 0}
+        result = self.run_fixture(canonical_exclusion)
+        self.assertEqual((len(checked), result["endReason"], result["dailyNewCount"], result["batchCount"]),
+                         (1, "no_progress", 0, 2))
+        self.assertEqual((result["requests"], result["aiAttempts"]), (6, 5))
 
     def test_soft_deadline_stops_between_batches_and_is_passed_to_transport(self):
         base = self.runner([0])
@@ -206,11 +346,15 @@ class DailySessionTests(unittest.TestCase):
 
     def test_malformed_or_future_saved_budget_fails_closed(self):
         self.run_fixture(self.runner([0], candidates=0))
+        self.settings.session_max_batches = 36
         original = read_json(self.root / "data" / "ledger.json")
         for mutate in (lambda state: state.update(requests=True), lambda state: state.update(date="2026-10-12", startedAt="2026-10-12T12:00:00Z"),
                        lambda state: state.update(response="DO_NOT_LEAK"), lambda state: state.update(requests=1801),
                        lambda state: state.update(uncertainRequests=0, uncertainAiAttempts=1),
                        lambda state: state.update(status="finished", endReason="no_progress"),
+                       lambda state: state.update(maxBatches=37),
+                       lambda state: state.update(maxBatches=True),
+                       lambda state: state.update(maxBatches=36, batchCount=37),
                        lambda state: state.update(batchCount=state["maxBatches"] + 1)):
             from copy import deepcopy
             ledger = deepcopy(original)

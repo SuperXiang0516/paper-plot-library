@@ -15,6 +15,8 @@ import shutil
 import tempfile
 from urllib.parse import parse_qsl, urlsplit
 
+from .scope import POLICIES, SCOPE_LABEL, assess_scope, eligible_daily_dois
+
 
 _PRIVATE_KEY = re.compile(r"(?:api[_-]?key|secret|token|authorization|password|credential|cookie|raw_response|raw_code|content|payload|prompt|headers|settings)", re.I)
 _URL_FIELDS = {"url", "paperURL", "figureURL", "codeURL", "scriptURL", "dataURL", "xmlURL", "sourceURL"}
@@ -58,7 +60,7 @@ _SAFE_REASONS = {
 _REPORT_COUNTERS = {"reservedAiRequests", "collectionRequests", "maxRequests", "maxAiCalls", "aiRepairCount",
                     "untouchedRepairCount", "retryRepairCount", "cooldownSkippedCount", "untouchedRemainingCount",
                     "automaticCompleteCount", "incompleteCount", "paperBatchLimit", "maxAiAttemptsPerPaper",
-                    "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount", "rejectedCandidateCount", "removedCount"}
+                    "aiCasesAttempted", "aiRetriedCaseCount", "aiRetrySuccessCount", "rejectedCandidateCount", "removedCount", "scopeRejectedCount", "scopeMetadataCheckedCount"}
 _AI_STOP_STATUSES = {"authentication_error", "payment_required", "permission_denied", "invalid_request",
                      "endpoint_not_found", "missing_key", "missing_model", "missing_endpoint", "invalid_endpoint"}
 _AI_COUNTERS = {"ai_attempts", "max_ai_attempts", "retry_success_count"}
@@ -218,6 +220,9 @@ def public_catalog(catalog: dict) -> dict:
         raise ValueError("This catalogue must explicitly declare authorCodeExecuted=false.")
     if len(catalog["papers"]) > 10000:
         raise ValueError("Catalogue exceeds this version's safety limit.")
+    policy = catalog.get("researchScopePolicy", "unrestricted")
+    if not isinstance(policy, str) or policy not in POLICIES:
+        raise ValueError("Unknown research scope policy.")
     records, ids = [], set()
     for paper in catalog["papers"]:
         if not isinstance(paper, dict) or not isinstance(paper.get("id"), str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._:-]{0,159}", paper["id"]):
@@ -246,6 +251,10 @@ def public_catalog(catalog: dict) -> dict:
             if isinstance(evidence, dict):
                 evidence.pop("text", None)
         record["runPerformed"] = False
+        if policy != "unrestricted":
+            # Evaluate before abstract redaction; never trust AI/topic tags or
+            # a free-form public 'included' flag supplied by the input record.
+            record["researchScope"] = assess_scope(paper, policy)
         records.append(record)
     result = {
         "schemaVersion": 4, "papers": records,
@@ -256,6 +265,9 @@ def public_catalog(catalog: dict) -> dict:
         "authorCodeExecuted": False, "method": "static-source-review",
         "synthetic": catalog.get("synthetic") is True,
     }
+    if policy != "unrestricted":
+        result["researchScopePolicy"] = policy
+        result["researchScopeLabel"] = SCOPE_LABEL
     bootstrap = _public_bootstrap(catalog.get("bootstrap"))
     if bootstrap is not None:
         result["bootstrap"] = bootstrap
@@ -266,6 +278,13 @@ def public_catalog(catalog: dict) -> dict:
     daily = public_daily_summary(catalog.get("dailySession"))
     if daily is not None:
         result["dailySession"] = daily
+        if policy != "unrestricted":
+            # A deploy-only policy change must not advertise yesterday's
+            # off-topic admissions as qualified successes. This is only a
+            # display warning: never rewrite the durable quota or usage.
+            countable = {"papers": [paper for paper in catalog["papers"] if isinstance(paper.get("doi"), str)]}
+            if daily["dailyNewCount"] > len(eligible_daily_dois(countable, [], daily["date"], policy)):
+                result["researchScopeDailyReviewDate"] = daily["date"]
     return result
 
 
@@ -442,6 +461,9 @@ def _publish_assets(root: Path, output: Path, catalogue: dict) -> list[str]:
         published.add(asset)
 
     for paper in catalogue["papers"]:
+        if (catalogue.get("researchScopePolicy", "unrestricted") != "unrestricted"
+                and paper.get("researchScope", {}).get("status") != "included"):
+            continue
         selected = _select_body_figure(root, paper)
         if selected is None:
             continue  # Internal queue entries never become public placeholder cards.
@@ -676,7 +698,16 @@ def build_site(root: Path | str, catalog: dict, reports: list | dict) -> Path:
     """Generate ``site/``. Persistent ``data/`` and the aging site stay untouched."""
     root = Path(root).absolute()
     output = root / "site"
-    public = public_catalog(catalog)
+    # A deploy-only rebuild also enforces the new project policy on legacy
+    # records; it must not wait for another (possibly paid) collection run.
+    configured = {}
+    config_path = root / "config.json"
+    if config_path.exists():
+        configured = json.loads(config_path.read_text(encoding="utf-8"))
+        if not isinstance(configured, dict):
+            raise ValueError("Invalid project config.")
+    policy = configured.get("research_scope", catalog.get("researchScopePolicy", "unrestricted"))
+    public = public_catalog(dict(catalog, researchScopePolicy=policy))
     json.dumps(public, allow_nan=False)  # Fail before changing output if values are not valid JSON.
     _directory(output)
     _directory(output / "data")

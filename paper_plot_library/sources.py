@@ -7,6 +7,8 @@ import re
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 
+from .scope import POLICIES, assess_scope, matches_scope, query_constraint, scope_priority
+
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 NCBI = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 DEFAULT_QUERY = ('(genomics OR "single cell" OR "multi-omics" OR bioinformatics) '
@@ -86,6 +88,70 @@ def _published_not_future(record, today=None):
     return earliest <= today
 
 
+def _research_policy(settings):
+    policy = getattr(settings, "research_scope", "unrestricted")
+    if policy not in POLICIES:
+        raise ValueError("未知研究领域策略")
+    return policy
+
+
+def lookup_scope_metadata(client, papers):
+    """Resolve at most 50 existing DOIs in one bounded metadata-only request.
+
+    Missing or conflicting matches are not guessed, and no per-paper fallback
+    can turn a scope migration into article downloads or an unbounded scan.
+    """
+    requested = []
+    for paper in papers:
+        if not isinstance(paper, dict):
+            continue
+        doi = normalize_doi(paper.get("doi"))
+        # DOI normalization is not query escaping. Reject quote/backslash
+        # syntax rather than letting a suffix alter this fixed DOI-only query.
+        if (not doi or len(doi) > 512 or any(char in doi for char in ('"', "\\"))
+                or any(ord(char) < 32 or ord(char) == 127 for char in doi)):
+            continue
+        if doi not in requested:
+            requested.append(doi)
+        if len(requested) == 50:
+            break
+    if not requested:
+        return {}
+    response = client.get_json(EPMC, params={"query": " OR ".join('DOI:"' + doi + '"' for doi in requested),
+        "format": "json", "resultType": "core", "pageSize": 50}, max_bytes=4000000)
+    if not isinstance(response, dict):
+        return {}
+    result_list = response.get("resultList")
+    rows = result_list.get("result") if isinstance(result_list, dict) else None
+    if not isinstance(rows, list):
+        return {}
+    today, resolved, conflicts = _utc_today(), {}, set()
+    for row in rows[:50]:
+        if not isinstance(row, dict):
+            continue
+        doi = normalize_doi(row.get("doi"))
+        if doi not in requested or doi in conflicts:
+            continue
+        try:
+            record = _paper(row)
+            if not _usable(record) or not _published_not_future(record, today):
+                continue
+        except (ValueError, TypeError, AttributeError):
+            continue
+        previous = resolved.get(doi)
+        if previous is not None:
+            identity = lambda value: (" ".join(value["paper"].split()).casefold(), value["abstract"])
+            if identity(previous) != identity(record):
+                resolved.pop(doi)
+                conflicts.add(doi)
+                continue
+            if previous.get("pmcid") or not record.get("pmcid"):
+                continue
+        record["status"] = "matched"
+        resolved[doi] = record
+    return resolved
+
+
 def lookup_paper(client, doi):
     """Exact DOI match, Europe PMC first and formal Crossref metadata fallback."""
     doi = normalize_doi(doi)
@@ -127,9 +193,15 @@ def lookup_paper(client, doi):
 
 def _ncbi_discover(client, settings, limit, exclude_dois=frozenset()):
     """NCBI fallback; bounded PubMed metadata, not article/PDF scraping."""
-    term = getattr(settings, "ncbi_query", None) or (
-        '(genomics OR "single cell" OR "multi omics" OR bioinformatics) '
-        'AND (github OR "source code") NOT review[Publication Type]')
+    policy = _research_policy(settings)
+    default_term = ('(genomics OR "single cell" OR "multi omics" OR bioinformatics) '
+                    'AND (github OR "source code") NOT review[Publication Type]')
+    if policy != "unrestricted":
+        default_term = '(github OR "source code" OR "code availability") NOT review[Publication Type]'
+    term = getattr(settings, "ncbi_query", None) or default_term
+    if policy != "unrestricted":
+        # A custom/fallback query may narrow the field, never remove its gate.
+        term = "(" + term + ") AND (" + query_constraint("ncbi") + ")"
     today = _utc_today()
     term = "(" + term + ') AND ("1900/01/01"[Date - Publication] : "' + today.strftime("%Y/%m/%d") + '"[Date - Publication])'
     params = {"db": "pubmed", "term": term, "retmode": "json", "retmax": limit, "sort": "pub date", "tool": "paper_plot_library"}
@@ -163,9 +235,11 @@ def _ncbi_discover(client, settings, limit, exclude_dois=frozenset()):
                   "isPreprint": any("preprint" in t.lower() for t in types),
                   "isRetracted": any("retract" in t.lower() for t in types)}
         record["codeURLs"] = sorted(set(re.findall(r"https://github\.com/[\w.-]+/[\w.-]+", record["abstract"])))
-        if _usable(record) and _published_not_future(record, today):
+        if (_usable(record) and _published_not_future(record, today)
+                and matches_scope(record, policy)):
             result.append(record)
-    return [record for record in result if record["doi"] not in exclude_dois]
+    result = [record for record in result if record["doi"] not in exclude_dois]
+    return sorted(result, key=lambda record: scope_priority(record, policy), reverse=True)
 
 
 def discover(client, settings, exclude_dois=None):
@@ -175,6 +249,7 @@ def discover(client, settings, exclude_dois=None):
     provider-supplied URL: only the opaque cursor is sent to the fixed endpoint.
     At most five metadata pages are inspected per batch, within HTTP budgets.
     """
+    policy = _research_policy(settings)
     limit = min(100, max(1, int(getattr(settings, "discovery_limit", 30))))
     excluded = frozenset(normalize_doi(value) for value in (exclude_dois or ()))
     query = getattr(settings, "discovery_query", None) or DEFAULT_QUERY
@@ -185,31 +260,42 @@ def discover(client, settings, exclude_dois=None):
     # records or reviews can occupy the newest-first page before local filtering.
     query = ("(" + query + ') AND HAS_DOI:Y AND SRC:MED AND NOT PUB_TYPE:"Review"'
              " AND FIRST_PDATE:[1900-01-01 TO " + today.isoformat() + "]")
-    unique, cursors, cursor = {}, set(), "*"
+    unique = {}
+    # Scope is a mandatory AND constraint even when the query is customized.
+    # Reserve the first three metadata pages for aging, then at most two for
+    # metabolic expansion. Known/cooling and off-topic rows never take slots.
+    lanes = [(None, 5)] if policy == "unrestricted" else [("primary", 3), ("expansion", 2)]
     try:
-        for _ in range(5):
-            cursors.add(cursor)
-            response = client.get_json(EPMC, params={"query": query, "format": "json", "resultType": "core",
-                "pageSize": limit, "sort": "FIRST_PDATE_D desc", "cursorMark": cursor}, ttl=3600)
-            rows = response.get("resultList", {}).get("result", [])
-            if not isinstance(rows, list):
-                raise ValueError("Invalid metadata page")
-            for row in rows[:limit]:
-                if not isinstance(row, dict):
-                    continue
-                record = _paper(row)
-                if (record["doi"] not in excluded and _usable(record)
-                        and _published_not_future(record, today)):
-                    unique.setdefault(record["doi"], record)
+        for tier, page_limit in lanes:
+            lane_query = query if tier is None else "(" + query + ") AND (" + query_constraint("epmc", tier) + ")"
+            cursors, cursor = set(), "*"
+            for _ in range(page_limit):
+                cursors.add(cursor)
+                response = client.get_json(EPMC, params={"query": lane_query, "format": "json", "resultType": "core",
+                    "pageSize": limit, "sort": "FIRST_PDATE_D desc", "cursorMark": cursor}, ttl=3600)
+                rows = response.get("resultList", {}).get("result", [])
+                if not isinstance(rows, list):
+                    raise ValueError("Invalid metadata page")
+                for row in rows[:limit]:
+                    if not isinstance(row, dict):
+                        continue
+                    record = _paper(row)
+                    assessment = assess_scope(record, policy)
+                    if (record["doi"] not in excluded and _usable(record)
+                            and _published_not_future(record, today) and assessment["status"] == "included"
+                            and (tier != "primary" or assessment["tier"] == "primary")):
+                        unique.setdefault(record["doi"], record)
+                if len(unique) >= limit:
+                    break
+                following = response.get("nextCursorMark")
+                if (not rows or not isinstance(following, str) or not 1 <= len(following) <= 8192
+                        or any(ord(char) < 32 or ord(char) > 126 for char in following) or following in cursors):
+                    break
+                cursor = following
             if len(unique) >= limit:
                 break
-            following = response.get("nextCursorMark")
-            if (not rows or not isinstance(following, str) or not 1 <= len(following) <= 8192
-                    or any(ord(char) < 32 or ord(char) > 126 for char in following) or following in cursors):
-                break
-            cursor = following
-        return list(unique.values())[:limit]
+        return sorted(unique.values(), key=lambda record: scope_priority(record, policy), reverse=True)[:limit]
     except Exception:
         if unique:
-            return list(unique.values())[:limit]
+            return sorted(unique.values(), key=lambda record: scope_priority(record, policy), reverse=True)[:limit]
         return _ncbi_discover(client, settings, limit, excluded)

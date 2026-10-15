@@ -83,7 +83,7 @@ class ConfigTests(unittest.TestCase):
                 load_settings(self.root)
 
     def test_session_budgets_cannot_be_unbounded_or_wrong_types(self):
-        bounds = {"session_max_batches": (1, 12), "session_max_ai_attempts": (0, 165),
+        bounds = {"session_max_batches": (1, 36), "session_max_ai_attempts": (0, 165),
                   "session_max_requests": (1, 1800), "session_max_seconds": (60, 3300)}
         for name, (low, high) in bounds.items():
             for value in (low, high):
@@ -128,6 +128,15 @@ class ConfigTests(unittest.TestCase):
         for value in (None, 123, [], "", "x" * 20001):
             self.write_config({"discovery_query": value})
             with self.subTest(value=type(value).__name__), self.assertRaises(ValueError):
+                load_settings(self.root)
+
+    def test_research_scope_is_an_explicit_closed_policy(self):
+        for value in ("unrestricted", "aging-sequencing-metabolic"):
+            self.write_config({"research_scope": value})
+            self.assertEqual(load_settings(self.root).research_scope, value)
+        for value in (None, True, [], "anything", ""):
+            self.write_config({"research_scope": value})
+            with self.subTest(value=value), self.assertRaises(ValueError):
                 load_settings(self.root)
 
     def test_setting_repr_does_not_dump_secrets(self):

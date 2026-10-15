@@ -1,12 +1,16 @@
 """Controlled daily success counters are distinct from five candidate attempts."""
+from copy import deepcopy
 import json
 from pathlib import Path
 import shutil
 import subprocess
+import tempfile
 import unittest
 
 from paper_plot_library.cloud_update import DAILY_SESSION_COUNTERS, DAILY_SESSION_REASONS
-from paper_plot_library.site import public_catalog
+from paper_plot_library.scope import POLICY, assess_scope
+from paper_plot_library.site import build_site, public_catalog
+from paper_plot_library.storage import read_json, write_json
 
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -30,6 +34,117 @@ class DailyUiTests(unittest.TestCase):
             with self.subTest(key=key, value=value):
                 catalog["dailySession"] = dict(daily(), **{key: value})
                 self.assertNotIn("dailySession", public_catalog(catalog))
+
+    def test_scoped_public_daily_warning_is_derived_and_never_rewrites_usage(self):
+        summary = dict(daily(), dailyNewCount=1)
+        paper = {"id": "fixture-1", "doi": "10.1234/fixture-1", "paper": "Marine biodiversity sequencing",
+                 "admittedAt": "2026-10-11T12:00:00Z"}
+        catalog = {"authorCodeExecuted": False, "papers": [paper], "inputSpecs": {},
+                   "dailySession": summary, "researchScopePolicy": POLICY}
+        original = deepcopy(catalog)
+        public = public_catalog(catalog)
+        self.assertEqual(public["researchScopeDailyReviewDate"], summary["date"])
+        self.assertEqual(public["dailySession"], summary)
+        self.assertEqual(catalog, original)
+
+        paper["paper"] = "Human aging long-read sequencing"
+        self.assertEqual(public_catalog(catalog)["researchScopeDailyReviewDate"], summary["date"],
+                         "a legacy title alone is not a verified scope decision")
+        paper["researchScope"] = assess_scope(paper, source="verified-metadata")
+        self.assertNotIn("researchScopeDailyReviewDate", public_catalog(catalog))
+        paper.pop("admittedAt")
+        self.assertIn("researchScopeDailyReviewDate", public_catalog(catalog),
+                      "without a private ledger or admission date the display must be conservative")
+
+        for replacement in (dict(summary, dailyNewCount=0), dict(summary, dailyNewCount=6)):
+            catalog["dailySession"] = replacement
+            self.assertNotIn("researchScopeDailyReviewDate", public_catalog(catalog))
+        catalog.update(dailySession=summary, researchScopePolicy="unrestricted",
+                       researchScopeDailyReviewDate="private-untrusted")
+        self.assertNotIn("researchScopeDailyReviewDate", public_catalog(catalog))
+        catalog["researchScopePolicy"] = POLICY
+        catalog["papers"] = [{"id": "fixture-without-doi"}]
+        self.assertEqual(public_catalog(catalog)["researchScopeDailyReviewDate"], summary["date"])
+
+    def test_deploy_only_scope_warning_does_not_mutate_catalog_or_ledger(self):
+        summary = dict(daily(), dailyNewCount=1)
+        catalog = {"authorCodeExecuted": False, "papers": [], "inputSpecs": {}, "dailySession": summary}
+        ledger = {"dailyCollectionSession": {"requests": 667, "aiAttempts": 1, "batchCount": 12}}
+        original = deepcopy(catalog)
+        with tempfile.TemporaryDirectory(prefix="ppl-scope-display-") as directory:
+            root = Path(directory)
+            shutil.copytree(PROJECT / "web", root / "web")
+            write_json(root / "config.json", {"research_scope": POLICY})
+            write_json(root / "data" / "catalog.json", catalog)
+            write_json(root / "data" / "ledger.json", ledger)
+            output = build_site(root, catalog, [])
+            public = read_json(output / "data" / "catalog.json")
+            self.assertEqual(public["researchScopeDailyReviewDate"], summary["date"])
+            self.assertEqual(public["dailySession"], summary)
+            self.assertEqual(read_json(root / "data" / "catalog.json"), original)
+            self.assertEqual(read_json(root / "data" / "ledger.json"), ledger)
+            self.assertEqual(catalog, original)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable")
+    def test_scope_review_warning_hides_old_success_count_but_preserves_safe_budgets(self):
+        script = r'''
+const assert=require('assert'),ui=require(process.argv[1]),summary=JSON.parse(process.argv[2]);
+const now=new Date('2026-10-11T12:01:00Z'),data={dailySession:summary,researchScopeDailyReviewDate:'2026-10-11'};
+let result=ui.dailyOverview(data,[],now);
+assert.equal(result.state,'unverified');assert.equal(result.count,null);assert.equal(result.scopeReviewRequired,true);
+assert(result.status.includes('研究领域') && result.reason.includes('复核'));
+assert.deepEqual(result.summary,summary);assert.equal(result.target,5);
+const lines=ui.dailyLines(result.summary,result.scopeReviewRequired);
+assert(lines[0].includes('历史新增计数待复核') && !lines[0].includes('成功收录 2 / 5'));
+assert(lines[1].includes('历史保存的停止原因') && lines[1].includes('不是新研究领域的达标结论'));
+assert.equal(lines[2],ui.dailyLines(summary)[2]);assert(lines[2].includes('290 / 1800') && lines[2].includes('9 / 165'));
+const reached={...summary,status:'finished',endReason:'target_reached',dailyNewCount:5};
+result=ui.dailyOverview({...data,dailySession:reached},[],now);
+assert.equal(result.state,'unverified');assert.equal(result.count,null);
+// Old/future/malformed warning dates do not change another day's valid summary.
+for(const flag of ['2026-10-10','2026-10-12','2026-02-31',['2026-10-11'],true]){
+ result=ui.dailyOverview({...data,researchScopeDailyReviewDate:flag},[],now);
+ assert.equal(result.count,2);assert.equal(result.state,'shortfall');
+}
+result=ui.dailyOverview(data,[],new Date('2026-10-12T00:00:00Z'));
+assert.equal(result.state,'not_run');assert.equal(result.count,0);
+// A future catalogue checkpoint must not import its warning into the current snapshot.
+const future={...reached,updatedAt:'2026-10-11T23:59:59Z'};
+result=ui.dailyOverview({...data,dailySession:future},[],now);
+assert.equal(result.state,'not_run');assert.equal(result.count,0);
+result=ui.dailyOverview({...data,dailySession:future},[{mode:'daily',finishedAt:'2026-10-11T12:00:00Z',dailySession:summary}],now);
+assert.equal(result.count,2);assert.equal(result.state,'shortfall');
+// Same-day report successes cannot make a flagged catalogue falsely green.
+result=ui.dailyOverview(data,[{mode:'daily',finishedAt:'2026-10-11T12:00:59Z',dailySession:reached}],now);
+assert.equal(result.state,'unverified');assert.equal(result.count,null);assert.equal(result.summary.dailyNewCount,5);
+// A raw flag without a validated catalogue summary is never treated as a new checkpoint.
+result=ui.dailyOverview({researchScopeDailyReviewDate:'2026-10-11'},[],now);
+assert.equal(result.state,'not_run');assert.equal(result.count,0);assert.equal(result.summary,null);
+'''
+        subprocess.run([NODE, "-e", script, str(PROJECT / "web" / "app.js"), json.dumps(daily())],
+                       check=True, capture_output=True)
+        script_text = (PROJECT / "web" / "app.js").read_text()
+        self.assertIn("dailyLines(overview.summary,overview.scopeReviewRequired).slice(1)", script_text)
+        self.assertIn("dailyLines(daily,catalog?.researchScopeDailyReviewDate===daily.date)", script_text)
+
+    @unittest.skipUnless(Path(NODE).exists(), "Node unavailable")
+    def test_daily_extended_batch_bounds_match_python_without_expanding_cost_bounds(self):
+        cases = [dict(daily(), **fields) for fields in (
+            {"batchCount": 13, "maxBatches": 36},
+            {"batchCount": 36, "maxBatches": 36},
+            {"batchCount": 37, "maxBatches": 36},
+            {"batchCount": 13, "maxBatches": 12},
+            {"maxBatches": 37}, {"maxBatches": True},
+            {"maxBatches": 36, "maxRequests": 1801},
+            {"maxBatches": 36, "maxAiAttempts": 166},
+        )]
+        expected = [public_catalog({"authorCodeExecuted": False, "papers": [], "inputSpecs": {},
+                                   "dailySession": case}).get("dailySession") for case in cases]
+        self.assertEqual(expected[:2], cases[:2])
+        self.assertEqual(expected[2:], [None] * 6)
+        script = "const assert=require('assert'),ui=require(process.argv[1]);assert.deepEqual(JSON.parse(process.argv[2]).map(ui.dailySummary),JSON.parse(process.argv[3]));"
+        subprocess.run([NODE, "-e", script, str(PROJECT / "web" / "app.js"), json.dumps(cases), json.dumps(expected)],
+                       check=True, capture_output=True)
 
     @unittest.skipUnless(Path(NODE).exists(), "Node unavailable")
     def test_timestamp_validation_matches_public_python_projection(self):

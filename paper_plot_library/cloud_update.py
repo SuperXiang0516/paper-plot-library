@@ -18,6 +18,7 @@ import time
 from .bootstrap import _timestamp
 from .config import load_settings
 from .http import HttpClient
+from .scope import eligible_daily_dois
 from .session import _limits
 from .storage import project_lock, read_json, write_json
 
@@ -30,9 +31,9 @@ _STATUS = DAILY_SESSION_STATUSES
 _REASONS = DAILY_SESSION_REASONS
 _FATAL = {"missing_key", "missing_model", "missing_endpoint", "invalid_endpoint", "authentication_error",
           "payment_required", "permission_denied", "invalid_request", "endpoint_not_found"}
-_COUNTERS = {"batchCount": (0, 12), "requests": (0, 1800), "aiAttempts": (0, 165),
+_COUNTERS = {"batchCount": (0, 36), "requests": (0, 1800), "aiAttempts": (0, 165),
              "uncertainRequests": (0, 1800), "uncertainAiAttempts": (0, 165), "elapsedSeconds": (0, 3300),
-             "maxBatches": (1, 12), "maxRequests": (1, 1800), "maxAiAttempts": (0, 165),
+             "maxBatches": (1, 36), "maxRequests": (1, 1800), "maxAiAttempts": (0, 165),
              "maxSeconds": (60, 3300), "dailyNewCount": (0, 5)}
 _PUBLIC_BOUNDS = {key: bounds for key, bounds in _COUNTERS.items()
                   if key not in {"elapsedSeconds", "maxSeconds"}}
@@ -138,13 +139,18 @@ def _read(root, moment):
     return catalog, ledger
 
 
-def _count(catalog, ledger, day):
-    counted = set(ledger.get("days", {}).get(day, {}).get("newDOIs", []))
-    counted.update(paper["doi"] for paper in catalog["papers"]
-                   if isinstance(paper.get("admittedAt"), str) and paper["admittedAt"].startswith(day))
+def _count(catalog, ledger, day, policy="unrestricted"):
+    counted = eligible_daily_dois(catalog, ledger.get("days", {}).get(day, {}).get("newDOIs", []), day, policy)
     if len(counted) > 5:
         raise ValueError("日更新增记录超过五篇安全上限；不能继续准入")
     return len(counted)
+
+
+def _refresh_count(state, catalog, ledger, day, policy):
+    counted = _count(catalog, ledger, day, policy)
+    # A newly enabled research policy cannot let an old off-topic admission
+    # occupy a qualified slot. This changes no spent or reserved allowance.
+    state["dailyNewCount"] = max(state["dailyNewCount"], counted) if policy == "unrestricted" else counted
 
 
 def _summary(state, target):
@@ -205,7 +211,7 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
     """Collect until the true daily quota, a persisted ceiling, or no new candidate work."""
     root = Path(root)
     settings = settings or load_settings(root)
-    limits = _limits(settings)
+    limits = _limits(settings, daily=True)
     target = settings.max_new_per_day
     if type(target) is not int or not 0 <= target <= 5:
         raise ValueError("日更目标必须为零至五篇")
@@ -233,10 +239,16 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
                     "uncertainRequests": 0, "uncertainAiAttempts": 0, "elapsedSeconds": 0,
                     "maxBatches": limits["session_max_batches"], "maxRequests": limits["session_max_requests"],
                     "maxAiAttempts": limits["session_max_ai_attempts"], "maxSeconds": limits["session_max_seconds"],
-                    "dailyNewCount": _count(catalog, ledger, day)}
+                    "dailyNewCount": _count(catalog, ledger, day, settings.research_scope)}
             else:
                 _recover(state)
-                state["dailyNewCount"] = max(state["dailyNewCount"], _count(catalog, ledger, day))
+                _refresh_count(state, catalog, ledger, day, settings.research_scope)
+                # Upgrade only the known legacy batch ceiling after the full
+                # saved state has passed validation. Paid/network/time limits,
+                # confirmed and unknown use, and admissions remain untouched.
+                # Any lower configured ceiling still binds via min() below.
+                if state["maxBatches"] == 12 and limits["session_max_batches"] > 12:
+                    state["maxBatches"] = limits["session_max_batches"]
         elapsed_before = state["elapsedSeconds"]
         state.update(status="active", endReason="")
         state = _save(root, state, moment, target)
@@ -256,7 +268,7 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
                 return stop("day_changed")
             with project_lock(root):
                 catalog, ledger = _read(root, moment)
-                state["dailyNewCount"] = max(state["dailyNewCount"], _count(catalog, ledger, day))
+                _refresh_count(state, catalog, ledger, day, settings.research_scope)
             if state["dailyNewCount"] >= target:
                 return stop("target_reached", finished=True)
             if state["batchCount"] >= min(state["maxBatches"], limits["session_max_batches"]):
@@ -322,7 +334,7 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
             state["aiAttempts"] += report["aiAttempts"]
             with project_lock(root):
                 catalog, ledger = _read(root, now())
-                state["dailyNewCount"] = max(state["dailyNewCount"], _count(catalog, ledger, day))
+                _refresh_count(state, catalog, ledger, day, settings.research_scope)
             state["elapsedSeconds"] = min(3300, elapsed_before + math.ceil(max(0, clock() - started)))
             state = _save(root, state, now(), target)
             summary = _summary(state, target)

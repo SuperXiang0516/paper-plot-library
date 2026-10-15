@@ -18,8 +18,9 @@ from .figures import inspect_article
 from .http import BudgetExceeded, HttpClient
 from .repository import inspect_repository
 from .site import build_site, has_publishable_body_figure, _safe_reason, _safe_http_status
-from .sources import discover, lookup_paper, normalize_doi, paper_id
+from .sources import discover, lookup_paper, lookup_scope_metadata, normalize_doi, paper_id
 from .storage import project_lock, read_json, write_json
+from .scope import POLICIES, assess_scope, eligible_daily_dois, has_verified_scope, matches_scope, scope_priority
 
 
 def stamp():
@@ -297,7 +298,8 @@ def editorial_score(record, counts=None):
     """Preference ranking, never a claim of scientific validity or paper quality."""
     counts = counts or Counter()
     text = " ".join(str(record.get(k, "")) for k in ("paper", "abstract", "topic", "description")).lower()
-    topic = 12 * bool(re.search(r"aging|ageing|senescen|longevity|衰老", text))
+    scope = assess_scope(record)
+    topic = 12 * ("aging" in scope["topicMatches"])
     methods = 15 * bool(re.search(r"multi.?omic|single.?cell|spatial|computational|bioinformatic|software|tool|多组学", text))
     panels = max((len(set(re.findall(r"(?:^|[\s(,;])([a-h])(?:[),.;]|\s)", f.get("caption", "").lower())))
                   for f in record.get("article", {}).get("figures", [])), default=0)
@@ -526,6 +528,23 @@ def inspect_record(client, record, root, settings, adapters=None, generate_ai=Tr
             record["automation"]["bootstrap"] = bootstrap_state
         _retain_unchecked_summary(record)
         return record
+    if settings.research_scope != "unrestricted":
+        # The discovery payload, curated tags and previous AI prose are not
+        # sufficient evidence. Re-evaluate the exact DOI's current metadata.
+        if metadata.get("paper"):
+            record["paper"] = metadata["paper"]
+        record["abstract"] = metadata.get("abstract") or ""
+        record["researchScope"] = assess_scope(record, settings.research_scope,
+            allow_saved=False, source="verified-metadata")
+        if not matches_scope(record, settings.research_scope):
+            stages["researchScope"] = "excluded"
+            record["automation"] = {"status": "excluded", "stages": stages,
+                "errors": ["当前正式文献元数据不符合测序/组学与衰老/代谢主题要求"], "lastCheckedAt": stamp(),
+                "repairSchedule": repair_schedule}
+            if bootstrap_state is not None:
+                record["automation"]["bootstrap"] = bootstrap_state
+            record["article"] = {"status": "excluded", "figures": [], "supplements": []}
+            return record
     record["maxFigureDownloads"] = settings.max_images
     record["maxSupplementDownloads"] = settings.max_supplements
     record["maxFileBytes"] = settings.max_file_bytes
@@ -574,9 +593,58 @@ def new_case(record):
     return result
 
 
+def refresh_legacy_scope(client, catalog, settings, adapters=None):
+    """One bounded metadata-only migration, never full source/paid processing.
+
+    Old catalogues omit abstracts. Re-query at most fifty exact DOIs together
+    rather than dropping valid aging atlases/clocks based on short titles alone.
+    This transport uses the ordinary HTTP counter and leaves sources untouched.
+    """
+    if settings.research_scope == "unrestricted":
+        return 0
+    pending = [paper for paper in catalog["papers"]
+               if not has_verified_scope(paper, settings.research_scope)]
+    if not pending or _collection_budget_exhausted(client):
+        return 0
+    if len(pending) > 50:
+        # Today's apparent successes need canonical verification first. Rotate
+        # the rest so unresolved DOI rows at the head cannot starve later ones.
+        today = stamp()[:10]
+        priority = [p for p in pending if isinstance(p.get("admittedAt"), str)
+                    and p["admittedAt"].startswith(today)][:50]
+        priority_ids = {p["id"] for p in priority}
+        remaining = [p for p in pending if p["id"] not in priority_ids]
+        cursor = catalog.get("scopeMetadataCursor", {})
+        offset = cursor.get("offset", 0) if isinstance(cursor, dict) and cursor.get("policy") == settings.research_scope else 0
+        offset = offset if type(offset) is int and 0 <= offset <= 10000 else 0
+        offset %= max(1, len(remaining))
+        slots = 50 - len(priority)
+        pending = priority + (remaining[offset:] + remaining[:offset])[:slots]
+        catalog["scopeMetadataCursor"] = {"policy": settings.research_scope,
+                                         "offset": (offset + slots) % max(1, len(remaining))}
+    try:
+        resolved = (adapters or {}).get("scope_metadata", lookup_scope_metadata)(client, pending)
+    except Exception:
+        return 0  # Missing/failed metadata is not a positive domain decision.
+    checked = 0
+    for paper in pending:
+        metadata = resolved.get(paper["doi"]) if isinstance(resolved, dict) else None
+        if (not isinstance(metadata, dict) or metadata.get("status") != "matched"
+                or normalize_doi(metadata.get("doi")) != paper["doi"] or not metadata.get("paper")):
+            continue
+        paper["paper"] = metadata["paper"]
+        evidence = dict(paper, abstract=metadata.get("abstract") or "")
+        paper["researchScope"] = assess_scope(evidence, settings.research_scope,
+            allow_saved=False, source="verified-metadata")
+        checked += 1
+    return checked
+
+
 def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None, discover_new=True, mode="auto", session_dois=None):
     root = Path(root)
     settings = settings or load_settings(root)
+    if not isinstance(settings.research_scope, str) or settings.research_scope not in POLICIES:
+        raise ValueError("未知研究领域策略；未开始采集")
     adapters = adapters or {}
     effective_mode = effective_collection_mode(mode)
     if session_dois is not None:
@@ -606,12 +674,19 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
               "untouchedRemainingCount": 0, "automaticCompleteCount": 0, "incompleteCount": 0}
     with project_lock(root):
         catalog = validate_catalog(read_json(root / "data" / "catalog.json"))
+        if settings.research_scope != "unrestricted":
+            catalog["researchScopePolicy"] = settings.research_scope
+            for paper in catalog["papers"]:
+                paper["researchScope"] = assess_scope(paper, settings.research_scope)
+        else:
+            catalog.pop("researchScopePolicy", None)
         ledger = validate_ledger(read_json(root / "data" / "ledger.json", {"days": {}, "candidates": {}}), report["date"])
         reports = read_json(root / "data" / "updates.json", [])
         if not isinstance(reports, list) or any(not isinstance(entry, dict) for entry in reports):
             raise ValueError("更新历史格式无效；未修改案例库，请检查 data/updates.json")
         if session_dois is not None and not set(session_dois) <= {p["doi"] for p in catalog["papers"]}:
             raise ValueError("连续补库批次包含非既有文章；未开始请求")
+        report["scopeMetadataCheckedCount"] = refresh_legacy_scope(client, catalog, settings, adapters)
         initialization = (settings.initialize_existing_first or mode == "backfill"
                           or "bootstrap" in ledger or "bootstrap" in catalog)
         bootstrap_created = initialization and "bootstrap" not in ledger
@@ -671,8 +746,8 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             next_workload = None
             # Maintenance and discovery share a paper cap. Leave room for new
             # candidates instead of spending the whole batch refreshing old ones.
-            today_admitted = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
-            today_has_room = len(set(day["newDOIs"]) | today_admitted) < settings.max_new_per_day
+            today_has_room = len(eligible_daily_dois(catalog, day["newDOIs"], report["date"],
+                                                   settings.research_scope)) < settings.max_new_per_day
             if discover_new and not only_dois and today_has_room and settings.candidate_checks:
                 if settings.max_papers_per_run == 1:
                     scheduler = ledger.get("scheduler", {})
@@ -758,8 +833,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
             checkpoint()
 
         # Admission time also carried in records: stale/missing ledger cannot create >5/day.
-        admitted_today = {p["doi"] for p in catalog["papers"] if p.get("admittedAt", "").startswith(report["date"])}
-        daily = set(day["newDOIs"]) | admitted_today
+        daily = eligible_daily_dois(catalog, day["newDOIs"], report["date"], settings.research_scope)
         allowance = max(0, settings.max_new_per_day - len(daily))
         if discover_new and not allowance:
             report["discoveryStatus"] = "daily_quota_reached"
@@ -783,10 +857,14 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                 else:
                     candidates = discover(client, settings, exclude_dois=seen | cooling)
                 report["discoveryStatus"] = "success"
-                candidates = sorted(candidates, key=lambda p: editorial_score(p)["total"], reverse=True)
+                candidates = sorted(candidates, key=lambda p: (
+                    scope_priority(p, settings.research_scope), editorial_score(p)["total"]), reverse=True)
                 checked = []
                 checked_dois = set()
                 for candidate in candidates:
+                    if not matches_scope(candidate, settings.research_scope):
+                        report["scopeRejectedCount"] = report.get("scopeRejectedCount", 0) + 1
+                        continue  # No download, paid attempt or five-paper slot.
                     if report["checkedCount"] >= settings.max_papers_per_run:
                         report["discoveryStatus"] = "paper_batch_limit_reached"
                         break
@@ -824,6 +902,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     actual_repo = revised.get("repository", {}).get("url", "").rstrip("/")
                     acceptable = (revised["automation"]["stages"].get("metadata") == "matched"
                                   and revised["automation"]["status"] != "excluded"
+                                  and matches_scope(revised, settings.research_scope)
                                   and actual_repo in declared and bool(revised.get("repository", {}).get("scripts")))
                     ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "source_confirmed" if acceptable else "pending",
                                                   "retryClass": "transient" if any(
@@ -836,10 +915,13 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     checkpoint()
                 counts = Counter(tag for p in catalog["papers"] for tag in p.get("graphForms", []))
                 usable = [p for p in checked if not p.get("skip") and ledger["candidates"][p["doi"]]["status"] == "source_confirmed"]
-                usable.sort(key=lambda p: editorial_score(p, counts)["total"], reverse=True)
+                usable.sort(key=lambda p: (scope_priority(p, settings.research_scope),
+                                           editorial_score(p, counts)["total"]), reverse=True)
                 for revised in usable:
                     if len(daily) >= settings.max_new_per_day:
                         break
+                    if not matches_scope(revised, settings.research_scope):
+                        continue
                     if settings.require_complete_new_cases:
                         # Incomplete candidates are not public admissions and do
                         # not consume today's five-success quota. Paid attempts
@@ -885,13 +967,17 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                             report["rejectedCandidateCount"] += 1
                             checkpoint()
                             continue
+                    if not matches_scope(revised, settings.research_scope):
+                        continue  # A summary adapter cannot change the scope gate.
                     revised["admittedAt"] = stamp()
                     revised["selectionScore"] = editorial_score(revised, counts)
                     catalog["papers"].append(revised)
                     catalog.setdefault("inputSpecs", {})[revised["id"]] = input_spec(revised)
                     seen.add(revised["doi"])
                     daily.add(revised["doi"])
-                    day["newDOIs"] = sorted(daily)
+                    # Preserve admission history (including pre-policy errors),
+                    # while only qualified current records occupy target slots.
+                    day["newDOIs"] = sorted(set(day["newDOIs"]) | {revised["doi"]})
                     report["newCount"] += 1
                     checked_ids.add(revised["id"])
                     original_schedules[revised["id"]] = {}

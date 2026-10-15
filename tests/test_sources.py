@@ -2,7 +2,8 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from types import SimpleNamespace
 
-from paper_plot_library.sources import discover, lookup_paper, normalize_doi
+from paper_plot_library.sources import discover, lookup_paper, lookup_scope_metadata, normalize_doi
+from paper_plot_library.scope import POLICY
 
 
 class FakeClient:
@@ -128,6 +129,156 @@ class SourcesTests(unittest.TestCase):
             client = Invalid()
             discover(client, SimpleNamespace(discovery_limit=2))
             self.assertEqual(len(client.calls), 1)
+
+    def test_scoped_discovery_rejects_marine_and_imaging_false_positive(self):
+        client = FakeClient([row("10.1234/marine", title="Marine biodiversity imaging with DNA sequencing"),
+                             row("10.1234/imaging", title="Imaging genomics in healthy human tissues")])
+        records = discover(client, SimpleNamespace(discovery_limit=5, research_scope=POLICY))
+        self.assertEqual(records, [])
+        self.assertEqual(len(client.calls), 2)
+
+    def test_scoped_discovery_aging_precedes_newer_metabolic_work(self):
+        client = FakeClient([row("10.1234/diabetes", title="Diabetes multiomics in patients", pubYear="2025"),
+                             row("10.1234/aging", title="Aging nanopore sequencing in mice", pubYear="2020")])
+        records = discover(client, SimpleNamespace(discovery_limit=2, research_scope=POLICY))
+        self.assertEqual([record["doi"] for record in records], ["10.1234/aging", "10.1234/diabetes"])
+        queries = [kwargs["params"]["query"] for _, kwargs in client.calls]
+        self.assertIn("TITLE_ABS:(aging", queries[0])
+        self.assertNotIn("TITLE_ABS:(diabetes", queries[0])
+        self.assertIn("TITLE_ABS:(diabetes", queries[1])
+
+    def test_scoped_expansion_when_primary_lane_empty(self):
+        class Expansion(FakeClient):
+            def get_json(self, url, **kwargs):
+                self.calls.append((url, kwargs))
+                rows = [row("10.1234/diabetes", title="Single-cell RNA-seq in type 2 diabetes patients")]
+                return {"resultList": {"result": rows if "TITLE_ABS:(diabetes" in kwargs["params"]["query"] else []}}
+        client = Expansion()
+        records = discover(client, SimpleNamespace(discovery_limit=2, research_scope=POLICY))
+        self.assertEqual([record["doi"] for record in records], ["10.1234/diabetes"])
+        self.assertEqual(len(client.calls), 2)
+
+    def test_scoped_custom_query_cannot_remove_title_abstract_gate(self):
+        client = FakeClient([row("10.1234/marine", title="Marine biodiversity DNA sequencing")])
+        discover(client, SimpleNamespace(discovery_limit=2, discovery_query="marine OR all", research_scope=POLICY))
+        for url, kwargs in client.calls:
+            query = kwargs["params"]["query"]
+            self.assertEqual(url, "https://www.ebi.ac.uk/europepmc/webservices/rest/search")
+            self.assertIn("(marine OR all)", query)
+            self.assertIn(") AND (TITLE_ABS:(", query)
+            self.assertIn(") AND TITLE_ABS:(sequencing", query)
+
+    def test_scoped_known_cooling_metadata_pages_share_five_page_ceiling(self):
+        class Cooling(FakeClient):
+            def get_json(self, url, **kwargs):
+                self.calls.append((url, kwargs))
+                expansion = "TITLE_ABS:(diabetes" in kwargs["params"]["query"]
+                title = "Diabetes genomics in patients" if expansion else "Aging long-read sequencing in mice"
+                return {"resultList": {"result": [row("10.1234/known", title=title)]},
+                        "nextCursorMark": "opaque-" + str(len(self.calls)),
+                        "nextPageUrl": "https://untrusted.example/do-not-follow"}
+        client = Cooling()
+        records = discover(client, SimpleNamespace(discovery_limit=1, research_scope=POLICY), {"10.1234/known"})
+        self.assertEqual(records, [])
+        self.assertEqual(len(client.calls), 5)
+        self.assertEqual(["TITLE_ABS:(diabetes" in kwargs["params"]["query"] for _, kwargs in client.calls],
+                         [False, False, False, True, True])
+        self.assertEqual([kwargs["params"]["cursorMark"] for _, kwargs in client.calls],
+                         ["*", "opaque-1", "opaque-2", "*", "opaque-4"])
+
+    def test_scoped_ncbi_fallback_never_loosens_domain(self):
+        for title, expected in (("Marine biodiversity imaging with DNA sequencing", []),
+                                ("Diabetes transcriptomics in patients", ["10.1234/example"])):
+            class NCBI(FakeClient):
+                def get_text(self, url, **kwargs):
+                    return super().get_text(url, **kwargs).replace("<ArticleTitle>Example</ArticleTitle>",
+                                                                 "<ArticleTitle>" + title + "</ArticleTitle>")
+            client = NCBI(fail=True)
+            settings = SimpleNamespace(discovery_limit=3, research_scope=POLICY, ncbi_query="marine OR all[Filter]")
+            records = discover(client, settings)
+            self.assertEqual([record["doi"] for record in records], expected)
+            term = next(kwargs for url, kwargs in client.calls if "esearch" in url)["params"]["term"]
+            self.assertIn("(marine OR all[Filter]) AND (", term)
+        self.assertIn(") AND (sequencing[Title/Abstract]", term)
+
+    def test_unknown_research_policy_fails_before_any_network_call(self):
+        client = FakeClient([row()])
+        with self.assertRaises(ValueError):
+            discover(client, SimpleNamespace(discovery_limit=5, research_scope="unknown-policy"))
+        self.assertEqual(client.calls, [])
+
+    def test_scope_migration_one_bounded_doi_only_metadata_request(self):
+        client = FakeClient([row("10.1234/fixture-0", title="Canonical publication title")])
+        papers = [{"doi": "https://doi.org/10.1234/FIXTURE-0"}, {"doi": "10.1234/fixture-0"}]
+        papers.extend({"doi": "10.1234/fixture-" + str(number)} for number in range(1, 70))
+        records = lookup_scope_metadata(client, papers)
+        self.assertEqual(set(records), {"10.1234/fixture-0"})
+        self.assertEqual(records["10.1234/fixture-0"]["paper"], "Canonical publication title")
+        self.assertEqual(records["10.1234/fixture-0"]["status"], "matched")
+        self.assertEqual(len(client.calls), 1)
+        url, kwargs = client.calls[0]
+        self.assertEqual(url, "https://www.ebi.ac.uk/europepmc/webservices/rest/search")
+        self.assertEqual(kwargs["params"]["pageSize"], 50)
+        self.assertEqual(kwargs["params"]["resultType"], "core")
+        self.assertEqual(kwargs["max_bytes"], 4000000)
+        query = kwargs["params"]["query"]
+        self.assertEqual(query.count('DOI:"'), 50)
+        self.assertNotIn('fixture-50"', query)
+
+    def test_scope_migration_rejects_query_syntax_not_just_normalizes_doi(self):
+        client = FakeClient([row()])
+        records = lookup_scope_metadata(client, [{"doi": '10.1234/x"OR"y'}, {"doi": "10.1234/x\\y"},
+                                                  {"doi": "10.1234/x\x00y"}, {"doi": "10.1234/x\x7fy"},
+                                                  {"doi": "10.1234/" + "x" * 600}, {"doi": "not-a-doi"}, None,
+                                                  {"doi": "DOI:10.1234/EXAMPLE"}])
+        self.assertEqual(set(records), {"10.1234/example"})
+        self.assertEqual(client.calls[0][1]["params"]["query"], 'DOI:"10.1234/example"')
+
+    def test_scope_migration_malformed_unmatched_preprints_and_future_are_not_results(self):
+        future = datetime.now(timezone.utc).date() + timedelta(days=30)
+        client = FakeClient([None, row("10.1234/unrequested"), row("10.1234/malformed", title=[]),
+                             row("10.1234/preprint", source="PPR"),
+                             row("10.1234/future", firstPublicationDate=future.isoformat()),
+                             row("10.1234/review", pubTypeList={"pubType": ["Review"]}),
+                             row("10.1234/formal", source="PPR"), row("10.1234/formal", source="MED")])
+        records = lookup_scope_metadata(client, [{"doi": "10.1234/" + suffix} for suffix in
+            ("malformed", "preprint", "future", "review", "formal", "missing")])
+        self.assertEqual(set(records), {"10.1234/formal"})
+        self.assertEqual(records["10.1234/formal"]["status"], "matched")
+        self.assertEqual(len(client.calls), 1)
+
+    def test_scope_migration_conflicting_formal_duplicates_fail_closed(self):
+        client = FakeClient([row("10.1234/title", title="Aging genomics"),
+                             row("10.1234/title", title="Marine genomics"),
+                             row("10.1234/title", title="Aging genomics"),
+                             row("10.1234/abstract", abstractText="Aging sequencing in mice"),
+                             row("10.1234/abstract", abstractText="Diabetes sequencing in patients"),
+                             row("10.1234/same", pmcid=""), row("10.1234/same", pmcid="PMC456")])
+        records = lookup_scope_metadata(client, [{"doi": "10.1234/" + suffix} for suffix in ("title", "abstract", "same")])
+        self.assertEqual(set(records), {"10.1234/same"})
+        self.assertEqual(records["10.1234/same"]["pmcid"], "PMC456")
+
+    def test_scope_migration_empty_or_invalid_inputs_do_not_request(self):
+        client = FakeClient()
+        self.assertEqual(lookup_scope_metadata(client, []), {})
+        self.assertEqual(lookup_scope_metadata(client, [{"doi": "bad"}]), {})
+        self.assertEqual(client.calls, [])
+
+    def test_scope_migration_bad_response_shape_is_not_resolved(self):
+        for response in (None, [], {"resultList": []}, {"resultList": {"result": {}}}):
+            class Malformed(FakeClient):
+                def get_json(self, url, **kwargs):
+                    self.calls.append((url, kwargs))
+                    return response
+            client = Malformed()
+            self.assertEqual(lookup_scope_metadata(client, [{"doi": "10.1234/example"}]), {})
+            self.assertEqual(len(client.calls), 1)
+
+    def test_scope_migration_transport_error_has_no_per_paper_fallback(self):
+        client = FakeClient(fail=True)
+        with self.assertRaises(OSError):
+            lookup_scope_metadata(client, [{"doi": "10.1234/example"}])
+        self.assertEqual(len(client.calls), 1)
 
 
 if __name__ == "__main__":
