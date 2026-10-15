@@ -20,11 +20,42 @@
     },
     "2026-10-15": {
       "newDOIs": [
+        "10.1093/plcell/koag133",
         "10.1111/1755-0998.70188"
       ]
     }
   },
   "candidates": {
+    "10.1111/acel.70552": {
+      "checkedAt": "2026-10-15T09:41:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1093/bib/bbag366": {
+      "checkedAt": "2026-10-15T09:41:09Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.17912/micropub.biology.002153": {
+      "checkedAt": "2026-10-15T09:41:05Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1155/humu/5598948": {
+      "checkedAt": "2026-10-15T09:41:03Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/plcell/koag133": {
+      "checkedAt": "2026-10-15T09:40:59Z",
+      "status": "source_confirmed",
+      "retryClass": "materials",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.3389/fmed.2026.1800947": {
       "checkedAt": "2026-10-15T09:40:31Z",
       "status": "pending",
@@ -1086,22 +1117,17 @@
     "uncertainAiAttempts": 0,
     "date": "2026-10-15",
     "startedAt": "2026-10-15T07:28:26Z",
-    "elapsedSeconds": 894,
+    "elapsedSeconds": 936,
     "uncertainRequests": 0,
     "maxBatches": 36,
-    "updatedAt": "2026-10-15T09:40:34Z",
+    "updatedAt": "2026-10-15T09:41:16Z",
     "batchCount": 27,
-    "aiAttempts": 1,
+    "aiAttempts": 2,
     "status": "active",
     "version": 1,
     "endReason": "",
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "maxAiAttempts": 165,
-    "requests": 1309,
-    "inFlight": {
-      "startedAt": "2026-10-15T09:40:34Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 1373
   }
 }
