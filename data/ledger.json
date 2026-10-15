@@ -21,11 +21,42 @@
     "2026-10-15": {
       "newDOIs": [
         "10.1093/plcell/koag133",
-        "10.1111/1755-0998.70188"
+        "10.1111/1755-0998.70188",
+        "10.1371/journal.pcbi.1014429"
       ]
     }
   },
   "candidates": {
+    "10.1261/rna.080954.126": {
+      "checkedAt": "2026-10-15T09:42:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41514-026-00431-4": {
+      "checkedAt": "2026-10-15T09:42:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.xhgg.2026.100635": {
+      "checkedAt": "2026-10-15T09:42:46Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.synbio.2026.03.021": {
+      "checkedAt": "2026-10-15T09:42:44Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pcbi.1014429": {
+      "checkedAt": "2026-10-15T09:42:42Z",
+      "status": "source_confirmed",
+      "retryClass": "materials",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1186/s13148-026-02184-z": {
       "checkedAt": "2026-10-15T09:42:18Z",
       "status": "pending",
@@ -1177,22 +1208,17 @@
     "uncertainAiAttempts": 0,
     "date": "2026-10-15",
     "startedAt": "2026-10-15T07:28:26Z",
-    "elapsedSeconds": 1001,
+    "elapsedSeconds": 1040,
     "uncertainRequests": 0,
     "maxBatches": 36,
-    "updatedAt": "2026-10-15T09:42:21Z",
+    "updatedAt": "2026-10-15T09:42:59Z",
     "batchCount": 30,
-    "aiAttempts": 2,
+    "aiAttempts": 3,
     "status": "active",
     "version": 1,
     "endReason": "",
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "maxAiAttempts": 165,
-    "requests": 1464,
-    "inFlight": {
-      "startedAt": "2026-10-15T09:42:21Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 1517
   }
 }

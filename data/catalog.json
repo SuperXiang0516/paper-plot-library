@@ -81511,6 +81511,1586 @@
         "retry_success_count": 0
       },
       "admittedAt": "2026-10-15T09:41:15Z"
+    },
+    {
+      "id": "doi-0623e4ab12dcfaf2",
+      "paper": "Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.",
+      "doi": "10.1371/journal.pcbi.1014429",
+      "journal": "PLoS computational biology",
+      "date": "2026-06-22",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+      "pmcid": "PMC13309044",
+      "pmid": "42330039",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-734X",
+      "eissn": "1553-7358",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-15",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 1,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d9e3ef178bf95694f56bba2227b5e00657ca96160ab9846fa7e25f53fdb23ae7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/PMC13309044.1.xml?md5=9ad9b2f569c50917fcfb55596297ab41",
+        "figures": [
+          {
+            "id": "pcbi.1014429.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Workflow of the computational design.Muscle tissue was extracted from the injured and non-injured hindlimb of young and geriatric mice at 3 and 7 days post-injury. Basal cells were extracted from the non-injured limb, and senescent and non-senescent cells were taken from the injured limb. Three cell types of interest were isolated by FACS using well-established markers for myeloid cells, FAPs, and satellite cells. Senescent cells were further sorted using SPiDER-β-gal, as previously described [20]. Low input RNA-seq was performed for all three cell states: basal, senescent, and non-senescent, leading to initial gene expression matrix consisting of 108 samples each, with 46078 genes. This matrix was serially filtered to remove dropouts and non-discriminant genes. The final 142×36 matrix was then used to build two networks, one of genes and the other of conditions. Feature selection was then performed by combining eigenvector centrality of the gene network with community selection of the condition network. The process culminates in the identification of a small number of senescence-associated genes. Created in BioRender. Garcia-Ojalvo, J. (2026) https://BioRender.com/n1qw8gc.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.e001.jpg?md5=d0220954036ca07488e68c1ae3ef62d2",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dropout filtering.(A) The initial expression matrix consisted of 108 samples each defined by 46 078 genes. The 108 samples arise from 36 different cell conditions, each with 3 replicates. The first filtering consisted of averaging the expression of each gene among the 3 replicates of each condition and removing the ones whose expression was equal to 0 in at least 2 out of 3 replicates (gene cases A and C). This combination of averaging and filtering led to an expression matrix of 36 samples (representing the different cell conditions) and 28 603 genes. (B) Principal component analysis of the remaining data, with cell conditions sorted either by cell type (left) or cell state (right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g002.jpg?md5=8e3aa7163f9bb417a6a65ff39126e3cd",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Significance filtering.(A) We compared the gene-expression distributions of the conditions between the senescent cell state and the non-senescent and basal states grouped together, for each one of the 28 603 genes. The distributions were compared by using the Kolmogorov-Smirnov test and applying a Bonferroni correction to the p-value of 0.05. A total of 142 genes passed the test. (B) Principal component analysis of the remaining data, with cell conditions sorted either by cell type (left) or cell state (right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g003.jpg?md5=be6cf036a7b577bad71b3c224c4036f5",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Ranking and filtering genes via eigenvector centrality feature selection.(A) The 142 genes that remained after filtering were ranked based on their importance in class separation using the ECFS algorithm. The top 10 ranked genes were retained, using the criteria discussed in Sec. 2.4. (B) Principal component analysis of the remaining data, with cell conditions sorted either by cell type (left) or cell state (right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g004.jpg?md5=628b16ea94cdeeecb10e7e150b49a57b",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Network-community assessment.(A) Once the ECFS ranking was obtained we constructed cell-state networks, as described in the main text. (B) ECFS ranking performance for increasing number of genes, when comparing the non-senescent phenotype with the rest. The h score and the number of communities are plotted in the top and bottom panels, respectively. The best h-score of 0.737 was obtained when considering the first 10 genes. The vertical and horizontal red dashed lines correspond to the optimal h score and the three communities, respectively. (C,D) For that case we obtain the best community separation, represented here. The genes listed on panel C give rise to 3 communities, each one predominantly consisting of a single cell state –basal, senescent or non-senescent– (shown in blue, orange, and green, respectively). The node labels have the format AnB, where A is either Y or G, corresponding to the sample coming from a young or geriatric mouse, respectively, n is either 3 or 7, corresponding to day 3 or day 7 after the injury, and B is either M, F or S, corresponding to the myeloid, FAP or satellite cell type, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g005.jpg?md5=b591ba972c4376ecebb670aba3ae3c26",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "assets/pmc13309044-7743f0234b3841a9.jpg",
+            "sha256": "7743f0234b3841a952d492254067c48ae4e186a2edaf7a948186ac6724c7b473",
+            "width": 733,
+            "height": 851,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7743f0234b3841a952d492254067c48ae4e186a2edaf7a948186ac6724c7b473",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pcbi.1014429.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Contrasting with other feature selection approaches.(A) Fraction of variance explained by the different principal components for the transcriptomics dataset resulting from dropout filtering, see Fig 2. The first 15 principal components are shown. (B) Distribution of loading coefficients for the first 5 principal components. (C) Histogram of loading coefficients showing the contribution of all genes in the filtered dataset (28 603 genes) for the first principal component. The vertical dashed line corresponds to the 95% of the maximum loading coefficient. (D) Loading plot showing the contribution of the six genes found by the ECFS-based method (Table 1), in blue, and of 50 random genes, in magenta, to the first two principal components. (E) Histogram showing the number of realizations (out of 1000) in which the six genes found by the ECFS-based method (Table 1) appear in the top 200 genes identified by the Python scikit-learn random forest classifier, in blue, in comparison with six random genes used as control, in magenta. The inset shows the number of coinciding genes between pairs of realizations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g006.jpg?md5=a6aa3c73985adfc34ca2c37da519d160",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "assets/pmc13309044-15c953f50b7e6bb8.jpg",
+            "sha256": "15c953f50b7e6bb8afcd1f557f5b6eb43e52ed0dca376535ced2abc4e4f69a93",
+            "width": 749,
+            "height": 466,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "15c953f50b7e6bb8afcd1f557f5b6eb43e52ed0dca376535ced2abc4e4f69a93",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pcbi.1014429.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Distribution of p16 expression in single cells.The expression among all the considered cell types, as measured in linear scale by the fluorescent marker tdTomato, presents a bimodal distribution. The threshold for establishing p16+ and p16- cells is chosen to be 1.5. The code for this analysis and for the one shown in Fig 8 below can be found in the paper repository, https://github.com/dsb-lab/CellularSenescence.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g007.jpg?md5=8f6f8ee174f91419a571f078bf9a9e4d",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g008",
+            "label": "Fig 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Expression of CD59a in p16+ and p16- cells.(A) UMAP projection of all the cell types considered. (B) The cells are classified into two groups based on their tdTomato expression. Cells with tdTomato expression larger than 1.5 are considered p16 + , whereas cells that have the expression of tdTomato ≤1.5 are labeled as p16-. A predominant presence of increased CD59a expression is observed in the p16 + cells for macrophages and Kupffer cells, indicating that CD59a could be a marker of senescence in those cell types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g008.jpg?md5=7e0412ef5f1bab621ee99112e6cc2366",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g009",
+            "label": "Fig 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Transcription factors regulating the identified genes and their role in senescence.The transcription factors from the most relevant protein-coding genes identified by our approach are grouped by color, representing the pathways they are involved in, as established by their Gene Ontology (GO) annotations. We use MyGene.info to query the GO database (https://mygene.info). Information about transcriptional interactions is obtained from SCENIC [62]. The python script to query the GO database and identify the transcription factor categories can be found in the paper’s public software repository, https://github.com/dsb-lab/CellularSenescence.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g009.jpg?md5=ea6ac8bcd2f5c736bd2a2c790efc6eea",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g010",
+            "label": "Fig 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Entropy calculation.To obtain the total entropy Htot, first, we have to calculate the individual entropies, both cell type-wise and community-wise. Since a total of 12 senescent, 12 non-senescent and 12 basal cells were present in our analysis, in the cell type-wise entropy computation, the probability pi is defined as the probability of a cell found in a community to belong to a given cell state. In the community-wise entropy calculation, the probability pi is defined by the ratio of cells belonging to a specific cell state to the overall number of cells within that community. The total entropy Htot is calculated by summing all the individual cell type-wise and community-wise entropies. The normalized entropy value h is obtained by normalizing the total entropy Htot with the maximum possible entropy Hmax that corresponds to the case when each cell belongs to its own separate community.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.e015.jpg?md5=2decb0e992b9839905c26efbc9d727a3",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014429.g011",
+            "label": "Fig 11",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "11",
+              "panel": ""
+            },
+            "caption": "Histogram of randomly computed h-scores.The h-scores represented in the histogram were computed by permuting the cell conditions labels. The artificially created labels were sorted into 2 classes, one consisting of non-senescent cells and the other of senescent and basal cells. The ECFS algorithm was performed for the classes, and the corresponding networks with the communities were computed. The h-score obtained for the 10 best-performing genes was extracted. The described procedure was repeated 1000 times and the corresponding h-scores are shown in the histogram. The red line represents the original maximum h-score obtained by our separation (h = 0.737). The p-value for our obtained h-score to be part of this distribution was found to be 0.00019.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.g011.jpg?md5=472025c5d1807c84e84cbe3d569fa258",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014429",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al.. Cell-type resolved transcriptional network analysis of in vivo cellular senescence following injury.. DOI: 10.1371/journal.pcbi.1014429. Copyright holder: Sabalic et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pcbi.1014429.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s001.pdf?md5=590a2f9b02e235e6973b2b5d3b21a4ed",
+            "license": "CC BY",
+            "sha256": "4ce32e71e08e0a7ff976d2b9945616e0340e5798a23f7765b744a6c9e78979e0",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 135294,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pcbi.1014429.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s002.pdf?md5=9494d8877cc684e6c96ac3a14170c00a",
+            "license": "CC BY",
+            "sha256": "2efaa036d7447ed980a3fa1de5672bebc716b64474638981d5658840558b958a",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 436569,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pcbi.1014429.s003",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s003.pdf?md5=2085e393f8028fbd0802289423a9dbdf",
+            "license": "CC BY",
+            "sha256": "037be34b61fca50db9c59126e2567e1469cf05da02ccc49027a11df1ac503b9f",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 83672,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pcbi.1014429.s005",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s005.pdf?md5=450fe401131879778c3ba347b2feb412",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014429.s006",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s006.pdf?md5=576e55a62fb9cde4e5a132b870cec874",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014429.s007",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/pcbi.1014429.s007.pdf?md5=e3eb8bed9ff03e585c3ba54efae1d4fd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/dsb-lab/CellularSenescence"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-15T09:42:35.434177+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/dsb-lab/CellularSenescence",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13309044.1/PMC13309044.1.xml?md5=9ad9b2f569c50917fcfb55596297ab41"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Alda Sabalic; Victoria Moiseeva; Andres Cisneros; Oleg Deryagin; Eusebio Perdiguero; Pura Muñoz-Cánoves; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/dsb-lab/CellularSenescence",
+        "commit": "f6597ed532b007cac92cf2f3f243145a0c06bbe3",
+        "license": "GPL-3.0",
+        "scripts": [
+          {
+            "path": "6 - ECFS_analysis.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "sha256": "2a6252b3e8f8d06c8bd6061c6c3a930d6099e6955d06e538d9476b106250eefc",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "geneID_ens_symbol_KSranked.xlsx",
+                "reader": "pd.read_excel",
+                "line": 12,
+                "status": "literal_path",
+                "format": "xlsx",
+                "readerOptions": {}
+              },
+              {
+                "path": "df_filteredKS.csv",
+                "reader": "pd.read_csv",
+                "line": 16,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 57,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_excel",
+                "line": 122,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 428,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 12,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 16,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 57,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 122,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 428,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "1 - filtering_dropout.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/1%20-%20filtering_dropout.ipynb",
+            "sha256": "be727c7d5aee4ce6a5950934ecc40e41f5d444b0f0738be3ed814daac4164cd2",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "3 - filtering_significance.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/3%20-%20filtering_significance.ipynb",
+            "sha256": "107fba2215c8262fdaf0b040a4fdbba19c69765ff9214944c2b9f83ab7368a7f",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "5 - PCA_ECFS.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/5%20-%20PCA_ECFS.ipynb",
+            "sha256": "ca855cde0be455bf8f13c357318d061bde41a4c6214b06862ba8cea621cb569b",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "7 - feature_selection_random_forest_dropout.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/7%20-%20feature_selection_random_forest_dropout.ipynb",
+            "sha256": "bb5dd5671a6f10f370eb7c2c5de05d67e8660aa58f5d85387f9a11d680a38a67",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "df_nonzero_means.csv",
+                "reader": "pd.read_csv",
+                "line": 13,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "geneID_ens_symbol.csv",
+                "reader": "pd.read_csv",
+                "line": 33,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "figures/fig_random_forest_dropout.pdf",
+                "writer": "plt.savefig",
+                "line": 99
+              }
+            ],
+            "fields": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 13,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 33,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 99,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "8- feature_selection_random_forest_significance.ipynb",
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/8-%20feature_selection_random_forest_significance.ipynb",
+            "sha256": "adc09d7e79e351a1e473d9db61e725869c70c779a334b40ebfe6237f6f22579c",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "df_filteredKS.csv",
+                "reader": "pd.read_csv",
+                "line": 13,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "geneID_ens_symbol.csv",
+                "reader": "pd.read_csv",
+                "line": 33,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "figures/fig_random_forest_significance.pdf",
+                "writer": "plt.savefig",
+                "line": 102
+              }
+            ],
+            "fields": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 13,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 33,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 102,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "geneID_ens_symbol_KSranked.xlsx",
+            "path": "geneID_ens_symbol_KSranked.xlsx",
+            "reader": "pd.read_excel",
+            "format": "xlsx",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "line": 12,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol_KSranked.xlsx",
+            "readerOptions": {}
+          },
+          {
+            "name": "df_filteredKS.csv",
+            "path": "df_filteredKS.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "geneID",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3S_mean",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "line": 16,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_filteredKS.csv",
+            "readerOptions": {
+              "sep": "\t"
+            },
+            "headerSHA256": "71046f65a548b24f92ac6ee861e9b5fc1a81950ad04f61d07be2e56ea5b50f01"
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "line": 57,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_excel",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "line": 122,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "geneID",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "class",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ranking",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "corr_value",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene1",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene2",
+                "line": 222,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+            "line": 428,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "df_nonzero_means.csv",
+            "path": "df_nonzero_means.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/7%20-%20feature_selection_random_forest_dropout.ipynb",
+            "line": 13,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_nonzero_means.csv",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "geneID_ens_symbol.csv",
+            "path": "geneID_ens_symbol.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/7%20-%20feature_selection_random_forest_dropout.ipynb",
+            "line": 33,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol.csv",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "df_filteredKS.csv",
+            "path": "df_filteredKS.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "geneID",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G7SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y7SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3S_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "G3SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3F_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3FNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3FSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3M_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3MNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3MSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3SNSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3SSen_mean",
+                "kind": "actual_file_header"
+              },
+              {
+                "name": "Y3S_mean",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/8-%20feature_selection_random_forest_significance.ipynb",
+            "line": 13,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_filteredKS.csv",
+            "readerOptions": {
+              "sep": "\t"
+            },
+            "headerSHA256": "71046f65a548b24f92ac6ee861e9b5fc1a81950ad04f61d07be2e56ea5b50f01"
+          },
+          {
+            "name": "geneID_ens_symbol.csv",
+            "path": "geneID_ens_symbol.csv",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "ensID",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/8-%20feature_selection_random_forest_significance.ipynb",
+            "line": 33,
+            "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol.csv",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.7",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-15T09:36:22Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-15T09:42:42Z",
+        "url": "https://openalex.org/W7165555423",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.38786743,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-15T09:42:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-15T09:42:42Z",
+          "lastOutcome": "automatic_complete"
+        }
+      },
+      "selectionScore": {
+        "total": 98.93933715,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 40,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 1.93933715,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "损伤后体内细胞衰老的细胞类型分辨转录网络分析",
+        "summary_zh": "该论文提出一种基于网络的复杂表型遗传关联分析方法,将特征向量中心性特征选择(ECFS)与社团检测相结合,用于分析小鼠损伤肌肉组织中细胞类型分辨的RNA测序数据,以研究细胞衰老这一复杂细胞状态。分析流程包括:对三种细胞状态(basal、senescent、non-senescent)的低输入RNA测序数据构建基因网络与条件网络,经缺失过滤与显著性过滤后,用ECFS排序并保留少量衰老相关基因。论文称识别出此前未与衰老关联的遗传标记,并用不同组织的单细胞RNA测序数据进行了验证。",
+        "learning_points": [
+          "展示了将复杂网络方法(特征向量中心性特征选择与社团检测)用于细胞类型分辨转录组数据分析的流程设计。",
+          "Fig 1 图注描述了实验设计:从年轻与老年小鼠损伤及未损伤后肢提取肌肉组织,在损伤后3天和7天取样,用FACS分离髓系细胞、FAPs和卫星细胞,并用SPiDER-β-gal进一步分选衰老细胞。",
+          "Fig 1 图注给出初始表达矩阵为108个样本、46078个基因,经串行过滤后得到142×36矩阵,用于构建基因网络与条件网络。",
+          "Fig 2 图注描述了缺失过滤:对每个条件的3个重复取平均,并去除在3个重复中至少2个表达为0的基因,得到36个样本、28603个基因的矩阵。",
+          "Fig 3 图注描述了显著性过滤:对每个基因用Kolmogorov-Smirnov检验比较衰老状态与其余状态合并后的表达分布,并对0.05的p值做Bonferroni校正,共142个基因通过。",
+          "Fig 4 图注描述了用ECFS对142个基因按类别分离重要性排序,并保留排名前10的基因。",
+          "静态检查显示仓库中ECFS分析notebook读取了geneID_ens_symbol_KSranked.xlsx、df_filteredKS.csv等文件,但未运行代码,无法确认实际执行结果。",
+          "论文摘要称识别出的关键基因属于与已知衰老标志相关的转录通路,并可用不同组织的单细胞RNA测序数据验证,但本资料未提供验证细节。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不等于复现验证,不能宣称已复现或结果一致。",
+          "输入数据的具体尺度、图号与代码的对应关系未明示,保持未知。",
+          "多个notebook(1 - filtering_dropout.ipynb、3 - filtering_significance.ipynb、5 - PCA_ECFS.ipynb)的Python源码无法解析,含notebook magics或动态语法,需人工复核。",
+          "Fig 2、Fig 3、Fig 4 的图注文本在输入中不完整(来源哈希字段为空或截断),部分细节未知。",
+          "未观察到期刊指标、许可信息或复现结果,均属未知。",
+          "本资料仅为待核学习注释,不能作为最终结论依据。",
+          "论文摘要中关于验证的表述未在提供的证据中给出具体数据或方法细节。",
+          "实验涉及小鼠体内损伤模型,结论向其他物种或表型的推广性未知。",
+          "ECFS保留前10个基因的阈值标准(Sec. 2.4)未在证据中给出具体内容。",
+          "社团检测在条件网络中的具体实现与参数未在证据中说明。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-15T09:42:59Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "9d71576f88c6b3953ce08ae75fc8fd71ebae9bcbc8839bb7027a573c7361e9c8",
+        "summary_fingerprint": "6f5bab7b5a6ae24e77670f0c7ec578fac765ad499f74cf8f776578c6a2cd1c0b",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      },
+      "admittedAt": "2026-10-15T09:42:59Z"
     }
   ],
   "inputSpecs": {
@@ -117449,6 +119029,899 @@
           ]
         }
       ]
+    },
+    "doi-0623e4ab12dcfaf2": {
+      "tree": "geneID_ens_symbol_KSranked.xlsx\ndf_filteredKS.csv\ndynamic input path\ndynamic input path\ndynamic input path\ndf_nonzero_means.csv\ngeneID_ens_symbol.csv\ndf_filteredKS.csv\ngeneID_ens_symbol.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "geneID_ens_symbol_KSranked.xlsx",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "xlsx",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb；读取行 12；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol_KSranked.xlsx",
+          "observedFieldReferences": [
+            {
+              "name": "geneID",
+              "line": 61,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "class",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ranking",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "corr_value",
+              "line": 209,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "type",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene1",
+              "line": 222,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene2",
+              "line": 222,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "df_filteredKS.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "真实文件表头已读取；含义/单位仍待核",
+          "fields": [
+            [
+              "geneID",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ]
+          ],
+          "preview": "仅真实列名，不含虚构示例值",
+          "csv": "geneID\nG7F_mean\nG7FNSen_mean\nG7FSen_mean\nG7M_mean\nG7MNSen_mean\nG7MSen_mean\nG7S_mean\nG7SNSen_mean\nG7SSen_mean\nY7F_mean\nY7FNSen_mean\nY7FSen_mean\nY7M_mean\nY7MNSen_mean\nY7MSen_mean\nY7S_mean\nY7SNSen_mean\nY7SSen_mean\nG3F_mean\nG3FNSen_mean\nG3FSen_mean\nG3M_mean\nG3MNSen_mean\nG3MSen_mean\nG3S_mean\nG3SNSen_mean\nG3SSen_mean\nY3F_mean\nY3FNSen_mean\nY3FSen_mean\nY3M_mean\nY3MNSen_mean\nY3MSen_mean\nY3SNSen_mean\nY3SSen_mean\nY3S_mean",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb；读取行 16；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_filteredKS.csv",
+          "observedFieldReferences": [
+            {
+              "name": "geneID",
+              "line": 61,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "class",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ranking",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "corr_value",
+              "line": 209,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "type",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene1",
+              "line": 222,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene2",
+              "line": 222,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb；读取行 57；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "geneID",
+              "line": 61,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "class",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ranking",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "corr_value",
+              "line": 209,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "type",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene1",
+              "line": 222,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene2",
+              "line": 222,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb；读取行 122；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "geneID",
+              "line": 61,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "class",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ranking",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "corr_value",
+              "line": 209,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "type",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene1",
+              "line": 222,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene2",
+              "line": 222,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb；读取行 428；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/6%20-%20ECFS_analysis.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "geneID",
+              "line": 61,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "class",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ranking",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "corr_value",
+              "line": 209,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "type",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene1",
+              "line": 222,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene2",
+              "line": 222,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "df_nonzero_means.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/7%20-%20feature_selection_random_forest_dropout.ipynb；读取行 13；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_nonzero_means.csv",
+          "observedFieldReferences": [
+            {
+              "name": "ensID",
+              "line": 42,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 42,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "geneID_ens_symbol.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/7%20-%20feature_selection_random_forest_dropout.ipynb；读取行 33；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol.csv",
+          "observedFieldReferences": [
+            {
+              "name": "ensID",
+              "line": 42,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 42,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "df_filteredKS.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "真实文件表头已读取；含义/单位仍待核",
+          "fields": [
+            [
+              "geneID",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G7SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y7SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "G3SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3F_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3FNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3FSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3M_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3MNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3MSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3SNSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3SSen_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ],
+            [
+              "Y3S_mean",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ]
+          ],
+          "preview": "仅真实列名，不含虚构示例值",
+          "csv": "geneID\nG7F_mean\nG7FNSen_mean\nG7FSen_mean\nG7M_mean\nG7MNSen_mean\nG7MSen_mean\nG7S_mean\nG7SNSen_mean\nG7SSen_mean\nY7F_mean\nY7FNSen_mean\nY7FSen_mean\nY7M_mean\nY7MNSen_mean\nY7MSen_mean\nY7S_mean\nY7SNSen_mean\nY7SSen_mean\nG3F_mean\nG3FNSen_mean\nG3FSen_mean\nG3M_mean\nG3MNSen_mean\nG3MSen_mean\nG3S_mean\nG3SNSen_mean\nG3SSen_mean\nY3F_mean\nY3FNSen_mean\nY3FSen_mean\nY3M_mean\nY3MNSen_mean\nY3MSen_mean\nY3SNSen_mean\nY3SSen_mean\nY3S_mean",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/8-%20feature_selection_random_forest_significance.ipynb；读取行 13；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/df_filteredKS.csv",
+          "observedFieldReferences": [
+            {
+              "name": "ensID",
+              "line": 42,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 42,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "geneID_ens_symbol.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/8-%20feature_selection_random_forest_significance.ipynb；读取行 33；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/dsb-lab/CellularSenescence/blob/f6597ed532b007cac92cf2f3f243145a0c06bbe3/geneID_ens_symbol.csv",
+          "observedFieldReferences": [
+            {
+              "name": "ensID",
+              "line": 42,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 42,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -119067,7 +121540,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-15T09:42:19Z",
+  "generatedAt": "2026-10-15T09:42:59Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -119301,18 +121774,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-15T07:28:26Z",
-    "updatedAt": "2026-10-15T09:42:21Z",
+    "updatedAt": "2026-10-15T09:42:59Z",
     "batchCount": 30,
-    "requests": 1464,
-    "aiAttempts": 2,
+    "requests": 1517,
+    "aiAttempts": 3,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
