@@ -17,6 +17,9 @@
     },
     "2026-10-14": {
       "newDOIs": []
+    },
+    "2026-10-15": {
+      "newDOIs": []
     }
   },
   "candidates": {
@@ -147,6 +150,9 @@
       "10.1038/s41586-020-2496-1",
       "10.1038/s41592-022-01475-6",
       "10.1038/s41592-025-02847-4",
+      "10.1038/s41591-026-04566-5",
+      "10.1038/s43587-025-00890-6",
+      "10.1038/s43587-024-00685-1",
       "10.1038/s41586-023-06252-9",
       "10.1038/s41586-020-2922-4",
       "10.1126/science.abl4896",
@@ -165,16 +171,16 @@
     "totalCount": 55,
     "completeCount": 8,
     "pendingCount": 0,
-    "attentionCount": 29,
-    "removedCount": 18
+    "attentionCount": 26,
+    "removedCount": 21
   },
   "backfillSession": {
     "version": 1,
     "id": "1b208632c7506d44042744ed8c0d0c88",
     "startedAt": "2026-10-15T06:29:16Z",
-    "updatedAt": "2026-10-15T06:29:17Z",
-    "status": "active",
-    "endReason": "",
+    "updatedAt": "2026-10-15T06:29:36Z",
+    "status": "finished",
+    "endReason": "no_eligible_cases",
     "cohortDOIs": [
       "10.1038/s41467-024-51855-z",
       "10.1038/s41467-024-50098-2",
@@ -219,10 +225,14 @@
       "10.1038/s43587-025-00890-6",
       "10.1038/s41591-026-04566-5"
     ],
-    "processedDOIs": [],
+    "processedDOIs": [
+      "10.1038/s43587-024-00685-1",
+      "10.1038/s43587-025-00890-6",
+      "10.1038/s41591-026-04566-5"
+    ],
     "batchCount": 1,
-    "checkpointCount": 2,
-    "requests": 0,
+    "checkpointCount": 3,
+    "requests": 41,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -230,22 +240,7 @@
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "elapsedSeconds": 1,
-    "inFlight": {
-      "dois": [
-        "10.1038/s43587-024-00685-1",
-        "10.1038/s43587-025-00890-6",
-        "10.1038/s41591-026-04566-5"
-      ],
-      "startedAt": "2026-10-15T06:29:17Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15,
-      "beforeCheckedAt": {
-        "10.1038/s43587-024-00685-1": "2026-10-13T08:34:26Z",
-        "10.1038/s43587-025-00890-6": "2026-10-13T08:35:19Z",
-        "10.1038/s41591-026-04566-5": "2026-10-13T08:35:49Z"
-      }
-    }
+    "elapsedSeconds": 21
   },
   "removedPapers": {
     "10.1038/s41467-025-67369-1": {
@@ -319,6 +314,18 @@
     "10.1038/s41592-020-01050-x": {
       "reasonCode": "formal_version_unavailable",
       "removedAt": "2026-10-14T06:47:32Z"
+    },
+    "10.1038/s41591-026-04566-5": {
+      "reasonCode": "selected_figure_unavailable",
+      "removedAt": "2026-10-15T06:29:35Z"
+    },
+    "10.1038/s43587-025-00890-6": {
+      "reasonCode": "figure_reuse_unavailable",
+      "removedAt": "2026-10-15T06:29:35Z"
+    },
+    "10.1038/s43587-024-00685-1": {
+      "reasonCode": "formal_version_unavailable",
+      "removedAt": "2026-10-15T06:29:35Z"
     }
   }
 }
