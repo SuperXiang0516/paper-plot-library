@@ -25,6 +25,36 @@
     }
   },
   "candidates": {
+    "10.1162/imag.a.1384": {
+      "checkedAt": "2026-10-15T07:32:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1111/acel.70747": {
+      "checkedAt": "2026-10-15T07:32:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1126/sciadv.aeg7722": {
+      "checkedAt": "2026-10-15T07:32:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
+    },
+    "10.1038/s41467-026-78211-7": {
+      "checkedAt": "2026-10-15T07:32:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pcbi.1014801": {
+      "checkedAt": "2026-10-15T07:32:14Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1002/advs.77986": {
       "checkedAt": "2026-10-15T07:32:01Z",
       "status": "pending",
@@ -229,16 +259,6 @@
       "checkedAt": "2026-10-11T11:17:35Z",
       "status": "source_confirmed",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1111/acel.70747": {
-      "checkedAt": "2026-10-11T10:48:24Z",
-      "status": "pending",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1038/s41467-026-78211-7": {
-      "checkedAt": "2026-10-11T10:48:24Z",
-      "status": "pending",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.7554/elife.105930": {
       "checkedAt": "2026-10-11T10:48:24Z",
@@ -502,7 +522,7 @@
   },
   "dailyCollectionSession": {
     "startedAt": "2026-10-15T07:28:26Z",
-    "updatedAt": "2026-10-15T07:32:05Z",
+    "updatedAt": "2026-10-15T07:32:41Z",
     "dailyNewCount": 1,
     "maxBatches": 12,
     "status": "active",
@@ -514,14 +534,9 @@
     "uncertainRequests": 0,
     "maxSeconds": 2700,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 219,
+    "elapsedSeconds": 255,
     "batchCount": 7,
-    "requests": 330,
-    "aiAttempts": 1,
-    "inFlight": {
-      "startedAt": "2026-10-15T07:32:05Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 400,
+    "aiAttempts": 1
   }
 }
