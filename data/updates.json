@@ -1,5 +1,275 @@
 [
   {
+    "startedAt": "2026-10-15T09:43:04Z",
+    "date": "2026-10-15",
+    "newCount": 0,
+    "repairCount": 0,
+    "checkedCount": 5,
+    "failures": [],
+    "discoveryStatus": "paper_batch_limit_reached",
+    "authorCodeExecuted": false,
+    "aiRepairCount": 0,
+    "collectionBudgetExhausted": false,
+    "maxRequests": 150,
+    "maxAiCalls": 15,
+    "paperBatchLimit": 5,
+    "maxAiAttemptsPerPaper": 3,
+    "aiCasesAttempted": 0,
+    "aiRetriedCaseCount": 0,
+    "aiRetrySuccessCount": 0,
+    "reservedAiRequests": 15,
+    "untouchedRepairCount": 0,
+    "retryRepairCount": 0,
+    "cooldownSkippedCount": 0,
+    "untouchedRemainingCount": 0,
+    "automaticCompleteCount": 0,
+    "incompleteCount": 0,
+    "scopeMetadataCheckedCount": 0,
+    "mode": "daily",
+    "bootstrap": {
+      "status": "needs_attention",
+      "totalCount": 55,
+      "completeCount": 8,
+      "pendingCount": 0,
+      "attentionCount": 26,
+      "removedCount": 21,
+      "startedAt": "2026-10-11T15:08:16Z",
+      "issues": [
+        {
+          "doi": "10.1038/s41586-022-04618-z",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s43587-024-00692-2",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41467-026-71508-7",
+          "reasonCodes": [
+            "selected_figure_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s43587-023-00535-6",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s43587-022-00357-y",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "selected_figure_missing",
+            "code_unchecked",
+            "script_integrity_missing",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s41467-024-50725-y",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "ai_response_invalid"
+          ]
+        },
+        {
+          "doi": "10.1038/s43587-026-01164-5",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "selected_figure_missing",
+            "code_unchecked",
+            "script_integrity_missing",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.7554/elife.68048",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.7554/elife.77632",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41467-025-63229-0",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "code_unchecked",
+            "code_not_pinned",
+            "script_integrity_missing",
+            "author_code_link_unverified",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.1111/acel.12924",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "code_unchecked",
+            "script_integrity_missing",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s41586-024-07944-6",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41591-023-02327-2",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41586-021-03852-1",
+          "reasonCodes": [
+            "selected_figure_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s41467-024-48625-2",
+          "reasonCodes": [
+            "selected_figure_missing",
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41588-024-01873-w",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41586-023-06806-x",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "selected_figure_missing",
+            "code_unchecked",
+            "script_integrity_missing",
+            "input_undocumented",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s41592-023-01909-9",
+          "reasonCodes": [
+            "source_refresh_failed",
+            "code_unchecked",
+            "code_not_pinned",
+            "script_integrity_missing",
+            "author_code_link_unverified",
+            "input_undocumented",
+            "ai_missing"
+          ]
+        },
+        {
+          "doi": "10.1038/s41588-021-00790-6",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41592-021-01336-8",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.15252/msb.20209620",
+          "reasonCodes": [
+            "input_undocumented",
+            "ai_response_invalid"
+          ]
+        },
+        {
+          "doi": "10.1038/s41592-021-01346-6",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1093/bioinformatics/btag706",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1126/sciadv.aef0670",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1038/s41588-026-02776-8",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        },
+        {
+          "doi": "10.1111/1755-0998.70213",
+          "reasonCodes": [
+            "input_undocumented"
+          ]
+        }
+      ]
+    },
+    "rejectedCandidateCount": 2,
+    "removedPapers": {
+      "deletedDOIs": [],
+      "reasons": {},
+      "removedCount": 0
+    },
+    "removedCount": 0,
+    "checkedDOIs": [],
+    "stageCounts": {
+      "metadata": {},
+      "article": {},
+      "repository": {},
+      "metrics": {},
+      "ai": {}
+    },
+    "missingKeys": [],
+    "finishedAt": "2026-10-15T09:43:39Z",
+    "requests": 65,
+    "aiAttempts": 0,
+    "collectionRequests": 65,
+    "totalCount": 37,
+    "dailyNewCount": 2,
+    "status": "completed",
+    "dailySession": {
+      "date": "2026-10-15",
+      "status": "active",
+      "endReason": "",
+      "startedAt": "2026-10-15T07:28:26Z",
+      "updatedAt": "2026-10-15T09:43:39Z",
+      "batchCount": 31,
+      "requests": 1582,
+      "aiAttempts": 3,
+      "uncertainRequests": 0,
+      "uncertainAiAttempts": 0,
+      "maxBatches": 36,
+      "maxRequests": 1800,
+      "maxAiAttempts": 165,
+      "dailyNewCount": 2,
+      "targetCount": 5,
+      "inFlightCount": 0,
+      "localCheckpointSaved": true
+    }
+  },
+  {
     "startedAt": "2026-10-15T09:42:23Z",
     "date": "2026-10-15",
     "newCount": 1,
