@@ -83103,6 +83103,2391 @@
         "retry_success_count": 0
       },
       "admittedAt": "2026-10-15T09:42:59Z"
+    },
+    {
+      "id": "doi-e892c4ab92f22792",
+      "paper": "Methylation clocks fail to generalize across genetically admixed individuals.",
+      "doi": "10.7554/elife.105343",
+      "journal": "eLife",
+      "date": "2026-08-04",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.7554/elife.105343",
+      "pmcid": "PMC13436966",
+      "pmid": "42550597",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2050-084X",
+      "eissn": "2050-084X",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 3,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-16",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d90f212a4b41bc9422b695348f5148b39037b348abe538c317fade192e3160df"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/PMC13436966.1.xml?md5=48bcc86d15fceac7b5350f0b9a9d8638",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Schematic of the workflow of the study.We analyzed genome-wide methylation and genotyping data from blood samples from 621 AD and non-demented control individuals from the MAGENTA study. To replicate our findings, we analyzed data from 1394 healthy African Americans from the GENOA study, 422 healthy African Americans from the Grady Trauma Project, and 729 healthy Whites from the NSPHS study. We applied a set of first-, second-, and third-generation methylation clocks to the individuals and estimated their genetic ancestry. This enabled us to explore the performance of methylation clocks in individuals with different genetic ancestries.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig1.jpg?md5=8fb796ddaddcd6b1fa81d6e59e44827c",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s1",
+            "label": "Figure 1—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The age distributions of the MAGENTA study cohorts do not differ systematically.We compiled the chronological ages for the individuals in the MAGENTA study and compared their distributions, stratifying by their respective cohorts. The differences in age distributions for the cohorts, particularly between Whites, Puerto Ricans, and African Americans, do not explain the significant difference in clock accuracy between these cohorts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig1-figsupp1.jpg?md5=098b61f8d5b508f01d0ac226b50f6c63",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s2",
+            "label": "Figure 1—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Principal component analysis (PCA) of MAGENTA methylation data.We performed a PCA of the normalized methylation data for all 621 MAGENTA individuals and calculated the variance explained by the first two PCs. PC1 explains 14.96% of the variance in the data, and PC2 explains 8.63% of the variance. Importantly, coloring the samples by cohort, sample center, sex, disease status, ethnicity, and sample plate did not show any outright stratification across the two PCs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig1-figsupp2.jpg?md5=c386b146a99d656b7634813fe7401015",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Methylation clock accuracy is lower in cohorts with substantial African genetic ancestry.(A) Pearson correlation between chronological age and DNAm age predicted by the Horvath clock for controls in the White MAGENTA cohort. The correlation of r=0.72\\begin{document}$r=0.72$\\end{document} is consistent with previous studies of similar age groups. (B) Pearson correlation between chronological age and DNAm age predicted by the Horvath clock for the genetically admixed cohorts in MAGENTA. For each cohort, the adjacent boxplots display the distribution of global ancestry proportions: European (CEU, red), African (YRI, green), and Amerindigenous (PEL, blue). The cohorts with substantial African ancestry—African Americans and Puerto Ricans—exhibit lower correlations (r=0.51\\begin{document}$r=0.51$\\end{document} and 0.45, respectively) compared to the Cubans (r=0.68\\begin{document}$r=0.68$\\end{document}) and Peruvians (r=0.72\\begin{document}$r=0.72$\\end{document}). (C) Relative accuracy of the Horvath clock across cohorts compared to Whites. The bar plot shows the difference in Pearson correlation coefficients relative to the White cohort baseline (r=0.72\\begin{document}$r=0.72$\\end{document}). Asterisks indicate a statistically significant difference from the baseline (* p < 0.05). Error bars denote 95% confidence intervals for relative correlation differences (Zou's method).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig2.jpg?md5=1d3dad4de0b364524171366a6187b72b",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "assets/pmc13436966-c114083afa20fb73.jpg",
+            "sha256": "c114083afa20fb730bd0523f0102d66ff5cc493f0c47d68386999e4584588915",
+            "width": 795,
+            "height": 367,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c114083afa20fb730bd0523f0102d66ff5cc493f0c47d68386999e4584588915",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig2s1",
+            "label": "Figure 2—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Combining cases and controls.We calculated the correlation between Horvath DNAmAge and chronological age over combined AD cases and non-demented controls in the MAGENTA cohorts. The correlations did not change dramatically across the cohorts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig2-figsupp1.jpg?md5=5a207fc62b246b633af2f11eccd14cf6",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Lower methylation clock accuracy in African Americans holds across cohorts.Scatter plots of chronological age versus Horvath DNAm age in three independent replication cohorts: Swedish Whites (NSPHS), GENOA Study African Americans, and Grady Trauma Project African Americans. Top Row: Age predictions for the full age range of each cohort. The Swedish White cohort exhibits the highest accuracy (r=0.97\\begin{document}$r=0.97$\\end{document}, MAE = 3.04), while both African American cohorts show lower correlations (r=0.85\\begin{document}$r=0.85$\\end{document} and r=0.88\\begin{document}$r=0.88$\\end{document}) and higher error rates (MAE = 3.83 and 5.14, respectively). Bottom Row: Age predictions restricted to individuals ≥55 years old, similar to the demographics of the MAGENTA cohorts. In this age-restricted subset, the disparity in clock performance is consistent, with the Swedish White cohort maintaining a significantly higher correlation (r=0.80\\begin{document}$r=0.80$\\end{document}) compared to the GENOA (r=0.67\\begin{document}$r=0.67$\\end{document}) and Grady (r=0.49\\begin{document}$r=0.49$\\end{document}) African American cohorts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig3.jpg?md5=354e7c6e2f1f1f7bd67b2a9faf3d2668",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s1",
+            "label": "Figure 3—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Principal component (PC) Horvath clock applied to MAGENTA controls.We evaluated the correlation between the PC Horvath DNAmAge and chronological age in non-demented controls from the MAGENTA cohorts. This version of the clock did not yield consistent improvements in age prediction accuracy or generalizability across MAGENTA cohorts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig3-figsupp1.jpg?md5=e8ba31134f5eae1770c5e4151bf73083",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s2",
+            "label": "Figure 3—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Principal component (PC) Horvath clock applied to MAGENTA cases and controls.We evaluated the correlation between the PC Horvath DNAmAge and chronological age in both cases and non-demented controls from the combined MAGENTA cohorts. This approach did not consistently improve the clock’s performance compared to the controls alone.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig3-figsupp2.jpg?md5=f18b610d4b77c8e0c4e5158cf6365391",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s3",
+            "label": "Figure 3—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Principal component (PC) Horvath clock applied to replicate datasets.We evaluated the correlation between the PC Horvath DNAm Age and chronological age in the three external, replication datasets of White Swedish individuals and African Americans. We observed results consistent with those obtained on the MAGENTA cohorts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig3-figsupp3.jpg?md5=347f562f6fa5c209a6a516b3d0e03b7b",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Lower methylation clock accuracy in cohorts with African ancestry holds across multiple clocks.Pearson correlation coefficients between chronological age and DNAm age predicted by the Horvath (top), Hannum (middle), and Zhang_EN (bottom) clocks across all MAGENTA and replication (GENOA, Grady, Swedish) cohorts. The vertical dashed line in each panel represents the baseline correlation observed in the MAGENTA White cohort. Cohorts with substantial African ancestry (African American and Puerto Rican, red bars) consistently exhibit lower correlations compared to Whites, Peruvians, and Cubans across all three clock models. Asterisks indicate a statistically significant difference in correlation compared to the White MAGENTA cohort baseline (* p < 0.05).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig4.jpg?md5=c5a968f784d0a719cd403fc4db882752",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Methylation clocks do not consistently identify accelerated aging in admixed Alzheimer’s cohorts.(A) Comparison of the distributions of Horvath intrinsic age acceleration for AD patients and non-demented controls for each of the admixed cohorts in MAGENTA. AD patients do not show significantly higher age acceleration in any of the admixed cohorts. In contrast, the AD cases had significantly greater acceleration than controls in the white cohort (Figure 5—figure supplement 1). NS, not significant. (B) Median differences (in years) in intrinsic age acceleration between AD patients and non-demented controls for five methylation clocks for each cohort in MAGENTA. The clocks do not consistently identify accelerated aging in AD across cohorts, and the results also vary within cohorts. * p < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig5.jpg?md5=26f24f1e8aa37b56622b113a24eb128b",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5s1",
+            "label": "Figure 5—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "The Horvath Clock accurately discerns between white AD patients and non-demented controls.Horvath clock intrinsic age acceleration was significantly greater on average for white AD patients than matched, non-demented controls (median 1.7 vs. 1.5 years, p = 0.041), consistent with previous literature.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig5-figsupp1.jpg?md5=20a231599e40d60d59b12b15492bbdd6",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5s2",
+            "label": "Figure 5—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Combinations of DNAmAge and intrinsic age accelerations from multiple methylation clocks do not improve their performance.We combined multiple methylation clocks and their respective predictions for all MAGENTA individuals but saw no increase in accuracy over individual clocks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig5-figsupp2.jpg?md5=dd4023b25c6c6e4ac57fd46104b78113",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Genetic variants with different frequencies between ancestries associate with methylation levels at clock CpGs.(A) Percentage of CpG sites in each methylation clock that exhibit differential methylation in whole blood between individuals of African vs. European ancestry. (B) Methylation levels at some clock CpG sites significantly associate with error across MAGENTA individuals CpGs for each first generation clock are sorted based on the multiple-testing-corrected significance of their association with clock error in MAGENTA. (C) The allele frequency distribution of the single nucleotide variants that disrupt CpG sites considered by the Horvath clock in 76,156 individuals from gnomAD (v3.0). Of the 353 clock CpG sites, 245 (69%) have at least one variant, but nearly all the variants are very rare. (D) Number of CpGs in each clock that are influenced by methylation quantitative trait loci (meQTLs). The Horvath clock contains 271 meQTL-associated CpGs, substantially more than the Hannum, EN, PhenoAge, or DunedinPACE clocks. (E) Clock meQTL have significantly higher allele frequency in individuals with African genetic ancestry from gnomAD than all other ancestry groups (median 0.068 for African vs. 0.004–0.046; p <3.85×10−25). (F) Frequency of meQTL variants in the MAGENTA cohorts. Non-differentiated meQTLs (left) have similar frequencies across cohorts, but African-differentiated meQTLs (right) are significantly more frequent in African Americans (AA) and Puerto Ricans (PR) compared to Peruvians (PER) and Cubans (CUB). (G) Venn diagrams illustrating the overlap between CpGs that contribute to clock prediction error (‘Error-associated’, blue) and those influenced by meQTLs (‘meQTL affected’, pink) for the first-generation clocks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6.jpg?md5=a6c1eefc25153bc278fe976cf36c988e",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "assets/pmc13436966-22bd6e1a1281b5e0.jpg",
+            "sha256": "22bd6e1a1281b5e05d5ce1fd934ac1364d897d66a578c5164b1b0a706362c022",
+            "width": 759,
+            "height": 513,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "22bd6e1a1281b5e05d5ce1fd934ac1364d897d66a578c5164b1b0a706362c022",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig6s1",
+            "label": "Figure 6—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Allele frequencies for Horvath clock CpG-disrupting variants across each gnomAD v.3.0 ancestry.The allele frequencies of the clock CpG-disrupting variants were very low, even after stratification by gnomAD ancestries. Note that the Amish had only two variants in the Horvath clock CpGs, but only one was common at 1% allele frequency.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp1.jpg?md5=d02e38ad9516777f8240844fba7dd362",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6s2",
+            "label": "Figure 6—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Overlap of gnomAD version 4.1 variants and clock CpG sites across multiple clocks.We intersected the genomic coordinates of all clock CpG sites across all clocks tested in our study with all variants in the latest version of the gnomAD database. Many variants overlap the clock CpG sites, but only a small number for each clock are common (AF>1%): Hannum (1), Zhang19_EN (5), PhenoAge (2), and DunedinPACE (1).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp2.jpg?md5=56e403ecac119ddc1c01ff13bf42f281",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6s3",
+            "label": "Figure 6—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Allele frequencies of meQTL that affect Horvath clock CpG sites.We compiled the reported allele frequencies for thousands of variants that affect the methylation levels of Horvath clock CpG sites. Most variants are reported to be common in their respective study populations. (A) Variants from EUR and SAS individuals; (B) Variants from African American individuals; (C) variants from EUR individuals in the UK.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp3.jpg?md5=272691f43fa4aa13d004b17a816e8470",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6s4",
+            "label": "Figure 6—figure supplement 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Allele frequencies of meQTL that affect Horvath clock CpG sites, stratified by local ancestry blocks in gnomAD admixed individuals.The allele frequency distribution of the 17,180 unique variants associated with methylation levels at Horvath clock CpGs found in gnomAD Latino admixed individuals. Clock meQTL have significantly higher allele frequencies in African local ancestry genomic segments among the 7612 Latino admixed individuals with varying proportions of European, American, and African ancestry from gnomAD v3.1.2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp4.jpg?md5=2007368cc8aa770374878f5981cbf6ce",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6s5",
+            "label": "Figure 6—figure supplement 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Venn diagrams for overlap of clock CpG sites.The four-way overlap includes sets of clock CpGs whose methylation levels are significantly associated with increased clock error in MAGENTA individuals, clock CpGs that are differentially methylated in whole blood samples of African ancestry individuals relative to whole blood samples of European ancestry individuals (adjusting for chronological age and sex), clock CpGs affected by meQTL, and clock CpGs affected by African ancestry-differentiated meQTL.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp5.jpg?md5=0d6bcb89e6ced2da191261dda6bd92ed",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6s6",
+            "label": "Figure 6—figure supplement 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Distribution of unique meQTL affecting Horvath clock CpG sites.We analyzed the distribution of the meQTL from EUR, SAS, and AFR individuals that affect Horvath clock CpG sites. Blue dashed lines indicate the maximum number of variants affecting a clock CpG site (1,699), orange dashed lines indicate the mean (108.3), and green dashed lines indicate the median (36).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-fig6-figsupp6.jpg?md5=e079dbfcc248bcfe2f9b6ead3efba4a6",
+            "articleURL": "https://doi.org/10.7554/elife.105343",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al.. Methylation clocks fail to generalize across genetically admixed individuals.. DOI: 10.7554/elife.105343. Copyright holder: Cruz-Gonzalez et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mdar",
+            "label": "MDAR checklist",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/elife-105343-mdarchecklist1.pdf?md5=ad0ca35984dae8be58fefd6ad870e370",
+            "license": "CC BY",
+            "sha256": "9413cba0a338fc1af2155e197cad3b21f2661abefb4823ae738feeca3b83c048",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 676390,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 5,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/seba2550/methyl-clocks-admixture"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-16T06:45:58.445059+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/seba2550/methyl-clocks-admixture",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13436966.1/PMC13436966.1.xml?md5=48bcc86d15fceac7b5350f0b9a9d8638"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Sebastián Cruz-Gonzalez; Ogechukwu Okpala; Esther Gu; Lissette Gomez; Makaela Mews; Jeffery M Vance; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/seba2550/methyl-clocks-admixture",
+        "commit": "dddb1159bef6dc6274c3196901068f0b17fbd5b7",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "scripts/07_meqtl_overlap_analysis.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "sha256": "4884221c5aafde6fa01c3d00b014471566a45202382f2129ea2163d5984a81c0",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "~/Desktop/Capra Lab/Thesis Project/Aim_1/ancestry_CpGs.RData",
+                "reader": "load",
+                "line": 11,
+                "status": "literal_path",
+                "format": "RData",
+                "readerOptions": {}
+              },
+              {
+                "path": "all_meqtl_affected_cpgs.rds",
+                "reader": "readRDS",
+                "line": 14,
+                "status": "literal_path",
+                "format": "rds",
+                "readerOptions": {}
+              },
+              {
+                "path": "all_results.rds",
+                "reader": "readRDS",
+                "line": 19,
+                "status": "literal_path",
+                "format": "rds",
+                "readerOptions": {}
+              },
+              {
+                "path": "clock_cpgs_overlap_tidy.csv",
+                "reader": "read_csv",
+                "line": 69,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "clock_cpgs_overlap_tidy.csv",
+                "reader": "read_csv",
+                "line": 149,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "clock_cpgs_overlap_tidy.csv",
+                "reader": "read_csv",
+                "line": 272,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 11,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L11"
+              },
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L14"
+              },
+              {
+                "type": "io_reference",
+                "line": 19,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L19"
+              },
+              {
+                "type": "io_reference",
+                "line": 69,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L69"
+              },
+              {
+                "type": "io_reference",
+                "line": 149,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L149"
+              },
+              {
+                "type": "io_reference",
+                "line": 272,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R#L272"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/11_assemble_figures.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R",
+            "sha256": "7b7c6493f25293d744739cf45560cf666c50f2132872392d2999c141e40df157",
+            "language": "R",
+            "inputs": [],
+            "outputs": [
+              {
+                "path": "manuscript/main_figs/Figure2.pdf",
+                "writer": "ggsave",
+                "line": 79
+              },
+              {
+                "path": "manuscript/main_figs/Figure3.pdf",
+                "writer": "ggsave",
+                "line": 80
+              },
+              {
+                "path": "manuscript/main_figs/Figure6.pdf",
+                "writer": "ggsave",
+                "line": 81
+              }
+            ],
+            "fields": [
+              {
+                "name": "fig5a",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig5c",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig5d",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig5e",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig5f",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig5g",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig2",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig3",
+                "line": 80,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 79,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R#L79"
+              },
+              {
+                "type": "io_reference",
+                "line": 80,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R#L80"
+              },
+              {
+                "type": "io_reference",
+                "line": 81,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R#L81"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/01_age_distribution.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/01_age_distribution.R",
+            "sha256": "b0b87dd6618c11c9356e2857e1323e97e638836c962bd110d67eff8625da580e",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "age",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "characteristics_ch1.1",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "characteristics_ch1.2",
+                "line": 36,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/02_magenta_accuracy.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R",
+            "sha256": "52be92a9a145b000b246d040ebbde3be7d018f5fcb139417b63f050b3d59c63c",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+                "reader": "read.csv",
+                "line": 15,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/genotyping_data/AA_ancestry_proportions.txt",
+                "reader": "read.table",
+                "line": 18,
+                "status": "literal_path",
+                "format": "txt",
+                "readerOptions": {
+                  "header": 0
+                }
+              },
+              {
+                "path": "data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+                "reader": "read.table",
+                "line": 19,
+                "status": "literal_path",
+                "format": "txt",
+                "readerOptions": {
+                  "header": 0
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Beta_ID",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_ID",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_ageAcc",
+                "line": 792,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 1140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 1166,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 1202,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_correlation",
+                "line": 1367,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Levine",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "EN",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BLUP",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "statistic",
+                "line": 1764,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT",
+                "line": 1769,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_adj",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "significance",
+                "line": 1782,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CLOCK",
+                "line": 1802,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_bonferroni",
+                "line": 2206,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_fdr",
+                "line": 2207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 15,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R#L15"
+              },
+              {
+                "type": "io_reference",
+                "line": 18,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R#L18"
+              },
+              {
+                "type": "io_reference",
+                "line": 19,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R#L19"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/03_replication_accuracy.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R",
+            "sha256": "0b10680e44ae6339bea7be787fef4704b7e8555014813062334c65f6e80ce712",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "data/replication/horvath_swedes_dnamage_all_results.csv",
+                "reader": "read_csv",
+                "line": 14,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/replication/genoa_epic_dnamage_all_results.csv",
+                "reader": "read_csv",
+                "line": 15,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/replication/aa_grady_dnamage_results.csv",
+                "reader": "read_csv",
+                "line": 16,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+                "reader": "read.csv",
+                "line": 156,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "age",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT_LABEL",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_cor",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DNAmAge",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 724,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R#L14"
+              },
+              {
+                "type": "io_reference",
+                "line": 15,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R#L15"
+              },
+              {
+                "type": "io_reference",
+                "line": 16,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R#L16"
+              },
+              {
+                "type": "io_reference",
+                "line": 156,
+                "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R#L156"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/04_magenta_age_acceleration.R",
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/04_magenta_age_acceleration.R",
+            "sha256": "94b7465363d74d146afbc826f8af7322d14ade20d11cc0b204a980b2e9ed68d5",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "coefficient",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cpg",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Beta_ID",
+                "line": 122,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_EUR",
+                "line": 134,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_AFR_Am",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pred_Combined",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AGE_OF_EXAM",
+                "line": 180,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mean_val",
+                "line": 217,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "STATUS",
+                "line": 217,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "median_val",
+                "line": 219,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sd_val",
+                "line": 221,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 226,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SEX",
+                "line": 230,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 234,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT",
+                "line": 381,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "path",
+                "line": 619,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "text",
+                "line": 623,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "~/Desktop/Capra Lab/Thesis Project/Aim_1/ancestry_CpGs.RData",
+            "path": "",
+            "reader": "load",
+            "format": "RData",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 11,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "all_meqtl_affected_cpgs.rds",
+            "path": "",
+            "reader": "readRDS",
+            "format": "rds",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 14,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "all_results.rds",
+            "path": "",
+            "reader": "readRDS",
+            "format": "rds",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 19,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "clock_cpgs_overlap_tidy.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 69,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "clock_cpgs_overlap_tidy.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 149,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "clock_cpgs_overlap_tidy.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "CpG",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AFR",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "meqtl_data",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PR",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CUB",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PER",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGmarker",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PROBE",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clock",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Percentage",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpGs",
+                "line": 562,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+            "line": 272,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "path": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Beta_ID",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_ID",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_ageAcc",
+                "line": 792,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 1140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 1166,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 1202,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_correlation",
+                "line": 1367,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Levine",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "EN",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BLUP",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "statistic",
+                "line": 1764,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT",
+                "line": 1769,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_adj",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "significance",
+                "line": 1782,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CLOCK",
+                "line": 1802,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_bonferroni",
+                "line": 2206,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_fdr",
+                "line": 2207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R",
+            "line": 15,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/genotyping_data/AA_ancestry_proportions.txt",
+            "path": "data/genotyping_data/AA_ancestry_proportions.txt",
+            "reader": "read.table",
+            "format": "txt",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "sample_ID\tPEL\tCEU\tYRI",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "Beta_ID",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_ID",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_ageAcc",
+                "line": 792,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 1140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 1166,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 1202,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_correlation",
+                "line": 1367,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Levine",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "EN",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BLUP",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "statistic",
+                "line": 1764,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT",
+                "line": 1769,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_adj",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "significance",
+                "line": 1782,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CLOCK",
+                "line": 1802,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_bonferroni",
+                "line": 2206,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_fdr",
+                "line": 2207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R",
+            "line": 18,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/genotyping_data/AA_ancestry_proportions.txt",
+            "readerOptions": {
+              "header": 0
+            },
+            "headerSHA256": "6faffd3b443a84f82a44ee43d90b20e7a7e5c98bfa70c38b81eb460d0fd41a0c"
+          },
+          {
+            "name": "data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+            "path": "data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+            "reader": "read.table",
+            "format": "txt",
+            "status": "header_observed",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [
+              {
+                "name": "sample_ID\tPEL\tCEU\tYRI",
+                "kind": "actual_file_header"
+              }
+            ],
+            "observedFieldReferences": [
+              {
+                "name": "Beta_ID",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_ID",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_ageAcc",
+                "line": 792,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 1140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 1166,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 1202,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_correlation",
+                "line": 1367,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Levine",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "EN",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BLUP",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age",
+                "line": 1482,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "statistic",
+                "line": 1764,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT",
+                "line": 1769,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_adj",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 1779,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "significance",
+                "line": 1782,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CLOCK",
+                "line": 1802,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_bonferroni",
+                "line": 2206,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value_fdr",
+                "line": 2207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R",
+            "line": 19,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+            "readerOptions": {
+              "header": 0
+            },
+            "headerSHA256": "ead30fd5d04b2ef24574b22f0d3b742ab3116577badc01159f28e93c0973e5ef"
+          },
+          {
+            "name": "data/replication/horvath_swedes_dnamage_all_results.csv",
+            "path": "data/replication/horvath_swedes_dnamage_all_results.csv",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "age",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT_LABEL",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_cor",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DNAmAge",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 724,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R",
+            "line": 14,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/horvath_swedes_dnamage_all_results.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/replication/genoa_epic_dnamage_all_results.csv",
+            "path": "data/replication/genoa_epic_dnamage_all_results.csv",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "age",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT_LABEL",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_cor",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DNAmAge",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 724,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R",
+            "line": 15,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/genoa_epic_dnamage_all_results.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/replication/aa_grady_dnamage_results.csv",
+            "path": "data/replication/aa_grady_dnamage_results.csv",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "age",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT_LABEL",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_cor",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DNAmAge",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 724,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R",
+            "line": 16,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/aa_grady_dnamage_results.csv",
+            "readerOptions": {}
+          },
+          {
+            "name": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "path": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "repository_file_found",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "age",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Horvath",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "t0",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "COHORT_LABEL",
+                "line": 228,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_cor",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DNAmAge",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 724,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R",
+            "line": 156,
+            "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/bio_age_estimates_magenta_age_diff_metadata.csv",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [
+          {
+            "figureLabel": "Figure 2",
+            "output": "manuscript/main_figs/Figure2.pdf",
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R",
+            "line": 79,
+            "status": "candidate",
+            "evidence": "Explicit output filename; not verified against article caption or panels."
+          },
+          {
+            "figureLabel": "Figure 3",
+            "output": "manuscript/main_figs/Figure3.pdf",
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R",
+            "line": 80,
+            "status": "candidate",
+            "evidence": "Explicit output filename; not verified against article caption or panels."
+          },
+          {
+            "figureLabel": "Figure 6",
+            "output": "manuscript/main_figs/Figure6.pdf",
+            "scriptURL": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/11_assemble_figures.R",
+            "line": 81,
+            "status": "candidate",
+            "evidence": "Explicit output filename; not verified against article caption or panels."
+          }
+        ],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-16T06:46:04Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-16T06:46:04Z",
+        "url": "https://openalex.org/W4407029004",
+        "cited_by_count": 5,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-16T06:46:04Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-16T06:46:04Z",
+          "lastOutcome": "automatic_complete"
+        }
+      },
+      "selectionScore": {
+        "total": 82,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 40,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "ai": {
+        "status": "generated",
+        "title_zh": "DNA甲基化时钟在遗传混合个体中泛化能力不足",
+        "summary_zh": "该研究基于MAGENTA研究中621名阿尔茨海默病(AD)患者与匹配对照(非裔美国人、西班牙裔、白人队列)的血液全基因组甲基化与基因分型数据,评估第一、二、三代甲基化时钟的表现,并在GENOA(1394名健康非裔美国人)、Grady Trauma Project(422名健康非裔美国人)和NSPHS(729名健康白人)三个额外数据集中进行重复分析。结果显示,与白人队列相比,甲基化时钟在遗传混合队列中预测年龄的准确性更低,尤其在非洲祖源比例较高的个体中;这一准确性下降在额外数据集中同样存在。时钟也未能一致地识别混合AD病例相对于对照的年龄加速。通过将时钟CpG与全球人群的甲基化、胚系遗传变异及甲基化QTL(meQTL)数据取交集,研究发现非洲与欧洲祖源个体间时钟CpG的差异甲基化较为常见,遗传变异很少破坏人群间的时钟CpG,但相当一部分时钟CpG的meQTL在非洲遗传祖源中频率显著更高。",
+        "learning_points": [
+          "研究使用MAGENTA队列621名AD患者与匹配对照的血液全基因组甲基化与基因分型数据,并估计遗传祖源(Figure 1)。",
+          "研究在GENOA(1394名健康非裔美国人)、Grady Trauma Project(422名健康非裔美国人)和NSPHS(729名健康白人)三个额外数据集中重复分析(Figure 1)。",
+          "Horvath时钟在白人MAGENTA队列中年龄与DNAm年龄的Pearson相关为r=0.72,而在非裔美国人和波多黎各人队列中分别为r=0.51和0.45,低于古巴人(r=0.68)和秘鲁人(r=0.72)(Figure 2)。",
+          "MAGENTA各队列的年龄分布差异不能解释队列间时钟准确性的显著差异(Figure 1—figure supplement 1)。",
+          "MAGENTA甲基化数据的PCA中,PC1解释14.96%、PC2解释8.63%的方差,按队列、样本中心、性别、疾病状态、族裔和样本板着色未显示明显分层(Figure 1—figure supplement 2)。",
+          "研究将时钟CpG与甲基化、胚系遗传变异和meQTL数据取交集,发现非洲与欧洲祖源个体间时钟CpG差异甲基化常见,遗传变异很少破坏人群间时钟CpG,但相当一部分时钟CpG的meQTL在非洲遗传祖源中频率显著更高。",
+          "静态检查显示脚本scripts/07_meqtl_overlap_analysis.R读取ancestry_CpGs.RData、all_meqtl_affected_cpgs.rds、all_results.rds和clock_cpgs_overlap_tidy.csv等文件(script-0)。",
+          "静态检查显示脚本scripts/11_assemble_figures.R使用ggsave输出Figure2.pdf、Figure3.pdf和Figure6.pdf(script-1)。"
+        ],
+        "limitations": [
+          "作者代码未被执行,静态检查不构成复现验证,不能宣称已复现或结果一致。",
+          "输入数据的尺度、图号与具体分析结果的对应关系在证据中未明示,保持未知。",
+          "证据仅提供部分图注与脚本静态观察,未提供完整方法、统计模型细节或全部图表内容。",
+          "Figure 2图注文本在证据中被截断,部分相关系数信息不完整。",
+          "未观察到关于数据许可、期刊指标或复现结果的证据,相关信息未知。",
+          "脚本静态观察仅显示文件读取与图形输出语句,未显示具体计算逻辑或参数设置。",
+          "证据未说明meQTL分析的具体统计阈值或显著性标准。",
+          "证据未提供各队列样本年龄、性别等基线特征的完整描述。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-16T06:46:17Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "98245c5ccc17a6c188b257100659a9ac078c4f22cf2e5d93cd226dbb4b473d95",
+        "summary_fingerprint": "ee6d0c406b20853a145eeb822ee86b103f37694371b567f35a4f2d54bcdcf2f8",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      },
+      "admittedAt": "2026-10-16T06:46:17Z"
     }
   ],
   "inputSpecs": {
@@ -119934,6 +122319,1102 @@
           ]
         }
       ]
+    },
+    "doi-e892c4ab92f22792": {
+      "tree": "~/Desktop/Capra Lab/Thesis Project/Aim_1/ancestry_CpGs.RData\nall_meqtl_affected_cpgs.rds\nall_results.rds\nclock_cpgs_overlap_tidy.csv\nclock_cpgs_overlap_tidy.csv\nclock_cpgs_overlap_tidy.csv\ndata/bio_age_estimates_magenta_age_diff_metadata.csv\ndata/genotyping_data/AA_ancestry_proportions.txt\ndata/genotyping_data/HISPANIC_ancestry_proportions.txt\ndata/replication/horvath_swedes_dnamage_all_results.csv\ndata/replication/genoa_epic_dnamage_all_results.csv\ndata/replication/aa_grady_dnamage_results.csv\ndata/bio_age_estimates_magenta_age_diff_metadata.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "~/Desktop/Capra Lab/Thesis Project/Aim_1/ancestry_CpGs.RData",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "RData",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 11；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "all_meqtl_affected_cpgs.rds",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "rds",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 14；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "all_results.rds",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "rds",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 19；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "clock_cpgs_overlap_tidy.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 69；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "clock_cpgs_overlap_tidy.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 149；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "clock_cpgs_overlap_tidy.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R；读取行 272；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/07_meqtl_overlap_analysis.R",
+          "observedFieldReferences": [
+            {
+              "name": "CpG",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "results",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AFR",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "meqtl_data",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PR",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CUB",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PER",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGmarker",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PROBE",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Clock",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Percentage",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpGs",
+              "line": 562,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R；读取行 15；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/bio_age_estimates_magenta_age_diff_metadata.csv",
+          "observedFieldReferences": [
+            {
+              "name": "Beta_ID",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_ID",
+              "line": 28,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_ageAcc",
+              "line": 792,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 1140,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "conf.int",
+              "line": 1166,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p.value",
+              "line": 1202,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_correlation",
+              "line": 1367,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Levine",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "EN",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "BLUP",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "age",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "statistic",
+              "line": 1764,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT",
+              "line": 1769,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_adj",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "significance",
+              "line": 1782,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CLOCK",
+              "line": 1802,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_bonferroni",
+              "line": 2206,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_fdr",
+              "line": 2207,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/genotyping_data/AA_ancestry_proportions.txt",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "txt",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "真实文件表头已读取；含义/单位仍待核",
+          "fields": [
+            [
+              "sample_ID\tPEL\tCEU\tYRI",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ]
+          ],
+          "preview": "仅真实列名，不含虚构示例值",
+          "csv": "sample_ID\tPEL\tCEU\tYRI",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R；读取行 18；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/genotyping_data/AA_ancestry_proportions.txt",
+          "observedFieldReferences": [
+            {
+              "name": "Beta_ID",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_ID",
+              "line": 28,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_ageAcc",
+              "line": 792,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 1140,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "conf.int",
+              "line": 1166,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p.value",
+              "line": 1202,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_correlation",
+              "line": 1367,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Levine",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "EN",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "BLUP",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "age",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "statistic",
+              "line": 1764,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT",
+              "line": 1769,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_adj",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "significance",
+              "line": 1782,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CLOCK",
+              "line": 1802,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_bonferroni",
+              "line": 2206,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_fdr",
+              "line": 2207,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "txt",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "真实文件表头已读取；含义/单位仍待核",
+          "fields": [
+            [
+              "sample_ID\tPEL\tCEU\tYRI",
+              "类型未核",
+              "真实文件表头",
+              "列含义/尺度未核"
+            ]
+          ],
+          "preview": "仅真实列名，不含虚构示例值",
+          "csv": "sample_ID\tPEL\tCEU\tYRI",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/02_magenta_accuracy.R；读取行 19；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/genotyping_data/HISPANIC_ancestry_proportions.txt",
+          "observedFieldReferences": [
+            {
+              "name": "Beta_ID",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_ID",
+              "line": 28,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_ageAcc",
+              "line": 792,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 1140,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "conf.int",
+              "line": 1166,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p.value",
+              "line": 1202,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_correlation",
+              "line": 1367,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Levine",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "EN",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "BLUP",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "age",
+              "line": 1482,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "statistic",
+              "line": 1764,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT",
+              "line": 1769,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_adj",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 1779,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "significance",
+              "line": 1782,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CLOCK",
+              "line": 1802,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_bonferroni",
+              "line": 2206,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value_fdr",
+              "line": 2207,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/replication/horvath_swedes_dnamage_all_results.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R；读取行 14；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/horvath_swedes_dnamage_all_results.csv",
+          "observedFieldReferences": [
+            {
+              "name": "age",
+              "line": 19,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 198,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT_LABEL",
+              "line": 228,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_cor",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "DNAmAge",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "correlation",
+              "line": 724,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/replication/genoa_epic_dnamage_all_results.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R；读取行 15；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/genoa_epic_dnamage_all_results.csv",
+          "observedFieldReferences": [
+            {
+              "name": "age",
+              "line": 19,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 198,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT_LABEL",
+              "line": 228,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_cor",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "DNAmAge",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "correlation",
+              "line": 724,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/replication/aa_grady_dnamage_results.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R；读取行 16；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/replication/aa_grady_dnamage_results.csv",
+          "observedFieldReferences": [
+            {
+              "name": "age",
+              "line": 19,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 198,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT_LABEL",
+              "line": 228,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_cor",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "DNAmAge",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "correlation",
+              "line": 724,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "data/bio_age_estimates_magenta_age_diff_metadata.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/scripts/03_replication_accuracy.R；读取行 156；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/seba2550/methyl-clocks-admixture/blob/dddb1159bef6dc6274c3196901068f0b17fbd5b7/data/bio_age_estimates_magenta_age_diff_metadata.csv",
+          "observedFieldReferences": [
+            {
+              "name": "age",
+              "line": 19,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Horvath",
+              "line": 23,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "t0",
+              "line": 198,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "COHORT_LABEL",
+              "line": 228,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "relative_cor",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "DNAmAge",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "correlation",
+              "line": 724,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -121552,7 +125033,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-16T06:45:10Z",
+  "generatedAt": "2026-10-16T06:46:17Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -121786,18 +125267,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-16T06:24:54Z",
-    "updatedAt": "2026-10-16T06:45:13Z",
+    "updatedAt": "2026-10-16T06:46:18Z",
     "batchCount": 20,
-    "requests": 823,
-    "aiAttempts": 0,
+    "requests": 870,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
