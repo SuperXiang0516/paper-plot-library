@@ -4925,14 +4925,19 @@
     "uncertainAiAttempts": 0,
     "startedAt": "2026-10-16T06:24:54Z",
     "maxAiAttempts": 165,
-    "batchCount": 21,
+    "batchCount": 22,
     "maxSeconds": 2700,
     "dailyNewCount": 1,
-    "updatedAt": "2026-10-16T06:47:21Z",
+    "updatedAt": "2026-10-16T06:47:23Z",
     "aiAttempts": 1,
-    "elapsedSeconds": 1347,
+    "elapsedSeconds": 1350,
     "maxBatches": 36,
     "status": "active",
-    "endReason": ""
+    "endReason": "",
+    "inFlight": {
+      "startedAt": "2026-10-16T06:47:23Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
