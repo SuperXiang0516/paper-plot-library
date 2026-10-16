@@ -33,6 +33,85 @@
     }
   },
   "candidates": {
+    "10.1371/journal.pone.0356174": {
+      "checkedAt": "2026-10-16T07:01:11Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1371/journal.pone.0356174",
+        "metadataHash": "a88e2bbb5f56027c7fa66abe446612daf53cf3f1fb052d63a652986b89b3d9c8",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/PMC13567754.1.xml?md5=9b320f1663fdf66d5269823059c4f76b",
+          "license": "CC BY",
+          "figures": [
+            {
+              "asset": "assets/pmc13567754-825739ee86ed867b.webp",
+              "assetSHA256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
+              "license": "CC BY",
+              "id": "pone.0356174.g005",
+              "sha256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
+              "height": 1050,
+              "label": "Fig 5",
+              "width": 1600,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g005.webp?md5=336d7d7a04b3e1ed43a9b63f2ed2f01b",
+              "captionHash": "248629b4092dfc935f69674402a68284462f72431342c66443b5bcfd50e80a4d"
+            },
+            {
+              "asset": "assets/pmc13567754-04239b985ce88820.webp",
+              "assetSHA256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
+              "license": "CC BY",
+              "id": "pone.0356174.g006",
+              "sha256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
+              "height": 966,
+              "label": "Fig 6",
+              "width": 1600,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g006.webp?md5=a33fe725ad9b34c3363dadbae0fd6533",
+              "captionHash": "30231556ae48eb6e605914884b3625e868b9595c3e3edd23e797e023c4d5305b"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-f31a657af64984a9",
+          "doi": "10.1371/journal.pone.0356174",
+          "paper": "A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.",
+          "journal": "PloS one",
+          "date": "2026-09-11",
+          "year": "2026",
+          "pmcid": "PMC13567754",
+          "pmid": "42726753",
+          "paperURL": "https://doi.org/10.1371/journal.pone.0356174"
+        },
+        "updatedAt": "2026-10-16T07:01:10Z"
+      }
+    },
+    "10.1016/j.isci.2026.116862": {
+      "checkedAt": "2026-10-16T07:01:07Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-75426-6": {
+      "checkedAt": "2026-10-16T07:01:06Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117028": {
+      "checkedAt": "2026-10-16T07:01:04Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.xcrm.2026.102988": {
+      "checkedAt": "2026-10-16T07:01:02Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1038/s41598-026-65562-w": {
       "checkedAt": "2026-10-16T07:00:28Z",
       "status": "pending",
@@ -7275,7 +7354,7 @@
     }
   },
   "dailyCollectionSession": {
-    "requests": 1505,
+    "requests": 1529,
     "uncertainRequests": 0,
     "maxRequests": 1800,
     "version": 1,
@@ -7286,16 +7365,11 @@
     "batchCount": 35,
     "maxSeconds": 2700,
     "dailyNewCount": 2,
-    "updatedAt": "2026-10-16T07:00:31Z",
+    "updatedAt": "2026-10-16T07:01:12Z",
     "aiAttempts": 2,
-    "elapsedSeconds": 2138,
+    "elapsedSeconds": 2179,
     "maxBatches": 36,
     "status": "active",
-    "endReason": "",
-    "inFlight": {
-      "startedAt": "2026-10-16T07:00:31Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "endReason": ""
   }
 }
