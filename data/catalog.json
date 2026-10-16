@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-15",
+  "checkedAt": "2026-10-16",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -76215,7 +76215,7 @@
       },
       "admittedAt": "2026-10-15T07:29:59Z",
       "researchScope": {
-        "version": 1,
+        "version": 3,
         "policy": "aging-sequencing-metabolic",
         "status": "excluded",
         "tier": "none",
@@ -76268,11 +76268,11 @@
         "静态检查不等于复现；自动建议标签需核验"
       ],
       "researchScope": {
-        "version": 1,
+        "version": 3,
         "policy": "aging-sequencing-metabolic",
-        "status": "included",
-        "tier": "primary",
-        "reason": "eligible",
+        "status": "excluded",
+        "tier": "none",
+        "reason": "non_biomedical",
         "methodMatches": [
           "sequencing",
           "omics",
@@ -121552,7 +121552,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-15T09:46:36Z",
+  "generatedAt": "2026-10-16T06:26:18Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -121786,9 +121786,9 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-16T06:24:54Z",
-    "updatedAt": "2026-10-16T06:24:54Z",
+    "updatedAt": "2026-10-16T06:26:18Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 43,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
@@ -121797,7 +121797,7 @@
     "maxAiAttempts": 165,
     "dailyNewCount": 0,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

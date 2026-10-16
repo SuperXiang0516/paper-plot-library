@@ -24,9 +24,140 @@
         "10.1111/1755-0998.70188",
         "10.1371/journal.pcbi.1014429"
       ]
+    },
+    "2026-10-16": {
+      "newDOIs": []
     }
   },
   "candidates": {
+    "10.1111/1755-0998.70202": {
+      "checkedAt": "2026-10-16T06:26:17Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1111/1755-0998.70202",
+        "metadataHash": "4892ae754a70dec9023873793a0df66274e12b30132e7ce7b8c8f5cb579bfc5d",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13618893.1/PMC13618893.1.xml?md5=b98b09d42e18e9994c18a7d8a290670d",
+          "license": "CC BY",
+          "figures": [
+            {
+              "asset": "assets/pmc13618893-be9bd6a551c25477.webp",
+              "assetSHA256": "be9bd6a551c254770d35249bc1c475435f969659c91a4f40d838ae988914e4f0",
+              "license": "CC BY",
+              "id": "men70202-fig-0002",
+              "sha256": "be9bd6a551c254770d35249bc1c475435f969659c91a4f40d838ae988914e4f0",
+              "height": 668,
+              "label": "FIGURE 2",
+              "width": 1064,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13618893.1/MEN-26-e70202-g005.webp?md5=db7d5e0bce9cdeaf00dee11434f51145",
+              "captionHash": "62eec8b02110c298af050707a8f76269b7cbdb73d84210becee1e05239c4b2dc"
+            },
+            {
+              "asset": "assets/pmc13618893-531aa2a9d1db5e65.webp",
+              "assetSHA256": "531aa2a9d1db5e654f795d3fd4b5b497d3c35109ff04d815485c8739a022aef7",
+              "license": "CC BY",
+              "id": "men70202-fig-0006",
+              "sha256": "531aa2a9d1db5e654f795d3fd4b5b497d3c35109ff04d815485c8739a022aef7",
+              "height": 875,
+              "label": "FIGURE 6",
+              "width": 1064,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13618893.1/MEN-26-e70202-g003.webp?md5=17cea29872f2645e0e78d5da927bb1cf",
+              "captionHash": "28e676ebb9373ab43b1f5ed386cde436a5152761542064ea110dc26fc3bde7b5"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-b7a6d98673f27fbc",
+          "doi": "10.1111/1755-0998.70202",
+          "paper": "Simultaneous Inference of Flora-Wide Nuclear and Plastid Phylogenies Using Angiosperms353 Sequence Capture Data.",
+          "journal": "Molecular ecology resources",
+          "date": "2026-10-01",
+          "year": "2026",
+          "pmcid": "PMC13618893",
+          "pmid": "42804435",
+          "paperURL": "https://doi.org/10.1111/1755-0998.70202"
+        },
+        "updatedAt": "2026-10-16T06:26:16Z"
+      }
+    },
+    "10.1016/j.isci.2026.117560": {
+      "checkedAt": "2026-10-16T06:26:12Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1016/j.isci.2026.117560",
+        "metadataHash": "faf2fa5ec479451c01ff0257c455d0fc9afd5f9b67eb4cf08b12be42f4e00e04",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13602225.1/PMC13602225.1.xml?md5=6b0804f52c2b643885b37a9ef1a9882e",
+          "license": "CC BY",
+          "figures": [
+            {
+              "asset": "assets/pmc13602225-9bbe9bf9be885b06.webp",
+              "assetSHA256": "9bbe9bf9be885b06b76509cff6c0eff9ac0ce7a4c9cbd028398ce30bb70cda3a",
+              "license": "CC BY",
+              "id": "fig2",
+              "sha256": "9bbe9bf9be885b06b76509cff6c0eff9ac0ce7a4c9cbd028398ce30bb70cda3a",
+              "height": 2091,
+              "label": "Figure 2",
+              "width": 1600,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13602225.1/gr2.webp?md5=c4374b80f023f14bcc7906a740b226d5",
+              "captionHash": "5c44101c0f9b28e8b2583e4f2781b3c296108147d0b62fa6729e25f2c5dfc047"
+            },
+            {
+              "asset": "assets/pmc13602225-fb82fede280ddf5c.webp",
+              "assetSHA256": "fb82fede280ddf5cc0351639803901bff74fd5f0add9a94027d705d674bb4bbe",
+              "license": "CC BY",
+              "id": "fig3",
+              "sha256": "fb82fede280ddf5cc0351639803901bff74fd5f0add9a94027d705d674bb4bbe",
+              "height": 2085,
+              "label": "Figure 3",
+              "width": 1600,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13602225.1/gr3.webp?md5=47b009c891ab15902c06503af9b77e17",
+              "captionHash": "583faf93784edd4809c02afaa4d202371331c3be949ef51722dccf62efbbea67"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-b587babc56b10c79",
+          "doi": "10.1016/j.isci.2026.117560",
+          "paper": "Protective &lt;i&gt;IFIH1&lt;/i&gt; variant reduces islet stress and dysfunction in a type 1 diabetes genetic background.",
+          "journal": "iScience",
+          "date": "2026-09-17",
+          "year": "2026",
+          "pmcid": "PMC13602225",
+          "pmid": "42787837",
+          "paperURL": "https://doi.org/10.1016/j.isci.2026.117560"
+        },
+        "updatedAt": "2026-10-16T06:26:10Z"
+      }
+    },
+    "10.1016/j.cpblue.2026.100051": {
+      "checkedAt": "2026-10-16T06:26:06Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cpblue.2026.100053": {
+      "checkedAt": "2026-10-16T06:26:03Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1177/2997979x261472562": {
+      "checkedAt": "2026-10-16T06:26:00Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1016/j.cell.2026.04.032": {
       "checkedAt": "2026-10-15T09:46:35Z",
       "status": "pending",
@@ -321,12 +452,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.cpblue.2026.100051": {
-      "checkedAt": "2026-10-15T09:40:17Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1038/s43587-026-01132-z": {
       "checkedAt": "2026-10-15T09:40:15Z",
       "status": "pending",
@@ -531,12 +656,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.cpblue.2026.100053": {
-      "checkedAt": "2026-10-15T09:36:11Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.4142/jvs.26058": {
       "checkedAt": "2026-10-15T09:36:09Z",
       "status": "pending",
@@ -571,12 +690,6 @@
       "checkedAt": "2026-10-15T09:35:38Z",
       "status": "pending",
       "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1177/2997979x261472562": {
-      "checkedAt": "2026-10-15T09:35:18Z",
-      "status": "pending",
-      "retryClass": "transient",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1186/s13059-026-04188-7": {
@@ -1359,7 +1472,7 @@
     }
   },
   "dailyCollectionSession": {
-    "requests": 0,
+    "requests": 43,
     "uncertainRequests": 0,
     "maxRequests": 1800,
     "version": 1,
@@ -1370,16 +1483,11 @@
     "batchCount": 1,
     "maxSeconds": 2700,
     "dailyNewCount": 0,
-    "updatedAt": "2026-10-16T06:24:54Z",
+    "updatedAt": "2026-10-16T06:26:18Z",
     "aiAttempts": 0,
-    "elapsedSeconds": 1,
+    "elapsedSeconds": 85,
     "maxBatches": 36,
     "status": "active",
-    "endReason": "",
-    "inFlight": {
-      "startedAt": "2026-10-16T06:24:54Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "endReason": ""
   }
 }
