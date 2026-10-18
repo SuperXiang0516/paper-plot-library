@@ -39,6 +39,61 @@
     }
   },
   "candidates": {
+    "10.12688/wellcomeopenres.26477.2": {
+      "checkedAt": "2026-10-18T06:40:00Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.12688/wellcomeopenres.26477.2",
+        "metadataHash": "ca4f44b5ad293a8c2851ae477e401bbebb370fe9bb98c88fdd67eaeb02c62314",
+        "article": {
+          "status": "inspected",
+          "version": "2",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/PMC13624498.2.xml?md5=629b712ef7f82743d8bdf875090e639b",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1713,
+              "height": 2091,
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/wellcomeopenres-11-30447-g0000.webp?md5=2980646b02d6947db0fa24c5331ee905",
+              "label": "Figure 1.",
+              "id": "f1",
+              "sha256": "cc0a66037261c651c3c4ee25b92ec9a82f568656a84564a1175628d53f47939f",
+              "assetSHA256": "cc0a66037261c651c3c4ee25b92ec9a82f568656a84564a1175628d53f47939f",
+              "asset": "assets/pmc13624498-cc0a66037261c651.webp",
+              "captionHash": "c69bc9d15cdf688ccf5d8db76dd4cc2484a189af0cb88a557e61cd5510573665"
+            },
+            {
+              "width": 1713,
+              "height": 760,
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/wellcomeopenres-11-30447-g0001.webp?md5=a8ab9e1b662d4aea7f89e65ea45071ac",
+              "label": "Figure 2.",
+              "id": "f2",
+              "sha256": "703abcafe134cc8c9c334e2d76d659aa430ed5cb9ca3536320895892822cde66",
+              "assetSHA256": "703abcafe134cc8c9c334e2d76d659aa430ed5cb9ca3536320895892822cde66",
+              "asset": "assets/pmc13624498-703abcafe134cc8c.webp",
+              "captionHash": "e4732310d2a34fc491a9372585bdf6e1753a1f6056aef03d1103535b96865b6b"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-bbee03af3ecd2138",
+          "doi": "10.12688/wellcomeopenres.26477.2",
+          "paper": "Surveillance-Driven Machine Learning for Prediction of Antimicrobial Susceptibility: An Explainable Modeling Framework using the Pfizer ATLAS Dataset (2004 - 2023).",
+          "journal": "Wellcome open research",
+          "date": "2026-09-21",
+          "year": "2026",
+          "pmcid": "PMC13624498",
+          "pmid": "42823942",
+          "paperURL": "https://doi.org/10.12688/wellcomeopenres.26477.2"
+        },
+        "updatedAt": "2026-10-18T06:39:59Z"
+      }
+    },
     "10.1371/journal.pcbi.1014822": {
       "checkedAt": "2026-10-18T06:39:32Z",
       "status": "pending",
@@ -1057,61 +1112,6 @@
           "paperURL": "https://doi.org/10.1371/journal.ppat.1014534"
         },
         "updatedAt": "2026-10-17T06:29:12Z"
-      }
-    },
-    "10.12688/wellcomeopenres.26477.2": {
-      "checkedAt": "2026-10-17T06:29:08Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.12688/wellcomeopenres.26477.2",
-        "metadataHash": "ca4f44b5ad293a8c2851ae477e401bbebb370fe9bb98c88fdd67eaeb02c62314",
-        "article": {
-          "status": "inspected",
-          "version": "2",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/PMC13624498.2.xml?md5=629b712ef7f82743d8bdf875090e639b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "f1",
-              "sha256": "cc0a66037261c651c3c4ee25b92ec9a82f568656a84564a1175628d53f47939f",
-              "height": 2091,
-              "assetSHA256": "cc0a66037261c651c3c4ee25b92ec9a82f568656a84564a1175628d53f47939f",
-              "asset": "assets/pmc13624498-cc0a66037261c651.webp",
-              "width": 1713,
-              "license": "CC BY",
-              "label": "Figure 1.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/wellcomeopenres-11-30447-g0000.webp?md5=2980646b02d6947db0fa24c5331ee905",
-              "captionHash": "c69bc9d15cdf688ccf5d8db76dd4cc2484a189af0cb88a557e61cd5510573665"
-            },
-            {
-              "id": "f2",
-              "sha256": "703abcafe134cc8c9c334e2d76d659aa430ed5cb9ca3536320895892822cde66",
-              "height": 760,
-              "assetSHA256": "703abcafe134cc8c9c334e2d76d659aa430ed5cb9ca3536320895892822cde66",
-              "asset": "assets/pmc13624498-703abcafe134cc8c.webp",
-              "width": 1713,
-              "license": "CC BY",
-              "label": "Figure 2.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13624498.2/wellcomeopenres-11-30447-g0001.webp?md5=a8ab9e1b662d4aea7f89e65ea45071ac",
-              "captionHash": "e4732310d2a34fc491a9372585bdf6e1753a1f6056aef03d1103535b96865b6b"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-bbee03af3ecd2138",
-          "doi": "10.12688/wellcomeopenres.26477.2",
-          "paper": "Surveillance-Driven Machine Learning for Prediction of Antimicrobial Susceptibility: An Explainable Modeling Framework using the Pfizer ATLAS Dataset (2004 - 2023).",
-          "journal": "Wellcome open research",
-          "date": "2026-09-21",
-          "year": "2026",
-          "pmcid": "PMC13624498",
-          "pmid": "42823942",
-          "paperURL": "https://doi.org/10.12688/wellcomeopenres.26477.2"
-        },
-        "updatedAt": "2026-10-17T06:29:06Z"
       }
     },
     "10.1038/s41467-026-78050-6": {
@@ -10359,26 +10359,21 @@
   },
   "dailyCollectionSession": {
     "maxSeconds": 2700,
-    "elapsedSeconds": 110,
+    "elapsedSeconds": 136,
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "status": "active",
     "version": 1,
     "startedAt": "2026-10-18T06:37:46Z",
-    "requests": 85,
+    "requests": 92,
     "uncertainAiAttempts": 0,
     "dailyNewCount": 0,
     "date": "2026-10-18",
-    "updatedAt": "2026-10-18T06:39:35Z",
+    "updatedAt": "2026-10-18T06:40:01Z",
     "batchCount": 3,
     "uncertainRequests": 0,
     "endReason": "",
     "maxRequests": 1800,
-    "aiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-10-18T06:39:35Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 0
   }
 }
