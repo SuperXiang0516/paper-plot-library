@@ -45,6 +45,12 @@
     }
   },
   "candidates": {
+    "10.1126/sciadv.adw8887": {
+      "checkedAt": "2026-10-20T18:10:11Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.12688/wellcomeopenres.26477.2": {
       "checkedAt": "2026-10-20T06:44:18Z",
       "status": "pending",
@@ -10956,10 +10962,10 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-10-20T18:08:55Z",
+    "updatedAt": "2026-10-20T18:10:12Z",
     "startedAt": "2026-10-20T06:39:04Z",
     "maxBatches": 36,
-    "elapsedSeconds": 391,
+    "elapsedSeconds": 468,
     "endReason": "",
     "batchCount": 9,
     "status": "active",
@@ -10967,16 +10973,11 @@
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "requests": 248,
+    "requests": 257,
     "aiAttempts": 0,
     "maxSeconds": 2700,
     "dailyNewCount": 0,
     "version": 1,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-10-20T18:08:55Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }
