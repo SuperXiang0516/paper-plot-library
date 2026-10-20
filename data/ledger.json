@@ -10391,13 +10391,18 @@
     "maxAiAttempts": 165,
     "maxRequests": 1800,
     "maxSeconds": 2700,
-    "elapsedSeconds": 61,
+    "elapsedSeconds": 64,
     "version": 1,
     "requests": 35,
     "maxBatches": 36,
     "dailyNewCount": 0,
-    "updatedAt": "2026-10-20T06:40:05Z",
+    "updatedAt": "2026-10-20T06:40:08Z",
     "startedAt": "2026-10-20T06:39:04Z",
-    "batchCount": 1
+    "batchCount": 2,
+    "inFlight": {
+      "startedAt": "2026-10-20T06:40:08Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
