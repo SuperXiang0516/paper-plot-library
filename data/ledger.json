@@ -45,6 +45,36 @@
     }
   },
   "candidates": {
+    "10.1038/s41591-025-04128-1": {
+      "checkedAt": "2026-10-20T06:40:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41387-026-00455-5": {
+      "checkedAt": "2026-10-20T06:40:52Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cpblue.2026.100051": {
+      "checkedAt": "2026-10-20T06:40:50Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cpblue.2026.100053": {
+      "checkedAt": "2026-10-20T06:40:48Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1177/2997979x261472562": {
+      "checkedAt": "2026-10-20T06:40:43Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1101/gr.281431.125": {
       "checkedAt": "2026-10-20T06:40:04Z",
       "status": "pending",
@@ -398,24 +428,6 @@
         },
         "updatedAt": "2026-10-19T06:55:00Z"
       }
-    },
-    "10.1016/j.cpblue.2026.100051": {
-      "checkedAt": "2026-10-19T06:54:27Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.cpblue.2026.100053": {
-      "checkedAt": "2026-10-19T06:54:24Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1177/2997979x261472562": {
-      "checkedAt": "2026-10-19T06:54:22Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pcbi.1014822": {
       "checkedAt": "2026-10-18T06:39:32Z",
@@ -10391,18 +10403,13 @@
     "maxAiAttempts": 165,
     "maxRequests": 1800,
     "maxSeconds": 2700,
-    "elapsedSeconds": 64,
+    "elapsedSeconds": 111,
     "version": 1,
-    "requests": 35,
+    "requests": 58,
     "maxBatches": 36,
     "dailyNewCount": 0,
-    "updatedAt": "2026-10-20T06:40:08Z",
+    "updatedAt": "2026-10-20T06:40:55Z",
     "startedAt": "2026-10-20T06:39:04Z",
-    "batchCount": 2,
-    "inFlight": {
-      "startedAt": "2026-10-20T06:40:08Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "batchCount": 2
   }
 }
