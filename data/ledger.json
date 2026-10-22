@@ -51,6 +51,73 @@
     }
   },
   "candidates": {
+    "10.1093/bioadv/vbag187": {
+      "checkedAt": "2026-10-22T07:02:00Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1093/bioadv/vbag187",
+        "metadataHash": "dd8cf0460bb67b773a7448c5f7d353467e53f167ed80f6f66bd387ba028acb60",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13361702.1/PMC13361702.1.xml?md5=8b6e2d57163d1d9c346d6a52a7d3f140",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 680,
+              "sha256": "94ff80ecec5d5eef5fd1e1e3e878f623262a6527b39665aeb01deed7b674ebb9",
+              "label": "Figure 1",
+              "height": 465,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13361702.1/vbag187f1.jpg?md5=bd90766ca9e82e48f302ba722afb75c0",
+              "asset": "assets/pmc13361702-94ff80ecec5d5eef.jpg",
+              "license": "CC BY",
+              "assetSHA256": "94ff80ecec5d5eef5fd1e1e3e878f623262a6527b39665aeb01deed7b674ebb9",
+              "id": "vbag187-F1",
+              "captionHash": "ae628abd36748e8901886c907c4c3e78e11febcadad8d8688bc74a6e878dab8a"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-1b7adfb9b759a9ac",
+          "doi": "10.1093/bioadv/vbag187",
+          "paper": "TelomereHunter2: improved &lt;i&gt;in silico&lt;/i&gt; telomere analysis software for precision oncology and single-cell studies.",
+          "journal": "Bioinformatics advances",
+          "date": "2026-06-30",
+          "year": "2026",
+          "pmcid": "PMC13361702",
+          "pmid": "42445596",
+          "paperURL": "https://doi.org/10.1093/bioadv/vbag187"
+        },
+        "updatedAt": "2026-10-22T07:01:53Z"
+      }
+    },
+    "10.1038/s42003-026-10518-z": {
+      "checkedAt": "2026-10-22T07:01:59Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1186/s13148-026-02184-z": {
+      "checkedAt": "2026-10-22T07:01:58Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/nar/gkag454": {
+      "checkedAt": "2026-10-22T07:01:52Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41536-026-00490-x": {
+      "checkedAt": "2026-10-22T07:01:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1093/bib/bbag366": {
       "checkedAt": "2026-10-22T07:01:15Z",
       "status": "pending",
@@ -13240,36 +13307,6 @@
       "retryClass": "materials",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1186/s13148-026-02184-z": {
-      "checkedAt": "2026-10-15T09:42:18Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
-    },
-    "10.1038/s42003-026-10518-z": {
-      "checkedAt": "2026-10-15T09:42:18Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1093/nar/gkag454": {
-      "checkedAt": "2026-10-15T09:41:47Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
-    },
-    "10.1093/bioadv/vbag187": {
-      "checkedAt": "2026-10-15T09:41:47Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
-    },
-    "10.1038/s41536-026-00490-x": {
-      "checkedAt": "2026-10-15T09:41:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1093/plcell/koag133": {
       "checkedAt": "2026-10-15T09:40:59Z",
       "status": "source_confirmed",
@@ -13858,27 +13895,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 1484,
+    "elapsedSeconds": 1525,
     "uncertainAiAttempts": 0,
     "dailyNewCount": 0,
     "date": "2026-10-22",
     "maxBatches": 36,
-    "requests": 915,
+    "requests": 948,
     "startedAt": "2026-10-22T06:36:36Z",
     "endReason": "",
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "maxRequests": 1800,
-    "updatedAt": "2026-10-22T07:01:19Z",
+    "updatedAt": "2026-10-22T07:02:01Z",
     "maxSeconds": 2700,
     "status": "active",
     "aiAttempts": 0,
     "version": 1,
-    "batchCount": 22,
-    "inFlight": {
-      "startedAt": "2026-10-22T07:01:19Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "batchCount": 22
   }
 }
