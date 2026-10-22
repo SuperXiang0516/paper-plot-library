@@ -45,9 +45,238 @@
     },
     "2026-10-21": {
       "newDOIs": []
+    },
+    "2026-10-22": {
+      "newDOIs": []
     }
   },
   "candidates": {
+    "10.1080/15592294.2026.2745292": {
+      "checkedAt": "2026-10-22T06:38:01Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-77419-x": {
+      "checkedAt": "2026-10-22T06:38:00Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1038/s41467-026-77419-x",
+        "metadataHash": "e5ac833e1fc6e7898202d9e332f4fe0ff7bd273bd5b3a4a6955df88b6c3d7f30",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13677749.1/PMC13677749.1.xml?md5=b8a7988afefb8ddb20b88573aec4a3f8",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1600,
+              "sha256": "5a713f1bcd145616a6be95166ba7c65f6641d5c4d9b66e29a5d248e30ab3c0c6",
+              "label": "Fig. 3",
+              "height": 611,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13677749.1/41467_2026_77419_Fig3_HTML.webp?md5=364d43ce2f0ab844e26318d20f57904a",
+              "asset": "assets/pmc13677749-5a713f1bcd145616.webp",
+              "license": "CC BY",
+              "assetSHA256": "5a713f1bcd145616a6be95166ba7c65f6641d5c4d9b66e29a5d248e30ab3c0c6",
+              "id": "Fig3",
+              "captionHash": "8abc8873fe841661ca22fb6b67897540179aac4d503570b7898d4d4462aeecb9"
+            },
+            {
+              "width": 1599,
+              "sha256": "1c18889e9a3aba8935d9b2ed3befbbdb262c501d2bd377d16ff5aa467040589e",
+              "label": "Fig. 4",
+              "height": 934,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13677749.1/41467_2026_77419_Fig4_HTML.webp?md5=d0bec28cc0ec7938822a16aa3dbb5e4e",
+              "asset": "assets/pmc13677749-1c18889e9a3aba89.webp",
+              "license": "CC BY",
+              "assetSHA256": "1c18889e9a3aba8935d9b2ed3befbbdb262c501d2bd377d16ff5aa467040589e",
+              "id": "Fig4",
+              "captionHash": "b3d103a8c87d6a09939fe1c42d1f66ebab13abfed56f35b4ed68d38a359afef2"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-8f3c1da35a6c69f6",
+          "doi": "10.1038/s41467-026-77419-x",
+          "paper": "Genetic architecture of MRI-derived cervical spinal cord morphology reveals sensory-motor axis and systemic disease associations.",
+          "journal": "Nature communications",
+          "date": "2026-09-16",
+          "year": "2026",
+          "pmcid": "PMC13677749",
+          "pmid": "42893988",
+          "paperURL": "https://doi.org/10.1038/s41467-026-77419-x"
+        },
+        "updatedAt": "2026-10-22T06:37:59Z"
+      }
+    },
+    "10.1038/s41586-025-09573-z": {
+      "checkedAt": "2026-10-22T06:37:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1038/s41586-025-09573-z",
+        "metadataHash": "4b04faed820c0d471d71b94e37d90b9a31be24e67be5fa50389b26d92269e657",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/PMC13600946.1.xml?md5=7aaeab7fa24285b993db4837c1191ab7",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1600,
+              "sha256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
+              "label": "Fig. 3",
+              "height": 1912,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig3_HTML.webp?md5=ecaf81ff02dd0ddf26a631879019b608",
+              "asset": "assets/pmc13600946-142e01a2ccc2363e.webp",
+              "license": "CC BY",
+              "assetSHA256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
+              "id": "Fig3",
+              "captionHash": "ac42cdc3f289568acf311eb1e841fc557033658465de6c7b05cf212b052b5104"
+            },
+            {
+              "width": 1600,
+              "sha256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
+              "label": "Fig. 5",
+              "height": 1105,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig5_HTML.webp?md5=8e212b6347c18fdc85410a3ca8960bde",
+              "asset": "assets/pmc13600946-7a9c59ec8e4eebd3.webp",
+              "license": "CC BY",
+              "assetSHA256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
+              "id": "Fig5",
+              "captionHash": "0ac2a766e59a1c965a57cafed148ea9aebc3a613497ddc4c6cdb0465ef321b05"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-704d234384619def",
+          "doi": "10.1038/s41586-025-09573-z",
+          "paper": "Single-cell atlas of transcriptomic vulnerability across brain disorders.",
+          "journal": "Nature",
+          "date": "2026-09-23",
+          "year": "2026",
+          "pmcid": "PMC13600946",
+          "pmid": "42778699",
+          "paperURL": "https://doi.org/10.1038/s41586-025-09573-z"
+        },
+        "updatedAt": "2026-10-22T06:37:55Z"
+      }
+    },
+    "10.1111/acel.70737": {
+      "checkedAt": "2026-10-22T06:37:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1111/acel.70737",
+        "metadataHash": "d548463293b54439c1bf330299bf439e98e7b2a97f0b7c6c88e63ccf7e8cbc5e",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/PMC13615172.1.xml?md5=ea9f9a7450fd32d1c366753b2f8e8d92",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1064,
+              "sha256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
+              "label": "FIGURE 1",
+              "height": 524,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g006.webp?md5=aa317bb649864d128ac726f1c444f935",
+              "asset": "assets/pmc13615172-b700210a8ed5f54b.webp",
+              "license": "CC BY",
+              "assetSHA256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
+              "id": "acel70737-fig-0001",
+              "captionHash": "a0fe6d61b4893d63a54569b8ca7efa858a600b1b90084424c2af61fd1e820409"
+            },
+            {
+              "width": 1064,
+              "sha256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
+              "label": "FIGURE 2",
+              "height": 602,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g003.webp?md5=84bf2dddd039451b09477a1b26439ca5",
+              "asset": "assets/pmc13615172-9057d07e4161d370.webp",
+              "license": "CC BY",
+              "assetSHA256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
+              "id": "acel70737-fig-0002",
+              "captionHash": "6a7fcd069e365ff37e4aa675cac4fbbb95c6eba4649675df4b53f61add9d2076"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-d81ed6eca1af399e",
+          "doi": "10.1111/acel.70737",
+          "paper": "A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.",
+          "journal": "Aging cell",
+          "date": "2026-10-01",
+          "year": "2026",
+          "pmcid": "PMC13615172",
+          "pmid": "42791602",
+          "paperURL": "https://doi.org/10.1111/acel.70737"
+        },
+        "updatedAt": "2026-10-22T06:37:51Z"
+      }
+    },
+    "10.1101/gr.281431.125": {
+      "checkedAt": "2026-10-22T06:37:49Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1101/gr.281431.125",
+        "metadataHash": "d39f5b02a9deafab8201112fcd9f52ab50256f6e4b439b9f9a0e06e2170e1479",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/PMC13629687.1.xml?md5=c707df258ed2f85a310c827c1ba98ad6",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1600,
+              "sha256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
+              "label": "Figure 3.",
+              "height": 2113,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f03.webp?md5=94b6e249ba70f1552e8629b46ac4a853",
+              "asset": "assets/pmc13629687-90b8a95d863649cb.webp",
+              "license": "CC BY",
+              "assetSHA256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
+              "id": "GR281431ASHF3",
+              "captionHash": "4242357bac7d30f978f83d0c6fa440ce928b4e2e80614b9c52e164f9f3ed9b07"
+            },
+            {
+              "width": 1600,
+              "sha256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
+              "label": "Figure 7.",
+              "height": 2001,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f07.webp?md5=aa62c2dbe815610519411f854611c108",
+              "asset": "assets/pmc13629687-55e6e165d4236fa5.webp",
+              "license": "CC BY",
+              "assetSHA256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
+              "id": "GR281431ASHF7",
+              "captionHash": "ee7910f453d7a365f46a0ae8c62a5e8ca6d1d078c69e36de1ec3d83b07d35bf4"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-67ffa8e2f01155dd",
+          "doi": "10.1101/gr.281431.125",
+          "paper": "Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.",
+          "journal": "Genome research",
+          "date": "2026-10-01",
+          "year": "2026",
+          "pmcid": "PMC13629687",
+          "pmid": "42749491",
+          "paperURL": "https://doi.org/10.1101/gr.281431.125"
+        },
+        "updatedAt": "2026-10-22T06:37:48Z"
+      }
+    },
     "10.12688/wellcomeopenres.26477.2": {
       "checkedAt": "2026-10-21T06:38:11Z",
       "status": "pending",
@@ -272,61 +501,6 @@
           "paperURL": "https://doi.org/10.3389/fimmu.2026.1848488"
         },
         "updatedAt": "2026-10-21T06:37:41Z"
-      }
-    },
-    "10.1101/gr.281431.125": {
-      "checkedAt": "2026-10-21T06:37:09Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1101/gr.281431.125",
-        "metadataHash": "d39f5b02a9deafab8201112fcd9f52ab50256f6e4b439b9f9a0e06e2170e1479",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/PMC13629687.1.xml?md5=c707df258ed2f85a310c827c1ba98ad6",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f03.webp?md5=94b6e249ba70f1552e8629b46ac4a853",
-              "assetSHA256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
-              "width": 1600,
-              "label": "Figure 3.",
-              "asset": "assets/pmc13629687-90b8a95d863649cb.webp",
-              "id": "GR281431ASHF3",
-              "sha256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
-              "license": "CC BY",
-              "height": 2113,
-              "captionHash": "4242357bac7d30f978f83d0c6fa440ce928b4e2e80614b9c52e164f9f3ed9b07"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f07.webp?md5=aa62c2dbe815610519411f854611c108",
-              "assetSHA256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
-              "width": 1600,
-              "label": "Figure 7.",
-              "asset": "assets/pmc13629687-55e6e165d4236fa5.webp",
-              "id": "GR281431ASHF7",
-              "sha256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
-              "license": "CC BY",
-              "height": 2001,
-              "captionHash": "ee7910f453d7a365f46a0ae8c62a5e8ca6d1d078c69e36de1ec3d83b07d35bf4"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-67ffa8e2f01155dd",
-          "doi": "10.1101/gr.281431.125",
-          "paper": "Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.",
-          "journal": "Genome research",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13629687",
-          "pmid": "42749491",
-          "paperURL": "https://doi.org/10.1101/gr.281431.125"
-        },
-        "updatedAt": "2026-10-21T06:37:09Z"
       }
     },
     "10.1016/j.cpblue.2026.100051": {
@@ -10335,12 +10509,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41586-025-09573-z": {
-      "checkedAt": "2026-10-15T09:32:57Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1002/imt2.70176": {
       "checkedAt": "2026-10-15T07:35:12Z",
       "status": "pending",
@@ -10683,12 +10851,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1111/acel.70737": {
-      "checkedAt": "2026-10-15T07:29:01Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1038/s41467-026-77957-4": {
       "checkedAt": "2026-10-11T11:17:55Z",
       "status": "pending",
@@ -10965,27 +11127,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 2,
+    "elapsedSeconds": 87,
     "uncertainAiAttempts": 0,
     "dailyNewCount": 0,
     "date": "2026-10-22",
     "maxBatches": 36,
-    "requests": 0,
+    "requests": 51,
     "startedAt": "2026-10-22T06:36:36Z",
     "endReason": "",
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "maxRequests": 1800,
-    "updatedAt": "2026-10-22T06:36:37Z",
+    "updatedAt": "2026-10-22T06:38:02Z",
     "maxSeconds": 2700,
     "status": "active",
     "aiAttempts": 0,
     "version": 1,
-    "batchCount": 1,
-    "inFlight": {
-      "startedAt": "2026-10-22T06:36:37Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "batchCount": 1
   }
 }
