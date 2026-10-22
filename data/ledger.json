@@ -51,6 +51,134 @@
     }
   },
   "candidates": {
+    "10.1093/bioinformatics/btag743": {
+      "checkedAt": "2026-10-22T06:50:24Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1093/bioinformatics/btag743",
+        "metadataHash": "6cfcb706b60f60a7811ae4e75fc258740ee42557c78df036c5584fa8357bc460",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13681661.1/PMC13681661.1.xml?md5=637b7727d63b96172823c435200f4e58",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 1600,
+              "sha256": "71351e99234cd2b369816e4c9944b8326b799df4e3847e0ad223c1a70bbf65cf",
+              "label": "Figure 1",
+              "height": 799,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13681661.1/btag743f1.webp?md5=edc9a99a5e72082d322e3ec66a0d3558",
+              "asset": "assets/pmc13681661-71351e99234cd2b3.webp",
+              "license": "CC BY",
+              "assetSHA256": "71351e99234cd2b369816e4c9944b8326b799df4e3847e0ad223c1a70bbf65cf",
+              "id": "btag743-F1",
+              "captionHash": "9e752133b59f8d921e47cb8b4c83304576065d46150d789a6cf9f2020819a16b"
+            },
+            {
+              "width": 1600,
+              "sha256": "40b337eb5d6ac19bd50e1cc4c1719270899e8519e0042c0899f7e0c06b21228c",
+              "label": "Figure 4",
+              "height": 653,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13681661.1/btag743f4.webp?md5=2718a0354f4dc033175964d990b1de64",
+              "asset": "assets/pmc13681661-40b337eb5d6ac19b.webp",
+              "license": "CC BY",
+              "assetSHA256": "40b337eb5d6ac19bd50e1cc4c1719270899e8519e0042c0899f7e0c06b21228c",
+              "id": "btag743-F4",
+              "captionHash": "ed312467a20391caad0802bed0da50aa733a177b725d4949102e795f78d14b7f"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-ad0d3408d26c30e0",
+          "doi": "10.1093/bioinformatics/btag743",
+          "paper": "NoiBic: a noise-tolerant biclustering algorithm for high-throughput gene expression data analysis.",
+          "journal": "Bioinformatics (Oxford, England)",
+          "date": "2026-10-01",
+          "year": "2026",
+          "pmcid": "PMC13681661",
+          "pmid": "42841722",
+          "paperURL": "https://doi.org/10.1093/bioinformatics/btag743"
+        },
+        "updatedAt": "2026-10-22T06:50:23Z"
+      }
+    },
+    "10.1038/s41467-026-73729-2": {
+      "checkedAt": "2026-10-22T06:50:21Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41591-026-04446-y": {
+      "checkedAt": "2026-10-22T06:50:20Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1038/s41591-026-04446-y",
+        "metadataHash": "190224c2ce064cc91ae617f48e92c6ba143619222b8b61180d74c0e7eaedbc58",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/PMC13279268.1.xml?md5=1c1c8a034cd33b759c09d4a934e8c375",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 722,
+              "sha256": "6f07d8e7118a82ec8c4e0fe275e810e349c4e136caa9652d2877618f0041b826",
+              "label": "Fig. 2",
+              "height": 878,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig2_HTML.jpg?md5=932bd688ebea2e586935fc43ef41e0f8",
+              "asset": "assets/pmc13279268-6f07d8e7118a82ec.jpg",
+              "license": "CC BY",
+              "assetSHA256": "6f07d8e7118a82ec8c4e0fe275e810e349c4e136caa9652d2877618f0041b826",
+              "id": "Fig2",
+              "captionHash": "b7d025d9db5a4c6829b2693e53187484ddc4960fc915b1c7500ba86136ebd1e1"
+            },
+            {
+              "width": 721,
+              "sha256": "537b96e7d832d312544a27b4f9bd8754382ddf9ea50e79a94c6d22e54797e948",
+              "label": "Fig. 3",
+              "height": 769,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig3_HTML.jpg?md5=0b1c7ca64206d81d444d2b566fea863c",
+              "asset": "assets/pmc13279268-537b96e7d832d312.jpg",
+              "license": "CC BY",
+              "assetSHA256": "537b96e7d832d312544a27b4f9bd8754382ddf9ea50e79a94c6d22e54797e948",
+              "id": "Fig3",
+              "captionHash": "97ff97d023bf0f0f12366df19034e14dc1914624ce9bc727eaaeee04ed97b736"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-24c2f36769b4dd5c",
+          "doi": "10.1038/s41591-026-04446-y",
+          "paper": "Plasma proteomic signatures of cellular aging predict human disease.",
+          "journal": "Nature medicine",
+          "date": "2026-06-15",
+          "year": "2026",
+          "pmcid": "PMC13279268",
+          "pmid": "42297981",
+          "paperURL": "https://doi.org/10.1038/s41591-026-04446-y"
+        },
+        "updatedAt": "2026-10-22T06:50:18Z"
+      }
+    },
+    "10.1038/s43587-026-01140-z": {
+      "checkedAt": "2026-10-22T06:50:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.xgen.2026.101278": {
+      "checkedAt": "2026-10-22T06:50:14Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
     "10.1038/s41467-026-77784-7": {
       "checkedAt": "2026-10-22T06:49:15Z",
       "status": "pending",
@@ -11496,18 +11624,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41467-026-73729-2": {
-      "checkedAt": "2026-10-15T09:38:07Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1038/s41591-026-04446-y": {
-      "checkedAt": "2026-10-15T09:38:05Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1155/humu/7869246": {
       "checkedAt": "2026-10-15T09:37:44Z",
       "status": "pending",
@@ -11526,20 +11642,8 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s43587-026-01140-z": {
-      "checkedAt": "2026-10-15T09:37:27Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.xhgg.2026.100667": {
       "checkedAt": "2026-10-15T09:37:04Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
-    },
-    "10.1016/j.xgen.2026.101278": {
-      "checkedAt": "2026-10-15T09:37:03Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
@@ -12180,27 +12284,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 764,
+    "elapsedSeconds": 829,
     "uncertainAiAttempts": 0,
     "dailyNewCount": 0,
     "date": "2026-10-22",
     "maxBatches": 36,
-    "requests": 405,
+    "requests": 437,
     "startedAt": "2026-10-22T06:36:36Z",
     "endReason": "",
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "maxRequests": 1800,
-    "updatedAt": "2026-10-22T06:49:20Z",
+    "updatedAt": "2026-10-22T06:50:25Z",
     "maxSeconds": 2700,
     "status": "active",
     "aiAttempts": 0,
     "version": 1,
-    "batchCount": 11,
-    "inFlight": {
-      "startedAt": "2026-10-22T06:49:20Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "batchCount": 11
   }
 }
