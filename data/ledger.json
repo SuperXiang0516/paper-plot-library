@@ -51,6 +51,183 @@
     }
   },
   "candidates": {
+    "10.1093/bib/bbag366": {
+      "checkedAt": "2026-10-22T07:01:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3389/fmed.2026.1800947": {
+      "checkedAt": "2026-10-22T07:01:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.3389/fmed.2026.1800947",
+        "metadataHash": "b6e54c7dc259400bb69c1e15442932c8e1d79034f0b6ccfed2ad32653641227d",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/PMC13393490.1.xml?md5=c7da05823fc9dbe36b8ecbc650a1d680",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 767,
+              "sha256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
+              "label": "Figure 1",
+              "height": 795,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g001.jpg?md5=7f2fb8c322daa347006bc96799e26fbb",
+              "asset": "assets/pmc13393490-1ef78941cbc27927.jpg",
+              "license": "CC BY",
+              "assetSHA256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
+              "id": "fig1",
+              "captionHash": "80083741e43a62a4ce188a86dbc73bb4330c8705c641b76308af71d8ce15bcd9"
+            },
+            {
+              "width": 767,
+              "sha256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
+              "label": "Figure 2",
+              "height": 1058,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g002.jpg?md5=6a22b244cf0e0ed7a74889d99001afa9",
+              "asset": "assets/pmc13393490-1d199627977da831.jpg",
+              "license": "CC BY",
+              "assetSHA256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
+              "id": "fig2",
+              "captionHash": "51b44301596daec55716dbeb04965aec4984021912d6aedae0ac701fbe1b6a72"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-bff033ff935dd45d",
+          "doi": "10.3389/fmed.2026.1800947",
+          "paper": "Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin.",
+          "journal": "Frontiers in medicine",
+          "date": "2026-07-08",
+          "year": "2026",
+          "pmcid": "PMC13393490",
+          "pmid": "42494450",
+          "paperURL": "https://doi.org/10.3389/fmed.2026.1800947"
+        },
+        "updatedAt": "2026-10-22T07:01:01Z"
+      }
+    },
+    "10.17912/micropub.biology.002153": {
+      "checkedAt": "2026-10-22T07:01:13Z",
+      "status": "pending",
+      "retryClass": "transient",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1155/humu/5598948": {
+      "checkedAt": "2026-10-22T07:01:11Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1155/humu/5598948",
+        "metadataHash": "6eb7f24dca98f2e3ec9dd893349d3e8d078cb0420a03272725626079c519b2e4",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/PMC13338575.1.xml?md5=188fd1bedbce4f271e9f0252e06226b3",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 600,
+              "sha256": "1e65fd04668b18a3141139cd4a81acf36119a7852bb3bc251e894d1161387747",
+              "label": "Figure 2",
+              "height": 974,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g006.jpg?md5=0007e95107e2f3827df320adb35a13fa",
+              "asset": "assets/pmc13338575-1e65fd04668b18a3.jpg",
+              "license": "CC BY",
+              "assetSHA256": "1e65fd04668b18a3141139cd4a81acf36119a7852bb3bc251e894d1161387747",
+              "id": "fig-0002",
+              "captionHash": "fe6b1236b1fce2164bdd60415e22bf524d2038d9696b5b39718f09fc2389a1a8"
+            },
+            {
+              "width": 600,
+              "sha256": "08fe6ff820b77ed68d0964ec85b92af5660fc16abc7634bf60bb75887f862265",
+              "label": "Figure 4",
+              "height": 749,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g003.jpg?md5=50373367b4ec0f9333ac85840cb14c8b",
+              "asset": "assets/pmc13338575-08fe6ff820b77ed6.jpg",
+              "license": "CC BY",
+              "assetSHA256": "08fe6ff820b77ed68d0964ec85b92af5660fc16abc7634bf60bb75887f862265",
+              "id": "fig-0004",
+              "captionHash": "9c6c6954265d19018646c4f15edfa216ad11c40c18e3aea6600064c36265367d"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-604b25308e3e06dd",
+          "doi": "10.1155/humu/5598948",
+          "paper": "Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.",
+          "journal": "Human mutation",
+          "date": "2026-07-06",
+          "year": "2026",
+          "pmcid": "PMC13338575",
+          "pmid": "42415742",
+          "paperURL": "https://doi.org/10.1155/humu/5598948"
+        },
+        "updatedAt": "2026-10-22T07:01:10Z"
+      }
+    },
+    "10.1186/s13040-026-00581-x": {
+      "checkedAt": "2026-10-22T07:01:08Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1186/s13040-026-00581-x",
+        "metadataHash": "1d4bd97ac3a289a4cbc69ac95869fb19661aa45ac9fafc58c4741cd81ec9e436",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/PMC13435457.1.xml?md5=b7e859ba75c2674ddafdb95c1b0e1f54",
+          "license": "CC BY",
+          "figures": [
+            {
+              "width": 750,
+              "sha256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
+              "label": "Fig. 1",
+              "height": 715,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig1_HTML.jpg?md5=5f8b5db6bdc2a6cb26e8dd06530a082d",
+              "asset": "assets/pmc13435457-25bcf9efbd733620.jpg",
+              "license": "CC BY",
+              "assetSHA256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
+              "id": "Fig1",
+              "captionHash": "01de568c9c8fcc29fbb4a86c09f6e1d96bb0d04d560642ac0d2f6edb657d6791"
+            },
+            {
+              "width": 709,
+              "sha256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
+              "label": "Fig. 2",
+              "height": 871,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig2_HTML.jpg?md5=5ff6f2047cf809004d0d32bef18a6ba6",
+              "asset": "assets/pmc13435457-bb7a85bc12d253b8.jpg",
+              "license": "CC BY",
+              "assetSHA256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
+              "id": "Fig2",
+              "captionHash": "bf535c141b5bc50d7c3db19cb61528a8ebb45623a83f020da17f8945b49c4698"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-9d6c5060ea8377db",
+          "doi": "10.1186/s13040-026-00581-x",
+          "paper": "Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.",
+          "journal": "BioData mining",
+          "date": "2026-07-07",
+          "year": "2026",
+          "pmcid": "PMC13435457",
+          "pmid": "42415183",
+          "paperURL": "https://doi.org/10.1186/s13040-026-00581-x"
+        },
+        "updatedAt": "2026-10-22T07:01:07Z"
+      }
+    },
     "10.1002/imt2.70150": {
       "checkedAt": "2026-10-22T07:00:23Z",
       "status": "pending",
@@ -3603,12 +3780,6 @@
         },
         "updatedAt": "2026-10-22T06:37:48Z"
       }
-    },
-    "10.17912/micropub.biology.002153": {
-      "checkedAt": "2026-10-21T06:38:03Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1126/sciadv.adw8887": {
       "checkedAt": "2026-10-20T18:10:11Z",
@@ -13099,35 +13270,11 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1093/bib/bbag366": {
-      "checkedAt": "2026-10-15T09:41:09Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1155/humu/5598948": {
-      "checkedAt": "2026-10-15T09:41:03Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1093/plcell/koag133": {
       "checkedAt": "2026-10-15T09:40:59Z",
       "status": "source_confirmed",
       "retryClass": "materials",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.3389/fmed.2026.1800947": {
-      "checkedAt": "2026-10-15T09:40:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额"
-    },
-    "10.1186/s13040-026-00581-x": {
-      "checkedAt": "2026-10-15T09:40:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1016/j.isci.2026.117530": {
       "checkedAt": "2026-10-15T07:35:07Z",
@@ -13711,27 +13858,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 1431,
+    "elapsedSeconds": 1481,
     "uncertainAiAttempts": 0,
     "dailyNewCount": 0,
     "date": "2026-10-22",
     "maxBatches": 36,
-    "requests": 866,
+    "requests": 915,
     "startedAt": "2026-10-22T06:36:36Z",
     "endReason": "",
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "maxRequests": 1800,
-    "updatedAt": "2026-10-22T07:00:27Z",
+    "updatedAt": "2026-10-22T07:01:17Z",
     "maxSeconds": 2700,
     "status": "active",
     "aiAttempts": 0,
     "version": 1,
-    "batchCount": 21,
-    "inFlight": {
-      "startedAt": "2026-10-22T07:00:27Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "batchCount": 21
   }
 }
