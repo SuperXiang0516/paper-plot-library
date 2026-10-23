@@ -48,9 +48,48 @@
     },
     "2026-10-22": {
       "newDOIs": []
+    },
+    "2026-10-23": {
+      "newDOIs": [
+        "10.1002/advs.77756",
+        "10.1016/j.isci.2026.116612",
+        "10.1111/acel.70552",
+        "10.1126/sciadv.aeb1346",
+        "10.7150/ijbs.134245"
+      ]
     }
   },
   "candidates": {
+    "10.1002/advs.77756": {
+      "checkedAt": "2026-10-23T00:50:10Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1016/j.isci.2026.116612": {
+      "checkedAt": "2026-10-23T00:50:02Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aeb1346": {
+      "checkedAt": "2026-10-23T00:49:55Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1111/acel.70552": {
+      "checkedAt": "2026-10-23T00:49:50Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.7150/ijbs.134245": {
+      "checkedAt": "2026-10-23T00:49:43Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1111/acel.70747": {
       "checkedAt": "2026-10-22T07:05:01Z",
       "status": "pending",
@@ -2439,61 +2478,6 @@
         "updatedAt": "2026-10-22T06:53:49Z"
       }
     },
-    "10.1111/acel.70552": {
-      "checkedAt": "2026-10-22T06:53:52Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1111/acel.70552",
-        "metadataHash": "d38ac164d5504e253a75b0be168045fa052367bfa7299f67eb9442b3ea169b78",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13240351.1/PMC13240351.1.xml?md5=6532226d4bfd76f2b1861b1eb7fae511",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 709,
-              "sha256": "7fe00636d51f4137bc0062c2bfeeecaf813c647229559cecd970fcd1dfb73672",
-              "label": "FIGURE 2",
-              "height": 667,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13240351.1/ACEL-25-e70552-g006.jpg?md5=bb988ea2bd1ce969368957aeb9833d95",
-              "asset": "assets/pmc13240351-7fe00636d51f4137.jpg",
-              "license": "CC BY",
-              "assetSHA256": "7fe00636d51f4137bc0062c2bfeeecaf813c647229559cecd970fcd1dfb73672",
-              "id": "acel70552-fig-0002",
-              "captionHash": "79ab245e1d4ffd808b279d0e0f9ebb6c188d4642755a89707c5c38ef50f5bd55"
-            },
-            {
-              "width": 709,
-              "sha256": "247c6e854f33d674c4c7fb0edb122b2380c365148d1f15c03a09d23dd803abce",
-              "label": "FIGURE 4",
-              "height": 520,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13240351.1/ACEL-25-e70552-g002.jpg?md5=6d4f5f846bc381cea589e58d8f622385",
-              "asset": "assets/pmc13240351-247c6e854f33d674.jpg",
-              "license": "CC BY",
-              "assetSHA256": "247c6e854f33d674c4c7fb0edb122b2380c365148d1f15c03a09d23dd803abce",
-              "id": "acel70552-fig-0004",
-              "captionHash": "4c22172eafa0202114f872d49c013e8f78a6b450df14a5280acffc745a2c7b98"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-9f1715c773c04f14",
-          "doi": "10.1111/acel.70552",
-          "paper": "Personalized-Context-Aware Age Gap: A New Multi-Omics Measurement Based on Age-Enhanced Model AOE-Net for Aging Acceleration and Chronic Disease Risk Prediction.",
-          "journal": "Aging cell",
-          "date": "2026-06-01",
-          "year": "2026",
-          "pmcid": "PMC13240351",
-          "pmid": "42210672",
-          "paperURL": "https://doi.org/10.1111/acel.70552"
-        },
-        "updatedAt": "2026-10-22T06:53:43Z"
-      }
-    },
     "10.1186/s13059-026-04118-7": {
       "checkedAt": "2026-10-22T06:53:47Z",
       "status": "pending",
@@ -3122,61 +3106,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.7150/ijbs.134245": {
-      "checkedAt": "2026-10-22T06:48:02Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7150/ijbs.134245",
-        "metadataHash": "5953c59475facfb87faa41f912f63250af346432837bfa286e2f056b90ef928f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13412284.1/PMC13412284.1.xml?md5=08b93f13b0c1f50505bb5c41319aff69",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 759,
-              "sha256": "5584d393830cef4b2a0de471f9fe3c3366c867ac4e70cf1ecc3466eafd76fd61",
-              "label": "Figure 4",
-              "height": 1079,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13412284.1/ijbsv22p6858g004.jpg?md5=ceaea7d223ae0ee31a86953fc6035f93",
-              "asset": "assets/pmc13412284-5584d393830cef4b.jpg",
-              "license": "CC BY",
-              "assetSHA256": "5584d393830cef4b2a0de471f9fe3c3366c867ac4e70cf1ecc3466eafd76fd61",
-              "id": "F4",
-              "captionHash": "d72dbcfd4d8a96b4657d9df856418b8e5d57e7250ccdd563f6b7c57ff2adaa6a"
-            },
-            {
-              "width": 756,
-              "sha256": "c674ba5fdc57e9c53b80ef242b610ddd7695974b26c7057a0bb5826a2c4228bf",
-              "label": "Figure 5",
-              "height": 967,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13412284.1/ijbsv22p6858g005.jpg?md5=efc0bd2fe605d6a621dd541f74c5724e",
-              "asset": "assets/pmc13412284-c674ba5fdc57e9c5.jpg",
-              "license": "CC BY",
-              "assetSHA256": "c674ba5fdc57e9c53b80ef242b610ddd7695974b26c7057a0bb5826a2c4228bf",
-              "id": "F5",
-              "captionHash": "aa2cfe8f32f101f3f4f4eb2c88d140e0865be66afb4ae895dc6b7a6e2569af81"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-7938aa4ae8ead08a",
-          "doi": "10.7150/ijbs.134245",
-          "paper": "Single-cell atlas of rhesus monkey testis reveals aging- and season-dependent regulation of spermatogenesis and microenvironment homeostasis.",
-          "journal": "International journal of biological sciences",
-          "date": "2026-07-20",
-          "year": "2026",
-          "pmcid": "PMC13412284",
-          "pmid": "42524559",
-          "paperURL": "https://doi.org/10.7150/ijbs.134245"
-        },
-        "updatedAt": "2026-10-22T06:48:00Z"
-      }
-    },
     "10.3389/fcell.2026.1860224": {
       "checkedAt": "2026-10-22T06:47:58Z",
       "status": "pending",
@@ -3633,61 +3562,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeb1346": {
-      "checkedAt": "2026-10-22T06:43:07Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1126/sciadv.aeb1346",
-        "metadataHash": "944aee3da1c0784895ff1f36520f0df6d6726bacd99f6050b37b734284e7ae7b",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13496190.1/PMC13496190.1.xml?md5=76904994c1479a7a80f27d23db172ac2",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "ec403af4b0db7d62d87e0f1093e5014f5d0eb3bc26e515c08a4109f2b9d6649c",
-              "label": "Fig. 1.",
-              "height": 2265,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13496190.1/sciadv.aeb1346-f1.webp?md5=ee030bc7def6b336eab07bcabf6c2954",
-              "asset": "assets/pmc13496190-ec403af4b0db7d62.webp",
-              "license": "CC BY",
-              "assetSHA256": "ec403af4b0db7d62d87e0f1093e5014f5d0eb3bc26e515c08a4109f2b9d6649c",
-              "id": "F1",
-              "captionHash": "6c2d91f653a7a3dc73918fa4126872e3a0c15766f1202a3b8c4158080457eae5"
-            },
-            {
-              "width": 1600,
-              "sha256": "af29b9044a04ab25c45b1446a26e881c712c24f0fe7f170a8d3fda57710b0dc0",
-              "label": "Fig. 5.",
-              "height": 2206,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13496190.1/sciadv.aeb1346-f5.webp?md5=b21e46c6ff8e7ad52de6cf806d8efd8e",
-              "asset": "assets/pmc13496190-af29b9044a04ab25.webp",
-              "license": "CC BY",
-              "assetSHA256": "af29b9044a04ab25c45b1446a26e881c712c24f0fe7f170a8d3fda57710b0dc0",
-              "id": "F5",
-              "captionHash": "8d523ff68893a627c4c65099db82a8232f0b9258494bbb7e259f2d95a6b1cc9a"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-ca043f2513f834ae",
-          "doi": "10.1126/sciadv.aeb1346",
-          "paper": "Geneformer-guided multiomics integration identifies Pbx1 as a network hub of hematopoietic stem cell aging.",
-          "journal": "Science advances",
-          "date": "2026-08-21",
-          "year": "2026",
-          "pmcid": "PMC13496190",
-          "pmid": "42627902",
-          "paperURL": "https://doi.org/10.1126/sciadv.aeb1346"
-        },
-        "updatedAt": "2026-10-22T06:43:05Z"
-      }
     },
     "10.1038/s41467-026-76737-4": {
       "checkedAt": "2026-10-22T06:43:03Z",
@@ -11211,61 +11085,6 @@
         "updatedAt": "2026-10-16T06:43:54Z"
       }
     },
-    "10.1002/advs.77756": {
-      "checkedAt": "2026-10-16T06:44:03Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.77756",
-        "metadataHash": "ae3c127ca4e8f0486c4f309264e123e82621d7867ad08468fc7f05e3ebfbe122",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13586480.1/PMC13586480.1.xml?md5=e2fb95b758d47e6316b395e04919b43f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13586480-8f471844b37bda33.webp",
-              "assetSHA256": "8f471844b37bda339b9fad63dd7db8dee0b0462077151287434cd171a51b1961",
-              "license": "CC BY",
-              "id": "advs77756-fig-0002",
-              "sha256": "8f471844b37bda339b9fad63dd7db8dee0b0462077151287434cd171a51b1961",
-              "height": 909,
-              "label": "FIGURE 2",
-              "width": 820,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13586480.1/ADVS-9999-e77756-g003.webp?md5=4be6167e955ba9d5b3a01d1aea4532c2",
-              "captionHash": "abc5e68eff17fd568e1964cd153f365d11fe19230f344567e831e934d19c24be"
-            },
-            {
-              "asset": "assets/pmc13586480-39aceeb068a304a8.webp",
-              "assetSHA256": "39aceeb068a304a8921244e26919b0519db5f237b8073555753696914b7c4399",
-              "license": "CC BY",
-              "id": "advs77756-fig-0003",
-              "sha256": "39aceeb068a304a8921244e26919b0519db5f237b8073555753696914b7c4399",
-              "height": 1001,
-              "label": "FIGURE 3",
-              "width": 657,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13586480.1/ADVS-9999-e77756-g004.webp?md5=d4d9e2697d6db03c9e16afbc344e24d4",
-              "captionHash": "566162d08d439474f01e771664440d21dc6a8b2d7cd101a6313115c7f8d51cc2"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-8212a1a2bfd15014",
-          "doi": "10.1002/advs.77756",
-          "paper": "A Real-Data-Driven Framework for Evaluating Differential Transcript Usage Methods Across Long-Read Bulk, Single-Cell, and Spatial Transcriptomics.",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-09-17",
-          "year": "2026",
-          "pmcid": "PMC13586480",
-          "pmid": "42755034",
-          "paperURL": "https://doi.org/10.1002/advs.77756"
-        },
-        "updatedAt": "2026-10-16T06:44:00Z"
-      }
-    },
     "10.1016/j.omtn.2026.103081": {
       "checkedAt": "2026-10-16T06:43:50Z",
       "status": "pending",
@@ -11386,61 +11205,6 @@
           "paperURL": "https://doi.org/10.1371/journal.pcbi.1014808"
         },
         "updatedAt": "2026-10-16T06:42:59Z"
-      }
-    },
-    "10.1016/j.isci.2026.116612": {
-      "checkedAt": "2026-10-16T06:42:55Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.116612",
-        "metadataHash": "82fc23d6831a10dd205950fa92fd65628be0b99315022905525b528e2438437d",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13378138.1/PMC13378138.1.xml?md5=6abc1bab38521b07045c23cc19700b59",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13378138-f15837a74ac90a36.jpg",
-              "assetSHA256": "f15837a74ac90a3672bf161ead5f2398765ed23668756c8179f1ed81bf46a55a",
-              "license": "CC BY",
-              "id": "fig2",
-              "sha256": "f15837a74ac90a3672bf161ead5f2398765ed23668756c8179f1ed81bf46a55a",
-              "height": 603,
-              "label": "Figure 2",
-              "width": 748,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13378138.1/gr2.jpg?md5=09c55ea2124b48b7e77ebbd7f1b43d92",
-              "captionHash": "1c4c61b7071090a100f411c970913b99060141b3e3a33d2588f5245caffbb1c3"
-            },
-            {
-              "asset": "assets/pmc13378138-a4ea7272c64ceaed.jpg",
-              "assetSHA256": "a4ea7272c64ceaed2acbc1648abdd5aed48bd37f48a9aa5e156d8f801b552218",
-              "license": "CC BY",
-              "id": "fig10",
-              "sha256": "a4ea7272c64ceaed2acbc1648abdd5aed48bd37f48a9aa5e156d8f801b552218",
-              "height": 571,
-              "label": "Figure 10",
-              "width": 748,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13378138.1/gr10.jpg?md5=c155fc559ac06c2a93b06f608ae9d72d",
-              "captionHash": "7247fcdfe547352facf9eea17eb636e32ac96701b2561c30abe7ba0c5906c21c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-30325d9d840999ae",
-          "doi": "10.1016/j.isci.2026.116612",
-          "paper": "Multi-omics reveals that streptomycin sulfate induces obesity in &lt;i&gt;Halyomorpha halys&lt;/i&gt; by disrupting the gut microbiome-metabolome axis.",
-          "journal": "iScience",
-          "date": "2026-06-30",
-          "year": "2026",
-          "pmcid": "PMC13378138",
-          "pmid": "42491906",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.116612"
-        },
-        "updatedAt": "2026-10-16T06:42:54Z"
       }
     },
     "10.3390/proteomes14030047": {
@@ -14543,22 +14307,17 @@
     "startedAt": "2026-10-23T00:48:01Z",
     "uncertainAiAttempts": 0,
     "maxAiAttempts": 165,
-    "aiAttempts": 0,
+    "aiAttempts": 2,
     "status": "active",
-    "dailyNewCount": 0,
-    "updatedAt": "2026-10-23T00:48:02Z",
-    "elapsedSeconds": 2,
+    "dailyNewCount": 5,
+    "updatedAt": "2026-10-23T00:50:26Z",
+    "elapsedSeconds": 146,
     "maxSeconds": 2700,
     "endReason": "",
     "maxBatches": 36,
     "date": "2026-10-23",
     "batchCount": 1,
     "maxRequests": 1800,
-    "requests": 0,
-    "inFlight": {
-      "startedAt": "2026-10-23T00:48:02Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 68
   }
 }
