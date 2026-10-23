@@ -77,6 +77,18 @@ class SuccessfulAdmissionTests(unittest.TestCase):
             return value
         self.assertEqual(self.run_batch(dict(self.active, article=article))["newCount"], 0)
 
+    def test_daily_mode_admits_verified_body_image_before_code_is_available(self):
+        self.settings.require_complete_new_cases = False
+        self.settings.daily_body_image_first = True
+        report = self.run_batch(dict(self.active,
+            repository=lambda *args: {"status": "not_found", "url": "", "scripts": [], "inputs": []},
+            discover=lambda *args: [record(1)]))
+        self.assertEqual((report["newCount"], report["dailyNewCount"]), (1, 1))
+        saved = read_json(self.root / "data" / "catalog.json")["papers"]
+        self.assertEqual(len(saved), 1)
+        self.assertTrue(saved[0]["article"]["figures"][0]["asset"])
+        self.assertNotEqual(saved[0].get("repository", {}).get("status"), "inspected")
+
     def test_supplement_only_cannot_consume_visible_success_or_paid_summary(self):
         calls = []
         original = self.active["article"]

@@ -14,7 +14,8 @@ class WorkflowModeTests(unittest.TestCase):
 
     def test_project_uses_five_paper_batches_and_fifteen_bounded_ai_attempts(self):
         config = json.loads((PROJECT / "config.json").read_text(encoding="utf-8"))
-        self.assertTrue(config["require_complete_new_cases"])
+        self.assertFalse(config["require_complete_new_cases"])
+        self.assertTrue(config["daily_body_image_first"])
         self.assertFalse(config["initialize_existing_first"])
         self.assertEqual(config["bootstrap_batch_limit"], 5)
         self.assertEqual(config["max_papers_per_run"], 5)

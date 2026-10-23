@@ -197,7 +197,9 @@ def _ncbi_discover(client, settings, limit, exclude_dois=frozenset()):
     default_term = ('(genomics OR "single cell" OR "multi omics" OR bioinformatics) '
                     'AND (github OR "source code") NOT review[Publication Type]')
     if policy != "unrestricted":
-        default_term = '(github OR "source code" OR "code availability") NOT review[Publication Type]'
+        # Scope and method terms below determine topical eligibility. Code
+        # availability is enrichment and must not block discovery.
+        default_term = '(aging OR ageing OR senescence OR longevity OR diabetes OR metabolic) NOT review[Publication Type]'
     term = getattr(settings, "ncbi_query", None) or default_term
     if policy != "unrestricted":
         # A custom/fallback query may narrow the field, never remove its gate.

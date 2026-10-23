@@ -286,7 +286,13 @@ def run_daily_session(root, settings=None, batch_callback=None, client_factory=N
             # Daily collection has its own work and budget. Old material gaps
             # remain visible in bootstrap reports but cannot take new-paper
             # slots or paid attempts away from today's successful admissions.
-            batch_settings = replace(settings, require_complete_new_cases=True, discovery_limit=100, repair_limit=0,
+            batch_settings = replace(settings,
+                # Older callers leave daily_body_image_first unset.  Preserve
+                # their strict synthetic/test mode; the project config opts
+                # into image-first daily collection explicitly.
+                require_complete_new_cases=(settings.require_complete_new_cases
+                                            or not getattr(settings, "daily_body_image_first", False)),
+                discovery_limit=100, repair_limit=0,
                 max_papers_per_run=min(5, settings.max_papers_per_run),
                 max_ai_attempts_per_paper=min(3, settings.max_ai_attempts_per_paper),
                 max_requests=min(150, settings.max_requests, requests_left),

@@ -17,7 +17,7 @@ class Settings:
     github_token: str = field(default="", repr=False)
     include_supplements: bool = True
     discovery_limit: int = 20
-    discovery_query: str = '(aging OR ageing OR multiomics OR "single cell" OR bioinformatics) AND (software OR tool OR computational OR sequencing) AND (GitHub OR "source code" OR "code availability") AND FIRST_PDATE:[2020-01-01 TO 3000-01-01] AND HAS_FT:Y'
+    discovery_query: str = 'HAS_FT:Y'
     research_scope: str = "unrestricted"
     max_new_per_day: int = 5
     max_ai_calls: int = 5
@@ -33,6 +33,9 @@ class Settings:
     session_max_seconds: int = 2700
     auto_remove_uncollectable: bool = False
     require_complete_new_cases: bool = False
+    # Daily collection can publish a verified main-text figure first while
+    # backfill/validation keeps the stricter complete-materials gate.
+    daily_body_image_first: bool = False
     candidate_checks: int = 8
     max_images: int = 2
     max_supplements: int = 3
@@ -85,7 +88,8 @@ def load_settings(root, overrides=None):
         value = getattr(settings, key)
         if type(value) is not int or not low <= value <= high:
             raise ValueError(f"{key} 必须为 {low}—{high} 的整数")
-    for key in ("include_supplements", "citation_enrichment", "initialize_existing_first", "auto_remove_uncollectable", "require_complete_new_cases"):
+    for key in ("include_supplements", "citation_enrichment", "initialize_existing_first", "auto_remove_uncollectable",
+                "require_complete_new_cases", "daily_body_image_first"):
         if type(getattr(settings, key)) is not bool:
             raise ValueError(f"{key} 必须为布尔值")
     if not isinstance(settings.discovery_query, str) or not 1 <= len(settings.discovery_query.strip()) <= 20000:

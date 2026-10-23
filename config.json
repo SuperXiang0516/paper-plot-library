@@ -1,7 +1,7 @@
 {
   "include_supplements": true,
   "research_scope": "aging-sequencing-metabolic",
-  "discovery_query": "(GitHub OR \"source code\" OR \"code availability\") AND FIRST_PDATE:[2020-01-01 TO 3000-01-01] AND HAS_FT:Y",
+  "discovery_query": "HAS_FT:Y",
   "max_new_per_day": 5,
   "max_ai_calls": 15,
   "max_ai_attempts_per_paper": 3,
@@ -15,7 +15,8 @@
   "session_max_requests": 1800,
   "session_max_seconds": 2700,
   "auto_remove_uncollectable": true,
-  "require_complete_new_cases": true,
+  "require_complete_new_cases": false,
+  "daily_body_image_first": true,
   "candidate_checks": 8,
   "discovery_limit": 100,
   "max_images": 2,

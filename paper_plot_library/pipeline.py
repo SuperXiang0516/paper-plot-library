@@ -714,6 +714,9 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
         raise ValueError("未知研究领域策略；未开始采集")
     adapters = adapters or {}
     effective_mode = effective_collection_mode(mode)
+    # Explicit backfill remains a complete-materials workflow even when the
+    # project enables image-first admissions for automatic daily discovery.
+    strict_complete = settings.require_complete_new_cases or effective_mode == "backfill"
     if session_dois is not None:
         if (mode != "backfill" or discover_new or not isinstance(session_dois, list)
                 or not 1 <= len(session_dois) <= min(5, settings.max_papers_per_run, settings.bootstrap_batch_limit)
@@ -1020,16 +1023,32 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     code_evidence = revised.get("article", {}).get("codeURLEvidence", [])
                     declared = {e.get("url", "").rstrip("/") for e in code_evidence}
                     actual_repo = revised.get("repository", {}).get("url", "").rstrip("/")
-                    acceptable = (revised["automation"]["stages"].get("metadata") == "matched"
-                                  and revised["automation"]["status"] != "excluded"
-                                  and matches_scope(revised, settings.research_scope)
-                                  and actual_repo in declared and bool(revised.get("repository", {}).get("scripts")))
+                    code_acceptable = (revised["automation"]["stages"].get("metadata") == "matched"
+                                        and revised["automation"]["status"] != "excluded"
+                                        and matches_scope(revised, settings.research_scope)
+                                        and actual_repo in declared and bool(revised.get("repository", {}).get("scripts")))
+                    # Daily publication is deliberately image-first when the
+                    # project opts into that mode.  A paper with a verified,
+                    # permitted main-text figure can enter while code, input
+                    # notes, AI text, or metrics are still pending.  The
+                    # strict complete-materials policy remains the default for
+                    # generic/backfill callers and older integrations.
+                    body_first = (effective_mode == "daily"
+                                  and getattr(settings, "daily_body_image_first", False)
+                                  and not strict_complete)
+                    body_acceptable = (revised["automation"]["stages"].get("metadata") == "matched"
+                                       and revised["automation"]["status"] != "excluded"
+                                       and matches_scope(revised, settings.research_scope)
+                                       and has_publishable_body_figure(root, revised))
+                    acceptable = code_acceptable or (body_first and body_acceptable)
                     retained_checkpoint = ledger["candidates"].get(doi, {}).get("checkpoint")
                     ledger["candidates"][doi] = {"checkedAt": stamp(), "status": "source_confirmed" if acceptable else "pending",
                                                   "retryClass": "transient" if acceptable or any(
                                                       value in _FAILED_STAGES or value in {"not_checked", "deferred"}
                                                       for value in revised["automation"]["stages"].values()) else "materials",
-                                                  "reason": "作者代码声明和可读脚本已定位" if acceptable else "正式文献/作者代码/脚本依据尚不齐全"}
+                                                  "reason": ("作者代码声明和可读脚本已定位" if code_acceptable
+                                                             else "正文图已验证；代码、输入或注释待补齐" if body_first and body_acceptable
+                                                             else "正式文献/作者代码/脚本依据尚不齐全")}
                     if retained_checkpoint:
                         ledger["candidates"][doi]["checkpoint"] = retained_checkpoint
                     checked.append(revised)
@@ -1048,7 +1067,24 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                         break
                     if not matches_scope(revised, settings.research_scope):
                         continue
-                    if settings.require_complete_new_cases:
+                    # In image-first mode, missing code or AI is a visible gap;
+                    # a missing publishable main figure means there is nothing
+                    # the public gallery can display.
+                    body_first = (effective_mode == "daily"
+                                  and getattr(settings, "daily_body_image_first", False)
+                                  and not strict_complete)
+                    if body_first and not has_publishable_body_figure(root, revised):
+                        retained_checkpoint = ledger["candidates"][revised["doi"]].get("checkpoint")
+                        ledger["candidates"][revised["doi"]] = {
+                            "checkedAt": stamp(), "status": "pending", "retryClass": "materials",
+                            "reason": "正文图不可发布；未收录、不占成功名额"}
+                        if retained_checkpoint:
+                            ledger["candidates"][revised["doi"]]["checkpoint"] = retained_checkpoint
+                        report.setdefault("rejectedCandidateCount", 0)
+                        report["rejectedCandidateCount"] += 1
+                        checkpoint()
+                        continue
+                    if strict_complete:
                         # Incomplete candidates are not public admissions and do
                         # not consume today's five-success quota. Paid attempts
                         # are still accounted even when a candidate is rejected.
@@ -1114,7 +1150,7 @@ def run_pipeline(root, settings=None, client=None, adapters=None, only_dois=None
                     # Durable successful admission before advancing to another
                     # candidate. Legacy library mode can still repair paid work.
                     checkpoint()
-                    if not settings.require_complete_new_cases:
+                    if not strict_complete:
                         try:
                             summarize_case(revised, candidate_adapters[revised["id"]])
                         except Exception as exc:
