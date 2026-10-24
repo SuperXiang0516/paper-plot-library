@@ -57,9 +57,48 @@
         "10.1126/sciadv.aeb1346",
         "10.7150/ijbs.134245"
       ]
+    },
+    "2026-10-24": {
+      "newDOIs": [
+        "10.1002/advs.77774",
+        "10.1038/s41467-026-76839-z",
+        "10.1093/bioinformatics/btag582",
+        "10.1093/bioinformatics/btag707",
+        "10.3390/ijms27146178"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bioinformatics/btag707": {
+      "checkedAt": "2026-10-24T06:30:56Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.3390/ijms27146178": {
+      "checkedAt": "2026-10-24T06:30:51Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/advs.77774": {
+      "checkedAt": "2026-10-24T06:30:48Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1038/s41467-026-76839-z": {
+      "checkedAt": "2026-10-24T06:30:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1093/bioinformatics/btag582": {
+      "checkedAt": "2026-10-24T06:30:36Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1002/advs.77756": {
       "checkedAt": "2026-10-23T00:50:10Z",
       "status": "source_confirmed",
@@ -1254,61 +1293,6 @@
           "paperURL": "https://doi.org/10.1038/s44320-026-00237-2"
         },
         "updatedAt": "2026-10-22T07:00:10Z"
-      }
-    },
-    "10.1093/bioinformatics/btag582": {
-      "checkedAt": "2026-10-22T06:59:27Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag582",
-        "metadataHash": "0c8c2c817360ff6334dd93d9746be09b03119998b8eaad37b46304d38cc3ce27",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13471995.1/PMC13471995.1.xml?md5=3ea61245e3fc8368ae64bffccab322ce",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "65e65d3e32eca4ca6afdc12cedc23b5afad75981e3bb305ee1cbabbade506967",
-              "label": "Figure 1",
-              "height": 1439,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13471995.1/btag582f1.webp?md5=c40587403ca56b62d1d9548614d1d64b",
-              "asset": "assets/pmc13471995-65e65d3e32eca4ca.webp",
-              "license": "CC BY",
-              "assetSHA256": "65e65d3e32eca4ca6afdc12cedc23b5afad75981e3bb305ee1cbabbade506967",
-              "id": "btag582-F1",
-              "captionHash": "af07365ead5801b5fc9c600fbb1f0490851695222457b3102a95a5fd99677cbe"
-            },
-            {
-              "width": 1600,
-              "sha256": "ac7ede241ed3058390ef98653be9e678f66a0720da90021bb30131b74b0a4e4e",
-              "label": "Figure 2",
-              "height": 867,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13471995.1/btag582f2.webp?md5=d0e9b0f130f694f0d2c903bd4c6462bc",
-              "asset": "assets/pmc13471995-ac7ede241ed30583.webp",
-              "license": "CC BY",
-              "assetSHA256": "ac7ede241ed3058390ef98653be9e678f66a0720da90021bb30131b74b0a4e4e",
-              "id": "btag582-F2",
-              "captionHash": "c6f64e6b25582d0e8913d523de4142e2d75d30585ccf93b0f3b76237f26f94e2"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-1c21d3c0150df207",
-          "doi": "10.1093/bioinformatics/btag582",
-          "paper": "Assessing the influence of different alignment tools on the accuracy of a forensic epigenetic clock.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-08-01",
-          "year": "2026",
-          "pmcid": "PMC13471995",
-          "pmid": "42550240",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag582"
-        },
-        "updatedAt": "2026-10-22T06:59:13Z"
       }
     },
     "10.1016/j.xpro.2026.104724": {
@@ -3787,116 +3771,6 @@
           "paperURL": "https://doi.org/10.1096/fj.202601888r"
         },
         "updatedAt": "2026-10-22T06:41:44Z"
-      }
-    },
-    "10.1038/s41467-026-76839-z": {
-      "checkedAt": "2026-10-22T06:40:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-76839-z",
-        "metadataHash": "bc41c8212c13fefa162e63e08d699ffaf9b43650c051e9597a4ffef4e8a110f4",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680466.1/PMC13680466.1.xml?md5=95f3210d68020e4bd360a3b802c14558",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "b8e25c41cce4ece2648e3dff9fa06dfd7a9d522b782ba1ebfc40597ae6692b55",
-              "label": "Fig. 4",
-              "height": 2199,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680466.1/41467_2026_76839_Fig4_HTML.webp?md5=429b64958147d47f0c423304a4c2af02",
-              "asset": "assets/pmc13680466-b8e25c41cce4ece2.webp",
-              "license": "CC BY",
-              "assetSHA256": "b8e25c41cce4ece2648e3dff9fa06dfd7a9d522b782ba1ebfc40597ae6692b55",
-              "id": "Fig4",
-              "captionHash": "32656feaa084dc6a8e50033fdd8001439582d942dd4b9a3a52680ab744c4e1b5"
-            },
-            {
-              "width": 1600,
-              "sha256": "56f12baa64db45ef2fb68b6ff373f3bf10a0c8505a28cbfdfdd9057c2b50e0d6",
-              "label": "Fig. 6",
-              "height": 1187,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680466.1/41467_2026_76839_Fig6_HTML.webp?md5=a7935ad28b3404042a1b38c943783473",
-              "asset": "assets/pmc13680466-56f12baa64db45ef.webp",
-              "license": "CC BY",
-              "assetSHA256": "56f12baa64db45ef2fb68b6ff373f3bf10a0c8505a28cbfdfdd9057c2b50e0d6",
-              "id": "Fig6",
-              "captionHash": "792aff7f5b945b43697148d94b9c46d6b12f8ed821c9d4a38a2ee83295d4554c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-b942ad27fbc88388",
-          "doi": "10.1038/s41467-026-76839-z",
-          "paper": "The brain of the female Anopheles gambiae mosquito at spatial and single-cell resolution.",
-          "journal": "Nature communications",
-          "date": "2026-09-17",
-          "year": "2026",
-          "pmcid": "PMC13680466",
-          "pmid": "42897131",
-          "paperURL": "https://doi.org/10.1038/s41467-026-76839-z"
-        },
-        "updatedAt": "2026-10-22T06:40:25Z"
-      }
-    },
-    "10.1002/advs.77774": {
-      "checkedAt": "2026-10-22T06:40:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.77774",
-        "metadataHash": "450fbe68d66f5263bea3e4a1fc777aae382fe30bf8f369bdb0f0d2b75aa04892",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13583226.1/PMC13583226.1.xml?md5=603d5a5ae5865fdb9102511e14941888",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 820,
-              "sha256": "e89128cbff6405cd8d75e69ee3b351b8451e3b20eba2dffe48f8477b9e78b10b",
-              "label": "FIGURE 2",
-              "height": 729,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13583226.1/ADVS-9999-e77774-g002.webp?md5=b0dc23d275fda920add40fb4c00d828e",
-              "asset": "assets/pmc13583226-e89128cbff6405cd.webp",
-              "license": "CC BY",
-              "assetSHA256": "e89128cbff6405cd8d75e69ee3b351b8451e3b20eba2dffe48f8477b9e78b10b",
-              "id": "advs77774-fig-0002",
-              "captionHash": "b7a636aabaf7d002f47ef9749c7b98d59eaf33a40bd80c50679b8967d12afd00"
-            },
-            {
-              "width": 820,
-              "sha256": "7349617c4b829681499fc4bcb0636f62401113280d28e7a92b33b0dc4bc0a15c",
-              "label": "FIGURE 4",
-              "height": 819,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13583226.1/ADVS-9999-e77774-g005.webp?md5=db10ad193a612553e57499093b32d3b3",
-              "asset": "assets/pmc13583226-7349617c4b829681.webp",
-              "license": "CC BY",
-              "assetSHA256": "7349617c4b829681499fc4bcb0636f62401113280d28e7a92b33b0dc4bc0a15c",
-              "id": "advs77774-fig-0004",
-              "captionHash": "03ecca3eaad22557ff9b8018398556492103f230d36eaf29bcab3504de05b00d"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-5c5cc76cb09638bb",
-          "doi": "10.1002/advs.77774",
-          "paper": "MAPA: A Semantic Network Framework for Functional Module Discovery and Interpretation in Multi-Omics Data.",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-09-16",
-          "year": "2026",
-          "pmcid": "PMC13583226",
-          "pmid": "42750316",
-          "paperURL": "https://doi.org/10.1002/advs.77774"
-        },
-        "updatedAt": "2026-10-22T06:40:29Z"
       }
     },
     "10.3389/fbinf.2026.1919802": {
@@ -7817,61 +7691,6 @@
           "paperURL": "https://doi.org/10.1016/j.isci.2026.116418"
         },
         "updatedAt": "2026-10-17T06:18:22Z"
-      }
-    },
-    "10.1093/bioinformatics/btag707": {
-      "checkedAt": "2026-10-17T06:17:22Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag707",
-        "metadataHash": "96d6b915bf8dd1acd280a950628ed9b62a3992a9d5e3cd4d432af73b087dbdf5",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13648210.1/PMC13648210.1.xml?md5=76dcc94a88924ca41e6e6a0bbe58b14e",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "btag707-F1",
-              "sha256": "413743d1c5138d2ea32f3127259154ff1407ee7168a52a943b498ca68e06abe9",
-              "height": 713,
-              "assetSHA256": "413743d1c5138d2ea32f3127259154ff1407ee7168a52a943b498ca68e06abe9",
-              "asset": "assets/pmc13648210-413743d1c5138d2e.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 1",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13648210.1/btag707f1.webp?md5=4cc59eee318ca42ec9cd4b792b2b1aa7",
-              "captionHash": "a57bb0eb697efe236e3dce51b9812c3c7437e1615f409a71e7a5dda3b00e69c6"
-            },
-            {
-              "id": "btag707-F4",
-              "sha256": "d3fe8374e77bd10b8068cc55b7110633aaca1a536864ba3209734890a43014fa",
-              "height": 941,
-              "assetSHA256": "d3fe8374e77bd10b8068cc55b7110633aaca1a536864ba3209734890a43014fa",
-              "asset": "assets/pmc13648210-d3fe8374e77bd10b.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 4",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13648210.1/btag707f4.webp?md5=e501c5b98f3b2376a1bc8f2e502ae497",
-              "captionHash": "5e058269a7b3a88ff8ed956907201cb3c7f1ddaf22487d7eec0e283a31b2e66c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4907e1ffad03ade3",
-          "doi": "10.1093/bioinformatics/btag707",
-          "paper": "Serval: A modular framework for decoding imaging based spatial transcriptomics data.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-07",
-          "year": "2026",
-          "pmcid": "PMC13648210",
-          "pmid": "42841740",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag707"
-        },
-        "updatedAt": "2026-10-17T06:17:19Z"
       }
     },
     "10.1038/s41467-026-74917-w": {
@@ -11799,61 +11618,6 @@
         "updatedAt": "2026-10-16T06:38:48Z"
       }
     },
-    "10.3390/ijms27146178": {
-      "checkedAt": "2026-10-16T06:38:44Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3390/ijms27146178",
-        "metadataHash": "2a71fa9452d164c19fde1e91022e9d1462639b79912c980aa2185bb218ad7e55",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13411056.1/PMC13411056.1.xml?md5=d787e2899f31826e7032dbdbb2f77472",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13411056-f908023e211c0be8.jpg",
-              "assetSHA256": "f908023e211c0be8d97b5ef9a1a44814d074e9261057c9dae37332d4597b2d78",
-              "license": "CC BY",
-              "id": "ijms-27-06178-f003",
-              "sha256": "f908023e211c0be8d97b5ef9a1a44814d074e9261057c9dae37332d4597b2d78",
-              "height": 1009,
-              "label": "Figure 3",
-              "width": 772,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13411056.1/ijms-27-06178-g003.jpg?md5=a386c3a2326fabb2d2dc5f263128b9f9",
-              "captionHash": "ae5ad70931e7e5be8f7a43b4430310f61c7dd6c931cafaea5d427db785db0c19"
-            },
-            {
-              "asset": "assets/pmc13411056-bfd21efaaedf3a00.jpg",
-              "assetSHA256": "bfd21efaaedf3a00f6c32239c26e43cfd1e56b13d85040300cdbbb9fee028aef",
-              "license": "CC BY",
-              "id": "ijms-27-06178-f005",
-              "sha256": "bfd21efaaedf3a00f6c32239c26e43cfd1e56b13d85040300cdbbb9fee028aef",
-              "height": 1044,
-              "label": "Figure 5",
-              "width": 718,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13411056.1/ijms-27-06178-g005.jpg?md5=3d44b7eac5cdf69563db2e0b6abb89ae",
-              "captionHash": "fca593ae648965576b1cf32d65e4b0eaf92fefb5a07a1b11980051994dfc25c2"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4b141057baa0d79d",
-          "doi": "10.3390/ijms27146178",
-          "paper": "Integrating Proteome-Wide Association Studies and Single-Cell Transcriptomics Identifies GSTT2B as a Causal Mediator and Prioritizes COL4A1 in Diabetic Retinopathy.",
-          "journal": "International journal of molecular sciences",
-          "date": "2026-07-10",
-          "year": "2026",
-          "pmcid": "PMC13411056",
-          "pmid": "42511522",
-          "paperURL": "https://doi.org/10.3390/ijms27146178"
-        },
-        "updatedAt": "2026-10-16T06:38:41Z"
-      }
-    },
     "10.1038/s41588-026-02633-8": {
       "checkedAt": "2026-10-16T06:38:38Z",
       "status": "pending",
@@ -14302,27 +14066,22 @@
     }
   },
   "dailyCollectionSession": {
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
     "maxBatches": 36,
-    "aiAttempts": 0,
+    "aiAttempts": 4,
     "batchCount": 1,
     "date": "2026-10-24",
-    "updatedAt": "2026-10-24T06:29:30Z",
-    "elapsedSeconds": 1,
+    "updatedAt": "2026-10-24T06:31:21Z",
+    "elapsedSeconds": 112,
     "maxAiAttempts": 165,
-    "requests": 0,
+    "requests": 77,
     "maxSeconds": 2700,
     "status": "active",
     "endReason": "",
     "version": 1,
-    "startedAt": "2026-10-24T06:29:29Z",
-    "inFlight": {
-      "startedAt": "2026-10-24T06:29:30Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "startedAt": "2026-10-24T06:29:29Z"
   }
 }
