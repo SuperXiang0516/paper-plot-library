@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-24",
+  "checkedAt": "2026-10-25",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -96248,6 +96248,2814 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-f964cea8daab9c8d",
+      "paper": "Fast, flexible analysis of differences in cellular composition with crumblr.",
+      "doi": "10.1038/s41467-026-75681-7",
+      "journal": "Nature communications",
+      "date": "2026-09-23",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1038/s41467-026-75681-7",
+      "pmcid": "PMC13601534",
+      "pmid": "42778538",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 6,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-25",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "67d0f9e218b33504a42fcaf2851c5fb772963e9d52cbea744534d5495d2d1223"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/PMC13601534.1.xml?md5=d32cba1c532c43abf9f31c9339c06efc",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "crumblr analysis workflow.A crumblr transformation of the count matrix enables precision weighting for variance partition analysis, linear mixed model testing for differential cell frequency, and multivariate testing along a cellular hierarchy. B Standard deviation of the CLR-transformed proportions from 1000 samples drawn from a Dirichlet-multinomial distribution (blue points) is compared to the normal approximation developed here (red line) when at least two counts are observed. Data was simulated using an overdispersion of τ = 10, 500 total counts across 15 categories and 1000 simulations. C Illustration showing the estimated coefficient estimated using standard regression fit on CLR-transformed proportions (blue line), and precision-weighted regression using crumblr (red line) that models the measurement uncertainty in the count ratios, shown here by error bars indicating 95% confidence intervals. D Multivariate hypothesis testing in crumblr enables analysis of internal nodes in a hierarchical clustering of cell types while modeling estimated effect sizes and the correlation between them.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig1_HTML.webp?md5=b236132e5e49c5c8f00fb9513602eda1",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "assets/pmc13601534-fc8a7f57b345b0d9.webp",
+            "sha256": "fc8a7f57b345b0d9025e019b5798722ab7ab402cb95da029053753f145e3aae1",
+            "width": 1600,
+            "height": 978,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fc8a7f57b345b0d9025e019b5798722ab7ab402cb95da029053753f145e3aae1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Performance on simulated cellar composition data.A Performance of univariate tests across 10k simulated datasets under baseline parameters. For linear models indicated with “LM”, “fraction” indicates using the cell fraction, ff, as the response, “log” indicates łog (f)log(f), “logit” indicates \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$${{\\mbox{logit}}}(f)\\,=\\,\\log (f)\\,-\\,\\log (1-f)$$\\end{document}logit(f)=log(f)−log(1−f), and “asin” indicates \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\arcsin (\\sqrt{f})$$\\end{document}arcsin(f). The area under the precision-recall curve (AUPR) (left) and false positive rate (FPR) at a 5% cutoff computed under the null model (right). For AUPR, the dashed line indicates the performance of the random method. For FPR, the dashed line indicates the target for a properly calibrated method. B Performance of multivariate testing in simulated data for increasing sample sizes. AUPR (left) and FPR (right) of six methods for multivariate testing. C Performance of multivariate testing in simulated data for an increasing number of cell clusters tested. AUPR (left) and FPR (right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig2_HTML.webp?md5=bbd52acb4e788162086abec3f4946b75",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "crumblr identifies compositional changes associated with aging in blood.A Variance partitioning analysis quantifies the contribution of each variable to variation in frequency for each cell type. B Estimated effect size from regression analysis of composition associated with donor age. A positive coefficient estimate indicates increased cell type frequency with age. The color indicates effect size, and error bars indicate 95% confidence interval. C Hierarchical clustering of cell types with colored points indicating estimated effect sizes for each cell type at leaves and multivariate testing at internal nodes. Results on leaves match results in (B). Point size indicates FDR, and ‘+’ indicates FDR < 5%. D Scatter plot of CLR-transformed naive CD8+ αβ T-cell frequency versus donor age. A point indicates a single donor, and the color indicates the standard error from limited measurement precision. A subset of points is labeled with the observed cell type fraction with, for example, 1/1205 indicating 1 CD8+ αβ T cell out of 1205 total cells. Regression trends are shown for a linear fit (blue) and quadratic fit (green) modeling the varying measurement precision using crumblr, and a quadratic fit (purple) ignoring measurement precision.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig3_HTML.webp?md5=de9a17590fb468ded5090519e14b4afc",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "crumblr identifies compositional changes associated with tuberculosis infection in T-cell subpopulations in 259 donors.A Variance partitioning analysis quantifies the contribution of each variable to variation in frequency for each cell cluster. B Estimated effect size by comparing the composition of TB-inflected and controls. A positive coefficient estimate indicates an increase in the frequency of TB infection. Color indicates effect size, and error bars indicate a 95% confidence interval. C Hierarchical clustering of cell types with colored points indicating estimated effect sizes for each cell type at leaves and multivariate testing at internal nodes. Results on leaves match results in (B). Point size indicates FDR, “+” indicates FDR < 5%, and error bars indicate 95% confidence intervals. The parent node mentioned in the text is indicated by the blue arrow. D Transformed frequency of CD4+ Th17 T cells in healthy controls and donors with previous TB infection. A point indicates a single donor, and the color indicates the standard error from limited measurement precision using crumblr. A subset of points is labeled with the observed cell type fraction with, for example, 1/144, indicating 1 CD4+ Th17 T cell out of 114 total cells. Boxes indicate mean, first and third quartiles, whiskers indicate 1.5 interquartile range.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig4_HTML.webp?md5=94c3d3dce16fdd7cafe8201096300360",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "crumblr identifies composition changes in bone metastases from prostate cancer.A Variance partitioning analysis quantifies the contribution of each variable to variation in frequency for each cell type. B Estimated effect size by comparing the composition of solid tumors and involved bone marrow. The color indicates effect size, and error bars indicate a 95% confidence interval. C Hierarchical clustering of cell types with colored points indicating estimated effect sizes for each cell type at leaves and multivariate testing at internal nodes. Results on leaves match results in (B). Point size indicates FDR, and “+” indicates FDR < 5%. Parent nodes mentioned in the text are indicated by red and blue arrows. D Transformed frequency of pericytes for each disease state. Each point indicates a single sample, and the color indicates the standard error from limited measurement precision using crumblr. A subset of points is labeled with the observed cell type fraction with, for example, 198/904, indicating 198 pericytes out of 904 total cells. Boxes indicate mean, first and third quartiles, whiskers indicate 1.5 interquartile range.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig5_HTML.webp?md5=e504b38bc39a41235a5f739c5bf9a567",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "crumblr identifies compositional changes associated with infection.A Variance partitioning analysis quantifies the contribution of each variable to variation in frequency for each cell type. B Estimated effect size corresponding to leaves in (A) comparing composition between patients with severe COVID and healthy controls. A positive coefficient estimate indicates an increase in cell type frequency with infection. The color indicates effect size, and error bars indicate a 95% confidence interval. C Hierarchical clustering of cell types with colored points indicating estimated effect sizes for each cell type at leaves and multivariate testing at internal nodes. Results on leaves match results in (B). Point size indicates FDR, and “+” indicates FDR < 5%. D Transformed frequency of cycling classical monocytes for each disease state. Each point indicates a single donor, and the color indicates the standard error from limited measurement precision using crumblr. A subset of points is labeled with the observed cell type fraction with, for example, 1/620 indicating 1 cycling classical monocyte out of 620 total cells. Boxes indicate mean, first and third quartiles, whiskers indicate 1.5 interquartile range. E Effect size estimates comparing cell type frequency to healthy controls. Color indicates effect size, and ‘*’ indicates FDR < 5%.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig6_HTML.webp?md5=ded48d529eea91df6bc585d930f14c91",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75681-7",
+            "asset": "assets/pmc13601534-04b5ca43afa4ee6c.webp",
+            "sha256": "04b5ca43afa4ee6cb193fd5110736da27b58ca3489eb832065157d85397166c3",
+            "width": 1600,
+            "height": 1229,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Gabriel E. Hoffman; Panos Roussos. Fast, flexible analysis of differences in cellular composition with crumblr.. DOI: 10.1038/s41467-026-75681-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "04b5ca43afa4ee6cb193fd5110736da27b58ca3489eb832065157d85397166c3",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_MOESM1_ESM.pdf?md5=659e60fd996eb84b214fd0e63cfd69f3",
+            "license": "CC BY",
+            "sha256": "29423a5adb36255e58d88c70086318dc62fc413ec754b24307bc6707137d567f",
+            "status": "downloaded_private",
+            "bytes": 1082120,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 27,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_MOESM2_ESM.pdf?md5=5c1475ad25ed64da6ae99fb3cee53b1e",
+            "license": "CC BY",
+            "sha256": "f2ed7065d46b3716d84bf60afe2369997e1de9cd46075f2f7b044c69a6d8a9a1",
+            "status": "downloaded_private",
+            "bytes": 71373,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 3,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_MOESM3_ESM.pdf?md5=e554f066f92cb57f1a0fd1d89d1c57b4",
+            "license": "CC BY",
+            "sha256": "89bce9653a104b45e5ed2b5d0de00e04d84d3dbf4655e617013cd3c231e9b43a",
+            "status": "downloaded_private",
+            "bytes": 4630722,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 48,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-25T06:56:41.473417+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Gabriel E. Hoffman; Panos Roussos"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-25T06:56:45Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-25T06:56:45Z",
+        "url": "https://openalex.org/W7214104986",
+        "cited_by_count": 12,
+        "fwci": 16.1799,
+        "citation_normalized_percentile": 0.99401021,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-25T06:56:45Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-25T06:56:45Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-26T06:56:45Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.97005105,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.97005105,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-25T06:57:00Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-704d234384619def",
+      "paper": "Single-cell atlas of transcriptomic vulnerability across brain disorders.",
+      "doi": "10.1038/s41586-025-09573-z",
+      "journal": "Nature",
+      "date": "2026-09-23",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1038/s41586-025-09573-z",
+      "pmcid": "PMC13600946",
+      "pmid": "42778699",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 5,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-25",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "434e23bcab5454ea75a477c3b781c2cc9644a77c383cc7f6b47f194bd5cb8112"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/PMC13600946.1.xml?md5=7aaeab7fa24285b993db4837c1191ab7",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the PsychAD cohort and study design.a, The composition of the PsychAD cohort, comprising 1,494 donors from three tissue sources: MSSM (n = 1,042), HBCC (n = 300) and RADC (n = 152). Donor demographics, including genetic ancestry (AFR, African; AMR, ad mixed American; EAS, East Asian; SAS, South Asian; EUR, European; and unknown), sex distribution (male and female) and the percentage of available genotype data are shown. The number of diagnoses per donor is represented by colour-coded bars, distinguishing individuals with zero, one or multiple NDD and NPD diagnoses. Age at death is illustrated in radial histograms, showing the variability across tissue sources. The age distribution is binned and capped at 99+ years. b, Overview of the data generation and analytical workflow. DLPFC specimens from three tissue sources underwent multiplexed snRNA-seq. Libraries were demultiplexed by genotype and annotated using a unified cellular taxonomy. Subsequent analyses included variance partitioning to quantify the contribution of cell type and clinical covariates to gene expression variation, compositional variation using crumblr and differential expression analyses using dreamlet, and disease trajectory modelling to reveal cellular and transcriptional dynamics associated with disease progression. c, A subset of the PsychAD cohort (n = 1,160 donors) focused on cross-disorder contrasts. This subset includes a group of neurotypical control individuals (n = 319), and donors diagnosed with one of eight NDD and NPDs. The total number of brain donors per cross-disorder group is shown, stratified by brain sources (top) or by the number of diagnoses per donor (right). The UpSet plot (bottom left) illustrates unique and overlapping disorder phenotypes, highlighting patterns of comorbidity. For AD contrasts, comorbid cases were not considered. For non-AD contrasts, comorbid cases were included to ensure sufficient statistical power for the analysis. Owing to the inclusion of both comorbid and non-comorbid cases, there is an overlap in donor counts across disorder groups. As a result, the total number of donors represented in the plot may exceed the actual number of unique donors, reflecting instances in which the same donor appears in multiple diagnostic intersections. d, A subset of the PsychAD cohort (n = 696) focused on AD phenotype contrasts. Comparison of different measures of AD severity, including neuritic plaque density (CERAD), NFT pathology (Braak) and cognitive impairments (cog. imp.). Note that n = 54 donors with incomplete pathology or cognitive status were omitted from the visualization. e, A subset of the AD cases (n = 234) was used to characterize the co-occurrence of NPSs with AD. The columns represent the intersection of NPS categories and vertical bars indicate the number of donors in each intersection. The horizontal bars represent the total number of donors within each individual NPS category: depression and mood changes (Depression/mood; n = 100); weight loss and PMA (Weight loss/PMA; n = 191); and weight gain, sleep disturbances, suicidal ideation, guilt and psychomotor retardation (PMR) (Weight gain/sleep/suicide; n = 63); no NPSs represents AD donors without any recorded NPSs. Donor proportions are further stratified by sex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig1_HTML.webp?md5=672f20e25fee26f9312ac9318ceb18e7",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Unified processing of the single-nucleus transcriptomics atlas and hierarchical cellular taxonomy.a, Hierarchical structure of transcriptome-based cellular taxonomy. Taxonomic annotation at three levels of granularity: class (n = 8), subclass (n = 27) and subtype (n = 65). b, The spatial distribution of major cell classes. c, The spatial distribution of EN subclasses. d, Markers defining neuronal subclasses. e, Functional enrichment of cellular subclasses using GO BP. Cell-type-specific genes were selected for each subclass using differential gene expression analysis, comparing one versus the rest of subclass-level clusters, and filtering for genes with FDR ≤ 0.05. f, Enrichment of heritable traits for cellular subclasses using previous GWASs (scDRS). AD96, MS97, PD98, epilepsy focal (epilepsy)99, migraines100, stroke101, amyotrophic lateral sclerosis (ALS)102, SCZ103, BD104, major depressive disorder (MDD)105, autism spectrum disorder (ASD)106, attention deficit hyperactivity disorder (ADHD)107, insomnia108, educational attainment (education)109, intelligence (IQ)110, alcoholism111, obsessive–compulsive disorder (OCD)112, Tourette syndrome113, obesity114, type 2 diabetes mellitus (T2D)115, cholesterol total (cholesterol)116, rheumatoid arthritis (RArthritis)117, inflammatory bowel disease (IBD)118 and ulcerative colitis (UC)119.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig2_HTML.webp?md5=6399775d022b2301b11e9ff01bef8bfb",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Sources of transcriptomic variation.a, Partition of transcriptomic variation by technical and clinical covariates. n = 34,890 genes examined over 2,924 libraries with 1,494 donors across 27 subclasses. n = 9,256 protein-coding genes are visualized. For the box plots, the box limits indicate the first and third quartiles, the centre line represents the median, and the whiskers extend to the minimum and maximum values. b, The top genes for each technical and clinical covariate category. c, ATP8A2 gene expression across cell types. Subclass-level cell types were sorted on the basis of median expression levels. Expression levels were depth normalized (norm. exp.) using counts per million (CPM) and then log2 transformed. n = 1,494 donors examined across 27 subclasses. For the box plots, the box limits indicate the first and third quartiles, the centre line represents the median and the whiskers extend to 1.5× the interquartile range. The points beyond the whiskers were considered outliers. d, ARL17B gene expression across donors. Donors were sorted on the basis of median expression. e, Stratification of MAPT haplotypes using normalized expression of ARL17B in EN_L2_3_IT neurons. Statistical analysis was performed using Wilcoxon rank-sum tests between haplotypes using two-sided as the alternative hypothesis. *****P ≤ 1 × 10−5. The exact P value between H1H1 and H1H2 was 1.78 × 10−116; and, between H1H1 and H2H2, 2.41 × 10−19. n = 1,380 donors with genotypes were examined. For the box plots, the box limits indicate the first and third quartiles, the centre line represents the median, and the whiskers extend to 1.5× the interquartile range. The points beyond the whiskers were considered outliers. f, Genetic constraints of gene groups measured by LOEUF score (upper bound of 90% confidence interval for observed/expected ratio for high-confidence predicted loss-of-function (pLoF) variants; lower values indicate higher genetic constraints). ‘Low’ indicates genes in the bottom 5% quantile of the brain donor variance, and ‘high’ indicates genes in the top 5%. ‘Random’ indicates a random 5% of genes that are in neither the low nor the high category. Statistical analysis was performed using Wilcoxon rank-sum tests with n = 8,603 protein-coding genes examined. n = 1,247 genes visualized. For the box plots, the box limits indicate the first and third quartiles, the centre line represents the median, and the whiskers extend to 1.5× the interquartile range. The points beyond the whiskers were considered outliers. g, Functional enrichment for genes with high or low interindividual variation. SRP, signal-recognition particle; HSIAO_HOUSEKEEPING_GENES, housekeeping genes identified as expressed across 19 normal tissues120; HOUNKPE_HOUSEKEEPING_GENES, 1,130 human and mouse housekeeping genes121. *P ≤ 0.05, **P ≤ 0.01, ***P ≤ 0.001, ****P ≤ 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig3_HTML.webp?md5=ecaf81ff02dd0ddf26a631879019b608",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "assets/pmc13600946-142e01a2ccc2363e.webp",
+            "sha256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
+            "width": 1600,
+            "height": 1912,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cross-disorder variation of cell type composition comparing NDDs and NPDs to neurotypical controls.a, Pairwise Spearman’s correlations of cell type proportions across donors for each disorder. Hierarchical clustering based on neuronal composition highlights separation between NPDs and NDDs. Correlations using all cell subclasses (below the diagonal) or neuronal cell types only (above the diagonal). b, log2-transformed fold changes in the variation of each subclass (columns) relative to the controls across the eight disorders (rows). NPD and NDD labels reflect group-level summaries across multiple conditions. c, Variation of subtype-level composition in the vascular cell class. The colour intensity indicates the effect size and the dot size reflects the statistical significance of correlations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig4_HTML.webp?md5=5314a90658ce8c0361846486e42dbe35",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cross-disorder variation of gene expression.a, Pathways implicated by shared gene expression changes across eight brain disorders. Hypergeometric test with FDR ≤ 0.01 is shown. Neg. reg., negative regulation. b, The transcriptome similarities between disease pairs as measured by Spearman’s correlation. Cross-disease shared genes are discounted from the comparison. c, The pathways implicated by shared signatures from AD, DLBD, Vas and PD. Hypergeometric test with FDR ≤ 0.001 is shown. d, Estimated shared heritability between disease pairs using LD score regression (LDSC). Data are rg ± s.e. from LDSC estimation. n = 1,290,028 SNPs examined from the reference panel. e, The transcriptome similarity as measured using Spearman’s correlation. Each dot represents the correlation between two traits within a specific subclass. The box plot summarizes the distribution of these correlations across all 27 subclasses. n = 756 co-expression examined (28 trait pairs by 27 subclasses). For the box plots, the box limits indicate the first and third quartiles, the centre line represents the median, and the whiskers extend to 1.5× the interquartile range. The points beyond the whiskers were considered outliers. f, The correlation between shared heritability and median transcriptome similarity, as calculated using Spearman’s correlation coefficient. The error bars show the 95% confidence intervals. g, Subclass-specific concordance (ρss) between shared heritability and transcriptome similarity. Spearman’s correlation coefficient was calculated using the transcriptome similarity of each subclass.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig5_HTML.webp?md5=8e212b6347c18fdc85410a3ca8960bde",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "assets/pmc13600946-7a9c59ec8e4eebd3.webp",
+            "sha256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
+            "width": 1600,
+            "height": 1105,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Transcriptomic variation with AD pathology.a, Compositional variation analysis using normal ageing, different measures of AD pathology (binary AD diagnosis (dx_AD), CERAD score, Braak staging and ordinal dementia scale), and three categories of NPSs within AD. b, Comparison of compositional changes between ageing (Ag) and AD. Green indicates concordant changes. Red indicates discordant changes. Only subclasses with at least one FDR significant contrast are shown. c, Causal mediation analysis using PRS, mean plaque, Braak staging and dementia scale. CLR-transformed subclass fractions were used for modelling. Statistical significance is indicated above the arrow (bootstrapping was used to estimate P values; ***P ≤ 0.001, **P ≤ 0.01 and *P ≤ 0.05), and the numbers below indicate the coefficients. The mediation effects of SST+ interneurons on Aβ plaque accumulation are shown separately. d, DEGs in AD phenotypes. Meta-analysis was performed between brain banks. The top genes are shown (FDR < 0.01 and effect size ≥ 0.35). e, Functional enrichment analysis of DEGs by subclass using GO BP pathways. FDR ≤ 0.01, as determined using the hypergeometric test, is shown. GO terms were reduced using rrvgo.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig6_HTML.webp?md5=871c8f35a573975f7180903107d420ec",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Modelling of AD using disease trajectory analysis.a, Neural network models to predict Braak stage and dementia status from the raw gene counts of individual cells, from which we constructed gene trajectories (Methods). The trajectory of the NAV2 gene for the immune cell class is shown as an example. b, The accuracy (acc.) of the models by cell class. The error bars show the s.d. from donor-level bootstrap resampling; the number of eligible donors per cell class is provided in the Methods. c, UMAP projection of the microglia subtype. The hue indicates the mean actual Braak (left) and disease pseudotime prediction (right) at each location on the UMAP space. d, The nonlinearity index by cell class. e, Pathway enrichment by early (top left triangles) and late (bottom right triangles) phases of the AD trajectory, as predicted by disease pseudotime and dementia resilience. The hue indicates the z score (clipped between −10 and 10); *FDR < 0.05. f, Four representative disease trajectory modules for the immune cell class. The mean-normalized expression of the 250 genes with the greatest early-increasing (early inc.; blue curve), early-decreasing (orange), late-increasing (green) and late-decreasing (red) slopes based on disease pseudotime trajectories. g, Pathway enrichment of disease trajectory modules. Text is coloured by the four trajectory modules, as in f. The hue indicates the number of genes in the pathway. h, Enrichment of heritability estimates (MAGMA) for each disease trajectory module. The text colour indicates neurological traits (red) and psychiatric traits (blue). The hue indicates −log10[FDR] (clipped at 5); *FDR < 0.05. i, Top 12 genes for each trajectory module. The hue indicates the rate of normalized expression change (slope) based on the predicted disease pseudotime. For visualization, we show each gene only once even if it appears in more than one module. References 122,123.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig7_HTML.webp?md5=d0a1a4846ad35b9327de2fa29eeb4cea",
+            "articleURL": "https://doi.org/10.1038/s41586-025-09573-z",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al.. Single-cell atlas of transcriptomic vulnerability across brain disorders.. DOI: 10.1038/s41586-025-09573-z. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_MOESM1_ESM.zip?md5=6cd438e10b25e4d1dfeaa76845c97e29",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_MOESM2_ESM.pdf?md5=987b2cc548b08c49b08088071c549083",
+            "license": "CC BY",
+            "sha256": "73e3be50e041ef7f63fc6c97cf2a45fb3ff213b2e5487272c155df37a2039ebc",
+            "status": "downloaded_private",
+            "bytes": 93698,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_MOESM3_ESM.zip?md5=55005aaebacb03317a9276959d17cc1d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_MOESM4_ESM.zip?md5=7b7251b04c0022196826e29eb9f65782",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_MOESM5_ESM.pdf?md5=89bddf33c48673cdaf8be3310ceb6635",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-25T06:56:46.249984+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Donghoon Lee; Mikaela Koutrouli; Nicolas Y. Masse; Gabriel E. Hoffman; Seon Kinrot; Xinyi Wang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "56.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-25T06:56:48Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-25T06:56:48Z",
+        "url": "https://openalex.org/W7214093958",
+        "cited_by_count": 5,
+        "fwci": 9.11,
+        "citation_normalized_percentile": 0.98357912,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-25T06:56:48Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-25T06:56:48Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-26T06:56:48Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.9178956,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9178956000000005,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-25T06:57:00Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-d88323a056815cb1",
+      "doi": "10.1007/s10522-026-10471-8",
+      "paper": "Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.",
+      "journal": "Biogerontology",
+      "date": "2026-07-28",
+      "year": "2026",
+      "pmcid": "PMC13407579",
+      "pmid": "42509463",
+      "paperURL": "https://doi.org/10.1007/s10522-026-10471-8",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1389-5729",
+      "eissn": "1573-6768",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d1aae556930e1b6b9d08878b63818bacab7c4d52368a1474d09b34aca226cfc3"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/PMC13407579.1.xml?md5=908477e6691fe4907101fbd218e02551",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Donor-aware mechanistic-interpretability pipeline. Five age-labeled cohorts and two frozen scFMs feed a nine-block evaluation. Blocks 1–4 establish a candidate signal; 5–6 qualify it as directional; 7–9 stress-test it against the composition confound. Promoted claims are the conjunction of all nine outcomes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig1_HTML.webp?md5=3ed11bf3ec98b17f76da403d51732718",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "assets/pmc13407579-79313ba6c9730c58.webp",
+            "sha256": "79313ba6c9730c587863f4f4ee7413e98959b526082d24e268e23d954eece2a5",
+            "width": 1599,
+            "height": 667,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "79313ba6c9730c587863f4f4ee7413e98959b526082d24e268e23d954eece2a5",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Figa",
+            "label": "Unlabelled figure (JATS id: Figa)",
+            "labelStatus": "unresolved",
+            "reference": null,
+            "caption": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Figa_HTML.webp?md5=9f5b10a0d50afd932629854e70953fc9",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Probe accuracy across cohorts vs. nulls and the gene-expression PCA baseline. Frozen scFMs encode genuine age signal (above permutation null) but do not exceed the simpler PCA-on-expression baseline. The pretraining advantage is interpretive, not predictive; this framing organises the analyses that follow",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig2_HTML.webp?md5=c0b2959d2ba003b0eb9f1c9f5ced144f",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Donor-aware robust SAE features by cohort and model. The signal is concentrated in the AIDA cohorts",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig3_HTML.webp?md5=d7268395c7cc21e2417fae93e5bbe96a",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Per-feature SAE case studies (AIDA v2/Geneformer). Three passing features (P1–P3) and one failing feature (F1) shown across donor-age Spearman, variance attribution, and activity-profile panels. The failing feature has the highest donor \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\eta ^2$$\\end{document}η2 in the SAE; the donor-aware gate correctly excludes it",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig4_HTML.webp?md5=10a76d9d473cd0cc4a9a1cc3bbc1689d",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Resolved inflammation submodules across AIDA cohorts and models. Cross-model agreement concentrates in TNF/NF-κκB classical and type-II IFN; complement is dominated by scGPT-specific features",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig5_HTML.webp?md5=7960a2fcfedcf6a0db46f6989b1af912",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "AIDA v1 vs v2 cohort attribution. (A) Monocyte composition shifts between cohorts. (B) Per-donor distribution tests; monocyte-fraction is the most strongly differing feature (\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$p=1.3\\times 10^{-7}$$\\end{document}p=1.3×10-7)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig6_HTML.webp?md5=7e75402d07e5921fa843d6d3bb2cab7c",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "assets/pmc13407579-7c8e3cff772d45b4.webp",
+            "sha256": "7c8e3cff772d45b49e519a9797fba52e740ed983299f26cc55be2cd8a88fb0a4",
+            "width": 1600,
+            "height": 705,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7c8e3cff772d45b49e519a9797fba52e740ed983299f26cc55be2cd8a88fb0a4",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Empirical power curve. Left panel A: strict-gate pass rate versus number of donors per resample. Both the baseline (unrestricted, blue filled circles) and composition-matched (vermilion open squares) regimes reach a pass rate of 1.00 from n=50n=50 onward; the two lines coincide at 1.00 and are drawn with distinct markers so neither is hidden. Right panel B: the old−random expected-age contrast with its 95% subsample range. The baseline contrast sits at ≈ +0.150≈+0.150 across all sample sizes, while the composition-matched contrast saturates at ≈ +0.046≈+0.046 (\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\approx 3.2\\times$$\\end{document}≈3.2× smaller). The signal is therefore not power-limited at either setting; composition matching attenuates the magnitude rather than the detectability",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig7_HTML.webp?md5=c7b435a75ed0006a191ee74c92bdd235",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Strict-gate calibration. The strict gate (CI excludes zero, all three directional, no effect-floor) sits at the highest baseline−composition-matched selectivity gap. Tightening the effect floor narrows specificity but sacrifices sensitivity disproportionately",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig8_HTML.webp?md5=f4180265a567299b62784cbf195e28e2",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Composition controls. Left: reweighting (Block 7) produces negligible effect-size changes. Right: per-seed directional contrasts under composition-matched reruns (Blocks 8–9)—7 of 8 matched-resampling seeds preserve the directional structure at attenuated magnitude; one seed (seed 404) nullifies it as a composition-realisation effect",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig9_HTML.webp?md5=98446c5b33bdc3b6bb2568f65382c1fb",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Geneformer donor-bootstrap intervention effects before and after composition matching. The aging-program push remains positive in mean and direction, at attenuated magnitude under matching",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig10_HTML.webp?md5=47fd0bfd2f8553fdd527d1fe2c88d06d",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Fig. 11",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "11",
+              "panel": ""
+            },
+            "caption": "Workflow ablation table. Each block adds a different verdict; removing any one changes the conclusion that would be drawn. Blocks 1–4 establish, 5–6 qualify, 7–9 stress-test against composition",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig11_HTML.webp?md5=624d4ac2ccccc14afc8ac19520c5bb06",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Fig. 12",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "12",
+              "panel": ""
+            },
+            "caption": "Exploratory MethylGPT extension. Sample-level age signal is layout-stable and localises to a small set of recurrent CpG regions overlapping public methylation clocks",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig12_HTML.webp?md5=1963b1adebb63fca6767704758933a15",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Fig. 13",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "13",
+              "panel": ""
+            },
+            "caption": "Fine localisation and sparsity in the exploratory MethylGPT branch",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig13_HTML.webp?md5=4a8d48a2a1d519eeba79aea4030e5a80",
+            "articleURL": "https://doi.org/10.1007/s10522-026-10471-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ihor Kendiukhov. Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.. DOI: 10.1007/s10522-026-10471-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-25T06:56:36.581061+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Ihor Kendiukhov"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.3",
+        "jcr": "Q1",
+        "cas": "医学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-25T06:56:39Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-25T06:56:39Z",
+        "url": "https://openalex.org/W7171358187",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.48541404,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-25T06:56:39Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-25T06:56:39Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-26T06:56:39Z"
+        }
+      },
+      "selectionScore": {
+        "total": 47.4270702,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.4270702,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-25T06:57:01Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-ae8e07eafe3f363d",
+      "doi": "10.1093/bioadv/vbag192",
+      "paper": "DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.",
+      "journal": "Bioinformatics advances",
+      "date": "2026-07-30",
+      "year": "2026",
+      "pmcid": "PMC13493046",
+      "pmid": "42626744",
+      "paperURL": "https://doi.org/10.1093/bioadv/vbag192",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2635-0041",
+      "eissn": "2635-0041",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "06217d523bd675ed8234fb3cab108b0f9db8a9c6d9970ad43ca239f4f44b2461"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/PMC13493046.1.xml?md5=d3f3f4ff27f9909718a4ceab298b6a69",
+        "figures": [
+          {
+            "id": "vbag192-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The DiDyNet Framework for Differential Dynamic Network Inference. (A) Preprocessing and two-dimensional variance filtering: raw time-series features are preprocessed, and low-quality or noisy features are removed. (B) Subject-specific trajectories: feature profiles are compiled for each subject. (C) DTW alignment and initial testing: feature trajectories are aligned using DTW, followed by Wilcoxon rank-sum tests with Benjamini–Hochberg false discovery rate correction to identify DDCs. (D) Post-hoc refinement: significant DDCs are categorized into three types according to whether individual feature-level effects are significant for one, both, or neither of the paired features. (E) Differential dynamic network: the inferred network visualizes relationships between molecular features and highlights key hubs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f1.webp?md5=22c1f570e3a552c6f458fe841f3e7a7a",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "assets/pmc13493046-0171432a4ad7de9f.webp",
+            "sha256": "0171432a4ad7de9f2873e3a55057b47da0baba0e735e0e23144ee22ad202bfbb",
+            "width": 1599,
+            "height": 740,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0171432a4ad7de9f2873e3a55057b47da0baba0e735e0e23144ee22ad202bfbb",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "vbag192-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Performance comparison of coupling detection methods under varying simulation conditions. Performance was evaluated using the pooled area under the receiver operating characteristic curve (AUC) across 1000 independent simulation runs. Sensitivity analyses were performed by varying (A) coupling strength, (B) noise level, (C) number of time points, (D) sample size, (E) number of true DDCs, and (F) feature dimensionality. DiDyNet (DTW; red) was compared with Constrained Dynamic Time Warping (cDTW; dark red), Time-Lagged Cross-Correlation (TLCC; orange), interpolated Pearson correlation (green), interpolated Spearman correlation (purple), and interpolated Euclidean distance (blue).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f2.webp?md5=5a3c9f56f4ce5ed87d663de880498da6",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "assets/pmc13493046-b48c1f79f1152d57.webp",
+            "sha256": "b48c1f79f1152d5796c85f54e4caa4e8095e199c4b530dd966ffc91e3f3fc078",
+            "width": 1600,
+            "height": 1137,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b48c1f79f1152d5796c85f54e4caa4e8095e199c4b530dd966ffc91e3f3fc078",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "vbag192-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Comparison of classification performance between DiDyNet and static feature representations. Distribution of AUC values obtained from 1000 independent simulation runs for DiDyNet (DTW) and three static feature representations. DiDyNet consistently achieved the highest discriminative performance across all simulations. Brackets indicate statistical significance based on the Wilcoxon rank-sum test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f3.webp?md5=4e2c5b1332a0ea296fa2c979c7016965",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "vbag192-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Distribution of longitudinal observations and visit frequencies across multi-omics layers. (A–C) Stacked bar charts showing the total numbers of longitudinal observations in the insulin-resistant (IR) and insulin-sensitive (IS) groups for the cytokine (A), transcriptomic (B), and proteomic (C) datasets. Each bar is subdivided according to individual subjects. (D–F) Histograms showing the distributions of longitudinal visit frequencies per subject for the corresponding omics layers. Bars indicate the numbers of subjects with each visit frequency, and the average numbers of visits per subject are highlighted in the callout boxes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f4.webp?md5=3a1fb6ef2964d7487e651b79ea59c7d7",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "vbag192-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Stepwise reduction of the multi-omics search space under different feature selection thresholds. Bars represent the total unfiltered search space (light gray), the feature pairs retained after Top-K filtering (dark gray), statistically significant differential dynamic couplings identified by DTW (blue), and the final high-confidence Subtle Coordinated Coupling (SCC) pairs after post-hoc refinement (red). Results are shown for different feature selection thresholds (K).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f5.webp?md5=35e305cb1829252d36e04f348a560234",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "vbag192-F6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Topological architecture of the core differential dynamic network. The network displays the top 20 hub nodes from each omics layer extracted from the highly reproducible consensus network (ERS ≥ 0.9). Nodes are colored according to omics layer: cytokines (red), proteomics (blue), and transcriptomics (green). Node size is proportional to degree centrality, indicating the relative topological importance of each feature within the integrated multi-omics network. Edges represent significant high-confidence SCC relationships retained after post-hoc refinement.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f6.webp?md5=a347f635d30e400b498ee58de3011685",
+            "articleURL": "https://doi.org/10.1093/bioadv/vbag192",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhe Liu; Kesong Wu; Taesung Park. DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.. DOI: 10.1093/bioadv/vbag192. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "vbag192_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192_supplementary_data.docx?md5=6017929be5807e2b7d9f618e60b48c35",
+            "license": "CC BY",
+            "sha256": "c2b8188cba4c0aca64641e0597ac850cc51750b5721da57f453107b9a5568358",
+            "status": "downloaded_private",
+            "bytes": 2281609,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/bioinfoliu/DiDyNet"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-25T06:56:54.639772+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/bioinfoliu/DiDyNet",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/PMC13493046.1.xml?md5=d3f3f4ff27f9909718a4ceab298b6a69"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zhe Liu; Kesong Wu; Taesung Park"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/bioinfoliu/DiDyNet",
+        "commit": "c73988765bf2c80ce4ad3d45f6ce9f972853bee5",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "didynet/dtw_analysis.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/dtw_analysis.py",
+            "sha256": "fb3d509a4338ff9818f39858fc1ad9891598d443e457c52c6e960e2e3f46d93d",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "pair",
+                "line": 64,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "distance",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "significant",
+                "line": 88,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "adj_p",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "group",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature1",
+                "line": 64,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature2",
+                "line": 64,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "didynet/feature_selection.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/feature_selection.py",
+            "sha256": "6c6c4196266ec9f0af678ecbbb472221f093b86e8b71acbdf53f5f0875d01c2c",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Feature",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Var_Time_mean",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Var_Subject_mean",
+                "line": 58,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "didynet/network.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/network.py",
+            "sha256": "5e7f7163c910b3ab92cf30411e31b2c0990cb809af12575be36293250bf9a799",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 35,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Frequency",
+                "line": 38,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 35,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/network.py#L35"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "didynet/post_hoc.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "sha256": "f9d7ffd14851b3d50361df73d7953c360f8fde75ebb8cb7a8b30ea5e25e7b9b0",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 19,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 20,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 21,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 22,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 82,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 108,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "index_col": 0
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 192,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 19,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L19"
+              },
+              {
+                "type": "io_reference",
+                "line": 20,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L20"
+              },
+              {
+                "type": "io_reference",
+                "line": 21,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L21"
+              },
+              {
+                "type": "io_reference",
+                "line": 22,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L22"
+              },
+              {
+                "type": "io_reference",
+                "line": 82,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L82"
+              },
+              {
+                "type": "io_reference",
+                "line": 108,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L108"
+              },
+              {
+                "type": "io_reference",
+                "line": 192,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py#L192"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "didynet/preprocessing.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+            "sha256": "abd7f110e2ee3af537773793c78783fc9f77e16d231b6110a838c2f809bc0b06",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 31,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 32,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 33,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 39,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "SubjectID",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 31,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py#L31"
+              },
+              {
+                "type": "io_reference",
+                "line": 32,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py#L32"
+              },
+              {
+                "type": "io_reference",
+                "line": 33,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py#L33"
+              },
+              {
+                "type": "io_reference",
+                "line": 39,
+                "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py#L39"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "run_pipeline.py",
+            "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/run_pipeline.py",
+            "sha256": "98012860d5a55e04a07fa723946285821b440149eea796c8b5299315d7d204b0",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "SubjectID",
+                "line": 36,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Frequency",
+                "line": 38,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/network.py",
+            "line": 35,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 19,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 20,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 21,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 22,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 82,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 108,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Category",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SubjectID",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_value",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Subject",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Feature",
+                "line": 111,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Value",
+                "line": 119,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+            "line": 192,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "SubjectID",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+            "line": 31,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "SubjectID",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+            "line": 32,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "SubjectID",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+            "line": 33,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "SubjectID",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IRIS",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+            "line": 39,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.6",
+        "jcr": "",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-25T06:56:58Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-25T06:56:58Z",
+        "url": "https://openalex.org/W7171860514",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.53152655,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-25T06:56:58Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-25T06:56:58Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-26T06:56:58Z"
+        }
+      },
+      "selectionScore": {
+        "total": 72.65763275,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.6576327500000003,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-25T06:57:02Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "DiDyNet:面向纵向多组学数据的差分动态网络推断框架",
+        "summary_zh": "该论文提出 DiDyNet 框架,用于从纵向多组学数据中识别表型特异的时序分子网络,其核心是把动态耦合定义为分子轨迹之间的协同变化。框架包含四个步骤:二维方差过滤以筛选动态特征;用动态时间规整(DTW)量化个体层面的协同性以容忍时间不同步;对差分动态耦合进行统计检验;用线性混合模型做事后精炼以区分真实协同动态与随机噪声。图注显示流程还包括 Wilcoxon 秩和检验配合 Benjamini–Hochberg FDR 校正,以及按配对特征个体效应显著性把显著耦合分为三类,并输出差分动态网络。摘要报告模拟研究显示 DiDyNet 优于均值、中位数、差值等静态汇总统计量,DTW 量化在时间错位与信号稀疏条件下比欧氏距离、相关性距离和约束对齐方法更稳健;在胰岛素抵抗队列中识别出连接系统性炎症与胞内应激反应的跨组学协同网络。作者代码未运行,本文仅为基于图注与静态观察的学习注释,未验证复现结果。",
+        "learning_points": [
+          "理解 DiDyNet 的四步流程:二维方差过滤、DTW 个体轨迹协同量化、差分动态耦合统计检验、线性混合模型事后精炼。",
+          "图注显示统计检验使用 Wilcoxon 秩和检验并结合 Benjamini–Hochberg FDR 校正来识别差分动态耦合(DDC)。",
+          "事后精炼按配对特征中个体特征效应是否显著(一个、两个或都不显著)把显著 DDC 分为三类。",
+          "DTW 的作用是容忍纵向轨迹之间的时间不同步,从而量化受试者层面的协同变化。",
+          "模拟评估以 1000 次独立运行的合并 AUC 为指标,并围绕耦合强度、噪声水平、时间点数、样本量、真实 DDC 数量与特征维度做敏感性分析。",
+          "对比方法包括约束动态时间规整(cDTW)、时滞互相关(TLCC)、插值 Pearson 相关、插值 Spearman 相关与插值欧氏距离。",
+          "静态观察显示 network.py 从输入边文件读取边表,post_hoc.py 读取细胞因子、蛋白质组、转录组与标签等清洗后 CSV,可作为理解数据接口的线索。",
+          "应用示例为胰岛素抵抗队列,图注描述了各多组学层的纵向观测数与访视频率分布。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致。",
+          "输入数据的列名、字段结构与尺度未在证据中明示,具体数据格式未知。",
+          "图号与代码模块之间的对应关系未明示,无法确认某张图由哪个脚本生成。",
+          "模拟性能结论(如优于静态汇总统计量、DTW 更稳健)来自摘要与图注描述,未独立核验。",
+          "图 2 与图 3 的具体数值、置信区间与显著性细节未在证据中给出。",
+          "胰岛素抵抗队列的样本量、组间构成与网络生物学解释细节未知。",
+          "代码许可、期刊指标与复现环境未在证据中说明,均属未知。",
+          "证据仅给出部分脚本路径与少量静态观察,无法评估实现正确性或潜在缺陷。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-25T06:57:09Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "8a8406a80bde9890b77c902a2a9d90c532283c9a111becbd745f3745b75a34bc",
+        "summary_fingerprint": "a0897db5e7e50eda2589beec5467c50a0665b62229052eaaef13a28c962290e7",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-d7839aab7ecd6743",
+      "doi": "10.1038/s41421-026-00908-2",
+      "paper": "Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.",
+      "journal": "Cell discovery",
+      "date": "2026-08-04",
+      "year": "2026",
+      "pmcid": "PMC13439465",
+      "pmid": "42552301",
+      "paperURL": "https://doi.org/10.1038/s41421-026-00908-2",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2056-5968",
+      "eissn": "2056-5968",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "diabetes",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "53707e30bfca4464632b3c9697d1d608864be1383c366c5bc969a35a99e7d232"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/PMC13439465.1.xml?md5=532350f6383c604c7bf67115950e3083",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single-cell transcriptomic atlas of the HPOU axis in diabetic macaques.a Dynamic alterations in fasting blood glucose, cholesterol, and triglyceride levels in nonhuman primate (NHP) with T1DM. b Schematic diagram of the experimental design and workflow for scRNA-seq. c Unsupervised clustering analysis of 101,146 cells (divided into 13 clusters) from pooled samples of the HPOU axis, colored by cell type. The results in the middle show the distribution of cells in each organ and group. d Heatmap of the expression of cell type-specific marker genes. e Lollipop chart of the number of cell marker genes (left panel) and bar plot of the cell type-specific enriched biological processes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig1_HTML.jpg?md5=a46f492169d01ed4cd538db350de950a",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Diabetes-associated transcriptional alterations in various cell types.a UMAP plots showing the cellular heterogeneity of each reproductive endocrine organ, with cells color-coded according to the main cell types identified. b Number of upregulated (red bar) and downregulated (blue bar) genes in each cell type. c Distribution of DEGs in a heatmap indicating whether a gene (row) is a DEG in a given cluster (column) (left). GO terms associated with the top 800 commonly induced DEGs (right). d Violin plots showing upregulated and downregulated DEGs on the HPOU axis. e Expression levels of Txnip genes in the HPOU axis and DNA methylation profiles of Txnip genes in the ovary and uterus.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig2_HTML.jpg?md5=69bf38ccd00d1ed1718b94ebc47c74bc",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "assets/pmc13439465-06e587befb6915c3.jpg",
+            "sha256": "06e587befb6915c3e160e75012757aab8b93e710d2c38c73c3ebd449d08671e9",
+            "width": 783,
+            "height": 1000,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "06e587befb6915c3e160e75012757aab8b93e710d2c38c73c3ebd449d08671e9",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Global cell–cell interactions in the diabetic HPOU axis.a Heatmaps showing the differential interaction numbers and strength between the T1DM and T1DC groups. b Representative information flow for MIF signaling pathways in T1DC (blue) and T1DM (red) groups. c Ligand–receptor signaling pairs between endocrine cells and macrophages in the pituitary (top); changes in the MIF signaling pathway in the pituitary between the diabetic and control groups (bottom). d Ligand–receptor signaling pairs between endocrine cells and macrophages as well as monocytes in the ovary (top); changes in the MIF signaling pathway in the ovary between the diabetic and control groups (bottom).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig3_HTML.jpg?md5=52f1ca44462e47cef27ee4dfbca06c96",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Transcriptional alterations in reproductive-related cells.a Left: H&E staining of the ovaries in the control and diabetic groups; right: corresponding statistics of ovarian antral follicles in the control and diabetic groups. ****P < 0.0001. b Left: H&E staining of the uterus in the control and diabetic groups; right: corresponding statistics of uterine functionalis glands in the control and diabetic groups. ***P < 0.001. c Highlight of the cells in the pituitary, ovary and uterus from Fig. 2a, showing the cells selected for focused analysis in the left panel; UMAP visualization of subtypes of these cell populations in the right panel. d Volcano plots showing the DEGs of T1DM vs T1DC in each subtype. Representative upregulated and downregulated genes are labeled. e GO terms associated with DEGs in the indicated pituitary and ovarian clusters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig4_HTML.jpg?md5=64e23c0689bbb564c6cc683e73749307",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Diversity of macrophages at the molecular and functional levels.a Highlight of macrophages in the UMAP from Fig. 1c, showing the cells selected for focused analysis in the top panel; UMAP visualization of macrophage derivation and subtypes in the middle panels; UMAP visualization of the group of macrophages in the bottom panel. b Expression of selected markers identifying macrophage subtypes projected on the UMAP plot. Purple (or gray) represents a high (or low) expression level, as shown on the color key at the bottom right. c Volcano plots showing the DEGs of T1DM vs T1DC for each macrophage subtype. d GO terms associated with DEGs in the indicated macrophage clusters. e Heatmap showing the differentially expressed chemokines, cytokines, and their receptors in different macrophage subtypes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig5_HTML.jpg?md5=802ddd85322932839228d256aee0a504",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "assets/pmc13439465-4ffb96cb26cdcc4e.jpg",
+            "sha256": "4ffb96cb26cdcc4e8f98884c2f8b49d4eaddb2eb4859ded2f84ba1cc311f9fe0",
+            "width": 688,
+            "height": 999,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4ffb96cb26cdcc4e8f98884c2f8b49d4eaddb2eb4859ded2f84ba1cc311f9fe0",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Molecular changes in granulosa cells in diabetes.a Pseudotime trajectory of granulosa cells analyzed by Monocle. b Expression of hormone-responsive genes along a pseudotime trajectory. c Violin plots of the expression of hormone-responsive genes between the T1DC and T1DM groups. d Immunostaining of SFRP4 in ovary sections (left). The DNA was counterstained with DAPI. Scale bars, 100 µm. The mean fluorescence intensity of SFRP4 (right) was calculated by ImageJ (n = 6). ****P < 0.0001. e Pseudotemporal expression pattern analysis of the representative DEGs in 2 clusters, along with the inferred trajectory and enriched biological process terms.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig6_HTML.jpg?md5=21fbdb6b034f2829e2b5052dbe7533d5",
+            "articleURL": "https://doi.org/10.1038/s41421-026-00908-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al.. Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.. DOI: 10.1038/s41421-026-00908-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM1_ESM.pdf?md5=9920d98c6af0e77afc4049697641b394",
+            "license": "CC BY",
+            "sha256": "bf1c6b972cd7ab96b86392bfbeae9814ab10056b075a46c66cfc930ce00fc44a",
+            "status": "downloaded_private",
+            "bytes": 3867158,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 14,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM2_ESM.xlsx?md5=6738e3b930edb15c7ea64492969bebb2",
+            "license": "CC BY",
+            "sha256": "7ec27848cb61f0209b134f4d1cf40a7fe62ce82436c9d63fe9f7efc57eacf68a",
+            "status": "downloaded_private",
+            "bytes": 1276793,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM3_ESM.xlsx?md5=5e5a3b947f07085147b02ce7aa527a40",
+            "license": "CC BY",
+            "sha256": "ef0e23f01c09acd21c2b48054edacc4621d134731ffcc0f0f10e7d812a7ace39",
+            "status": "downloaded_private",
+            "bytes": 1058335,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM4_ESM.xlsx?md5=33916fd396989ca7f65bc67022b04b9c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM5_ESM.xlsx?md5=fdc1f3cf20de3e84f2f93aa852c9ddef",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM6_ESM.xlsx?md5=f731f9395c20ef7ca6c13e2bd2982388",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_MOESM7_ESM.xlsx?md5=047645998f1cd23356c1aa136d7f4d22",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-25T06:56:49.657071+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zheng-Hui Zhao; Ning Xu; Xue-Ying Chen; Cheng-Yan Zhuo; Yong Lu; Ang Li; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "16.9",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-25T06:56:53Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-25T06:56:53Z",
+        "url": "https://openalex.org/W7172377886",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.63390668,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-25T06:56:53Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-25T06:56:53Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-26T06:56:53Z"
+        }
+      },
+      "selectionScore": {
+        "total": 53.1695334,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.1695333999999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-25T06:57:09Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -137044,6 +139852,602 @@
           ]
         }
       ]
+    },
+    "doi-f964cea8daab9c8d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-704d234384619def": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-d88323a056815cb1": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ae8e07eafe3f363d": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/network.py；读取行 35；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/network.py",
+          "observedFieldReferences": [
+            {
+              "name": "Frequency",
+              "line": 38,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 19；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 20；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 21；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 22；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 82；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 108；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py；读取行 192；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/post_hoc.py",
+          "observedFieldReferences": [
+            {
+              "name": "Category",
+              "line": 155,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Group",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SubjectID",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p_value",
+              "line": 109,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Subject",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Feature",
+              "line": 111,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Value",
+              "line": 119,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py；读取行 31；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+          "observedFieldReferences": [
+            {
+              "name": "SubjectID",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 40,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py；读取行 32；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+          "observedFieldReferences": [
+            {
+              "name": "SubjectID",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 40,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py；读取行 33；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+          "observedFieldReferences": [
+            {
+              "name": "SubjectID",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 40,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py；读取行 39；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinfoliu/DiDyNet/blob/c73988765bf2c80ce4ad3d45f6ce9f972853bee5/didynet/preprocessing.py",
+          "observedFieldReferences": [
+            {
+              "name": "SubjectID",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IRIS",
+              "line": 40,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-d7839aab7ecd6743": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -138662,7 +142066,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-24T06:31:20Z",
+  "generatedAt": "2026-10-25T06:57:09Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -138896,18 +142300,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-25T06:55:05Z",
-    "updatedAt": "2026-10-25T06:55:06Z",
+    "updatedAt": "2026-10-25T06:57:12Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 55,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

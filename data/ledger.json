@@ -66,9 +66,48 @@
         "10.1093/bioinformatics/btag707",
         "10.3390/ijms27146178"
       ]
+    },
+    "2026-10-25": {
+      "newDOIs": [
+        "10.1007/s10522-026-10471-8",
+        "10.1038/s41421-026-00908-2",
+        "10.1038/s41467-026-75681-7",
+        "10.1038/s41586-025-09573-z",
+        "10.1093/bioadv/vbag192"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bioadv/vbag192": {
+      "checkedAt": "2026-10-25T06:56:59Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1038/s41421-026-00908-2": {
+      "checkedAt": "2026-10-25T06:56:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s41586-025-09573-z": {
+      "checkedAt": "2026-10-25T06:56:48Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s41467-026-75681-7": {
+      "checkedAt": "2026-10-25T06:56:45Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1007/s10522-026-10471-8": {
+      "checkedAt": "2026-10-25T06:56:40Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bioinformatics/btag707": {
       "checkedAt": "2026-10-24T06:30:56Z",
       "status": "source_confirmed",
@@ -1300,61 +1339,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1007/s10522-026-10471-8": {
-      "checkedAt": "2026-10-22T06:59:25Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1007/s10522-026-10471-8",
-        "metadataHash": "914432de5ef70a7ebfd1bff6f30bb38d08d52d65697ae6ceb6ac4e3ffdb047ef",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/PMC13407579.1.xml?md5=908477e6691fe4907101fbd218e02551",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1599,
-              "sha256": "79313ba6c9730c587863f4f4ee7413e98959b526082d24e268e23d954eece2a5",
-              "label": "Fig. 1",
-              "height": 667,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig1_HTML.webp?md5=3ed11bf3ec98b17f76da403d51732718",
-              "asset": "assets/pmc13407579-79313ba6c9730c58.webp",
-              "license": "CC BY",
-              "assetSHA256": "79313ba6c9730c587863f4f4ee7413e98959b526082d24e268e23d954eece2a5",
-              "id": "Fig1",
-              "captionHash": "3e8b32e29b3c5e76169a613854398516fa571c151e44c7f314c362ed67ff7b6a"
-            },
-            {
-              "width": 1600,
-              "sha256": "7c8e3cff772d45b49e519a9797fba52e740ed983299f26cc55be2cd8a88fb0a4",
-              "label": "Fig. 6",
-              "height": 705,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13407579.1/10522_2026_10471_Fig6_HTML.webp?md5=7e75402d07e5921fa843d6d3bb2cab7c",
-              "asset": "assets/pmc13407579-7c8e3cff772d45b4.webp",
-              "license": "CC BY",
-              "assetSHA256": "7c8e3cff772d45b49e519a9797fba52e740ed983299f26cc55be2cd8a88fb0a4",
-              "id": "Fig6",
-              "captionHash": "ab6dad9deda7b83d526fda31b97113abfb8e724b914702c14f0b128951ce57c1"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-d88323a056815cb1",
-          "doi": "10.1007/s10522-026-10471-8",
-          "paper": "Inflammation-linked aging signals in frozen single-cell foundation models: donor-aware detection and robustness testing.",
-          "journal": "Biogerontology",
-          "date": "2026-07-28",
-          "year": "2026",
-          "pmcid": "PMC13407579",
-          "pmid": "42509463",
-          "paperURL": "https://doi.org/10.1007/s10522-026-10471-8"
-        },
-        "updatedAt": "2026-10-22T06:59:23Z"
-      }
     },
     "10.1002/imt2.70154": {
       "checkedAt": "2026-10-22T06:59:21Z",
@@ -3999,61 +3983,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41467-026-75681-7": {
-      "checkedAt": "2026-10-22T06:39:12Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-75681-7",
-        "metadataHash": "c8d7e3cbcdf7fe8744c2f1de7a000385864260e6851541ee5145054ca9550cf9",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/PMC13601534.1.xml?md5=d32cba1c532c43abf9f31c9339c06efc",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "fc8a7f57b345b0d9025e019b5798722ab7ab402cb95da029053753f145e3aae1",
-              "label": "Fig. 1",
-              "height": 978,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig1_HTML.webp?md5=b236132e5e49c5c8f00fb9513602eda1",
-              "asset": "assets/pmc13601534-fc8a7f57b345b0d9.webp",
-              "license": "CC BY",
-              "assetSHA256": "fc8a7f57b345b0d9025e019b5798722ab7ab402cb95da029053753f145e3aae1",
-              "id": "Fig1",
-              "captionHash": "6375df3e485a9fc02f6989fd0c934468389de44f3017399540f0b7f03f195b5f"
-            },
-            {
-              "width": 1600,
-              "sha256": "04b5ca43afa4ee6cb193fd5110736da27b58ca3489eb832065157d85397166c3",
-              "label": "Fig. 6",
-              "height": 1229,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13601534.1/41467_2026_75681_Fig6_HTML.webp?md5=ded48d529eea91df6bc585d930f14c91",
-              "asset": "assets/pmc13601534-04b5ca43afa4ee6c.webp",
-              "license": "CC BY",
-              "assetSHA256": "04b5ca43afa4ee6cb193fd5110736da27b58ca3489eb832065157d85397166c3",
-              "id": "Fig6",
-              "captionHash": "b49fe65d9422f8240efac1efe5231c34177c447c6dfef1da0ffefe871b8781af"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-f964cea8daab9c8d",
-          "doi": "10.1038/s41467-026-75681-7",
-          "paper": "Fast, flexible analysis of differences in cellular composition with crumblr.",
-          "journal": "Nature communications",
-          "date": "2026-09-23",
-          "year": "2026",
-          "pmcid": "PMC13601534",
-          "pmid": "42778538",
-          "paperURL": "https://doi.org/10.1038/s41467-026-75681-7"
-        },
-        "updatedAt": "2026-10-22T06:39:12Z"
-      }
-    },
     "10.1038/s41586-026-10271-7": {
       "checkedAt": "2026-10-22T06:39:09Z",
       "status": "pending",
@@ -4174,61 +4103,6 @@
           "paperURL": "https://doi.org/10.1038/s41467-026-77419-x"
         },
         "updatedAt": "2026-10-22T06:37:59Z"
-      }
-    },
-    "10.1038/s41586-025-09573-z": {
-      "checkedAt": "2026-10-22T06:37:56Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41586-025-09573-z",
-        "metadataHash": "4b04faed820c0d471d71b94e37d90b9a31be24e67be5fa50389b26d92269e657",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/PMC13600946.1.xml?md5=7aaeab7fa24285b993db4837c1191ab7",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
-              "label": "Fig. 3",
-              "height": 1912,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig3_HTML.webp?md5=ecaf81ff02dd0ddf26a631879019b608",
-              "asset": "assets/pmc13600946-142e01a2ccc2363e.webp",
-              "license": "CC BY",
-              "assetSHA256": "142e01a2ccc2363ed0a2e8f3281542b06f58cf23d0f19a1cc847bb6a8834d3de",
-              "id": "Fig3",
-              "captionHash": "ac42cdc3f289568acf311eb1e841fc557033658465de6c7b05cf212b052b5104"
-            },
-            {
-              "width": 1600,
-              "sha256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
-              "label": "Fig. 5",
-              "height": 1105,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600946.1/41586_2025_9573_Fig5_HTML.webp?md5=8e212b6347c18fdc85410a3ca8960bde",
-              "asset": "assets/pmc13600946-7a9c59ec8e4eebd3.webp",
-              "license": "CC BY",
-              "assetSHA256": "7a9c59ec8e4eebd31593b931555884a75fcbc973c17a9cd2161bf3b7ca87b24f",
-              "id": "Fig5",
-              "captionHash": "0ac2a766e59a1c965a57cafed148ea9aebc3a613497ddc4c6cdb0465ef321b05"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-704d234384619def",
-          "doi": "10.1038/s41586-025-09573-z",
-          "paper": "Single-cell atlas of transcriptomic vulnerability across brain disorders.",
-          "journal": "Nature",
-          "date": "2026-09-23",
-          "year": "2026",
-          "pmcid": "PMC13600946",
-          "pmid": "42778699",
-          "paperURL": "https://doi.org/10.1038/s41586-025-09573-z"
-        },
-        "updatedAt": "2026-10-22T06:37:55Z"
       }
     },
     "10.1111/acel.70737": {
@@ -8907,61 +8781,6 @@
         "updatedAt": "2026-10-16T06:55:34Z"
       }
     },
-    "10.1093/bioadv/vbag192": {
-      "checkedAt": "2026-10-16T06:54:52Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioadv/vbag192",
-        "metadataHash": "1d3e2149d52515354f8bac61b54bb66ee9513b6a2a44ae156d22a977b33ddbec",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/PMC13493046.1.xml?md5=d3f3f4ff27f9909718a4ceab298b6a69",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13493046-0171432a4ad7de9f.webp",
-              "assetSHA256": "0171432a4ad7de9f2873e3a55057b47da0baba0e735e0e23144ee22ad202bfbb",
-              "license": "CC BY",
-              "id": "vbag192-F1",
-              "sha256": "0171432a4ad7de9f2873e3a55057b47da0baba0e735e0e23144ee22ad202bfbb",
-              "height": 740,
-              "label": "Figure 1",
-              "width": 1599,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f1.webp?md5=22c1f570e3a552c6f458fe841f3e7a7a",
-              "captionHash": "4d1f845218e7837afa7a190a10254122117283ebb8f5ed215d323583c228590a"
-            },
-            {
-              "asset": "assets/pmc13493046-b48c1f79f1152d57.webp",
-              "assetSHA256": "b48c1f79f1152d5796c85f54e4caa4e8095e199c4b530dd966ffc91e3f3fc078",
-              "license": "CC BY",
-              "id": "vbag192-F2",
-              "sha256": "b48c1f79f1152d5796c85f54e4caa4e8095e199c4b530dd966ffc91e3f3fc078",
-              "height": 1137,
-              "label": "Figure 2",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13493046.1/vbag192f2.webp?md5=5a3c9f56f4ce5ed87d663de880498da6",
-              "captionHash": "6ba00902154878845c34f22a38e680d48f1ab9edb79ac6e0e5321e02ab87f814"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-ae8e07eafe3f363d",
-          "doi": "10.1093/bioadv/vbag192",
-          "paper": "DiDyNet: a robust framework for differential dynamic network inference from longitudinal multi-omics data.",
-          "journal": "Bioinformatics advances",
-          "date": "2026-07-30",
-          "year": "2026",
-          "pmcid": "PMC13493046",
-          "pmid": "42626744",
-          "paperURL": "https://doi.org/10.1093/bioadv/vbag192"
-        },
-        "updatedAt": "2026-10-16T06:54:39Z"
-      }
-    },
     "10.1038/s41592-026-03211-w": {
       "checkedAt": "2026-10-16T06:54:52Z",
       "status": "pending",
@@ -12509,61 +12328,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41421-026-00908-2": {
-      "checkedAt": "2026-10-16T06:32:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41421-026-00908-2",
-        "metadataHash": "cd9ba8690e1cdc72df468f2be0fa2d9ddbbaa4277f43f9b26164c91e0bdb3722",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/PMC13439465.1.xml?md5=532350f6383c604c7bf67115950e3083",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13439465-06e587befb6915c3.jpg",
-              "assetSHA256": "06e587befb6915c3e160e75012757aab8b93e710d2c38c73c3ebd449d08671e9",
-              "license": "CC BY",
-              "id": "Fig2",
-              "sha256": "06e587befb6915c3e160e75012757aab8b93e710d2c38c73c3ebd449d08671e9",
-              "height": 1000,
-              "label": "Fig. 2",
-              "width": 783,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig2_HTML.jpg?md5=69bf38ccd00d1ed1718b94ebc47c74bc",
-              "captionHash": "094062f8cf4adbd4be0380f7d7db377557d5b22778de58edc7b9fbb38a285be2"
-            },
-            {
-              "asset": "assets/pmc13439465-4ffb96cb26cdcc4e.jpg",
-              "assetSHA256": "4ffb96cb26cdcc4e8f98884c2f8b49d4eaddb2eb4859ded2f84ba1cc311f9fe0",
-              "license": "CC BY",
-              "id": "Fig5",
-              "sha256": "4ffb96cb26cdcc4e8f98884c2f8b49d4eaddb2eb4859ded2f84ba1cc311f9fe0",
-              "height": 999,
-              "label": "Fig. 5",
-              "width": 688,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13439465.1/41421_2026_908_Fig5_HTML.jpg?md5=802ddd85322932839228d256aee0a504",
-              "captionHash": "e1a7adeaa8375f312728c083202b10dd0ada07ccf03ba78b2a7c3e3e83644c72"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-d7839aab7ecd6743",
-          "doi": "10.1038/s41421-026-00908-2",
-          "paper": "Single-cell atlas of reproductive endocrine organs reveals transcriptomic responses to type 1 diabetes mellitus in nonhuman primates.",
-          "journal": "Cell discovery",
-          "date": "2026-08-04",
-          "year": "2026",
-          "pmcid": "PMC13439465",
-          "pmid": "42552301",
-          "paperURL": "https://doi.org/10.1038/s41421-026-00908-2"
-        },
-        "updatedAt": "2026-10-16T06:32:22Z"
-      }
-    },
     "10.1038/s43587-026-01206-y": {
       "checkedAt": "2026-10-16T06:32:16Z",
       "status": "pending",
@@ -14067,9 +13831,9 @@
   },
   "dailyCollectionSession": {
     "batchCount": 1,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "version": 1,
-    "requests": 0,
+    "requests": 55,
     "maxBatches": 36,
     "maxRequests": 1800,
     "endReason": "",
@@ -14078,15 +13842,10 @@
     "uncertainAiAttempts": 0,
     "startedAt": "2026-10-25T06:55:05Z",
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
-    "updatedAt": "2026-10-25T06:55:06Z",
-    "elapsedSeconds": 2,
+    "dailyNewCount": 5,
+    "updatedAt": "2026-10-25T06:57:12Z",
+    "elapsedSeconds": 128,
     "maxSeconds": 2700,
-    "status": "active",
-    "inFlight": {
-      "startedAt": "2026-10-25T06:55:06Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "status": "active"
   }
 }
