@@ -75,9 +75,48 @@
         "10.1038/s41586-025-09573-z",
         "10.1093/bioadv/vbag192"
       ]
+    },
+    "2026-10-26": {
+      "newDOIs": [
+        "10.1016/j.isci.2026.117527",
+        "10.1093/bioinformatics/btag532",
+        "10.1111/acel.70737",
+        "10.1126/sciadv.aeh4436",
+        "10.34133/csbj.0114"
+      ]
     }
   },
   "candidates": {
+    "10.1016/j.isci.2026.117527": {
+      "checkedAt": "2026-10-26T07:02:48Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.34133/csbj.0114": {
+      "checkedAt": "2026-10-26T07:02:41Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aeh4436": {
+      "checkedAt": "2026-10-26T07:02:37Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1111/acel.70737": {
+      "checkedAt": "2026-10-26T07:02:32Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1093/bioinformatics/btag532": {
+      "checkedAt": "2026-10-26T07:02:28Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bioadv/vbag192": {
       "checkedAt": "2026-10-25T06:56:59Z",
       "status": "source_confirmed",
@@ -2110,61 +2149,6 @@
         "updatedAt": "2026-10-22T06:55:59Z"
       }
     },
-    "10.1093/bioinformatics/btag532": {
-      "checkedAt": "2026-10-22T06:55:54Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag532",
-        "metadataHash": "abd386f6c89c2cea7456f3775e58997103b7eca55a89d8dcf9b2d2ac42384968",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/PMC13466723.1.xml?md5=be71f3d33a589d9db561fb3447d34f64",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "6e2e170ef785eeb8736c8071a62115e0806e2fbee1f9cd9c7062933a33839967",
-              "label": "Figure 5",
-              "height": 1506,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f5.webp?md5=f5ba34b124c946dd879fe1303f865d92",
-              "asset": "assets/pmc13466723-6e2e170ef785eeb8.webp",
-              "license": "CC BY",
-              "assetSHA256": "6e2e170ef785eeb8736c8071a62115e0806e2fbee1f9cd9c7062933a33839967",
-              "id": "btag532-F5",
-              "captionHash": "fa4868a1134c6ed11f478390d5961b3b2690fba6a8d78070b7ab8eba69105ade"
-            },
-            {
-              "width": 1600,
-              "sha256": "0adca8f83fecb32906d510a2627deee7f866898c09f5076298b4c0baf3edf8c0",
-              "label": "Figure 6",
-              "height": 1665,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f6.webp?md5=77de7bb92f3fdac999d4674fb21e6746",
-              "asset": "assets/pmc13466723-0adca8f83fecb329.webp",
-              "license": "CC BY",
-              "assetSHA256": "0adca8f83fecb32906d510a2627deee7f866898c09f5076298b4c0baf3edf8c0",
-              "id": "btag532-F6",
-              "captionHash": "46b01bf08e5b81a22be7cde03bf49685412e094dc64e8bc38ed7247f28f191d7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-51bb33baaf15ca88",
-          "doi": "10.1093/bioinformatics/btag532",
-          "paper": "Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-08-01",
-          "year": "2026",
-          "pmcid": "PMC13466723",
-          "pmid": "42490198",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag532"
-        },
-        "updatedAt": "2026-10-22T06:55:53Z"
-      }
-    },
     "10.1093/bioinformatics/btag687": {
       "checkedAt": "2026-10-22T06:55:01Z",
       "status": "pending",
@@ -4103,61 +4087,6 @@
           "paperURL": "https://doi.org/10.1038/s41467-026-77419-x"
         },
         "updatedAt": "2026-10-22T06:37:59Z"
-      }
-    },
-    "10.1111/acel.70737": {
-      "checkedAt": "2026-10-22T06:37:53Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1111/acel.70737",
-        "metadataHash": "d548463293b54439c1bf330299bf439e98e7b2a97f0b7c6c88e63ccf7e8cbc5e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/PMC13615172.1.xml?md5=ea9f9a7450fd32d1c366753b2f8e8d92",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1064,
-              "sha256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
-              "label": "FIGURE 1",
-              "height": 524,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g006.webp?md5=aa317bb649864d128ac726f1c444f935",
-              "asset": "assets/pmc13615172-b700210a8ed5f54b.webp",
-              "license": "CC BY",
-              "assetSHA256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
-              "id": "acel70737-fig-0001",
-              "captionHash": "a0fe6d61b4893d63a54569b8ca7efa858a600b1b90084424c2af61fd1e820409"
-            },
-            {
-              "width": 1064,
-              "sha256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
-              "label": "FIGURE 2",
-              "height": 602,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g003.webp?md5=84bf2dddd039451b09477a1b26439ca5",
-              "asset": "assets/pmc13615172-9057d07e4161d370.webp",
-              "license": "CC BY",
-              "assetSHA256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
-              "id": "acel70737-fig-0002",
-              "captionHash": "6a7fcd069e365ff37e4aa675cac4fbbb95c6eba4649675df4b53f61add9d2076"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-d81ed6eca1af399e",
-          "doi": "10.1111/acel.70737",
-          "paper": "A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.",
-          "journal": "Aging cell",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13615172",
-          "pmid": "42791602",
-          "paperURL": "https://doi.org/10.1111/acel.70737"
-        },
-        "updatedAt": "2026-10-22T06:37:51Z"
       }
     },
     "10.1101/gr.281431.125": {
@@ -8366,61 +8295,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.34133/csbj.0114": {
-      "checkedAt": "2026-10-16T06:57:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.34133/csbj.0114",
-        "metadataHash": "a49dcce5e88800353cbb3f2f24b2ae65883e06d168e86b55767f677a9952fa5f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/PMC13396490.1.xml?md5=213b6db9873e91f36adcdf4350a2123b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13396490-a8a4f59e5b5c2165.jpg",
-              "assetSHA256": "a8a4f59e5b5c2165a3af3193dfe1c7e76e49b11cdec688ad6d02f3681e15dde3",
-              "license": "CC BY",
-              "id": "F1",
-              "sha256": "a8a4f59e5b5c2165a3af3193dfe1c7e76e49b11cdec688ad6d02f3681e15dde3",
-              "height": 461,
-              "label": "Fig. 1.",
-              "width": 677,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.001.jpg?md5=8bbf3e57bc4fc4e52df606dfe478a9aa",
-              "captionHash": "f7eb34338fe729de18b8bb01368c71a18a07f2c0131beab3eeb30a4aa2778087"
-            },
-            {
-              "asset": "assets/pmc13396490-8e996bca9936d02c.jpg",
-              "assetSHA256": "8e996bca9936d02c901add5d4fedfac64b974e080a9fffaa87d7e0e568f51a00",
-              "license": "CC BY",
-              "id": "F2",
-              "sha256": "8e996bca9936d02c901add5d4fedfac64b974e080a9fffaa87d7e0e568f51a00",
-              "height": 494,
-              "label": "Fig. 2.",
-              "width": 677,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.002.jpg?md5=7b646278bfe14293f3b6c1c86c6514c3",
-              "captionHash": "8ce8adaf173d209480624cfefc7a61e89b1bfa2d93b606d43620e91d9ed99dc6"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-bf5cc2126331ed52",
-          "doi": "10.34133/csbj.0114",
-          "paper": "Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.",
-          "journal": "Computational and structural biotechnology journal",
-          "date": "2026-07-24",
-          "year": "2026",
-          "pmcid": "PMC13396490",
-          "pmid": "42500329",
-          "paperURL": "https://doi.org/10.34133/csbj.0114"
-        },
-        "updatedAt": "2026-10-16T06:57:33Z"
-      }
-    },
     "10.1016/j.xpro.2026.104752": {
       "checkedAt": "2026-10-16T06:57:30Z",
       "status": "pending",
@@ -11144,61 +11018,6 @@
         "updatedAt": "2026-10-16T06:40:42Z"
       }
     },
-    "10.1016/j.isci.2026.117527": {
-      "checkedAt": "2026-10-16T06:40:54Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.117527",
-        "metadataHash": "aeb62cb76fbdb94915ebe0c6896933267c02721661772f316cf098708a08d7ae",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/PMC13626933.1.xml?md5=5614fdbcabdc13b6ced8c6796e8de291",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13626933-67ca212b8043abde.webp",
-              "assetSHA256": "67ca212b8043abde5f8151cf64e2d80e24762839e80c34a00d04e2341758c84c",
-              "license": "CC BY",
-              "id": "fig4",
-              "sha256": "67ca212b8043abde5f8151cf64e2d80e24762839e80c34a00d04e2341758c84c",
-              "height": 2208,
-              "label": "Figure 4",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr4.webp?md5=45687ccc29826c177676c65eb3fea060",
-              "captionHash": "713e0d5ba99e5bbdfcaf15510b3b35475dc8de104218ea0ccf5765bf2afde224"
-            },
-            {
-              "asset": "assets/pmc13626933-bb850935f47869ae.webp",
-              "assetSHA256": "bb850935f47869ae6f39999cc575f8a68733d6be53c8226a447cc5b830be85d9",
-              "license": "CC BY",
-              "id": "fig5",
-              "sha256": "bb850935f47869ae6f39999cc575f8a68733d6be53c8226a447cc5b830be85d9",
-              "height": 1470,
-              "label": "Figure 5",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr5.webp?md5=89bb01320951b9aae161846c5014d6b7",
-              "captionHash": "ce8899bc04e2e8047db1559a76e0d891a427c2aa132661b51b263bdce5c689ba"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fc298086f1db3a71",
-          "doi": "10.1016/j.isci.2026.117527",
-          "paper": "A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.",
-          "journal": "iScience",
-          "date": "2026-09-18",
-          "year": "2026",
-          "pmcid": "PMC13626933",
-          "pmid": "42823974",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.117527"
-        },
-        "updatedAt": "2026-10-16T06:40:51Z"
-      }
-    },
     "10.1038/s41586-026-10542-3": {
       "checkedAt": "2026-10-16T06:40:38Z",
       "status": "pending",
@@ -13831,26 +13650,21 @@
   },
   "dailyCollectionSession": {
     "maxBatches": 36,
-    "elapsedSeconds": 2,
+    "elapsedSeconds": 137,
     "batchCount": 1,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "startedAt": "2026-10-26T07:00:41Z",
     "version": 1,
     "date": "2026-10-26",
     "uncertainAiAttempts": 0,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "uncertainRequests": 0,
     "maxSeconds": 2700,
-    "updatedAt": "2026-10-26T07:00:42Z",
+    "updatedAt": "2026-10-26T07:02:58Z",
     "endReason": "",
     "status": "active",
     "maxAiAttempts": 165,
-    "requests": 0,
-    "maxRequests": 1800,
-    "inFlight": {
-      "startedAt": "2026-10-26T07:00:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 60,
+    "maxRequests": 1800
   }
 }

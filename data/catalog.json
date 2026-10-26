@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-25",
+  "checkedAt": "2026-10-26",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -99056,6 +99056,2323 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-d81ed6eca1af399e",
+      "paper": "A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.",
+      "doi": "10.1111/acel.70737",
+      "journal": "Aging cell",
+      "date": "2026-10-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70737",
+      "pmcid": "PMC13615172",
+      "pmid": "42791602",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-26",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b23233d458c919f172a303d2361026cfda74dcaba3433561d3624a83c75521c9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/PMC13615172.1.xml?md5=ea9f9a7450fd32d1c366753b2f8e8d92",
+        "figures": [
+          {
+            "id": "acel70737-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Diagram of Guided AutoEncoder with Transformer (GAET). The GAET model contains three main parts: (1) the encoder to compress input data to a lower dimension (colored in pink), (2) the decoder to reconstruct input data from the compressed representation (colored in light blue), and (3) A linear layer to extract a scalar score from the compressed latent representation (colored in light yellow). A composite embedding mechanism is implemented to encode the textual information of protein names.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g006.webp?md5=aa317bb649864d128ac726f1c444f935",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "assets/pmc13615172-b700210a8ed5f54b.webp",
+            "sha256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
+            "width": 1064,
+            "height": 524,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b700210a8ed5f54b354120b8bd6f726493d8e9b1644b48cca5729133cbe59de6",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "acel70737-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Baseline SASP Score distributions in the UK Biobank test sample (n = 7639) comparing males vs. females (a), older adults vs. younger adults (b), high vs. low waist‐to‐hip ratio in females (c) and in males (d), previous or current smoker vs. non‐smoker (e), frail (49‐item frailty index > 0.21) vs. non‐frail (f), participants with and without hypertension (g), and participants with and without hypercholesterolemia (h). Wilcoxon rank‐sum test p‐values adjusted for multiple testing using the Benjamini–Hochberg false discovery rate (FDR) method and are indicated: *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g003.webp?md5=84bf2dddd039451b09477a1b26439ca5",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "assets/pmc13615172-9057d07e4161d370.webp",
+            "sha256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
+            "width": 1064,
+            "height": 602,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9057d07e4161d370d962fb7bfc3377c1d0d93137f8027c032c1847f8643d7f81",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "acel70737-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Associations between baseline SASP Score and risk of mortality and age‐related diseases in the UK Biobank test sample (n = 7639). Hazard ratios per 1‐SD standard deviation (SD) increase in the SASP Score were estimated using Cox proportional hazards models. Models were adjusted for baseline chronological age, sex, ethnicity, education level, Townsend deprivation index, smoking status, alcohol drinker status, systolic blood pressure, and body mass index (BMI). p‐values were adjusted for multiple testing using the Benjamini‐Hochberg false discovery rate method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g004.webp?md5=e9daa1b69744a36b57a255844fdfda59",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70737-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Predictive performance of the SASP Score for time to age‐related conditions in the UK Biobank test sample (n = 7639). Predictive accuracy was evaluated using C‐statistics derived from Cox proportional hazards models of the SASP Score for mortality and multiple age‐related diseases.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g002.webp?md5=d3b2796f9b9555e9fa9df6268adb00f4",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70737-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Kaplan–Meier survival curves stratified by SASP Score in the UK Biobank test sample (n = 7639). Kaplan–Meier curves compare event‐free survival for mortality and multiple age‐related diseases between participants with high SASP Scores (> 65) and low SASP Scores (≤ 65) at baseline. Time is shown in years from baseline assessment. Shaded areas indicate 95% confidence intervals. p‐values were obtained from log‐rank tests and adjusted for multiple testing using the Benjamini–Hochberg false discovery rate (FDR) method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g001.webp?md5=ef10adcd98a75b4e789e6ed088b9f050",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70737-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Mean SASP Score trajectories over time by exercise intervention group in the MEDEX cohort (n = 585). Points represent estimated marginal means of the SASP Score at baseline (M0), 6 months (M6), and 18 months (M18) for the exercise and non‐exercise groups, derived from linear mixed‐effects models adjusted for baseline age. Error bars indicate 95% confidence intervals. Within‐group changes over time were assessed using marginal mean comparisons with p‐values adjusted for multiple testing using Tukey's Honestly Significant Difference method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-g007.webp?md5=9786dc436d0cb3443303e9a53d1faf57",
+            "articleURL": "https://doi.org/10.1111/acel.70737",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al.. A Deep-Learning Based Biomarker of Systemic Cellular Senescence Burden to Predict Mortality and Health Outcomes.. DOI: 10.1111/acel.70737. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70737-supitem-0001",
+            "label": "Figure S1: [UKB test samples (n = 7639)] SASP score Spearman correlations with chronological age, other biological age measures, physiological, cognit",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-s003.docx?md5=f7219dba5dbd3e10e59621ac71038ebc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "acel70737-supitem-0002",
+            "label": "Table S1: A list of UK Biobank field IDs to extract data for medical conditions, and baseline variables. Table S2: UKB PPP participants (n = 50,997) v",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-s001.docx?md5=819f8931f74736780c6d6084f7d9abd1",
+            "license": "CC BY",
+            "sha256": "9f957011fd85910fa78ea2d02950e9f32bda3d8af560e6f17f746e7c2db4cef9",
+            "status": "downloaded_private",
+            "bytes": 34085,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70737-supitem-0003",
+            "label": "Data S1: Supplementary methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13615172.1/ACEL-25-e70737-s002.docx?md5=644847f6335b8a1ac6001fdde78fb74c",
+            "license": "CC BY",
+            "sha256": "36295246a607df6fe94dee34369e5bfdd962107482067140a3475601ab1e248c",
+            "status": "downloaded_private",
+            "bytes": 20598,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-26T07:02:30.427059+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shangshu Zhao; Chia‐Ling Kuo; Eric J. Lenze; Julie L. Wetherell; Laura Haynes; Perla El‐Ahmad; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-26T07:02:32Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-26T07:02:32Z",
+        "url": "https://openalex.org/W7214337941",
+        "cited_by_count": 1,
+        "fwci": 3.8143,
+        "citation_normalized_percentile": 0.94957779,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-26T07:02:32Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-26T07:02:32Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-27T07:02:32Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.74788895,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.74788895,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-26T07:02:48Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-ab893f8418dd5b54",
+      "paper": "The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.",
+      "doi": "10.1126/sciadv.aeh4436",
+      "journal": "Science advances",
+      "date": "2026-10-21",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1126/sciadv.aeh4436",
+      "pmcid": "PMC13685949",
+      "pmid": "42905839",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2375-2548",
+      "eissn": "2375-2548",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-26",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "fa91351892cc74cfe536e26784c2f7862ed18e0644e6df29fd40ffaef43458a0"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/PMC13685949.1.xml?md5=9836073f08b3a43a94484657ec4c2af4",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Study design.Created in BioRender. Walker, L. (2026) https://BioRender.com/a4bejg4.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f1.webp?md5=ce78b068e88fe8fad6f40c1c31599d71",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "mRNA-1345 elicited robust and comparable CD8+ and CD4+ T cell responses in younger and older individuals throughout the study duration.(A and B) IFN-γ+ CD4+ (A) and CD8+ (B) T cell response by ICS. (Left) IFN-γ+ CD4+ and CD8+ T cells as a percentage of the parental non-naïve CD4+ or CD8+ T cell population. (Right) Percentage of responders (≥2-fold over baseline or ≥LLOD after vaccination if baseline was below the LLOD) at each time point. (C and D) All TH1 CD4+ (C) and CTL CD8+ (D) T cell cytokines evaluated by ICS. (Left) Younger adults. (Right) Older adults. (E and F) Pre-F–specific CD4+ (E) and CD8+ (F) T cell response by AIM. (Left) AIM+ cells defined as OX40+CD25+CD4+ and CD69+CD137+ CD8+, as a percentage of the non-naïve CD4+ or CD8+ T cell population. (Right) Percentage of responders at each time point. (G) Pre-F–specific cTFH CD4+ (CXCR5+ ICOS+) T cell response by AIM (OX40+CD25+). In (A), (B), and (E) to (G), gray lines denote individual participants; bold lines and the shaded areas represent the geometric means and the 95% CIs for each group. In (C) and (D), dots represent an individual participant; boxes with bold lines represent the geometric means and the 95% CIs. The y axis was log10 transformed.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f2.webp?md5=e7479a1b8cd2cc14784228677d498a33",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "assets/pmc13685949-b6556ba3eece2721.webp",
+            "sha256": "b6556ba3eece27215c378b439b656b70f1cd7cf20c174a17172e548142239baf",
+            "width": 1600,
+            "height": 2288,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b6556ba3eece27215c378b439b656b70f1cd7cf20c174a17172e548142239baf",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "mRNA-1345 induced a strong TH1-polarized CD4+ T cell response with minimal TH2 involvement.TH1 versus TH2 T cell response against Pre-F following mRNA-1345 vaccination. PBMC samples were collected on days 1, 8, 15, 29, 91, 181, 361, 541, and 721; TH1 and TH2 CD4+ T cell responses were evaluated using ICS and MSD assays. (A) All TH2 CD4+ T cell cytokines evaluated by ICS between age groups. (B and C) All TH2 (B) and TH1 (C) CD4+ T cell cytokines evaluated by MSD between age groups. (D) Eotaxin, IL-10, and IL-17A secretion detected by MSD between age groups. In (A), each dot represents an individual participant. The boxes with bold lines represent the geometric means and the 95% CIs for each group. In (B to D), each gray line represents an individual participant. Bold lines and shaded areas represent the geometric means and the 95% CIs for each group. In all panels, the y axis was log10 transformed.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f3.webp?md5=cd3811dd26e8b10b614322e92b110fbd",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Polyfunctionality of Pre-F–specific CD4+ and CD8+ T cell responses is enhanced across age groups following mRNA-1345 vaccination and remained elevated at 2 years after vaccination.(A and B) PFS of CD4+ (A) and CD8+ (B) T cell response between age cohorts and at each time point by COMPASS analysis. Bold lines and boxes represent the medians and the central 50% of data [interquartile range (IQR)] for each group. The dots indicate outliers. A Mann-Whitney U test with Benjamini-Hochberg multiple correction was used to test for differences between age groups (*P < 0.05; **P < 0.005; ***P < 0.0005; ****P < 0.0001). NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f4.webp?md5=6878b11909657977ae972393f074bc31",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Global and Pre-F–specific CD4+ and CD8+ T cells exhibit comparable phenotypic composition and transcriptional profiles across age groups following mRNA-1345 vaccination.(A) UMAP visualization of single-cell transcriptomes from all donors. (B) Representative marker genes for T cell types. Dot size reflects the proportion of expressing cells; color intensity reflects average scaled expression. (C) T cell subset frequencies between age categories at day 1 and day 15. Bold lines and boxes represent the medians and the central 50% of data (IQR) for each group; whiskers extend to 1.5× IQR. (D) CD4+ and CD8+ T cell subset composition per donor at day 1 (D1), day 15 AIM− (D15 NN), and day 15 AIM+ (D15 AIM+), ordered left to right by increasing age. (E) Spearman rank correlation coefficients (RCC) between donor age and the relative frequency of each T cell subtype among D15 AIM+ cells. (F) Gene signature scores of CD8+ T cells in younger and older adults. (A to F) *P < 0.05; **P < 0.005; ***P < 0.0005; ****P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f5.webp?md5=7259bfb0a7fc47f8367101717b4c4118",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "assets/pmc13685949-7025dcf12e4cb42d.webp",
+            "sha256": "7025dcf12e4cb42d60383c80c8870a902dc48b8beb3abec4191c3820fc0af89f",
+            "width": 1600,
+            "height": 2135,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7025dcf12e4cb42d60383c80c8870a902dc48b8beb3abec4191c3820fc0af89f",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "mRNA-1345–induced CD4+ and CD8+ T cells exhibit clonal overlap across age groups with similar CD4+ clonotype kinetics.(A) UMAPs showing the clonal expansion of T cells based on amino acid sequence identity. Each point represents a single cell, colored by the size of its clonal family. Color scales indicate the number of cells per clonotype on a log-transformed scale. (B) Scatterplots showing the clone size at day 15 versus day 1 for CD4+ (top) and CD8+ (bottom) T cells, stratified by age group. Each point represents a unique clonotype, with dot size indicating the total number of cells in that clone across both time points, and color intensity reflecting the number of clonotypes sharing a given D1,D15 coordinate [loge(1 + clone count)]. Dashed lines indicate the 1:1 diagonal. (C) Composition of CD4+ (top) and CD8+ (bottom) T cell subsets stratified by clonal expansion. Each bar represents the proportion of annotated cell types within each clonal size bin. (D) D50 index of day 15 AIM+ CD4+ (top) and CD8+ (bottom) T cells. Each dot represents an individual participant. Boxes with the center lines represent the geometric means and the 95% CIs. (E) Heatmaps showing pairwise CD4+ and CD8+ TCR repertoire similarity between samples, based on the amino acid alignment of CDR3β sequences. Warmer colors indicate greater overlap.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436-f6.webp?md5=4969e29a2de202bcccb30815808dbcd8",
+            "articleURL": "https://doi.org/10.1126/sciadv.aeh4436",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al.. The mRNA-based RSV vaccine mRNA-1345 induces robust and durable CD4&lt;sup&gt;+&lt;/sup&gt; T cell responses against RSV in younger and older adults.. DOI: 10.1126/sciadv.aeh4436. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supplement-1",
+            "label": "Figs. S1 to S5Tables S1 to S3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13685949.1/sciadv.aeh4436_sm.pdf?md5=cef70662209cd7f5a69734a4fab55e48",
+            "license": "CC BY",
+            "sha256": "49d6a3fc61348e4be1a304e6c74fa719535ab02f3af5e4193de138b44861ca32",
+            "status": "downloaded_private",
+            "bytes": 1514233,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 14,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-26T07:02:33.984786+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Anthony DiPiazza; Emily Marcisak; Wen-Han Yu; Daniel Makrinos; Hsiao-Hsuan Kuo; Jenna Landy; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "13.9",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-26T07:02:37Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-26T07:02:37Z",
+        "url": "https://openalex.org/W7223158327",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.86709432,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-26T07:02:37Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-26T07:02:37Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-27T07:02:37Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.3354716,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.3354716,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-26T07:02:49Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-51bb33baaf15ca88",
+      "doi": "10.1093/bioinformatics/btag532",
+      "paper": "Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-08-01",
+      "year": "2026",
+      "pmcid": "PMC13466723",
+      "pmid": "42490198",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag532",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "regulatory_network",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "04592c29599eac754e133829e2000428e1078024cd234e8e4f8dce4a9c6fd3ff"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/PMC13466723.1.xml?md5=be71f3d33a589d9db561fb3447d34f64",
+        "figures": [
+          {
+            "id": "btag532-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Simulated two-lineage aging single-cell time course. As the system ages, the lineages extend and rotate in the gene expression space. Sampled data at initial, intermediate, and final ages are coloured, along with sample cell trajectories, while data sampled at other ages are shown in grey.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f1.webp?md5=0a4333dd1df8d589b04ed04fbdb9cc76",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag532-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "An abstract illustration of the quasi-static aging cell population curve, with sample and inferred cell paths displayed at the initial age. The green curve represents the aging cell population evolving according to (4) in the Wasserstein space, W2(X). At a particular age, ai, the true normalized cell distribution is represented by a black dot. Orange dots represent our finite sample distributions, ρ^ai, taken by sequencing cells, X∼ρ¯ai. Since they are finite, they can be quite far from the true distribution ρ¯ai. Blue dots represent the cell distributions, μai, reconstructed at each age using global StationaryOT (gStatOT). These reconstructions are connected to highlight gStatOT’s approach for improving inference by sharing information across samples to (i) smooth transitions in the population distribution between ages and (ii) balance cell growth at each age. We implement (i) by minimizing the smoothing term, in (14), which can be seen as attempting to bring the blue points closer together to better approximate the green curve with the blue curve, an approach analogous to the smoothing procedures used in standard regression problems to address overfitting. With (ii) we aim to use our QSA to infer more robust cell paths at each age using the chain of approximations μai≈ρ˜ai≈ρ¯ai, where ρ˜ai is the solution to (3). (A) Shows the true cell trajectories at age a1, traversed from primary sources (green region) to sink regions (red) in the gene space, X. gStatOT and StationaryOT (StatOT) trajectory reconstructions at the same age are shown in (B) and (C), respectively. The missing structure in (C) results from the single sample not containing enough information on its own (i.e. source and sink states) for StatOT to fully reconstruct both cell lineages starting from the primary source region.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f2.webp?md5=94b3d3d1fac24703c7a0c65f3d386442",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag532-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "(A) Subsampled simulated data at 25 ages with 10 cells per age. (B) 25 2-day trajectories reconstructed from the top data using gStatOT and StatOT alongside 25 ground truth simulated trajectories at ages 30, 50, and 70. The adjacent plots show the (centered) Gene 2 expression of each trajectory as a function of its Gene 1 expression and chronological age, t, respectively. The numbers next to each lineage denote the proportion of trajectories that first reach either a +2 or −2 sink state. Note that there are no sink states in one, or both, of the lineages at each age. So while the StatOT trajectories can explore the state space at these ages, they are not able to reconstruct the full bifurcation structure of the system, and so, as with age 70, may fail to converge at all.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f3.webp?md5=902a5c92f5941fca13e5bfa176656e3d",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag532-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "(A) Model performance across age in marginal, trajectory, and fate probability reconstruction for simulated data with 25 ages and na=10 cells per age. (B) Model performance for varying number of intermediate time points. The decreasing trends in all plots demonstrate that gStatOT is successfully transmitting information across ages to improve its estimates. The data for each sampling rate is the average of each metric across all ages. The results are summarized by the mean and standard deviation of each method’s performance on 10 independent reseeded simulations. The baseline represents the average distance between the original simulated distributions and those obtained from the 10 reseeded simulations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f4.webp?md5=32173de5cfa02ff9e1674a508bbe5701",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag532-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Simulated gene regulatory network (GRN) model for cell differentiation with progressive cell identity loss. (A) The GRN we used to simulate the loss of cell identity with age. Cells start out in a progenitor state defined by expression of G1 and the proliferation gene Gg. They then progress into one of two lineages, B1 or B2, depending on which of the mutually repressive genes GB1 or GB2 they express. SB1↔B2 represents the age-dependent strength of this repression. Upon terminally differentiating by expressing either of the lineage markers GB12 or GB22, cells begin to express Gd, which triggers apoptosis. (B, C) UMAP embedding of the simulated time course coloured by cell type and age, respectively. Note that the ambiguous B1 + B2 branch consists of cells primarily sampled at later ages. (D) Marginal distribution reconstruction performance for gStatOT on the downsampled data. (E) Fate probability reconstruction performance for gStatOT, StatOT, and PBA on the downsampled data. Results are summarized by the mean and standard deviation of each metric across 10 reseeded simulations. (F) Proportion of cells dying in each branch at each age as predicted by the sparse samples, gStatOT’s marginals, and the complete simulated data. See Fig. S1.3 for a quantitative comparison of these proportions across all ages.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f5.webp?md5=f5ba34b124c946dd879fe1303f865d92",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "assets/pmc13466723-6e2e170ef785eeb8.webp",
+            "sha256": "6e2e170ef785eeb8736c8071a62115e0806e2fbee1f9cd9c7062933a33839967",
+            "width": 1600,
+            "height": 1506,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6e2e170ef785eeb8736c8071a62115e0806e2fbee1f9cd9c7062933a33839967",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "btag532-F6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Average performance of each method using time courses with variable sample sizes (A) and temporal resolution (B and C), formed using the hematopoietic time course of Li et al. (2025). (A) Average performance of each method with varying numbers of cells per age, na=10,25,50,100,…,700. gStatOT took less than 2 minutes to solve on all levels of sparsity using a single NVIDIA H100 80GB HBM3 MIG instance (profile: 3 g.40gb). See Fig. S1.7 for the exact run times at each level. (B, C) Average performance of each method across all pre- and postnatal ages, when evaluated on time courses with varying temporal resolution, and a fixed number of cells per age (na=100). Results in all panels are summarized by the mean and standard deviation of each method’s average performance across age on 10 resamplings of the data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f6.webp?md5=77de7bb92f3fdac999d4674fb21e6746",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "assets/pmc13466723-0adca8f83fecb329.webp",
+            "sha256": "0adca8f83fecb32906d510a2627deee7f866898c09f5076298b4c0baf3edf8c0",
+            "width": 1600,
+            "height": 1665,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0adca8f83fecb32906d510a2627deee7f866898c09f5076298b4c0baf3edf8c0",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "btag532-F7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "(A) Visualization of the week 15 sample in the integrated UMAP space, coloured by the predicted fate probabilities for each lineage and method, along with the cell type annotations derived by Li et al. (2025). Fate probabilities are saturated based on the strength of the predicted probability, e.g. the uncommitted HSCs are grey, while the cells predicted to be committed to the Mono/DC lineage are bright pink. The points in the gStatOT plot are scaled by the reconstructed marginals, μi, to show gStatOT’s prediction for the relative number of cells in each state at this age. See Figs. S1.5–6 for similar plots for several ages that include each method’s inferred cell flow. (B) Correlation between the cells’ sparsely inferred fate probabilities and those obtained from the ground truth application of StatOT, averaged across all ages. (C) A measure of each method’s ability to identify and rank putative driver genes for each cell type across all ages. Each gene was ranked by the correlation between its expression and each lineage fate probability, obtained by gStatOT and StatOT on the sparse samples. The ranked lists at each age were then compared against the top 10 genes identified from our ground-truth StatOT estimates using average precision (AP). The models were evaluated on downsampled time courses with na=100 and 300 cells per time point, and the results are summarized by the mean AP (mAP) across all 22 ages. Two baselines are included: GT-TC is the mAP between consecutive ages’ ground-truth gene lists, representing the temporal consistency of these lists, and the DE baseline is the AP of the list of top differentially expressed genes between each cell type and the rest of the data set, at each age. Both baseline results are summarized by the mAP across all ages (see SI.6.4 for details).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532f7.webp?md5=e8a873b75ccf0e9cd4a215b98ff1b55f",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag532",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger. Global StationaryOT: trajectory inference for aging time courses of single-cell snapshots.. DOI: 10.1093/bioinformatics/btag532. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag532_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13466723.1/btag532_supplementary_data.pdf?md5=c79800dcb4d74d8af30334b0ea9b70a1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-26T07:02:25.327169+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Cole Boyle; Elias Ventre; Geoffrey Schiebinger"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-26T07:02:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-26T07:02:28Z",
+        "url": "https://openalex.org/W7170144532",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.45122697,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-26T07:02:28Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-26T07:02:28Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-27T07:02:28Z"
+        }
+      },
+      "selectionScore": {
+        "total": 59.25613485,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.25613485,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-26T07:02:49Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-bf5cc2126331ed52",
+      "doi": "10.34133/csbj.0114",
+      "paper": "Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.",
+      "journal": "Computational and structural biotechnology journal",
+      "date": "2026-07-24",
+      "year": "2026",
+      "pmcid": "PMC13396490",
+      "pmid": "42500329",
+      "paperURL": "https://doi.org/10.34133/csbj.0114",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2001-0370",
+      "eissn": "2001-0370",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b331297365d9bddcda9ead690c9d4b45e813138be2b0603ee258105e315e2f6d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/PMC13396490.1.xml?md5=213b6db9873e91f36adcdf4350a2123b",
+        "figures": [
+          {
+            "id": "d69e123",
+            "label": "Unlabelled figure (JATS id: d69e123)",
+            "labelStatus": "unresolved",
+            "reference": null,
+            "caption": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.toc.jpg?md5=68fd2506842c873cf188de74611611d6",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Uniform manifold approximation and projection (UMAP) visualization of annotated cell types in the Mouse Islet Atlas. Each color denotes a specific cell type, including endocrine populations (e.g., α, β, and δ), exocrine cells (acinar and ductal), and nonpancreatic cell types such as immune, endothelial, and stellate cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.001.jpg?md5=8bbf3e57bc4fc4e52df606dfe478a9aa",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "assets/pmc13396490-a8a4f59e5b5c2165.jpg",
+            "sha256": "a8a4f59e5b5c2165a3af3193dfe1c7e76e49b11cdec688ad6d02f3681e15dde3",
+            "width": 677,
+            "height": 461,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a8a4f59e5b5c2165a3af3193dfe1c7e76e49b11cdec688ad6d02f3681e15dde3",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Receiver operating characteristic (ROC) curve for the partial least squares discriminant analysis (PLS-DA) model evaluated on the held-out test set. The held-out set contained 13,117 β-cells, and the model achieved an AUC of 0.999 after selecting the number of latent components by 5-fold stratified cross-validation on the training split.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.002.jpg?md5=7b646278bfe14293f3b6c1c86c6514c3",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "assets/pmc13396490-8e996bca9936d02c.jpg",
+            "sha256": "8e996bca9936d02c901add5d4fedfac64b974e080a9fffaa87d7e0e568f51a00",
+            "width": 677,
+            "height": 494,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8e996bca9936d02c901add5d4fedfac64b974e080a9fffaa87d7e0e568f51a00",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Confusion matrix summarizing the partial least squares discriminant analysis (PLS-DA) predictions on the held-out test set. Rows correspond to true labels, and columns correspond to predicted labels. Correct classifications lie along the diagonal.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.003.jpg?md5=c3aed4e0af25d964b912ffd226145c83",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Partial least squares discriminant analysis (PLS-DA) scores for held-out test β-cells projected onto the first 2 latent components. Blue points correspond to healthy cells, and orange points correspond to type 2 diabetes (T2D) cells. The model retained 3 latent components in total, selected by 5-fold stratified cross-validation on the training split.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.004.jpg?md5=dbcf986c44147cee6c9c1c63af4ffdd8",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cross-validated receiver operating characteristic (ROC) (extra trees classifier [ETC]). The curve lies near the top left corner; the mean AUC is approximately 0.999, indicating strong discrimination within the evaluated training partitions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.005.jpg?md5=3739512214492e1e94012a0926225d4c",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Confusion matrix for the concatenated out-of-fold predictions. Rows are true labels; columns are predicted labels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.006.jpg?md5=f2ad65e9a85aafededcd8d1635608f3d",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F7",
+            "label": "Fig. 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Two-dimensional principal component analysis (PCA) projection of held-out test β-cells used for extra trees classifier (ETC) score-space visualization. Blue points correspond to healthy cells, and orange points correspond to type 2 diabetes (T2D) cells. The PCA used for visualization was fitted on the training split only and then applied to the held-out test set.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.fig.007.jpg?md5=c509417028a8c4b6e37099c96374883e",
+            "articleURL": "https://doi.org/10.34133/csbj.0114",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daniel F. O. Onah; María De La Luz Lomboy Toledo. Classifying Diabetic and Healthy &lt;i&gt;β&lt;/i&gt;-Cells in Type 2 Diabetes Using Machine Learning on Single-Cell RNA Sequencing Data.. DOI: 10.34133/csbj.0114. Copyright holder: Daniel F. O. Onah and María De la Luz Lomboy Toledo.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplementary 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/csbj.0114.f1.docx?md5=66deaf476fca4524ceeb59e1290b1937",
+            "license": "CC BY",
+            "sha256": "c89f53ea1cdaec34429c2d5b52954323eb40b6c7e2a10f3a04b33a9d1158b408",
+            "status": "downloaded_private",
+            "bytes": 24606,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/mdelaluzl/t2d-gene-disease-ml-prediction"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-26T07:02:38.104516+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/mdelaluzl/t2d-gene-disease-ml-prediction",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13396490.1/PMC13396490.1.xml?md5=213b6db9873e91f36adcdf4350a2123b"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Daniel F. O. Onah; María De La Luz Lomboy Toledo"
+      },
+      "repository": {
+        "status": "no_scripts_found",
+        "url": "https://github.com/mdelaluzl/t2d-gene-disease-ml-prediction",
+        "commit": "06414e035f2ca8f555b80e4b9f4274285eaf0f40",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.8",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-26T07:02:41Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-26T07:02:41Z",
+        "url": "https://openalex.org/W7159645220",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.30204505,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "no_scripts_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-26T07:02:41Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-26T07:02:41Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-27T07:02:41Z"
+        }
+      },
+      "selectionScore": {
+        "total": 34.51022525,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 1.51022525,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-26T07:02:50Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-fc298086f1db3a71",
+      "doi": "10.1016/j.isci.2026.117527",
+      "paper": "A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.",
+      "journal": "iScience",
+      "date": "2026-09-18",
+      "year": "2026",
+      "pmcid": "PMC13626933",
+      "pmid": "42823974",
+      "paperURL": "https://doi.org/10.1016/j.isci.2026.117527",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2589-0042",
+      "eissn": "2589-0042",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "70ca78a8385e267626edbf27cf0f09129d2a4c3aa3271c2fb1ba3dbc2d4fcbc8"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/PMC13626933.1.xml?md5=5614fdbcabdc13b6ced8c6796e8de291",
+        "figures": [
+          {
+            "id": "undfig1",
+            "label": "Unlabelled figure (JATS id: undfig1)",
+            "labelStatus": "unresolved",
+            "reference": null,
+            "caption": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/ga1.webp?md5=112fcba71c67bea7eb9e82c3217b903a",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Systematic transcriptomic perturbation profiling of 364 endogenous and gut microbial metabolites reveals distinct T cell regulatory modules(A) Schematic of the experimental design for high-throughput metabolite treatment. Peripheral blood mononuclear cells (PBMCs) from healthy donors were isolated, activated, and expanded. Cells were treated with 364 endogenous and gut microbiota-derived metabolites or DMSO (two replicates) and subjected to DRUG-seq analysis. This process generated a counts matrix, followed by clustering and feature analysis. Perturbation signatures were integrated into an online resource (https://www.transmed.sh.cn) and used to train a deep learning model (DRUG-seq-PerturbFormer, DPF). Key metabolites were further assessed in a DSS-induced colitis model.(B) UMAP clustering of the T cell transcriptomes based on batch (D1 and D2) and cluster (C0–C7) distribution, showing distinct patterns of transcriptional responses to metabolite treatments.(C) Heatmap depicting differential gene expression across clusters (C0–C7), with several genes highlighted that show strong differential expression in specific clusters.(D) Dot plots showing the differential gene expression in response to DMSO (control) or metabolite treatment. Fisher’s exact test was used to evaluate the association between transcriptional clusters and treatment groups. Statistical significance is indicated by asterisks (∗∗p < 0.0001).(E) KEGG pathway enrichment analysis reveals the top-enriched pathways across the clusters. Enrichment significance was assessed using a hypergeometric test, with p values adjusted for multiple comparisons using the Benjamini-Hochberg (BH) method.(F) Expression of key genes within clusters, including CD3E, CD247, HLA-DRB1, TRAC, TNFSF10, STAT3, LCK, and HSP90AA1, as visualized through UMAP plots. Gene expression is represented on a color scale indicating the normalized expression levels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr1.webp?md5=0c02ab0ea556f69eef01ecd0a56d081f",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Metabolite-induced T cell activation and transcriptomic remodeling(A) Relationship between the numbers of upregulated and downregulated differentially expressed genes (DEGs) induced by each metabolite relative to DMSO. Points are colored by transcriptional state; the solid line shows the linear fit with 95% confidence interval, and the dashed line indicates equal DEG numbers. Pearson’s r and two-sided p value are shown.(B) Bar plot summarizing, for each of the 364 metabolites, the number of DEGs compared with DMSO controls. Bars are stacked by direction of change, with purple indicating upregulated genes and green indicating downregulated genes. Compounds are ordered by total DEG count and grouped into three transcriptional response states.(C) Volcano plots showing the differential expression of genes in response to various metabolites. Each plot represents the log2 (fold change) versus the significance (adjusted p value) for different metabolites. Notable metabolites are highlighted in red, with the corresponding gene names marked for clarity. p values were calculated using the DESeq2 Wald test and adjusted for multiple comparisons using the BH method. The dashed horizontal line indicates an adjusted p value of 0.05. Representative metabolites are highlighted and labeled in red.(D) Heatmap of gene expression for genes involved in T cell activation and metabolic processes. Rows represent selected genes from the T cell receptor (TCR) and positive regulation of T cell activation gene sets. Columns represent the status of different clusters, categorized into baseline resting, metabolically active, and TCR-high activation.(E) Distribution of T cell scores (T score), TCR scores (TCR score), and metabolic activation (MA) scores across the clusters.(F) UMAP projection showing the status of T cells based on their baseline resting, metabolically active, and TCR-high activation states. Different colors represent cells in distinct metabolic and activation states, illustrating the shift in T cell subsets in response to metabolite treatment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr2.webp?md5=13e3c13177814136b31a3ce62c54d760",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Transcriptional regulatory landscapes and functional subset dynamics across metabolite-induced T cell states(A) Regularity score for key transcription factors in different T cell states. These transcription factors are shown to display specific regularity across the T cell subsets, as measured by Z scores.(B) Gene expression analysis for STAT3, MXD3, ATF4, and JUND, key transcription factors associated with T cell activation and differentiation.(C) Heatmap of single-sample gene set enrichment analysis (ssGSEA) scores, quantifying the enrichment of specific T cell subtype signatures across the identified transcriptional clusters.(D) Violin plots showing the relative enrichment of T cell subsets distribution based on gene set variation analysis (GSVA) scores for various T cell types. The width of the violin plots represents the kernel density estimation of the data distribution. Within each violin, the box extends from the 25th percentile (Q1) to the 75th percentile (Q3), with the central line indicating the median. The whiskers extend to the minimum and maximum values within 1.5 × IQR (interquartile range) from the lower and upper quartiles, respectively.(E) Pseudotime trajectory of T cell differentiation based on Monocle3 analysis, indicating the progressive states of T cell differentiation under different conditions, from baseline resting to metabolically active and TCR-high activation states.(F) CytoTRACE2-based pseudotime analysis showing the differentiation trajectories of T cells in response to metabolite treatment. Cells are color-coded based on differentiation state, with scores indicating the degree of differentiation. Lower scores represent less differentiation, while higher scores indicate more differentiated states.Statistical significance was assessed using a two-sided Wilcoxon rank-sum test (∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001, and ∗∗∗∗p < 0.0001).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr3.webp?md5=315395b75eab8e21e3ba2a33de115407",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Development and validation of the DRUG-seq-PerturbFormer model for metabolite perturbation analysis(A) Overview of the pipeline using the DRUG-seq-PerturbFormer (DPF). The input includes metabolite-treated T cell data, consisting of 768 wells and 2,541 genes. The data undergoes gene tokenization and encoding, followed by multi-task analysis with both regression and classification heads. The model performs multi-task analysis to predict transcriptional outcomes and generate global metabolite rankings.(B) Training and validation loss trajectories for the DPF model, showing the convergence of both binary cross-entropy (BCE) loss and mean squared error (MSE) loss over training epochs.(C) Latent representation of metabolite perturbations visualized using Euclidean and cosine distance metrics, comparing the resting state and perturbed state of treated T cells.(D) Global ranking of metabolites based on perturbation scores, highlighting metabolites with the highest and lowest impact on T cell transcriptional reprogramming. The perturbation score indicates the magnitude of each metabolite’s effect on the T cell transcriptome, with metabolites clustered based on their relative potency.(E) Relationship between DPF perturbation score and total DEG count across metabolites. Each point represents one metabolite and is colored according to the DPF-defined perturbation tier. The fitted trend line is shown with its 95% confidence interval. Selected high-ranking metabolites are labeled. Spearman’s correlation coefficient and two-sided p value are shown.(F) Validation of model generalization using independent bulk RNA-seq data. DPF-predicted global perturbation scores for T cells treated with 12 representative metabolites identified as active perturbagens (e.g., indole-3-pyruvic acid, folic acid, and 4-methylcatechol). The model consistently assigns significantly higher perturbation scores to these metabolite-treated samples compared to the DMSO baseline, confirming its robustness in recognizing activation signatures across different data modalities. Data are represented as mean ± standard deviation (SD).(G) Dose-dependent prediction sensitivity. Trajectories of predicted perturbation scores for four high-confidence candidate metabolites (folic acid, indole-3-pyruvic acid, hippuric acid, and 4-methylcatechol) across increasing concentrations (1, 10, and 100 μM). The model captures the progressive escalation of T cell perturbation intensity corresponding to biological dosage, demonstrating its capacity to resolve the magnitude of immune modulation rather than just binary states. Data are represented as mean ± SD.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr4.webp?md5=45687ccc29826c177676c65eb3fea060",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "assets/pmc13626933-67ca212b8043abde.webp",
+            "sha256": "67ca212b8043abde5f8151cf64e2d80e24762839e80c34a00d04e2341758c84c",
+            "width": 1600,
+            "height": 2208,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "67ca212b8043abde5f8151cf64e2d80e24762839e80c34a00d04e2341758c84c",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "In vivo validation of metabolite treatments in DSS-induced colitis(A) Weight change over time in mice treated with DSS, PBS, or various metabolites (4-methylcatechol, hippuric acid, folic acid, and indole-3-pyruvic acid). Data are represented as mean ± standard deviation (SD).(B) Bleeding scores over 8 days in DSS-treated mice receiving metabolite treatments. Data are represented as mean ± SD. Statistical comparisons were performed using Wilcoxon rank-sum tests (∗p < 0.05).(C) Disease activity index (DAI) score showing the severity of inflammation in response to different treatments. Data are represented as mean ± SD. Statistical comparisons were performed using Wilcoxon rank-sum tests (∗p < 0.05).(D) Representative images of colon length (cm) from each treatment group, showing the effects of metabolite treatments on tissue integrity.(E) Quantification of colon length across treatment groups (represented as mean ± SD), with statistical analysis using two-tailed Student’s t tests showing significant differences between the metabolites and control conditions (∗p < 0.05, ∗∗p < 0.01, and ∗∗∗p < 0.001).(F) Histological analysis of colonic tissue sections stained with H&E, demonstrating the effects of metabolites on tissue damage and inflammation in DSS-induced colitis. Data are represented as mean ± SD. Statistical comparisons were performed using Wilcoxon rank-sum tests (∗p < 0.05 and ∗∗p < 0.01).(G) High-magnification histological images of colonic tissue from different treatment groups, showing the extent of tissue damage and inflammation.Scale bars: 400 μm (top six images) and 50 μm (bottom six images).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr5.webp?md5=89bb01320951b9aae161846c5014d6b7",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "assets/pmc13626933-bb850935f47869ae.webp",
+            "sha256": "bb850935f47869ae6f39999cc575f8a68733d6be53c8226a447cc5b830be85d9",
+            "width": 1600,
+            "height": 1470,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "bb850935f47869ae6f39999cc575f8a68733d6be53c8226a447cc5b830be85d9",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "In vivo transcriptomic profiling reveals immune cell and inflammatory pathway rewiring following metabolite administration in DSS-induced colitis(A) Principal component analysis (PCA) of colonic RNA-seq profiles from DSS-treated mice administered folic acid, indole-3-pyruvic acid, hippuric acid, or 4-methylcatechol.(B) Heatmap of differentially expressed genes across treatment groups.(C) Scatterplots showing signed differential expression scores for metabolite-treated DSS mice relative to DSS+PBS controls. Scores were calculated as log2 fold change × −log10(adjusted p value). p values were calculated using the DESeq2 Wald test and adjusted using the BH method. Representative differentially expressed genes are labeled.(D) Immune deconvolution analysis using the ssGSEA algorithm of ImmuCellAI_mouse, revealing a shift from myeloid-dominant inflammation to a lymphoid-restored landscape. The boxplot displays the distribution of the data. Within each box, the central line represents the median, and the lower and upper hinges of the box denote the 25th (Q1) and 75th (Q3) percentiles. The whiskers extend from the hinges to the largest and smallest values within 1.5 × IQR from the Q1 and Q3, respectively.(E) Expression levels of representative marker genes validating the multi-layered therapeutic mechanism. Boxplots show the downregulation of innate inflammatory drivers (S100a8, S100a9, Mmp9, and Isg15) and the restoration of adaptive immunity genes (Cd3e, Trac, Il2ra, and Cd19) and critical epigenetic regulators (Mettl3, Mettl14, and Ezh2) following metabolite treatment.Data are represented as mean ± standard deviation (SD).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/gr6.webp?md5=0f8c1f22f5769e299852c5ad2aae3895",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.117527",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al.. A systematic transcriptomic atlas and predictive framework for metabolite-driven T cell state transitions.. DOI: 10.1016/j.isci.2026.117527. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mmc1",
+            "label": "Document S1. Figures S1–S8",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc1.pdf?md5=2e8cf8f02e82b0d4cf04ba9edb16d498",
+            "license": "CC BY",
+            "sha256": "b3d76244c8560fb86d5e125ff62a3294f4b7b4377ea49eff7241a447f2989a01",
+            "status": "downloaded_private",
+            "bytes": 2780733,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 11,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "mmc2",
+            "label": "Table S1. Quality control metrics and metadata for DRUG-seq profiling of 364 metabolites",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc2.xlsx?md5=b60f5c133644251924f1ac93b541b695",
+            "license": "CC BY",
+            "sha256": "11adff1932e42e9138a017b370fab82923442214d5ae819ef4a7545855f06777",
+            "status": "downloaded_private",
+            "bytes": 68467,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc3",
+            "label": "Table S2. Cluster-specific marker genes for the eight identified T cell transcriptional states",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc3.xlsx?md5=2b58f69662a28f96a09ee13ac23f3ef4",
+            "license": "CC BY",
+            "sha256": "a35840be886e458ff7218b99addffe562b9d5b5e0f3f0a985ff8bbbb6df33e77",
+            "status": "downloaded_private",
+            "bytes": 717457,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc4",
+            "label": "Table S3. KEGG pathway enrichment analysis of genes defining T cell transcriptional clusters",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc4.xlsx?md5=724db0917a7bc84fa0921f390cf770d2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc5",
+            "label": "Table S4. Differential gene expression summary and state classification for each metabolite treatment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc5.xlsx?md5=f951489dba50a202c3e873d128fa2bab",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc6",
+            "label": "Table S5. Summary of DPF-derived perturbation metrics for all metabolite treatments",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc6.xlsx?md5=c690e14779e9e40bce2979fbe9b6b0f3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc7",
+            "label": "Table S6. DPF perturbation scores and global rankings for the 148 high-tier metabolites",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc7.xlsx?md5=22a5648349ea9dc67149cd745950e6d4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc8",
+            "label": "Table S7. Metadata for in vitro bulk RNA-seq of CD3+ T cells derived from human PBMCs",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc8.xlsx?md5=7827ae0ad18734bc46e273ec8778866b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc9",
+            "label": "Table S8. Summary of the dose-response bulk RNA-seq validation experiment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc9.xlsx?md5=24e89b4fcb70eb930fbe4ce9261cafbc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc10",
+            "label": "Table S9. Clinical and histopathological outcomes in the DSS-induced acute colitis model",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc10.xlsx?md5=ccfadb469ca53c4611cd0fec28eda42b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc11",
+            "label": "Table S10. Metadata for in vivo bulk RNA-seq in the DSS-induced acute colitis model",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc11.xlsx?md5=478cce7e99b70d544349cf6dfd7543c4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc12",
+            "label": "Table S11. Immune cell deconvolution analysis of blood samples from DSS-treated mice",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/mmc12.xlsx?md5=6aa951ef132b869d6864762626b9585f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Bingobin/DRUGseq-PerturbFormer"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-26T07:02:42.416026+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "p0340",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626933.1/PMC13626933.1.xml?md5=5614fdbcabdc13b6ced8c6796e8de291"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+        "authorCredit": "Yiyang Xu; Yiheng Zhao; Sizhe Yang; Huimin Li; Xiangrong Diao; Qianqian Zhang; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer",
+        "commit": "48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "src/plot_loss.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/plot_loss.py",
+            "sha256": "04180cc41fed21bce924f9bb15e5927331abe2dc4e9b408c5ee2d486973a6d90",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "val_loss",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "dpf_main.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py",
+            "sha256": "00ecbfac8dc949e5f4a5c9ddada3ab021370b380e66931a96c6aa5e3ad091938",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 99,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 213,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "mean",
+                "line": 126,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "std",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_mse",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_bce",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_reg",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_mse",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_bce",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_reg",
+                "line": 143,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 99,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py#L99"
+              },
+              {
+                "type": "io_reference",
+                "line": 213,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py#L213"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "dpf_predict.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_predict.py",
+            "sha256": "fc55cf1fca76e16b8510a0f1c5f9cbfd3b5d68bc39cc1ec0e736fe6ec0e10b24",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/data_loader.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "sha256": "a44c62fc150f7220992d1893e845133c2639850d81a7575b1508561d912b6564",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 10,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 13,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 16,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 19,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 22,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 26,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 32,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 10,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L10"
+              },
+              {
+                "type": "io_reference",
+                "line": 13,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L13"
+              },
+              {
+                "type": "io_reference",
+                "line": 16,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L16"
+              },
+              {
+                "type": "io_reference",
+                "line": 19,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L19"
+              },
+              {
+                "type": "io_reference",
+                "line": 22,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L22"
+              },
+              {
+                "type": "io_reference",
+                "line": 26,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L26"
+              },
+              {
+                "type": "io_reference",
+                "line": 32,
+                "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py#L32"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/dataset.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/dataset.py",
+            "sha256": "908bd3bd760c7530ef65a9f2e0faa376f098e5b698fc2fe361ad85e0752d9407",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/export_results.py",
+            "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/export_results.py",
+            "sha256": "63ea20fed8c7dab5891074f3942366f98b3e74917b92ef4c07848e5d99da0503",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "mean",
+                "line": 126,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "std",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_mse",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_bce",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_reg",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_mse",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_bce",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_reg",
+                "line": 143,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py",
+            "line": 99,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "mean",
+                "line": 126,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "std",
+                "line": 127,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 137,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_mse",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_bce",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_reg",
+                "line": 140,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_mse",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_bce",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_reg",
+                "line": 143,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py",
+            "line": 213,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 10,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 13,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 16,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 19,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 22,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 26,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+            "line": 32,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.5",
+        "jcr": "Q1",
+        "cas": "综合性期刊2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-26T07:02:48Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-26T07:02:48Z",
+        "url": "https://openalex.org/W7213602425",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.66109723,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-26T07:02:48Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-26T07:02:48Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-27T07:02:48Z"
+        }
+      },
+      "selectionScore": {
+        "total": 63.30548615,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.30548615,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-26T07:02:50Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "代谢物驱动T细胞状态转变的系统转录组图谱与预测框架",
+        "summary_zh": "该论文基于iScience期刊,报道了一项针对364种内源性和肠道微生物来源代谢物的高通量DRUG-seq扰动实验,刻画了原代人T细胞在基线、代谢预激活和高活化状态之间的转录轨迹,并提出了多任务深度学习框架DRUG-seq-PerturbFormer(DPF)以量化扰动的幅度与方向性。摘要还称在DSS诱导结肠炎模型中,代表性候选代谢物减轻了疾病严重程度,并伴随炎症程序抑制和免疫稳态的部分恢复。提供的证据仅包含图注与代码静态观察片段,未包含具体数值结果或复现验证。",
+        "learning_points": [
+          "图1展示了实验设计:从健康供者PBMC分离、活化并扩增T细胞,用364种代谢物或DMSO(两个重复)处理并进行DRUG-seq,生成counts矩阵后聚类与特征分析。",
+          "图1的UMAP按批次(D1、D2)和聚类(C0–C7)展示T细胞转录组分布,提示代谢物处理产生不同的转录响应模式。",
+          "图2以DMSO为对照统计每种代谢物的差异表达基因数量,并按上调/下调堆叠展示,将化合物按总DEG数排序并分为三种转录响应状态。",
+          "图2火山图使用DESeq2 Wald检验并以BH方法校正多重比较,标注了部分显著代谢物及基因名。",
+          "图3通过转录因子调控评分(Z分数)、ssGSEA热图、GSVA小提琴图和拟时序分析,刻画不同代谢物诱导T细胞状态下的调控景观与亚群动态。",
+          "代码静态观察显示数据加载脚本读取expr_mat.csv、scores_3_z.csv、labels_cls.csv、meta_id.csv、well_id.csv、activation_score_old.csv、cluster_id.csv等文件,但未运行验证。",
+          "摘要提出DPF为多任务深度学习框架,用于定量捕捉跨状态的扰动幅度与方向性;具体模型结构与性能未在证据中给出。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果已复现或与原文一致。",
+          "证据仅含图注与少量代码片段,缺少具体数值、统计结果和模型性能指标,无法核实摘要中的定量结论。",
+          "图注文本存在截断(如图1D、图2C、图3E),部分面板内容未知。",
+          "未观察到输入数据的具体列名、尺度与图号对应关系,相关细节保持未知。",
+          "未观察到许可信息、期刊指标或独立复现结果,均不可推断。",
+          "DSS结肠炎模型的具体结果数值与统计细节未在证据中提供。",
+          "在线资源(https://www.transmed.sh.cn)的可访问性与内容未经验证。",
+          "未标注图(undfig1)的图注与来源哈希为空,其内容未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-26T07:02:57Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "9a17ec027fa148604287b37bfb529fb032d436048929edeb72c1bb20d66cbd69",
+        "summary_fingerprint": "e8c30f24d478591b2f5913d28873f6088674b3d8ad09df54ef74c6171bb55a8c",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -140448,6 +142765,310 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-d81ed6eca1af399e": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ab893f8418dd5b54": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-51bb33baaf15ca88": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-bf5cc2126331ed52": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-fc298086f1db3a71": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py；读取行 99；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py",
+          "observedFieldReferences": [
+            {
+              "name": "mean",
+              "line": 126,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "std",
+              "line": 127,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_loss",
+              "line": 136,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_loss",
+              "line": 137,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_mse",
+              "line": 138,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_bce",
+              "line": 139,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_reg",
+              "line": 140,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_mse",
+              "line": 141,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_bce",
+              "line": 142,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_reg",
+              "line": 143,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py；读取行 213；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/dpf_main.py",
+          "observedFieldReferences": [
+            {
+              "name": "mean",
+              "line": 126,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "std",
+              "line": 127,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_loss",
+              "line": 136,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_loss",
+              "line": 137,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_mse",
+              "line": 138,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_bce",
+              "line": 139,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_reg",
+              "line": 140,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_mse",
+              "line": 141,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_bce",
+              "line": 142,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_reg",
+              "line": 143,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 10；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 13；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 16；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 19；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 22；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 26；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py；读取行 32；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Bingobin/DRUGseq-PerturbFormer/blob/48bd32f36ecc8d1833e7fb963cb1a6ce2c5425e3/src/data_loader.py",
+          "observedFieldReferences": []
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -142066,7 +144687,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-25T06:57:09Z",
+  "generatedAt": "2026-10-26T07:02:57Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -142300,18 +144921,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-26T07:00:41Z",
-    "updatedAt": "2026-10-26T07:00:42Z",
+    "updatedAt": "2026-10-26T07:02:58Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 60,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
