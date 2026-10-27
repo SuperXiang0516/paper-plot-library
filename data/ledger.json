@@ -84,9 +84,47 @@
         "10.1126/sciadv.aeh4436",
         "10.34133/csbj.0114"
       ]
+    },
+    "2026-10-27": {
+      "newDOIs": [
+        "10.1038/s41467-026-74318-z",
+        "10.1093/bioinformatics/btag745",
+        "10.3389/fgene.2026.1833788",
+        "10.7150/ijbs.134478"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bioinformatics/btag745": {
+      "checkedAt": "2026-10-27T06:54:55Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.3389/fgene.2026.1833788": {
+      "checkedAt": "2026-10-27T06:54:49Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.7150/ijbs.134478": {
+      "checkedAt": "2026-10-27T06:54:44Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-10-27T06:54:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-74318-z": {
+      "checkedAt": "2026-10-27T06:54:35Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1016/j.isci.2026.117527": {
       "checkedAt": "2026-10-26T07:02:48Z",
       "status": "source_confirmed",
@@ -2698,61 +2736,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41467-026-74318-z": {
-      "checkedAt": "2026-10-22T06:51:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-74318-z",
-        "metadataHash": "92d84feda1dc60a749d433b8ef1004254bc8f53b9aca4d512892d15685fa557f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13408450.1/PMC13408450.1.xml?md5=8fdf3a93a761008f129708795be08146",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 799,
-              "sha256": "98f09d21042e6e9515b2accba709d831cf63ba9895679a6c452827fef3d2b635",
-              "label": "Fig. 1",
-              "height": 842,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13408450.1/41467_2026_74318_Fig1_HTML.jpg?md5=c6d15b4956412ea87e85c2cca0739243",
-              "asset": "assets/pmc13408450-98f09d21042e6e95.jpg",
-              "license": "CC BY",
-              "assetSHA256": "98f09d21042e6e9515b2accba709d831cf63ba9895679a6c452827fef3d2b635",
-              "id": "Fig1",
-              "captionHash": "a556bf58966421ea5b22d612b09ccd746ac55c85261f318b9521d5013ac8e6d8"
-            },
-            {
-              "width": 799,
-              "sha256": "e0e9b32a1adf506f55198baf10a82ad94fdf999479a62cf0cde968666784c821",
-              "label": "Fig. 3",
-              "height": 938,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13408450.1/41467_2026_74318_Fig3_HTML.jpg?md5=de5bdd3ba45cf3359e7dd7549dee225a",
-              "asset": "assets/pmc13408450-e0e9b32a1adf506f.jpg",
-              "license": "CC BY",
-              "assetSHA256": "e0e9b32a1adf506f55198baf10a82ad94fdf999479a62cf0cde968666784c821",
-              "id": "Fig3",
-              "captionHash": "e32b30bb6bd00bfa8eda71c0a83bdb0bc144e8e5f6bea53f45fb79d5232d6f85"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-f8ddc87d5792d257",
-          "doi": "10.1038/s41467-026-74318-z",
-          "paper": "Spatial cellular order underlies locally-confined mechanisms of immune resistance in oropharyngeal cancer.",
-          "journal": "Nature communications",
-          "date": "2026-06-13",
-          "year": "2026",
-          "pmcid": "PMC13408450",
-          "pmid": "42288489",
-          "paperURL": "https://doi.org/10.1038/s41467-026-74318-z"
-        },
-        "updatedAt": "2026-10-22T06:51:21Z"
-      }
-    },
     "10.1093/bioinformatics/btag743": {
       "checkedAt": "2026-10-22T06:50:24Z",
       "status": "pending",
@@ -3453,61 +3436,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1093/bioinformatics/btag745": {
-      "checkedAt": "2026-10-22T06:43:12Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag745",
-        "metadataHash": "b16a7bc9d03a9992679a92ea9378710e8a0704596f140b4f5c777bf0ad42417d",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13682611.1/PMC13682611.1.xml?md5=06730c9f70d11942a056c67e3afda71b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1599,
-              "sha256": "8387f3723e51f2c13a77f04f676329dd4eeba93a4c81a0ea69d825143c10cb1f",
-              "label": "Figure 3",
-              "height": 694,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13682611.1/btag745f3.webp?md5=b00997f00bd63d0add36a7bb8f99d76e",
-              "asset": "assets/pmc13682611-8387f3723e51f2c1.webp",
-              "license": "CC BY",
-              "assetSHA256": "8387f3723e51f2c13a77f04f676329dd4eeba93a4c81a0ea69d825143c10cb1f",
-              "id": "btag745-F3",
-              "captionHash": "5cf8225068f875060ceb9774ee48eb19c5dc76141a66eda76e7e629caf502bc4"
-            },
-            {
-              "width": 1600,
-              "sha256": "298fa2cea94e5422cab64a8bf1a2f22f2f83df7a76c7d6094e4e547b17570c68",
-              "label": "Figure 6",
-              "height": 1385,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13682611.1/btag745f6.webp?md5=000628ca19809432d18dd0428cc90a46",
-              "asset": "assets/pmc13682611-298fa2cea94e5422.webp",
-              "license": "CC BY",
-              "assetSHA256": "298fa2cea94e5422cab64a8bf1a2f22f2f83df7a76c7d6094e4e547b17570c68",
-              "id": "btag745-F6",
-              "captionHash": "9237362cf46c70b01f57f5128805bf9e23698520555c8f91558e3c4e4125d5fe"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-92290b0f04423239",
-          "doi": "10.1093/bioinformatics/btag745",
-          "paper": "VAEBAC: a representation-learning framework for proteome-scale prediction of amyloidogenic proteins and functional stratification of nucleic-acid-binding proteins.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13682611",
-          "pmid": "42842425",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag745"
-        },
-        "updatedAt": "2026-10-22T06:43:10Z"
-      }
     },
     "10.1016/j.stemcr.2026.103052": {
       "checkedAt": "2026-10-22T06:43:08Z",
@@ -8482,61 +8410,6 @@
           "paperURL": "https://doi.org/10.18632/aging.206386"
         },
         "updatedAt": "2026-10-16T06:55:45Z"
-      }
-    },
-    "10.3389/fgene.2026.1833788": {
-      "checkedAt": "2026-10-16T06:55:58Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fgene.2026.1833788",
-        "metadataHash": "2442106a8cb3b0e048b91d3fe985c51086634ed644f7eac8d386e000b5c99e50",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13469661.1/PMC13469661.1.xml?md5=92ab381ecb011b4476f20b70db8d9ad4",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13469661-8c84ebf81f4d2c27.jpg",
-              "assetSHA256": "8c84ebf81f4d2c27d9d90888a7edda4a1da5e952288ed7a8ec35ed1d2cb14a23",
-              "license": "CC BY",
-              "id": "F1",
-              "sha256": "8c84ebf81f4d2c27d9d90888a7edda4a1da5e952288ed7a8ec35ed1d2cb14a23",
-              "height": 1187,
-              "label": "FIGURE 1",
-              "width": 767,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13469661.1/fgene-17-1833788-g001.jpg?md5=75a7e876e88bcd0242a691e124e99315",
-              "captionHash": "679e62c9aec43a1a098699ff5e865ccdeee58c4a139da3f2b845e79335f33ada"
-            },
-            {
-              "asset": "assets/pmc13469661-4f1ce2f760d6330f.jpg",
-              "assetSHA256": "4f1ce2f760d6330fb451138a5573ef3bb721231352451aea1341c4301c7fade5",
-              "license": "CC BY",
-              "id": "F2",
-              "sha256": "4f1ce2f760d6330fb451138a5573ef3bb721231352451aea1341c4301c7fade5",
-              "height": 953,
-              "label": "FIGURE 2",
-              "width": 688,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13469661.1/fgene-17-1833788-g002.jpg?md5=db04c27a2b705396cb2e3d949adde9bb",
-              "captionHash": "2c0a6e87bd8bc86f92683a642b779b312a8a629dfe12716f65d4fd5ce901d8fe"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4441357d8e56cf9a",
-          "doi": "10.3389/fgene.2026.1833788",
-          "paper": "Immunogenetics and TCR expression patterns together predict future T1D onset from multi-omic datasets.",
-          "journal": "Frontiers in genetics",
-          "date": "2026-07-30",
-          "year": "2026",
-          "pmcid": "PMC13469661",
-          "pmid": "42597847",
-          "paperURL": "https://doi.org/10.3389/fgene.2026.1833788"
-        },
-        "updatedAt": "2026-10-16T06:55:52Z"
       }
     },
     "10.1016/j.isci.2026.117398": {
@@ -13649,27 +13522,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-10-27T06:52:02Z",
-    "requests": 0,
+    "updatedAt": "2026-10-27T06:55:16Z",
+    "requests": 59,
     "maxBatches": 36,
-    "aiAttempts": 0,
+    "aiAttempts": 2,
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "maxRequests": 1800,
     "status": "active",
     "batchCount": 1,
-    "elapsedSeconds": 2,
+    "elapsedSeconds": 196,
     "maxSeconds": 2700,
     "startedAt": "2026-10-27T06:52:00Z",
     "version": 1,
     "endReason": "",
     "date": "2026-10-27",
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-10-27T06:52:02Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
