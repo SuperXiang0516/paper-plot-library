@@ -13464,15 +13464,20 @@
     "startedAt": "2026-10-28T07:28:24Z",
     "aiAttempts": 0,
     "maxSeconds": 2700,
-    "updatedAt": "2026-10-28T07:29:57Z",
+    "updatedAt": "2026-10-28T07:30:01Z",
     "status": "active",
-    "elapsedSeconds": 94,
+    "elapsedSeconds": 97,
     "uncertainAiAttempts": 0,
-    "batchCount": 1,
+    "batchCount": 2,
     "maxAiAttempts": 165,
     "date": "2026-10-28",
     "version": 1,
     "endReason": "",
-    "uncertainRequests": 0
+    "uncertainRequests": 0,
+    "inFlight": {
+      "startedAt": "2026-10-28T07:30:01Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
