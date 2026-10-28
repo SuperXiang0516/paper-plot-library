@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-27",
+  "checkedAt": "2026-10-28",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -112987,6 +112987,1460 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-a791f21de31331a8",
+      "paper": "Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.",
+      "doi": "10.1002/advs.78424",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-10-25",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78424",
+      "pmcid": "PMC13696786",
+      "pmid": "42928457",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "5fd3823cf3f7e68f2460f744905a0b5010b2190c4e0d34a59f5c25ded297a44c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/PMC13696786.1.xml?md5=731f831e3842944c5e6b91cfd67918cf",
+        "figures": [
+          {
+            "id": "advs78424-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Multi‐omics integration reveals senescence phenotype, enhanced ferroptosis and lysosomal dysfunction in senescent macrophages. (A) Schematic diagram of the experimental design for multi‐omics analysis. Transcriptomic and metabolomic analysis (n = 6). Proteomic analysis (n = 4). (B–E) GO and KEGG enrichment analyses based on transcriptomics (B), proteomics (C, D), and untargeted metabolomics (E). (F–I) GSEA of ferroptosis (F), reactive oxygen species (ROS) metabolic process (G) and inflammatory responses (H, I). (J, K) Heatmaps of the differential expression of genes (J) and proteins (K) associated with inflammation, ferroptosis, and lysosomal function. (L–N) Re‐analysis of the public scRNA‐seq dataset (GSE280914) showing the t‐SNE plot (L), senescence score quantification (M), and expression profiles of senescence‐, SASP‐ and ferroptosis‐related genes (N) in local macrophages.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g006.webp?md5=cd130d0d2db26c2184585d14c2676bb9",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "assets/pmc13696786-488f00214fb87850.webp",
+            "sha256": "488f00214fb878502b1a4336b3afb528d9f6553301371e7ac7126e673e63e3f9",
+            "width": 702,
+            "height": 1001,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "488f00214fb878502b1a4336b3afb528d9f6553301371e7ac7126e673e63e3f9",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78424-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Synthesis and characterization of lithium‐doped hydroxyapatite nanowires. (A) Schematic illustration of the material synthesis process. (B) SEM images and (C, D) TEM images of nHAP, 5% Li‐nHAP, and 10% Li‐nHAP. (E, F) Length and diameter distributions. (G) TOF‐SIMS mapping of lithium signals. (H) ICP‐OES analysis of the time‐dependent Li/(Li + Ca) ratio in the release medium over 28 days. (I) FTIR spectra. (J) XRD patterns. (K) BET analysis. (L) pH‐dependent dissolution profiles of nHAP, 5%Li‐nHAP, and 10%Li‐nHAP under acidic to near‐physiological conditions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g009.webp?md5=f34611e2b29cd256835bbecf1d5587c5",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "assets/pmc13696786-3a1ad2ce416f8844.webp",
+            "sha256": "3a1ad2ce416f884423671823cec5b2865926756c01c0160ae5f3b61f6f9d3f28",
+            "width": 728,
+            "height": 999,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3a1ad2ce416f884423671823cec5b2865926756c01c0160ae5f3b61f6f9d3f28",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78424-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP rejuvenates macrophages and attenuates the senescence‐associated secretory phenotype (SASP). (A) KEGG enrichment analysis comparing 5%Li‐nHAP‐treated Sn‐BMDMs with untreated Sn‐BMDMs. (B, C) Relative mRNA expression of senescence‐associated markers (B) and SASP factors (C) in BMDMs with different treatments. n = 4. (D, E) ELISA assessment of TNF‐α (D) and MMP3 (E) secretion in BMDMs culture supernatants. n = 3. (F, H) Representative γ‐H2AX immunofluorescence images (F) and quantitative analysis (H). n = 3. (G, I) Representative SA‐β‐gal staining (G) and quantitative analysis (I). n = 3. (J, K) Relative mRNA expression of senescence‐associated genes (J) and SASP‐related genes (K) in H2O2‐induced RAW 264.7 cells. n = 4. (L, M) ELISA assessment of TNF‐α (L) and MMP3 (M) secretion in culture supernatants. n = 3. (N, P) Representative γ‐H2AX immunofluorescence images (N) and quantitative analysis of γ‐H2AX‐positive cells (P). n = 3. (O, Q) Representative SA‐β‐gal staining (O) and quantitative analysis of SA‐β‐gal‐positive cells (Q). n = 3. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g010.webp?md5=408fa2ffcd1fa4dfd1b4e0608a0f317a",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP suppresses excessive ferroptosis to alleviate macrophage senescence. (A) IPA‐based pathway activation analysis of transcriptomic (n = 6) and proteomic data (n = 4). (B) Heatmap showing the mean abundances of selected pro‐ferroptosis and anti‐ferroptosis proteins in Sn‐BMDMs with or without Li‐nHAP treatment. n = 4. (C, D) BODIPY 581/591 C11 staining for lipid peroxidation (C) and the quantification (D). n = 3. (E) Intracellular MDA levels in BMDMs under different treatments. n = 6. (F, G) RhoNox‐6 probe for cytoplasmic Fe2 + accumulation (F) and the quantification (G). n = 3. (H) Quantification of total intracellular iron content. n = 3. (I) DCFH‐DA probe for intracellular ROS levels and the quantification. n = 3. (J) Intracellular GSH levels in BMDMs. n = 6. (K, L) Relative mRNA expression of senescence‐associated markers (K) and SASP factors (L). n = 3. (M, N) ELISA assessment of TNF‐α (M) and MMP3 (N). n = 4. (O‐R) SA‐β‐gal staining (O) (n = 6), γ‐H2AX immunofluorescence (P) (n = 4), and quantitative analysis (Q, R). (S) Western blotting analysis of P21 and P53 protein, and quantitative analysis. n = 3. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g003.webp?md5=3d6591b13e13195c92b6034c3c94413f",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP restores lysosomal homeostasis in Sn‐BMDMs. (A) AUCell analysis of lysosomal function in macrophages from the GSE280914 scRNA‐seq dataset. (B) Expression of lysosomal ATPase‐related genes in macrophages from young and aged mice in the GSE280914 scRNA‐seq dataset. (C) GO enrichment analysis of lysosome‐related pathways in Sn‐BMDMs following Li‐nHAP treatment. (D, G) Representative Lyso‐FerroRed fluorescence images (D) and quantification of the lysosomal labile Fe2 + signal (G). n = 4. (E, H) Representative Acridine Orange (AO) staining images (E) and quantitative analysis of lysosomal membrane integrity (H). n = 3. (F, I) Representative DQ‐BSA fluorescence images (F) and quantitative analysis of lysosomal proteolytic activity (I). n = 3. (J) Cathepsin B (CTSB) activity in BMDMs. n = 4. (K, L) Representative LysoSensor fluorescence images (K) and quantitative analysis of lysosomal acidity (L). n = 4. (M) RT‐qPCR heatmap showing the expression of V‐ATPase subunits in BMDMs. n = 4. The heatmap shows mean expression levels. (N) Representative immunofluorescence images, line‐scan fluorescence intensity profiles, and quantitative analysis of the colocalization between ATP6V1A and the lysosomal marker LAMP1. n = 3. Data are presented as mean ± SD. AUCell scores were compared using a two‐sided Wilcoxon rank‐sum test. Other statistical comparisons were performed using one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g004.webp?md5=19460a2358730fa25534899016918343",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Blockade of lysosomal function abolishes the anti‐ferroptotic effect of Li‐nHAP in Sn‐BMDMs. (A–J) Evaluations of ferroptosis‐related parameters in Sn‐BMDMs co‐treated with Li‐nHAP and BafA1. (A, B, F) Cytoplasmic iron was assessed by RhoNox‐6 staining (A), flow cytometry (B), and the quantification (F). n = 8. (C, G) BODIPY 581/591 C11 staining for lipid peroxidation (C) and the quantification (G). n = 3. (D, H) DCFH‐DA probe for intracellular ROS levels (D) and the quantification (H). n = 8. (E) Western blotting of GPX4 protein expression. (I, J) Intracellular MDA (I) and GSH (J) levels. n = 6. (K–T) Parallel evaluations in Sn‐BMDMs following co‐treatment with Li‐nHAP and LLOME. (K, L, P) Cytoplasmic iron was assessed by RhoNox‐6 staining. n = 6. (M, R) BODIPY 581/591 C11 staining for lipid peroxidation. n = 3. (N, Q) DCFH‐DA probe for intracellular ROS levels. n = 6. (O) Western blotting of GPX4 protein expression. (S, T) Intracellular MDA (S) and GSH levels (T). n = 3. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g002.webp?md5=0d0495b034985bfccabc40e0cb8e405a",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP promotes osteogenic differentiation of senescent BMSCs through macrophage‐mediated paracrine signaling. (A) Schematic illustration of the experimental design. (B, F) Immunofluorescence assay for OPN expression (B) and corresponding quantitative analysis (F). n = 3. (C, D, G, H) ALP and ARS staining in senescent BMSCs (C, D), with corresponding quantitative analysis (G, H). n = 3. (E) Relative mRNA expression of osteogenic genes (Runx2, Alpl, Spp1 and Col1a1) in senescent BMSCs. n = 4. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g001.webp?md5=2ee5f0585e1273874bf3b2d672ea1c24",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP+GelMA promotes critical‐size mandibular defect repair in aged mice. (A) Schematic illustration of the experimental design and macroscopic photographs of the mandibular defect model and material implantation. (B) Representative 3D reconstructed Micro‐CT images. (C–E) Quantitative analysis of bone volume/total volume (BV/TV) (C), trabecular number (Tb.N) (D), and trabecular thickness (Tb.Th) (E). n = 6. (F, G) Representative histological evaluation of new bone formation revealed by H&E staining (F) and Masson's trichrome staining (G). (H–K) Representative immunohistochemical staining and quantification of OCN (H, I) and BMP2 (J, K). n = 6. (L, M) Representative immunofluorescence staining of OPN (L) and quantification (M). n = 6. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01, and ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g005.webp?md5=3391d8990825df7271dd36fd24ec86a4",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78424-fig-0009",
+            "label": "FIGURE 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Li‐nHAP+GelMA revitalizes the aged microenvironment by inhibiting macrophage senescence and excessive ferroptosis in vivo. (A‐D) Dual‐labeling immunofluorescence of macrophages (F4/80+, red) co‐stained with senescence marker P21 (green) (A), DNA damage marker γ‐H2AX (green) (B), anti‐ferroptotic protein GPX4 (green) (C) and lipid peroxidation marker 4‐HNE (green) (D) and the quantification. Nuclei were counterstained with DAPI (blue). n = 6. (E) Representative Prussian blue staining for localized iron accumulation, and the quantification. n = 6. Data are presented as mean ± SD. Statistical significance was determined by one‐way ANOVA followed by Tukey's post hoc test. ns, not significant; *p < 0.05, **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-g008.webp?md5=f15d57ddb710f98e66604d03317232ad",
+            "articleURL": "https://doi.org/10.1002/advs.78424",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al.. Lithium-Doped Hydroxyapatite Nanowires Rejuvenate Senescent Macrophages Via the Lysosome-Dependent Ferroptosis Axis to Promote Aged Bone Regeneration.. DOI: 10.1002/advs.78424. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78424-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78424-supitem-0001",
+            "label": "Supporting File: advs78424‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696786.1/ADVS-9999-e78424-s001.docx?md5=cac5aa1bb961a6444e6dee595a4b2acf",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-28T07:29:37.133604+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Baixi Chen; Ziduan Ding; Ruomei Li; Cheng Zhu; Zhiyu Zhu; Zitong Yang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-28T07:29:40Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-28T07:29:40Z",
+        "url": "https://openalex.org/W7223560170",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.7561758,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-28T07:29:40Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-28T07:29:40Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-29T07:29:40Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.780879,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.7808789999999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-28T07:29:54Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-280bc811687221cc",
+      "doi": "10.1038/s42003-026-10500-9",
+      "paper": "Prenatal cell-free DNA methylome detects association with autism and maternal obesity.",
+      "journal": "Communications biology",
+      "date": "2026-06-22",
+      "year": "2026",
+      "pmcid": "PMC13650157",
+      "pmid": "42331993",
+      "paperURL": "https://doi.org/10.1038/s42003-026-10500-9",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2399-3642",
+      "eissn": "2399-3642",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "5791b7336bf071fb8b095531dedbe3752a40a81c10cd4e8b7f46f06ad43350c9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/PMC13650157.1.xml?md5=7b95c3414519c59b324d3bceeac63e3c",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "WGBS of cfDNA in a prospective autism cohort study enables prenatal detection of ASD-associated differentially methylated regions (DMRs).This experimental diagram details the process by which study participants were selected for cfDNA sampling, the subsequent diagnostic follow-up, and the computational method by which WGBS data was investigated for DMRs associated with ASD diagnosis. Created in BioRender. Williams, L. (2026) https://BioRender.com/p1nhmil.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig1_HTML.webp?md5=bcecf3df538d9db2575c9c4fdddb331e",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "ASD DMRs are detectable in cfDNA and show heavy enrichment for synaptic gene pathways.A Circos plots of the identified ASD DMRs in cfDNA from sex-stratified analyses and plotted against the human genome. DMR directionality with respect to ASD diagnosis is denoted by dot color, with red indicating a hypermethylated DMR and blue indicating and hypomethylated DMR. Significance (-log10(permutation p-value)) of a given DMR is shown by its placement on the radial y-axis. B Bar plot average of global CpG methylation across all sequenced sites, separated by fetal sex (n = 33 males, n = 18 females). Error bars show standard deviation from the mean. No significant difference was identified between groups by application of a two-tailed t-test (p = 0.536). C Dot plot of all significant KEGG pathway enrichments for the male (n = 1269 male cfDNA ASD DMR genes) and female (n = 2540 female cfDNA ASD DMR genes) cfDNA ASD DMR genes. Significance indicated by dot color, and fold enrichment indicated by dot size. D Venn diagram of the overlapping genes between both sets of cfDNA ASD DMRs and the SFARI gene list. E Heatmap displaying the significance of gene overlap between both cfDNA ASD DMR gene lists (n = 1269 males, n = 2540 females) and the SFARI gene list (n = 1162 SFARI genes). Number of overlapping genes in each comparison is indicated by tile color. Significance of the overlap between two gene sets determined by Fisher’s Exact Test. Asterisks denote p-value as follows: ***p < 0.001, ****p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig2_HTML.webp?md5=fb35ddb05c07851a84654e53ae250df9",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "assets/pmc13650157-88375c92d2552667.webp",
+            "sha256": "88375c92d2552667f33aa6393b2d00b77b75b11917e534de0d335dca51a2b772",
+            "width": 1600,
+            "height": 2093,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "88375c92d2552667f33aa6393b2d00b77b75b11917e534de0d335dca51a2b772",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "ASD DMRs identified from placenta and cortex WGBS exhibit shared characteristics with cfDNA DMRs.Circos plots mapping the genomic locations and significance of all DMRs from the sex-stratified analyses of A placenta and B cortex WGBS. DMR directionality with respect to ASD diagnosis is denoted by dot color, with red indicating a hypermethylated DMR and blue indicating and hypomethylated DMR. Significance (-log10(permutation p-value)) of a given DMR is shown by its placement on the radial y-axis.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig3_HTML.webp?md5=6c808bdba12ee48eae433a7ddc29ddc1",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "assets/pmc13650157-595743216acc50e3.webp",
+            "sha256": "595743216acc50e39a215871bc1cfbe4887b6f9f85dc0d458493f67d0e579ab9",
+            "width": 1600,
+            "height": 2014,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "595743216acc50e39a215871bc1cfbe4887b6f9f85dc0d458493f67d0e579ab9",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "ASD DMRs across tissues overlap with one another.A Upset plot of the intersections between the six ASD DMR genes lists. Some intersections of interest are highlighted with specified colors and labelled for the number of overlapping genes between the sets in question. B Heatmap of the significance of gene overlap between the six DMR gene lists (n = 1269 male cfDNA, n = 2540 female cfDNA, n = 1891 male placenta, n = 5189 female placenta, n = 4082 male cortex, n = 9049 female cortex). Significance of the overlap between two gene sets determined by Fisher’s Exact Test. Asterisks denote p-value as follows: ****p < 0.0001. C Bar graph of the top 10 most significantly enriched KEGG pathways for the list of 68 genes that appear in all six ASD DMR gene lists. Significance determined via Fisher’s Exact Test with Benjamini–Hochberg correction. Asterisks denote q-value as follows: *q < 0.05, **q < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig4_HTML.webp?md5=6f8ad61a55dc450c084007180f1ed7a1",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "MO DMRs in cfDNA share substantial overlaps with ASD DMRs, while maintaining unique enrichments for inflammatory pathways.A Circos plots mapping the genomic locations and significance of all MO DMRs from the sex-stratified analyses of cfDNA WGBS. B Dot plot of all significant KEGG pathway enrichments for cfDNA ASD and MO DMRs (n = 1269 male cfDNA ASD DMR genes, n = 2540 female cfDNA ASD DMR genes, n = 3967 male cfDNA MO DMR genes, n = 4887 female cfDNA MO DMR genes). Significance (-log10(permutation p-value)) of a given DMR is shown by its placement on the radial y-axis. Fold enrichment is indicated by dot size.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig5_HTML.webp?md5=aeae29a3b7c4e260a187f155c1b57c7e",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Intersecting ASD and MO DMRs are substantially enriched for genes in neurodevelopmental gene pathways.A Upset plot of gene overlaps between cfDNA ASD and MO DMRs. Some intersections of interest are highlighted in specified colors. B Heatmap of the significance of gene overlap between the cfDNA DMR gene lists (n = 1269 male cfDNA ASD DMR genes, n = 2540 female cfDNA ASD DMR genes, n = 3967 male cfDNA MO DMR genes, n = 4887 female cfDNA MO DMR genes) and the SFARI gene list (n = 1162 SFARI genes). Significance of the overlap between two gene sets determined by Fisher’s Exact Test. Asterisks denote p-value as follows: ***p < 0.001, *p < 0.05. C Bar graph of the top 10 most significantly enriched KEGG pathways for the list of 210 genes that appear in all cfDNA DMR gene lists. Significance determined via Fisher’s Exact Test with Benjamini–Hochberg correction. Asterisks denote q-value as follows: ****q < 0.0001, ***q < 0.001, **q < 0.01, *q < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig6_HTML.webp?md5=9f4d23e6a5160bbde61e581ab3f29005",
+            "articleURL": "https://doi.org/10.1038/s42003-026-10500-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al.. Prenatal cell-free DNA methylome detects association with autism and maternal obesity.. DOI: 10.1038/s42003-026-10500-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_MOESM1_ESM.pdf?md5=29dc25a39d599d5af36ba9a00c7707dd",
+            "license": "CC BY",
+            "sha256": "c4e86e040d95060b0d96f04cf563f8cc07e9455214fc025ac18e85fd587b0da6",
+            "status": "downloaded_private",
+            "bytes": 4410011,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 43,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_MOESM2_ESM.pdf?md5=bc0b08aab4764a87f3ab156ca30542cc",
+            "license": "CC BY",
+            "sha256": "786ff1c074288536c85d0c7fe3b63bb67272efef4cbe8628717772fadc13b861",
+            "status": "downloaded_private",
+            "bytes": 117230,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_MOESM3_ESM.xlsx?md5=199cdd091992ca6468bd133aabd8c7f1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_MOESM4_ESM.pdf?md5=c53c967e8a1497f3ee7acd0a0838b95a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_MOESM5_ESM.pdf?md5=e9f83cb5eb823a18670833d90bd20269",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-28T07:29:43.375802+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Logan A. Williams; Ensieh Habibi; Meghan Miller; Irva Hertz-Picciotto; Cheryl K. Walker; Rebecca J. Schmidt; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.8",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-28T07:29:49Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-28T07:29:49Z",
+        "url": "https://openalex.org/W7165562355",
+        "cited_by_count": 1,
+        "fwci": 4.157,
+        "citation_normalized_percentile": 0.93955843,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-28T07:29:49Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-28T07:29:49Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-29T07:29:49Z"
+        }
+      },
+      "selectionScore": {
+        "total": 34.69779215,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.697792150000001,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-28T07:29:54Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-2a512b41f75180b5",
+      "doi": "10.1038/s41467-026-77784-7",
+      "paper": "Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.",
+      "journal": "Nature communications",
+      "date": "2026-09-17",
+      "year": "2026",
+      "pmcid": "PMC13680386",
+      "pmid": "42897187",
+      "paperURL": "https://doi.org/10.1038/s41467-026-77784-7",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "4f77a6ee1c3054ac9ed1d3b87dd65cc521f9e88190862c18fba614ff534e8ae3"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/PMC13680386.1.xml?md5=db1e7903d4638d40f50dc52243107da2",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Establishing 3D in toto iterative immunofluorescence imaging (3D-4i) in zebrafish embryos.a Schematic of zebrafish developmental timepoints used in the multiplexing experiment (top), 3D-4i workflow (bottom left), and antibody panel used in the experiment (bottom right). Created in BioRender. Shami pour, S. (https://BioRender.com/izklq0m) and Inkscape (http://www.inkscape.org). PFA: Paraformaldehyde. hpf: hours post fertilization. MeOH perm: Methanol permeabilization. SD Spinning Disc. RI Refractive Index. IF Immunofluorescence. AB Antibody. For further details, see Methods section. b 3D overview of embryos imaged in the multiplexing experiment, ordered from left to right by total nuclei count. Images show the DAPI stain labeling DNA. The ROI demarcates a representative embryo shown in panels (c, d). Division cycles are marked at the bottom (7-12). x, y, z scale bars 650 µm. N = 1 experiment, n = 212 embryos (209 shown). c 3D view of a representative embryo (demarcated in panel b), stained with Pol-II-S2p, Pol-II-S5p, β-Catenin, PCNA, pH3, Pou5f3, H2B, Nanog, Alyref, H3K27ac, and DAPI across four sequential immunofluorescence imaging cycles. The white rectangles demarcate the 2D slice used for visualization in panel (d). x, y, z scale bars 50 µm. d 2D cross-section of the embryo shown in panel (c) along the indicated plane, with zoom-in views shown below. The dashed rectangles demarcate the ROI used for zoom-in. x, y scale bars 50 µm. N = 1 experiment, n = 212 embryos. e Stainings of Pol-II-S2p and PCNA of an exemplary embryo in acquisition cycles 0 and 3 overlaid on each other, with zoom-in views shown on the right. The dashed rectangles demarcate the ROI used for zoom-in. x, y scale bars 50 µm. N = 1 experiment, n = 21 embryos. f Pearson’s r for mean nuclear intensities (cellular for β-Catenin) between same stains repeated across cycles. β-Catenin (β-Cat) vs Pol-II-S2p (S2p) serves as negative control. g Single-pixel correlations between same stains repeated across cycles, at full image resolution (1 pixel: 0.325 µm, left: none) or after 2× down-sampling (1 pixel: 0.650 µm, right, 2x). β-Cat vs PCNA or Pou5f3 serve as negative controls. Center lines: medians; boxes: 25th−75th percentiles; whiskers: 1.5× interquartile range; gray dots: outliers; dashed line: zero. For panels f, g N = 1 experiment, n = 61 embryos. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig1_HTML.webp?md5=6b9aa245893b9062d011b7225084bfa9",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77784-7",
+            "asset": "assets/pmc13680386-0598885ebd716bab.webp",
+            "sha256": "0598885ebd716bab901548b60bf5abb3e740b7f74bd587735d9b3890904b8c78",
+            "width": 1600,
+            "height": 1766,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Max Hess; Marvin F. Wyss; Edlyn Wu; Gian-Marco Schaniel; Joel Lüthi; Chiara Rebagliati; et al.. Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.. DOI: 10.1038/s41467-026-77784-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0598885ebd716bab901548b60bf5abb3e740b7f74bd587735d9b3890904b8c78",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Developing an integrated image analysis pipeline for multiplexed volumetric datasets.a Image-analysis pipeline including conversion into multiscale image pyramids, intensity correction, image registration between acquisition (Acq.) cycles and object (embryo, nuclei, cell and cytoplasm) segmentation. b 3D view of a representative embryo with nuclear segmentation shown on the left half and cell segmentation on the right half. c Series of intensity corrections applied directly to images or corrected on the fly (See “Methods”). Created with Inkscape (http://www.inkscape.org). d Schematic of exemplary cell position relative to the objective, showing the light path through the plate bottom, medium, and sample, with their approximate refractive indices. The single-exponential 1D z-decay model only considers the total light path (medium and sample paths sum) and the double-exponential 2D z-decay model considers separate decays for each path. Created in BioRender. Shami pour, S. (https://BioRender.com/izklq0m). e Estimation of mean DAPI signal decay using 1D and 2D z-models. f Comparison of 1D and 2D z-decay models with uncorrected data for mean DAPI and Pol-II-S2p intensity distributions. g The density plot on comparison of 1D and 2D z-decay models with uncorrected data for summed DAPI intensity of embryos in cycles 7–9. Data normalized to the first peak. h Logical data model for feature extraction across scales/orders, dividing the process into two steps of label aggregation (across voxels (1), neighborhoods (2), object hierarchy (3) or tables (4)) and computation of summary statistics on aggregated labels. Created with Inkscape (http://www.inkscape.org). i Embryo staging based on total nuclear counts. j Mean nuclear and cellular volumes plotted against total nuclear counts per embryo. k Left: various statistical features (such as mean, sum, etc) can be aggregated across different neighborhoods (fixed radius, touch, k-nearest neighbors (KNN) and Delaunay, Methods) to achieve higher scale measurements. Right: Example for KNN neighborhoods with k = 10 in an embryo. Neighbors of exemplary cells shown in colors and thicker lines. Left: Created with Inkscape (http://www.inkscape.org). l Results of a random forest classifier trained with the napari feature-classifier plugin to identify three cell types present during early zebrafish development: EVL, YSL and deep cells (Deep). Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig2_HTML.webp?md5=6f8d71af82b8501753377be2e7805125",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77784-7",
+            "asset": "assets/pmc13680386-1e29a3f888f8cf5b.webp",
+            "sha256": "1e29a3f888f8cf5b259406c239ff06ff6bce5c81ebfa0d6fdbe63114e11cb221",
+            "width": 1600,
+            "height": 1754,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Max Hess; Marvin F. Wyss; Edlyn Wu; Gian-Marco Schaniel; Joel Lüthi; Chiara Rebagliati; et al.. Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.. DOI: 10.1038/s41467-026-77784-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1e29a3f888f8cf5b259406c239ff06ff6bce5c81ebfa0d6fdbe63114e11cb221",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Inferring cell cycle phase from multiplexed imaging of fixed embryos reveals spatiotemporal dynamics of cell cycle desynchronization during mid-blastula transition.a Method overview for pre-processing, single-cell embedding into a low-dimensional space using cell cycle-related features, principal circle fitting in feature space and CCP inference (Methods). b Left: UMAP embedding of cell cycle features overlaid with manual cell cycle annotations. Right: Principal circles fitted to feature space of cells from division cycles 7–9, 10, 11, 12, and 13 separately. S S phase, M mitosis, pro prophase, meta metaphase, ana anaphase, telo telophase. b’ Representative nuclei annotations for six cell cycle phases visualized using DAPI, PCNA, and pH3 markers. Scale bar 20 μm. c Density plot and mean nuclear PCNA intensity of 10,000 cells randomly sampled across division cycle 11, plotted against raw CCP (left) or normalized CCP (right, hereafter CCP) after inference and quantile-based normalization. Points are colored by normalized CCP, illustrating the monotonic mapping introduced by normalization. Black line: LOWESS fit highlighting observed dynamics. Dotted vertical lines correspond to M anaphase/telophase, S, and M pro/meta phases. d Exemplary nuclei ordered by inferred CCP and visualized with DAPI, PCNA, and pH3 markers. Scale bar 20 μm. d’ Representative embryos from division cycles 7 to 12 with nuclei shown as point clouds and colored by their inferred CCP. e Global cell cycle synchrony (R) plotted against CCP-adjusted staging, fitted with a Hill function (Methods). The solid line is the bootstrap-mean fit, and the shaded region shows the pointwise 95% bootstrapped confidence interval. f CCP synchrony measured over increasing radii across division cycles 7–13. Solid lines indicate group medians for the corresponding division cycle, and the shaded regions mark 95% bootstrapped confidence intervals. g Spatial CCP gradients for 4 representative embryos from division cycles 8 to 11. Streamlines correspond to the integrated gradient field starting from 500 randomly sampled sources within the convex hull of nuclei positions. Nuclei colors denote the inferred CCP. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig3_HTML.webp?md5=ada19d88b6bef4ac1bd66cbbd8e6ff6a",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77784-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Max Hess; Marvin F. Wyss; Edlyn Wu; Gian-Marco Schaniel; Joel Lüthi; Chiara Rebagliati; et al.. Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.. DOI: 10.1038/s41467-026-77784-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.a Mean PCNA, Pol-II-S5p and Pol-II-S2p, and sum DAPI intensities across division cycles 7–12. Solid lines. Gaussian-smoothed trends; dashed lines and color changes, cycle transitions. b Left: Mean nuclear Pol-II-S2p intensities of all (gray) and interphase (red) cells during division cycle 11. Right: Same data plotted against their inferred CCP. Cells were grouped into nine CCP bins (six interphase and three mitotic), shown by distinct colors with overlaid boxplots. c Known interactions controlling transcriptional output10,76. Green/red arrows indicate activating/repressive interactions. Gray components represent known regulators not measured here. d–d’. Left: Comparison of models using CCP or CCP-inference features as linear or non-linear predictors of transcriptional output. Models are ranked by held-out predictive performance using expected log pointwise predictive density (ELPD) and R². asympt: asymptotic; ccp-feats CCP features; cens censored. Right: Posterior predictive distributions of the best-performing model compared with observed data. Panels d/d’ show cycles 9/10, respectively. e Mean interphase dynamics of Pol-II-S5p, Pol-II-S2p, H3K27ac, Pou5f3, Nanog, H2B, PCNA and DAPI for deep cells across division cycles 7-12. Error bars, standard deviation. f Measured versus predicted Pol-II-S2p levels for interphase cells with CCP held constant. S phase was divided into six equal strata, and multilinear regression was applied within each bin. Colors indicate density; the red line marks equality. f’ Regression coefficients for each measured ZGA-associated factor across interphase bins. Gray circle: outlier; dashed line: zero. g Measured versus predicted Pol-II-S2p levels for four held-out embryos using the best-performing cycle-specific models. Black lines indicate equality. g’ Measured and predicted mean nuclear Pol-II-S2p in a cycle 11 embryo. Excluded nuclei and artifacts are shown in gray; boxes indicate zoom-ins. h Representative cycle 11 embryo stained for Pol-II-S2p. White boxes indicate the exemplary nuclei (nuc) shown in (h’). h’ Exemplary nuclei, indicated in h, stained with Pol-II-S2p, PCNA, Pou5f3, H3K27ac and Nanog antibodies. Scale bars 25 µm in h and 10 µm in (h’). In b and f’, center lines: medians; boxes: 25th−75th percentiles; whiskers: 1.5× interquartile range. Data in this figure is the same as in Fig.1: N = 1 experiment, n = 212 embryos. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig4_HTML.webp?md5=7ffa10abdb24fded34a9e06f917690a4",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77784-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Max Hess; Marvin F. Wyss; Edlyn Wu; Gian-Marco Schaniel; Joel Lüthi; Chiara Rebagliati; et al.. Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.. DOI: 10.1038/s41467-026-77784-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_MOESM1_ESM.pdf?md5=a086c8a642332560703d1e236fc22df8",
+            "license": "CC BY",
+            "sha256": "a133a3cb06689d4fa79581bee7b0ccb519d3b073ce5d1d5e605379e9e3d65a59",
+            "status": "downloaded_private",
+            "bytes": 4974082,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 10,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_MOESM2_ESM.pdf?md5=4a2c2cddfd0e87c925bd59242eece455",
+            "license": "CC BY",
+            "sha256": "14873752dd2be7e8e74f9674ed4632a591d3ba0ba652be1d372ff1983b107e4f",
+            "status": "downloaded_private",
+            "bytes": 106327,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 3,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_MOESM3_ESM.pdf?md5=ba28322974edbbb26bbf0743d17c49b0",
+            "license": "CC BY",
+            "sha256": "e7e4c71b4e4ef61a4519efeefd91b5d35950b59aa910b91e1bd1083dcd0c9fe7",
+            "status": "downloaded_private",
+            "bytes": 1309690,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 12,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_MOESM4_ESM.zip?md5=3ac36c3b17d07e0f7ceaf0ecab00abee",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-28T07:29:29.870053+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Max Hess; Marvin F. Wyss; Edlyn Wu; Gian-Marco Schaniel; Joel Lüthi; Chiara Rebagliati; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-28T07:29:35Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-28T07:29:36Z",
+        "url": "https://openalex.org/W7213444639",
+        "cited_by_count": 2,
+        "fwci": 5.48,
+        "citation_normalized_percentile": 0.96314597,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-28T07:29:36Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-28T07:29:36Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-29T07:29:36Z"
+        }
+      },
+      "selectionScore": {
+        "total": 54.81572985,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.81572985,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-28T07:29:55Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-6976a363e84ea117",
+      "paper": "Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.",
+      "doi": "10.1002/advs.78382",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-10-25",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78382",
+      "pmcid": "PMC13696875",
+      "pmid": "42928501",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "be1b10d8adb7b668fb2c5c115371d2add1a3ab9562c32bb8421889a6030c4737"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/PMC13696875.1.xml?md5=0829d7b3f35486828ce52da15462ea62",
+        "figures": [
+          {
+            "id": "advs78382-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "DBT promotes wound healing and re‐epithelialization. (a) Schematic of the DBT modeling procedure: a tibial distraction device applied to the left hindlimb, with the full‐thickness wound on the dorsal midline, distant from the transport gap. (b) Representative macroscopic images of wound healing in each experimental group. (c) Healing kinetics across groups, shown as wound closure rate over time. (d) Representative H&E images on post‐injury day 14. Black arrows indicate the wound edges; red arrows indicate the tips of the epithelial tongues; solid blue lines demarcate wound margins; blue dashed lines delineate the epithelial tongues. GT, granulation tissue. Scale bars: 500 µm. (e) Histomorphometric assessment of wound closure on post‐operative days 7 and 14. (f) Quantification of re‐epithelialization, expressed as the percentage of the wound area covered by neo‐epithelium. (g) Representative immunofluorescence images for keratin 14 (K14, magenta) to visualize the epithelial tongue and for Ki67 (green) to identify proliferating cells. Scale bars: 1 mm. (h) Measurement of migrating epithelial tongue length, quantified from K14‐stained sections. (i) Quantification of proliferating keratinocytes (Ki67‐positive cells) in tissue sections. (j) Representative Masson's trichrome staining of wound tissues on day 14 post‐injury, showing collagen deposition in blue. Scale bars: 2 mm. (k) Quantitative analysis of collagen deposition, expressed as the percentage of collagen‐positive area relative to the total tissue area. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g002.webp?md5=19364e0f5ff7f86376f844d6888c3c43",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "assets/pmc13696875-3fb574c1d0ff4bda.webp",
+            "sha256": "3fb574c1d0ff4bda2ff1a96410e60d1072830d2ddc074f10922e2558a6d42bab",
+            "width": 820,
+            "height": 801,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3fb574c1d0ff4bda2ff1a96410e60d1072830d2ddc074f10922e2558a6d42bab",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78382-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "DBT enhances sensory reinnervation with a selective CGRP‐dominant program. (a) Gene Set Enrichment Analysis (GSEA) dot plot displaying the top significantly enriched KEGG pathways in DBT‐treated tissues compared with controls. Key neural‐related pathways, such as Axon guidance, are prominently enriched. (b) Bar plot of significantly upregulated KEGG pathways from differential expression analysis. The Axon guidance pathway is among the most significantly upregulated, along with other pathways involved in neural structure and cytoskeletal regulation. (c) Heatmap of a neuron‐related gene set showing distinct expression patterns between DBT and control groups. Key axon guidance and neural development genes (e.g., Ntrk2, Sema3a, Nrp1, Cntn1, Ncam1) are upregulated in DBT‐treated samples. (d) Volcano plot highlighting differentially expressed genes, with all genes belonging to the Axon guidance pathway colored in orange. The top 15 most significant genes within this pathway are labeled. (e) GSEA enrichment plot for the Axon guidance pathway (KEGG: rno04360). (f) Representative TUBB3 immunofluorescence images on postoperative days 3 and 7. Scale bars: 1 mm. (g) Quantification of TUBB3+ nerve‐fiber area. (h) Dual immunofluorescence for TUBB3 and CGRP on day 3. Scale bars: 500 µm. (i) Quantification of CGRP fluorescence. (j) ELISA measurement of CGRP levels in day‐3 wound lysates. (k) ELISA measurement of SP levels in day‐3 wound lysates. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g001.webp?md5=b127d550c250da1103d66fae328177c2",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "assets/pmc13696875-c361f6bbd637a41c.webp",
+            "sha256": "c361f6bbd637a41c04f8789c168e8cf6eb7ea27b9151f990c35569380a9dae68",
+            "width": 820,
+            "height": 876,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c361f6bbd637a41c04f8789c168e8cf6eb7ea27b9151f990c35569380a9dae68",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78382-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "DBT broadly remodels the wound immune landscape and biases myeloid cells toward pro‐resolution states. (a) UMAP visualization of all cells from wound tissues, colored by major immune and stromal cell types. (b) Stacked bar plot showing the proportional abundance of each cell type across DBTC and DBT groups. (c) UMAP projection of macrophage subsets from DBTC and DBT groups, annotated by refined macrophage subpopulations based on key marker genes and dynamic states. (d) Compositional analysis of macrophage subsets across DBTC and DBT groups. DBT treatment increases the proportion of Arg1+/Apoe+ pro‐resolution macrophages while decreasing inflammatory subsets. (e) Volcano plot of differentially expressed genes in Arg1+ macrophages between DBT and control groups. (f) Volcano plot displaying differentially expressed genes in S100a8+ inflammatory macrophages between DBT and control groups. (g) Monocle 3 pseudotime ordering of macrophages from DBT and DBTC wounds on a shared UMAP embedding. Colors indicate pseudotime. The root was placed in the S100a8+ inflammatory subset (see Methods). (h) Density distribution of inflammatory and pro‐resolution macrophage signature scores across macrophage subpopulations. (Left) Density plot of M1 macrophage signature scores overlaid on the macrophage UMAP embedding. High‐density regions correspond to the spatial localization of S100a8+ inflammatory macrophages. (Right) Density plot of M2 macrophage signature scores. High‐density regions align with the distribution of Arg1+/Apoe+ pro‐resolution macrophages. (i) Dot plot showing expression of key inflammatory and pro‐resolution signature genes across refined macrophage subpopulations. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g006.webp?md5=25710ca682df2f945c50d36d68c41259",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78382-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "DBT reshapes immune‐cell dynamics and accelerates inflammatory resolution. (a) Representative flow cytometry plots showing CD86 and CD206 expression in wound macrophages from DBTC and DBT groups at days 3 and 7. (b) Quantification of CD206+ macrophages at days 3 and 7. (c) Quantification of CD86+ macrophages at days 3 and 7. (d) Representative flow cytometry plots of Ly6G+ neutrophils at days 3 and 7. (e) Quantification of neutrophil frequencies at days 3 and 7. (f) Representative immunofluorescence images of wound sections stained for CD86 (red) and CD206 (green) at day 7 in Control, DBTC, and DBT groups. Nuclei were counterstained with DAPI (blue). (g) Quantification of CD86 fluorescence intensity at day 7. (h) Quantification of CD206 fluorescence intensity at day 7. (i) Representative immunofluorescence images of Ly6G+ neutrophils (green) at day 7. (j) Quantification of Ly6G fluorescence intensity at day 7. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g004.webp?md5=70528292c7e70597f4539171d736c61b",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78382-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Rat DRG‐derived signals promote macrophage transition toward a pro‐resolution phenotype and modulate inflammatory output in vitro. (a) Schematic illustration of the DRG–macrophage co‐culture system. (b) qPCR analysis of neuropeptide‐related gene expression in DRG neurons, including Calca (CGRP), Grp, Adcyap1 (PACAP), and Tac1 (SP). (c) ELISA quantification of CGRP and SP levels in culture supernatants from control and NGF‐stimulated DRG neurons. (d) Representative flow‐cytometry plots showing macrophage phenotypes based on CD86 (inflammatory) and CD206 (pro‐resolution) expression under control conditions, DRG‐conditioned medium (DRG CM), DRG co‐culture, DRG/NGF co‐culture, and DRG co‐culture treated with the CGRP receptor antagonist Olcegepant (Olc). (e) Quantification of CD206+ macrophage frequencies across conditions. (f) Representative immunofluorescence images of macrophages stained for CD206 (green) and CD86 (red) under the indicated co‐culture conditions. Nuclei were counterstained with DAPI (blue). (g, h) Quantification of CD206 (g) and CD86 (h) average fluorescence intensity. (i, j, k) ELISA measurement of TNF‐α (i), IL‐1β (j), and IL‐10 (k) levels in co‐culture supernatants. (l, m, n) qPCR analysis of macrophage inflammatory gene expression, including Il6 (l), Tnf (m), and Il10 (n). Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g005.webp?md5=d644abe3ddf6104e300b9d09c56c3188",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78382-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "TRPV1+ sensory denervation abolishes DBT‐mediated wound healing and neuro–immune remodeling in vivo. (a, b) Representative gross image of full‐thickness skin wounds at days 0, 6, 10, and 14 in Control, CAP, CAP+DBTC, and CAP+DBT groups (a), with corresponding H&E‐stained sections showing wound edge and center regions (b). (c) Time‐course quantification of macroscopic wound closure. (d) Quantification of wound closure percentage at days 7and 14. (e) The percentage of wound re‐epithelialization was determined by histomorphometric analysis of H&E‐stained sections. (f) Representative immunofluorescence images of wound sections stained for K14 (magenta) and Ki‐67 (green), with nuclei counterstained by DAPI (blue). (g) Measurement of the migrating epithelial tongue length, quantified from K14‐stained sections. (h) Quantification of Ki‐67–positive keratinocytes. (i) Quantitative analysis of collagen deposition was performed on Masson's trichrome‐stained sections. (j) Representative immunofluorescence images showing TUBB3 (green) and CGRP (red) expression in wound tissue. (k, l) Quantification of TUBB3+ (k) and CGRP (l) fluorescence intensity. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated. CAP, rats pretreated with capsaicin to chemically ablate TRPV1 + peripheral sensory fibers; this manipulation removes an afferent population and is not a manipulation of mechanotransduction. Scale bars: 2 mm or 1 mm (overview), 500 or 200 µm (magnified images).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g007.webp?md5=f4733bd0b01c075c59cf5a3af581d1d0",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78382-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "TRPV1+ sensory denervation disrupts immune‐cell dynamics and impairs pro‐resolution macrophage transition during wound healing. (a) Representative flow cytometry plots showing time‐course changes in CD86+ macrophages in CAP+DBTC and CAP+DBT groups. (b) Representative flow cytometry plots showing time‐course changes in CD206+ macrophages in CAP+DBTC and CAP+DBT groups. (c) Quantification of CD86+ and CD206+ macrophage frequencies across the healing timeline. (d) Representative immunofluorescence images of macrophages stained for CD86 (red) and CD206 (green) at day 7 across sham, CAP, CAP+DBTC, and CAP+DBT groups, with enlarged views shown below. (e, f) Quantification of CD86 (e) and CD206 (f) fluorescence intensity in day‐7 wound tissue. (g) Representative flow cytometry plots of Ly6G+ neutrophils across the healing timeline. (h) Quantification of neutrophil frequencies across the healing timeline. (i) Representative Ly6G immunofluorescence images at day 7 illustrating neutrophil distribution across groups. (j) Quantification of Ly6G fluorescence intensity at day 7. Data are presented as mean ± s.d.; ns, not significant; exact P values are indicated. Scale bars: 1 mm (overview), 500 or 200 µm (magnified images).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-g008.webp?md5=86ca532965cd1c19cb14c6102302d463",
+            "articleURL": "https://doi.org/10.1002/advs.78382",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al.. Mechanical Distraction Engages a Neuro-Immune Program to Drive Regenerative Soft-Tissue Healing in Ilizarov Bone Transport.. DOI: 10.1002/advs.78382. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78382-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0001",
+            "label": "Supporting File 1: advs78382‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s003.docx?md5=a5eb769fc902e61f824e27dbb94cebd5",
+            "license": "CC BY",
+            "sha256": "c5a0b68cab801d55e34587103f0eacaccc819c62221a0d7a1e9b8d12c4dbb1da",
+            "status": "downloaded_private",
+            "bytes": 3537505,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0002",
+            "label": "Supporting File 2: advs78382‐sup‐0002‐TableS1.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s004.xlsx?md5=f646062c930e10dcda923f5ac3a404c9",
+            "license": "CC BY",
+            "sha256": "d18fc996fc886e190e479ff7e1a85141842dea7ad3df79583bdcc1c25faa3d52",
+            "status": "downloaded_private",
+            "bytes": 6277,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0003",
+            "label": "Supporting File 3: advs78382‐sup‐0003‐TableS2.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s005.xlsx?md5=6d438a7850fe8d4681db928ac55fa91f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0004",
+            "label": "Supporting File 4: advs78382‐sup‐0004‐TableS3.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s006.xlsx?md5=89595d5f8fe0447f6b42e365996962fb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0005",
+            "label": "Supporting File 5: advs78382‐sup‐0005‐TableS4.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s001.xlsx?md5=bd469ce69e744e4afd3aae5f6927d0b2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78382-supitem-0006",
+            "label": "Supporting File 6: advs78382‐sup‐0006‐TableS5.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13696875.1/ADVS-9999-e78382-s002.docx?md5=213c309c487674cd735d41b5a83b51dc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-28T07:29:50.380863+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yueliang Zhu; Jiayu Chen; Xuehuan Wen; Kaijia Tang; Ling Gao; Chenxing Wang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-28T07:29:40Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-28T07:29:53Z",
+        "url": "https://openalex.org/W7223570608",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.83791188,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-28T07:29:53Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-28T07:29:53Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-29T07:29:53Z"
+        }
+      },
+      "selectionScore": {
+        "total": 54.1895594,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.1895594,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-28T07:29:55Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -162774,6 +164228,30 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-a791f21de31331a8": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-280bc811687221cc": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-2a512b41f75180b5": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-6976a363e84ea117": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -164392,7 +165870,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-27T06:58:32Z",
+  "generatedAt": "2026-10-28T07:29:56Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -164626,18 +166104,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-28T07:28:24Z",
-    "updatedAt": "2026-10-28T07:28:25Z",
+    "updatedAt": "2026-10-28T07:29:57Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 45,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

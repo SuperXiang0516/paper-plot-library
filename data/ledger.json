@@ -93,9 +93,47 @@
         "10.3389/fgene.2026.1833788",
         "10.7150/ijbs.134478"
       ]
+    },
+    "2026-10-28": {
+      "newDOIs": [
+        "10.1002/advs.78382",
+        "10.1002/advs.78424",
+        "10.1038/s41467-026-77784-7",
+        "10.1038/s42003-026-10500-9"
+      ]
     }
   },
   "candidates": {
+    "10.1002/advs.78382": {
+      "checkedAt": "2026-10-28T07:29:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s42003-026-10500-9": {
+      "checkedAt": "2026-10-28T07:29:49Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-10-28T07:29:42Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.78424": {
+      "checkedAt": "2026-10-28T07:29:40Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s41467-026-77784-7": {
+      "checkedAt": "2026-10-28T07:29:36Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.34133/csbj.0191": {
       "checkedAt": "2026-10-27T06:58:30Z",
       "status": "source_confirmed",
@@ -151,61 +189,6 @@
         "updatedAt": "2026-10-27T06:58:27Z"
       }
     },
-    "10.1038/s42003-026-10500-9": {
-      "checkedAt": "2026-10-27T06:58:19Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s42003-026-10500-9",
-        "metadataHash": "d14c66e66026e5d7126dbfd49465eef547bed0de347b038d4c7244fb05747168",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/PMC13650157.1.xml?md5=7b95c3414519c59b324d3bceeac63e3c",
-          "license": "CC BY",
-          "figures": [
-            {
-              "height": 2093,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig2_HTML.webp?md5=fb35ddb05c07851a84654e53ae250df9",
-              "assetSHA256": "88375c92d2552667f33aa6393b2d00b77b75b11917e534de0d335dca51a2b772",
-              "id": "Fig2",
-              "sha256": "88375c92d2552667f33aa6393b2d00b77b75b11917e534de0d335dca51a2b772",
-              "label": "Fig. 2",
-              "width": 1600,
-              "asset": "assets/pmc13650157-88375c92d2552667.webp",
-              "license": "CC BY",
-              "captionHash": "94de3d90a6fc7d8ddc5cc0c3e2c4a7bab6810be51b05767c10d0607a8f8c8b0b"
-            },
-            {
-              "height": 2014,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13650157.1/42003_2026_10500_Fig3_HTML.webp?md5=6c808bdba12ee48eae433a7ddc29ddc1",
-              "assetSHA256": "595743216acc50e39a215871bc1cfbe4887b6f9f85dc0d458493f67d0e579ab9",
-              "id": "Fig3",
-              "sha256": "595743216acc50e39a215871bc1cfbe4887b6f9f85dc0d458493f67d0e579ab9",
-              "label": "Fig. 3",
-              "width": 1600,
-              "asset": "assets/pmc13650157-595743216acc50e3.webp",
-              "license": "CC BY",
-              "captionHash": "15fc26e76d78ea98abf44fca99567bfb88d00559751987c3051ddb62c4e9d56a"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-280bc811687221cc",
-          "doi": "10.1038/s42003-026-10500-9",
-          "paper": "Prenatal cell-free DNA methylome detects association with autism and maternal obesity.",
-          "journal": "Communications biology",
-          "date": "2026-06-22",
-          "year": "2026",
-          "pmcid": "PMC13650157",
-          "pmid": "42331993",
-          "paperURL": "https://doi.org/10.1038/s42003-026-10500-9"
-        },
-        "updatedAt": "2026-10-27T06:58:17Z"
-      }
-    },
     "10.1111/acel.70709": {
       "checkedAt": "2026-10-27T06:58:11Z",
       "status": "source_confirmed",
@@ -217,61 +200,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1038/s41467-026-77784-7": {
-      "checkedAt": "2026-10-27T06:57:27Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-77784-7",
-        "metadataHash": "01661b7b6285d97555ab348e05b12d598c3160f1e6500a855e88258091ca8245",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/PMC13680386.1.xml?md5=db1e7903d4638d40f50dc52243107da2",
-          "license": "CC BY",
-          "figures": [
-            {
-              "height": 1766,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig1_HTML.webp?md5=6b9aa245893b9062d011b7225084bfa9",
-              "assetSHA256": "0598885ebd716bab901548b60bf5abb3e740b7f74bd587735d9b3890904b8c78",
-              "id": "Fig1",
-              "sha256": "0598885ebd716bab901548b60bf5abb3e740b7f74bd587735d9b3890904b8c78",
-              "label": "Fig. 1",
-              "width": 1600,
-              "asset": "assets/pmc13680386-0598885ebd716bab.webp",
-              "license": "CC BY",
-              "captionHash": "fe4c1f94855007eb4600771dc1708e7c9d6a82433130bafc12d99552429d86a3"
-            },
-            {
-              "height": 1754,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13680386.1/41467_2026_77784_Fig2_HTML.webp?md5=6f8d71af82b8501753377be2e7805125",
-              "assetSHA256": "1e29a3f888f8cf5b259406c239ff06ff6bce5c81ebfa0d6fdbe63114e11cb221",
-              "id": "Fig2",
-              "sha256": "1e29a3f888f8cf5b259406c239ff06ff6bce5c81ebfa0d6fdbe63114e11cb221",
-              "label": "Fig. 2",
-              "width": 1600,
-              "asset": "assets/pmc13680386-1e29a3f888f8cf5b.webp",
-              "license": "CC BY",
-              "captionHash": "0c559d3522e01f71babd7579c850147343f81801ffaa3d91255a95273b5152b8"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-2a512b41f75180b5",
-          "doi": "10.1038/s41467-026-77784-7",
-          "paper": "Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells.",
-          "journal": "Nature communications",
-          "date": "2026-09-17",
-          "year": "2026",
-          "pmcid": "PMC13680386",
-          "pmid": "42897187",
-          "paperURL": "https://doi.org/10.1038/s41467-026-77784-7"
-        },
-        "updatedAt": "2026-10-27T06:57:27Z"
-      }
     },
     "10.1093/bioinformatics/btag745": {
       "checkedAt": "2026-10-27T06:54:55Z",
@@ -290,12 +218,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-10-27T06:54:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41467-026-74318-z": {
       "checkedAt": "2026-10-27T06:54:35Z",
@@ -13537,25 +13459,20 @@
   "dailyCollectionSession": {
     "maxRequests": 1800,
     "maxBatches": 36,
-    "dailyNewCount": 0,
-    "requests": 0,
+    "dailyNewCount": 4,
+    "requests": 45,
     "startedAt": "2026-10-28T07:28:24Z",
     "aiAttempts": 0,
     "maxSeconds": 2700,
-    "updatedAt": "2026-10-28T07:28:25Z",
+    "updatedAt": "2026-10-28T07:29:57Z",
     "status": "active",
-    "elapsedSeconds": 2,
+    "elapsedSeconds": 94,
     "uncertainAiAttempts": 0,
     "batchCount": 1,
     "maxAiAttempts": 165,
     "date": "2026-10-28",
     "version": 1,
     "endReason": "",
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-10-28T07:28:25Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }
