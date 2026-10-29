@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-28",
+  "checkedAt": "2026-10-29",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -114764,6 +114764,1738 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-18eaa51c22dc9c0f",
+      "doi": "10.3389/fnut.2026.1849329",
+      "paper": "Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.",
+      "journal": "Frontiers in nutrition",
+      "date": "2026-08-24",
+      "year": "2026",
+      "pmcid": "PMC13547064",
+      "pmid": "42707340",
+      "paperURL": "https://doi.org/10.3389/fnut.2026.1849329",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2296-861X",
+      "eissn": "2296-861X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "07a117a2a2ec45859f2098665fddc8ea5791b20b6666b0ca8fae0aacb825f173"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/PMC13547064.1.xml?md5=a8aac87f9cdfdb5fb62c0be56b9bde60",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Metabolic differences between controls and F0, using OPLS-DA, RF, and SVM. (A) OPLS-DA score plot with 95% confidence ellipses; (B) Top contributing metabolites by VIP score (OPLS-DA), mean decrease in Gini (RF), and SVM coefficient; (C) Violin plots of representative discriminating metabolites (lactic acid, citric acid, tiglylglycine, and β-hydroxybutyrate). Lactic acid, citric acid, and tiglylglycine emerge consistently across all three models.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g001.webp?md5=aebf86469ba9d60835e99b87e0bf79f8",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "assets/pmc13547064-1a4acc80e6cbbaee.webp",
+            "sha256": "1a4acc80e6cbbaeec1ff368bb1a62ea02234770af366ae06e83c89ac28de5894",
+            "width": 1535,
+            "height": 1935,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1a4acc80e6cbbaeec1ff368bb1a62ea02234770af366ae06e83c89ac28de5894",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Metabolic differences between controls and F1, using OPLS-DA, RF, and SVM. Panels (A–B) as in Figure 1; (C) violin plots of representative discriminating metabolites (C14:1, C18:1, citric acid, and lactic acid).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g002.webp?md5=fc961d38ce5178667ef9989567fc5ea6",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Metabolic differences between controls and F2, using OPLS-DA, RF, and SVM. Panels (A–B) as in Figure 1; (C) Violin plots of representative discriminating metabolites (citric acid, C18:1, valine, and lactic acid). Valine is displayed here as a leading random-forest discriminant (mean-decrease-in-Gini rank 2) for this comparison.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g003.webp?md5=9aa184aa2a5b702bec284d6e7e503013",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "assets/pmc13547064-1a9cfd1a7f51c319.webp",
+            "sha256": "1a9cfd1a7f51c3190d649215bc5015b45f230cb663d4d24f2dfb7694ecf874be",
+            "width": 1535,
+            "height": 1759,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1a9cfd1a7f51c3190d649215bc5015b45f230cb663d4d24f2dfb7694ecf874be",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "PLS-DA scores summarising the relationship between samples and their group classification (control, F0, F1, and F2), with model quality indicators (R2X, R2Y, and Q2) and permutation-based significance shown on the plot, alongside the observation diagnostics plot used to screen for outliers.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g004.webp?md5=172ab3bb800b768ff35888367b24a936",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Metabolic differences between F0 and F1, using OPLS-DA, RF, and SVM. Panels (A–B) as in Figure 1; (C) Violin plots of representative discriminating metabolites (C18:1, succinic acid, arginine, and valine). This adjacent-stage contrast is the most demanding comparison and yields the most conservative validation metrics (Table 3).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g005.webp?md5=62e644273cd6ce054aff253d577f25f4",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Metabolic differences between F0 and F2, using OPLS-DA, RF, and SVM. Panels (A–B) as in Figure 1; (C) violin plots of representative discriminating metabolites (C18:1, vanillylmandelate, β-hydroxybutyrate, and valine).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/fnut-13-1849329-g006.webp?md5=e76a6cb2619eb887b8086f1a47680c91",
+            "articleURL": "https://doi.org/10.3389/fnut.2026.1849329",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al.. Machine learning-based identification of targeted metabolomic biomarkers for early diagnosis and fibrosis-stage discrimination in metabolic dysfunction-associated steatotic liver disease.. DOI: 10.3389/fnut.2026.1849329. Copyright holder: Abdelsattar, Al-Amodi, Kamel, Nazih, Flemban, Abdelmegeed, Ahmed, Darwish, Sakr, Abdelgawad, Abdelgawad, Moaz, Abozeid, Bedair, Abozeid, Abdelkreem and Zween. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/Table_1.DOCX?md5=5e2a39317add0e8ad757e66f48482141",
+            "license": "CC BY",
+            "sha256": "c6d5582b2b739afb811a946f9b8119a497d964065d0988ca92e7205966351b47",
+            "status": "downloaded_private",
+            "bytes": 435655,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "SM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/Table_2.DOCX?md5=b350522c6ebb59a25daa0295e869338a",
+            "license": "CC BY",
+            "sha256": "a6699017c546129f6f96b912cad1ad084da63a96ab5c7485aa11f886892d48a2",
+            "status": "downloaded_private",
+            "bytes": 49860,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "SM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13547064.1/Table_3.DOCX?md5=3805d9e9b78f0daa652ab31d1eb8b27c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-29T07:43:32.599138+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shimaa Abdelsattar; Hiba S. Al-Amodi; Hala F. M. Kamel; Mahmoud Nazih; Arwa Fadel Flemban; Sabry M. Abdelmegeed; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "农林科学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-29T07:43:35Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-29T07:43:35Z",
+        "url": "https://openalex.org/W7204074304",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.63003931,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-29T07:43:35Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-29T07:43:35Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-30T07:43:35Z"
+        }
+      },
+      "selectionScore": {
+        "total": 25.15019655,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 12,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.15019655,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-29T07:43:42Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-0b718e1732802282",
+      "doi": "10.1002/advs.77986",
+      "paper": "DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-09-27",
+      "year": "2026",
+      "pmcid": "PMC13616282",
+      "pmid": "42801560",
+      "paperURL": "https://doi.org/10.1002/advs.77986",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "603f633e8bb1aa90076de6d167089b145f27ff968389812ebc9644d01049d18a"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/PMC13616282.1.xml?md5=d04328e6e9ea6859f678b24b15534a2a",
+        "figures": [
+          {
+            "id": "advs77986-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g002.webp?md5=b17df256296a5bb1c504799a26a07b68",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "link_only",
+            "downloadStatus": "not_permitted_or_unresolved",
+            "limitations": []
+          },
+          {
+            "id": "advs77986-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Validation and benchmarking of the DUET‐seq platform for simultaneous scRNA‐seq and scATAC‐seq. (a‐c) Violin plots comparing the performance of DUET‐seq against other methods. Metrics include (a) number of genes detected per cell, (b) number of UMIs per cell, and (c) number of unique ATAC fragments per cell. Boxplots within violins show the interquartile range with the median. The whiskers extend up to 1.5 times the interquartile range; the outliers are not displayed. Median numbers of detected genes are shown at the top of each box. (d) Heatmap showing Spearman correlation between transcriptome profiles generated by different approaches. All pairwise correlations were significant (two‐sided p < 0.001). Color intensity represents the Spearman correlation coefficient. (e) Representative genome browser tracks showing the aggregated signal of single cells (ATAC and RNA) of HEK293T cells from DUET‐seq and ISSAAC‐seq at a representative locus chr11: 65,600,000‐66,000,000. ATAC‐seq signals from 300 randomly selected single cells are shown at the bottom. (f) Representative genome browser tracks showing the aggregated signal of single cells (ATAC and RNA) of NIH/3T3 cells from DUET‐seq and 10x Multiome at a representative locus chr11: 68,900,000‐69,000,000. ATAC‐seq signals from 200 randomly selected single cells are shown at the bottom.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g003.webp?md5=6d46e60882266830c60b83ba5ea924cf",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77986-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "DUET‐seq resolves adult mouse brain cell types and enables peak‐to‐gene linking from paired measurements. (a) Violin plots comparing QC metrics (genes detected, UMIs, and unique ATAC fragments) between DUET‐seq and a public 10x Multiome brain dataset. Boxplots within violins show the interquartile range with the median. The whiskers extend up to 1.5 times the interquartile range; the outliers are not displayed. Median numbers of detected genes are shown at the top of each box. (b) Scatter plots demonstrating high reproducibility (Spearman's ρ) between two independent biological replicates for both RNA (left) and ATAC (right) modalities, and the corresponding two‐sided p‐value are shown on each panel. (c) UMAP projections of mouse whole brain cells, clustered and annotated based on RNA (left) and ATAC (right) profiles. (d) Spearman correlation coefficient between cell types in RNA (top right) and ATAC (bottom left) datasets. For RNA data, the correlation was calculated using the average gene expression per cell type, while the ATAC data correlation was calculated based on the average peak counts per cell type. All pairwise correlations were significant (two‐sided p < 0.001). Color intensity represents the Spearman correlation coefficient. (e) Dot plot illustrating the expression of canonical marker genes (RNA) across cell types. Dot size indicates the percentage of cells expressing the gene; color intensity represents the average expression level. (f) Genome browser tracks showing aggregated ATAC‐seq signal at cell‐type‐specific marker gene loci (gene activity) for major brain cell populations. (g) Representative example of peak‐to‐gene linkage analysis in mouse brain data. Loops denote the correlation of peak accessibility and RNA expression at the Cst3 locus, loop height represents the significance of the correlation. Bulk H3K27ac CUT&Tag signal is shown for orthogonal validation. (h) Feature plots showing gene expression level (left), gene activity score (middle), and DORC score (right) for Cst3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g004.webp?md5=817f9a2b6ad330a8332dce52f084aeee",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "assets/pmc13616282-369ea90d7a7ff4fa.webp",
+            "sha256": "369ea90d7a7ff4fa862ec5e1d461d41c7a6a875705f8cd676ceccc56cf7babc7",
+            "width": 820,
+            "height": 806,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "369ea90d7a7ff4fa862ec5e1d461d41c7a6a875705f8cd676ceccc56cf7babc7",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77986-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Joint single‐cell chromatin and transcriptome profiling of mouse testis development. (a) Schematic overview of mouse testis development across six key postnatal time points (P7, P14, P21, P28, P35, and 10 weeks). Nuclei were processed by DUET‐seq to jointly profile scRNA‐seq and scATAC‐seq from the same nucleus. (b) UMAP projections of the integrated testis dataset colored by cell type annotation. Projections are shown based on RNA modality (left) and ATAC modality (right). PMC denotes peritubular myoid cells. (c) Stacked bar plot visualizing the proportional changes in cell type composition across the six developmental time points. (d‐e) Dot plots showing marker gene expression (d) and inferred gene activity based on chromatin accessibility (e) across cell types (y‐axis). Dot size is proportional to the percentage of cells expressing the gene, and color intensity represents the average scaled expression or activity. (f) Heatmap shows normalized gene expression (left) and chromatin accessibility (right) for 12,462 significantly correlated peak‐gene pairs. Each row represents a putative positively associated peak–gene pair. The top annotation bar indicates the corresponding cell types involved in testis development. (g) Genome browser view of Prm2, Sox9, and Col3a1 loci showing aggregated ATAC signal and peak‐to‐gene associations. Accessible peaks and linked peaks are shown for each gene. (h) UMAP visualization of RNA (top) and ATAC (bottom) profiles from 2,726 Sertoli cells (left). (i) Heatmap of aggregated ATAC signals across the top 200 cluster‐specific peaks for Sertoli ATAC subclusters (A1–A4). (j) The top de novo motifs enriched in the top 1,000 cluster‐specific peaks of Sertoli ATAC subclusters A1, A2, A3 and A4. Binomial tests were used to calculate the p‐value.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g007.webp?md5=cb11c79c47640f501977bf1c9949e045",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "assets/pmc13616282-b2f700a9745c34a3.webp",
+            "sha256": "b2f700a9745c34a3038459054bfd273d2ae33072ee0edd20a14851ee64aca3b2",
+            "width": 820,
+            "height": 966,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b2f700a9745c34a3038459054bfd273d2ae33072ee0edd20a14851ee64aca3b2",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77986-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Epigenetic priming and regulatory network switching during spermatogonial lineage progression. (a) Heatmap of differentially expressed genes (DEGs) in spermatogonia (SPG) between early and late stages (left). Bar plot (right) shows Gene Ontology (GO) enrichment for terms related to self‐renewal (upregulated in early) and differentiation (upregulated in late). (b) Dot plots showing marker gene expression (top, RNA) and gene activity (bottom, ATAC) for defined SPG sub‐clusters. (c) UMAP visualization of SPG sub‐clusters (left, colored by cell type) and the inferred differentiation trajectory (right, colored by pseudotime). (d) Ridge plot showing the density distribution of spermatogonial cells along the inferred pseudotime trajectory, stratified by developmental time points (P7–10 W). (e) Heatmap showing gene expression (RNA) and chromatin accessibility (ATAC) along the pseudotime trajectory. Each row represents a putatively associated gene–peak pair. Top annotation bars indicate diffusion pseudotime and cell type. Columns are sorted by pseudotime. (f) Scatter plot with fitted lines shows the expression pattern for each group of lineage‐associated genes along the trajectory. The shaded areas around the fitted smooth line represent the error bands, indicating the 95% confidence interval. (g) Enriched GO terms for driver gene sets upregulated at stage 1 and stage 2 of the SPG trajectory. Dot size denotes enrichment ratio and color reflects significance. (h) Line plots of key differentiation genes showing that chromatin accessibility (ATAC, blue) changes are observed earlier than gene expression (RNA, red) along pseudotime. (i) Heatmap of TF‐DORC association scores calculated by FigR, highlighting candidate TFs (columns) predicted to be associated with specific DORCs (rows) during SPG differentiation. (j) Gene Regulatory Network visualization showing predicted associations between key TFs and target DORCs/genes, representing the inferred regulatory network during SPG differentiation. (k) UMAP projections of multimodal data for key TFs identified in (i), showing gene expression (RNA), TF activity inferred from motif accessibility, and motif accessibility (ATAC). (l) In‐silico perturbation of Crem using CellOracle. Vector‐field plots depict predicted changes in developmental trajectories upon TF knockout compared with control.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g006.webp?md5=8c3f7febf2fcb83f6b4b398b3a731823",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77986-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Chromatin accessibility dynamics accompany transcriptional silencing during spermiogenesis and highlight candidate regulatory factors. (a) UMAP visualization of post‐meiotic spermatid sub‐clusters colored by cell type (left). Bar plot (right) shows the cellular proportions of these subtypes across the six developmental time points. (b) Trajectory inference and transcriptional dynamics during spermiogenesis. Left: UMAP projection showing the inferred continuous pseudotime trajectory of spermatid differentiation, rooted at the early round spermatid stage. Right: RNA velocity streamplots showing the predicted direction of cell state transitions. (c) Dual‐modality heatmap of gene expression (RNA) and chromatin accessibility (ATAC) along the spermiogenesis pseudotime. The heatmap illustrates a temporal divergence between transcriptional downregulation and chromatin accessibility dynamics, a phenomenon referred to here as “chromatin inertia,” in which accessibility changes are observed to persist beyond transcriptional silencing. (d) Scatter plots with fitted smooth lines showing expression patterns of lineage‐associated gene groups along the trajectory. Shaded areas indicate 95% confidence intervals. (e) Enriched GO terms for gene sets upregulated at stage 1 and stage 2 of the spermiogenesis trajectory. Dot size denotes enrichment ratio and color reflects significance. (f) Representative examples illustrating a temporal offset between modalities, where chromatin accessibility at putatively associated peaks is observed beyond the corresponding mRNA expression along pseudotime. (g) Scatter plot of in silico TF perturbation scores, ranking transcription factors by their predicted influence on the RS_Early state (x‐axis) vs. the ES_Early state (y‐axis). Jund was ranked highest based on predicted influence scores. (h) Visualization of an inferred gene regulatory network connecting key TFs to predicted target genes, representing a putative regulatory framework associated with spermiogenesis. (i.) In‐silico perturbation of Jund using CellOracle. Vector‐field plots depict predicted changes in developmental trajectories upon TF knockout compared with control.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-g005.webp?md5=3d1e973467544f956f8e8fbf32277f13",
+            "articleURL": "https://doi.org/10.1002/advs.77986",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al.. DUET-seq: An Open-Source Droplet Platform for High-Fidelity Joint Chromatin and Transcriptome Profiling Reveals Temporal Regulatory Decoupling in Single Cells.. DOI: 10.1002/advs.77986. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs77986-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77986-supitem-0001",
+            "label": "Supporting File 1: advs77986‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-s002.docx?md5=f37e45a11e48854a4909522461ec2df1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "advs77986-supitem-0002",
+            "label": "Supporting File 2: advs77986‐sup‐0002‐SuppMat.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/ADVS-9999-e77986-s001.xlsx?md5=439ee8eba48df8d06cc7aa57fe526eb2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/biochengd/DUET-seq"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-29T07:43:22.910912+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/biochengd/DUET-seq",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616282.1/PMC13616282.1.xml?md5=d04328e6e9ea6859f678b24b15534a2a"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Dong Cheng; Zijun Meng; Lan Wei; Pingjing Yang; Fanfan Zhang; Zhiyi Luo; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/biochengd/DUET-seq",
+        "commit": "bd130dc6669158a5c0734db73fd829187b4ba5e2",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "02_cellline/cellline_trackplot.R",
+            "url": "https://github.com/biochengd/DUET-seq/blob/bd130dc6669158a5c0734db73fd829187b4ba5e2/02_cellline/cellline_trackplot.R",
+            "sha256": "d2c12a5a56ae2897fd73ce38ddd7a37bfbb1241bf2f4982530bcd936bf401164",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ATAC",
+                "line": 71,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "03_brain/01_Platform_Comparison_Plots.R",
+            "url": "https://github.com/biochengd/DUET-seq/blob/bd130dc6669158a5c0734db73fd829187b4ba5e2/03_brain/01_Platform_Comparison_Plots.R",
+            "sha256": "9b360df64bc8a1bab4614977a165c82e31f07c2f4c82d0ac48c69395c06522c2",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "platform_replicate",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "platform",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "replicate",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nFeature_RNA",
+                "line": 97,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nCount_RNA",
+                "line": 98,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nCount_ATAC",
+                "line": 99,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "03_brain/03_ChromVAR_Motif_Analysis.R",
+            "url": "https://github.com/biochengd/DUET-seq/blob/bd130dc6669158a5c0734db73fd829187b4ba5e2/03_brain/03_ChromVAR_Motif_Analysis.R",
+            "sha256": "60ab56852114f597ba2a4a2a9c17c8018c4a5b13ce077804961122d87e140354",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "celltype",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ATAC",
+                "line": 187,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "RNA",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "message",
+                "line": 218,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "03_brain/04_FigR_Core_Pipeline.R",
+            "url": "https://github.com/biochengd/DUET-seq/blob/bd130dc6669158a5c0734db73fd829187b4ba5e2/03_brain/04_FigR_Core_Pipeline.R",
+            "sha256": "e619db4f75836fb3220577d8be36b1652ace20cc4fc0b4032b644fe0aaf1ba37",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "RNA",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ATAC",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UMAP1",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UMAP2",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nn.index",
+                "line": 82,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "03_brain/05_FigR_Visualization.R",
+            "url": "https://github.com/biochengd/DUET-seq/blob/bd130dc6669158a5c0734db73fd829187b4ba5e2/03_brain/05_FigR_Visualization.R",
+            "sha256": "de070b508be0ea30d241a2e5d34ca87bf3b526496b4f93584c55b5677ac5d744",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "val",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "aRNA",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "RNA",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "message",
+                "line": 133,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Source unavailable: 02_cellline/correlation_analysis.ipynb (JSONDecodeError)",
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-29T07:43:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-29T07:43:28Z",
+        "url": "https://openalex.org/W7214524852",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.66066956,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-29T07:43:28Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-29T07:43:28Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-30T07:43:28Z"
+        }
+      },
+      "selectionScore": {
+        "total": 78.3033478,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.3033478,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-29T07:43:42Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "DUET-seq:开源液滴平台用于高保真联合染色质与转录组单细胞分析",
+        "summary_zh": "该资料介绍 DUET-seq,一种开源液滴微流控平台,可在同一细胞核内联合分析染色质可及性与基因表达。摘要称其结合可溶解双连接水凝胶珠与一步液滴内 RT-PCR,在 12 小时内完成文库制备,并在 HEK293T 细胞中达到约 3,200 个基因/细胞;图注展示了平台设计、条形码合成、与其它方法的基准比较、成年小鼠脑细胞类型解析及小鼠睾丸发育六个时间点的联合分析。作者代码未运行,仅做静态检查,不能视为复现验证。",
+        "learning_points": [
+          "图1展示 DUET-seq 工作流:细胞核先批量转座,再与可溶解双连接条形码水凝胶珠共封装,在单个液滴反应中联合捕获并标记 RNA 与染色质可及性。",
+          "图1说明珠内条形码通过分池连接组装:24 种 BC1、384 种 BC2 与 384 种 BC3 组合,理论上产生 3,538,944 种条形码,每个完成珠携带单一 24 nt 条形码。",
+          "图2以小提琴图比较 DUET-seq 与其它方法在每细胞基因数、UMI 数和唯一 ATAC 片段数上的表现,并用热图展示转录组 Spearman 相关。",
+          "图3展示成年小鼠脑数据与公共 10x Multiome 数据的 QC 指标比较、两个生物学重复的 RNA 与 ATAC 相关性,以及基于 RNA 和 ATAC 的 UMAP 聚类注释。",
+          "图4展示小鼠睾丸六个出生后时间点的联合单细胞分析,包括细胞类型组成变化、标记基因表达与推断基因活性,以及显著相关的 peak-gene 对热图。",
+          "摘要称在成年小鼠脑中映射超过 14,000 个顺式调控元件-基因连接,并在六个阶段约 29,000 个细胞核中分析精子发生。",
+          "静态检查仅确认存在若干 R 脚本路径与 SHA256,未执行代码,因此不能据此判断图表可复现或结果一致。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不是复现验证,不能宣称已复现或与原图一致。",
+          "输入数据列名、数据结构、图号与脚本的对应关系未在证据中明示,均属未知。",
+          "图注文本在证据中被截断,部分面板细节无法完整确认。",
+          "摘要中的性能数字(如约 3,200 基因/细胞、14,000 余连接、约 29,000 细胞核)仅为作者陈述,未由独立证据验证。",
+          "许可、期刊指标与复现结果未在证据中提供,不能推断。",
+          "证据仅列出少量脚本路径,未说明其与具体图表的映射,不能编造对应关系。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-29T07:43:48Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "836b7356a023604937903cca9b4135bdb7c11093298bc017ad6d8f23f81d5dc4",
+        "summary_fingerprint": "c57ca53e939424f87a63c7afe812a6aa95a19e67168f123d6448ea4f1c31cdf1",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-8654408aaed177cc",
+      "doi": "10.34133/csbj.0191",
+      "paper": "A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.",
+      "journal": "Computational and structural biotechnology journal",
+      "date": "2026-09-02",
+      "year": "2026",
+      "pmcid": "PMC13534803",
+      "pmid": "42688326",
+      "paperURL": "https://doi.org/10.34133/csbj.0191",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2001-0370",
+      "eissn": "2001-0370",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "526e9e7c22047ade8717700b60081680b0e2d2dbbb3bd5bf7e590af705c2a55b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/PMC13534803.1.xml?md5=80b8ab39d13399ce362200a2c5185938",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The overall structure of the KeM-DRP model, which mainly includes the following: (A) a clinical information encoder, (B) a Transformer-enhanced pathway network (Trans-PNet), (C) a clinico-genomic reconstruction module (CGRM), and (D) a genomics-guided clinical decoder (GCD).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.001.webp?md5=6c9eaae66480c87812320fac332d3455",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "assets/pmc13534803-9aa64ccbecbe3bc9.webp",
+            "sha256": "9aa64ccbecbe3bc918e9b6cdc52e572f65eb8d755d960b439bcfc1e5a6829dd2",
+            "width": 1600,
+            "height": 883,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9aa64ccbecbe3bc918e9b6cdc52e572f65eb8d755d960b439bcfc1e5a6829dd2",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Transformer-enhanced pathway network (Trans-PNet).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.002.webp?md5=e9d4284f8788d1a069deb14b0a6fd55d",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "assets/pmc13534803-6245c762c0b0d7da.webp",
+            "sha256": "6245c762c0b0d7dab5a0444ef73f88b3bd8f3535c71650c31d447f27daad2e01",
+            "width": 1599,
+            "height": 1098,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6245c762c0b0d7dab5a0444ef73f88b3bd8f3535c71650c31d447f27daad2e01",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Performance trajectories of neural network-based models over epochs across 6 evaluation metrics.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.003.webp?md5=e21bc7120fe1fbf7331b91e9979944b8",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "The results of the ablation experiments conducted to assess the contribution of each component in KeM-DRP.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.004.webp?md5=1ea310447d5ab50f05bc24fcf92ba35c",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Hyperparameter experiments on loss weight η.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.005.webp?md5=bdb55b770684ac9e53961e7415f61282",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Feature importance based on SHAP values.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.fig.006.webp?md5=11ce5628e66ee5e01e780fdecda05763",
+            "articleURL": "https://doi.org/10.34133/csbj.0191",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al.. A Knowledge-Enhanced Multimodal Framework with Genomic Reconstruction for DLBCL Drug Response Prediction.. DOI: 10.34133/csbj.0191. Copyright holder: Xiaolu Xu et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplementary 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/csbj.0191.f1.pdf?md5=a078271b83cae465fe1f6f8bc2d8d159",
+            "license": "CC BY",
+            "sha256": "ae7dd4172b3658c4775f97f603aaac8fbf1fe00caf4807d8691baf08d2217014",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 23478,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/bioinformatics-xu/KeM-DRP"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-29T07:43:36.973747+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534803.1/PMC13534803.1.xml?md5=80b8ab39d13399ce362200a2c5185938"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiaolu Xu; Yulong Li; Shuai Zheng; Chengjie Lu; Jingyi Zhou; Hongbin Lu; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/bioinformatics-xu/KeM-DRP",
+        "commit": "e7f111c7d2a2e5eca1a176297c5b48583e07c7fd",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "config_path.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/config_path.py",
+            "sha256": "fbec95921704782714a4c07848d3efd9d6c7aafe73b6cc7294474dedc8218860",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/prostate_paper/__init__.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/__init__.py",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/prostate_paper/data_reader.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "sha256": "2f1b6c1e07998a4d60e34f72d196ff3d9a4e9d10a7a33cbb9b2e6f28d0ad5886",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 246,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 50,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "index_col": 0
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 262,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t",
+                  "header": null
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 455,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 457,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 458,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 426,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": 0
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 331,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": 0
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 246,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L246"
+              },
+              {
+                "type": "io_reference",
+                "line": 50,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L50"
+              },
+              {
+                "type": "io_reference",
+                "line": 262,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L262"
+              },
+              {
+                "type": "io_reference",
+                "line": 455,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L455"
+              },
+              {
+                "type": "io_reference",
+                "line": 457,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L457"
+              },
+              {
+                "type": "io_reference",
+                "line": 458,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L458"
+              },
+              {
+                "type": "io_reference",
+                "line": 426,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L426"
+              },
+              {
+                "type": "io_reference",
+                "line": 331,
+                "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py#L331"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/prostate_paper/download_data.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/download_data.py",
+            "sha256": "ca24fad0f572155db519b9e23367083b61719d86150c6890cb7dcb6adcf2270e",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/prostate_paper/download_validation_data.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/download_validation_data.py",
+            "sha256": "2c47683cf2d02867b22f63fada4fcd92b481418c1f3b0e5db9ab3406c86c0fbc",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/prostate_paper/prepare_data_final_P1000.py",
+            "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/prepare_data_final_P1000.py",
+            "sha256": "04308d8011011e47baca055947f7e3102f11906fb10f1ed5fee458a8de668a99",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 246,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 50,
+            "url": "",
+            "readerOptions": {
+              "index_col": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 262,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t",
+              "header": null
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 455,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 457,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 458,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 426,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "response",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Tumor_Sample_Barcode",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes",
+                "line": 332,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+            "line": 331,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.8",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-29T07:43:41Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-29T07:43:41Z",
+        "url": "https://openalex.org/W7171457073",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.54983684,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-29T07:43:41Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-29T07:43:41Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-30T07:43:41Z"
+        }
+      },
+      "selectionScore": {
+        "total": 53.7491842,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.7491842,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-29T07:43:49Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "面向DLBCL药物反应预测的知识增强多模态基因组重建框架",
+        "summary_zh": "该资料介绍了一个名为KeM-DRP的知识增强多模态框架,用于弥漫性大B细胞淋巴瘤(DLBCL)的个体化药物反应预测。摘要称其通过基因-通路-生物过程层级整合生物学先验知识,并设置跨模态基因组补偿模块,从常规临床模态重建基因组相关潜在特征,再以基因组引导的自适应融合策略整合异质模态。图注显示整体结构包含临床信息编码器、Transformer增强通路网络(Trans-PNet)、临床-基因组重建模块(CGRM)与基因组引导临床解码器(GCD),另有性能轨迹图与消融实验图。作者代码未运行,仅见静态文件路径与读取语句,不能视为复现验证。",
+        "learning_points": [
+          "可从Fig.1图注了解KeM-DRP整体由临床信息编码器、Trans-PNet、CGRM与GCD四部分构成",
+          "Fig.2图注单独标示Transformer增强通路网络(Trans-PNet),可作为理解通路层级建模的入口",
+          "Fig.3图注表明存在按epoch展示的6项评价指标性能轨迹,但具体指标名称与数值未在证据中给出",
+          "Fig.4图注表明存在评估各组件贡献的消融实验,但具体组件与结果未在证据中给出",
+          "摘要提出以基因-通路-生物过程层级引入生物学先验,用于稀疏观测下的表征学习",
+          "摘要提出跨模态基因组补偿模块,从常规临床模态重建基因组相关潜在特征,以应对基因组数据缺失",
+          "摘要提出基因组引导的自适应融合策略,依据观测或重建的基因组表征动态整合多模态",
+          "静态代码观察显示数据读取涉及CSV格式的标签、分块读取、基因列表与训练/验证/测试划分文件,但未运行验证"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果可复现或与原文一致",
+          "证据未给出Fig.3中6项评价指标的具体名称、数值或坐标尺度",
+          "证据未给出Fig.4消融实验的具体组件设置与量化结果",
+          "Fig.1至Fig.4的输入尺度、图号与代码模块的对应关系未明示,属未知",
+          "摘要所述在真实世界DLBCL队列上优于基线的结论未在本次检查中独立验证",
+          "静态代码路径中出现prostate_paper目录,与DLBCL任务的关系未知,不能据此推断数据或流程对应关系",
+          "未观察到许可、期刊指标或数据可得性信息,均属未知",
+          "摘要提及的基因-通路-生物过程层级的具体知识来源与构建方式未在证据中说明",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-29T07:43:54Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "b3fe7d95a47f185ce32c5e4373f94ae2c228701925d6e0eaab1bfa34a034a6cc",
+        "summary_fingerprint": "7d12a423c9ad379639350f739d43c7d998f68f71d7e519d29d3e947574d53fcc",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -164581,6 +166313,345 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-18eaa51c22dc9c0f": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-0b718e1732802282": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-8654408aaed177cc": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 246；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 50；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 262；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 455；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 457；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 458；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 426；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py；读取行 331；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bioinformatics-xu/KeM-DRP/blob/e7f111c7d2a2e5eca1a176297c5b48583e07c7fd/data/prostate_paper/data_reader.py",
+          "observedFieldReferences": [
+            {
+              "name": "response",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Tumor_Sample_Barcode",
+              "line": 427,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "genes",
+              "line": 332,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -166199,7 +168270,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-28T07:31:19Z",
+  "generatedAt": "2026-10-29T07:43:54Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -166433,18 +168504,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-29T07:41:22Z",
-    "updatedAt": "2026-10-29T07:41:25Z",
+    "updatedAt": "2026-10-29T07:43:58Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 57,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
