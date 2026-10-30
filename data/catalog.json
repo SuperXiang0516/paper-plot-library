@@ -118683,6 +118683,633 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-a030111ac4fd9a91",
+      "paper": "Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.",
+      "doi": "10.1126/sciadv.aee3657",
+      "journal": "Science advances",
+      "date": "2026-09-30",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1126/sciadv.aee3657",
+      "pmcid": "PMC13626045",
+      "pmid": "42814817",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2375-2548",
+      "eissn": "2375-2548",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-30",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "1846078513a992809722ea16d164db554f68664436d6f35be2f8ea05aeb02793"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/PMC13626045.1.xml?md5=51c10180611c35f3b03017cc691e12db",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Model aging transcriptome using PCA clock and application of PCA clock to explain interventions.(A) PCA of aging wild-type samples in the train data from day 6 to day 18. (B) Association of PC1 with ages. (C) Biological age prediction of short-lived daf-16(mu86) mutants in this study. (D) Biological age prediction of eat-2(ad1116) mutant comparing with wild-type in GSE108263. (E) Biological age prediction of drug interventions comparing with control in GSE108263. (F) Predicted ages of germline-free fer-15(b26ts) control and fer-15(b26ts);daf-16(mu86) mutants from adult day 2 to adult day 7 in GSE122892. (G) Correlation of Z statistics of genes differentially expressed for individual drug intervention contrast, aging, and mutant in GSE108263 and this dataset. Only correlations with absolute value >0.15 are shown explicitly. Correlation matrix was clustered using the average hierarchical clustering. (H) Spearman correlation of Z statistics of DEGs for 12 M versus 6 M male for individual intervention contrast and gender contrast in male mice in GSE131901. (I) Spearman correlation of Z statistics of DEGs for 12 M versus 6 M female for individual intervention contrast in female mice in GSE131901. NS. not significant; *P <= 0.05; **P <= 0.01; ***P <= 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f1.webp?md5=7fc173a5f3b0d1f1dedd1889c0c2de81",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "assets/pmc13626045-ba2e8cd02af7df1a.webp",
+            "sha256": "ba2e8cd02af7df1af09d739cc63d1bad399ed5217f1899ca53c14e17f0e508b8",
+            "width": 1600,
+            "height": 1815,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ba2e8cd02af7df1af09d739cc63d1bad399ed5217f1899ca53c14e17f0e508b8",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Coexpression network analysis on aging and daf-16(mu86) mutant worms.(A) (Left) Dendrogram with module colors, labels, and heatmap of individual gene association with age contrasts or daf-16(mu86) and (right) schematic of module association with loss of daf-16 and aging and their possible role. Nodes are coexpression modules, and edges are associations. The color of the edges represents positive (red) or negative (blue) associations. Created in BioRender. Huai, W. (2026) https://BioRender.com/3x07ep7. (B) Association module eigengenes with selected submodules with contrast of ages, mutants, and overall age. The labels of each row indicate the numerical module numbers and the number of genes in the given module. Each column represents a binarized contrast of wild-type ages versus day 6 or daf-16(mu86) versus wild-type or overall association with ages. The numbers in the heatmap give the association significance Z statistics with the FDR estimates, which is only shown for those with FDR < 0.05. (C to E) Expression of M11, M20, and M2.4 across ages and strains. For each plot, the title shows the enrichment label for the module (top enrichment terms) and the top hub genes (ordered by decreasing kME) in each module. (F) Enrichment dotplot of module M11 and M2.4. (G) Scatterplot of module eigengene M11 with M2.4.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f2.webp?md5=9da6f03445c64812b711ea18c2037066",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Perturbation of modules by drug interventions.(A) Preservation Zsummary statistics of aging/daf-16 submodules in submodules derived from drug intervention dataset (GSE108263). (B) Enrichment of modules in genes DE at P < 0.01 in drug-treated worms or eat-2 mutants versus controls. The method is first described in Wang et al. (26). Each row represents an aging/daf-16 module with number of genes in the module and module color. Each column represents a treatment or a strain with the expected median life span extracted from original paper. Color in the heatmap indicates signed enrichment significance (−log10 of the Fisher’s exact test P value, negative and positive for down- and up-regulated genes, respectively). For each cell, the direction with lower P value (higher −log10 P value) is shown. Only those modules with least one P value <10−10 in all conditions are shown. Modules and perturbations are clustered using average linkage hierarchical clustering based on correlation of the signed significance. For each cell, the number of up- or down-regulated genes are shown for cells with P value <10−10. (C) Heatmap of GSVA scores of submodules associated with life span. X axis represents individual samples. The top panel showed the reported median life span of each condition extracted from the original paper. (D) Dot plot showing significantly enriched terms, ranked by adjusted P value, for (left) modules that are up-regulated both in interventions and during aging but down-regulated in daf-16(mu86) mutants, and (right) modules that are down-regulated both in interventions and during aging, while up-regulated in daf-16(mu86) mutants. For clarity, only the top two pathways from each gene set category (for example, GO and BP) are shown for each module. The complete enrichment table for all module is provided in table S2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f3.webp?md5=71a31ed048e649fdfc884eef8bbdbb26",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Meta-analysis on module association with life span across datasets.(A) Heatmap of association of longevity-associated modules with reported median life span across datasets. Colors indicate z scores of the P values from the meta-analysis. (B) Log2 fold change of module expression for each intervention versus its wild-type control with dataset numbers. Interventions were ranked on the basis of their effect on life span. (C) Association of modules M2.4 GSVA scores with reported median life span across datasets. Datasets are annotated on the basis of the major focus of study or epistasis of the dataset. (D) Association of module M11 GSVA scores with reported median life span across datasets. (E) Association of module M2.4 GSVA scores with reported median life span across datasets. (F to I) Association of module (F). M20, (G). M1.1, (H). M11, and (I). M27 expression change with extent of life span extension. All specified modules are significantly associated with life-span extension with FDR ≤ 0.05. Each condition versus control was colored on the basis of the type of the intervention. Genetic intervention includes mutation, knock-down, knockout, and overexpression; DR includes eat-2 mutants or DR; epistasis includes combination of genetic or drug interventions where the life span extension is compromised comparing with single genetic or drug intervention.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f4.webp?md5=61eed73c42cad1b9df46e157cb19715d",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "assets/pmc13626045-2aaba6d4ca8dda70.webp",
+            "sha256": "2aaba6d4ca8dda70c3afed14a6a5afe5d991a4292cf50a146e5f225776eebc69",
+            "width": 1600,
+            "height": 1872,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2aaba6d4ca8dda70c3afed14a6a5afe5d991a4292cf50a146e5f225776eebc69",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Preservation of longevity-associated modules in mice soleus muscle and module association with health span.(A) Preservation Zsummary statistics of mice aging soleus muscle submodules in worm aging/daf-16 submodules. (B) Preservation Zsummary statistics of worm aging/daf-16 submodules in mice aging soleus muscle submodules. (C) Overlapping between the worm aging/daf-16 sub modules and mouse aging soleus muscle submodules. Only overlaps with P values <10−2 are shown. (D) Expression of mouse M2.1 across ages and sex. (E) Association of module eigengene of mouse M2.1 with FI. (F) Experimental design for health span assay on CaAKG treatment on mice. Created in BioRender. Huai, W. (2026) https://BioRender.com/hvgdtgh. (G) Change in FI upon CaAKG treatment during the period of drug interventions. (H) Enrichment of mouse soleus muscles M2.1 in male mice at 28 months upon 8-month treatment of 2% AKG. (I) GO (left) and KEGG (right) enrichment analysis of CaAKG treatment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f5.webp?md5=a6bce2717d021a102e61be84e2a478c6",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "CMap prediction and screening of potential geroprotector using genes from longevity-associated modules.(A and B) Heatmaps showing the impact of pharmacologic (A) or genetic (B) perturbations on five longevity-associated modules in CMap. (C to E) Changes of median life span for each candidate drug and positive control relative to solvent controls at doses of 2 μM (B), 20 μM (C), and 200 μM (D) respectively. (F) Life span of worms treated with optimized dose of eudesmic acid, galantamine, and genipin, validating results from (C) to (E). (G) Life span of worms treated with optimized dose of clopidogrel, riluzole, ezetimibe, and genipin, validating results from (C) to (E). (H) Life span of worms treated with optimized dose of atenolol, prednisolone, indapamide, and nortriptyline, validating results from (C) to (E). (I) Life span of worms treated with sulconazole and piperlongumine, validating results from (B) to (D). (J) Life span of worms treated with kavain and taxifolin, validating results from (C) to (E).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f6.webp?md5=f524b8f7e861c6738df2cecde368a01b",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F7",
+            "label": "Fig. 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Transcriptomic analysis of bromhexine and genipin and impact of AKG on mouse modules.(A) PCA plot of 100 μM bromhexine– and 200 μM genipin–treated worms versus control. (B) Heatmap of NES of modules selected as CMap input for bromhexine and genipin. Row color indicates longevity module (red) or aging module (blue). *FDR <= 0.05; **FDR <= 0.01; ***FDR <= 0.001. (C) Scatter plot of CMap score and module NES for each input module for genipin treatment. (D) Genome-wide Z-statistic associations between drug treatments and DRs across datasets. (E) Overlapping of DEG for bromhexine and rapamycin. (F) Effects of bromhexine and genipin on reproductive span of C. elegans. (G) Effects of rapamycin and rifampicin on reproductive span of C. elegans. (H) Size of the worms treated by rapamycin, rifampicin, genipin, and bromhexine. NS, not significant; *P <= 0.05; **P <= 0.01; ***P <= 0.001. (I) Schematics of how drugs slows aging through modulating transcriptomic network.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657-f7.webp?md5=4b0264a8c78135b01092d79844d5239f",
+            "articleURL": "https://doi.org/10.1126/sciadv.aee3657",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al.. Predicting and finding geroprotective compounds through modulating conserved longevity-associated aging modules.. DOI: 10.1126/sciadv.aee3657. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supplement-1",
+            "label": "Figs. S1 to S10Legends for tables S1 to S7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657_sm.pdf?md5=4b71061abc250c904c283e4cfb9567ec",
+            "license": "CC BY",
+            "sha256": "f14b39c5171dd1522ff49ed28911b7a4572fbb14d05b8fac3352f8c1416936ac",
+            "status": "downloaded_private",
+            "bytes": 5297872,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 19,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "supplement-2",
+            "label": "Tables S1 to S7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626045.1/sciadv.aee3657_tables_s1_to_s7.zip?md5=2666456b4e73448188e499c1948a2457",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-30T07:48:30.593235+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Weihan Huai; Li-Fang Ng; Jasinda H. Lee; Qingyun Wang; Kamil Pabis; Zhuangli Yee; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "13.9",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-30T07:48:34Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-30T07:48:34Z",
+        "url": "https://openalex.org/W7214916302",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.68086754,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-30T07:48:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-30T07:48:34Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-31T07:48:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.4043377,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.4043377,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-30T07:48:43Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-f9d83028c9db0a19",
+      "paper": "&lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.",
+      "doi": "10.3390/ijms27198771",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-09-30",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3390/ijms27198771",
+      "pmcid": "PMC13664778",
+      "pmid": "42884014",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1422-0067",
+      "eissn": "1422-0067",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-30",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "16f749a7d84b083d1cd5aa8fa59c0bdb52cf89f7963e91d4bb39e92e822688d1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/PMC13664778.1.xml?md5=c51d024fb0fd56e9cb8abb2c83ce6ce0",
+        "figures": [
+          {
+            "id": "ijms-27-08771-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Longitudinal body composition dynamics and cognitive function in mice with midlife high-fat diet intervention. (A) Longitudinal changes in body weight of mice from 2 to 18 months of age. n = 29. (B) Quantification of body fat percentage (Fat%) and lean body mass percentage (LBM%) in 3-month-old (3 m) young adult mice and 12-month-old (12 m) middle-aged mice. n = 8 per group. (C) Schematic illustration of the experimental design. Mice were fed a normal chow diet (CD) or high-fat diet (HFD) during the midlife window (6 to 12 months of age), followed by behavioral tests and tissue collection. (D) Body weight curves of CD-fed and HFD-fed mice throughout the 6-month midlife intervention. n = 7 per group. (E) Escape latency across the 5-day acquisition phase of the MWM test in three groups. (F,G) Quantification of the percentage of time spent in the target quadrant (F) and the number of platform crossings (G) during the MWM spatial probe trial. n = 7 per group. (H) Representative swimming trajectories of mice from the three groups in the MWM probe trial. (I) Quantification of the novel object exploration time percentage in the NOR test. (J) Quantification of freezing time percentage in the contextual fear conditioning test. n = 7 per group. 3 m: 3 m young controls, 12 m: 12 m chow-fed controls, 12 m + HFD: 12-month-old HFD-fed mice. Data are presented as mean ± SEM. ns, not significant; * p < 0.05, ** p < 0.01, **** p < 0.0001. (Unpaired t test in (B). Ordinary one-way ANOVA in (F,G,I,J). Two-way ANOVA in (D,E)).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/ijms-27-08771-g001.webp?md5=793ca2ea1b1a9aa490506ca19c4e9fb4",
+            "articleURL": "https://doi.org/10.3390/ijms27198771",
+            "asset": "assets/pmc13664778-e2d52f0f4b6dfd18.webp",
+            "sha256": "e2d52f0f4b6dfd183a11bb30fdcdd650570fa125c83812b2857cbb5658c11a14",
+            "width": 1600,
+            "height": 1434,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha. &lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.. DOI: 10.3390/ijms27198771. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e2d52f0f4b6dfd183a11bb30fdcdd650570fa125c83812b2857cbb5658c11a14",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-08771-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Effects of Akk supplementation on body weight and cognitive function in high-fat diet-fed middle-aged mice (A) Relative abundance of fecal Akk detected by qPCR in normal chow diet (CD) and high-fat diet (HFD) mice. n = 6 per group. (B) Body weight curves of CD, HFD, and HFD + Akk mice during the 6-month midlife intervention (6 to 12 months of age). n = 7–8 per group. (C) Relative abundance of fecal Akk across the three experimental groups. n = 7–8 per group. (D) Escape latency across the 5-day acquisition phase of the MWM test in the three groups. n = 7–8 per group. (E,F) Quantification of the percentage of time spent in the target quadrant (E) and the number of platform crossings (F) in the MWM spatial probe trial. n = 7–8 per group. (G) Quantification of the novel object exploration time percentage in the NOR test. n = 7–8 per group. (H) Quantification of freezing time percentage in the contextual fear conditioning test. n = 7–8 per group. CD, control diet group; HFD, high-fat diet group; HFD + Akk, high-fat diet with Akk supplementation group. Data are presented as mean ± SEM. * p < 0.05, ** p < 0.01, *** p < 0.001, **** p < 0.0001. (Unpaired t test in (A). Ordinary one-way ANOVA in (C,E,G,H). Kruskal–Wallis test in (F). Two -way ANOVA in (B,D)).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/ijms-27-08771-g002.webp?md5=61c7db124f172786ba2594ffc5e97c87",
+            "articleURL": "https://doi.org/10.3390/ijms27198771",
+            "asset": "assets/pmc13664778-63d1a9491a5cb41a.webp",
+            "sha256": "63d1a9491a5cb41a09aafdd34a81bdbc4e9f1ddc9a23dada211c28c264462219",
+            "width": 1600,
+            "height": 924,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha. &lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.. DOI: 10.3390/ijms27198771. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "63d1a9491a5cb41a09aafdd34a81bdbc4e9f1ddc9a23dada211c28c264462219",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-08771-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Akk reduces hippocampal neuroinflammation in HFD-fed mice. (A) Representative immunofluorescence images of Iba1 (green, microglia-specific marker) staining in the hippocampal CA1 region, with nuclei counterstained with DAPI (blue). Scale bar = 100 μm. (B) Quantitative analysis of the percentage of Iba1-positive area, presented as fold change relative to the CD group. n = 5 per group. (C) Representative immunofluorescence images of GFAP (green, astrocyte-specific marker) staining in the hippocampus CA1 region, with nuclei counterstained with DAPI (blue). Scale bar = 100 μm. (D) Quantitative analysis of the percentage of GFAP-positive area, presented as fold change relative to the CD group. n = 5 per group. (E–I) Relative mRNA expression levels of proinflammatory cytokines and chemokines in the hippocampus, including IL-6 (E), IL-1β (F), TNF-α (G), CCL2 (H) and CCL5 (I), detected by qPCR. (J,K) Representative Western blot bands and quantitative analysis of of inflammation-associated proteins, including iNOS, IL-6, TNF-α and IL-1β, with β-tubulin as the loading control. n = 3 per group. CD, control diet group; HFD, high-fat diet group; HFD + Akk, high-fat diet with Akk supplementation group. Data are presented as mean ± SEM. * p < 0.05, ** p < 0.01, *** p < 0.001, **** p < 0.0001. (Ordinary one-way ANOVA in (B,D,E–I,K)).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/ijms-27-08771-g003.webp?md5=1a881c8f4cb06f626c6833e445799861",
+            "articleURL": "https://doi.org/10.3390/ijms27198771",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha. &lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.. DOI: 10.3390/ijms27198771. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-08771-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Akk preserves neuronal survival and synaptic integrity in HFD-fed mice. (A) Representative immunofluorescence images of NeuN (red, a mature neuron-specific marker) staining in the cerebral cortex and hippocampal subregions (CA1, CA3, DG). (B) Quantitative analysis of the percentage of NeuN-positive area in the cortex, CA1, CA3 and DG regions, presented as fold change relative to the CD group. n = 5 per group. (C) Representative Western blot bands of synaptic-associated proteins, including SYN1, PSD95, Camk2α and SYP, with β-tubulin/GAPDH as the loading control. (D) Quantitative analysis of relative expression levels of SYN1, PSD95, Camk2α and SYP in the hippocampus. n = 3 per group. CD, control diet group; HFD, high-fat diet group; HFD + Akk, high-fat diet with Akk supplementation group. Data are presented as mean ± SEM. (Ordinary one-way ANOVA in (B,D)). * p < 0.05, ** p < 0.01, *** p < 0.001, **** p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/ijms-27-08771-g004.webp?md5=79f57d1a84e0f53ae3931185e8abbc4c",
+            "articleURL": "https://doi.org/10.3390/ijms27198771",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha. &lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.. DOI: 10.3390/ijms27198771. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-08771-f005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Multivariate statistical analysis and hierarchical clustering heatmap of serum metabolomes in young and middle-aged mice. (A) Unsupervised PCA score plot of serum metabolomes from the 3-month-old young group (3 m) and 12-month-old middle-aged group (12 m). PC1 and PC2 explain 37.25% and 19.48% of the total variance, respectively. Ellipses represent 95% confidence intervals of the samples. (B) Supervised PLS-DA score plot of serum metabolomes between the two groups, with model parameters R2Y = 0.98 and Q2Y = 0.43. Ellipses represent 95% confidence intervals of the samples. (C) Hierarchical clustering heatmap of significantly differential metabolites. Rows indicate individual metabolites, and columns indicate individual samples. n = 5 per group. The color gradient from blue to red corresponds to increasing relative abundance of metabolites. The top color bar denotes sample grouping (red: 3-month-old group; cyan: 12-month-old group).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13664778.1/ijms-27-08771-g005.webp?md5=7b0f22c56d0529518d0f2f4bfbbc20df",
+            "articleURL": "https://doi.org/10.3390/ijms27198771",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha. &lt;i&gt;Akkermansia muciniphila&lt;/i&gt; Ameliorates Midlife Obesity-Induced Cognitive Impairment via the Microbiota-Metabolism-Neuroinflammation Axis.. DOI: 10.3390/ijms27198771. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-30T07:48:28.213841+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiaomei Bian; Jiaqi Cao; Anrui He; Weiran Jian; Wei Wang; Xu Zha"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-30T07:48:29Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-30T07:48:29Z",
+        "url": "https://openalex.org/W7214960998",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.67126982,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-30T07:48:29Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-30T07:48:29Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-31T07:48:29Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.3563491,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.3563491,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-30T07:48:44Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -168964,6 +169591,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-a030111ac4fd9a91": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-f9d83028c9db0a19": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -170582,7 +171221,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-30T07:46:50Z",
+  "generatedAt": "2026-10-30T07:48:45Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -170816,18 +171455,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-30T07:44:45Z",
-    "updatedAt": "2026-10-30T07:46:59Z",
+    "updatedAt": "2026-10-30T07:48:48Z",
     "batchCount": 2,
-    "requests": 44,
+    "requests": 96,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

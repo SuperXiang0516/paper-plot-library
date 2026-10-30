@@ -115,12 +115,191 @@
     "2026-10-30": {
       "newDOIs": [
         "10.1101/gr.281431.125",
+        "10.1126/sciadv.aee3657",
         "10.1186/s44342-026-00085-4",
-        "10.3389/fmicb.2026.1877028"
+        "10.3389/fmicb.2026.1877028",
+        "10.3390/ijms27198771"
       ]
     }
   },
   "candidates": {
+    "10.2196/97117": {
+      "checkedAt": "2026-10-30T07:48:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.2196/97117",
+        "metadataHash": "41e3a213193b40ac090b77f15a4f088637f2e0bb5c24f1b9591fc1338e87c618",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694010.1/PMC13694010.1.xml?md5=2347d2496d4b78179f962a169344af06",
+          "license": "CC BY",
+          "figures": [
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694010.1/formative-v10-e97117-g001.webp?md5=39e83d26e824a8f4d7d9db21d054aaa8",
+              "width": 1600,
+              "asset": "assets/pmc13694010-df8e3bcb96cd5f77.webp",
+              "label": "Figure 1.",
+              "height": 845,
+              "assetSHA256": "df8e3bcb96cd5f77aac24329c764df9891cb611727a601e3f2dd38930a1ccbbe",
+              "id": "F1",
+              "license": "CC BY",
+              "sha256": "df8e3bcb96cd5f77aac24329c764df9891cb611727a601e3f2dd38930a1ccbbe",
+              "captionHash": "546af99c58c5fad0c9638892a9658f0ce6fc5246d75f719f3a5c28244fe3d791"
+            },
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694010.1/formative-v10-e97117-g002.webp?md5=883f0b8a863967f0d57e2bae52dc0d91",
+              "width": 868,
+              "asset": "assets/pmc13694010-4e105efc7f94c633.webp",
+              "label": "Figure 2.",
+              "height": 594,
+              "assetSHA256": "4e105efc7f94c6335d31ffb9808e76d98f3aa74e4e5d967d6eb869b2613e094c",
+              "id": "F2",
+              "license": "CC BY",
+              "sha256": "4e105efc7f94c6335d31ffb9808e76d98f3aa74e4e5d967d6eb869b2613e094c",
+              "captionHash": "37d57428e71cad5d91d2ec4f1785c90c3dd336c1cd5f1d8f17476259d02927bc"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-1c4b57005ae93aa1",
+          "doi": "10.2196/97117",
+          "paper": "Large Language Model Framework for Structured Biomarker Extraction and Triple-Negative Breast Cancer Identification From Pathology Reports: Development and Evaluation Study.",
+          "journal": "JMIR formative research",
+          "date": "2026-10-23",
+          "year": "2026",
+          "pmcid": "PMC13694010",
+          "pmid": "42913472",
+          "paperURL": "https://doi.org/10.2196/97117"
+        },
+        "updatedAt": "2026-10-30T07:48:40Z"
+      }
+    },
+    "10.1186/s43556-026-00636-9": {
+      "checkedAt": "2026-10-30T07:48:38Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1186/s43556-026-00636-9",
+        "metadataHash": "1b2c54e69f0af056936f6774cd277cc8ca5f236d86e8601637e5594d118457bf",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694698.1/PMC13694698.1.xml?md5=89fdf77f7b50717f4f983ccea59c5147",
+          "license": "CC BY",
+          "figures": [
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694698.1/43556_2026_636_Fig2_HTML.webp?md5=41c076a36bea842aa5bbc22f42d65aee",
+              "width": 1600,
+              "asset": "assets/pmc13694698-84e86c63fe35344d.webp",
+              "label": "Fig. 2",
+              "height": 1932,
+              "assetSHA256": "84e86c63fe35344d2fa65ba55438d910af7ba647d3d16029c126768d210e520b",
+              "id": "Fig2",
+              "license": "CC BY",
+              "sha256": "84e86c63fe35344d2fa65ba55438d910af7ba647d3d16029c126768d210e520b",
+              "captionHash": "adcfa5fd3f2d400f7712c29f7e522ae1f1fed431b0ddbedc646a6ace4a4760b1"
+            },
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694698.1/43556_2026_636_Fig3_HTML.webp?md5=6a33e2b752bba5932d2cb8934b0f904a",
+              "width": 1600,
+              "asset": "assets/pmc13694698-7c3610a7490613ed.webp",
+              "label": "Fig. 3",
+              "height": 1920,
+              "assetSHA256": "7c3610a7490613edaf3ad9c420fc4fc6345fcacfa9b23ed9d0ec5737b7a03a04",
+              "id": "Fig3",
+              "license": "CC BY",
+              "sha256": "7c3610a7490613edaf3ad9c420fc4fc6345fcacfa9b23ed9d0ec5737b7a03a04",
+              "captionHash": "306bda9a08cfbbf0e2b02a562ab5609be3f2c9fdbf8525f9d0733ab168bab75b"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-c764ffcba886f49d",
+          "doi": "10.1186/s43556-026-00636-9",
+          "paper": "Transcriptional and phenotypic alterations of regulatory and effector T cells in type 1 diabetes mellitus.",
+          "journal": "Molecular biomedicine",
+          "date": "2026-10-24",
+          "year": "2026",
+          "pmcid": "PMC13694698",
+          "pmid": "42920033",
+          "paperURL": "https://doi.org/10.1186/s43556-026-00636-9"
+        },
+        "updatedAt": "2026-10-30T07:48:36Z"
+      }
+    },
+    "10.1126/sciadv.aee3657": {
+      "checkedAt": "2026-10-30T07:48:34Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.3390/ijms27198771": {
+      "checkedAt": "2026-10-30T07:48:29Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1073/pnas.2602630123": {
+      "checkedAt": "2026-10-30T07:48:27Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1073/pnas.2602630123",
+        "metadataHash": "619c49d4674164b187dd952772ea2abeda2559abf288314716e32e981767f19c",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/PMC13663777.1.xml?md5=9769bd33d89205cd3c32e1eb476ab219",
+          "license": "CC BY",
+          "figures": [
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig02.webp?md5=e9db7aa37c80af3ecde3ecdfa20031fd",
+              "width": 2000,
+              "asset": "assets/pmc13663777-272a15617dbdb63e.webp",
+              "label": "Fig. 2.",
+              "height": 1341,
+              "assetSHA256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
+              "id": "fig02",
+              "license": "CC BY",
+              "sha256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
+              "captionHash": "fbde7c3b759bf34e1c553a201d1e0d7eaaf6a5fbca4c49e0c1d2b22572102849"
+            },
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig04.webp?md5=742cf926b3e233dea025c4e9bd1b4a88",
+              "width": 2000,
+              "asset": "assets/pmc13663777-58e20c8d7faf767b.webp",
+              "label": "Fig. 4.",
+              "height": 1763,
+              "assetSHA256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
+              "id": "fig04",
+              "license": "CC BY",
+              "sha256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
+              "captionHash": "165b467dd48225de8d0208c69ed0c02007611e00f053b0ad5101c1de2f0a1bf4"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-371236e1b33a72ed",
+          "doi": "10.1073/pnas.2602630123",
+          "paper": "Latent causal diffusions for single-cell perturbation modeling.",
+          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+          "date": "2026-10-08",
+          "year": "2026",
+          "pmcid": "PMC13663777",
+          "pmid": "42848419",
+          "paperURL": "https://doi.org/10.1073/pnas.2602630123"
+        },
+        "updatedAt": "2026-10-30T07:48:23Z"
+      }
+    },
     "10.3389/fmicb.2026.1877028": {
       "checkedAt": "2026-10-30T07:46:41Z",
       "status": "source_confirmed",
@@ -4662,61 +4841,6 @@
           "paperURL": "https://doi.org/10.1371/journal.pcbi.1014822"
         },
         "updatedAt": "2026-10-18T06:39:28Z"
-      }
-    },
-    "10.1073/pnas.2602630123": {
-      "checkedAt": "2026-10-17T11:47:04Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1073/pnas.2602630123",
-        "metadataHash": "619c49d4674164b187dd952772ea2abeda2559abf288314716e32e981767f19c",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/PMC13663777.1.xml?md5=9769bd33d89205cd3c32e1eb476ab219",
-          "license": "CC BY",
-          "figures": [
-            {
-              "height": 1341,
-              "width": 2000,
-              "label": "Fig. 2.",
-              "asset": "assets/pmc13663777-272a15617dbdb63e.webp",
-              "sha256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig02.webp?md5=e9db7aa37c80af3ecde3ecdfa20031fd",
-              "assetSHA256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
-              "license": "CC BY",
-              "id": "fig02",
-              "captionHash": "fbde7c3b759bf34e1c553a201d1e0d7eaaf6a5fbca4c49e0c1d2b22572102849"
-            },
-            {
-              "height": 1763,
-              "width": 2000,
-              "label": "Fig. 4.",
-              "asset": "assets/pmc13663777-58e20c8d7faf767b.webp",
-              "sha256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig04.webp?md5=742cf926b3e233dea025c4e9bd1b4a88",
-              "assetSHA256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
-              "license": "CC BY",
-              "id": "fig04",
-              "captionHash": "165b467dd48225de8d0208c69ed0c02007611e00f053b0ad5101c1de2f0a1bf4"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-371236e1b33a72ed",
-          "doi": "10.1073/pnas.2602630123",
-          "paper": "Latent causal diffusions for single-cell perturbation modeling.",
-          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-          "date": "2026-10-08",
-          "year": "2026",
-          "pmcid": "PMC13663777",
-          "pmid": "42848419",
-          "paperURL": "https://doi.org/10.1073/pnas.2602630123"
-        },
-        "updatedAt": "2026-10-17T11:47:00Z"
       }
     },
     "10.1371/journal.pbio.3004048": {
@@ -13257,23 +13381,18 @@
     "batchCount": 2,
     "startedAt": "2026-10-30T07:44:45Z",
     "maxRequests": 1800,
-    "updatedAt": "2026-10-30T07:46:59Z",
+    "updatedAt": "2026-10-30T07:48:48Z",
     "version": 1,
     "maxAiAttempts": 165,
     "endReason": "",
     "aiAttempts": 1,
     "uncertainAiAttempts": 0,
-    "requests": 44,
-    "dailyNewCount": 3,
+    "requests": 96,
+    "dailyNewCount": 5,
     "maxBatches": 36,
     "date": "2026-10-30",
     "maxSeconds": 2700,
     "uncertainRequests": 0,
-    "elapsedSeconds": 135,
-    "inFlight": {
-      "startedAt": "2026-10-30T07:46:59Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 244
   }
 }
