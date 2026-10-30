@@ -111,118 +111,45 @@
         "10.3389/fnut.2026.1849329",
         "10.34133/csbj.0191"
       ]
+    },
+    "2026-10-30": {
+      "newDOIs": [
+        "10.1101/gr.281431.125",
+        "10.1186/s44342-026-00085-4",
+        "10.3389/fmicb.2026.1877028"
+      ]
     }
   },
   "candidates": {
     "10.3389/fmicb.2026.1877028": {
-      "checkedAt": "2026-10-29T07:45:44Z",
+      "checkedAt": "2026-10-30T07:46:41Z",
       "status": "source_confirmed",
       "retryClass": "transient",
-      "reason": "作者代码声明和可读脚本已定位",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fmicb.2026.1877028",
-        "metadataHash": "fea449337622cbec14fbd5603d26fbc7a5ae96606dafec72002b8664cd588765",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/PMC13593606.1.xml?md5=e2a0e52fd62a2b2de6ea9352f47f8d7c",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "F1",
-              "asset": "assets/pmc13593606-7611e758518cf312.webp",
-              "license": "CC BY",
-              "sha256": "7611e758518cf31252a811ccb21b6c3911195201f250df90be406ec02d48050a",
-              "width": 1600,
-              "height": 998,
-              "label": "FIGURE 1",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g001.webp?md5=cc8d4a315de35e55f62518854b431f70",
-              "assetSHA256": "7611e758518cf31252a811ccb21b6c3911195201f250df90be406ec02d48050a",
-              "captionHash": "b69676a8e55fc3eda013e2d88e485ce8bd6d56132ae4fbf4bc7296cb0ffff278"
-            },
-            {
-              "id": "F2",
-              "asset": "assets/pmc13593606-2d981054e1ec31ce.webp",
-              "license": "CC BY",
-              "sha256": "2d981054e1ec31ce120d6e66f4e9a18cc917e7efe237c6ff545c18612af193f6",
-              "width": 1600,
-              "height": 1156,
-              "label": "FIGURE 2",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g002.webp?md5=bebccb9f3a29f577f8de0db51d46f8af",
-              "assetSHA256": "2d981054e1ec31ce120d6e66f4e9a18cc917e7efe237c6ff545c18612af193f6",
-              "captionHash": "21d51f6ed22abadb3cd1ccb47b51ff2517d64badf4f8782d006189269dace28f"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-77149bb08831c9c7",
-          "doi": "10.3389/fmicb.2026.1877028",
-          "paper": "Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.",
-          "journal": "Frontiers in microbiology",
-          "date": "2026-09-08",
-          "year": "2026",
-          "pmcid": "PMC13593606",
-          "pmid": "42774170",
-          "paperURL": "https://doi.org/10.3389/fmicb.2026.1877028"
-        },
-        "updatedAt": "2026-10-29T07:45:40Z"
-      }
+      "reason": "作者代码声明和可读脚本已定位"
     },
     "10.1186/s44342-026-00085-4": {
-      "checkedAt": "2026-10-29T07:45:38Z",
+      "checkedAt": "2026-10-30T07:46:35Z",
       "status": "source_confirmed",
       "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s44342-026-00085-4",
-        "metadataHash": "d2a497cca51cc5d485c298b4fd5b491a076ddeb5646aac80914fdd7ba3a9f41a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/PMC13700260.1.xml?md5=21c90a74ccc2cbd09dae6b3efd89f469",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "Fig2",
-              "asset": "assets/pmc13700260-ee10972ba170a533.webp",
-              "license": "CC BY",
-              "sha256": "ee10972ba170a533d818c60c2b133774aa77cc04db13daea071e81e420a7580a",
-              "width": 1600,
-              "height": 699,
-              "label": "Fig. 2",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig2_HTML.webp?md5=a206a4e96aad0824943d32ca415ade73",
-              "assetSHA256": "ee10972ba170a533d818c60c2b133774aa77cc04db13daea071e81e420a7580a",
-              "captionHash": "71122fc9ed2dbdfde3dbab47939e6f63d5a2bc049ebc7530df439616648e00ea"
-            },
-            {
-              "id": "Fig3",
-              "asset": "assets/pmc13700260-8fc7a1e3367e8b87.webp",
-              "license": "CC BY",
-              "sha256": "8fc7a1e3367e8b8714e00102fa74da55805c4eb40d08f0e5af6aa3e50204a024",
-              "width": 1600,
-              "height": 446,
-              "label": "Fig. 3",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig3_HTML.webp?md5=ec6abe3425878a333a4decfb4fd9ee5e",
-              "assetSHA256": "8fc7a1e3367e8b8714e00102fa74da55805c4eb40d08f0e5af6aa3e50204a024",
-              "captionHash": "b8cc2f4a5539511b1d679e18550c129e9568a8e2e1e1cd6ae0ea52e84c45f212"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-52f82b37c80562b1",
-          "doi": "10.1186/s44342-026-00085-4",
-          "paper": "Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.",
-          "journal": "Genomics & informatics",
-          "date": "2026-10-26",
-          "year": "2026",
-          "pmcid": "PMC13700260",
-          "pmid": "42928235",
-          "paperURL": "https://doi.org/10.1186/s44342-026-00085-4"
-        },
-        "updatedAt": "2026-10-29T07:45:37Z"
-      }
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-10-30T07:46:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-10-30T07:46:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1101/gr.281431.125": {
+      "checkedAt": "2026-10-30T07:46:29Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
     },
     "10.1111/acel.70730": {
       "checkedAt": "2026-10-29T07:45:36Z",
@@ -236,61 +163,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1101/gr.281431.125": {
-      "checkedAt": "2026-10-29T07:45:25Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1101/gr.281431.125",
-        "metadataHash": "d39f5b02a9deafab8201112fcd9f52ab50256f6e4b439b9f9a0e06e2170e1479",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/PMC13629687.1.xml?md5=c707df258ed2f85a310c827c1ba98ad6",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "GR281431ASHF3",
-              "asset": "assets/pmc13629687-90b8a95d863649cb.webp",
-              "license": "CC BY",
-              "sha256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
-              "width": 1600,
-              "height": 2113,
-              "label": "Figure 3.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f03.webp?md5=94b6e249ba70f1552e8629b46ac4a853",
-              "assetSHA256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
-              "captionHash": "4242357bac7d30f978f83d0c6fa440ce928b4e2e80614b9c52e164f9f3ed9b07"
-            },
-            {
-              "id": "GR281431ASHF7",
-              "asset": "assets/pmc13629687-55e6e165d4236fa5.webp",
-              "license": "CC BY",
-              "sha256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
-              "width": 1600,
-              "height": 2001,
-              "label": "Figure 7.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f07.webp?md5=aa62c2dbe815610519411f854611c108",
-              "assetSHA256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
-              "captionHash": "ee7910f453d7a365f46a0ae8c62a5e8ca6d1d078c69e36de1ec3d83b07d35bf4"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-67ffa8e2f01155dd",
-          "doi": "10.1101/gr.281431.125",
-          "paper": "Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.",
-          "journal": "Genome research",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13629687",
-          "pmid": "42749491",
-          "paperURL": "https://doi.org/10.1101/gr.281431.125"
-        },
-        "updatedAt": "2026-10-29T07:45:24Z"
-      }
-    },
     "10.34133/csbj.0191": {
       "checkedAt": "2026-10-29T07:43:41Z",
       "status": "source_confirmed",
@@ -302,18 +174,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-10-29T07:43:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-10-29T07:43:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1002/advs.77986": {
       "checkedAt": "2026-10-29T07:43:28Z",
@@ -13397,23 +13257,18 @@
     "batchCount": 1,
     "startedAt": "2026-10-30T07:44:45Z",
     "maxRequests": 1800,
-    "updatedAt": "2026-10-30T07:44:48Z",
+    "updatedAt": "2026-10-30T07:46:54Z",
     "version": 1,
     "maxAiAttempts": 165,
     "endReason": "",
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "uncertainAiAttempts": 0,
-    "requests": 0,
-    "dailyNewCount": 0,
+    "requests": 44,
+    "dailyNewCount": 3,
     "maxBatches": 36,
     "date": "2026-10-30",
     "maxSeconds": 2700,
     "uncertainRequests": 0,
-    "elapsedSeconds": 4,
-    "inFlight": {
-      "startedAt": "2026-10-30T07:44:48Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 130
   }
 }

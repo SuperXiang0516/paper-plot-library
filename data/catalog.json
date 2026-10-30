@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-29",
+  "checkedAt": "2026-10-30",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -117224,6 +117224,1465 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-52f82b37c80562b1",
+      "paper": "Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.",
+      "doi": "10.1186/s44342-026-00085-4",
+      "journal": "Genomics & informatics",
+      "date": "2026-10-26",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1186/s44342-026-00085-4",
+      "pmcid": "PMC13700260",
+      "pmid": "42928235",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1598-866X",
+      "eissn": "2234-0742",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-30",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ca8c8f3f04d4aff2b47b6c499a5afe806bc9d895703dfbe5c1d6f45f64c5df3e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/PMC13700260.1.xml?md5=21c90a74ccc2cbd09dae6b3efd89f469",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Receiver operating characteristic curve evaluating the diagnostic performance of the partial least squares discriminant analysis model. The area under the curve is 0.905",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig1_HTML.webp?md5=3c58715ed4e3a94094c7f73e8adcc756",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00085-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani. Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.. DOI: 10.1186/s44342-026-00085-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "An orthogonal validation and permutation test of the PLS-DA exploratory model (with 500 permutations and 7-fold cross-validation). a A summary of the cumulative fit parameters for the one-component cross-validated model, displaying R2Y and Q2Y. b A plot of the permutation distribution (with N = 500) showing the empirical validation metrics (pR2Y = 0.324, pQ2 = 0.166)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig2_HTML.webp?md5=a206a4e96aad0824943d32ca415ade73",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00085-4",
+            "asset": "assets/pmc13700260-ee10972ba170a533.webp",
+            "sha256": "ee10972ba170a533d818c60c2b133774aa77cc04db13daea071e81e420a7580a",
+            "width": 1600,
+            "height": 699,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani. Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.. DOI: 10.1186/s44342-026-00085-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ee10972ba170a533d818c60c2b133774aa77cc04db13daea071e81e420a7580a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Representative NMR spectrum obtained from one of the samples, shown as a reference image. Based on database searching and verification using Chenomx software, a total of ten peaks were identified. These metabolites are labeled in the figure and include (1) glycolic acid, (2) thymidine, (3) tyramine, (4) deoxyguanosine, (5) cytidine, (6) uridine, (7) NADPH, (8) ADP, (9) serotonin, and (10) nicotinate. The x-axis represents the chemical shift in parts per million (ppm), indicating the specific resonant frequencies of the protons associated with each identified metabolite. The y-axis shows NMR signal intensity in arbitrary units, reflecting relative abundance in the saliva samples. NMR, nuclear magnetic resonance; NADPH, nicotinamide adenine dinucleotide phosphate; ADP, adenosine diphosphate",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig3_HTML.webp?md5=ec6abe3425878a333a4decfb4fd9ee5e",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00085-4",
+            "asset": "assets/pmc13700260-8fc7a1e3367e8b87.webp",
+            "sha256": "8fc7a1e3367e8b8714e00102fa74da55805c4eb40d08f0e5af6aa3e50204a024",
+            "width": 1600,
+            "height": 446,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani. Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.. DOI: 10.1186/s44342-026-00085-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8fc7a1e3367e8b8714e00102fa74da55805c4eb40d08f0e5af6aa3e50204a024",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Top 25 enriched metabolic pathways. The bubble plot visualizes pathways by statistical significance (−log10(p value) on the x-axis) and enrichment ratio (bubble size)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig4_HTML.webp?md5=bf052ce7c8b8fcc57946112f438221d3",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00085-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani. Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.. DOI: 10.1186/s44342-026-00085-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Compound-by-metabolite set membership heatmap. The figure displays the distribution of individual differentially expressed salivary metabolites across the enriched metabolic pathways. Rows are your input compounds, and columns are the top enriched sets ranked left-to-right by p value. Blue shading indicates the assignment of a given compound to a particular metabolic set. This visualization reveals that certain metabolites, such as ADP and NADPH, serve as central nodes participating in multiple metabolic routes. In contrast, others, including deoxyguanosine and tyramine, are confined to a single pathway",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_Fig5_HTML.webp?md5=5e159568576f3e4e367af12937c79fb1",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00085-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani. Salivary &lt;sup&gt;1&lt;/sup&gt;H NMR metabolic profiling of diabetic patients with and without periodontitis: an exploratory pilot study.. DOI: 10.1186/s44342-026-00085-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13700260.1/44342_2026_85_MOESM1_ESM.docx?md5=05c1736e6c89e1cb53bef7fde2b39504",
+            "license": "CC BY",
+            "sha256": "50dcee885556059481b6eed38e661033cf1705065865cc4efab9c35d182d9b91",
+            "status": "downloaded_private",
+            "bytes": 243190,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-30T07:46:34.016215+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Samaneh Vaziri-Amjad; Bahar Zalei; Nazli Rabienejad; Ali Golshaian; Amir Taherkhani"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "missing_journal",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "missing_journal"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-30T07:46:34Z",
+        "url": "https://openalex.org/W7223562916",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.89681692,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "missing_journal",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-30T07:46:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-30T07:46:34Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-10-31T07:46:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 22.4840846,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.4840846,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-30T07:46:41Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-77149bb08831c9c7",
+      "doi": "10.3389/fmicb.2026.1877028",
+      "paper": "Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.",
+      "journal": "Frontiers in microbiology",
+      "date": "2026-09-08",
+      "year": "2026",
+      "pmcid": "PMC13593606",
+      "pmid": "42774170",
+      "paperURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1664-302X",
+      "eissn": "1664-302X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "1a195f788a210b34a5ce20f6c7ac6817f35f921897fba231caa538ee42c73b20"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/PMC13593606.1.xml?md5=e2a0e52fd62a2b2de6ea9352f47f8d7c",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Scope of the Long Short-Term Memory (LSTM)–Exponentially Weighted Moving Average (EWMA) screening component. (a) Benchmark and binary task definition. (b) Residual-based LSTM–EWMA screening. (c) Dispatch decision, evaluation, and scope. The component evaluated in this study distinguishes windows assigned to the baseline caller (code 1) from those routed to a downstream caller-recommendation procedure (codes 2–5). Selection among the callers represented by codes 2–5 occurs at the downstream stage of the proposed workflow and is outside the scope of the present evaluation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g001.webp?md5=cc8d4a315de35e55f62518854b431f70",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "assets/pmc13593606-7611e758518cf312.webp",
+            "sha256": "7611e758518cf31252a811ccb21b6c3911195201f250df90be406ec02d48050a",
+            "width": 1600,
+            "height": 998,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7611e758518cf31252a811ccb21b6c3911195201f250df90be406ec02d48050a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F2",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Descriptive control-chart comparison. (Top) ARIMA–EWMA. (Middle) LSTM + fixed threshold. (Bottom) LSTM–EWMA. Background colors identify the five reference caller classes; red markers denote alarms.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g002.webp?md5=bebccb9f3a29f577f8de0db51d46f8af",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "assets/pmc13593606-2d981054e1ec31ce.webp",
+            "sha256": "2d981054e1ec31ce120d6e66f4e9a18cc917e7efe237c6ff545c18612af193f6",
+            "width": 1600,
+            "height": 1156,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2d981054e1ec31ce120d6e66f4e9a18cc917e7efe237c6ff545c18612af193f6",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F3",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "One-run sensitivity analysis for λ. (Left) False Positive Rate (FPR). (Center) F1-score. (Right) Detection delay.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g003.webp?md5=db5bde4d31a9f43c31b322b0a1123d14",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "One-run sensitivity analysis for window size. (Left) False Positive Rate (FPR). (Center) F1-score. (Right) Detection delay.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g004.webp?md5=09711b429e00a3ac700ff6967378583c",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Calibration-inclusive ROC curves for the three evaluated implementations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g005.webp?md5=74abcde0637cd794c4752eb08cc7b622",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Component comparison. Bars report False Negative Rate (FNR), F1-score, and area under the receiver-operating-characteristic curve (AUC) for the three configurations. False Positive Rate (FPR) is reported in Table 6 but is not plotted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/fmicb-17-1877028-g006.webp?md5=cfdc8b80e012a70f96e259ca458f2b38",
+            "articleURL": "https://doi.org/10.3389/fmicb.2026.1877028",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang. Residual based anomaly detection framework for variant caller dispatch in DNA sequencing data.. DOI: 10.3389/fmicb.2026.1877028. Copyright holder: Wang, Li, Quan and Wang. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [
+          "https://github.com/Icarus200110/Lstm-EWMA"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-30T07:46:36.220261+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Icarus200110/Lstm-EWMA",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593606.1/PMC13593606.1.xml?md5=e2a0e52fd62a2b2de6ea9352f47f8d7c"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shenjie Wang; Yuhang Li; Kai Quan; Jiayin Wang"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Icarus200110/Lstm-EWMA",
+        "commit": "ede52f5ea6070bc38a4fde46a8e47200ecf607db",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "src/training/plots.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/plots.py",
+            "sha256": "4ebd48a8adc6493eddf7b507b1831ee1733b7e2a215c1e66823cb6921734d45e",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.family",
+                "line": 13,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font.serif",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.unicode_minus",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 16,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "savefig.dpi",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.figsize",
+                "line": 18,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.labelsize",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.titlesize",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.labelsize",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ytick.labelsize",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "legend.fontsize",
+                "line": 23,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lines.linewidth",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid.alpha",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid.linestyle",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid.linewidth",
+                "line": 28,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "run_experiments.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py",
+            "sha256": "db830ada966ab7c58b940e5dea498dca617fc5740b03918a5508ec39ff43f31f",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 60,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": null
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "exp1_baseline_comparison.png",
+                "writer": "fig.savefig",
+                "line": 410
+              },
+              {
+                "path": "exp1_performance_table.png",
+                "writer": "fig2.savefig",
+                "line": 438
+              },
+              {
+                "path": "exp2_lambda_sensitivity.png",
+                "writer": "fig.savefig",
+                "line": 577
+              },
+              {
+                "path": "exp2_window_sensitivity.png",
+                "writer": "fig2.savefig",
+                "line": 609
+              },
+              {
+                "path": "exp2_roc_curve.png",
+                "writer": "fig3.savefig",
+                "line": 627
+              },
+              {
+                "path": "exp3_ablation_comparison.png",
+                "writer": "fig.savefig",
+                "line": 710
+              },
+              {
+                "path": "exp3_ablation_table.png",
+                "writer": "fig2.savefig",
+                "line": 748
+              }
+            ],
+            "fields": [
+              {
+                "name": "font.sans-serif",
+                "line": 18,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.unicode_minus",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "LSTM-EWMA",
+                "line": 531,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "LSTM + Threshold",
+                "line": 536,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ARIMA-EWMA",
+                "line": 544,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda",
+                "line": 552,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delay",
+                "line": 567,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "window",
+                "line": 584,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fpr",
+                "line": 553,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "f1",
+                "line": 560,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fnr",
+                "line": 370,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 60,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L60"
+              },
+              {
+                "type": "io_reference",
+                "line": 410,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L410"
+              },
+              {
+                "type": "io_reference",
+                "line": 438,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L438"
+              },
+              {
+                "type": "io_reference",
+                "line": 577,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L577"
+              },
+              {
+                "type": "io_reference",
+                "line": 609,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L609"
+              },
+              {
+                "type": "io_reference",
+                "line": 627,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L627"
+              },
+              {
+                "type": "io_reference",
+                "line": 710,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L710"
+              },
+              {
+                "type": "io_reference",
+                "line": 748,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py#L748"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/experiments/__init__.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/experiments/__init__.py",
+            "sha256": "88211ecb38dd02a130a457d0819984e6e0a3cd72e5cf0544853fce270f732f74",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/experiments/utils.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/experiments/utils.py",
+            "sha256": "40778573ae5e15add08cf6831472d965b14a083fe02e0ab6ea232e7ccaf20fae",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/training/__init__.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/__init__.py",
+            "sha256": "0a995b4a5c3afa765abbfa4ed15b9835b0693894eb67f1f3cd2d1234d9b49456",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/training/data.py",
+            "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/data.py",
+            "sha256": "c4bb81b6651c0c0fda58dce400fb8fb312185084a6e5ce89b44a077715eeb41a",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 23,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": null
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 23,
+                "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/data.py#L23"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "font.sans-serif",
+                "line": 18,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.unicode_minus",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "LSTM-EWMA",
+                "line": 531,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "LSTM + Threshold",
+                "line": 536,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ARIMA-EWMA",
+                "line": 544,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda",
+                "line": 552,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delay",
+                "line": 567,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "window",
+                "line": 584,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fpr",
+                "line": 553,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "f1",
+                "line": 560,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fnr",
+                "line": 370,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py",
+            "line": 60,
+            "url": "",
+            "readerOptions": {
+              "header": null
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/data.py",
+            "line": 23,
+            "url": "",
+            "readerOptions": {
+              "header": null
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.8",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-30T07:46:40Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-30T07:46:40Z",
+        "url": "https://openalex.org/W7211974425",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.59594793,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-30T07:46:40Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-30T07:46:40Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-10-31T07:46:40Z"
+        }
+      },
+      "selectionScore": {
+        "total": 64.97973965,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.97973965,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-30T07:46:42Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "面向DNA测序变异调用器分派的基于残差异常检测框架",
+        "summary_zh": "该论文提出LSTM-EWMA筛选与分派框架:将有序基因组区域表示为特征向量序列,用仅在预设受控(IC)区域上训练的LSTM建模基线模式,并对标准化预测残差施加EWMA控制图;超出预设控制限的区域被操作性地标记为失控(OC),作为下游软件推荐候选,未标记区域保留默认处理路径。作者强调这些标签仅描述计算工作流状态,不单独确认变异或生物学异常。基于人类参考基因组合成测序数据的初步方法学基准中,该方法在评估设置下区分了预设OC与IC区域并保持较低观测误报率。图注显示评估仅区分基线调用器窗口(code 1)与路由至下游推荐流程的窗口(codes 2–5),codes 2–5间的选择不在本次评估范围内。",
+        "learning_points": [
+          "将基因组区域序列化为特征向量序列,用LSTM建模仅受控区域的基线模式,再对标准化预测残差使用EWMA控制图进行异常筛选。",
+          "采用“筛选—分派”两阶段思路:仅对超限区域触发下游软件推荐,以降低逐区域上下文感知推荐的计算开销。",
+          "明确标签语义边界:OC/IC标签表示计算工作流状态,不独立确认基因组变异或生物学异常。",
+          "图1界定了评估范围:仅区分基线调用器窗口(code 1)与下游推荐候选窗口(codes 2–5),候选间选择属下游阶段、不在本次评估内。",
+          "图2以描述性控制图对比ARIMA–EWMA、LSTM+固定阈值与LSTM–EWMA,背景色标识五类参考调用器类别,红色标记表示报警。",
+          "图3、图4分别对λ与窗口大小做单次运行敏感性分析,指标为FPR、F1-score与检测延迟。",
+          "代码静态观察显示run_experiments.py以header=None读取CSV,并保存基线对比、性能表、λ/窗口敏感性、ROC与消融等图件;作者代码未运行,静态检查不构成复现验证。",
+          "论文将当前结果定位为模拟数据上的可行性初步基准,并指出需在微生物、宏基因组及宿主关联测序情境中进一步验证。"
+        ],
+        "limitations": [
+          "作者代码未执行,无法确认图件与输入数据、图号的实际对应关系;静态检查不是复现验证,不得宣称已复现或结果一致。",
+          "评估基于源自人类参考基因组的模拟测序数据,尚未在真实微生物、宏基因组或宿主关联数据集中验证。",
+          "图3与图4为单次运行(one-run)敏感性分析,未体现重复运行或统计不确定性。",
+          "评估仅覆盖筛选分派组件,codes 2–5之间的调用器选择属下游阶段,未在本文评估。",
+          "OC/IC标签仅为计算工作流状态,不能独立确认基因组变异或生物学异常。",
+          "输入数据的列名、数据结构与尺度未在证据中明示,保持未知。",
+          "图2为描述性控制图对比,证据未提供定量性能指标或统计检验细节。",
+          "代码静态观察仅列出部分脚本路径与保存的图件文件名,未展示完整实现逻辑。",
+          "许可、期刊指标等信息未在证据中提供,保持未知。",
+          "摘要所述低误报率仅限所评估设置,外推至其他数据或参数配置需进一步验证。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-30T07:46:49Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "1e70b8132f82aefb356a87e48fd1b557967c5d7a8fd6dd41b3fc1fec6a5fbc02",
+        "summary_fingerprint": "10f3785358f8d6c5ebc2266b08128caa7c268043baa59e3f9193cbf691292f4b",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-67ffa8e2f01155dd",
+      "doi": "10.1101/gr.281431.125",
+      "paper": "Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.",
+      "journal": "Genome research",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13629687",
+      "pmid": "42749491",
+      "paperURL": "https://doi.org/10.1101/gr.281431.125",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1088-9051",
+      "eissn": "1549-5469",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "99841df62c5d3fad687fa7352436aabaf89926412c803aaa2e3c49256233b08a"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/PMC13629687.1.xml?md5=c707df258ed2f85a310c827c1ba98ad6",
+        "figures": [
+          {
+            "id": "GR281431ASHF1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "UniVI overview and evaluation roadmap. (A) UniVI (loss_mode=“v1”) with modality-specific encoders/decoders, a shared latent prior, and MoE aggregation. (B) v1 training objective: reconstruction, KL to the shared prior, and symmetric paired posterior alignment. (C) Evaluated study designs spanning paired, trimodal, bridge, and mosaic regimes. Example trimodal RNA-ATAC-ADT architecture shown to highlight UniVI’s built-in modularity. (D) Metrics and diagnostics used across regimes (paired correspondence, modality mixing, label transfer, cross-modal reconstruction, biological consistency).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f01.webp?md5=4c5857b9f2fbe16dad454d4f4b64880c",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "UniVI integrates paired CITE-seq RNA and protein profiles. (A) Stacked latent UMAP of held-out test embeddings colored by modality (RNA vs. ADT). (B) Same UMAP colored by celltype.l2. (C,D) Row-normalized confusion matrices for RNA → ADT (C) and ADT → RNA (D) k-NN label transfer (k = 15). (E,F) Per-class F1 scores for RNA → ADT (E) and ADT → RNA (F). Summary (test set): RNA → ADT ACC 0.958 (macro-F1 0.733); ADT → RNA ACC 0.962 (macro-F1 0.763). FOSCTTM on a 20,000-cell subsample: 0.0209 ± 0.00022 (SEM).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f02.webp?md5=96989c8a4c081c3ed72e80de9e0deb9e",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "UniVI supports cross-modal reconstruction and denoising in CITE-seq. (A,B) Cell type–aggregated marker means for RNA (A) and ADT (B), shown for observed and cross-modally reconstructed profiles (Z-scored per feature across cell types). (C) Stacked test-set latent UMAP colored by reference coarse-level cell types. (D–K) Observed (left) versus cross-modal reconstructions (right) for representative markers: B cells—CD79A (RNA, D), CD19 (ADT, E); mono/mac—LYZ (RNA, F), CD14 (ADT, G); cytotoxic/NK—NKG7 (RNA, H), CD56_1 (ADT, I); T cells—TRAC (RNA, J), CD3_1 (ADT, K). Directions are ADT → RNA (D,F,H,J) and RNA → ADT (E,G,I,K).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f03.webp?md5=94b6e249ba70f1552e8629b46ac4a853",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "assets/pmc13629687-90b8a95d863649cb.webp",
+            "sha256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
+            "width": 1600,
+            "height": 2113,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "90b8a95d863649cb8a4edaa9c90bd823cc9e2ff34e4afe2dad83adf8c0694973",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "GR281431ASHF4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "UniVI integrates paired RNA and ATAC profiles in 10x Genomics Multiome PBMCs. (A) Stacked latent UMAP of the held-out test set (n = 3137) from modality-specific posterior means (ZRNA, ZATAC); dashed segments connect paired embeddings; colored by cell type. (B) Same UMAP colored by modality (RNA vs. ATAC). (C–J) Observed (left) versus cross-modal reconstructions (right): ATAC → RNA overlays for lineage markers (CD79A, LYZ, NKG7, TRAC) and RNA → ATAC reconstructions shown in the ATAC LSI space (example components labeled per panel). (K,L) Row-normalized confusion matrices for k-NN label transfer (k = 3) RNA → ATAC and ATAC → RNA. Summary: FOSCTTM 0.0479 ± 0.00107 (SEM); RNA → ATAC ACC 0.960 (macro-F1 0.858); ATAC → RNA ACC 0.961 (macro-F1 0.892).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f04.webp?md5=f9d72e2f1fe41e5eb75ff0d26a7750ee",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "A Multiome reference bridges independent unimodal RNA-only and ATAC-only PBMC cohorts. (A–C) Joint latent UMAP of Multiome reference (RNA+ATAC) with projected Ding (RNA-only) and Satpathy (ATAC-only) cells, colored by (A) data set/modality, (B) harmonized coarse PBMC label, and (C) technology/platform. (D–F) Same views after optional supervised refinement (classification head; decoders frozen), showing increased within-lineage cross-cohort co-localization. (G) Cross-cohort k-NN label transfer (k = 15) before (top) and after (bottom) refinement in both directions (Ding↔Satpathy). (H) Multiome bridge cells only, colored by modality. (I) Multiome bridge cells colored by predicted coarse label from the refinement head. (J) Marker-based validation in Multiome RNA (dot plot: fraction expressing and mean expression per predicted group).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f05.webp?md5=f0265a7b841e537184ef43d3d17a94fc",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "UniVI integrates trimodal TEA-seq PBMCs and is stable under a held-out partition. Model trained on wells 3–4 and 6; evaluated on held-out well 5 (all panels). (A) Pairwise FOSCTTM (mean ± SEM) on the held-out well 5 sample for RNA–ADT, RNA–ATAC, and ADT–ATAC. (B) k-NN neighbor modality composition (k = 30) in the stacked latent space for well 5 cells. (C) Distances to same- versus different-modality neighbors (k = 30) in the stacked latent space. (D) Stacked latent UMAP colored by modality (RNA, ADT, ATAC). (E) Same UMAP colored by Leiden clusters on the stacked k-NN graph (14 clusters). (F) Modality composition per Leiden cluster. (G) Marker overlays illustrating cross-modality concordance in a cytotoxic lymphocyte region: RNA (GZMH, GNLY, CCL5), ADT (CD56, CD16, KLRG1), and representative ATAC LSI dimensions (LSI 3, LSI 4, LSI 9).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f06.webp?md5=54ff903cd68ce00f90037d8d36d5dea6",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF7",
+            "label": "Figure 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "AML mosaic integration bridges RNA, protein, and genotype across independent cohorts. (A) Joint latent UMAP colored by data set/modality (AML CITE RNA/ADT, van Galen RNA, DAb-seq ADT). (B) Joint UMAP highlighting DAb-seq NPM1 status (WT/MUT; unlabeled gray). (C) k-NN probability transfer of NPM1 from van Galen → DAb-seq (k = 60), shown on DAb-seq cells. (D) Joint UMAP colored by van Galen cell-state labels. (E) Joint UMAP colored by van Galen NPM1 status for labeled cells. (F) k-NN probability transfer of NPM1 from DAb-seq → van Galen (k = 50), shown on van Galen cells. (G) Refined UMAP colored by van Galen cell-state labels. (H) Joint UMAP after mutation-head refinement (encoders fine-tuned; decoders frozen), colored by data set/modality. (I) Refined UMAP colored by LSC17 stemness score. (J) Refined UMAP colored by DAb-seq NPM1 status. (K) Refined UMAP colored by van Galen NPM1 status (labeled cells only). (L) Mutation-head test performance (AUC) across recurrent AML genes in DAb-seq and van Galen (genes with insufficient labeled test cells omitted/NA).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f07.webp?md5=aa62c2dbe815610519411f854611c108",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "assets/pmc13629687-55e6e165d4236fa5.webp",
+            "sha256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
+            "width": 1600,
+            "height": 2001,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "55e6e165d4236fa58d29236528cb364ec5dc793a42206181632464e926c1b787",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "GR281431ASHF8",
+            "label": "Figure 8.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Benchmark comparison across multimodal integration methods using fused-space and cross-latent metrics. Violin plots summarize cross-validation folds and random seeds (orange markers: mean). (A) Fused-latent k-NN label transfer accuracy (k = 15). (B) Fused-latent k-means ARI (k set to the number of evaluated label classes). (C) Fused-latent k-means NMI (k set to the number of evaluated label classes). (D) Fused-latent silhouette score by ground-truth labels. (E) Wall-clock fit time (seconds). (F) Cross-latent FOSCTTM between modality-specific embeddings. (G) Cross-latent Recall@10. (H) Cross-latent k-NN label transfer accuracy (k = 15). (I) Cross-latent k-NN label-transfer macro-F1 (k = 15). (J) Modality mixing on stacked modality-specific embeddings (k = 30).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f08.webp?md5=0f17bf2810585a1de187632e5ed9ac06",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF9",
+            "label": "Figure 9.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Reduced paired overlap reveals an anchor threshold. Paired 10x Genomics Multiome PBMCs were evaluated under an overlap sweep that reduced the fraction of paired RNA–ATAC anchors (Supplemental Methods), either by dropping ATAC (Drop ATAC, blue) or dropping RNA (Drop RNA, orange). Lines show means across cross-validation replicates with uncertainty bands. (A) Paired correspondence (FOSCTTM; lower is better). (B,C) Paired retrieval (Recall@1, Recall@10; higher is better). (D) Cross-modality semantic consistency (bidirectional k-NN label transfer macro-F1; higher is better). (E,F) Fused-space biological structure (k-means NMI, ARI; higher is better). (G) Schematic summary of low-anchor collapse, modest-overlap stabilization, and high-overlap saturation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f09.webp?md5=645c7d5b4d86ed7d656d3d7304caecd1",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GR281431ASHF10",
+            "label": "Figure 10.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Cell type–specific modality dropout reveals localized degradation and interpretable MoE behavior. Paired 10x Genomics Multiome PBMCs were subjected to targeted modality ablation in which one modality (RNA or ATAC) was masked only for a single annotated population during training; evaluation was performed on unchanged paired validation/test splits (Supplemental Methods). (A) Stacked latent UMAP colored by modality for an illustrative ablation condition, showing that the perturbation is localized while global geometry is preserved. (B) MoE fused-latent UMAP colored by signed gating preference (e.g., wRNA − wATAC), highlighting a localized shift toward the remaining modality within the ablated region. (C) Coarse-label summary of correspondence degradation under targeted dropout, quantified on paired test embeddings (e.g., FOSCTTM; lower is better), comparing RNA-drop versus ATAC-drop conditions across ablated populations. (D) Coarse-label summary of semantic stability under targeted dropout (cross-modality label transfer macro-F1; higher is better). (E,F) Fine cell type heatmaps summarizing correspondence and clustering diagnostics across all evaluated populations for (E) RNA-drop and (F) ATAC-drop conditions (metrics indicated per row).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/2068f10.webp?md5=229e9969ea47068085c6dcfb661d8726",
+            "articleURL": "https://doi.org/10.1101/gr.281431.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir. Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework.. DOI: 10.1101/gr.281431.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SD1",
+            "label": "Supplement 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/Supplemental_Notebook_S1.zip?md5=c4794a09567a5f22a5b5334de4797fbb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "SD2",
+            "label": "Supplement 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/Supplemental_Code.zip?md5=83da5359d7be7e2254da4a83e24d4e36",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "SD3",
+            "label": "Supplement 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/Supplemental_Material.pdf?md5=322b96a8465c52527ccff746dd60f8ad",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Ashford-A/UniVIPyPI"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-30T07:46:27.492933+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Ashford-A/UniVIPyPI",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629687.1/PMC13629687.1.xml?md5=c707df258ed2f85a310c827c1ba98ad6"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Andrew J. Ashford; Trevor Enright; Julia Somers; Olga Nikolova; Emek Demir"
+      },
+      "repository": {
+        "status": "unavailable",
+        "url": "https://github.com/Ashford-A/UniVIPyPI",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "GitHub inspection failed: FetchError"
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false,
+        "errorStatus": 404,
+        "lastError": "api.github.com: HTTP 404"
+      },
+      "metrics": {
+        "status": "not_applicable",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "preprint",
+        "retrieved_at": "2026-10-30T07:46:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-30T07:46:29Z",
+        "url": "https://openalex.org/W7213438430",
+        "cited_by_count": 0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "unavailable",
+          "metrics": "not_applicable",
+          "ai": "missing_evidence"
+        },
+        "errors": [
+          "repository: unavailable"
+        ],
+        "lastCheckedAt": "2026-10-30T07:46:29Z",
+        "repairSchedule": {
+          "consecutiveFailures": 1,
+          "lastAttemptAt": "2026-10-30T07:46:29Z",
+          "lastOutcome": "failure"
+        }
+      },
+      "selectionScore": {
+        "total": 50,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-30T07:46:49Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -167392,6 +168851,119 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-52f82b37c80562b1": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-77149bb08831c9c7": {
+      "tree": "dynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py；读取行 60；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/run_experiments.py",
+          "observedFieldReferences": [
+            {
+              "name": "font.sans-serif",
+              "line": 18,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.unicode_minus",
+              "line": 19,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "LSTM-EWMA",
+              "line": 531,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "LSTM + Threshold",
+              "line": 536,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ARIMA-EWMA",
+              "line": 544,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "lambda",
+              "line": 552,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delay",
+              "line": 567,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "window",
+              "line": 584,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "fpr",
+              "line": 553,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "f1",
+              "line": 560,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "fnr",
+              "line": 370,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/data.py；读取行 23；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Icarus200110/Lstm-EWMA/blob/ede52f5ea6070bc38a4fde46a8e47200ecf607db/src/training/data.py",
+          "observedFieldReferences": []
+        }
+      ]
+    },
+    "doi-67ffa8e2f01155dd": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -169010,7 +170582,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-29T07:45:47Z",
+  "generatedAt": "2026-10-30T07:46:50Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -169244,18 +170816,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-30T07:44:45Z",
-    "updatedAt": "2026-10-30T07:44:48Z",
+    "updatedAt": "2026-10-30T07:46:54Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 44,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
