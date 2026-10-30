@@ -13254,10 +13254,10 @@
   },
   "dailyCollectionSession": {
     "status": "active",
-    "batchCount": 1,
+    "batchCount": 2,
     "startedAt": "2026-10-30T07:44:45Z",
     "maxRequests": 1800,
-    "updatedAt": "2026-10-30T07:46:54Z",
+    "updatedAt": "2026-10-30T07:46:59Z",
     "version": 1,
     "maxAiAttempts": 165,
     "endReason": "",
@@ -13269,6 +13269,11 @@
     "date": "2026-10-30",
     "maxSeconds": 2700,
     "uncertainRequests": 0,
-    "elapsedSeconds": 130
+    "elapsedSeconds": 135,
+    "inFlight": {
+      "startedAt": "2026-10-30T07:46:59Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
