@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-10-30",
+  "checkedAt": "2026-10-31",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -119310,6 +119310,2389 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-00c6b222cfd818b5",
+      "paper": "PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.",
+      "doi": "10.1002/advs.78581",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-10-28",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78581",
+      "pmcid": "PMC13715669",
+      "pmid": "42949656",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-31",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "293924c5034c538c9aba32845a65aee2a1817b707a76c405dd0ef65606d06b41"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/PMC13715669.1.xml?md5=3c273b45c07a283074d77e17f3e5dcc3",
+        "figures": [
+          {
+            "id": "advs78581-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Disturbed serine metabolism occurs in nucleus pulposus cells (NPCs) during senescence. A, B: Representative SA‐β‐gal staining images and quantification of SA‐β‐gal‐positive cells in young NPCs (group A), replicative senescent NPCs (group B), and oxidative stress‐induced senescent NPCs (group C). Scale bar = 50 µm. C, D: ELISA analysis of IL‐1β and IL‐6 secretion in groups A, B, and C (n = 3 per group). E, F: Western blot and quantitative analysis of P21 and P16 expression in groups A, B, and C. G, H: Heatmap and Venn diagram of differentially expressed genes (DEGs) in groups A, B, and C analyzed by RNA‐seq. I, J: The overlapping downregulated genes from groups B and C were intersected, ranked by p‐value and false discovery rate (FDR), and the top 20 enriched pathways were identified. GO analysis revealed significant enrichment in cell cycle‐related pathways (I), whereas KEGG analysis highlighted prominent enrichment in the glycine, serine, and threonine metabolism pathway (J). K, L Volcano plots of DEGs showing that phosphoglycerate dehydrogenase (PHGDH), the rate‐limiting enzyme for serine synthesis, was downregulated in both group B and group C compared with group A. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g007.webp?md5=32c8da8df92c948b5f07bd450cbaf705",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "assets/pmc13715669-84bb2aec3b1af60d.webp",
+            "sha256": "84bb2aec3b1af60d5596aa835a4a601cd1211b87934d81db992d8bc513da4b23",
+            "width": 820,
+            "height": 844,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "84bb2aec3b1af60d5596aa835a4a601cd1211b87934d81db992d8bc513da4b23",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78581-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single‑cell transcriptomic analysis of PHGDH expression in human nucleus pulposus cells. A: UMAP plot showing cell type annotation of human intervertebral disc cells based on the SingleR reference database. Each color represents a distinct cell population. The dataset contains 7 samples with different Pfirrmann grades (2 grade I, 2 grade II, 1 grade III, 2 grade IV). B: Dot plot showing the expression of canonical cell type marker genes and PHGDH across the main cell clusters identified in Figure 2A. Dot size represents the percentage of cells expressing the gene, and color intensity indicates the average expression level. C: UMAP plot of further subdivided cell clusters at higher resolution, revealing 27 distinct subpopulations covering all human intervertebral disc cells. D: Dot plot of PHGDH expression across further subdivided NPC subclusters. E: Heatmap of the top 50 genes differentially expressed along the pseudo‑time trajectory of NPCs. Each column represents a pseudo‑time point, and each row represents a gene. Red: high expression; blue: low expression. F: Pseudo‑time expression dynamics of PHGDH. G‐I: Pseudo‑time expression dynamics of the NPC marker gene.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g005.webp?md5=77821325215cf8b0a86a1beb968a0554",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "PHGDH expression is markedly decreased in severely degenerated nucleus pulposus cells and tissues. A: Quantitative real‐time PCR (qPCR) analysis of the mRNA expression of serine synthesis‐related enzymes (PHGDH, PSAT1, and PSPH) in primary P0, P5, and P10 NPCs. n = 3 per group. B, C: Western blot and quantitative analysis of Collagen II, PHGDH, and P21 expression in primary P0, P5, and P10 NPCs. n = 3 per group. D, E: Western blot and quantitative analysis of Collagen II, PHGDH, and P21 expression in control and H2O2‐induced senescent NPCs. n = 3 per group. F, G: Representative immunohistochemistry (IHC) images and quantitative analysis of PHGDH expression in nucleus pulposus tissues from young and aged rats. Black dashed lines indicate the boundaries of the nucleus pulposus (NP), annulus fibrosus (AF), and cartilaginous endplate (CEP). Scale bars: black = 200 µm, red = 50 µm. n = 8 per group. H: Representative T2‐weighted MRI images of human intervertebral discs with different Pfirrmann grades of degeneration (grades I–II, mildly IVDD; grades III–V, severely IVDD). I, J: IHC detection of PHGDH expression in human intervertebral discs with varying Pfirrmann grades of degeneration. Scale bars: black = 200 µm, red = 50 µm. n = 8 per group. K: Serine levels measured in P0, P5, and P10 NPCs. n = 3 per group; control and H2O2‐treated NPCs. n = 3 per group; nucleus pulposus tissues from young and aged rats. n = 8 per group; and mildly and severely degenerated human nucleus pulposus tissues. n = 8 per group. All data are presented as mean ± standard error of the mean (SEM). P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g006.webp?md5=ccd6e933ba2e34743ec4bdc61f8fba09",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Serine‐deficient diet exacerbates IVDD in aged rats. A: Schematic diagram of the serine‐deficient diet experiment. B, C: Representative X‐ray images and quantitative analysis of intervertebral space height. Disc height index (DHI%) = (A1+B1+C1) × 100%/(A0+B0+C0+A1+B1+C1). n = 8 per group. D, E: Representative T2‐weighted MRI images and quantitative analysis of disc degeneration grades using grayscale values from T2‐weighted MRI. Regions of interest (ROIs) within the intervertebral disc are shown. n = 8 per group. F, G: Representative Safranin O‐Fast Green (SO&FG) staining images and histological scores of disc degeneration. Black dashed lines indicate the NP/AF/CEP boundaries. Scale bars: black = 200 µm, white = 20 µm. n = 8 per group. H, I: Immunofluorescence (IF) staining of IVDD‐related markers in discs from control and serine‐deficient rats and semiquantitative analysis of fluorescence intensity for Collagen II, MMP‐13, and γ‐H2AX. White dashed lines indicate the NP/AF/CEP boundaries. Scale bar = 200 µm. n = 8 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g002.webp?md5=7996785a47fe159f11c4cb5c20030bdb",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "assets/pmc13715669-02f68e1e8d20e446.webp",
+            "sha256": "02f68e1e8d20e446ad64a0979c7413947ff38a6b54ebd69c7b8f9d81497c206f",
+            "width": 820,
+            "height": 863,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "02f68e1e8d20e446ad64a0979c7413947ff38a6b54ebd69c7b8f9d81497c206f",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78581-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Serine deprivation inhibits proliferation and promotes senescence and degeneration of nucleus pulposus cells. A: Schematic diagram of serine synthesis metabolism. B: Cell Counting Kit‐8 (CCK‐8) assay was performed to evaluate the effects of 0, 0.1, 0.2, 1, and 10 mM serine on NPC viability following 24 h of incubation. n = 3 per group. C, D: NPCs were divided into five groups: complete medium (CM), CM+siPHGDH, serine‐deficient equivalent medium (Ser−), Ser−+siPHGDH, and siPHGDH+Ser, followed by 48 h incubation. 5‐Ethynyl‐2’‐deoxyuridine (EdU) assay was used to detect NPC proliferation. Scale bar = 100 µm. n = 3 per group. E: CCK‐8 assay for viability differences among the five groups. n = 3 per group. F, G: Representative senescence‐associated β‐galactosidase (SA‐β‐gal) staining images and quantitative analysis of SA‐β‐gal activity to assess cellular senescence in the five groups. Scale bar = 50 µm. n = 3 per group. H, I: Propidium iodide staining was applied to analyze cell cycle distribution in each group, with a bar graph showing the statistical proportion of cells in S phase. n = 3 per group. J, K: Western blot and quantitative analysis of Collagen II, PHGDH, and P21 expression in control, siPHGDH, and siPHGDH+Ser NPCs. n = 3 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g001.webp?md5=4db88669b2e5ca220c0ec87d5e72161e",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "PHGDH modulates Rap1b expression by regulating histone methylation levels at the Rap1b promoter. A, B: Heatmap of DEGs in control and siPHGDH NPCs detected by RNA‐seq and KEGG analysis showing significant enrichment of the Rap1 signaling pathway. C, D: Western blot and quantitative analysis of Rap1b expression in control, siPHGDH, and siPHGDH+Ser NPCs. n = 3 per group. E: Levels of α‐KG in control, siPHGDH, and siPHGDH+Ser groups. n = 3 per group. F: Western blot analysis of H3K9me3, H3K9ac, H3K27ac, and H3K27me3 in control, siPHGDH, siPHGDH+α‐KG, and siPHGDH+α‐KG+GSK‐J4 NPCs (α‐KG: 2 mM; GSK‐J4: 5 µM, 48 h). n = 3 per group. G, H: Differences in H3K27me3 immunofluorescence intensity among the four groups of NPCs. n = 3 per group. I, J: Western blot and quantitative analysis of JMJD3 protein expression in control, siPHGDH, and siPHGDH+Ser NPCs. n = 3 per group. K: Relative JMJD3 activity of NPCs in control, siPHGDH, and siPHGDH+Ser groups. n = 3 per group. L‐N: Western blot and quantitative analysis of JMJD3, PHGDH, Rap1b, Collagen II, and P21 expression in control, siPHGDH, and siPHGDH+OE‐JMJD3 NPCs. n = 3 per group. O, P: Western blot and quantitative analysis of H3K27me3 expression in control, siPHGDH, and siPHGDH+OE‐JMJD3 NPCs. n = 3 per group. Q, R: Differences in H3K27me3 immunofluorescence intensity in rat nucleus pulposus tissues from Sham, puncture+OE‐NC, and puncture+OE‐PHGDH groups. White dashed lines indicate the NP/AF/CEP boundaries (scale bars: white = 200 µm, red = 50 µm). n = 8 per group. S, T: Differences in H3K27me3 immunofluorescence intensity in rat lumbar intervertebral disc tissues from control and serine‐deficient groups. White dashed lines indicate the NP/AF/CEP boundaries (scale bars: white = 200 µm, red = 50 µm). n = 8 per group. U: Chromatin immunoprecipitation qPCR (ChIP‐qPCR) results revealed that PHGDH knockdown increased the occupancy of H3K27me3 at the Rap1b promoter region. n = 3 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g004.webp?md5=02fb47717615cc78148c40dac9dfb099",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Rap1b silencing activates the mTORC1 pathway and impairs autophagic flux in nucleus pulposus cells. A, B: Western blot and quantitative analysis of Collagen II, P21, and Rap1b expression in control, siRap1b‐1, and siRap1b‐2 NPCs. n = 3 per group. C, D: Western blot and quantitative analysis of phosphorylated mTOR (Ser2448), mTOR, phosphorylated Akt (Ser473), and Akt expression in control, siRap1b, and siRap1b+Rapamycin NPCs. n = 3 per group. E, F: Western blot and quantitative analysis of ATG7, P62, Beclin1, LC3‐I, and LC3‐II expression in control, siRap1b, and siRap1b+Rapamycin NPCs (Rapamycin: 100 nM). n = 3 per group. G, H: LysoTracker staining and quantitative analysis in control, siRap1b, siRap1b+MHY1485, and siRap1b+Rapamycin groups in rat NPCs. Scale bar = 20 µm. n = 3 per group. I, J: Immunofluorescence double‐labeling staining for LC3‐LAMP1 colocalization in rat NPCs (green: LC3; red: LAMP1). Scale bar = 20 µm. The percentage of LC3/LAMP1 colocalization was quantified via image analysis. n = 3 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g003.webp?md5=aa66238a47461fceb9399e668c7b1d6e",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Serine deprivation reduces antioxidant capacity and increases apoptosis in nucleus pulposus cells. A: Volcano plot of differential metabolites in NPCs cultured in serine‐deficient medium (Ser‐) for 48 h, showing decreased L‐reduced glutathione in the Ser‐ group. B: Metabolic pathway enrichment analysis indicated significant enrichment of the glycine‐serine‐threonine metabolism pathway. C: KEGG pathway analysis revealed enrichment in cell growth and death‐related pathways. D, E: Reactive oxygen species (ROS) fluorescence staining and quantitative analysis in control, siPHGDH, Ser‐, and siPHGDH+Ser‐ groups. n = 3 per group. F, G: Apoptosis of NPCs was assessed by Annexin V‐FITC/PI double staining combined with flow cytometry analysis. n = 3 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g008.webp?md5=ff35d7de8c07cc11f305294553328d43",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78581-fig-0009",
+            "label": "FIGURE 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "PHGDH overexpression alleviates intervertebral disc degeneration in vivo. A: Schematic diagram of interventions after rat intervertebral disc puncture. B: Representative X‐ray and MRI images. Scale bar = 150 µm. C: Quantitative analysis of intervertebral space height and disc degeneration grades using grayscale values from T2‐weighted MRI images (n = 8 per group). Scale bar = 150 µm. D, E: Representative Safranin O‐Fast Green (SO&FG) staining images and histological scores of disc degeneration. Black dashed lines indicate the NP/AF/CEP boundaries. Scale bars: black = 200 µm, white = 50 µm. n = 8 per group. F, G: IF staining of IVDD‐related markers in discs from Sham, Puncture+OE‐NC, and Puncture+OE‐PHGDH rats and semiquantitative analysis of fluorescence intensity for Collagen II, MMP‐13, and γ‐H2AX. White dashed lines indicate the NP/AF/CEP boundaries. Scale bar = 200 µm. n = 8 per group. P values were calculated using one‐way analysis of variance (ANOVA) with Tukey's multiple comparisons test. Histological degeneration scores are presented as median with interquartile range and were analyzed using the Friedman test, followed by pairwise Wilcoxon matched‐pairs signed‐rank tests with Holm adjustment. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-g010.webp?md5=dc63359f5f1981afc79cdc0b712bd900",
+            "articleURL": "https://doi.org/10.1002/advs.78581",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang. PHGDH-Mediated Serine Metabolism in Nucleus Pulposus Cells Is a Potential Therapeutic Target for Intervertebral Disc Degeneration.. DOI: 10.1002/advs.78581. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78581-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78581-supitem-0001",
+            "label": "Supporting file: advs78581‐sup‐0001‐SuppMat.docx",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715669.1/ADVS-9999-e78581-s001.docx?md5=3ea2e1f739f1c75278065763da94b732",
+            "license": "CC BY",
+            "sha256": "4373bb154feafe43508a4806b85259e5063105734eca638d84fb61ae41a958c0",
+            "status": "downloaded_private",
+            "bytes": 2906972,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-31T07:33:39.880210+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Hao‐Wei Xu; Sheng‐Jie Chang; Xiao‐Wei Liu; Shu‐Bao Zhang; Ying‐Jie Wang; Shan‐Jin Wang"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-31T07:33:45Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-31T07:33:45Z",
+        "url": "https://openalex.org/W7224110170",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.87497532,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-31T07:33:45Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-31T07:33:45Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-01T07:33:45Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.3748766,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.3748766,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-31T07:33:57Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-9b7ec4362e663d3a",
+      "paper": "Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.",
+      "doi": "10.1002/fsn3.72500",
+      "journal": "Food science & nutrition",
+      "date": "2026-10-28",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/fsn3.72500",
+      "pmcid": "PMC13715506",
+      "pmid": "42953387",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2048-7177",
+      "eissn": "2048-7177",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-31",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "de1e37b460ae68e445b97a5e3d0b924c92ba9f82ab2058eb8927fcbe86dd378d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/PMC13715506.1.xml?md5=e8d02116328251e918ac2f756f493bce",
+        "figures": [
+          {
+            "id": "fsn372500-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Monosaccharide composition of POP. POP was composed of mannose, rhamnose, glucose, galactose, and arabinose, with relative molar percentages of 12.76%, 1.17%, 77.74%, 3.38%, and 4.95%, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g001.webp?md5=b8e125c71eb038fd4c56e2f11332ebbb",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fsn372500-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "POP ameliorates neuronal damage and alleviates cerebral oxidative stress in D‐galactose‐induced aging mice. (A) Hematoxylin and eosin (H&E) staining of the hippocampal region. (B) Percentage of damaged neurons in CA1 area. (C) Nissl staining of the hippocampal region. (D) Number of positive neurons in CA1 area. (E) Glutathione (GSH) levels. (F) Malondialdehyde (MDA) levels. (G) Superoxide dismutase (SOD) activity. Data are presented as the mean ± SD. n = 3, **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g003.webp?md5=7a6b9c65059489eee53ebf6742f06177",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "assets/pmc13715506-6773bf344846a345.webp",
+            "sha256": "6773bf344846a3456dca4630b2f33f931a59c77fe0fe0394dc256ea586000bde",
+            "width": 1064,
+            "height": 1061,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6773bf344846a3456dca4630b2f33f931a59c77fe0fe0394dc256ea586000bde",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fsn372500-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "POP affect the abundance of the gut microbiota in D‐galactose‐induced aging mice. (A–C) α‐diversity (Simpson, Shannon and Chao1 indices) of the gut microbiota. (D) Non‐metric multidimensional scaling (NMDS) analysis. (E) Relative abundance of the top 10 bacterial phylum level. (F) Heatmap of microbial abundance at the genus level. (G–I) Three genera showing statistically significant differences in abundance. Data are presented as mean ± SD. n = 6. **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g005.webp?md5=a842128fe6b1e7166243d762d7d869f7",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fsn372500-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "POP mediates alterations in serum metabolites in D‐galactose‐induced aging mice. (A) Principal component analysis (PCA) of all samples. (B) Volcano plot of differentially expressed metabolites between mice in the Control and Model groups. (C) Volcano plot of differentially expressed metabolites between mice in the POP and Model groups. (D) KEGG enrichment analysis of differentially expressed metabolites between mice in the Control and Model groups. (E) KEGG enrichment analysis of differentially expressed metabolites between mice in the POP and Model groups. (F) Heatmap of differentially expressed metabolites associated with glycerolipid metabolism and inositol phosphate metabolism. (G–I) Three differentially expressed metabolites related to glycerolipid and inositol phosphate metabolism. Data are presented as mean ± SD. n = 5. *p < 0.05, **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g004.webp?md5=fcfe2f38c0ff8b8d03774f48bc77abae",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fsn372500-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Effects of POP on gene expression in the brain of d‐galactose‐induced aging mice. (A) Principal component analysis (PCA) of all samples. (B) Volcano plot of differentially expressed genes (DEGs), Control vs. Model group. (C) Volcano plot of DEGs, POP versus Model group. (D) Venn diagram. (E) Heatmap of differentially expressed genes. (F–H) Expression levels of three significantly differentially expressed genes. (I–K) RT‐qPCR analysis of the selected genes. Data are presented as mean ± SD. n = 3. *p < 0.05, **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g008.webp?md5=ff8d5b8ff5e70be8f144aaff0d4b68df",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fsn372500-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Effect of POP on intestinal gene expression in D‐galactose‐induced aging mice. (A) PCA analysis of all samples. (B) Volcano plot of differentially expressed genes (DEGs) in Control vs. Model group. (C) Volcano plot of DEGs in POP versus Model group. (D) Venn diagram. (E) KEGG enrichment analysis of DEGs. (F) GSEA of DEGs. (G) Heatmap of DEGs associated with the NF‐κB signaling pathway. (H) Four screened genes with significant differences. (I–L) RT‐qPCR analysis of the four screened genes with significant differences. Data are presented as mean ± SD. n = 3. *p < 0.05, **p < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g007.webp?md5=0ca110974d6d3c9b44b2d9ce33bc676d",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "assets/pmc13715506-04abf83c218e9ed5.webp",
+            "sha256": "04abf83c218e9ed5f1e31631c560c1e99f8961978c1953c1fe93b2e759b404c4",
+            "width": 1064,
+            "height": 1519,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "04abf83c218e9ed5f1e31631c560c1e99f8961978c1953c1fe93b2e759b404c4",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fsn372500-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Integrated analysis of gut microbiota, metabolites, and differentially expressed genes. (A) Correlation elliptical heatmap between gut microbiota and serum metabolites. (B) Correlation elliptical heatmap between differentially expressed genes in the brain and serum metabolites. (C) Correlation elliptical heatmap between differentially expressed genes in the gut and serum metabolites; (D) Correlation network among gut microbiota, metabolites, and differentially expressed genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715506.1/FSN3-14-e72500-g006.webp?md5=1741ba38939ff68e685c540218cd9397",
+            "articleURL": "https://doi.org/10.1002/fsn3.72500",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li. Integrated Multi-Omics Analysis of &lt;i&gt;Polygonatum odoratum&lt;/i&gt; Polysaccharide in D-Galactose-Treated Mice Reveals Changes in Oxidative Stress Markers and Gut Microbiota.. DOI: 10.1002/fsn3.72500. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-31T07:33:36.240465+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wenjian Li; Yan Huang; Wenfang Zhang; Shunxiang Li; Lisong Li"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "missing_journal",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "missing_journal"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-31T07:33:38Z",
+        "url": "https://openalex.org/W7224092040",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.77541531,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "missing_journal",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-31T07:33:38Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-31T07:33:38Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-01T07:33:38Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.87707655,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.87707655,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-31T07:33:57Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-0e958f7199a6d0ae",
+      "paper": "Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.",
+      "doi": "10.1371/journal.pone.0361601",
+      "journal": "PloS one",
+      "date": "2026-10-29",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0361601",
+      "pmcid": "PMC13719024",
+      "pmid": "42956048",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-31",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b577f8875eda36ef560773567cc1b393dc8daa6623b02d154bbc56a7ab6f2e75"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/PMC13719024.1.xml?md5=846b2a1b395841e9e73aa6cae6e54327",
+        "figures": [
+          {
+            "id": "pone.0361601.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Genetic correlation matrix among insulin resistance-related metabolic phenotypes.Circle size represents the absolute magnitude of the genetic correlation, whereas color represents its signed direction and magnitude. Orange indicates negative genetic correlation and purple indicates positive genetic correlation, with the color scale ranging from −1 to 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g001.webp?md5=9f58507fa680962e96a83565f091a595",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0361601.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "MAGMA gene-level association analysis of the insulin resistance-related latent genetic factor.Manhattan plot showing gene-level associations identified by MAGMA based on the Genomic SEM GWAS of the insulin resistance-related latent factor. Genes are arranged by chromosomal position, and the y-axis represents −log10(P-value). Horizontal reference lines indicate preset significance thresholds. Representative significant genes are annotated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g002.webp?md5=2550853bafe8780c39c1fe5fe38176a5",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0361601.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Regional association and fine-mapping plots of representative risk loci.Regional plots showing GWAS association strength and fine-mapping posterior inclusion probabilities for selected candidate loci. Panels show: (a) SLC22A3, (b) PPARG, (c) RSPO3, and (d) GDF5. For each locus, the upper panel displays regional association signals, while the lower tracks summarize FINEMAP, SuSiE, and mean fine-mapping posterior probabilities. Highlighted variants indicate prioritized candidate signals within each region.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g003.webp?md5=a3f789904240b72caca8d0ec1aa92a94",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "assets/pmc13719024-fa94602e1ac2587e.webp",
+            "sha256": "fa94602e1ac2587e3350d752379a8e2e6151fcd4bf995518e177f8609602728e",
+            "width": 1600,
+            "height": 2004,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fa94602e1ac2587e3350d752379a8e2e6151fcd4bf995518e177f8609602728e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0361601.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "TWAS association landscape for the insulin resistance-related latent genetic factor.Manhattan plot of transcriptome-wide association study results based on FUSION using GTEx v8 cross-tissue sCCA expression weights. Genes are arranged by chromosomal position, and the y-axis represents TWAS Z scores. Positive and negative Z scores indicate opposite directions of association between genetically predicted gene expression and the latent factor. Genes exceeding Bonferroni-corrected significance threshold (P < 1.3187 × 10−6) are highlighted and annotated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g004.webp?md5=db8a27b87a91a10276db478cc81a7bc7",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0361601.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Functional, disease, and phenotype enrichment analyses of candidate genes.Bubble plots showing enrichment results for candidate genes associated with the insulin resistance-related latent factor. Panels show: (a) Disease Ontology enrichment, (b) Gene Ontology biological process enrichment, (c) Human Phenotype Ontology enrichment, and (d) GO-slim functional enrichment. The x-axis represents the number of overlapping genes. Dot size indicates the ratio of gene overlap, and dot color represents the empirical P-value.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g005.webp?md5=4668dea4a315bf456bd95dffa0e8291a",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "assets/pmc13719024-86ea886aa923ee50.webp",
+            "sha256": "86ea886aa923ee508c618cb0ca3a94c039c46e4c45aa8f3b6814f1a5c225687e",
+            "width": 1600,
+            "height": 1397,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "86ea886aa923ee508c618cb0ca3a94c039c46e4c45aa8f3b6814f1a5c225687e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0361601.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "AlphaFold3 structural models and prediction confidence of representative candidate proteins.AlphaFold3-predicted structures of representative proteins carrying the selected missense substitutions. Panels show: (a) BCL2, (b) GDF5, and (c) RSPO3. Structures are colored according to per-residue pLDDT confidence scores, with blue indicating very high confidence, cyan indicating confident regions, yellow indicating low confidence, and orange indicating very low confidence. These models were used for subsequent exploratory structural assessment and molecular dynamics simulations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g006.webp?md5=21b77bfe8db18110af902d09d496de71",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0361601.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Molecular dynamics simulation analysis of representative missense variants.Molecular dynamics trajectory analysis comparing wild-type and mutant proteins during 100-ns simulations. Panels show: (a) BCL2-W188G, (b) GDF5-C400Y, and (c) RSPO3-C129Y. Curves summarize dynamic structural parameters, including root mean square deviation, root mean square fluctuation, radius of gyration, and solvent-accessible surface area. Differences between wild-type and mutant trajectories indicate mutation-related changes in conformational stability, residue flexibility, compactness, and solvent exposure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g007.webp?md5=8be7713b7f6b0c4421af420a3b2cb1fa",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0361601.g008",
+            "label": "Fig 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "ThermoMPNN-based mutation-induced thermal stability prediction.Site-saturation mutagenesis thermostability profiles generated by ThermoMPNN for representative candidate proteins. Panels show: (a) BCL2, (b) GDF5, and (c) RSPO3. The heatmaps display predicted mutation-induced changes in free energy across residues surrounding the candidate mutation sites. Red signals indicate increased ΔΔG and a predicted destabilizing tendency, whereas blue signals indicate relatively stabilizing or less destabilizing substitutions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.g008.webp?md5=068781147d179b65ce7656eb618f5594",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0361601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al.. Integrative genomic SEM analysis of shared genetic architecture and candidate genes for insulin resistance-related metabolic traits.. DOI: 10.1371/journal.pone.0361601. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0361601.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s001.docx?md5=a5ab81faae2c30ca6a90fe8fbec7c114",
+            "license": "CC BY",
+            "sha256": "c405d43a119cca2c101a091d496cea4286187473314e39eeaeaacb05ffd21311",
+            "status": "downloaded_private",
+            "bytes": 17263,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s002",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s002.docx?md5=2ec1026ac09a7622805de4a1ba2580aa",
+            "license": "CC BY",
+            "sha256": "219b5c79067d3ac562faea8d76766c5b82331366231aaccafc1f109513297414",
+            "status": "downloaded_private",
+            "bytes": 16978,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s003",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s003.xlsx?md5=40300139bd4071d0ceba969c5fa42726",
+            "license": "CC BY",
+            "sha256": "26125854b423d887f136139c7febbf208ef2cab3e8ebe1d4b59c0c5425240d03",
+            "status": "downloaded_private",
+            "bytes": 12948,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s004",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s004.xlsx?md5=6ceee0994165612d04b017724cb68052",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s005",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s005.xlsx?md5=cfbec11b6a20e73753d30f02420c5d90",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s006",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s006.xlsx?md5=5bb1ce7894f7a8b23ca28efebc83ead3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s007",
+            "label": "S7 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s007.xlsx?md5=3e49d1189ecfdfcfe2d36c818b5a2a89",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s008",
+            "label": "S8 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s008.xlsx?md5=ff2885e6a88be8ebfc987d4822ee61e9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s009",
+            "label": "S9 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s009.xlsx?md5=4e00b1cc28acc318f1306fa6ec043dc6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s010",
+            "label": "S10 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s010.xlsx?md5=f90c887697f8e44bd166e4d051dba093",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s011",
+            "label": "S11 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s011.xlsx?md5=93a9597dfd67efd54929f79bdb855b45",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s012",
+            "label": "S12 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s012.xlsx?md5=d58d14c2b46ba61ef16c8089b51fc0b3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s013",
+            "label": "S13 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s013.xlsx?md5=526c12c086b32117928a8f176b6dac15",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s014",
+            "label": "S14 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s014.xlsx?md5=19f8b642dcfc7f448a90e958939c5a29",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s015",
+            "label": "S15 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s015.xlsx?md5=f1fa878e619212f287156a9224d97432",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s016",
+            "label": "S16 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s016.xlsx?md5=4669605d88406c397bc750c3d024c0ce",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s017",
+            "label": "S17 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s017.xlsx?md5=ccd77864fc3323bf082dd9c0decc18a0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s018",
+            "label": "S18 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s018.xlsx?md5=f43d7fdfdee62b0b7e5b5c0d30c4b52b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s019",
+            "label": "S19 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s019.docx?md5=ba8cbbf658a94b8f1bc4e97e6544b85a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0361601.s020",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13719024.1/pone.0361601.s020.RData?md5=54952c85fd4b5af12f58451b84f35afb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-31T07:33:47.269982+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "ShuYan Li; Yi Liang; Guangwen Zhu; Lijiao Wu; Hong Li; Yu Li; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-31T07:33:51Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-31T07:33:51Z",
+        "url": "https://openalex.org/W7224205413",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.85657045,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-31T07:33:51Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-31T07:33:51Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-01T07:33:51Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30.282852249999998,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.2828522499999995,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-31T07:33:58Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-371236e1b33a72ed",
+      "doi": "10.1073/pnas.2602630123",
+      "paper": "Latent causal diffusions for single-cell perturbation modeling.",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "date": "2026-10-08",
+      "year": "2026",
+      "pmcid": "PMC13663777",
+      "pmid": "42848419",
+      "paperURL": "https://doi.org/10.1073/pnas.2602630123",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0027-8424",
+      "eissn": "1091-6490",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "d676c1ae2e04aa0bbaafcb3a5aa5e55ad8907fdd0de823dd4c3509791a135bd7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/PMC13663777.1.xml?md5=9769bd33d89205cd3c32e1eb476ab219",
+        "figures": [
+          {
+            "id": "fig01",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The latent causal diffusion (LCD) model and CLIPR. (A) LCDs model single-cell expression data y (Top) as noisy observations of unobserved, noiseless gene states x (Center). States x are samples from a stationary stochastic process x(t) evolving under the causal regulatory dynamics f(x) of an SDE (Bottom). To train LCDs, we first infer p(x) via empirical Bayes, then learn f in state space via score matching. (B) Dynamics f explicitly model gene regulation and are parameterized by a neural network with shared hidden state across genes. Perturbations modify this hidden state via learned embeddings eq. (C) To interpret the causal dependencies in f, we estimate a linear causal matrix that induces the perturbation behavior of f (Left). This matrix is computed from the initial (vfq) and limit (ℓfq) responses when f is perturbed. The limit response is approximated by following the vector field flow until convergence (Right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig01.webp?md5=43a5e31a13608a25bd756da726930624",
+            "articleURL": "https://doi.org/10.1073/pnas.2602630123",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lars Lorch; Jiaqi Zhang; Charlotte Bunne; Andreas Krause; Bernhard Schölkopf; Caroline Uhler. Latent causal diffusions for single-cell perturbation modeling.. DOI: 10.1073/pnas.2602630123. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig02",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "LCDs outperform state-of-the-art models at predicting combinatorial perturbation effects. (A) Maximum mean discrepancy (MMD) between predicted and observed single-cell expressions for held-out double-gene perturbations of the two datasets, computed on top 20 differentially expressed (DE) genes. Each dot represents one perturbation. Two leftmost bars show baseline performance of randomly sampled control and perturbed cells from all conditions. (B) Per-perturbation comparison of LCD with deep-learning baselines on MMD, normalized to [0,1] across methods. Win rate (WR): proportion of perturbations where LCD achieved lower error. (C) Predicted vs. observed mean expression. RMSE over top 20 DE genes (Top) and Pearson correlation of changes relative to perturbed centroid (average of all observed perturbation means) (Bottom). (D) MMD stratified by genetic interaction (GI) type, comparing LCD and the additive baseline SALT. Axis labels indicate significant improvement per GI category (percentage reduction in median MMD by LCD) or not (n.s.; one-sided Wilcoxon signed-rank test, P<0.05). (E) Predicted vs. observed expression for top 20 DE genes of a held-out perturbation with neomorphic GI. Gray section shows the perturbed genes (bold labels). All box plots show the median, interquartile range (IQR), and whiskers extend to farthest points within 1.5× IQR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig02.webp?md5=e9db7aa37c80af3ecde3ecdfa20031fd",
+            "articleURL": "https://doi.org/10.1073/pnas.2602630123",
+            "asset": "assets/pmc13663777-272a15617dbdb63e.webp",
+            "sha256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
+            "width": 2000,
+            "height": 1341,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lars Lorch; Jiaqi Zhang; Charlotte Bunne; Andreas Krause; Bernhard Schölkopf; Caroline Uhler. Latent causal diffusions for single-cell perturbation modeling.. DOI: 10.1073/pnas.2602630123. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig03",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "LCD-CLIPR accurately recovers causal effects in linear systems from learned diffusion drifts. (A) AUROC for classifying gene–gene causal effects (positive, negative, or absent) across all gene pairs. Results are shown for systems of 100, 300, and 1,000 genes across varying training perturbation counts (x-axis), comparing power-law (Left) and Erdős-Rényi (Right) regulatory dependencies in A. (B) F1 score for classifying gene–gene causal effects (Left) and average Pearson correlation between predicted and true causal effects (Right) for the top k predicted effects, ranked by absolute magnitude, under power-law dependencies. Markers indicate medians, error bars indicate 10 to 90th percentiles across test systems. (C) Comparison of causal effects inferred by LCD-CLIPR vs. the ground-truth data-generating system (300 genes). (D) Inferred and true perturbation vectors for the system shown in (C). For visual clarity, only 80 perturbations and 150 genes with the largest outgoing effects are displayed.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig03.webp?md5=38c0533791007d598437dbdabfdb0d73",
+            "articleURL": "https://doi.org/10.1073/pnas.2602630123",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lars Lorch; Jiaqi Zhang; Charlotte Bunne; Andreas Krause; Bernhard Schölkopf; Caroline Uhler. Latent causal diffusions for single-cell perturbation modeling.. DOI: 10.1073/pnas.2602630123. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig04",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "LCD-CLIPR infers direct gene–gene causal effects from genome-wide Perturb-seq data. (A) Hierarchical clustering based on shortest-path distances in the CLIPR graph identifies gene modules enriched for specific Gene Ontology terms (Top) and canonical pathways (Bottom). Clusters with at least one enriched term are shown. (B) Predicted causal effects and associated clusters from the enrichment analysis. (C) Comparison between observed differential expression (DE) (Left) and normalized L⊤ (Right). For visual clarity, only the 247 genes within identified clusters and their perturbations are shown; see SI Appendix, Figs. S9 and S10 for full matrices. (D) Strongest predicted causal effects (50 total). Gene colors correspond to clusters indicated in (B). Edges are green where the predicted effect is validated by observed DE, and red otherwise. (E and F) Validation of inferred causal links as a function of predicted effect strength. Predicted direct causation (C) significantly increases the probability of observing DE (one-sided Fisher’s exact test, P<0.01, OR: odds ratio). Results shown for all genes (Left) and held-out genes not perturbed during training (Right). Error bars indicate 95% CIs [Wilson binomial for (E), bootstrap for (F)]. Gray dashed lines show the dataset-wide differential expression rate p(DE) (E) and baseline corresponding to independence (F).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig04.webp?md5=742cf926b3e233dea025c4e9bd1b4a88",
+            "articleURL": "https://doi.org/10.1073/pnas.2602630123",
+            "asset": "assets/pmc13663777-58e20c8d7faf767b.webp",
+            "sha256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
+            "width": 2000,
+            "height": 1763,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lars Lorch; Jiaqi Zhang; Charlotte Bunne; Andreas Krause; Bernhard Schölkopf; Caroline Uhler. Latent causal diffusions for single-cell perturbation modeling.. DOI: 10.1073/pnas.2602630123. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supplement-1",
+            "label": "Appendix 01 (PDF)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123.sapp.pdf?md5=b966bd10b029ce5ff9a7e3e3b5b714d8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/larslorch/lcd-clipr"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-31T07:33:28.060518+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/larslorch/lcd-clipr",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/PMC13663777.1.xml?md5=9769bd33d89205cd3c32e1eb476ab219"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Lars Lorch; Jiaqi Zhang; Charlotte Bunne; Andreas Krause; Bernhard Schölkopf; Caroline Uhler"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/larslorch/lcd-clipr",
+        "commit": "3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8",
+        "license": "CC-BY-4.0",
+        "scripts": [
+          {
+            "path": "lcd_clipr/experiment/figures.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/figures.py",
+            "sha256": "9163c8d946f4d5a4088bbd31dba42c4cc2b020023cc11ca95c126e129f48d996",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "metric",
+                "line": 1065,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 1066,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width",
+                "line": 1072,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height",
+                "line": 1073,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "topk",
+                "line": 1278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "metrics_boxplot_comparison",
+                "line": 1072,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "causal",
+                "line": 1518,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "baseline",
+                "line": 333,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ours",
+                "line": 334,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "d",
+                "line": 1214,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p",
+                "line": 1215,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mean",
+                "line": 1307,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "median",
+                "line": 1337,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "env_id",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "metric_pairwise_comparison",
+                "line": 330,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "intv_mask",
+                "line": 435,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "differential_expression_mask",
+                "line": 435,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a_causal_true",
+                "line": 1522,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "c_pred",
+                "line": 1532,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "finf_pred",
+                "line": 1571,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "var_names",
+                "line": 453,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid_envs",
+                "line": 467,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid_per_env",
+                "line": 468,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid_cols",
+                "line": 469,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size_per_var",
+                "line": 473,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a_causal_pred",
+                "line": 1538,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "tikhonov",
+                "line": 1589,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "c_true",
+                "line": 1602,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "grid",
+                "line": 467,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "q10",
+                "line": 1339,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "q90",
+                "line": 1340,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "f0_pred",
+                "line": 1562,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "causal_mat_kwargs",
+                "line": 1589,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lcd_clipr/experiment/plot_analysis.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/plot_analysis.py",
+            "sha256": "a411408c03d57b6a9904e8a43c74d189d76b8be053e748dab39389a12365da85",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "text.latex.preamble",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a_causal",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "f0",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height",
+                "line": 61,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "finf",
+                "line": 48,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lcd_clipr/experiment/plot_annotation.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/plot_annotation.py",
+            "sha256": "68a85d6ca797fcd8ef1db909cd4baa384d6b6c35b941f1aa909e49bb08e4f5d6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lcd_clipr/experiment/plot_causal.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/plot_causal.py",
+            "sha256": "20f238548c9bd6c384aa391ef4be865c8411206ebce30db7209a34ed62d74c82",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ax_height_dendrogram",
+                "line": 600,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height_targets",
+                "line": 602,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leaves",
+                "line": 368,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width",
+                "line": 599,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height",
+                "line": 601,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "long_side",
+                "line": 870,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "short_side",
+                "line": 871,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eigenvalue_spectrum_analysis",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ivl",
+                "line": 660,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "colorbar_two",
+                "line": 870,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lcd_clipr/experiment/plot_config.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/plot_config.py",
+            "sha256": "d4a7276ef40d63744905bbcbd2e557ab3a6a1fcb8c602526cd71b7ee1e3ed5b6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "mag",
+                "line": 554,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ts_linear_dcor",
+                "line": 555,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dcor_ratio",
+                "line": 556,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dcor",
+                "line": 557,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "synergy",
+                "line": 563,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "suppression",
+                "line": 564,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "neomorphism",
+                "line": 565,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "additive",
+                "line": 566,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "epistasis",
+                "line": 567,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "redundancy",
+                "line": 568,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "lcd_clipr/experiment/plot_differential_expression.py",
+            "url": "https://github.com/larslorch/lcd-clipr/blob/3f15f14c9d32cc4af1fc0bb61af5f51d63e7f7a8/lcd_clipr/experiment/plot_differential_expression.py",
+            "sha256": "3c69cda42a48651b712d5ff998533905dfd03ff67a818c492d9017594cb4ec3c",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "method",
+                "line": 146,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "type",
+                "line": 50,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gi_genes",
+                "line": 47,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "var_names",
+                "line": 47,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gi_thresholds",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width_large",
+                "line": 171,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height_large",
+                "line": 172,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "saturation",
+                "line": 260,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.labelsize",
+                "line": 330,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variable",
+                "line": 162,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fig_2_differential_expression",
+                "line": 171,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width_wide",
+                "line": 177,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_height",
+                "line": 178,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ax_width",
+                "line": 183,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xtick.labelsize",
+                "line": 349,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "norm_test",
+                "line": 69,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "9.5",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-31T07:33:34Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-31T07:33:34Z",
+        "url": "https://openalex.org/W7125477613",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.03720018,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-31T07:33:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-31T07:33:34Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-01T07:33:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 75.1860009,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0.1860009,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-31T07:33:59Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "面向单细胞扰动建模的潜因果扩散模型",
+        "summary_zh": "该文提出潜因果扩散(LCD)生成模型,将单细胞基因表达视为在测量噪声下观测到的平稳扩散过程,并据此学习基因调控的动力学系统;同时提出通过扰动响应进行因果线性化(CLIPR),在漂移线性假设下近似所有基因间的直接因果效应。摘要称 LCD 在预测未见扰动组合的分布偏移上优于已有方法,CLIPR 在模拟系统与全基因组扰动筛选中恢复因果结构。提供的证据仅包含图注与脚本静态观察,作者代码未执行,因此不能确认复现结果。",
+        "learning_points": [
+          "LCD 将单细胞表达 y 建模为未观测无噪声状态 x 的含噪观测,x 由因果调控动力学 f 驱动的随机微分方程生成(Fig. 1A)。",
+          "训练分两步:先通过经验贝叶斯推断 p(x),再在状态空间用得分匹配学习 f(Fig. 1A)。",
+          "动力学 f 由跨基因共享隐藏状态的神经网络参数化,扰动通过学习的嵌入修改该隐藏状态(Fig. 1B)。",
+          "CLIPR 通过扰动下 f 的初始响应与极限响应估计线性因果矩阵,极限响应以沿向量场流至收敛来近似(Fig. 1C)。",
+          "Fig. 2 以 MMD、RMSE 与相对扰动质心的变化相关性等指标比较 LCD 与深度学习基线在留出双基因扰动上的预测表现。",
+          "Fig. 3 在线性系统中以 AUROC、F1 及预测与真实因果效应的相关性评估 LCD-CLIPR 的因果恢复能力。",
+          "Fig. 4 在全基因组 Perturb-seq 数据上基于 CLIPR 图的最短路径距离聚类基因模块,并用观测差异表达检验预测因果链接。",
+          "提供的脚本证据仅记录固定提交下的文件路径与哈希及“静态观察”标记,未给出可核对的绘图细节。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果已复现或与原文一致。",
+          "证据未明示输入数据尺度与图号对应关系,相关细节保持未知。",
+          "CLIPR 的因果效应识别依赖线性漂移假设,超出该假设的适用性未知。",
+          "摘要与图注中的性能比较结论来自论文自述,未由独立证据验证。",
+          "未观察到许可、期刊指标或复现结果相关信息,均不应推断。",
+          "脚本证据仅含路径、哈希与空白的静态观察字段,无法据此核对绘图实现。",
+          "Fig. 2 图注文本在末尾被截断,部分面板描述不完整。",
+          "各图注未说明随机种子、运行次数或统计细节的完整设置。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-10-31T07:34:11Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "7efb0942d05eae637708ee70b1832c161472ec15b25f06c2e0b369743a867769",
+        "summary_fingerprint": "a95867096b96d942f2b9176c9b49f929c000e1277eaa2df1f8aa7cbcd66864bd",
+        "ai_attempts": 2,
+        "max_ai_attempts": 3,
+        "retry_success_count": 1
+      }
+    },
+    {
+      "id": "doi-5cb14e44f8b21b80",
+      "paper": "STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.",
+      "doi": "10.1002/advs.78529",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-10-28",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78529",
+      "pmcid": "PMC13715917",
+      "pmid": "42949804",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-10-31",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "5473cb842032869548f8eead4f8739f4a66a80385532ee0fb57e4db2c365ae6c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/PMC13715917.1.xml?md5=1a6e006f5bd523c136f5f1a4abe17669",
+        "figures": [
+          {
+            "id": "advs78529-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "MFPT matrices preserve chromatin‐contact patterns at reduced sequencing depths. (A) Raw contact maps and (B) corresponding MFPT matrices for chromosome 6 from the GM12878 dataset at the indicated downsampling rates. All matrices are shown at 10‐kb resolution. Top panels display the whole chromosome (every tenth bin shown); bottom panels show a zoomed region (chr6:42.50–43.50 Mb) with TAD boundaries and chromatin loops identified from the full‐depth dataset marked. For clarity, only the full dataset and the 1/8 and 1/32 downsampling rates are shown. (C) Signal‐to‐noise ratio (SNR) of contact maps and MFPT matrices across all chromosomes and sequencing depths. (D, E) Coefficient of variation (CV) of contact frequencies (D) and MFPT values (E) as a function of genomic distance. In (D), CV was calculated with (yellow) or without (blue) zero‐contact bin pairs. Boxes indicate the distance ranges where CV reaches a stable plateau. (F) Chromosome‐wise distributions of the genomic distances at which CV reaches a stable plateau for contact maps and MFPT matrices.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g004.webp?md5=f0d679dfeb0eff79cc2013dbf92a42e4",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "assets/pmc13715917-8526fad9a38e8ca2.webp",
+            "sha256": "8526fad9a38e8ca24bb913cfeac9903c47ade2af50b6abc644d1c5cc7f09927b",
+            "width": 820,
+            "height": 984,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8526fad9a38e8ca24bb913cfeac9903c47ade2af50b6abc644d1c5cc7f09927b",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78529-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "MFPT representation robustly preserves topological features in low‐coverage Hi‐C and HiChIP datasets. (A) Stacked insulation‐score profiles centered on annotated TAD boundaries from MFPT representations, conventional contact maps and the Raichu maps at the indicated down‐sampling depths. (B) Average MFPT profiles centered on annotated TAD boundaries. The upper‐right and lower‐left corners correspond to inter‐TAD regions. (C) Distributions of loop intensity (Z‐scores) for reference loops across sequencing depths. (D) Fractions of reference loops remaining above the indicated Z‐score thresholds across sequencing depths. (E) Aggregate peak analysis (APA) of reference loops calculated from MFPT representations across down‐sampling levels. Numbers indicate the average Z‐score of loops involved. (F) Distributions of loop intensity (Z‐scores) for loops across sequencing depths in the HiChIP datasets. (G, H) Numbers of DCCs identified, including K562‐ and GM12878‐specific DCCs, together with their consistency across down‐sampling levels for the MFPT‐based method (G) and HiCcompare (H). Consistency was quantified as the geometric mean of the Jaccard indices between DCCs identified from each down‐sampled library and those identified from the corresponding full‐depth library in the two cell types. (I) Proportions of DCCs with zero, one, or two anchors overlapping RAD21 binding peaks in the HCT116 RAD21 knockdown experiment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g005.webp?md5=8e27bb84499a3e1f2e286699a951122d",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "assets/pmc13715917-8ca973e5963f079f.webp",
+            "sha256": "8ca973e5963f079fd4b508bc2ed28039ba5701bbe1c84091ef65345e151c2855",
+            "width": 737,
+            "height": 979,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8ca973e5963f079fd4b508bc2ed28039ba5701bbe1c84091ef65345e151c2855",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78529-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "STRIDE provides consistent and robust library similarity measurements across sequencing depths. (A) Dissimilarity scores among pseudo‐replicates (PR), biological replicates (BR), and non‐replicates (NR) calculated by STRIDE, HiCRep, HiC‐spector, and genomeDISCO at the indicated down‐sampling levels. Chromosome 1 is shown as a representative example. Shaded regions indicate 95% confidence intervals estimated from 10 independent down‐sampling trials. The slopes of the curves indicate robustness of the measurements across sequencing depths. The separations between curves indicate the ability to distinguish libraries with different biological or technical relationships. (B) Sequencing‐depth sensitivity scores (lower values indicate greater robustness; see Supporting Information) for STRIDE, HiCRep, and genomeDISCO across all chromosomes. (C) Discrimination index quantifying the down‐sampling noise required to eliminate the distinctions between PR and BR (left) or BR and NR (right). Higher values reflect superior discriminative power. In (B) and (C), chromosomes 1–22 and X are plotted as individual dots from left to right.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g006.webp?md5=b0634165ac02c504a30db50dbcfffbdc",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78529-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "STRIDE is robust to technical variability introduced by experimental and analytical protocols. (A) Representative Hi‐C contact maps (chrX: 11.25–21.25 Mb) from hESC and IMR90 cells. (B) Hierarchical clustering of four hESC/IMR90 Hi‐C libraries generated by STRIDE, HiCRep, HiC‐spector, and genomeDISCO. Each library was processed independently using both Juicer and HiC‐Pro. Three representative chromosomes are shown. (C) Chromosome‐wise CH indices (log‐transformed) for hESC and IMR90 libraries. Higher values indicate better separation of cell types. Chromosomes 1–22 and X are shown from left to right. (D) Hierarchical clustering of independently generated GM12878 and K562 Hi‐C libraries. Chromosome 1 is shown as a representative example. (E) Chromosome‐wise CH indices for the independently generated GM12878 and K562 Hi‐C libraries. Chromosomes 1–22 and X are shown from left to right. (F) Chromosome‐wise CH indices for two HiChIP benchmarks (GM12878/K562 H3K27ac HiChIP and mESC cohesin/H3K27ac HiChIP).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g007.webp?md5=6f5b5bc3aeba6dfd1f4ef924953387ba",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78529-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "STRIDE reconstructs biologically meaningful lineage relationships from sparse Hi‐C datasets. (A) Hierarchical clustering of the zebrafish HSPC developmental Hi‐C libraries generated by STRIDE, HiCRep, genomeDISCO, and HiC‐spector. Chromosome 6 is shown as a representative example. (B) Chromosome‐wise CH indices quantifying the separation of zebrafish HSPC cell types. Chromosomes are ordered from left to right according to chromosome number. (C) Hierarchical clustering of early porcine embryonic Hi‐C libraries, including zygote, 4‐cell, and morula stages generated by IVF, PA, or AG, based on distances computed by each method. Chromosome 3 is shown as a representative example (left); bar widths on the right indicate the relative sequencing depths of individual libraries. (D) Generalized Robinson–Foulds (RF) distances measuring the difference between inferred and reference developmental trees in the porcine embryo dataset.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g002.webp?md5=0b5358c41b8cae412d3339950eaee42b",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78529-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "MFPT provides a biologically informative representation of sparse single‐cell Hi‐C data. (A) Low‐dimensional embeddings of the cell‐cycle dataset generated using the scHiCluster framework with MFPT transformation (left) or the original RWR‐based imputation (RWR; right). (B) Low‐dimensional embeddings of the mouse forebrain single‐cell Hi‐C dataset generated using the two representation strategies. The CH index of each embedding based on annotated cell type labels is indicated in the corresponding panel. In the mouse forebrain dataset, cells labeled as “Unknown” were excluded from CH index calculations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-g001.webp?md5=36372c3408bc9b74d4bc37df91cab40d",
+            "articleURL": "https://doi.org/10.1002/advs.78529",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li. STRIDE: A Sequencing Depth Robust Metric for Sparse Chromosome Conformation Capture Data Comparison.. DOI: 10.1002/advs.78529. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78529-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78529-supitem-0001",
+            "label": "Supporting File 1: advs78529‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-s002.docx?md5=4214f67d3ac940a0e719151f185b7280",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "advs78529-supitem-0002",
+            "label": "Supporting File 2: advs78529‐sup‐0002‐SuppData.zip.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715917.1/ADVS-9999-e78529-s001.zip?md5=a41d59774f8f1215b0a849e89906784f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-10-31T07:33:53.231362+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Bingxiang Xu; Xiaomeng Gao; Weichu Tao; Zhihua Zhang; Feifei Li"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-10-31T07:33:45Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-10-31T07:33:56Z",
+        "url": "https://openalex.org/W7224120671",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.77746447,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-10-31T07:33:56Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-10-31T07:33:56Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-01T07:33:56Z"
+        }
+      },
+      "selectionScore": {
+        "total": 53.88732235,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.88732235,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-10-31T07:34:12Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -169603,6 +171986,36 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-00c6b222cfd818b5": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-9b7ec4362e663d3a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-0e958f7199a6d0ae": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-371236e1b33a72ed": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-5cb14e44f8b21b80": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -171221,7 +173634,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-10-30T07:48:45Z",
+  "generatedAt": "2026-10-31T07:34:13Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -171455,18 +173868,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-10-31T07:31:26Z",
-    "updatedAt": "2026-10-31T07:31:30Z",
+    "updatedAt": "2026-10-31T07:34:17Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 59,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

@@ -120,9 +120,48 @@
         "10.3389/fmicb.2026.1877028",
         "10.3390/ijms27198771"
       ]
+    },
+    "2026-10-31": {
+      "newDOIs": [
+        "10.1002/advs.78529",
+        "10.1002/advs.78581",
+        "10.1002/fsn3.72500",
+        "10.1073/pnas.2602630123",
+        "10.1371/journal.pone.0361601"
+      ]
     }
   },
   "candidates": {
+    "10.1002/advs.78529": {
+      "checkedAt": "2026-10-31T07:33:56Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1371/journal.pone.0361601": {
+      "checkedAt": "2026-10-31T07:33:52Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/advs.78581": {
+      "checkedAt": "2026-10-31T07:33:45Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/fsn3.72500": {
+      "checkedAt": "2026-10-31T07:33:38Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1073/pnas.2602630123": {
+      "checkedAt": "2026-10-31T07:33:35Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.2196/97117": {
       "checkedAt": "2026-10-30T07:48:42Z",
       "status": "source_confirmed",
@@ -244,61 +283,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1073/pnas.2602630123": {
-      "checkedAt": "2026-10-30T07:48:27Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "作者代码声明和可读脚本已定位",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1073/pnas.2602630123",
-        "metadataHash": "619c49d4674164b187dd952772ea2abeda2559abf288314716e32e981767f19c",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/PMC13663777.1.xml?md5=9769bd33d89205cd3c32e1eb476ab219",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig02.webp?md5=e9db7aa37c80af3ecde3ecdfa20031fd",
-              "width": 2000,
-              "asset": "assets/pmc13663777-272a15617dbdb63e.webp",
-              "label": "Fig. 2.",
-              "height": 1341,
-              "assetSHA256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
-              "id": "fig02",
-              "license": "CC BY",
-              "sha256": "272a15617dbdb63eb75fd1336ae640d73e74701416a0f4e297614af2c7606199",
-              "captionHash": "fbde7c3b759bf34e1c553a201d1e0d7eaaf6a5fbca4c49e0c1d2b22572102849"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13663777.1/pnas.2602630123fig04.webp?md5=742cf926b3e233dea025c4e9bd1b4a88",
-              "width": 2000,
-              "asset": "assets/pmc13663777-58e20c8d7faf767b.webp",
-              "label": "Fig. 4.",
-              "height": 1763,
-              "assetSHA256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
-              "id": "fig04",
-              "license": "CC BY",
-              "sha256": "58e20c8d7faf767b2b8bc6d199378f794395f63c9ac96e587ae706a354fddd3b",
-              "captionHash": "165b467dd48225de8d0208c69ed0c02007611e00f053b0ad5101c1de2f0a1bf4"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-371236e1b33a72ed",
-          "doi": "10.1073/pnas.2602630123",
-          "paper": "Latent causal diffusions for single-cell perturbation modeling.",
-          "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-          "date": "2026-10-08",
-          "year": "2026",
-          "pmcid": "PMC13663777",
-          "pmid": "42848419",
-          "paperURL": "https://doi.org/10.1073/pnas.2602630123"
-        },
-        "updatedAt": "2026-10-30T07:48:23Z"
-      }
     },
     "10.3389/fmicb.2026.1877028": {
       "checkedAt": "2026-10-30T07:46:41Z",
@@ -13382,22 +13366,17 @@
     "version": 1,
     "maxAiAttempts": 165,
     "startedAt": "2026-10-31T07:31:26Z",
-    "dailyNewCount": 0,
-    "requests": 0,
+    "dailyNewCount": 5,
+    "requests": 59,
     "status": "active",
     "uncertainRequests": 0,
     "endReason": "",
     "batchCount": 1,
     "date": "2026-10-31",
-    "updatedAt": "2026-10-31T07:31:30Z",
-    "aiAttempts": 0,
+    "updatedAt": "2026-10-31T07:34:17Z",
+    "aiAttempts": 2,
     "maxRequests": 1800,
     "maxSeconds": 2700,
-    "elapsedSeconds": 4,
-    "inFlight": {
-      "startedAt": "2026-10-31T07:31:30Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 171
   }
 }
