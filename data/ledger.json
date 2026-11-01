@@ -129,9 +129,48 @@
         "10.1073/pnas.2602630123",
         "10.1371/journal.pone.0361601"
       ]
+    },
+    "2026-11-01": {
+      "newDOIs": [
+        "10.1002/advs.78543",
+        "10.1002/ctm2.70889",
+        "10.1016/j.isci.2026.116824",
+        "10.1111/acel.70758",
+        "10.1371/journal.pcbi.1014041"
+      ]
     }
   },
   "candidates": {
+    "10.1371/journal.pcbi.1014041": {
+      "checkedAt": "2026-11-01T08:14:10Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1002/ctm2.70889": {
+      "checkedAt": "2026-11-01T08:14:03Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/advs.78543": {
+      "checkedAt": "2026-11-01T08:13:58Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1111/acel.70758": {
+      "checkedAt": "2026-11-01T08:13:51Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.isci.2026.116824": {
+      "checkedAt": "2026-11-01T08:13:43Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1002/advs.78529": {
       "checkedAt": "2026-10-31T07:33:56Z",
       "status": "source_confirmed",
@@ -2311,61 +2350,6 @@
           "paperURL": "https://doi.org/10.1002/alz.71869"
         },
         "updatedAt": "2026-10-22T06:55:56Z"
-      }
-    },
-    "10.1371/journal.pcbi.1014041": {
-      "checkedAt": "2026-10-22T06:56:10Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pcbi.1014041",
-        "metadataHash": "daf268f6278d52241ac620f1b8c3b5019c6d8a8b3632820ee86f60be0a62e20e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13641709.1/PMC13641709.1.xml?md5=7aa14370f9ba09f870ac58f601729343",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "1517e8f8149105e85a04ff5c288ca0a93001eb703a5a12a4cb4ca2f6c7174bb4",
-              "label": "Fig 3",
-              "height": 2436,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13641709.1/pcbi.1014041.g003.webp?md5=eefbd138abc010df2c1b0f979f440b0c",
-              "asset": "assets/pmc13641709-1517e8f8149105e8.webp",
-              "license": "CC BY",
-              "assetSHA256": "1517e8f8149105e85a04ff5c288ca0a93001eb703a5a12a4cb4ca2f6c7174bb4",
-              "id": "pcbi.1014041.g003",
-              "captionHash": "85d2642c6d0c37cfd3169c36d6f433153ad1cd0705a4c2c9b305b42060cab704"
-            },
-            {
-              "width": 1600,
-              "sha256": "ad5cfc72799ca6c0e632b47726003acb6ce425365878bd1819f20448c3b9a46d",
-              "label": "Fig 5",
-              "height": 2247,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13641709.1/pcbi.1014041.g005.webp?md5=de43c09d44cdd7ac7fefe5a701e84a51",
-              "asset": "assets/pmc13641709-ad5cfc72799ca6c0.webp",
-              "license": "CC BY",
-              "assetSHA256": "ad5cfc72799ca6c0e632b47726003acb6ce425365878bd1819f20448c3b9a46d",
-              "id": "pcbi.1014041.g005",
-              "captionHash": "3f19c0d77213a8575bf416da92416a0653e91ca98e092d3a5c9449aa6842888f"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-36d9d129023e8eb2",
-          "doi": "10.1371/journal.pcbi.1014041",
-          "paper": "OT-knn: A neighborhood-aware optimal transport framework for aligning spatial transcriptomics data.",
-          "journal": "PLoS computational biology",
-          "date": "2026-09-22",
-          "year": "2026",
-          "pmcid": "PMC13641709",
-          "pmid": "42771689",
-          "paperURL": "https://doi.org/10.1371/journal.pcbi.1014041"
-        },
-        "updatedAt": "2026-10-22T06:56:04Z"
       }
     },
     "10.1093/bioinformatics/btag664": {
@@ -7946,61 +7930,6 @@
         "updatedAt": "2026-10-16T06:58:30Z"
       }
     },
-    "10.1016/j.isci.2026.116824": {
-      "checkedAt": "2026-10-16T06:57:50Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.116824",
-        "metadataHash": "0e1b4e3ac7e19364636ea5089a1e12c0603297d1dfb4a96a4f7b5a9de64c49b4",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13571154.1/PMC13571154.1.xml?md5=ceb404f0187ca7d557e56cee53a9d924",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13571154-46f820eb8a70c482.webp",
-              "assetSHA256": "46f820eb8a70c482cf2335f74e5c4f078811e33f74b4c782877224de4e5fd3ec",
-              "license": "CC BY",
-              "id": "fig3",
-              "sha256": "46f820eb8a70c482cf2335f74e5c4f078811e33f74b4c782877224de4e5fd3ec",
-              "height": 2823,
-              "label": "Figure 3",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13571154.1/gr3.webp?md5=26e6c0495242b2bae47a2bf3c2d6fd10",
-              "captionHash": "f2b99c98c7dd5390d6222aa1ce28333c67488d390eb6249eafbe4c874d85753f"
-            },
-            {
-              "asset": "assets/pmc13571154-f56872ab30ffe73d.webp",
-              "assetSHA256": "f56872ab30ffe73d272e638eae1b84e7edd1b33259b71197027bf4fd4293aa94",
-              "license": "CC BY",
-              "id": "fig5",
-              "sha256": "f56872ab30ffe73d272e638eae1b84e7edd1b33259b71197027bf4fd4293aa94",
-              "height": 2393,
-              "label": "Figure 5",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13571154.1/gr5.webp?md5=a4524a28470529b1edbe2f8398ce09f8",
-              "captionHash": "c13a49e0d21766c3262bf3c5ee3373c7ac7d21dece66f898c8f521e5a20a33dd"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-b99c1daa3c0733b7",
-          "doi": "10.1016/j.isci.2026.116824",
-          "paper": "CoexpressDeconvolve enables reference-free single-cell-resolution deconvolution from spot-based spatial transcriptomics.",
-          "journal": "iScience",
-          "date": "2026-09-01",
-          "year": "2026",
-          "pmcid": "PMC13571154",
-          "pmid": "42733532",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.116824"
-        },
-        "updatedAt": "2026-10-16T06:57:47Z"
-      }
-    },
     "10.1080/19490976.2026.2694811": {
       "checkedAt": "2026-10-16T06:57:44Z",
       "status": "pending",
@@ -13361,13 +13290,13 @@
     }
   },
   "dailyCollectionSession": {
-    "aiAttempts": 0,
+    "aiAttempts": 2,
     "maxRequests": 1800,
     "status": "active",
     "uncertainAiAttempts": 0,
     "batchCount": 1,
-    "requests": 0,
-    "dailyNewCount": 0,
+    "requests": 68,
+    "dailyNewCount": 5,
     "uncertainRequests": 0,
     "startedAt": "2026-11-01T08:11:28Z",
     "maxSeconds": 2700,
@@ -13375,13 +13304,8 @@
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "endReason": "",
-    "elapsedSeconds": 4,
+    "elapsedSeconds": 183,
     "version": 1,
-    "updatedAt": "2026-11-01T08:11:31Z",
-    "inFlight": {
-      "startedAt": "2026-11-01T08:11:31Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-01T08:14:30Z"
   }
 }
