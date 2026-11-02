@@ -138,9 +138,46 @@
         "10.1111/acel.70758",
         "10.1371/journal.pcbi.1014041"
       ]
+    },
+    "2026-11-02": {
+      "newDOIs": [
+        "10.1002/advs.202600023",
+        "10.1002/edm2.70359",
+        "10.1038/s41592-026-03211-w"
+      ]
     }
   },
   "candidates": {
+    "10.1002/biot.70331": {
+      "checkedAt": "2026-11-02T08:23:03Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/edm2.70359": {
+      "checkedAt": "2026-11-02T08:23:01Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-02T08:22:54Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.202600023": {
+      "checkedAt": "2026-11-02T08:22:52Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s41592-026-03211-w": {
+      "checkedAt": "2026-11-02T08:22:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pcbi.1014041": {
       "checkedAt": "2026-11-01T08:14:10Z",
       "status": "source_confirmed",
@@ -8296,61 +8333,6 @@
         "updatedAt": "2026-10-16T06:55:34Z"
       }
     },
-    "10.1038/s41592-026-03211-w": {
-      "checkedAt": "2026-10-16T06:54:52Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41592-026-03211-w",
-        "metadataHash": "2569ba35991ef8a523f2ae7199ac3861fde97e7c30ce033a804f328d2caa89ca",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/PMC13545012.1.xml?md5=f759879d7ad6a5ed12c63f6a1690e679",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13545012-2717bd63a9467631.webp",
-              "assetSHA256": "2717bd63a94676318462ed4029830cb7b05c4638f55575e36bb7f2509a7d0854",
-              "license": "CC BY",
-              "id": "Fig4",
-              "sha256": "2717bd63a94676318462ed4029830cb7b05c4638f55575e36bb7f2509a7d0854",
-              "height": 1935,
-              "label": "Fig. 4",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig4_HTML.webp?md5=a54a3e178ac2b6bfa9aa4344b5dd589d",
-              "captionHash": "480627b8caf7b47ff3953f706641a1bddb55063c0106b81f48c7e97e2d495367"
-            },
-            {
-              "asset": "assets/pmc13545012-2f2f5ea7bcdfcde6.webp",
-              "assetSHA256": "2f2f5ea7bcdfcde6370d9ff54c217b4e832faca18ce2a36a3a5572c76e600d1c",
-              "license": "CC BY",
-              "id": "Fig5",
-              "sha256": "2f2f5ea7bcdfcde6370d9ff54c217b4e832faca18ce2a36a3a5572c76e600d1c",
-              "height": 1658,
-              "label": "Fig. 5",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig5_HTML.webp?md5=ba11829114a875082ac1f2df9a301b24",
-              "captionHash": "2cf187dd86dc3eff30b8128604e95a201d87aec4ac4cea51837d5aa1a58f6f1b"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-41f116dd4999a6e1",
-          "doi": "10.1038/s41592-026-03211-w",
-          "paper": "Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.",
-          "journal": "Nature methods",
-          "date": "2026-09-04",
-          "year": "2026",
-          "pmcid": "PMC13545012",
-          "pmid": "42697995",
-          "paperURL": "https://doi.org/10.1038/s41592-026-03211-w"
-        },
-        "updatedAt": "2026-10-16T06:54:49Z"
-      }
-    },
     "10.7759/cureus.110702": {
       "checkedAt": "2026-10-16T06:54:36Z",
       "status": "pending",
@@ -13290,27 +13272,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-02T08:20:46Z",
+    "updatedAt": "2026-11-02T08:23:11Z",
     "batchCount": 1,
     "uncertainAiAttempts": 0,
     "aiAttempts": 0,
     "endReason": "",
-    "requests": 0,
-    "elapsedSeconds": 5,
+    "requests": 39,
+    "elapsedSeconds": 149,
     "startedAt": "2026-11-02T08:20:42Z",
     "status": "active",
     "version": 1,
     "uncertainRequests": 0,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "maxBatches": 36,
     "date": "2026-11-02",
     "maxRequests": 1800,
     "maxSeconds": 2700,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-02T08:20:46Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxAiAttempts": 165
   }
 }

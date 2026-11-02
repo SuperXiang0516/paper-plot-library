@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-01",
+  "checkedAt": "2026-11-02",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -126531,6 +126531,927 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-816bf902f17b4e1c",
+      "paper": "Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.",
+      "doi": "10.1002/advs.202600023",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-10-28",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.202600023",
+      "pmcid": "PMC13715674",
+      "pmid": "42949627",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-02",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging",
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "83bca2438313b874b063f1787079021074d0b017145d327cdf58745edb329ff1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/PMC13715674.1.xml?md5=e68e7f9d25cc8d81ed3ff654c1315556",
+        "figures": [
+          {
+            "id": "advs78509-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single‐cell transcriptomic profiling reveals aging‐associated remodeling of microglia in db/db and db/m mice. (A) UMAP embeddings of microglial cells profiled through scRNA‐seq, colored by transcriptional states. (B) Dot plot showing scaled average expression (color) and percentage of expressing cells (dot size) for representative marker genes across the 11 identified microglial states. (C) Representative flow cytometry plots showing CLEC7Ahigh cells among freshly isolated CD11b+CD45lowTMEM119+ brain microglia from db/m and db/db mice at 12 and 24 weeks. A common CLEC7Ahigh threshold, defined from the extreme upper tail of the pooled 12‐week db/m reference distribution, was applied unchanged to all samples. (D) Frequency of CLEC7Ahigh cells among parent microglia. Bars show mean ± SD, and points represent independent mice (12 weeks, n = 3 per genotype; 24 weeks, n = 4 per genotype). Two‐sided unpaired Welch's t‐tests; ** p < 0.01, *** p < 0.001. (E) Bar plot quantifying the number of upregulated and downregulated aging‐DEGs (60 weeks vs. 12 weeks) within each microglial state for db/db and db/m mice. Only clusters with > 10 cells across all samples were included. (F) Ridge plot comparing the distribution of absolute log2FC for aging‐DEGs in each microglial state between db/db and db/m mice. (G) Heatmap showing changes in the expression of selected aging‐DEGs across microglial states in db/db and db/m mice during aging. Red indicates upregulation and blue indicates downregulation at 60 weeks relative to 12 weeks. Representative genes are annotated. (H) Scatter plot illustrating differential flux changes of 146 metabolic pathways in db/db and db/m microglia with aging. Each point represents a pathway, colored by the delta flux change (db/db minus db/m). The Pearson correlation coefficient (r) and two‐sided p‐value are shown. (I) Top 20 KEGG pathways enriched among aging‐DEGs in Cluster 1 (as defined in panel G), with 14 pathways (labeled) implicated in neurodegenerative processes. (J) Bar plot showing the number of upregulated and downregulated genotype‐DEGs (db/db vs. db/m) in each microglial state at 12 and 60 weeks. Only clusters with > 10 cells across all samples were included. (K) Scatter plot showing the concordance of expression changes in genotype‐DEGs detected in MG1–MG4 between db/db and db/m mice at 12 and 60 weeks. Each point represents a gene, and the Pearson correlation coefficient (r) indicates the degree of consistency in transcriptional alterations. (L) Representative KEGG pathways enriched among genotype‐DEGs identified at 12 and 60 weeks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g001.webp?md5=9e815a866a6d0ed7ac42974740e59f22",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "assets/pmc13715674-bfdceaf203b87196.webp",
+            "sha256": "bfdceaf203b871966a62d9cbcef825b2f5274d381028f72f194662732467984e",
+            "width": 650,
+            "height": 999,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "bfdceaf203b871966a62d9cbcef825b2f5274d381028f72f194662732467984e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78509-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single‐cell chromatin accessibility profiling reveals enhancer and promoter remodeling underlying microglial dysfunction in diabetes and aging. (A) Genomic annotation of accessible chromatin regions in microglial nuclei, showing the fraction of peaks overlapping annotated genomic features in the mouse genome, as determined using HOMER. TTS, transcription termination site; UTR, untranslated region. (B) Bar plot depicting the fraction of the union set of differentially accessible regions (DARs; 60 weeks vs. 12 weeks) identified in each snATAC‐seq microglial cluster for db/db and db/m mice, annotated by HOMER for genomic feature overlap. (C) Top 20 enriched KEGG pathways based on genes linked to promoter DARs. Dots and plus signs indicate significant and nonsignificant results, respectively (Benjamini–Hochberg adjusted p < 0.05). (D) Overlap of intronic and intergenic DARs (II‐DARs) with ENCODE cCREs. PLS, promoter‐like signature; pELS, proximal enhancer‐like signature; dELS, distal enhancer‐like signature; CA, chromatin accessible region; CA‐H3K4me3, chromatin accessible with H3K4me3 modification; CA‐CTCF, chromatin accessible with CTCF binding; CA‐TF, chromatin accessible with transcription factor (TF) binding; TF, region with TF binding but low chromatin accessibility. (E) Cis‐co‐accessibility network in ATAC‐3, illustrating an intronic DAR within the Mbd3 locus exhibiting multiple co‐accessibility connections with promoters of neurodevelopment‐related genes (red curves); gray curves indicate background co‐accessibility. (F) Top TFs enriched at II‐DARs, as determined by motif enrichment analysis using HOMER. (G) Bar plot showing the number of union‐set DARs (db/db vs. db/m) identified in each snATAC‐seq microglial cluster at 12 and 60 weeks, annotated by HOMER for genomic feature overlap. (H) Representative KEGG pathways enriched for genes linked to promoter DARs at 12 and 60 weeks. (I) Dumbbell plot illustrating the temporal dynamics of TF family enrichment at II‐DARs in microglia at 12 and 60 weeks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g004.webp?md5=e16db247b6916d092e181a5c5b555291",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "assets/pmc13715674-9a4bab45319f8194.webp",
+            "sha256": "9a4bab45319f81946c9ecab8fd8e58e9d148834ddb522988dac04d4e069b611b",
+            "width": 820,
+            "height": 769,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9a4bab45319f81946c9ecab8fd8e58e9d148834ddb522988dac04d4e069b611b",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78509-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Temporal dynamics of microglial molecular programs in db/db mice. (A) Line and bar plots showing the percentage (top) and absolute number (bottom) of DEGs identified between adjacent time points across each scRNA‐seq‐defined microglial state in db/db mice. Only clusters with > 10 cells across all samples were included. (B) Left: Distribution of DEGs across all adjacent time‐point comparisons within the homeostatic microglial state (MG1). Right: Distribution of DEGs across all microglial clusters for the comparison between 12 and 24 weeks. (C) Venn diagram illustrating the overlap of shared DEGs detected across temporal comparisons. (D) Dot plot displaying scaled average expression (color) and percentage of expressing cells (dot size) for representative genes in each microglial state at different time points. (E) Scatter plot showing the concordance of DEG expression changes between the “36 weeks vs. 24 weeks” comparison and “48 weeks vs. 36 weeks” comparison. Each point represents a DEG, and the Pearson correlation coefficient (r) and two‐sided p‐value indicate the degree of consistency in transcriptional alterations between the two temporal windows. (F) Gene set enrichment analysis (GSEA) illustrating the dynamic engagement of representative pathways in each temporal window based on gene expression changes. (G) qRT‐PCR measurement of indicated genes in freshly isolated brain microglia from independent 12‐ and 24‐week‐old db/db cohorts (n = 4 per age). Expression was normalized to Gapdh and calculated by the 2−ΔΔCt method, with the 12‐week group as the calibrator. Bars show mean ± SD, and points represent independent mice. Statistical testing was performed on ΔCt values using a two‐sided unpaired Welch's t‐test; * p < 0.05, ** p < 0.01, *** p < 0.001. (H) Violin plots showing normalized metabolic flux intensities for representative pathways in individual microglia across different time points.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g003.webp?md5=dc7cdc206496fc5d7b94fb09db8c6077",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78509-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Pseudotime analysis identifies gene programs associated with phagocytic function in DAM. (A) Cell trajectory inference using Slingshot reveals three inferred developmental lineages originating from HM. UMAP visualization shows cells from the scRNA‐seq dataset colored by state, with trajectory curves overlaid. L1, Lineage 1; L2, Lineage 2; L3, Lineage 3. (B) Pseudotime‐resolved GSEA showing enrichment of CNS disorder‐related gene signatures across the three lineages. (C) Smoothed mean expression of gene clusters G3 and G4 along pseudotime for each lineage. Expression values were averaged across cells within 20 evenly sized pseudotime bins. Lines represent mean expression; shaded regions indicate 95% confidence intervals. The upper color bar denotes cells in Lineage 2, ordered by pseudotime. (D) Representative enriched Gene Ontology (GO) biological process terms for genes in clusters G3 and G4. (E) hdWGCNA module network for M6 in DAM cells, displaying the top 25 genes ranked by eigengene‐based connectivity. (F) Violin plot showing the distribution of module eigengene scores for M5, M6, and M9 in DAM cells from db/db and db/m mice. Dots indicate median values, and vertical lines within violins show interquartile ranges. * p < 0.05; *** p < 0.001; N.S., not significant; Wilcoxon rank‐sum test. (G) GSEA of genes in M6 based on differential expression in DAM cells between db/db and db/m mice. (H) Smoothed trajectories showing M6 eigengene scores and mean expression of cluster G4 along pseudotime for Lineage 2. Data were binned into 20 evenly sized pseudotime intervals. Shaded regions represent 95% confidence intervals. The upper color bar denotes cells in Lineage 2, ordered by pseudotime. (I) Scatter plot showing the per‐cell correlation between G4 expression and M6 eigengene scores along Lineage 2. Each dot represents a single cell. The Pearson correlation coefficient (r) and two‐sided p‐value are indicated. (J) KEGG pathways enriched for overlapping genes between module M6 and cluster G4. (K) Smoothed trajectories showing phagocytic activity scores, M6 eigengene scores, and G4 expression along pseudotime for Lineage 2. Data were binned into 20 evenly sized pseudotime intervals; shaded regions represent 95% confidence intervals. The upper color bar denotes cells in Lineage 2, ordered by pseudotime. (L) Box plots comparing phagocytic activity scores in DAM cells from db/db and db/m mice at 12 and 60 weeks. ** p < 0.01; N.S., not significant; Wilcoxon rank‐sum test. (M) Scatter plot showing correlation between phagocytic activity scores and Arhgap15 expression across pseudotime bins along Lineage 2. Each dot represents one pseudotime bin (n = 20 bins). The Pearson correlation coefficient (r) and two‐sided p‐value are indicated. (N) Violin plots comparing Arhgap15 expression in DAM cells from db/db and db/m mice at 12 and 60 weeks. (O) Representative flow cytometry plots of pHrodo Green E. coli BioParticles uptake by primary mouse microglia after Arhgap15 overexpression (Arhgap15 OE), shRNA‐mediated knockdown (shArhgap15), or re‐expression of Arhgap15 in knockdown cells (Arhgap15 rescue), together with the corresponding matched controls (OE control, non‐targeting shRNA [shNC], and rescue control). (P) Percentage of pHrodo+ cells under the conditions shown in O. (Q–S) qRT‐PCR measurement of Clec7a, Pros1, and Slc11a1 after (Q) Arhgap15 overexpression, (R) knockdown, and (S) rescue. Expression was normalized to Gapdh and calculated by the 2−ΔΔCt method. In P–S, bars show mean ± SD and points represent independent cell‐culture experiments; matched conditions were compared using two‐sided paired t‐tests. In P, n = 4, 3, and 5 for overexpression, knockdown, and rescue, respectively; n = 3 for each comparison in Q–S. Significance: * p < 0.05; ** p < 0.01; *** p < 0.001; N.S., not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g007.webp?md5=37e4f22d7ab5ddc466b5e7c1b8d33e63",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78509-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Spi1 and Xbp1 are associated with the transition of HM to DAM in db/db mice. (A) Ternary plot showing the distribution of HM, DAM, and IAM based on subtype‐specific gene signatures, overlaid with RNA velocity vectors illustrating transcriptional state transitions. (B) Left, representative CLEC7A‐vs.‐CD83 flow cytometry plots of P2RY12high microglia from 12‐week‐old db/m and db/db mice. Fixed quadrant gates classify P2RY12highCLEC7AhighCD83low and P2RY12highCLEC7AlowCD83high cells as HM‐DAM‐like and HM‐IAM‐like, respectively. Right, frequency of HM‐DAM‐like cells among all P2RY12high microglia at 12 and 24 weeks. Bars show mean ± SD, and points represent independent mice (12 weeks, n = 3 per genotype; 24 weeks, n = 4 per genotype). Statistical testing used two‐sided unpaired Welch's t‐tests; ** p < 0.01. (C) Ternary plot showing the proportion of HM cells transitioning toward DAM or IAM states in db/db and db/m mice at 12 and 60 weeks. (D) Pseudotemporal correlation analysis of TF activity in HM‐DAM (x axis) and HM‐IAM (y axis) cells. Each dot represents a TF, colored by the difference in Spearman correlation coefficients between pseudotime and SCENIC score for the two trajectories. The Pearson correlation coefficient (r) and p‐value are indicated. (E) Box plots showing SCENIC‐inferred activity scores for Spi1 and Xbp1 in HM‐DAM and HM‐IAM cells at 12 weeks, 60 weeks, and combined time points. * p < 0.05, ** p < 0.01, *** p < 0.001; Wilcoxon rank‐sum test. (F) GSEA of Spi1 and Xbp1 target gene sets based on differential expression between HM‐DAM and HM‐IAM cells. (G) Scatter plot showing the correlation between Spi1 and Xbp1 activity in individual HM‐DAM cells. Each dot represents a single cell. The Pearson correlation coefficient (r) and two‐sided p‐value are indicated. (H) In silico gene perturbation simulations using Dynamo showing the effects of double knockout and double activation of Spi1 and Xbp1 on inferred microglial developmental trajectories. (I) Box plot showing the Jacobian‐based regulatory effect of Spi1 and Xbp1 on canonical DAM marker genes, compared between HM‐DAM and HM‐IAM cells. ** p < 0.01, *** p < 0.001; Wilcoxon rank‐sum test. (J) qRT‐PCR measurement of DAM and IAM marker genes in primary mouse microglia co‐expressing Spi1 and Xbp1 (Spi1–Xbp1 OE) or receiving the matched vector control (OE control). Expression was normalized to Gapdh and calculated by the 2−ΔΔCt method. (K) Representative flow cytometry plots and quantification of pHrodo Green E. coli BioParticles uptake by primary mouse microglia co‐expressing Spi1 and Xbp1 or receiving the matched vector control. In J and K, bars show mean ± SD and points represent independent cell‐culture experiments (n = 3). Statistical testing used two‐sided paired t‐tests; * p < 0.05; ** p < 0.01; *** p < 0.001; N.S., not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g006.webp?md5=542034e35768afcb3a78b1e933836b43",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78509-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Computationally inferred signaling associated with early DAM programs in diabetic microglia. (A) Scatter plots showing the proportion of DAM cells from db/db (left) and db/m (right) mice across 50 evenly sized bins along the inferred trajectory. The Pearson correlation coefficient (r) and two‐sided p‐value are indicated. (B) Scatter plot comparing mean gene expression between DAM cells from db/db and db/m mice, with genes upregulated (red) and downregulated (blue) in db/db mice highlighted. Differentially expressed TFs are indicated by triangle symbols. The Pearson correlation coefficient (r) and two‐sided p‐value are shown. (C) Box plot showing the distribution of mean SCENIC‐inferred TF activity scores in DAM cells from db/db and db/m mice. * p < 0.05, ** p < 0.01, *** p < 0.001; Wilcoxon rank‐sum test. (D) Heatmap showing the unsupervised clustering of TF activity in DAM cells across 20 evenly sized bins along pseudotime, with TFs grouped into eight clusters. Line plot illustrates smoothed TF activity along the trajectory. (E) Left: Representative KEGG pathways enriched for target genes of TFs in clusters C2, C3, and C4. Right: Pseudotime‐resolved GSEA of these pathways in DAM cells from db/db and db/m mice. (F) Dot plot comparing the relative signaling strength of ligand–receptor pathways between DAM cells from db/db and db/m mice, with points colored by genotype specificity and shaped by signaling type. (G) Network plot showing PROS signaling pathway‐related interactions among microglial populations. (H) Violin plots showing expression of Pros1 and Axl in each microglial cluster by genotype and time point. (I) Bar plot showing average inferred PROS signaling strength in DAM cells from db/db and db/m mice at 12 and 60 weeks. (J) Single‐cell kNN‐DREMI analysis (DREVI plots and DREMI values) illustrating the relationship between the expression of Axl and selected TFs in C2, C3, and C4 after MAGIC imputation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-g005.webp?md5=7a539cb22401596ecd53adca19b7f3ea",
+            "articleURL": "https://doi.org/10.1002/advs.202600023",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al.. Single-Cell Dissection of Microglial Dysfunction in Diabetes-Associated Neurodegenerative Vulnerability.. DOI: 10.1002/advs.202600023. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78509-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78509-supitem-0001",
+            "label": "Supporting File 1: advs78509‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-s001.docx?md5=d85faefd5e79ded7b42a9398c5ef1c5c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "advs78509-supitem-0002",
+            "label": "Supporting File 2: advs78509‐sup‐0002‐tables S1‐S15.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13715674.1/ADVS-9999-e78509-s002.xlsx?md5=af330189219f06f5893520fd3561c113",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-02T08:22:48.894907+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jizhou Zhang; Tsz Kwan Yau; Joyce Tse; Tsz Ho Li; Dongjie Hu; Yong Juan Zhao; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-02T08:22:52Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-02T08:22:52Z",
+        "url": "https://openalex.org/W7224133273",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.81835267,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-02T08:22:52Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-02T08:22:52Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-03T08:22:52Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.09176335,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.09176335,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-02T08:23:03Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-75b437da398ab60e",
+      "paper": "Association Between Genetically Predicted 25-Hydroxyvitamin D and Type 2 Diabetes Risk in South Asians: An Exploratory Two-Sample Mendelian Randomization Study.",
+      "doi": "10.1002/edm2.70359",
+      "journal": "Endocrinology, diabetes & metabolism",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/edm2.70359",
+      "pmcid": "PMC13690357",
+      "pmid": "42912852",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2398-9238",
+      "eissn": "2398-9238",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-02",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "5c2510e96ee10e7efb07710e4afd526f5a25340d7de9ff5e6cd0cef5b0c21206"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13690357.1/PMC13690357.1.xml?md5=9b1b6de3d0e4cbded6612287a1aad809",
+        "figures": [
+          {
+            "id": "edm270359-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Proposed biological mechanisms linking Vitamin D status with Type 2 diabetes pathophysiology. Vitamin D, measured as serum 25‐hydroxyvitamin D [25(OH)D], is hydroxylated to the active hormone 1,25‐dihydroxyvitamin D [1,25(OH)2D, calcitriol], which is the principal ligand for the Vitamin D receptor (VDR); 25(OH)D itself is the circulating status biomarker rather than the direct VDR ligand. Through 1,25(OH)2D‐mediated VDR signalling and other pathways, Vitamin D status may influence glucose metabolism via three major biological mechanisms: activation of VDR in pancreatic beta cells, leading to improved insulin synthesis and secretion; enhancement of peripheral insulin sensitivity in skeletal muscle and adipose tissue through improved insulin signalling and glucose uptake; and reduction of systemic inflammation through modulation of immune‐cell activity and suppression of pro‐inflammatory cytokines. Together, these mechanisms suggest that Vitamin D may contribute to beta‐cell preservation, improved glucose homeostasis, and reduced inflammatory burden relevant to Type 2 diabetes development and progression. 25(OH)D, 25‐hydroxyvitamin D; CRP, C‐reactive protein; GLUT4, glucose transporter Type 4; IL‐1β, interleukin‐1 beta; IL‐6, interleukin‐6; NF‐κB, nuclear factor kappa B; T2D, Type 2 diabetes; TNF‐α, tumour necrosis factor‐alpha; VDR, Vitamin D receptor.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13690357.1/EDM2-9-e70359-g004.webp?md5=e7618a80dbf22834294b6b927b78ac5f",
+            "articleURL": "https://doi.org/10.1002/edm2.70359",
+            "asset": "assets/pmc13690357-a9fb127e005c0798.webp",
+            "sha256": "a9fb127e005c07988e6139decaeccef4661e8dc37ab600d03035943865edbea5",
+            "width": 1064,
+            "height": 646,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adina Zaka; Suleman Khan; Asim Shah; Aizaz Anwar Khalid; Ibrahim Khalil; A. B. M. Kamrul‐Hasan. Association Between Genetically Predicted 25-Hydroxyvitamin D and Type 2 Diabetes Risk in South Asians: An Exploratory Two-Sample Mendelian Randomization Study.. DOI: 10.1002/edm2.70359. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a9fb127e005c07988e6139decaeccef4661e8dc37ab600d03035943865edbea5",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "edm270359-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Study design of the two‐sample Mendelian randomization analysis. SNP–exposure associations for serum 25(OH)D were obtained from a South Asian UK Biobank GWAS, and SNP‐outcome associations for T2D were obtained from a separate South Asian meta‐analysis. The design also highlights the possibility of partial participant overlap and reporting in accordance with STROBE‐MR guidelines.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13690357.1/EDM2-9-e70359-g002.webp?md5=61732842c3ac53a6a7ba823bad0becdd",
+            "articleURL": "https://doi.org/10.1002/edm2.70359",
+            "asset": "assets/pmc13690357-17f234bfd614b734.webp",
+            "sha256": "17f234bfd614b7340753b405f7434d55ebb0ec6d2395528f90a87ef3c4a6ba1e",
+            "width": 1064,
+            "height": 757,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adina Zaka; Suleman Khan; Asim Shah; Aizaz Anwar Khalid; Ibrahim Khalil; A. B. M. Kamrul‐Hasan. Association Between Genetically Predicted 25-Hydroxyvitamin D and Type 2 Diabetes Risk in South Asians: An Exploratory Two-Sample Mendelian Randomization Study.. DOI: 10.1002/edm2.70359. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "17f234bfd614b7340753b405f7434d55ebb0ec6d2395528f90a87ef3c4a6ba1e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "edm270359-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "MR scatter plot. Each point represents one genetic instrument (SNP): (1) rs3755967‐GC, (2) rs2459139‐CYP2R1, (3) rs72744878‐DHCR7. X‐axis: SNP effect on serum 25(OH)D (ukb‐e‐30890_CSA, IRNT scale). Y‐axis: SNP effect on T2D (GCST90093109, BMI‐unadjusted). Error bars represent 95% confidence intervals. The near‐horizontal IVW slope is consistent with a null causal estimate; the steep MR‐Egger line reflects instability with only 3 SNPs rather than a reliable alternative estimate.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13690357.1/EDM2-9-e70359-g005.webp?md5=ed00ee94beb6671c85fc6f08936ea5e4",
+            "articleURL": "https://doi.org/10.1002/edm2.70359",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adina Zaka; Suleman Khan; Asim Shah; Aizaz Anwar Khalid; Ibrahim Khalil; A. B. M. Kamrul‐Hasan. Association Between Genetically Predicted 25-Hydroxyvitamin D and Type 2 Diabetes Risk in South Asians: An Exploratory Two-Sample Mendelian Randomization Study.. DOI: 10.1002/edm2.70359. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "edm270359-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "MR funnel plot. Individual SNP causal effect estimates plotted against instrument precision (y‐axis: 1/SE). IVW and MR‐Egger reference lines shown; the MR‐Egger line is shown for completeness but is not a reliable summary given only 3 SNPs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13690357.1/EDM2-9-e70359-g001.webp?md5=dac394a02ed9800fd0736e42cba69325",
+            "articleURL": "https://doi.org/10.1002/edm2.70359",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adina Zaka; Suleman Khan; Asim Shah; Aizaz Anwar Khalid; Ibrahim Khalil; A. B. M. Kamrul‐Hasan. Association Between Genetically Predicted 25-Hydroxyvitamin D and Type 2 Diabetes Risk in South Asians: An Exploratory Two-Sample Mendelian Randomization Study.. DOI: 10.1002/edm2.70359. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-02T08:22:58.544472+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Adina Zaka; Suleman Khan; Asim Shah; Aizaz Anwar Khalid; Ibrahim Khalil; A. B. M. Kamrul‐Hasan"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "missing_journal",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "missing_journal"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-02T08:23:00Z",
+        "url": "https://openalex.org/W7223204672",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.8248888,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "missing_journal",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-02T08:23:00Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-02T08:23:00Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-03T08:23:00Z"
+        }
+      },
+      "selectionScore": {
+        "total": 22.124444,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.1244439999999996,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-02T08:23:04Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-41f116dd4999a6e1",
+      "doi": "10.1038/s41592-026-03211-w",
+      "paper": "Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.",
+      "journal": "Nature methods",
+      "date": "2026-09-04",
+      "year": "2026",
+      "pmcid": "PMC13545012",
+      "pmid": "42697995",
+      "paperURL": "https://doi.org/10.1038/s41592-026-03211-w",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1548-7091",
+      "eissn": "1548-7105",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "long_read",
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "2a4cd7b4812bd97c3b47ab34d24491f4654d0896b2bd6aae86fce36855f8e041"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/PMC13545012.1.xml?md5=f759879d7ad6a5ed12c63f6a1690e679",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Long-read spatial transcriptomics of two mouse brain slides.a, Schematic overview of the study design. Spatially barcoded cDNA was generated for two coronal sections (10 μm apart) of a P56 mouse brain using the Stereo-seq platform22. The pool of cDNA was sequenced using (1) short-read technologies, (2) PB and (3) ONT. All sequencing data were combined to detect (cell-type-specific) spatially variable (novel) isoforms. b, (Sub)region annotation of Sample 1. c, Cell-type annotations of Sample 1 (S1). Only cells annotated as singlets and cell types with >100 cells are plotted. d, Alignment of S1 and Sample 2 (S2). e, UMI counts per bin (50 × 50spots) for S1. Panel a created in BioRender; Jarroux, J. https://BioRender.com/ydnd3lm (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig1_HTML.webp?md5=73b3d6b0c103e1a8ad8953f431bea329",
+            "articleURL": "https://doi.org/10.1038/s41592-026-03211-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al.. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.. DOI: 10.1038/s41592-026-03211-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Processing long reads obtained with Spl-ISO-Seq2.a, Spl-IsoQuant-2 pipeline overview. Purple and pink bars next to the reads indicate different barcodes. Blue bars between the reads and the barcodes indicate UMIs. Final diagram shows isoform count per barcode (purple/pink). b, Splitting reads into individual cDNAs by locating the TSOs. Elements are denoted as P, primer; B, barcode; L, linker; U, UMI; pT, polyT stretch; T, TSO. c, Barcode detection using k-mer indexing and Smith–Waterman local alignment. d, Primer, linker and barcode detection statistics for simulated reads without cDNA concatenation. e, Primer, linker and barcode detection statistics for simulated reads with cDNA concatenation. A simulated read can consist of multiple concatenated subreads resulting in >16 million subreads in total. f, Precision and recall of the designed barcode calling algorithm for simulated data without (left) and with cDNA concatenation (right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig2_HTML.webp?md5=22e458b2e3a8cc364640b10d82db47d6",
+            "articleURL": "https://doi.org/10.1038/s41592-026-03211-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al.. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.. DOI: 10.1038/s41592-026-03211-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Detecting genes exhibiting differential isoform expression across predefined regions.a, Number and percentage of genes changing isoform expression across predefined brain regions using all cells in combined Sample 1 + 2 (AE). Barplot on the right shows the number of long reads used during the analysis per region. b,e, Single-cell long reads for Nptn (b) and Phactr1 (e) measured in the cortex and midbrain. Each line in the top two tracks represents a single cDNA molecule. The orange exon drives the difference between isoforms in the two brain regions. The bottom black track shows the GENCODE annotation (chr9: 58489523-58565238) (b) and (chr13: 42834099-43292002) (e). c,f, Tapestation gel of PCR amplified products using exon-of-interest-spanning Nptn (c) and Phactr1 (f) specific primers. The ladder represents molecular weight in base pairs. d,g, Normalized exon inclusion for the Nptn (d) and Phactr1 (g) alternative exon (n = 3 biological replicates per group). Welch’s two-sided two-sample t-test was used for statistical testing. Box plots show median (center line), 25th–75th percentiles (box bounds) and 1.5× IQR (whiskers). Welch’s two-sided two-sample t-test (d, P = 5.3 × 10−4; g, P = 3.3 × 10−4). h–j, Number and percentage of genes changing isoform expression in excitatory neurons across (sub)regions. k, Relative expression of Gria2-201 in excitatory neurons in different hippocampal subregions of Sample 1 (AE). Every hexagon shows the mean relative expression of the underlying cells. Relative expression indicates the fraction of long reads for that gene (Gria2) that are assigned to our isoform of interest (201). A hexagon is only plotted when there are underlying cells expressing Gria2. As such, a yellow spot means that Gria2-201 is expressed, whereas a dark-blue spot means that Gria2-201 is not expressed at that location, but that another Gria2 isoform is expressed. The ssDNA staining is shown in the background. Numbers indicate BY-corrected P values. The schematic diagram in the corner shows the gene structure of Gria2-201 and Gria2-202, the two most common isoforms in the data. CTX, cortex; HPC, hippocampus; MB, midbrain; THA, thalamus; WM, white matter; CA, cornu ammonis; SUB, subiculum; Mx, mouse sample; NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig3_HTML.webp?md5=f8bad3a60a43e36a9f816443ad26fec2",
+            "articleURL": "https://doi.org/10.1038/s41592-026-03211-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al.. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.. DOI: 10.1038/s41592-026-03211-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Detecting spatially variable isoforms using spatial autocorrelation.a, Schematic example of a pattern (left) that can be detected using either predefined regions and spatial autocorrelation and a pattern (right) that can only be detected using spatial autocorrelation. b,c, Number (b) and percentage (c) of significant SVIs (FDR < 0.05) per dataset and cell type. Each bar represents a single proportion; error bars indicate 95% Wilson score confidence intervals. d, The overlap of significant isoforms across the datasets. Note, not all isoforms were tested in all datasets due to differences in read depth. e, Comparing the uncorrected P values obtained using normal and cell-type-constrained permutations for the isoforms significant in Sample 1 + 2 (AE) using all cells. f, Spatial distribution of Snap25-201 across the cortical layers in Sample 1 (AE). g, Mean relative expression of Snap25-201 in different cortical layers. Colors indicate the different datasets. Lower relative expression of Snap25-201 in layer 5 implies higher relative expression of Snap25-202. h, Number of significant isoforms per gene in Sample 1 + 2 (AE). i, Spatial distribution of the four significant isoforms of Arpp19 in Sample 1 (AE). j, Spatial distribution of Rps24-202 in oligodendrocytes of Sample 1 (AE). k, Overlap between the significant genes found using both methods for the excitatory neurons in Sample 1 + 2 (AE) data. l, Spatial distribution of Ighm-new in Sample 1 (AE), which was only discovered using spatial autocorrelation. f,i,j,l, Every hexagon shows the mean relative expression of the underlying cells (Methods). The schematic gene diagram shows the structures the most common isoforms in our data. ALL, all cells; EX, excitatory neurons; IN, inhibitory neurons; OLI, oligodendrocyte; AST, astrocyte; AE, AllExome dataset, 3.3 K = 3.3 K targeted dataset. Panel a created in BioRender; Jarroux, J. https://BioRender.com/8po0zmg (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig4_HTML.webp?md5=a54a3e178ac2b6bfa9aa4344b5dd589d",
+            "articleURL": "https://doi.org/10.1038/s41592-026-03211-w",
+            "asset": "assets/pmc13545012-2717bd63a9467631.webp",
+            "sha256": "2717bd63a94676318462ed4029830cb7b05c4638f55575e36bb7f2509a7d0854",
+            "width": 1600,
+            "height": 1935,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al.. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.. DOI: 10.1038/s41592-026-03211-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2717bd63a94676318462ed4029830cb7b05c4638f55575e36bb7f2509a7d0854",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Reproducibility across protocols and biological samples.a, Barcode calling precision and recall of Spl-IsoQuant-2 and Space Ranger on simulated Visium HD data using different while grouping the spots in different bin sizes. Different minimal alignment scores (min. score) were tested for Spl-IsoQuant-2. b,c, Average read length (b) and percentage of spliced reads (c) in the Stereo-seq and Visium HD data. Datasets are grouped by whether enriched (enr.) (long-molecule selection and exome enrichment) or unenriched (unenr.) cDNA was sequenced. d, Region annotation of the Visium HD V1 sample. e,f, Number (e) and percentage (f) of significant SVIs (FDR < 0.05). Each bar represents a single proportion; error bars indicate 95% Wilson score confidence intervals. g, Overlap of significant SVIs between the V1 ONT and V1 PB data. Only isoforms tested in both datasets are considered. h, Overlap of significant SVIs between Sample 1 + 2 (AE) ONT and V1 (PB) data. Only isoforms tested in both datasets are considered. i, Observed and expected overlap of SVIs (P = 1.8 × 10−110, two-sided Fisher’s exact test). j, Relative expression of Gad2-new2 in V1 PB. Every hexagon shows the mean relative expression of the underlying cells. Relative expression indicates the fraction of long reads for that gene (Gad2) that are assigned to our isoform of interest (new2). A hexagon is only plotted when there are underlying cells expressing Gad2. The hematoxylin and eosin (H&E) staining is shown in the background. The schematic diagram in the corner shows the gene structure of Gad2 isoforms.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_Fig5_HTML.webp?md5=ba11829114a875082ac1f2df9a301b24",
+            "articleURL": "https://doi.org/10.1038/s41592-026-03211-w",
+            "asset": "assets/pmc13545012-2f2f5ea7bcdfcde6.webp",
+            "sha256": "2f2f5ea7bcdfcde6370d9ff54c217b4e832faca18ce2a36a3a5572c76e600d1c",
+            "width": 1600,
+            "height": 1658,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al.. Spatial isoform sequencing at single-cell resolution reveals cell-type-specific spatial isoform variability in multiple brain cell types.. DOI: 10.1038/s41592-026-03211-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2f2f5ea7bcdfcde6370d9ff54c217b4e832faca18ce2a36a3a5572c76e600d1c",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_MOESM1_ESM.pdf?md5=ce290152ae205d6bdc5d201b1b2520f2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_MOESM2_ESM.pdf?md5=fd9a52154bbb623924f6004b400c04f7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_MOESM3_ESM.pdf?md5=849e712794dc1794ac2e7fb9ce5cf820",
+            "license": "CC BY",
+            "sha256": "cc504f6ab581d8e4335af32b811a426756a85db7ee450590ae3846bc54327ee0",
+            "status": "downloaded_private",
+            "bytes": 3567879,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 79,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_MOESM4_ESM.xlsx?md5=343451b3b2fd4a581b2e2abba02fa1f3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13545012.1/41592_2026_3211_MOESM5_ESM.pdf?md5=271e60b4715d13d38da9c9543cd5e582",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-02T08:22:42.230040+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Lieke Michielsen; Andrey D. Prjibelski; Careen Foord; Yelizaveta Spiegelman; Taewoo Kim; Wen Hu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "28.3",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-02T08:22:47Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-02T08:22:47Z",
+        "url": "https://openalex.org/W7208746201",
+        "cited_by_count": 2,
+        "fwci": 4.0955,
+        "citation_normalized_percentile": 0.94889755,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-02T08:22:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-02T08:22:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-03T08:22:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 54.74448775,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.74448775,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-02T08:23:05Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -179105,6 +180026,24 @@
           ]
         }
       ]
+    },
+    "doi-816bf902f17b4e1c": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-75b437da398ab60e": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-41f116dd4999a6e1": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -180723,7 +181662,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-01T08:14:25Z",
+  "generatedAt": "2026-11-02T08:23:06Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -180957,18 +181896,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-02T08:20:42Z",
-    "updatedAt": "2026-11-02T08:20:46Z",
+    "updatedAt": "2026-11-02T08:23:11Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 39,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
