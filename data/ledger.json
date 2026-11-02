@@ -143,11 +143,80 @@
       "newDOIs": [
         "10.1002/advs.202600023",
         "10.1002/edm2.70359",
-        "10.1038/s41592-026-03211-w"
+        "10.1038/s41592-026-03211-w",
+        "10.1186/s13059-026-04262-0",
+        "10.3389/fcell.2026.1993380"
       ]
     }
   },
   "candidates": {
+    "10.1002/cpz1.70491": {
+      "checkedAt": "2026-11-02T08:25:08Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1002/cpz1.70491",
+        "metadataHash": "383871de06684b04154ec830d75f4b3f7b6b9329d2bde3ea32f4bd2e8d3ee72c",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13717937.1/PMC13717937.1.xml?md5=66d048657c11bb46eaba4f18799dc50d",
+          "license": "CC BY",
+          "figures": [
+            {
+              "id": "cpz170491-fig-0001",
+              "sha256": "b6512918c7142ffdbc60e817840bce25bf8389dc0797f2321bba884af6c79a0a",
+              "assetSHA256": "b6512918c7142ffdbc60e817840bce25bf8389dc0797f2321bba884af6c79a0a",
+              "label": "Figure 1",
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13717937.1/CPZ1-6-0-g001.webp?md5=1c05e452e1c31711bf910e7dad22b44e",
+              "width": 678,
+              "asset": "assets/pmc13717937-b6512918c7142ffd.webp",
+              "height": 261,
+              "captionHash": "4f3893dfc6ca95d91501905237d6dbd1feb48879a8dbe5382471188530678680"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-f3c15886845be2a1",
+          "doi": "10.1002/cpz1.70491",
+          "paper": "ntRoot: Genetic Ancestry Inference Across Diverse Genomic Data Types.",
+          "journal": "Current protocols",
+          "date": "2026-11-01",
+          "year": "2026",
+          "pmcid": "PMC13717937",
+          "pmid": "42954414",
+          "paperURL": "https://doi.org/10.1002/cpz1.70491"
+        },
+        "updatedAt": "2026-11-02T08:25:07Z"
+      }
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-02T08:25:00Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-02T08:24:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3389/fcell.2026.1993380": {
+      "checkedAt": "2026-11-02T08:24:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1186/s13059-026-04262-0": {
+      "checkedAt": "2026-11-02T08:24:45Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1002/biot.70331": {
       "checkedAt": "2026-11-02T08:23:03Z",
       "status": "pending",
@@ -8492,61 +8561,6 @@
         "updatedAt": "2026-10-16T06:53:27Z"
       }
     },
-    "10.1186/s13059-026-04262-0": {
-      "checkedAt": "2026-10-16T06:53:47Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s13059-026-04262-0",
-        "metadataHash": "daa303fc823e69881b8984f6c970fd1e72c34490b2e81dae9b54f739fd8ab0f3",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13548610.1/PMC13548610.1.xml?md5=98eff1a841bbb6568596998a40af291f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13548610-0983000b80dec4e3.webp",
-              "assetSHA256": "0983000b80dec4e3c906e7f5297c45eff52dfde4334846844da5f89c54a589c0",
-              "license": "CC BY",
-              "id": "Fig3",
-              "sha256": "0983000b80dec4e3c906e7f5297c45eff52dfde4334846844da5f89c54a589c0",
-              "height": 863,
-              "label": "Fig. 3",
-              "width": 1416,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13548610.1/13059_2026_4262_Fig3_HTML.webp?md5=89773d74510bc3d9e316092998dcb7d1",
-              "captionHash": "96f13e78c95d9591e26ae0b6b6edfa099eb70ef2dc2fc462ed24ffd1fe9f8c64"
-            },
-            {
-              "asset": "assets/pmc13548610-a337ff21a498d74c.webp",
-              "assetSHA256": "a337ff21a498d74c8d3c9846ab4c2e07bb74ee8cf804f8c0a69002038de90141",
-              "license": "CC BY",
-              "id": "Fig4",
-              "sha256": "a337ff21a498d74c8d3c9846ab4c2e07bb74ee8cf804f8c0a69002038de90141",
-              "height": 818,
-              "label": "Fig. 4",
-              "width": 1418,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13548610.1/13059_2026_4262_Fig4_HTML.webp?md5=37873d0590733034f5f96dbab70d231f",
-              "captionHash": "6d1b107b7097606eee75b9bd85732089a813d6d5e9633c2d20de803718325d93"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-c7ab557ba1288c64",
-          "doi": "10.1186/s13059-026-04262-0",
-          "paper": "Large-scale benchmarking of prokaryotic annotation tools across thousands of species.",
-          "journal": "Genome biology",
-          "date": "2026-09-04",
-          "year": "2026",
-          "pmcid": "PMC13548610",
-          "pmid": "42706541",
-          "paperURL": "https://doi.org/10.1186/s13059-026-04262-0"
-        },
-        "updatedAt": "2026-10-16T06:53:46Z"
-      }
-    },
     "10.1371/journal.pcbi.1014727": {
       "checkedAt": "2026-10-16T06:53:42Z",
       "status": "pending",
@@ -13272,27 +13286,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-02T08:23:17Z",
+    "updatedAt": "2026-11-02T08:25:14Z",
     "batchCount": 2,
     "uncertainAiAttempts": 0,
     "aiAttempts": 0,
     "endReason": "",
-    "requests": 39,
-    "elapsedSeconds": 156,
+    "requests": 71,
+    "elapsedSeconds": 273,
     "startedAt": "2026-11-02T08:20:42Z",
     "status": "active",
     "version": 1,
     "uncertainRequests": 0,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "maxBatches": 36,
     "date": "2026-11-02",
     "maxRequests": 1800,
     "maxSeconds": 2700,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-02T08:23:17Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxAiAttempts": 165
   }
 }
