@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-02",
+  "checkedAt": "2026-11-03",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -128134,6 +128134,2701 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-bff033ff935dd45d",
+      "doi": "10.3389/fmed.2026.1800947",
+      "paper": "Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin",
+      "journal": "Frontiers in medicine",
+      "date": "2026-07-08",
+      "year": "2026",
+      "pmcid": "PMC13393490",
+      "pmid": "42494450",
+      "paperURL": "https://doi.org/10.3389/fmed.2026.1800947",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "a80ac95e172b813fa5962a5b7747f39228345f7386a8dc28d6ce0a52e0a4a429"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/PMC13393490.1.xml?md5=c7da05823fc9dbe36b8ecbc650a1d680",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single-cell RNA sequencing atlas of human skin aging. (A) UMAP visualizations of integrated healthy-skin single-cell RNA-seq data, showing major skin cell-type annotations, age group distribution, and quality control/read depth features. (B) Trajectory heatmap of age-associated gene expression across age-ordered cells. Columns are ordered by trajectory; age status is indicated above the heatmap, and color indicates z-scored gene expression. (C) Gene Ontology enrichment analysis of age-associated genes across major skin cell types. Bars show representative enriched biological processes, with colors indicating the corresponding cell type. (D) CellChat analysis of secreted signaling pathways in young, middle-aged, and old skin, showing age-associated remodeling of intercellular communication networks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g001.jpg?md5=7f2fb8c322daa347006bc96799e26fbb",
+            "articleURL": "https://doi.org/10.3389/fmed.2026.1800947",
+            "asset": "assets/pmc13393490-1ef78941cbc27927.jpg",
+            "sha256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
+            "width": 767,
+            "height": 795,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Danping Pan; Haibin Wu. Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin. DOI: 10.3389/fmed.2026.1800947. Copyright holder: Pan and Wu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Cell-type-specific aging programs in skin cancers and their association with patient survival. (A) UMAP visualizations of public melanoma, squamous cell carcinoma (SCC), and basal cell carcinoma (BCC) single-cell RNA-seq datasets, colored by major tumor microenvironment cell types. (B) Heatmaps showing aging-signature scores across cell types in melanoma, SCC, and BCC. Cell-type abbreviations are shown with the corresponding full cell-type names. (C) Kaplan–Meier survival curves for TCGA-SKCM patients stratified by high or low aging signature activity in endothelial cells, immune cells, keratinocytes, and fibroblasts. Adjusted p-values are derived from multivariable Cox models controlling for patient age, sex, and tumor stage.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g002.jpg?md5=6a22b244cf0e0ed7a74889d99001afa9",
+            "articleURL": "https://doi.org/10.3389/fmed.2026.1800947",
+            "asset": "assets/pmc13393490-1d199627977da831.jpg",
+            "sha256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
+            "width": 767,
+            "height": 1058,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Danping Pan; Haibin Wu. Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin. DOI: 10.3389/fmed.2026.1800947. Copyright holder: Pan and Wu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "SFRP2-positive fibroblast programs are spatially associated with WNT-active niches in basal cell carcinoma. (A) Spatial proximity heatmap showing neighborhood relationships among BCC-associated cell types and tissue compartments. Values represent normalized spatial proximity scores. (B) Ligand–receptor network for the non-canonical WNT signaling pathway in BCC, highlighting fibroblast-associated communication and the SFRP2-LRP5/6 axis. (C) Spatial maps from healthy control and BCC tissue sections showing SFRP2 expression, inferred SFRP2-positive fibroblast abundance, BCC-associated signal, and WNT5A expression. Dashed outlines indicate tumor-enriched regions where applicable.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g003.jpg?md5=05593fdc74be126677337ca3fd3ec535",
+            "articleURL": "https://doi.org/10.3389/fmed.2026.1800947",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Danping Pan; Haibin Wu. Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin. DOI: 10.3389/fmed.2026.1800947. Copyright holder: Pan and Wu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "SFRP2-positive fibroblast programs and WNT signaling are enriched at SCC tumor–stroma interfaces. (A–C) UMAP/spatial embeddings of SCC Visium spots colored by sample identity, pathological annotation, and aggregated tumor zone, respectively. (D) Spatial proximity heatmap showing neighborhood relationships among SCC tumor zones and stromal compartments. (E) Spatial visualization of the SFRP2-LRP5/6 ligand–receptor axis in SCC. (F) Representative Visium spatial maps from three SCC patients showing tumor core/edge annotation, SFRP2 expression, inferred SFRP2-positive fibroblast abundance, and WNT signaling score.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g004.jpg?md5=cdf756ddf7fafaf826efac73b7fd32f1",
+            "articleURL": "https://doi.org/10.3389/fmed.2026.1800947",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Danping Pan; Haibin Wu. Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin. DOI: 10.3389/fmed.2026.1800947. Copyright holder: Pan and Wu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Working model of aging-associated fibroblast remodeling and increased tumor vulnerability. Schematic model illustrating the proposed accumulation of SFRP2-expressing fibroblasts during skin aging and their enrichment in tumor-associated stroma. The SFRP2-associated fibroblast program is spatially associated with WNT-active tumor or tumor-adjacent compartments, contributing to a tumor-permissive microenvironment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g005.jpg?md5=e7e57272733daee772b2c5eb2ff8b872",
+            "articleURL": "https://doi.org/10.3389/fmed.2026.1800947",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Danping Pan; Haibin Wu. Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin. DOI: 10.3389/fmed.2026.1800947. Copyright holder: Pan and Wu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SM1",
+            "label": "SUPPLEMENTARY TABLE S1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_1.csv?md5=4bb9dbbf3c7add790d06e334c40a86e9",
+            "license": "CC BY",
+            "sha256": "588335a1a2ac2eb0362d05db498449ed17e06325c17dede6cb5df9308a7cb53c",
+            "status": "downloaded_private",
+            "bytes": 767951,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "SM2",
+            "label": "SUPPLEMENTARY TABLE S2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_2.csv?md5=d0f6678b11583addc7b5c341138cb871",
+            "license": "CC BY",
+            "sha256": "50abc4ace11847bd8ac9c008b2e5540bf074fb21b8d9b298ab6977e56010dca9",
+            "status": "downloaded_private",
+            "bytes": 488176,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "SM3",
+            "label": "SUPPLEMENTARY TABLE S3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_3.csv?md5=91f8663fd7cd184704dda68820bd0858",
+            "license": "CC BY",
+            "sha256": "c71d8713fa1152caf5f3071e33d3787e1d26d5285e4202c4f29da31d4540c2fb",
+            "status": "downloaded_private",
+            "bytes": 424,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "SM4",
+            "label": "SUPPLEMENTARY TABLE S4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_4.csv?md5=6d5fe815bd6eef1bf3d1da6b09fae4eb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM5",
+            "label": "SUPPLEMENTARY TABLE S5",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_5.csv?md5=0a67cd297d53f5a7c6a53a6fa3a7ca00",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM6",
+            "label": "SUPPLEMENTARY TABLE S6",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Data_Sheet_6.csv?md5=4959386aa5ab1743cd36d3d22abb08ba",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM7",
+            "label": "SUPPLEMENTARY FIGURE S1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Image_1.tif?md5=d7b753c6d4cf12713386f482923a7ed4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM8",
+            "label": "SUPPLEMENTARY FIGURE S2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Image_2.tif?md5=f980dfed19057e371ea2c453ff4d303e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM9",
+            "label": "SUPPLEMENTARY FIGURE S3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Image_3.tif?md5=1601c67870c4912285f0a0940297f919",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM10",
+            "label": "SUPPLEMENTARY FIGURE S4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Image_4.tif?md5=f1ad95680c77a9c352d47050d080fa28",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM11",
+            "label": "SUPPLEMENTARY FIGURE S5",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/Image_5.tif?md5=ffb2f364bc286f7e8a56b35704e783a0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/BioGenYiShang/Aging_Fibroblast"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-03T08:37:10.737080+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/PMC13393490.1.xml?md5=c7da05823fc9dbe36b8ecbc650a1d680"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Danping Pan; Haibin Wu"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/BioGenYiShang/Aging_Fibroblast",
+        "commit": "4d5bd40d4d8331006c3e59c5f0d653006988d239",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "cellchat_analysis.R",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/cellchat_analysis.R",
+            "sha256": "e75358d92067c7b086fead9d3c34057f86a5e8b8b07c453a9417962a1d6098e5",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "AgeGroup",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "orig.ident",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "count",
+                "line": 18,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/cellchat_analysis.R",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/R/cellchat_analysis.R",
+            "sha256": "e75358d92067c7b086fead9d3c34057f86a5e8b8b07c453a9417962a1d6098e5",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "AgeGroup",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "orig.ident",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "count",
+                "line": 18,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/R/cellchat_analysis.R",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/scripts/R/cellchat_analysis.R",
+            "sha256": "e75358d92067c7b086fead9d3c34057f86a5e8b8b07c453a9417962a1d6098e5",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "AgeGroup",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_group",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "orig.ident",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 8,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 10,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "count",
+                "line": 18,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "aging_signature_build_validate.R",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/aging_signature_build_validate.R",
+            "sha256": "6b0b3192f298898d598bd1818c7da15fc36dee043ab69116fa64bfa96513f4e9",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "donor_age",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "orig.ident",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 16,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "age_bin",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "avg_log2FC",
+                "line": 24,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "monocle3_trajectory.R",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/monocle3_trajectory.R",
+            "sha256": "2a9ab4a0232c42c8cbcea6c96b71a383e8c2fee3587fc68074bd8aad06a9f0c9",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "python/integration_benchmark.py",
+            "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/python/integration_benchmark.py",
+            "sha256": "f595c1362a4f9aa2b0941c375d61a16e50bb31c87994924d10b13a7222de9e6d",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 53,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "X_harmony",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scanorama",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 13,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 53,
+                "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/python/integration_benchmark.py#L53"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "X_harmony",
+                "line": 14,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_scanorama",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_pca",
+                "line": 13,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/python/integration_benchmark.py",
+            "line": 53,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.6",
+        "jcr": "Q1",
+        "cas": "医学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-03T08:37:20Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-03T08:37:20Z",
+        "url": "https://openalex.org/W7167838456",
+        "cited_by_count": 2,
+        "fwci": 4.1043,
+        "citation_normalized_percentile": 0.9470119,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-03T08:37:20Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-03T08:37:20Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-04T08:37:20Z"
+        }
+      },
+      "selectionScore": {
+        "total": 82.7350595,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.7350595,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-03T08:37:51Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "整合单细胞与空间转录组分析揭示与人皮肤肿瘤进展相关的衰老相关成纤维细胞亚型",
+        "summary_zh": "该资料为发表于 Frontiers in medicine(2026-07-08)、DOI 为 10.3389/fmed.2026.1800947 的论文条目,摘要字段为空。可依据的图注证据描述了四幅图的主题:图1为人类皮肤衰老的单细胞 RNA 测序图谱,含 UMAP 细胞类型注释、年龄相关基因轨迹热图、GO 富集与 CellChat 分泌信号通路分析;图2为黑色素瘤、SCC、BCC 中细胞类型特异的衰老程序及其与 TCGA-SKCM 患者生存的关联;图3为 BCC 中 SFRP2 阳性成纤维细胞程序与 WNT 活跃微环境的空间邻近关系;图4为 SCC 肿瘤–间质界面处 SFRP2 阳性成纤维细胞程序与 WNT 信号的富集。另有若干 R 脚本的静态观察记录,但作者代码未执行,输入尺度与图号对应关系未明示,相关细节保持未知。",
+        "learning_points": [
+          "图1展示了整合健康皮肤单细胞 RNA 测序数据的 UMAP 可视化,包含主要皮肤细胞类型注释、年龄组分布及质控/测序深度特征。",
+          "图1包含按年龄排序细胞的年龄相关基因表达轨迹热图,颜色表示 z 标准化基因表达,热图上方标注年龄状态。",
+          "图1对主要皮肤细胞类型中的年龄相关基因做了 GO 富集分析,并以条形图展示代表性生物学过程。",
+          "图1用 CellChat 分析年轻、中年、老年皮肤中的分泌信号通路,展示细胞间通讯网络的年龄相关重塑。",
+          "图2在公共黑色素瘤、SCC、BCC 单细胞数据集中展示肿瘤微环境主要细胞类型,并给出各细胞类型的衰老特征评分热图。",
+          "图2用 Kaplan–Meier 曲线按内皮细胞、免疫细胞、角质形成细胞和成纤维细胞的衰老特征活性高低对 TCGA-SKCM 患者分层,校正 p 值来自控制年龄、性别和肿瘤分期的多变量 Cox 模型。",
+          "图3在 BCC 中展示细胞类型与组织区室的空间邻近热图、非经典 WNT 通路的配体–受体网络(含 SFRP2-LRP5/6 轴),以及健康对照与 BCC 切片中 SFRP2、WNT5A 等空间分布图。",
+          "图4在 SCC Visium 数据中展示样本身份、病理注释与肿瘤区聚合的空间嵌入,肿瘤区与间质区室的空间邻近热图,SFRP2-LRP5/6 轴空间可视化,以及三名 SCC 患者的肿瘤核心/边缘注释与 WNT 信号评分空间图。"
+        ],
+        "limitations": [
+          "摘要字段为空,无法从摘要获取研究设计与结论信息。",
+          "作者代码未执行,仅有静态观察记录,不能视为复现验证,不得宣称结果已复现或一致。",
+          "脚本静态观察文本未给出具体观察内容,输入数据尺度与图号对应关系未明示,相关细节未知。",
+          "图3与图4证据中来源哈希字段为空,无法核对对应文件。",
+          "未观察到原图与代码输出的对应关系、软件版本、参数设置或许可信息,均属未知。",
+          "未观察到期刊指标、影响因子等信息,不得推断。",
+          "图注描述为文字说明,未提供实际数值结果或统计量,无法据此判断效应大小。",
+          "图2生存分析基于 TCGA-SKCM,其他癌种是否做生存分析未在证据中说明。",
+          "样本量、队列来源与数据获取细节未在提供的证据中给出,保持未知。",
+          "本资料为待核学习注释,所有内容需以原文与原始数据为准。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-03T08:37:57Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "5499f858519f64db25d4c44297e8693bf0a4dc347d943a8b15b7441ebe1a8d7e",
+        "summary_fingerprint": "f3435f254144b99fbef3d27122201786c8e8974688bd225ff1aab0d314e5ceb9",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-fe1b0ad32e0e5e5a",
+      "doi": "10.1002/alz.71869",
+      "paper": "Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13619731",
+      "pmid": "42805938",
+      "paperURL": "https://doi.org/10.1002/alz.71869",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "1ae57a868a0ecd990e4e558c04916e25dac701c2b2863844a50112858a6aab91"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09",
+        "figures": [
+          {
+            "id": "alz71869-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Participant selection and study workflow. (A) Flowchart showing inclusion and exclusion criteria applied to derive the final analytic sample (N = 16,215) of UK Biobank participants with complete genetic, proteomic, metabolomic, and clinical biomarker data. Created with BioRender.com (https://biorender.com/uxohtm0). (B) Workflow diagram summarizing data inputs (polygenic risk scores, biological aging measures, omics‐based biological aging clocks), preprocessing/QC steps, and the stacked ensemble modeling framework used for ADRD risk prediction. The final integrated prediction framework was externally evaluated in TwinGene using harmonized available predictors, with performance assessed by discrimination and risk stratification. Created with BioRender.com (https://biorender.com/togjy9z). ADRD, Alzheimer's disease and related dementias; APOE, apolipoprotein E; BA, biological aging; FI = frailty index; GWAS = genome‐wide association study; HD, homeostatic dysregulation; KDM, Klemera–Doubal method; MetaboAge, metabolomic aging clock; N, number of participants; ProtAge, proteomic aging clock; PRS, polygenic risk score; QC, quality control; TL, telomere length; VAE, variational autoencoder.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g005.webp?md5=fc903496bce664027a07d545478001d4",
+            "articleURL": "https://doi.org/10.1002/alz.71869",
+            "asset": "assets/pmc13619731-dbbee567fa82a229.webp",
+            "sha256": "dbbee567fa82a229a5abddd79038d3ee96a34f72afb3a4d5f26162594ff0e1e9",
+            "width": 840,
+            "height": 439,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al.. Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data. DOI: 10.1002/alz.71869. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "dbbee567fa82a229a5abddd79038d3ee96a34f72afb3a4d5f26162594ff0e1e9",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "alz71869-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Univariate predictive performance of individual predictors. Forest plot showing AUC with 95% confidence intervals for each predictor in univariate models assessing ADRD risk in the UK Biobank cohort (N = 16,215). AUCs were computed for predicting incident ADRD within the entire follow‐up. ADRD, Alzheimer's disease and related dementias; AUC, area under the receiver operating characteristic (ROC) curve; FI, frailty index; HD, homeostatic dysregulation; KDM, Klemera–Doubal Method; MetaboAge , metabolomic aging clock; PhenoAge, phenotypic age; ProtAge, proteomic aging clock; PRS, polygenic risk score; TL, telomere length.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g004.webp?md5=a9a9c802e4741050a7cd34ccfa3e6d67",
+            "articleURL": "https://doi.org/10.1002/alz.71869",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al.. Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data. DOI: 10.1002/alz.71869. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "alz71869-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Correlations among biological aging measures and PRS. Correlation matrix displaying pairwise Pearson correlation coefficients between PRS and biological aging measures, including PhenoAge, KDM, HD, FI, TL, ProtAge, and MetaboAge in the UK Biobank cohort. Values shown within cells are Pearson correlation coefficients. FI, frailty index; HD, homeostatic dysregulation; KDM, Klemera–Doubal method; PhenoAge, phenotypic age; MetaboAge, metabolomic aging clock; PRS, polygenic risk score; ProtAge, proteomic aging clock; TL, telomere length.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g001.webp?md5=939c9e1b0d85c7c617234065fa8c14d1",
+            "articleURL": "https://doi.org/10.1002/alz.71869",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al.. Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data. DOI: 10.1002/alz.71869. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "alz71869-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Subdistribution hazard ratios for ADRD predictors. Forest plot presenting subdistribution hazard ratios (sHRs) and 95% confidence intervals for each predictor in the fully adjusted integrated model (Model 5), estimated using Fine–Gray competing risk regression accounting for death as a competing event (UK Biobank; N = 16,215). ADRD, Alzheimer's disease and related dementias; FI, frailty index; MetaboAge, metabolomic aging clock; PhenoAge, phenotypic age; ProtAge, proteomic aging clock; PRS, polygenic risk score; sHR, subdistribution hazard ratio; TL, telomere length.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g002.webp?md5=17dd13722cb729291469a1a2267629e3",
+            "articleURL": "https://doi.org/10.1002/alz.71869",
+            "asset": "assets/pmc13619731-513f0467727084e7.webp",
+            "sha256": "513f0467727084e7db2f934c24927295d431389a4632e10a3a35d39344cf1d73",
+            "width": 700,
+            "height": 392,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al.. Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data. DOI: 10.1002/alz.71869. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "513f0467727084e7db2f934c24927295d431389a4632e10a3a35d39344cf1d73",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "alz71869-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cumulative incidence of ADRD by predicted risk group. Fine–Gray cumulative incidence function (CIF) curves for incident Alzheimer's disease and related dementias (ADRD) stratified by predicted 5‐year ADRD risk from the final competing‐risk model (highest‐risk group: top 25% vs. lower‐risk group: bottom 75%), treating death as a competing event in the UK Biobank cohort. Shaded areas indicate 95% confidence intervals. The subdistribution hazard ratio (sHR) and p‐value compare the highest‐risk versus lower‐risk groups.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g003.webp?md5=baed3fe70b772557a6f0a4918acbd2fc",
+            "articleURL": "https://doi.org/10.1002/alz.71869",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al.. Integrative prediction of Alzheimer's disease and related dementias using multi‐omics aging clocks and genetic data. DOI: 10.1002/alz.71869. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "alz71869-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "alz71869-supitem-0001",
+            "label": "Supporting Information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-s001.docx?md5=9292dc3b4f35c673ca471a62857a6694",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "alz71869-supitem-0002",
+            "label": "ICMJE Disclosure Forms",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-s002.pdf?md5=f330ccc9931a304ff22891a104699b5f",
+            "license": "CC BY",
+            "sha256": "1ea1403cad5dea4e8149d5df497315f612360442787ba1d21eb4a8026bea9221",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 935968,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 21,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/shayanmostafaei/DDML_PRS_ADRD",
+          "https://github.com/shayanmostafaei/Metabolomic-Aging-Clock-MetaboAge-",
+          "https://github.com/shayanmostafaei/Omics_ADRD_Integrated_Modeling",
+          "https://github.com/shayanmostafaei/Proteomic-Aging-Clock-ProtAge-"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-03T08:37:35.750289+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/shayanmostafaei/DDML_PRS_ADRD",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09"
+          },
+          {
+            "url": "https://github.com/shayanmostafaei/Metabolomic-Aging-Clock-MetaboAge-",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09"
+          },
+          {
+            "url": "https://github.com/shayanmostafaei/Proteomic-Aging-Clock-ProtAge-",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09"
+          },
+          {
+            "url": "https://github.com/shayanmostafaei/Omics_ADRD_Integrated_Modeling",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shayan Mostafaei; Karolina Gustavsson; Hampus Hagelin; Jonathan K. L. Mak; Trung Nghia Vu; Ida K. Karlsson; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/shayanmostafaei/DDML_PRS_ADRD",
+        "commit": "be546d07eceb636c18be0720dd99c8aaadb5df31",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "DDML_PRS_Model.py",
+            "url": "https://github.com/shayanmostafaei/DDML_PRS_ADRD/blob/be546d07eceb636c18be0720dd99c8aaadb5df31/DDML_PRS_Model.py",
+            "sha256": "08121852f6e1f004a79b0d0266193780ef43eb64b865c9711bc0b69bc29029ad",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "X_train",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y_train",
+                "line": 343,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "idx_train",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_val",
+                "line": 346,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y_val",
+                "line": 347,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "idx_val",
+                "line": 348,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X_test",
+                "line": 350,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y_test",
+                "line": 351,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "idx_test",
+                "line": 352,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "TF_DETERMINISTIC_OPS",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "roc_auc",
+                "line": 545,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auprc",
+                "line": 546,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "priors/build_priors_from_jansen_ukb_excluded.R",
+            "url": "https://github.com/shayanmostafaei/DDML_PRS_ADRD/blob/be546d07eceb636c18be0720dd99c8aaadb5df31/priors/build_priors_from_jansen_ukb_excluded.R",
+            "sha256": "b5210e921c7d98961b0baa56f37a7aaeb47fe27efcd3ff3828ec18bd3bd7f670",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "SNP",
+                "line": 55,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "P",
+                "line": 76,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "VAR",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SE",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BETA_CONS",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BETA",
+                "line": 90,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BUILD",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BETA_SCALE",
+                "line": 96,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "EFFECT_ALLELE",
+                "line": 97,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "VAR_DEF",
+                "line": 98,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SOURCE",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IN_APOE_REGION_44_46MB",
+                "line": 102,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CHR",
+                "line": 103,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "BP",
+                "line": 104,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "missing_journal",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "missing_journal"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-03T08:37:39Z",
+        "url": "https://openalex.org/W7214615459",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.74041298,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "missing_journal",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-03T08:37:39Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-03T08:37:39Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-04T08:37:39Z"
+        }
+      },
+      "selectionScore": {
+        "total": 77.7020649,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.7020649,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-03T08:37:58Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "多组学衰老时钟与遗传数据整合预测阿尔茨海默病及相关痴呆",
+        "summary_zh": "该资料为 Alzheimer's & Dementia 期刊论文(DOI:10.1002/alz.71869,标注时间2026-10-01)的图注与代码静态观察记录。图注显示:研究基于 UK Biobank 中具有完整遗传、蛋白质组、代谢组与临床生物标志物数据的 16,215 名参与者,构建包含多基因风险评分、多种生物学衰老指标与组学衰老时钟的堆叠集成模型用于 ADRD 风险预测,并在 TwinGene 中做外部评估;图2展示各单一预测因子的 AUC 森林图,图3展示 PRS 与各衰老指标间的 Pearson 相关矩阵,图4展示 Fine–Gray 竞争风险模型(以死亡为竞争事件)的亚分布风险比。作者代码未运行,仅作静态观察,未验证复现。",
+        "learning_points": [
+          "图1以流程图形式给出纳入/排除标准,最终分析样本为 UK Biobank 中具有完整遗传、蛋白质组、代谢组和临床生物标志物数据的 16,215 名参与者。",
+          "图1B 汇总了数据输入(多基因风险评分、生物学衰老指标、组学衰老时钟)、预处理/质控步骤与堆叠集成建模框架,并说明最终整合框架在 TwinGene 中用可获得的协调预测因子做外部评估,以区分度和风险分层评估性能。",
+          "图2以森林图呈现各单一预测因子在单变量模型中的 AUC 及95%置信区间,预测结局为整个随访期内新发 ADRD。",
+          "图3以相关矩阵展示 PRS 与 PhenoAge、KDM、HD、FI、TL、ProtAge、MetaboAge 之间的两两 Pearson 相关系数。",
+          "图4以森林图呈现完全调整整合模型(Model 5)中各预测因子的亚分布风险比及95%置信区间,采用 Fine–Gray 竞争风险回归并将死亡作为竞争事件。",
+          "图注中列出的衰老相关指标包括 FI(衰弱指数)、HD(稳态失调)、KDM(Klemera–Doubal 法)、PhenoAge(表型年龄)、TL(端粒长度)、ProtAge(蛋白质组衰老时钟)、MetaboAge(代谢组衰老时钟)。",
+          "代码证据仅记录固定提交 be546d07eceb636c18be0720dd99c8aaadb5df31 下两个脚本路径及其 SHA256 与“静态观察”标记,未提供可核验的运行结果。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果已复现或与原图一致。",
+          "输入数据的尺度、变量列名与图号之间的对应关系未在证据中明示,均属未知。",
+          "未提供摘要文本,研究结论与具体数值无法从证据中核实。",
+          "图2、图3、图4 的具体 AUC、相关系数与风险比数值未在证据文本中给出,无法引用。",
+          "TwinGene 外部评估的具体样本量、预测因子协调方式与性能指标数值未知。",
+          "堆叠集成模型的具体基学习器、超参数与验证策略未在证据中说明。",
+          "代码静态观察条目未包含任何函数、参数或数据读取细节,无法据此推断实现逻辑。",
+          "期刊指标、许可与数据可获得性未在证据中提供,不作推断。",
+          "图注中部分文字(如图1末尾“variationa”)被截断,相关方法细节不完整。",
+          "证据未说明 UK Biobank 与 TwinGene 的伦理审批或数据访问条件。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-03T08:38:04Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "5aee9d0823582c4ee1e36c906f045490faab5e09046f5ce61c2f5e5b4f821b3f",
+        "summary_fingerprint": "7a474f5c0e62657e32bba1f2f3aff7df49f066da14148bf451e04d3f94886c6a",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-fabb2e28e4a3bc43",
+      "doi": "10.1111/acel.70747",
+      "paper": "Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated With All‐Cause Mortality",
+      "journal": "Aging cell",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13631562",
+      "pmid": "42823846",
+      "paperURL": "https://doi.org/10.1111/acel.70747",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "46eb08700bb8619737fe9c550da552677b89bc44daf2e82a50d5be5b24b856de"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/PMC13631562.1.xml?md5=fff6077098dbe52f242498c0af1dc144",
+        "figures": [
+          {
+            "id": "acel70747-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Associations of 23 ageing biomarkers with all‐cause mortality in the LBC1936. Associations of ageing biomarkers with 16‐year all‐cause mortality were estimated by fitting separate Cox proportional hazards models for each biomarker (N = 656–861 individuals; 326–444 deaths). Models were incrementally adjusted for age and sex (circle), lifestyle risk factors (smoking, alcohol consumption and BMI) (triangle) and seven major medical conditions (crosses). Biomarkers positively associated with mortality are shown in pink, and biomarkers negatively associated with mortality are highlighted in green. All negatively associated biomarkers are labelled with a minus sign preceding their name, and their reciprocal hazard ratios (1/HR) are plotted to facilitate comparison of effect sizes. The vertical dotted line indicates a hazard ratio of 1. Circles represent estimated hazard ratios, with error bars showing 95% confidence intervals. p‐values are adjusted using the Benjamini–Hochberg FDR correction, and non‐significant associations are shown in grey (p FDR > 0.05). Proteomic organ clocks are indicated in bold. BMI, body mass index; FER, forced expiratory ratio; FEV, forced expiratory volume in 1 s; FVC, forced vital capacity; GMV/IVC, grey matter volume to intracranial volume ratio; MRI, magnetic resonance imaging; TBV/ICV, total brain volume to intracranial volume ratio; WMHV/ICV, white matter hyperintensity volume to intracranial volume ratio.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-g004.webp?md5=9aa152f89efafe7ca807c0fc0d92edf0",
+            "articleURL": "https://doi.org/10.1111/acel.70747",
+            "asset": "assets/pmc13631562-40841aa6cd368a47.webp",
+            "sha256": "40841aa6cd368a47500eb763778f8b7eae9d972cc94f910b1da60c4fb175f1f0",
+            "width": 1064,
+            "height": 1263,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maira Pyrgioti; Ines Mesa Eguiagaray; Paul Redmond; Janie Corley; Mark E. Bastin; Maria Valdés Hernández; et al.. Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated With All‐Cause Mortality. DOI: 10.1111/acel.70747. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "40841aa6cd368a47500eb763778f8b7eae9d972cc94f910b1da60c4fb175f1f0",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70747-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Plasma proteins and biological functions associated with all‐cause mortality in the LBC1936. (A) Cox models were applied to 9703 SomaScan plasma protein targets to test associations with 16‐year all‐cause mortality, with incremental adjustment for age and sex, lifestyle factors (smoking, alcohol and BMI) and seven medical conditions. The number of significant aptamers and unique proteins after Benjamini–Hochberg FDR correction is shown. (B) Top 20 plasma proteins associated with all‐cause mortality after adjustment for age and sex (N = 789 individuals; 404 deaths). Hazard ratios and 95% confidence intervals are plotted with incremental adjustment for age and sex (circles), lifestyle factors (triangles) and medical conditions (crosses). Positive associations are shown in pink and negative associations in green. Negatively associated proteins are labelled with a minus sign preceding their name, and their reciprocal hazard ratios (1/HR) are plotted. p‐values are adjusted using the Benjamini–Hochberg FDR correction, and non‐significant associations are shown in grey (p FDR > 0.05). (C‐D) Top five positively and negatively enriched Gene Ontology biological processes (C) and Reactome pathways (D) among mortality‐associated proteins identified by Gene Set Enrichment Analysis. The normalised enrichment score (NES) shows the magnitude and direction of pathway enrichment while accounting for differences in gene set size. Top terms were selected using a composite ranking score calculated as |NES| × −log10(PFDR). The colour scale indicates statistical significance on the −log10(p FDR) scale.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-g003.webp?md5=639c7bb56f87ef9821007fa0a58c1da2",
+            "articleURL": "https://doi.org/10.1111/acel.70747",
+            "asset": "assets/pmc13631562-d8f2a60a3d07f684.webp",
+            "sha256": "d8f2a60a3d07f68413a592eeca4f5a1c9d5001c0904e87125f9f986806b5b524",
+            "width": 1064,
+            "height": 1399,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maira Pyrgioti; Ines Mesa Eguiagaray; Paul Redmond; Janie Corley; Mark E. Bastin; Maria Valdés Hernández; et al.. Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated With All‐Cause Mortality. DOI: 10.1111/acel.70747. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d8f2a60a3d07f68413a592eeca4f5a1c9d5001c0904e87125f9f986806b5b524",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70747-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Top 20 plasma protein predictors of all‐cause mortality in the LBC1936. The plot shows the 20 SomaScan 11k plasma proteins with the largest coefficients from a total of 37 proteins selected to predict all‐cause mortality using elastic net‐penalised Cox regression (N = 789 individuals; 404 deaths). The mixing parameter (α) was set to 0.5, and the penalty parameter (λ) was chosen as 0.16 based on the λmin from 5‐fold cross‐validation. Proteins with positive coefficients, indicating higher mortality risk, are shown in pink, while proteins with negative coefficients, indicating lower mortality risk, are shown in green.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-g002.webp?md5=460a425e632f24be5ef11e4c46bbfba7",
+            "articleURL": "https://doi.org/10.1111/acel.70747",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maira Pyrgioti; Ines Mesa Eguiagaray; Paul Redmond; Janie Corley; Mark E. Bastin; Maria Valdés Hernández; et al.. Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated With All‐Cause Mortality. DOI: 10.1111/acel.70747. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70747-supitem-0001",
+            "label": "Figure S1: Characterisation of plasma proteomic organ ageing signatures in the LBC1936. (A) Predicted plasma proteomic ages for 11 organs in LBC1936 w",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-s001.zip?md5=843702aa98cef810e059d077fe02aeb2",
+            "license": "CC BY",
+            "sha256": "47f2e8b9b7213849efc6d82abae821f3653e7e07077edf24a2bc3f88545b9da1",
+            "status": "downloaded_private",
+            "bytes": 3942943,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-03T08:37:45.369087+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/PMC13631562.1.xml?md5=fff6077098dbe52f242498c0af1dc144"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Maira Pyrgioti; Ines Mesa Eguiagaray; Paul Redmond; Janie Corley; Mark E. Bastin; Maria Valdés Hernández; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936",
+        "commit": "d7bc5df2cd5060660bf084e56a843740320cb4c8",
+        "license": "GPL-3.0",
+        "scripts": [
+          {
+            "path": "1_Ageing_Biomarker_Correlations.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/1_Ageing_Biomarker_Correlations.R",
+            "sha256": "106dc7347bb728a4abebebdd3c258ce2414bf49aaef97d6fcef1ec88fba9ca61",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+                "reader": "read_csv",
+                "line": 29,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "r",
+                "line": 55,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "P",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 29,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/1_Ageing_Biomarker_Correlations.R#L29"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+            "sha256": "48a5b5607710c81c8f88d67290510c182a3bc82efc4716c361f3345e1a998e4c",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+                "reader": "read_csv",
+                "line": 57,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_all_subjects.csv",
+                "reader": "read_csv",
+                "line": 807,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_460subjects.csv",
+                "reader": "read_csv",
+                "line": 808,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "dead",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 474,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_all",
+                "line": 834,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_common",
+                "line": 835,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 57,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R#L57"
+              },
+              {
+                "type": "io_reference",
+                "line": 807,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R#L807"
+              },
+              {
+                "type": "io_reference",
+                "line": 808,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R#L808"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R",
+            "sha256": "f055f934ed9bec27f44fe5150177a368f965d3c8ae899d2f90d93c190770d3b5",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+                "reader": "read_csv",
+                "line": 46,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Multivariate_aging_biomarker_mortality_cox/Inverted_multivariate_cox_mortality_26biomarkers_forest.png",
+                "writer": "ggsave",
+                "line": 301
+              },
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/Multivariate_aging_biomarker_mortality_cox/Inverted_multivariate_cox_mortality_26biomarkers_forest.pdf",
+                "writer": "ggsave",
+                "line": 302
+              }
+            ],
+            "fields": [
+              {
+                "name": "coefficients",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 266,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 46,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R#L46"
+              },
+              {
+                "type": "io_reference",
+                "line": 301,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R#L301"
+              },
+              {
+                "type": "io_reference",
+                "line": 302,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R#L302"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+            "sha256": "adb496174fac416de7af3d1219747379de9ba4cb6235ce853124e40ab474b507",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+                "reader": "read_csv",
+                "line": 67,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_all_variables.csv",
+                "reader": "read_csv",
+                "line": 70,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "dead",
+                "line": 89,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alcunitwk_w2",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pack_years_w2",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SeqID",
+                "line": 545,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene_Names",
+                "line": 546,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 67,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R#L67"
+              },
+              {
+                "type": "io_reference",
+                "line": 70,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R#L70"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "5_GSEA_mortality_plasma_proteins.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/5_GSEA_mortality_plasma_proteins.R",
+            "sha256": "e600aeee841b10d44cdace5ab064906ce9114cd7d30dc815de85020e047002fc",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/11k_SomaScan_proteins_univariate_cox/demographics_lifestyle_disease/LBC1936_w2_11kproteins_Cox_fully_adjusted_z_stat.csv",
+                "reader": "read_csv",
+                "line": 54,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "UniProt",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "z_statistic",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ENTREZID",
+                "line": 124,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 54,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/5_GSEA_mortality_plasma_proteins.R#L54"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+            "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+            "sha256": "7da37c1028a2bb991a7b5ac86cab27eac08abe2dabdea8b72c1808f59b432512",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+                "reader": "read_csv",
+                "line": 42,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "/CCACE_Shared/Maira/OrganAgeProject/seq_gene_protein_mapping_1rowperprotein.csv",
+                "reader": "read_csv",
+                "line": 143,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "dead",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "time_to_death",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.min",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.1se",
+                "line": 111,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 42,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R#L42"
+              },
+              {
+                "type": "io_reference",
+                "line": 143,
+                "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R#L143"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "r",
+                "line": 55,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "P",
+                "line": 56,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/1_Ageing_Biomarker_Correlations.R",
+            "line": 29,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 474,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_all",
+                "line": 834,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_common",
+                "line": 835,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+            "line": 57,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_all_subjects.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 474,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_all",
+                "line": 834,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_common",
+                "line": 835,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+            "line": 807,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_460subjects.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 474,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_all",
+                "line": 834,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "logHR_common",
+                "line": 835,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+            "line": 808,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "coefficients",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "biomarker_name",
+                "line": 266,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R",
+            "line": 46,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 89,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alcunitwk_w2",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pack_years_w2",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SeqID",
+                "line": 545,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene_Names",
+                "line": 546,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+            "line": 67,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_all_variables.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 89,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alcunitwk_w2",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pack_years_w2",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 264,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "SeqID",
+                "line": 545,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene_Names",
+                "line": 546,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+            "line": 70,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/11k_SomaScan_proteins_univariate_cox/demographics_lifestyle_disease/LBC1936_w2_11kproteins_Cox_fully_adjusted_z_stat.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "UniProt",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "z_statistic",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ENTREZID",
+                "line": 124,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/5_GSEA_mortality_plasma_proteins.R",
+            "line": 54,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "time_to_death",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.min",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.1se",
+                "line": 111,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+            "line": 42,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/CCACE_Shared/Maira/OrganAgeProject/seq_gene_protein_mapping_1rowperprotein.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dead",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "time_to_death",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.min",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lambda.1se",
+                "line": 111,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+            "line": 143,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-03T08:37:51Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-03T08:37:51Z",
+        "url": "https://openalex.org/W7134901660",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.13552833,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-03T08:37:51Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-03T08:37:51Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-04T08:37:51Z"
+        }
+      },
+      "selectionScore": {
+        "total": 68.67764165,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0.67764165,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-03T08:38:04Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "多模态衰老生物标志物与血浆蛋白质组特征同全因死亡率的关联",
+        "summary_zh": "该资料为 Aging cell 期刊论文(DOI:10.1111/acel.70747)的图注与作者脚本静态观察汇总。图注显示:在 LBC1936 队列中,对 23 个衰老生物标志物分别拟合 Cox 比例风险模型,考察其与 16 年全因死亡率的关联,并按年龄性别、生活方式因素、七类主要疾病逐步调整;另对 9703 个 SomaScan 血浆蛋白靶标做类似关联分析,并用弹性网惩罚 Cox 回归筛选死亡预测蛋白。作者代码未运行,输入尺度与图号对应关系未明示处保持未知。",
+        "learning_points": [
+          "图 1 对 23 个衰老生物标志物分别拟合 Cox 模型,样本量约 656–861 人、死亡 326–444 例,采用年龄性别、生活方式(吸烟、饮酒、BMI)、七类疾病三级逐步调整。",
+          "图 1 中负相关标志物以名称前加减号表示,并绘制倒数风险比(1/HR)以便比较效应量;虚线为 HR=1,误差棒为 95% 置信区间。",
+          "图 1 与图 2 均使用 Benjamini–Hochberg FDR 校正,非显著关联以灰色显示(p FDR > 0.05)。",
+          "图 2A 对 9703 个 SomaScan 血浆蛋白靶标拟合 Cox 模型,报告 FDR 校正后显著 aptamer 与唯一蛋白数量。",
+          "图 2B 展示年龄性别调整后前 20 个与全因死亡关联的血浆蛋白(N=789,404 例死亡),并叠加生活方式与疾病调整结果。",
+          "图 3 用弹性网惩罚 Cox 回归(α=0.5,λ=0.16,基于 5 折交叉验证 λmin)从蛋白中选出 37 个预测蛋白,并展示系数绝对值最大的 20 个。",
+          "脚本静态观察显示分析读取 LBC1936w2 的标化衰老生物标志物数据、log10 转换的 9703 蛋白数据及协变量/疾病数据文件。",
+          "脚本 3 中包含以 600 dpi 导出 26 个生物标志物多变量 Cox 森林图的 ggsave 调用(静态观察,未执行)。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不构成复现验证,不能宣称结果已复现或与原图一致。",
+          "图注未完整给出(如 Figure 2 的 C–D 部分文本被截断),相关细节未知。",
+          "输入数据的尺度、变量列名与图号之间的对应关系未明示,保持未知。",
+          "摘要字段为空,研究设计与结论细节无法从所给证据获得。",
+          "图注中的样本量与死亡数在不同图间不一致(如 656–861/326–444 与 789/404),其差异原因未知。",
+          "未观察到许可、期刊指标或复现结果信息,均不作推断。",
+          "脚本路径为内部共享目录,数据可获取性与运行环境未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-03T08:38:09Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "a94dddf9762e4ffd07b18812c14f5a9fa25ac079f6e042aba8b52c7354a3ea67",
+        "summary_fingerprint": "de03ddd4bd7cd733230921ef7bc1e82ed21b94c761b3dd484f2114bddbec3132",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-8a1d94adf3a057c5",
+      "doi": "10.3389/fimmu.2026.1906638",
+      "paper": "Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles",
+      "journal": "Frontiers in immunology",
+      "date": "2026-09-08",
+      "year": "2026",
+      "pmcid": "PMC13593421",
+      "pmid": "42774025",
+      "paperURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "c2ec3fa52c6763d72de8dd3e8645d8358b40c7e0d48b1fb19264bdae43ff3ff1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/PMC13593421.1.xml?md5=8d22f83e5f976481befb1baa157bda3a",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Schematic overview of the multi-omic study design and analytical workflow. PBMCs and serum were collected from a cohort of young (< 5 years) and senior (> 9 years) beagles. Samples underwent parallel processing for single-cell RNA sequencing (scRNA-seq; N = 30), bulk RNA sequencing (N = 39), serum metabolomics (N = 50), and clinical biomarker measurements (N = 39). These multimodal datasets were integrated with external canine and human GWAS data and murine knockout phenotype data (IMPC) to characterize age-associated molecular landscapes. PBMCs, peripheral blood mononuclear cells; IMPC, International Mouse Phenotyping Consortium, GWAS, genome-wide association studies.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g001.webp?md5=5c540cefc32caef3d89838c400804dee",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single-cell transcriptional landscape and age-associated alterations in canine PBMCs. (A) Uniform Manifold Approximation and Projection (UMAP) embedding of ~318,000 cells integrated from 30 animals, colored by age group. (B) UMAP projection colored by major annotated cell lineages derived from Ammons et al. (C) Box plots quantifying changes in cell type proportions (as a percentage of total PBMCs) between Young (blue) and Senior (red) cohorts. Statistical significance was determined using propeller (speckle) with Benjamini–Hochberg FDR adjustment across cell types (ns, not significant, *FDR < 0.05, **FDR < 0.01). Young n = 15, Senior n = 15). (D) Volcano plot displaying pseudobulk differential expression results. Each dot represents a gene; red points denote genes significantly upregulated in Senior dogs, while blue points denote downregulated genes (adjusted P-value < 0.05, |log2FC| > 0.05). Top differentially expressed genes are labeled by gene symbol or Ensembl ID.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g002.webp?md5=3f2dc461b20e47125e6542e39cca9a32",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Sub-clustering analysis of major PBMC lineages. Detailed visualization and quantification of cellular subtypes within CD4+ T cells (A, B), CD8+ T cells (C, D), monocytes (E, F), B cells (G, H), granulocytes (I, J), and dendritic cells (K, L). Box plots represent the frequency of each subtype as a percentage of total PBMCs. Statistical significance was determined using propeller (speckle) with Benjamini–Hochberg FDR adjustment (ns: not significant, *FDR < 0.05, **FDR < 0.01, ***FDR < 0.001). Young n = 15, Senior n = 15.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g003.webp?md5=658b12a6b10eea5465a7a53a7e7ecb3d",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "assets/pmc13593421-3d2b4dd02b536d2c.webp",
+            "sha256": "3d2b4dd02b536d2c2d0b3339b40a6e671bdb8b551005154e93110cac0ae7f3b7",
+            "width": 1600,
+            "height": 1183,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3d2b4dd02b536d2c2d0b3339b40a6e671bdb8b551005154e93110cac0ae7f3b7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Bulk and single-cell transcriptomics reveal shared inflammatory signaling pathways. (A) Volcano plot displaying differentially expressed genes (DEGs) from whole blood bulk RNAseq analysis. Each dot represents a gene; red points indicate significantly upregulated genes in senior dogs, blue points indicate significantly downregulated genes in senior dogs, and grey points represent non-significant genes. Top DEGs are labeled with their gene symbols. (B) UpSet plot illustrating the intersection of significantly enriched Gene Ontology (GO) terms and KEGG pathways between the bulk RNA-seq overrepresentation analysis (ORA) and pseudobulk Gene Set Enrichment Analysis (GSEA). Vertical bars show the number of unique and shared pathways between upregulated (Up) and downregulated (Down) gene sets in both sequencing modalities. (C, D) KEGG pathway maps for the NF-κB signaling pathway (C) and TNF signaling pathway (D). Genes colored in red are upregulated in senior dogs, while those in blue are downregulated in senior dogs in the differential expression analysis. (E) Dot plot summarizing GSEA across specific cell types. Rows represent selected inflammatory pathways, and columns represent annotated cell types. The size of each dot corresponds to the absolute Normalized Enrichment Score (|NES|), and the color indicates the significance and direction of regulation (Red: Significant Positive in senior dogs; Blue: Significant Negative in senior dogs; Faded colors: Not Significant; Left of dashed line: Innate cells, right of dashed line: adaptive).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g004.webp?md5=44b982c4e931ea9b43daf36c05026c66",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "assets/pmc13593421-e41f6fc4904e14a0.webp",
+            "sha256": "e41f6fc4904e14a0ac6d1a9bfa8582c52e553d7bb8fa3c6800a7ec8fa7519e9b",
+            "width": 1600,
+            "height": 1814,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e41f6fc4904e14a0ac6d1a9bfa8582c52e553d7bb8fa3c6800a7ec8fa7519e9b",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Transcriptomics and metabolomics reveal extensive depletion of ether lipids and dysregulation of central carbon metabolism. (A) Dot plots displaying the Log2FC of metabolites within key differentially enriched Metabolon sub-pathways. Red dots indicate significantly accumulated metabolites (FDR < 0.05) in senior canines, blue dots indicate significantly depleted metabolites, and gray dots represent non-significant trends. The plots highlight the accumulation of Tryptophan metabolites and Phosphatidylethanolamines (PE), contrasting with the widespread depletion of Plasmalogens and Lysoplasmalogens. (B) Integrated visualization of the Citrate (TCA) Cycle pathway (cfa00020). Rectangles represent differentially expressed genes (from bulk RNA-seq) and circles represent differentially abundant metabolites. Red indicates upregulation/accumulation in senior dogs and blue indicates downregulation/depletion in senior dogs. The map illustrates a bottleneck in bioenergetics characterized by the accumulation of Citrate and Pyruvate (red circles) concurrent with the broad downregulation of enzymatic machinery (blue rectangles). (C) Integrated visualization of the Sphingolipid Signaling Pathway (cfa04071). Following the same schema as (B), the map depicts the transcriptional upregulation of signaling receptors and kinases (red rectangles) amidst complex shifts in lipid substrates, aligning with the observed remodeling of membrane composition and signaling responsiveness.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g005.webp?md5=d69f4e37703fde9c7d63f240e08b165e",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Integration of metabolomic and transcriptomics. (A) Clustered heatmap of gene and metabolite discriminators identified by DIABLO, demonstrating distinct molecular signatures by age group. (B) WGCNA heatmap showing correlations between gene co-expression modules and metabolites identified by DIABLO, *FDR < 0.05, **FDR < 0.01, “.” indicates no significance. (C) Correlation plot of the two dominant modules; samples cluster by age along a transition from Cell Cycle Activity (Turquoise) to Immune Activation (Green).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g006.webp?md5=96b354a9de56203b3ad4595c92a26d52",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Integrated cross-species analysis prioritizes genes with potential roles in canine aging. (A) Murine phenotypes-driven pipeline: 1,629 genes downregulated in senior canines were filtered via Zoonomia orthology, IMPC phenotypes, and BioAge algorithm to identify candidates. (B) Physiological validation. Box plots comparing blood biomarkers (Albumin, ALP, MCH, MCV) in Young (blue) vs. Senior (red) dogs, **P < 0.01. (C) Human GWAS-driven pipeline. Aging GWAS hits were filtered for credibility, canine orthology, and differential expression. (D) UMAPs showing single-cell expression of prioritized candidates (IRF4, AFF3).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g007.webp?md5=4d64bcbcccbb3639948b2e3860714d2e",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1906638",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al.. Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles. DOI: 10.3389/fimmu.2026.1906638. Copyright holder: Abood, Louyakis, Jackson, Eichman, Hollar, Panickar and Brockman. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SF1",
+            "label": "Supplementary Figure 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/Image1.pdf?md5=8fdb0a77303961ee7680b5f7d57fa0f1",
+            "license": "CC BY",
+            "sha256": "136441382f6a30d81333159426ec5c7293c59ed2c508d413ac0db636170a1fd1",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 258000,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "SF2",
+            "label": "Supplementary Figure 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/Image2.pdf?md5=ee299d5e6d4d6782d3682ab16b8bba4b",
+            "license": "CC BY",
+            "sha256": "3d5c0bbef56a47fb6141e77e3692f273ac38643f6834eea80eda4dc11f885c68",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 746321,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "SF3",
+            "label": "Supplementary Figure 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/Image3.pdf?md5=46eff05a5c0312c5dacbd05da81f56ca",
+            "license": "CC BY",
+            "sha256": "ad1705c4127db46d08599942d6de5f656be2d9e34796d30ba8612a144d52b21e",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 130415,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "ST1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/Table1.xlsx?md5=6faa9da195eab96822c9bb5048bbd371",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-03T08:37:26.095275+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Abdullah Abood; Artemis S. Louyakis; Matthew Jackson; Rachel Eichman; Regina Hollar; Kiran S. Panickar; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.0",
+        "jcr": "Q1",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-03T08:37:29Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-03T08:37:30Z",
+        "url": "https://openalex.org/W7211934449",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.60925645,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-03T08:37:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-03T08:37:30Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-04T08:37:30Z"
+        }
+      },
+      "selectionScore": {
+        "total": 60.04628225,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.04628225,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-03T08:38:10Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -180738,6 +183433,522 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-bff033ff935dd45d": {
+      "tree": "dynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/python/integration_benchmark.py；读取行 53；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/BioGenYiShang/Aging_Fibroblast/blob/4d5bd40d4d8331006c3e59c5f0d653006988d239/python/integration_benchmark.py",
+          "observedFieldReferences": [
+            {
+              "name": "X_harmony",
+              "line": 14,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "X_scanorama",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "X_pca",
+              "line": 13,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dataset",
+              "line": 56,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-fe1b0ad32e0e5e5a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-fabb2e28e4a3bc43": {
+      "tree": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv\n/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv\n/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_all_subjects.csv\n/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_460subjects.csv\n/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv\n/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv\n/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_all_variables.csv\n/CCACE_Shared/Maira/OrganAgeProject/11k_SomaScan_proteins_univariate_cox/demographics_lifestyle_disease/LBC1936_w2_11kproteins_Cox_fully_adjusted_z_stat.csv\n/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv\n/CCACE_Shared/Maira/OrganAgeProject/seq_gene_protein_mapping_1rowperprotein.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/1_Ageing_Biomarker_Correlations.R；读取行 29；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/1_Ageing_Biomarker_Correlations.R",
+          "observedFieldReferences": [
+            {
+              "name": "r",
+              "line": 55,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "P",
+              "line": 56,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R；读取行 57；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 199,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 210,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "biomarker_name",
+              "line": 474,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_all",
+              "line": 834,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_common",
+              "line": 835,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_all_subjects.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R；读取行 807；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 199,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 210,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "biomarker_name",
+              "line": 474,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_all",
+              "line": 834,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_common",
+              "line": 835,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/inverted_univariable_aging_biomarker_publication_results_460subjects.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R；读取行 808；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/2_Cox_Mortality_Associations_of_Individual_Ageing_Biomarkers.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 199,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 210,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "biomarker_name",
+              "line": 474,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_all",
+              "line": 834,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "logHR_common",
+              "line": 835,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/Univariate_aging_biomarkers_mortality_cox/Scaled_aging_biomarkers_mortality_data_LBC1936w2.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R；读取行 46；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/3_Cox_Mortality_Associations_of_All_Ageing_Biomarkers.R",
+          "observedFieldReferences": [
+            {
+              "name": "coefficients",
+              "line": 121,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "conf.int",
+              "line": 123,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 142,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "biomarker_name",
+              "line": 266,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R；读取行 67；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 89,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alcunitwk_w2",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pack_years_w2",
+              "line": 139,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 244,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SeqID",
+              "line": 545,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Gene_Names",
+              "line": 546,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_all_variables.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R；读取行 70；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/4_Cox_Mortality_Associations_of_SomaScan11k_Plasma_Proteins.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 89,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alcunitwk_w2",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pack_years_w2",
+              "line": 139,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 244,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 264,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "SeqID",
+              "line": 545,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Gene_Names",
+              "line": 546,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/11k_SomaScan_proteins_univariate_cox/demographics_lifestyle_disease/LBC1936_w2_11kproteins_Cox_fully_adjusted_z_stat.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/5_GSEA_mortality_plasma_proteins.R；读取行 54；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/5_GSEA_mortality_plasma_proteins.R",
+          "observedFieldReferences": [
+            {
+              "name": "UniProt",
+              "line": 87,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "z_statistic",
+              "line": 123,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ENTREZID",
+              "line": 124,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/LBC1936_w2_log10trans_QCed9703_SomaScan11k_plasma_proteins_mortality_and_covariates.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R；读取行 42；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "time_to_death",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "lambda.min",
+              "line": 110,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "lambda.1se",
+              "line": 111,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/CCACE_Shared/Maira/OrganAgeProject/seq_gene_protein_mapping_1rowperprotein.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R；读取行 143；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/marioni-group/Mortality_Biomarkers_LBC1936/blob/d7bc5df2cd5060660bf084e56a843740320cb4c8/6_Mortality_Elastic_Net_Cox_for_SomaScan11k_Plasma_Proteins.R",
+          "observedFieldReferences": [
+            {
+              "name": "dead",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "time_to_death",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "lambda.min",
+              "line": 110,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "lambda.1se",
+              "line": 111,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-8a1d94adf3a057c5": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -182356,7 +185567,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-02T08:25:10Z",
+  "generatedAt": "2026-11-03T08:38:10Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -182590,18 +185801,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-03T08:36:43Z",
-    "updatedAt": "2026-11-03T08:36:46Z",
+    "updatedAt": "2026-11-03T08:38:14Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 87,
+    "aiAttempts": 3,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

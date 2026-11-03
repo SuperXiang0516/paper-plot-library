@@ -147,9 +147,96 @@
         "10.1186/s13059-026-04262-0",
         "10.3389/fcell.2026.1993380"
       ]
+    },
+    "2026-11-03": {
+      "newDOIs": [
+        "10.1002/alz.71869",
+        "10.1111/acel.70747",
+        "10.3389/fimmu.2026.1906638",
+        "10.3389/fmed.2026.1800947"
+      ]
     }
   },
   "candidates": {
+    "10.1111/acel.70747": {
+      "checkedAt": "2026-11-03T08:37:51Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1002/alz.71869": {
+      "checkedAt": "2026-11-03T08:37:39Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.3389/fimmu.2026.1906638": {
+      "checkedAt": "2026-11-03T08:37:30Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.3389/fmed.2026.1800947": {
+      "checkedAt": "2026-11-03T08:37:20Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1016/j.isci.2026.116445": {
+      "checkedAt": "2026-11-03T08:37:05Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1016/j.isci.2026.116445",
+        "metadataHash": "9f2adfde55df1d27bc392747533d9af0769326e5073777c13aa00b79f6b007b5",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/PMC13293730.1.xml?md5=653cd961f0cd4c598f8674c51927386d",
+          "license": "CC BY",
+          "figures": [
+            {
+              "asset": "assets/pmc13293730-a337a5716a4d52cd.jpg",
+              "assetSHA256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
+              "license": "CC BY",
+              "id": "fig1",
+              "sha256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
+              "height": 922,
+              "label": "Figure 1",
+              "width": 721,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr1.jpg?md5=0c2f7c1d4596dbce278f4a17c07558d3",
+              "captionHash": "285c878f013bb6d36c2feb65c408473ddd7dd9b78f8c8da5aa5efdf6f648faf2"
+            },
+            {
+              "asset": "assets/pmc13293730-42976d8a9a2e0175.jpg",
+              "assetSHA256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
+              "license": "CC BY",
+              "id": "fig3",
+              "sha256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
+              "height": 922,
+              "label": "Figure 3",
+              "width": 716,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr3.jpg?md5=e9f31e596a63caaeed7d32222e848ca7",
+              "captionHash": "050457e767dbf8532da6f7e0dd7115c500abfa106bba09f5dfd281f4a2094e81"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-fa43265905641b33",
+          "doi": "10.1016/j.isci.2026.116445",
+          "paper": "Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.",
+          "journal": "iScience",
+          "date": "2026-06-17",
+          "year": "2026",
+          "pmcid": "PMC13293730",
+          "pmid": "42369035",
+          "paperURL": "https://doi.org/10.1016/j.isci.2026.116445"
+        },
+        "updatedAt": "2026-10-16T06:45:06Z"
+      }
+    },
     "10.1002/cpz1.70491": {
       "checkedAt": "2026-11-02T08:25:08Z",
       "status": "source_confirmed",
@@ -668,61 +755,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1111/acel.70747": {
-      "checkedAt": "2026-10-22T07:05:01Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1111/acel.70747",
-        "metadataHash": "d1cabe7c794a4b480d1295f21828873e7e538d63907ab8624d2ef11abf572bc4",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/PMC13631562.1.xml?md5=fff6077098dbe52f242498c0af1dc144",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1064,
-              "sha256": "40841aa6cd368a47500eb763778f8b7eae9d972cc94f910b1da60c4fb175f1f0",
-              "label": "FIGURE 1",
-              "height": 1263,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-g004.webp?md5=9aa152f89efafe7ca807c0fc0d92edf0",
-              "asset": "assets/pmc13631562-40841aa6cd368a47.webp",
-              "license": "CC BY",
-              "assetSHA256": "40841aa6cd368a47500eb763778f8b7eae9d972cc94f910b1da60c4fb175f1f0",
-              "id": "acel70747-fig-0001",
-              "captionHash": "37174edad65b2c68a8392f3ce77dea4943b40e3b98ad6a7562e4b7dffb7185a7"
-            },
-            {
-              "width": 1064,
-              "sha256": "d8f2a60a3d07f68413a592eeca4f5a1c9d5001c0904e87125f9f986806b5b524",
-              "label": "FIGURE 2",
-              "height": 1399,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13631562.1/ACEL-25-e70747-g003.webp?md5=639c7bb56f87ef9821007fa0a58c1da2",
-              "asset": "assets/pmc13631562-d8f2a60a3d07f684.webp",
-              "license": "CC BY",
-              "assetSHA256": "d8f2a60a3d07f68413a592eeca4f5a1c9d5001c0904e87125f9f986806b5b524",
-              "id": "acel70747-fig-0002",
-              "captionHash": "c6eee7e9ad6f8fb4b66d7e7b6d1cf251b3fbcedb3ad5dfc77aed16c107e8c813"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fabb2e28e4a3bc43",
-          "doi": "10.1111/acel.70747",
-          "paper": "Multimodal Ageing Biomarkers and Plasma Proteomic Signatures Associated With All-Cause Mortality.",
-          "journal": "Aging cell",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13631562",
-          "pmid": "42823846",
-          "paperURL": "https://doi.org/10.1111/acel.70747"
-        },
-        "updatedAt": "2026-10-22T07:04:55Z"
-      }
     },
     "10.3390/ijms27198772": {
       "checkedAt": "2026-10-22T07:05:01Z",
@@ -1486,61 +1518,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.3389/fmed.2026.1800947": {
-      "checkedAt": "2026-10-22T07:01:15Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fmed.2026.1800947",
-        "metadataHash": "b6e54c7dc259400bb69c1e15442932c8e1d79034f0b6ccfed2ad32653641227d",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/PMC13393490.1.xml?md5=c7da05823fc9dbe36b8ecbc650a1d680",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 767,
-              "sha256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
-              "label": "Figure 1",
-              "height": 795,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g001.jpg?md5=7f2fb8c322daa347006bc96799e26fbb",
-              "asset": "assets/pmc13393490-1ef78941cbc27927.jpg",
-              "license": "CC BY",
-              "assetSHA256": "1ef78941cbc27927618d3a10befa358da4b40e52baf80dda5a5e477b3eae4089",
-              "id": "fig1",
-              "captionHash": "80083741e43a62a4ce188a86dbc73bb4330c8705c641b76308af71d8ce15bcd9"
-            },
-            {
-              "width": 767,
-              "sha256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
-              "label": "Figure 2",
-              "height": 1058,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13393490.1/fmed-13-1800947-g002.jpg?md5=6a22b244cf0e0ed7a74889d99001afa9",
-              "asset": "assets/pmc13393490-1d199627977da831.jpg",
-              "license": "CC BY",
-              "assetSHA256": "1d199627977da8318be86801a6cd437d120b6d28f76b19759c6f2e5b0bcea7dc",
-              "id": "fig2",
-              "captionHash": "51b44301596daec55716dbeb04965aec4984021912d6aedae0ac701fbe1b6a72"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-bff033ff935dd45d",
-          "doi": "10.3389/fmed.2026.1800947",
-          "paper": "Integrated single-cell and spatial transcriptomic analyses reveal an aging-associated fibroblast subtype linked to tumor progression in human skin.",
-          "journal": "Frontiers in medicine",
-          "date": "2026-07-08",
-          "year": "2026",
-          "pmcid": "PMC13393490",
-          "pmid": "42494450",
-          "paperURL": "https://doi.org/10.3389/fmed.2026.1800947"
-        },
-        "updatedAt": "2026-10-22T07:01:01Z"
-      }
     },
     "10.17912/micropub.biology.002153": {
       "checkedAt": "2026-10-22T07:01:13Z",
@@ -2342,121 +2319,11 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.3389/fimmu.2026.1906638": {
-      "checkedAt": "2026-10-22T06:57:05Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fimmu.2026.1906638",
-        "metadataHash": "275b415614561611bf7d52bdfd49573d1dc5aac96f76e5d0b24b3a14f0d3da7e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/PMC13593421.1.xml?md5=8d22f83e5f976481befb1baa157bda3a",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "3d2b4dd02b536d2c2d0b3339b40a6e671bdb8b551005154e93110cac0ae7f3b7",
-              "label": "Figure 3",
-              "height": 1183,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g003.webp?md5=658b12a6b10eea5465a7a53a7e7ecb3d",
-              "asset": "assets/pmc13593421-3d2b4dd02b536d2c.webp",
-              "license": "CC BY",
-              "assetSHA256": "3d2b4dd02b536d2c2d0b3339b40a6e671bdb8b551005154e93110cac0ae7f3b7",
-              "id": "f3",
-              "captionHash": "664ce945e84ebbabb2cdf61ff8b22e03a2518d740db941ffcf9efb1408759b2b"
-            },
-            {
-              "width": 1600,
-              "sha256": "e41f6fc4904e14a0ac6d1a9bfa8582c52e553d7bb8fa3c6800a7ec8fa7519e9b",
-              "label": "Figure 4",
-              "height": 1814,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13593421.1/fimmu-17-1906638-g004.webp?md5=44b982c4e931ea9b43daf36c05026c66",
-              "asset": "assets/pmc13593421-e41f6fc4904e14a0.webp",
-              "license": "CC BY",
-              "assetSHA256": "e41f6fc4904e14a0ac6d1a9bfa8582c52e553d7bb8fa3c6800a7ec8fa7519e9b",
-              "id": "f4",
-              "captionHash": "e81031b59ee173a047b57ab2a9011298affb30e3b2ced172efa1077586c0613c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-8a1d94adf3a057c5",
-          "doi": "10.3389/fimmu.2026.1906638",
-          "paper": "Multiomic profiling of canine immune and metabolic aging in a cohort of young and senior beagles.",
-          "journal": "Frontiers in immunology",
-          "date": "2026-09-08",
-          "year": "2026",
-          "pmcid": "PMC13593421",
-          "pmid": "42774025",
-          "paperURL": "https://doi.org/10.3389/fimmu.2026.1906638"
-        },
-        "updatedAt": "2026-10-22T06:57:05Z"
-      }
-    },
     "10.1016/j.ajhg.2026.08.018": {
       "checkedAt": "2026-10-22T06:57:03Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/alz.71869": {
-      "checkedAt": "2026-10-22T06:56:10Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/alz.71869",
-        "metadataHash": "5adf647b108276435aea502839dd6d997cf8969a1c74004a8e94ee1bfaa2f271",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/PMC13619731.1.xml?md5=662391b713b9053c6f5acc8ca783fc09",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 840,
-              "sha256": "dbbee567fa82a229a5abddd79038d3ee96a34f72afb3a4d5f26162594ff0e1e9",
-              "label": "FIGURE 1",
-              "height": 439,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g005.webp?md5=fc903496bce664027a07d545478001d4",
-              "asset": "assets/pmc13619731-dbbee567fa82a229.webp",
-              "license": "CC BY",
-              "assetSHA256": "dbbee567fa82a229a5abddd79038d3ee96a34f72afb3a4d5f26162594ff0e1e9",
-              "id": "alz71869-fig-0001",
-              "captionHash": "c62686a1297bd883c6dad6b178f539bd18ca88fe112c8b6326061817ef4231aa"
-            },
-            {
-              "width": 700,
-              "sha256": "513f0467727084e7db2f934c24927295d431389a4632e10a3a35d39344cf1d73",
-              "label": "FIGURE 4",
-              "height": 392,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13619731.1/ALZ-22-e71869-g002.webp?md5=17dd13722cb729291469a1a2267629e3",
-              "asset": "assets/pmc13619731-513f0467727084e7.webp",
-              "license": "CC BY",
-              "assetSHA256": "513f0467727084e7db2f934c24927295d431389a4632e10a3a35d39344cf1d73",
-              "id": "alz71869-fig-0004",
-              "captionHash": "bca9cb1bccbdf390a861caed02898e9a4d29301d20931d53f195d03a5d815ca0"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fe1b0ad32e0e5e5a",
-          "doi": "10.1002/alz.71869",
-          "paper": "Integrative prediction of Alzheimer's disease and related dementias using multi-omics aging clocks and genetic data.",
-          "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13619731",
-          "pmid": "42805938",
-          "paperURL": "https://doi.org/10.1002/alz.71869"
-        },
-        "updatedAt": "2026-10-22T06:55:56Z"
-      }
     },
     "10.1093/bioinformatics/btag664": {
       "checkedAt": "2026-10-22T06:56:10Z",
@@ -10014,61 +9881,6 @@
         "updatedAt": "2026-10-16T06:45:09Z"
       }
     },
-    "10.1016/j.isci.2026.116445": {
-      "checkedAt": "2026-10-16T06:45:06Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.116445",
-        "metadataHash": "9f2adfde55df1d27bc392747533d9af0769326e5073777c13aa00b79f6b007b5",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/PMC13293730.1.xml?md5=653cd961f0cd4c598f8674c51927386d",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13293730-a337a5716a4d52cd.jpg",
-              "assetSHA256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
-              "height": 922,
-              "label": "Figure 1",
-              "width": 721,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr1.jpg?md5=0c2f7c1d4596dbce278f4a17c07558d3",
-              "captionHash": "285c878f013bb6d36c2feb65c408473ddd7dd9b78f8c8da5aa5efdf6f648faf2"
-            },
-            {
-              "asset": "assets/pmc13293730-42976d8a9a2e0175.jpg",
-              "assetSHA256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
-              "license": "CC BY",
-              "id": "fig3",
-              "sha256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
-              "height": 922,
-              "label": "Figure 3",
-              "width": 716,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr3.jpg?md5=e9f31e596a63caaeed7d32222e848ca7",
-              "captionHash": "050457e767dbf8532da6f7e0dd7115c500abfa106bba09f5dfd281f4a2094e81"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fa43265905641b33",
-          "doi": "10.1016/j.isci.2026.116445",
-          "paper": "Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.",
-          "journal": "iScience",
-          "date": "2026-06-17",
-          "year": "2026",
-          "pmcid": "PMC13293730",
-          "pmid": "42369035",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.116445"
-        },
-        "updatedAt": "2026-10-16T06:45:06Z"
-      }
-    },
     "10.1186/s13293-026-00973-y": {
       "checkedAt": "2026-10-16T06:44:55Z",
       "status": "pending",
@@ -13288,25 +13100,20 @@
   "dailyCollectionSession": {
     "version": 1,
     "endReason": "",
-    "aiAttempts": 0,
-    "requests": 0,
+    "aiAttempts": 3,
+    "requests": 87,
     "uncertainRequests": 0,
     "date": "2026-11-03",
-    "updatedAt": "2026-11-03T08:36:46Z",
+    "updatedAt": "2026-11-03T08:38:14Z",
     "batchCount": 1,
     "status": "active",
     "uncertainAiAttempts": 0,
     "startedAt": "2026-11-03T08:36:43Z",
     "maxAiAttempts": 165,
-    "elapsedSeconds": 4,
-    "dailyNewCount": 0,
+    "elapsedSeconds": 91,
+    "dailyNewCount": 4,
     "maxSeconds": 2700,
     "maxRequests": 1800,
-    "maxBatches": 36,
-    "inFlight": {
-      "startedAt": "2026-11-03T08:36:46Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxBatches": 36
   }
 }
