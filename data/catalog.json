@@ -130829,6 +130829,538 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-24c2f36769b4dd5c",
+      "doi": "10.1038/s41591-026-04446-y",
+      "paper": "Plasma proteomic signatures of cellular aging predict human disease",
+      "journal": "Nature medicine",
+      "date": "2026-06-15",
+      "year": "2026",
+      "pmcid": "PMC13279268",
+      "pmid": "42297981",
+      "paperURL": "https://doi.org/10.1038/s41591-026-04446-y",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "2890bd44c0572b2bc4f10f50dac78128d9ff943b68eefa23600e0996e26decfb"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/PMC13279268.1.xml?md5=1c1c8a034cd33b759c09d4a934e8c375",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "A framework for modeling cellular aging with plasma proteomics.a, Study design for evaluating plasma proteomic signatures of cellular aging across platforms and cohorts: plasma proteins were mapped to cell types using the Human Protein Atlas, cell type-enriched proteins were used to train machine learning models that predict chronological age, cell type-specific age gaps were calculated and z-scored to enable comparisons across cell types, cross-platform validation was performed in three independent cohorts: the GNPC (n = 14,281, SomaScan), the UKB (n = 44,458, Olink) and the 1946 NSHD (n = 1,803, SomaScan), cellular age gaps were quantified and used to describe heterogeneous aging patterns, predict disease risk and stratify survival outcomes. b, Plasma protein expression trajectories for six illustrative cell types in healthy individuals in the GNPC cohort (n = 7,074). Trajectories were modeled using LOWESS regression for individuals aged 20 to 90 years, with each plot showing proteins assigned to the indicated cell type. c, Illustrative cellular aging models trained on healthy individuals in the Knight-ADRC cohort (n = 1,398). Scatter plots show estimated biological age versus chronological age with corresponding correlation coefficients (r). Bar plots display mean coefficients (±s.d.) of the top proteins by magnitude in each cellular aging model. Illustrations in a created in BioRender; Augustina, V. https://biorender.com/7k7rct4 (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig1_HTML.jpg?md5=4268cd27d2ad087eccf4151074e674f1",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Cellular aging signatures reveal individual heterogeneity.a, Age-dependent patterns of extreme cellular aging in healthy individuals within the GNPC cohort (n = 7,074). Heatmap shows the percentage of extreme agers across 43 cell types (columns) and five chronological age windows (rows), with extreme agers defined as individuals with age gap at least two s.d. from the mean. b, Cellular aging and modifiable risk factors in the UKB cohort. Representative cellular aging profiles for individuals with a healthy lifestyle (left: n = 1,044) defined as never smoking, no regular alcohol consumption, at least 5 days per week of 10+ min of moderate or vigorous physical activity, BMI < 25, waist circumference <90 cm for men or <84 cm for women, ≥7 h of sleep nightly, and individuals with concurrent smoking and obesity (right: n = 1,046). Color intensity corresponds to the mean z-scored age gap. c, Bar plots show mean z-scored age gaps for astrocytes (left) and macrophages (right) stratified by APOE genotype (APOE2/2: n = 369, APOE2/3: n = 5,202, APOE3/3: n = 24,841, APOE3/4: n = 10,059, APOE4/4: n = 1,267) in the UKB cohort. Data are presented with error bars indicating 95% CI. Statistical significance between APOE genotype groups was assessed using two-sided independent t-tests. P values are indicated as *P < 0.05, **P < 0.01 and ***P < 0.001. d, Correlation network showing cellular aging patterns across cell types in healthy individuals in the GNPC cohort (n = 7,074). Each node represents a specific cell type, with two nodes connected if the correlation of age gaps between the two cell types is above a threshold of 0.35. Edge width corresponds to correlation strength, with edges highlighting the top 15 correlations. e, Stability of extreme cellular aging over a 10-year period for individuals categorized as macrophage extreme agers (top: n = 9, z-scored age gap >2) and alveolar type 2 cell extreme agers (bottom: n = 11, z-scored age gap >2) in the NSHD cohort (timepoints: 63.2 ± 1.1 years (baseline), 70.7 ± 0.7 years (visit 2), 72.9 ± 0.6 years (visit 3), n = 364 across all timepoints). Age ranges are represented as mean ± s.d years. Bars show the proportion of extreme old, extreme young and normal agers at each timepoint, with extreme groups proportionally scaled for visualization. Illustrations in b created in BioRender; Augustina, V. https://biorender.com/7k7rct4 (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig2_HTML.jpg?md5=932bd688ebea2e586935fc43ef41e0f8",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "assets/pmc13279268-6f07d8e7118a82ec.jpg",
+            "sha256": "6f07d8e7118a82ec8c4e0fe275e810e349c4e136caa9652d2877618f0041b826",
+            "width": 722,
+            "height": 878,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6f07d8e7118a82ec8c4e0fe275e810e349c4e136caa9652d2877618f0041b826",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cell type-specific age estimates are associated with neurodegenerative diseases.a, Correlation between cell type-specific age gaps and neurodegenerative disease diagnosis in the GNPC cohort. Analysis includes AD (n = 2,761), ALS (n = 245), PD (n = 476), FTD (n = 199) and MCI–SCI (n = 1,992). Associations with adjusted P values below 0.01 and correlation magnitudes greater than 0.05 are shown in color, with color intensity corresponding to correlation strength, and significance levels annotated. Associations between continuous cellular age gaps and binary disease status were assessed using two-sided point-biserial correlation, with P values adjusted using the Benjamini–Hochberg procedure (*P < 0.01, **P < 0.001 and ***P < 0.0001). b, Estimated biological age of skeletal myocytes (left) and cardiomyocytes (right) versus chronological age by neurodegenerative disease diagnosis in the GNPC cohort. Each dot represents an individual, colored by disease diagnosis. A locally weighted scatterplot smoothing (LOWESS) regression fit was used to estimate the relationship between estimated biological and chronological age for each group. c, Cumulative incidence of ALS over 15 years of follow-up in the UKB cohort, stratified by skeletal myocyte (left) and cardiomyocyte (right) aging status. Extreme, normal and youthful agers are shown, with sample sizes in the legend. Lines represent Kaplan–Meier estimates, and shaded bands indicate 95% CIs. Overall log-rank test comparing cumulative incidence across youthful, normal and extreme ager groups: skeletal myocyte aging, P < 0.0001, cardiomyocyte aging: P = 0.0562. d, AD cumulative incidence by astrocyte aging status over 15 years of follow-up in the UKB cohort: extreme agers (n = 1,161), normal agers (n = 41,896) and youthful agers (n = 829). Lines represent Kaplan–Meier estimates of cumulative incidence, and shaded bands indicate 95% CIs. Overall log-rank test comparing cumulative incidence across extreme young, normal and extreme ager groups: P < 0.0001. e, AD cumulative incidence stratified by APOE genotype and astrocyte aging status over 15 years of follow-up in the UKB cohort. Rows: APOE genotype (APOE2/2: n = 364, APOE2/3: n = 5,165, APOE3/3: n = 27,263, APOE3/4: n = 9,884, APOE4/4: n = 1,210). Columns: astrocyte aging (extreme: n = 1,161, normal: n = 41,896, youthful n = 829). Color intensity indicates the cumulative incidence percentage, with numbers displayed in each cell indicating the total number of individuals and the number who developed AD during follow-up. f, HRs with 95% CIs for incident AD by risk factor in the UKB cohort. HRs correspond to exponentiated model coefficients, and horizontal lines denote 95% CIs. Overall and sex-stratified results are shown, with sample sizes indicated below each label. g, AD cumulative incidence by astrocyte aging status across APOE genotypes in the UKB cohort for extreme, normal and youthful agers. Left: APOE3/3: n = 27,263, middle: APOE3/4: n = 9,884, right: APOE4/4: n = 1,210. Lines represent Kaplan–Meier estimates of cumulative incidence, and shaded bands indicate 95% CIs. Within each APOE genotype stratum, group differences were assessed using a two-sided log-rank test comparing the extreme astrocyte aging group with the combined young and normal ager groups: APOE3/3: P < 0.0001, APOE3/4: P < 0.0001, APOE4/4: P < 0.0001. h, Cellular age gap associations with plasma pTau-217 burden (pg ml−1) and PACC (a composite measure of cognitive performance) in the NSHD cohort Insight-46 substudy (n = 483). Associations were assessed using linear regression models adjusted for chronological age and sex. For analyses involving PACC, models were additionally adjusted for childhood cognitive ability to account for baseline differences in cognition. Effect sizes are reported as regression coefficients, with two-sided P values derived from t-statistics and corrected for multiple testing using the Benjamini–Hochberg procedure (*P < 0.05, **P < 0.01 and ***P < 0.001). Lower PACC scores indicate worse cognitive performance.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig3_HTML.jpg?md5=0b1c7ca64206d81d444d2b566fea863c",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "assets/pmc13279268-537b96e7d832d312.jpg",
+            "sha256": "537b96e7d832d312544a27b4f9bd8754382ddf9ea50e79a94c6d22e54797e948",
+            "width": 721,
+            "height": 769,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "537b96e7d832d312544a27b4f9bd8754382ddf9ea50e79a94c6d22e54797e948",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cellular aging signatures predict cancer and chronic disease risk.a, Lung cancer cumulative incidence by smoking status and respiratory cell aging over 15 years of follow-up in the UKB cohort. Groups (highest to lowest incidence): current smokers with extreme aging in both alveolar type 2 and the broader respiratory epithelial lineage (n = 470); individuals with concurrent extreme aging (n = 625); respiratory epithelial lineage extreme aging (n = 1,408); alveolar type 2 cell extreme aging (n = 1,740); current smokers (n = 4,744); previous smokers (n = 15,462) and never smokers (n = 24,000). Case counts are indicated in the figure legend. b, Type 2 diabetes cumulative incidence by HbA1c status and myeloid lineage aging over 15 years of follow-up in the UKB cohort. Groups (highest to lowest incidence): prediabetic individuals with extreme myeloid lineage aging (n = 249); individuals with extreme myeloid lineage aging (n = 954); prediabetic individuals (n = 6,163); prediabetic individuals with youthful myeloid lineage aging (n = 89); individuals with normal HbA1c and extreme myeloid lineage aging (n = 615); individuals with youthful myeloid lineage aging (n = 658); individuals with normal HbA1c (n = 33,246); and individuals with normal HbA1c and youthful myeloid lineage aging (n = 648). Case counts are indicated in the figure legend. c, Body plots showing HRs for incident disease by extreme aged cell type, adjusted for chronological age and sex in the UKB cohort. Diseases shown are lung cancer, lymphoma, type 2 diabetes, COPD, heart failure and stroke. Displayed cell types represent the union of the top five prognostic cell types for each disease. Dot color and size represent log-transformed HR (log2(HR)). Illustrations in c created in BioRender; Augustina, V. https://biorender.com/7k7rct4 (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig4_HTML.jpg?md5=5d5c20d98d8112df9b4486c4d9001cd7",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cellular aging states inform survival and resilience.a, Analysis of cellular aging and all-cause mortality risk over 15 years of follow-up in the UKB cohort. HRs with 95% CI for all-cause mortality are shown, estimated using Cox proportional hazards models adjusted for chronological age and sex. Results shown for overall analysis (men and women combined, n = 44,458) and sex-stratified analyses (females: n = 24,046, males: n = 20,412). For each cell type, dark shaded markers represent estimates derived from extreme cellular aging and light shaded markers represent estimates derived from per-unit increase in age gap per cell type and or lineage. HRs correspond to exponentiated model coefficients, and horizontal lines denote 95% CIs. The top 30 cell types with the strongest associations with mortality risk are shown. b, HRs for all-cause mortality by cell type at three timepoints in the NSHD cohort (n = 364; baseline 63.2 ± 1.1 years, timepoint 2: 70.7 ± 0.7 years, timepoint 3: 72.9 ± 0.6 years; followed to a mean age of 78.2 ± 0.3 years). Associations between cell-type age gaps and mortality risk were assessed using Cox proportional hazards models, with time since blood draw as the time scale and death as the event. Models included z-scored age gaps with adjustment for chronological age and sex. Effect sizes are reported as HRs with 95% CIs. Two-sided P values were derived from Wald tests and adjusted using the Benjamini–Hochberg procedure. The top 25 cell types with strongest associations with mortality risk at the third timepoint are shown. c, Kaplan–Meier survival curves stratified by cellular aging status for muscle lineage (left), neuron lineage (middle) and immune lineage cell types (right) in the UKB cohort. Participants were categorized as extreme old (red; muscle: n = 1,097, neurons: n = 1,437, immune: n = 1,170), normal (green; muscle: n = 42,605, neurons: n = 42,437, immune: n = 42,440) or extreme young (blue; muscle: n = 765, neurons: n = 584, immune: n = 848) based on z-scored lineage and cell type age gaps. Lines represent Kaplan–Meier estimates of survival, and shaded bands indicate 95% CIs. Group differences were assessed using two-sided log-rank tests: muscle lineage, P < 0.0001; neuron lineage, P < 0.0001; immune lineage, P < 0.0001. d, All-cause mortality by number of extreme aging cell types over 15 years of follow-up in the UKB cohort. Kaplan–Meier curves stratified by extreme aging burden: normal agers (n = 10,155, ~90% survival); 1–5 extreme cell types (n = 30,239, ~85%); 6–10 (n = 2,940, ~73%); 11–20 (n = 862, ~52%); 20+ (n = 262, ~34%). Additional curves show individuals with youthful immune lineage (n = 848) or neuron lineage cell types (n = 584) irrespective of other cell-type aging patterns. Lines represent Kaplan–Meier estimates of survival, and shaded bands indicate 95% CIs. e, Polycellular aging risk score (PARS) for mortality stratification across plasma proteomics platforms and independent cohorts. Bar plot shows the top 15 cell-type contributors (model coefficients) for the PARS score. The PARS was derived from a multivariate Cox proportional hazards model trained in the UKB training cohort (n = 21,983). Predictors included binary extreme aging indicators and sex, with model selection performed using 10-fold cross-validation. Positive coefficients denote elevated mortality risk. f, Kaplan–Meier survival curves show risk stratification based on PARS in the UKB training cohort (top) (n = 21,983), UKB test cohort (middle) (n = 22,475) and NSHD validation cohort (bottom) (n = 1,803). Participants were categorized into low (bottom 5%), medium (middle 90%) and high (top 5%) risk groups based on cohort-specific score distributions. Lines represent Kaplan–Meier estimates of survival, and shaded bands indicate 95% CIs. Group differences were assessed using two-sided log-rank tests; with sample sizes and P values indicated in the figure legends.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig5_HTML.jpg?md5=99346db762491a4f08b50ff88d0f3dec",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Identification of cell type-specific plasma proteins.(a) Z-scored gene expression of cell type-enriched plasma protein encoding genes in the Human Protein Atlas (HPA, version 24.1) single-cell transcriptomics dataset, labeled by cell type and grouped according to HPA cell type family categorizations. (b) Coverage of cell type-specific proteins across the 7,289 proteins measured by the 7k SomaScan platform. (c) Coverage of cell type-specific proteins across the 2,923 proteins measured by the 3k Olink platform.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig6_ESM.jpg?md5=12a449e46e2856f3709c39c4709587f9",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Enrichment profile examples of cell type-specific proteins.(a) Fold change of enriched proteins for pancreatic endocrine cells based on the Human Protein Atlas single-cell transcriptomic dataset (version 24.1): blue bars represent fold change compared to average expression across all other cell types; red bars show fold change relative to the second-highest expressing cell type. The y-axis shows fold change on the log2 scale. Numbers above bars indicate specific fold change values. The dashed line represents the threshold used for cell type-specific signatures. (b) Expression of two example proteins mapped to pancreatic endocrine cells, INS (left) and IAPP (right), across all cell types. (c) The corresponding bar plot of fold change for skeletal myocytes. (d) Expression of two example proteins mapped to skeletal myocytes, TNNT3 (left) and FST (right), across all cell types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig7_ESM.jpg?md5=90f12c7bd688b5c7c8648a91228b0c69",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Clustering of plasma protein trajectories.(a) Expression of 7,289 plasma proteins was measured in 7,074 healthy individuals in the GNPC cohort, plotted against chronological age using locally weighted scatterplot smoothing (LOWESS) regression. Protein trajectories were clustered using hierarchical clustering, resulting in 33 distinct clusters. Colored clusters indicate significant enrichment for one or more cell types and/or organs. Gray clusters indicate no significant enrichment. For each cluster, the central curve represents the mean LOWESS trajectory of z-scored protein expression across chronological age, and shaded bands indicate 95% confidence intervals (CIs) around the mean estimate. (b) Cell-type trajectory clustering enrichment among healthy individuals (n = 7,074). Associations were assessed using two-sided Fisher’s exact tests, with P values adjusted for multiple comparisons using the Benjamini–Hochberg procedure. Translucent dots indicate adjusted P < 0.1, and opaque dots indicate adjusted P < 0.05. (c) All 33 clusters are shown. For each cluster, the central curve represents the mean LOWESS-smoothed trajectory of z-scored protein expression across age, and shaded bands indicate 95% confidence intervals around the mean estimate. A total of 7,074 individuals were included. Illustrations in a created in BioRender; Augustina, V. https://biorender.com/7k7rct4 (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig8_ESM.jpg?md5=715eb9b8f1793ef5f7eb52cd11cf1a30",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Distribution of extreme aging profiles.(a) Distribution of extreme aging profiles across cell types among healthy individuals in the GNPC cohort (n = 7,074). The bar plot shows the count of individuals categorized by aging status: normal (green, individuals without extreme aging in any cell type), single extreme aging (orange, extreme aging in only one cell type), multiple extreme aging (dark red, extreme aging in multiple cell types), extreme aging by specific cell type (pink, z-scored age gap > 2 for the indicated cell type), and decelerated aging by specific cell type (blue, z-scored age gap < −2 for the indicated cell type). Horizontal dashed lines indicate reference points at 2%, 10%, and 20% of the cohort. (b) Distribution of extreme aging profiles across cell types in the UKB cohort (n = 44,458). All categorizations, color schemes, and reference lines are as described in (a).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig9_ESM.jpg?md5=9124f87ba91b9786f8d88631707a3bd7",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Age distribution across neurodegenerative diseases in GNPC.Density plot showing the chronological age distribution across the five neurodegenerative disease groups in GNPC cohort. ALS (mean=58.12 years, s.d.=10.94), FTD (mean=63.96 years, s.d.=10.14), AD (mean=75.79 years, s.d.=8.83), PD (mean=74.32 years, s.d.=8.84), and MCI-SCI (mean=71.12 years, s.d.=9.11).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig10_ESM.jpg?md5=73d9481813063ad1a514cd7ead28a557",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Skeletal myocyte aging has prognostic power for incident ALS.(a) Forest plot showing hazard ratios corresponding to the association between incident ALS and skeletal myocyte aging, evaluated with respect to both extreme aging status and continuous age gaps (z-scored). Models include all incident ALS cases, or exclude cases diagnosed within 1, 2, 3, 4, or 5 years after plasma collection to assess predictive power across lag periods. (b) HRs with additional adjustment for estimated glomerular filtration rate (eGFR) and log-transformed urine albumin-to-creatinine ratio (UACR). (c) Hazard ratios in a subpopulation restricted to individuals without evidence of kidney dysfunction (defined as eGFR ≥ 90 mL/min/1.73m2 and normal (A1) urine albumin-creatinine ratio (UACR); no adjustment for renal function variables. All error bars indicate 95% CIs for Cox proportional hazards models, with baseline adjustment for chronological age and sex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig11_ESM.jpg?md5=ebd7a0b6208f106746264a4de8429600",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Cumulative AD incidence over 15 years of follow-up in the UKB cohort by astrocyte aging status (extreme young, normal, extreme old) and APOE genotype.Lines illustrate the cumulative incidence of Alzheimer’s disease (AD) (%) by astrocyte aging status and APOE genotype: APOE2/2 (n = 364), APOE2/3 (n = 5,165), APOE3/3 (n = 27,263), APOE3/4 (n = 9,884), and APOE4/4 (n = 1,210). Points represent cumulative incidence estimates within each group.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig12_ESM.jpg?md5=b0d2a5f386f92dab20f7338db790efbb",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Box plot visualization of age gaps in oligodendrocyte precursor cells and inhibitory neurons stratified by Clinical Dementia Rating (CDR) scores across GNPC subcohorts.Box plots display the distribution of cell-type age gaps across CDR strata within each cohort (J, n = 414; F, n = 2,909; N, n = 788; D, n = 391; I, n = 485; L, n = 1,085; Q, n = 1,317; P, n = 517). In each box plot, the center line represents the median, the box bounds indicate the interquartile range (25th–75th percentiles), and whiskers extend to 1.5x the interquartile range, with points beyond this range represented as outliers.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig13_ESM.jpg?md5=112f1be4b9d3ee28f2e3f5e41766cb60",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Alveolar type 2 and respiratory epithelial lineage aging have prognostic power for incident lung cancer.(a) Forest plot showing hazard ratios corresponding to the association between incident lung cancer and both alveolar type 2 cell and respiratory epithelial cell aging, evaluated with respect to both extreme aging status and continuous age gaps (z-scored). (b) HRs with additional adjustment for estimated glomerular filtration rate (eGFR) and log-transformed urine albumin-to-creatinine ratio (UACR). (c) Hazard ratios in a subpopulation restricted to individuals without evidence of kidney dysfunction (eGFR ≥ 90 mL/min/1.73m2 and normal urine albumin-creatinine ratio (A1); no adjustment for renal function variables. Statistical power limited by sample size: 289 subjects had extreme respiratory epithelial cell aging and no evidence of renal dysfunction; 124 subjects had extreme aging in both cell types and no evidence of renal dysfunction. All error bars indicate 95% CIs for Cox proportional hazards models, with baseline adjustment for chronological age and sex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig14_ESM.jpg?md5=10857090111823ac0dcef7025a3ec17c",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Microglia aging has prognostic power for incident stroke.Cox proportional hazard models were used to estimate hazard ratios with 95% CIs for incident stroke. Models evaluated microglia aging using both extreme aging status and continuous age gaps (z-scored). Sensitivity analyses included additional adjustment for renal function variables, including estimated glomerular filtration rate (eGFR) and log-transformed urine albumin-to-creatine ratio [log(UACR)]—or restriction to individuals without evidence of renal dysfunction (defined as eGFR 90 mL/min/1.73m2 and normal A1 albuminuria with UACR < 30 mg/g). All models had baseline adjustment for chronological age and sex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_Fig15_ESM.jpg?md5=eb93cbd32902520966bb7682703631d1",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04446-y",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al.. Plasma proteomic signatures of cellular aging predict human disease. DOI: 10.1038/s41591-026-04446-y. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_MOESM1_ESM.pdf?md5=699fc26bc0a03183721f47173ddd299f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_MOESM2_ESM.pdf?md5=b82ade9f2c537b9d2862b5a907ced670",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13279268.1/41591_2026_4446_MOESM3_ESM.xlsx?md5=b5d98390dad89257544b029d01dbb3be",
+            "license": "CC BY",
+            "sha256": "af9f2dc586fb15f7b226a3af94553f41ecf455b16513921dc6a2b45b9c02020d",
+            "status": "downloaded_private",
+            "bytes": 2064804,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-03T08:38:52.010319+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Daisy Yi Ding; Veronica Augustina Bot; Kenneth L. Chen; James W. Groves; Róbert Pálovics; Daisuke Masuda; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "52.5",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-03T08:38:56Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-03T08:38:57Z",
+        "url": "https://openalex.org/W7164805684",
+        "cited_by_count": 16,
+        "fwci": 26.2488,
+        "citation_normalized_percentile": 0.99620637,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-03T08:38:57Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-03T08:38:57Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-04T08:38:57Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.98103185,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.98103185,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-03T08:39:14Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -183949,6 +184481,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-24c2f36769b4dd5c": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -185567,7 +186105,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-03T08:38:10Z",
+  "generatedAt": "2026-11-03T08:39:15Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -185801,18 +186339,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-03T08:36:43Z",
-    "updatedAt": "2026-11-03T08:38:20Z",
+    "updatedAt": "2026-11-03T08:39:19Z",
     "batchCount": 2,
-    "requests": 87,
+    "requests": 149,
     "aiAttempts": 3,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
