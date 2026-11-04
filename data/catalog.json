@@ -133086,6 +133086,328 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-fa43265905641b33",
+      "doi": "10.1016/j.isci.2026.116445",
+      "paper": "Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.",
+      "journal": "iScience",
+      "date": "2026-06-17",
+      "year": "2026",
+      "pmcid": "PMC13293730",
+      "pmid": "42369035",
+      "paperURL": "https://doi.org/10.1016/j.isci.2026.116445",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2589-0042",
+      "eissn": "2589-0042",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ff7a0a9bbe13e4e32b00e47b5908e6ffdda53bd91ccb6a4a5aa174f74837b128"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/PMC13293730.1.xml?md5=653cd961f0cd4c598f8674c51927386d",
+        "figures": [
+          {
+            "id": "undfig1",
+            "label": "Unlabelled figure (JATS id: undfig1)",
+            "labelStatus": "unresolved",
+            "reference": null,
+            "caption": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/ga1.jpg?md5=40ea4af17dbc4b198b95cc5e100476c6",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Systematic identification and characterization of serum fatty acid signatures in retinal artery occlusion(A and B) Score plots of sPLS-DA and OPLS-DA models. Red indicates the RAO group, whereas green indicates the Con group.(C) VIP scores derived from the OPLS-DA model, with red/blue squares indicating high/low relative abundance in the RAO vs. Con groups.(D–I) Predictive performance and feature importance analysis based on machine learning models.Feature importance rankings from random forest analysis based on MeanDecreaseAccuracy (D) and MeanDecreaseGini (E).(F) ROC curves of selected fatty acid indicators with AUC values >0.65.SHAP importance plots for SVM (G), XGBoost (H), and LightGBM (I), where bar length represents the mean absolute SHAP value. Boxed areas highlight key model-specific biomarkers.(J) Correlation heatmap illustrating the inter-relationships among identified fatty acids.(K) Pathway enrichment analysis via RaMP-DB based on differential metabolites. ∗p < 0.05 and ∗∗p < 0.01 by response-permutation test of random forest variable importance (rfPermute, nrep = 1000) for MeanDecreaseAccuracy (D) and MeanDecreaseGini (E).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr1.jpg?md5=0c2f7c1d4596dbce278f4a17c07558d3",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "assets/pmc13293730-a337a5716a4d52cd.jpg",
+            "sha256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
+            "width": 721,
+            "height": 922,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Integrated fatty acid metabolomics and peripheral blood mononuclear cell transcriptomics(A) PCA plot of venous blood samples. Yellow dots represent RAO venous blood samples, while blue dots represent control venous blood samples.(B) Volcano plot displaying DEGs between patients with RAO and controls.(C) GO and KEGG enrichment analysis of DEGs.(D) The proportion of immune cell populations in RAO vs. control group. Red parts represent cataract controls.Blue parts represent patients with RAO.(E) Heatmap of correlations between immune signatures and fatty acids. ∗p < 0.05, ∗∗p < 0.01, and ∗∗∗p < 0.001 by limma moderated t test (B), by Mann–Whitney U test (D), or by Spearman’s rank correlation test (E).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr2.jpg?md5=8556ee732f82ef1662e6928a3f232b00",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Identification and characterization of fatty acid signatures in patients with retinal artery occlusion exhibiting dyslipidemia(A and B) Score plots of sPLS-DA and OPLS-DA models. Red indicates non-dyslipidemic patients with RAO, and green indicates patients with dyslipidemic RAO.(C) VIP scores derived from the OPLS-DA model, with red/blue squares indicating high/low relative abundance in the dyslipidemia vs. non-dyslipidemia groups.(D–I) Predictive performance and feature importance analysis based on machine learning models. Feature importance rankings from random forest analysis based on MeanDecreaseAccuracy (D) and MeanDecreaseGini (E). (F) ROC curve of C20:2n-6. SHAP importance plots for SVM (G), XGBoost (H), and LightGBM (I), where bar length represents the mean absolute SHAP value.(J) Correlation heatmap illustrating the inter-relationships among identified fatty acids.(K) Pathway enrichment analysis via RaMP-DB based on differential metabolites. ∗p < 0.05 and ∗∗p < 0.01 by response-permutation test of random forest variable importance (rfPermute, nrep = 1000) for MeanDecreaseAccuracy (D) and MeanDecreaseGini (E).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr3.jpg?md5=e9f31e596a63caaeed7d32222e848ca7",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "assets/pmc13293730-42976d8a9a2e0175.jpg",
+            "sha256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
+            "width": 716,
+            "height": 922,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Integrated analysis of fatty acid metabolomics and peripheral blood mononuclear cell transcriptomics(A) PCA plot of patients with RAO stratified by lipid status. Yellow dots represent patients with dyslipidemia RAO, while blue dots represent patients with non-dyslipidemia RAO.(B) Volcano plot displays DEGs between patients with dyslipidemia and non-dyslipidemia.(C) GO and KEGG enrichment analysis of DEGs.(D) The proportion of immune cell populations in patients with dyslipidemic and non-dyslipidemic RAO. Red parts represent patients with dyslipidemic. Blue parts represent patients with non-dyslipidemic.(E) Heatmap of correlations between immune signatures and fatty acids. ∗p < 0.05, ∗∗p < 0.01, and ∗∗∗p < 0.001 by limma moderated t test (B), by Mann–Whitney U test (D), or by Spearman’s rank correlation test (E).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr4.jpg?md5=555ca79c4129758b10da24edccd72e8f",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "C20:2n-6 modulates the proliferation of MT-2 cells and cytokine secretion(A) Representative flow cytometry histograms of CFSE-labeled MT-2 cells treated with indicated concentrations of C20:2n-6 (0, 10, 25, 50, 100, and 200 μM).(B) Statistical analysis of MT-2 cell proliferation (%) across the concentration gradient.(C and D) ELISA quantification of IL-10 (C) and TGF-β (D) levels in the supernatant of MT-2 cells treated with 100 μM C20:2n-6 or DMSO control.Data are presented as mean ± SD (n = 6 biologically independent samples). ∗∗∗∗p < 0.0001, ns (not significant) by one-way ANOVA (B) or by Student’s t test (C and D).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr5.jpg?md5=1db04e4b8e9ecfb99ddaa9895f4cdb23",
+            "articleURL": "https://doi.org/10.1016/j.isci.2026.116445",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al.. Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.. DOI: 10.1016/j.isci.2026.116445. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mmc1",
+            "label": "Document S1. Language_editing_certificate",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/mmc1.pdf?md5=144c9529fa5323193d7fbe05e6d8f573",
+            "license": "CC BY",
+            "sha256": "9b51b4d285667da0989797959b8ba3299ed6cd3dc06ea29514deb668ee185c38",
+            "status": "downloaded_private",
+            "bytes": 5400085,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 2,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "mmc2",
+            "label": "Table S1. Information for all target fatty acid, related to Figure 1, 2, 3 and 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/mmc2.pdf?md5=3083ba3bf4376a14c838893591e5a75f",
+            "license": "CC BY",
+            "sha256": "836f9ffdf3f0078a403f6ddc9e1eeae3b996782a18e3ca191ba490c3ed37cbf2",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 66857,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 2,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-04T08:07:04.743725+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+        "authorCredit": "Jiaqing Feng; Duan Chen; Chuansen Wang; Runlang Zhu; Longfei Chen; Liang Hu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.5",
+        "jcr": "Q1",
+        "cas": "综合性期刊2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-04T08:07:09Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-04T08:07:09Z",
+        "url": "https://openalex.org/W7165053097",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.37413732,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-04T08:07:09Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-04T08:07:09Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-05T08:07:09Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.8706866,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 1.8706866,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-04T08:07:16Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -186317,6 +186639,12 @@
           ]
         }
       ]
+    },
+    "doi-fa43265905641b33": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -187935,7 +188263,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-04T08:05:33Z",
+  "generatedAt": "2026-11-04T08:07:17Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -188169,18 +188497,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-04T08:03:17Z",
-    "updatedAt": "2026-11-04T08:05:46Z",
+    "updatedAt": "2026-11-04T08:07:22Z",
     "batchCount": 2,
-    "requests": 67,
+    "requests": 91,
     "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

@@ -160,6 +160,7 @@
     "2026-11-04": {
       "newDOIs": [
         "10.1002/advs.76186",
+        "10.1016/j.isci.2026.116445",
         "10.1093/bib/bbag610",
         "10.1111/acel.70796",
         "10.1186/s13020-026-01506-w"
@@ -167,6 +168,36 @@
     }
   },
   "candidates": {
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-04T08:07:16Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-04T08:07:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-04T08:07:13Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-04T08:07:11Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.116445": {
+      "checkedAt": "2026-11-04T08:07:09Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag610": {
       "checkedAt": "2026-11-04T08:05:18Z",
       "status": "source_confirmed",
@@ -392,61 +423,6 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1016/j.isci.2026.116445": {
-      "checkedAt": "2026-11-03T08:37:05Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.116445",
-        "metadataHash": "9f2adfde55df1d27bc392747533d9af0769326e5073777c13aa00b79f6b007b5",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/PMC13293730.1.xml?md5=653cd961f0cd4c598f8674c51927386d",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13293730-a337a5716a4d52cd.jpg",
-              "assetSHA256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "a337a5716a4d52cd21cfed6cb5247e111e8acba3386f9160ff5a23bad26ac2be",
-              "height": 922,
-              "label": "Figure 1",
-              "width": 721,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr1.jpg?md5=0c2f7c1d4596dbce278f4a17c07558d3",
-              "captionHash": "285c878f013bb6d36c2feb65c408473ddd7dd9b78f8c8da5aa5efdf6f648faf2"
-            },
-            {
-              "asset": "assets/pmc13293730-42976d8a9a2e0175.jpg",
-              "assetSHA256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
-              "license": "CC BY",
-              "id": "fig3",
-              "sha256": "42976d8a9a2e017587c8234beb7492743b93f54550717b5cc3248248a0421643",
-              "height": 922,
-              "label": "Figure 3",
-              "width": 716,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293730.1/gr3.jpg?md5=e9f31e596a63caaeed7d32222e848ca7",
-              "captionHash": "050457e767dbf8532da6f7e0dd7115c500abfa106bba09f5dfd281f4a2094e81"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fa43265905641b33",
-          "doi": "10.1016/j.isci.2026.116445",
-          "paper": "Multiomics reveals fatty acid metabolism and immune remodeling in retinal artery occlusion.",
-          "journal": "iScience",
-          "date": "2026-06-17",
-          "year": "2026",
-          "pmcid": "PMC13293730",
-          "pmid": "42369035",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.116445"
-        },
-        "updatedAt": "2026-10-16T06:45:06Z"
-      }
-    },
     "10.1002/cpz1.70491": {
       "checkedAt": "2026-11-02T08:25:08Z",
       "status": "source_confirmed",
@@ -489,18 +465,6 @@
         },
         "updatedAt": "2026-11-02T08:25:07Z"
       }
-    },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-02T08:25:00Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-02T08:24:56Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.3389/fcell.2026.1993380": {
       "checkedAt": "2026-11-02T08:24:53Z",
@@ -734,12 +698,6 @@
     },
     "10.1126/sciadv.aeg1622": {
       "checkedAt": "2026-10-30T07:46:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-10-30T07:46:30Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -13033,21 +12991,16 @@
     "status": "active",
     "maxSeconds": 2700,
     "maxBatches": 36,
-    "dailyNewCount": 4,
-    "updatedAt": "2026-11-04T08:05:46Z",
+    "dailyNewCount": 5,
+    "updatedAt": "2026-11-04T08:07:22Z",
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
     "batchCount": 2,
     "date": "2026-11-04",
     "aiAttempts": 2,
-    "elapsedSeconds": 150,
+    "elapsedSeconds": 246,
     "startedAt": "2026-11-04T08:03:17Z",
-    "requests": 67,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-04T08:05:46Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 91,
+    "uncertainRequests": 0
   }
 }
