@@ -13050,22 +13050,27 @@
     }
   },
   "dailyCollectionSession": {
-    "aiAttempts": 3,
-    "maxBatches": 36,
-    "startedAt": "2026-11-03T08:36:43Z",
-    "maxSeconds": 2700,
-    "dailyNewCount": 5,
     "version": 1,
-    "date": "2026-11-03",
-    "uncertainAiAttempts": 0,
-    "endReason": "target_reached",
-    "requests": 149,
-    "status": "finished",
-    "uncertainRequests": 0,
+    "endReason": "",
     "maxAiAttempts": 165,
+    "status": "active",
+    "maxSeconds": 2700,
+    "maxBatches": 36,
+    "dailyNewCount": 0,
+    "updatedAt": "2026-11-04T08:03:22Z",
+    "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "updatedAt": "2026-11-03T20:19:22Z",
-    "batchCount": 2,
-    "elapsedSeconds": 172
+    "batchCount": 1,
+    "date": "2026-11-04",
+    "aiAttempts": 0,
+    "elapsedSeconds": 5,
+    "startedAt": "2026-11-04T08:03:17Z",
+    "requests": 0,
+    "uncertainRequests": 0,
+    "inFlight": {
+      "startedAt": "2026-11-04T08:03:22Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
