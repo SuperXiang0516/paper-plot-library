@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-03",
+  "checkedAt": "2026-11-04",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -131361,6 +131361,1731 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-e98920f7d4a43ab3",
+      "paper": "Long-Term Post-Mitotic Culture of Human Fibroblasts Recapitulates and Accelerates Features of In Vivo Aging and Enables Dynamic Testing of Anti-Aging Compounds.",
+      "doi": "10.1111/acel.70796",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70796",
+      "pmcid": "PMC13724222",
+      "pmid": "42967595",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-04",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "39f9b392fb826f4a3ea231b82e2f2b219442f21ebda7ef6c9ad4a3d3ba5bd9e1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/PMC13724222.1.xml?md5=60322ea08deecb9d525997777617a838",
+        "figures": [
+          {
+            "id": "acel70796-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "DNAm and transcriptomic clocks comparing in vivo and in vitro aging. (a) Human fibroblasts of donors aged 0–92 years were harvested once reaching confluency (in vivo aging). Four independent donors aged 53, 55, 67, and 68 were grown to confluency (time‐point 0) and kept in culture without passaging for 6 months. RNA‐seq and DNAm EPIC Array were performed at 5–7 time‐points each 30 days. (b) Phase contrast images taken at time of harvest each month. Gene set enrichment analysis related to Reactome pathway “Cellular Senescence” in in vitro aged cells (NES = 0.98, FDR adjusted p‐value = 0.49). (c) Immunofluorescence staining (p21) of fibroblasts at Months 0 and 6. Positive control represents senescent fibroblasts (Etoposide, 20 μM, 48 h). Percentage represents p21+ and p16+ nuclei/total number of nuclei (DAPI). Ordinary One‐way ANOVA and Tukey's multiple comparisons test (p21: F(2/5) = 133.6, p < 0.0001; p16: F(3/7) = 647.6, p < 0.0001). (d) Blood&Skin DNAm age applied to methylation data of in vitro aging (n = 4 independent samples). Blue dots represent in vivo aged donors, with the blue line indicating the corresponding in vivo linear regression. In vitro aged donors are shown in green (dark green for M0 and light green for M6), with the black lines representing the linear regression per donor (mean slope in vivo = 1.01, mean slope in vitro = 8.23, 95% CI [3.9, 15.1]). (e) DNAm age of in vitro aging, standard deviation represents variance between donors. Residual age was calculated by subtracting the chronological age from the estimated DNAm age. Linear mixed effects model of in vitro aging with donor as random variable. (f) Transcriptomic tAge based on in vitro aging. Age was calculated by subtracting Month 0 from each timepoint per donor. Linear mixed effects model of in vitro aging with donor as random variable. (g) Aging velocity, defined as the slope of the linear regression in years, was calculated for DNAm clock, RNAAgeCalc—across‐tissue (RNAAge), and tAge for in vitro aging. Each dot represents an independent donor. Differences in slopes were assessed using linear mixed effect model with donor as random variable. (h) Difference in DNAm (n = 4 independent donors, one technical replicate for Donor #2) and transcriptomic age (n = 4 independent donors) of Month 5 compared to baseline (M0). Mixed‐effects model (REML) with individuals as random effects, F(0.9663, 2.899) = 16.05. Tukey's multiple comparison test. Each dot represents an individual sample. Significance: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-g004.webp?md5=6b778daf555da7a361df93ce6f6bc500",
+            "articleURL": "https://doi.org/10.1111/acel.70796",
+            "asset": "assets/pmc13724222-78b9932179978896.webp",
+            "sha256": "78b9932179978896ffc41f4cda38c27b72921f052363219f12e38b06dd567d2a",
+            "width": 1064,
+            "height": 1115,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Larissa Traxler; Lukas Karbacher; Oliver Borgogno; Taylor Ozbun; Kylie Champion; Anna Smaling; et al.. Long-Term Post-Mitotic Culture of Human Fibroblasts Recapitulates and Accelerates Features of In Vivo Aging and Enables Dynamic Testing of Anti-Aging Compounds.. DOI: 10.1111/acel.70796. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "78b9932179978896ffc41f4cda38c27b72921f052363219f12e38b06dd567d2a",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70796-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "In vitro aging transcriptome changes are concordant with human fibroblast aging in vivo. (a) Linear regression of gene expression with age. In vivo aging analyses were adjusted for sex (model: Age + sex). The top 100 up‐ and downregulated genes along in vitro aging (green), in vivo aging (blue), and Fleischer et al. in vivo aging (brown) are shown. (b) Schematic of overlapping pathway analysis performed using CLUEGO (Cytoscape). Up‐ and downregulated aging genes were analyzed separately for in vitro aging (adjusted p < 0.05), Fleischer et al. in vivo aging (adjusted p < 0.05), and our in vivo aging dataset (p < 0.05). Gene‐set enrichment analysis was used to determine significance (adjusted p < 0.1; fgsea, R). Venn diagram depicts overlap among significantly enriched pathways. (c, d) Representative accelerated up‐ and downregulated KEGG pathways. Vst‐normalized expression was averaged per pathway, and linear regression was used to estimate pathway‐level slopes. To assess pathway‐level differences between in vitro and in vivo aging at gene‐level, we fit a linear model including an interaction term between age and dataset (Age × Dataset) with in vitro aging as reference. Interaction p‐value was corrected for multiple testing using the Benjamini–Hochberg method. (e) Average slopes of genes contributing to upregulated (n = 7) and downregulated (n = 17) pathways. Each dot representing one pathway; slopes were calculated based on changes in vst‐normalized gene expression per year. For upregulated pathways, data met normality assumptions and were analyzed using Brown‐Forsythe ANOVA (df = 2, p = 0.0017) followed by Dunnett's multiple comparisons test (in vitro vs. in vivo p = 0.009, in vitro vs. Fleischer p < 0.009 in vivo vs. Fleischer p = 0.97). For downregulated pathways, normality assumptions were not met and differences were assessed using Kruskal‐Wallis test (H = 37.71, df = 2, in vitro vs. in vivo p = 0.0002, in vitro vs. Fleischer p < 0.0001, in vivo vs. Fleischer p = 0.11). (f, g) Gene expression (green) and corresponding promoter methylation (orange)—defined as methylation at TSS200, TSS1500, 5′UTR, and 1st exon regions—of genes contributing to upregulated (n = 7) and downregulated (n = 17) aging pathways in in vitro aging. Values were averaged per pathway. Standard deviation represents variance between pathways. (h) iN‐competent fibroblasts (stable UNA expression) were pre‐aged with the established protocol and converted to iNs at baseline (M0) and after 6 months of in vitro aging. (i) Immunofluorescence staining of iN cultures for neuronal markers after 21 days of conversion induction. (j) Conversion efficacy at Day 21 of conversion. Each dot represents an independent donor, based on the average of 2–3 images per donor. TUJ: Paired t‐test (t(3) = 0.74, 95% CI [−20, 32]). MAP2 and NeuN did not meet normality assumption, Wilcoxon test was performed on 4 paired samples (NeuN W = 10, median difference = 13; MAP2 W = 10, median difference = 9). (k–m) Epigenetic and transcriptomic age calculations (n = 3 per time‐point). (k) Blood&Skin DNAm clock. Each dot represents an individual donor. Paired t‐test (t(2) = 4.4, 95% CI [0.1, 8.3]). (l) tAge. Paired t‐test (t(2) = 7.6, 95% CI [2.8, 10.3]). (m) RNAAgeCalculator—brain‐specific. Paired t‐test (t(2) = 49.7, 95% CI [19.6, 23.4]). (n) Subtraction of baseline estimated age from age at month six. Repeated measures ANOVA, F(1, 21, 2.24) = 434.5, p = 0.0013, Tukey's multiple comparisons test. (o) Aging velocity as calculated by simple linear regression per donor (slope). Repeated measures ANOVA, F(1, 25, 2.5) = 565.7, p = 0.0005, Tukey's multiple comparisons test. (e, j–o) Significance: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-g003.webp?md5=a4f98b759e8fad4103e42169d35510e4",
+            "articleURL": "https://doi.org/10.1111/acel.70796",
+            "asset": "assets/pmc13724222-c1cc5a56534e3722.webp",
+            "sha256": "c1cc5a56534e3722caeab72a0b9c7cd42d166cbc4169bc0672579f11871a7316",
+            "width": 1064,
+            "height": 1521,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Larissa Traxler; Lukas Karbacher; Oliver Borgogno; Taylor Ozbun; Kylie Champion; Anna Smaling; et al.. Long-Term Post-Mitotic Culture of Human Fibroblasts Recapitulates and Accelerates Features of In Vivo Aging and Enables Dynamic Testing of Anti-Aging Compounds.. DOI: 10.1111/acel.70796. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c1cc5a56534e3722caeab72a0b9c7cd42d166cbc4169bc0672579f11871a7316",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70796-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Single cell RNA sequencing shows heterogeneous aging in vitro. (a, b) UMAP of scRNA‐seq of Donors #3 and #4 at Months 0 and 5. (c, d) RNAAgeCalc—across‐tissue of the donors at Months 0 and 5 of bulk RNA‐seq and pseudobulk of scRNA‐seq. (e) UMAP of LTA score based on overlapping aging genes in vitro and in vivo (Supplementary Table 2), dividing cells into young cells (lower 50% LTA score, purple) and old cells (upper 50% LTA score, green). (f) Gene‐level negative binomial deviance per donor and time‐point, reflecting cell‐to‐cell expression variability. Ridge plots show distribution of gene‐level deviance across gene sets. Levene's test for homogeneity of variance was used to compare baseline (M0) and Month 5 of in vitro aging (#4 df = 1, F = 8.4, p = 0.004; #3 df = 1, F = 191, p < 2.2e−16), and Wilcoxon rank‐sum test comparing Δslope (M5 − M0) between LTA pathway genes (n = 718) and background genes (n = 24,385) showed a significant enrichment in LTA genes (all: W = 20,202,112, adjusted p = 1.85e−139, up: W = 9,937,924, adjusted p = 1.39e−71, down: W = 12,251,977, adjusted p = 1.27e−85). (g) Ridgeplot representing negative binomial deviance of genes contributing to upregulated (n = 7) and the downregulated (n = 17) pathways for Donor #3 and #4. Average deviance per pathway, as well as average global deviance (red) was plotted as bar graphs. Normality assumptions were not met and differences were assessed using Friedman test for paired measurements (upregulated pathways: X 2 = 22.2, df = 3, #4 M0 vs. M5 p = 0.001, #3 M0 vs. M5 p = 0.01; downregulated pathways: X 2 = 44.5, df = 3, #4 M0 vs. M5 p < 0.0001, #3 M0 vs. M5 p = 0.03). (f,g) Significance: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-g002.webp?md5=97ed597b841faa18c6b5076542f63ddc",
+            "articleURL": "https://doi.org/10.1111/acel.70796",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Larissa Traxler; Lukas Karbacher; Oliver Borgogno; Taylor Ozbun; Kylie Champion; Anna Smaling; et al.. Long-Term Post-Mitotic Culture of Human Fibroblasts Recapitulates and Accelerates Features of In Vivo Aging and Enables Dynamic Testing of Anti-Aging Compounds.. DOI: 10.1111/acel.70796. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70796-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Anti‐aging drug Metformin to slow aging in vitro. (a) Fibroblasts at confluency were treated with Metformin (1 mM) for 6 months (n = 4 independent donors). No overt morphological differences were observed. Cells were harvested each month (30 days) for RNA and DNA extraction to assess DNAm age (Blood&Skin clock) and transcriptomic age (RNAAgeCalc—across‐tissue). (b) Slopes of DNAm Blood&Skin clock in Control (gray) and Metformin‐treated (red) cultures (n = 4/group). Statistical comparison was performed using a mixed linear effect model (treatment × time in vitro: Estimate = −0.18 ± 0.09, t(49) = −2.1). Average simple linear regression slopes across all donors were plotted. (c) Years aged in vitro was calculated by subtracting the age of Month 0 from Month 6 in Control (gray) and Metformin‐treated cultures (red). Paired t‐test was performed (t(3) = 4.4, 95% CI [−20, −3], p = 0.02). (d) Mixed‐effects linear model was performed. The heatmap represents all significant genes (FDR < 0.1) for the interaction term of treatment with time in vitro. Genes are shown at baseline, after in vitro aging (left, gray), and after Metformin treatment (right), scaled per row. (e, f) Effect of Metformin on aging pathways. Gray bars represent baseline slope of linear regression with time in vitro (as years, vst‐normalized), red bars represent the treatment slope. A red slope of 0 indicates that Metformin fully (100%) rescues the aging pathway, and is no longer up‐ or downregulated. For each pathway, gene‐wise baseline slopes and treatment interaction slopes were extracted and compared using paired t‐test (adjusted for multiple testing, FDR). Average slopes per pathway were plotted as a bar graph (Paired t‐test, upregulated pathways t = 3.9, df = 6, p = 0.0076; downregulated pathways t = 13.8, df = 16, p < 0.0001). (g) Percent rescue defined as the ratio of the mean interaction slope to the mean baseline slope (−Mean baseline slope/Mean Interaction slope) * 100. Significance: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-g001.webp?md5=2c18abb3bc2e24d98888e07a457127fc",
+            "articleURL": "https://doi.org/10.1111/acel.70796",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Larissa Traxler; Lukas Karbacher; Oliver Borgogno; Taylor Ozbun; Kylie Champion; Anna Smaling; et al.. Long-Term Post-Mitotic Culture of Human Fibroblasts Recapitulates and Accelerates Features of In Vivo Aging and Enables Dynamic Testing of Anti-Aging Compounds.. DOI: 10.1111/acel.70796. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70796-supitem-0001",
+            "label": "Supplementary Table 1: CLUEGO pathways in vitro aging.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-s005.xlsx?md5=ebf942a64172537803e650de6b4be286",
+            "license": "CC BY",
+            "sha256": "c470e320a88c7fd6a855d4012eafd68d7bda3429572c7152d24baf4b6b729ffc",
+            "status": "downloaded_private",
+            "bytes": 75585,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70796-supitem-0002",
+            "label": "Supplementary Table 2: Genes contributing to single cell scores.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-s002.csv?md5=c5b787f425f1dbda19cac822eb61d399",
+            "license": "CC BY",
+            "sha256": "d66c91e584a50072613cdf3ecc4331b8eac17ff8642b629afca919804755564a",
+            "status": "downloaded_private",
+            "bytes": 553663,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70796-supitem-0003",
+            "label": "Supplementary Table 3: Effects of Metformin on age‐associated gene expression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-s003.csv?md5=097090d56e41d13c9a2fb0344d5a03f0",
+            "license": "CC BY",
+            "sha256": "16c05277309de48a4e8bc9b33dbc4591ab78cd760701f10c52ff35d74c8136e6",
+            "status": "downloaded_private",
+            "bytes": 1848348,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70796-supitem-0004",
+            "label": "Supplementary Table 4: Effects of Rapamycin on age‐associated gene expression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-s001.csv?md5=dd8973e75fe83cebf94371eb8ffab0bd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70796-supitem-0005",
+            "label": "Supplementary Figure 1: Aging clocks in vitro and in vivo. (a) Overview of fibroblasts used in in vivo aging. (b) Overview of starting fibroblasts for",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724222.1/ACEL-25-e70796-s004.docx?md5=78be9a9868da78f8f35facc256a27fa0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-04T08:05:01.014623+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Larissa Traxler; Lukas Karbacher; Oliver Borgogno; Taylor Ozbun; Kylie Champion; Anna Smaling; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-04T08:05:04Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-04T08:05:04Z",
+        "url": "https://openalex.org/W4408955703",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.00227101,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-04T08:05:04Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-04T08:05:04Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-05T08:05:04Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62.01135505,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0.01135505,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-04T08:05:19Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-e7677b4fccc4f6a9",
+      "doi": "10.1002/advs.76186",
+      "paper": "Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-06-22",
+      "year": "2026",
+      "pmcid": "PMC13336869",
+      "pmid": "42328733",
+      "paperURL": "https://doi.org/10.1002/advs.76186",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "eef92ecd3d4b8b86343ad4dbd2ea3612e1ef0a812cafb45df049dc1188989a56"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "2",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/PMC13336869.2.xml?md5=7ea0cac7a1466b2f6400226f86549c7e",
+        "figures": [
+          {
+            "id": "advs76186-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the CAPER framework. (A) CAPER is a statistical matrix‐factorization framework designed to disentangle true biological signals from unwanted technical and sample‐to‐sample variation. The method takes as input scaled, normalized gene expression matrices from single‐cell experiments spanning multiple conditions. Through its factorization approach, CAPER explicitly separates biological states from condition‐specific variations, outputting two key products: (1) interpretable latent factors that capture shared cell‐state structure and reproducible condition‐associated biological effects, and (2) a corrected gene expression matrix in which the signal of interest is preserved and isolated for robust downstream analysis. (B) The schematic illustrates CAPER's ability to recover biological structure across different signal‐to‐noise regimes: (1) High SNR; (2) Confounded SNR; (3) Low SNR. In the UMAP embedding, weakly responsive cell populations remain nearly overlapped between conditions, moderately responsive populations remain partially overlapped, and strongly responsive populations become nearly separated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-g002.webp?md5=f109a363c33b28a2dd489280f9ecacbc",
+            "articleURL": "https://doi.org/10.1002/advs.76186",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al.. Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.. DOI: 10.1002/advs.76186. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76186-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Benchmarking CAPER in simulations across different signal‐to‐noise ratio settings. (A) UMAP visualization of the uncorrected raw simulated data in the high‐SNR scenario. Cells are colored by condition and cell population, showing that the condition‐associated signal is stronger than noise before correction. (B) Quantitative benchmark in the high‐SNR scenario. The bubble plot summarizes the total score, biological conservation metrics, and batch‐correction metrics across methods, showing that CAPER achieves the highest total score while maintaining a favorable balance between biological conservation and batch correction. (C) UMAP visualization of corrected simulated data in the high‐SNR scenario. UMAP plots show cells colored by condition and cell population, demonstrating that CAPER preserves cell‐population structure and condition‐associated biological signal while reducing unwanted variation. (D) UMAP visualization of the uncorrected raw simulated data in the confounded‐SNR scenario. Cells are colored by condition and cell population, showing that the condition‐associated signal is comparable to noise before correction. (E) Quantitative benchmark in the confounded‐SNR scenario. The bubble plot summarizes benchmark metrics across methods, showing that CAPER achieves the highest total score and maintains a favorable balance between biological conservation and batch correction. (F) UMAP visualization of corrected simulated data in the confounded‐SNR scenario. UMAP plots show cells colored by condition and cell population, demonstrating that CAPER maintains cell‐population organization under stronger confounding. (G) UMAP visualization of the uncorrected raw simulated data in the low‐SNR scenario. Cells are colored by condition and cell population, showing that the condition‐associated signal is weaker than noise before correction. (H) Quantitative benchmark in the low‐SNR scenario. The bubble plot summarizes benchmark metrics across methods, showing that CAPER achieves the highest total score and maintains strong biological conservation and batch‐correction performance. (I) UMAP visualization of corrected simulated data in the low‐SNR scenario. UMAP plots show cells colored by condition and cell population, demonstrating that CAPER preserves cell‐population structure even when condition‐associated signals are weak.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-g004.webp?md5=c0af22796247c15cbd71b58fa4dc2178",
+            "articleURL": "https://doi.org/10.1002/advs.76186",
+            "asset": "assets/pmc13336869-6a3ed8181ca5640a.webp",
+            "sha256": "6a3ed8181ca5640ac74425c60b334ba53cea3ddff7ef54c08cc415e1def01286",
+            "width": 575,
+            "height": 961,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al.. Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.. DOI: 10.1002/advs.76186. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6a3ed8181ca5640ac74425c60b334ba53cea3ddff7ef54c08cc415e1def01286",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs76186-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "CAPER identifies cell populations and genes responsive to the interferon‐β stimulation. (A) Experimental design of the PBMC dataset. Peripheral blood mononuclear cells (PBMCs) were collected from eight patients with systemic lupus erythematosus (SLE). The dataset comprises 7466 cells from the IFN‐β‐stimulated condition (stimulated) and 6573 cells from matched control samples, enabling direct comparison of perturbation responses across cell types. (B) UMAP visualization of corrected PBMC data. The gene expression matrices reconstructed by CAPER, CellANOVA, scDisInFact, scVI, scGen, ComBat, fastMNN, and uncorrected Raw were projected into 2D UMAP embeddings. Cells are colored by condition (top row) and annotated cell type (bottom row), demonstrating that CAPER preserves major cell‐population structure while retaining IFN‐β‐associated transcriptional differences in responsive populations. (C) Quantitative benchmark of PBMC data integration. The benchmark summary compares overall performance, biological conservation, and batch correction metrics across methods, showing that CAPER achieves the highest total score and the strongest biological conservation. (D) Perturbation response intensity across cell types. Bar plots show the number of overlapping genes between the top 50 upregulated differentially expressed (DE) genes per cell type and a reference set of interferon‐stimulated genes (ISGs) from the Interferome database. CAPER identifies CD14+ monocytes, FCGR3A+ monocytes, and dendritic cells as strongly responsive populations. scDisInFact fails to distinguish perturbation intensity across cell types, yielding uniformly high overlap. (E) Top contributing genes to major axes of variation. Lollipop plots display the top 10 genes with the most positive and most negative loadings on the first three principal components (PCs) identified by CAPER. These genes represent the primary sources of biological variation captured by CAPER. (F) Top contributing genes to major axes of variation. Lollipop plots display the top ten genes with the most positive and most negative loadings on the first three principal components (PCs) identified by CellANOVA. These genes represent the primary sources of biological variation captured by CellANOVA. (G) Corrected expression of representative genes in CD14+ monocytes. Violin plots show expression of IFI44L and UTRN across stimulated and control cells, demonstrating that CAPER recovers the expected upregulation of the interferon‐stimulated gene IFI44L while avoiding a biologically unsupported DE call for UTRN. (H) Overlap of GO terms enriched by upregulated DE genes across methods in CD14+ monocyte. The UpSet plot summarizes shared and method‐specific GO terms enriched by upregulated DE genes across CAPER and compared methods. (I) Interferon‐response pathway recovery in CD14+ monocytes. The heatmap summarizes keyword‐matched interferon‐ and immune‐response GO terms enriched among upregulated DE genes, showing stronger pathway‐level recovery by CAPER. (J) Co‐expression module eigengene analysis. Violin plots show stimulated‐control differences in representative co‐expression module eigengenes, indicating that CAPER‐corrected expression supports co‐expression analysis. (K) Hub‐gene networks of co‐expression modules. Network plots show representative hub genes from CAPER‐derived modules, including interferon‐stimulated genes such as IFIT3, CXCL10, and ISG15, and inflammatory chemokine‐related genes such as CCL23, CCL4, and CCL3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-g003.webp?md5=37e2d4dd86939963c8a794b04ef5b19f",
+            "articleURL": "https://doi.org/10.1002/advs.76186",
+            "asset": "assets/pmc13336869-264d65dbbc0be7e7.webp",
+            "sha256": "264d65dbbc0be7e73b6b733444512508eabe903e7bedc067bc453b90133c5a46",
+            "width": 687,
+            "height": 960,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al.. Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.. DOI: 10.1002/advs.76186. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "264d65dbbc0be7e73b6b733444512508eabe903e7bedc067bc453b90133c5a46",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs76186-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "CAPER identifies LUAD‐associated cell populations and genes. (A) Experimental design of the LUAD dataset. The dataset includes 27 509 cells from eight tumor samples and 36 381 cells from eleven paracancerous control samples, enabling analysis of tumor‐associated transcriptional changes in a confounded‐SNR setting. (B) UMAP visualization of corrected LUAD data. The gene expression matrices reconstructed by CAPER, CellANOVA, scDisInFact, scVI, scGen, ComBat, fastMNN, and uncorrected Raw were projected into 2D UMAP embeddings. Cells are colored by condition (tumor vs. control; top row) and annotated cell type (bottom row), demonstrating that CAPER preserves major cell‐population structure while retaining tumor‐control transcriptional differences in LUAD‐relevant populations. (C) Quantitative benchmark of LUAD data integration. The benchmark summary compares overall performance, biological conservation, and batch correction metrics, showing that CAPER achieves the highest total score and strongest biological conservation. (D) Perturbation response intensity across cell populations. Lollipop plots display the mean area under the ROC curve (AUC) from Augur analysis for each cell type, quantifying the responsiveness of each population to tumor‐associated changes. CAPER identifies the strongest responses in epithelial cells, which are known to play critical roles in LUAD pathogenesis. ComBat fails to distinguish response intensity across cell types, yielding uniformly high or flat signals. (E) Top contributing genes to major axes of variation. Lollipop plots display the top ten genes with the most positive and most negative loadings on the first three principal components identified by CAPER. These genes represent the primary sources of tumor‐associated biological variation captured by CAPER. (F) Top contributing genes to major axes of variation. Lollipop plots display the top ten genes with the most positive and most negative loadings on the first three principal components identified by CellANOVA. These genes represent the primary sources of tumor‐associated biological variation captured by CellANOVA. (G) Corrected expression of representative genes in epithelial cells. Violin plots show expression of UBE2S and IFT27 across tumor and control cells, demonstrating that CAPER recovers tumor‐associated upregulation of UBE2S while avoiding a statistically unsupported DE call for IFT27. (H) Overlap of upregulated DE genes in epithelial cells. The UpSet plot summarizes shared and method‐specific upregulated DE genes across CAPER and compared methods. (I) Functional enrichment of method‐specific upregulated DE genes. Bubble plots show enriched GO terms among method‐specific upregulated DE genes in epithelial cells, indicating that CAPER‐specific genes are enriched for vascular and angiogenesis‐related pathways. (J) Survival prediction using method‐derived gene signatures. Kaplan‐Meier curves show survival probabilities for low‐risk and high‐risk patient groups stratified by Cox proportional hazards models built from the top 40 DE genes identified by each method, applied to independent TCGA LUAD bulk RNA‐seq data. Shaded areas indicate 95% confidence intervals. Insets display key performance metrics for each model: significant gene ratio (proportion of genes with Wald test p < 0.05), concordance index (C‐index), Akaike Information Criterion (AIC), Brier score, and log‐rank p‐value. The gene signature derived from CAPER's corrected expression matrix significantly stratifies patient survival and achieves competitive predictive performance, including the highest C‐index among the compared methods, suggesting that CAPER‐recovered epithelial signals carry prognostic information.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-g005.webp?md5=4d55fa20dfc0892412312eaf88c689b9",
+            "articleURL": "https://doi.org/10.1002/advs.76186",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al.. Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.. DOI: 10.1002/advs.76186. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76186-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "CAPER identifies the T1D‐dependent cell populations and genes. (A) Experimental design of the T1D dataset. Pancreatic islet tissues were collected from five patients with type 1 diabetes (T1D) and eleven healthy controls. The dataset comprises 22 400 cells from T1D donors and 26 594 cells from control donors, enabling investigation of disease‐associated transcriptional changes in rare and subtle cell populations. (B) UMAP visualization of corrected T1D data. The gene expression matrices reconstructed by CAPER, CellANOVA, scDisInFact, scVI, scGen, ComBat, fastMNN, and uncorrected Raw were projected into 2D UMAP embeddings. Cells are colored by condition (T1D vs. control; top row) and annotated cell type (bottom row). CAPER preserves subtle separation between T1D and control cells in disease‐relevant populations while maintaining overall biological structure. (C) Quantitative benchmark of T1D data integration. The benchmark summary compares overall performance, biological conservation, and batch correction metrics, showing that CAPER achieves the highest total score across methods. (D) Perturbation response intensity across cell types. Lollipop plots display the mean area under the ROC curve (AUC) from Augur analysis for each cell type, quantifying the responsiveness of each population to T1D‐associated changes. CAPER and CellANOVA identify the strongest responses in pancreatic A cells and type B pancreatic cells, which are the key cell types implicated in T1D pathogenesis. In contrast, analysis of raw uncorrected data identifies strongest responses in ductal cells, reflecting confounding by sample heterogeneity. scDisInFact produced high Augur scores across multiple endocrine and non‐endocrine populations and ranked pancreatic ductal cells first, suggesting reduced specificity in prioritizing T1D‐relevant endocrine responses. (E) Top contributing genes to major axes of variation. Lollipop plots display the top 10 genes with the most positive and most negative loadings on the first three principal components identified by CAPER. These genes represent the primary sources of T1D‐associated biological variation captured by CAPER. (F) Top contributing genes to major axes of variation. Lollipop plots display the top 10 genes with the most positive and most negative loadings on the first three principal components identified by CellANOVA. These genes represent the primary sources of T1D‐associated biological variation captured by CellANOVA. (G) Corrected expression of representative genes in type B pancreatic cells. Violin plots show expression of NLRP1 and HOOK2 across T1D and control cells, demonstrating that CAPER recovers disease‐associated upregulation of NLRP1 while avoiding a biologically unsupported DE call for HOOK2. (H) Pairwise overlap of DE genes in type B pancreatic cells. Stacked bar plots summarize shared, CAPER‐unique, and compared method‐unique DE genes for each CAPER‐vs.‐compared method comparison. (I) Functional enrichment of CAPER‐unique DE genes. Bubble plots show enriched GO terms among CAPER‐unique DE genes from pairwise comparisons, highlighting β‐cell‐relevant vesicle‐localization, endoplasmic‐reticulum‐stress, and synaptic‐vesicle‐exocytosis programs. (J) Trajectory inference and ROS pathway activity analysis using CAPER‐corrected expression. UMAP plots show type B pancreatic cells colored by condition and diffusion pseudotime, followed by pseudotime comparison between T1D and control cells and ROS pathway activity along pseudotime, indicating a T1D‐associated β‐cell progression pattern linked to oxidative‐stress activation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-g006.webp?md5=dc31711d1838ddfc9b751fbe7b57031c",
+            "articleURL": "https://doi.org/10.1002/advs.76186",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al.. Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.. DOI: 10.1002/advs.76186. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs76186-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs76186-supitem-0001",
+            "label": "Supporting File 1: advs76186‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-s001.pdf?md5=a3374f406572a9349315d49cbc226f76",
+            "license": "CC BY",
+            "sha256": "0af60be36fa0275609610c8086db4b7e24724ca63a53918cc498f6eb65836917",
+            "status": "downloaded_private",
+            "bytes": 4978745,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 26,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "advs76186-supitem-0002",
+            "label": "Supporting File 2: advs76186‐sup‐0002‐TablesS1‐S5.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/ADVS-13-e76186-s002.xlsx?md5=aaba6f81d84295fa69adc1e3c69dbc30",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/liye-me/CAPER"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-04T08:04:52.161610+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/liye-me/CAPER",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.2/PMC13336869.2.xml?md5=7ea0cac7a1466b2f6400226f86549c7e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Ye Li; Jin Ning; An Wang; Minxi Shi; Yuanze Chen; Guoliang Liu; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/liye-me/CAPER",
+        "commit": "34d7fb19a2242b723d88bc6638b766205f3c0fc1",
+        "license": "GPL-3.0",
+        "scripts": [
+          {
+            "path": "R/CAPER.R",
+            "url": "https://github.com/liye-me/CAPER/blob/34d7fb19a2242b723d88bc6638b766205f3c0fc1/R/CAPER.R",
+            "sha256": "5c3e86e6177c49fa0b60bd95c488a9a824ed89170300afd0aadc23c4ec4fabdb",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/RcppExports.R",
+            "url": "https://github.com/liye-me/CAPER/blob/34d7fb19a2242b723d88bc6638b766205f3c0fc1/R/RcppExports.R",
+            "sha256": "84c3efee4ddeb2d34b0d16bf1fa54cb533464e555988d9d26a594387bb43f76e",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/zzz.R",
+            "url": "https://github.com/liye-me/CAPER/blob/34d7fb19a2242b723d88bc6638b766205f3c0fc1/R/zzz.R",
+            "sha256": "e47719ab0f85b919b029e89bd636030d8f6f09c438f14ed60343e0a893cf07fc",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-04T08:04:59Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-04T08:04:59Z",
+        "url": "https://openalex.org/W7165521983",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.36192843,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-04T08:04:59Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-04T08:04:59Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-05T08:04:59Z"
+        }
+      },
+      "selectionScore": {
+        "total": 76.80964215,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 1.8096421500000002,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-04T08:05:20Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "基于CAPER的多条件单细胞RNA-seq数据条件相关模式提取与恢复",
+        "summary_zh": "该资料介绍CAPER,一个矩阵分解框架,用于在多条件单细胞RNA-seq数据中显式分离共享生物状态与条件特异变异,并直接输出保留目标信号的可解释校正表达矩阵。摘要称其经模拟和三个真实数据集(PBMC免疫刺激高SNR、LUAD肿瘤微环境混杂SNR、T1D低SNR)验证,可获得与生物学相关的潜在因子、恢复差异表达基因并识别响应细胞群。图注描述了框架总览、模拟基准及PBMC、LUAD应用中的UMAP与定量比较。作者代码未运行,仅见静态文件记录,未观察到具体实现细节与复现结果。",
+        "learning_points": [
+          "CAPER被描述为统计矩阵分解框架,输入为多条件单细胞实验中缩放、归一化的基因表达矩阵,输出潜在因子和校正表达矩阵(据FIGURE 1图注)。",
+          "FIGURE 1图注示意高SNR、混杂SNR、低SNR三种情形下细胞群在UMAP中重叠程度与响应强度的关系。",
+          "FIGURE 2图注描述模拟数据中比较高SNR与混杂SNR场景,并以气泡图汇总总分、生物保守与批次校正指标。",
+          "FIGURE 3图注给出PBMC数据规模:7466个刺激条件细胞与6573个对照细胞,来自8例SLE患者。",
+          "FIGURE 4图注给出LUAD数据规模:27509个肿瘤细胞(8个样本)与36381个癌旁对照细胞(11个样本)。",
+          "图注列出的比较方法包括CellANOVA、scDisInFact、scVI、scGen、ComBat、fastMNN及未校正Raw。",
+          "静态检查仅记录R/CAPER.R、R/RcppExports.R、R/zzz.R三个文件路径与哈希,未展示函数实现内容。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果已复现或与原文一致。",
+          "输入数据的列名、具体数据结构与预处理细节未在证据中明示,属未知。",
+          "图号与具体分析步骤的对应关系未完全明示,部分图注文本被截断。",
+          "未观察到软件许可、期刊指标或独立复现结果,相关声明不可作出。",
+          "摘要与图注中的性能结论来自原文陈述,未经过独立核验。",
+          "静态观察记录为空,无法据此评估代码实现质量或算法细节。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-04T08:05:25Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "607ecdb84912cf5b1088c8e4d551161d659d62c41a76b1adf1593043106d7614",
+        "summary_fingerprint": "e2d37deb0b22c7994ec462457882cb72db7f70a470e66422165f8e559d2a9222",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-ee5c4366a5505a13",
+      "paper": "Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.",
+      "doi": "10.1186/s13020-026-01506-w",
+      "journal": "Chinese medicine",
+      "date": "2026-11-02",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1186/s13020-026-01506-w",
+      "pmcid": "PMC13726175",
+      "pmid": "42968160",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1749-8546",
+      "eissn": "1749-8546",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-04",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "a5f62c43cb93ab4020ccc0a7563678cd20c624b3062c62d95a736196ba818ee9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/PMC13726175.1.xml?md5=c0193efb3e2282b566966b9c16aabc63",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Protective effects of QBHF on cardiac function and structure in MI mice. A Schematic illustration of the experimental workflow. B Representative M-mode traces and C statistical evaluation of LVEF, LVFS, LVIDd, LVIDs, LVVold, and LVVols after 4-week intervention (n ≥ 6). D Representative images of Masson’s trichrome staining. E Representative TTC staining image. F Quantification of fibrosis (n = 6). G Quantification of infarct size (n = 6). H HW/TL ratio (n ≥ 6). I Myocardial ATP levels (n = 5). J Serum CK-MB levels by ELISA in sham, model, QBHF group (n = 6). K Representative H&E of the myocardial tissues (n = 6). L Representative TEM images of sham, model, and QBHF group hearts (n = 3). Red arrows indicate the missing cristae and vacuole inside the mitochondrion. Yellow arrows indicate the faded and disarrayed sarcomeric structure. M Mitochondrial cristae count and N cristae integrity score (> 50 mitochondria from 3 mice per group). Data are presented as the mean ± SEM. *P < 0.05, **P < 0.01 vs. sham group; #P < 0.05, ##P < 0.01 vs. model group",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig1_HTML.webp?md5=cd3a2cfe7f8f1a117007f51ef21ba769",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "assets/pmc13726175-6022337db2b84426.webp",
+            "sha256": "6022337db2b84426afe4766a02abc1a3b28a23a4916cb11af7bc941e0006abb7",
+            "width": 1600,
+            "height": 2268,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6022337db2b84426afe4766a02abc1a3b28a23a4916cb11af7bc941e0006abb7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Transcriptomic profiling reveals QBHF-induced reversal of disrupted metabolic and fibrotic programs in the post-MI heart. A Schematic workflow of the bulk RNA-sequencing experiment. B Volcano plot of DEGs between QBHF‑treated and model mice (criteria: |log₂FC|> 1, adjusted P < 0.05); significantly up‑regulated and down‑regulated genes are shown in orange and blue, respectively. C Heatmap of DEGs in sham, model, and QBHF groups. D GO terms for significantly enriched biological processes. E Significantly enriched KEGG pathways. F Significantly enriched GSEA pathways in MI model and QBHF-treated mice. G GSVA pathway analysis across groups. H FTO expression levels from bulk RNA‑seq data (n = 3). I RT‑qPCR validation of FTO mRNA levels (n = 6). J Western blot analysis of FTO protein expression. Representative images show FTO levels in sham, model, and QBHF groups, with GAPDH as the loading control (n = 4). Data are presented as the mean ± SEM. *P < 0.05 vs. sham group; ##P < 0.01 vs. model group",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig2_HTML.webp?md5=279d1d942565e82acfcecc1e7256fcb6",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "assets/pmc13726175-839061c690529313.webp",
+            "sha256": "839061c690529313ef56d749352fbb6fbf880e3a340c87b03e242b96f4828423",
+            "width": 1600,
+            "height": 2252,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "839061c690529313ef56d749352fbb6fbf880e3a340c87b03e242b96f4828423",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "QBHF ameliorates MI by restoring metabolic homeostasis. A Experimental workflow for LC–MS‑based non‑targeted metabolomics analysis of myocardial tissue. B PLS‑DA score plot. C PLS‑DA permutation test plot (200 permutations). D Volcano plot of differential metabolites between groups. E Correlation heatmap of differential metabolites. F Hierarchical clustering heatmap of 29 significantly altered metabolites (red and blue denote increased and decreased levels in the QBHF group compared with the MI group, respectively). G KEGG pathway enrichment analysis of differential metabolites; pathways are ranked by − log₁₀(P‑value)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig3_HTML.webp?md5=2733f4469b310379cb5dfd2c2d2bf0c9",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Experimental pipeline and snRNA-seq landscape of QBHF intervention in MI mice. A Schematic of the experimental and analytical workflow for snRNA‑seq. B, C t-SNE (B) and UMAP (C) visualizations of all sequenced nuclei, colored by major cell type. D Bar plot of relative cellular abundance across the sham, model, and QBHF groups. E Dot plot of canonical marker-gene expression used to assign cluster identity. F Heatmap summarizing sub-cluster annotation, top marker genes per subset, and representative GO terms. G Cell-type-specific metabolic pathway enrichment profiles",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig4_HTML.webp?md5=090d6ee37560f81c7bb9e21da6f399c6",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "snRNA-seq analysis uncovers the molecular mechanisms of QBHF’s therapeutic effects in MI. A Rose chart of DEGs counts between QBHF and MI model groups across major cardiac cell types. B Volcano plots of DEGs for each cell type between QBHF and MI model groups. C–F Enrichment analyses of DEGs: C GO terms, D KEGG pathways, E GSEA of hallmark pathways, and F GSVA activity scores. G Comparison of pathway activity scores for key biological processes: myocardial contraction, fibrosis, fatty acid oxidation, and oxidative phosphorylation. H–K Expression of genes linked to H cardiac contraction, I myocardial fibrosis, J fatty acid oxidation, and K oxidative phosphorylation in MI and QBHF-treated hearts",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig5_HTML.webp?md5=84544f45eb35b9fc337a11680102ec56",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "SnRNA-seq analysis demonstrates that QBHF intervention effectively suppresses fibroblast activation and fibrosis. A GO enrichment of genes up-regulated or down-regulated by QBHF in fibroblasts. B KEGG pathway enrichment of genes regulated by QBHF in fibroblasts. C UMAP (left) and t‑SNE (right) visualizations identifying three transcriptionally distinct fibroblast subpopulations. D Relative abundance of the fibroblast subpopulations across experimental groups. E Dot plots of subpopulation-specific marker genes across the three fibroblast subpopulations. F Bubble plots of GO terms enriched in DEGs from fibroblast subpopulations. G Functional comparison of collagen formation, TGF-β signaling, and inflammatory response scores among fibroblast subpopulations. H Pseudotime trajectory analysis of fibroblasts, colored by pseudotime (top) and subpopulations (bottom). I Heatmap of representative gene expression dynamics along the pseudotime trajectory. J GO enrichment of DEGs from fibroblast trajectory analysis. K Dynamic expression profiles of collagen-related genes (Col1a1, Col1a2, Col3a1, Col5a2, Meg3, and Postn) during the transition period from FB2 to FB1 fibroblasts. L Expression levels of the same collagen‑related genes as in K across sham, model, and QBHF groups. M Bubble plots of FTO expression across cardiac cell types in integrated snRNA-seq dataset. N Bubble plots of FTO expression in fibroblasts from sham, model, and QBHF groups",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig6_HTML.webp?md5=724c3e2a3f6b37e76316adc6c550ddae",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "SnRNA-seq reveals transcriptional reprogramming of cardiomyocytes after QBHF intervention. A UMAP visualization of cardiomyocytes, colored by the four identified transcriptional subpopulations. B UMAP projection of cardiomyocytes, colored by experimental group (sham, model, QBHF). C Relative abundance of the cardiomyocyte subpopulations across groups. D GO enrichment of subpopulation-specific DEGs. E Dot plot of subpopulation-specific marker genes across the four identified cardiomyocyte subpopulations. F FeaturePlot visualization of representative marker genes on the UMAP coordinates. G Bar plot of average functional scores for myocardial contraction, cardiac stress, and metabolism across cardiomyocyte subpopulations. H GO terms enriched in cardiomyocyte DEGs comparing QBHF with model group. I KEGG enrichment of DEGs. J Functional comparison of myocardial contraction and fatty acid metabolism scores between QBHF and model groups. K Bubble plot of FTO expression in cardiomyocytes across the sham, model, and QBHF groups",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig7_HTML.webp?md5=ce78bacd21268b7bd589aee8127a137b",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Heterozygous FTO knockout attenuates QBHF-mediated cardioprotective effects after MI. A Experimental workflow. B Representative M‑mode echocardiograms. C HW/TL ratio (n = 6). D–I Echocardiographic parameters of left ventricular function and geometry: LVEF, LVFS, LVIDd, LVIDs, LVVols, and LVVold (n = 6). J Quantitative analysis of myocardial fibrosis area. K Representative Masson’s trichrome‑stained sections (collagen shown in blue). L Representative H&E-stained myocardial sections (n = 6). Data are presented as the mean ± SEM. *P < 0.05, **P < 0.01 vs. WT sham group; #P < 0.05, ##P < 0.01 vs. WT model group; &P < 0.05, &&P < 0.01 vs. FTO⁺/− sham group; $P < 0.05, $$P < 0.01 vs. FTO⁺/− QBHF group",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig8_HTML.webp?md5=b8e2740a3fe17fc34682b34685a7c818",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "QBHF enhances cardiomyocyte energy metabolism via FTO upregulation in vitro. A Myocardial ATP levels across groups (n = 6). B FTO mRNA expression in cardiac tissue of FTO+/− mice determined by RT-qPCR (n = 6). C Representative western blot of FTO protein expression in heart; GAPDH loading control (n = 4). D Cell viability assay of OGD-injured cardiomyocytes treated with graded concentrations of QBHF-serum. E FTO mRNA expression in cardiomyocytes treated with different doses of QBHF-serum measured by RT-qPCR (n = 6). F Efficiency of FTO overexpression via lentiviral transduction assessed by RT-qPCR (n = 6). G FTO expression across experimental groups determined by RT-qPCR. H ATP levels in cardiomyocytes across groups (n = 6). I–L ATP production rates determined by Seahorse extracellular flux analysis in AC16 cardiomyocytes under the indicated conditions (n ≥ 4). I Representative OCR traces. Gray lines indicate the addition of mitochondrial functional modulators (oligomycin, rotenone/antimycin A [Rot/AA]). Vertical axis: oxygen consumption rate (OCR); horizontal axis: time. J Total ATP production rate. K Mitochondrial ATP production rate (aerobic respiration). L Glycolytic ATP production rate (anaerobic respiration). Data are presented as the mean ± SEM. In A–C: *P < 0.05, **P < 0.01 vs. sham group; #P < 0.05, ##P < 0.01 vs. model group; $$P < 0.01 vs. FTO+/- QBHF group. In D–K: **P < 0.01 vs. control group; #P < 0.05, ##P < 0.01 vs. model (OGD) group; @@P < 0.01 vs. middle (middle dose QBHF-serum) group; &&P < 0.01 vs. QBHF group",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig9_HTML.webp?md5=0def73edea4c8e85a3d04d2414439e18",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Summary: The traditional Chinese medicine QBHF provides comprehensive cardioprotection after MI via FTO-mediated amelioration of both metabolic dysfunction and fibrosis, thereby providing a multi-dimensional therapeutic approach to prevent MI progression",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_Fig10_HTML.webp?md5=0ce9beadb4cb125ca985bf6e12b1dbfa",
+            "articleURL": "https://doi.org/10.1186/s13020-026-01506-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al.. Qi-Blood Harmony Formula mediates post-MI cardioprotection via FTO-driven dual modulation of energy metabolism and fibrosis: a multi-omics validation.. DOI: 10.1186/s13020-026-01506-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726175.1/13020_2026_1506_MOESM1_ESM.docx?md5=88ab8877ad9b482e8dfc3373deec5c0a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-04T08:05:08.171046+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xuena Xie; Yuying Wang; Xiaonan Dong; Rong Yuan; Yu Miao; Pengqi Li; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.4",
+        "jcr": "Q1",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-04T08:05:11Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-04T08:05:11Z",
+        "url": "https://openalex.org/W7225120146",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.89201791,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-04T08:05:11Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-04T08:05:11Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-05T08:05:11Z"
+        }
+      },
+      "selectionScore": {
+        "total": 49.46008955,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.46008955,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-04T08:05:26Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-3f35283f8350d025",
+      "paper": "HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.",
+      "doi": "10.1093/bib/bbag610",
+      "journal": "Briefings in bioinformatics",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1093/bib/bbag610",
+      "pmcid": "PMC13725921",
+      "pmid": "42969856",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1467-5463",
+      "eissn": "1477-4054",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-04",
+      "codeURLs": [
+        "https://github.com/OluwadareLab/HiCP2GAN."
+      ],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "80508684371cc6b3fe6008b546b8a42e1a03e22ccea398f1cd4ed8103fb47df5"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/PMC13725921.1.xml?md5=c4ddee34e9fc197da6b7c4f873bd9489",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Architecture of the HiCP2GAN plug-and-play adversarial framework for Hi-C resolution enhancement. (A) Generator: A generator-agnostic enhancement module (e.g. HiCARN1, DiCARN, or other compatible architectures) takes low-resolution Hi-C contact matrices as input and produces enhanced Hi-C maps, enabling seamless integration of diverse enhancement models within a unified adversarial framework. (B) HiCFoundation Discriminator: A pretrained transformer-based discriminator initialized from HiCFoundation provides structural priors for chromatin interaction modeling. The discriminator consists of convolutional feature extractors, multi-head self-attention blocks, and feed-forward layers followed by a lightweight GAN head. The deeper transformer layers are frozen to preserve pretrained representations, while the earlier layers (closer to the input) and GAN head are finetuned during adversarial training. Adversarial and feature-matching losses guide generator optimization, enabling resolution enhancement informed by both local convolutional patterns and global chromatin interaction structure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f1.webp?md5=aec5be49c27503c1d41a4618a8ae6506",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "assets/pmc13725921-0ad84cc78964b419.webp",
+            "sha256": "0ad84cc78964b4194180a62176bee9f76436d3062ba89695c3d544cd4abcbbe6",
+            "width": 1599,
+            "height": 1518,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0ad84cc78964b4194180a62176bee9f76436d3062ba89695c3d544cd4abcbbe6",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Layer finetuning validation of the HiCFoundation discriminator (100 epochs). Epoch-wise validation PSNR plots for HiCP2GAN trained with varying numbers of finetuned transformer layers (from the input side); deeper layers remain frozen. This was used to select the discriminator configuration adopted in our subsequent experiments.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f2.webp?md5=774ed3a056e17722d2cf00e704cad961",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Loop F1 scores from test chromosomes (chr4, chr14, chr16, and chr20) compared with ground truth on GM12878. Dark bars represent HiCP2GAN-integrated models, and light bars represent standalone generators. Across the four evaluated generators, HiCP2GAN improves loop recovery on the held-out test chromosomes, with HiCP2GAN-DiCARN achieving the highest F1 score.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f3.webp?md5=f450182cf476d69084c6ec0ee140e29f",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "TAD contact maps for a single illustrative region, K562 chr14:70–75 Mb. Top row, standalone generators; bottom row, the corresponding HiCP2GAN variants (DiCARN, HiCARN1, HiCNN, and HiCPlus). TopDom-detected domain boundaries are marked in the figure and the quantitative concordance with the high-resolution reference across chr4 and chr14 in GM12878 and K562 is reported in Table 6.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f4.webp?md5=74c8126d7f06b8866b7c1defc7de2e45",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "assets/pmc13725921-e01102bf942fc855.webp",
+            "sha256": "e01102bf942fc855794d912538eb48ff094470d83ee9e5b21df43d3129fa2203",
+            "width": 1600,
+            "height": 327,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e01102bf942fc855794d912538eb48ff094470d83ee9e5b21df43d3129fa2203",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Distribution of 3DUnicorn SCC against the HR-derived reference across the evaluated 400 kb windows, for GM12878 (top) and K562 (bottom). Each generator is shown in its standalone and HiCP2GAN-integrated configuration. Points denote individual windows; boxes show the median and interquartile range.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f5.webp?md5=3f773ab3dafccb9f249d092658b164bc",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Representative 3D reconstructions of GM12878 chr4:18.5–22.5 Mb, comparing 3D structures from standalone generators predictions (top) with their HiCP2GAN counterparts (bottom), alongside the high-resolution 3D reference structure; SCC denotes Spearman correlation with the reference.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/bbag610f6.webp?md5=f40b8eac3eeb728313378f97eb030fbe",
+            "articleURL": "https://doi.org/10.1093/bib/bbag610",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samuel Olowofila; Oluwatosin Oluwadare. HiCP2GAN: a plug and play foundation model-based GAN for Hi-C enhancement.. DOI: 10.1093/bib/bbag610. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "Supplementary_HiCP2GAN____Final_Clean_bbag610",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/supplementary_hicp2gan____final_clean_bbag610.pdf?md5=713417ae1a6f7fed31dda86a35b6d9ee",
+            "license": "CC BY",
+            "sha256": "81503ed59e23e5eb601831c3aaa44ecf14935692711c0b81ddcaa256b8c1873a",
+            "status": "downloaded_private",
+            "bytes": 941708,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 7,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/OluwadareLab/HiCP2GAN"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-04T08:05:12.968352+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/OluwadareLab/HiCP2GAN",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725921.1/PMC13725921.1.xml?md5=c4ddee34e9fc197da6b7c4f873bd9489"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Samuel Olowofila; Oluwatosin Oluwadare"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/OluwadareLab/HiCP2GAN",
+        "commit": "2228035b5ef7ba7fd671f607138fcfed03983c6b",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py",
+            "sha256": "1e0b505d9007b8dbefc8394c66b7c806336b2f28ced90819dd4cec3c2b8e0e99",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "np.loadtxt",
+                "line": 14,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "skiprows": 1,
+                  "delimiter": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "epoch",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_ssim_global",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_ssim_tiles",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_psnr_global",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_psnr_tiles",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_g_loss",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_rec_loss",
+                "line": 70,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_adv_local",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_adv_global",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_fm",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_l1_global",
+                "line": 106,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_l1_tiles",
+                "line": 107,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py#L14"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/Arg_Parser.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/data/Arg_Parser.py",
+            "sha256": "dd8d05ecc32c7772c61264c4dcdc97dc68a4f0feeefebcc4ff0da0b3793849f6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/Downsample.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/data/Downsample.py",
+            "sha256": "4395a260beefb69fe1a30f371448c0001dc8a4be93b9c662fa1daad3872af178",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "hic",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "compact",
+                "line": 21,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/Generate.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/data/Generate.py",
+            "sha256": "1af5ec9073445a1fd72030241b5a7f2003cdea4e9011dcd79de962a73234750b",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "compact",
+                "line": 21,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hic",
+                "line": 24,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "data/Read_Data.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/data/Read_Data.py",
+            "sha256": "3618460b8521cc79da710dfb6199aacda75ad2b931c26249fa5e1da1a6390d3f",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "FoundationGANWorks/__init__.py",
+            "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/__init__.py",
+            "sha256": "6dc9936c169052ca37fe585145860cd6a0e7500e55b6798003953f4a556eb7e6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "np.loadtxt",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "epoch",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_ssim_global",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_ssim_tiles",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_psnr_global",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_psnr_tiles",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_g_loss",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_rec_loss",
+                "line": 70,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_adv_local",
+                "line": 71,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_adv_global",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_fm",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_l1_global",
+                "line": 106,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_l1_tiles",
+                "line": 107,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py",
+            "line": 14,
+            "url": "",
+            "readerOptions": {
+              "skiprows": 1,
+              "delimiter": "\t"
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.3",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-04T08:05:18Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-04T08:05:18Z",
+        "url": "https://openalex.org/W7161821440",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.27646686,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-04T08:05:18Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-04T08:05:18Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-05T08:05:18Z"
+        }
+      },
+      "selectionScore": {
+        "total": 48.3823343,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 1.3823343,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-04T08:05:27Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "HiCP2GAN:基于基础模型的即插即用GAN用于Hi-C增强",
+        "summary_zh": "该资料介绍HiCP2GAN,一种即插即用的对抗式Hi-C分辨率增强框架:生成器可为任意兼容的增强架构(如HiCARN1、DiCARN等),判别器则初始化自预训练的Vision Transformer型Hi-C基础模型HiCFoundation,其深层transformer层冻结、靠近输入的浅层与轻量GAN头微调,并以对抗损失与特征匹配损失指导生成器优化。图注显示在GM12878测试染色体上集成后loop F1提升,并在K562示例区域展示TAD接触图对比。作者代码未运行,静态检查不构成复现验证。",
+        "learning_points": [
+          "判别器采用预训练Hi-C基础模型(HiCFoundation)作为骨干,提供染色质结构先验,而非从零训练自定义判别器。",
+          "框架生成器无关,可接入HiCARN1、DiCARN等兼容增强模型,便于在统一对抗框架下比较不同方法。",
+          "微调策略为冻结深层transformer层、微调靠近输入的浅层及轻量GAN头,以保留预训练表示并做任务适配。",
+          "训练目标包含对抗损失与特征匹配损失,兼顾局部卷积模式与全局染色质交互结构。",
+          "图2通过不同微调层数的验证PSNR曲线选择判别器配置(100 epochs)。",
+          "图3显示在GM12878测试染色体(chr4、chr14、chr16、chr20)上,集成HiCP2GAN的四种生成器loop F1均提升,其中HiCP2GAN-DiCARN最高。",
+          "图4以K562 chr14:70–75 Mb单一区域展示独立生成器与HiCP2GAN变体的TAD接触图,并标注TopDom结构域边界。",
+          "摘要称判别器在跨物种、跨细胞类型的1.18亿个Hi-C patch上预训练。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不是复现验证,不能宣称已复现或与原文结果一致。",
+          "输入数据的具体尺度、预处理细节及图号与数据的对应关系在证据中未明示,属未知。",
+          "图2仅给出验证PSNR随epoch变化的描述,未提供具体数值或统计检验。",
+          "图3仅涉及GM12878四个测试染色体的loop F1,其他细胞系与指标未在证据中展开。",
+          "图4仅为K562单一示例区域的定性展示,定量一致性指向Table 6但该表内容未提供。",
+          "摘要中“多数设置下优于传统GAN方法”的结论未在所提供的图注证据中给出完整数值支撑。",
+          "基础模型预训练数据规模(1.18亿patch)仅来自摘要表述,未在证据中独立核实。",
+          "未观察到许可、期刊指标等信息,均属未知。",
+          "脚本证据仅记录文件路径与哈希及一处np.loadtxt读取语句,未体现完整绘图流程。",
+          "未提供运行环境、超参数与随机种子等信息,可复现性细节未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-04T08:05:33Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "887fb637557622090023825d1a5468f97af4e2161f93a4c18628f76a4cf12e12",
+        "summary_fingerprint": "ab90de4849d21e94fb84ad3f9c6e126c6cbb82236e46fed871f33d285ce86cff",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -184487,6 +186212,111 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-e98920f7d4a43ab3": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-e7677b4fccc4f6a9": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ee5c4366a5505a13": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-3f35283f8350d025": {
+      "tree": "dynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py；读取行 14；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/OluwadareLab/HiCP2GAN/blob/2228035b5ef7ba7fd671f607138fcfed03983c6b/FoundationGANWorks/HiCFoundation/pnp_gan/plot_results.py",
+          "observedFieldReferences": [
+            {
+              "name": "epoch",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_ssim_global",
+              "line": 43,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_ssim_tiles",
+              "line": 44,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_psnr_global",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_psnr_tiles",
+              "line": 57,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_g_loss",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_rec_loss",
+              "line": 70,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_adv_local",
+              "line": 71,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_adv_global",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_fm",
+              "line": 73,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_l1_global",
+              "line": 106,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_l1_tiles",
+              "line": 107,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -186105,7 +187935,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-03T08:39:15Z",
+  "generatedAt": "2026-11-04T08:05:33Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -186339,18 +188169,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-04T08:03:17Z",
-    "updatedAt": "2026-11-04T08:03:22Z",
+    "updatedAt": "2026-11-04T08:05:39Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 67,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

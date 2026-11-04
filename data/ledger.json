@@ -156,9 +156,47 @@
         "10.3389/fimmu.2026.1906638",
         "10.3389/fmed.2026.1800947"
       ]
+    },
+    "2026-11-04": {
+      "newDOIs": [
+        "10.1002/advs.76186",
+        "10.1093/bib/bbag610",
+        "10.1111/acel.70796",
+        "10.1186/s13020-026-01506-w"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag610": {
+      "checkedAt": "2026-11-04T08:05:18Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1186/s13020-026-01506-w": {
+      "checkedAt": "2026-11-04T08:05:11Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-04T08:05:06Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1111/acel.70796": {
+      "checkedAt": "2026-11-04T08:05:04Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/advs.76186": {
+      "checkedAt": "2026-11-04T08:04:59Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1111/acel.70674": {
       "checkedAt": "2026-11-03T08:39:14Z",
       "status": "source_confirmed",
@@ -330,61 +368,6 @@
         "updatedAt": "2026-11-03T08:38:43Z"
       }
     },
-    "10.1002/advs.76186": {
-      "checkedAt": "2026-11-03T08:38:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.76186",
-        "metadataHash": "f342595794f312ad4393dca336185e83d1e8dfa5a7af15a8c5ede4b3f8dfed52",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.1/PMC13336869.1.xml?md5=1c93625723d56abfdb2842cfbdfe41b4",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13336869-46a3bbac465e7676.jpg",
-              "assetSHA256": "46a3bbac465e7676a9b07edb12e3619ab5f458e23b28bc0743e6e251009c505c",
-              "license": "CC BY",
-              "id": "advs76186-fig-0002",
-              "sha256": "46a3bbac465e7676a9b07edb12e3619ab5f458e23b28bc0743e6e251009c505c",
-              "height": 961,
-              "label": "FIGURE 2",
-              "width": 575,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.1/ADVS-9999-e76186-g003.jpg?md5=25b8077d443b26e092c55882730a8c3b",
-              "captionHash": "5732b0df73b6b04c99862697b17a42491c235e29b8f0ea4c6c84a21da86a57e2"
-            },
-            {
-              "asset": "assets/pmc13336869-2643be3fc00a10b5.jpg",
-              "assetSHA256": "2643be3fc00a10b5bc03d09c1569ad62d154a98f35f949d1cafa6623036389a5",
-              "license": "CC BY",
-              "id": "advs76186-fig-0003",
-              "sha256": "2643be3fc00a10b5bc03d09c1569ad62d154a98f35f949d1cafa6623036389a5",
-              "height": 960,
-              "label": "FIGURE 3",
-              "width": 687,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13336869.1/ADVS-9999-e76186-g004.jpg?md5=040cdbec43fbeaa7e2751961066d2d72",
-              "captionHash": "a34a016e43c43e91d4f22ff52829e318976655c801b715490b11720bec8d395f"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-e7677b4fccc4f6a9",
-          "doi": "10.1002/advs.76186",
-          "paper": "Condition-Associated Pattern Extraction and Recovery From Multi-Condition Single-Cell RNA-seq Data With CAPER.",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-06-22",
-          "year": "2026",
-          "pmcid": "PMC13336869",
-          "pmid": "42328733",
-          "paperURL": "https://doi.org/10.1002/advs.76186"
-        },
-        "updatedAt": "2026-10-16T06:43:54Z"
-      }
-    },
     "10.1111/acel.70747": {
       "checkedAt": "2026-11-03T08:37:51Z",
       "status": "source_confirmed",
@@ -542,12 +525,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-02T08:22:54Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1002/advs.202600023": {
       "checkedAt": "2026-11-02T08:22:52Z",
@@ -13056,21 +13033,16 @@
     "status": "active",
     "maxSeconds": 2700,
     "maxBatches": 36,
-    "dailyNewCount": 0,
-    "updatedAt": "2026-11-04T08:03:22Z",
+    "dailyNewCount": 4,
+    "updatedAt": "2026-11-04T08:05:39Z",
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
     "batchCount": 1,
     "date": "2026-11-04",
-    "aiAttempts": 0,
-    "elapsedSeconds": 5,
+    "aiAttempts": 2,
+    "elapsedSeconds": 142,
     "startedAt": "2026-11-04T08:03:17Z",
-    "requests": 0,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-04T08:03:22Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 67,
+    "uncertainRequests": 0
   }
 }
