@@ -165,17 +165,48 @@
         "10.1111/acel.70796",
         "10.1186/s13020-026-01506-w"
       ]
+    },
+    "2026-11-05": {
+      "newDOIs": [
+        "10.1016/j.cpblue.2026.100072",
+        "10.1371/journal.pgen.1012345",
+        "10.3389/fnagi.2026.1947643"
+      ]
     }
   },
   "candidates": {
-    "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-04T08:07:16Z",
+    "10.1371/journal.pgen.1012345": {
+      "checkedAt": "2026-11-05T08:36:19Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-05T08:35:51Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-04T08:07:15Z",
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-05T08:35:46Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3389/fnagi.2026.1947643": {
+      "checkedAt": "2026-11-05T08:35:40Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.cpblue.2026.100072": {
+      "checkedAt": "2026-11-05T08:35:30Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-04T08:07:16Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -209,12 +240,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-04T08:05:06Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1111/acel.70796": {
       "checkedAt": "2026-11-04T08:05:04Z",
@@ -10897,61 +10922,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.cpblue.2026.100072": {
-      "checkedAt": "2026-10-16T06:35:42Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.cpblue.2026.100072",
-        "metadataHash": "e18d6bcdc9ced0b0368857f8e950c62847886d0ca2a712b08309fe5bcb1bbd46",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/PMC13385471.1.xml?md5=00f2e750a92655e7c03797be8e06a758",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13385471-b55b453c7c68dc24.jpg",
-              "assetSHA256": "b55b453c7c68dc245384599f3bd5d04dd8d2dd96e69105d33452ad96942b3832",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "b55b453c7c68dc245384599f3bd5d04dd8d2dd96e69105d33452ad96942b3832",
-              "height": 746,
-              "label": "Figure 1",
-              "width": 747,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr1.jpg?md5=5b99c01d6df557b1a0ad0c1a8364cce0",
-              "captionHash": "73583e1d671dffa1417aa190ee909d877f15ba6856642a247639890bfe854143"
-            },
-            {
-              "asset": "assets/pmc13385471-dd33a817f5b72c45.jpg",
-              "assetSHA256": "dd33a817f5b72c45df37a17e396ac36475768eab0989c67162306f8ece8cfd4b",
-              "license": "CC BY",
-              "id": "fig3",
-              "sha256": "dd33a817f5b72c45df37a17e396ac36475768eab0989c67162306f8ece8cfd4b",
-              "height": 712,
-              "label": "Figure 3",
-              "width": 747,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr3.jpg?md5=c3937edcd99c06a3f6522df16e785a0a",
-              "captionHash": "710b3ca5ef8a98de40702c8da304f12f4caf7e09d548c205ff040b0b371ed552"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-eb351ef7de13da08",
-          "doi": "10.1016/j.cpblue.2026.100072",
-          "paper": "NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.",
-          "journal": "Cell press blue",
-          "date": "2026-07-20",
-          "year": "2026",
-          "pmcid": "PMC13385471",
-          "pmid": "42483274",
-          "paperURL": "https://doi.org/10.1016/j.cpblue.2026.100072"
-        },
-        "updatedAt": "2026-10-16T06:35:31Z"
-      }
-    },
     "10.1002/advs.77591": {
       "checkedAt": "2026-10-16T06:35:42Z",
       "status": "pending",
@@ -12985,27 +12955,22 @@
     }
   },
   "dailyCollectionSession": {
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "uncertainAiAttempts": 0,
-    "requests": 0,
+    "requests": 57,
     "maxSeconds": 2700,
     "maxAiAttempts": 165,
     "maxBatches": 36,
     "maxRequests": 1800,
     "status": "active",
-    "elapsedSeconds": 5,
+    "elapsedSeconds": 237,
     "version": 1,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-05T08:32:42Z",
+    "updatedAt": "2026-11-05T08:36:34Z",
     "date": "2026-11-05",
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "endReason": "",
     "batchCount": 1,
-    "startedAt": "2026-11-05T08:32:37Z",
-    "inFlight": {
-      "startedAt": "2026-11-05T08:32:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "startedAt": "2026-11-05T08:32:37Z"
   }
 }

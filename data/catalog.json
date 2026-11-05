@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-04",
+  "checkedAt": "2026-11-05",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -133408,6 +133408,1725 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-4b0f9a3d5e0f37ec",
+      "paper": "Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.",
+      "doi": "10.3389/fnagi.2026.1947643",
+      "journal": "Frontiers in aging neuroscience",
+      "date": "2026-10-19",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+      "pmcid": "PMC13724548",
+      "pmid": "42973616",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1663-4365",
+      "eissn": "1663-4365",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-05",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "c485fc8e311410b38a1b19f1878905ddf2c3b64919510240f583cb157aee4c40"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/PMC13724548.1.xml?md5=b4cd95f041c8c4f63824fd35669dd3a7",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "SA-β-gal staining in hippocampal tissue and primary glial cultures. (A) Representative tissue images from female and male wild-type rats in Control, Model, and Nicotine groups. (B) Hippocampal SA-β-gal-positive area, normalized to the same-sex Control mean for display; n = 12 rats per treatment, comprising six females and six males. A sex × treatment model was followed by sex-averaged Model–Control and Nicotine–Model contrasts with Šídák adjustment across two comparisons. (C) Representative culture images. The 200-mM D-galactose Model field is shared between the D-galactose and nicotine series. (D) Culture SA-β-gal-positive area; each point represents one well derived from one independent donor mouse, with four donor-derived wells per condition. Separate one-way ANOVAs were followed by Dunnett comparisons against 0 mM D-galactose or the D-galactose Model condition. Bars show mean ± SD. In the tissue plot, circles denote females and squares denote males. Arrows identify selected SA-β-gal-positive structures. Scale bars: 50 μm for tissue and 150 μm for culture. *Padj < 0.05; **Padj < 0.01; ***Padj < 0.001; ****Padj < 0.0001; ns, Padj ≥ 0.05. Exact results are in Supplementary Tables P5 and S13.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g001.webp?md5=b31340d3a9776c3012a9f3c6590a1800",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "assets/pmc13724548-21e553c05adcf0ec.webp",
+            "sha256": "21e553c05adcf0ecd2fbe43b7d7967ddb1b8cb24b4678bb0bd4f35728b6a1b70",
+            "width": 1458,
+            "height": 1772,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "21e553c05adcf0ecd2fbe43b7d7967ddb1b8cb24b4678bb0bd4f35728b6a1b70",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F2",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Experimental design and water-maze outcomes. (A) Treatment and testing schedule; training began approximately 24 h after the final administration. (B) Latency to first target entry. (C) Mean distance to target. (D) Platform-site crossings. Display values were divided by the same-sex WT Control mean; analyses used unscaled animal-level values. Each treatment included n = 16 WT rats and n = 12 α7-KO rats. Bars show mean ± SD; circles denote females and squares denote males. A sex × genotype × treatment model was followed by five sex-averaged contrasts per endpoint with Šídák adjustment. Brackets indicate within-genotype Model–Control or Nicotine–Model comparisons. *Padj < 0.05; **Padj < 0.01; ***Padj < 0.001; ****Padj < 0.0001; ns, Padj ≥ 0.05. Direct WT–KO contrasts and Welch results are in Supplementary Table P1; plotting summaries are in Supplementary Table P7.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g002.webp?md5=32a6d9f27c67330cf8103ea74d9c5409",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "assets/pmc13724548-d5effed147531e70.webp",
+            "sha256": "d5effed147531e701f83dd055c0b5177c2ed7268b0b00a97a51b0dfc3061ab3c",
+            "width": 1584,
+            "height": 1772,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d5effed147531e701f83dd055c0b5177c2ed7268b0b00a97a51b0dfc3061ab3c",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Hippocampal cytokine immunoreactivity. (A) Representative IL-1β, IL-6, and TNF-α staining in female WT rats; corresponding fields are included in Supplementary Figure 7. Scale bars, 50 μm. (B–D) IL-1β, IL-6, and TNF-α integrated optical density, normalized to the same-sex WT Control mean for display; n = 10 rats per genotype and treatment, comprising five females and five males. Bars show mean ± SD; circles denote females and squares denote males. Unscaled animal-level measurements were analyzed using sex × genotype × treatment models with five Šídák-adjusted contrasts per endpoint. Brackets indicate within-genotype Model–Control or Nicotine–Model comparisons. Hippocampal IL-6 showed sex × genotype × treatment heterogeneity (Supplementary Table P2). *Padj < 0.05; **Padj < 0.01; ***Padj < 0.001; ****Padj < 0.0001; ns, Padj ≥ 0.05. Exact results and plotting summaries are in Supplementary Tables P1 and P7.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g003.webp?md5=d5a0ec6ad02f0458c0636fe0afa28dcb",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Hippocampal glial immunoreactivity and serum GSH. (A) Representative GFAP and IBA1 staining in female WT rats. Scale bars, 50 μm. (B, C) GFAP and IBA1 integrated optical density. (D) Serum GSH concentration. Display values were normalized to the same-sex WT Control mean. GFAP and IBA1 analyses included n = 10 rats per genotype and treatment, with five per sex; GSH included n = 16, with eight per sex. Bars show mean ± SD; circles denote females and squares denote males. Unscaled measurements were analyzed using sex × genotype × treatment models with five Šídák-adjusted contrasts per endpoint. Brackets indicate within-genotype comparisons. *Padj < 0.05; **Padj < 0.01; ***Padj < 0.001; ****Padj < 0.0001; ns, Padj ≥ 0.05. Direct WT–KO contrasts and Welch results are in Supplementary Table P1; plotting summaries are in Supplementary Table P7.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g004.webp?md5=3a002e0d99e81078ac09587a801142bd",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Hippocampal qRT-PCR results. Relative mRNA expression of (A) App, (B) Bace1, and (C) Psen1 is shown by genotype, with female and male observations displayed together; n = 8 rats per genotype and treatment, comprising four per sex. Bars show mean ± SD; circles denote females and squares denote males. Values were calibrated to the common Control within each gene, sex, and genotype. Sex-adjusted models on log2 (relative expression) were followed by four sex-averaged Model–Control and Nicotine–Model contrasts per gene, with Šídák adjustment. *Padj < 0.05; **Padj < 0.01; ***Padj < 0.001; ****Padj < 0.0001; ns, Padj ≥ 0.05. These analyses concern within-genotype treatment responses; direct genotype-response contrasts were not performed. Ache is shown in Supplementary Figure 5.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g005.webp?md5=5840a0dfc3d3ddc3a346090d88e283f7",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Hippocampal transcriptomic responses in wild-type rats. RNA-seq included six independent rats per sex and treatment, yielding 36 samples. Nicotine denotes D-galactose plus nicotine. (a) Within-sex DEG counts at q < 0.05 and — log2 fold change — ≥ 1. Increased and decreased expression refer to Model relative to Control or Nicotine relative to Model. (b) Fold-change relationship for 867 of the 874 female Model-versus-Control DEGs with finite values in both comparisons. Pearson r = −0.596; 742/867 genes showed opposite-direction changes. Seven non-finite pairs were excluded from this panel only. The comparisons share the Model group, and the association is descriptive. (c) Selected neural GO biological-process and KEGG terms for female Model versus Control, using hypergeometric enrichment results based on the supplier’s default DEG list at q ≤ 0.001 and — log2 fold change — ≥1. Bars show −log10 enrichment q values. (d) Selected-gene log2 fold changes. Stars denote DEGseq q values: *q < 0.05; **q < 0.01; ***q < 0.001; no star, q ≥ 0.05. Stars indicate the q-value criterion only; a value rounded to 0.0 may retain a star. The female DEG-union heatmap is in Supplementary Figure 18. Gene lists and numerical summaries are provided in Supplementary Table 14 and Supplementary Data 1 and 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/fnagi-18-1947643-g006.webp?md5=8f53a65a7690a1cdad599f454663f7b3",
+            "articleURL": "https://doi.org/10.3389/fnagi.2026.1947643",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al.. Nicotine attenuates D-galactose- induced hippocampal aging-like alterations with α7-nAChR- associated mechanisms.. DOI: 10.3389/fnagi.2026.1947643. Copyright holder: Li, Li, Li, Wang, Ma, Li, Cheng, Guang, Hong, Chen, Hou and Hu. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "DS1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13724548.1/Data_Sheet_1.pdf?md5=9d55b5a18fddc07c7c44ebc22c3df720",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-05T08:35:36.039392+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xin Li; Yue Li; Yingyan Li; Wenming Wang; Shuhao Ma; Jun Li; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.2",
+        "jcr": "Q1",
+        "cas": "医学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-05T08:35:40Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-05T08:35:40Z",
+        "url": "https://openalex.org/W7222982088",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.73885142,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-05T08:35:40Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-05T08:35:40Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-06T08:35:40Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.6942571,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.6942571,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-05T08:36:19Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-eb351ef7de13da08",
+      "doi": "10.1016/j.cpblue.2026.100072",
+      "paper": "NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.",
+      "journal": "Cell press blue",
+      "date": "2026-07-20",
+      "year": "2026",
+      "pmcid": "PMC13385471",
+      "pmid": "42483274",
+      "paperURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "3051-3839",
+      "eissn": "3051-3839",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "5bb9e47045a3f1cd81faed9b572ba0a716ea50f9f5870bb5492de2ddc6478538"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/PMC13385471.1.xml?md5=00f2e750a92655e7c03797be8e06a758",
+        "figures": [
+          {
+            "id": "undfig1",
+            "label": "Unlabelled figure (JATS id: undfig1)",
+            "labelStatus": "unresolved",
+            "reference": null,
+            "caption": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/ga1.jpg?md5=2f221c90d36d28bba57c5d306a26f3c5",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "A spatio-cellular atlas of the mouse nodose ganglion(A) A uniform manifold approximation and projection (UMAP) plot of the single-cell/single-nucleus sequencing (sc/snRNA-seq) dataset, colored by cluster and with cluster names written below. We integrated 4 publicly available and 1 in-house sc/snRNA-seq datasets of the mouse nodose ganglia to create a database of 106,436 cells. Of these, 26,554 were neurons, and 50,485 were satellite glial cells and myelinating glial cells. There were also 10,709 endothelial cells, 8,874 fibroblasts, and 4,963 hematopoietic cells. Clusters were annotated based on cell type and the top 3 marker genes with the highest specificity for that cluster.(B) Spatial transcriptomics of the nodose ganglion. To identify the cell type present underneath each spot, we integrated the sc/snRNA-seq atlas together with the spatial transcriptomics data using RCTD (see STAR Methods) to predict the cell type and number of cells present at each bead. Slide-seq data are presented for 1 tile of 3 left nodose ganglia sections; spots represent beads where RNA transcripts were detected. Spots are colored based on the predicted cell type present at each bead. Beads were annotated with a cell type only if the RCTD pipeline identified them as singlets. Colors match the sc/snRNA-seq cluster colors.(C) Zoomed-in image of the square section from (B).(D) Hematoxylin staining of an adjacent section of the same region in (B). In (C and D), regions of the tissue containing nodose and jugular neurons have been highlighted, matching the output from RCTD. Beads were assigned nodose (purple) and jugular (blue) neuronal subtypes by RCTD.(E) Neighborhood analysis on the RCTD output, including the cell types assigned to singlet and multiplet beads. We identified 4 distinct neighborhood types. Neighborhoods were labeled based on the cell types that co-occur in the regions. Neighborhoods highlighted in pink predominantly contained NGN cell types, NGN/glia neighborhoods are highlighted in purple, JGN neighborhoods are indicated in orange, and a non-neuronal neighborhood is highlighted in blue (see the legend of Figure S5 for more details on expression patterns in each neighborhood).(F and G) Phox2b is a marker highly expressed in nodose neurons with only low expression in jugular neurons. The cells expressing Phox2b were colored based on the same scale bar. (F) Log-normalized expression of Phox2b in 1 tile of the spatial transcriptomics dataset. (G) Log-normalized expression of Phox2b in the single-cell atlas. Phox2b expression is enriched in nodose ganglion neuronal clusters.(H) Diagram highlighting the orientation of the nodose ganglion sections in the mouse.(I) Heatmap showing scaled expression of marker genes in nodose ganglion neuronal clusters.(J) UMAP plots of nodose and jugular neurons, colored by neurotransmitter (left) and neuropeptide (right) assignment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr1.jpg?md5=5b99c01d6df557b1a0ad0c1a8364cce0",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "assets/pmc13385471-b55b453c7c68dc24.jpg",
+            "sha256": "b55b453c7c68dc245384599f3bd5d04dd8d2dd96e69105d33452ad96942b3832",
+            "width": 747,
+            "height": 746,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b55b453c7c68dc245384599f3bd5d04dd8d2dd96e69105d33452ad96942b3832",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "The effects of fasting on nodose ganglion neuronal gene expression(A) A UMAP plot with cells from ad libitum-fed (green) and overnight-fasted (pink) mice highlighted.(B) The number of nuclei originating from ad libitum-fed and overnight-fasted mice.(C) The number of significantly upregulated (red) and downregulated (blue) genes in each nodose neuronal cluster in response to overnight fasting (p < 0.05).(D–G) The top upregulated and downregulated genes in NGN2, NGN5, NGN8, and NGN10 in fasted animals, selected based on specificity scores and their expression levels (see STAR Methods).(H) The top 10 pathways that were enriched in the top 4 transcriptionally sensitive nodose neuronal clusters (see STAR Methods).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr2.jpg?md5=0017430392fa6f9a19ba2952617c660e",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Differences in gene expression between the left and right nodose ganglia(A) A UMAP plot highlighting cells that originated from left nodose ganglia (green) and right nodose ganglia (lilac).(B) The number of cells from left or right nodose ganglia within the dataset.(C and D) RCTD mapping of snRNA-seq clusters on 3 left nodose ganglion sections on 1 tile, with (D) showing a zoomed-in image of the highlighted region in (C). Regions containing nodose or jugular neurons are highlighted.(E and F) RCTD mapping of snRNA-seq clusters on 3 right nodose ganglion sections on 1 tile, with (F) showing a zoomed-in image of the highlighted region in (E). Regions containing nodose or jugular neurons are highlighted.(G) Neighborhoods identified in the left nodose ganglia, with NGN neighborhoods labeled in pink, NGN/glia neighborhoods highlighted in purple, and JGN neighborhoods highlighted in orange.(H) Hematoxylin-stained near-adjacent tissue section of the nodose ganglia highlighted in the box in (C) and (D). NGN and JGN regions are highlighted by dotted lines.(I) Neighborhoods identified in the right nodose ganglia, with NGN neighborhoods labeled in pink, NGN/glia neighborhoods highlighted in purple, and JGN neighborhoods highlighted in orange.(J) Hematoxylin-stained near-adjacent tissue section of the nodose ganglia highlighted in the box in (E) and (F). NGN and JGN regions are highlighted by dotted lines.(K–O) DEG analysis comparing left vs. right in nodose neuronal clusters. Some clusters displayed particularly high numbers of DEGs (p < 0.05). NGN3, NGN9, NGN16, and NGN18 had 1,418, 1,929, 1,714, and 1,278 significantly DEGs, respectively, with (L–O) showing the top genes enriched in left/right in each of these 4 clusters.(P) Pathway analysis on the DEGs (p < 0.05) in the top 4 transcriptionally sensitive nodose neuronal clusters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr3.jpg?md5=c3937edcd99c06a3f6522df16e785a0a",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "assets/pmc13385471-dd33a817f5b72c45.jpg",
+            "sha256": "dd33a817f5b72c45df37a17e396ac36475768eab0989c67162306f8ece8cfd4b",
+            "width": 747,
+            "height": 712,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "dd33a817f5b72c45df37a17e396ac36475768eab0989c67162306f8ece8cfd4b",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Overview of jugular neurons(A) UMAP plot highlighting expression of Prdm12 in NodoMap (log2 scale).(B) Log-normalized expression of Prdm12 in spatial transcriptomics dataset. Cells were colored by the same expression level scale bar as (A).(C) Heatmap showing scaled expression of five marker genes in jugular ganglion neuronal clusters.(D and E) Graph showing the number of statistically significantly DEGs (p < 0.05) in each jugular neuronal cluster (D) when comparing overnight fasting to ad libitum-fed (red: upregulated in fasting, blue: downregulated in fasting) (E) and left vs. right (red: enriched in right nodose ganglia, blue: enriched in left nodose ganglia).(F–I) Violin plots showing log-normalized expression of top DEGs in (F and G) fed and fasted animals and in (H and I) left vs. right nodose ganglia.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr4.jpg?md5=51f1966dbf5c51686a7352df8a14353a",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Overview of non-neuronal cells(A, C, E, G, and I) UMAP plot highlighting expression of non-neuronal cell markers in single-cell atlas (log2 scale) and (B, D, F, H, and J) a tile of the spatial transcriptomics dataset of 3 left nodose ganglia. For each marker gene, the cells were colored by the same expression scale bar (A and B: Emcn, endothelial cells [ECs]; C and D: Ebf2, fibroblasts [FBs]; E and F: Ptprc, hematopoietic cells [HCs]; G and H: Mpz, myelinated glial cells [MGCs); and I and J: Fabp7, satellite glial cells [SGCs]; if both MGC and SGC markers were presented in the clusters, they were labeled as glial cells [GCs]).(K) Heatmap with scaled expression of marker genes in non-neuronal clusters.(L) Number of significantly DEGs in fasting across all non-neuronal clusters (p < 0.05).(M and N) Violin plots showing top DEGs in the fasted state.(O) Number of significantly DEGs comparing left and right nodose ganglia across the non-neuronal clusters (p < 0.05).(P and Q) Violin plots with marker genes enriched in left or right nodose ganglia from the FB3 (P) or FB4 (Q) cluster.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/gr5.jpg?md5=17a37a3268cac6f8aea330ab4fd1f9cb",
+            "articleURL": "https://doi.org/10.1016/j.cpblue.2026.100072",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al.. NodoMap: A single-cell and spatial transcriptomic atlas of the mouse nodose ganglion.. DOI: 10.1016/j.cpblue.2026.100072. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mmc1",
+            "label": "Document S1. Figures S1–S15",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc1.pdf?md5=72f2d41ece1fa2e690d13a903bd767b2",
+            "license": "CC BY",
+            "sha256": "af8b87a25ed6e60d07dfd32d4b748a4e386ad8f18125c7d72aa95a5cbae41cfa",
+            "status": "downloaded_private",
+            "bytes": 1447719,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 16,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "mmc2",
+            "label": "Table S1. Dictionary",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc2.xlsx?md5=271542b45a6312b73b946177036cdbd6",
+            "license": "CC BY",
+            "sha256": "f07e7e317b206a317a5c3d9ba0cbd6eedffb80c805c6c5537003efd0aa1747ed",
+            "status": "downloaded_private",
+            "bytes": 16599,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc3",
+            "label": "Table S2. Cell type",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc3.xlsx?md5=7afa43ebe25dfdd3359eb6afa1081f7b",
+            "license": "CC BY",
+            "sha256": "5d5d7215792a702f9844786854329d0f6c3fe2004ea8ed75906bff6dd8735414",
+            "status": "downloaded_private",
+            "bytes": 11850,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc4",
+            "label": "Table S3. Cluster marker",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc4.xlsx?md5=6bddaa4b0a89b8382e989081ebf0686c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc5",
+            "label": "Table S4. Cluster cell",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc5.xlsx?md5=c54226e82059f852f4d299415e14372f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc6",
+            "label": "Table S5. Fed-fasted marker",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc6.xlsx?md5=1d4868f9cd3985ea331918cd57c730e3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc7",
+            "label": "Table S6. Left-right marker",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc7.xlsx?md5=788346d8ccc79a36a3ea6388a1627d6e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc8",
+            "label": "Table S7. Fed-fasted Ingenuity Pathway Analysis nodose ganglia neurons",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc8.xlsx?md5=5ca2930d86931adfb37304a10f7d8eab",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc9",
+            "label": "Table S8. Left-right Ingenuity Pathway Analysis nodose ganglia neurons",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc9.xlsx?md5=2de0ad392e81fe0655d046e5b7b7760c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc10",
+            "label": "Table S9. Single-cell and single-nucleus RNA-seq metadata",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc10.xlsx?md5=a1d4520b3690863b2df543e7d679434c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc11",
+            "label": "Table S10. Spatial transcriptomics metadata",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc11.xlsx?md5=7d29d2374fedd243dfd789b74fb57e3d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc12",
+            "label": "Table S11. Integrated dataset",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc12.xlsx?md5=02f1001c798268e81c1e5ecb988f7cc1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc13",
+            "label": "Table S12. Cell types",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc13.xlsx?md5=b979ab37c906c3a4a1dd1e63c70b72b3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc14",
+            "label": "Table S13. Neurotransmitter and neuropeptide data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc14.xlsx?md5=ed197cc373a66a1643e41a8293d97a68",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc15",
+            "label": "Table S14. CellChat analyses",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc15.xlsx?md5=da1cc5904c1b98b97f9e41a4b56c2942",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc16",
+            "label": "Table S15. Neuronal clusters",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc16.xlsx?md5=d7639685dc2d7f9bcf95dedf32e8a96c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc17",
+            "label": "Table S16. Fed-fasted Ingenuity Pathway Analysis non-neuronal cells",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc17.xlsx?md5=d82679533d746c0b5e3ffb233032ee75",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc18",
+            "label": "Table S17. Left-right Ingenuity Pathway Analysis non-neuronal cells",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc18.xlsx?md5=c728b5475f207a40a8048e2fdf621e79",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc19",
+            "label": "Table S18. Cell CMO counts",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc19.xlsx?md5=17b6fc66e2545000b2cc60b87b82a51d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc20",
+            "label": "Table S19. Cell barcodes for matching",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/mmc20.xlsx?md5=3794a49f5297d67e3239a0b9479367ae",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/sc2470/NodoMap"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-05T08:35:24.661567+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/sc2470/NodoMap",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "p0155",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13385471.1/PMC13385471.1.xml?md5=00f2e750a92655e7c03797be8e06a758"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+        "authorCredit": "Sijing Cheng; Georgina K.C. Dowsett; Kara Rainbow; Mariana Norton; Anna G. Roberts; Phyllis Phuah; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/sc2470/NodoMap",
+        "commit": "5585c67a93e31d934428717ca46cf8dd00c6e0f4",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "paper_figures/2_NP_NT_analysis.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/2_NP_NT_analysis.R",
+            "sha256": "2f9e76ac5a9832a870b2497ce4cc54f4a88e6d987cd5cb3c16b0f396bb35ea35",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "NTs",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Cluster",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NPs",
+                "line": 59,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper_figures/4_Nodomap_cellchat_analysis.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/4_Nodomap_cellchat_analysis.R",
+            "sha256": "8886f768998c7f82c300d3d5e5dc01252344b7d1ce90e9e379bc2af2a2b17d3f",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Gene.stable.ID",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene.name",
+                "line": 106,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "group",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathways",
+                "line": 186,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway_name",
+                "line": 193,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 205,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target",
+                "line": 212,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper_figures/6_plot_figure_1J.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/6_plot_figure_1J.R",
+            "sha256": "b2571b562559cfc8950c29572a638d6980d1e9e6a2025b1c61399cd0450cfe16",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper_figures/7_neighbourhood_analysis.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/7_neighbourhood_analysis.R",
+            "sha256": "b6e79094eecb6e7102ed7134cc957f7e9bfd004dddf5596a60de260374a2225c",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "first_type",
+                "line": 19,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "second_type",
+                "line": 20,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nn.dist",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "knn_indices",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nn.index",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "knn_weights",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "spot_class",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "neighbor_weights",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "neighborhood_label",
+                "line": 126,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 181,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 182,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper_figures/Buchanan_annotation_update.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R",
+            "sha256": "832ea46fe165f1dd61895d9cc835e8b1ea06d0a3f92749e8d0b331e3055effb2",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "diet_nodomap_metadata_updated_2510.rds",
+                "reader": "readRDS",
+                "line": 8,
+                "status": "literal_path",
+                "format": "rds",
+                "readerOptions": {}
+              },
+              {
+                "path": "GSE185173_nodoseMerged.meta 2.csv",
+                "reader": "read.csv",
+                "line": 11,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "original_barcodes",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Dataset",
+                "line": 16,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_names",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Freq",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cluster_markers.x",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted.id",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDsource",
+                "line": 62,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDtarget",
+                "line": 64,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 8,
+                "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R#L8"
+              },
+              {
+                "type": "io_reference",
+                "line": 11,
+                "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R#L11"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper_figures/class_DEGs_sum.R",
+            "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/class_DEGs_sum.R",
+            "sha256": "828e35a71d6fc584bacaf6ad9cb50c3078c747b9b96898ca2c2b8d6bcb8d0308",
+            "language": "R",
+            "inputs": [],
+            "outputs": [
+              {
+                "path": "deg_anno_heatmap.pdf",
+                "writer": "pdf",
+                "line": 298
+              }
+            ],
+            "fields": [
+              {
+                "name": "cluster",
+                "line": 161,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Fast_Up",
+                "line": 175,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "upregulated",
+                "line": 175,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Fast_Down",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "downregulated",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "clustermarkers",
+                "line": 239,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Upregulated_in_Fasting",
+                "line": 245,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Clusters",
+                "line": 245,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Downregulated_in_Fasting",
+                "line": 246,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Right_Up",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Right_Down",
+                "line": 266,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Enriched_in_Right",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Enriched_in_Left",
+                "line": 279,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Sodium_channel",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Fibre_type",
+                "line": 294,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Sensor_type",
+                "line": 295,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Organ_projection",
+                "line": 296,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 298,
+                "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/class_DEGs_sum.R#L298"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "diet_nodomap_metadata_updated_2510.rds",
+            "path": "",
+            "reader": "readRDS",
+            "format": "rds",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "original_barcodes",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Dataset",
+                "line": 16,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_names",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Freq",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cluster_markers.x",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted.id",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDsource",
+                "line": 62,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDtarget",
+                "line": 64,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R",
+            "line": 8,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "GSE185173_nodoseMerged.meta 2.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "original_barcodes",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Dataset",
+                "line": 16,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_names",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "X",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Freq",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cluster_markers.x",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted.id",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDsource",
+                "line": 62,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "name",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "IDtarget",
+                "line": 64,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R",
+            "line": 11,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "error",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "metrics_rank_shape_invalid"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-05T08:35:30Z",
+        "url": "https://openalex.org/W7169804554",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.44230853,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "error",
+          "ai": "generated"
+        },
+        "errors": [
+          "metrics: error"
+        ],
+        "lastCheckedAt": "2026-11-05T08:35:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 1,
+          "lastAttemptAt": "2026-11-05T08:35:30Z",
+          "lastOutcome": "failure"
+        }
+      },
+      "selectionScore": {
+        "total": 77.21154265,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 2.2115426499999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-05T08:36:20Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "NodoMap:小鼠结状神经节单细胞与空间转录组图谱",
+        "summary_zh": "该文献报道构建小鼠结状神经节(nodose ganglion)的单细胞与空间转录组图谱 NodoMap:整合4个公开数据集与1个自产 sc/snRNA-seq 数据集,形成106,436个细胞的数据库,其中神经元26,554个、卫星胶质细胞与髓鞘化胶质细胞50,485个、内皮细胞10,709个、成纤维细胞8,874个、造血细胞4,963个;并结合空间转录组(Slide-seq,1 tile 上3张左侧结状神经节切片)用 RCTD 预测每个 bead 的细胞类型。研究识别21个神经元亚型及多个非神经元群体,报告左右神经节间亚型特异的基因表达差异、禁食后的转录响应,以及空间上相互交织但具有不同细胞邻域的神经元群体。图注还涉及禁食前后细胞数、各神经元簇上/下调基因数、NGN2/NGN5/NGN8/NGN10 的差异基因与富集通路,以及左右神经节 RCTD 映射与邻域分析。作者代码未运行,仅作静态观察,未验证复现。",
+        "learning_points": [
+          "图谱构建思路:整合4个公开与1个自产 sc/snRNA-seq 数据集,得到106,436个细胞的统一数据库,并按细胞类型与 top 3 特异性标记基因注释簇。",
+          "细胞组成可参考图1A:神经元26,554、卫星与髓鞘化胶质细胞50,485、内皮10,709、成纤维8,874、造血4,963。",
+          "空间映射方法:将 sc/snRNA-seq 图谱与空间转录组数据用 RCTD 整合,预测每个 bead 的细胞类型与细胞数(图1B、图3C–F)。",
+          "禁食响应分析框架:以 UMAP 高亮禁食与自由进食细胞、统计各神经元簇显著上/下调基因数(p<0.05),并展示 NGN2/NGN5/NGN8/NGN10 的 top 差异基因与 top 10 富集通路。",
+          "左右神经节比较:分别对左、右神经节切片做 RCTD 映射,并识别 NGN、NGN/胶质、JGN 等邻域,结合近邻 H&E 染色切片对照。",
+          "空间组织特征:神经元群体在空间上相互交织,但形成不同的细胞邻域,可作为空间分析图件设计的参考。",
+          "图件组织:从 UMAP 总览、细胞数统计、差异基因/通路,到空间映射与邻域放大图,形成“图谱—响应—空间”的递进叙事。",
+          "代码层面仅有固定提交下的脚本路径与 SHA256 静态记录(如 2_NP_NT_analysis.R、4_Nodomap_cellchat_analysis.R、6_plot_figure_1J.R、7_neighbourhood_analysis.R),未执行。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不构成复现验证,不能宣称结果已复现或与原图一致。",
+          "未观察到输入数据的具体列名、数据结构与文件尺度,均属未知。",
+          "图号与脚本的对应关系未明示,仅知脚本路径名称,不能确认某脚本生成某图。",
+          "未观察到许可信息、期刊指标(影响因子等)与代码运行环境,均属未知。",
+          "图1B 图注文本在“Beads”处截断,空间部分细节不完整。",
+          "图3 图注在 (I) 处截断,右侧邻域分析细节不完整。",
+          "存在一个无标签图(JATS id: undfig1)且图注为空,其内容与用途未知。",
+          "细胞类型比例、差异基因与通路结论均来自文献图注描述,未独立核验。",
+          "RCTD 预测的准确性、邻域定义参数等未在证据中给出,无法评估。",
+          "证据仅覆盖部分图(图1–3)与脚本清单,其余图件与分析方法未提供。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-05T08:36:27Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "49221e1c42fbca22d7904ab34b5a59e21a620f93087c22e49256fb52ce9e6126",
+        "summary_fingerprint": "2ed546c1765ee86a00fbb4181efb99cf9807b2266099e9304a280aa38b493022",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-984337ea51b05f3d",
+      "paper": "Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.",
+      "doi": "10.1371/journal.pgen.1012345",
+      "journal": "PLoS genetics",
+      "date": "2026-11-02",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pgen.1012345",
+      "pmcid": "PMC13726986",
+      "pmid": "42970540",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-7390",
+      "eissn": "1553-7404",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-05",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "3cd6d0ab7ce7190a3a8c5da06dabcc23caf755af16a74cb28d94776b6b9acc50"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/PMC13726986.1.xml?md5=8a0621d2337696cdb43c94558c36075f",
+        "figures": [
+          {
+            "id": "pgen.1012345.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the SWIMR framework for multi-reference based deconvolution in spatial transcriptomics.SWIMR integrates multiple single-cell RNA-seq reference datasets to deconvolve spatial transcriptomics data. The framework takes as input both spatial transcriptomics gene expression and location information, alongside diverse single-cell RNA-seq references, each containing multiple cell types. Within the model, SWIMR employs a conditional autoregressive (CAR) approach that leverages spatial information to promote similarity both in the contribution (weights) of different references and in estimated cell type proportions across neighboring tissue locations. This spatial regularization produces spatially resolved estimates of reference weights and cell type proportions across the tissue, capturing local variation in cellular composition and reference contributions. These outputs serve as inputs for downstream analyses such as cell-type-specific spatially variable gene (ct-SVG) detection and gene set enrichment analysis (GSEA), enabling functional characterization of localized transcriptional patterns.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g001.webp?md5=f65dd00c85f044ba2895ab3243c6802a",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012345.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Simulation results (A–D) based on mouse olfactory bulb data and application to developing human heart data (E–F).A. True cell type distribution used to set up the simulation scenarios across two scRNA-seq reference datasets. B. Estimated cell type proportions by SWIMR, and SCDC, a method capable of incorporating multiple references for bulk RNA-seq deconvolution. C. Cell type compositions estimated by single-reference deconvolution methods including CARD, RCTD, and cell2location, alongside the true cell type proportions. D. Root mean squared error (RMSE) of cell type proportion estimates for all methods and simulation scenarios. E. Reference weight distributions assigned to internal and external scRNA-seq references by SWIMR. F. RMSE comparison for all deconvolution methods. Here, for single-reference methods, results using internal reference are shown. Boxplots show the median (center line), interquartile range (box edges), and whiskers extending to 1.5 × the IQR; points denote outliers.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g002.webp?md5=c9fa65e1fe7e72341e158fcd1568e73f",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "assets/pmc13726986-54892b1ea1e4d6ba.webp",
+            "sha256": "54892b1ea1e4d6ba66d5a281a02fca461226bd6bc77941a431e0ee3d39fce8be",
+            "width": 1600,
+            "height": 2115,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "54892b1ea1e4d6ba66d5a281a02fca461226bd6bc77941a431e0ee3d39fce8be",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pgen.1012345.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Analysis of human lung cancer 10x Visium data.A. Distribution of weights assigned to scRNA-seq reference datasets generated using different technologies. B. Cell type compositions inferred by each deconvolution method, shown alongside the corresponding expression patterns of cell type-specific marker genes. C. Venn diagram showing the overlap of the top 50 marker genes distinguishing tumor cells from other cell types. D. Correlation analysis between tumor cell and other cell type compositions, highlighting that the distribution of cluster 1 closely matches that of tumor cells. E. Proportions of aneuploid (malignant) cells identified by copyKAT across different scRNA-seq references. F. left: Uniquely detected cell type-specific spatially variable genes (ct-SVGs) for tumor cells (top) and other cells (bottom). Right: Venn diagrams comparing ct-SVGs identified by different methods for tumor cells (top) and other cells (bottom). G. Gene set enrichment analysis (GSEA) results based on ct-SVGs uniquely identified by SWIMR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g003.webp?md5=14504b166e4d5dc736e869601c068717",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "assets/pmc13726986-180ef83d21010151.webp",
+            "sha256": "180ef83d2101015159a90a9a3b412f1fbf3fc91fc87302903093b71e2c370ded",
+            "width": 1600,
+            "height": 1907,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "180ef83d2101015159a90a9a3b412f1fbf3fc91fc87302903093b71e2c370ded",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pgen.1012345.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Analysis of developing mouse embryo 10x Visium data.A. Weight distributions assigned to scRNA-seq references derived from distinct anatomical regions of the mouse embryo. B. Expression patterns of four region-specific marker genes: Ttn for the cardiac region, Alb for the visceral region, Foxg1 and Six6 for neural region. C. Cell type compositions inferred by each deconvolution method, shown alongside the expression profiles of corresponding cell type-specific marker genes. D. Clustering outcome of the inferred reference weights, which closely aligns with the three anatomical regions: neural, visceral, and cardiac. E. Violin plots comparing inferred cell type proportions between the target region and other regions; Wilcoxon rank-sum tests were performed to assess differences in distributions. The top, middle, and bottom rows correspond to comparisons for the neural, visceral, and prospective cardiac regions, respectively. F. Upper: Venn diagrams comparing ct-SVGs identified by different methods for neuron cells (left), hepatocyte cells (middle) and endothelial cells (right). Lower: Uniquely detected cell type-specific spatially variable genes (ct-SVGs) for neuron cells (left), hepatocyte cells (middle) and endothelial cells (right). G. Gene set enrichment analysis (GSEA) results based on ct-SVGs uniquely identified by SWIMR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g004.webp?md5=bff6c73094eae8e6e45e0f98b178e59f",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012345.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Analysis of human breast cancer 10x Visium data.A. Pathology annotation of tissue sections as obtained from 10x Visium. B. Weight distributions assigned to scRNA-seq reference datasets derived from different research studies. C. Expression patterns of two minor cell type marker genes: MS4A1 for B cells and COL1A1 for cancer-associated fibroblast cells. D. Cell type compositions inferred by each deconvolution method, shown alongside the expression profiles of corresponding cell type-specific marker genes. E. Spearman correlation analysis of cell type proportions between malignant cells and epithelial cells inferred by different methods. F. Upper: Venn diagrams comparing ct-SVGs identified by different methods for malignant cells (left), epithelial cells (middle) and myeloid cells (right). Lower: Uniquely detected cell type-specific spatially variable genes (ct-SVGs) for malignant cells (left), epithelial cells (middle) and myeloid cells (right). G. Gene set enrichment analysis (GSEA) results based on ct-SVGs uniquely identified by SWIMR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g005.webp?md5=69a7b4d3db20e18fb9e804eb065f25bc",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012345.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Analysis of hepatocellular carcinoma 10x Visium data.A. Hematoxylin and eosin (H&E) stained tissue image with original cell type annotations as provided by the source publication. B. Weight distributions assigned to scRNA-seq references derived from different research studies. C. Spatial patterns of cell type composition for bi-potent cells, and the spatial distribution of expression patterns of the corresponding marker gene KRT19. D. Cell type compositions inferred by each method, alongside the expression profiles of corresponding cell type-specific marker genes. E. Spearman correlation analysis of average cell type-specific gene expression across two scRNA-seq references: Ma et al. and Lu et al. F. Upper: Venn diagrams comparing ct-SVGs identified by different methods for hepatocyte cells (left) and fibroblast cells (right). Lower: Uniquely detected cell type-specific spatially variable genes (ct-SVGs) for hepatocyte cells (left) and fibroblast cells (right). G. Gene set enrichment analysis (GSEA) results based on ct-SVGs uniquely identified by SWIMR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.g006.webp?md5=49ed1bf252009c7016a73fc9da695eda",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012345",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou. Enhancing cell type deconvolution in spatial transcriptomics through incorporating multiple reference panels.. DOI: 10.1371/journal.pgen.1012345. Copyright holder: Zhao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pgen.1012345.s001",
+            "label": "S1 Appendix",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.s001.docx?md5=8fbc3ac73c68a9c02b3d4870d3069593",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "pgen.1012345.s002",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.s002.pdf?md5=9601f410fc56e7aaffa00a9814e826dd",
+            "license": "CC BY",
+            "sha256": "622efd1809f6922ed320d3cef92322c3dbd2fabb7d33d1e0406186bea1d00785",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 128573,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 3,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pgen.1012345.s005",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.s005.docx?md5=756316866fb2a190e15102c3752355c5",
+            "license": "CC BY",
+            "sha256": "60705fde005d72624665a4f68141d02c8ea287bcb20c2fdcd9987e0d32e909e8",
+            "status": "downloaded_private",
+            "bytes": 2517812,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012345.s004",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13726986.1/pgen.1012345.s004.pdf?md5=c1e67a5dc75f6db1c9ba9eb9059193d5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-05T08:36:14.036884+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Peiyao Zhao; Justin A. Colacino; Ying Ma; Xiang Zhou"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.9",
+        "jcr": "Q2",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-05T08:36:18Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-05T08:36:19Z",
+        "url": "https://openalex.org/W7225128041",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.75446003,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-05T08:36:19Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-05T08:36:19Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-06T08:36:19Z"
+        }
+      },
+      "selectionScore": {
+        "total": 48.77230015,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.7723001499999995,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-05T08:36:28Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -186645,6 +188364,165 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-4b0f9a3d5e0f37ec": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-eb351ef7de13da08": {
+      "tree": "diet_nodomap_metadata_updated_2510.rds\nGSE185173_nodoseMerged.meta 2.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "diet_nodomap_metadata_updated_2510.rds",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "rds",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R；读取行 8；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R",
+          "observedFieldReferences": [
+            {
+              "name": "original_barcodes",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Dataset",
+              "line": 16,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_names",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "X",
+              "line": 31,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Freq",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cluster_markers.x",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "predicted.id",
+              "line": 60,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IDsource",
+              "line": 62,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IDtarget",
+              "line": 64,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "GSE185173_nodoseMerged.meta 2.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R；读取行 11；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/sc2470/NodoMap/blob/5585c67a93e31d934428717ca46cf8dd00c6e0f4/paper_figures/Buchanan_annotation_update.R",
+          "observedFieldReferences": [
+            {
+              "name": "original_barcodes",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Dataset",
+              "line": 16,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_names",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "X",
+              "line": 31,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Freq",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cluster_markers.x",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "predicted.id",
+              "line": 60,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IDsource",
+              "line": 62,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "name",
+              "line": 63,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "IDtarget",
+              "line": 64,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-984337ea51b05f3d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -188263,7 +190141,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-04T08:07:17Z",
+  "generatedAt": "2026-11-05T08:36:29Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -188497,18 +190375,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-05T08:32:37Z",
-    "updatedAt": "2026-11-05T08:32:42Z",
+    "updatedAt": "2026-11-05T08:36:34Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 57,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
