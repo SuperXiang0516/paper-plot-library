@@ -12963,14 +12963,19 @@
     "maxBatches": 36,
     "maxRequests": 1800,
     "status": "active",
-    "elapsedSeconds": 237,
+    "elapsedSeconds": 245,
     "version": 1,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-05T08:36:34Z",
+    "updatedAt": "2026-11-05T08:36:42Z",
     "date": "2026-11-05",
     "aiAttempts": 1,
     "endReason": "",
-    "batchCount": 1,
-    "startedAt": "2026-11-05T08:32:37Z"
+    "batchCount": 2,
+    "startedAt": "2026-11-05T08:32:37Z",
+    "inFlight": {
+      "startedAt": "2026-11-05T08:36:42Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
