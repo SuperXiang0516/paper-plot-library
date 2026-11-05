@@ -135127,6 +135127,822 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-e982d699f1cc058d",
+      "doi": "10.1038/s41467-026-77116-9",
+      "paper": "Single-cell profiling identifies obesity-disrupted brain glucose sensing.",
+      "journal": "Nature communications",
+      "date": "2026-08-31",
+      "year": "2026",
+      "pmcid": "PMC13623956",
+      "pmid": "42811021",
+      "paperURL": "https://doi.org/10.1038/s41467-026-77116-9",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "557d4a3bda5a34b7dddaf1b012dc1e7a4cee735fc6b9cfb8c5b515795bd863ac"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/PMC13623956.1.xml?md5=0095427e21447b1f3f0bec1d8dd86c87",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Experimental setup to study glucoregulatory gene expression in the hypothalamus and hindbrain at single-cell resolution.a An overview of the in vivo study design. b Body weight of control (n = 9) and high-fat diet (HFD) fed mice (n = 11) after 8-weeks (two-sided t-test t = 12.53, df = 28.4, P = 4.24 × 10−13). c Blood glucose levels during clamp procedure across four treatment groups data are presented as mean values ± SEM: Control diet + control infusion (Con-Con) n = 4, Control diet + glucose infusion (Con-Glu) n = 5, HFD + control infusion (HFD-Con) n = 5, and HFD + glucose infusion (HFD-Glu) n = 6. No statistical difference Con-Con:HFD-Con or Con-Glu:HFD-Glu (repeated measures nparLD ANOVA test statistic = 1.68, df = 1, P = 0.19, and Statistic = 0.26, df = 1, P = 0.089). d Insulin sensitivity (IS) (glucose infusion rate (GIR) / plasma insulin during the steady state) in Con-Glu (n = 5) versus HFD-Glu (n = 6) groups (two-sided t-test t = 4.26, df = 2.97, P = 0.024). e, f Uniform manifold approximation and projection (UMAP) visualization of single-nucleus data colored by brain region and cell types (VLMC vascular and leptomeningeal cells; OPC oligodendrocyte progenitor cells). g Transcriptional distance between ARC/VMH and DVC cell populations represented by the point. Error bars indicate the 95% confidence interval of the estimated distance (n = 20). Box plots show the median, first and third quartiles, and whiskers extend to 1.5× the interquartile range. Individual points represent animals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig1_HTML.webp?md5=d358c0c9294d6659c23524d19a74e726",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Diet comparison between saline-treated control and HFD-fed mice reveals region-specific transcriptional responses.UMAP plot of non-neuronal cells colored by a cell type, b brain region (ARC/VMH and DVC), and treatment group (Con-Con and HFD-Con). c Principal components (PC) plot showing astrocyte pseudobulk expression patterns separated by the brain region for individual animals. d Bar plot showing genes with the highest variation across principal components. e Experimental design schematic comparing control diet (Con-Con) and high-fat diet (HFD-Con) mice treated with IV saline. f Number of differentially expressed genes identified in each non-neuronal cell population in response to HFD vs. control diet-fed mice in the saline infusion group, with ARC/VMH (orange) and DVC (blue) indicated by color. Benjamini-Hochberg -adjusted edgeR likelihood ratio tests FDR < 0.05. g Volcano plot showing differentially expressed genes in ARC/VMH astrocytes comparing HFD vs. control diet mice, Benjamini-Hochberg-adjusted edgeR FDR < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig2_HTML.webp?md5=ced637b868529f76cf76a1d5722c1f9d",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "assets/pmc13623956-3e8b20b3d00975f7.webp",
+            "sha256": "3e8b20b3d00975f72361caffb493e6de71273f399b6d57e58c80a28ca41ef7d2",
+            "width": 1600,
+            "height": 1399,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3e8b20b3d00975f72361caffb493e6de71273f399b6d57e58c80a28ca41ef7d2",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Diet comparison between saline-treated control and HFD-fed mice reveals region-specific transcriptional responses.a UMAP plot of ARC/VMH and DVC neuron populations colored by cell type. b Number of differentially expressed genes (FDR < 0.05) in neuronal populations comparing HFD vs. control diet-fed mice in the saline infusion group, with ARC/VMH (orange) and DVC (blue) indicated by color. c Volcano plots showing differentially expressed (DE) genes in HFD vs. control diet-fed across the top four ARC neuronal populations. Differentially expressed genes Benjamini-Hochberg -adjusted edgeR likelihood ratio tests FDR < 0.05 are colored in red (upregulated in HFD) and blue (downregulated).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig3_HTML.webp?md5=004a105126ddca3ea4fd95a466c6cd4a",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Conserved glial responses to hyperglycemia across brain regions in lean control diet-fed mice.a Experimental design schematic showing glucose or saline infusion protocol in lean mice maintained on a control diet. b Quantification of differentially expressed genes (FDR < 0.05) across cell populations, comparing glucose versus saline infusion conditions in control diet-fed mice. c Schematic explaining interpretation of rank-rank hypergeometric overlap analysis, where intense pink regions (“hotspots”) indicate strongly coordinated or discordant transcriptional responses between experimental conditions. d Rank-rank hypergeometric overlap analysis of all expressed genes between ARC/VMH and DVC astrocytes, shown as a heatmap, with accompanying Venn diagram depicting shared upregulated and downregulated genes. e Same analysis as in (d) but for oligodendrocytes from ARC/VMH and DVC regions. f Most significantly enriched GO-terms identified from co-upregulated and co-downregulated genes in astrocytes and oligodendrocytes, based on overlap analyses shown in (d, e), performed using g:Profiler (gost) with a cell type-specific background gene set. Statistical significance was determined using hypergeometric tests with Benjamini–Hochberg-adjusted FDR < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig4_HTML.webp?md5=e705c994f4d2aaae0e6dcf9685dc0147",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Glucose-induced transcriptional effects in neurons identified with single-nucleus transcriptomics across the ARC/VMH and DVC.a Number of differentially expressed genes (FDR < 0.05) comparing glucose vs. saline infusion in control diet-fed mice across neuronal populations with ARC/VMH (orange) and DVC (blue) indicated by color. b Number of differentially expressed genes comparing ARC/VMH (orange) and DVC (blue) brain regions in total. c Percentage of differentially expressed genes that are unique to single neuronal populations vs. shared across multiple populations. d Estimated marginal mean immediate early genes activity score in Ghrh neurons from saline-infused (C) n = 4 and glucose-infused (G) n = 5, and error bars represent ± SE (*, FDR < 0.05). e Heatmap showing overlap of molecular function GO terms in response to glucose across neuronal populations with the highest number of differentially expressed genes from ARC/VMH and DVC, with “MP” indicating postsynaptic membrane potential. Functional enrichment analysis of the input gene list was performed using the MetaBrain Network. Significantly enriched terms are shown (Benjamini–Hochberg-adjusted FDR < 0.05).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig5_HTML.webp?md5=36f7947b7ac4112067ae7f5dd30ecd61",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "High-fat diet suppresses glucose sensing in non-neuronal cells in the DVC and alters glucose sensing in β-tanycytes and astrocytes in the ARC/VMH.a Overview of the in vivo infusion study design in mice fed HFD. b Bar plot showing differentially expressed genes (FDR < 0.05) comparing glucose vs. control infusion from HFD-fed mice in each non-neuronal population and the change in differentially expressed genes between glucose responses in control vs. high-fat diet fed mice, with ARC/VMH (orange) and DVC (blue) indicated by color. c Volcano plot of differentially expressed (DE) genes in β2-tanycytes. Benjamini-Hochberg -adjusted edgeR likelihood ratio tests FDR < 0.05. d The top significant GO terms in β2-tanycytes based on downregulated genes in response to glucose in HFD-fed mice. e The top significant GO terms in β2-tanycytes based on upregulated genes in response to glucose in HFD-fed mice. f Heatmap of overlapping ranked glucose-responsive genes between the high-fat diet and the control diet in astrocytes by rank-rank hypergeometric overlap analysis. g A Venn diagram of discordant overlapping genes and the top significant GO terms in astrocytes from the overlap analysis of the discordant genes from f (G, glucose; S, saline). GO terms determined using g:Profiler (gost) with a cell type-specific background gene set. Statistical significance was determined using hypergeometric tests with Benjamini–Hochberg-adjusted FDR < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig6_HTML.webp?md5=266d50706e163b3c5fb83e78490d78bd",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "assets/pmc13623956-50611639f3d49001.webp",
+            "sha256": "50611639f3d49001117f232cada411cbc2abfdf7c2d68abc33b6a560c82ab487",
+            "width": 1600,
+            "height": 1610,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "50611639f3d49001117f232cada411cbc2abfdf7c2d68abc33b6a560c82ab487",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "High-fat diet feeding alters glucose sensing in neurons in the ARC/VMH and DVC.a Number of differentially expressed genes (FDR < 0.05) comparing glucose vs. saline infusion in HFD-fed mice across neuronal populations with ARC/VMH (orange) and DVC (blue) indicated by color. b Kendall correlation analysis of glucose-induced transcriptional responses between control diet and HFD-fed mice. c Change in number of differentially expressed genes in response to glucose, comparing control diet vs. HFD-fed mice with ARC/VMH (orange) and DVC (blue), indicated by color. d Heatmaps showing differentially expressed genes Benjamini-Hochberg -adjusted edgeR likelihood ratio tests FDR < 0.05 log2 fold change (FC) in response to glucose, comparing control diet vs. high-fat diet conditions in Ghrh, Agrp, and Th/Slc6a3 neurons, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig7_HTML.webp?md5=7876aa0bb78505a1935f91161a3e4fee",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Ghrh neurons show enrichment for glucose-associated genetic variants across species.a Schematic of CELLECT analysis workflow integrating single-cell gene expression with genetic prioritization to identify cell populations enriched for glucose GWAS-associated genes. Created in BioRender. Brown, J. (2026) https://BioRender.com/hrxzstn. b A Manhattan-style plot of cell type enrichment across hypothalamic populations, identified by performing CELLECT with stratified LD score regression (S-LDSC), significant enrichments Benjamini–Hochberg-adjusted FDR < 0.05 indicated by red circles. c Alluvial plot showing transcriptional mapping between human and mouse GHRH-expressing neurons. d A Manhattan-style plot showing enrichment of genetic associations in human GHRH neuron populations from HypoMap, identified by performing CELLECT with stratified LD score regression (S-LDSC) with significant enrichments (P < 0.05) indicated by black circles (C4-161 P = 0.00599454 and C4-160 P = 0.05524773). e Spatial distribution of GHRH expression in human hypothalamus from the HypoMap dataset. f Top MAGMA-prioritized genes contributing to genetic enrichment in mouse Ghrh neurons, showing expression specificity across mouse and human GHRH neurons and human pancreatic β-cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig8_HTML.webp?md5=10a6a8eca19ea1c64690d0de07e23dae",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77116-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al.. Single-cell profiling identifies obesity-disrupted brain glucose sensing.. DOI: 10.1038/s41467-026-77116-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM1_ESM.pdf?md5=bd6b3d3cde2ef99bd67fc9d0f7694b69",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM2_ESM.pdf?md5=f7bac9b0872f03c375d02a2e827fd8a7",
+            "license": "CC BY",
+            "sha256": "7a0812cf240367d43f60fb716768793fc9f65422b6ce453e97c13e3cc390e06a",
+            "status": "downloaded_private",
+            "bytes": 2645458,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 25,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM3_ESM.pdf?md5=0d562e7c089a0adbe13c3dc2d6cb05ec",
+            "license": "CC BY",
+            "sha256": "fc491232e7f3e44de8edd9ec92b896a54dd4df3337e4c4ab7bd18e567a201105",
+            "status": "downloaded_private",
+            "bytes": 75549,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 2,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM4_ESM.xlsx?md5=632039f4880afc65a1a697aa40a08fd0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM5_ESM.xlsx?md5=649f5701bf9178e8d2d9fd3fdabd978e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM6_ESM.xlsx?md5=8ebe9b6ca5bf3517ec4db1dbdf063a2d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM7_ESM.xlsx?md5=6c0b156990aa80136ed007fe1d40cc79",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM8_ESM.xlsx?md5=2a4ca26f822ff0e33a41ce138ce682cb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM9_ESM.xlsx?md5=9243cf0fdc4a3cf7e615424cba561701",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM10_ESM.xlsx?md5=1afc0e0052143063fe377afdbfe384ae",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM11_ESM.pdf?md5=0e85672c3359e2fc1f56b5bc47ed6650",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM12",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM12_ESM.xlsx?md5=735023fd12c4c446ff4ec51d5a923933",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM13",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM13_ESM.xlsx?md5=1455baf24b9b1a919a5dc2214bb2a3d0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM14",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM14_ESM.xlsx?md5=38c868cc80046c06f8350f6dd46c4c34",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM15",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM15_ESM.xlsx?md5=0f6bceb5370fe7e26c48981774d90793",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM16",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM16_ESM.xlsx?md5=d886fc32999aeebc1d7dc5df425de341",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM17",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM17_ESM.xlsx?md5=9a4eb75825a7f225fe30b9370c6660ab",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM18",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM18_ESM.xlsx?md5=eefb6e05b916d28403f940c5eaa80d6b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM19",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM19_ESM.xlsx?md5=c0197d59a1a3bf363ab4da5a8632659a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM20",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_MOESM20_ESM.xlsx?md5=ba3c416fb038b04ce205cb8ea70549f7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-05T08:38:21.025742+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jenny M. Brown; Marie A. Bentsen; Anja Moltke Jørgensen; Thomas Svava Nielsen; Dylan M. Belmont-Rausch; Din Selmanovic; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-05T08:38:24Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-05T08:38:25Z",
+        "url": "https://openalex.org/W7204686611",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.56840537,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-05T08:38:25Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-05T08:38:25Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-06T08:38:25Z"
+        }
+      },
+      "selectionScore": {
+        "total": 52.842026849999996,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 2.84202685,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-05T08:39:20Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-1b0e25069bc1a662",
+      "paper": "Age-Specific Associations of Polygenic Risk Scores With Advanced Fibrosis and Histological Activity in Biopsy-Proven MASLD.",
+      "doi": "10.1111/liv.70907",
+      "journal": "Liver international : official journal of the International Association for the Study of the Liver",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/liv.70907",
+      "pmcid": "PMC13629459",
+      "pmid": "42820721",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1478-3223",
+      "eissn": "1478-3231",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-05",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "fecec7445f5d340812c88b96ec1140004f75958c1cb654216f073cd78c81146d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629459.1/PMC13629459.1.xml?md5=ba9f058c0c2936c300c4f415ecb2eaad",
+        "figures": [
+          {
+            "id": "liv70907-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Correlation between the polygenic risk scores. Darker red colour indicates stronger correlation. Overall, there were strong correlations (r > 0.59) among the PRSs tested except for the Vujkovic 77‐SNPs PRS.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629459.1/LIV-46-0-g001.webp?md5=773de8fcfea3ad37798cd400be05b4f5",
+            "articleURL": "https://doi.org/10.1111/liv.70907",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samer Gawrieh; Jingyi Tan; Xiuqing Guo; Linus Schwantes‐An; Marco Abreu; Callie J. Zaborenko; et al.. Age-Specific Associations of Polygenic Risk Scores With Advanced Fibrosis and Histological Activity in Biopsy-Proven MASLD.. DOI: 10.1111/liv.70907. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "liv70907-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Association of Chen and Schwantes‐An polygenic risk score (PRS) quartiles with key MASLD histological phenotypes. Panels show the associations of the Chen PRS in (A) adults and (B) children, and the Schwantes‐An PRS in (C) adults and (D) children. Odds ratios (ORs) and 95% confidence intervals are shown for the 2nd, 3rd, and 4th PRS quartiles relative to the lowest quartile (reference group). Individuals in the highest quartile of the Chen PRS had increased odds of NAS ≥ 4, at‐risk MASH, and advanced fibrosis in both adults and children. Similarly, the highest quartile of the Schwantes‐An PRS was associated with all three outcomes in adults, whereas in children it was significantly associated with NAS ≥ 4 but not with at‐risk MASH or advanced fibrosis. Data shown for all participants and is adjusted for ancestry, age, and sex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629459.1/LIV-46-0-g003.webp?md5=923b0e2bbd0f32d533ebbeb8b42419f8",
+            "articleURL": "https://doi.org/10.1111/liv.70907",
+            "asset": "assets/pmc13629459-268dceb8aa138a5f.webp",
+            "sha256": "268dceb8aa138a5fd1e28214517e8b974f58c94894ca93e4e3f64c3d764998e1",
+            "width": 1064,
+            "height": 514,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samer Gawrieh; Jingyi Tan; Xiuqing Guo; Linus Schwantes‐An; Marco Abreu; Callie J. Zaborenko; et al.. Age-Specific Associations of Polygenic Risk Scores With Advanced Fibrosis and Histological Activity in Biopsy-Proven MASLD.. DOI: 10.1111/liv.70907. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "268dceb8aa138a5fd1e28214517e8b974f58c94894ca93e4e3f64c3d764998e1",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "liv70907-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Diagnostic performance of polygenic risk scores in comparison to other models for predicting advanced fibrosis in (A) Adults using Schwantes‐An PRS, and in (B) children using Chen PRS; and for predicting NAS ≥ 4 in (C) Adults using Chen PRS, and in (D) children using Schwantes‐An PRS. AUROC and 95% CI for each model are listed in the legend. Model 1: FIB4, Model 2: PRS, Model 3: Outcome ~ FIB4 + demographic covariates (ancestry + age + sex), Model 4: Outcome ~ PRS + demographic covariates, Model 5: Outcome ~ FIB4 + PRS + demographic covariates, Model 6: Outcome ~ FIB4 + Type 2 diabetes + obesity + demographic covariates, Model 7: Outcome ~ FIB4 + PRS + Type 2 diabetes + obesity + demographic covariates.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629459.1/LIV-46-0-g002.webp?md5=4b7c55368a662fb4ada489eb0989b0d0",
+            "articleURL": "https://doi.org/10.1111/liv.70907",
+            "asset": "assets/pmc13629459-de5956d6c8e02fea.webp",
+            "sha256": "de5956d6c8e02feaf490e1599e5dc8bb6004b71940a08f6f4b0f06056f42a259",
+            "width": 1064,
+            "height": 1060,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samer Gawrieh; Jingyi Tan; Xiuqing Guo; Linus Schwantes‐An; Marco Abreu; Callie J. Zaborenko; et al.. Age-Specific Associations of Polygenic Risk Scores With Advanced Fibrosis and Histological Activity in Biopsy-Proven MASLD.. DOI: 10.1111/liv.70907. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "de5956d6c8e02feaf490e1599e5dc8bb6004b71940a08f6f4b0f06056f42a259",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "liv70907-supitem-0001",
+            "label": "Table S1: Polygenic risk scores examined in this study. Table S2: Polygenic scores with missing single nucleotide polymorphisms. Table S3: Participant",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13629459.1/LIV-46-0-s001.zip?md5=ef348a6a9524ef59dc2ef3871389594c",
+            "license": "CC BY",
+            "sha256": "7cabbe4794abb5e5bbdc2d61bfe31f5c7b4eaf43c5e52a8b504f39f899b2ce30",
+            "status": "downloaded_private",
+            "bytes": 572593,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-05T08:39:06.324352+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Samer Gawrieh; Jingyi Tan; Xiuqing Guo; Linus Schwantes‐An; Marco Abreu; Callie J. Zaborenko; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "error",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "metrics_rank_shape_invalid"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-05T08:39:12Z",
+        "url": "https://openalex.org/W7215074695",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.74297692,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "error",
+          "ai": "missing_evidence"
+        },
+        "errors": [
+          "metrics: error"
+        ],
+        "lastCheckedAt": "2026-11-05T08:39:12Z",
+        "repairSchedule": {
+          "consecutiveFailures": 1,
+          "lastAttemptAt": "2026-11-05T08:39:12Z",
+          "lastOutcome": "failure"
+        }
+      },
+      "selectionScore": {
+        "total": 29.7148846,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.7148846000000004,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-05T08:39:21Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -188523,6 +189339,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-e982d699f1cc058d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-1b0e25069bc1a662": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -190141,7 +190969,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-05T08:36:29Z",
+  "generatedAt": "2026-11-05T08:39:21Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -190375,18 +191203,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-05T08:32:37Z",
-    "updatedAt": "2026-11-05T08:36:42Z",
+    "updatedAt": "2026-11-05T08:39:27Z",
     "batchCount": 2,
-    "requests": 57,
+    "requests": 89,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

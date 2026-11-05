@@ -169,12 +169,44 @@
     "2026-11-05": {
       "newDOIs": [
         "10.1016/j.cpblue.2026.100072",
+        "10.1038/s41467-026-77116-9",
+        "10.1111/liv.70907",
         "10.1371/journal.pgen.1012345",
         "10.3389/fnagi.2026.1947643"
       ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-05T08:39:19Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1111/liv.70907": {
+      "checkedAt": "2026-11-05T08:39:12Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-05T08:38:46Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-05T08:38:34Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-77116-9": {
+      "checkedAt": "2026-11-05T08:38:25Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pgen.1012345": {
       "checkedAt": "2026-11-05T08:36:19Z",
       "status": "source_confirmed",
@@ -204,24 +236,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-04T08:07:16Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-04T08:07:13Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-04T08:07:11Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1016/j.isci.2026.116445": {
       "checkedAt": "2026-11-04T08:07:09Z",
@@ -11953,61 +11967,6 @@
         "updatedAt": "2026-10-16T06:28:27Z"
       }
     },
-    "10.1038/s41467-026-77116-9": {
-      "checkedAt": "2026-10-16T06:28:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-77116-9",
-        "metadataHash": "896fd336f9c7664d47a1375dc62d30858373f1352ec8d71b64b9561c5a54bb7e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/PMC13623956.1.xml?md5=0095427e21447b1f3f0bec1d8dd86c87",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13623956-3e8b20b3d00975f7.webp",
-              "assetSHA256": "3e8b20b3d00975f72361caffb493e6de71273f399b6d57e58c80a28ca41ef7d2",
-              "license": "CC BY",
-              "id": "Fig2",
-              "sha256": "3e8b20b3d00975f72361caffb493e6de71273f399b6d57e58c80a28ca41ef7d2",
-              "height": 1399,
-              "label": "Fig. 2",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig2_HTML.webp?md5=ced637b868529f76cf76a1d5722c1f9d",
-              "captionHash": "42ec40eef74416b52d658f7bd92b343bd307a7b7ed8478c704304eed8123a368"
-            },
-            {
-              "asset": "assets/pmc13623956-50611639f3d49001.webp",
-              "assetSHA256": "50611639f3d49001117f232cada411cbc2abfdf7c2d68abc33b6a560c82ab487",
-              "license": "CC BY",
-              "id": "Fig6",
-              "sha256": "50611639f3d49001117f232cada411cbc2abfdf7c2d68abc33b6a560c82ab487",
-              "height": 1610,
-              "label": "Fig. 6",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13623956.1/41467_2026_77116_Fig6_HTML.webp?md5=266d50706e163b3c5fb83e78490d78bd",
-              "captionHash": "e2bd491229a25ce7fe087020cdb47f0bc7e4ad1e6f52d11ae16f820aea7cee66"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-e982d699f1cc058d",
-          "doi": "10.1038/s41467-026-77116-9",
-          "paper": "Single-cell profiling identifies obesity-disrupted brain glucose sensing.",
-          "journal": "Nature communications",
-          "date": "2026-08-31",
-          "year": "2026",
-          "pmcid": "PMC13623956",
-          "pmid": "42811021",
-          "paperURL": "https://doi.org/10.1038/s41467-026-77116-9"
-        },
-        "updatedAt": "2026-10-16T06:28:23Z"
-      }
-    },
     "10.1038/s41467-026-77686-8": {
       "checkedAt": "2026-10-16T06:28:18Z",
       "status": "pending",
@@ -12955,27 +12914,22 @@
     }
   },
   "dailyCollectionSession": {
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "uncertainAiAttempts": 0,
-    "requests": 57,
+    "requests": 89,
     "maxSeconds": 2700,
     "maxAiAttempts": 165,
     "maxBatches": 36,
     "maxRequests": 1800,
     "status": "active",
-    "elapsedSeconds": 245,
+    "elapsedSeconds": 410,
     "version": 1,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-05T08:36:42Z",
+    "updatedAt": "2026-11-05T08:39:27Z",
     "date": "2026-11-05",
     "aiAttempts": 1,
     "endReason": "",
     "batchCount": 2,
-    "startedAt": "2026-11-05T08:32:37Z",
-    "inFlight": {
-      "startedAt": "2026-11-05T08:36:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "startedAt": "2026-11-05T08:32:37Z"
   }
 }
