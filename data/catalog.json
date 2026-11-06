@@ -138372,6 +138372,938 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-11e85eaf36bde7ed",
+      "paper": "Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.",
+      "doi": "10.1002/imt2.70176",
+      "journal": "iMeta",
+      "date": "2026-09-30",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/imt2.70176",
+      "pmcid": "PMC13625922",
+      "pmid": "42819474",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2770-5986",
+      "eissn": "2770-596X",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-06",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "c5b9a6977904c5cf0cbec9ef2440a0c1257bf82e54f76cacc108958efd83d4c2"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "2",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/PMC13625922.2.xml?md5=38cb69f48fefac884b0c2f6898381848",
+        "figures": [
+          {
+            "id": "imt270176-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Development of prognosis‐based classification of PCV based on nationwide, multi‐center data. A total of 716 patients diagnosed with PCV were included from 43 medical centers across China. Patient demographics (e.g., age and sex) and multimodal ocular imaging features (e.g., SFCT measured on OCT and presence of massive hemorrhage on fundus photography), along with their responses to anti‐VEGF therapies, were analyzed. Among the 276 good responders and 440 poor responders, logistic regression analysis identified clinical features associated with treatment response and capable of distinguishing the two PCV subtypes. Based on these features, we developed a novel prognosis‐based classification system for PCV. Pachy PCV was defined by the presence of either both primary criteria or one primary criterion plus both secondary criteria. The primary criteria were (1) SFCT ≥ 300 µm and (2) the presence of choroidal pachyvessels. The secondary criteria were (1) age ≤ 66 years and (2) absence of AMD‐like features. Cases not meeting these criteria were classified as Non‐pachy PCV. Base map: Standard Map Service of the Ministry of Natural Resources of China. Map Approval No. GS(2019)1673. AMD, age‐related macular degeneration; CRT, central retinal thickness; IRF, intraretinal fluid; Non‐pachy, non‐pachychoroid; OCT, optical coherence tomography; PCV, polypoidal choroidal vasculopathy; PED, pigment epithelial detachment; Pachy, pachychoroid; SFCT, subfoveal choroidal thickness; SRF, subretinal fluid; VEGF, vascular endothelial growth factor.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g005.webp?md5=17eed78cdfa8305f41e18f4e66b8a805",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "imt270176-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Plasma proteomic and metabolomic analyses reveal distinct signaling pathways associated with the pathogenesis of Pachy PCV and Non‐pachy PCV. (A) Differential proteins (left) and metabolites (right) identified among the Pachy PCV (n = 40), Non‐pachy PCV (n = 31), and control (n = 35) groups. (B) Chord diagram showing GO enrichment analysis of differential proteins among the three groups. (C) Network diagram showing KEGG pathway enrichment analysis of differential proteins among the three groups. (D) Grouped bubble plot showing KEGG pathway enrichment of differential metabolites among the three groups. GO, Gene Ontology; KEGG, Kyoto Encyclopedia of Genes and Genomes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g006.webp?md5=9a44fe16e7017e429755cebc37810902",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "imt270176-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Establishment and assessment of PCV mouse model via vortex vein ligation. (A) Two vortex veins in the superior temporal and superior nasal quadrants of the C57BL/6 mouse were ligated for 30 days, followed by in vivo ocular imaging to assess the development of PCV‐like lesions. (B) ICGA images showed normal vortex veins (red arrows) in healthy control mice (subpanel a), whereas ligated mice (subpanels b–d) exhibited characteristic polypoidal lesions (yellow arrows) and dilated vortex vein (blue arrows). These lesions were not detected by FFA images. (C) OCT images showed a normal thin choroid (red arrows) in healthy control mice (subpanel a), whereas ligated mice (subpanels b–d) exhibited PCV‐like features, including the double‐layer sign (green arrows), thumb‐like protrusions (yellow arrows), dilated large choroidal vessels (blue arrows), and serous PED (purple arrows). (D) H&E staining showed that compared with non‐dilated choroidal vessels (red arrow in subgroup a) in healthy controls, whereas ligated mice (subpanels b–d) exhibited significant dilation of choroidal vessels (blue arrows). Abnormal vascular protrusions continuous with the choroidal vessels were observed beneath the RPE (yellow arrows, subpanel c), in some cases, penetrating the RPE layer (yellow arrows, subpanel d), consistent with polypoidal lesions extending into the subretinal space. (E) Confocal laser scanning of fluorescence‐stained RPE‐choroidal tissue showed Isolectin‐B4+ for mCECs (red) with a normal vascular morphology in control mice (subpanel a). In ligated mice (subpanels b and c), nodular lesions (yellow arrows) and BNN‐like structures (green dashed circles) were observed. The BNN‐like structures consisted of low‐lying, irregular, interconnected vascular networks around the polypoidal lesions. These lesions showed colocalization of double‐stained with Isolectin‐B4 (red) and P‐selectin (green), indicating polypoidal lesion‐ and BNN‐related choroidal neovascularization. Higher‐magnification images of small polypoidal lesions are shown in Figure S13. Nuclei were counterstained with DAPI (blue). BNN, branching neovascular network; DAPI, 4',6‐diamidino‐2‐phenylindole; FFA, fundus fluorescein angiography; H&E, hematoxylin and eosin; ICGA, indocyanine green angiography; mCEC, mouse choroidal endothelial cell; RPE, retinal pigment epithelium.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g008.webp?md5=6f87499cbec645964210eeddffe57b2e",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "imt270176-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cell annotation and identification of CNV components in RPE‐choroidal tissue from the mouse model by scRNA‐seq analysis. (A) RPE‐choroidal tissues were collected from ligated mice after sacrifice. Following radial incisions around the optic disc and endothelial cell isolation, scRNA‐seq was conducted. Transcriptome‐based dimensionality reduction, cell clustering and annotation, and subgroup‐specific distributions were shown within the frame. A novel endothelial cell population, termed PB‐CNV, was identified specifically in ligated mice. (B) Parallel comparison of cell populations between the ligation and control groups. CNV components were highlighted by red circles and arrows. (C) UMAP plots showing the distribution of marker gene expression. (D) Heatmap showing the expression levels of top 50 genes across different cell types. ACA, anterior‐capillary‐artery; CNV, choroidal neovascularization; PC, posterior‐capillary; scRNA‐seq, single‐cell RNA‐sequencing; UMAP, uniform manifold approximation and projection.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g002.webp?md5=82bb520ae17351a3c319d04f5aded3b5",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "imt270176-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Inference of the cellular origin of PB‐CNV and identification of candidate target genes in PB‐CNV progenitor cells. (A) Pseudotime trajectory analysis of the cellular origin of PB‐CNV in the ligation group. (B) Density distribution of PB‐CNV progenitor cells and subtypes along the pseudotime trajectory. (C) Differentially expressed genes between ligation and control groups in the active posterior‐capillary vein (active PC vein, progenitor cells of PB‐CNV). (D) PPI network of upregulated differentially expressed genes in the active PC vein. The top 15 candidate hub genes were highlighted in yellow. Additional panels showed the distribution within the PPI network enriched in the fluid shear stress (pink) pathway and HIF‐1 signaling pathway (green). (E) KEGG enrichment analyses of the hub genes (upper) and MCODE module genes (lower). Key pathways were highlighted, indicated by stars. (F) PPI networks constructed from the hub genes and MCODE module genes. Genes associated with different pathways were color‐coded: pink, fluid shear stress‐related pathway; green, HIF‐1 signaling pathway; yellow, both pathways; and blue, other genes. Edn1 (Endothelin‐1) was identified as a potential link between the fluid shear stress‐related and HIF‐1 signaling pathways. HIF‐1, hypoxia inducible factor‐1; MCODE, molecular complex detection; PPI, protein–protein interaction.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g003.webp?md5=7acc3462388f526bfa77febee14dfe6f",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "imt270176-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Effects of OSS on mCECs following Edn1 knockdown and re‐expression and Ednra knockdown. (A) Representative immunofluorescence images of F‐actin and VE‐cadherin. F‐actin length and VE‐cadherin fluorescence intensity were quantified using ImageJ (version 1.54p). n = 3 independent biological replicates per group. (B) Potential targets for single‐cell sequencing based on qRT‐PCR screening. n = 3 independent biological replicates per group. (C) Representative trajectories of mCECs under laminar flows shear stress and oscillatory flow shear stress with and without Edn1 shRNA. The change in displacement in 24 h was determined for each experiment and used as a single data point (n = 3 independent biological replicates per group). (D) CCK8‐based proliferation and transwell‐based invasion assays assessing the effects of OSS and Edn1 knockdown. Edn1 silencing significantly attenuated the OSS‐induced reduction in proliferation and increase in invasion of mCECs. n = 5 independent biological replicates. (E) Tube formation of mCECs under OSS with or without Edn1 knockdown. OSS promoted tube formation, whereas Edn1 knockdown attenuated this effect. The number of master junctions and total branching length were quantified using ImageJ, n = 3 independent biological replicates. (F) Representative Western blots showing the expression of EDN1, c‐Casp3, ANG‐1, MMP9, IL‐6, and ZO‐1 in response to OSS with and without Edn1 shRNA. n = 3 independent biological replicates. (G) CCK8 assays of mCEC proliferation under OSS following Edn1 re‐expression after Edn1 knockdown. n = 5 independent biological replicates. Transwell invasion (H) and scratch migration (I) assays showing that the OSS‐induced invasive and migratory responses of mCEC cells were attenuated by Edn1 knockdown and restored by Edn1 re‐expression. n = 5 independent biological replicates per group for the Transwell invasion assay and n = 3 for the scratch migration assay. (J) Representative fluorescence images of ROS production in mCECs exposed to OSS following Edn1 knockdown and/or re‐expression. Intracellular ROS levels were assessed by DCF fluorescence. n = 3 independent biological replicates per group. (K) Expression of EDN1, c‐Casp3, ANG‐1, MMP9, IL‐6, and ZO‐1 following Edn1 knockdown and subsequent Edn1 re‐expression. n = 3 independent biological replicates per group. (L) Co‐immunoprecipitation showing the interaction between EDN1 and EDNRA in mCECs protein extracts. n = 3 independent biological replicates. (M) Representative trajectories of mCECs exposed to OSS with or without Ednra knockdown. The change in displacement over 24 h was calculated for each independent experiment. n = 3 independent biological replicates per group. (N) CCK8 assay assessing the effects of OSS and Ednra knockdown on mCEC proliferation. Ednra silencing significantly attenuated the OSS‐induced reduction in proliferation. n = 5 independent biological replicates per group. Scratch migration (O) and Transwell invasion (P) assays showing that OSS increased the migratory and invasive capacities of mCECs and that these effects were attenuated by Ednra knockdown. n = 3 independent biological experiments for the scratch migration assay and n = 5 for the transwell invasion assay. (Q) Ednra silencing reduced the expression of EDNRA, c‐Casp3, ANG‐1, MMP9, and IL‐6 and increased ZO‐1 expression. n = 3 independent biological replicates per group. OSS, oscillatory shear stress (±6 dyn/cm2, 12 h); CN, control (laminar shear stress at 6 dyn/cm2); shEdn1, Edn1 shRNA, oeEdn1, over‐expressed Edn1; shEdnra, Ednra shRNA; qRT‐PCR, quantitative reverse transcription polymerase chain reaction; CCK‐8, Cell Counting Kit‐8; DCF, dichlorofluorescein; IP, immunoprecipitation; IgG, immunoglobulin G; ROS, reactive oxygen species. Data are presented as mean ± SD from n independent biological replicates. For two‐group comparisons, statistical significance was assessed by two‐tailed unpaired Student's t‐test; for multiple groups, by one‐way ANOVA followed by Tukey's multiple comparisons test. Independent biological replicates: separate cell‐culture experiments per condition. The single and double asterisks indicate p < 0.05 and p < 0.01, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g001.webp?md5=e6b5ec9ab1cbb3ce20b875f9d9bf344f",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "assets/pmc13625922-9d889e9560160160.webp",
+            "sha256": "9d889e9560160160933c223f5beebcf3f79fbbccdd5c3a935f41980778e1088e",
+            "width": 910,
+            "height": 1175,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9d889e9560160160933c223f5beebcf3f79fbbccdd5c3a935f41980778e1088e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "imt270176-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "In vivo validation of the role of Edn1 and CCH in the vortex vein ligation mouse model. (A) In addition to the baseline pseudo‐surgery (I) and vortex vein ligation (II) groups of C57BL/6 mice, four additional experimental groups were established: vortex vein ligation with scleral fenestration adjacent to the ligation site (III); vortex vein ligation with daily administration of an EDNRA antagonist (IV); systemic Edn1 +/ − with vortex vein ligation in one eye (V); systemic Edn1 +/ − only in the fellow eye (VI). Among the six subgroups, mice subjected to vortex vein ligation alone (II) developed numerous polypoidal lesions and marked vortex vein dilation on ICGA. (B) Representative photograph showing surgical ligation of vortex veins (pink arrows) and adjacent scleral fenestration (blue arrow). (C) Schematic of the heterozygous Edn1 knockout (Edn1 +/ −) strategy and validation by agarose gel electrophoresis. PCR amplification of tail genomic DNA showed that CRISPR‐Cas9‐mediated deletion of a 1213 bp fragment spanning exons 1–2 of the Edn1 locus generated a truncated 343‐bp PCR product, confirming successful heterozygous targeting. Homozygous Edn1 − / − mice die of respiratory failure at birth and therefore do not survive to adulthood. (D) Schematic of choroidal thickness measurements. Five measurement points were placed 1 mm from the optic disc to avoid the physiological increase in choroidal thickness near the disc and were spaced 15° apart to provide a regional assessment of choroidal thickness affected by vortex vein ligation. (E) Bar graphs showing the proportion of eyes with polypoidal lesions detected by ICGA in each subgroup. The numbers of eyes with available data were 28 eyes from 18 mice (28/18), 23/15, 14/14, 27/15, 13/13, and 15/15 for subgroups I–VI, respectively. Between‐group differences were analyzed using the Rao–Scott chi‐square test, accounting for inter‐eye correlation within individual mice, followed by Bonferroni‐adjusted post hoc pairwise comparisons. Groups sharing the same lowercase letter were not significantly different, whereas groups with different lowercase letters were significantly different (p < 0.05). The numbers of evaluable eyes and mice, as well as the notation used to indicate statistical significance, also applied to panels (F–H). (F) Box plots showing the number of polypoidal lesions per eye detected by ICGA in each subgroup. Between‐group differences were assessed using GEEs, with individual mice specified as clusters to account for inter‐eye correlation, followed by Bonferroni‐adjusted post hoc pairwise comparisons. (G) Box plots showing the diameters of the thickest vortex vein per eye in each subgroup. Between‐group differences were assessed using GEEs, with individual mice specified as clusters to account for inter‐eye correlation, followed by Bonferroni‐adjusted post hoc pairwise comparisons. (H) Box plots showing mean choroidal thickness in each subgroup. Between‐group differences were assessed using GEEs, with individual mice specified as clusters to account for inter‐eye correlation, followed by Bonferroni‐adjusted post hoc pairwise comparisons. CCH, choroidal circulatory hypertension; EDNRA, endothelin receptor‐A; GEEs, generalized estimating equations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-g007.webp?md5=cbbe885c00f807bcc29d6b136223560a",
+            "articleURL": "https://doi.org/10.1002/imt2.70176",
+            "asset": "assets/pmc13625922-c4430f9f3d4d4a1a.webp",
+            "sha256": "c4430f9f3d4d4a1a617027f330e817d547e88d5ce9262809a3d69c84993385cf",
+            "width": 910,
+            "height": 1032,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al.. Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.. DOI: 10.1002/imt2.70176. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c4430f9f3d4d4a1a617027f330e817d547e88d5ce9262809a3d69c84993385cf",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "imt270176-suppl-0001",
+            "label": "Figure S1: An overall illustration of the technological roadmap and proposed pathogenesis of Pachy PCV. Figure S2: Flow chart of patient enrollment, c",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-s001.docx?md5=9a638949c3dd040f74bb3581e8b4db48",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "imt270176-suppl-0002",
+            "label": "Table S1: Baseline characteristics of different response groups. Table S2: Sensitivity analysis using mixed‐effects multivariable logistic regression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.2/IMT2-5-e70176-s002.xlsx?md5=f014910718596103548e4ea58a7e1d01",
+            "license": "CC BY",
+            "sha256": "2251a6f14c6063a75a81c4406f2acb724d87ae9aad4e5cdf6964b20328a809a9",
+            "status": "downloaded_private",
+            "bytes": 51290,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-06T08:38:32.806297+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xinyu Zhao; Tiantian Cheng; Wenfei Zhang; Xingwang Gu; Qing Zhao; Yaning Chen; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "44.4",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-06T08:38:35Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-06T08:38:35Z",
+        "url": "https://openalex.org/W7214985505",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.74396404,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-06T08:38:35Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-06T08:38:35Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-07T08:38:35Z"
+        }
+      },
+      "selectionScore": {
+        "total": 60.7198202,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.7198202,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-06T08:38:40Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-ae650676e67cafc8",
+      "doi": "10.1038/s41588-026-02633-8",
+      "paper": "A progeria syndrome links DNA hypermethylation to age-related pathology.",
+      "journal": "Nature genetics",
+      "date": "2026-06-12",
+      "year": "2026",
+      "pmcid": "PMC13364717",
+      "pmid": "42286141",
+      "paperURL": "https://doi.org/10.1038/s41588-026-02633-8",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1061-4036",
+      "eissn": "1546-1718",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "e63175e792f1960c1b31d4a3249f05396c92b48665aba672751d7560441ff1fa"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/PMC13364717.1.xml?md5=5c5a192aeed2d265a763265817c16b43",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "HESJAS syndrome.a, Photographs of individuals with HESJAS; aged (top to bottom)—6 years, 11 years, 33 years. Alopecia evident from childhood onwards. b, Schematic, age-associated features in HESJAS (Supplementary Table 1). c, HESJAS gain-of-function mutations cluster in the PWWP domain. Schematic of DNTM3A domain structure and chromatin interactions. d, Structural model of binding pocket of the PWWP domain predicts the HESJAS mutations to disrupt interaction with H3K36me2/H3K36me3. Residues mutated in HESJAS highlighted in blue, backbone of PWWP domain (gray), histone H3 N-terminal tail (pink) and H3K36me3 (purple). e,f, HESJAS mutations cause hypermethylation. e, Heatmap, hypermethylated DMRs in PB (n = 1,138) identified by EPIC DNAme bead array. f, Quantification of DNAme in e. Plotted mean DNAme per DMR for DNMT3AWT controls (n = 9) and DNMT3AGOF HESJAS cases (n = 7). Box represents 25th–75th percentile, whiskers represent full data range, centerline represents median and %mCpG represents percent of methylation. P value, Wilcoxon rank-sum test, two sided. MTase, methyltransferase domain; C, controls; P, HESJAS cases.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig1_HTML.jpg?md5=837bde6f5c0af10d02abe87345c42ea4",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dnmt3aW326R/+ mice model HESJAS syndrome and show multiple age-associated phenotypes.a, Lifespan of Dnmt3aW326R/+ mice is significantly decreased; n = 380 mutant (W326R/+), n = 414 WT (+/+) mice. Log-rank Mantel–Cox test. b,c, Severe osteoporosis with marked loss of trabecular bone. b, Representative micro-CT cross-section of femoral shaft. Cortical bone in white and trabecular bone in red. c, Quantification of trabecular bone volume as percentage of tissue volume; n = 5 +/+, n = 5 W326R/+ 6-month-old female mice. d,e, Lipodystrophic phenotypes are evident at 6 months of age in W326R/+ mice. d, Representative images, hepatic steatosis and ‘whitening’ of brown fat. Scale bars, 100 μm. e, Hyperinsulinemia, accompanied by elevated GDF15, LDL and cholesterol in W326R/+ mice. For c and e data points, individual 6-month-old females. Mean ± s.d., unpaired two-sided t tests. Male mice similarly affected (Extended Data Fig. 3). f, W326R/+ BM populations are myeloid skewed; n = 6 mice at 6 months; % myeloid +/+ versus W326R/+, unpaired two-sided t test. g,h, DNA hypermethylation in W326R/+ BM is present before HSC dysfunction (characterized in Fig. 3) assessed by DNAme array. g, Representative genome browser view. Increasing DNAme at the Pax6 DMV with age. Tracks scaled = 0–100%. h, Quantification of DNAme levels in hypermethylated DMRs; n = 3 mice per age group per genotype. Box represents 25th–75th percentile, whiskers represent full data range; centerline represents median and two-sided Kruskal–Wallis test for +/+ or W326R/+, respectively, by age, two-sided Wilcoxon rank-sum test for 4-day +/+ versus 4-day W326R/+.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig2_HTML.jpg?md5=f00c8bb0d4f2c0ae0e694c911e27ad97",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Multilineage functional impairment of adult stem cells in Dnmt3aW326R/+ mice.a–c, Total cellularity is reduced in W326R/+ BM, while HSC cell numbers are unchanged. a, BM cell number. Data points, total nucleated cells recovered from two femurs and two tibias from n = 12 Dnmt3a WT (+/+) and 12 mutant (W326R/+) mice aged 3–6 months. b, SLAM marker analysis of LSK cells. Representative FACS plots for WT. HSCs are defined as Lin− Sca+ Kit+ CD150+ CD48−. Representative gating strategy is shown in Supplementary Fig. 1. c, Total HSC number is similar in +/+ and W326R/+ mice. Data points, as for a. d–h, Transplanted W326R/+ HSCs are functionally compromised with myeloid skewed and overall reduced output. d, Schematic of competitive transplantation of 250 CD45.2 LSK-SLAM HSCs (+/+ or W326R/+ 2–3-month-old donors) into irradiated (9 Gy) CD45.1 recipients (2–4 months old), along with 250,000 CD45.1 BM-derived support cells. Right: representative FACS plot depicting gating of donor-derived WT CD45.2 PB lymphocytes to determine chimerism. e, W326R/+ HSCs fail to reconstitute hematopoiesis in competitive BM transplantation. Time course, PB chimerism post-transplant. Data points, n = 10 and n = 13 recipients of +/+ and W326R/+ HSC donor cells, pooled from four experiments; four male donors per genotype. f,g, Hematopoietic progeny of transplanted W326R/+ HSCs show marked myeloid bias. f, Representative flow cytometry plots for WT donor, gating of PB cell types at experiment endpoint. Representative gating strategy is shown in Supplementary Fig. 2. g, Quantification, donor-derived PBLs at 4 months post-transplant (n as for e; mean ± s.d., unpaired two-sided t test for % myeloid). h, Reduced output by donor-derived W326R/+ CD45.2+ HSCs in recipient animals is the predominant cause of lower levels of circulating CD45.2+ leukocytes. Differentiation quotient, %CD45.2 PB chimerism divided by %CD45.2 BM HSCs at 4 months post-transplant. i–k, W326R/+ small intestinal crypt cells have substantially lower clonogenic capacity and generate organoids of reduced size. i, Representative images of 4-day cultures of single-crypt cells isolated from 3-month to 4-month-old mice. Scale bars, 500 µm. j,k, Quantification of colony formation (j) and colony size (k). Data points, n = 5 mice per genotype. l,m, W326R/+ small intestinal crypts have reduced regenerative potential in vivo. l, Representative images, BrdU labeling of regenerating small intestinal crypts in +/+ and W326R/+ mice 72 h after treatment with oxaliplatin. Scale bars, 50 µm. m, Quantification, percentage regenerating crypts. Data points from individual mice (n = 7 +/+ and n = 6 W326R/+, 6 weeks old) were pooled from two independent experiments. For a, c, e, h, j, k and m, mean ± s.d. and unpaired two-sided t tests. PBLs, peripheral blood leukocytes.Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig3_HTML.jpg?md5=8c88a6f1634adf711258ad9b7c45cd59",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "assets/pmc13364717-f0d773af461bff20.jpg",
+            "sha256": "f0d773af461bff2063f077b456085e79e1014d3c4aae555c63da608f74076297",
+            "width": 723,
+            "height": 465,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f0d773af461bff2063f077b456085e79e1014d3c4aae555c63da608f74076297",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Hypermethylation of Dnmt3aW326R/+ HSCs impacts multilineage differentiation trajectories.a–c, DNA hypermethylation detected by EM-seq in Dnmt3aW326R/+ HSCs. a, Number of DMRs identified. b, Heatmap, hypermethylated DMRs; n = 3 experiments. Columns represent LSK-SLAM HSCs pooled from three mice (3–9-month-old, age matched across genotypes). c, Quantification, percent DNAme (%mCpG) for DMRs depicted in b. Box represents 25th–75th percentile, whiskers represent full data range and centerline represents median. d, Genome browser view, Pax6 locus, chr2: 105,640,000–105,710,000. Tracks scaled = 0–100%; H3K27me3 track (GSM8027453). e, Mean DNAme profile along scaled DMVs with flanking ±10 kb. Left: Polycomb-negative DMVs (n = 257). Right: Polycomb-positive DMVs (n = 591). f, Hypermethylated DMRs in Dnmt3aW326R/+ HSCs are highly enriched for Polycomb-marked regions and bivalent promoters. HSC hypermethylated DMRs intersected with chromatin state categories defined by ChromHMM for normal mouse fetal liver E16.5 (ref. 40). Fold-change (FC) P values, two-sided Fisher’s exact tests, hypermethylated DMR CpGs (n = 62,460) versus all CpGs (n = 13,627,678). heterochro, heterochromatin; Tx, transcribed. g, Model based on ref. 42. h–k, scRNA-seq of Lin−Kit+ BM cells demonstrates delayed pseudotime trajectories in Dnmt3aW326R/+ progenitors from 2-month-old mice (three pooled per genotype). h, UMAP projections for WT and mutant stem cell/progenitor populations onto a reference mouse hematopoietic atlas. W326R/+ plot downsampled to 3,214 data points to provide a direct comparison to WT. prog., progenitors; mono, monocyte; DC, dendritic cell; MEP, megakaryocyte-erythroid progenitors. i,j, UMAP pseudotime heatmaps and pseudotime trajectory density graphs for myeloid (i) and erythroid differentiation (j), respectively. k, Pseudotemporal reduction in Fcgr3 expression along the myeloid differentiation trajectory in Dnmt3a mutant mice. Polynomial regression curves individually fitted to mutant (W326R/+) and WT (+/+); 95% confidence intervals; Fcgr3 (CD16), a DMR and myeloid lineage expressed gene. Schematic in g created in BioRender; Jackson, A. https://biorender.com/f65p796 (2026).Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig4_HTML.jpg?md5=166e9781f08139430bc75519d7d89162",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "assets/pmc13364717-7b8e4042f9faf739.jpg",
+            "sha256": "7b8e4042f9faf73991f03d12c652f17b4217acfbc7c047478d5a780071d0abb6",
+            "width": 722,
+            "height": 669,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7b8e4042f9faf73991f03d12c652f17b4217acfbc7c047478d5a780071d0abb6",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig5_HTML.jpg?md5=14b3c1b205b1a3de1a898fbee4e56ff6",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "link_only",
+            "downloadStatus": "not_permitted_or_unresolved",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "DNMT3AGOF hypermethylation corresponds to sites of DNAme gains in human aging.a,b, Polycomb-marked DMVs are hypermethylated in lymphocytes from a 103-year-old individual. a, Genome browser view, PAX6 locus, chr11: 31,795,000–31,875,000. Tracks scaled = 0–100%. DNAme of three healthy individuals aged 0 (newborn), 26 and 103 years. WGBS data reanalyzed from ref. 66. H3K27me3 track = GSM772868; 0-year, 103-year CD4+ lymphocytes; 26-year PBLs. b, Mean DNAme across scaled DMVs with flanking ±10 kb. Left: Polycomb-negative DMVs (n = 141). Right: Polycomb-positive DMVs (n = 456). c, Pearson correlation DNAme at individual CpG sites versus age in individuals from GS. Control, all CpG probes in Illumina 450K array (n = 433,801); Horvath, CpGs used in Horvath clock (n = 332); HESJAS, hypermethylated HESJAS CpG sites (n = 2,646). P values, two-sided Wilcoxon rank-sum test. Centerline represents median, box represents 25th–75th percentile and whiskers represent full data range. d, Scatterplot of chronological age versus HESJAS clock predicted age for individuals from GS. e, Pearson correlation coefficients for Epi-clocks prediction of age versus chronological age for n = 5,085 individuals from the GS population study. f, Increased DNAme at evolutionary conserved regions links hallmarks of aging. Model, in HESJAS and aging, DNA hypermethylation at Polycomb-regulated genes in adult stem cells reduces stem cell output, altering the balance of mature cells generated by multilineage stem cells. Schematic in f created in BioRender; Jackson, A. https://biorender.com/b15c152 (2026).Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig6_HTML.jpg?md5=e90d7fbd67c4b7bcf11bef52bd19c19c",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "HESJAS DNMT3AGOF mutations cause hypermethylation at Polycomb-marked regions.a, Neutrophil:lymphocyte ratio is significantly increased in peripheral blood of HESJAS patients. Controls (DNMT3AWT, n = 413 from ref. 122), HESJAS (DNMT3AGOF, n = 10). Middle dashed line, median; upper and lower dotted lines, quartiles Q1 and Q3, respectively. P value, two-sided Mann–Whitney U test. b, DNMT3AGOF mutations cause growth retardation and microcephaly. Height (n = 13) and head circumference (OFC, n = 12) are plotted as z-scores (s.d. from population mean adjusted for age and sex). Dashed line at −2 s.d. indicates 95% confidence interval for general population. Mean ± s.e.m. c–e, EPIC DNA methylation array analysis of peripheral blood leukocytes (PBLs). c, Left, kernel density estimate (KDE) plot; right, scatterplot of mean DNA methylation per CpG site (%mCpG) for controls (DNMT3AWT) versus HESJAS cases (DNMT3AGOF). Significantly differentially methylated CpGs are colored: gain, hypermethylated HESJAS (red, n = 6,313); loss, hypomethylated HESJAS (blue, n = 612). Nonsignificant, gray. d, Mean DNA methylation levels of hypermethylated DMR-associated CpGs depicted in c. Box, 25th–75th percentile; whiskers, full data range; centerline, median; Δ%mCpG, percent change of DNA methylation relative to mean of control, DNMT3AWT. e, Hypermethylated CpGs are enriched for Polycomb-associated ChromHMM states in PBLs. Heatmap, fold enrichment CpGs at hypermethylated HESJAS DMRs relative to all assayed CpGs for that ChromHMM category. Right panel, total count of CpGs for each ChromHMM state. f, HESJAS hyper DMRs are significantly enriched for promoter regions. %DMRs intersecting UCSC genome knownGene annotations. g, Gene Ontology analysis of hypermethylated DMR-associated genes. Top hits ranked by Benjamini–Hochberg adjusted FDR significance level. DMRs mapped to their closest annotated TSS. Genes associated with DMR probes (n = 623 genes) versus genes associated with all array probes (n = 20,028), two-sided Fisher’s exact tests. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig7_ESM.jpg?md5=8bea4bd942fcc0cce6c9e957244a1394",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dnmt3aW326R/+ mice model HESJAS syndrome and exhibit premature aging.a, Body weight of Dnmt3aW326R/+ mice is significantly decreased postweaning. Weight by age, mean ± 95% confidence intervals, n = 8 wild-type (+/+), n = 11 mutant (W326R/+) male C57BL/6J mice. P = 0.0006 by genotype, two-sided 2-way ANOVA. b, After 6 months W326R/+ mice of both sexes show a gradual decline in body weight. Males (n = 7 +/+, n = 6 W326R/+), females (n = 3 +/+, n = 5 W326R/+). c–e, Features of premature aging at 1 year of age in the HESJAS mouse model. c, 1-year-old W326R/+ mouse next to C57BL/6J wild-type littermate. d, Kyphosis. e, Senile cataracts with vacuoles and disorganization of fibers in the lens nucleus. f–i, Neurocognitive deficits. f, Reduced nocturnal activity (at 6 months). g–i, Open field avoidance (positive thigmotaxis). g, Density plots (2D heatmaps) of open field positions. h, Time in center of field. i, Total movement over 20 min (n = 7 +/+, n = 5 W326R/+ 10–12-month-old male mice). j–l, Reduced hair follicle length and epidermal thickness in W326R/+ mice. Representative images (j) and quantification of mean hair follicle length (k) and epidermal thickness (l). Data points, individual 6-month-old male mice (n = 4 +/+ and n = 4 W326R/+). m,n, Reduced subcutaneous adipose tissue in old W326R/+ mice. m, Representative images. n, Quantification (data points, individual 1-year-old females (n = 5 +/+, n = 4 W326R/+) and 13-month-old males (n = 2 +/+, n = 2 W326R/+)). For h, k, l and n, mean ± s.d., unpaired two-sided t-test. For i, mean ± s.d., two-sided Mann–Whitney test. For j and m, scale bars, 100 μm. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig8_ESM.jpg?md5=af1c14fe1bfc7fae27df8bb06577e3cb",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Dnmt3aW326R/+ gain-of-function mutation leads to features of segmental progeria in mice.a–c, Severe osteoporosis and reduced bone strength in 6-month-old W326R/+ mice. a, Reduced trabecular bone volume as percentage of tissue volume in male femurs. b, Reduced trabecular connectivity density in femurs of both sexes (males, n = 5 +/+, n = 4 W326R/+; females, n = 5 +/+, n = 5 W326R/+). c, Reduced work to break in mutant mouse femurs of both sexes (females, n = 7 +/+, n = 5 W326R/+; males, n = 10 +/+, n = 6 W326R/+). d–i, Metabolic phenotypes evident at 6 months of age in W326R/+ mice. d, Representative images, hepatic steatosis and ‘whitening’ of brown fat in males. e, Oil Red O staining shows increased liver fat in male and female W326R/+ mice. f, Fatty liver (Oil Red O quantification). g, Hyperinsulinemia, accompanied by elevated GDF15 and LDL/cholesterol with normal blood glucose in W326R/+ mice. h,i, Insulin resistance in W326R/+ mice. HOMA-IR scores at 3 months (h) and 6 months (i). For g and i, data points, individual n = 4 +/+ and n = 3 W326R/+ male mice; for h, n = 5 +/+, n = 6 W326R/+ females, n = 6 +/+, n = 6 W326R/+ males; for i, n = 7 +/+ and n = 3 W326R/+ females. j, SLAM marker analysis of LSK cells. Increased proportion of HSCs in W326R/+ mice. Data points, percent HSCs of total nucleated cells recovered from two femurs and two tibias from 3-month-old females. n = 9 +/+, n = 9 W326R/+ mice. k,l, No significant change in grip strength. m, Y-maze alternations. n–q, No osteoarthritis, but reduced bone/growth plate and increased bone marrow adiposity in 10–12-month-old W326R/+ mice. n, Representative images of the medial tibiofemoral articulation in the knee stained with Safranin O (red, cartilage) and Fast Green (green, bone), showing partially closed growth plate (G, arrows), decreased bone (B) and increased adiposity in marrow (M), while articular cartilage (C) appears normal. o, No increased articular cartilage damage characteristic of osteoarthritis, assessed by OARSI scoring (scale 0–6), average score of medial and lateral tibial plateau and femoral condyles. P value, Mann–Whitney U test. p, Reduced thickness of proximal tibial growth plate. q, Increased adiposity, % distal femoral metaphyseal bone marrow space occupied by adipocytes. P value, unpaired t-test after log transformation. Data points, individual 10–12-month-old males (n = 9 +/+, n = 6 W326R/+). For a–c, f–m and o–q, mean ± s.d., unpaired two-sided t-tests. For d, e and n, scale bars, 100 μm. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig9_ESM.jpg?md5=3b7abc5a8fffa5ac74cde5ae9894bf3b",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Dnmt3aW326R/+ leads to progressive hypermethylation in adult mouse tissues.a–c, Quantification of differentially methylated regions (DMRs) detected by DNA methylation array shows progressive hypermethylation (gain) in W326R/+. a, Intestine. b, Bone marrow. c, Liver. d–f, Genome browser view of the hypermethylated Pax6 locus. All tracks scaled 0–100%. DMV, DNA methylation valley; DMR, differentially methylated region. d, Intestine. e, Bone marrow. f, Liver. g–i, Heatmap of DMRs hypermethylated in W326R/+. g, Intestine (n = 762). h, Bone marrow (n = 483). i, Liver (n = 257). j–l, Quantification of DNA methylation at DMRs in n = 3 animals per age point per genotype depicted in g–i. j, Intestine. k, Bone marrow. l, Liver. Box, 25th–75th percentile; whiskers, full data range; centerline, median; mCpG proportion of DNA methylation along DMRs. P value, two-sided, paired Wilcoxon rank-sum tests for 4-day-old +/+ and W326R/+; two-sided Kruskal–Wallis rank-sum test for +/+ by age or W326R/+ by age. m, Hypermethylated DMRs in Dnmt3aW326R/+ tissues are enriched at Polycomb-marked (Polycomb; bivalent promoter) regions. Heatmap of fold change of CpG frequency at chromatin state categories identified by ChromHMM relative to total CpG count for state. n, Total CpG counts for ChromHMM features represented in mouse Illumina bead arrays. o, Hypermethylated DMR CpGs are enriched at UCSC genome-annotated promoter regions, relative to total CpG count for annotated feature on array. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig10_ESM.jpg?md5=0701af67da7c70642d3f8748378d61d0",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Hematopoietic stem cell function is perturbed in Dnmt3aW326R/+ mice.a–g, Reduced number of mature blood and lineage-negative cells, but not LSK cells or MPPs in W326R/+ mice. a–d, Quantification of total number of mature B cells (a), T cells (b), myeloid cells (c) and erythroid cells (d) in bone marrow from +/+ (n = 6) and W326R/+ (n = 6) 6-month-old mice. e–g, Quantification of total number of Lin− cells (e), LSK cells (f), and MPPs (g) in bone marrow from +/+ (n = 12) and W326R/+ (n = 12) 3–6-month-old mice. h, Reduction in transplant W326R/+ HSC numbers is not significant or sufficient to account for depleted levels of circulating CD45.2+ leukocytes from W326R/+ donors (Fig. 3e). Quantification of total CD45.2+ HSCs in bone marrow for +/+ (n = 9) and W326R/+ (n = 11) donors 4 months post-transplant. For a–h, cells recovered from two femurs and two tibia per mouse. i–k, Dnmt3aW326R/+ HSC functional deficit is cell autonomous. i, Schematic of noncompetitive reverse transplantation experiment. j, Wild-type HSCs reconstitute sublethally irradiated W326R/+ mice more efficiently than +/+ mice. Donor chimerism at 4 months in peripheral blood. Data points pooled from 2 experiments, +/+ (n = 7) and W326R/+ (n = 7) CD45.2 male recipients each receiving 250 HSCs from 2–4-month-old CD45.1 male donors. k, Leukocyte populations in peripheral blood are not skewed when wild-type CD45.1 HSCs are transplanted into W326R/+ mice (n = 4 +/+; n = 6 W326R/+; recipients with <0.7% chimerism were excluded from analysis). l, Quantification of colony-forming unit-culture (CFU-C) from 3-month-old bone marrow. +/+ (n = 8) and W326R/+ (n = 8) mice. E, erythroid; G, granulocyte; M, macrophage; GM, granulocyte–macrophage progenitor; GEMM, common myeloid progenitor. Unpaired t-test for total CFU-C counts. m, CFU categories as percentage of total CFU. For a–h, unpaired two-sided t-test (Welch’s correction for a and b); for j, two-sided Mann–Whitney test, for l, two-sided 2-way ANOVA.For a–h and j–l, mean ± s.d. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig11_ESM.jpg?md5=01632a7557951e776fae978f387f4c1d",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Hypermethylation at Polycomb-associated regions in Dnmt3aW326R/+ mouse adult stem cells.a–c, Hypermethylated DMRs in Dnmt3aW326R/+ HSCs detected by EM-seq are enriched at Polycomb-marked (Polycomb; bivalent promoter) regions. a, Heatmap of the fold enrichment of CpG frequency at ChromHMM chromatin state categories in HSC hypermethylated DMRs in EM-seq dataset relative to all CpGs for that category. b, Heatmap of total CpG site counts for each ChromHMM state in EM-seq dataset. c, Hypermethylated DMR CpGs in HSCs are enriched at UCSC genome-annotated promoter regions. d, Gene Ontology analysis of HSC hypermethylation DMR associated genes. Highest ranked biological processes and molecular function categories by Benjamini–Hochberg adjusted FDR significance level. Genes associated with DMRs (n = 1,715) versus genes associated with all CpGs detected by EM-seq (n = 22,860), two-sided Fisher’s exact tests. e,f, Dnmt3aGOF mutations in humans and mice lead to hypermethylation in Polycomb-associated DMVs. e, Heatmaps of H3K27me3 (GSM8027450), H3K4me3 (GSM8027451), DNA methylation (mCpG) of wild-type (+/+), mutant (W326R/+) HSCs and difference in DNA methylation between mutant and wild-type (ΔmCpG), along mouse DMVs (n = 881). f, Heatmaps of H3K27me3 (GSM772868), H3K4me3 (GSM997240), DNA methylation (mCpG) of newborn (0 year), 26 years, 103 years leukocytes, and the delta of DNA methylation between 103 years and 0 year (ΔmCpG), along human DMVs (n = 597). g, Dnmt3aW326R/+ gain-of-function mutation in HSCs results almost entirely in DNA hypermethylation assessed by genome-wide EM-seq, with no evidence of hypomethylation of age-associated PMDs. Top: kernel density estimate (KDE) plots of individual CpGs or binned windows. Bottom: scatterplots of the same genomic bins, with significantly differentially methylated CpGs/regions indicated; W326R/+ methylation gain (red); methylation loss (blue); nonsignificant (gray); n, number of significantly differentially methylated regions. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig12_ESM.jpg?md5=a69aba5811f67f2fa78aa9341e7d091c",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "scRNA-seq analysis of Dnmt3aW326R/+ HPSCs.a, UMAP of differential abundance (DA) of Dnmt3aW326/R+ mutant vs wild-type from 2-month-old mice (3 pooled per genotype). W326R/+ plot downsampled to 3,214 data points to provide direct comparison to wild-type. Differential abundance is color coded, higher abundance in mutant, red; lower abundance in mutant, blue. b, Quantification of differential abundance presented in a. Box, 25th–75th percentile; whiskers, smallest to largest values within 1.5× IQR from the box hinges; centerline, median. HSC, hematopoietic stem cell; prog, progenitors; MPP, multipotent progenitors; LMPP, lympho-myeloid primed progenitors; MEP, megakaryocyte-erythroid progenitors; Baso, Basophil; MK, megakaryocyte; Ery, erythroid; Neut, neutrophil; Mono, monocyte; DC, dendritic cell. c, Volcano plots of differentially expressed genes in HSCs, neutrophil progenitors and erythroid progenitors. d, Volcano plots of hypermethylated DMR genes in HSCs, neutrophil progenitors and erythroid progenitors. e, Model: differentially expressed genes along pseudotime could be due to delayed onset of expression (middle panel) or differential abundance (lower panel). f, UMAPs showing differentially expressed genes, Fcgr3, Csf2ra, Ncam1 and Gpc1 within myeloid progenitor populations (dashed box). These demonstrate that decreased expression does occur in individual cells at same reference position in UMAP space, additional to the reduced number of expressing cells. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig13_ESM.jpg?md5=5e98fb9ee4f79ec5aa36a5af4ef60ef7",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Dnmt3aW326R/+ cell cycle dynamics are similar to wild-type HSPCs.a,b, scRNA-seq analysis of cell cycle signature genes across the myeloid differentiation trajectory. Scatterplots of transcriptional cell cycle scores for S-phase signature genes across pseudotime (a) and G2/M signature genes (b). Permutation test for W326R/+ vs +/+: p = 0.54 (>0.05, ns) for a; p = 0.76 (>0.05, ns) for b. c, Scatterplot of Mki67 gene expression along myeloid differentiation trajectory. Permutation test for W326R/+ vs +/+: p = 0.33 (>0.05, ns). d, Growth curves: cell proliferation is not decreased in Dnmt3aW326R/+ cultured primary dermal fibroblasts (n = 3 mice) compared with isogenic wild-type controls (n = 4), geometric mean ± s.d. e,f, HSPC FACS analysis of cell cycle. e, Representative DNA content histogram of cell populations defined by LSK-SLAM markers. f, Quantification of cell cycle profiles in HSC, MPP, LSK and LK populations, as indicated. No significant differences between genotypes were detected by two-sided 2-way ANOVA for HSCs, MPPs, LSK or LK populations; n = 3–5-month-old mice per genotype, mean ± s.d. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig14_ESM.jpg?md5=92abf4f1562b18694223433c965fb27c",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Pax5 DNA hypermethylation is selectively lost in many B lymphocytes that progress to later differentiation stages.a, Hematopoietic lineage-defining transcription factors hypermethylated in the Dnmt3aW326R/+ mouse. Filled circles, transcription factors with hyper DMRs identified by EM-Seq of HSCs. b, V gene usage repertoire with productive VDJ joins in pro-B cells exhibit a bias towards proximal VH usage in W326R/+. c–e, EM-PCR of hypermethylation-associated genes in sorted B cell populations (Hardy fractions) from mouse bone marrow. DNA hypermethylation at the Pax5 promoter in Dnmt3aW326R/+ B lymphocytes is reduced at later stages of B cell differentiation (Hardy C–F), while hypermethylation is not reduced for Hoxc13 and Hoxd13 that are not transcriptionally activated in the B-cell lineage. c, CpG methylation state matrices of sorted cell populations from individual mice, ages 2–3 months. Blue, mCpG; gray, CpG; white, methylation status not defined. Columns, individual CpGs, numbered from start of amplicon. Rows, individual sequencing reads, n = 2 mice per genotype. Reads per sample range 835–4847. Amplicon size: Pax5 562 bp, Hoxc13 684 bp, Hoxd13 666 bp. d,e, Quantification from c, percentage DNA methylation of individual amplicons for Hoxc13 (d), and Hoxd13 (e). Centerline, median. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig15_ESM.jpg?md5=9090dd443d112db6ccf031652e54edaf",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig16",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Examples of hypermethylated transcription factor promoter regions; accelerated epigenetic clock aging in HESJAS.a,b, Genome browser view of Pax5 promoter region. a, Dnmt3aW326R/+ mouse HSCs. Tracks scaled 0–100%. EM-seq of HSCs pooled from 3 mice with experimental replicates, r1-3. Mean, mean DNA methylation of three replicates. mDMV, mouse DNA methylation valleys; DMR, differentially methylated regions. b, Human leukocytes, three healthy individuals aged 0 (newborn), 26 and 103 years. hDMVs, human DNA methyation valleys; c,d, Genome browser view of the Gata4 locus in mouse HSCs (c) and human lymphocytes (d). e,f, DNMT3AGOF leads to increased predicted age in HESJAS and mice. e, Epi-clock age prediction for HESJAS patients is significantly increased compared to controls. Difference between chronological age and age calculated by indicated epi-clocks plotted for individual cases and controls. Data points, individual samples. f, Mouse epi-clock ages for Dnmt3aW326R/+ HSCs are predicted to be significantly older compared with age-matched wild-type controls (+/+). Data points, difference from chronological age plotted for HSCs pooled from 3 mice. Black line, median. For e and f, P values, Welch’s two-sided two-sample t-test. g, Model: hypermethylation of Polycomb regions by wild-type DNMT3A during physiological aging. Wild-type DNMT3A1 is competitively attracted by two distinct chromatin marks, H3K36me2/3 and H2AK119Ub that are present in mutually exclusive genomic regions10,21. The PWWP-H3K36me2/3 interaction normally restrains DNMT3A1 methylation of Polycomb regions containing H2AK119Ub marks. Overexpression of DNMT3A1 can be sufficient to methylate Polycomb regions123 and wild-type DNMT3A1 is distinctive from the other de novo DNA methyltransferase, DNMT3B, in having an N-terminal UDR domain mediating this K119Ub interaction. Therefore, low-level wild-type DNMT3A could gradually methylate CpGs at Polycomb sites during physiological aging. In HESJAS, PWWP mutations disrupt the H3K36me2/3 enhancing the attraction of DNMT3A to Polycomb-marked regions, accelerating the rate of DNA methylation, and the onset of associated pathologies. Hence, HESJAS provides an accelerated model for wild-type Dnmt3a’s action at Polycomb regions, by tipping the balance in favor of the UDR–K119Ub interaction. Source data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig16_ESM.jpg?md5=f23305b245a6d8dfd8d2a1b612a1895a",
+            "articleURL": "https://doi.org/10.1038/s41588-026-02633-8",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al.. A progeria syndrome links DNA hypermethylation to age-related pathology.. DOI: 10.1038/s41588-026-02633-8. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_MOESM1_ESM.pdf?md5=a045415b039fbc52674682cd08f99721",
+            "license": "CC BY",
+            "sha256": "18b6413d495eae766b31d742a8c99feb6ae8e64c4d20d2aa9b342b9f34e687b2",
+            "status": "downloaded_private",
+            "bytes": 2121065,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 13,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_MOESM2_ESM.pdf?md5=a5b2e08f6f4aa474606a1eecc7b7cdf4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_MOESM3_ESM.pdf?md5=307721cd9add9383bbbe105507fb829d",
+            "license": "CC BY",
+            "sha256": "f95363ee8c2ea282dbc50052ce2c96e16407915b25da16964a9cda0bcf873451",
+            "status": "downloaded_private",
+            "bytes": 5154879,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 40,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_MOESM4_ESM.xlsx?md5=7306c1b76e0dc09e8bd9f1dd48ff3bfe",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_MOESM5_ESM.xlsx?md5=853d0654dc826a730317a78366229fa1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-06T08:38:21.626060+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Dan Sarni; Gráinne Neary; Paula L. Carroll; Chris S. Vink; Caroline V. Billard; Tomoya Isobe; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "25.5",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-06T08:38:27Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-06T08:38:27Z",
+        "url": "https://openalex.org/W7164597165",
+        "cited_by_count": 2,
+        "fwci": 3.4088,
+        "citation_normalized_percentile": 0.93126642,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-06T08:38:27Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-06T08:38:27Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-07T08:38:27Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.6563321,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.6563321,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-06T08:38:41Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -192259,6 +193191,18 @@
           ]
         }
       ]
+    },
+    "doi-11e85eaf36bde7ed": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ae650676e67cafc8": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -193877,7 +194821,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-06T08:36:46Z",
+  "generatedAt": "2026-11-06T08:38:41Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -194111,18 +195055,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-06T08:32:24Z",
-    "updatedAt": "2026-11-06T08:36:59Z",
+    "updatedAt": "2026-11-06T08:38:47Z",
     "batchCount": 3,
-    "requests": 77,
+    "requests": 110,
     "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

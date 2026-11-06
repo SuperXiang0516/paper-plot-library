@@ -177,13 +177,45 @@
     },
     "2026-11-06": {
       "newDOIs": [
+        "10.1002/imt2.70176",
         "10.1038/s41586-026-10569-6",
+        "10.1038/s41588-026-02633-8",
         "10.1093/bib/bbag601",
         "10.26508/lsa.202603840"
       ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag596": {
+      "checkedAt": "2026-11-06T08:38:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0158": {
+      "checkedAt": "2026-11-06T08:38:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/imt2.70176": {
+      "checkedAt": "2026-11-06T08:38:35Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-06T08:38:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41588-026-02633-8": {
+      "checkedAt": "2026-11-06T08:38:27Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag601": {
       "checkedAt": "2026-11-06T08:36:39Z",
       "status": "source_confirmed",
@@ -2598,61 +2630,6 @@
           "paperURL": "https://doi.org/10.1093/bioinformatics/btag664"
         },
         "updatedAt": "2026-10-22T06:56:09Z"
-      }
-    },
-    "10.1002/imt2.70176": {
-      "checkedAt": "2026-10-22T06:56:02Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/imt2.70176",
-        "metadataHash": "e1548436024efd741f26e7060f651fcd741f1cc2f0e7ec2bf2c40482d6553bd8",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.1/PMC13625922.1.xml?md5=4ccf43dc312e572ef7bcf57227029fe3",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 910,
-              "sha256": "9d889e9560160160933c223f5beebcf3f79fbbccdd5c3a935f41980778e1088e",
-              "label": "FIGURE 6",
-              "height": 1175,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.1/IMT2-9999-e70176-g001.webp?md5=e6b5ec9ab1cbb3ce20b875f9d9bf344f",
-              "asset": "assets/pmc13625922-9d889e9560160160.webp",
-              "license": "CC BY",
-              "assetSHA256": "9d889e9560160160933c223f5beebcf3f79fbbccdd5c3a935f41980778e1088e",
-              "id": "imt270176-fig-0006",
-              "captionHash": "f708b6b810de21f7f46b1c23bc16b3e7a440cad199197714051be00c3568d5e2"
-            },
-            {
-              "width": 910,
-              "sha256": "c4430f9f3d4d4a1a617027f330e817d547e88d5ce9262809a3d69c84993385cf",
-              "label": "FIGURE 7",
-              "height": 1032,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13625922.1/IMT2-9999-e70176-g002.webp?md5=cbbe885c00f807bcc29d6b136223560a",
-              "asset": "assets/pmc13625922-c4430f9f3d4d4a1a.webp",
-              "license": "CC BY",
-              "assetSHA256": "c4430f9f3d4d4a1a617027f330e817d547e88d5ce9262809a3d69c84993385cf",
-              "id": "imt270176-fig-0007",
-              "captionHash": "4f8afd6961d72bda4832997971a4986d2745fb96bc373d608e4c1913d468294f"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-11e85eaf36bde7ed",
-          "doi": "10.1002/imt2.70176",
-          "paper": "Dissecting the angiogenic mechanism of pachychoroid polypoidal choroidal vasculopathy.",
-          "journal": "iMeta",
-          "date": "2026-09-30",
-          "year": "2026",
-          "pmcid": "PMC13625922",
-          "pmid": "42819474",
-          "paperURL": "https://doi.org/10.1002/imt2.70176"
-        },
-        "updatedAt": "2026-10-22T06:55:59Z"
       }
     },
     "10.1093/bioinformatics/btag687": {
@@ -10607,61 +10584,6 @@
         "updatedAt": "2026-10-16T06:38:48Z"
       }
     },
-    "10.1038/s41588-026-02633-8": {
-      "checkedAt": "2026-10-16T06:38:38Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41588-026-02633-8",
-        "metadataHash": "005bc9afa28cadb769fe0e28f4a692da96126a23742534c8e8f2b89c5cc55248",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/PMC13364717.1.xml?md5=5c5a192aeed2d265a763265817c16b43",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13364717-f0d773af461bff20.jpg",
-              "assetSHA256": "f0d773af461bff2063f077b456085e79e1014d3c4aae555c63da608f74076297",
-              "license": "CC BY",
-              "id": "Fig3",
-              "sha256": "f0d773af461bff2063f077b456085e79e1014d3c4aae555c63da608f74076297",
-              "height": 465,
-              "label": "Fig. 3",
-              "width": 723,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig3_HTML.jpg?md5=8c88a6f1634adf711258ad9b7c45cd59",
-              "captionHash": "bd4c3cd53c48a08b4841071a7fba9d1ae457837e5451008fdce95723b07725c5"
-            },
-            {
-              "asset": "assets/pmc13364717-7b8e4042f9faf739.jpg",
-              "assetSHA256": "7b8e4042f9faf73991f03d12c652f17b4217acfbc7c047478d5a780071d0abb6",
-              "license": "CC BY",
-              "id": "Fig4",
-              "sha256": "7b8e4042f9faf73991f03d12c652f17b4217acfbc7c047478d5a780071d0abb6",
-              "height": 669,
-              "label": "Fig. 4",
-              "width": 722,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13364717.1/41588_2026_2633_Fig4_HTML.jpg?md5=166e9781f08139430bc75519d7d89162",
-              "captionHash": "9177b117604ecc912d9edd728c6cd36c089e2096d1d80837fd973c5f3a902c34"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-ae650676e67cafc8",
-          "doi": "10.1038/s41588-026-02633-8",
-          "paper": "A progeria syndrome links DNA hypermethylation to age-related pathology.",
-          "journal": "Nature genetics",
-          "date": "2026-06-12",
-          "year": "2026",
-          "pmcid": "PMC13364717",
-          "pmid": "42286141",
-          "paperURL": "https://doi.org/10.1038/s41588-026-02633-8"
-        },
-        "updatedAt": "2026-10-16T06:38:37Z"
-      }
-    },
     "10.1038/s41467-026-74757-8": {
       "checkedAt": "2026-10-16T06:38:31Z",
       "status": "pending",
@@ -12835,27 +12757,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 276,
-    "requests": 77,
+    "elapsedSeconds": 384,
+    "requests": 110,
     "maxRequests": 1800,
     "uncertainAiAttempts": 0,
     "batchCount": 3,
     "uncertainRequests": 0,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "maxBatches": 36,
     "aiAttempts": 2,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-06T08:36:59Z",
+    "updatedAt": "2026-11-06T08:38:47Z",
     "maxSeconds": 2700,
     "date": "2026-11-06",
     "status": "active",
     "version": 1,
     "endReason": "",
-    "startedAt": "2026-11-06T08:32:24Z",
-    "inFlight": {
-      "startedAt": "2026-11-06T08:36:59Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "startedAt": "2026-11-06T08:32:24Z"
   }
 }
