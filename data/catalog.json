@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-05",
+  "checkedAt": "2026-11-06",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -135943,6 +135943,740 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-732e44346a7bf839",
+      "doi": "10.26508/lsa.202603840",
+      "paper": "Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.",
+      "journal": "Life science alliance",
+      "date": "2026-09-01",
+      "year": "2026",
+      "pmcid": "PMC13534335",
+      "pmid": "42680559",
+      "paperURL": "https://doi.org/10.26508/lsa.202603840",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2575-1077",
+      "eissn": "2575-1077",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d68b6f09c5b0a50185d02857a458132fe41bb09be3d23eb9dd2b20954b699555"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/PMC13534335.1.xml?md5=49636fad337bdfe31029979f1f8387ac",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Short-term high-fat diet leads to increased body weight gain, fasting hyperglycemia, hyperinsulinemia, mild glucose intolerance, and onset of insulin resistance.(A) Schematic overview of the experimental setup: 8-wk-old male C57BL/6JBomTac mice underwent a 3-wk acclimatization period during which they were fed a low-fat diet (LFD). Subsequently, mice were divided into groups receiving either LFD (orange, as a control) or high-fat diet (blue, HFD) for 1 or 3 wk. (B) Weight gain measured as a percentage of starting weight at day 0 for each animal after 1 wk (n = 66–70 per diet) and 3 wk (n = 28 per diet). (C) Fasting blood glucose levels in mmol/liter at 1 wk (n = 48 per diet) and 3 wk (n = 24 per diet). (D) Fasting serum insulin levels in ng/ml at 1 wk (n = 15–16 per diet) and 3 wk (n = 8 per diet). (E) Structure parameter inference approach (SPINA)-Carb of insulin receptor gain/insulin sensitivity (SPINA-GR) at 1 wk (n = 15–16 per diet) and 3 wk (n = 8 per diet). (F) Structure parameter inference approach (SPINA)-Carb of secretory capacity/β-cell function (SPINA-Gβ) at 1 wk (n = 15–16 per diet) and 3 wk (n = 8 per diet). (G) Intraperitoneal glucose tolerance test (IPGTT) at 1 wk (n = 16 per diet) and 3 wk (n = 8 per diet). Data is shown as a percentage change from blood glucose at T = 0. (H) The data points shown in the IPGTT (G) were used to calculate the area under the curve (AUC). (I) Intraperitoneal insulin tolerance test (IPITT) at 1 wk (n = 16 per diet) and 3 wk (n = 8 per diet). Data are shown as a percentage change from serum insulin levels at T = 0. (J) The data points shown in the IPITT (I) were used to calculate the AUC. Asterisk indicates FDR-adjusted P-value ≤0.05.Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig1.webp?md5=0210b65119f7502b3970322499cd04ee",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "assets/pmc13534335-36dfdd8499870228.webp",
+            "sha256": "36dfdd849987022831e7ee879e870b059d9a5b44b3e75d6eb63a0b4926829f8e",
+            "width": 1599,
+            "height": 978,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "36dfdd849987022831e7ee879e870b059d9a5b44b3e75d6eb63a0b4926829f8e",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "figS1",
+            "label": "Figure S1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Related to Fig 1.11-wk-old male C57BL/6JBomTac mice were fed either a low-fat diet (LFD, orange) or a high-fat diet (HFD, blue) for 1 and 3 wk. (A) Weight gain measured as a percentage change from baseline weight (week 0) and absolute body weight. (B) in mice fed LFD or HFD (n = 69–72 per diet) used for the phenotyping experiment at 1 and 3 wk, as well as mice used for Single Cell Multiome ATAC + Gene expression sequencing (ATAC+RNA; LFD: n = 2 at 1 wk, n = 1 at 3 wk; HFD: n = 2 at both timepoints), and imaging analyses (n = 4 per diet). (C) Fasted Intraperitoneal Glucose Tolerance Test (GTT) at 1 wk (n = 16 per diet) and 3 wk (n = 8 per diet). (D) Fasted Intraperitoneal Insulin Tolerance Test (ITT) at 1 wk (n = 16 per diet) and 3 wk (n = 8 per diet). Points represent individual animals. Boxplots show the median and interquartile range. Asterisk indicates FDR-adjusted P-value ≤0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS1.webp?md5=06233eb78f496e9abc14368770abc455",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "figS2",
+            "label": "Figure S2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Related to Fig 2.(A) Rank plot of log-transformed total number of unique molecular identifiers (UMIs) and the log-transformed rank in order of decreasing total UMIs for the indicated sample. Vertical red line indicates the threshold, and the red horizontal line indicates the corresponding number of UMIs. The dashed blue vertical lines represent the quantile range for the breakpoint search. These lines define the region within which breakpoints are searched. (B) Scatter plot of the log-transformed number of detected features and the fraction of UMIs associated with mitochondrially encoded genes. Red nuclei were filtered away. (C) Scatter plot showing the log-transformed total number of UMIs and the number of detected features. The blue line shows piecewise linear regression with three breakpoints. Red nuclei were filtered away. (D) Histogram showing the distribution of UMIs associated with protein-coding genes. Nuclei falling below or above the red lines were removed. (E) Histogram showing the distribution of the fraction of UMIs derived from exons (contrast fraction). Nuclei with a contrast fraction below 1 were removed. (F) Fragment size distribution plot. (G) Mean Tnf5 insertion frequency around transcription start sites (TSS). (H) Histogram showing the distribution of the fraction of reads in blacklist regions (blacklist ratio). Nuclei falling above the red line were removed. (I) Scatter plot showing TSS enrichment score and log10 number of unique fragments. Nuclei falling below the black lines were removed. (J) Violin plot of the fraction of reads within peaks (FRiP) for each replicate. Nuclei falling below the red line were removed. (K) Bar plot depicting integration quality based on the ATAC data and RNA data. The global integration local Inverse Simpson’s Index (iLISI) and the batch average silhouette width (bASW) scores in SVD, LIGER, PCA, and JOINTLY were calculated for each condition (x-axis). (L) Uniform Manifold Approximation and Projection (UMAP) visualization of clustering based on a weighted nearest neighbor graph, based on the weighted average of RNA and ATAC similarities, split by cluster and replicate. Nuclei are colored by condition and replicate. (M) Pseudo-bulk chromatin accessibility tracks scaled between 0–1 for endocrine marker genes by each cell type. (N) Bar plot depicting the percentage of cells in each cell type per condition for each replicate.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS2.webp?md5=f0ecb70febe4b3140fc4a97010abb499",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Classification of islet cell types through integrated snRNA and snATAC-seq analyses.(A) 11-wk-old male C57BL/6JBomTac mice were fed either a low-fat diet (LFD) (n = 3) or high-fat diet (HFD) for one (1 wk) (n = 2) and three (3 wk) (n = 2) weeks. At the end of the experiment, the mice were euthanized, and islets of Langerhans were isolated. Nuclei from islets were purified and used for Single Cell Multiome ATAC + Gene expression sequencing. The scatterplot shows Uniform Manifold Approximation and Projection (UMAP) visualization of clustering based on a weighted nearest neighbor (WNN) graph, based on the weighted average of RNA and ATAC similarities (n = 20,566). Data points are colored by cell type as indicated on the figure. (B) Dot plot showing the percentage of cells expressing the gene (dot size) and scaled average gene expression (dot color) of cell type marker genes (21) per cell type in the top panel, as well as the average gene score, calculated based on the chromatin accessibility of regulatory elements in the vicinity of the gene, of cell type markers in the bottom panel. (C) Pseudo-bulk chromatin accessibility tracks scaled between 0–1 for endocrine marker genes by each endocrine cell type. (D) Violin and boxplot depicting the distribution of the per-nucleus RNA (top) and ATAC (bottom) modality weights, divided by cell type. (E, F) UMAP visualization of clustering based on the ATAC (E) or RNA (F) modality. (G) Staged bar plot depicting the percentage (%) of cells in each cell type per condition.Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig2.webp?md5=1d629c8fe491a0e789d0035f5dab0749",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Transcriptional dynamics of β-Cells in response to 1 and 3 wk of high-fat diet.(A) Bar plot of Augur cell type prioritization scores across conditions, based on single-nucleus (sn)RNA-seq data, identified for each cell type. (B) Bar plot of the number of differentially expressed genes identified for each cell type. (C) Principal component analysis plot from the first two principal components calculated from pseudo-bulk snRNA-seq data from β-cells across all replicates, using the top 500 most variable genes. Each point represents a sample, with color and shading according to diet and replicate. (D) Left panel: Heatmap showing z-transformed normalized pseudo-bulk average expression of differentially expressed genes identified within β-cells. Genes were divided into five clusters using fuzzy c-means clustering. Right panel: The top five most significant pathways from Gene Ontology biological processes within each fuzzy cluster. (E) Boxplot of the per cell gene activity score of gene clusters from Fig 3D, within pancreatic β-cells from non-diabetic human donors which have been separated into groups treated with stressors; Glucose (22 mM) and/or palmitate (0.5 mM), interleukin-1beta (IL-1β) (1 ng/ml), and interferon gamma (IFNγ) (1,000 U/ml), or interferon alpha (IFNα) (2,000 U/ml) compared with untreated controls for 24 h (24, 25). Red lines indicate the median in the untreated samples. Number of donors in each condition at each time point: 24 h; Glucose (n = 3), palmitate (n = 3), Glucose + Palmitate = (n = 3), IL-1β and IFNγ (n = 3), and IFNα (n = 2).Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig3.webp?md5=fc12ed1be03f28c32ace14c8ea2c8752",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "figS3",
+            "label": "Figure S3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Related to Fig 3.(A, B) Scatter plots depicting the correlation between the number of cells within each cluster and the prioritization score calculated with Augur (A) or the number of differentially ex-pressed genes identified across conditions in each cell cluster (B). Pearson Correlation coefficient (r) and P-value (P) are written inside each plot and points are colored according to cell type as indicated on the figure. (C) Bar plot of examples of genes from the pathway analysis for each fuzzy cluster found in Fig 3D are shown. Gene expression is depicted for each replicate (points) using DESeq2 normalized pseudo-bulk counts across conditions. Bars indicate the mean expression. (D) Boxplot of the per cell gene activity score of gene clusters from Fig 3D within pancreatic β-cells from non-diabetic human donors which have been separated into groups treated with stressors; Glucose (G) (22 mM) and/or palmitate (P) (0.5 mM), interleukin-1beta (IL-1β) (1 ng/ml) and interferon gamma (IFNγ) (1,000 U/ml), or interferon alpha (IFNα) (2,000 U/ml) compared with untreated controls for 72 h (x-axis). Red lines indicate the median in the untreated samples. Number of donors in each condition at each time point: 72hr; Glucose (n = 2), palmitate (n = 2), glucose and palmitate = (n = 2), IL-1β and IFNγ (n = 2), IFNα (n = 2). (E) Heatmap showing the normalized enrichment score (NES) for the indicated gene sets among genes ranked by log fold change in expression between 3 wk of HFD and LFD. The bars indicate the size of the gene sets. *FDR ≤ 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS3.webp?md5=82ffebc5b67251d3d9e1779bd069185d",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Immune and inflammatory transcription factors drive transcriptional changes in β-cells in response to short-term high-fat diet.(A) Left panel: Heatmap displaying z-transformed normalized average gene expression (left) and motif activity (right) of eRegulon transcription factors across conditions. Right panel: Dot plot illustrating row min–max scaled average activity score (AUC) of target enhancers (left) and target genes (right), representing the gene set activity for each eRegulon per condition. Dot size corresponds to AUC. (B) Pearson correlation analysis of semi-pseudo-bulked data (100 meta-cells per condition, each with 10 cells), from the Stat2 eRegulon. The y-axis depicts the min–max scaled product of semi-pseudo-bulked transcription factor, Stat2, gene expression, and motif activity. The x-axis depicts the activity score for Stat2 target enhancers (top) and Stat2 target genes (bottom). Points are colored according to condition (LFD: blue, HFD 1 wk: red, and HFD 3 wk: yellow). (C) Heatmap illustrating gene set enrichment analysis (GSEA) of genes that correlate positively (correlation ≥0.1) or negatively (correlation ≤−0.1) with clinical traits of diabetes from the Attie lab diabetes database (http://diabetes.wisc.edu/correl_f2.php) within high-fat-diet (HFD) induced eRegulon target genes. Genes associated with metabolism and energy regulation (top panel) as well as inflammation and immune response (bottom panel) are shown. Gene sets that are significantly enriched (false discovery rate [FDR] ≤ 0.05) within an eRegulon gene set are colored (blue if NES >0 otherwise red). Rows and columns were clustered using hierarchical clustering, and rows were split by functional category (metabolism/energy regulation vs. inflammation/immune response). Dendrograms are not displayed. (D) GSEA enrichment plot of the Interferon γ-induced protein 10 (IP-10, also known as CXCL10) gene set enriched within Stat2 target genes. Top: The y-axis represents the enrichment score, while the x-axis shows a rug plot of genes from the IP-10 gene set, found within the Stat2 target genes, ranked by their correlation with IP-10 levels, from high positive to low negative, and are colored based on their correlation score: positive (red) or negative (blue). The orange curve represents the running sum of the enrichment score across the ranked genes. The peak of this curve (indicated by the red dotted line) represents the maximum enrichment score for the gene set. Bottom: A bar plot illustrating the ranking of genes based on their correlation with IP-10 levels.Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig4.webp?md5=d6fc1a014904dfff96d49f075b2888b0",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "figS4",
+            "label": "Figure S4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Related to Fig 4.Correlation analysis using semi-pseudo-bulked data (100 meta-cells per condition, each with 10 cells). The correlation analysis was performed using the min–max scaled product of semi-pseudo-bulked transcription factor gene expression and of transcription factor motif activity with activity scores (AUC) for target genes and enhancers from SCENIC+ (computed using AUCell) for each eRegulon (y-axis). Nuclei are colored according to conditions as indicated on the figure. Pearson Correlation coefficient (r) is written inside each plot.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS4.webp?md5=7fa23fb2e28e2d1b5cb49427c8315487",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Identification of β-Cell subclusters based on inflammatory response.(A) Circos plot of the top 30 predicted interaction links from all cell types to the β-cells from one week (1 wk) or three weeks (3 wk) of high-fat diet (HFD). (B) Heatmap displaying z-transformed normalized pseudo-bulk gene counts for putative tumor necrosis factor (Tnf) and interferon beta (ifnb1) target genes. (C) Percentage of high inflammatory response β-cells at each condition. (D) Heatmap displaying Z-transformed average gene expression (left) and motif activity (right) of inflammatory-related eRegulon transcription factors across conditions and β-cell low (gray dot) or high (orange dot) inflammatory subpopulation. (E) Uniform manifold approximation and projection (UMAP) visualization of β-cells colored by inflammatory status. (F) 20× immunofluorescence (IF) image of pancreas sections stained for STAT1 (red), insulin (green), and DAPI (blue). Individual channels on the left and a merge of all channels on the right. (G) Average percentage of STAT1-high β-cells per mouse across percentile thresholds (70th–95th) in LFD- and HFD-fed mice (3 wk; n = 4/diet). STAT1-high was defined as nuclear or perinuclear STAT1 mean pixel intensity exceeding the given threshold. Error bars indicate mean ± standard deviation (SD). Asterisks indicate significant diet differences at each threshold (Wilcoxon test, P < 0.05). (H) Odds ratio of a β-cell being STAT1-high in the periphery versus the core of HFD islets containing both populations, from mixed-effects logistic regression fit per percentile threshold. Error bars show 95% confidence interval. Significance was assessed by permutation test (999 permutations, shuffling STAT1 status within islet); asterisks denote two-tailed empirical P < 0.05. n = 488–348 islets from 4 HFD mice.Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig5.webp?md5=89672178e83350e98b80a5dd409e7dc4",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "assets/pmc13534335-a34a16204b538c9a.webp",
+            "sha256": "a34a16204b538c9ab85c92fb014779ac8812a02ea90d2b8ec922e029308a6127",
+            "width": 1600,
+            "height": 1490,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a34a16204b538c9ab85c92fb014779ac8812a02ea90d2b8ec922e029308a6127",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "figS5",
+            "label": "Figure S5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Related to Fig 5.(A) Overrepresentation analysis of target genes from the top TNF and IFN-β interaction partners predicted at 1-wk HFD (red, HFD 1 wk) and 3 wk HFD (yellow, HFD 3 wk) and eRegulon target genes. Significance was determined using Fisher’s exact test (FDR < 0.05). (B) Density plot showing the distribution of gene activity scores of inflammatory response genes (TNF and IFNβ predicted target genes) split into each condition. (C) Empirical cumulative distribution function plot of gene activity scores of inflammatory response genes (TNF and IFNβ predicted target genes) split into each condition. The vertical line indicates the threshold used to define cells with high inflammatory signature. (D) UMAP embedding of β-cells colored by normalized expression of Stat1 and Stat2, split by conditions. Color scale is shared across all panels for direct comparison. Points are ordered by expression so that high-expressing cells are plotted on top. (E) UMAP visualization of β-cell subclusters. (F) Dot plot showing the percentage of β-cell subcluster cells expressing the gene (dot size) and scaled average gene expression (dot color) of the top 10 marker genes for cluster 3 in the left panel, as well as the average gene score, calculated based on the chromatin accessibility of regulatory elements in the vicinity of the gene, of top 10 markers in the right panel. Genes colored in red represent genes that are a part of TNF and IFNβ target genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS5.webp?md5=251068f97362c07bb43500ef3af9494a",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Characterization of the inflammatory β-cell subpopulation and its relationship to β-cell identity and human diabetes.(A) Boxplot of the prevalence of β-cells with high TNF and IFNβ target gene activity, defined as gene activity scores above the 75th percentile from non-diabetic β-cells stratified by donor and disease status. Cohort 1 (41 Preprint): Non-diabetics (ND, n = 17). Prediabetics (Pre, n = 14). Type 2 diabetics (T2D, n = 17). Cohort 2 (42): Non-diabetics (ND, n = 38). Type 1 diabetics (T1D, n = 10). Type 2 diabetics (T2D, n = 17). Each point represents a donor. (B) Left panel: Volcano plot depicting differentially expressed genes (DEGs) in high (orange dot) versus low (gray dot) inflammatory response β-cell subpopulation at 3-wk HFD (HFD 3 wk). The horizontal line indicates false discovery rate (FDR) = 0.05 and the vertical line indicates log2 fold change (FC) = 0. Top 10 upregulated (red) and down-regulated (blue) genes are annotated. Right panel: The top seven most significant (FDR ≤ 0.05) pathways from Gene Ontology biological processes for upregulated (red) and down-regulated (blue) genes. (C) Venn diagram showing results of enrichment search in INTERFEROME (43) identifying an overlap between upregulated genes in high inflammatory β-cell subpopulation at 3 wk of HFD, and genes known to be involved in interferon signaling pathways (type I, and II). (D) Boxplot of the per β-cell gene activity score per condition using sets of genes that are significantly upregulated in pancreatic β-cells from non-diabetic human donors which have been treated with stressors; Interleukin-1beta (IL-1β) (1 ng/ml) and Interferon gamma (IFNγ) (1,000 U/ml), Interferon alpha (IFNα) (2,000 U/Ll) compared with untreated controls for 24 h (24, 25). Gray dots represent β-cells in the low inflammatory subpopulation and orange dots represent β-cells in the high inflammatory subpopulation. Red lines indicate the median activity score in the LFD samples. (E) Bar plot showing the mean prevalence of β-cells with high unfolded protein response (UPR) (left) or β-cell identity (right) as defined by the percentage (%) of cells above the 75th percentile of gene activity scores, using genes related to UPR or identity, within the low fat diet (LFD) β-cells, for each condition: LFD, HFD 1 wk and HFD 3 wk, where HFD 3 samples are subdivided by inflammatory state; low-inflammatory (low) and high-inflammatory (igh). Each point represents a replicate. (F) Illustration of proposed mechanism: Following 1 wk of HFD (HFD 1 wk) feeding UPR-mediated stress and transcriptional down-regulation of β-cell identity genes in most β-cells, as well as induction of an inflammatory response in a small subset of β-cells (orange cells). After 3 wk of HFD (HFD 3 wk), the UPR stress is resolved, but the subset of β-cells with an inflammatory response is increased. In β-cells without an inflammatory response, β-cell identity gene transcription is partially restored, but not in β-cells with an inflammatory response. Asterisk indicates FDR-adjusted P-value ≤0.05.Source data are available for this figure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig6.webp?md5=95f39c36da6f51c1cf5acf5da682e6e6",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "figS6",
+            "label": "Figure S6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Related to Fig 6.(A) Boxplot of mean gene activity scores using genes for TNF and IFNβ target genes in β-cells from human donors, stratified by donor and disease status in the same way as in Fig 5E. (B) Heatmap displaying row-scaled z-scores of DESeq2 normalized pseudo-bulk counts for gene examples significantly changed between HFD 3 wk β-cells with low or high inflammatory signature. (C) Boxplot of the per β-cell gene activity score per condition, using sets of genes that are significantly upregulated in pancreatic β-cells from non-diabetic human donors which have been treated with stressors; IL-1β (1 ng/ml) and IFNγ (1,000 U/ml), IFNα (2,000 U/ml) compared with untreated controls as in Fig 6D. Red lines indicate the median in the untreated LFD samples. (D) Volcano plot depicting differentially expressed genes between β-cell with a low inflammatory response subpopulation at 3 and 1 wk (3 vs. 1 wk). The horizontal line indicates false discovery rate (FDR) = 0.05 and the vertical line indicates log2 fold change (FC) = 0. Selected down-regulated (red) and down-regulated (blue) genes are annotated. Right panel: The top 10 most significant (FDR < 0.05) pathways from Gene Ontology biological processes for upregulated and down-regulated genes. (E) Bar plot of examples of genes related to UPR and β-cell identity. Gene expression is depicted for each replicate (points) using normalized pseudo-bulk counts across conditions, where HFD 3 wk is further divided into low inflammatory (low) and high inflammatory (high) subpopulations. (F) Boxplot of gene activity scores using genes related to either UPR (left) or β-cell identity (right), for each condition LFD, HFD 1 wk and HFD 3 wk, where HFD 3 wk samples are subdivided by inflammatory state; low inflammatory (low) and high-inflammatory (high). Red line indicates the 75th percentile of scores from LFD. Each point represents a nucleus. (G) Empirical cumulative distribution function plot of gene activity scores using genes related to either UPR (top) or β-cell identity (bottom) split into each condition. The vertical line indicates the threshold used to define cells with high UPR or identity signature. (H) Bar plot of the fraction of high inflammatory β-cells that are also classified as high UPR, for HFD 1 wk and HFD 3 wk. The observed fraction (orange) is shown together the fraction expected if the two classifications were unrelated (gray), obtained by randomly reassigning the UPR labels among β-cells within each condition 1,000 times. Gray bars show the mean of the 1,000 permutations and error bars indicate the interval containing the middle 95% of permuted values. Asterisk indicates FDR-adjusted P-value ≤0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_FigS6.webp?md5=66030e49ae8ad406c8153468c185812b",
+            "articleURL": "https://doi.org/10.26508/lsa.202603840",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al.. Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.. DOI: 10.26508/lsa.202603840. Copyright holder: Ernst et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SM1",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM2",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM3",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM4",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM5",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "d69e304",
+            "label": "Reviewer comments",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_review_history.pdf?md5=bbb0e37573b3094bb42b7c6b6e4ebb1f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/madsen-lab/islets_multiome_analysis",
+          "https://github.com/madsen-lab/islets_multiome_phenotyping"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-06T08:34:19.868131+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/madsen-lab/islets_multiome_phenotyping",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/PMC13534335.1.xml?md5=49636fad337bdfe31029979f1f8387ac"
+          },
+          {
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/PMC13534335.1.xml?md5=49636fad337bdfe31029979f1f8387ac"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Isabell VS Ernst; Lasse Lehtonen; Freja L Nielsen; Morten F Ebbesen; Sille M Nilsson; Ann-Britt Marcher; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/madsen-lab/islets_multiome_analysis",
+        "commit": "6a45d6cff07f8cc778690f3053de7ed4950afd34",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "R/AM_differential_expression_analysis.R",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/AM_differential_expression_analysis.R",
+            "sha256": "64855412adbe012b2e0e26296927b56a59240b7175802c39256456a517535d14",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "AUC",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 134,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "entrez",
+                "line": 175,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "membership",
+                "line": 200,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Beta",
+                "line": 306,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_cluster",
+                "line": 372,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 372,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_genes",
+                "line": 375,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/AS_BETA_chromvar_analysis.R",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/AS_BETA_chromvar_analysis.R",
+            "sha256": "ad36aef027240b65c2c0feccdc9ea8696cde2a5721f665d0dc1eff58ef52e578",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Motif",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "motifList",
+                "line": 89,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "motifSummary",
+                "line": 90,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/BF_revisions_image_analysis_feature_extraction.ipynb",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/BF_revisions_image_analysis_feature_extraction.ipynb",
+            "sha256": "561122e9c14ada3eb3a7a05c2c19da7c7087cb5ffc6cdd2d6fea084053068c0d",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "R/BG_revisions_image_analysis_prepare_data.R",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/BG_revisions_image_analysis_prepare_data.R",
+            "sha256": "4509c7b12810a3a548aa30f2036e56dc5d77e6ea5b88930ce3353277241e6f7e",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "window",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "unique_islet",
+                "line": 136,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/BH_revisions_imaging_analysis_stat1_high_cells.R",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/BH_revisions_imaging_analysis_stat1_high_cells.R",
+            "sha256": "778e24867f6ae38513ee6f7f4280263a717e3baac44acc09d48adcc4eba8e3b2",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "name",
+                "line": 216,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/BI_revisions_imaging_analysis_segregation.R",
+            "url": "https://github.com/madsen-lab/islets_multiome_analysis/blob/6a45d6cff07f8cc778690f3053de7ed4950afd34/R/BI_revisions_imaging_analysis_segregation.R",
+            "sha256": "848a62b22c08849c2c00c6a52735c7df046ea201f0a9b3ebf946d4315abcf833",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "vr",
+                "line": 192,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pp",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stat1_status_p95_or",
+                "line": 231,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "hfd_0617_2_Seq0131_1",
+                "line": 231,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "order",
+                "line": 321,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.1",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-06T08:34:25Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-06T08:34:25Z",
+        "url": "https://openalex.org/W7204953074",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.65899504,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-06T08:34:25Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-06T08:34:25Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-07T08:34:25Z"
+        }
+      },
+      "selectionScore": {
+        "total": 78.2949752,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.2949751999999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-06T08:34:36Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "单核多组学揭示高脂饮食下小鼠胰岛的早期炎症反应",
+        "summary_zh": "该研究以8周龄雄性C57BL/6JBomTac小鼠为对象,先以低脂饮食适应3周,随后分为低脂饮食对照组与高脂饮食组,分别饲养1周或3周,观察体重增加、空腹血糖、空腹血清胰岛素、胰岛素敏感性(SPINA-GR)、β细胞分泌能力(SPINA-Gβ)以及葡萄糖耐量和胰岛素耐量等表型;并对分离纯化的胰岛细胞核进行Single Cell Multiome ATAC + Gene expression测序,用加权最近邻图对RNA与ATAC相似性进行聚类,注释胰岛细胞类型。摘要称β细胞对高脂饮食的转录响应最大,表现为促炎eRegulon早期激活和β细胞身份基因下调,且集中于一个特定的β细胞亚群;该炎症特征在人类糖尿病中亦增多。上述摘要层面的结论未在所提供的图注证据中逐项展开,具体数值与统计结果未知。",
+        "learning_points": [
+          "可学习其表型与多组学结合的设计:先展示高脂饮食1周和3周的整体代谢表型(体重、空腹血糖、空腹胰岛素、SPINA指标、葡萄糖耐量与胰岛素耐量),再进入单核多组学分析。",
+          "可学习单核Multiome质控的图示方式:UMI秩图与断点搜索、检测特征数与线粒体基因UMI比例散点图、UMI与特征数分段线性回归、蛋白编码基因UMI分布直方图、外显子来源比例(contrast fraction)过滤、片段长度分布等。",
+          "可学习用加权最近邻(WNN)图整合RNA与ATAC相似性进行聚类,并以UMAP展示细胞类型,同时用点图展示标记基因表达比例、标度化平均表达及基于调控元件可及性的基因评分。",
+          "可学习用伪批量染色质可及性轨迹展示内分泌标记基因,作为细胞类型注释的辅助证据。",
+          "可注意样本量在不同分析层面的差异:表型实验每组动物数较多,而Multiome测序每组仅1–2只小鼠,解读组间差异时需考虑生物学重复有限。",
+          "可学习将小鼠高脂饮食早期转录响应与人类糖尿病中炎症特征β细胞比例增加的观察相联系的叙述思路(该联系的具体证据未在给定图注中展示)。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不构成复现验证;不能宣称结果已复现或与原文一致。",
+          "输入数据尺度、图号与具体分析脚本的对应关系未明示,保持未知。",
+          "所提供的证据仅为题录信息与部分图注,摘要中的eRegulon激活、β细胞身份基因下调及人类糖尿病比较等结论缺少对应图注细节支撑。",
+          "Multiome测序每组样本量很小(如低脂1周n=2、3周n=1;高脂两个时间点各n=2),组间比较的稳健性未知。",
+          "Figure 1 图注在IPGTT处截断,Figure S2 与 Figure 2 图注亦不完整,相关面板内容未知。",
+          "脚本 BF_revisions_image_analysis_feature_extraction.ipynb 无法解析(含notebook魔法命令或动态语法),其功能与正确性未知。",
+          "各脚本的静态观察内容为空,无法据此判断具体分析步骤、参数或统计方法。",
+          "未观察到许可、期刊指标等信息,均属未知,不应推断。",
+          "图注中出现的统计描述(如FDR校正P值≤0.05)仅见于部分图,其他比较的检验方法与校正方式未知。",
+          "本研究为小鼠模型,向人类糖尿病结论的外推程度未在给定证据中说明。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-06T08:34:43Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "f55a51eeefa1aa81874c586c7decd0369a7ff350d0cdf2b871a3c00fb43255b5",
+        "summary_fingerprint": "1b02252359a91ad4e5cf970ebd3f6e423426cf94b2ab3516716ebd32edb0e78c",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -189351,6 +190085,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-732e44346a7bf839": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -190969,7 +191709,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-05T08:39:21Z",
+  "generatedAt": "2026-11-06T08:34:44Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -191203,18 +191943,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-06T08:32:24Z",
-    "updatedAt": "2026-11-06T08:32:29Z",
+    "updatedAt": "2026-11-06T08:34:49Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 37,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

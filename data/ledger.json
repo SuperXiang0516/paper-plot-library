@@ -174,14 +174,43 @@
         "10.1371/journal.pgen.1012345",
         "10.3389/fnagi.2026.1947643"
       ]
+    },
+    "2026-11-06": {
+      "newDOIs": [
+        "10.26508/lsa.202603840"
+      ]
     }
   },
   "candidates": {
     "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-05T08:39:19Z",
+      "checkedAt": "2026-11-06T08:34:35Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-06T08:34:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-06T08:34:31Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-06T08:34:28Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.26508/lsa.202603840": {
+      "checkedAt": "2026-11-06T08:34:26Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
     },
     "10.1111/liv.70907": {
       "checkedAt": "2026-11-05T08:39:12Z",
@@ -191,12 +220,6 @@
     },
     "10.1016/j.psj.2026.107910": {
       "checkedAt": "2026-11-05T08:38:46Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-05T08:38:34Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -212,18 +235,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-05T08:35:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-05T08:35:46Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.3389/fnagi.2026.1947643": {
       "checkedAt": "2026-11-05T08:35:40Z",
@@ -12028,61 +12039,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.26508/lsa.202603840": {
-      "checkedAt": "2026-10-16T06:27:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.26508/lsa.202603840",
-        "metadataHash": "2b772eec7d14cdcd4f0c43bc0ee76e4dcdf3ab7ece040ca0561c463bcff02cc7",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/PMC13534335.1.xml?md5=49636fad337bdfe31029979f1f8387ac",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13534335-36dfdd8499870228.webp",
-              "assetSHA256": "36dfdd849987022831e7ee879e870b059d9a5b44b3e75d6eb63a0b4926829f8e",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "36dfdd849987022831e7ee879e870b059d9a5b44b3e75d6eb63a0b4926829f8e",
-              "height": 978,
-              "label": "Figure 1.",
-              "width": 1599,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig1.webp?md5=0210b65119f7502b3970322499cd04ee",
-              "captionHash": "7f799786c5762835f09b5cbea554c09310649e4a7239197ce138549074b3b1fc"
-            },
-            {
-              "asset": "assets/pmc13534335-a34a16204b538c9a.webp",
-              "assetSHA256": "a34a16204b538c9ab85c92fb014779ac8812a02ea90d2b8ec922e029308a6127",
-              "license": "CC BY",
-              "id": "fig5",
-              "sha256": "a34a16204b538c9ab85c92fb014779ac8812a02ea90d2b8ec922e029308a6127",
-              "height": 1490,
-              "label": "Figure 5.",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13534335.1/LSA-2026-03840_Fig5.webp?md5=89672178e83350e98b80a5dd409e7dc4",
-              "captionHash": "b1fda3b09f4e00a68f9da821a9b965a1181b68cfffbdfcf9db1dae162f310721"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-732e44346a7bf839",
-          "doi": "10.26508/lsa.202603840",
-          "paper": "Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.",
-          "journal": "Life science alliance",
-          "date": "2026-09-01",
-          "year": "2026",
-          "pmcid": "PMC13534335",
-          "pmid": "42680559",
-          "paperURL": "https://doi.org/10.26508/lsa.202603840"
-        },
-        "updatedAt": "2026-10-16T06:27:13Z"
-      }
-    },
     "10.1093/bioinformatics/btag695": {
       "checkedAt": "2026-10-16T06:27:21Z",
       "status": "pending",
@@ -12914,27 +12870,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 5,
-    "requests": 0,
+    "elapsedSeconds": 145,
+    "requests": 37,
     "maxRequests": 1800,
     "uncertainAiAttempts": 0,
     "batchCount": 1,
     "uncertainRequests": 0,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "maxBatches": 36,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-06T08:32:29Z",
+    "updatedAt": "2026-11-06T08:34:49Z",
     "maxSeconds": 2700,
     "date": "2026-11-06",
     "status": "active",
     "version": 1,
     "endReason": "",
-    "startedAt": "2026-11-06T08:32:24Z",
-    "inFlight": {
-      "startedAt": "2026-11-06T08:32:29Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "startedAt": "2026-11-06T08:32:24Z"
   }
 }
