@@ -136677,6 +136677,1701 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-73dc6ce1d583ca13",
+      "doi": "10.1038/s41586-026-10569-6",
+      "paper": "Mechanism of age-related accumulation of mtDNA mutations in human blood.",
+      "journal": "Nature",
+      "date": "2026-05-27",
+      "year": "2026",
+      "pmcid": "PMC13441879",
+      "pmid": "42203880",
+      "paperURL": "https://doi.org/10.1038/s41586-026-10569-6",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "e7ebb562f906a5b91da0dc5d42757a36ec66a4aff748b3396f98bb11ce5c6c8c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/PMC13441879.1.xml?md5=75e6de69c1900231dc872aceba1d2257",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Age accumulation of mtSNVs in AoU (n = 236,749 individuals).Points represent means, error bars represent 95% confidence intervals. See Extended Data Fig. 4a for the corresponding analysis in UKB.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig1_HTML.jpg?md5=6fca181fa6b1c19456d53855c4d91b7c",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Age-accumulating mtSNVs show a stark strand bias, tend to occur at lower heteroplasmy and are more neutral than other variants.a, Normalized mean mtSNV count as a function of variant location, strand, class and age. b, Normalized mean mtSNV count as a function of strand and variant class. c, Mean mtSNV count as a function of age for all variants, age-accumulating class variants (C>T heavy and A>G heavy and light) and other variants. d, Heteroplasmy distribution across variants and individuals for age-accumulating classes only and all variants. e, Normalized mean mtSNV count for coding variants as a function of strand, class, age and consequence. f, Heteroplasmy distributions for missense (green) versus synonymous (black) variants within mtDNA protein coding genes, stratified by age-accumulating class (dashed versus solid). Insets are corresponding sample sizes. g, dN/dS estimates (dots) as a function of heteroplasmy, gene and mutation class for age-accumulating class variants in mtDNA protein coding genes. Dashes indicate the median dN/dS of null draws; error bars are 95% confidence intervals under null, computed non-parametrically as the 2.5–97.5% range of null draws. In a–c and e, error bars indicate ±1 s.e. For a, c and e, total n = 236,749 individuals. For b and g, total n = 237,500 individuals. All panels in this figure use AoU data; see Extended Data Fig. 5 for UKB.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig2_HTML.jpg?md5=ef2231831f690a210488245bff5d773e",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "assets/pmc13441879-e7cc6cd276adac7a.jpg",
+            "sha256": "e7cc6cd276adac7a592749c1f0151d04ceb7f8d6ccea03d5f323cd7b75cae599",
+            "width": 721,
+            "height": 710,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e7cc6cd276adac7a592749c1f0151d04ceb7f8d6ccea03d5f323cd7b75cae599",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Nuclear genetic analysis of mtSNV burden identify drivers and correlates of CH.a, Common variant GWAS meta-analysis between AoU and UKB for age-accumulating heteroplasmic mtSNV burden (maximum n = 547,947 individuals). Labelled genes identified as nearest or through curation. b, GWAS as in a but excluding any sample with detected CH (maximum n = 530,443 individuals). In a and b, red lines correspond to the 5 × 10−8 GWS threshold. c, Comparison of GWAS effect size estimates for mtSNV count trait versus those for CH (maximum n = 363,475 individuals) as part of bidirectional Mendelian randomization. Inset represents zoom near origin. Dotted line indicates the inverse-variance weighted linear regression line, with P values from two-sided test for a non-zero beta. Points represent effect sizes. CH effect sizes are log-odds ratios, and mtSNV accrual effect sizes are linear regression betas. Alleles were set such that lead variants for CH were risk-increasing. Error bars are 95% confidence intervals. d, Quantile–quantile plots for gene-based SKAT-O tests of association between variants of various classes (colours) and MAF cutoffs (panels) and SNV count. Genes labelled with large text passed Bonferroni GWS; smaller-text labels correspond to genes passing a 10% false discovery rate cutoff using the Benjamini–Hochberg procedure. †Gene nearby fine-mapped variant with PIP > 0.1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig3_HTML.jpg?md5=8680ebd3665a00176ff7229f63bb7c98",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "assets/pmc13441879-d4a658743442e493.jpg",
+            "sha256": "d4a658743442e4937f860e3e776da4c2bd24ffdee82f9b40a88ff1e3106e9436",
+            "width": 707,
+            "height": 815,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d4a658743442e4937f860e3e776da4c2bd24ffdee82f9b40a88ff1e3106e9436",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Age-accumulating SNV burden predicts increased risk of haematologic cancer and chronic renal failure when smokers are removed.a, Survey of associations with major common diseases. b, Significant associations between SNV burden and cancers. Results for all cancers are shown in Extended Data Fig. 10. Points represent odds ratios across both panels. Red indicates an association with Bonferroni-corrected P < 0.05. Odds ratios were computed using logistic regression including covariates for sex, age, ancestry and haplogroup. Error bars indicate 95% confidence intervals. Per-test sample sizes and test statistics can be found in Supplementary Tables 8 and 9 for panels a and b, respectively. Bonf., Bonferroni-corrected; LoF, loss of function.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig4_HTML.jpg?md5=e1d08d9ef6faef419c3d5361e32e2c1f",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Individuals with identified CH tend to have increased accumulation of age-accumulating mtSNVs relative to the general population and do not show evidence of positive selection.a, Normalized mean mtSNV count per person as a function of CH status, strand, variant class and age. b, Normalized mean mtSNV count per person as a function of variant consequence and age-accumulating status for CH carriers versus controls. In both panels, error bars correspond to ±1 s.e.. AoU was used for both panels; see Extended Data Fig. 12 for the corresponding analyses in the UKB. Only variants outside the Ori region are shown. For both panels, n = 8,266 individuals with CH; these individuals were compared with control individuals, who were selected by identifying 500 random samples of 8,266 age- and sex-matched individuals without CH (Methods).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig5_HTML.jpg?md5=84f036dd5e86a74df6a782d5652ddd00",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Two-step mechanism by which mtSNV heteroplasmy burden accumulates with ageing.In the first step, cryptic mtDNA variation is generated owing to errors that arise randomly during replication. In the second step, independently generated somatic nucDNA variation drives clonal expansion, carrying cryptic mtDNA variation to detection. Ovals represent cells; large circles represent nuclei.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig6_HTML.jpg?md5=ce51a9951fa3ee7c99289d69530c37bb",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Landscape of mtDNA insertion/deletion and SNV mutations across UKB and AoU.Upper plot corresponds to SNVs, lower plot corresponds to indels, and middle scheme shows genomic annotations. C1-C5 correspond to OXPHOS genes, HV are the non-coding hypervariable regions, RIB are the ribosomal RNA genes, and TRNA are the mtDNA-encoded tRNA genes. Arrows correspond to the most commonly occurring mtDNA variants located near poly-C tracts. Y-axis of SNV and indel plots correspond to the number of variant-sample pairs observed at each site across both biobanks. Dotted line corresponds to 500 instances of the observed variant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig7_ESM.jpg?md5=546857e1bc1984c660a72c96d9105c3a",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Nuclear genetic and phenotypic correlates of mtDNA copy number across UKB.A. Distribution of mtCNraw across AoU (aggregate and stratified by DNA extraction kit) and UKB. B. mtCNadj as a function of age and sex in UKB. Each point represents mean mtCNadj per bin. Error bars represent +/− 1SE. n = 401,385 individuals. C. GWAS of mtCNadj across 398,250 individuals in UKB. Gene assignments were made based on a combination of manual curation, fine-mapping, and nearest gene. Asterisks above chromosomes 1, 18, 19, 20, 21 represent DOCK7, BCL2, GP6, SNX5, RUNX1 respectively. Grey annotations correspond to loci that decreased in significance after correction for technical variables and blood composition. Arrows point to genes thought to produce protein products that localize to mitochondria. † = gene nearby fine-mapped variant with PIP > 0.1 and ‡ = gene with fine-mapped variant at PIP > 0.1 causing a protein sequence change. D. Gene-based testing for association between ultra-rare (AF ≤1 * 10−4) missense and LoF variation and mtCNadj. E. Gene-based testing for association with mtCNadj using the Cauchy combination method. F. Impact of adjustment of mtCN for technical and blood composition covariates on correlations with 29 common curated case/control disease traits. Each point represents an odds ratio (OR) for association. OR is computed using logistic regression including covariates for sex, age, ancestry, and haplogroup. Error bars represent 95% CI. Per-test sample sizes and test statistics can be found in Supplementary Table 10. P-values are two sided and adjusted using the Bonferroni method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig8_ESM.jpg?md5=292b2a42bd1f37e3fd90f766a098d226",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Heterogeneity in nuclear genetic influences on common heteroplasmic mtDNA sites.A. Case-only GWAS for common heteroplasmies for all traits that show >=1 genome-wide significant association. B. GWAS for chrM:302:A,AC heteroplasmy (n = 244,879). Genes were identified as nearest or via manual curation. Red genes correspond to those not identified with the previous analysis in ~68,500 individuals. In both A and B, † = gene nearby fine-mapped variant with PIP > 0.1 and ‡ = gene with fine-mapped variant at PIP > 0.1 causing a protein sequence change. Comparison of square root sample size with association Z-scores for C. TFAM, D. SSBP1, E. DGUOK, and F. PNP locus. In C-F, orange corresponds to chrM:302 traits and green are other common heteroplasmies (567, 955, 5894, 16179–16183). G. 2D histogram to compare between recessive and additive p-values from the cross-ancestry and cross-biobank meta-analysis for heteroplasmy traits. H. Zoomed in view of panel G. Dotted lines are 5e-8 p-value threshold. Diagonal line is y = x.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig9_ESM.jpg?md5=0b61df66e211a52b0cf5650513f26687",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Correlates of age accumulation of mtSNVs.A. Age accumulation of mtSNVs in UKB (n = 343,266 individuals). Error bars represent 95% CI. See Fig. 1 for a similar analysis in AoU. B. Relationship between age and mtDNA heteroplasmy count as a function of smoking status (n = 373,823 individuals). C. Degree of variant sharing between siblings as a function of heteroplasmy in UKB. Each bar represents the proportion of one sibling’s variants found in the other sibling at any level. Color represents SNVs that are in age accumulating classes (yellow) versus those that are not. Results computed using n = 2,821 variants. Mean heteroplasmic SNV count as a function of age broken down by variant heteroplasmy range in D. AoU (n = 236,749 individuals) and E. UKB (n = 343,266 individuals). For panels D and E, color corresponds to heteroplasmy range legend next to panel E. For panels B-E, error bars are +/− 1SE.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig10_ESM.jpg?md5=d5ebb82c02d16f993ecc296b4f787bd6",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Mutational spectrum and markers of selection for age-accumulating mtSNVs in UKB.A. Normalized mean mtSNV count as a function of variant location, strand, class, and age. B. Normalized mean mtSNV count as a function of strand and variant class. C. Mean mtSNV count as a function of age for all variants, age-accumulating class variants (C > T heavy and A > G heavy and light), and other variants. D. Heteroplasmy distribution across variants and individuals for age-accumulating classes only and all variants. E. Normalized mean mtSNV count for coding variants as a function of strand, class, age, and consequence. F. Heteroplasmy distributions for missense (green) versus synonymous (black) variants within mtDNA protein coding genes, stratified by age accumulating class (dotted versus solid). Insets are corresponding sample sizes. G. dN/dS estimates (dots) as a function of heteroplasmy for age-accumulating class variants in mtDNA protein coding genes. Dashes are median of null draws; error bars are 2.5%–97.5% range of null. For panels A, B, C, E, error bars are +/− 1SE. For panels A, C, E, total n = 343,266 individuals. For panels B, G, total n = 382,505 individuals. All panels of this figure use UKB data; see Fig. 2 for the corresponding analyses in AoU.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig11_ESM.jpg?md5=0a8709c83d55977957345f085dd15845",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Mutational signature and selection analysis of mtSNVs in AoU.A. Normalized mean mtSNV count as a function of variant class, strand, and tri-nucleotide context. Context is determined by the 5’ and 3’ base in a strand-specific way. n = 237,500 individuals. B. Z-scores from p-values obtained via linear regression of mtDNA mutation spectrum onto all cancer nuclear single base substitution signatures. Upper plot represents heavy strand, lower represents light strand. Line corresponds to Bonferroni-corrected significance threshold at p < 0.05. Triangles represent significantly-associated SBS spectra thought to be related to impaired DNA damage repair and deamination. Age-accumulation of normalized mean mtSNV burden as a function of strand and trinucleotide context for C. C > T and D. A > G variants. For panels A, C, and D, error bars correspond to +/− 1 SE. For panels C and D, n = 236,749 individuals. E. dN/dS point estimates stratified by gene and heteroplasmy bin. Only age-accumulating class variants were used as input to dN/dS estimation, and estimation was performed separately for each heteroplasmy range and biobank. A 192-rate parameter substitution model was used as part of the dNdScv package. All panels of this figure use AoU data; see Extended Data Fig. 7 for the corresponding analyses in UKB.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig12_ESM.jpg?md5=a36dda7f860eb09f4a30155b7828eb73",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig13",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Mutational signature and selection analysis of mtSNVs in UKB.A. Normalized mean mtSNV count as a function of variant class, strand, and tri-nucleotide context. Context is determined by the 5’ and 3’ base in a strand-specific way. n = 382,505 individuals. B. Z-scores from p-values obtained via linear regression of mtDNA mutation spectrum onto all cancer nuclear single base substitution signatures. Upper plot represents heavy strand, lower represents light strand. Line corresponds to Bonferroni-corrected significance threshold at p < 0.05. Age-accumulation of normalized mean mtSNV burden as a function of strand and trinucleotide context for C. C > T and D. A > G variants. For panels A, C, and D, error bars correspond to +/− 1 SE. For panels C and D, n = 343,266 individuals. E. dN/dS point estimates stratified by gene and heteroplasmy bin. Only age-accumulating class variants were used as input to dN/dS estimation, and estimation was performed separately for each heteroplasmy range and biobank. A 192-rate parameter substitution model was used as part of the dNdScv package. All panels of this figure use UKB data; see Extended Data Fig. 6 for the corresponding analyses in AoU.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig13_ESM.jpg?md5=40c68be06ac12dae400dd08d428f7bd0",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig14",
+            "label": "Extended Data Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Evaluation of the common and rare variant landscapes of mtSNV accrual.A. Detection of reverse causation between CH (max n = 363,475 individuals) and mtSNV accrual (max n = 547,947 individuals) using MR. Dotted line is inverse variance weighted linear regression line with p-value representing a two-sided test for a non-zero beta. Points represent effect sizes. CH effect sizes are log-odds ratios and mtSNV accrual effect sizes are linear regression betas. Alleles are set such that lead variants for mtSNV accrual are risk-increasing. Error bars are 95% CI. Common variant GWAS of age accumulating heteroplasmic SNV burden in UKB EUR with B. the usual covariates (sex, age, PCs, haplogroups) and C. with an additional covariate for mtCNadj. Common variant GWAS with cross-ancestry meta-analysis of age accumulating heteroplasmic SNV burden in AoU with D. the usual covariates (sex, age, PCs, haplogroups, site) and E. with additional covariates for mtCN and extraction kit. F. Quantile-quantile plots showing SKAT-O p-values from gene-based association testing of heteroplasmic SNV count after individuals with identified CH were removed. Analysis shows a meta-analysis between UKB and AoU cross-ancestry meta-analyses. Various variant classes and AF cutoffs are denoted by colors and panels respectively. See Fig. 3d for corresponding analysis with all samples retained.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig14_ESM.jpg?md5=304248984be7d37ba43298445b33f2c4",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig15",
+            "label": "Extended Data Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Correlations between mtDNA traits and CH and biomarkers of aging and inflammation.Regression betas of inflammatory biomarkers (upper panel: IL1A, IL6, TNF as measured by proteomics) and aging / reductive stress biomarkers (FGF21 and GDF15 via proteomics and telomere length via PCR) onto A. mtCNadj, B. mtSNV count, C. mtSNV count with CH carriers excluded, and D. CH. In all analyses, corrections were performed by including age, age2, sex, age*sex, age2*sex, genetic ancestry, and haplogroup in the association model. Each square point represents a linear regression effect size. Red line is beta = 0. Red points indicate associations that pass Bonferroni multiple testing correction (n = 6 tests per analysis). Error bars correspond to 95% CI.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig15_ESM.jpg?md5=598f774c6d40e4adf4bcfbf232af5899",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig16",
+            "label": "Extended Data Fig. 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Among all identified cancers, age-accumulating heteroplasmic mtSNV burden is associated with increased risk for a variety of hematologic cancers.Odds ratio is computed using logistic regression including covariates for sex, age, ancestry, and haplogroup. Points represent odds ratios (OR) across both panels. Error bars are 95% CI. Right panel excludes anyone with any recorded smoking history. Red indicates Bonferroni-corrected p-value < 0.05. Per-test sample sizes and test statistics can be found in Supplementary Table 9.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig16_ESM.jpg?md5=dbfa8c962cb3eabd3d784775a8545a8d",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig17",
+            "label": "Extended Data Fig. 11",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "11",
+              "panel": ""
+            },
+            "caption": "Individuals with CH have more mtSNVs in specific tri-nucleotide contexts relative to the general population with no detected difference in functional consequence.A. Normalized mean mtSNV count per person as a function of CH status, variant class, and tri-nucleotide context. * = p < 0.05 for the two-sided test of difference between CH and controls, corrected via Bonferroni method (192 comparisons). P-values can be found in Supplementary Table 11. B. dN/dS estimates with non-parametric error estimates for CH carriers versus controls in each coding mtDNA gene among age-accumulating variants. Each bar represents a dN/dS estimate. C. Mean MLC metric for age-accumulating variants in UKB for CH carriers versus controls in each coding mtDNA gene. In all panels, error bars correspond to +/− 1SE. All panels of this figure use AoU; see Extended Data Fig. 12 for the corresponding analyses in UKB. Only variants outside the Ori region are shown. For all panels, n = 8,266 individuals with CH who are compared to controls, which were selected by identifying 500 random samples of 8,266 age- and sex-matched individuals without CH (Methods).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig17_ESM.jpg?md5=9c86671a42c80bec7997e6c09df1350c",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig18",
+            "label": "Extended Data Fig. 12",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "12",
+              "panel": ""
+            },
+            "caption": "Individuals with identified CH show increased accumulation of mtDNA age accumulating variants relative to the general population in UKB.A. Normalized mean mtSNV count per person as a function of CH status, variant class, and tri-nucleotide context. * = p < 0.05 for the two-sided test of difference between CH and controls, corrected via Bonferroni method (192 comparisons). P-values can be found in Supplementary Table 12. B. Normalized mean mtDNA variant count per person as a function of CH status, strand, variant class, and age. C. Normalized mean mtSNV count per person as a function of variant consequence and age-accumulating status for CH carriers versus controls. D. dN/dS estimates for CH carriers versus controls in each coding mtDNA gene among age-accumulating variants. Each bar represents a dN/dS estimate. E. Mean MLC metric for age-accumulating variants in UKB for CH carriers versus controls in each coding mtDNA gene. In all panels, error bars correspond to +/− 1SE. All panels of this figure use UKB data; see Fig. 5 and Extended Data Fig. 11 for the corresponding analyses in AoU. Only variants outside the Ori region are included. For all panels, n = 10,544 individuals with CH who are compared to controls, which were selected by identifying 500 random samples of 10,544 age- and sex-matched individuals without CH (Methods).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_Fig18_ESM.jpg?md5=30d11a0fe79e7a50e8a8265a7b33bb1d",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10569-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al.. Mechanism of age-related accumulation of mtDNA mutations in human blood.. DOI: 10.1038/s41586-026-10569-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_MOESM1_ESM.pdf?md5=9e0a73a9bfdc2e1a3fceb53be6008e85",
+            "license": "CC BY",
+            "sha256": "d45b4f9bd24b8e8209265be30882faace89e7c188f5f9f7da0ecf29dc7cd6366",
+            "status": "downloaded_private",
+            "bytes": 1621969,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 10,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_MOESM2_ESM.pdf?md5=a5580f9a046b866b3c9d913866d8bd09",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_MOESM3_ESM.xlsx?md5=38c8be2ed7f51a92092f4977c3c1756d",
+            "license": "CC BY",
+            "sha256": "ed06104ab5068ad2bb160d4f24d8df597ae57a00e532177adbc7d78c24c2e7af",
+            "status": "downloaded_private",
+            "bytes": 2183844,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13441879.1/41586_2026_10569_MOESM4_ESM.pdf?md5=7594e24346bce234394d6b458a6ae4e0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-06T08:36:18.334203+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Rahul Gupta; Timothy J. Durham; Grant Chau; Masahiro Kanai; Md Mesbah Uddin; Wenhan Lu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "56.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-06T08:36:22Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-06T08:36:23Z",
+        "url": "https://openalex.org/W7162557205",
+        "cited_by_count": 22,
+        "fwci": 35.7925,
+        "citation_normalized_percentile": 0.9988688,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-06T08:36:23Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-06T08:36:23Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-07T08:36:23Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.994344,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.994344,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-06T08:36:40Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-d218e6a0b2954003",
+      "paper": "ADInteractome: discovering Alzheimer's disease-associated gene interactions from single-nucleus RNA-seq data through neural interaction states.",
+      "doi": "10.1093/bib/bbag601",
+      "journal": "Briefings in bioinformatics",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1093/bib/bbag601",
+      "pmcid": "PMC13725928",
+      "pmid": "42969854",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1467-5463",
+      "eissn": "1477-4054",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-06",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "single_cell_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "63da9ee62d344e01eab6af24a58b4418a670de0ffbdfa97b72931f65d82b8de5"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/PMC13725928.1.xml?md5=c90500bf8ea2d029577cd56ccffab96b",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Workflow of the ADInteractome framework. (a) Overall workflow for identifying AD-associated gene–gene interactions from snRNA-seq data. (b) Single-cell RNA Transformer architecture (CelluFormer) for AD-association classification and attention-based interaction extraction. (c) Enrichment analysis comparing ranked gene interactions with BioGRID and DisGeNET knowledge bases. (d) Comparative enrichment results across 18 neuronal cell types and baseline methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/bbag601f1.webp?md5=20f207e76f1e57e6d6ea10ef728ff3e5",
+            "articleURL": "https://doi.org/10.1093/bib/bbag601",
+            "asset": "assets/pmc13725928-e697c5f62cf3e2a7.webp",
+            "sha256": "e697c5f62cf3e2a75fb2f15e00bd76fa9bce50b29c59753a7849de31fc972929",
+            "width": 1600,
+            "height": 2073,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yifan Wu; Neha Maurya; Yuntao Yang; Wenbo Chen; Guanchu Wang; Zirui Liu; et al.. ADInteractome: discovering Alzheimer's disease-associated gene interactions from single-nucleus RNA-seq data through neural interaction states.. DOI: 10.1093/bib/bbag601. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e697c5f62cf3e2a75fb2f15e00bd76fa9bce50b29c59753a7849de31fc972929",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Gene–gene interaction graph with top interacting gene–gene pairs derived by neural interaction states.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/bbag601f2.webp?md5=a4b3322cde0acc4582ed69372e835520",
+            "articleURL": "https://doi.org/10.1093/bib/bbag601",
+            "asset": "assets/pmc13725928-19d88c8fddcb8432.webp",
+            "sha256": "19d88c8fddcb843202f15955fdf54e9397823c17286836e7efc11aef679e6bc8",
+            "width": 1600,
+            "height": 2265,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yifan Wu; Neha Maurya; Yuntao Yang; Wenbo Chen; Guanchu Wang; Zirui Liu; et al.. ADInteractome: discovering Alzheimer's disease-associated gene interactions from single-nucleus RNA-seq data through neural interaction states.. DOI: 10.1093/bib/bbag601. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "19d88c8fddcb843202f15955fdf54e9397823c17286836e7efc11aef679e6bc8",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Multi-cell-type hypothesis produced by ADInteractome.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/bbag601f3.webp?md5=b2dfc06095fdf1fbf3854c605bc32581",
+            "articleURL": "https://doi.org/10.1093/bib/bbag601",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yifan Wu; Neha Maurya; Yuntao Yang; Wenbo Chen; Guanchu Wang; Zirui Liu; et al.. ADInteractome: discovering Alzheimer's disease-associated gene interactions from single-nucleus RNA-seq data through neural interaction states.. DOI: 10.1093/bib/bbag601. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "ADInteractome_supplementary",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/adinteractome_supplementary.pdf?md5=75a1bc951900518123adb0c65b881528",
+            "license": "CC BY",
+            "sha256": "a6713b0f470b1f55f5c8f1cc8c4657ab671082d2cde15c3b4123705f534e9a3a",
+            "status": "downloaded_private",
+            "bytes": 273426,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 10,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Evan810828/ADInteractome"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-06T08:36:31.907907+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Evan810828/ADInteractome",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13725928.1/PMC13725928.1.xml?md5=c90500bf8ea2d029577cd56ccffab96b"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yifan Wu; Neha Maurya; Yuntao Yang; Wenbo Chen; Guanchu Wang; Zirui Liu; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Evan810828/ADInteractome",
+        "commit": "0c2fc00f1870da5c0f6e728d9d4abd5af4975bce",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "evaluation/plot_reference_bubble.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+            "sha256": "08d71ef9c350c3ccdc6b2cc4a16edd5887806426e34acf739c24c455fd77b66c",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 37,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 38,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 51,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "gene_percentage",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "split",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_set",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method_label",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_type",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NES",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene %",
+                "line": 43,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 37,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py#L37"
+              },
+              {
+                "type": "io_reference",
+                "line": 38,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py#L38"
+              },
+              {
+                "type": "io_reference",
+                "line": 51,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py#L51"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "__init__.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/__init__.py",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "co-expression/CS-CORE/cs_core.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/CS-CORE/cs_core.py",
+            "sha256": "1d132f67ab0b3f04a884fb4576b647d8961da375b6e8f37d869dcca544c32b33",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "ad.read_h5ad",
+                "line": 138,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "layers/UMIs",
+                "line": 97,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "obs",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "var",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "shape",
+                "line": 100,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "High",
+                "line": 167,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Not AD",
+                "line": 167,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indptr",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "_index",
+                "line": 70,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indices",
+                "line": 122,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 138,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/CS-CORE/cs_core.py#L138"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "co-expression/pearson_correlation/pearson_correlation.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/pearson_correlation/pearson_correlation.py",
+            "sha256": "74263150ff396a0530a536d429b5d06993374911d33a023afd97f85c7844b2d1",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "ad.read_h5ad",
+                "line": 81,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 82,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 81,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/pearson_correlation/pearson_correlation.py#L81"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "co-expression/shap/deepshap.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py",
+            "sha256": "91b25600add39d537182ba809b70809cb3c0d42737929ee8b846990d801fc535",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "GRN_TFs_GE_sub.csv",
+                "reader": "pd.read_csv",
+                "line": 43,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "header": 0
+                }
+              },
+              {
+                "path": "GRN_TGs_GE.csv",
+                "reader": "pd.read_csv",
+                "line": 44,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {
+                  "header": 0
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "figure.figsize",
+                "line": 288,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.autolayout",
+                "line": 289,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 295,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_train_loss",
+                "line": 296,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fold_num",
+                "line": 271,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "epoch_num",
+                "line": 272,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 43,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py#L43"
+              },
+              {
+                "type": "io_reference",
+                "line": 44,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py#L44"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "co-expression/shap/shape.py",
+            "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/shape.py",
+            "sha256": "5a0c56dfd430e9556d84f13aada6883e44e692a6735c6bf35bc69e70db62ba28",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 17,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 18,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 17,
+                "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/shape.py#L17"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "gene_percentage",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "split",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_set",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method_label",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_type",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NES",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene %",
+                "line": 43,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+            "line": 37,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "gene_percentage",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "split",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_set",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method_label",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_type",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NES",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene %",
+                "line": 43,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+            "line": 38,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "gene_percentage",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "split",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_set",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method_label",
+                "line": 79,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_type",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "method",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NES",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene %",
+                "line": 43,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+            "line": 51,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "ad.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "layers/UMIs",
+                "line": 97,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "obs",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "var",
+                "line": 69,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "shape",
+                "line": 100,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "High",
+                "line": 167,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Not AD",
+                "line": 167,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indptr",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "_index",
+                "line": 70,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indices",
+                "line": 122,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/CS-CORE/cs_core.py",
+            "line": 138,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "ad.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 82,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/pearson_correlation/pearson_correlation.py",
+            "line": 81,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "GRN_TFs_GE_sub.csv",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "figure.figsize",
+                "line": 288,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.autolayout",
+                "line": 289,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 295,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_train_loss",
+                "line": 296,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fold_num",
+                "line": 271,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "epoch_num",
+                "line": 272,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py",
+            "line": 43,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          },
+          {
+            "name": "GRN_TGs_GE.csv",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "figure.figsize",
+                "line": 288,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.autolayout",
+                "line": 289,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_loss",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "train_loss",
+                "line": 295,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "val_train_loss",
+                "line": 296,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fold_num",
+                "line": 271,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "epoch_num",
+                "line": 272,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py",
+            "line": 44,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Overall AD neuropathological Change",
+                "line": 18,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/shape.py",
+            "line": 17,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.3",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-06T08:36:39Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-06T08:36:39Z",
+        "url": "https://openalex.org/W7225089996",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.74671516,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-06T08:36:39Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-06T08:36:39Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-07T08:36:39Z"
+        }
+      },
+      "selectionScore": {
+        "total": 54.7335758,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.7335758,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-06T08:36:41Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "ADInteractome:从单核RNA-seq数据的神经交互状态发现阿尔茨海默病相关基因互作",
+        "summary_zh": "该资料介绍了一个名为 ADInteractome 的可解释人工智能框架,其思路是:若神经网络能依据 snRNA-seq 数据准确区分 AD 与非 AD 供体的细胞,则其内部交互状态可反映基因表达数据中的互作模式,从而用于识别有生物学意义的基因互作。摘要称该方法应用于 Seattle Alzheimer's Disease Brain Cell Atlas 的大规模 snRNA-seq 数据集,得到细胞类型特异且与 AD 相关的基因回路,并以虚拟敲除/敲入实验及与共表达网络方法的比较作为支持。提供的证据仅包含图注与代码静态观察,未包含具体数值结果。",
+        "learning_points": [
+          "框架整体流程见图 1(a):从 snRNA-seq 数据识别 AD 相关基因–基因互作。",
+          "图 1(b) 显示使用单细胞 RNA Transformer 架构(CelluFormer)进行 AD 关联分类,并基于注意力提取互作。",
+          "图 1(c) 描述将排序后的基因互作与 BioGRID、DisGeNET 知识库做富集分析比较。",
+          "图 1(d) 描述在 18 种神经元细胞类型与基线方法间的比较富集结果。",
+          "图 2 展示由神经交互状态导出的基因–基因互作图及排名靠前的互作基因对。",
+          "图 3 展示 ADInteractome 产生的多细胞类型假设。",
+          "代码静态观察显示评估脚本读取 reference、reproduction 与 additional 三个 CSV 路径,共表达基线脚本读取 h5ad 数据文件。",
+          "摘要提出以虚拟敲除/敲入实验作为数据驱动方式检验发现的概念。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不构成复现验证,不能宣称结果已复现或与原图一致。",
+          "输入数据的列名、数据结构与图号对应关系在证据中未明示,属未知。",
+          "证据未提供富集分析的具体数值、统计指标或排名结果。",
+          "证据未说明 snRNA-seq 数据集的样本量、预处理流程与质控标准。",
+          "虚拟敲除/敲入实验的具体设计与结果未在证据中给出。",
+          "与共表达网络方法比较的具体基线与评价指标细节未知。",
+          "图 3 的图注来源哈希为空,其内容细节无法进一步核实。",
+          "期刊指标、许可信息与代码可运行性未在证据中体现,均属未知。",
+          "摘要所述结论来自原文陈述,未由所提供证据独立验证。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-06T08:36:46Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "9bcef641587680c12281ee763a8d05884fec5c8bdfa1a2fc0e9e75271d9d70b4",
+        "summary_fingerprint": "74fad35c5e5a16359d089ca57948b3c47925c393e02b94564a4491a61f738b7b",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -190091,6 +191786,479 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-73dc6ce1d583ca13": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-d218e6a0b2954003": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\nGRN_TFs_GE_sub.csv\nGRN_TGs_GE.csv\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py；读取行 37；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+          "observedFieldReferences": [
+            {
+              "name": "gene_percentage",
+              "line": 43,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "split",
+              "line": 44,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_set",
+              "line": 46,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method_label",
+              "line": 79,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_type",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "source",
+              "line": 81,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_type",
+              "line": 67,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "NES",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene %",
+              "line": 43,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py；读取行 38；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+          "observedFieldReferences": [
+            {
+              "name": "gene_percentage",
+              "line": 43,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "split",
+              "line": 44,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_set",
+              "line": 46,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method_label",
+              "line": 79,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_type",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "source",
+              "line": 81,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_type",
+              "line": 67,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "NES",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene %",
+              "line": 43,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py；读取行 51；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/evaluation/plot_reference_bubble.py",
+          "observedFieldReferences": [
+            {
+              "name": "gene_percentage",
+              "line": 43,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "split",
+              "line": 44,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_set",
+              "line": 46,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method_label",
+              "line": 79,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_type",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "source",
+              "line": 81,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "method",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_type",
+              "line": 67,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "NES",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene %",
+              "line": 43,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/CS-CORE/cs_core.py；读取行 138；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/CS-CORE/cs_core.py",
+          "observedFieldReferences": [
+            {
+              "name": "layers/UMIs",
+              "line": 97,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Overall AD neuropathological Change",
+              "line": 141,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "obs",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "var",
+              "line": 69,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "shape",
+              "line": 100,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "High",
+              "line": 167,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Not AD",
+              "line": 167,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "indptr",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "_index",
+              "line": 70,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "data",
+              "line": 121,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "indices",
+              "line": 122,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/pearson_correlation/pearson_correlation.py；读取行 81；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/pearson_correlation/pearson_correlation.py",
+          "observedFieldReferences": [
+            {
+              "name": "Overall AD neuropathological Change",
+              "line": 82,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "GRN_TFs_GE_sub.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py；读取行 43；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py",
+          "observedFieldReferences": [
+            {
+              "name": "figure.figsize",
+              "line": 288,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.autolayout",
+              "line": 289,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_loss",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_loss",
+              "line": 295,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_train_loss",
+              "line": 296,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "fold_num",
+              "line": 271,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "epoch_num",
+              "line": 272,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "GRN_TGs_GE.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py；读取行 44；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/deepshap.py",
+          "observedFieldReferences": [
+            {
+              "name": "figure.figsize",
+              "line": 288,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.autolayout",
+              "line": 289,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_loss",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "train_loss",
+              "line": 295,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "val_train_loss",
+              "line": 296,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "fold_num",
+              "line": 271,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "epoch_num",
+              "line": 272,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/shape.py；读取行 17；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/Evan810828/ADInteractome/blob/0c2fc00f1870da5c0f6e728d9d4abd5af4975bce/co-expression/shap/shape.py",
+          "observedFieldReferences": [
+            {
+              "name": "Overall AD neuropathological Change",
+              "line": 18,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -191709,7 +193877,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-06T08:34:44Z",
+  "generatedAt": "2026-11-06T08:36:46Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -191943,18 +194111,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-06T08:32:24Z",
-    "updatedAt": "2026-11-06T08:34:56Z",
+    "updatedAt": "2026-11-06T08:36:52Z",
     "batchCount": 2,
-    "requests": 37,
-    "aiAttempts": 1,
+    "requests": 77,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
