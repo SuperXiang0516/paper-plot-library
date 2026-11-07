@@ -186,12 +186,45 @@
     },
     "2026-11-07": {
       "newDOIs": [
+        "10.1002/glia.70236",
+        "10.1016/j.isci.2026.117256",
         "10.1038/s41591-026-04448-w",
-        "10.1038/s41591-026-04562-9"
+        "10.1038/s41591-026-04562-9",
+        "10.1186/s40104-026-01510-y"
       ]
     }
   },
   "candidates": {
+    "10.1186/s40104-026-01510-y": {
+      "checkedAt": "2026-11-07T07:52:10Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2337/db26-0158": {
+      "checkedAt": "2026-11-07T07:52:05Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/glia.70236": {
+      "checkedAt": "2026-11-07T07:52:04Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-07T07:51:59Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117256": {
+      "checkedAt": "2026-11-07T07:51:58Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag596": {
       "checkedAt": "2026-11-07T07:50:56Z",
       "status": "pending",
@@ -252,23 +285,11 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.2337/db26-0158": {
-      "checkedAt": "2026-11-06T08:38:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1002/imt2.70176": {
       "checkedAt": "2026-11-06T08:38:35Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1167/iovs.67.12.73": {
-      "checkedAt": "2026-11-06T08:38:30Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41588-026-02633-8": {
       "checkedAt": "2026-11-06T08:38:27Z",
@@ -11212,61 +11233,6 @@
         "updatedAt": "2026-10-16T06:33:22Z"
       }
     },
-    "10.1016/j.isci.2026.117256": {
-      "checkedAt": "2026-10-16T06:33:17Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.isci.2026.117256",
-        "metadataHash": "de83b3cb4e67ab0e68e96ac880e7808a693d7119386301d2b2152e9f83ed895e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13524715.1/PMC13524715.1.xml?md5=8e00a75ed81410a19f3e75c3a7782959",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13524715-b27e2980d1ca9c3d.webp",
-              "assetSHA256": "b27e2980d1ca9c3d986b26d2f1b3b83c9302bd98ce876f9bfa756c36b7826276",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "b27e2980d1ca9c3d986b26d2f1b3b83c9302bd98ce876f9bfa756c36b7826276",
-              "height": 2260,
-              "label": "Figure 1",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13524715.1/gr1.webp?md5=ae26fa10e65ba80525e0b43339e2f5a6",
-              "captionHash": "e9fc7c3caaf81444d752918fb7106417fc23e9f2be118f9a5a7b10ac98f559d4"
-            },
-            {
-              "asset": "assets/pmc13524715-ed0ee85b19ca0c76.webp",
-              "assetSHA256": "ed0ee85b19ca0c768fac7eb024080e4f4b744d101dde90a3e85e0385e6bb488c",
-              "license": "CC BY",
-              "id": "fig8",
-              "sha256": "ed0ee85b19ca0c768fac7eb024080e4f4b744d101dde90a3e85e0385e6bb488c",
-              "height": 2274,
-              "label": "Figure 8",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13524715.1/gr8.webp?md5=b56fd580b262a2b9b372ba8486f81993",
-              "captionHash": "2b862e01ca3014110d0f6bd271954997f3d7c1c524229ecbed21fad73df2ad73"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-b818ca7ca337b9ff",
-          "doi": "10.1016/j.isci.2026.117256",
-          "paper": "Form and function of actin impacts actin health and aging.",
-          "journal": "iScience",
-          "date": "2026-08-24",
-          "year": "2026",
-          "pmcid": "PMC13524715",
-          "pmid": "42668575",
-          "paperURL": "https://doi.org/10.1016/j.isci.2026.117256"
-        },
-        "updatedAt": "2026-10-16T06:33:16Z"
-      }
-    },
     "10.1126/sciadv.aec5299": {
       "checkedAt": "2026-10-16T06:32:25Z",
       "status": "pending",
@@ -12667,7 +12633,7 @@
   "dailyCollectionSession": {
     "aiAttempts": 0,
     "version": 1,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "uncertainAiAttempts": 0,
     "status": "active",
     "batchCount": 3,
@@ -12675,17 +12641,12 @@
     "uncertainRequests": 0,
     "maxAiAttempts": 165,
     "endReason": "",
-    "updatedAt": "2026-11-07T07:51:06Z",
+    "updatedAt": "2026-11-07T07:52:16Z",
     "date": "2026-11-07",
-    "requests": 53,
+    "requests": 93,
     "startedAt": "2026-11-07T07:48:17Z",
     "maxSeconds": 2700,
-    "elapsedSeconds": 169,
-    "maxBatches": 36,
-    "inFlight": {
-      "startedAt": "2026-11-07T07:51:06Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 239,
+    "maxBatches": 36
   }
 }
