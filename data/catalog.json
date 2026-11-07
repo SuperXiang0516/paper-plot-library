@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-06",
+  "checkedAt": "2026-11-07",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -139304,6 +139304,371 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-307352d96bbe8ab9",
+      "doi": "10.1038/s41591-026-04448-w",
+      "paper": "Biological aging and generational shifts in early-onset cancer risk.",
+      "journal": "Nature medicine",
+      "date": "2026-06-22",
+      "year": "2026",
+      "pmcid": "PMC13472952",
+      "pmid": "42332142",
+      "paperURL": "https://doi.org/10.1038/s41591-026-04448-w",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1078-8956",
+      "eissn": "1546-170X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d5e50997d7f1633f2af577c8f188f831a6ea263da9c56659a64ff8e7f72d6db4"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/PMC13472952.1.xml?md5=021974da113d9ca49d5df505df66f9c4",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Study design and overview of aging clocks.a, Study diagram: systemic aging in UK Biobank and All of Us Research Program, was compared across birth cohorts and linked prospectively with risk of early-onset solid cancers. Furthermore, organ-specific aging and its associations with risk of early-onset solid cancers were assessed in the UK Biobank. b, Summary of biological aging clocks used in this study, including predictive measurements and predictive outcomes used for each clock. Figure created in BioRender; Cao, Y. https://biorender.com/lbrmz17 (2026). KDM, Klemera-Doubal method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig1_HTML.jpg?md5=aca99cbe5684bf197efbb507d7edd98d",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Systemic and organ-specific aging across birth cohorts and associations with early-onset solid cancer risk, UK Biobank (2006–2021).a, In the UK Biobank, GAMs were used to depict the relationship between systemic aging (standardized PhenoAge-defined age gap) and birth year, adjusted for age and age2 (details in Supplementary Table 1). Lines: model-estimated means; shaded bands: 95% CIs. Higher values indicate greater mortality and morbidity risk. b, Associations between systemic aging (PhenoAge-defined age gap) and risk of early-onset solid cancers (<55 years) estimated using Cox proportional hazards models. Points represent HRper s.d. increase in PhenoAge-defined age gap, adjusted for sex, race, Townsend Deprivation Index, education, BMI, smoking status and intensity, alcohol intake per day, diet, physical activity, personal history of chronic obstructive pulmonary disease, cardiovascular disease and diabetes, and the first ten PCs of genetic ancestry. Horizontal lines: 95% CIs; vertical line: HR = 1. Two-sided Wald tests were used to derive P values. P values for trend (Ptrend) are reported in Extended Data Table 2, and FDR-adjusted P values (Benjamini–Hochberg; Ptrend-FDR) are shown in the figure. Ptrend for early-onset lung cancer is 1.3 × 10−4. c, Validation analyses using alternative systemic aging measures, including KDM-defined and metabolomic-based, demonstrating directionally consistent associations for early-onset lung and GI cancers. Squares and diamonds: HRper s.d. increase in age gap; horizontal lines: 95% CIs; vertical line: HR = 1. Two-sided Wald tests were used to derive P values. P values for trend (Ptrend) were reported in Supplementary Tables 5 and 7. Multiple comparisons were controlled using the Benjamini–Hochberg procedure, with adjusted P values shown (Ptrend-FDR). Ptrend-FDR for KDM-defined age gap and early-onset GI cancers is 1.7 × 10−5; Ptrend-FDR for KDM-defined age gap and early-onset colorectal cancer is 1.7 × 10−5; Ptrend-FDR for metabolomic-based age gap and early-onset lung cancer is 1.25 × 10−9. d, Heatmap of HRs evaluating associations between proteomic-based organ-specific aging measures and early-onset lung and colorectal cancer. Two-sided Wald tests were used to derive P values, and multiple comparisons were controlled using the Benjamini–Hochberg procedure. Black stars: statistically significant associations (PFDR < 0.05). Organismal aging includes proteins broadly expressed across organs; multi-organ aging includes all organ-specific markers; conventional aging includes all plasma proteins. BMI, body mass index; CI, confidence interval; FDR, false discovery rate; GAM, generalized additive model; GI, gastrointestinal; HR, hazard ratio; KDM, Klemera-Doubal method; PC, principal component; s.d., standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig2_HTML.jpg?md5=1eff65c99abce4fdf685037ac1e54ab5",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "assets/pmc13472952-aebe83f660fde117.jpg",
+            "sha256": "aebe83f660fde1172d094acaf5c5f81d5b7929053d155822ee5a557662ed176a",
+            "width": 721,
+            "height": 670,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "aebe83f660fde1172d094acaf5c5f81d5b7929053d155822ee5a557662ed176a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Systemic aging across birth cohorts and associations with early-onset solid cancer risk, All of Us Research Program (2010–2022).a, GAM depicting the relationship between systemic aging (PhenoAge-defined age gap) and birth year, adjusted for age and age2 (details in Supplementary Table 1). Lines: model-estimated means; shaded bands: 95% CIs. Higher values indicate greater mortality and morbidity risk. b, Systemic aging (PhenoAge-defined age gap) by race/ethnicity: NHW (n = 5,488), NHB (n = 1,688), Hispanic (n = 2,485) and Other (n = 601). Violin plots: distribution density; embedded box plots: median (center line) and IQR (box); whiskers extend to 1.5× IQR. Pairwise comparisons were performed using two-sided t-tests. Exact P values are as follows: NHB versus NHW, P = 1.7 × 10−7; Hispanic versus NHW, P = 5.4 × 10−9; NHB versus Other, P = 1.3 × 10−6; Hispanic versus Other, P = 8.2 × 10−7; NHW versus Other, P = 0.20. c, Associations between systemic aging (PhenoAge and KDM-defined age gap) and risk of early-onset solid cancers (<55 years) estimated using Cox proportional hazards models. Points: HRper s.d. increase in PhenoAge and KDM-defined age gap, adjusted for sex, race, the Social Deprivation Index, education, BMI, smoking status, alcohol intake, family history of cancer, personal history of chronic obstructive pulmonary disease, cardiovascular disease and diabetes. Horizontal lines: 95% CIs; vertical line: HR = 1. BMI, body mass index; CI, confidence interval; FDR, false discovery rate; GAM, generalized additive model; HR, hazard ratio; IQR, interquartile range; KDM, Klemera-Doubal method; NHB, non-Hispanic Black; NHW, non-Hispanic White; PC, principal component; s.d., standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig3_HTML.jpg?md5=4bf7b09bba23a28b2bfca14ada76106f",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "assets/pmc13472952-c36d39d4d6413f27.jpg",
+            "sha256": "c36d39d4d6413f27481bc9df19051d7ef046b52316e2fd967df937a263d266d1",
+            "width": 753,
+            "height": 922,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c36d39d4d6413f27481bc9df19051d7ef046b52316e2fd967df937a263d266d1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Birth cohort trends in systemic age gap in UK Biobank (2006-2021) and All of Us Research Program (2010-2022).Generalized additive models depicting the relationship between PhenoAge-defined age gap and birth year, adjusted for age and age2 in a, UK Biobank (n = 154,169) b, All of Us Research Program (n = 10,262). Each point represents one individual. Blue and red points/lines denote males and females, respectively; black lines indicate the overall population. Each data point represents one individual (biological replicate). Solid lines represent fitted values from generalized additive models (GAMs) with smoothing splines, and shaded areas indicate 95% confidence intervals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig4_ESM.jpg?md5=d8542d3d4738c61188511910596becbc",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Birth-cohort differences in PhenoAge-defined age gap in UK Biobank (2006-2021) and All of Us Research Program (2010-2022).a, Distribution of standardized PhenoAge-defined age gap across birth cohorts within age groups (40–44, 45–49, and 50–54 years) in the UK Biobank. Box plots show the median (center line), IQR (box), and whiskers extending to 1.5×IQR. Sample sizes (n) for each group are indicated below the x axis. Statistical comparisons between adjacent birth cohorts were performed using pairwise two-sided t-tests with Bonferroni correction for multiple comparisons. Exact adjusted P values are as follows: age group 45–49 years, P1955-1959/1960-1964 = 2.2×10−4 and P1960-1964/1965-1974 = 0.00739; age group 45–49 years, P1950-1954/1955-1959 = 7.9×10−8 and P1955-1959/1960-1964 = 0.00133. b, Linear regression estimates of the association between birth cohort and PhenoAge-defined age gap in the UK Biobank, with the earliest birth cohort as the reference group and adjustment for age and age2. Beta coefficients represent differences relative to the reference cohort (1950–1954). c, Distribution of standardized PhenoAge-defined age gap across birth cohorts within age groups (25–34, 35–44, 45–54 years) in the All of Us Research Program. Box plots show the median (center line), IQR (box), and whiskers extending to 1.5×IQR. Sample sizes (n) for each group are indicated below the x axis. Statistical comparisons between adjacent birth cohorts were performed using pairwise two-sided t-tests with Bonferroni correction for multiple comparisons. Exact adjusted P values are as follows: age group 35–44 years, P1970-1974/1985-1989 = 0.04; age group 45–54 years, P1960-1964/1965-1969 = 0.0022, P1960-1964/1970-1974 = 1.0×10−6. d, Linear regression estimates of the association between birth cohort and PhenoAge-defined age gap in the All of Us Research Program, with the earliest birth cohort as the reference group and adjustment for age and age2. Beta coefficients are presented relative to the reference cohort (1965–1969) from multivariable linear regression models. Abbreviation: IQR, interquartile range.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig5_ESM.jpg?md5=711016329fe2ad9ca270689050bb26c4",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Associations between PhenoAge-defined age gap and risk of all solid cancer, lung, gastrointestinal, and uterine cancer, according to follow-up length, UK Biobank 2006-2021.Cox proportional hazards regression model outputs for the association between PhenoAge-defined age gap and early-onset solid cancers by follow-up length. Squares represent: HRper s.d. increase in age gap; horizontal lines: 95% CIs; vertical line: HR = 1. Two-sided Wald tests were used to derive P values, and multiple comparisons were controlled using the Benjamini-Hochberg procedure. All models adjusted for age at baseline, sex, race, the Townsend Deprivation Index, education, BMI, smoking status and intensity, alcohol intake per day, diet, personal history of chronic obstructive pulmonary disease, cardiovascular disease, and diabetes, and the first 10 PCs of genetic ancestry. a. Additionally adjusted for family history of lung, breast, colorectal, and prostate cancers. b. Additionally adjusted for family history of lung cancers. c. Additionally adjusted for family history of colorectal cancers. d. Calculated among female participants only and additionally adjusted for age at menarche, oral contraceptive use, menopause, and parity. Ptrend-FDR was calculated across the five cancer site-specific tests presented in this figure. Abbreviations: BMI, body mass index; CI, confidence interval; FDR, false discovery rate; HR, hazard ratio; PC, principal component; s.d., standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig6_ESM.jpg?md5=b22a35de186e9dd5af12a61503f4cceb",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Associations between PhenoAge-defined age gap and early-onset lung, gastrointestinal and uterine cancers, additionally adjusted for genetic markers of aging and cancer, UK Biobank (2006-2021).Cox proportional hazards regression model outputs for the association between PhenoAge-defined age gap and early-onset solid cancers after additionally adjusting for leukocyte telomere length, aging, and cancer-specific PRSs. PRS related analysis were performed in 105,628 participants after quality control. Two aging PRS were used, including one focusing on longevity (Tesi et al.) and one focusing on lifespan modified by non-genetic risk factors (Meisner et al.). Circles, squares, diamonds and triangles denote models adjusted for telomere length, aging PRS (Tesi et al.), aging PRS (Meisner et al.), and site-specific cancer PRS, respectively. Horizontal lines: 95% CIs; vertical line: HR = 1. Two-sided Wald tests were used to derive P values, and multiple comparisons were controlled using the Benjamini-Hochberg procedure. All models adjusted for age at baseline, sex, race, the Townsend Deprivation Index, education, BMI, smoking status and intensity, alcohol intake per day, diet, personal history of chronic obstructive pulmonary disease, cardiovascular disease, and diabetes, and the first 10 principal components of genetic ancestry. a. Additionally adjusted for family history of lung cancer. b. Additionally adjusted for family history of colorectal cancer. c. Calculated among female participants only and additionally adjusted for age at menarche, oral contraceptive use, menopause, and parity. Abbreviation: BMI, body mass index; CI, confidence interval; FDR, false discovery rate; HR, hazard ratio; PRS, polygenic risk score; s.d., standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig7_ESM.jpg?md5=e661ae4b264e574d87ca537286530c23",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Concordance of standardized PhenoAge-defined age gap between baseline and repeated measurements.Among 3,809 participants with baseline and repeated blood draws (mean interval 4.4 years, s.d. 0.8), 60% of individuals in the lowest tertile and 60% in the highest tertile remained in the same tertile at follow-up.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig8_ESM.jpg?md5=f8d0b3f68d058fd49382c07ec8195cce",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04448-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al.. Biological aging and generational shifts in early-onset cancer risk.. DOI: 10.1038/s41591-026-04448-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_MOESM1_ESM.pdf?md5=bf85f3e14a05f47ebd4c0e1b7e6f44fd",
+            "license": "CC BY",
+            "sha256": "0577931d6e236c1bf9478de102e592840d754ec93f8b84435e9c9ec5b89e1e9e",
+            "status": "downloaded_private",
+            "bytes": 445557,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 9,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_MOESM2_ESM.pdf?md5=aef75430edadef7719276f5b4e36b322",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-07T07:49:24.299491+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Ruiyi Tian; Xiaoyu Zong; Duo Ren; Stefani Tica; Daniel Hong; Oluseye Oduyale; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "52.5",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-07T07:49:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-07T07:49:28Z",
+        "url": "https://openalex.org/W7165561751",
+        "cited_by_count": 16,
+        "fwci": 20.8806,
+        "citation_normalized_percentile": 0.99470098,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-07T07:49:28Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-07T07:49:28Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-08T07:49:28Z"
+        }
+      },
+      "selectionScore": {
+        "total": 47.9735049,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.9735049,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-07T07:49:42Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -193203,6 +193568,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-307352d96bbe8ab9": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -194821,7 +195192,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-06T08:38:41Z",
+  "generatedAt": "2026-11-07T07:49:43Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -195055,18 +195426,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-07T07:48:17Z",
-    "updatedAt": "2026-11-07T07:48:20Z",
+    "updatedAt": "2026-11-07T07:49:46Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 29,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

@@ -183,9 +183,44 @@
         "10.1093/bib/bbag601",
         "10.26508/lsa.202603840"
       ]
+    },
+    "2026-11-07": {
+      "newDOIs": [
+        "10.1038/s41591-026-04448-w"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-07T07:49:42Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-07T07:49:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-07T07:49:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-07T07:49:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41591-026-04448-w": {
+      "checkedAt": "2026-11-07T07:49:28Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag596": {
       "checkedAt": "2026-11-06T08:38:39Z",
       "status": "pending",
@@ -245,30 +280,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-06T08:34:35Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-06T08:34:33Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-06T08:34:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-06T08:34:28Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.26508/lsa.202603840": {
       "checkedAt": "2026-11-06T08:34:26Z",
@@ -10590,61 +10601,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41591-026-04448-w": {
-      "checkedAt": "2026-10-16T06:38:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41591-026-04448-w",
-        "metadataHash": "97a54dfa491e9ed8c8237cd14fb20d3789b1e364be69269fba4d473e6d2732f2",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/PMC13472952.1.xml?md5=021974da113d9ca49d5df505df66f9c4",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13472952-aebe83f660fde117.jpg",
-              "assetSHA256": "aebe83f660fde1172d094acaf5c5f81d5b7929053d155822ee5a557662ed176a",
-              "license": "CC BY",
-              "id": "Fig2",
-              "sha256": "aebe83f660fde1172d094acaf5c5f81d5b7929053d155822ee5a557662ed176a",
-              "height": 670,
-              "label": "Fig. 2",
-              "width": 721,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig2_HTML.jpg?md5=1eff65c99abce4fdf685037ac1e54ab5",
-              "captionHash": "1b35357a8bb86fafa4565f38e7358a7e50e41661be550218e4753e3f8bdd398c"
-            },
-            {
-              "asset": "assets/pmc13472952-c36d39d4d6413f27.jpg",
-              "assetSHA256": "c36d39d4d6413f27481bc9df19051d7ef046b52316e2fd967df937a263d266d1",
-              "license": "CC BY",
-              "id": "Fig3",
-              "sha256": "c36d39d4d6413f27481bc9df19051d7ef046b52316e2fd967df937a263d266d1",
-              "height": 922,
-              "label": "Fig. 3",
-              "width": 753,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13472952.1/41591_2026_4448_Fig3_HTML.jpg?md5=4bf7b09bba23a28b2bfca14ada76106f",
-              "captionHash": "2e51dc0e349bdde685cd3bb4a7ef7d6604e7603aac97f6fae28582519ec776c8"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-307352d96bbe8ab9",
-          "doi": "10.1038/s41591-026-04448-w",
-          "paper": "Biological aging and generational shifts in early-onset cancer risk.",
-          "journal": "Nature medicine",
-          "date": "2026-06-22",
-          "year": "2026",
-          "pmcid": "PMC13472952",
-          "pmid": "42332142",
-          "paperURL": "https://doi.org/10.1038/s41591-026-04448-w"
-        },
-        "updatedAt": "2026-10-16T06:38:29Z"
-      }
-    },
     "10.1038/s42255-026-01555-3": {
       "checkedAt": "2026-10-16T06:37:36Z",
       "status": "pending",
@@ -12759,7 +12715,7 @@
   "dailyCollectionSession": {
     "aiAttempts": 0,
     "version": 1,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "uncertainAiAttempts": 0,
     "status": "active",
     "batchCount": 1,
@@ -12767,17 +12723,12 @@
     "uncertainRequests": 0,
     "maxAiAttempts": 165,
     "endReason": "",
-    "updatedAt": "2026-11-07T07:48:20Z",
+    "updatedAt": "2026-11-07T07:49:46Z",
     "date": "2026-11-07",
-    "requests": 0,
+    "requests": 29,
     "startedAt": "2026-11-07T07:48:17Z",
     "maxSeconds": 2700,
-    "elapsedSeconds": 4,
-    "maxBatches": 36,
-    "inFlight": {
-      "startedAt": "2026-11-07T07:48:20Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 89,
+    "maxBatches": 36
   }
 }
