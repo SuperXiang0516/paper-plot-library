@@ -186,11 +186,42 @@
     },
     "2026-11-07": {
       "newDOIs": [
-        "10.1038/s41591-026-04448-w"
+        "10.1038/s41591-026-04448-w",
+        "10.1038/s41591-026-04562-9"
       ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag596": {
+      "checkedAt": "2026-11-07T07:50:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0148": {
+      "checkedAt": "2026-11-07T07:50:55Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-11-07T07:50:52Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-07T07:50:50Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41591-026-04562-9": {
+      "checkedAt": "2026-11-07T07:50:41Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag621": {
       "checkedAt": "2026-11-07T07:49:42Z",
       "status": "pending",
@@ -221,12 +252,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1093/bib/bbag596": {
-      "checkedAt": "2026-11-06T08:38:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.2337/db26-0158": {
       "checkedAt": "2026-11-06T08:38:37Z",
       "status": "pending",
@@ -256,24 +281,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.2337/db26-0148": {
-      "checkedAt": "2026-11-06T08:36:30Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-11-06T08:36:27Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-06T08:36:25Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41586-026-10569-6": {
       "checkedAt": "2026-11-06T08:36:23Z",
@@ -11034,61 +11041,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41591-026-04562-9": {
-      "checkedAt": "2026-10-16T06:34:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41591-026-04562-9",
-        "metadataHash": "83828c0c5c0b86aa91795dbac39581c229d97e419c8e5f0e4113e73d9243e160",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/PMC13577923.1.xml?md5=e69ab65a97a100d68f67fdf844548322",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13577923-026a09629695add7.webp",
-              "assetSHA256": "026a09629695add77ff2a06c6f2b9360b59ca55ef1b027a13967e40342a15860",
-              "license": "CC BY",
-              "id": "Fig5",
-              "sha256": "026a09629695add77ff2a06c6f2b9360b59ca55ef1b027a13967e40342a15860",
-              "height": 1747,
-              "label": "Fig. 5",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig5_HTML.webp?md5=d71ce11676ca5b036d7519c32bc6da8d",
-              "captionHash": "a948084b27a53bd57388113155e64f815938a5819a5f17dbe7f0bdb2168229e8"
-            },
-            {
-              "asset": "assets/pmc13577923-3b48dd1a77025f5c.webp",
-              "assetSHA256": "3b48dd1a77025f5c61e1dc8ea5be078a88cbdda1ce469275ad2c47caa29a10f8",
-              "license": "CC BY",
-              "id": "Fig6",
-              "sha256": "3b48dd1a77025f5c61e1dc8ea5be078a88cbdda1ce469275ad2c47caa29a10f8",
-              "height": 2285,
-              "label": "Fig. 6",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig6_HTML.webp?md5=604efcd10b95af5e50a386be142ba2bd",
-              "captionHash": "c2cc15d1de050769b17ed6e148ef134094a52599590ceb6bf426689a946e52b6"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-521ce236f0e7691c",
-          "doi": "10.1038/s41591-026-04562-9",
-          "paper": "Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.",
-          "journal": "Nature medicine",
-          "date": "2026-08-21",
-          "year": "2026",
-          "pmcid": "PMC13577923",
-          "pmid": "42629466",
-          "paperURL": "https://doi.org/10.1038/s41591-026-04562-9"
-        },
-        "updatedAt": "2026-10-16T06:34:20Z"
-      }
-    },
     "10.1016/j.isci.2026.117307": {
       "checkedAt": "2026-10-16T06:33:35Z",
       "status": "pending",
@@ -12715,7 +12667,7 @@
   "dailyCollectionSession": {
     "aiAttempts": 0,
     "version": 1,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "uncertainAiAttempts": 0,
     "status": "active",
     "batchCount": 2,
@@ -12723,17 +12675,12 @@
     "uncertainRequests": 0,
     "maxAiAttempts": 165,
     "endReason": "",
-    "updatedAt": "2026-11-07T07:49:51Z",
+    "updatedAt": "2026-11-07T07:51:00Z",
     "date": "2026-11-07",
-    "requests": 29,
+    "requests": 53,
     "startedAt": "2026-11-07T07:48:17Z",
     "maxSeconds": 2700,
-    "elapsedSeconds": 95,
-    "maxBatches": 36,
-    "inFlight": {
-      "startedAt": "2026-11-07T07:49:51Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 164,
+    "maxBatches": 36
   }
 }

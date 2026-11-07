@@ -139669,6 +139669,571 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-521ce236f0e7691c",
+      "doi": "10.1038/s41591-026-04562-9",
+      "paper": "Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.",
+      "journal": "Nature medicine",
+      "date": "2026-08-21",
+      "year": "2026",
+      "pmcid": "PMC13577923",
+      "pmid": "42629466",
+      "paperURL": "https://doi.org/10.1038/s41591-026-04562-9",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1078-8956",
+      "eissn": "1546-170X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ef6d8f35eca744f12a7fa256979a1fe51e99f1d0c022de9cdbd0d2feac0e4d88"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/PMC13577923.1.xml?md5=e69ab65a97a100d68f67fdf844548322",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Current paradigms to study the responsiveness of DNAm biomarkers and their limitations.a, An incomplete picture of responsiveness: a matrix summarizes existing literature, illustrating the effects of various interventions on different DNAm biomarkers. After an intervention, DNAm-based clocks may show an increase in epigenetic age (red), a decrease in epigenetic age (green), no change (cross) or authors choose not to calculate the clock in this analysis but it was possible (black). b, The unidimensional analysis of responsiveness: a traditional application of the concept of responsiveness to aging biomarkers may consider only the change in one biomarker after one intervention. c, The multidimensional analysis of responsiveness: given that there are many aging interventions and many clocks, a complex framework is needed that categorizes anti-aging interventions and biomarkers and underscores the diverse influences of different anti-aging intervention types across different generations of DNAm biomarkers. Figure created in BioRender; Sehgal, R. https://biorender.com/k41v901 (2026).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig1_HTML.webp?md5=23131439ff7531135c2a00d88b1d66fe",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Standardized and comprehensive data curation and analysis pipeline for longitudinal interventional DNAm biomarker studies.Step 1: data curation. This initial step involved gathering a diverse array of whole blood DNAm datasets from multiple longevity-focused clinical trials and studies from various public (GEO and EMBL) and private (TruDiagnostic) repositories and standardizing their study-level metadata. Step 2: metadata standardization. Metadata for each study were harmonized to ensure consistency across datasets. Standardized variables included age, sex, sample ID, individual ID, follow-up time from baseline draw and sample type (categorizing control versus participant). Step 3: clock calculation. Using the MethylCIPHER 2.0 package, more than 110 DNAm biomarkers were calculated for each dataset. Step 4: age residuals calculation. Age was regressed out from every biomarker in each dataset to isolate age-residualized scores. Step 5: biomarker standardization age-residualized scores. For each biomarker, in every dataset, age-residualized scores were standardized (Methods) to allow comparisons across different datasets and different biomarkers. Step 6: paired t-test analysis. Paired t-tests were performed on pre- and postintervention samples to evaluate the effects of interventions on DNAm biomarkers. This statistical analysis enabled the determination of the significance of changes in biomarkers due to interventions. Step 7: heat map and follow-up analysis to explore the responsiveness of DNAm biomarkers. The heat map shows scaled effect sizes from red (positive effect) to green (negative effect), visualizing the impact of the listed interventions on the indicate DNAm biomarkers. Figure created in BioRender; Sehgal, R. https://biorender.com/4nqnt6v (2026). HBOT, hyperbaric oxygen therapy; HBT, hyperbaric therapy; ART, antiretroviral therapy; DQ, dasatinib plus quercetin; DQF, dasatinib, quercetin and fisetin.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig2_HTML.webp?md5=54bb235f90ff4c76c0252938692b300c",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Interventions and their effects on 16 prominent DNAm biomarkers.a, A dot plot comparing the effect sizes for aging events, controls and longevity interventions across 16 biomarkers. (*P < 0.05, **P < 0.01, ***P < 0.001). Dotted line represents zero effect size line. Only significant P values are shown between different categories. b, A dot plot comparing the effect sizes of different intervention types across all 16 biomarkers. (*P < 0.05, **P < 0.01, ***P < 0.001). Dotted line represents zero effect size line. c, A heat map of biomarker responses to different interventions. The x axis lists the 16 biomarkers, and the y axis lists the interventions. Red indicates an increase in epigenetic age, green indicates a decrease in epigenetic age and gray indicates no significant effect. d, A plot comparing effect sizes across different interventions. The y axis represents the effect size, whereas the x axis represents different interventions (*P < 0.05, **P < 0.01, ***P < 0.001, # significant after multiple-testing corrections). The dotted line represents the zero effect size line. Only significant P values are shown between different categories of interventions. e, A heat map of interventions for which the TranslAGE database contains multiple studies of the same intervention, allowing consistency between studies to be examined. Red indicates an increase in epigenetic age, green indicates a decrease in epigenetic age and gray indicates no significant effect. HBOT, hyperbaric oxygen therapy; HBT, hyperbaric therapy; ART, antiretroviral therapy; DQ, dasatinib plus quercetin; DQF, dasatinib, quercetin and fisetin.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig3_HTML.webp?md5=5442fbe76bc7b2d0eb417e4575704945",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Response of 16 prominent DNAm biomarkers to interventions.a, A scatter plot showing the number of interventions for which each DNAm biomarker decreases (x axis) or increases (y axis). b, A scatter plot of effect sizes of interventions on DNAm biomarkers in which each point represents one intervention study: Significant effect sizes are marked with red asterisks and blue hashtags (*P < 0.05, **P < 0.01, ***P < 0.001, # significant after multiple-testing corrections), whereas solid lines indicate the mean effect size. c, A bar plot showing agreement and disagreement among DNAm biomarkers. For each clock, the number of interventions leading to significant changes were counted (denoted by the numbers at the top). Significant changes for one clock were then categorized as either being in agreement with >50% of other clocks (blue), being in disagreement with >50% (red) or being the only clock to show a significant change (green) d, A scatter plot of the number of lifestyle interventions for which each DNAm biomarker decreases (x axis) or increases (y axis). e, A categorical scatter plot of effect sizes of lifestyle interventions on DNAm biomarkers where each point represents one intervention study. Significant effect sizes are marked with red asterisks (*P < 0.05, **P < 0.01, ***P < 0.001, # significant after multiple-testing corrections); solid lines indicate the mean effect size. f, A scatter plot of the number of pharmacological interventions for which each DNAm biomarker decreases (x axis) or increases (y axis). g, A categorical scatter plot of effect sizes of pharmacological interventions on DNAm biomarkers where each point represents one intervention study. Significant effect sizes are marked with red asterisks (*P < 0.05, **P < 0.01, ***P < 0.001, # significant after multiple-testing corrections); solid lines indicate the mean effect size.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig4_HTML.webp?md5=027cf608424f81a3d0a1edf820753d55",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Effect of study characteristics on DNAm biomarker response to interventions.a, A heat map showing standardized association strengths (Z-scores) from a linear model relating study characteristics (across all interventions) to DNAm biomarker effect sizes. Red indicates that a study characteristic is associated with higher effect sizes, green indicates lower effect sizes and gray indicates no significant association. ‘Healthy’ refers to studies conducted in participants without a diagnosed disease condition and serves as the reference group. ‘Disease’ refers to studies involving participants with a specified clinical diagnosis or pathological condition. In this coding framework, the healthy group is the baseline; therefore, positive (red) values indicate that studies conducted in disease populations are associated with larger DNAm effect sizes compared with healthy populations. min. age, minimum participant age reported in the study; age s.d., standard deviation of participant age within the study. b,c, Categorical scatter plots illustrating DNAm biomarker effect sizes in studies conducted in healthy individuals (b) and individuals with disease (c). Significant effects are marked with red asterisks (*P < 0.05, **P < 0.01, ***P < 0.001, # indicates significance after multiple-testing correction). d–i, Categorical scatter plots comparing effect sizes between healthy and disease populations for specific DNAm biomarkers: PCPhenoAge (d), SystemsAge (e), PCGrimAge (f), GrimAgeV2 (g), PCHannum (h) and DunedinPACE (i). NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig5_HTML.webp?md5=d71ce11676ca5b036d7519c32bc6da8d",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "assets/pmc13577923-026a09629695add7.webp",
+            "sha256": "026a09629695add77ff2a06c6f2b9360b59ca55ef1b027a13967e40342a15860",
+            "width": 1600,
+            "height": 1747,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "026a09629695add77ff2a06c6f2b9360b59ca55ef1b027a13967e40342a15860",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Explainable DNAm biomarkers (GenX) show specific changes and provide mechanistic insight.a, A scatter plot showing intervention effect sizes for GenX DNAm biomarkers. The x axis lists individual GenX biomarkers, and the y axis shows the corresponding standardized effect sizes. Each point represents the estimated effect size for a biomarker across interventions. Horizontal dashed lines indicate significance thresholds. Red points and red asterisks denote significant effects (*P < 0.05, **P < 0.01, ***P < 0.001), whereas gray points indicate nonsignificant effects. P values test whether the intervention-associated effect size differs significantly from zero. b, A heat map of whole-body aging DNAm biomarkers (y axis) across interventions (x axis). Red indicates an increase in epigenetic age, green indicates a decrease in epigenetic age and gray indicates no significant effect. c, A heat map of system-specific DNAm biomarkers (y axis) across interventions (x axis). The color scale is the same as in b. d, A heat map of scaled effect sizes for organ-system-specific DNAm biomarkers across dietary interventions. The color scale is consistent with b and c. e, A heat map of scaled effect sizes for DNAm-based metabolite and protein proxies across dietary interventions. The color scale is consistent with b–d. f, A scatter plot comparing intervention effect sizes estimated by StocP (x axis) and PhenoAge (y axis). Each point represents a single intervention. Red points indicate interventions associated with significant increases in epigenetic age across the 16 aging biomarkers, green points indicate interventions associated with significant decreases in epigenetic age and gray points indicate interventions with no significant overall effect. g, A scatter plot comparing intervention effect sizes estimated by StocH (x axis) and Horvath1 (y axis). Each point represents a single intervention and is colored according to its overall effect on epigenetic age as described for f. h, A scatter plot comparing intervention effect sizes estimated by AdaptAge (x axis) and DamAge (y axis). Each point represents a single intervention and is colored according to its overall effect on epigenetic age as described for f.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig6_HTML.webp?md5=604efcd10b95af5e50a386be142ba2bd",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "assets/pmc13577923-3b48dd1a77025f5c.webp",
+            "sha256": "3b48dd1a77025f5c61e1dc8ea5be078a88cbdda1ce469275ad2c47caa29a10f8",
+            "width": 1600,
+            "height": 2285,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3b48dd1a77025f5c61e1dc8ea5be078a88cbdda1ce469275ad2c47caa29a10f8",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Additional analyses of intervention categories and adjustment for estimated cell fractions.A) Number of significant DNA methylation biomarkers responding within each intervention category. B) Responsiveness of technically reliable DNA methylation biomarkers after regression of estimated cell fractions, demonstrating that responsiveness is largely preserved after accounting for blood cell composition.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig7_ESM.webp?md5=e9f08ec2a824b425b2443a166a0bb2aa",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dietary interventions demonstrate differential responsiveness across generations of DNA methylation biomarkers.Heatmaps summarizing standardized effect sizes of dietary interventions across first-generation, second-generation, and reliable DNA methylation biomarkers, illustrating that reliable second-generation biomarkers exhibit the most consistent reductions in biological age.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_Fig8_ESM.webp?md5=66055974e9ed3947468e3a96b9ce66b5",
+            "articleURL": "https://doi.org/10.1038/s41591-026-04562-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al.. Responsiveness of epigenetic aging biomarkers to longevity interventions in humans.. DOI: 10.1038/s41591-026-04562-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM1_ESM.pdf?md5=4478c17bb6cf500a7cc411faa9937231",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "ValueError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM2_ESM.pdf?md5=389d926c53b2313a88c048491e955381",
+            "license": "CC BY",
+            "sha256": "d4a61d120b57672d9cad3f32131ee5fc3675a8656f288be9a4a1a5b36b578fb6",
+            "status": "downloaded_private",
+            "bytes": 678437,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 37,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM3_ESM.xlsx?md5=25be6344085220aecdd0b06c11b963d9",
+            "license": "CC BY",
+            "sha256": "583f484c4ece18d8758b34facf3d1a9dbdeb51c2a4e221a808152d8c740781a0",
+            "status": "downloaded_private",
+            "bytes": 7030,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM4_ESM.xlsx?md5=6089b628c5a66f3d7a4ec90281f89bf9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM5_ESM.xlsx?md5=ee2a00e85a006b364f260eb4d2e8ac54",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM6_ESM.xlsx?md5=93aed4f2e3628cd9aa922ed0e97822a3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM7_ESM.xlsx?md5=da6b0dd49e7c77f502a66a5dada0f7df",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM8_ESM.xlsx?md5=5232a45c965604dd81a14b2fa32b212d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM9_ESM.xlsx?md5=1f3bd3ebdc1b0622e0b827099cf6197e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM10_ESM.xlsx?md5=7cd8d0c7352843dad81943df8629a7d7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM11_ESM.xlsx?md5=3993755b5efd560115db6aa8e400add1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM12",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM12_ESM.xlsx?md5=2d39ee24b34e4dea9ce8c5a414f8d136",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM13",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM13_ESM.xlsx?md5=863a578cfb99901ac63654c77411fd82",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM14",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM14_ESM.xlsx?md5=2645a9c81304b0a1e56e57e9f0d6cc1c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM15",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM15_ESM.xlsx?md5=148d500076089d836012dbd0c8906f50",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM16",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM16_ESM.xlsx?md5=c6974fdf8355929969f54bbfdc47b6b9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM17",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM17_ESM.xlsx?md5=30dbfdf4428c6a29567ed49f2d42930c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM18",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM18_ESM.xlsx?md5=0ffb36c8699647fdafa18cc408558861",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM19",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM19_ESM.xlsx?md5=373ffa1d26cd19136b672f9369cf6b61",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM20",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577923.1/41591_2026_4562_MOESM20_ESM.xlsx?md5=46d593129f4eed9ed5604bcd15f9f081",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-07T07:50:38.870272+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Raghav Sehgal; Daniel Borrus; Jenel F. Armstrong; John Gonzalez; Jessica Kasamoto; Yaroslav Markov; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "52.5",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-07T07:49:28Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-07T07:50:41Z",
+        "url": "https://openalex.org/W7203885907",
+        "cited_by_count": 30,
+        "fwci": 23.0654,
+        "citation_normalized_percentile": 0.99719803,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-07T07:50:41Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-07T07:50:41Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-08T07:50:41Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.98599015,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.98599015,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-07T07:50:56Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -193574,6 +194139,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-521ce236f0e7691c": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -195192,7 +195763,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-07T07:49:43Z",
+  "generatedAt": "2026-11-07T07:50:57Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -195426,18 +195997,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-07T07:48:17Z",
-    "updatedAt": "2026-11-07T07:49:51Z",
+    "updatedAt": "2026-11-07T07:51:00Z",
     "batchCount": 2,
-    "requests": 29,
+    "requests": 53,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
