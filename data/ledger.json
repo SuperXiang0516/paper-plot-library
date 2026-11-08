@@ -195,11 +195,42 @@
     },
     "2026-11-08": {
       "newDOIs": [
-        "10.1038/s41467-026-77102-1"
+        "10.1038/s41467-026-77102-1",
+        "10.1093/procel/pwag020"
       ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag596": {
+      "checkedAt": "2026-11-08T08:03:10Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0148": {
+      "checkedAt": "2026-11-08T08:03:09Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-11-08T08:03:06Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-08T08:03:01Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/procel/pwag020": {
+      "checkedAt": "2026-11-08T08:03:00Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag621": {
       "checkedAt": "2026-11-08T08:01:55Z",
       "status": "pending",
@@ -259,30 +290,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/bib/bbag596": {
-      "checkedAt": "2026-11-07T07:50:56Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2337/db26-0148": {
-      "checkedAt": "2026-11-07T07:50:55Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-11-07T07:50:52Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-07T07:50:50Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41591-026-04562-9": {
       "checkedAt": "2026-11-07T07:50:41Z",
@@ -11463,61 +11470,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1093/procel/pwag020": {
-      "checkedAt": "2026-10-16T06:30:20Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/procel/pwag020",
-        "metadataHash": "e67e685b0a15c0267a5255d2849d42726bb6ca56af13762d0d09e391fae8692a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13521284.1/PMC13521284.1.xml?md5=2217f6b8fc5f3a6efc755521291645c7",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13521284-85405ebb29559df2.webp",
-              "assetSHA256": "85405ebb29559df24a87d07e26ed67f3fa0849b3aea72dc6f094ccb7d861e9a9",
-              "license": "CC BY",
-              "id": "pwag020-F1",
-              "sha256": "85405ebb29559df24a87d07e26ed67f3fa0849b3aea72dc6f094ccb7d861e9a9",
-              "height": 2052,
-              "label": "Figure 1.",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13521284.1/pwag020f1.webp?md5=7c7e4f93499a9b0eb06e9966ea6dc7fb",
-              "captionHash": "3fd88b339abea1318f044d86f027335556a21b1f65fd598a731201074df436eb"
-            },
-            {
-              "asset": "assets/pmc13521284-c608f15dd9e81b27.webp",
-              "assetSHA256": "c608f15dd9e81b2777c3051fe6e464caa3900e7867e70bd664f4b5040bc5068a",
-              "license": "CC BY",
-              "id": "pwag020-F2",
-              "sha256": "c608f15dd9e81b2777c3051fe6e464caa3900e7867e70bd664f4b5040bc5068a",
-              "height": 2058,
-              "label": "Figure 2.",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13521284.1/pwag020f2.webp?md5=d36bcd3cd05497ff72a55b3172d68bd3",
-              "captionHash": "55f36e1f1039e5b8d15ef596a9abac88cfec29f5286077c032e68b060ab9c85c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-7d25bd2795710d84",
-          "doi": "10.1093/procel/pwag020",
-          "paper": "Restoring the FOXO1 geroprotective pathway via seno-resistant mesenchymal progenitor cells alleviates primate epididymal aging.",
-          "journal": "Protein & cell",
-          "date": "2026-09-01",
-          "year": "2026",
-          "pmcid": "PMC13521284",
-          "pmid": "41875394",
-          "paperURL": "https://doi.org/10.1093/procel/pwag020"
-        },
-        "updatedAt": "2026-10-16T06:30:19Z"
-      }
-    },
     "10.1038/s43587-026-01207-x": {
       "checkedAt": "2026-10-16T06:29:36Z",
       "status": "pending",
@@ -12587,27 +12539,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-08T08:02:06Z",
+    "updatedAt": "2026-11-08T08:03:15Z",
     "maxSeconds": 2700,
     "version": 1,
     "maxRequests": 1800,
     "aiAttempts": 0,
     "batchCount": 2,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "startedAt": "2026-11-08T07:59:28Z",
     "maxBatches": 36,
-    "elapsedSeconds": 158,
+    "elapsedSeconds": 227,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "endReason": "",
     "maxAiAttempts": 165,
     "status": "active",
-    "requests": 33,
-    "date": "2026-11-08",
-    "inFlight": {
-      "startedAt": "2026-11-08T08:02:06Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 55,
+    "date": "2026-11-08"
   }
 }
