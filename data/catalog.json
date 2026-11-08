@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-07",
+  "checkedAt": "2026-11-08",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -141517,6 +141517,372 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-e969cf5d9a1635c7",
+      "doi": "10.1038/s41467-026-77102-1",
+      "paper": "Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.",
+      "journal": "Nature communications",
+      "date": "2026-08-26",
+      "year": "2026",
+      "pmcid": "PMC13612558",
+      "pmid": "42786167",
+      "paperURL": "https://doi.org/10.1038/s41467-026-77102-1",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "9475697425a93cbb94c3c2e805da0af8d5ffd489f0eabd41122a2230b9d5055e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/PMC13612558.1.xml?md5=0d0ce9f23e897f0cf9b399dbb0e84dcf",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Study overview.We selected a subset of UK Biobank participants with retinal color fundus images that passed quality control. Using 5-fold cross-validation, we fine-tuned RETFound to predict age in a combined sample as well as in male- and female-specific samples. After correcting for regression-to-the-mean bias, we computed the retinal age gap (RAG). We conducted downstream analyses including disease associations, survival analysis, genome-wide association study, correlations between latent and explicit features, and model attention mapping, in both the combined and sex-specific samples. We then tested model performance and replication of genetic associations in an external dataset from the Rotterdam Study. This figure was partially created in BioRender. Trofimova, O. (2026) https://BioRender.com/byhrvsi. Fire icons created by Bahu Icons – Flaticon.com. Snow icons created by Magnific – Flaticon.com.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig1_HTML.webp?md5=551d65812adc742da67fc82f41b5acd8",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Standardized beta coefficients and odds ratios from models linking retinal age gap to risk factors and diseases.a, b Ordinary least square linear regression a and logistic regression b models were adjusted for socio-demographic factors. Outcomes are ordered by average effect size between the three sex categories. Error bars represent the 95% confidence interval. Female- and male-specific effects were compared using a two-sided z-test. Sample sizes and detailed results are shown in Supplementary Data 2–3. BMI: body mass index, BP: blood pressure, CRP: C-reactive protein, DBP: diastolic blood pressure, deg.: degeneration, FDR: false discovery rate, HDL: high-density lipoprotein, HRT: hormone replacement therapy, IGF-1: insulin-like growth factor 1, LDL: low-density lipoprotein, med.: medication, NLR: neutrophil-to-lymphocyte ratio, SBP: systolic blood pressure, surg.: surgery, WHR: waist-to-hip ratio. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig2_HTML.webp?md5=4e0f5bad960e9ec9ea25cbc2394e73b3",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "assets/pmc13612558-fa7b0646c162167d.webp",
+            "sha256": "fa7b0646c162167dc4357471d787db657d11eff1b78b721ad899c39b0f746217",
+            "width": 1600,
+            "height": 1654,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fa7b0646c162167dc4357471d787db657d11eff1b78b721ad899c39b0f746217",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Retinal age gap associations with mortality and disease outcomes.a Hazard ratios (HR) from Cox proportional hazards regression analyses linking retinal age gap to mortality and incident diseases in the combined, female, and male samples. Models were adjusted for socio-demographic factors, common cardiovascular risk factors, and previous events from the same category. Outcomes are ordered by average HR between the three sex categories. Error bars represent the 95% confidence interval. Female- and male-specific effects were compared using a two-sided z-test. Sample sizes, number of events, and detailed results are shown in Supplementary Data 4. b Relative contribution of predictors to mortality risk in the multivariable Cox model, quantified as the percent change in model χ² when each variable is removed from the model. c Relative contribution of predictors to disease risk for selected outcomes using the same leave-one-out approach as in b. Additional cardiovascular outcomes (IHD, NIC, and MI) are shown in Supplementary Fig. 6. Detailed results are presented in Supplementary Data 5. BMI: body mass index, BP med.: blood pressure medication, COPD: chronic obstructive pulmonary disease, CVD: cardiovascular disease, FDR: false discovery rate, HDL: high-density lipoprotein, IHD: ischemic heart disease, MI: myocardial infarction, NIC: non-ischemic cardiomyopathy, RAG: retinal age gap, SBP: systolic blood pressure. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig3_HTML.webp?md5=4eeafc52e1c3a6d46429fc081e96d749",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "assets/pmc13612558-84c46efd735d9b1e.webp",
+            "sha256": "84c46efd735d9b1ea5ff6fa156f854ad65f7d3e25948c7a41b884b0400429670",
+            "width": 1600,
+            "height": 1636,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "84c46efd735d9b1ea5ff6fa156f854ad65f7d3e25948c7a41b884b0400429670",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Manhattan plots from the genome-wide association study (GWAS) of retinal age gap, annotated with top genes.a Manhattan plot of the combined-sample GWAS (n = 68,137). b Miami plot showing the female-specific GWAS (top, orange; n = 30,698) and male-specific GWAS (bottom, blue; n = 30,958). -log10(p) values are plotted on a log2 scale. The red lines indicate genome-wide significance (5×10−8). Each dot corresponds to a single nucleotide polymorphism. The annotated genes correspond to those identified as significant by the PascalX gene-based analysis after Bonferroni correction for multiple testing (p < 2.61×10−6 in a and p < 2.51×10−6 in b). When more than two genes were identified at the same cytogenetic location, only the top two signals are labeled for clarity (the full gene lists are shown in Supplementary Data 9–11). Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig4_HTML.webp?md5=c8493c8e112bd894d93e1db9e1c3d241",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig5_HTML.webp?md5=0a8d1a575653287b3952f2ee2fc2f011",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "link_only",
+            "downloadStatus": "not_permitted_or_unresolved",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Correlation map between the model’s 1024 latent variables and interpretable image features, in the combined sample for fold 1 (n = 24,066 images).For every image feature, the maximum and mean absolute correlation with latent variables, the correlation with chronological age and retinal age gap are shown on the right side of the figure. CRAE: central retinal arterial equivalent, CRVE: central retinal venous equivalent, RAG: retinal age gap, SD: standard deviation, *: uncorrected p < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig6_HTML.webp?md5=cd7bd30deb315d4c9726c91d36833dd5",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77102-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al.. Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.. DOI: 10.1038/s41467-026-77102-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM1_ESM.pdf?md5=321c6174a2e02c88071488eb78559ac3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM2_ESM.pdf?md5=b7a6fc2fe59024bf838fc552f9b56c0f",
+            "license": "CC BY",
+            "sha256": "e811f9a1c68aea91e38b3e7c70b35af5bae8fbbfd6708515d2e8b36e5d6f8d9f",
+            "status": "downloaded_private",
+            "bytes": 205229,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM3_ESM.xlsx?md5=859e51133db464591a16fc320799ac7d",
+            "license": "CC BY",
+            "sha256": "306f934e194d45814eff88b8502c5b9ead495df241c593204e5777ff94d43440",
+            "status": "downloaded_private",
+            "bytes": 1023082,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM4_ESM.pdf?md5=ae289ad443a393f191702b58319e8ba0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM5_ESM.pdf?md5=a99061c3c0536923e23f6a9d647bcf25",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_MOESM6_ESM.xlsx?md5=a38dd2643fd03acc78e835d693b076bf",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-08T08:01:43.417602+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Olga Trofimova; Leah Böttger; Sacha Bors; Yating Pan; Bart Liefers; Jose D. Vargas-Quiros; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-08T08:01:46Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-08T08:01:47Z",
+        "url": "https://openalex.org/W4412766402",
+        "cited_by_count": 1,
+        "fwci": 3.2074,
+        "citation_normalized_percentile": 0.8349562,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-08T08:01:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-08T08:01:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-09T08:01:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 43.174781,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 12,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.174781,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-08T08:01:56Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -195446,6 +195812,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-e969cf5d9a1635c7": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -197064,7 +197436,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-07T07:52:12Z",
+  "generatedAt": "2026-11-08T08:01:56Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -197298,18 +197670,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-08T07:59:28Z",
-    "updatedAt": "2026-11-08T07:59:32Z",
+    "updatedAt": "2026-11-08T08:02:00Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 33,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

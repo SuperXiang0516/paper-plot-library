@@ -192,9 +192,44 @@
         "10.1038/s41591-026-04562-9",
         "10.1186/s40104-026-01510-y"
       ]
+    },
+    "2026-11-08": {
+      "newDOIs": [
+        "10.1038/s41467-026-77102-1"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-08T08:01:55Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-08T08:01:54Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-08T08:01:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-08T08:01:49Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41467-026-77102-1": {
+      "checkedAt": "2026-11-08T08:01:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1186/s40104-026-01510-y": {
       "checkedAt": "2026-11-07T07:52:10Z",
       "status": "source_confirmed",
@@ -254,30 +289,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-07T07:49:42Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-07T07:49:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-07T07:49:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-07T07:49:30Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41591-026-04448-w": {
       "checkedAt": "2026-11-07T07:49:28Z",
@@ -11318,61 +11329,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41467-026-77102-1": {
-      "checkedAt": "2026-10-16T06:31:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41467-026-77102-1",
-        "metadataHash": "25ad4312df6930f35005cfc49cf8f3bbb94fbfbf6d6a1d72e8729e6cf0d88ecd",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/PMC13612558.1.xml?md5=0d0ce9f23e897f0cf9b399dbb0e84dcf",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13612558-fa7b0646c162167d.webp",
-              "assetSHA256": "fa7b0646c162167dc4357471d787db657d11eff1b78b721ad899c39b0f746217",
-              "license": "CC BY",
-              "id": "Fig2",
-              "sha256": "fa7b0646c162167dc4357471d787db657d11eff1b78b721ad899c39b0f746217",
-              "height": 1654,
-              "label": "Fig. 2",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig2_HTML.webp?md5=4e0f5bad960e9ec9ea25cbc2394e73b3",
-              "captionHash": "de0a7b05acc49dc0bc8608a25aa2e145c2de78c77edcee89baece30bdec1a3c1"
-            },
-            {
-              "asset": "assets/pmc13612558-84c46efd735d9b1e.webp",
-              "assetSHA256": "84c46efd735d9b1ea5ff6fa156f854ad65f7d3e25948c7a41b884b0400429670",
-              "license": "CC BY",
-              "id": "Fig3",
-              "sha256": "84c46efd735d9b1ea5ff6fa156f854ad65f7d3e25948c7a41b884b0400429670",
-              "height": 1636,
-              "label": "Fig. 3",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13612558.1/41467_2026_77102_Fig3_HTML.webp?md5=4eeafc52e1c3a6d46429fc081e96d749",
-              "captionHash": "51857f453fe65b2ef84eacc171e0555806ab09e0aacd7d426e8d6f0d45104461"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-e969cf5d9a1635c7",
-          "doi": "10.1038/s41467-026-77102-1",
-          "paper": "Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures.",
-          "journal": "Nature communications",
-          "date": "2026-08-26",
-          "year": "2026",
-          "pmcid": "PMC13612558",
-          "pmid": "42786167",
-          "paperURL": "https://doi.org/10.1038/s41467-026-77102-1"
-        },
-        "updatedAt": "2026-10-16T06:31:23Z"
-      }
-    },
     "10.1016/j.cell.2026.08.002": {
       "checkedAt": "2026-10-16T06:31:18Z",
       "status": "pending",
@@ -12631,27 +12587,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-08T07:59:32Z",
+    "updatedAt": "2026-11-08T08:02:00Z",
     "maxSeconds": 2700,
     "version": 1,
     "maxRequests": 1800,
     "aiAttempts": 0,
     "batchCount": 1,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "startedAt": "2026-11-08T07:59:28Z",
     "maxBatches": 36,
-    "elapsedSeconds": 4,
+    "elapsedSeconds": 152,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "endReason": "",
     "maxAiAttempts": 165,
     "status": "active",
-    "requests": 0,
-    "date": "2026-11-08",
-    "inFlight": {
-      "startedAt": "2026-11-08T07:59:32Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 33,
+    "date": "2026-11-08"
   }
 }
