@@ -195,12 +195,44 @@
     },
     "2026-11-08": {
       "newDOIs": [
+        "10.1002/advs.77870",
         "10.1038/s41467-026-77102-1",
+        "10.1038/s41598-026-54516-x",
         "10.1093/procel/pwag020"
       ]
     }
   },
   "candidates": {
+    "10.1002/biot.70331": {
+      "checkedAt": "2026-11-08T08:04:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0158": {
+      "checkedAt": "2026-11-08T08:04:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.77870": {
+      "checkedAt": "2026-11-08T08:04:50Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-08T08:04:45Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41598-026-54516-x": {
+      "checkedAt": "2026-11-08T08:04:44Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag596": {
       "checkedAt": "2026-11-08T08:03:10Z",
       "status": "pending",
@@ -267,23 +299,11 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.2337/db26-0158": {
-      "checkedAt": "2026-11-07T07:52:05Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1002/glia.70236": {
       "checkedAt": "2026-11-07T07:52:04Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1167/iovs.67.12.73": {
-      "checkedAt": "2026-11-07T07:51:59Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1016/j.isci.2026.117256": {
       "checkedAt": "2026-11-07T07:51:58Z",
@@ -642,12 +662,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1002/biot.70331": {
-      "checkedAt": "2026-11-02T08:23:03Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1002/edm2.70359": {
       "checkedAt": "2026-11-02T08:23:01Z",
@@ -1130,61 +1144,6 @@
           "paperURL": "https://doi.org/10.3390/ijms27198772"
         },
         "updatedAt": "2026-10-22T07:04:59Z"
-      }
-    },
-    "10.1038/s41598-026-54516-x": {
-      "checkedAt": "2026-10-22T07:04:53Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41598-026-54516-x",
-        "metadataHash": "7a2860fe96d83fcc7aa9f9b32ec2f3649ec1f7651d21728cd838b9f0d2c32deb",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13434622.1/PMC13434622.1.xml?md5=0ab50443c14cfcd871036b647b194714",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 640,
-              "sha256": "5c28b362cfb81571164c0bf46aaab65d7aa4e9a5a483721dbb92377bc814dc98",
-              "label": "Fig. 1",
-              "height": 883,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13434622.1/41598_2026_54516_Fig1_HTML.jpg?md5=74cc048f2aedc0fd1e4f3872c9900771",
-              "asset": "assets/pmc13434622-5c28b362cfb81571.jpg",
-              "license": "CC BY",
-              "assetSHA256": "5c28b362cfb81571164c0bf46aaab65d7aa4e9a5a483721dbb92377bc814dc98",
-              "id": "Fig1",
-              "captionHash": "35a19dfe35e24985a4708eff6bee22afbffcc92d00d3680ac10cb7798aedaa89"
-            },
-            {
-              "width": 646,
-              "sha256": "09ad876d0737d85d02410fb317a1073b6d20381822f022d212fe29dd7fb26006",
-              "label": "Fig. 2",
-              "height": 824,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13434622.1/41598_2026_54516_Fig2_HTML.jpg?md5=6279f4540a986994308426648fa67e88",
-              "asset": "assets/pmc13434622-09ad876d0737d85d.jpg",
-              "license": "CC BY",
-              "assetSHA256": "09ad876d0737d85d02410fb317a1073b6d20381822f022d212fe29dd7fb26006",
-              "id": "Fig2",
-              "captionHash": "7eea170187e63aee365f861f1a61e452b733624c402a1d9a265e4430b3c2bee7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-896bc11e5daa0da5",
-          "doi": "10.1038/s41598-026-54516-x",
-          "paper": "Integrating single-cell and bulk transcriptomic analyses to explore key lactylation-related genes in benign prostatic hyperplasia.",
-          "journal": "Scientific reports",
-          "date": "2026-05-25",
-          "year": "2026",
-          "pmcid": "PMC13434622",
-          "pmid": "42185567",
-          "paperURL": "https://doi.org/10.1038/s41598-026-54516-x"
-        },
-        "updatedAt": "2026-10-22T07:04:51Z"
       }
     },
     "10.1002/alz.71558": {
@@ -12539,27 +12498,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-08T08:03:21Z",
+    "updatedAt": "2026-11-08T08:04:59Z",
     "maxSeconds": 2700,
     "version": 1,
     "maxRequests": 1800,
     "aiAttempts": 0,
     "batchCount": 3,
-    "dailyNewCount": 2,
+    "dailyNewCount": 4,
     "startedAt": "2026-11-08T07:59:28Z",
     "maxBatches": 36,
-    "elapsedSeconds": 233,
+    "elapsedSeconds": 332,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "endReason": "",
     "maxAiAttempts": 165,
     "status": "active",
-    "requests": 55,
-    "date": "2026-11-08",
-    "inFlight": {
-      "startedAt": "2026-11-08T08:03:21Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 85,
+    "date": "2026-11-08"
   }
 }
