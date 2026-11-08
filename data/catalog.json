@@ -143047,6 +143047,1309 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-972ba5ce1b8c4ec7",
+      "doi": "10.1093/humrep/deag051",
+      "paper": "Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.",
+      "journal": "Human reproduction (Oxford, England)",
+      "date": "2026-06-01",
+      "year": "2026",
+      "pmcid": "PMC13230497",
+      "pmid": "41886635",
+      "paperURL": "https://doi.org/10.1093/humrep/deag051",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0268-1161",
+      "eissn": "1460-2350",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d0bed87ff2f8ab9a46b0ce41c214ab6faef762a88e9ba2f5b8443595c2806de7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/PMC13230497.1.xml?md5=b084a233932d6e08c58bc14f3b29155e",
+        "figures": [
+          {
+            "id": "deag051-F1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Identification of cell types in healthy and atretic small antral follicles. (A) List of individual donors (N = 6) and types of follicles (H, healthy; T1, atretic type 1; T2, atretic type 2; T3, atretic type 3) analysed per donor. (B) Uniform manifold approximation and projection (UMAP) plot showing segmented cells coloured by cluster (left panel) and by donor (right panel). (C) Distribution of cells per cluster per follicular type. (D) Spatial distribution of the identified cell clusters (CL_ID) projected in the segmentation mask of tissue sections of healthy (H), type 1 (T1), type 2 (T2), and type 3 (T3) atretic follicles in all regions of interest used in this study. White arrow (C1_1) points to a primordial follicle in the vicinity of a healthy small antral follicle. The areas depicted by the white dashed boxes, corresponding to H, T1, T2, and T3, are used magnified in all subsequent figures. Scale bar is 100 µm. (E) Distribution of cells per cluster per donor. (F) Heatmap showing the top 5 differentially expressed genes (DEGs) per cluster. Cluster identification (CL_ID): 0_heal.ST is healthy stroma; 1_atr.ST is atretic stroma; 2_ex.TC is external theca cells; 3_in.TC internal theca cells; 4_SMC is smooth muscle cells; 5_EC is endothelial cells; 6_heal.GC is healthy granulosa cells; 7_ac.FIB1 is fibroblast-like cells in antrum_1; 8_atr.GC is atretic granulosa cells; 9_ac.FIB2 is fibroblast-like cells in antrum_2; 10_IM1 is immune cells_1; 11_IM2 is immune cells_2; 12_pri.FOL is primordial/primary follicle.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051f1.jpg?md5=3941cfcd74f2a982bddae83adf61a73a",
+            "articleURL": "https://doi.org/10.1093/humrep/deag051",
+            "asset": "assets/pmc13230497-aeef0ee7fb1dbee5.jpg",
+            "sha256": "aeef0ee7fb1dbee552f40d86e7f1e9db7465dc24b7a4df63d4905ded9633421a",
+            "width": 800,
+            "height": 996,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al.. Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.. DOI: 10.1093/humrep/deag051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "aeef0ee7fb1dbee552f40d86e7f1e9db7465dc24b7a4df63d4905ded9633421a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "deag051-F2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Spatial cellular organization in healthy and atretic small antral follicles. (A) Spatial distribution of the identified cell clusters (CL_ID) projected in the segmentation mask of tissue sections of healthy (H), type 1 (T1), type 2 (T2), and type 3 (T3) atretic follicles. Cluster identification (CL_ID): 0_heal.ST is healthy stroma; 1_atr.ST is atretic stroma; 2_ex.TC is external theca cells; 3_in.TC internal theca cells; 4_SMC is smooth muscle cells; 5_EC is endothelial cells; 6_heal.GC is healthy granulosa cells; 7_ac.FIB1 is fibroblast-like cells in antrum_1; 8_atr.GC is atretic granulosa cells; 9_ac.FIB2 is fibroblast-like cells in antrum_2; 10_IM1 is immune cells_1; 11_IM2 is immune cells_2; 12_pri.FOL is primordial/primary follicle. White dashed lines indicate the basement membrane of the small antral follicle. Scale bar is 50 µm. (B) Expression pattern of genes of interest projected in the segmentation mask of tissue sections of healthy small antral follicle (C1_1) to identify specific cells of interest (granulosa cells, internal theca cells, external theca cells, oocytes, and endothelial cells). Blue arrows point to KIT+ unilaminar follicles; green arrows point to PECAM1+ endothelial cells; white dashed line indicates the basement membrane of the small antral follicle. Scale bar is 100 µm. (C) Spatial distribution of gene expression projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles in the same region as in A. Genes were selected to identify specific cells of interest (granulosa cells, internal theca cells, external theca cells, oocytes, and endothelial cells). White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test; *P < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051f2.jpg?md5=7f22b7de276c587783da84cb0478f07b",
+            "articleURL": "https://doi.org/10.1093/humrep/deag051",
+            "asset": "assets/pmc13230497-33fd2cef926c674d.jpg",
+            "sha256": "33fd2cef926c674d1035b9efde719ead7575be952b080946c40e5ff19e49d327",
+            "width": 800,
+            "height": 1014,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al.. Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.. DOI: 10.1093/humrep/deag051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "33fd2cef926c674d1035b9efde719ead7575be952b080946c40e5ff19e49d327",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "deag051-F3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Expression pattern of genes of interest associated with steroidogenesis and NOTCH signalling in healthy and atretic small antral follicles. (A) Spatial distribution of gene expression of genes associated with steroidogenesis projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles. White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test; *P < 0.05; **P < 0.01. (B) Spatial distribution of gene expression of genes associated with NOTCH signalling projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles. White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test, but none of the comparisons was significantly different.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051f3.jpg?md5=dd33156980dcb0c7fa0fc7b04299a5c5",
+            "articleURL": "https://doi.org/10.1093/humrep/deag051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al.. Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.. DOI: 10.1093/humrep/deag051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "deag051-F4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Expression pattern of genes of interest associated with WNT and HH signalling in healthy and atretic small antral follicles. (A) Spatial distribution of gene expression of genes associated with WNT signalling projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles. White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test, but none of the comparisons was significantly different. (B) Spatial distribution of gene expression of genes associated with HH signalling projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles. White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test; *P < 0.05; **P < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051f4.jpg?md5=8b95da491f6290b01f96f4aef5c5e5a5",
+            "articleURL": "https://doi.org/10.1093/humrep/deag051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al.. Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.. DOI: 10.1093/humrep/deag051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "deag051-F5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Expression pattern of genes of interest associated with TGFβ/BMP signalling in healthy and atretic small antral follicles. Spatial distribution of gene expression of genes associated with TGFβ/BMP signalling projected in the segmentation mask of tissue sections of healthy, type 1, type 2, and type 3 atretic follicles. White dashed lines indicate the basement membrane. Scale bar is 50 µm (left panels). Right panel shows the quantification of each gene per cell type of interest per follicle (GC, granulosa cells; in. TC, internal theca cells; ex. TC/ST, external theca cells and stromal cells; ac. FIB, fibroblast-like cells in antrum; and OTHER, all other cells per follicle). Each dot represents the average expression (Ln.Norm.Counts) per cell type per follicle and the horizontal stripe represents the median. The statistical test used to compare to healthy follicles was the Mann–Whitney U test; *P < 0.05; **P < 0.01.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051f5.jpg?md5=dcb6c5bdd91e8f19a44fb2127d4ca028",
+            "articleURL": "https://doi.org/10.1093/humrep/deag051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al.. Spatial transcriptomics in the human adult ovary: insights into key signalling pathways during follicular atresia.. DOI: 10.1093/humrep/deag051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "f1",
+            "label": "deag051_Supplementary_Figure_S1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_figure_s1.pdf?md5=656a1d48634641311bbf9a516543cc2b",
+            "license": "CC BY",
+            "sha256": "c68ea5e625997b297c5731b2ba825edf6bf8ea6193f589641f2ef0913bae7da4",
+            "status": "downloaded_private",
+            "bytes": 599863,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "f2",
+            "label": "deag051_Supplementary_Figure_S2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_figure_s2.pdf?md5=e5d6ec08eedaf8e6f5e9283b58b82143",
+            "license": "CC BY",
+            "sha256": "2f25c941174c8e045f10029b8a00bae873c1ccd7bf6bf6aee61d16ea2cd1b4a2",
+            "status": "downloaded_private",
+            "bytes": 841478,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "f3",
+            "label": "deag051_Supplementary_Figure_S3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_figure_s3.pdf?md5=9f76d22290b37d757b6eacc49fc80d7b",
+            "license": "CC BY",
+            "sha256": "b63b073ea0a8de153a7b1b01acfc18925dbd5ffc953b992dd4f04b13d869da51",
+            "status": "downloaded_private",
+            "bytes": 812110,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "原文 DOI 出现在前3页"
+            }
+          },
+          {
+            "id": "t1",
+            "label": "deag051_Supplementary_Table_S1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_table_s1.pdf?md5=a2a72a2e01995854a1ba0795afa2380f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "t2",
+            "label": "deag051_Supplementary_Table_S2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_table_s2.pdf?md5=0524599a055b4150b34f10be02369eed",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "t3",
+            "label": "deag051_Supplementary_Table_S3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/deag051_supplementary_table_s3.xlsx?md5=9fa46ede65c584cb68b8d894982b587d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/chuvalab/ova_resolve"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-08T08:06:13.889847+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/chuvalab/ova_resolve",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13230497.1/PMC13230497.1.xml?md5=b084a233932d6e08c58bc14f3b29155e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Hanne Vlieghe; Fu Wei; Hui Cheng; Tessa H R Stolk; Judith A Huirne; Norah M van Mello; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/chuvalab/ova_resolve",
+        "commit": "c33a6801c27d6eaec5d6482ede0d3061c2c74e64",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "companion_functions.py",
+            "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/companion_functions.py",
+            "sha256": "bee7166e64a17d4d9ba9cd76b6c4de9ad57198fcdd66810d31a011ee22023e38",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "spatial transcriptomic_Resolve_Python.ipynb",
+            "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+            "sha256": "8e0629840607e3f179f8a86e30763244aa46a3ffa275c80a0eef8be995fde16c",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "ad.read_h5ad",
+                "line": 144,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 88,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t",
+                  "index_col": 0
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 338,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": null,
+                  "namesProvided": true
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 468,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": null,
+                  "namesProvided": true
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Donors",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scaled",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "full_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_id",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "names",
+                "line": 286,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvals_adj",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pct_nz_group",
+                "line": 270,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "expression",
+                "line": 506,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "geometry",
+                "line": 519,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 344,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 144,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 88,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 338,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 468,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "spatial transcriptomic_Resolve_Python2.ipynb",
+            "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb",
+            "sha256": "160a5b68f51b772645ede4445f9deda608848988701637530e2194f0c543f3bf",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "update_adata_for_paper_09_13.h5ad",
+                "reader": "read_h5ad",
+                "line": 3,
+                "status": "literal_path",
+                "format": "h5ad",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 29,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "header": null,
+                  "namesProvided": true
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "cell_composition_by_follicle_type.pdf",
+                "writer": "plt.savefig",
+                "line": 222
+              }
+            ],
+            "fields": [
+              {
+                "name": "p_value",
+                "line": 179,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 191,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "color",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mean_proportion",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "q",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "signif",
+                "line": 366,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "comparison",
+                "line": 190,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "left",
+                "line": 436,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 444,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 445,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bottom",
+                "line": 446,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "compared_main",
+                "line": 453,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 587,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.prop_cycle",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden_q1",
+                "line": 452,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 3,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 29,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 222,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "spatial transcriptomic_Resolve_R.ipynb",
+            "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_R.ipynb",
+            "sha256": "9edc940ad1ee4eb09cda5c04908451631a5f3b07b73ab174a8452b9ea056ff7a",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "limitation"
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "ad.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Donors",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scaled",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "full_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_id",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "names",
+                "line": 286,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvals_adj",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pct_nz_group",
+                "line": 270,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "expression",
+                "line": 506,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "geometry",
+                "line": 519,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 344,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+            "line": 144,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Donors",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scaled",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "full_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_id",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "names",
+                "line": 286,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvals_adj",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pct_nz_group",
+                "line": 270,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "expression",
+                "line": 506,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "geometry",
+                "line": 519,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 344,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+            "line": 88,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t",
+              "index_col": 0
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Donors",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scaled",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "full_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_id",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "names",
+                "line": 286,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvals_adj",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pct_nz_group",
+                "line": 270,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "expression",
+                "line": 506,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "geometry",
+                "line": 519,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 344,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+            "line": 338,
+            "url": "",
+            "readerOptions": {
+              "header": null,
+              "namesProvided": true
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Donors",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scaled",
+                "line": 293,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "full_id",
+                "line": 313,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_id",
+                "line": 147,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden",
+                "line": 278,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "names",
+                "line": 286,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvals_adj",
+                "line": 269,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pct_nz_group",
+                "line": 270,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "expression",
+                "line": 506,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "geometry",
+                "line": 519,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 344,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 344,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+            "line": 468,
+            "url": "",
+            "readerOptions": {
+              "header": null,
+              "namesProvided": true
+            }
+          },
+          {
+            "name": "update_adata_for_paper_09_13.h5ad",
+            "path": "",
+            "reader": "read_h5ad",
+            "format": "h5ad",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "p_value",
+                "line": 179,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 191,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "color",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mean_proportion",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "q",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "signif",
+                "line": 366,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "comparison",
+                "line": 190,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "left",
+                "line": 436,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 444,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 445,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bottom",
+                "line": 446,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "compared_main",
+                "line": 453,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 587,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.prop_cycle",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden_q1",
+                "line": 452,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb",
+            "line": 3,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "p_value",
+                "line": 179,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 191,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "color",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_id",
+                "line": 56,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mean_proportion",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "q",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p",
+                "line": 365,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "signif",
+                "line": 366,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "comparison",
+                "line": 190,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "left",
+                "line": 436,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 444,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 445,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bottom",
+                "line": 446,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "compared_main",
+                "line": 453,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pathway",
+                "line": 587,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.prop_cycle",
+                "line": 382,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "leiden_q1",
+                "line": 452,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb",
+            "line": 29,
+            "url": "",
+            "readerOptions": {
+              "header": null,
+              "namesProvided": true
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "6.8",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-08T08:06:19Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-08T08:06:19Z",
+        "url": "https://openalex.org/W7140564093",
+        "cited_by_count": 3,
+        "fwci": 10.8397,
+        "citation_normalized_percentile": 0.98544436,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-08T08:06:19Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-08T08:06:19Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-09T08:06:19Z"
+        }
+      },
+      "selectionScore": {
+        "total": 86.9272218,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.9272218,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-08T08:06:32Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "人类成人卵巢空间转录组学:卵泡闭锁过程中关键信号通路的洞察",
+        "summary_zh": "该研究对人类成人卵巢组织进行空间转录组分析,覆盖6名供体的16个区域、21个小窦卵泡(直径0.5-4 mm),包括健康卵泡及不同闭锁阶段卵泡;选取80个基因用于细胞类型鉴定并考察WNT、TGFβ/BMP、NOTCH和HH通路。图注显示,研究通过UMAP聚类、分割掩膜空间投影、每卵泡类型细胞分布及差异表达热图鉴定细胞类型,并展示类固醇生成、NOTCH、WNT和HH相关基因在健康与各型闭锁卵泡中的空间表达及按细胞类型的定量。摘要报告关键信号通路在颗粒细胞中总体下调,而内卵泡膜细胞在闭锁起始时短暂升高。作者代码未运行,静态检查不构成复现验证。",
+        "learning_points": [
+          "空间转录组可在组织切片分割掩膜上展示细胞簇与基因表达的空间分布,图1至图4均采用该呈现方式。",
+          "研究设计包含6名供体、16个卵巢组织区域和21个小窦卵泡,并按健康及闭锁1、2、3型分类。",
+          "图1通过UMAP按细胞簇和供体着色,并用热图展示每簇前5个差异表达基因。",
+          "图2给出细胞簇注释,包括健康/闭锁基质、内外卵泡膜细胞、平滑肌、内皮、健康/闭锁颗粒细胞、卵泡腔成纤维样细胞、免疫细胞及原始/初级卵泡。",
+          "图3和图4按颗粒细胞、内卵泡膜细胞、外卵泡膜/基质细胞、卵泡腔成纤维样细胞等分组展示基因表达定量,点表示每卵泡每细胞类型平均表达,横线表示中位数。",
+          "图3注明使用Mann–Whitney U检验与健康卵泡比较并标注显著性;图4注明WNT相关比较均无显著差异。",
+          "摘要结论指出关键信号通路在颗粒细胞中总体下调,而内卵泡膜细胞在闭锁起始时短暂升高。",
+          "静态检查仅观察到笔记本读取h5ad与CSV文件及保存图片等片段,未执行代码,不能据此确认图表生成流程或结果一致性。"
+        ],
+        "limitations": [
+          "研究组织来自跨性别男性供体,不能排除睾酮治疗对卵泡动态的影响。",
+          "摘要未给出各通路基因的具体效应量或全部统计结果,无法从提供证据评估效应大小。",
+          "图4注明WNT相关比较均无显著差异,相关解释需谨慎。",
+          "未观察到作者代码运行结果,静态检查不是复现验证,不能宣称已复现或与原图一致。",
+          "输入数据尺度、图号与代码的对应关系未明示,保持未知。",
+          "部分图注文本在证据中被截断,细胞簇全名或后续内容不完整。",
+          "证据未提供许可、期刊指标或独立验证信息,均属未知。",
+          "样本量较小(6名供体、21个卵泡),证据未支持更广泛人群的外推。",
+          "空间转录组基于预设80个基因面板,证据未说明其对全转录组发现的覆盖程度。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-08T08:06:40Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "5cec01a490189832b3f809c8395a8eaa92a2da6f5ca474d3113b133ce77480bd",
+        "summary_fingerprint": "f7fb1ced9a4fcfcd4842be32fde029f22d6c73cc07b8f03360b98f071c31ffed",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -197000,6 +198303,603 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-972ba5ce1b8c4ec7": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\nupdate_adata_for_paper_09_13.h5ad\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb；读取行 144；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "Donors",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scaled",
+              "line": 293,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "full_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_id",
+              "line": 147,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden",
+              "line": 278,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "names",
+              "line": 286,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvals_adj",
+              "line": 269,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pct_nz_group",
+              "line": 270,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "expression",
+              "line": 506,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "geometry",
+              "line": 519,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 344,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 344,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb；读取行 88；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "Donors",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scaled",
+              "line": 293,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "full_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_id",
+              "line": 147,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden",
+              "line": 278,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "names",
+              "line": 286,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvals_adj",
+              "line": 269,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pct_nz_group",
+              "line": 270,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "expression",
+              "line": 506,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "geometry",
+              "line": 519,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 344,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 344,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb；读取行 338；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "Donors",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scaled",
+              "line": 293,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "full_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_id",
+              "line": 147,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden",
+              "line": 278,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "names",
+              "line": 286,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvals_adj",
+              "line": 269,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pct_nz_group",
+              "line": 270,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "expression",
+              "line": 506,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "geometry",
+              "line": 519,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 344,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 344,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb；读取行 468；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "Donors",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scaled",
+              "line": 293,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "full_id",
+              "line": 313,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_id",
+              "line": 147,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden",
+              "line": 278,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "names",
+              "line": 286,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvals_adj",
+              "line": 269,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pct_nz_group",
+              "line": 270,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "expression",
+              "line": 506,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "geometry",
+              "line": 519,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 344,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 344,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "update_adata_for_paper_09_13.h5ad",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "h5ad",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb；读取行 3；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "p_value",
+              "line": 179,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_type",
+              "line": 191,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "color",
+              "line": 382,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mean_proportion",
+              "line": 176,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "q",
+              "line": 365,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p",
+              "line": 365,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "signif",
+              "line": 366,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "comparison",
+              "line": 190,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "left",
+              "line": 436,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 444,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 445,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "bottom",
+              "line": 446,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "compared_main",
+              "line": 453,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pathway",
+              "line": 587,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.prop_cycle",
+              "line": 382,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden_q1",
+              "line": 452,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb；读取行 29；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/chuvalab/ova_resolve/blob/c33a6801c27d6eaec5d6482ede0d3061c2c74e64/spatial%20transcriptomic_Resolve_Python2.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "p_value",
+              "line": 179,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_type",
+              "line": 191,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "color",
+              "line": 382,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cell_id",
+              "line": 56,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mean_proportion",
+              "line": 176,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "q",
+              "line": 365,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p",
+              "line": 365,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "signif",
+              "line": 366,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "x",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "comparison",
+              "line": 190,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "left",
+              "line": 436,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 444,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 445,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "bottom",
+              "line": 446,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "compared_main",
+              "line": 453,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pathway",
+              "line": 587,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.prop_cycle",
+              "line": 382,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "leiden_q1",
+              "line": 452,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -198618,7 +200518,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-08T08:04:55Z",
+  "generatedAt": "2026-11-08T08:06:40Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -198852,18 +200752,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-08T07:59:28Z",
-    "updatedAt": "2026-11-08T08:05:06Z",
+    "updatedAt": "2026-11-08T08:06:44Z",
     "batchCount": 4,
-    "requests": 85,
-    "aiAttempts": 0,
+    "requests": 131,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
