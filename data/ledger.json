@@ -204,11 +204,42 @@
     },
     "2026-11-09": {
       "newDOIs": [
+        "10.1002/advs.77463",
         "10.1002/advs.77793"
       ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag596": {
+      "checkedAt": "2026-11-09T08:46:45Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0148": {
+      "checkedAt": "2026-11-09T08:46:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-11-09T08:46:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-09T08:46:28Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.77463": {
+      "checkedAt": "2026-11-09T08:46:15Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag621": {
       "checkedAt": "2026-11-09T08:44:35Z",
       "status": "pending",
@@ -288,61 +319,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1002/advs.77463": {
-      "checkedAt": "2026-11-08T08:06:23Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.77463",
-        "metadataHash": "7731d112a330498ab14f83268d1a75a51d5f3dbb3a32ce034a8622efde982041",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/PMC13616408.1.xml?md5=2799d69355ab1027d30de9852d686ec1",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g004.webp?md5=38ffd9601a71faabb00a0fb6cbed4f28",
-              "assetSHA256": "021c3e06e8062aa891da5cf03a61e02019d5f1ac7c007b593d8c635cd9801bee",
-              "label": "FIGURE 1",
-              "license": "CC BY",
-              "sha256": "021c3e06e8062aa891da5cf03a61e02019d5f1ac7c007b593d8c635cd9801bee",
-              "width": 600,
-              "asset": "assets/pmc13616408-021c3e06e8062aa8.webp",
-              "id": "advs77463-fig-0001",
-              "height": 896,
-              "captionHash": "d984b3894962d957495d014d9bf3c0bc118ffa104117abb90fefc26f07abc507"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g007.webp?md5=7eb93daf7a541a87c77ff786266eba2a",
-              "assetSHA256": "2e96a7ccaad20a7792810f07f09124fc88cece865eddedfcddf0e75b3b4dfb11",
-              "label": "FIGURE 2",
-              "license": "CC BY",
-              "sha256": "2e96a7ccaad20a7792810f07f09124fc88cece865eddedfcddf0e75b3b4dfb11",
-              "width": 600,
-              "asset": "assets/pmc13616408-2e96a7ccaad20a77.webp",
-              "id": "advs77463-fig-0002",
-              "height": 874,
-              "captionHash": "0005615bf2e48a4688d196b8a039c8b8032d2534757cd472f09de85936ffefd6"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-8f332ae1914ca161",
-          "doi": "10.1002/advs.77463",
-          "paper": "Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-09-27",
-          "year": "2026",
-          "pmcid": "PMC13616408",
-          "pmid": "42801556",
-          "paperURL": "https://doi.org/10.1002/advs.77463"
-        },
-        "updatedAt": "2026-11-08T08:06:22Z"
-      }
-    },
     "10.1093/humrep/deag051": {
       "checkedAt": "2026-11-08T08:06:20Z",
       "status": "source_confirmed",
@@ -378,30 +354,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/bib/bbag596": {
-      "checkedAt": "2026-11-08T08:03:10Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2337/db26-0148": {
-      "checkedAt": "2026-11-08T08:03:09Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-11-08T08:03:06Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-08T08:03:01Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1093/procel/pwag020": {
       "checkedAt": "2026-11-08T08:03:00Z",
@@ -12529,20 +12481,15 @@
     "batchCount": 2,
     "date": "2026-11-09",
     "startedAt": "2026-11-09T08:42:17Z",
-    "requests": 29,
-    "elapsedSeconds": 154,
+    "requests": 52,
+    "elapsedSeconds": 276,
     "uncertainRequests": 0,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "status": "active",
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "updatedAt": "2026-11-09T08:44:51Z",
-    "inFlight": {
-      "startedAt": "2026-11-09T08:44:51Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-09T08:46:53Z"
   }
 }

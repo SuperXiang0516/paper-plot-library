@@ -144726,6 +144726,389 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-8f332ae1914ca161",
+      "doi": "10.1002/advs.77463",
+      "paper": "Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-09-27",
+      "year": "2026",
+      "pmcid": "PMC13616408",
+      "pmid": "42801556",
+      "paperURL": "https://doi.org/10.1002/advs.77463",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "99f0725518a732c24525daed241530d973ef6fc5356a570936b0e5243c705c4e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/PMC13616408.1.xml?md5=2799d69355ab1027d30de9852d686ec1",
+        "figures": [
+          {
+            "id": "advs77463-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Identification of Grtp1 as a key downregulated factor in aged testes via integrated multi‐omics analysis. (A) Schematic overview of the experimental strategy to assess the impact of aging on male reproduction, integrating morphological, transcriptomic, and functional analyses. (B) Heatmap of representative marker‑gene expression used for annotating testicular cell types. (C) UMAP visualization of single‐cell RNA sequencing data from young and aged testes, colored by major cell types. (D) Bar plot showing the proportional abundance of testicular cell types in young vs. aged groups. (E) Immunofluorescence validation of the age‐related decline in undifferentiated spermatogonia using the specific marker GFRA1 (scale = 100µm). Quantification confirms a significant decrease in GFRA1‑positive cells in aged male testes (n = 10), consistent with the scRNA‑seq results in Figure 1D. (F) Binary DEG mapping and functional enrichment. (Left) Heatmap indicating the presence (1, purple) or absence (0, white) of top DEGs across major testicular cell types between young and aged mice. (Right) Gene Ontology (GO) analysis of biological processes associated with cell‑type‑specific DEGs. (G, H) Violin plots of representative DEGs in undifferentiated and differentiated spermatogonia. Upper panel: DEGs linked to metabolic dysregulation (e.g., Acadvl, Dbi) (G). Lower panel: DEGs associated with DNA‑damage‑related processes (e.g., Majin, Terb2) (H). (I). Feature plots depicting Grtp1 expression in testicular tissues from young and aged males (single‑cell transcriptomics). (J) Violin plot showing Grtp1 expression levels across testicular cell clusters. Data in Figure 1E, presented as mean ± s.d. (n = 10 independent experiments), were analyzed using a two‐tailed Student's unpaired t‐test, whereas data in Figure 1G,H,J were analyzed with the Wilcoxon rank‐sum test. Statistical significance is indicated as * P < 0.05, ** P < 0.01, *** P < 0.001, and **** P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g004.webp?md5=38ffd9601a71faabb00a0fb6cbed4f28",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "assets/pmc13616408-021c3e06e8062aa8.webp",
+            "sha256": "021c3e06e8062aa891da5cf03a61e02019d5f1ac7c007b593d8c635cd9801bee",
+            "width": 600,
+            "height": 896,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "021c3e06e8062aa891da5cf03a61e02019d5f1ac7c007b593d8c635cd9801bee",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77463-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Grtp1 deficiency impairs sperm function and recapitulates the inflammatory transcriptomic landscape of testicular aging. (A) Schematic of the CRISPR‐Cas9 strategy used to generate Grtp1‑knockout (Grtp1‐KO) mice, showing a 29‑bp deletion in exon 2. (B) Western blot confirming the loss of GRTP1 protein in testicular tissues from Grtp1‑KO mice compared with young wild‑type controls. (C) Testicular weight in young, aged, and Grtp1‑KO mice. (D) Sperm motility parameters (total motility, progressive motility, and static fraction) in young, aged, and Grtp1‐KO groups. (E) Bar graph depicting the comparison of fertilization rates across young wild‐type, aged wild‐type, and Grtp1‐KO mouse groups. (F) Heatmap of differentially expressed genes (DEGs) between young wild‑type and young Grtp1‑KO testicular tissues. (G) Gene Ontology (GO) enrichment analysis of up‑ and down‑regulated DEGs in young Grtp1‑KO vs. wild‑type testes. (H) Heatmap displaying the expression patterns of DEGs, highlighting the convergent transcriptomic landscape in aged and Grtp1‐KO testes compared to the young group. (I) Flow chart depicting the process of isolating undifferentiated (THY1+) and differentiated (C‐KIT+) spermatogonial populations from enzymatically digested testicular tissue. (J) Representative immunofluorescence images of γ‑H2AX foci (red) in testicular sections from young, aged, and Grtp1‑KO mice. Sections were co‑stained for the undifferentiated spermatogonia marker GFRA1 (green) and counterstained with DAPI (blue) (scale = 100µm). (K, L) GO terms enriched for genes that were consistently upregulated (K, Cluster 1) or downregulated (L, Cluster 2) in both aged and Grtp1‐KO testes relative to young controls. Data in Figure 2C–E are presented as mean ± s.d. (C, n = 10; D, n = 6; E, n = 3 independent experiments). Statistical significance was determined by two‐tailed Student's unpaired t‐tests. Statistical significance is indicated as ns, not significant; * P < 0.05; **** P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g007.webp?md5=7eb93daf7a541a87c77ff786266eba2a",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "assets/pmc13616408-2e96a7ccaad20a77.webp",
+            "sha256": "2e96a7ccaad20a7792810f07f09124fc88cece865eddedfcddf0e75b3b4dfb11",
+            "width": 600,
+            "height": 874,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2e96a7ccaad20a7792810f07f09124fc88cece865eddedfcddf0e75b3b4dfb11",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77463-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Grtp1 deficiency drives cellular senescence in spermatogonia via oxidative stress, mitochondrial dysfunction, and genomic instability. (A) RT‐qPCR analysis of Grtp1 mRNA levels in C18‐4 cells transfected with Grtp1‐siRNA vs. a scrambled siRNA control (siNC). (B) Proliferative capacity of C18‑4 cells transfected with Grtp1‑siRNA compared to controls (untreated NC and siNC groups). (C, D) Representative images (C) and quantification (D) of intracellular ROS levels measured by DCFH‑DA staining in C18‑4 cells transfected with Grtp1‑siRNA vesus siNC (scale = 100µm). (E, F) Representative images (E) and quantification (F) of mitochondrial membrane potential measured by JC‑1 staining in C18‑4 cells transfected with Grtp1‑siRNA vesus siNC (scale = 500µm). (G, H) Representative images (G) and quantification (H) of DNA damage assessed by γH2AX immunofluorescence staining in C18‐4 cells transfected with Grtp1‐siRNA vesus siNC (scale = 100µm). (I) Volcano plot of DEGs between Grtp1‐siRNA‐ and siNC‐transfected C18‐4 cells. (J) Significantly enriched GO biological process terms for upregulated (upper) and downregulated (lower) DEGs from the comparison in Figure 3I. (K) GSEA enrichment plot for the gene set “regulation of inflammatory response to antigenic stimulus” in Grtp1‐siRNA‐treated vs. siNC‐treated C18‐4 cells (NES = 1.97, P < 2.8 × 10− 5). Data in Figure 3A,D,F,H are shown as mean ± s.d. (n = 3 for a, d, f; n = 8 for h, from independent experiments). Significance was assessed by two‑tailed unpaired t‑tests (*** P < 0.001, **** P < 0.0001).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g006.webp?md5=88a52fd85bf9ee75983b796de85e7c98",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77463-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Grtp1 maintains redox homeostasis and its deficiency‐induced oxidative damage is rescued by acetylcarnitine. (A) Schematic of the experimental design. After establishing Grtp1 overexpression in NIH3T3 cells, cells were divided into three groups: (1) Grtp1‐OE (overexpression alone); (2) Grtp1‐OE followed by Grtp1 knockdown (Grtp1‐OE + Grtp1‐siRNA); (3) Grtp1‐OE followed by scrambled siRNA control (Grtp1‐OE + siNC). (B,C) Influence of Grtp1 expression on cellular sensitivity to H2O2‐induced oxidative stress. B, Intracellular ROS levels measured by DCFH‐DA fluorescence. C, DNA damage assessed by immunofluorescence staining of the DNA damage marker γH2AX. (D) Venn diagram comparing proteins captured by co‐immunoprecipitation/mass spectrometry (Co‐IP/MS) from NIH3T3 cells expressing GRTP1‐HA vs. empty‐vector controls. (E) GO enrichment analysis of the 40 GRTP1‐interacting proteins, displaying the top significantly enriched biological pathways. (F) Western blot of co‑immunoprecipitation assays. Shown are HA and Flag signals in input lysates and anti‑Flag immunoprecipitates from cells co‑expressing GRTP1‑HA with PRDX1‑Flag, PRDX4‑Flag, TXN‑Flag, or an empty RFP vector control. (G) Analysis of GRTP1‐PRDX1 interaction under H2O2 treatment. Lysates from co‐expressing 293T cells exposed to an H2O2 gradient were immunoprecipitated with anti‐Flag beads and immunoblotted for HA and Flag. (H) Quantification of the GRTP1‐PRDX1 interaction. The line graph shows the HA/Flag grayscale ratio in co‐immunoprecipitates across an H2O2 concentration gradient. (I) Proposed model of the antioxidant defense network. The PRDX1/GRTP1 axis functions alongside other systems (e.g., glutathione) and reductive metabolites to form an integrated defense system. (J) Venn diagram identifying 43 metabolites common to both aged and Grtp1‐KO groups compared with young controls. (K) Heatmap of the 43 shared metabolites from Clusters 2 and 3, displaying their expression patterns in young, aged, and Grtp1‐KO groups. (L) Measured levels of acetylcarnitine in undifferentiated spermatogonia from young, aged, and Grtp1‐KO mice. (M) Experimental timeline for acetylcarnitine treatment in Grtp1‐knockdown C18‐4 cells, illustrating the administration schedule. (N) Quantification of γH2AX foci number in Grtp1‑siRNA C18‑4 cells after treatment with indicated concentrations of acetylcarnitine. Data in Figure 4b (n ≥ 2 per group), Figure 4C,L,N (each n = 3 per group) are presented as mean ± s.d. from independent experiments. Statistical significance was evaluated using two‐tailed unpaired t‐tests with P values indicated as ns, not significant; * P < 0.05, ** P < 0.01, *** P < 0.001 and **** P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g003.webp?md5=39a1a671c2b999b17c4a47732a7b4842",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77463-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Effects of growth hormone (GH) intervention on Grtp1 expression, testicular transcriptome, and reproductive function in aged mice. (A) Experimental design of GH intervention in aged male mice. (B) Grtp1 mRNA expression in testicular tissues of aged mice after GH treatment, measured by RT‐qPCR. (C) Western blot analysis of GRTP1 protein levels in testicular tissues from young mice and aged mice with or without GH treatment. (D) Time from cohabitation to conception was measured for female mice paired with young males (control); or with aged male mice from either the untreated control or GH‐treated groups. (E) Volcano plot of DEGs in testicular tissues between aged and GH‐treated aged groups from mRNA‐seq. (F) GO enrichment analysis of biological processes for up‐ and down‐regulated DEGs in Old‐GH vs. Old groups. (G) Representative immunofluorescence images of testicular sections from aged control and GH‐treated mice, stained for GFRA1 (green) and γH2AX (red), with DAPI nuclear counterstain (blue) (scale = 50µm). (H) Sperm motility analysis comparing the proportions of progressively motile and static sperm in aged control and GH‐treated groups. (I) In vitro fertilization (IVF) rates using sperm from young, aged control, and GH‑treated aged mice. (J) Quantification of blastocyst development rates following in vitro fertilization (IVF) with sperm from young, aged, and GH‐treated aged mice. (K) Schematic of in vitro GH treatment in Grtp1‑knockdown C18‑4 spermatogonial cells. (L) Heatmap of transcriptomic changes in Grtp1‑knockdown C18‑4 cells treated with different GH concentrations. (M) Quantification of γH2AX fluorescence intensity in C18‑4 cells under Grtp1 knockdown and GH treatment. Data are presented as mean ± s.d. from independent experiments, with sample sizes of n = 3 per group for Figure 5B, n = 10 per group for Figure 5D, and n = 6 per group for Figure 5H,I,J. Statistical significance was evaluated using two‑tailed unpaired t‑tests, with P values indicated as ns for not significant, ** P < 0.01, *** P < 0.001, and **** P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g001.webp?md5=aa92c78f3b11888e06abf2e50826e317",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77463-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Growth hormone (GH) treatment may mitigate paternal aging‐ and Grtp1 deficiency‐induced offspring behavioral deficits via remodeling sperm DNA methylation and restoring neurodevelopmental gene expression. (A) Schematic diagram of the experimental design. Parental male mice were divided into groups (Young, Old, Grtp1‐KO, Old‐GH) and naturally mated with female mice to produce F1 male offspring, which were then used for subsequent behavioral and molecular assays. (B‐D) Statistical graphs from three behavioral assays, comparing the performance of male offspring sired by Young, Old, and Old‐GH. Specifically, panel (B) shows the time spent in open arms in the elevated plus maze test; panel (C) shows the distance traveled in the center zone in the open field test; and panel (D) shows the social behavior‐related metrics in the three‐chamber social interaction test. (E) Clustering analysis of single‐cell RNA sequencing data from brain tissues. The brain cells were collected from offspring of four paternal groups (Young, Old, Grtp1‐KO, and Old‐GH), with each group containing brain tissues pooled from two offspring mice as one biological replicate. All cells were integrated and subjected to unsupervised clustering, resulting in multiple subpopulations annotated with brain regions, including hypothalamus (HY), cerebral cortex (CTX), striatum (STR), cerebellar cortex (CBX), fiber tracts (FT), cortical‐hippocampal region (CTX‐Hip), olfactory bulb (OB), hindbrain‐ventral spinal cord (H‐VS), thalamus (TH), meninges (MNG), midbrain, pons, and medulla (MB_P_MY), hippocampus (Hip). (F) Heatmap showing DNA methylation levels (0‐1) at young‐vs.‐aged sperm DMRs across four paternal groups (Young, Old, Grtp1‐KO, Old‐GH). These DMRs were classified into four clusters (C1‐C4). (G) Violin plots showing the distribution of methylation levels for each paternal group across the four clusters. (H, I) Heatmaps showing the expression of genes associated with the Cluster 2 DMR regions (defined in Figure 6G) in the hippocampus and cerebral cortex of offspring. (H) shows gene expression in offspring sired by Young, Aged, and Grtp1‐KO males. (I) shows gene expression in offspring sired by Young, Aged, and Old‐GH males. (J‐K) Venn diagram (J) illustrates the overlap between Cluster 1‐associated genes in the Grtp1‐KO paternal group and Cluster 2‐associated genes in the Old‐GH paternal group. Heatmap showing the expression of these overlapping genes in the hippocampus and cerebral cortex of offspring sired by the four paternal groups (Young, Old, Grtp1‐KO, and Old‐GH) (K). Data in Figure 6B–D (mean ± s.d.; n = 15) were analyzed by two‑tailed Student's unpaired t‑tests. Significance is reported as ns (not significant), * P < 0.05, ** P < 0.01, *** P < 0.001, and **** P < 0.0001. Figure 6G was analyzed with the Wilcoxon rank‐sum test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-g002.webp?md5=74eb93b128515582a12ce3a680dd96d1",
+            "articleURL": "https://doi.org/10.1002/advs.77463",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al.. Grtp1 Safeguards Against Paternal Reproductive Aging and Intergenerational Behavioral Deficits by Preserving Redox Homeostasis.. DOI: 10.1002/advs.77463. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs77463-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0001",
+            "label": "Supporting File 1: advs77463‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s003.docx?md5=5b4b9b011d4244fdcce6a11352b99d38",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "advs77463-supitem-0002",
+            "label": "Supporting File 2: advs77463‐sup‐0002‐TableS1.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s005.xlsx?md5=421808a02aeeba474cf22fb353b72bed",
+            "license": "CC BY",
+            "sha256": "344cefea93f64226d29630b4956672ec3d76a5932d9135446655934fe4a82c8f",
+            "status": "downloaded_private",
+            "bytes": 13223,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0003",
+            "label": "Supporting File 3: advs77463‐sup‐0003‐TableS2.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s006.xlsx?md5=202ed2dc55c30199eb51bfe6db00ab39",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0004",
+            "label": "Supporting File 4: advs77463‐sup‐0004‐TableS3.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s007.xlsx?md5=044f4dba9a532b179afda39fcbcd4d46",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0005",
+            "label": "Supporting File 5: advs77463‐sup‐0005‐TableS4.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s004.xlsx?md5=361bfee37bdf85af178ef4ed431f1f00",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0006",
+            "label": "Supporting File 6: advs77463‐sup‐0006‐TableS5.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s001.xlsx?md5=08a308aaa4ea55784d3d66591ad82bd5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77463-supitem-0007",
+            "label": "Supporting File 7: advs77463‐sup‐0007‐TableS6.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616408.1/ADVS-9999-e77463-s002.xlsx?md5=a52e89b93f4d4b38bd669d0d90ce63df",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-09T08:46:14.565522+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yingdong Liu; Shanyao Liu; Haixin Liang; Jiani Yang; Yanhe Li; Jiqing Yin; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-09T08:44:28Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-09T08:46:15Z",
+        "url": "https://openalex.org/W7214564185",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.68493903,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-09T08:46:15Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-09T08:46:15Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-10T08:46:15Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.42469515,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.42469515,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-09T08:46:46Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -199282,6 +199665,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-8f332ae1914ca161": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -200900,7 +201289,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-09T08:44:36Z",
+  "generatedAt": "2026-11-09T08:46:47Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -201134,18 +201523,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-09T08:42:17Z",
-    "updatedAt": "2026-11-09T08:44:51Z",
+    "updatedAt": "2026-11-09T08:46:53Z",
     "batchCount": 2,
-    "requests": 29,
+    "requests": 52,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
