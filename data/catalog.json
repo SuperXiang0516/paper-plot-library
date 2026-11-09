@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-08",
+  "checkedAt": "2026-11-09",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -144350,6 +144350,382 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-5adc4b13327605cc",
+      "doi": "10.1002/advs.77793",
+      "paper": "PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-09-27",
+      "year": "2026",
+      "pmcid": "PMC13616238",
+      "pmid": "42801545",
+      "paperURL": "https://doi.org/10.1002/advs.77793",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "26efcb5fb557b4c3f20bf9b7b7b0585624a583ddbd9b4e96a0920edfa3fe24c4"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/PMC13616238.1.xml?md5=4054944ce946b79b18fd390e006df774",
+        "figures": [
+          {
+            "id": "advs77793-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single‐nucleus transcriptomic landscape of the substantia nigra in PD patients. (A) Expression levels of canonical cell‐type‐specific markers used to identify cellular subtypes in human substantia nigra tissue; (B) UMAP visualization of cell clustering. Oli, oligodendrocytes; Neu, neurons; T, T cells; Fib, fibroblast‐like cells; Ast, astrocytes; Mic, microglia; OPC, oligodendrocyte progenitor cells; End, endothelial cells; Peri, pericytes; (C) Pie chart showing the proportional composition of each cell population in the substantia nigra; (D) Distribution of cell proportions across different cell populations stratified by disease status; (E) Comparison of cell‐type proportions between the PD group and healthy controls; (F) Number (left) and strength (right) of intercellular interactions inferred by CellChat; (G) Network plots depicting the number and strength of CellChat‐inferred cell–cell communications; (H) Heatmap illustrating the number and strength of CellChat‐inferred cell–cell communications; (I) UMAP visualization of reclustered neuronal subpopulations; (J) Proportional distribution of neuronal subtypes in the PD group and healthy controls; (K) Distribution of neuronal subtype proportions stratified by disease status; (L) Expression levels of marker genes across microglial subpopulations; (M) UMAP visualization of reclustered microglial subpopulations; (N) Proportional distribution of microglial subtypes in the PD group and healthy controls; (O) Pseudotime trajectory analysis illustrating the inferred transcriptomic continuum of microglial states.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g001.webp?md5=4689fb6e491cde0e24456466561602ac",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "assets/pmc13616238-fed17bee44bfa799.webp",
+            "sha256": "fed17bee44bfa799c4bb23ac1f51413e959863c965eb1d6ae14b74bce54266a1",
+            "width": 752,
+            "height": 1061,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fed17bee44bfa799c4bb23ac1f51413e959863c965eb1d6ae14b74bce54266a1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77793-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "snRNA sequencing of the substantia nigra reveals high PLXDC2 expression in microglia. (A) Expression levels of canonical marker genes used to identify cell subtypes in the mouse substantia nigra; (B) UMAP plot showing clustering of substantia nigra cells from PD and control mice; (C) Distribution of cell proportions among different substantia nigra cell subpopulations in PD and NC mice; (D) GO enrichment analysis of highly expressed genes in neuronal subpopulations; (E) GO enrichment analysis of highly expressed genes in microglial subpopulations; (F) ssGSEA of inflammation‐related pathways in microglial subpopulations; (G) Venn diagram showing the overlap between highly expressed genes in microglial subpopulations from PD patients and those from PD mouse models; (H) PLXDC2 expression in microglial subpopulations of PD and control mice; (I) Differential expression analysis of PLXDC2 in the substantia nigra of PD patients and healthy controls based on three independent cohorts; GSE8397, n = 47; GSE20163, n = 17; GSE7621, n = 25. (J) qPCR analysis of PLXDC2 expression in the substantia nigra of PD and control mice (n = 6); (K) Representative flow cytometry plots showing PLXDC2 positive microglia in the mouse substantia nigra; (L) Flow cytometric quantification of PLXDC2 expression on IBA1 positive microglia isolated from the mouse substantia nigra (n = 6); (M) Immunofluorescence analysis of PLXDC2 expression in IBA1 positive microglia in the mouse substantia nigra (n = 6); (N) Representative immunofluorescence images showing the colocalization of PLXDC2 and IBA1 in the mouse substantia nigra. * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g008.webp?md5=59676ab247b92555ba1f6ba55c4e610c",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "assets/pmc13616238-f6c401c358f75414.webp",
+            "sha256": "f6c401c358f754144d9616b26d89260b2f4fcd44780aa052fb76930fc64dd1b0",
+            "width": 777,
+            "height": 1059,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f6c401c358f754144d9616b26d89260b2f4fcd44780aa052fb76930fc64dd1b0",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "advs77793-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "In vitro characterization of HFn‐GM@siPLXDC2/DFO/CeO2‐NP. (A) Coomassie Brilliant Blue staining of total proteins, GM, NP, and HFn‐GM@NP. (B) Formation of NP/siRNA complexes at different N/P ratios evaluated by agarose gel electrophoresis. (C) GM and NP were labeled with PKH26 and coumarin‐6, respectively, and analyzed by confocal fluorescence microscopy. (D) Representative transmission TEM images of different NP formulations. (E) Particle size distribution of different NP formulations. (F) Zeta potential of different NP formulations determined by dynamic light scattering. (G) Particle size stability of different NP formulations at the indicated time points. (H) Zeta potential stability of different NP formulations at the indicated time points. (I) Knockdown efficiency of different PLXDC2‐targeting siRNA sequences assessed by qPCR (n = 3). (J) Knockdown efficiency of different PLXDC2‐targeting siRNA sequences assessed by Western blot analysis. * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g007.webp?md5=e008885cb51cff2feea62854712f5ef7",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77793-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Evaluation of BBB penetration, lesion‐targeting capability, and biosafety of HFn‐GM@NP. (A) In vivo fluorescence imaging of substantia nigra accumulation following tail vein injection of GM@NP and HFn‐GM@NP (left), and corresponding quantitative analysis (right, n = 3). (B) Biodistribution of GM@NP and HFn‐GM@NP in the mouse brain at different time points. (C) Quantitative comparison of brain accumulation of GM@NP and HFn‐GM@NP at the indicated time points (n = 3). (D) Representative ex vivo fluorescence images of the mouse brain and major organs. (E) Schematic illustration of the in vitro BBB model. (F) Quantification of coumarin‐6 fluorescence intensity in BV2 cells after incubation for 12 and 24 h (n = 3). (G) Representative flow cytometry plots showing coumarin‐6 fluorescence intensity in BV2 cells incubated with GM@NP or HFn‐GM@NP for different durations. (H) Flow cytometric analysis of differences in coumarin‐6 fluorescence intensity in BV2 cells between the GM@NP and HFn‐GM@NP groups (n = 3). (I) Representative immunofluorescence images of BV2, C8‐D1A, and N2A cells internalizing HFn‐GM@NP. (J) Quantitative analysis of immunofluorescence intensity of HFn‐GM@NPC6 (n = 3). (K) Representative flow cytometry plots showing uptake of HFn‐GM@NP by BV2, C8‐D1A, and N2A cells. (L) Flow cytometric quantification of coumarin‐6 fluorescence intensity in BV2, C8‐D1A, and N2A cells (n = 3). (M) Representative flow cytometry plots showing uptake of HFn‐GM@NP_RDB by microglia, astrocytes, and neurons in vivo. (N) Body weight changes of mice treated with HFn‐GM@NP (n = 3). (O) Representative H&E‐stained images of major organs from mice receiving different treatments. * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g002.webp?md5=d6b1290a20964050e0e9cbdcb5eb7555",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77793-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Assessment of cognitive and motor functions in PD mice. (A) Representative swimming trajectories of mice from different treatment groups in the Morris water maze test; (B) Statistical comparison of the number of platform crossings (n = 6); (C) Quantitative analysis of the relative percentage of time spent in the target quadrant (n = 6); (D) Representative locomotor trajectories of mice from different treatment groups in the open field test; (E) Quantification of the total distance traveled by mice (n = 6); (F) Statistical analysis of the number of entries into the central zone (n = 6); (G) Comparison of hanging time among mice from different treatment groups on day 14 of treatment (n = 6); (H) Statistical analysis of the time required for mice from different treatment groups to descend the pole on day 14 of treatment (n = 6); (I) Comparison of rotarod latency among mice from different treatment groups on days 1, 3, 7, and 14 of treatment (n = 6). * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g003.webp?md5=aa88b621224b65f1bd4b54e34f95e776",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77793-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Pathological evaluation of therapeutic effects in PD mice. (A) Representative TH immunohistochemical staining images of the substantia nigra from mice in different treatment groups; (B) Quantitative analysis of TH‐positive cells (n = 6); (C) Representative Nissl staining images of the substantia nigra from mice in different treatment groups; (D) Quantification of Nissl body positive neurons (n = 6); (E) Representative Prussian blue staining images showing iron deposition in the substantia nigra from different treatment groups; (F) Quantitative analysis of iron ion content (n = 6); (G) Representative QSM images of the substantia nigra from mice treated with HFn‐GM@NP and HFn‐GM@siPLXDC2/DFO/CeO2‐NP; (H) Statistical analysis of QSM values in the substantia nigra of the HFn‐GM@NP and HFn‐GM@siPLXDC2/DFO/CeO2‐NP groups (n = 3); (I) ELISA‐based quantification of ROS levels in the mouse substantia nigra (n = 6); (J) ELISA‐based quantification of iron deposition levels in the mouse substantia nigra (n = 6); (K) qPCR analysis of neuroinflammatory cytokine expression in the mouse substantia nigra (n = 6). The same color coding was used consistently across all quantitative panels in Figure 6 to indicate the corresponding treatment groups. * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g005.webp?md5=b613cd663bd46266445db201dacc9b49",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77793-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "PLXDC2 induces microglial senescence and promotes the pro‐inflammatory phenotype. (A) Flow cytometric analysis of PLXDC2 expression in microglia isolated from the mouse substantia nigra; (B) Quantitative analysis of PLXDC2 expression levels in microglia from the mouse substantia nigra (n = 5); (C) Representative immunofluorescence images showing PLXDC2 and IBA1 expression in the mouse substantia nigra; (D) Quantitative comparison of the proportion of PLXDC2 positive microglia based on immunofluorescence analysis (n = 6); (E) ELISA quantification of neuroinflammatory cytokines in the supernatants of BV2 cells (n = 3); (F) Representative flow cytometric plots and quantitative analysis of the proportion of CD86 positive BV2 cells (n = 3); (G) Representative flow cytometric plots and quantitative analysis of the proportion of iNOS positive BV2 cells (n = 3); (H) GSEA demonstrating significant activation of cellular senescence related pathways in the PLXDC2 high expression group; (I) Western blot analysis of senescence‐associated protein expression in BV2 cells; (J) Representative images of SA‐β‐gal staining in BV2 cells and quantitative analysis of SA‐β‐gal positive cells (n = 3); (K) Representative flow cytometric plots and quantitative analysis of ROS‐positive BV2 cells (n = 3); (L) Representative flow cytometric plots and quantitative analysis of Nile Red positive BV2 cells (n = 3); (M) Representative fluorescence images of DAPI stained N2A cells in the BV2‐N2A co‐culture system; The BV2 cells were stimulated with LPS (1 µg/mL) for 24 h to induce an acute pro‐inflammatory state before co‐culture with N2A cells. (N) Quantitative comparison of DAPI‐positive cell numbers; (O) Assessment of N2A cell viability by CCK‐8 assay (n = 3). BV2 cells were acutely stimulated with LPS to induce a pro‐inflammatory state before co‐culture with N2A cells. Cell viability was normalized to the control group and expressed as a percentage. * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g004.webp?md5=ffb10608985ef1c48e0c0e783106077e",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs77793-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "PLXDC2 promotes microglial senescence through cGAS‐STING signaling. (A) Volcano plot of differentially expressed genes between PLXDC2 high and low expression groups. (B) Heatmap showing differential gene expression between PLXDC2 high and low expression groups. (C) KEGG pathway enrichment analysis of differentially expressed genes. (D) GSEA enrichment analysis demonstrating significant activation of the CYTOSOLIC_DNA_SENSING_PATHWAY in the PLXDC2 high expression group. (E) Western blot analysis of proteins associated with the cGAS‐STING signaling pathway. (F) Western blot analysis of senescence‐related protein expression. (G) Representative images of SA‐β‐gal staining in BV2 cells. (H) Quantitative analysis of SA‐β‐gal positive cells (n = 3). (I) ELISA quantification of pro‐inflammatory cytokines in BV2 cell supernatants (n = 3). (J) Representative flow cytometry plots of ROS‐ and Nile Red positive BV2 cells. (K) Quantification of ROS‐positive microglia by flow cytometry following DMXAA treatment (n = 3). (L) Quantification of Nile Red positive microglia by flow cytometry following DMXAA treatment (n = 3). (M) Quantification of ROS positive microglia by flow cytometry following C‐176 treatment (n = 3). (N) Quantification of Nile Red positive microglia by flow cytometry following C‐176 treatment (n = 3). (O) Representative DAPI stained fluorescence images and quantification of N2A cells in the BV2‐N2A co‐culture system (n = 3). * p < 0.05, ** p < 0.01, and *** p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g006.webp?md5=1794fb5ccd1b2f6e1e73534e927c4eac",
+            "articleURL": "https://doi.org/10.1002/advs.77793",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al.. PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.. DOI: 10.1002/advs.77793. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs77793-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs77793-supitem-0001",
+            "label": "Supporting File 1: advs77793‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-s002.pdf?md5=d16630b698234febdea3a12a22771540",
+            "license": "CC BY",
+            "sha256": "db8977b1273eed87f4c3da1973e16651997f70d387c604a5a317d98f6b96d2c5",
+            "status": "downloaded_private",
+            "bytes": 2832691,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 16,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "advs77793-supitem-0002",
+            "label": "Supporting File 2: advs77793‐sup‐0002‐SuppMat.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-s001.xlsx?md5=4799fe84bb5c2faaccbff5d4dc3076ea",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-09T08:44:25.940459+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Heyue Lu; Zitian Zheng; Feiran Wang; Huanhuan Luo; Fei Ju; Yucheng Zhu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-09T08:44:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-09T08:44:29Z",
+        "url": "https://openalex.org/W7214546580",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.67638316,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-09T08:44:29Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-09T08:44:29Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-10T08:44:29Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.3819158,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.3819158,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-09T08:44:35Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -198900,6 +199276,12 @@
           ]
         }
       ]
+    },
+    "doi-5adc4b13327605cc": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -200518,7 +200900,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-08T08:06:40Z",
+  "generatedAt": "2026-11-09T08:44:36Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -200752,18 +201134,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-09T08:42:17Z",
-    "updatedAt": "2026-11-09T08:42:23Z",
+    "updatedAt": "2026-11-09T08:44:42Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 29,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

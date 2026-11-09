@@ -201,9 +201,44 @@
         "10.1093/humrep/deag051",
         "10.1093/procel/pwag020"
       ]
+    },
+    "2026-11-09": {
+      "newDOIs": [
+        "10.1002/advs.77793"
+      ]
     }
   },
   "candidates": {
+    "10.1093/bib/bbag621": {
+      "checkedAt": "2026-11-09T08:44:35Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/prca.70060": {
+      "checkedAt": "2026-11-09T08:44:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-09T08:44:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-09T08:44:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.77793": {
+      "checkedAt": "2026-11-09T08:44:29Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1002/cpz1.70491": {
       "checkedAt": "2026-11-08T08:06:32Z",
       "status": "source_confirmed",
@@ -252,61 +287,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/advs.77793": {
-      "checkedAt": "2026-11-08T08:06:26Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.77793",
-        "metadataHash": "0ff19a066e3110773dcc8cc12ec20f9686e34f1f142b4ad1bd1becdc5df47131",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/PMC13616238.1.xml?md5=4054944ce946b79b18fd390e006df774",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g001.webp?md5=4689fb6e491cde0e24456466561602ac",
-              "assetSHA256": "fed17bee44bfa799c4bb23ac1f51413e959863c965eb1d6ae14b74bce54266a1",
-              "label": "FIGURE 1",
-              "license": "CC BY",
-              "sha256": "fed17bee44bfa799c4bb23ac1f51413e959863c965eb1d6ae14b74bce54266a1",
-              "width": 752,
-              "asset": "assets/pmc13616238-fed17bee44bfa799.webp",
-              "id": "advs77793-fig-0001",
-              "height": 1061,
-              "captionHash": "26a74b4092660e9e8e792e7d28301a8958294531102112694202668ed3af50ca"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13616238.1/ADVS-9999-e77793-g008.webp?md5=59676ab247b92555ba1f6ba55c4e610c",
-              "assetSHA256": "f6c401c358f754144d9616b26d89260b2f4fcd44780aa052fb76930fc64dd1b0",
-              "label": "FIGURE 2",
-              "license": "CC BY",
-              "sha256": "f6c401c358f754144d9616b26d89260b2f4fcd44780aa052fb76930fc64dd1b0",
-              "width": 777,
-              "asset": "assets/pmc13616238-f6c401c358f75414.webp",
-              "id": "advs77793-fig-0002",
-              "height": 1059,
-              "captionHash": "150cea621bbd0af24af9f84e29d25876b21efa49bc8ef8a8e54734dc29fb0681"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-5adc4b13327605cc",
-          "doi": "10.1002/advs.77793",
-          "paper": "PLXDC2 siRNA-Mediated Intervention Attenuates Microglial Senescence Through cGAS-STING Signaling.",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-09-27",
-          "year": "2026",
-          "pmcid": "PMC13616238",
-          "pmid": "42801545",
-          "paperURL": "https://doi.org/10.1002/advs.77793"
-        },
-        "updatedAt": "2026-11-08T08:06:26Z"
-      }
     },
     "10.1002/advs.77463": {
       "checkedAt": "2026-11-08T08:06:23Z",
@@ -428,30 +408,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/bib/bbag621": {
-      "checkedAt": "2026-11-08T08:01:55Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/prca.70060": {
-      "checkedAt": "2026-11-08T08:01:54Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-08T08:01:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-08T08:01:49Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41467-026-77102-1": {
       "checkedAt": "2026-11-08T08:01:47Z",
@@ -12573,20 +12529,15 @@
     "batchCount": 1,
     "date": "2026-11-09",
     "startedAt": "2026-11-09T08:42:17Z",
-    "requests": 0,
-    "elapsedSeconds": 6,
+    "requests": 29,
+    "elapsedSeconds": 145,
     "uncertainRequests": 0,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "status": "active",
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "updatedAt": "2026-11-09T08:42:23Z",
-    "inFlight": {
-      "startedAt": "2026-11-09T08:42:23Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-09T08:44:42Z"
   }
 }
