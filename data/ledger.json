@@ -205,11 +205,42 @@
     "2026-11-09": {
       "newDOIs": [
         "10.1002/advs.77463",
-        "10.1002/advs.77793"
+        "10.1002/advs.77793",
+        "10.1186/s13024-026-00960-2"
       ]
     }
   },
   "candidates": {
+    "10.1002/biot.70331": {
+      "checkedAt": "2026-11-09T08:49:15Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2337/db26-0158": {
+      "checkedAt": "2026-11-09T08:49:13Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1158/2159-8290.cd-25-0761": {
+      "checkedAt": "2026-11-09T08:49:12Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-09T08:48:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1186/s13024-026-00960-2": {
+      "checkedAt": "2026-11-09T08:48:28Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/bib/bbag596": {
       "checkedAt": "2026-11-09T08:46:45Z",
       "status": "pending",
@@ -325,29 +356,11 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1002/biot.70331": {
-      "checkedAt": "2026-11-08T08:04:53Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2337/db26-0158": {
-      "checkedAt": "2026-11-08T08:04:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1002/advs.77870": {
       "checkedAt": "2026-11-08T08:04:50Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1167/iovs.67.12.73": {
-      "checkedAt": "2026-11-08T08:04:45Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41598-026-54516-x": {
       "checkedAt": "2026-11-08T08:04:44Z",
@@ -1292,61 +1305,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1186/s13024-026-00960-2": {
-      "checkedAt": "2026-10-22T07:04:19Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s13024-026-00960-2",
-        "metadataHash": "9496a241facfca90799035a33a24238ea145b8eb0f3923f88a5c092c6a2db61e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/PMC13440178.1.xml?md5=c396a9e1812bd60221a598cc085e6d07",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 745,
-              "sha256": "88911d48c14d488d7b7c73ba13b8e371c9e4a58bc24809ba034c20548b1211c6",
-              "label": "Fig. 2",
-              "height": 1015,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig2_HTML.jpg?md5=511f7112cd3bd81bd55d019db215f999",
-              "asset": "assets/pmc13440178-88911d48c14d488d.jpg",
-              "license": "CC BY",
-              "assetSHA256": "88911d48c14d488d7b7c73ba13b8e371c9e4a58bc24809ba034c20548b1211c6",
-              "id": "Fig2",
-              "captionHash": "17d95a1b15b82a0f07427be113e5ae2d895020b6e5653eabf2fb3f3940192f36"
-            },
-            {
-              "width": 794,
-              "sha256": "8ea261ccf13d6268b18643d6fc579dc0a25ede77d7432a3e16533d335e75a843",
-              "label": "Fig. 3",
-              "height": 957,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig3_HTML.jpg?md5=d82dfd052c45fd02e872b3b6348c79d5",
-              "asset": "assets/pmc13440178-8ea261ccf13d6268.jpg",
-              "license": "CC BY",
-              "assetSHA256": "8ea261ccf13d6268b18643d6fc579dc0a25ede77d7432a3e16533d335e75a843",
-              "id": "Fig3",
-              "captionHash": "a70313e22fedbe3b3d9c78f690c73f40f62970f36b3a46efc8c053275e3e86c5"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-cfa8f4c8dbb97ca3",
-          "doi": "10.1186/s13024-026-00960-2",
-          "paper": "Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.",
-          "journal": "Molecular neurodegeneration",
-          "date": "2026-05-28",
-          "year": "2026",
-          "pmcid": "PMC13440178",
-          "pmid": "42210302",
-          "paperURL": "https://doi.org/10.1186/s13024-026-00960-2"
-        },
-        "updatedAt": "2026-10-22T07:04:17Z"
-      }
     },
     "10.3389/fimmu.2026.1804974": {
       "checkedAt": "2026-10-22T07:03:31Z",
@@ -12481,20 +12439,15 @@
     "batchCount": 3,
     "date": "2026-11-09",
     "startedAt": "2026-11-09T08:42:17Z",
-    "requests": 52,
-    "elapsedSeconds": 285,
+    "requests": 77,
+    "elapsedSeconds": 426,
     "uncertainRequests": 0,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "status": "active",
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "updatedAt": "2026-11-09T08:47:02Z",
-    "inFlight": {
-      "startedAt": "2026-11-09T08:47:02Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-09T08:49:23Z"
   }
 }

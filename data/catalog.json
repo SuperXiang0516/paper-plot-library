@@ -145109,6 +145109,409 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-cfa8f4c8dbb97ca3",
+      "doi": "10.1186/s13024-026-00960-2",
+      "paper": "Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.",
+      "journal": "Molecular neurodegeneration",
+      "date": "2026-05-28",
+      "year": "2026",
+      "pmcid": "PMC13440178",
+      "pmid": "42210302",
+      "paperURL": "https://doi.org/10.1186/s13024-026-00960-2",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "1750-1326",
+      "eissn": "1750-1326",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "956583b1de47bf265c551c05da54d38f87c6a613a8edc5886ca5df378bf143d9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/PMC13440178.1.xml?md5=c396a9e1812bd60221a598cc085e6d07",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Temporal profiling of single-nuclei transcriptomes in motor cortex and striatum of zQ175 HD mice. (A) Schematic of zQ175 disease progression. (B) Experimental study design. (C) Uniform manifold approximation and projection (UMAP) plot representation of resolved single nuclei profiles colored by region and cell class. (D-G) UMAP plots of annotated cell types from motor cortex (D-E), and striatum (F-G), split by condition (H-I). Cell type-specific analysis of motor cortex (H) and striatum (I) displaying cell counts per cell type, cell type proportions by condition and DEGs counts separated by direction of effect (Pseudobulk limma-voom; zQ175 vs. WT; adjusted p-value < 0.05, |log2 fold change| ≥ 0.1; pink: upregulated, green: downregulated; transparency indicates temporal specificity). Abbreviations: IT, Intertelencephalic; PT, pyramidal tract; NP, near-projecting; CT, corticothalamic; Pvalb, parvalbumin; Sst/Npy, somatostatin/neuropeptide Y; Vip, vasoactive intestinal peptide; Lamp5, lysosomal associated membrane protein 5; dSPN, direct spiny projection neurons; iSPN, indirect spiny projection neurons; Astro, astrocytes; OIigo, oligodendrocytes; OPC, oligodendrocyte precursor cells; Micro, microglia; VLMC, vascular leptomeningeal cells; Endo, endothelial; Peri, pericytes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig1_HTML.jpg?md5=70a9c4b72597ea35f8664290433dd05c",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Genotype-by-age interactions define temporal expression patterns in the zQ175 striatum. (A) Volcano plot of interaction effect between zQ175 and WT from 6 to 18 months. (B-D) Average expression of representative genes with divergent (B), convergent (C), and biphasic (D) patterns between genotypes across time points. (E) interaction effect sizes for the top 15 genes in each pattern. (F) Top enriched pathways from GSEA analysis of genes ranked by interaction effect size. (G) Top DEGs specific to dSPN or iSPN subtypes with significant interaction effects",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig2_HTML.jpg?md5=511f7112cd3bd81bd55d019db215f999",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "assets/pmc13440178-88911d48c14d488d.jpg",
+            "sha256": "88911d48c14d488d7b7c73ba13b8e371c9e4a58bc24809ba034c20548b1211c6",
+            "width": 745,
+            "height": 1015,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "88911d48c14d488d7b7c73ba13b8e371c9e4a58bc24809ba034c20548b1211c6",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Progressive loss of compartment and pathway identity in zQ175 SPNs. (A) Schematic of striatal organization. Gpe, external globus pallidus; GPi, internal globus pallidus; SNr, substantia nigra pars reticulata. (B) UMAP plots colored by SPN identity. (C) Scaled expression of canonical pathway and compartment gene markers across SPN subclusters. (D) UMAP plot of the SPN dataset split by condition. (E) Jensen-Shannon distance analysis showing the loss of transcriptomic distinctions between striatal subtypes. Comparisons are shown separately between dSPN (D1) and iSPN (D2), then striosome (S) and matrix (M). (F) Average log2 fold change values of matrix and striosomal markers by compartment identity at 6 and 18 months and (G) D1 and D2 markers by pathway identity at 6 and 18 months. Error bars showing ± standard error of the mean (s.e.m). The total number of genes in each signature are noted in each panel; n = 227 Matrix marker genes; n = 223 Striosome marker genes; n = 145 D1 marker genes; n = 119 D2 marker genes. (H-I) River plots quantifying the number of dysregulated D1 and D2 markers at 6 and 18 months for each pathway (dSPN, iSPN)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig3_HTML.jpg?md5=d82dfd052c45fd02e872b3b6348c79d5",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "assets/pmc13440178-8ea261ccf13d6268.jpg",
+            "sha256": "8ea261ccf13d6268b18643d6fc579dc0a25ede77d7432a3e16533d335e75a843",
+            "width": 794,
+            "height": 957,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8ea261ccf13d6268b18643d6fc579dc0a25ede77d7432a3e16533d335e75a843",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "SPN gene modules reveal stage-specific dysregulation and opposing molecular aging trajectories in HD. (A) Supervised UMAP plot of the SPN co-expression network. Each node represents a gene, colored by module assignment and scaled by kME. The top 5 hub genes ranked by kME are annotated for each module. (B) UMAP plots of SPN nuclei colored by each module eigengene (ME). (C) Module-trait relationships represented by the Pearson correlation for each module eigengene and covariate. CAG (+) and CAG (-) scores with the UCell algorithm. % Mito: Mitochondrial RNA reads. Correlation coefficients for genotype reflect expression in zQ175 vs. WT SPNs. (D-E) Analysis of SPN hdWGCNA module preservation in the human HD SPNs, data from Lee et al. [30] (D) and R6/2 mouse model, Lim et al. [53] (E) Z > 10, highly preserved; Z > 2, moderately preserved, and Z < 2, not preserved. Correlation coefficients for condition in (E) reflect expression in HD vs. Control. (F) Module expression scores by experimental condition. A linear model was fit for each subtype and time point, accounting for covariates of library batch and sex, to determine genotype and age effect at each time point (6 and 18 months). Insets show mean expression at each time point by genotype. *p < 0.05, **p < 0.001, ***p < 0.0001",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig4_HTML.jpg?md5=7dff34e5d10588ec2e64cb9a9884fc2b",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Transcription factor regulatory network dysregulation in zQ175 SPNs. (A) Differential TF regulon analysis in zQ175 vs. WT SPNs at 6 months and 18 months. Scatter plots show log2 fold change values for negatively correlated genes (x-axis) vs. positively correlated genes (y-axis) of significant TF regulons. Upper left quadrant: repressed TF regulons; Bottom right quadrant: activated TF regulons. (B) Temporal progression of regulon dysregulation, represented by the change in effect size from 6 to 18 months in zQ175 SPNs relative to WT. Upper left quadrant: TF regulon activity decreased over time; Bottom right quadrant: TF regulon activity increased over time. (C) TF-TF regulatory network plot depicting regulatory links between the top dysregulation regulon TFs, shared across both time points and their primary downstream TF targets. Nodes represent individual TFs colored by module identity and size depicting the degree of co-expression linkages within the network. Edges reflect the Pearson correlation coefficient of co-expression between TFs above a threshold of 0.1. (D) Heatmap showing the difference in interaction strength between activating and repressing TF-gene correlations of individual TFs and their downstream primary targets within SPN co-expression modules. Top TFs shared across both time points are bolded. (E) Overlap of predicted target genes in select top dysregulated regulons and time point-specific zQ175 vs. WT DEGs split by SPN pathway identity. Color depicts the correlation coefficient between each TF and individual genes. Labeled genes reflected DEGs with the greatest regulatory score or the importance of that TF for modeling gene expression of a given gene",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig5_HTML.jpg?md5=810a8838fae58128b0ab7c016f207ea3",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Layer-specific hdWGCNA modules capture disease signatures in zQ175 IT neurons. (A) UMAP of layer-specific annotations in IT neuron subset by unsupervised clustering and reference mapping. (B) Representative layer-specific marker genes for cortical layers in IT neurons. (C) UMAP of pseudotime trajectory in IT neurons. (D) Supervised UMAP plot of the IT co-expression network. Each node represents a gene, colored by module assignment and scaled by kME. Top 5 hub genes are annotated. (E) Module eigengene expression plotted as a function of pseudo trajectory. Cells were ordered by cortical layer from L2/3 to L6 via unsupervised clustering, in agreement with reference-based annotation. UMAP plots depicting single nuclei eigengene values are also displayed. (F) Differential module eigengene analysis across cortical layers L2/3 to L6 at 6- and 18-month time points. Nuclei were segregated into 25 bins based on pseudo trajectory, reflecting cortical layer depth. (G) Dot plot of select GO and KEGG pathway enrichment distinguishing co-expression modules",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig6_HTML.jpg?md5=403f6ec4967a4c83d90827ccc57cf343",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Late emergent disease signatures in motor cortex IT neurons. (A) Integrated gene co-expression and protein-protein interaction (PPI) networks for disease-associated IT neuron modules. Color scale indicates interaction effect size or the degree of change across time points in zQ175 IT neurons relative to WT. Node size indicates degree of PPI interactions and width of the edges between nodes indicates strength of interaction. (B) 6- and 18-month zQ175 vs. WT effect sizes for top hub genes shared between WGCNA and PPI networks. (C) Gene overlap between motor cortex CPN subpopulations in human HD from Pressl et al. [29] and IT module genes, separated by the direction of effect reported in the human deep layer cortical neurons. (D) Differential TF regulon analysis in zQ175 vs. WT IT neurons at 6- and 18-months. Scatter plots show log2 fold change values for negatively correlated genes (x-axis) vs. positively correlated genes (y-axis) of significant TF regulons. Upper left quadrant: repressed TF regulons; Bottom right quadrant: activated TF regulons",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_Fig7_HTML.jpg?md5=a2c8e649a3b2ab30784389f8c15b7d9c",
+            "articleURL": "https://doi.org/10.1186/s13024-026-00960-2",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson. Temporal single-cell atlas of full-length Huntington's disease mouse model defines stage-specific signatures of corticostriatal dysfunction.. DOI: 10.1186/s13024-026-00960-2. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM1_ESM.pdf?md5=984bf909390f4f93d2b2bf8aa7d00d28",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM2_ESM.xlsx?md5=e9a2824d52ef94bc531bc2f98658a9b9",
+            "license": "CC BY",
+            "sha256": "5a22a2ea4bd6823106bee701b76be45a39034b5a4dd34356ed7d453a715fcded",
+            "status": "downloaded_private",
+            "bytes": 132852,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM3_ESM.xlsx?md5=7a25e9f4b38ef8ad459c6cb481c67c5b",
+            "license": "CC BY",
+            "sha256": "165801f6c41f38566636545337aec8094471acc43f8a94101389e88500fcacc3",
+            "status": "downloaded_private",
+            "bytes": 141689,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM4_ESM.xlsx?md5=ef3be97576da8dd7fc0f49c0166e5c88",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM5_ESM.xlsx?md5=d5d96333f57abff28d550c9bd2757b6d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM6_ESM.xlsx?md5=0168dfc066be697767e24fa156c26971",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM7_ESM.xlsx?md5=ab687033018e77f48ae4e2dbd3ec2a66",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13440178.1/13024_2026_960_MOESM8_ESM.xlsx?md5=a647f559a5d0b310322cc975b895baef",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-09T08:48:25.127450+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Ashley B. Robbins; Paul T. Ranum; Icnelia Huerta-Ocampo; Michael Kuckyr; Beverly L. Davidson"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "19.6",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-09T08:48:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-09T08:48:28Z",
+        "url": "https://openalex.org/W7162674730",
+        "cited_by_count": 2,
+        "fwci": 3.3188,
+        "citation_normalized_percentile": 0.92574064,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-09T08:48:28Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-09T08:48:28Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-10T08:48:28Z"
+        }
+      },
+      "selectionScore": {
+        "total": 61.628703200000004,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.6287032,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-09T08:49:15Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -199671,6 +200074,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-cfa8f4c8dbb97ca3": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -201289,7 +201698,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-09T08:46:47Z",
+  "generatedAt": "2026-11-09T08:49:16Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -201523,18 +201932,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-09T08:42:17Z",
-    "updatedAt": "2026-11-09T08:47:02Z",
+    "updatedAt": "2026-11-09T08:49:23Z",
     "batchCount": 3,
-    "requests": 52,
+    "requests": 77,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
