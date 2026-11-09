@@ -145512,6 +145512,856 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-33c4e5fa0f353a3d",
+      "paper": "CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.",
+      "doi": "10.1371/journal.pgen.1012351",
+      "journal": "PLoS genetics",
+      "date": "2026-10-27",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pgen.1012351",
+      "pmcid": "PMC13722294",
+      "pmid": "42945373",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-7390",
+      "eissn": "1553-7404",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-09",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "4512e6083ec203d823aabae3f5470eeca9f1bee742efeabb2e4b309135b01d7b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/PMC13722294.1.xml?md5=c83a82ae91d301ec2d1f4c78bbe956b2",
+        "figures": [
+          {
+            "id": "pgen.1012351.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Genetic loss of E-cadherin represses EMT and shifts cells to a luminal transcriptional state.A) Workflow of RNA-seq using three methods of E-cadherin suppression; extracellular antibody inhibition (α-Ecad), siRNA transfection (siCDH1), and dox-inducible CRISPR/Cas9 (CDH1-KO). siNT, non-targeting siRNA. NTG, KO g1, and KO g2 refer to non-targeting Cas9 gRNA, CDH1-targeting gRNA-1, and CDH1-targeting gRNA-2, respectively (see Methods). Venn diagrams show the overlap of differentially expressed genes (DEG), and the adj. p value cutoff used to determine gene lists used for B-E. Adj.p cutoffs were selected in each method to obtain similar numbers of DEGs to prevent biases in downstream gene set analyses from longer vs shorter DEG genesets. B) Overrepresentation analysis of Hallmark pathways in all RNA-seq datasets (q value < 0.0001 across genetic loss datasets. Color coded by contact inhibition (orange) vs. genetic loss of CDH1 (blue). C) Fold change of gene expression (p < 0.05) between E-cadherin inhibition and genetic CDH1 loss within each HMEC line in the EMT Hallmark, luminal epithelium, and basal epithelium gene signatures. Below heatmap: average fold change of each gene signature across cell lines. D) Fold changes of representative luminal and basal/EMT genes. K-means clusters are represented by the orange and blue bars (Euclidean distance, 2 clusters, max. iterations = 1000).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g001.webp?md5=4968c03abbd9d81de0fc7cf0cb739f59",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012351.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single cell analysis supports CDH1-KO-induced reprogramming in luminal and basal cells.A) HMEC 184D1 CDH1-KO g2 (CDH1-KO) and HMEC 184D1 NTG UMAP clustering based on sample type. ~ 17,000 cells per sample. B) Cells characterized by cell cycle signatures; proportion of cells in each phase by sample type. C) Using z scores of luminal and basal epithelium gene signatures and the AddModuleScore() function in Seurat, cells were classified as luminal (pink) or basal (orange); proportion of cells within each sample type. D) Feature plots of representative luminal (SLPI, CD24, ALDH1A3) and basal (VIM, SNAI2, TP63) markers. (E-G) The distribution of the normalized gene scores calculated using PIPseeker binning algorithm for both the luminal and basal gene signatures: (E) within all cells (F) luminal scores of the luminal and basal cells (G) basal scores of the luminal and basal cells. H) FGSEA of the top 5 shared Hallmark pathways for luminal (CDH1-KO vs. NTG) and basal (CDH1-KO vs. NTG). I) Proportion of cells in each cell cycle phase by cell type. -0.3 > logFC > 0.3, adj. p < 1x10-10 (pathways p < 0.05; except the luminal Estrogen Response Late p = 0.055).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g002.webp?md5=446d3821a6898f10c9a6e2afe3b3bfb4",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "assets/pmc13722294-976ecf41e1f51661.webp",
+            "sha256": "976ecf41e1f516617f61a1f2018645baee102e2dd4e9862b09a6385113fd21dc",
+            "width": 1600,
+            "height": 2117,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "976ecf41e1f516617f61a1f2018645baee102e2dd4e9862b09a6385113fd21dc",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pgen.1012351.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "CDH1-KO chromatin landscape supports change in cell identity.A-B) Tornado plots centered at peak centers (+/-1kb) arranged by gained, maintained, and lost peak clusters following siCDH1. There are two sets of tornado plots showing the individual replicates of siCDH1 and siNT for HMEC cell line 240D1 (A) and 153D1 (B). The expression bars below the tornado plots show the relative peak intensity per cell line. Peak plots above each tornado plot show the distribution of peaks per cluster within each sample/replicate. In the HMEC 240D1, there were 74,319 reproducible peaks and of these peaks there were 70,878 maintained peaks, 1,606 gained peaks, and 1,835 lost peaks. In the HMEC 153D1, there were 117,781 reproducible peaks and of these peaks there were 108,657 maintained peaks, 3,959 gained peaks, and 5,165 lost peaks. C) Venn diagrams show the overlap of gained and lost peaks between cell lines. D) Peak to gene analysis (BETA-minus pipeline, see Methods) was used to identify nearby genes within 30kb of the shared peaks. 165 of these genes were differentially expressed in the RNAseq datasets from 240D1 and 153D1 HMEC models using an adj. p < 0.05. E) Heatmaps show log2 fold change (siCDH1 vs. siNT) of all differentially expressed genes within each of the four HMEC models. Light gray represents non-significant DGE. F) Scatter plot of fold changes from differential peak analysis vs. corresponding gene expression from RNAseq within the 153D1 cell line. Red circles show genes that are upregulated and associated with gained peaks and blue circles show genes that are downregulated and associated with lost peaks. G) ATACseq peak motif analysis (i-cisTarget) was used to identify motifs associated with gained and lost peaks within each cell line (NES > 3). Venn diagrams show the overlap of motifs in gained and lost peaks across cell lines. H) Summary of motifs (JASPAR) and corresponding transcription factors organized by motifs associated with gained peaks (top) followed by lost peaks (bottom). Heatmaps show log2 fold change (siCDH1 vs. siNT) of the transcription factors from the RNAseq datasets of all four HMEC cell lines (adj. p val. < 0.05). I) RNAseq Normalized counts per million (CPM) for each replicate for each condition (siNT, n = 3 and siCDH1, n = 3) within each HMEC cell model were plotted for the top transcription factors from H. (adj. p val **** < 0.0001; *** < 0.0005).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g003.webp?md5=a3a9829d9350c222816d56f8935d0951",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "assets/pmc13722294-3549e22c04ed2bd8.webp",
+            "sha256": "3549e22c04ed2bd86e198778f84a6d8029c2c8ca232f9cb50a239ae92d097b88",
+            "width": 1600,
+            "height": 2104,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3549e22c04ed2bd86e198778f84a6d8029c2c8ca232f9cb50a239ae92d097b88",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pgen.1012351.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "CDH1-KO mimics luminal shift in LCIS data.A) RNA-sequencing on archival tissues from U. Minnesota, from LCIS (n = 22) vs. unaffected normal breast from reduction mammoplasties (n = 7). Heatmap shows luminal and basal genes and K means clusters (represented by green, orange, and yellow bars). B) Z-scores of key luminal and basal markers comparing LCIS vs. normal breast. *p val. < 0.01. C) Pathway gene set enrichment analysis of Hallmark gene signatures (Estrogen Response Early and Late, Apical Junction) and other gene signatures (Charafe Luminal vs. Basal, Luminal vs. Mesenchymal). Adj. p val. < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g004.webp?md5=f3a361d309515b508dae986fcee2d9a3",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012351.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cellular lineage markers support a CDH1 loss-induced luminal progenitor-like phenotype.A) Representative plots of flow cytometry analysis of EpCAM/CD49f expression in 184D1 NTG vs. CDH1-KO. Gates were set to designate cell lineage: mature luminal (EpCAMhi CD49flow), luminal progenitor (EpCAMhi CD49fhi), and basal (EpCAMlow CD49fhi). Percentages of cells in each lineage are noted in each quadrant. B) Quantification of percentage of basal cells (left) and luminal progenitor cells (right) (n = 8; n = 4 CDH1-KO g1; n = 4 CDH1-KO g2) *(adj. p val. < 0.05). C) Quantification of CD10 expression changes were measured by mean CD10 MFI normalized across multiple experiments (n = 14; n = 5 siCDH1 184D1, n = 3 siCDH1 122D1, n = 2 siCDH1 240D1, n = 4 siCDH1 153D1) or CDH1-KO vs. NTG (n = 8; n = 4 CDH1-KO g1; n = 4 CDH1-KO g2) (adj. p val. * < 0.0006) D) HMEC CDH1-KO g2 and NTG grown in 2D, transferred to feeder layer of irradiated NIH 3T3 cells. Images of NTG and CDH1-KO g2 colonies on NIH-3T3 feeder layer. E) Quantification of the number of colony forming cells (CFCs) per 100 cells seeded (2-way ANOVA; adj. p val. **** < 0.0001; ** = 0.0017); represents n = 56 colonies total. F) HMEC CDH1-KO g2 and NTG grown in 3D, transferred to feeder layer of irradiated NIH 3T3 cells. Images of NTG and CDH1-KO g2 colonies on NIH-3T3 feeder layer G) Quantification of the number of colony forming cells (CFCs) per 1000 cells seeded (2-way ANOVA; adj. p val. **** < 0.0001; ** = 0.0020).; represents n = 72 colonies total. Additional information on analysis/phenotyping in (D-G) is provided in Methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g005.webp?md5=0e803392955b05143dee85f85c63bd5a",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012351.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "CDH1-KO induces lineage remodeling in luminal and basal cells.A) Schematic of flow sorting followed by flow analyses before and after induction of CDH1-KO. Cells were sorted into two populations using EpCAM: EpCAM hi (luminal) and EpCAM low (basal) and were separately treated with doxycycline. Additional experimental detail is provided in the Methods. B) Flow sorting and subsequent flow analyses were conducted in two cell lines: HMEC 184D1 NTG and HMEC 184D1 CDH1-KO g2. Dashed lines show where sorting gates were set based off EpCAM expression. C) 1 day post sort (before induction of CDH1-KO) the efficiency of the sort was determined by cell distribution based on EpCAM/CD49f expression as described in Fig 4A (n = 1). D) After CDH1-KO (2 weeks and 4 weeks post dox induction) flow analysis of cell distribution based on EpCAM/CD49f was determined (n = 3; n = 2). See gating FMOs for each flow analysis in S8E Fig) EpCAM MFI (geomean) within parental/pre-sorted population (baseline) and sorted populations before induction of CDH1-KO (post-sort) and after CDH1-KO (post KO). Baseline population error bars show 10% and 90% distribution of EpCAM MFI. Sorting timecourse data in (D-E) is from an individual experiment; biological triplicate samples at 2 weeks (S9 Fig) were ultimately pooled for 4 week analysis due to sample limitations; data are representative of a series of repeated studies of the overall post-knockout timeframe. F) Time course western blots of E-cadherin with Vinculin loading control. Densitometry was calculated by subtracting local background, normalizing to lane-specific loading control (Vinculin), and then normalized to Day 0 NTG or Day 0 CDH1 KOg2. G) Paired time course samples analyzed via qPCR for basal and luminal gene expression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g006.webp?md5=dae5fd16c564b33f10924820ea61536b",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012351.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "CDH1-KO increases proliferative potential and anoikis resistance.A) Total population doublings over the lifespan of the HMEC 184D1 NTG, CDH1-KO g1, CDH1-KO g2, all + /- dox were calculated by counting cells at the beginning and end of every passage (further described in the methods). The + dox cells were treated from passage 14 through passage 17 with doxycycline (population doublings during this period were excluded from final analysis to remove impact of doxycycline on proliferation). Post-induction proliferation rates were calculated using the following equation: Slope = Δ Population Doublings / 5 passages (17 à 22). Sidak’s multiple comparison test was used to calculate statistical significance between the slopes of the + and – dox models. B) Anoikis resistance assay, E-cadherin Lo and Hi gating for NTG and CDH1-KO cells. C) Flow cytometry representative histograms of anoikis resistance using live/dead fixable dye in E-cadherin Lo and E-cadherin Hi populations of NTG and CDH1-KO cells. D) Quantification of percent live cells as a representation of anoikis resistance in ULA (n = 4) in E-cadherin Lo and E-cadherin Hi populations. P value = 0.0126 (*) and 0.0061 (**) for CDH1-KO g1 and g2 respectively; one way ANOVA and Dunnett’s multiple comparisons test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.g007.webp?md5=7663287ae5b76c98c8c3f64315141c2b",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012351",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al.. CDH1 loss remodels gene expression and lineage identity in human mammary epithelial cells.. DOI: 10.1371/journal.pgen.1012351. Copyright holder: Musick et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pgen.1012351.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s001.pdf?md5=5fb8c647041ac7ae200f58b388794c97",
+            "license": "CC BY",
+            "sha256": "9e420d5e84c1228c403022042446fcec48cef3692590d5b8c832a5b17463540f",
+            "status": "downloaded_private",
+            "bytes": 518705,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "pgen.1012351.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s002.pdf?md5=ffe4f04b2ee075c97757ea5b0c4a84a3",
+            "license": "CC BY",
+            "sha256": "2bda1dd13ea2bdc5e63e621a1777d8136f1d27a7030269fa67a9f00d241725c0",
+            "status": "downloaded_private",
+            "bytes": 104878,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "pgen.1012351.s003",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s003.pdf?md5=df14cf372affa60076340497cbf619d5",
+            "license": "CC BY",
+            "sha256": "096047656d309f22b99ae526059571f17697a161f6fb24553fb8295863509b22",
+            "status": "downloaded_private",
+            "bytes": 224679,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "pgen.1012351.s004",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s004.pdf?md5=b190c081a1bc3b7c7efac0efb8637903",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s005",
+            "label": "S5 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s005.pdf?md5=4fbfe35588593c6febe2fde1d18d7d64",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s006",
+            "label": "S6 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s006.pdf?md5=d5465afb5e9b39e773b8abbfdd7555a8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s007",
+            "label": "S7 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s007.pdf?md5=64b10c3b172d94a7e130324c5d8f3e4a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s008",
+            "label": "S8 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s008.pdf?md5=faefab3e43602502efcb18cd00cd364e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s009",
+            "label": "S9 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s009.pdf?md5=9f74799946d60a8dcb71fde34d7d8f7a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s010",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s010.xlsx?md5=8564dbf354fa00adf5e7255d7ab1557e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s011",
+            "label": "S2 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s011.xlsx?md5=5c48ef7211642598e320969e350c6cf7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s012",
+            "label": "S3 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s012.xlsx?md5=68ba31009640a19aba3464bb3fcc7fb6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s013",
+            "label": "S4 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s013.xlsx?md5=6625114829180e1a16c43e62bdf7ef97",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s014",
+            "label": "S5 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s014.xlsx?md5=f26a5ad6ad546871f46f73412ed046a6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s015",
+            "label": "S1 Methods",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s015.docx?md5=e4124bb8ad50f7e96d1db852709f10b6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012351.s017",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13722294.1/pgen.1012351.s017.pdf?md5=4e48cd862de5ccca3cb9a1a776315696",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-09T08:51:01.477825+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Maggie Musick; Chinasa A. Ufondu; Carmen E. Rowland; Micaela E. Brown; Joseph L. Sottnik; Madeleine T. Shackleford; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.9",
+        "jcr": "Q2",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-09T08:51:03Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-09T08:51:03Z",
+        "url": "https://openalex.org/W4411528223",
+        "cited_by_count": 5,
+        "fwci": 13.7088,
+        "citation_normalized_percentile": 0.98666481,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-09T08:51:03Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-09T08:51:03Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-10T08:51:03Z"
+        }
+      },
+      "selectionScore": {
+        "total": 61.933324049999996,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.9333240499999995,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-09T08:51:23Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-ba49205e8ed0e221",
+      "doi": "10.1038/s41514-026-00431-4",
+      "paper": "Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.",
+      "journal": "npj aging",
+      "date": "2026-06-16",
+      "year": "2026",
+      "pmcid": "PMC13272806",
+      "pmid": "42303633",
+      "paperURL": "https://doi.org/10.1038/s41514-026-00431-4",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2731-6068",
+      "eissn": "2731-6068",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "0df422da10e435adb80a5fa89b08174ee8f5e076520e512e1793b4b392be83a4"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/PMC13272806.1.xml?md5=08c12f5d0556b8524b196df25e497c24",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Individual cells start with only wild type mtDNA, but there is a certain probability per replication, mutProb, that a mutation occurs.From that moment on mutants (green) accumulate until the cell is taken over after tAcc days. tAcc can be a fixed number or come from a distribution. At time tExp (blue bar), a single cell NGS experiment is performed, which in this case would reveal that cell1 is completely taken over, cell2 is still wild-type and cell3 is caught in the middle of mutant accumulation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig1_HTML.jpg?md5=28914aba4eba62bb7f0b941c34b71376",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Distributions of accumulation times for mitochondrial deletion mutants (from first occurrence until 90% prevalence) obtained from stochastic simulations.A–D show results from two different simulation models of the mitochondrial life cycle (see main text). Each histogram represents the distribution of accumulation times. A, C Depict simulations where 80% of mutations confer a selective advantage, while B, D show simulations where only 20% of mutations produce advantageous mutants.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig2_HTML.jpg?md5=9f89761f60e124e1d4d8c3ff549019a4",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "assets/pmc13272806-115b9745d3a7ddb2.jpg",
+            "sha256": "115b9745d3a7ddb268ee83391e3e184dce233087322d102aa06ad414bbac7b9a",
+            "width": 683,
+            "height": 432,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "115b9745d3a7ddb268ee83391e3e184dce233087322d102aa06ad414bbac7b9a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Distributions of the number of unique deletion mutants per cell at the end of a three-year mouse lifespan, obtained from stochastic simulations of Model-1.A value of zero indicates cells containing only wild-type mtDNAs. Panels A–D show results for all four possible combinations of low and high values of selection advantage (selAdv) and fraction of advantageous mutants (fracAdv). Blue bars show the simulation results, while red lines indicate the corresponding Poisson distributions calculated using the mean number of unique mutants observed in each simulation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig3_HTML.jpg?md5=08a1cb6313a7f3f96e6da7934348beeb",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Dependence of the mean number of unique deletion mutants (λ) on key model parameters.For each panel, λ was calculated from the synthetic data as the average number of distinct deletion species per cell at the end of the simulation period. Linear fits highlight the nearly perfect proportional dependence of λ on fracAdv (B) and mutProb (C), whereas quadratic trendlines capture the nonlinear relationships with selAdv (A) and age (D).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig4_HTML.jpg?md5=fba8f84c8c4ab677d6e8335de6ff6351",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "assets/pmc13272806-da34773a70cd5d10.jpg",
+            "sha256": "da34773a70cd5d10bd3d7f311f5ded0e764395d3134533d471c3ce246ed8cb3f",
+            "width": 683,
+            "height": 486,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "da34773a70cd5d10bd3d7f311f5ded0e764395d3134533d471c3ce246ed8cb3f",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Distributions of accumulation times for mitochondrial deletion mutants, defined as the time interval from first occurrence of a mutant until it reaches 90% abundance, as predicted by the Moran model.Each histogram shows the probability distribution of accumulation times for a given value of the selection advantage selAdv, with all other parameters kept constant. The distributions are broad and right-skewed, and increasing selection advantage shifts the peak toward shorter accumulation times, indicating faster takeover dynamics.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig5_HTML.jpg?md5=c6263fc8832abfb3fe8effda8ede4abd",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Comparison of mutant acccumulation in stochastic simulations vs Moran process.A Fraction of cells with more than 0%, 5%, 20% and 50% of mutant mtDNAs as function of time for Model-1 using the parameter values selAdv = 0.1, mutProb = 6.8e-6 and fracAdv = 0.8. Data values are exported and displayed in 30 day intervals. B The same type of information generated from the forward-master equation of the Moran process.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig6_HTML.jpg?md5=15aa16ac87b212efb7554f79fba7d6c6",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Distribution of parameter estimates.Histograms show the estimated values of (A) selection advantage (selAdv), (B) mutation probability (mutProb), and (C) fraction of advantageous mutations (fracAdv) obtained from 40 independent bootstrap data sets, each based on 100,000 simulated cells. The mutation probability is displayed on a logarithmic scale. All distributions are unimodal and centred close to the corresponding ground truth values, indicating unbiased estimation and stable convergence of the fitting procedure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_Fig7_HTML.jpg?md5=209a4a29bc290bb4cb4e0d126b88cd1f",
+            "articleURL": "https://doi.org/10.1038/s41514-026-00431-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Axel Kowald; Thomas B. L. Kirkwood. Inferring accumulation times of mitochondrial DNA deletion mutants from cross-sectional single-cell data: methodological framework and validation.. DOI: 10.1038/s41514-026-00431-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_MOESM1_ESM.tif?md5=14acdf797afa6e4539ed3271ea36e823",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272806.1/41514_2026_431_MOESM2_ESM.docx?md5=d5b242b4e82d82d6752de3b4212d8e84",
+            "license": "CC BY",
+            "sha256": "8cc402739d8d36a1f7d4909d01f1ab1c34a0d19c7e7307c408b1d527547c7380",
+            "status": "downloaded_private",
+            "bytes": 16420,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-09T08:50:55.422098+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Axel Kowald; Thomas B. L. Kirkwood"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "13.0",
+        "jcr": "",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-09T08:50:58Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-09T08:50:58Z",
+        "url": "https://openalex.org/W7164944642",
+        "cited_by_count": 1,
+        "fwci": 1.4773,
+        "citation_normalized_percentile": 0.83709504,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-09T08:50:58Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-09T08:50:58Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-10T08:50:58Z"
+        }
+      },
+      "selectionScore": {
+        "total": 57.1854752,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.1854752,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-09T08:51:24Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -200080,6 +200930,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-33c4e5fa0f353a3d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ba49205e8ed0e221": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -201698,7 +202560,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-09T08:49:16Z",
+  "generatedAt": "2026-11-09T08:51:25Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -201932,18 +202794,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-09T08:42:17Z",
-    "updatedAt": "2026-11-09T08:49:31Z",
+    "updatedAt": "2026-11-09T08:51:32Z",
     "batchCount": 4,
-    "requests": 77,
+    "requests": 111,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
