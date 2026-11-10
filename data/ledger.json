@@ -210,9 +210,45 @@
         "10.1186/s13024-026-00960-2",
         "10.1371/journal.pgen.1012351"
       ]
+    },
+    "2026-11-10": {
+      "newDOIs": [
+        "10.1093/bioadv/vbag187",
+        "10.1186/s40104-026-01526-4"
+      ]
     }
   },
   "candidates": {
+    "10.1186/s40104-026-01526-4": {
+      "checkedAt": "2026-11-10T08:53:44Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-10T08:53:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-10T08:53:34Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-10T08:53:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/bioadv/vbag187": {
+      "checkedAt": "2026-11-10T08:53:31Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1002/cpz1.70491": {
       "checkedAt": "2026-11-09T08:51:21Z",
       "status": "source_confirmed",
@@ -1624,49 +1660,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1093/bioadv/vbag187": {
-      "checkedAt": "2026-10-22T07:02:00Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioadv/vbag187",
-        "metadataHash": "dd8cf0460bb67b773a7448c5f7d353467e53f167ed80f6f66bd387ba028acb60",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13361702.1/PMC13361702.1.xml?md5=8b6e2d57163d1d9c346d6a52a7d3f140",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 680,
-              "sha256": "94ff80ecec5d5eef5fd1e1e3e878f623262a6527b39665aeb01deed7b674ebb9",
-              "label": "Figure 1",
-              "height": 465,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13361702.1/vbag187f1.jpg?md5=bd90766ca9e82e48f302ba722afb75c0",
-              "asset": "assets/pmc13361702-94ff80ecec5d5eef.jpg",
-              "license": "CC BY",
-              "assetSHA256": "94ff80ecec5d5eef5fd1e1e3e878f623262a6527b39665aeb01deed7b674ebb9",
-              "id": "vbag187-F1",
-              "captionHash": "ae628abd36748e8901886c907c4c3e78e11febcadad8d8688bc74a6e878dab8a"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-1b7adfb9b759a9ac",
-          "doi": "10.1093/bioadv/vbag187",
-          "paper": "TelomereHunter2: improved &lt;i&gt;in silico&lt;/i&gt; telomere analysis software for precision oncology and single-cell studies.",
-          "journal": "Bioinformatics advances",
-          "date": "2026-06-30",
-          "year": "2026",
-          "pmcid": "PMC13361702",
-          "pmid": "42445596",
-          "paperURL": "https://doi.org/10.1093/bioadv/vbag187"
-        },
-        "updatedAt": "2026-10-22T07:01:53Z"
-      }
     },
     "10.1038/s42003-026-10518-z": {
       "checkedAt": "2026-10-22T07:01:59Z",
@@ -12392,26 +12385,21 @@
   },
   "dailyCollectionSession": {
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "date": "2026-11-10",
     "status": "active",
     "maxBatches": 36,
-    "elapsedSeconds": 6,
+    "elapsedSeconds": 173,
     "endReason": "",
     "uncertainRequests": 0,
-    "requests": 0,
-    "updatedAt": "2026-11-10T08:51:12Z",
+    "requests": 44,
+    "updatedAt": "2026-11-10T08:53:59Z",
     "startedAt": "2026-11-10T08:51:07Z",
     "version": 1,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "maxRequests": 1800,
     "maxSeconds": 2700,
     "batchCount": 1,
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-10T08:51:12Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
