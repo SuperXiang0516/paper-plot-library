@@ -150081,6 +150081,1091 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-f1fea45ed0efaf0f",
+      "paper": "Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.",
+      "doi": "10.1111/acel.70792",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70792",
+      "pmcid": "PMC13744170",
+      "pmid": "42998043",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-10",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "627487cd66b72cb3f0763d8bbc996f55916a4aee83b431342b3edc4ec123568e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/PMC13744170.1.xml?md5=6e7af5697288a6b39e74b00e633e88e2",
+        "figures": [
+          {
+            "id": "acel70792-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Integrated proteomic and transcriptomic profiling of retinal aging. (A) Schematic of the experimental design comparing retinas from young (4‐month‐old) and aged (24‐month‐old) C57BL/6J mice (n = 8 per group) using tandem mass tag (TMT)‐based proteomics and RNA‐seq. Integrated analysis quantified 7019 proteins and 39,325 transcripts, with 6763 targets consistently detected across both omics layers. A total of 7155 proteins were identified, of which 7019 were quantitatively analyzed. (B) Principal component analysis (PCA) revealed clear age‐dependent separation in proteomic (PC1 = 23.8%) and transcriptomic profiles (PC1 = 26.1%). (C) Gene set variation analysis (GSVA) scores of the transcriptome for the senescence‐associated secretory phenotype (SASP) gene set displayed as a ridge plot. Group differences were assessed using a two‐sided exact Wilcoxon rank‐sum test (W = 16, p = 0.029). (D) A Venn diagram illustrates the overlap between the proteome (7155 proteins) and the SASP‐related protein set (152 proteins), with 46 proteins overlapping in senescence. (E) A table summarizes proteins down‐regulated, up‐regulated, or associated with oxidative stress during aging. (F) Z‐score normalized expression levels of differentially regulated proteins are shown in a heatmap, with rows representing proteins and columns representing samples. Hierarchical clustering of samples is indicated at the top, and proteins significantly down‐ or up‐regulated (p < 0.05) are highlighted in blue and red, respectively. The −log10(p‐value) is shown along the bottom axis.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g006.webp?md5=8a7fb8373c241af34f8849c052d87f14",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70792-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Age‐associated retinal protein and gene expression changes. (A) Volcano plot of differentially expressed proteins (DEPs) between young and aged mouse retinas. A total of 292 DEPs were identified as significantly altered (p < 0.05; fold change ≥ 1.2), including 99 down‐regulated and 193 up‐regulated proteins. (B) Volcano plot of transcriptomic changes in aging retinas, revealing widespread gene expression alterations. Differentially expressed genes (DEGs) were defined by FDR < 0.05 and fold change ≥ 2, identifying 369 up‐regulated and 633 down‐regulated transcripts. (C) Correlation analysis of age‐associated changes between proteomic and transcriptomic datasets. Each data point represents a gene–protein pair, revealing a significant positive correlation between protein abundance and corresponding mRNA expression (Pearson's r = 0.603; p < 0.001; n = 432). (D) Heatmap showing proteins with significant consistent or divergent regulation at both the transcript and protein levels. Among these, 10 were concordantly up‐regulated (red‐colored in Figure C), 10 were concordantly down‐regulated (blue‐colored in Figure C), and 3 displayed discordant trends (up‐regulated at the protein level but down‐regulated at the transcript level, yellow‐colored in Figure C). (E) Functional classification of DEPs using the PANTHER system (v17.0). Enriched protein classes included metabolite interconversion enzymes (n = 54), oxidoreductases (n = 23), protein‐binding activity modulators (n = 22), transmembrane signal receptors (n = 8), transfer/carrier proteins (n = 9), protease inhibitors (n = 9), extracellular matrix proteins (n = 9), and heterotrimeric G proteins (n = 6). (F) Subclassification of oxidoreductases revealed predominant age‐related upregulation (e.g., Maob, Cyp27a1, Cyb5b) versus selective downregulation (e.g., Gulo, Dct, Adh1) proteins, as illustrated by a heatmap of representative targets. (G) Age‐associated transmembrane signal receptors and their expression patterns at both the protein and transcriptomic levels. (H) RT–qPCR validation of targets, including Maob, Cyp27a1, Dct, Cyb5b, Ldhb, and Aass, in six biological replicates. Statistical significance was determined using two‐tailed tests and is indicated as ns, not significant; **p < 0.01; ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g007.webp?md5=2fe5039c9081a3a8725a0e454f30744a",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "assets/pmc13744170-f6c6e05dbe3c398e.webp",
+            "sha256": "f6c6e05dbe3c398e6044d033a3810a834636950e22f274d928af718910ba0719",
+            "width": 1064,
+            "height": 1369,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f6c6e05dbe3c398e6044d033a3810a834636950e22f274d928af718910ba0719",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70792-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Differential expression of key pathways in retinal aging. (A) Upregulated pathways predominantly reflect immunometabolic adaptation, encompassing antigen processing and presentation, regulation of cell adhesion molecule production, modulation of peptidase activity, suppression of death receptor–mediated apoptosis, and diverse biosynthetic processes, including vitamin, carbohydrate, pyruvate, and monocarboxylic acid metabolism, as well as oxygen transport. (B) Down‐regulated pathways indicate structural and functional decline, including sarcomere and intermediate filament organization, visual perception, tyrosine and retinol metabolism, and cellular responses to vascular endothelial growth factor (VEGF) stimulation. (C) Representative gene and protein profiles of the activation of antigen processing, apoptosis suppression, and small‐molecule biosynthesis in aged tissue. (D) Expression landscapes of the downregulation of VEGF‐responsive signaling, visual perception pathways, and retinal metabolic processes in aged tissue.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g008.webp?md5=4b2a291b8cbe0bb2a67a0a809ff97942",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70792-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Stat1‐centered regulatory network in retinal aging. (A) Identification of candidate transcription factors associated with retinal aging. Differentially expressed proteins (DEPs) were annotated using AnimalTFDB and HOCOMOCO, yielding 5 candidate transcription factors potentially involved in retinal aging. (B) Functional pathway mapping of Stat1 target genes demonstrated broad regulation of aging‐relevant processes, including antigen processing and presentation, interferon‐γ signaling, regulation of peptidase activity, suppression of death receptor–mediated apoptosis, and small‐molecule biosynthesis and metabolism. (C) Representative Jess Simple Western analysis of Stat1 protein expression in retinal lysates from young (4 months) and naturally aged (24 months) mice. The native PDF reports have been uploaded as Raw Data S1. (D) RT–qPCR validation (n = 6) confirms age‐dependent expression changes in Stat1‐responsive genes, including Apoa2, Adipor1, Psmb9, Tap2, Pdxk, and Ccnd3. (E) Senescence‐associated β‐galactosidase (SA‐β‐gal) staining of ARPE‐19 cells following TBHP (400 μM, 2 h) or Doxorubicin (250 nM, 3 day) treatment. Quantification of SA‐β‐gal‐positive cells is shown. Data are presented as the mean ± SEM. (F) Western blot analysis of STAT1, p21, p53, and downstream targets in ARPE‐19 cells following TBHP and Doxorubicin treatment. (G) Immunofluorescence analysis of STAT1 in ARPE‐19 cells 2 h after TBHP treatment. Nuclei were counterstained with DAPI. Scale bar: 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g002.webp?md5=5db2cdc42264295770861b77d489a1f5",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "assets/pmc13744170-048181e6a0638aee.webp",
+            "sha256": "048181e6a0638aeebc100afb98ed45601df4b3965d2cc8b9ab9f622ecf0b846e",
+            "width": 1064,
+            "height": 1418,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "048181e6a0638aeebc100afb98ed45601df4b3965d2cc8b9ab9f622ecf0b846e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70792-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "STAT1 regulation of aging‐associated transcriptional programs. (A) Volcano plots of differentially expressed genes (DEGs) from RNA‐seq analysis. Left: STAT1‐overexpression (OE) versus control (NC) cells (2029 DEGs, 1202 down‐regulated, 827 up‐regulated; |log2FC| > 1, FDR < 0.05). Right: Stress‐induced senescent cells (TBHP or Doxorubicin) versus NC (747 DEGs; |log2FC| > 1, FDR < 0.05). (B) Correlation of log2 fold changes for shared genes between STAT1‐OE and stress‐induced senescent cells (Pearson's r = 0.589, FDR < 0.05). (C) KEGG pathway enrichment analysis was performed based on DEGs identified in STAT1‐OE ARPE‐19 cells and TBHP‐induced senescent cells. Shared enriched pathways between the two models included ECM–receptor interaction, focal adhesion, AGE–RAGE signaling pathway in diabetic complications, small cell lung cancer (SCLC), human papillomavirus infection (HPV infection), and amoebiasis. Dot plots display significantly enriched pathways ranked by −log10 (p‐value). Blue dots indicate pathways enriched following TBHP treatment, including the PI3K–Akt signaling pathway, the complement and coagulation cascades, protein digestion and absorption, and the circadian rhythm. Red dots represent pathways enriched in the STAT1 overexpression group, including the Cell cycle, TNF signaling pathway, Cellular senescence, p53 signaling pathway, and Bladder cancer. (D) STAT1 expression in RNA‐seq data from Control, STAT1‐OE, and senescent cells (n = 4 per group); one‐way ANOVA was used for statistical analysis. (E) Fourteen core STAT1 downstream targets (e.g., PSMB9, TAP2, CD82, HMGA1, CCND3, GSN, GBP5) identified in aged mouse retina by multi‐omics analysis, showing consistent regulation in STAT1‐OE and TBHP‐induced senescent cells. (F, G) Representative SA‐β‐gal staining images (F) and quantification (G), showing increased senescence in STAT1‐OE cells. Data are presented as mean ± SD and were analyzed by one‐way ANOVA. (H) Intracellular ROS levels in STAT1‐OE and NC cells; data are mean ± SD, analyzed by one‐way ANOVA. (I) Western blots of senescence markers p53, p21, and inflammasome adaptor ASC in STAT1‐OE and NC cells. (J) Western blot validation of STAT1 and target proteins in untreated control (NC), STAT1‐OE, Doxorubicin (Dox)‐treated, and STAT1‐knockdown (si‐STAT1) ARPE‐19 cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g001.webp?md5=48923735951bedccfa7d43ed1d11f521",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70792-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "STAT1 modulates oxidative stress‐induced senescence and shows cell type–specific expression in the aging retina. (A) Representative senescence‐associated β‐galactosidase (SA‐β‐gal) staining of ARPE‐19 cells under different conditions: Control (NC), TBHP‐induced senescence, STAT1 overexpression (OE‐STAT1), STAT1 knockdown (si‐STAT1), and STAT1 knockdown combined with TBHP treatment (si‐STAT1 + TBHP). Scale bars: 100 μm. (B) The proportion of SA‐β‐gal–positive (blue‐stained) cells was quantified and normalized to the NC group for both the TBHP and si‐STAT1/TBHP groups. Data are presented as the mean ± SD from three independent experiments. (C) Western blot analysis of STAT1, p53, and the inflammasome adaptor ASC in ARPE‐19 cells following TBHP treatment. Knockdown of STAT1 suppresses stress‐induced upregulation of p53 and ASC. (D) Representative Western blot analysis of intracellular inflammasome‐associated proteins in ARPE‐19 cells under the indicated conditions. Quantitative analysis of the cleaved caspase‐1/pro‐caspase‐1 ratio and mature IL‐1β/pro‐IL‐1β ratio is shown in the accompanying bar graphs. Protein expression levels were normalized to GAPDH and are presented as the mean ± SEM from three independent biological replicates. Statistical significance was determined using a two‐tailed unpaired Student's t‐test (*p < 0.05, **p < 0.01, ***p < 0.001). (E) ELISA quantification of secreted IL‐1β levels in culture supernatants collected from ARPE‐19 cells following TBHP treatment and STAT1 knockdown. Data are presented as the mean ± SEM from three independent biological replicates. Statistical significance was determined using a two‐tailed unpaired Student's t‐test. (F) Immunofluorescence analysis of STAT1 subcellular localization in ARPE‐19 cells. Under TBHP‐induced senescence, STAT1 exhibits pronounced nuclear translocation compared with NC cells. In contrast, STAT1 knockdown abrogates TBHP‐induced nuclear accumulation of STAT1, with the protein remaining predominantly cytoplasmic. Nuclei were counterstained with DAPI. Scale bar: 10 μm. (G) UMAP visualization of mouse retinal cells, identifying major populations including rods, cones, rod bipolar cells (RBC), cone bipolar cells (CBC), horizontal cells (HC), amacrine cells (AC), retinal ganglion cells (RGC), microglia, macroglia, and retinal pigment epithelium (RPE). (H) Dot plot showing cell type–specific Stat1 expression, with the highest expression in horizontal cells and moderate expression in microglia, macroglia, and cone photoreceptors. (I) Representative images showing nuclear staining (blue), the horizontal cell marker Calbindin‐D28k (red), and STAT1 (green), with the merged image on the right. STAT1 signal is enriched in horizontal cells, as indicated by the overlap between STAT1 and the horizontal cell marker. Scale bar: 20 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g003.webp?md5=5e6bc1b593b41682c95350ff252d5647",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70792-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Age‐associated activation of STAT1 signaling in retinal aging. In young retinas, STAT1 displays low basal activity with limited nuclear translocation and is predominantly localized in microglia and horizontal cells, thereby maintaining retinal cellular homeostasis. With aging, STAT1 phosphorylation progressively increases, accompanied by enhanced nuclear accumulation. In aged retinas, sustained STAT1 activation promotes the transcription of downstream target genes, including Psmb9, Tap2, Adipor1, Ccnd3, and Pdxk, leading to increased inflammatory responses, elevated reactive oxygen species (ROS) production, and mitochondrial dysfunction. These molecular alterations ultimately drive cellular senescence, as evidenced by increased SA‐β‐gal activity, upregulation of canonical senescence markers (p53 and p21), and elevated expression of inflammation‐associated genes (ASC), collectively contributing to retinal aging and degeneration.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-g004.webp?md5=f00737431900d1bb0434f29dc6a75e95",
+            "articleURL": "https://doi.org/10.1111/acel.70792",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al.. Multi-Omics Reveals STAT1 as a Central Regulator of Oxidative Stress-Induced Senescence in the Aging Retina.. DOI: 10.1111/acel.70792. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70792-supitem-0001",
+            "label": "Data S1: acel70792‐sup‐0001‐Supinfo.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s005.pdf?md5=f3e0bf54b81eb10df76b7390292a7852",
+            "license": "CC BY",
+            "sha256": "bc9a26d9c068a1072cf73dcb2accffdb674bd3cf7332bbcc71b4677d11382199",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 5683973,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 87,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "acel70792-supitem-0002",
+            "label": "Figure S1: Proteomic analysis of lifespan‐related genes in aging mouse retina. (A) Heatmap of Z‐score‐normalized expression for differentially regulat",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s001.docx?md5=a46bd17de46a159602836eaa7780b376",
+            "license": "CC BY",
+            "sha256": "ae41543bc0489a71ba475167bcde67344b66bc1907e8685084a59ec72449a939",
+            "status": "downloaded_private",
+            "bytes": 5326301,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0003",
+            "label": "Table S1: Quantified transcriptomic profiles and gene expression data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s003.xlsx?md5=67e18e538737d30cd3aec986d0b43f30",
+            "license": "CC BY",
+            "sha256": "60687225992fe8a60ba6b91bab2ac618f23e56800a4c1f11accf9cb021b663d1",
+            "status": "downloaded_private",
+            "bytes": 3294636,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0004",
+            "label": "Table S2: Differentially expressed proteins (DEPs) identified in aging mouse retina.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s007.xlsx?md5=8de0c65c02d9935c25d3a95b9f0ee4c4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0005",
+            "label": "Table S3: Differentially expressed genes identified across experimental conditions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s008.xlsx?md5=5ab00a86f82e60ac68ee7b9ae1353b04",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0006",
+            "label": "Table S4: Candidate transcription factors identified from DEPS using AnimalTFDB and HOCOMOCO annotation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s006.xlsx?md5=132d9c43b743ae0fa6219501a2072dca",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0007",
+            "label": "Table S5: Overlap and integration of STAT1 target genes from TFlink and Cistrome with aging‐associated DEGs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s002.xlsx?md5=f2538ba44aa644f2a28a216cd07affb7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0008",
+            "label": "Table S6: STAT1 target genes identified by ChIP‐seq analysis from publicly available datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s009.xlsx?md5=f9db51dfec167ebaff28b79e04277b68",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70792-supitem-0009",
+            "label": "Table S7: RNA‐seq–derived differentially expressed genes (DEGs).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13744170.1/ACEL-25-e70792-s004.xlsx?md5=fd1c8235cade6cd0f64a4c25df690f6d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-10T08:55:38.065154+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yiran Fan; Ying Li; Xueying Wu; Lin Cai; Ruotong Yang; Zhenhui Liu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-10T08:55:42Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-10T08:55:42Z",
+        "url": "https://openalex.org/W7225456693",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.76167097,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-10T08:55:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-10T08:55:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-11T08:55:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.80835485,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.8083548499999997,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-10T08:55:55Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-276dd4b83e51463a",
+      "paper": "Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.",
+      "doi": "10.1111/acel.70812",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70812",
+      "pmcid": "PMC13743511",
+      "pmid": "42995149",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-10",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "40cfaef6f86a58e2899a38b2923d43d22e85123a2d69372a9f4f40aa6d5a5958"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/PMC13743511.1.xml?md5=484c995c860161b7355fbac75e6e66a1",
+        "figures": [
+          {
+            "id": "acel70812-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The potential association between aging and osteoporosis. (A) Regression models illustrating a gradual decline in heel bone mineral density (BMD) with age in both sexes after 45 years; (B) Cox regression results demonstrating lower survival rates in subjects with prior fractures or reduced BMD; (C) Causal effect estimates between aging and osteoporosis based on GWAS summary statistics. Significant causality (p < 0.05) was observed across MR‐PRESSO, IVW, and weighted median methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-g005.webp?md5=43ca85246a57563a99daa12e6a417335",
+            "articleURL": "https://doi.org/10.1111/acel.70812",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al.. Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.. DOI: 10.1111/acel.70812. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70812-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Integrative analysis of single‐cell transcriptomics and GWAS summary statistics identifies macrophages as a pivotal cell type in bone aging. (A) UMAP projection of the integrated single‐cell atlas. The left panel illustrates the batch integration of two distinct input datasets: Dataset 0 (bone marrow niche) and dataset 1 (osteoclastogenesis dataset). The right panel displays the refined cell type annotations across the integrated atlas, covering a broad spectrum of bone marrow cell populations. Bas., basophil; Eos., eosinophil; Ery., erythroid; Fibrob., fibroblasts; Gra., granulocyte; Meg., megakaryocyte; Mon., monocyte; OC., osteoclasts; prog., progenitor. (B) scGWAS analysis revealing cell type‐specific enrichment for bone aging‐related traits. Scatter plots show the enrichment of GWAS summary statistics for eBMD (left panel) and mvAge (right panel) across different cell types, with red dots indicating significant genetic enrichment. (C) Network diagram of key module genes identified through scGWAS. TGFB1 is highlighted in red as a central hub gene identified by both traits. (D) Significant ligand‐receptor interactions between key cell types derived from scGWAS results.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-g003.webp?md5=8a65ad4a2fb3ba28e3be918503990327",
+            "articleURL": "https://doi.org/10.1111/acel.70812",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al.. Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.. DOI: 10.1111/acel.70812. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70812-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "TGFB signaling mediates the age‐related decline of macrophages. (A) UMAP visualization of the single‐cell transcriptomic landscape of mouse bone marrow across different ages. (B) Quantification showing that the proportion of macrophages decreases with age. (C) Stacked bar plot illustrating the proportional changes of macrophage subclusters (e.g., IFN‐simulated, Proliferating, MHC‐II, Lipid‐associated, Inflammatory) across age groups. (D) scWGCNA analysis identifying the “Gainsboro” module associated with macrophage abundance. Top panels show scale‐free topology fit and mean connectivity for soft‐thresholding selection, and clustering of module eigengenes. The bottom heatmap displays module‐trait relationships, highlighting the Gainsboro module's positive correlation with macrophages and negative correlation with age. (E) Gene Ontology (GO) enrichment analysis of genes within the Gainsboro module. (F) Cell–cell communication analysis in the context of bone aging. Genes from the Gainsboro module were used as the input gene set to reveal specific ligand‐receptor interactions, highlighting TGFB signaling pathways between macrophages and other cell types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-g001.webp?md5=9fd3dd90aa56a25e0b7d1af546bf398c",
+            "articleURL": "https://doi.org/10.1111/acel.70812",
+            "asset": "assets/pmc13743511-fcc68eab573495a1.webp",
+            "sha256": "fcc68eab573495a12f70b3d020e170b9c7223de078c8b63debafa74413e58a72",
+            "width": 1064,
+            "height": 1541,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al.. Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.. DOI: 10.1111/acel.70812. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fcc68eab573495a12f70b3d020e170b9c7223de078c8b63debafa74413e58a72",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70812-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Shared genetic methods identified HNRNPUL1 as an important gene in bone aging. (A) Conditional quantile‐quantile (QQ) plots of eBMD associations stratified by the significance of associations with mvAge at p < 0.1, p < 0.01, p < 0.001. (B) Local genetic correlation analysis of genomic regions containing the corresponding SNPs. (C) Venn diagram illustrating HNRNPUL1 as the only overlapping gene identified by WGCNA (Gainsboro) and those mapped by ccFDR/eQTL analysis. (D) Regional association plot (LocusZoom) showing the ccFDR‐significant SNP rs12975920 located within the HNRNPUL1 gene body. The blue line indicates the recombination rate. (E) Regional association plots for eBMD at the HNRNPUL1 locus. Both SNPs located within the HNRNPUL1 gene body and eQTL‐related SNPs demonstrate significant associations with eBMD. (F) MR analysis reveals genetically determined HNRNPUL1 is associated with mvAge. (G) Colocalization analysis of eQTL and mvAge GWAS signals, displaying posterior probabilities for shared causal variants (PP.H4 > 0.8).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-g002.webp?md5=fd9747e9492911d950790cbe3de2dae8",
+            "articleURL": "https://doi.org/10.1111/acel.70812",
+            "asset": "assets/pmc13743511-f704e9dfe081d85e.webp",
+            "sha256": "f704e9dfe081d85e4e35defb976d7407736c62ebad95a72c3cba820da093783b",
+            "width": 1064,
+            "height": 1365,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al.. Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.. DOI: 10.1111/acel.70812. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f704e9dfe081d85e4e35defb976d7407736c62ebad95a72c3cba820da093783b",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70812-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Expression dynamics of HNRNPUL1 and TGFB1 during osteoclast differentiation and their association with specific macrophage subclusters. (A) Trajectory plots illustrating the expression levels of HNRNPUL1 and TGFB1, which decrease during macrophage differentiation. (B) Correlation matrix displaying relationships between gene expressions (HNRNPUL1, TGFB1), classical polarization scores (M1, M2), and specific macrophage subcluster scores (*p < 0.01, **p < 0.01, ***p < 0.001). (C) Knockout of HNRNPUL1 (left) or TGFB1 (right) did not result in significant changes in the expression of the other gene, indicating a lack of direct transcriptional regulation between them. (D) Bar chart showing computational prediction scores (using RF and SVM methods) for RNA‐protein interactions. A score > 0.5 suggests a high likelihood of binding.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-g006.webp?md5=5da46f921855caf9064cdc5a1444e116",
+            "articleURL": "https://doi.org/10.1111/acel.70812",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al.. Integrative Genetic and Single-Cell Analysis Reveals Macrophages as Key Mediators Linking Aging and Osteoporosis.. DOI: 10.1111/acel.70812. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70812-supitem-0001",
+            "label": "Figure S1: Sensitivity analyses to evaluate the robustness of the MR results. Q_pval is the pvalue of Cochran's Q test. Q_pval < 0.05 suggest heteroge",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-s001.docx?md5=1e0f2728ddd9c0220dbf2d720d005683",
+            "license": "CC BY",
+            "sha256": "d1359b643eb5ed39db235b480ac3fdb9c6ffa7424e5cb86c36f57cd7541ff120",
+            "status": "downloaded_private",
+            "bytes": 2994267,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70812-supitem-0002",
+            "label": "Table S1: Description of phenotypic traits and their corresponding Field IDs. Fracture data were obtained from three sources: self‐reported questionna",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13743511.1/ACEL-25-e70812-s002.xlsx?md5=eff193031900033607698bc7cccb7765",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-10T08:55:43.870966+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xin Li; Meng‐Yuan Yang; Si‐Rui Gai; Peng Wei; Zeng‐Hui Gu; Ming‐Yu Han; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-10T08:55:42Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-10T08:55:45Z",
+        "url": "https://openalex.org/W7212421272",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.54263162,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-10T08:55:45Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-10T08:55:45Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-11T08:55:45Z"
+        }
+      },
+      "selectionScore": {
+        "total": 64.7131581,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 2.7131581,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-10T08:55:56Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-604b25308e3e06dd",
+      "doi": "10.1155/humu/5598948",
+      "paper": "Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.",
+      "journal": "Human mutation",
+      "date": "2026-07-06",
+      "year": "2026",
+      "pmcid": "PMC13338575",
+      "pmid": "42415742",
+      "paperURL": "https://doi.org/10.1155/humu/5598948",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1059-7794",
+      "eissn": "1098-1004",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "e00f3d7554d97509aa7213119f2c5bb8016f9e4c5fbe6cd85cefac90b86ab799"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/PMC13338575.1.xml?md5=188fd1bedbce4f271e9f0252e06226b3",
+        "figures": [
+          {
+            "id": "fig-0001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "CDKN1A level in pancancer. CDKN1A mRNA level from the (A) cBioPortal database and (B) TIMER database. (C) IHC staining showing the low expressed p21 protein level in lung cancer, breast cancer, and pancreatic cancer. Note: Lung normal n = 9, lung cancer n = 9; breast normal n = 11, breast cancer n = 27; pancreatic normal n = 48, pancreatic cancer n = 48. ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001 by two‐tailed Student′s t‐test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g007.jpg?md5=6411fa756ee72dc48ee0b33a05ee4cb8",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "CDKN1A regulates cell proliferation. (A) RT‐qPCR result showing CDKN1A expression upon siRNA transfection in H1299 cells. (B) Heatmap showing the differentially expressed genes upon p21 silencing in H1299. (C) GSEA analysis of the RNA‐seq indicating p21 affects cell adhesion, apoptosis, and EMT. (D) Western blot revealing p21 regulates downstream genes. (E) p21 overexpression inhibits cell proliferation via (F) CCK8 assay, (G, H) EdU assay, and (I) colony formation in different cell lines. Note: F, n = 5; G–I, n = 3. Scale bar, 100 μm. ∗∗∗ p < 0.001, ∗∗ p < 0.01 by two‐tailed Student′s t-test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g006.jpg?md5=0007e95107e2f3827df320adb35a13fa",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "assets/pmc13338575-1e65fd04668b18a3.jpg",
+            "sha256": "1e65fd04668b18a3141139cd4a81acf36119a7852bb3bc251e894d1161387747",
+            "width": 600,
+            "height": 974,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1e65fd04668b18a3141139cd4a81acf36119a7852bb3bc251e894d1161387747",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig-0003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "p21 inhibits tumorigenesis. (A) SA‐β‐gal staining assay indicating overexpression of p21 promotes cell senescence in different cell lines. Scale bar, 100 μm. (B) Enforced p21 prevents wound closure in different cell lines. Note: ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001 by two‐tailed Student′s t-test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g004.jpg?md5=4ad69b9f2af6c3b61e2a4c87e72482a6",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "scRNA‐seq profiling revealing the relevance of CDKN1A with cell types in pancreatic, lung, and breast cancer. UMAP plot showing the distributions of the cells in (A) pancreatic cancer, (B) lung cancer, and (C) breast cancer. Expression levels of CDKN1A in different cell types in (D) pancreatic cancer, (E) lung cancer, and (F) breast cancer. Relative proportions of different cell types with high or low CDKN1A expression in (G) pancreatic cancer, (H) lung cancer, and (I) breast cancer. (J) Pathway activities inferred from different gene levels in pancreatic cancer (Left), lung cancer (Middle), and breast cancer (Right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g003.jpg?md5=50373367b4ec0f9333ac85840cb14c8b",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "assets/pmc13338575-08fe6ff820b77ed6.jpg",
+            "sha256": "08fe6ff820b77ed68d0964ec85b92af5660fc16abc7634bf60bb75887f862265",
+            "width": 600,
+            "height": 749,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "08fe6ff820b77ed68d0964ec85b92af5660fc16abc7634bf60bb75887f862265",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig-0005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Pseudotime trajectory analysis based on CDKN1A expression in inferCNV‐defined malignant epithelial cells. UMAP depicting partition of malignant epithelial cells in pancreatic cancer in (A) Monocle3, (B) lung cancer, and (C) breast cancer. UMAP highlighting the inferred transcriptional continuum of malignant epithelial cells in (D) pancreatic cancer, (E) lung cancer, and (F) breast cancer. Dynamics of CDKN1A expression along pseudotime in (G) pancreatic cancer, (H) lung cancer, and (I) breast cancer. Each point represents the mean normalized expression of CDKN1A within equal pseudotime bins, and the smooth line indicates the fitted expression trend. (J) The alterations of CDKN1A‐related genes over pseudotime in pancreatic cancer (Left), lung cancer (Middle), and breast cancer (Right). Pseudotime denotes an inferred transcriptional continuum and should not be interpreted as direct evidence of temporal tumor progression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g005.jpg?md5=1adf6becbf600869483232414296aaf0",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0006",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Computationally inferred ligand‐receptor interactions between malignant epithelial cell populations with different CDKN1A expression levels in pancreatic, lung cancers, and breast cancer. CellChat‐inferred interaction networks in selected signaling pathways, including SPP1 in (A) pancreatic cancer, (B) FN1 in lung cancer, and (C) collagen in breast cancer. Left, signal pathway network‐level visualization; Right, inferred cell roles in signal pathways.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g008.jpg?md5=da57b6dc21a2be7276dd2cd0ebab9f8b",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0007",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "CDKN1A/p21 is associated with immune regulation and modulates macrophage‐mediated tumor cell responses. (A) The UCSCXenaShiny database showing the correlation between CDKN1A expression and the infiltration of six immune cells across various cancers. The correlation between CDKN1A expression and (B) immune stimulators and (C) inhibitor in cancers through TISIDB. (D) RT‐qPCR showing overexpression of p21 increases the expression of immune‐related molecules, including the immunostimulatory marker ICOS and immunoregulatory factors TGFB1 and PD-1 in multiple cancer cell lines (H1299, A549, MCF‐7, and Mia). (E) THP‐1 cells were differentiated into macrophages using PMA and further polarized into M1 macrophages by LPS + IFN − γ or M2 macrophages by IL‐4 treatment. Polarization efficiency was validated by RT‐qPCR analysis of M1 markers (CD86, HLA-DR) and M2 markers (CD206, CD163). (F) Cancer cells (A549, MCF‐7, and Mia) transfected with control vector or p21 were cocultured with M1 or M2 macrophage‐conditioned media. Colony formation assays were performed to assess cell proliferation. M1 macrophages enhance the inhibitory effect of p21 on tumor cell growth, whereas M2 macrophages attenuate this effect. Note: ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001 by two‐tailed Student′s t-test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g002.jpg?md5=afe361f3aeaee1853364a314ee9e4e67",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0008",
+            "label": "Figure 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "CDKN1A enhances cell sensitivity to multiple chemotherapeutic agents. (A) Correlation between CDKN1A expression levels and five MMR genes in diverse cancers. (B) RT‐qPCR showing MMR gene expression upon p21 overexpression in H1299, MCF‐7, BT474, and Mia. (C) CCK8 assay indicating overexpression of p21 enhances cell sensitivity to trametinib (5 μM), cisplatin (5 μM) treatment in different cell lines; n = 6. (D) Dose‐response curves and IC50 analyses of trametinib and cisplatin in H1299, A549, MCF‐7, BT474, and Mia cells with control or p21 overexpression. Note: ∗ p < 0.05, ∗∗ p < 0.01, ∗∗∗ p < 0.001 by two‐tailed Student′s t‐test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-g001.jpg?md5=9c89f31924096d47e3064ad5a7d1aac7",
+            "articleURL": "https://doi.org/10.1155/humu/5598948",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al.. Single-Cell and Multiomics Characterization of p21 in Cancer Progression and Therapeutic Sensitivity.. DOI: 10.1155/humu/5598948. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "link-0001",
+            "label": "Supporting Information Additional supporting information can be found online in the Supporting Information section. Figure S1: CDKN1A expression in di",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13338575.1/HUMU-2026-5598948-s001.pdf?md5=4f0abe4b6c11f5cfa1bf8d3cebf0cda7",
+            "license": "CC BY",
+            "sha256": "813d8ad4979d7a4dc165ed1d67f9e792a1c7ee5174a0d917f68d5cdc40d846ae",
+            "status": "downloaded_private",
+            "bytes": 2815680,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 8,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-10T08:55:33.905316+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wenyang Zhang; Qinglong Ma; Honghui Zhao; Wenrun Li; Zidong Feng; Linghui Zhong; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "1.8",
+        "jcr": "Q4",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-10T08:55:36Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-10T08:55:36Z",
+        "url": "https://openalex.org/W7167626427",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.45469699,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-10T08:55:36Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-10T08:55:36Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-11T08:55:36Z"
+        }
+      },
+      "selectionScore": {
+        "total": 59.27348495,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 2.2734849500000003,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-10T08:55:58Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -207229,6 +208314,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-f1fea45ed0efaf0f": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-276dd4b83e51463a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-604b25308e3e06dd": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -208847,7 +209950,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-10T08:53:52Z",
+  "generatedAt": "2026-11-10T08:55:59Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -209081,18 +210184,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-10T08:51:07Z",
-    "updatedAt": "2026-11-10T08:54:09Z",
+    "updatedAt": "2026-11-10T08:56:06Z",
     "batchCount": 2,
-    "requests": 44,
+    "requests": 92,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
