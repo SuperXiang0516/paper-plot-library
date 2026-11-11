@@ -151903,6 +151903,1123 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-26a4d4750a4acb89",
+      "paper": "Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.",
+      "doi": "10.1111/acel.70806",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70806",
+      "pmcid": "PMC13740007",
+      "pmid": "42989047",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-11",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b9f2b7463b85f05726d2d53b0601fa9ad27f5514be1eb4dae50aeda982e446f8"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/PMC13740007.1.xml?md5=6e3ce36e1dad2fefb47b2e8ce4cf471e",
+        "figures": [
+          {
+            "id": "acel70806-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single‐cell analysis reveals enhanced pyroptosis of macrophages in aged ovaries and identifies miR‐103a‐3p‐enriched extracellular vesicles. (A) UMAP plot showing six major cell types from the single‐cell RNA‐seq dataset GSE267315. (B) Dot plot displaying the differential expression of macrophage marker genes across different cell types. (C) Pyroptosis marker gene expression scores in macrophages from different groups. (D–F) Expression levels of IL‐18, NLRP3, and NLRP1 in macrophages across groups. (G) Western blot analysis of Caspase‐1 and GSDMD‐N protein expression (n = 3). (H–J) Levels of IL‐1β, IL‐18, and LDH in cell supernatants (n = 6). (K) Western blot detection of EVs markers CD9, CD81, and CD63, with Calnexin as a negative control (n = 3). (L–N) NTA analysis of EVs particle size, comparing diameter and concentration (n = 3). (O) TEM images showing EVs morphology. (P) Volcano plot of miRNA sequencing data (n = 3). (Q) Heatmap of differentially expressed miRNAs (n = 3). (R) GO enrichment analysis of predicted downstream target genes of miRNAs (n = 3). (S) KEGG pathway enrichment analysis of predicted miRNA target genes (n = 3). (T) qPCR validation of upregulated miRNAs carried by Pyr‐EVs (n = 5). Data are presented as mean ± SD. Replication numbers are indicated in the corresponding panels. Statistical significance was determined using an unpaired two‐tailed Student's t‐test. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g005.webp?md5=179995dc5038c6062bf0b5d9ed6e85f4",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70806-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Pyr‐EVs induce mitochondrial dysfunction and apoptosis in KGN cells via miR‐103a‐3p and its downstream targets. (A) PKH26‐labeled EVs were incubated with KGN cells, and uptake was observed under fluorescence microscopy. (B, C) Flow cytometry analysis of apoptosis using Annexin V‐FITC/PI staining (n = 3). (D, E) Flow cytometry detection of cellular ROS levels (DHE staining) and quantitative measurement of mitochondrial membrane potential (n = 3). (F, G) SA‐β‐gal staining to assess cellular senescence (n = 9). (H) Volcano plot of DEmRNAs with criteria |log2FC| ≥ 1 and p < 0.01 (n = 3). (I) Heatmap of DEmRNAs; darker colors indicate greater differential expression (n = 3). (J–L) GO enrichment analysis of downregulated DEmRNAs, showing results for BP, CC, and MF, respectively. (M) KEGG pathway enrichment analysis of downregulated DEmRNAs. (N) Venn diagram of predicted miR‐103a‐3p target genes from DIANA, miRDB, and TargetScan databases. (O) Venn diagram intersecting the 285 predicted target genes with downregulated DEmRNAs and mitochondrial genes from MitoCarta3.0. (P, Q) RNA‐seq expression levels of MFN2 and BCL2L13 mRNAs. Data are presented as mean ± SD. Statistical significance was analyzed using one‐way ANOVA followed by Tukey's multiple‐comparison test, as appropriate. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g001.webp?md5=e7a9f85feba6f6c20ea2c741df77207e",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "assets/pmc13740007-2b269d5c6cb5daae.webp",
+            "sha256": "2b269d5c6cb5daae5ba0a6898e61f524144f1be36527a42608834bd5d81d91a0",
+            "width": 1064,
+            "height": 1512,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2b269d5c6cb5daae5ba0a6898e61f524144f1be36527a42608834bd5d81d91a0",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70806-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "miR‐103a‐3p levels in human follicular fluid EVs correlate with ovarian reserve and ART outcomes. (A) TEM images showing the morphology of EVs in follicular fluid. (B) NTA analysis of EVs particle size (n = 3). (C) Western blot detection of EVs markers CD9, CD81, and CD63, with Calnexin as a negative control (n = 6). A subset of samples (n = 6 per group) was used due to limited cell availability, and these samples were randomly selected from the clinical cohort. (D, E) Comparison of EVs particle size and concentration between groups. (F, G) Relative expression of miR‐103a‐3p in FF‐EVs and granulosa cells from DOR and NOR patients (n = 30). (H–J) ATP, ROS, and MDA levels in granulosa cells (n = 6). (K, L) qRT‐PCR analysis of MFN2 and BCL2L13 mRNA expression (n = 8). (M–O) Western blot analysis of MFN2 and BCL2L13 protein expression (n = 6). A subset of samples (n = 6 per group) was used due to limited cell availability, and these samples were randomly selected from the clinical cohort. Quantified protein expression was normalized to β‐actin and expressed relative to the NOR group (set as 1.0). (P–R) qRT‐PCR analysis of apoptosis‐related genes (BCL2, BAX), steroidogenic markers (FSH, CYP11A1), and SASP factors (IL6, IL8) (n = 8). (S–U) Correlation analyses between FF‐EVs miR‐103a‐3p levels and patient AMH, AFC, and high‐quality embryos (n = 30). (V) ROC curve analysis between FF‐EVs miR‐103a‐3p levels and DOR. Data are presented as mean ± SD. Replication numbers are indicated in the corresponding panels. Statistical significance was determined using an unpaired two‐tailed Student's t‐test. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g007.webp?md5=7c87c1417193f743296df0b9759eeaae",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "assets/pmc13740007-247537a74d9a277a.webp",
+            "sha256": "247537a74d9a277a287a12ee10fff79f6ce3915ac5767393a0ae2967c3557487",
+            "width": 1064,
+            "height": 1444,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "247537a74d9a277a287a12ee10fff79f6ce3915ac5767393a0ae2967c3557487",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70806-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "miR‐103a‐3p induces mitochondrial dysfunction in granulosa cells by targeting and inhibiting MFN2 and BCL2L13. (A) Predicted binding sites of the miR‐103a‐3p seed sequence in the 3′‐UTRs of MFN2 and BCL2L13 mRNAs. (B, C) Dual‐luciferase reporter assay (n = 6). (D, E) qRT‐PCR analysis of MFN2 and BCL2L13 mRNA expression (n = 5). (F–H) Western blot analysis of MFN2 and BCL2L13 protein expression (n = 3). Quantified protein expression was normalized to β‐actin and expressed relative to the miRNA NC group (set as 1.0). (I, J) Flow cytometry (Annexin V‐FITC/PI double staining) to assess apoptosis (n = 3). (K, L) TEM analysis of mitochondrial morphology; mitochondrial aspect ratio (length/width) (n = 30) and mitochondrial number per cell (n = 6). (M, N) Flow cytometry (DHE staining) to detect intracellular ROS levels (n = 3). (O, P) Flow cytometry (MitoSOX staining) to measure mitochondrial ROS levels (n = 3). (Q–S) TMRE staining and flow cytometry for mitochondrial membrane potential quantification (n = 3). (T, U) ATP and GSH level determination (n = 5). (V, W) SA‐β‐gal staining to assess cellular senescence (n = 9). (X) Measurement of 17β‐estradiol levels in the cell supernatant (n = 5). (Y) qRT‐PCR analysis of SASP factors (IL6 and IL8) mRNA expression (n = 5). (Z) Western blot detection of p16, p21, BAX, BCL2, FSHR, LHCGR, and CYP11A1 protein expression (n = 3). Data are presented as mean ± SD. Replication numbers are indicated in the corresponding panels. Statistical significance was determined using an unpaired two‐tailed Student's t‐test. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g003.webp?md5=692674249a4374930237d83921683e11",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70806-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Overexpression of MFN2 and/or BCL2L13 reverses miR‐103a‐3p‐induced impairment of granulosa cell dysfunction under oxidative stress conditions. (A) Flow cytometry (Annexin V‐FITC/PI double staining) for apoptosis detection (n = 3). (B) TEM analysis of mitochondrial morphology. (C) Statistics on the percentage of apoptotic cells (n = 3). (D) Statistics on TEM analysis; mitochondrial aspect ratio (length/width) (n = 30) and number of mitochondria per cell (n = 6). (E–J) Flow cytometry (DHE staining) for cellular ROS levels (n = 3); flow cytometry (MitoSOX staining) for mitochondrial ROS (mtROS) levels (n = 3); TMRE staining and flow cytometry for mitochondrial membrane potential quantification (n = 3). (K) SA‐β‐gal staining for cellular senescence assessment (n = 9). (L) Measurement of 17β‐estradiol levels in the cell supernatant (n = 5). (M) Statistics on the percentage of senescent cells (SA‐β‐gal staining, n = 9). (N) qRT‐PCR analysis of SASP‐related cytokines (IL6 and IL8) mRNA expression (n = 5). (O) Western blot analysis of MFN2, BCL2L13, p16, p21, BAX, BCL2, FSHR, LHCGR protein expression (n = 3). Data are presented as mean ± SD. Statistical significance was analyzed using one‐way ANOVA followed by Tukey's multiple‐comparison test, as appropriate. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g002.webp?md5=0331b6429b6d6612f9dbfa26bcff57ff",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70806-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Inhibition of miR‐103a‐3p ameliorates oxidative stress‐induced ovarian injury in mice. (A) H&E staining showing ovarian morphology (120× and 400× magnification); black stars: Atretic follicles; yellow stars: Corpus lutea; blue stars: Secondary follicles; red arrows: Primordial follicles; black arrows: Primary follicles. (B) Quantification of follicle proportions at each developmental stage (n = 10). (C–F) ELISA analysis of serum FSH, LH, E2, and AMH levels in mice (n = 10). (G, H) Flow cytometry (MitoSOX staining) to assess mtROS levels (n = 6). (I) DHE staining to measure cellular ROS levels (n = 6). (J) TEM observation of granulosa cell mitochondrial morphology (n = 6). (K–M) Measurement of MDA, ATP, and GSH levels (n = 6). (O, P) Quantification of mitochondrial aspect ratio (length/width) (n = 30) and number of mitochondria per cell (n = 6). (Q, R) TUNEL staining to assess apoptosis in ovarian tissue (n = 6). (S) Western blot analysis of MFN2, BCL2L13, p16, p21, BAX, BCL2, FSHR, LHCGR, and CYP11A1 protein expression in ovarian tissue (n = 3). Data are presented as mean ± SD. Statistical significance was analyzed using one‐way ANOVA followed by Tukey's multiple‐comparison test, as appropriate. ns p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-g004.webp?md5=df2539c78ec65d6c53ddc55ce6f87e36",
+            "articleURL": "https://doi.org/10.1111/acel.70806",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang. Pyroptotic Macrophage Extracellular Vesicles Drive miR-103a-3p Mediated Mitochondrial Dysfunction in Granulosa Cells in Diminished Ovarian Reserve.. DOI: 10.1111/acel.70806. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70806-supitem-0001",
+            "label": "Supplementary Table 1: The baseline characteristics of the clinical patients.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-s001.xlsx?md5=d30f9a2bb88235749119d6746ac40c79",
+            "license": "CC BY",
+            "sha256": "089069042b8d3b774b7d7c9418efb7971ae9e0ee90b09e1e96d7d6898eaa6408",
+            "status": "downloaded_private",
+            "bytes": 11092,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70806-supitem-0002",
+            "label": "Table S2: Primers used for quantitative real‐time polymerase chain reaction.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-s003.xlsx?md5=df7a8fa91e7b4f365f444989852793da",
+            "license": "CC BY",
+            "sha256": "1ba6ee5a3d9cb4f0ae1d85677619b0edcd05808f0f86b3640d9beb00e9cde928",
+            "status": "downloaded_private",
+            "bytes": 12026,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70806-supitem-0003",
+            "label": "Figure S1: Single‐cell analysis reveals enhanced pyroptosis of macrophages in aged ovaries and identifies pyroptotic macrophage. (A–D) Expression leve",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/ACEL-25-e70806-s002.docx?md5=6452ece9dcfa39c2150d996b29a5674b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/zoezoe-99/jwh"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-11T08:31:17.096180+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/zoezoe-99/jwh",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13740007.1/PMC13740007.1.xml?md5=6e3ce36e1dad2fefb47b2e8ce4cf471e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wenhan Ju; Xin Xin; Yanli Xiao; Liwen Song; Jinfu Zhang; Shan Xiang"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/zoezoe-99/jwh",
+        "commit": "9a9e74953721e7300ceea4b70a2bf1a728a77aae",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "267315 data.R",
+            "url": "https://github.com/zoezoe-99/jwh/blob/9a9e74953721e7300ceea4b70a2bf1a728a77aae/267315%20data.R",
+            "sha256": "e0ca181fd2d6d597d3d1ec12768578cba98ab0aee3a247ae63e2b5fbbf0a41d0",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "percent.mt",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "group",
+                "line": 97,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "orig.ident",
+                "line": 97,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-11T08:31:22Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-11T08:31:22Z",
+        "url": "https://openalex.org/W7225416101",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-11T08:31:22Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-11T08:31:22Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-12T08:31:22Z"
+        }
+      },
+      "selectionScore": {
+        "total": 87,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-11T08:31:48Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "焦亡巨噬细胞来源细胞外囊泡经miR-103a-3p介导卵巢储备减退中颗粒粒细胞线粒体功能障碍",
+        "summary_zh": "该研究围绕卵巢储备减退(DOR)中焦亡巨噬细胞来源细胞外囊泡(EVs)的作用展开:分析公共GEO单细胞数据以刻画不同年龄组卵巢巨噬细胞的焦亡特征;从焦亡巨噬细胞分离EVs并作用于颗粒细胞(KGN),评估线粒体功能、氧化应激与凋亡;通过miRNA测序寻找EVs富集miRNA;在DOR患者卵泡液EVs中检测miR-103a-3p并与卵巢储备指标关联;以体外实验和小鼠模型进行机制研究。图注显示单细胞分析、EVs表征、miRNA测序、KGN细胞摄取与功能实验、临床样本检测、双荧光素酶报告及线粒体形态/功能检测等内容。作者代码未运行,静态检查不构成复现验证;输入尺度与图号对应关系未明示处保持未知。",
+        "learning_points": [
+          "图1图注显示使用单细胞RNA-seq数据集GSE267315展示六类主要细胞类型的UMAP,并比较不同组巨噬细胞的焦亡标志基因表达评分及IL-18、NLRP3、NLRP1水平。",
+          "图1图注包含EVs表征:Western blot检测CD9、CD81、CD63并以Calnexin为阴性对照,NTA分析粒径与浓度,TEM观察形态。",
+          "图1图注显示对miRNA测序数据作火山图、差异miRNA热图及靶基因GO/KEGG富集分析,并列有上调miRNA的qPCR验证。",
+          "图2图注显示PKH26标记EVs被KGN细胞摄取,并以流式细胞术检测凋亡、ROS与线粒体膜电位,SA-β-gal检测衰老。",
+          "图2图注显示对差异mRNA作火山图、热图与GO/KEGG富集,并用DIANA、miRDB、TargetScan预测靶基因,与下调DEmRNAs及MitoCarta3.0线粒体基因取交集。",
+          "图3图注显示人卵泡液EVs的TEM、NTA与标志物检测,并比较DOR与NOR组FF-EVs及颗粒细胞中miR-103a-3p表达,检测ATP、ROS、MDA及MFN2、BCL2L13表达。",
+          "图4图注显示miR-103a-3p种子序列与MFN2、BCL2L13 3′UTR的预测结合位点及双荧光素酶报告实验,并检测线粒体形态、ROS、膜电位、ATP/GSH与衰老。",
+          "图注中标注了多组样本量(如n=3、n=6、n=30等),但作者代码未执行,不能据此确认分析流程或结果可复现。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不是复现验证,不能宣称已复现或与原图一致。",
+          "输入数据尺度、图号与代码的对应关系未明示,相关细节未知。",
+          "证据仅来自图注与出版信息,未提供原始数据、统计方法细节或完整结果数值。",
+          "图3图注提到部分样本因细胞可得性受限而随机选取,样本代表性未在证据中说明。",
+          "单细胞分析仅见数据集编号GSE267315,数据预处理与质控参数未知。",
+          "未观察到期刊指标、许可信息或代码运行环境,均不能推断。",
+          "图注中样本量标注不一(如n=3、n=6、n=9、n=30),其统计效力与多重比较校正未知。",
+          "体内小鼠模型与AAV干预的具体设计细节未在提供的图注证据中展开。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-11T08:31:54Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "ad185bc480a49c2559a62b94b24af59ed9c6c646e6029bd6f40d9f4dda698a01",
+        "summary_fingerprint": "86d7420aba93d4174b2df9b0c8f3ee46802a7f9ffa018467e377bf5e05bfd129",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-80d2858adb1e9f7e",
+      "doi": "10.1186/s13073-026-01719-6",
+      "paper": "Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.",
+      "journal": "Genome medicine",
+      "date": "2026-07-31",
+      "year": "2026",
+      "pmcid": "PMC13425876",
+      "pmid": "42538566",
+      "paperURL": "https://doi.org/10.1186/s13073-026-01719-6",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1756-994X",
+      "eissn": "1756-994X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "525c8d2ea6f6b725213779de663f3d477bf694c57f0875f4e4814ded0bb7364a"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/PMC13425876.1.xml?md5=de799b93e78110e9b17c2253cd85e51f",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Phenotypic characterization of the LmnaG609G/G609G (progeria) mice. A Survival analysis of wild-type mice (from Osorio et al. 2009, Sci Transl Med) and progeria mice (n = 36). Dotted line indicates 50% survival. B Body weight measurements (grams) of wild-type (n = 20) and progeria mice (n = 25) for 25 weeks. C Representative images of hematoxylin–eosin staining of the aortic arch from wild-type and progeria mice. For the progeria mice the ages 6, 10 and 12 weeks are shown. D and E Evolution of VSMC density (cells/mm2) in the aortic arch of wild-type mice of ages 4 (n = 4), 6 (n = 9), 8 (n = 3), 10 (n = 7), 12 (n = 6) and 15 weeks (n = 3) and progeria mice of ages 4 (n = 3), 6 (n = 3), 8 (n = 2), 10 (n = 5), 12 (n = 3) and 15 weeks (n = 3) shown continuously (D) or in progeria mice of ages 4 (n = 3), 6 (n = 3), 8 (n = 3), 10 (n = 7), 12 (n = 7) and 15 weeks (n = 7) compared to pooled wild-type mice of ages 4 (n = 3), 6 (n = 4), 8 (n = 4), 10 (n = 5), 12 (n = 5) and 15 weeks (n = 4) (E). F Representative images from Ki67 immunofluorescence (green) in aortic arch sections from wild-type and progeria mice the ages 6, 8 and 12 weeks. Nuclei are shown in white. G Percentage of Ki67-positive VSMCs in the aortic arch of wild-type and progeria mice from ages 4 to 15 weeks (n = 3 for each age). H Representative images from Pcna immunofluorescence (red) in aortic arch sections from wild-type and progeria mice the ages 6, 8 and 12 weeks. Nuclei are shown in white. I Percentage of Pcna-positive VSMCs in the aortic arch of wild-type and progeria mice from ages 4 to 15 weeks (n = 3 for each age). J Representative images from TUNEL assay (pink) in aortic arch sections from wild-type and progeria mice the ages 6 and 12 weeks. K Percentage of TUNEL-positive VSMCs measured by the TUNEL assay in the aortic arch of wild-type and progeria mice from ages 4 to 15 weeks (n = 3 for each age). Nuclei are shown in white. Statistical test used in panel D is one-way ANOVA followed by Dunnet; for panels G and I, unpaired two-tailed Student´s t-test and for panel K, one way ANOVA followed by TukeyHSD. For panel D: slopes were compared using an extra sum-of-squares F test (GraphPad Prism). * = p-value < 0.05; ** = p-value < 0.01; *** = p-value < 0.001. Arrowheads in panels F, H and J point to examples of positive cells in the stainings. Scale bar indicated 10 µm in panel C, and 50 µm in panels F, H, J",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig1_HTML.jpg?md5=9deba989ca020ff2964627c963b5bf15",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "assets/pmc13425876-4da30c3b4445fe0e.jpg",
+            "sha256": "4da30c3b4445fe0e607f6725e55a584c3fbc3664396ef7b8dfca22a3a298a2da",
+            "width": 778,
+            "height": 900,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4da30c3b4445fe0e607f6725e55a584c3fbc3664396ef7b8dfca22a3a298a2da",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single-cell RNA-sequencing (Smart-seq2) analysis identifies VSMC and fibroblast subpopulations enriched in progeria mice. A Schematic representation of the experimental design. Aortic arches from wild-type and progeria mice were collected at 6, 10 and 12 weeks of age for progeria mice and at 6 and 12 weeks for wild-type mice. A single-cell suspension was generated by enzymatic digestion (VSMCs, fibroblasts, pericytes, endothelial cells and macrophages are illustrated in red, blue, purple, orange and green, respectively). Subsequently, live cells were individually sorted to a 384-well plate for scRNA-seq using Smart-seq2, and bioinformatic analysis was performed. Created in BioRender. Eriksson, M. (2026) https://BioRender.com/h434pj0B UMAP visualization of 8968 vascular cells derived from both wild-type and progeria mice of all the collected ages. The five main cell types identified in the aortic arch are indicated. C Dotplot showing the expression levels of the genes used to annotate the cell identity assigned in B. Dot size indicates the percentage of cells expressing a particular gene and the intensity of the color indicates the average log-normalized gene expression levels of the given gene. EC = endothelial cells, M = macrophages, F = fibroblasts, P = pericytes, VSMCs = vascular smooth muscle cells. D UMAP visualization of the clustering results based on mouse genotype. Only VSMCs and fibroblasts are shown, and all the collected ages are included. The progeria-enriched clusters are highlighted with a dotted box. E UMAP visualizations of VSMCs and fibroblasts highlighting log10 of lamin A (left) and progerin (right) transcript pseudocounts (counts + 1) in wild-type (up) and progeria (down) cells. The color scale applies to cells in which at least 1 read was detected. Cells in which no progerin or lamin A specific reads were detected are labelled in grey. Only VSMCs and fibroblasts of all collected ages are shown. F Barplot showing the proportion of lamin A and progerin relative to the sum of both isoforms in all VSMC and fibroblasts populations",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig2_HTML.jpg?md5=7a3613f276734c88a93908e7d3ae8835",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "The VSMC and fibroblast populations enriched in progeria mice appear progressively over time. A UMAP visualization of the clustering results from wild-type mice and progeria mice of ages 6, 10 and 12 weeks. Only VSMCs and fibroblasts are shown. B-C Relative contribution of each VSMC subpopulation to the overall VSMC population (B) and of each fibroblast subpopulation within the fibroblast population in wild-type and progeria mice of ages 6, 10 and 12 weeks (C). D Pseudotime and trajectory analysis inferred by applying Monocle3 in VSMCs derived from progeria mice from all collected ages. E Volcano plots showing differentially expressed protein coding genes (DEGs) between the VSMC subpopulations shared between wild-type and progeria mice at 6 weeks of age and the VSMC II cells. F Selected Gene Ontology terms of interest identified from the DEGs determined in C. The size of the dot represents the gene count, and the color scale (blue-red) the adjusted p-value. G Volcano plots showing differentially expressed genes (DEGs) between the VSMC subpopulations shared between wild-type and progeria mice at 6 weeks of age and the VSMC II cells at ages 6 weeks (left), 10 weeks (middle) and 12 weeks (right). For the volcano plots in E and G, the Wilcoxon Rank Sum test was used by the FindMarkers function was used to identify the DEGs between two groups. Dots in red represent genes with log2 FC > 0.25 and -log10 (p-value) > 3. Dots in blue represent genes with log2 FC < −0.25 and -log10 (p-value) > 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig3_HTML.jpg?md5=fbf0e8a21771c7adf3919c4b0e97653a",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "The VSMC II subpopulation shows high levels of ER stress and apoptotic markers. A. UMAP plots showing the log-normalized gene expression levels of the ER stress genes Hspa5, Hsp90b1 and Ddit3 in wild-type and progeria mice of all collected ages. B. Violin plots showing the levels of a custom ER stress score (Hspa5, Hsp90b1, Atf4, Ddit3, Sdf2l1, Hmox1, Gdf15, Asns) in wild-type and progeria VSMCs at ages 6, 10 and 12 weeks. Horizontal line represents a custom-defined threshold to consider a cell ER stress (score > 1). C. Violin plots showing the levels of the custom ER stress score from B only in cells from the VSMC II subpopulation. Horizontal line represents a custom-defined threshold to consider a cell ER stress (score > 1). D. Immunofluorescence for BiP (Hspa5) in aortic arch sections from wild-type (n = 3) and progeria mice at ages 6 (n = 3), 10 (n = 4) and 12 (n = 3) weeks. Red = BiP, white = nuclear staining. E. Quantification of the BiP staining shown in panel D. F. UMAP plots showing the log-normalized gene expression levels of the apoptotic genes Bax, Bid and Trp53 in wild-type and progeria mice of all collected ages. G. Violin plots showing the levels of a custom apoptosis score (Bax, Fas, Trp53, Bad, Bid, Pmaip1) in wild-type and progeria VSMCs at ages 6, 10 and 12 weeks. Horizontal line represents a custom-defined threshold to consider a cell apoptotic (score > 0.3). H. Violin plots showing the levels of the custom apoptosis score from G only in cells from the VSMC II subpopulation. Horizontal line represents a custom-defined threshold to consider a cell apoptotic (score > 0.3). I. Quantification of Ddit3 transcript levels (copies/µl) by ddPCR in the aortic arch of wild-type (n = 3) and progeria mice of 10 weeks of age (n = 5). For panels B, C, G and H, the Kruskal–Wallis test was used. When significant, it was followed by pairwise Wilcoxon rank-sum tests with Bonferroni correction for multiple testing. The red line marks the median. For panel E, one-way ANOVA and Tukey´s Honest Significance tests were used. For panel I, unpaired two-tailed t-test with Welch’s correction was used. In panels D and I, mean ± SEM are shown. * = p-value < 0.05; ** = p-value < 0.01; *** = p-value < 0.001. Scale bar in D indicates 50 µm",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig4_HTML.jpg?md5=1060a47ba03cc9b356a17677b9692ece",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "assets/pmc13425876-0f573d71a9083524.jpg",
+            "sha256": "0f573d71a90835246953a1f4630b8e814ce6d7b429dee6bd520b081e495d0746",
+            "width": 794,
+            "height": 925,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0f573d71a90835246953a1f4630b8e814ce6d7b429dee6bd520b081e495d0746",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Progeria-enriched VSMC undergo phenotype switching towards a fibroblast-like identity. A UMAP plots of VSMCs showing the log-normalized gene expression levels of Lgals3, Vcam1 and Ly6a (dedifferentiation markers, upper plots) as well as Myh11, Mylk and Smtn (contractile markers, lower plots). The expression of each gene is shown individually for the progeria VSMCs and as a combined score for the wild-type VSMCs. B Violin plots showing the normalized expression levels of each individual dedifferentiation gene (Lgals3, Vcam1 and Ly6a) in wild-type VSMCs as well as VSMC II cells in progeria mice of 6, 10 and 12 weeks of age. C Violin plots showing the levels of two scores for contractile identity. Upper. A non-tissue specific SMC score (Acta2, Actg2, Cnn1, Dmpk, Flna, Lmod1, Tagln, Myh11, Mylk, Myl9, Tpm2, Ppp1r12b). Lower. An aortic VSMC identity score (Tpm1, Mylk, Actn4, Dstn, Sdc4, Itgb1, Smtn, Tagln, Cnn1) in wild-type VSMCs as well as VSMC II cells in progeria mice of 6, 10 and 12 weeks of age. D Immunofluorescence for Lgals3 in aortic arch sections from wild-type (n = 3) and progeria mice at ages 6 (n = 4), 10 (n = 5) and 12 (n = 6) weeks. Green = Lgals3, white = nuclear staining. E RNAscope for Vcam1 in aortic arch sections from wild-type (n = 3) and progeria mice at ages 6 (n = 4), 10 (n = 5) and 12 (n = 5) weeks. Red = Vcam1 white = nuclear staining. F Upper. Quantification of the Lgals3 staining shown in panel D. Lower. Quantification of the Vcam1 RNAscope shown in panel E. G UMAP plots of VSMCs showing the log-normalized gene expression levels of genes regarding the acquisition of a fibroblast-like identity (Spp1, Col8a1, Tnfrs11b and Fn1). H Quantification of Spp1 transcript levels (copies/µl) by ddPCR in the aortic arch of wild-type (n = 3) and progeria mice of 10 weeks of age (n = 5). Within panel B, for individual genes, pairwise Wilcoxon rank-sum tests with Bonferroni correction for multiple testing within the FindMarkers function were used. For the contractile score, the data was fetched from the Seurat object and comparisons were manually done using Wilcoxon rank-sum tests with Bonferroni correction for multiple testing. The red line indicates the median. For panel E, Kruskal–Wallis followed by Dunn´s post-hoc test was used, whereas for panel F, one-way ANOVA and Tukey´s Honest Significance tests were used. In panels E, F and H, mean ± SEM are shown. In panel H, unpaired two-tailed t.test was used. * = p-value < 0.05; ** = p-value < 0.01; *** = p-value < 0.001. Scale bar indicates 10 µm",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig5_HTML.jpg?md5=54bfa05a1701aca03d4967365e4a4a34",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Cell to cell communication modeling predicts that the phenotypic switch can be triggered in a non-cell autonomous mechanism. A Immunofluorescence for BiP and Lgals3 in aortic arch sections from wild-type (n = 3) and progeria mice at ages 6 (n = 3), 10 (n = 5) and 12 (n = 3) weeks. Green = Lgals3, red = BiP, white = nuclear staining. Scale bar indicates 10 µm. B-D Quantification of the immunofluorescence in A in the form of total number of double positive VSMCs (B); BiP-positive VSMCs also positive for Lgals3 (C); and Lgals3-positive cells also positive for BiP (D). E Stacked bar plot showing the information flow of signaling pathways inferred by CellChat in wild-type (pink) and progeria (orange) VSMCs. The color of each segment shows the contribution from each genotype. Pathways highlighted and orange or magenta are significantly different between progeria and wild-type VSMCs, respectively. Statistical significance of differences between WT and progeria VSMCs was assessed using a Wilcoxon rank-sum test. F Circle plot showing the interactions among VSMC types for the SPP1 signaling pathway. Nodes represent VSMC subpopulations and edge thickness indicates the strength of inferred interactions. G Plots showing the contribution of different ligand-receptor pairs to the SPP1 signaling. H Circle plot showing the interactions among VSMC types for the THBS1 signaling pathway. I Plots showing the contribution of different ligand-receptor pairs to the THBS1 signaling. In panels B-D, mean ± SEM are shown. For panel B Kruskal–Wallis followed by Dunn´s post-hoc test was used, whereas for panel C and D, one-way ANOVA and Tukey´s Honest Significance tests were used. * = p-value < 0.05; ** = p-value < 0.01; *** = p-value < 0.001",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig6_HTML.jpg?md5=9e9de259a7a85c7586fd3e4eb11e4a0d",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Progeria VSMCs accumulate a higher number of somatic mutations than wild-type VSMCs, correlating with high ER stress, a ROS response and p53 induction, whereas progeria fibroblasts showed a delayed increase in somatic mutations. A UMAP plots of wild-type and progeria VSMCs showing the levels of a custom expression score of a ROS transcriptional response score (as Ftl1, Gclm, Hmox1, Sesn2, Srxn1, Txnrd1 or Txnl1). B Violin plots showing the levels of the custom ROS transcriptional response score in wild-type and progeria VSMCs at ages 6, 10 and 12 weeks. The red line indicates the median. Horizontal line represents a custom-defined threshold to consider a cell ROS-high (score > 0.5). C Immunofluorescence for γH2AX in aortic arch sections from wild-type (n = 3) and progeria mice at ages 6 (n = 4), and 12 (n = 7) weeks. Red = γH2AX, blue = nuclear staining. Arrowheads point to examples of positive cells. Scale bar indicates 20 µm. D Quantification of the proportion of VSMCs (M, media) and adventitial cells (Adv) positive of γH2AX. Mean ± SEM are shown. Paired t-test was used when comparing media and adventitia from the same age, whereas one-way ANOVA followed by TukeyHSD was applied when comparing the same arterial layer across different mice ages. E UMAP plots of wild-type and progeria VSMCs showing the number of mutations per megabase (Mb) in each cell. All collected ages are included. F Boxplot reflecting the median and mean (white dot) number of mutations per Mb per cell in each genotype. Only VSMCs with more than 0 mutations were included. G UMAP plots of progeria VSMCs showing the number of mutations per megabase (Mb) in each cell, visualized by age. H Boxplot reflecting the median and mean (white dot) number of mutations per Mb per cell in each genotype, and by age in the progeria mice. Only VSMCs with more than 0 mutations were included. I. Main mutational signatures identified in wild-type and progeria VSMCs and their contribution to the overall mutational spectrum J–L Scatterplots showing correlations between the number of mutations per Mb per cell and either a custom ROS response module score (Asns, Atf4, Ddit3, Gdf15, Hmox1, Hsp90b1, Hspa5, Sdf2l1) (J) or the UPR response score shown in panel A (K) or a p53 induced response defined by the expression of Trp53, Mdm2, Cdkn1a, Gadd45a, Zmat3, and Trp53inp1 (L). Only cells with an ER stress gene score/ROS response gene score/p53 gene score above the median were included. The Pearson correlation coefficient (r) is shown on each plot. M UMAP plots of wild-type and progeria fibroblasts showing the number of mutations per megabase (Mb) in each cell. All collected ages are included. N Boxplot reflecting the median and mean (white dot) number of mutations per Mb per cell in each genotype. Only fibroblasts with more than 0 mutations were included. O Boxplot reflecting the median and mean (white dot) number of mutations per Mb per cell in each genotype, and by age in the progeria mice. Only Fibroblasts with more than 0 mutations were included. P Main mutational signatures identified in wild-type and progeria fibroblasts and their contribution to the overall mutational spectrum. For the ROS transcriptional response score, the data was fetched from the Seurat object and comparisons were manually done using Wilcoxon rank-sum tests with Bonferroni correction for multiple testing. * = p-value < 0.05; ** = p-value < 0.01; *** = p-value < 0.001. For comparing the number of mutations per Mb per cell between genotypes, the Wilcoxon rank-sum test was used. When comparing across different ages, Kruskal–Wallis followed by pairwise Wilcoxon rank-sum was used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig7_HTML.jpg?md5=1c43caa6de5f7e9a0f01a640197e6467",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01719-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al.. Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.. DOI: 10.1186/s13073-026-01719-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-11T08:31:10.023014+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Lara G. Merino; Gwladys Revêchon; Santhilal Subhash; Fabiana Stefani; Daniel Whisenant; Marianna Skipitari; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "10.8",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-11T08:31:13Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-11T08:31:13Z",
+        "url": "https://openalex.org/W7171986942",
+        "cited_by_count": 1,
+        "fwci": 1.3452,
+        "citation_normalized_percentile": 0.72165518,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-11T08:31:13Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-11T08:31:13Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-12T08:31:13Z"
+        }
+      },
+      "selectionScore": {
+        "total": 60.6082759,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.6082758999999998,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-11T08:31:54Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-1b29276c1b475f78",
+      "paper": "Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.",
+      "doi": "10.1186/s12866-026-05726-w",
+      "journal": "BMC microbiology",
+      "date": "2026-11-05",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1186/s12866-026-05726-w",
+      "pmcid": "PMC13737492",
+      "pmid": "42989091",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1471-2180",
+      "eissn": "1471-2180",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-11",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "09553a86edf35b4e32dc5e041b004fde2d7a0bcada529eb19146da9565359ab7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/PMC13737492.1.xml?md5=4c8bd0c9a1d7a39d19472a2f60b6b73e",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "SNP-based phylogenetic analysis of C. koseri. A Core genome SNP–based phylogenetic tree showing the phylogenetic placement of isolate DFU32 among 518 C. koseri strains with publicly available genome sequences in the NCBI database. B Enlarged view of the phylogenetic cluster containing DFU32, highlighting its closest related strains based on core genome SNP analysis. The cluster containing DFU32 is highlighted in purple. Blue bars show the number of recombination blocks per isolate, and red bars show the number of SNPs per recombination block for each isolate",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig1_HTML.webp?md5=1ac272244c2cf7284f5abdc3e8a8b1ef",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "assets/pmc13737492-57e1ac2dc3ec9cb6.webp",
+            "sha256": "57e1ac2dc3ec9cb6c90dd6f463717700a14b5afa2ee82cb0f4f9580b42cc20a5",
+            "width": 1599,
+            "height": 755,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "57e1ac2dc3ec9cb6c90dd6f463717700a14b5afa2ee82cb0f4f9580b42cc20a5",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Pairwise genome alignment of DFU32 against the closely related strain CB00152 (ST1172). The comparison highlights AMR genes uniquely exist in DFU32, with co-localized gene clusters indicated along individual contigs",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig2_HTML.webp?md5=65b7564e8ebbde565ff57e8aebe83a26",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Distribution of antimicrobial resistance genes among C. koseri genomes. A Bar chart showing the prevalence of resistance genes conferring resistance to different classes of antimicrobial agents across C. koseri genomes. B Prevalence of individual AMR genes detected among C. koseri genomes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig3_HTML.webp?md5=476d4c7901bea4d32000db7befd13816",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "SNP-based phylogenetic tree of DFU32 and 381 C. koseri strains carrying acquired resistance genes. Isolates carrying only blaCKO or blaMAL together with fosA7/fosA7.5 were removed from the tree for clarity. The tree is annotated with acquired resistance genes: solid squares indicate gene presence, and hollow squares indicate gene absence. The horizontal bars adjacent to each isolate represent the total number of resistance genes carried",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig4_HTML.webp?md5=fc4fa58eb286b9162eeaf1894cb34f09",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Box-and-whisker plot showing the total number of resistance genes carried by different sequence types of C. koseri. Each box represents the interquartile range, the horizontal line within the box indicates the median, the whiskers show the minimum and maximum values, and the plus sign (+) within each box represents the mean number of resistance genes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig5_HTML.webp?md5=c0c1304c3a98ecca4c3aa9670fbfbcbb",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Circos plots of the global distribution, year of isolation, and sequence types of C. koseri strains carrying carbapenemase- and mcr-coding genes. A The global distribution of carbapenemase- and mcr-coding genes by country of isolation. B The distribution of carbapenemase- and mcr-coding genes according to the year of isolation. C Circos plot depicting the association between carbapenemase- and mcr-coding genes STs. In all panels, ribbon widths are proportional to the number of reported isolates. Figures were generated using Circos Table Viewer v0.63-10 [42]",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig6_HTML.webp?md5=619565918bb6fefa995f0a1d1c5c4191",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Stacked bar chart showing the prevalence of different replicon types across individual gene types. Each bar segment represents the number of isolates carrying the specified gene-replicon combination",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig7_HTML.webp?md5=f7814472f10acd070216e1a56bfb4c2d",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Genetic map of the mcr-9.1–carrying transposon integrated into the chromosome of C. koseri strain IR025 (GenBank accession no. NZ_JAXBAE010000013.1), showing the flanking IS26 and IS903B family transposase-coding genes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig8_HTML.webp?md5=4681193c35d25cbddd046440b31efa1a",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Fig. 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Gene maps showing comparison of the blaKPC-2–harbouring transposon. Panel A shows Klebsiella pneumoniae strain DD02201 plasmid pKPC-DD02201 (CP096241.1; 24,048–47,079). Panels B and C show C. koseri strain K2521 (NZ_CP136828.1; 310,580–337,045 and 483,924–501,865), while Panels D and E show C. koseri strain K2721 (NZ_CP136832.1; 4,727,335–4,753,800 and 4,900,225–4,917,449). Grey blocks indicate shared sequence regions. Arrows represent open reading frames (ORFs): orange for transposase or integrase genes, red for resistance genes, and blue for restriction–modification system genes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig9_HTML.webp?md5=9fa3d6128a9287f8575261ebff098df5",
+            "articleURL": "https://doi.org/10.1186/s12866-026-05726-w",
+            "asset": "assets/pmc13737492-1a6a517b6c83b82b.webp",
+            "sha256": "1a6a517b6c83b82b5f73728bf5dbfcc8bf9b487aec904585a658741b581481a1",
+            "width": 1600,
+            "height": 991,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al.. Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.. DOI: 10.1186/s12866-026-05726-w. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1a6a517b6c83b82b5f73728bf5dbfcc8bf9b487aec904585a658741b581481a1",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_MOESM1_ESM.xlsx?md5=371a93be0e1571cba47db9376e1a2ed3",
+            "license": "CC BY",
+            "sha256": "47095708fffb6cad2a989fc84b0fcb72d706ed0799cb649bc880477354510ed2",
+            "status": "downloaded_private",
+            "bytes": 1864286,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_MOESM2_ESM.xlsx?md5=5d2e5e395ec72d5bb9707f5e41b3758b",
+            "license": "CC BY",
+            "sha256": "f5a1b132dc9ef050a4910ce80d6b409405615ba31812c27017339b793c9da8c5",
+            "status": "downloaded_private",
+            "bytes": 1922963,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-11T08:31:38.595122+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Samira M. Hamed; Manal M. Darwish; Mohamed Samir; Reham Monir; Ahmed Al Taweel; Ayat I. Ghanem; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.4",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-11T08:31:41Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-11T08:31:42Z",
+        "url": "https://openalex.org/W7225291934",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-11T08:31:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-11T08:31:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-12T08:31:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-11T08:31:55Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -209081,6 +210198,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-26a4d4750a4acb89": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-80d2858adb1e9f7e": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-1b29276c1b475f78": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -210699,7 +211834,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-11T08:29:45Z",
+  "generatedAt": "2026-11-11T08:31:56Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -210933,18 +212068,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-11T08:25:06Z",
-    "updatedAt": "2026-11-11T08:29:58Z",
+    "updatedAt": "2026-11-11T08:32:03Z",
     "batchCount": 2,
-    "requests": 35,
-    "aiAttempts": 0,
+    "requests": 73,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

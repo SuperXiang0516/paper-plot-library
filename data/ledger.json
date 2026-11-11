@@ -222,12 +222,45 @@
     },
     "2026-11-11": {
       "newDOIs": [
+        "10.1111/acel.70806",
+        "10.1186/s12866-026-05726-w",
         "10.1186/s13040-026-00581-x",
+        "10.1186/s13073-026-01719-6",
         "10.1371/journal.pgen.1012332"
       ]
     }
   },
   "candidates": {
+    "10.1186/s12909-026-10014-2": {
+      "checkedAt": "2026-11-11T08:31:47Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1186/s12866-026-05726-w": {
+      "checkedAt": "2026-11-11T08:31:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-11T08:31:26Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1111/acel.70806": {
+      "checkedAt": "2026-11-11T08:31:23Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1186/s13073-026-01719-6": {
+      "checkedAt": "2026-11-11T08:31:14Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pgen.1012332": {
       "checkedAt": "2026-11-11T08:29:43Z",
       "status": "source_confirmed",
@@ -257,61 +290,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1186/s12866-026-05726-w": {
-      "checkedAt": "2026-11-10T08:55:49Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s12866-026-05726-w",
-        "metadataHash": "fac58971f1782662a2da25f5fd6f3ce06f39fe64ff0108796ff03a331d340182",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/PMC13737492.1.xml?md5=4c8bd0c9a1d7a39d19472a2f60b6b73e",
-          "license": "CC BY",
-          "figures": [
-            {
-              "height": 755,
-              "assetSHA256": "57e1ac2dc3ec9cb6c90dd6f463717700a14b5afa2ee82cb0f4f9580b42cc20a5",
-              "id": "Fig1",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig1_HTML.webp?md5=1ac272244c2cf7284f5abdc3e8a8b1ef",
-              "label": "Fig. 1",
-              "width": 1599,
-              "sha256": "57e1ac2dc3ec9cb6c90dd6f463717700a14b5afa2ee82cb0f4f9580b42cc20a5",
-              "license": "CC BY",
-              "asset": "assets/pmc13737492-57e1ac2dc3ec9cb6.webp",
-              "captionHash": "4b0b4a5d04b7374c57beb20da93fb0b880fda62a7fb9241bb7ba89e2f9c369d2"
-            },
-            {
-              "height": 991,
-              "assetSHA256": "1a6a517b6c83b82b5f73728bf5dbfcc8bf9b487aec904585a658741b581481a1",
-              "id": "Fig9",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13737492.1/12866_2026_5726_Fig9_HTML.webp?md5=9fa3d6128a9287f8575261ebff098df5",
-              "label": "Fig. 9",
-              "width": 1600,
-              "sha256": "1a6a517b6c83b82b5f73728bf5dbfcc8bf9b487aec904585a658741b581481a1",
-              "license": "CC BY",
-              "asset": "assets/pmc13737492-1a6a517b6c83b82b.webp",
-              "captionHash": "c6d5d50d9566f39fabb476c2ddfdfe2168dfdaa99050a113498d27bd6386c3b0"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-1b29276c1b475f78",
-          "doi": "10.1186/s12866-026-05726-w",
-          "paper": "Comparative genomic and resistome analysis of Citrobacter koseri: first genome report from Egypt.",
-          "journal": "BMC microbiology",
-          "date": "2026-11-05",
-          "year": "2026",
-          "pmcid": "PMC13737492",
-          "pmid": "42989091",
-          "paperURL": "https://doi.org/10.1186/s12866-026-05726-w"
-        },
-        "updatedAt": "2026-11-10T08:55:47Z"
-      }
     },
     "10.1111/acel.70812": {
       "checkedAt": "2026-11-10T08:55:45Z",
@@ -2027,61 +2005,6 @@
           "paperURL": "https://doi.org/10.1002/imt2.70154"
         },
         "updatedAt": "2026-10-22T06:59:20Z"
-      }
-    },
-    "10.1186/s13073-026-01719-6": {
-      "checkedAt": "2026-10-22T06:59:19Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s13073-026-01719-6",
-        "metadataHash": "90507276f64b0127195332846fcc17f2e7f45d75203bf68d286daebf956639c7",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/PMC13425876.1.xml?md5=de799b93e78110e9b17c2253cd85e51f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 778,
-              "sha256": "4da30c3b4445fe0e607f6725e55a584c3fbc3664396ef7b8dfca22a3a298a2da",
-              "label": "Fig. 1",
-              "height": 900,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig1_HTML.jpg?md5=9deba989ca020ff2964627c963b5bf15",
-              "asset": "assets/pmc13425876-4da30c3b4445fe0e.jpg",
-              "license": "CC BY",
-              "assetSHA256": "4da30c3b4445fe0e607f6725e55a584c3fbc3664396ef7b8dfca22a3a298a2da",
-              "id": "Fig1",
-              "captionHash": "09a0b6ceb911109d0326e0a439f6d58700b3c2018e6dbb1ce5d6e2c7df67b9c3"
-            },
-            {
-              "width": 794,
-              "sha256": "0f573d71a90835246953a1f4630b8e814ce6d7b429dee6bd520b081e495d0746",
-              "label": "Fig. 4",
-              "height": 925,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13425876.1/13073_2026_1719_Fig4_HTML.jpg?md5=1060a47ba03cc9b356a17677b9692ece",
-              "asset": "assets/pmc13425876-0f573d71a9083524.jpg",
-              "license": "CC BY",
-              "assetSHA256": "0f573d71a90835246953a1f4630b8e814ce6d7b429dee6bd520b081e495d0746",
-              "id": "Fig4",
-              "captionHash": "7e79aaf5ddc428e0c2917e32853f9e66bfe797f55109c8cab400d3104ef40167"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-80d2858adb1e9f7e",
-          "doi": "10.1186/s13073-026-01719-6",
-          "paper": "Single-cell analysis of the progeria arterial wall reveals progerin-induced progressive, cell type-specific dysfunction and somatic mutation accumulation.",
-          "journal": "Genome medicine",
-          "date": "2026-07-31",
-          "year": "2026",
-          "pmcid": "PMC13425876",
-          "pmid": "42538566",
-          "paperURL": "https://doi.org/10.1186/s13073-026-01719-6"
-        },
-        "updatedAt": "2026-10-22T06:59:17Z"
       }
     },
     "10.1093/bioinformatics/btag588": {
@@ -12370,25 +12293,20 @@
   "dailyCollectionSession": {
     "maxSeconds": 2700,
     "batchCount": 2,
-    "updatedAt": "2026-11-11T08:29:58Z",
-    "requests": 35,
+    "updatedAt": "2026-11-11T08:32:03Z",
+    "requests": 73,
     "date": "2026-11-11",
     "maxRequests": 1800,
     "version": 1,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "uncertainAiAttempts": 0,
     "uncertainRequests": 0,
     "startedAt": "2026-11-11T08:25:06Z",
     "status": "active",
     "maxBatches": 36,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "endReason": "",
-    "elapsedSeconds": 293,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-11T08:29:58Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 417,
+    "maxAiAttempts": 165
   }
 }
