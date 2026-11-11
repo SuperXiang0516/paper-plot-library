@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-10",
+  "checkedAt": "2026-11-11",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -151166,6 +151166,743 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-9d6c5060ea8377db",
+      "doi": "10.1186/s13040-026-00581-x",
+      "paper": "Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.",
+      "journal": "BioData mining",
+      "date": "2026-07-07",
+      "year": "2026",
+      "pmcid": "PMC13435457",
+      "pmid": "42415183",
+      "paperURL": "https://doi.org/10.1186/s13040-026-00581-x",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1756-0381",
+      "eissn": "1756-0381",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "1f10947f542bbb7ae0ca8afebe2893cf826be8b1dac63aa175d765574a1200be"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/PMC13435457.1.xml?md5=b7e859ba75c2674ddafdb95c1b0e1f54",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Conceptual schematic illustrating the research purpose and analytical concept. (A) Overview of the analytical workflow and its objectives. (B) Hypothetical examples of box-and-whisker plots of module scores by cluster under good vs. poor clustering conditions. Optimal clustering is defined as the configuration in which MSC marker gene module scores are selectively elevated in a single cluster",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig1_HTML.jpg?md5=5f8b5db6bdc2a6cb26e8dd06530a082d",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "assets/pmc13435457-25bcf9efbd733620.jpg",
+            "sha256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
+            "width": 750,
+            "height": 715,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Examples of automated extraction of MSCs from human dental pulp scRNA-seq data using different marker sets. (A) Comparison of the three-marker set (ENG, THY1, NT5E) and the six-marker set (ENG, THY1, NT5E, FRZB, NOTCH3, and MCAM) using the proposed workflow. First column: module scores of the MSC marker sets projected onto UMAP. Second column: optimized score across different numbers of clusters. The selected number of clusters is indicated by a red dotted line. Third column: box-and-whisker plots of MSC marker-set module scores under the optimal clustering condition. Fourth column: MSCs identified under the optimal clustering condition. (B) Optimized scores using five-marker sets, excluding FRZB, NOTCH3, or MCAM",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig2_HTML.jpg?md5=5ff6f2047cf809004d0d32bef18a6ba6",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "assets/pmc13435457-bb7a85bc12d253b8.jpg",
+            "sha256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
+            "width": 709,
+            "height": 871,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "MSC extraction results in healthy donors’ dental pulp scRNA-seq data (GSE274562). Column descriptions are the same as in Fig. 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig3_HTML.jpg?md5=ccd564fcd6ab4db58ac4882369d8546b",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "MSC extraction results from pulpitis donors’ dental pulp scRNA-seq data (GSE280528). Column descriptions are the same as in Fig. 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig4_HTML.jpg?md5=6523fdb002cfaf70d207a7f73cc19684",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Pseudo-bulk transcriptomic comparison of MSCs in dental pulp between pulpitis and healthy donors. (A) Volcano plot illustrating differential gene expression in MSCs comparing donors with pulpitis and healthy donors. Genes significantly upregulated in pulpitis are shown in red, genes significantly downregulated in pulpitis are shown in blue, and non-significant genes (NS) are shown in gray. (B) GSEA based on log2 Fold change (pulpitis/healthy). Gene sets with adjusted p-value < 0.05 are shown, and the top 10 gene sets ranked by absolute normalized enrichment scores (NES) are displayed",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig5_HTML.jpg?md5=dc33524c1cdd087f6dfdb5c1d4ab9eb4",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "MSC extraction results in six donors’ dental pulp scRNA-seq data (GSE274652). Column descriptions are the same as in Fig. 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig6_HTML.jpg?md5=9794b29127170e7ef9cdb0ff93f53bf0",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Pseudo-bulk transcriptomic association analysis of dental pulp MSCs with donor age (A) GSEA of Spearman correlation coefficients between gene expression value and donor age. Gene sets with adjusted p-value < 0.05 are shown. (B) Comparison of GSEA results between pulpitis and donor aging. Scatter plot showing the normalized enrichment scores (NES) of all 50 hallmark gene sets. Gene sets significantly enriched only in donor aging are shown in red, those significant only in pulpitis are shown in blue, and those significant in both conditions are shown in purple. Gene set UV_RESPONSE_UP was significantly associated in the same direction in both analyses",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig7_HTML.jpg?md5=b94086dba0474bced9b55cd6ddff692c",
+            "articleURL": "https://doi.org/10.1186/s13040-026-00581-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka. Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.. DOI: 10.1186/s13040-026-00581-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_MOESM1_ESM.pdf?md5=a3aa3a12093c2a18727d6161d18eccdf",
+            "license": "CC BY",
+            "sha256": "8e68b9a01a37ddd56448c33e512b23d4aa68f9bf33f2b9730d5f31aa01f70239",
+            "status": "downloaded_private",
+            "bytes": 358947,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_MOESM2_ESM.csv?md5=055441bef0a141105e95f114b3ed2c41",
+            "license": "CC BY",
+            "sha256": "398c4ff16dc816429d16b3901316a077bedc599fda1137011e404b142fc2e59f",
+            "status": "downloaded_private",
+            "bytes": 1638649,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_MOESM3_ESM.csv?md5=07b3312bd166e9a557ee3ba2cb5d2deb",
+            "license": "CC BY",
+            "sha256": "5005daef79425b9b43a4754540bb499a18c13f112dcd54652a9bf3538c4f9082",
+            "status": "downloaded_private",
+            "bytes": 23950,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_MOESM4_ESM.csv?md5=e5b86b29cf569aad046791e163358f61",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-11T08:28:49.599068+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Daigo Okada; Tomoko Takeda-Kawaguchi; Ken-Ichi Tezuka"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.9",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-11T08:28:55Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-11T08:28:55Z",
+        "url": "https://openalex.org/W7167581957",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-11T08:28:55Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-11T08:28:55Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-12T08:28:55Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-11T08:29:44Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-60902df52c202940",
+      "paper": "Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.",
+      "doi": "10.1371/journal.pgen.1012332",
+      "journal": "PLoS genetics",
+      "date": "2026-11-06",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pgen.1012332",
+      "pmcid": "PMC13742947",
+      "pmid": "42993701",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-7390",
+      "eissn": "1553-7404",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-11",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "epigenetic_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "7350c71dc6a637919237c3e83cf976b9dd46c4cc3b9621ce047a80a3f8f82c36"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/PMC13742947.1.xml?md5=4087bbf9fbb8e167796adc11b585baa0",
+        "figures": [
+          {
+            "id": "pgen.1012332.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overall workflow of the study.Abbreviations: BBJ, Biobank Japan; CpG, cytosine-phosphoguanine; DFTJ, Dongfeng-Tongji; DNAm, DNA methylation; eQTL, expression quantitative trait loci; GWAS, Genome-wide association studies; HGVD, Human Genetic Variation Database; JCTF, Japan COVID-19 Task Force; MWAS, Methylome-wide association studies; NJMU, Nanjing Medical University; SMR, summary data-based Mendelian randomization; SUMMIT, the Summary-level Unified Method for Modeling Integrated Transcriptome; LASSO, Least Absolute Shrinkage and Selection Operator; ElNet, Elastic Net; MCP, Minimax Concave Penalty; SCAD, Smoothly Clipped Absolute Deviation; MNet, Elastic Net with MCP penalty; TWAS, Transcriptome-wide association studies.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g001.webp?md5=952e7fcbe0cb360532d4dfcd04c27a95",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012332",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xingjie Hao; Minghan Qu; Yi Jiang; Cheng Wang; Ziwei Zhu; Pinpin Long; et al.. Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.. DOI: 10.1371/journal.pgen.1012332. Copyright holder: Hao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012332.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Predictive performance of gene expression models.(A) Comparison of the number of genes with test R2 > 0.01 for EAS- and EUR-specific models across five penalized regression models. (B) Comparison of the test R2 for EAS- and EUR-specific models. (C) QQ plot of P values for the correlation between observed and predicted expression. The test R2 and the P values are selected from the best model with highest R2 among five training methods for each gene and only genes with best model achieving test R2 > 0.01 are included in panels B and C.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g002.webp?md5=68d6c0c51e5bfb5d943821e33a9bf319",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012332",
+            "asset": "assets/pmc13742947-60db0e4beaf298b5.webp",
+            "sha256": "60db0e4beaf298b5233b5e2359f34b765eebce23bc99665601d2a278dbef9b22",
+            "width": 1599,
+            "height": 563,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xingjie Hao; Minghan Qu; Yi Jiang; Cheng Wang; Ziwei Zhu; Pinpin Long; et al.. Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.. DOI: 10.1371/journal.pgen.1012332. Copyright holder: Hao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "60db0e4beaf298b5233b5e2359f34b765eebce23bc99665601d2a278dbef9b22",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pgen.1012332.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Transcriptome-wide and methylome-wide association study for lung cancer.(A) Manhattan plot of TWAS results in the discovery stage. Significant genes are labeled, with novel susceptibility genes highlighted in red. P-values represent PACAT across five methods with −log10(PACAT) capped at 50. (B) Comparison of Z-scores for 25 significant genes between the discovery and replication stages. Z-scores are derived from the best prediction model for each gene. (C) Manhattan plot of MWAS results in the discovery stage. (D) Comparison of Z-scores for 42 significant CpGs between the discovery and the replication stages. The horizontal dashed line marks the FDR-corrected genome-wide significance threshold and the diamonds indicate replicated genes/CpGs in the panel A and C.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g003.webp?md5=5e641fff25baa8ba8179383f1936199f",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012332",
+            "asset": "assets/pmc13742947-cfc67048140699de.webp",
+            "sha256": "cfc67048140699de63890844b75b808a910792b2ad94742dca60245004477785",
+            "width": 1600,
+            "height": 987,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xingjie Hao; Minghan Qu; Yi Jiang; Cheng Wang; Ziwei Zhu; Pinpin Long; et al.. Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.. DOI: 10.1371/journal.pgen.1012332. Copyright holder: Hao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "cfc67048140699de63890844b75b808a910792b2ad94742dca60245004477785",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pgen.1012332.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Prioritizing genes and regulatory elements at the RP11-147L13.11 locus for lung cancer.Results of the three-step SMR analysis that integrates data from GWAS, eQTL, and mQTL studies are shown. The top panel shows −log10P of SNPs from the GWAS meta-analysis for lung cancer. Black diamonds highlight the SMR results for cg19720302, cg04849995, and RP11-147L13.11, as well as the GWAS result for rs78192857. The blue and orange dashed lines indicate the significance thresholds for the gene-lung cancer and CpG-lung cancer SMR analyses, respectively. The second panel shows −log10PeQTL of SNPs for RP11-147L13.11 in the EAS eQTL meta-analysis. The third and fourth panels show −log10PmQTL of SNPs for cg19720302 and cg04849995 in the DFTJ mQTL study. rs78192857, the top cis-eQTL for RP11-147L13.11, was used as the index SNP and all other SNPs are colored according to their linkage disequilibrium (LD; r²) with rs78192857. Gene annotations and genomic positions on chromosome 17 are shown at the bottom.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g004.webp?md5=5aed2ecdec83277aeb6027af74bd1b78",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012332",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xingjie Hao; Minghan Qu; Yi Jiang; Cheng Wang; Ziwei Zhu; Pinpin Long; et al.. Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.. DOI: 10.1371/journal.pgen.1012332. Copyright holder: Hao et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pgen.1012332.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s001.xlsx?md5=77a188e550d8fa552954bbdde7a83768",
+            "license": "CC BY",
+            "sha256": "52e7c247effbe7a1ed5fa5ee2fef41b7958cd562c7df8fa2d3654fbbd8f3720d",
+            "status": "downloaded_private",
+            "bytes": 10203,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s002",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s002.xlsx?md5=636d6b9cd32db920802eac3f73b65692",
+            "license": "CC BY",
+            "sha256": "a3abbcd0c874d5d83a2ce07bb6f7cf7952f6456bcf207915b4d52772d788dc13",
+            "status": "downloaded_private",
+            "bytes": 15770,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s003",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s003.xlsx?md5=16085204aba9b252aa6f38d8bf62387e",
+            "license": "CC BY",
+            "sha256": "5b8af39f2ebd6df8afcdd0730099405619c0c69a0461d6ec051537ff694326be",
+            "status": "downloaded_private",
+            "bytes": 13515,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s004",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s004.xlsx?md5=b847fcf5eb83faccd6bc60068607436b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s005",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s005.xlsx?md5=d40655f06d88f7e709b639bbc39c3c94",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s006",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s006.xlsx?md5=8b5dbc7de5bf00a8b39bd7efc8d6e18a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s007",
+            "label": "S7 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s007.xlsx?md5=4ac637c456c4085542560aa474cd5165",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s008",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s008.tif?md5=5c133e1b029935c18204c96441eea2f1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s009",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s009.tif?md5=178ee53eaab38f09da0341f0b43accc5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s010",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s010.tif?md5=730f78e93c9a742a6f8fa79c188f356a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012332.s011",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.s011.tif?md5=8e47e12771938b543ebd90980933b4eb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-11T08:29:39.324933+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xingjie Hao; Minghan Qu; Yi Jiang; Cheng Wang; Ziwei Zhu; Pinpin Long; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.9",
+        "jcr": "Q2",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-11T08:29:43Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-11T08:29:43Z",
+        "url": "https://openalex.org/W7225388976",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-11T08:29:43Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-11T08:29:43Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-12T08:29:43Z"
+        }
+      },
+      "selectionScore": {
+        "total": 41,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-11T08:29:45Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -208332,6 +209069,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-9d6c5060ea8377db": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-60902df52c202940": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -209950,7 +210699,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-10T08:55:59Z",
+  "generatedAt": "2026-11-11T08:29:45Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -210184,18 +210933,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-11T08:25:06Z",
-    "updatedAt": "2026-11-11T08:25:10Z",
+    "updatedAt": "2026-11-11T08:29:51Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 35,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

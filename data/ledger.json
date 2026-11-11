@@ -219,63 +219,44 @@
         "10.1155/humu/5598948",
         "10.1186/s40104-026-01526-4"
       ]
+    },
+    "2026-11-11": {
+      "newDOIs": [
+        "10.1186/s13040-026-00581-x",
+        "10.1371/journal.pgen.1012332"
+      ]
     }
   },
   "candidates": {
     "10.1371/journal.pgen.1012332": {
-      "checkedAt": "2026-11-10T08:55:54Z",
+      "checkedAt": "2026-11-11T08:29:43Z",
       "status": "source_confirmed",
       "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pgen.1012332",
-        "metadataHash": "ecca9c7d19aed9af02a0f82f1e285ac7e5197fffd3b5ddebd81f8c40f0654103",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/PMC13742947.1.xml?md5=4087bbf9fbb8e167796adc11b585baa0",
-          "license": "CC BY",
-          "figures": [
-            {
-              "height": 563,
-              "assetSHA256": "60db0e4beaf298b5233b5e2359f34b765eebce23bc99665601d2a278dbef9b22",
-              "id": "pgen.1012332.g002",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g002.webp?md5=68d6c0c51e5bfb5d943821e33a9bf319",
-              "label": "Fig 2",
-              "width": 1599,
-              "sha256": "60db0e4beaf298b5233b5e2359f34b765eebce23bc99665601d2a278dbef9b22",
-              "license": "CC BY",
-              "asset": "assets/pmc13742947-60db0e4beaf298b5.webp",
-              "captionHash": "107bb3e9a4bae94e3d6892dbf44af2de288fd51c66147c6f857fc170ed7f7494"
-            },
-            {
-              "height": 987,
-              "assetSHA256": "cfc67048140699de63890844b75b808a910792b2ad94742dca60245004477785",
-              "id": "pgen.1012332.g003",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13742947.1/pgen.1012332.g003.webp?md5=5e641fff25baa8ba8179383f1936199f",
-              "label": "Fig 3",
-              "width": 1600,
-              "sha256": "cfc67048140699de63890844b75b808a910792b2ad94742dca60245004477785",
-              "license": "CC BY",
-              "asset": "assets/pmc13742947-cfc67048140699de.webp",
-              "captionHash": "446565e6acfbe6591c2f05a507fc1f6557cafc72c1e3992dd50bccf76d4e9574"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-60902df52c202940",
-          "doi": "10.1371/journal.pgen.1012332",
-          "paper": "Transcriptome- and methylome-wide association studies prioritized lung cancer genes in East Asian populations.",
-          "journal": "PLoS genetics",
-          "date": "2026-11-06",
-          "year": "2026",
-          "pmcid": "PMC13742947",
-          "pmid": "42993701",
-          "paperURL": "https://doi.org/10.1371/journal.pgen.1012332"
-        },
-        "updatedAt": "2026-11-10T08:55:52Z"
-      }
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-11T08:29:23Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-11T08:29:09Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-11T08:29:07Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1186/s13040-026-00581-x": {
+      "checkedAt": "2026-11-11T08:28:55Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
     },
     "10.1186/s12866-026-05726-w": {
       "checkedAt": "2026-11-10T08:55:49Z",
@@ -355,24 +336,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-10T08:53:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-10T08:53:34Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-10T08:53:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1093/bioadv/vbag187": {
       "checkedAt": "2026-11-10T08:53:31Z",
@@ -1827,61 +1790,6 @@
       "status": "pending",
       "retryClass": "transient",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1186/s13040-026-00581-x": {
-      "checkedAt": "2026-10-22T07:01:08Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1186/s13040-026-00581-x",
-        "metadataHash": "1d4bd97ac3a289a4cbc69ac95869fb19661aa45ac9fafc58c4741cd81ec9e436",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/PMC13435457.1.xml?md5=b7e859ba75c2674ddafdb95c1b0e1f54",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 750,
-              "sha256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
-              "label": "Fig. 1",
-              "height": 715,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig1_HTML.jpg?md5=5f8b5db6bdc2a6cb26e8dd06530a082d",
-              "asset": "assets/pmc13435457-25bcf9efbd733620.jpg",
-              "license": "CC BY",
-              "assetSHA256": "25bcf9efbd73362014eb8d3a7fa8911bd3b5ba58a351af7488ec72bc7bf56769",
-              "id": "Fig1",
-              "captionHash": "01de568c9c8fcc29fbb4a86c09f6e1d96bb0d04d560642ac0d2f6edb657d6791"
-            },
-            {
-              "width": 709,
-              "sha256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
-              "label": "Fig. 2",
-              "height": 871,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13435457.1/13040_2026_581_Fig2_HTML.jpg?md5=5ff6f2047cf809004d0d32bef18a6ba6",
-              "asset": "assets/pmc13435457-bb7a85bc12d253b8.jpg",
-              "license": "CC BY",
-              "assetSHA256": "bb7a85bc12d253b811fda07e14b13c35d40bfbbd36b88051b447d438e16b9371",
-              "id": "Fig2",
-              "captionHash": "bf535c141b5bc50d7c3db19cb61528a8ebb45623a83f020da17f8945b49c4698"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-9d6c5060ea8377db",
-          "doi": "10.1186/s13040-026-00581-x",
-          "paper": "Automatic extraction of mesenchymal stromal cells from single-cell RNA-sequencing data of human dental pulp.",
-          "journal": "BioData mining",
-          "date": "2026-07-07",
-          "year": "2026",
-          "pmcid": "PMC13435457",
-          "pmid": "42415183",
-          "paperURL": "https://doi.org/10.1186/s13040-026-00581-x"
-        },
-        "updatedAt": "2026-10-22T07:01:07Z"
-      }
     },
     "10.1002/imt2.70150": {
       "checkedAt": "2026-10-22T07:00:23Z",
@@ -12462,12 +12370,12 @@
   "dailyCollectionSession": {
     "maxSeconds": 2700,
     "batchCount": 1,
-    "updatedAt": "2026-11-11T08:25:10Z",
-    "requests": 0,
+    "updatedAt": "2026-11-11T08:29:51Z",
+    "requests": 35,
     "date": "2026-11-11",
     "maxRequests": 1800,
     "version": 1,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "uncertainAiAttempts": 0,
     "uncertainRequests": 0,
     "startedAt": "2026-11-11T08:25:06Z",
@@ -12475,12 +12383,7 @@
     "maxBatches": 36,
     "aiAttempts": 0,
     "endReason": "",
-    "elapsedSeconds": 5,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-11T08:25:10Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "elapsedSeconds": 285,
+    "maxAiAttempts": 165
   }
 }
