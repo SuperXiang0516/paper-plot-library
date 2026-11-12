@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-11",
+  "checkedAt": "2026-11-12",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -153020,6 +153020,1148 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-7f932e65f4294072",
+      "doi": "10.1155/humu/7869246",
+      "paper": "Multiomic Investigation of Shared Genetic Pathways in Paediatric Congenital Heart Disease and Neurodevelopmental Disorders.",
+      "journal": "Human mutation",
+      "date": "2026-08-21",
+      "year": "2026",
+      "pmcid": "PMC13498852",
+      "pmid": "42633081",
+      "paperURL": "https://doi.org/10.1155/humu/7869246",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1059-7794",
+      "eissn": "1098-1004",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "db5b67b94be7e8f6569aee56876efac4ca4344fb4b603b4bb3c05b66c517c5a9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498852.1/PMC13498852.1.xml?md5=0cab9af8dd28dc0ce91043cae1f2ee9b",
+        "figures": [
+          {
+            "id": "fig-0001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Epigenetic age acceleration in trios with CHD and/or NDD. Hannum age acceleration stratified by family relationship and disease status. Box plots showing the distribution of age acceleration (epigenetic age minus chronological age) calculated using the Hannum blood‐specific clock. The cardiac group (HLHS patients, n = 3) shows markedly higher age acceleration compared with control subjects (n = 12) and NDD‐only patients (n = 21). Each point represents an individual sample. Boxes indicate interquartile range (IQR), centre lines show medians and whiskers extend to 1.5 × IQR.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498852.1/HUMU-2026-7869246-g001.webp?md5=442dd30afa2c18e7011cc37d3d15ff9a",
+            "articleURL": "https://doi.org/10.1155/humu/7869246",
+            "asset": "assets/pmc13498852-4756712bbf93a40a.webp",
+            "sha256": "4756712bbf93a40aaef7634a24457fef23605029bda5dfe13d964e2291347ecc",
+            "width": 600,
+            "height": 529,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jamie-Lee M. Thompson; Yunkai Gao; Eri Iwasawa; Debjani Das; Emma Rath; Michael Troup; et al.. Multiomic Investigation of Shared Genetic Pathways in Paediatric Congenital Heart Disease and Neurodevelopmental Disorders.. DOI: 10.1155/humu/7869246. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4756712bbf93a40aaef7634a24457fef23605029bda5dfe13d964e2291347ecc",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig-0002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Differentially methylated positions in probands compared with controls. Individual proband methylation analysis identified four outlier cases with extreme methylation dysregulation (Probands 13, 15, 19 and 20) showing > 10,000 DMPs, whereas the remaining probands displayed moderate changes (149–6568 DMPs). Genomic context distribution shows distinct patterns across outlier probands: (A) Proband 13 (72,355 total DMPs) shows predominant hypomethylation in open sea regions (23,602 sites) with balanced hypermethylation in CpG islands (19,275 sites). (B) Proband 15 (10,037 DMPs) exhibits predominantly hypermethylation in CpG islands (2387 sites) and open sea regions (3126 sites). (C) Proband 19 (56,816 DMPs) displays extensive hypomethylation in open sea regions (25,483 sites) with hypermethylation in shores (10,392 sites). (D) Proband 20 (49,618 DMPs) shows a similar pattern with 23,602 hypomethylated open sea sites. DMPs were defined using limma comparison against 178 control samples (FDR < 0.05, |Δ β| > 0.2). Genomic contexts defined per Illumina MethylationEPIC array annotation. Definitions are as follows: CpG islands are regions with > 50% GC content, > 60% CpG observed/expected ratio and minimum length of 200 bp; shores are regions flanking CpG islands within 2 kb (2000 bp); shelves are regions 2–4 kb (2000–4000 bp) from CpG islands; and open sea regions are isolated CpGs located > 4 kb (4000 bp) from any CpG island.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498852.1/HUMU-2026-7869246-g002.webp?md5=b59f940864e73d92542fbfb2f158a031",
+            "articleURL": "https://doi.org/10.1155/humu/7869246",
+            "asset": "assets/pmc13498852-919540a8ed01ffdc.webp",
+            "sha256": "919540a8ed01ffdc4186eafab4d679d6521e191679ee6f4049cb036bab5ff358",
+            "width": 600,
+            "height": 487,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jamie-Lee M. Thompson; Yunkai Gao; Eri Iwasawa; Debjani Das; Emma Rath; Michael Troup; et al.. Multiomic Investigation of Shared Genetic Pathways in Paediatric Congenital Heart Disease and Neurodevelopmental Disorders.. DOI: 10.1155/humu/7869246. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "919540a8ed01ffdc4186eafab4d679d6521e191679ee6f4049cb036bab5ff358",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "link-0001",
+            "label": "Supporting Information Additional supporting information can be found online in the Supporting Information section. File S1: Full description of patie",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498852.1/HUMU-2026-7869246-s001.docx?md5=a70aa73226cd436cf56f9952f0c6bcc5",
+            "license": "CC BY",
+            "sha256": "561a4939ec24e4098373b9fac535e830bbd45c8937b4137b5d1ebba24b630b15",
+            "status": "downloaded_private",
+            "bytes": 769661,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/VCCRI/NDD_multiomic_study_2025"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-12T08:57:52.203397+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/VCCRI/NDD_multiomic_study_2025",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498852.1/PMC13498852.1.xml?md5=0cab9af8dd28dc0ce91043cae1f2ee9b"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jamie-Lee M. Thompson; Yunkai Gao; Eri Iwasawa; Debjani Das; Emma Rath; Michael Troup; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/VCCRI/NDD_multiomic_study_2025",
+        "commit": "40bccb17e36b9e4dad201d67d44d0f62a2d34616",
+        "license": "CC0-1.0",
+        "scripts": [
+          {
+            "path": "scripts/dmr_analysis.r",
+            "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/dmr_analysis.r",
+            "sha256": "37aa8780b3c32c2f7ac43e2ce31f5d70f13138c5e87906e6d28a99ffdc97bf4c",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "output_dir",
+                "line": 74,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_info_file",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Batch",
+                "line": 110,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Group",
+                "line": 112,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "analysis_batches",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Analysis_Group",
+                "line": 119,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Sample",
+                "line": 132,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "idat_dirs",
+                "line": 141,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Basename",
+                "line": 158,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Sample_Name",
+                "line": 159,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Array",
+                "line": 160,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Dataset",
+                "line": 161,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "base_dir",
+                "line": 176,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "qc_threshold",
+                "line": 186,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "RGset",
+                "line": 189,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "targets",
+                "line": 190,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 205,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Address",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "detP",
+                "line": 256,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "control_probes",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mSet",
+                "line": 281,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 315,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Probe_rs",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpG_rs",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dmr_fdr_threshold",
+                "line": 410,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta_beta_threshold",
+                "line": 411,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probe",
+                "line": 426,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta_beta",
+                "line": 427,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "adj.P.Val",
+                "line": 430,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pos",
+                "line": 444,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 445,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UCSC_RefGene_Name",
+                "line": 445,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "feature",
+                "line": 446,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UCSC_RefGene_Group",
+                "line": 446,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "message",
+                "line": 467,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "results",
+                "line": 471,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "patient_id",
+                "line": 481,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probes",
+                "line": 509,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dmrs",
+                "line": 514,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/epigenetic_age_analysis.r",
+            "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r",
+            "sha256": "980883240f8c448fca683339608e29f7e9caacd0acbd65005b712c4e4fbdee65",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "beta_matrix.csv",
+                "reader": "read_csv",
+                "line": 37,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "family_info.csv",
+                "reader": "read_csv",
+                "line": 38,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Age",
+                "line": 65,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum_Age",
+                "line": 87,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 37,
+                "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r#L37"
+              },
+              {
+                "type": "io_reference",
+                "line": 38,
+                "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r#L38"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/methylation_pathway_analysis.r",
+            "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r",
+            "sha256": "b282add33e5ff8ad3dd5786a39e1668c69e43fbcefd013bd30b9087f12748fea",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "dmr_results.txt",
+                "reader": "read.delim",
+                "line": 17,
+                "status": "literal_path",
+                "format": "txt",
+                "readerOptions": {
+                  "header": 0
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "go_bp_dotplot.png",
+                "writer": "ggsave",
+                "line": 140
+              },
+              {
+                "path": "go_bp_barplot.png",
+                "writer": "ggsave",
+                "line": 141
+              }
+            ],
+            "fields": [
+              {
+                "name": "seqnames",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene.Name",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probeID",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Annotation",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Entrez.ID",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene.Type",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "revmap",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probe_id",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "entrezID",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_type",
+                "line": 61,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 17,
+                "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r#L17"
+              },
+              {
+                "type": "io_reference",
+                "line": 140,
+                "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r#L140"
+              },
+              {
+                "type": "io_reference",
+                "line": 141,
+                "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r#L141"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "beta_matrix.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Age",
+                "line": 65,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum_Age",
+                "line": 87,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r",
+            "line": 37,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "family_info.csv",
+            "path": "",
+            "reader": "read_csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Age",
+                "line": 65,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Hannum_Age",
+                "line": 87,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r",
+            "line": 38,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dmr_results.txt",
+            "path": "",
+            "reader": "read.delim",
+            "format": "txt",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "seqnames",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene.Name",
+                "line": 28,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probeID",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Annotation",
+                "line": 30,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Entrez.ID",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Gene.Type",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "revmap",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "probe_id",
+                "line": 49,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "annotation",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "entrezID",
+                "line": 58,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_type",
+                "line": 61,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r",
+            "line": 17,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "1.8",
+        "jcr": "Q4",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-12T08:57:56Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-12T08:57:57Z",
+        "url": "https://openalex.org/W7203964120",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-12T08:57:57Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-12T08:57:57Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-13T08:57:57Z"
+        }
+      },
+      "selectionScore": {
+        "total": 78,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-12T08:58:07Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "儿童先天性心脏病与神经发育障碍共享遗传通路的多组学研究",
+        "summary_zh": "该研究针对14个三人组和1个二人组(共2例同时患NDD与CHD、2例仅患CHD、11例仅患NDD)的血液样本,开展全基因组测序、RNA测序和DNA甲基化谱分析,以整合多组学方式考察NDD和/或CHD患者的基因组、转录组与表观基因组发现。摘要报告检出1个约2.5 Mb的大片段缺失和7个可能致病/致病(LP/P)变异,其中2个位于与患者表型相关的常染色体显性基因,5个位于常染色体隐性基因且与携带者状态一致;还包括ARID1B中一个可能致病的de novo剪接破坏变异,并经RNA测序验证。DNA甲基化分析显示CHD与NDD患者之间存在表观遗传差异,CHD患者表现出升高的生物学年龄加速;与178例对照的参考队列比较,识别出4例甲基化失调极端的先证者,其中包括携带ARID1B变异的个体。图1展示按家庭关系和疾病状态分层的Hannum年龄加速箱线图;图2展示先证者与对照相比的差异甲基化位点及基因组背景分布。",
+        "learning_points": [
+          "研究采用全基因组测序、RNA测序和DNA甲基化谱分析的整合多组学设计,样本为14个三人组和1个二人组的血液样本。",
+          "摘要报告检出1个约2.5 Mb大片段缺失和7个LP/P变异,并区分常染色体显性基因中的表型相关变异与常染色体隐性基因中的携带者状态变异。",
+          "ARID1B中的可能致病de novo剪接破坏变异经RNA测序验证,体现转录组数据对基因组变异的功能支持。",
+          "图1以Hannum血液特异性时钟计算表观遗传年龄减实际年龄的年龄加速,并按家庭关系和疾病状态分层展示;图注称心脏组(HLHS患者,n=3)年龄加速明显高于对照组(n=12)和仅NDD患者(n=21)。",
+          "图2显示4例极端甲基化失调先证者(13、15、19、20号)的DMP数超过10,000,其余先证者为149–6568个DMP;DMP由limma与178例对照比较定义(FDR<0.05,|Δβ|>0.2)。",
+          "图2的基因组背景分布显示不同极端先证者的低甲基化/高甲基化在open sea、CpG island、shore等区域呈现不同模式。",
+          "脚本静态观察显示表观年龄分析读取beta_matrix.csv与family_info.csv,甲基化通路分析读取dmr_results.txt并输出GO BP点图与条形图;这些仅为代码文本观察,未运行验证。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证;不能宣称结果已复现或与原文一致。",
+          "图号与输入数据尺度的对应关系未明示,相关映射保持未知。",
+          "图1图注中各组样本量(心脏组n=3、对照n=12、仅NDD n=21)与摘要所述队列构成(14个三人组和1个二人组)之间的对应关系未在证据中说明,未知。",
+          "图2图注文本在CpG island定义处截断,完整定义未知。",
+          "证据未提供甲基化通路分析的具体通路结果、统计量或图件内容,相关结论未知。",
+          "证据未提供ARID1B变异RNA测序验证的具体方法细节与定量结果。",
+          "证据未说明Hannum时钟计算的具体实现、协变量调整或年龄加速的统计检验方法。",
+          "证据未提供数据可获取性、伦理审批或外部验证队列信息,均未知。",
+          "证据未提供期刊指标、许可条款或图表复现所需环境依赖信息,均未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "script-0",
+          "script-1",
+          "script-2"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-12T08:58:13Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "7e31eaba12e4a5eca706031a8dca7990c082f264a8eb760ecaa1735194b2ccd8",
+        "summary_fingerprint": "d62eca4c7b3f0c8ddf928bc5eafd02e7e80daa4ce15fabcab8eb7fb09cffc8eb",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-e56c5a4e30eb9582",
+      "paper": "Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.",
+      "doi": "10.34133/research.1470",
+      "journal": "Research (Washington, D.C.)",
+      "date": "2026-11-09",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.34133/research.1470",
+      "pmcid": "PMC13745766",
+      "pmid": "43005289",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2639-5274",
+      "eissn": "2639-5274",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-12",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "de5764ece138c474d10e52a682fb42ccd95ab05ed18d82ec02a6a0efffb09cc6"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/PMC13745766.1.xml?md5=5938eb9a6838df1d24a5f25bf37a5ca4",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The diabetes-related gene SCGN might mediate anxiety-like behaviors via the microbiota. (A) The schematic diagram details the procedure for tissue sample collection from SPF db/m and db/db mice. The tissues collected include the gut, adrenal gland, pancreas, liver, thyroid, and brain. (B) Representative immunoblots illustrate the expression of SCGN in various tissues derived from db/m and db/db mice. (C) A quantitative analysis of SCGN expression levels across different tissues (n = 4 mice per group). (D) The experimental timeline for SPF WT and Scgn−/− mice is detailed. Following weaning, the experimental mice were housed individually to eliminate social influences. Fecal, brain, and plasma samples were collected at 84 d of age to assess gut microbiota composition. During the subsequent 2 weeks (days 84 to 98), a comprehensive series of behavioral tests was performed in the following order: open-field test, elevated plus maze test, light–dark box test, tail suspension test, and forced swim test. Notably, a subset of mice was sacrificed immediately after the initial EPM test for c-Fos immunostaining to evaluate neuronal activation patterns. (E) Representative movement trajectories of SPF WT and Scgn−/− mice during the open-field test are depicted. (F) The total distance traveled by SPF WT and Scgn−/− mice in the open-field test is quantified (n = 11 mice per group). (G) The duration spent in the center area during the open-field test by SPF WT and Scgn−/− mice is reported (n = 11 mice per group). (H) Representative movement trajectories for SPF WT and Scgn−/− mice during the elevated plus maze test. (I) The duration spent in the open arms of the elevated plus maze test by SPF WT and Scgn−/− mice is quantitatively assessed (n = 11 mice per group). (J) The number of entries into the elevated plus maze test by SPF WT and Scgn−/− mice is documented (n = 11 mice per group). (K) The duration spent in the light compartment of the light–dark box test by SPF WT and Scgn−/− mice is evaluated (n = 11 mice per group). (L) Counts of compartment transitions observed in SPF WT and Scgn−/− mice during the light–dark box test (n = 11 mice per group). (M) The immobility time of SPF WT and Scgn−/− mice during the tail suspension test is measured (n = 11 mice per group). (N) The immobility time of SPF WT and Scgn−/− mice during the forced swim test is also documented (n = 11 mice per group). (O) This diagram presents the experimental timeline involving GF WT and Scgn−/− mice. Following weaning, the mice were individually housed in separate cages. At 84 d of age, samples were obtained from the mPFC and plasma. Behavioral assessments were then conducted over the following 2 weeks in the subsequent order: open-field test, elevated plus maze test, light–dark box test, tail suspension test, and forced swim test. (P) Representative movement trajectories of GF WT and Scgn−/− mice in the elevated plus maze test. (Q) The time spent in open arms by GF WT and Scgn−/− mice in the elevated plus maze test is reported (n = 11 mice per group). (R) The number of entries into open arms by GF WT and Scgn−/− mice in the elevated plus maze test is presented (n = 11 mice per group). (S) The duration spent in the light compartment by GF WT and Scgn−/− mice in the light–dark box test is documented (n = 11 mice per group). (T) The counts of compartment transitions for GF WT and Scgn−/− mice in the light–dark box test are specified (n = 11 mice per group). (U) The total distance traveled by GF WT and Scgn−/− mice in the open-field test is noted (n = 11 mice per group). (V) The duration spent in the center area for GF WT and Scgn−/− mice in the open-field test is indicated (n = 11 mice per group). (W) The immobility time of GF WT and Scgn−/− mice during the tail suspension test is recorded (n = 11 mice per group). (X) The immobility time of GF WT and Scgn−/− mice during the forced swim test is documented (n = 11 mice per group). Data are presented in box plots, showing the median and interquartile range, with individual data points representing biological replicates. For statistical analysis, an unpaired 2-tailed Student’s t test was applied to the data points labeled in (C), (F), (G), (I) to (N), and (Q) to (X). NS, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.001.webp?md5=73ea6152de6e2789eeccb3508d506f39",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "assets/pmc13745766-d7b26582d77f6722.webp",
+            "sha256": "d7b26582d77f67223a9f65bed1f69ea2a89a04be17460ac39376d8dabba6ffbb",
+            "width": 1600,
+            "height": 1578,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d7b26582d77f67223a9f65bed1f69ea2a89a04be17460ac39376d8dabba6ffbb",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "SCGN knockout alters gut microbiota composition and SCFA metabolism, while also induces anxiety-like behavior. (A) The α diversity of fecal microbiota in SPF WT, Scgn−/−, and co-housed mice was measured using the Shannon–Wiener index (n = 9 mice per group). (B) A PCA plot illustrating β diversity in gut microbiota communities among SPF WT, Scgn−/−, and co-housed mice (n = 9 mice per group). (C) Relative abundance profiles at the phylum level for SPF WT, Scgn−/−, and co-housed mice are shown (n = 9 mice per group). (D) Differentially enriched KEGG pathways inferred from the microbiome are depicted, with pathways enriched in Scgn−/− mice indicated in red, and those enriched in WT mice represented in blue. (E) The mean relative abundance (%, mean proportion) of representative taxa that are differentially abundant across the 4 groups is displayed. The dashed box highlights Odoribacter splanchnicus (n = 9 mice per group). (F) Representative movement trajectories of GF mice following FMT from SPF WT and Scgn−/− donors in the elevated plus maze test are provided. (G) The time spent in the open arms of GF mice following FMT from SPF WT and Scgn−/− donors in the elevated plus maze test is reported (n = 10 mice per group). (H) Open arm entries of GF mice following FMT from SPF WT and Scgn−/− donors in the elevated plus maze test (n = 10 mice per group). (I) The time spent in the light compartment of GF mice following FMT from SPF WT and Scgn−/− donors in the light–dark box test is detailed (n = 10 mice per group). (J) Compartment transition counts of GF mice following FMT from SPF WT and Scgn−/− donors in the light–dark box test are illustrated (n = 10 mice per group). (K) Levels of SCFAs measured in feces and plasma samples from SPF WT and SPF Scgn−/− mice are provided (n = 4 mice per group). (L) Levels of SCFAs measured in plasma samples from mice following FMT from SPF WT and Scgn−/− donors (n = 4 mice per group). Data are presented as box plots denoting the median and interquartile range, with individual data points representing biological replicates. NS, not significant. Statistical analysis: A one-way ANOVA was conducted, followed by Tukey’s post hoc test for comparisons in (A) and (E). An unpaired 2-tailed Student’s t test was employed for the analysis of (G) to (L).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.002.webp?md5=d1bea57dd247e73c132ccf9fc9cd55a4",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "assets/pmc13745766-77bc327a55c98d3b.webp",
+            "sha256": "77bc327a55c98d3b7604ea7835f8c43546e088b06910dd9133e122f434506713",
+            "width": 1600,
+            "height": 2411,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "77bc327a55c98d3b7604ea7835f8c43546e088b06910dd9133e122f434506713",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Molecular expression profiles and metabolomic analysis in Scgn−/− mouse brain. (A) Representative images of c-Fos immunofluorescence in the mPFC, BLA, PVN, and the hippocampal CA1, CA3, and dentate gyrus (DG) regions of SPF WT and Scgn−/− mice are shown at 90 min following the EPM test. Red: c-Fos; blue: 4′,6-diamidino-2-phenylindole (DAPI). Scale bars are 200 μm for the BLA and 100 μm for the remaining regions. White dashed lines delineate the boundaries of the analyzed brain regions (mPFC, BLA, PVN, CA1, CA3, and DG). (B) A comparison of the number of c-Fos-positive cells across various brain regions in SPF WT and Scgn−/− mice is provided (n = 4 mice per group). (C) An untargeted metabolomic analysis of the mPFC was conducted in SPF WT and Scgn−/− mice. (D) The heatmap illustrates the differential metabolites identified in the mPFC of SPF WT and Scgn−/− mice (n = 6 mice per group) (C, SPF WT; S, SPF Scgn−/−). (E) A PCA plot depicts the metabolic profiles in the mPFC of SPF WT and Scgn−/− mice (n = 6 mice per group) (C, SPF WT; S, SPF Scgn−/−). (F) The top 15 differential metabolites are ranked based on their VIP values when comparing SPF WT and Scgn−/− mice. (G) An MSEA was performed on all differential expression metabolites between SPF WT and Scgn−/− mice. Data are presented as box plots showing the median and interquartile range, with individual data points representing biological replicates. NS, not significant. Statistical analysis: An unpaired 2-tailed Student’s t test was employed for the analysis in (B).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.003.webp?md5=7596e2eee0cff7c140a3949899fa7a65",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Altered expression of tryptophan metabolism enzymes in the mPFC and associated metabolite profiles. (A) Schematic illustration depicting the modulation of tryptophan metabolism in the brain by butyrate. (B) Representative Western blots showing the expression levels of tryptophan metabolism-related enzymes in the mPFC of SPF WT and Scgn−/− mice. (C to G) Protein expression levels of enzymes related to tryptophan metabolism in SPF WT and Scgn−/− mice are displayed, specifically (C) IDO1, (D) KYNU, (E) ACMSD, (F) KMO, and (G) HAAO (n = 5 mice per group). (H and I) Concentrations of l-kynurenine and QA in the mPFC of SPF WT and Scgn−/− mice (n = 5 mice per group). (J) Representative Western blots of KYNU and IDO1 in the mPFC of GF mice following FMT from SPF WT and Scgn−/− donors. (K and L) Protein expression levels of KYNU and IDO1 in GF mice post-FMT from SPF WT and Scgn−/− donors (n = 5 mice per group). (M and N) Concentrations of l-kynurenine and QA in GF mice following FMT from SPF WT and Scgn−/− donors in the mPFC (n = 5 mice per group). (O) Representative Western blots of KYNU and IDO1 in the mPFC of both SPF and GF Scgn−/− mice. (P and Q) Protein expression levels of KYNU and IDO1 in SPF and GF Scgn−/− mice (n = 5 mice per group). (R and S) Concentrations of l-kynurenine and QA in the mPFC of SPF and GF Scgn−/− mice (n = 5 mice per group). (T) Immunofluorescent staining in the mPFC illustrates the presence of IDO1 (green), NeuN (yellow), and DAPI (blue). The left panels display images at 5× magnification (scale bar, 100 μm), while the right panels display images at 20× magnification (scale bar, 25 μm) (n = 3 mice per group). (U) Butyric acid levels in the mPFC of SPF WT and Scgn−/− mice are noted, with a sample size of n = 4 mice per group. (V) A correlation heatmap illustrates the relationship between butyric acid levels in the mPFC and various behavioral indices. Notably, butyric acid content is positively correlated with open arm time (%) in the elevated plus maze and time spent in light (seconds) in the light/dark box test. However, it does not show a significant correlation with center time (seconds). The color scale indicates Pearson correlation coefficients (r), with blue indicating positive and yellow indicating negative correlations. (W) Plasma butyrate levels of diabetic patients with SAS < 50 (n = 41) and SAS ≥ 50 (n = 10). Data are presented as box plots, showing the median and interquartile range; individual data points represent biological replicates. NS, not significant. Statistical analysis: An unpaired 2-tailed Student’s t test was applied to comparisons: (C) to (I), (K) to (N), (P) to (S), (U), and (W). Spearman correlation with linear regression fitting was used for (V).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.004.webp?md5=af7907748dd3fc83ca98be0420f95c34",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Butyrate supplement and Odoribacter splanchnicus treatment influence behavioral phenotypes and metabolomic changes in the mPFC of Scgn−/− mice. (A) The experimental timeline illustrates the administration of butyrate to SPF WT and Scgn−/− mice. Following weaning, the mice were individually housed in separate cages. At 77 d of age, the experimental mice underwent 1 week of butyrate treatment, during which their drinking water was substituted with a solution containing 5 g/l butyrate. Subsequent to treatment, brain samples from the mPFC were collected at 84 d of age, and behavioral tests were conducted over the ensuing 2 weeks in the following sequence: elevated plus maze test and light–dark box test. (B) Representative movement trajectories illustrate the behavior of both butyrate-treated and untreated SPF WT and Scgn−/− mice during the elevated plus maze test. (C) The duration spent in the open arms of the elevated plus maze test is presented, comparing butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 10 mice per group). (D) The duration spent in the light compartment during the light–dark box test is reported for both butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 10 mice per group). (E) Representative Western blots depict the expression of enzymes associated with tryptophan metabolism in the mPFC of both butyrate-treated and untreated SPF WT and Scgn−/− mice. (F and G) The protein expression levels of KYNU (F) and IDO1 (G) were evaluated in both butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 5 mice per group). (H and I) The concentrations of QA (H) and l-kynurenine (I) in the mPFC of butyrate-treated and untreated SPF WT and Scgn−/− mice were also evaluated (n = 5 mice per group). (J) An untargeted metabolomics analysis of the mPFC from butyrate-treated and untreated SPF Scgn−/− mice was conducted (n = 6 mice per group). (K) A PCA plot illustrates the metabolic profiles in the mPFC of butyrate-treated and untreated SPF Scgn−/− mice (n = 6 mice per group) (S, SPF Scgn−/−; SB, SPF Scgn−/− butyrate-treated). (L) A representative heatmap shows the differential metabolites in the mPFC of butyrate-treated and untreated SPF Scgn−/− mice (n = 6 mice per group) (S, SPF Scgn−/−; SB, SPF Scgn−/− butyrate-treated). (M) The top 15 differential metabolites, ranked VIP values, are compared between butyrate-treated and untreated SPF Scgn−/− mice. (N) An MSEA of all differential metabolites between butyrate-treated and untreated SPF Scgn−/− mice was performed. (O) The experimental schedule for SPF WT and Scgn−/− mice is detailed below. After weaning, laboratory mice were housed separately to eliminate social influence. At 77 d of age, FMT followed by monobacterial treatment was administered, and at 84 d, fecal, brain, and plasma samples were stopped to assess gut microbiome composition. Over the following 2 weeks (days 84 to 98), a series of comprehensive behavioral tests were conducted in the following order: open-field test, elevated plus maze test, light and dark box test, tail dangling test, and forced swimming test. (P) Relative abundance of Odoribacter splanchnicus in the gut of mice with different genotypes. Compared with WT mice, Scgn−/− mice showed significantly reduced relative abundance of Odoribacter splanchnicus. OD intervention in Scgn−/− mice significantly restored the abundance of Odoribacter splanchnicus compared with the untreated Scgn−/− group. Data are presented as box plots with individual data points overlaid (n = 6 mice per group). (Q) Representative movement trajectories illustrate the behavior of both SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice during the elevated plus maze test. (R) The duration spent in the open arms of the elevated plus maze test is presented, comparing SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice (n = 10 mice per group). (S) The duration spent in the light compartment during the light–dark box test is reported for SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice (n = 10 mice per group). (T) Representative Western blots of KYNU and IDO1 expression in the mPFC of SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice. (U and V) Protein expression levels of KYNU and IDO1 were evaluated in SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice (n = 3 mice per group). (W and X) The concentrations of QA (W), l-kynurenine (X), and butyrate (Y) in the mPFC of SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice (n = 5 mice per group). (Y) Concentrations of butyrate in the mPFC of SPF WT + con, Scgn−/− + con, and Scgn−/− + OD mice (n = 4 mice per group). Data are presented as box plots, showing the median and interquartile range, with individual data points representing biological replicates. NS, not significant. Statistical analysis: A one-way ANOVA was conducted, followed by Tukey’s post hoc test for comparisons in (C), (D), (F) to (I), (P), (R), (S), and (U) to (Y).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.005.webp?md5=3c3c4271699be76ce3574807b0b8e8c0",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Effects of butyrate on neuronal activity in the mPFC of mice. (A) The experimental timeline diagram illustrates the in vivo electrophysiology. Following weaning, mice were individually housed. At 77 d of age, electrodes were surgically implanted in the mPFC. Beginning on day 84, the mice received a 1-week butyrate treatment at 5 g/l dissolved in their drinking water. Neuronal activity was subsequently recorded during the elevated plus maze test from days 91 to 98. Throughout this process, all mice were maintained in single-housing post-implantation to safeguard the headmounts; this housing condition was consistent across all experimental groups. (B) The PSD of LFPs in the mPFC was analyzed across various frequency bands, including delta, theta, alpha, beta, and gamma, for both butyrate-treated and untreated SPF WT and Scgn−/− mice. The upper row presents basal levels, while the lower row depicts power fluctuations within 3 s before and after entry into the open arm during the elevated plus maze test (n = 9 to 10 mice per group). (C) Putative interneurons (84 cells, represented in purple) and putative pyramidal neurons (171 cells, represented in orange) were classified using k-means clustering based on metrics including spike trough-to-peak duration and firing rate. (D) A histogram illustrates the distribution of trough-to-peak durations for each neuronal subtype under investigation. (E) Heatmaps illustrate the normalized firing rates of pyramidal neurons in both butyrate-treated and untreated SPF WT and Scgn−/− mice during the 3 s preceding and following transitions into closed and open arms across various experimental groups (n = 28 to 31 cells from 9 to 10 mice per group). (F) The quantification of anxiety-related pyramidal neurons in both butyrate-treated and untreated SPF WT and Scgn−/− mice is also provided (n = 28 to 31 cells from 9 to 10 mice per group). The data are presented as box plots, showing the median and interquartile range, with individual data points corresponding to biological replicates. NS, not significant. Statistical analysis: A one-way ANOVA followed by Tukey’s post hoc test was employed for (B). Fisher’s exact test was utilized for (F).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.006.webp?md5=e31c6801d6b46d31cf4c02aa05fe8b36",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F7",
+            "label": "Fig. 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Effects of butyrate on pyramidal neuron excitability in vitro. (A) Representative action potential traces illustrating neuronal firing in butyrate-treated and untreated SPF WT and Scgn−/− mice. (B) Quantification of the number of action potentials evoked by increasing current injections in butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (C) Neuronal firing frequency in response to a 200-pA current injection in butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (D) Representative traces of sEPSCs recorded from butyrate-treated and untreated SPF WT and Scgn−/− mice. Scale bars: 500 ms (horizontal), 20 pA (vertical). (E) Cumulative distribution of sEPSC amplitudes recorded in pyramidal neurons from butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (F) Mean sEPSC amplitudes in pyramidal neurons from butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (G) Cumulative distribution of inter-event intervals of sEPSCs in pyramidal neurons from both butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (H) Mean sEPSC frequency in pyramidal neurons from butyrate-treated and untreated SPF WT and Scgn−/− mice (n = 15 cells from 5 mice per group). (I) Representative traces of sEPSCs in brain slices of SPF WT, Scgn−/−, Scgn−/− + NaB, Scgn−/− + Epacadostat, and WT + QA mice. Scale bars: 500 ms (horizontal), 20 pA (vertical). (J) Cumulative distribution of sEPSC amplitudes recorded in pyramidal neurons from SPF WT, Scgn−/−, Scgn−/− + NaB, Scgn−/− + Epacadostat, and WT + QA mice (n = 10 cells from 4 mice per group). (K) Mean sEPSC amplitudes in pyramidal neurons from SPF WT, Scgn−/−, Scgn−/− + NaB, Scgn−/− + Epacadostat, and WT + QA mice (n = 10 cells from 4 mice per group). (L) Cumulative distribution of inter-event intervals of sEPSCs in pyramidal neurons from SPF WT, Scgn−/−, Scgn−/− + NaB, Scgn−/− + Epacadostat, and WT + QA mice (n = 10 cells from 4 mice per group). (M) Mean sEPSC frequencies in pyramidal neurons from SPF WT, Scgn−/−, Scgn−/− + NaB, Scgn−/− + Epacadostat, and WT + QA mice (n = 10 cells from 4 mice per group). The data are expressed as mean ± SEM, with individual data points representing biological replicates. NS, not significant. Statistical analysis: One-way ANOVA followed by Tukey’s post hoc test was conducted for (B), (C), (F), (H), (K), and (M).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.fig.007.webp?md5=c079c15ddaf7341e0a59a2245fcc94c0",
+            "articleURL": "https://doi.org/10.34133/research.1470",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al.. Butyrate Deficiency due to Microbial Dysbiosis Promotes Anxiety.. DOI: 10.34133/research.1470. Copyright holder: Lianyu Zhou et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplementary 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13745766.1/research.1470.f1.zip?md5=b83f6acefd0fe0f24b319a4e9dec413c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-12T08:58:01.871084+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Lianyu Zhou; Zhenle Zang; Hang Zhang; Xinghang Fei; Gaohui Zhu; Yuan Mu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "12.9",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-12T08:58:03Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-12T08:58:03Z",
+        "url": "https://openalex.org/W7222982832",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-12T08:58:03Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-12T08:58:03Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-13T08:58:03Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-12T08:58:14Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -210216,6 +211358,184 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-7f932e65f4294072": {
+      "tree": "beta_matrix.csv\nfamily_info.csv\ndmr_results.txt",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "beta_matrix.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r；读取行 37；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r",
+          "observedFieldReferences": [
+            {
+              "name": "Age",
+              "line": 65,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum",
+              "line": 73,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum_Age",
+              "line": 87,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "family_info.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r；读取行 38；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/epigenetic_age_analysis.r",
+          "observedFieldReferences": [
+            {
+              "name": "Age",
+              "line": 65,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum",
+              "line": 73,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Hannum_Age",
+              "line": 87,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dmr_results.txt",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "txt",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r；读取行 17；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/VCCRI/NDD_multiomic_study_2025/blob/40bccb17e36b9e4dad201d67d44d0f62a2d34616/scripts/methylation_pathway_analysis.r",
+          "observedFieldReferences": [
+            {
+              "name": "seqnames",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "end",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Gene.Name",
+              "line": 28,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "probeID",
+              "line": 29,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Annotation",
+              "line": 30,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "direction",
+              "line": 31,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Entrez.ID",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Gene.Type",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "revmap",
+              "line": 45,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 46,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "probe_id",
+              "line": 49,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "annotation",
+              "line": 52,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "entrezID",
+              "line": 58,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_type",
+              "line": 61,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-e56c5a4e30eb9582": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -211834,7 +213154,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-11T08:31:56Z",
+  "generatedAt": "2026-11-12T08:58:15Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -212068,18 +213388,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-12T08:52:03Z",
-    "updatedAt": "2026-11-12T08:52:08Z",
+    "updatedAt": "2026-11-12T08:58:22Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 40,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
