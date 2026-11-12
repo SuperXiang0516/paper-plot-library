@@ -231,12 +231,43 @@
     },
     "2026-11-12": {
       "newDOIs": [
+        "10.1093/bioinformatics/btag694",
         "10.1155/humu/7869246",
         "10.34133/research.1470"
       ]
     }
   },
   "candidates": {
+    "10.1002/jex2.70197": {
+      "checkedAt": "2026-11-12T09:00:18Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-12T09:00:17Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-12T09:00:12Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-12T09:00:09Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/bioinformatics/btag694": {
+      "checkedAt": "2026-11-12T09:00:01Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1186/s12909-026-10014-2": {
       "checkedAt": "2026-11-12T08:58:06Z",
       "status": "pending",
@@ -273,12 +304,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-11T08:31:26Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1111/acel.70806": {
       "checkedAt": "2026-11-11T08:31:23Z",
       "status": "source_confirmed",
@@ -296,12 +321,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-11T08:29:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1186/s13040-026-00581-x": {
       "checkedAt": "2026-11-11T08:28:55Z",
@@ -480,12 +499,6 @@
     },
     "10.1016/j.psj.2026.107960": {
       "checkedAt": "2026-11-09T08:44:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-09T08:44:30Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -2579,61 +2592,6 @@
           "paperURL": "https://doi.org/10.1038/s41586-026-10522-7"
         },
         "updatedAt": "2026-10-22T06:54:47Z"
-      }
-    },
-    "10.1093/bioinformatics/btag694": {
-      "checkedAt": "2026-10-22T06:53:53Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag694",
-        "metadataHash": "4b720c1d838555544024db996a5c57299b52d4d866be1cf2385d1260bc11da54",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/PMC13633670.1.xml?md5=9bf9718b5039dc649d5cafb164926fea",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "sha256": "58513be72e676c499ac61d834a76bccce84585fcbd834820f2c92fa4405ce68a",
-              "label": "Figure 3",
-              "height": 567,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f3.webp?md5=6a78c375a22767835b8a62374d27285f",
-              "asset": "assets/pmc13633670-58513be72e676c49.webp",
-              "license": "CC BY",
-              "assetSHA256": "58513be72e676c499ac61d834a76bccce84585fcbd834820f2c92fa4405ce68a",
-              "id": "btag694-F3",
-              "captionHash": "ef6356b1911facbf3734c26aace85b444d9b233240d90c01ec82412656fef032"
-            },
-            {
-              "width": 1599,
-              "sha256": "0031a039261883f3f474e5ea56dd12cd3aac02fdf3dfca93bb278f56720a939a",
-              "label": "Figure 4",
-              "height": 483,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f4.webp?md5=2f1a768b524e1841b0ea4e9282bfc0a7",
-              "asset": "assets/pmc13633670-0031a039261883f3.webp",
-              "license": "CC BY",
-              "assetSHA256": "0031a039261883f3f474e5ea56dd12cd3aac02fdf3dfca93bb278f56720a939a",
-              "id": "btag694-F4",
-              "captionHash": "3b39b2177c00f48541ac13189e8a368895629a61f875adeb3b7cd7a594b3b450"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-781bfaffa921fa00",
-          "doi": "10.1093/bioinformatics/btag694",
-          "paper": "VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13633670",
-          "pmid": "42760254",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag694"
-        },
-        "updatedAt": "2026-10-22T06:53:49Z"
       }
     },
     "10.1186/s13059-026-04118-7": {
@@ -12257,24 +12215,19 @@
     "version": 1,
     "uncertainRequests": 0,
     "maxBatches": 36,
-    "elapsedSeconds": 391,
+    "elapsedSeconds": 511,
     "maxAiAttempts": 165,
-    "aiAttempts": 1,
+    "aiAttempts": 2,
     "endReason": "",
-    "updatedAt": "2026-11-12T08:58:33Z",
+    "updatedAt": "2026-11-12T09:00:33Z",
     "batchCount": 2,
     "startedAt": "2026-11-12T08:52:03Z",
     "maxRequests": 1800,
     "uncertainAiAttempts": 0,
     "maxSeconds": 2700,
-    "requests": 40,
+    "requests": 73,
     "status": "active",
-    "dailyNewCount": 2,
-    "date": "2026-11-12",
-    "inFlight": {
-      "startedAt": "2026-11-12T08:58:33Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 3,
+    "date": "2026-11-12"
   }
 }

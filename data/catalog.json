@@ -154162,6 +154162,2287 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-781bfaffa921fa00",
+      "doi": "10.1093/bioinformatics/btag694",
+      "paper": "VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13633670",
+      "pmid": "42760254",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag694",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "249a8b857c50356dca0e05d1bbe627d98ad59b7ce697e94931cf95e01a47621a"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/PMC13633670.1.xml?md5=9bf9718b5039dc649d5cafb164926fea",
+        "figures": [
+          {
+            "id": "btag694-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Decision logic of VCCV. A calibrated DTI score is evaluated against context-aligned perturbation evidence. Joint posterior triage returns a target-resolved state, a warning/abstention state, or an ambiguity-conditioned follow-up panel.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f1.webp?md5=5208aca5afaa903618bdcfa1bc194bf9",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag694",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Haihui Huang; Yanan Zhou; Dingkui Kang; Yong Liang. VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.. DOI: 10.1093/bioinformatics/btag694. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag694-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Conservative corroboration across pre-trained DTI models. Panel a: paired pooled binary negative log-likelihood (pNLL) reduction with 95% confidence intervals. Panel b: mean ROC-AUC gain across entity or deterministic grouping regimes; context-like and condition-like labels denote sensitivity groupings, not measured Davis/KIBA biology. Exact paired effects are reported in Table S10; Table S1 defines the grouping regimes and their interpretive scope.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f2.webp?md5=ea7ec5afff8fcb30b21cb96921439043",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag694",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Haihui Huang; Yanan Zhou; Dingkui Kang; Yong Liang. VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.. DOI: 10.1093/bioinformatics/btag694. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag694-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Target-disjoint map-fitting ablation and linked same-cell-supported candidate ranking. Panel a orders drug clusters from the target-disjoint ablation endpoint by identity/no-alignment mean-signature ROC-AUC and shows the corresponding VCCV values; panel b compares per-query ROC-AUC for VCCV and context-aware fusion on the linked endpoint; panel c reports descriptive cell-line ROC-AUC. Linked-endpoint paired effects and confidence intervals are reported in Table S6; component point estimates are reported in Table S17.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f3.webp?md5=6a78c375a22767835b8a62374d27285f",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag694",
+            "asset": "assets/pmc13633670-58513be72e676c49.webp",
+            "sha256": "58513be72e676c499ac61d834a76bccce84585fcbd834820f2c92fa4405ce68a",
+            "width": 1600,
+            "height": 567,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Haihui Huang; Yanan Zhou; Dingkui Kang; Yong Liang. VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.. DOI: 10.1093/bioinformatics/btag694. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "58513be72e676c499ac61d834a76bccce84585fcbd834820f2c92fa4405ce68a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "btag694-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Held-out-coordinate measurement prioritization. Panels show (a) policy and matched-random full-coordinate leader recovery across budgets, (b) paired recovery differences, and (c) full-model target-conditional probabilities for two illustrative cases. The full-coordinate leader is the reference used by the evaluation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694f4.webp?md5=2f1a768b524e1841b0ea4e9282bfc0a7",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag694",
+            "asset": "assets/pmc13633670-0031a039261883f3.webp",
+            "sha256": "0031a039261883f3f474e5ea56dd12cd3aac02fdf3dfca93bb278f56720a939a",
+            "width": 1599,
+            "height": 483,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Haihui Huang; Yanan Zhou; Dingkui Kang; Yong Liang. VCCV: conservative transcriptomic corroboration for measurement prioritization of computational drug-target hypotheses.. DOI: 10.1093/bioinformatics/btag694. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0031a039261883f3f474e5ea56dd12cd3aac02fdf3dfca93bb278f56720a939a",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag694_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/btag694_supplementary_data.pdf?md5=effe73cf96733153b7b570f79758eb76",
+            "license": "CC BY",
+            "sha256": "ec877a3d6c750ac6e53a299773ee9b38e7e99b4bdf95f5823300318c11ec23e8",
+            "status": "downloaded_private",
+            "bytes": 731807,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 13,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/bio-ai-source/VCCV"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-12T08:59:55.654035+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/bio-ai-source/VCCV",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13633670.1/PMC13633670.1.xml?md5=9bf9718b5039dc649d5cafb164926fea"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Haihui Huang; Yanan Zhou; Dingkui Kang; Yong Liang"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/bio-ai-source/VCCV",
+        "commit": "dee4984260a3cda723fc9b7d4e32429666fde861",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "vendor/src/eval/figures.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+            "sha256": "efaf540501c41185657ffe1b05de45d2f9f96c58e2209d0e549e920626e5b723",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 56,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 73,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 92,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 105,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "font.family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font_family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "style",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mrr",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eta",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cal_nll",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scenario",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 56,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py#L56"
+              },
+              {
+                "type": "io_reference",
+                "line": 73,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py#L73"
+              },
+              {
+                "type": "io_reference",
+                "line": 92,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py#L92"
+              },
+              {
+                "type": "io_reference",
+                "line": 105,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py#L105"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "reproduce.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/reproduce.py",
+            "sha256": "d4d5a54abfba0b5c7f2c11440c39277e040cb314042b9e17e2189513ec713334",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "raw_bytes",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_files_checked",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_files",
+                "line": 80,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/vccv_fullchain/__init__.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/__init__.py",
+            "sha256": "8b775084cc8ba3f54381482fa1fe6ded613674d97f892bc8862c50ae31efc9f6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/vccv_fullchain/pipeline.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "sha256": "f00e22e5e5817be2e595ac6d07f77c99ac8da5f9c02831ed92e8e6a60109437b",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 205,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 206,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 209,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 210,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 250,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 251,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 316,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 317,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 339,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 424,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_parquet",
+                "line": 429,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 472,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 205,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L205"
+              },
+              {
+                "type": "io_reference",
+                "line": 206,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L206"
+              },
+              {
+                "type": "io_reference",
+                "line": 209,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L209"
+              },
+              {
+                "type": "io_reference",
+                "line": 210,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L210"
+              },
+              {
+                "type": "io_reference",
+                "line": 250,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L250"
+              },
+              {
+                "type": "io_reference",
+                "line": 251,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L251"
+              },
+              {
+                "type": "io_reference",
+                "line": 316,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L316"
+              },
+              {
+                "type": "io_reference",
+                "line": 317,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L317"
+              },
+              {
+                "type": "io_reference",
+                "line": 339,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L339"
+              },
+              {
+                "type": "io_reference",
+                "line": 424,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L424"
+              },
+              {
+                "type": "io_reference",
+                "line": 429,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L429"
+              },
+              {
+                "type": "io_reference",
+                "line": 472,
+                "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py#L472"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/vccv_table1/__init__.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_table1/__init__.py",
+            "sha256": "5b6182076e687035b5a564584b1c312b0554df0fba08d8e50ff2c55cea31edb4",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/vccv_table1/metrics.py",
+            "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_table1/metrics.py",
+            "sha256": "6b469d240c11d1fa0deda03838ae57a2bb002c3e4e56aa97925d518a0cf2bd66",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "font.family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font_family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "style",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mrr",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eta",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cal_nll",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scenario",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+            "line": 56,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "font.family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font_family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "style",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mrr",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eta",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cal_nll",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scenario",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+            "line": 73,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "font.family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font_family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "style",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mrr",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eta",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cal_nll",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scenario",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+            "line": 92,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "font.family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "font_family",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "figure.dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "axes.linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "style",
+                "line": 24,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dpi",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "linewidth",
+                "line": 26,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dataset",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 59,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "auc",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "mrr",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "eta",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cal_nll",
+                "line": 107,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scenario",
+                "line": 93,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+            "line": 105,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 205,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 206,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 209,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 210,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 250,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 251,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 316,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 317,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 339,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 424,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_parquet",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 429,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "files",
+                "line": 129,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "input_hashes",
+                "line": 502,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "status",
+                "line": 615,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "raw_manifest_sha256",
+                "line": 616,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "package_manifest_sha256",
+                "line": 617,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sha256",
+                "line": 94,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "drug_key",
+                "line": 342,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "selected",
+                "line": 475,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_holdout",
+                "line": 476,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a0",
+                "line": 498,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a1",
+                "line": 499,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "a2",
+                "line": 500,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 232,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "target_key",
+                "line": 357,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "instance_id",
+                "line": 234,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+            "line": 472,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-12T09:00:00Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-12T09:00:01Z",
+        "url": "https://openalex.org/W7213661785",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-12T09:00:01Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-12T09:00:01Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-13T09:00:01Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-12T09:00:19Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "VCCV:面向计算药物靶点假设的保守转录组佐证与测量优先级排序",
+        "summary_zh": "该论文提出 VCCV,一种与模型无关的后验分诊层,用于在预训练 DTI 模型之上整合上下文对齐的扰动转录组证据。其核心是用近恒等仿射映射与精确协方差传输更新校准后的 DTI 工作权重,并设置经验性警告分支以在全局不匹配时弃权,同时将残余歧义转化为紧凑的后续基因面板。每个查询被归入目标已解析、弃权或优先面板三种状态之一。摘要报告在五个 DTI 模型上判别力提升(配对 ROC-AUC 增益 0.021–0.037)且负对数似然均下降,并给出警告分数区分强响应谱的 ROC-AUC 0.876 等回顾性激酶相关评估结果。图 1 展示决策逻辑,图 2 展示跨模型保守佐证,图 3 展示目标不相交映射拟合消融与同细胞支持候选排序,图 4 展示留出坐标的测量优先级排序。",
+        "learning_points": [
+          "理解 VCCV 的三态决策逻辑:目标已解析、警告/弃权、歧义条件下的后续面板(图 1 图注)。",
+          "认识其整合思路:以近恒等仿射映射和精确协方差传输,将上下文对齐的扰动证据更新到校准 DTI 工作权重上(摘要)。",
+          "注意评估设计中的分组语义:图 2 中 context-like 与 condition-like 标签是敏感性分组,并非实测 Davis/KIBA 生物学(图 2 图注)。",
+          "区分不同评估端点:图 3 分别涉及目标不相交消融端点、链接端点的逐查询 ROC-AUC 比较,以及描述性细胞系 ROC-AUC(图 3 图注)。",
+          "理解测量优先级评估的参照:图 4 以全坐标领先假设为参照,比较策略面板与匹配随机面板的恢复情况(图 4 图注)。",
+          "从静态代码观察可知,绘图脚本读取 dti_labels.parquet、mechanism_metrics.csv、inference_calibration.csv 等文件(script-0),流水线读取 signatures_do.parquet、mechanism_truth.parquet、observeddo_mu.parquet 等(script-3);这些仅为文件读取层面的静态观察。",
+          "可将摘要中的数值结果(如配对 ROC-AUC 增益 0.021–0.037、警告分数 ROC-AUC 0.876)作为论文自述结果记录,而非独立验证结论。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文一致(inspection-boundary)。",
+          "输入数据的尺度、图号与具体数据列的对应关系未明示,保持未知(inspection-boundary)。",
+          "摘要所述评估为回顾性、激酶相关的评估,外推到其他靶点类别或前瞻场景未知。",
+          "图 2 的分组标签为敏感性分组而非实测生物学,相关解释范围受表 S1 界定(图 2 图注)。",
+          "图 3 的细胞系 ROC-AUC 为描述性结果,不能据此推断因果或泛化性能(图 3 图注)。",
+          "图 4 的恢复评估以全坐标领先假设为参照,其实际测量价值未在证据中说明(图 4 图注)。",
+          "摘要中精确配对效应与置信区间指向补充表(如 S10、S6、S17),本证据未包含这些表内容。",
+          "代码静态观察仅显示若干文件读取语句,未观察到运行结果、随机种子或环境配置细节(script-0、script-1、script-2、script-3)。",
+          "未观察到关于数据许可、期刊指标或独立复现结果的信息,均属未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-12T09:00:26Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "e077d83d859079cc2d6374cee8b67ed4a516dc0214e1ff419a013d96b71077d5",
+        "summary_fingerprint": "cfe548f60429353d9473e188857fd8c776bb2e4c95c86215e331a49a434a70e5",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -211536,6 +213817,1593 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-781bfaffa921fa00": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py；读取行 56；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+          "observedFieldReferences": [
+            {
+              "name": "font.family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "font_family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "style",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dataset",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "model",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "auc",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mrr",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "eta",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cal_nll",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scenario",
+              "line": 93,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py；读取行 73；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+          "observedFieldReferences": [
+            {
+              "name": "font.family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "font_family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "style",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dataset",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "model",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "auc",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mrr",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "eta",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cal_nll",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scenario",
+              "line": 93,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py；读取行 92；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+          "observedFieldReferences": [
+            {
+              "name": "font.family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "font_family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "style",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dataset",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "model",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "auc",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mrr",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "eta",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cal_nll",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scenario",
+              "line": 93,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py；读取行 105；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/vendor/src/eval/figures.py",
+          "observedFieldReferences": [
+            {
+              "name": "font.family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "font_family",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "figure.dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "axes.linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "style",
+              "line": 24,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dpi",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "linewidth",
+              "line": 26,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dataset",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n",
+              "line": 59,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "model",
+              "line": 77,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "auc",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "mrr",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "eta",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cal_nll",
+              "line": 107,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "scenario",
+              "line": 93,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 205；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 206；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 209；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 210；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 250；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 251；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 316；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 317；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 339；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 424；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 429；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py；读取行 472；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/bio-ai-source/VCCV/blob/dee4984260a3cda723fc9b7d4e32429666fde861/src/vccv_fullchain/pipeline.py",
+          "observedFieldReferences": [
+            {
+              "name": "files",
+              "line": 129,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "input_hashes",
+              "line": 502,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "status",
+              "line": 615,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "raw_manifest_sha256",
+              "line": 616,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "package_manifest_sha256",
+              "line": 617,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sha256",
+              "line": 94,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "size",
+              "line": 99,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "drug_key",
+              "line": 342,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "selected",
+              "line": 475,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_holdout",
+              "line": 476,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a0",
+              "line": 498,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a1",
+              "line": 499,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "a2",
+              "line": 500,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "y",
+              "line": 232,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "target_key",
+              "line": 357,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "instance_id",
+              "line": 234,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -213154,7 +217022,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-12T08:58:15Z",
+  "generatedAt": "2026-11-12T09:00:26Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -213388,18 +217256,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-12T08:52:03Z",
-    "updatedAt": "2026-11-12T08:58:33Z",
+    "updatedAt": "2026-11-12T09:00:33Z",
     "batchCount": 2,
-    "requests": 40,
-    "aiAttempts": 1,
+    "requests": 73,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
