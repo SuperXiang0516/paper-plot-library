@@ -237,9 +237,46 @@
         "10.1155/humu/7869246",
         "10.34133/research.1470"
       ]
+    },
+    "2026-11-13": {
+      "newDOIs": [
+        "10.1002/advs.78607",
+        "10.1002/advs.78630",
+        "10.1093/bioinformatics/btag723"
+      ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-13T08:49:44Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.78630": {
+      "checkedAt": "2026-11-13T08:49:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-13T08:49:38Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.78607": {
+      "checkedAt": "2026-11-13T08:49:36Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1093/bioinformatics/btag723": {
+      "checkedAt": "2026-11-13T08:49:30Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1038/s44511-026-00004-w": {
       "checkedAt": "2026-11-12T09:02:22Z",
       "status": "source_confirmed",
@@ -314,12 +351,6 @@
     },
     "10.2147/jhc.s641006": {
       "checkedAt": "2026-11-12T08:58:00Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-12T08:57:58Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -3947,61 +3978,6 @@
           "paperURL": "https://doi.org/10.1093/bioinformatics/btag729"
         },
         "updatedAt": "2026-10-20T06:43:18Z"
-      }
-    },
-    "10.1093/bioinformatics/btag723": {
-      "checkedAt": "2026-10-20T06:43:41Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag723",
-        "metadataHash": "8b251ccb173ca4fe83ded615611433741b1be3b0fda11d2cdead7c39f6d37ca7",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/PMC13661260.1.xml?md5=e6bb2bfe17a347e888e034bf5807d3bc",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "height": 1113,
-              "id": "btag723-F1",
-              "label": "Figure 1",
-              "assetSHA256": "7f194ca1c54e85d1602205d9fc961f86e40820911d0009e8292fd0b5a6f81db3",
-              "asset": "assets/pmc13661260-7f194ca1c54e85d1.webp",
-              "sha256": "7f194ca1c54e85d1602205d9fc961f86e40820911d0009e8292fd0b5a6f81db3",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f1.webp?md5=f37039ea988402af3f5baa437e2eae5f",
-              "width": 1600,
-              "captionHash": "2ecd39bb2fd56106cfe1dbeffdace82e414bd6fa7552e6336280544b8db5df3f"
-            },
-            {
-              "license": "CC BY",
-              "height": 1222,
-              "id": "btag723-F5",
-              "label": "Figure 5",
-              "assetSHA256": "9d7c4bdd47a34ba7d16f7ffd49c16cae1ed0ad6fbd349d2c8b3d7f92dbf62f3d",
-              "asset": "assets/pmc13661260-9d7c4bdd47a34ba7.webp",
-              "sha256": "9d7c4bdd47a34ba7d16f7ffd49c16cae1ed0ad6fbd349d2c8b3d7f92dbf62f3d",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f5.webp?md5=a504aaba3360ce60301eeda7045c75e0",
-              "width": 1600,
-              "captionHash": "3a92afe8d14f45c3b12eb85b692750386a8b930ae2c74ed889c3809f9d59d7c6"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-a0b538396e9449e1",
-          "doi": "10.1093/bioinformatics/btag723",
-          "paper": "scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13661260",
-          "pmid": "42809236",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag723"
-        },
-        "updatedAt": "2026-10-20T06:43:24Z"
       }
     },
     "10.1371/journal.pcbi.1014835": {
@@ -12184,20 +12160,15 @@
     "startedAt": "2026-11-13T08:47:53Z",
     "maxAiAttempts": 165,
     "date": "2026-11-13",
-    "dailyNewCount": 0,
-    "updatedAt": "2026-11-13T08:47:58Z",
-    "elapsedSeconds": 5,
+    "dailyNewCount": 3,
+    "updatedAt": "2026-11-13T08:49:59Z",
+    "elapsedSeconds": 126,
     "batchCount": 1,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "endReason": "",
     "uncertainAiAttempts": 0,
-    "requests": 0,
+    "requests": 51,
     "version": 1,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-13T08:47:58Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }

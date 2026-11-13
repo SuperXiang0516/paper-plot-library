@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-12",
+  "checkedAt": "2026-11-13",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -161030,6 +161030,1245 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-29300d405eee8047",
+      "paper": "CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.",
+      "doi": "10.1002/advs.78607",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-11-10",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78607",
+      "pmcid": "PMC13752233",
+      "pmid": "43010118",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-13",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b321dbf47da5c51b1219dd14f8d581b084ca53b06917385c30975ccf02ee7060"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/PMC13752233.1.xml?md5=032cd049dfbcdb537c8c58127c908fd9",
+        "figures": [
+          {
+            "id": "advs78607-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Senescence induces AV fibrosis and ECM deposition. (a) Representative images of the gross pathology and H&E, Masson trichrome (Masson), Movat, picrosirius red (PSR), and Alizarin Red S staining of aortic valves from patients with AVS and stenosis, and the corresponding non‐sclerotic and non‐calcific aortic valve. Scale bars: 1 mm in bright field and 500 µm in pathological staining. (b) Representative images of gross pathology, H&E, Masson and Movat staining of aortic valves from young (2‐mo) and old (24‐mo) mice. Black arrows indicate commissures. Scale bars: 200 µm. (c) Quantification of AV thickness, collagen‐positive fractions, and proteoglycan‐positive fractions in young and old mice (n = 8, unpaired two‐tailed Student's t‐test). (d) Representative colour Doppler, spectral Doppler, and M‐mode tracings from young and old mice. (e) Cusp separation, transaortic peak velocity, and EF in young and old mice (n = 9, unpaired two‐tailed Student's t‐test). (f) Western blotting of fibrosis‐ and senescence‐related proteins in aortic valves from young and old mice. (g) Quantification of the fold change in indicated proteins from aortic valves in young and old mice (n = 3, unpaired two‐tailed Student's t‐test). (h) Representative images showing gross pathology and H&E, Masson, and Movat staining of aortic valves from control and D‐gal‐induced old WT mice. Black arrows indicate commissures. Scale bar: 200 µm. (i) Quantification of AV thickness, collagen‐positive fractions, and proteoglycan‐positive fractions in aortic valves from control and D‐gal‐induced old WT mice (n = 8, unpaired two‐tailed Student's t‐test). (j) Representative colour Doppler, Doppler, and M‐mode tracings in the control and D‐gal‐induced old mice. (k) Cusp separation, transaortic peak velocity, and EF in the control and D‐gal‐induced old mice (n = 7, unpaired two‐tailed Student's t‐test). (l) Western blotting of fibrosis‐ and senescence‐related proteins in AV from control and D‐gal‐induced old WT mice. (m) Quantification of the fold change in the indicated proteins from the control and D‐gal‐induced aortic valves (n = 3, unpaired two‐tailed Student's t‐test). Data are presented as the mean ± SEM. mo: month; WT: wild type; FN1: Fibronectin; D‐gal: D‐galactose.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g008.webp?md5=cbdc971afa865155c7a50feda617ad1a",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "assets/pmc13752233-88180a2e7167cd98.webp",
+            "sha256": "88180a2e7167cd98fb62970ed4628220d5ee66990a28ff6b9d79832dca409125",
+            "width": 812,
+            "height": 1060,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "88180a2e7167cd98fb62970ed4628220d5ee66990a28ff6b9d79832dca409125",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78607-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "CD34 expression decreases in ageing‐associated AVS. (a) Schematic diagram showing the scRNA‐seq strategy of human aortic valves using data from the public database (PRJNA562645). (b) Left, UMAP plots of integrated scRNA‐seq datasets showing overall cell type and cluster distribution of human aortic valves (top left), and subtype and cluster distribution of valvular interstitial cell subpopulations (bottom left), from young and old patients. Coloured by cluster; Right, split UMAP plots of each group (VICs from young and old groups), coloured by cell cluster. (c) Stack bar plot showing the proportion of VIC subclusters in young and old cells. (d) Dot plot showing the representative DEGs for each VIC subcluster. (e) Bar plot showing the main enriched biological process in each VIC subcluster based on the significant DEGs from each subcluster. (f) Density plot of VIC subclusters in young and old groups across the pseudotime trajectory, coloured by VIC subcluster. (g) Violin plots displaying CD34 gene expression levels in the VIC subcluster for young and old groups. Statistical p values from Wilcoxon testing are added between the two groups. (h) CD34 gene expression trends across the pseudotime trajectory. (i) Representative immunohistochemical (IHC) images illustrating CD34 expression pattern in young and old aortic valves from mice, with magnified views of boxed regions. Dot plot (right) displayed the average optical density of CD34‐positive staining in aortic valves across different groups (n = 6, unpaired two‐tailed Student's t‐test). Scale bars: 200 µm and 100 µm. (j) Western blotting of CD34 expression in aortic valves from young and old mice (upper panel), and control and D‐gal‐induced old mice (lower panel). (k) Quantification of fold changes associated with CD34 expression in AV tissues from young and old mice (left), and control and D‐gal induced old mice (right) (n = 3, unpaired two‐tailed Student's t‐test). (l) Immunofluorescence (IF) staining demonstrating CD34 (red), CD31(green), and αSMA (grey) expression in AV tissues from human with sclerosis and stenosis, together with non‐sclerotic and non‐calcific AV tissues. Scale bars: 500 µm. Data are presented as the mean ± SEM. scRNA‐seq, single‐cell RNA sequencing; VICs, valvular interstitial cells; DEGs, differentially expressed genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g005.webp?md5=ce1a4aba999a9f3c847c0108e094bb6b",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "assets/pmc13752233-b23568ad8b212e44.webp",
+            "sha256": "b23568ad8b212e44f2226784e6a2ba2ea9ca3fead9d45da49edc96b085cf93da",
+            "width": 820,
+            "height": 1037,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b23568ad8b212e44f2226784e6a2ba2ea9ca3fead9d45da49edc96b085cf93da",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78607-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Lineage tracing revealing the contribution of CD34+ cells to myofibroblasts. (a) Schematic showing genetic lineage tracing using Cd34‐CreERT2;R26‐tdT mice. (b) Flow cytometric quantification comparing the percentage of tdTomato (tdT)+ cells in PBMCs isolated from young (2‐mo) and old (24‐mo) Cd34‐CreERT2; R26‐tdT mice. (c) Representative whole‐mount immunostaining images showing tdTomato and CD31 in AV leaflets from young (2‐mo) and old (24‐mo) Cd34‐CreERT2; R26‐tdT mice. Scale bar, 200 µm. (d) Representative images of tdTomato, co‐staining with the activation of fibroblast marker periostin, and mesenchymal cell marker vimentin in young (2‐mo) and old (24‐mo) Cd34‐CreERT2; R26‐tdT mice, with boxed region showing magnification. Scale bars: 200, and 20 µm in magnification images. (e) Quantification of remaining tdT+ cells in AV sections, illustrating the fraction of tdT+ cells that participated in AV remodelling in the indicated group (n = 6, unpaired two‐tailed Student's t‐test). (f) Quantification of the percentages of Periostin+tdT+ cells in the Periostin+ cells in the indicated group (n = 6, unpaired two‐tailed Student's t‐test). (g) Schematic representation of primary CD34+ VICs isolation and the experimental strategy. (h) EDU assay showing cellular proliferation in aortic valvular CD34− and CD34+ cells isolated from Cd34‐CreERT2;R26‐tdT mice, followed by TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation, scale bar: 100 µm. Dotplot (right) displaying the percentages of EDU+ cells in primary valvular cells across different groups (n = 10, two‐way ANOVA followed by Tukey post hoc test); Representative photographs of collagen gels taken at 18 h showing cells after TGF‐β (10 ng/mL) and D‐gal (200 µg/mL). Scale bar: 1 mm. Quantification of gel diameters in indicated groups (right) (n = 6, two‐way ANOVA followed by Tukey post hoc test); Representative transwell image showing cellular migration capacity of indicated cells in response to TGF‐β (10 ng/mL) and D‐gal (200 µg/mL). Scale bar: 100 µm. Quantification (right) of cell counts in indicated groups (n = 6, two‐way ANOVA followed by Tukey post hoc test). (i) Western blot showing the expression of CD34 and fibrosis‐related proteins in the indicated groups, with GAPDH as a loading control. Quantifications are shown on the right (n = 3, two‐way ANOVA followed by Tukey post hoc test). (j) Representative IF staining images for periostin in indicated cells following TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation for 12 h. Scale bar: 20 µm. Data are presented as the mean ± SEM. R26, Rosa26; PBMC, peripheral blood mononuclear cells; CD31: Cluster of differentiation 31.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g006.webp?md5=424690feff68825848437f917c5f8bd3",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78607-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Deletion of CD34+ cells decreases the thickness and fibrosis of the ageing‐ related aortic valve. (a) Schematic diagram showing the experimental design for systemic CD34+ depletion in Cd34‐CreERT2;R26‐tdTomato/DTR mice. (b) Representative colour Doppler, spectral Doppler, and M‐mode tracings of CD34+ cell deletion group and non‐deletion group following D‐gal injection over 2 months. (c–e) Cusp separation, transaortic peak velocity, and EF in the indicated groups (n = 9, unpaired two‐tailed Student's t‐test). (f) Representative images showing gross pathology and H&E, Masson, and Movat staining of aortic valves from CD34+ cell deletion and non‐deletion groups. Black arrows indicate commissures. Scale bar: 200 µm. Quantification (right) of AV thickness, collagen positive fractions and proteoglycan positive fractions in aortic valves from the indicated groups (n = 9, unpaired two‐tailed Student's t‐test). (g) IF staining of periostin, tdTomato, and vimentin in AV sections from CD34+ cell deletion and non‐deletion groups after d‐gal induction over 2 months, with magnified boxed regions showing split channels to the right. Scale bars: 200 µm and 20 µm. Quantification of the percentage of periostin+ tdT+ cells among periostin+ cells (n = 6, unpaired two‐tailed Student's t‐test). (h) Western Blot analyses of CD34 and fibrosis‐related proteins in the indicated groups; Quantifications shown in Figure S6g. (i) Schematic diagram showing the experimental design for non‐BM and BM CD34+ cell deletion in indicated chimeric mice using BM transplantation (BMT), DT injection, Tamoxifen, and D‐gal induction, respectively. (j) Representative images obtained using Movat staining of aortic valves from indicated groups. Scale bar: 200 µm. (k) Quantification of AV proteoglycan‐positive fractions in aortic valves from the indicated groups (n = 6, unpaired two‐tailed Student's t‐test). (l) IF staining for periostin, tdTomato, and vimentin in AV sections from the indicated groups following D‐gal induction for 2 months, with magnified boxed regions showing split channels to the right. Scale bars: 200 µm and 20 µm. (m) Quantification of the percentage of Periostin+tdT+ cells in Periostin+ cells (n = 5, unpaired two‐tailed Student's t‐test). Data are presented as mean ± SEM.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g002.webp?md5=f72eea76810085ca891ce898d1879901",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78607-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "CD34+ cells generated Periostin+ valve interstitial cells involved AV remodelling. (a) Schematic diagram illustrating the construction strategy of Cd34‐Dre;Postn‐Cre ERT2;Dou‐tdT‐DTR mice. (b) Schematic diagram showing the experimental design for genetic tracing and selective deletion of CD34+ cell‐derived Periostin+ cells using dual recombinase‐ based lineage tracing in Cd34‐Dre;Postn‐CreERT2; Dou‐tdT‐DTR mice. (c) Representative images of H&E, Masson, and Movat staining of aortic valves from CD34+Periostin+ cell deletion group (DT) and non‐deletion group (No DT). Quantification (right) of AV thickness, collagen‐positive fractions and proteoglycan‐positive fractions in the indicated group (n = 8, unpaired two‐tailed Student's t‐test). Scale bars: 200 µm. (d) Representative colour Doppler, spectral Doppler, and M‐mode from tracings of Cd34‐Dre;Postn‐CreERT2; Dou‐tdT‐DTR mice with or without DT injection. (e–g) Cusp separation, transaortic peak velocity, and EF in the indicated group (n = 6, unpaired two‐tailed Student's t‐test). (h) IF staining for tdTomato, periostin, and vimentin in the AV from CD34+Periostin+ cell deletion (DT) and non‐deletion (No DT) groups. The boxed regions are magnified with the split channels. Quantification (right) of tdToamto (tdT)+ cells in periostin+ cells and the remaining tdT+ cells in AV sections, illustrating the efficiency of CD34+ cell deletion in the indicated groups (n = 8, unpaired two‐tailed Student's t‐test). Scale bars: 200 and 20 µm. (i) Violin plots displaying the mRNA expression levels of PDGFRA (left) and PDGFRB (right) across subclusters. Statistical comparisons were performed specifically among Prog‐VIC, Myo‐VIC, and Osteo‐VIC subclusters. P‐values for these specific comparisons are indicated above the brackets by Wilcoxon test. Data are presented as the mean ± SEM.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g001.webp?md5=da96b432b8850938eb9144373d01b235",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78607-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Specific deletion of PDGFRa or PDGFRb in CD34+ cells significantly decreases AV remodelling. (a) Schematic image showing the generation of CD34+ cell specific Pdgfra (Pdgfra −/−) or Pdgfrb (Pdgfrb−/− ) knockout lineage tracing mouse strain. (b) Schematic diagram showing the experimental design for genetic tracing and specific Pdgfra (Pdgfra−/− ) or Pdgfrb (Pdgfrb−/− ) knockout in CD34+ cells. (c) Representative images for H&E, Masson, and Movat staining of aortic valvular sections from Pdgfra CD34–KO, Pdgfrb CD34–KO and Pdgfr+/+ (Cd34‐CreERT2;R26‐tdT) mice. Scale bar: 200 µm. Quantification (right) of AV thickness, collagen‐positive fractions, and proteoglycan‐positive fractions in aortic valves from the indicated groups (n = 8, two‐way ANOVA followed by Tukey post hoc test). (d) IF staining of periostin and tdTomato in aortic valvular sections from Pdgfra CD34–KO, Pdgfrb CD34–KO and Pdgfr+/+ mice. Boxed regions are magnified with split channels. Scale bars: 200 and 50 µm. (e) Quantification of the percentage of tdT+Periostin+ cells in Periostin+ cells for indicated group (n = 8, two‐way ANOVA followed by Tukey post hoc test). (f) EDU assay, collagen gel contraction assay, and transwell assay showing cell proliferation, migration, and contraction ability respectively. Primary CD34+ VICs cells response to siPdgfra or/and siPdgfrb treatment, with or without TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation. Scale bar: 100 µm and 1 mm. (g) Dotplot (left) displaying the percentages of EDU+ cell in primary valvular cells across different groups (n = 8, two‐way ANOVA followed by Tukey post hoc test); Quantification (medium) of gel diameters in indicated groups (n = 5, two‐way ANOVA followed by Tukey post hoc test); Quantification (right) of cell counts in indicated groups (n = 8, two‐way ANOVA followed by Tukey post hoc test). (h) IF staining images for periostin response to siPdgfra or/and siPdgfrb treatment, with and without TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation for 24 h. Scale bar: 20 µm. (i) Western blot showing expression of the specific knockdown efficiency of PDGFRa and PDGFRb, CD34 and fibrosis‐related proteins in in the indicated groups. GAPDH served as a loading control. Quantifications shown in Figure S10l. Data are presented as the mean ± SEM.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g004.webp?md5=3fd6ed5254e471bfe82d3f84713d5d58",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78607-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "PDGFR‐JNK‐JUNB signalling axis is required for CD34+ cells transdifferentiation into myofibroblast‐like VICs during ageing‐related AV remodelling. (a) Curve diagrams displaying the relative expression levels of the MAPK signalling pathway in indicated human VICs (young and old group) along a pseudotime differentiation trajectory. (b) Western blot detection of PDGFRa, PDGFRb, p‐JNK, JNK, and periostin expression levels in cellular supernatant from primary CD34+ VICs, in response to TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) treatment over indicated stimulation time. (c) Quantification of fold changes in the indicated protein expression of primary CD34+ VICs (n = 3, two‐way ANOVA followed by Tukey post hoc test). (d) Western blot showing the expression of p‐JNK and JNK proteins in response to siPdgfra or/and siPdgfrb treatment in primary CD34+ VICs cells. GAPDH served as a loading control. Quantifications shown in Figure S11b. (e,f) Western Blot analyses and quantifications of p‐JNK, JNK, and periostin changes in primary CD34+ VICs cells in response to TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation, with or without Sp600125 (40 µmol/mL) treatment. (n = 3, two‐way ANOVA followed by Tukey post hoc test) (g) Veen plot showing the intersection of transcription factors (TFs) expressed by myo‐VICs or hVICs in human aortic valves, and TFs predicted to bind to periostin promoters in the JASPAR dataset. (h) Potential binding sites between periostin promoter and JUNB predicted using the JASPAR database. (i) Analysis of periostin promoter activity in the luciferase reporter assay of 293T cells, co‐transfected with the periostin promoter‐GPL‐basic plasmid and NC or JUNB plasmid (JunB‐O/E) (n = 4, two‐way ANOVA followed with Tukey's post hoc analysis). (j) Quantitative PCR analyses of periostin and JUNB in 293T cells, transfected with negative control (NC) or JUNB plasmid (JunB‐O/E) (n = 3, unpaired two‐tailed Student's t‐test). (k) Western Blot analyses showing quantifications of JUNB and periostin expression in primary CD34+ VICs transfected with small interfering RNA negative control (siNC) or siJUNB, with or without TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) treatment (n = 3, unpaired two‐tailed Student's t‐test). (l) Representative western blot image showing JUNB and periostin expression levels in primary CD34+ VICs, transfected with negative control (NC) or JUNB plasmid (JUNB‐O/E). Quantification of the indicated protein levels are normalized to GAPDH (n = 3, unpaired two‐tailed Student's t‐test). (m) Gene expression trends for indicated genes across the pseudotime trajectory. (n) Western blot showing the expression of JUNB protein in response to siPdgfra or/and siPdgfrb treatment in primary CD34+ VICs cells; Quantifications are shown in Figure S12a. (o) Western Blot analyses of JUNB changes in primary CD34+ VICs cells in response to TGF‐β (10 ng/mL) and D‐gal (200 µg/mL) stimulation with or without Sp600125 (40 µmol/mL) treatment; Quantifications shown in Figure S12b. (p) Schematic diagram summarizing the molecular mechanism of CD34+ VICs activation and transdifferentiation into myofibroblast‐like VICs. Data are presented as the mean ± SEM.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-g003.webp?md5=d4cb17df3eb374d7666bef584dbb6e8b",
+            "articleURL": "https://doi.org/10.1002/advs.78607",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al.. CD34&lt;sup&gt;+&lt;/sup&gt; Progenitors Promote Ageing-Associated Valve Sclerosis through the PDGFR-JNK-JUNB Pathway.. DOI: 10.1002/advs.78607. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78607-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78607-supitem-0001",
+            "label": "Supporting File 1: advs78607‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-s002.pdf?md5=af9b795edddb76be5a91413d8c8865ae",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "advs78607-supitem-0002",
+            "label": "Supporting File 2: advs78607‐sup‐0002‐S1.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-s003.pdf?md5=829582ae3045d49e51e48c09672e162f",
+            "license": "CC BY",
+            "sha256": "3add392b9fcc57c0678e8360316402bcaa701e74b1a5d56a0c8b0335f9841119",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 109449,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "advs78607-supitem-0003",
+            "label": "Supporting File 3: advs78607‐sup‐0003‐S2.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-s001.pdf?md5=0e134d823a1058ec2a7c3606af407422",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78607-supitem-0004",
+            "label": "Supporting File 4: advs78607‐sup‐0004‐S3.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13752233.1/ADVS-9999-e78607-s004.pdf?md5=f9872a6614d8e4d3148ce42a5008e5ab",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-13T08:49:31.914157+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiaoping Yang; Hong Wu; Guoqiang Ren; Yuesheng Zhang; Zuoshi Wen; Pengwei Zhu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-13T08:49:36Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-13T08:49:36Z",
+        "url": "https://openalex.org/W7225831534",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-13T08:49:36Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-13T08:49:36Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-14T08:49:36Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-13T08:49:45Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-e76991fdb32f182b",
+      "paper": "A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.",
+      "doi": "10.1002/advs.78630",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-11-09",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78630",
+      "pmcid": "PMC13749005",
+      "pmid": "43004846",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-13",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "28c3eff2f8c9a837e16074dd934c0b21a6eee52509b22edca33b43d7552176f1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/PMC13749005.1.xml?md5=349987749871b3881c84e2c6bc940a41",
+        "figures": [
+          {
+            "id": "advs78630-fig-0010",
+            "label": "SCHEME 1",
+            "labelStatus": "source_declared",
+            "reference": null,
+            "caption": "Design and evaluated responses of ACGQD@pPLG. (A) Exploratory single‐cell profiling of clinical tendon specimens and metabolomics of polarized THP‐1‐derived macrophages informed examination of redox regulation and arginine‐associated metabolism. (B) Glutathione‐derived carbon dots (GQD) were functionalized with L‐citrulline to form CGQD. CGQD was incorporated into a DSPE–PEG–TK‐containing membrane preparation from unsorted UV‐treated TDSCs to form ACGQD, which was then loaded into aligned PLLA‐shell/GelMA‐core fibers (pPLG). (C) Local patch implantation in the rat rotator cuff repair model. (D) Working model relating macrophage‐marker and NRF2‐related responses to measured metabolite abundance and repair outcomes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g003.webp?md5=135f79e2023fbb1a66083ff1af72d587",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Clinical tendon profiling and macrophage metabolomics inform patch design. (A) UMAP of scRNA‐seq from non‐injured comparison tendon (NT) and injured tendon (TN) specimens, colored by major cell type. (B) Macrophage subclustering showing M1‐like, M2‐like, and proliferating states. (C) Cell‐type proportions in NT and TN: all populations (left) and macrophage subtypes (right). (D) UMAP feature plot of ASS1 in the macrophage compartment. (E, F) Representative immunofluorescence of injured (TN) and non‐injured comparison (NT) tendon: DAPI (blue), iNOS (green), and ASS1 (magenta) (E); DAPI (blue), CD68 (green), and 4‐HNE (magenta) (F). Scale bar, 100 µm. (G, H) Cell–cell communication networks of injured tendon (TN; G) and non‐injured comparison tendon (NT; H); edge thickness, inferred interaction count. (I) PLS‐DA score plot of widely targeted metabolomics in M0, M1, and M2 macrophages. (J–L) Volcano plots of differentially abundant metabolites for M1 vs. M0 (J), M2 vs. M0 (K), and M2 vs. M1 (L). (M, N) Hierarchical clustering of differential metabolites for M1 vs. M0 (M) and M2 vs. M1 (N). (O) GSSG/GSH ratio in M0 and M1 macrophages (p = 0.0023). (P) KEGG pathway differential‐abundance scores for M2 vs. M1 macrophages. (Q) Intensities of arginine, spermidine, and proline in M0, M1, and M2 macrophages. Data are mean ± SD. The scRNA‐seq analysis of human tendon specimens included three donors per group; n = 6 for the metabolomics measurements (I–Q). Comparisons were made by two‐sided Student's t‐test (O) or one‐way ANOVA with Tukey's post hoc test (Q); p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g008.webp?md5=3d152dd5bf029e816389e0b149986ecc",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "assets/pmc13749005-a742e7facc80056c.webp",
+            "sha256": "a742e7facc80056cbdb648e5cf02f153bf796be9ab81a96b578bc6771d0fcf99",
+            "width": 708,
+            "height": 999,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a742e7facc80056cbdb648e5cf02f153bf796be9ab81a96b578bc6771d0fcf99",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78630-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Engineering and characterization of the ACGQD@pPLG patch. (A) Representative transmission electron microscopy (TEM) images of CGQD, ApoTK, and ACGQD; scale bars, 25 nm. (B) Fourier transform infrared spectra of glutathione (GSH), GQD, L‐citrulline, and CGQD. (C) X‐ray photoelectron spectroscopy survey spectra of GQD and CGQD. (D) High‐resolution C 1s, N 1s, O 1s, and S 2p spectra of CGQD with fitted components. (E) Illustrative model of the proposed CGQD surface chemistry. (F) Annexin V/propidium iodide flow cytometry of untreated and UV‐treated TDSCs used for membrane preparation. The unsorted UV‐treated population was used for membrane preparation. (G) Representative immunoblots of calreticulin and CD47 in NM, CGQD@NM, ApoTK, and ACGQD; Na+/K+‐ATPase is the membrane‐protein loading control. NM denotes membranes from untreated TDSCs, and the corresponding densitometry is shown in Figure S17. (H, I) Confocal images of macrophages exposed to ACGQD (H) or CGQD@NM (I). DAPI, CGQD‐associated fluorescence, and DiD‐labeled membrane are shown in blue, green, and red, respectively; scale bar, 10 µm. (J) Electron paramagnetic resonance spectra at the indicated CGQD concentrations. (K) Scavenging percentages for ABTS•+, DPPH•, O2•−, and •OH over the tested CGQD concentration range. (L) TEM images of a core–shell PLG fiber; scale bars, 2 µm and 500 nm. (M) Atomic force microscopy topography of a pPLG fiber; scale bar, 1 µm. (N) Confocal images of fluorescently labeled scaffold fibers (blue), ACGQD (magenta), and the merged view, showing cargo distribution in the cell‐free scaffold. (O) Scanning electron microscopy of randomly oriented PLG (rPLG) and aligned PLG (pPLG) fibers. (P) Color‐enhanced view of aligned pPLG fibers. Scale bars in O and P, 2 µm. (Q) Energy‐dispersive X‐ray spectroscopy maps of C, O, and N in the scaffold. (R) Tensile‐testing setup. (S) Young's modulus (left) and tensile strength (right) of pPLG, ACGQD@pPLG, and PLLA. (T, U) Water‐contact‐angle images before and after plasma treatment (T) and quantification (U). (V) 3D confocal images of TDSCs on pPLG; DAPI, FAK, and F‐actin are shown in blue, green, and red, respectively. Scale bar, 100 µm. Data are mean ± SD; n = 5 specimens per formulation in S and n = 3 for the other quantitative analyses. Comparisons were made by one‐way ANOVA with Tukey's post hoc test (S) or two‐sided Student's t‐test (U); p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g011.webp?md5=8f6218814fc186850df90e1f0ac1bc96",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "assets/pmc13749005-21fed8c15ab1abe7.webp",
+            "sha256": "21fed8c15ab1abe76ad13a3be5ff9994346f66cc180bd5a9fb539a63b9e1e0ae",
+            "width": 820,
+            "height": 988,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "21fed8c15ab1abe76ad13a3be5ff9994346f66cc180bd5a9fb539a63b9e1e0ae",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78630-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "ACGQD@pPLG modifies macrophage markers and reduces oxidative stress. PMA‐differentiated THP‐1 macrophages were stimulated with LPS and co‐cultured in Transwell inserts without a patch (Control) or with the indicated electrospun patches (pPLG, ApoTK, CGQD, or ACGQD); unstimulated cells served as Blank. Sampling times for each readout are indicated in (A). (A) Schematic of the co‐culture and downstream readouts. (B) RT‐qPCR of M1 markers (TNF, NOS2) and M2 markers (ARG1, IL10). (C) Immunofluorescence of CD68 (green) with iNOS, CD86, CD206, or Arg‐1 (red); nuclei are stained with DAPI (blue). Scale bar, 50 µm. (D) Relative fluorescence intensities from (C). (E) Flow‐cytometric density plots of CD68 with iNOS (upper row) or CD206 (lower row) in the Blank, Control, pPLG, ApoTK, CGQD, and ACGQD conditions. (F, G) Quantification of CD68+iNOS+ (F) and CD68+CD206+ (G) percentages. (H, I) Western blots for CD86 and iNOS (H) or Arg‐1 and CD163 (I); β‐actin loading control. (J–M) Western blot quantification of CD86 (J), Arg‐1 (K), iNOS (L), and CD163 (M). (N, O) Fluorescence images of macrophages stained with Hoechst and DCFH‐DA (N) or Hoechst and DHE (O) in the Blank, LPS, LPS + GSH, LPS + GQD, and LPS + CGQD groups, in which GSH, GQD, and CGQD denote the patch cargo; scale bar, 100 µm. (P) Flow‐cytometric DCFH‐DA histograms. (Q) Quantification of DCFH‐DA and DHE fluorescence from (N) and (O). (R) Flow‐cytometric DCFH‐DA mean fluorescence intensity from (P). Data are mean ± SD; n = 3 biologically independent samples per group. Comparisons were made by one‐way ANOVA with Tukey's post hoc test; p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g010.webp?md5=dd6c04cd1de6d1e04c1d4e59e98ba829",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "NRF2‐related signaling and arginine‐associated metabolite changes in treated macrophages. PMA‐differentiated THP‐1 macrophages were treated under four conditions: Blank (no LPS), Control (LPS), Treat (LPS + ACGQD@pPLG), and Inhibitor (Treat + 10 µM LY294002, 1 h pretreatment). (A) Volcano plot of differentially expressed transcripts in Treat vs. Control (up 337, down 841). (B) KEGG pathway enrichment. (C) Hierarchical clustering of inflammation, metabolism, signaling, and repair genes. (D) GO ridge plot. (E) GSEA for PI3K–Akt (NES = 1.442) and NF‐κB (NES = −1.533). (F, G) Western blots (F) and quantification (G) of p‐PI3K/PI3K, p‐AKT/AKT, and p‐GSK3β/GSK3β; β‐actin, loading control. (H, I) Western blots (H) and quantification (I) of NRF2, HO‐1, iNOS, and Arg‐1; β‐actin, loading control. (J, K) Cytoplasmic–nuclear fractionation Western blots of NRF2 (J) and nuclear NRF2 quantification (K); β‐actin and Lamin B1 are the cytoplasmic and nuclear loading controls, respectively. (L, M) Confocal images of HO‐1 (magenta), DAPI (blue), and F‐actin (green) (L) and HO‐1 fluorescence quantification (M); scale bar, 10 µm. (N) Principal component analysis of metabolomics. (O) Volcano plot of differential metabolites (up 40, down 69). (P) Top differential metabolites ranked by log2 fold change. (Q) Heatmap of differential metabolites with class annotation. (R) KEGG pathway enrichment of differential metabolites. (S) Urea–arginine cycle schematic with violin plots of glutamine, glutamate, GSSG, N‐acetyl‐glutamate, citrulline, ornithine, and argininosuccinate. (T) Relative abundance of arginine, PGE2, spermidine, lactate, and proline. (U) Working model relating measured metabolite abundance to macrophage‐marker responses. Data are mean ± SD. n = 3 for G, I, K, and M; n = 6 for the omics measurements in A–E and N–T. Comparisons were made by two‐sided Student's t‐test for two‐group metabolite data (S–T) and by one‐way ANOVA with Tukey's post hoc test for multigroup molecular measurements (G, I, K, M); p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g005.webp?md5=8a4582d3ba59dd343d0e9940481b4132",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Computational interaction models and cellular KEAP1–NRF2 association. (A) Computational workflow: a selected CGQD representation and an NRF2‐derived ligand model docked to KEAP1; citrulline and arginine docked into iNOS; 100‐ns all‐atom molecular dynamics simulations and per‐residue analyses. (B) Docking of the selected CGQD representation into the KEAP1 Kelch domain (docking score = −9.608 kcal mol− 1); key residues Ser555, Arg415, Tyr572, Phe577, Tyr334, and Ser383, with hydrophobic‐interaction surface and 2D interaction map below. (C) Docking of the NRF2‐derived ligand model into KEAP1 (docking score = −9.033 kcal mol− 1); key residues Ser555, Gly364, Gly603, Arg380, Tyr334, and Ser602. (D) Docking of citrulline into iNOS (docking score = −6.005 kcal mol− 1); key residues Pro350, Trp372, and Tyr373. (E) Docking of arginine into iNOS (docking score = −5.938 kcal mol− 1); key residues Tyr347, Trp372, Tyr373, and Glu377. (F) Snapshots of the CGQD–KEAP1 complex at 0, 20, 40, 60, 80, and 100 ns. (G) Backbone RMSD, per‐residue RMSF, radius of gyration (Rg), solvent‐accessible surface area (SASA), and number of hydrogen bonds. (H) Per‐residue binding‐energy decomposition. (I, J) Free‐energy landscape projected onto RMSD and Rg, shown as a 3D surface (I) and a 2D contour map (J). (K) Electrostatic surface potential of KEAP1 alone (Before) and in the modeled CGQD complex (After). (L) Residue cross‐correlation matrix. (M) Principal component analysis (PC1, 21.13%; PC2, 5.95%; PC3, 4.62%) with cumulative‐variance plot. (N) Confocal immunofluorescence of KEAP1 (green), NRF2 (magenta), and DAPI (blue) in the LPS, LPS + CGQD, LPS + CGQD + LY294002, and unstimulated groups; Pearson's R values are indicated. Scale bar, 5 µm. (O) Western blots of total KEAP1 and NRF2 (top) and co‐immunoprecipitation of NRF2 with anti‐KEAP1 (bottom); β‐actin and IgG serve as the loading and immunoprecipitation controls, respectively. n = 3 biologically independent samples per group for (N, O).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g004.webp?md5=26d63478b535a781edff83fb13605ac4",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Conditioned medium from treated macrophages supports tendon and bone marrow stromal‐cell responses. PMA‐differentiated THP‐1 macrophages were stimulated with LPS and incubated without a patch (Control) or with the indicated electrospun patches (pPLG, ApoTK, CGQD, or ACGQD) in Transwell inserts for 48 h. After washing, macrophages were cultured in serum‐free medium for 24 h to collect conditioned medium, which was transferred to TDSCs or BMSCs. (A) Schematic of the conditioned‐medium workflow. (B) Transwell images of TDSCs at 24 h (top) and 48 h (bottom); scale bar, 100 µm. (C) Scratch‐wound images of TDSCs at 0 h (top) and 24 h (bottom); scale bar, 100 µm. (D) Transmigrated TDSC counts at 24 h and 48 h. (E) Wound‐healing percentage of TDSCs at 24 h. (F, G) Immunofluorescence of TDSCs co‐stained with DAPI (blue), F‐actin (orange), and COL1 (green; F) or SCX (green; G); scale bar, 50 µm. (H, I) Quantification of COL1 (H) and SCX (I). (J, K) Immunofluorescence of BMSCs co‐stained with DAPI (blue), F‐actin (green), and RUNX2 (magenta; J) or OCN (magenta; K); scale bar, 50 µm. (L, M) Quantification of RUNX2 (L) and OCN (M). (N, O) ALP staining at day 7 (N) and ALP activity quantification (O); scale bar, 100 µm. (P, Q) Alizarin Red at day 21 (P) and OD420 quantification (Q); scale bar, 100 µm. (R–T) qPCR of RUNX2 (R), OPN (S), and COL1A1 (T) in BMSCs. (U–W) qPCR of SCX (U), TNMD (V), and COL1A1 (W) in TDSCs. Data are mean ± SD; n = 6 independent replicates for (D) and n = 3 independent replicates for the other quantitative analyses. Comparisons were made by one‐way ANOVA with Tukey's post hoc test; p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g002.webp?md5=663d17cd9c025ffb197040fdb7343677",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Early tissue responses after ACGQD@pPLG‐assisted rotator cuff repair in rats. Control denotes suture repair only; pPLG denotes the unloaded aligned scaffold. ApoTK, CGQD, and ACGQD denote the corresponding patch‐loaded formulations. Tissue staining was assessed at day 14. (A) Study timeline showing the early and 8‐week evaluations. (B) CD86 (red) and CD206 (green) immunofluorescence, displayed separately with DAPI (blue). (C) TNF‐α (red) and IL‐10 (green) immunofluorescence, displayed separately with DAPI. (D) Relative fluorescence intensities of CD86, CD206, TNF‐α, and IL‐10. (E) CD90 (red)/CD44 (green) co‐staining with DAPI. (F) Number of CD44+CD90+ cells per field. (G) CD206 (magenta)/COL I (green) co‐staining with DAPI. Spatial overlap indicates the distribution of CD206‐positive cells within collagen‐rich tissue. (H) NRF2 (red)/HO‐1 (green) co‐staining with DAPI. (I) Relative fluorescence intensities of CD206, COL I, NRF2, and HO‐1. Scale bars in B, C, E, G, and H, 100 µm in the overview images and 25 µm in the enlargements. (J) Hematoxylin and eosin staining of the repaired tendon‐to‐bone interface; scale bars, 50 µm and 10 µm. (K) Modified tendon healing score; criteria are provided in Table S1. Dashed boxes indicate enlarged regions. Relative fluorescence measurements are expressed against the repair‐only Control reference. Data are mean ± SD; n = 6 independent animals per group. Comparisons were made by one‐way ANOVA with Tukey's post hoc test; p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g001.webp?md5=64adc7780fe750baec8bda67fbba8314",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Tendon, interface matrix, and subchondral bone outcomes after rotator cuff repair in rats. The five repair groups are Control (suture repair only), unloaded pPLG, ApoTK@pPLG, CGQD@pPLG, and ACGQD@pPLG; the last three are abbreviated as ApoTK, CGQD, and ACGQD in the panels. (A) Picrosirius red staining under polarized light at 2 and 8 weeks; scale bars, 100 and 25 µm. (B) Masson trichrome staining at 2 and 8 weeks; scale bars, 50 and 10 µm. (C) Grayscale brightness of polarized picrosirius‐red images at 2 weeks (left) and 8 weeks (right), used as a birefringence readout. (D) Masson‐based relative collagen content at 2 weeks (left) and 8 weeks (right). (E) COL III (upper rows) and COL I (lower rows) immunohistochemistry at 8 weeks; scale bars, 100 µm and 25 µm. (F, G) COL III (F) and COL I (G) integrated optical density, expressed relative to Control. (H) Safranin O–fast green staining at 2 and 8 weeks. (I) Metachromasia ratio, defined here as Safranin O staining normalized to Control at each time point. (J) Toluidine blue staining at 2 and 8 weeks. (K) Integrated optical density of toluidine blue‐stained glycosaminoglycans, normalized to Control at each time point. Scale bars in H and J, 100 and 25 µm. (L) COL II immunofluorescence at 8 weeks; COL II and DAPI are shown in red and blue, respectively. Scale bars, 200 and 50 µm. (M) Relative COL II fluorescence intensity. (N) 3D micro‐computed tomography reconstructions of the humeral footprint and orthogonal trabecular views at 8 weeks. (O–Q) Bone volume fraction (BV/TV; O), trabecular number (Tb. N; P), and bone mineral density (BMD; Q). Dashed boxes indicate enlarged regions. Data are mean ± SD; n = 6 independent animals per group at each assessed time point. Comparisons were made by one‐way ANOVA with Tukey's post hoc test; p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g007.webp?md5=f59e70a6b4a1bc5f61577d7605dacc24",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78630-fig-0009",
+            "label": "FIGURE 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "ACGQD@pPLG improves tendon–bone mechanical properties and gait measures. (a) Photograph of the tensile‐testing setup of the supraspinatus tendon–humerus complex. (b–d) Ultimate stress (b), stiffness (c), and ultimate load to failure (d) at 2 weeks. (e–g) Ultimate stress (e), stiffness (f), and ultimate load to failure (g) at 8 weeks. (h) Representative paw‐contact images. (i, j) Mean forelimb contact area at 2 weeks (i) and 8 weeks (j). (k) 3D walkway pressure‐signal maps. (l, m) Mean forelimb pressure at 2 weeks (l) and 8 weeks (m). (n–q) Stride length (n), stride width (o), oscillatory phase ratio (p), and contact phase ratio (q) at 8 weeks. Relative gait values use the mean of the repair‐only Control group at the corresponding time point as the denominator. The 8‐week unoperated reference is shown separately in Figure S43. Data are mean ± SD; n = 6 biologically independent animals per group. Comparisons were made by one‐way ANOVA with Tukey's post hoc test; p values are shown in the panels.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-g006.webp?md5=8079638462456807c98ed1c942baff9c",
+            "articleURL": "https://doi.org/10.1002/advs.78630",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al.. A Citrulline-Functionalized Patch Coordinates Macrophage NRF2 Signaling and Arginine Metabolism for Tendon-to-Bone Repair.. DOI: 10.1002/advs.78630. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78630-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78630-supitem-0001",
+            "label": "Supporting File: advs78630‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13749005.1/ADVS-9999-e78630-s001.pdf?md5=c7dbf6065e7de2c03934d9792fcb5806",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-13T08:49:40.027398+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yuhao Yu; Wencai Liu; Xinyue Yang; Hanzhe Zhang; Hui Xu; Xin Wang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-13T08:49:36Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-13T08:49:42Z",
+        "url": "https://openalex.org/W7225750376",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-13T08:49:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-13T08:49:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-14T08:49:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 50,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-13T08:49:46Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-a0b538396e9449e1",
+      "doi": "10.1093/bioinformatics/btag723",
+      "paper": "scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13661260",
+      "pmid": "42809236",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag723",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f17f447e07e45f5a06b0f139273602e54974aacebbef360ee28d873d8c66a976"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/PMC13661260.1.xml?md5=a65905f2d5053656c351a5f016c2213e",
+        "figures": [
+          {
+            "id": "btag723-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "(a) Overview of scURL. i) Cluster-level semantic calibration enforces cross-omics semantic consistency by aligning cluster soft-assignment distributions; ii) Local-level structural calibration performs neighborhood-guided alignment by matching the soft labels of each cell to a randomly selected top-C cross-omics neighbor; iii) Multi-omics clustering GR bound links entropy-based representation uncertainty to generalization, enabling per-cell, uncertainty-aware omics weighting. (b) The mechanism of uncertainty-sharpened multi-omics fusion. It applies normalized exponential Gibbs weights based on negative entropy to generate fused embeddings, encouraging lower-uncertainty omics to contribute more strongly and yielding robust, better-separated representations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f1.webp?md5=f37039ea988402af3f5baa437e2eae5f",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag723",
+            "asset": "assets/pmc13661260-7f194ca1c54e85d1.webp",
+            "sha256": "7f194ca1c54e85d1602205d9fc961f86e40820911d0009e8292fd0b5a6f81db3",
+            "width": 1600,
+            "height": 1113,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al.. scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.. DOI: 10.1093/bioinformatics/btag723. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7f194ca1c54e85d1602205d9fc961f86e40820911d0009e8292fd0b5a6f81db3",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag723-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "UMAP projections of learned cell representations across ten datasets. Points are colored by cell-type annotations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f2.webp?md5=434db3427a8d191ea8a31bbb51b182e4",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag723",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al.. scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.. DOI: 10.1093/bioinformatics/btag723. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag723-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Clustering performance of omics-specific and fused representations with and without LSC across ten datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f3.webp?md5=ebee0b8f5f0963130899464b8bc1aff8",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag723",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al.. scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.. DOI: 10.1093/bioinformatics/btag723. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag723-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "ARI comparison under increasing dropout ratios across ten datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f4.webp?md5=a7eb215260b695b690d7a5471ab4a71c",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag723",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al.. scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.. DOI: 10.1093/bioinformatics/btag723. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag723-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Marker gene identification and visualization across different cell types. (a) Stacked violin plot showing the expression distribution of the top three differentially expressed genes within each predicted cluster on the BREM-SC PBMC dataset. (b) UMAP plot showing the ground truth distribution of major immune cell types. (c) UMAP visualization of the expression patterns of the identified marker genes across different clusters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723f5.webp?md5=a504aaba3360ce60301eeda7045c75e0",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag723",
+            "asset": "assets/pmc13661260-9d7c4bdd47a34ba7.webp",
+            "sha256": "9d7c4bdd47a34ba7d16f7ffd49c16cae1ed0ad6fbd349d2c8b3d7f92dbf62f3d",
+            "width": 1600,
+            "height": 1222,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al.. scURL: uncertainty-sharpened representation learning for single-cell multi-omics clustering.. DOI: 10.1093/bioinformatics/btag723. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9d7c4bdd47a34ba7d16f7ffd49c16cae1ed0ad6fbd349d2c8b3d7f92dbf62f3d",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag723_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/btag723_supplementary_data.pdf?md5=70a975fcf568d5cb330cf7197b648630",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Yaolab-fantastic/scURL"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-13T08:49:24.319872+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Yaolab-fantastic/scURL",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13661260.1/PMC13661260.1.xml?md5=a65905f2d5053656c351a5f016c2213e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Hongwei Liu; Donghui Yu; Wei Li; Tong Zhang; Ching-Yu Cheng; Huazhu Fu; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Yaolab-fantastic/scURL",
+        "commit": "18b7fd43803a63eec580ae7171d859dc014b62bc",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "notebooks/scURL_GSM.ipynb",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/notebooks/scURL_GSM.ipynb",
+            "sha256": "ec321013bf4e05af22881261918af3cb5af561aa819f441575c5418948b7c0cc",
+            "language": "Python notebook",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "CUDA_VISIBLE_DEVICES",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "size_factors",
+                "line": 161,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "fc_encoder.0.weight",
+                "line": 153,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "best_ari",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "best_epoch",
+                "line": 201,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "best_ami",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "best_nmi",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "highly_variable",
+                "line": 163,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "scURL/cluster.py",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/scURL/cluster.py",
+            "sha256": "edf796375e0e0f11271615fb1ea4beb8e6f6284ea2bb7ae06bca9026c14450d6",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scURL/DAE_Ber.py",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/scURL/DAE_Ber.py",
+            "sha256": "1c8274ac93deef1cb560a8fe6a19835c7273f61541e3a41d11f118899364894f",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scURL/DAE_ZINB.py",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/scURL/DAE_ZINB.py",
+            "sha256": "e54b12fc88976476a43708de1717953c75e66baffdd3c5b7314c239d0ce93e7d",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scURL/data_utils.py",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/scURL/data_utils.py",
+            "sha256": "505414824a50c18e446888e6cfd4ef2424e5befc0ddb75f64a7e0037da5963b0",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scURL/loss_utils.py",
+            "url": "https://github.com/Yaolab-fantastic/scURL/blob/18b7fd43803a63eec580ae7171d859dc014b62bc/scURL/loss_utils.py",
+            "sha256": "227f4d62f688391d62c3d7d1151fe9775322153f244262eb2694a6a4c3a2083f",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-13T08:49:29Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-13T08:49:30Z",
+        "url": "https://openalex.org/W7214798219",
+        "cited_by_count": 1,
+        "fwci": 1.3024,
+        "citation_normalized_percentile": 0.71682836,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "integration",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-13T08:49:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-13T08:49:30Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-14T08:49:30Z"
+        }
+      },
+      "selectionScore": {
+        "total": 65.5841418,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.5841418000000003,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-13T08:49:47Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "scURL:面向单细胞多组学聚类的不确定性锐化表示学习",
+        "summary_zh": "该文献提出 scURL 框架,用于单细胞多组学聚类。其核心是引入表示不确定性(RU)并建立其与聚类泛化风险(GR)的联系,从而推导逐细胞的组学权重以进行不确定性感知融合(UAF);同时引入多粒度校准模块(MCM),在融合前从簇级语义与局部结构两个角度校准各组学特异表示。图注显示融合采用基于负熵的归一化指数 Gibbs 权重,使低不确定性组学贡献更强。摘要称在十个数据集上优于现有方法、在 dropout 噪声下保持稳健,并通过标记基因分析识别有生物学意义的细胞群。作者代码未运行,相关结论均为文献与图注描述,未经验证。",
+        "learning_points": [
+          "以表示不确定性(RU)与聚类泛化风险(GR)的关联为出发点,推导逐细胞组学权重,实现不确定性感知融合(UAF)。",
+          "多粒度校准模块(MCM)包含簇级语义校准(对齐跨组学簇软分配分布)与局部级结构校准(将每个细胞的软标签匹配到随机选取的 top-C 跨组学近邻)。",
+          "融合机制采用基于负熵的归一化指数 Gibbs 权重,使不确定性更低的组学在融合嵌入中贡献更强。",
+          "图 2 以 UMAP 展示十个数据集上学到的细胞表示,按细胞类型注释着色。",
+          "图 3 比较组学特异表示与融合表示在有/无 LSC 条件下的聚类表现(十个数据集)。",
+          "图 4 展示随 dropout 比例增加时十个数据集上的 ARI 比较。",
+          "摘要称通过标记基因分析支持所识别细胞群的生物学意义。",
+          "代码仓库地址在摘要中给出,但本次未执行代码,静态检查不构成复现验证。"
+        ],
+        "limitations": [
+          "作者代码未执行,无法确认方法实现与论文描述一致,未进行复现验证。",
+          "输入数据尺度、预处理细节及图号与具体实验的对应关系未在证据中明示,属未知。",
+          "图 2、图 3、图 4 仅提供图注,未给出具体数值结果,无法核实性能提升幅度。",
+          "LSC 在正文中未定义,其与 MCM 或校准模块的对应关系未知。",
+          "十个数据集的具体名称、规模与来源未在证据中给出。",
+          "dropout 噪声实验的设置细节与统计显著性未知。",
+          "标记基因分析的具体方法与结果未在证据中呈现。",
+          "静态观察的脚本条目未包含可读的代码内容,无法据此判断实现细节。",
+          "期刊指标、许可等信息未在证据中提供,不予推断。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-13T08:49:52Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "7a597d279f09a8fc9c7e70ab9a555ea6e9d7017c99edf4ad1198d673c65b822b",
+        "summary_fingerprint": "223eef96d715f2b633535bb410ac04f366596c9abced59e0626793fc4ee5bd1e",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -223204,6 +224443,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-29300d405eee8047": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-e76991fdb32f182b": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-a0b538396e9449e1": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -224822,7 +226079,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-12T09:02:31Z",
+  "generatedAt": "2026-11-13T08:49:53Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -225056,18 +226313,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-13T08:47:53Z",
-    "updatedAt": "2026-11-13T08:47:58Z",
+    "updatedAt": "2026-11-13T08:49:59Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 51,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
