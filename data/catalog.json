@@ -162269,6 +162269,1184 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-e21922dfb542f49d",
+      "paper": "scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.",
+      "doi": "10.1093/nargab/lqag140",
+      "journal": "NAR genomics and bioinformatics",
+      "date": "2026-11-10",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1093/nargab/lqag140",
+      "pmcid": "PMC13748873",
+      "pmid": "43011234",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2631-9268",
+      "eissn": "2631-9268",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-13",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics",
+          "epigenetic_profile",
+          "single_cell_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "326eeced65973995fdf384b228489aaef2322a017f44a358a49c7b78694c308c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/PMC13748873.1.xml?md5=a2f90c8e7c9e09ea419a8b629a61a51b",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the scMINA workflow for single cell multiomic data integration and interpretable analysis. (a) Data processing workflow: Raw sequencing data from single-cell multiomics assays generate paired transcriptomic and epigenomic profiles from the same cells. These data are processed through reference mapping, unified peak calling, and the construction of gene and peak count matrices that serve as input for downstream scMINA analysis. (b) Multimodal integration: The scPair method is selected to learn unified cell state representations, which are further used for clustering and annotation. (c) Downstream analysis: the workflow supports three parallel downstream modules: (i) conventional analysis including cell type proportion and differential expression testing, (ii) correlation-based cis-regulatory analysis such as TF-DORC associations and gene regulatory network inference using FigR, and (iii) explainable AI-based analysis using pretrained representation learning models to prioritize gene and TF signatures via feature attribution. The blue outlines indicate components included in the scMINA workflow.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/lqag140fig1.webp?md5=7d6c280a88b1621d87a54cd731dba52c",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag140",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al.. scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.. DOI: 10.1093/nargab/lqag140. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Benchmarking of scMultiome test data using scPair, MultiVI and MOFA+ . (a) Evaluation of cell representation generated by scPair, MultiVI, and MOFA+, displaying each method’s ranking and score across the different evaluation criteria. Methods are evaluated based on their capacity for clustering annotation (measured by ARI and NMI), cell type separation (ASW and cLISI), and batch mixing (covariate-specific ASW and iLISI metrics). Higher scores indicate better performance. (b) Percentage of variance exampled by RNA and ATAC using MOFA+ in each of the four testing samples. (c) Performance benchmarking of scPair and MultiVI across cross-modality mapping tasks, with evaluation metrics calculated on held-out test sets. Box plots display performance metrics including 1-Fraction of Samples Closer Than the True Match (1-FOSCTTM), SCC, PCC, auROC, and 1-Binary Cross Entropy (1-BCE), where higher values indicate better performance. In the box plots, the minima, maxima, centerline, bounds of box, and whiskers represent the minimum value in the data, maximum, median, upper and lower quartiles, and 1.5× interquartile range, respectively. (d) Left: UMAP visualization of the ATAC-based (ground truth, bottom) and RNA-to-ATAC (mapped, top) cell state spaces as learned by scPair using the held-out test set. Each point represents a cell, with lines connecting each cell’s observed ATAC state and mapped ATAC state (derived from RNA state). Colors indicate major cell classes based on original study annotations. Right: An analogous UMAP for RNA-based (ground truth, bottom) and ATAC-to-RNA (mapped, top) cell states, also learned by scPair using the same held-out test set.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/lqag140fig2.webp?md5=217461cdac0344a05e3af618b2ba5323",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag140",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al.. scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.. DOI: 10.1093/nargab/lqag140. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Conventional downstream analysis of SEA-AD glial multiome data. (a) UMAP visualization of cell state space learned by scPair, with each color representing a distinct cell type (Astrocytes, Microglia, Oligodendrocytess, OPCs). (b) Row-normalized expression heatmap of cell type-specific markers based on the RNA component of SEA-AD multiome data, highlighting marker gene expression profiles across different cell types. (c) Chromatin accessibility across cell types visualized for major glial cell type marker genes highlighted in (b) based on the ATAC component of SEA-AD multiome data, illustrating accessible regions near marker genes in different cell populations. (d) Volcano plots showing DEG patterns in AD versus controls across major glial cell types. Points represent genes, with “down” (blue) indicating genes downregulated in AD, and “up” (red) for genes upregulated in AD. (e) Circos plot showing overlapping DEGs among different cell type groups, identifying shared dysregulated genes across cell populations. (f) Heatmap of the odds ratio (quantifying the strength of association between each cell type and the corresponding enriched Gene Ontology terms) for the top GO-BP terms identified from upregulated DEGs in each cell type. DEGs were identified directly from the single-cell differential expression analysis using the MAST method. Asterisks indicate significantly enriched GO terms (adjusted P < .01).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/lqag140fig3.webp?md5=5fe6e1025bca39bd8f7406687e41a9aa",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag140",
+            "asset": "assets/pmc13748873-a946abcfffe3380e.webp",
+            "sha256": "a946abcfffe3380ec5e1dfff8c5f63a2a30307a2c1b473515554fa6b3fa2c7e5",
+            "width": 1600,
+            "height": 1134,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al.. scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.. DOI: 10.1093/nargab/lqag140. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a946abcfffe3380ec5e1dfff8c5f63a2a30307a2c1b473515554fa6b3fa2c7e5",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Correlation-based downstream analysis of SEA-AD glial types identifies AD-associated subpopulations and regulatory networks. (a) UMAP visualization of microglial cell state space learned by scPair, with each color representing a distinct subpopulation. Left panel: normal control; Right panel: AD case. (b) Bar plot comparing the relative abundance of microglial subpopulations (clusters) between normal and AD groups. (c and d) Similar to (a and b) but for astrocyte. (e and f) TF-DORC network visualizations for selected DORCs (orange nodes) and their associated TFs (gray nodes) in microglia (e) and astrocyte (f). Edges are scaled and colored by the signed regulation score. Red and blue edges indicate activating and repressive regulation, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/lqag140fig4.webp?md5=094a98d7e17a4d3c17436e0c1198cefa",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag140",
+            "asset": "assets/pmc13748873-fafbc8d18fc9244d.webp",
+            "sha256": "fafbc8d18fc9244d4a789e091f9f10eb6db26c554570208bd65e3e1c6ae71a0e",
+            "width": 1600,
+            "height": 1880,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al.. scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.. DOI: 10.1093/nargab/lqag140. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fafbc8d18fc9244d4a789e091f9f10eb6db26c554570208bd65e3e1c6ae71a0e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cross-validation of candidate AD-associated signatures in glial types using explainable AI. (a and b) Scatterplots showing the absolute feature attribution scores of genes calculated using the Path Explainer (x-axis) and Integrated Gradients (y-axis) methods on scPair model for corresponding cluster(s). (a) The red-colored genes represent the intersection of the top 100 genes identified by both methods within cluster 8 of microglia. (b) The red-colored genes represent the intersection of the top 100 genes identified by both methods within cluster 7 of astrocyte. The displayed gene names are representatives of highly attributed genes intersecting with identified DORC genes. (c and d) UMAP visualization of microglia (c) and astrocyte (d) cell state space learned by scPair, split by selected intersecting genes and disease status. The color gradient represents the DORC score for each cell. Left: normal control. Right: AD case. (e) Heatmap of DORC regulation scores showing significant TF-DORC enrichments for selected DORC genes (NCK2, DOCK4, SYNDIG1, and GLDN) in microglia cluster 8. The heatmap is colored by regulation scores. (f) Similar to (e) but for selected DORC genes (LINC00511, ADGRV1, SLC39A11, FAM107A, and SLC14A1) in astrocyte cluster 7.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/lqag140fig5.webp?md5=c337cd81b1625c0fd8e4bb8ba25df3a8",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag140",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al.. scMINA: an interpretable workflow for paired scRNA-scATAC multiome integration and regulatory prioritization.. DOI: 10.1093/nargab/lqag140. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [
+          "https://github.com/ShuwenZhangswz/scMINA"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-13T08:51:34.902035+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/ShuwenZhangswz/scMINA",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748873.1/PMC13748873.1.xml?md5=a2f90c8e7c9e09ea419a8b629a61a51b"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shuwen Zhang; Hongru Hu; Xue Wang; Chengjie Xiong; Takahisa Kanekiyo; Yan W Asmann; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/ShuwenZhangswz/scMINA",
+        "commit": "0356836bfbcc19aadc8c58bc8b0943a6c830b1bd",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "scripts/example_visualize_data.R",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_visualize_data.R",
+            "sha256": "cf546179592a785341b984287c2110dc4a915b1c9a928ffd27186509267e7924",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/prep_FigR_inputs.R",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/prep_FigR_inputs.R",
+            "sha256": "6f9e805d311b27113033ee211df8b7c395f2e41ea7d927b51bebf7ab18a6062f",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "scPair",
+                "line": 77,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scPair_umap",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UMAP1",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "UMAP2",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "end",
+                "line": 96,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chrom",
+                "line": 99,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nn.index",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "k",
+                "line": 190,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "prefix",
+                "line": 191,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "outdir",
+                "line": 192,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "atac_mtx",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rna_mtx",
+                "line": 196,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "metadata_csv",
+                "line": 197,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "genes_csv",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "peaks_csv",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seurat_scpair_rds",
+                "line": 200,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/run_extra_visualizations.R",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/run_extra_visualizations.R",
+            "sha256": "3cf02ab2071fe0a25d2fa43e03610fc78b368382ff46acb05a88b440088e5dbc",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Significant",
+                "line": 74,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_val_adj",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "avg_log2FC",
+                "line": 75,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "minus_log10_padj",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "double.xmin",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Combined.Score",
+                "line": 102,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Odds.Ratio",
+                "line": 102,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "direction",
+                "line": 105,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "celltype",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Term",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Adjusted.P.value",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Score",
+                "line": 155,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Motif",
+                "line": 157,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "DORC",
+                "line": 157,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Motif_node",
+                "line": 158,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "weight",
+                "line": 159,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Corr",
+                "line": 163,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "prefix",
+                "line": 209,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seed",
+                "line": 210,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "plots",
+                "line": 212,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj_cutoff",
+                "line": 230,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2fc_cutoff",
+                "line": 231,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top_terms_per_celltype",
+                "line": 237,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "enrichment_direction",
+                "line": 238,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "network_score_cutoff",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "heatmap_score_cutoff",
+                "line": 252,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/run_FigR_analysis.R",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/run_FigR_analysis.R",
+            "sha256": "78266787fa08b4b5e4d52a04b293960dee0d3a3b54e5292abd4efcc58fe960f4",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "genome",
+                "line": 217,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nCores_corr",
+                "line": 218,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nCores_smooth",
+                "line": 219,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "nCores_grn",
+                "line": 220,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dorc_cutoff",
+                "line": 221,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dorc_labelTop",
+                "line": 222,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dorcK",
+                "line": 223,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "seed",
+                "line": 224,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "prefix",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "outdir",
+                "line": 226,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "atac_se_rds",
+                "line": 229,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rna_mat_rds",
+                "line": 230,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cellknn_rds",
+                "line": 231,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/example_process_data.py",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_process_data.py",
+            "sha256": "0a5f35478636e8f6cd60f9533d4f06dd926a4c9d3f10dc9624ab4a70b143bf1c",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 31,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "highly_variable",
+                "line": 48,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 31,
+                "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_process_data.py#L31"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/extract_embeddings.py",
+            "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/extract_embeddings.py",
+            "sha256": "a43abe3e386331071dd8abc1b9f6990ff385632c402c9f011a5cb1a371b10b1f",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 29,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 29,
+                "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/extract_embeddings.py#L29"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "highly_variable",
+                "line": 48,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_process_data.py",
+            "line": 31,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/extract_embeddings.py",
+            "line": 29,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.0",
+        "jcr": "",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-13T08:51:42Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-13T08:51:42Z",
+        "url": "https://openalex.org/W7225734830",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-13T08:51:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-13T08:51:42Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-14T08:51:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 70,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-13T08:51:43Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "scMINA:面向配对scRNA-scATAC多组学整合与调控优先级排序的可解释工作流",
+        "summary_zh": "该文献介绍 scMINA(single-cell Multimodal Integration and Network Attribution),一个面向配对单细胞多组学数据的模块化、可解释分析工作流,包含多模态整合、技术协变量校正与调控特征优先级排序模块,并引入可解释人工智能归因策略以优先候选基因与转录因子。作者将其应用于 Seattle Alzheimer's Disease Brain Cell Atlas 的单细胞多组学数据,报告工作流可解析主要胶质细胞群体并识别与阿尔茨海默病病理相关的调控特征。图注显示流程包含参考映射、统一 peak calling、基因与 peak 计数矩阵构建、scPair 表征学习,以及常规分析、基于相关性的顺式调控分析和基于可解释 AI 的归因分析三条下游分支。作者代码未运行,输入尺度与图号对应关系未明示,相关复现结论未知。",
+        "learning_points": [
+          "scMINA 定位为配对 scRNA-seq 与 scATAC-seq 多组学数据的模块化、可解释分析工作流,涵盖多模态整合、技术协变量校正与调控特征优先级排序。",
+          "Figure 1 图注显示流程从原始测序数据出发,经参考映射、统一 peak calling 与基因/peak 计数矩阵构建,作为下游分析输入。",
+          "Figure 1 图注指出多模态整合采用 scPair 方法学习统一细胞状态表征,并用于聚类与注释。",
+          "Figure 1 图注列出三条并行下游模块:常规分析(细胞类型比例、差异表达)、基于相关性的顺式调控分析(TF-DORC 关联、FigR 基因调控网络推断)与基于可解释 AI 的特征归因。",
+          "Figure 2 图注显示以 scPair、MultiVI 与 MOFA+ 在测试数据上进行基准比较,评价指标包括 ARI、NMI、ASW、cLISI、iLISI 及跨模态映射指标。",
+          "Figure 3 图注展示 SEA-AD 胶质多组学数据的常规下游分析,包括 scPair 细胞状态 UMAP、标记基因表达热图、染色质可及性、AD 与对照差异表达火山图、Circos 重叠 DEG 及 GO-BP 富集热图。",
+          "Figure 4 图注展示基于相关性的下游分析,识别 AD 相关小胶质细胞与星形胶质细胞亚群,并给出 TF-DORC 网络可视化。",
+          "证据中包含若干脚本路径的静态观察记录(如 example_visualize_data.R、prep_FigR_inputs.R、run_FigR_analysis.R),但未提供可核验的运行结果。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称已复现或与原文结果一致。",
+          "输入数据的尺度、具体数据结构与列名未在证据中明示,相关细节未知。",
+          "图号与具体脚本、输出文件之间的对应关系未明示,无法确认。",
+          "Figure 2 图注文本在证据中被截断,跨模态映射与 UMAP 部分的完整描述未知。",
+          "Figure 3 图注文本在 GO-BP 热图处被截断,后续内容未知。",
+          "各脚本证据仅记录路径与哈希,静态观察内容为空,无法据此推断实现细节。",
+          "文献的许可信息、期刊指标与复现结果未在证据中提供,均属未知。",
+          "摘要中关于 SEA-AD 数据结果的描述为作者报告,未经过独立核验。",
+          "可解释 AI 归因策略的具体模型与参数设置未在证据中说明。",
+          "证据未提供运行环境、依赖版本与计算资源信息,可复现性条件未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-13T08:51:49Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "7f3b4c4c59484142ae43c235209a6fd2589742ead35ffe8f4dca28ef9f8e091a",
+        "summary_fingerprint": "bb175715f6d333666a3990f60826fea84c40cdfd2ad82b8ac5b8421502ae04ef",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-afe6c7a0d9a552b3",
+      "doi": "10.1371/journal.pcbi.1014835",
+      "paper": "Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.",
+      "journal": "PLoS computational biology",
+      "date": "2026-09-28",
+      "year": "2026",
+      "pmcid": "PMC13674867",
+      "pmid": "42804522",
+      "paperURL": "https://doi.org/10.1371/journal.pcbi.1014835",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-734X",
+      "eissn": "1553-7358",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f8e70bfd9ee2073a294c9fee1d16ded04c450d241e19f88d873329f75fc7d304"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/PMC13674867.1.xml?md5=c37df7d955f49b22c11dc63929203dfa",
+        "figures": [
+          {
+            "id": "pcbi.1014835.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of SpaHCC for single-cell-resolution spatial cell-cell communication inference in spatial transcriptomics.(A) Construction of a tripartite heterogeneous graph from single-cell transcriptomics, spatial transcriptomics, and prior ligand-receptor (LR) knowledge. (B) Joint representation learning of cell, spot, and LR nodes using a heterogeneous graph encoder. (C) Self-supervised contrastive pretraining on heterogeneous graph mini-batches. (D) Link prediction-based fine-tuning with online negative sampling. (E) Triad scoring and multi-round iterative refinement with spatial relay to prioritize high-confidence candidate sender cell–LR–receiver communication events.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.g001.webp?md5=bf6670a780ba2e34afb6348f5165e3d5",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014835",
+            "asset": "assets/pmc13674867-c7e639d3da09e9fc.webp",
+            "sha256": "c7e639d3da09e9fc71ea71bd4bec0d5c396f1bc1e374c4f9caddbe113c59d936",
+            "width": 1600,
+            "height": 826,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiong Li; Dongding Wu; Yuejin Zhang; Min Chen; Chong Liu. Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.. DOI: 10.1371/journal.pcbi.1014835. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c7e639d3da09e9fc71ea71bd4bec0d5c396f1bc1e374c4f9caddbe113c59d936",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pcbi.1014835.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Multilevel characterization of differential spatial cell–cell communication in Alzheimer’s disease.(A) Heatmap showing differential cell-type interaction patterns between Alzheimer’s disease (AD) and control groups. (B) Bar plot summarizing the major differential interaction directions across cell-type pairs. (C) Changes in received and sent communication strengths for the EX→EX interaction axis at the single-cell level. (D) Representative differential ligand–receptor pairs and their associated functional modules underlying communication remodeling in AD.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.e001.webp?md5=239f23ba8d8f861033a3d941fe51d94e",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014835",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiong Li; Dongding Wu; Yuejin Zhang; Min Chen; Chong Liu. Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.. DOI: 10.1371/journal.pcbi.1014835. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014835.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Ground-truth benchmark, spatial consistency, and cross-method prioritization of candidate communication events.(A) AUROC across COMMOT simulated cell–cell communication benchmark datasets. SpaHCC spatial-encoder-only achieved an average AUROC comparable to COMMOT and higher than CellNEST, CytoSignal, Giotto expression-based scoring, and Giotto spatial scoring under the matched evaluation setting. (B) Comparison of distance enrichment scores (DES) across methods in the Alzheimer’s disease dataset. DES was used as a spatial enrichment and consistency metric rather than as the primary benchmark metric. (C) Median pairwise Spearman rank concordance across tissue sections within the largest exact event universe shared by each method pair, shown for method-specific event-score rankings and communication mass. (D) Within-method percentiles of recurrent AD-associated directional candidate events in the strict all-five common event universe; higher percentiles indicate higher within-method priority.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.g003.webp?md5=39036ac6a84b0e6069ee5de0eecabe57",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014835",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiong Li; Dongding Wu; Yuejin Zhang; Min Chen; Chong Liu. Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.. DOI: 10.1371/journal.pcbi.1014835. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014835.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cross-patient stability, receiver-state coupling, and representative spatial cases from external disease datasets.(A) Patient-level ranking of candidate enriched signals in the AD cohort. The x-axis shows the overall ranking score, and the y-axis lists the corresponding cell type, ligand-receptor pair, and transcription factor combinations. (B) Heatmap showing the patient-level occurrence and relative enrichment patterns of representative candidate signals across AD patients. (C) Correlation analysis between receiver signaling strength and functional-state changes in excitatory neurons. Colors indicate Spearman’s correlation coefficients, and dot size indicates the magnitude of the correlation across multiple incoming-signal metrics and functional programs. (D) Representative spatial case in cSCC, showing sender-side and receiver-side spatial distributions of the interaction between tumor-associated keratinocytes and normal keratinocytes. (E) Representative spatial case in PDAC, showing sender-side and receiver-side spatial distributions of the interaction between ductal-like cells and monocyte/macrophage populations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.g004.webp?md5=73e57c2bdcfd988f5a2b126904cea0d9",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014835",
+            "asset": "assets/pmc13674867-4113f652e18ef9a1.webp",
+            "sha256": "4113f652e18ef9a163bb4f00f8d61465a34592fe2c0ea4ffd8de0b8af98ab49a",
+            "width": 1599,
+            "height": 1036,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiong Li; Dongding Wu; Yuejin Zhang; Min Chen; Chong Liu. Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.. DOI: 10.1371/journal.pcbi.1014835. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4113f652e18ef9a163bb4f00f8d61465a34592fe2c0ea4ffd8de0b8af98ab49a",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pcbi.1014835.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s001.docx?md5=1ee517a2437dc6aa0d09412224c8fc57",
+            "license": "CC BY",
+            "sha256": "c83a3a2073676f57664cc2c0cce8dd6e6603a606c438395668f49ccecd4d13e6",
+            "status": "downloaded_private",
+            "bytes": 605013,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s002.docx?md5=b11facac9cb87b07a18e0cf9c865064f",
+            "license": "CC BY",
+            "sha256": "d230f9690d68d0e329d1c192ba128ebe82537c93fd4a15eaed90d015d673bd17",
+            "status": "downloaded_private",
+            "bytes": 935009,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s003",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s003.docx?md5=07674147b27b8c3eabf13806afac285b",
+            "license": "CC BY",
+            "sha256": "f25c059e623743a42f935c9e24fdebf3b4a0ef4eeafbf20bf7a4c0051ed6ad5e",
+            "status": "downloaded_private",
+            "bytes": 1264007,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s004",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s004.docx?md5=c8e9e6912d5d2c3f23cf551aee374464",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s005",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s005.docx?md5=6f66d0c20d5319ed311f4fd064ae97e3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s006",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s006.docx?md5=521aa4e513b5e5a183a572ade0fe9ef9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s007",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s007.docx?md5=09920d4c2b67df4f5bd4a51e95580ee0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s008",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s008.docx?md5=54f3e23cc609f8167e5b21fef443ac63",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s009",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s009.docx?md5=cc09ad8dea6775cfbfed08e35b23e566",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s010",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s010.docx?md5=669eee09ad3c923dd25fcf00d42b351d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s011",
+            "label": "S7 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s011.docx?md5=03897797b55825d4e5dece772b0ba52c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s012",
+            "label": "S8 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s012.docx?md5=06d47b2b5c719d7e45576824dce62deb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s013",
+            "label": "S9 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s013.docx?md5=8b0dcbe1954eb0cdc336f41b8de4afef",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s014",
+            "label": "S10 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s014.docx?md5=2e71e3e41d63180c87c8de436c0fff87",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s015",
+            "label": "S11 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s015.docx?md5=267f0015671ed4c3695c298fc19bba0a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014835.s016",
+            "label": "S12 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.s016.docx?md5=19686a0487b6b14e57cb95b6ba40d74b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-13T08:51:15.626256+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiong Li; Dongding Wu; Yuejin Zhang; Min Chen; Chong Liu"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.6",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-13T08:51:21Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-13T08:51:21Z",
+        "url": "https://openalex.org/W7214644724",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-13T08:51:21Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-13T08:51:21Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-14T08:51:21Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-13T08:51:50Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -224461,6 +225639,63 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-e21922dfb542f49d": {
+      "tree": "dynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_process_data.py；读取行 31；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/example_process_data.py",
+          "observedFieldReferences": [
+            {
+              "name": "highly_variable",
+              "line": 48,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/extract_embeddings.py；读取行 29；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/ShuwenZhangswz/scMINA/blob/0356836bfbcc19aadc8c58bc8b0943a6c830b1bd/scripts/extract_embeddings.py",
+          "observedFieldReferences": []
+        }
+      ]
+    },
+    "doi-afe6c7a0d9a552b3": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -226079,7 +227314,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-13T08:49:53Z",
+  "generatedAt": "2026-11-13T08:51:50Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -226313,18 +227548,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-13T08:47:53Z",
-    "updatedAt": "2026-11-13T08:50:08Z",
+    "updatedAt": "2026-11-13T08:51:56Z",
     "batchCount": 2,
-    "requests": 51,
-    "aiAttempts": 1,
+    "requests": 90,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

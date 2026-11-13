@@ -242,11 +242,43 @@
       "newDOIs": [
         "10.1002/advs.78607",
         "10.1002/advs.78630",
-        "10.1093/bioinformatics/btag723"
+        "10.1093/bioinformatics/btag723",
+        "10.1093/nargab/lqag140",
+        "10.1371/journal.pcbi.1014835"
       ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag140": {
+      "checkedAt": "2026-11-13T08:51:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-13T08:51:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-13T08:51:31Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-13T08:51:29Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pcbi.1014835": {
+      "checkedAt": "2026-11-13T08:51:21Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-13T08:49:44Z",
       "status": "pending",
@@ -313,20 +345,8 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-12T09:00:17Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.psj.2026.107986": {
       "checkedAt": "2026-11-12T09:00:12Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-12T09:00:09Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -348,12 +368,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-12T08:58:00Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1155/humu/7869246": {
       "checkedAt": "2026-11-12T08:57:57Z",
@@ -3978,61 +3992,6 @@
           "paperURL": "https://doi.org/10.1093/bioinformatics/btag729"
         },
         "updatedAt": "2026-10-20T06:43:18Z"
-      }
-    },
-    "10.1371/journal.pcbi.1014835": {
-      "checkedAt": "2026-10-20T06:43:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pcbi.1014835",
-        "metadataHash": "da9da7e8dd0d296a384ea54638b30bacae160525b36df56e0c53911b665dd24e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/PMC13674867.1.xml?md5=c37df7d955f49b22c11dc63929203dfa",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "height": 826,
-              "id": "pcbi.1014835.g001",
-              "label": "Fig 1",
-              "assetSHA256": "c7e639d3da09e9fc71ea71bd4bec0d5c396f1bc1e374c4f9caddbe113c59d936",
-              "asset": "assets/pmc13674867-c7e639d3da09e9fc.webp",
-              "sha256": "c7e639d3da09e9fc71ea71bd4bec0d5c396f1bc1e374c4f9caddbe113c59d936",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.g001.webp?md5=bf6670a780ba2e34afb6348f5165e3d5",
-              "width": 1600,
-              "captionHash": "d2d6376ddfcd2c8997ffd1fea88f4e7f56f1a9c2fb36322b89b2fccf995a1888"
-            },
-            {
-              "license": "CC BY",
-              "height": 1036,
-              "id": "pcbi.1014835.g004",
-              "label": "Fig 4",
-              "assetSHA256": "4113f652e18ef9a163bb4f00f8d61465a34592fe2c0ea4ffd8de0b8af98ab49a",
-              "asset": "assets/pmc13674867-4113f652e18ef9a1.webp",
-              "sha256": "4113f652e18ef9a163bb4f00f8d61465a34592fe2c0ea4ffd8de0b8af98ab49a",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674867.1/pcbi.1014835.g004.webp?md5=73e57c2bdcfd988f5a2b126904cea0d9",
-              "width": 1599,
-              "captionHash": "fa62e7210c634ba7674b7e99cfe74537443fa2215b8d461bee6e0744978f718b"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-afe6c7a0d9a552b3",
-          "doi": "10.1371/journal.pcbi.1014835",
-          "paper": "Spatial cell-cell communication inference based on cell-spot-ligand-receptor heterogeneous graphs.",
-          "journal": "PLoS computational biology",
-          "date": "2026-09-28",
-          "year": "2026",
-          "pmcid": "PMC13674867",
-          "pmid": "42804522",
-          "paperURL": "https://doi.org/10.1371/journal.pcbi.1014835"
-        },
-        "updatedAt": "2026-10-20T06:43:37Z"
       }
     },
     "10.1158/0008-5472.can-25-4102": {
@@ -12160,20 +12119,15 @@
     "startedAt": "2026-11-13T08:47:53Z",
     "maxAiAttempts": 165,
     "date": "2026-11-13",
-    "dailyNewCount": 3,
-    "updatedAt": "2026-11-13T08:50:08Z",
-    "elapsedSeconds": 135,
+    "dailyNewCount": 5,
+    "updatedAt": "2026-11-13T08:51:56Z",
+    "elapsedSeconds": 244,
     "batchCount": 2,
-    "aiAttempts": 1,
+    "aiAttempts": 2,
     "endReason": "",
     "uncertainAiAttempts": 0,
-    "requests": 51,
+    "requests": 90,
     "version": 1,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-13T08:50:08Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }
