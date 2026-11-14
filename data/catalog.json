@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-13",
+  "checkedAt": "2026-11-14",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -163447,6 +163447,626 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-cd5889a4cd8ecf4f",
+      "doi": "10.1093/bioinformatics/btag730",
+      "paper": "Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13675103",
+      "pmid": "42867153",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag730",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "932699e54a7c2097c0727b42bff6361a494d24bc4fd36d484835a7e52aa8e8dd"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/PMC13675103.1.xml?md5=a790a382290d9e83c74865e65083b5c8",
+        "figures": [
+          {
+            "id": "btag730-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f1.webp?md5=a8575318074a562f08ba785e65cf3865",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "link_only",
+            "downloadStatus": "not_permitted_or_unresolved",
+            "limitations": []
+          },
+          {
+            "id": "btag730-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Detection and removal of outlier events in flow cytometry data. (A) Representative two-dimensional density plots and scatter plots illustrating outliers (blue) and inliers (gray) of ungated events showing SSC-H vs FSC-H and CD45-PerCP vs live dead (n = 3). (B) Representative plots of outlier detection and removal in test data using CD3 and CD4 as examples (n = 14).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f2.webp?md5=4ddc4dbd26ebd3fe676bb872736810a4",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag730-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Detection and removal of antibody aggregates. (A and B) Correlation heatmap depicting (A) Pearson R and (B) Pearson R > 0.7 for double-positive events of each channel combination. (C–F) Representative plots of antibody aggregate detection and removal using CD1C and CXCR3 as examples. (C) Two-dimensional density plot of events before removal of antibody aggregate. (D) Scatterplot visualizing aggregate score for each event. (E) Scatterplot depicting antibody aggregates (blue) and non-aggregates (gray) based on an antibody aggregate score threshold of 2. (F) Two-dimensional density plot of events after removal of antibody aggregates (n = 14). (G–J) Validation of antibody aggregate detection using simulated aggregate spike-ins on an expert-gated mass cytometry dataset (Levine et al. 2015). (G) Simulated antibody aggregate events (red) among background cells (gray) in a representative aggregate channel combination (CD117, CD49d). (H) The same simulated events (red) shown in a non-aggregate channel combination (CD45RA, CD133), where the collinear relationship is absent. (I) True positive (TP), true negative (TN), false positive (FP), and false negative (FN) rates across eight simulated scenarios varying spike-in fraction, fraction of affected channels, and noise level. (J) False positive rate per cell population, pooled across all simulated scenarios.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f3.webp?md5=df99d51af04a8b4751ba080e5f1bbb8c",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "assets/pmc13675103-6016e00d736eea17.webp",
+            "sha256": "6016e00d736eea177c693c02c2a9147569a34a512e4c8962932dd57a4f1ab546",
+            "width": 1600,
+            "height": 1637,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6016e00d736eea177c693c02c2a9147569a34a512e4c8962932dd57a4f1ab546",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag730-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Dimensionality reduction and clustering of intestinal immune cells. (A) Principal component analysis based on median surface protein expression per sample, colored by sample id and shape indicates layer. (B) UMAP of all samples colored by immune cell populations identified by merging and annotating louvain clusters. (C) Frequency plot of immune cell populations across all samples. (D) Average expression (scaled) of all proteins across immune cell populations visualized in a dotplot (n = 14). E, Epithelium; L, Lamina propria.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f4.webp?md5=cfdb551cea88d91eeaa8778200209b45",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag730-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Differential abundance and differential expression analysis of immune cells in intestinal mucosal layers. (A) UMAP of all samples colored by mucosal anatomical layers. (B) Frequency plot of immune cell populations in epithelium (E) and lamina propria (L). (C) Volcano plot of differential abundance analysis comparing immune cell populations in epithelium to lamina propria (FDR < 0.1, logFC > 0.5). (D) Volcano plot of differential expression analysis using median protein signal intensity per sample comparing immune cells of epithelium to lamina propria (FDR < 0.1, logFC > 0.1). (E) Violin plots of differential protein expression across mucosal layers (n = 14).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f5.webp?md5=2326e976dc7bee852ddffba412d8ab9e",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag730-F6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Analysis of publicly available mass cytometry data using Seumetry. (A) Principal component analysis based on median protein expression per sample colored by condition. (B, C) UMAP of all samples colored by (B) the 32 Louvain clusters and (C) merged clusters based on protein expression. (D) Dotplot of average lineage marker expression (scaled) in merged clusters. (E) Frequency plot of clusters across conditions. (F) Volcano plot of differential abundance analysis comparing stimulated to control (FDR < 0.05, logFC > 0.1). (G) Volcano plot of differential expression analysis using median protein signal intensity per sample comparing treated to control (FDR < 0.05, logFC > 0.1).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f6.webp?md5=4ab6b4bb24173e532dac32fe6602f622",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag730",
+            "asset": "assets/pmc13675103-10d4d4d033797844.webp",
+            "sha256": "10d4d4d0337978440787bdb072250822f10845ad7636c72af30b85af130c3177",
+            "width": 1600,
+            "height": 1001,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al.. Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.. DOI: 10.1093/bioinformatics/btag730. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "10d4d4d0337978440787bdb072250822f10845ad7636c72af30b85af130c3177",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag730_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730_supplementary_data.zip?md5=294da97731a0e3912369ad80a290a422",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/imsb-uke/Seumetry"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-14T08:04:33.930071+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/imsb-uke/Seumetry",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/PMC13675103.1.xml?md5=a790a382290d9e83c74865e65083b5c8"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Malte Borggrewe; Markus Flosbach; Lucia Testa; Cedric Ly; Martin Baumdick; Immo Prinz; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/imsb-uke/Seumetry",
+        "commit": "5d44af5db4f1669e47d3189f754e8a3bb19ee51e",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "R/visualization.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/visualization.R",
+            "sha256": "207e46b506282e757fa7d9f10eeb6826dc1c6d558c446ba3584d4894fd097071",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "sdev",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "x",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "color",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "shape",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Freq",
+                "line": 109,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "y",
+                "line": 207,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "tests/testthat/test-visualization.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/tests/testthat/test-visualization.R",
+            "sha256": "bdad82ce668dfb772f455527689cffd9ed144d645188da33ef31e154b4a2ff6e",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "cluster",
+                "line": 9,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "perc",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "attribute_2",
+                "line": 29,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Freq",
+                "line": 44,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/aggregate_detection.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/aggregate_detection.R",
+            "sha256": "1adcc192dac9c858b8870827677fec5faca9f4877d55e18dac89ca9739f93e07",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "coef",
+                "line": 133,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sigma",
+                "line": 136,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "aggregate",
+                "line": 149,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "aggregate_score.",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted",
+                "line": 195,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "residuals",
+                "line": 196,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "aggregate_score",
+                "line": 218,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/bead_normalisation.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/bead_normalisation.R",
+            "sha256": "a6c0b4406c09917ab58ec1c681aaf925b1fd6272d426d12fcc6655856e38cf4e",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "beadnorm",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "data",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "normcounts",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bead",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "is_bead",
+                "line": 42,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bead_doublet",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "remove",
+                "line": 43,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "lines",
+                "line": 46,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "scatter",
+                "line": 47,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/compensation.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/compensation.R",
+            "sha256": "21d08240c563187db3ef75d14c533a9b893714b698fabb095d33035cfacd2979",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "spillover_matrix.csv",
+                "reader": "read.csv",
+                "line": 14,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "fcs_colname",
+                "line": 34,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "antigen",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "comp",
+                "line": 68,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/compensation.R#L14"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "R/DE_pseudobulk.R",
+            "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/DE_pseudobulk.R",
+            "sha256": "c86cfac818b2cfb232ccf462f4f6b5b1d4bb1cdd33626cbf67efa400186e0b89",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "spillover_matrix.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "fcs_colname",
+                "line": 34,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "antigen",
+                "line": 57,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "comp",
+                "line": 68,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/compensation.R",
+            "line": 14,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-14T08:04:39Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-14T08:04:39Z",
+        "url": "https://openalex.org/W7221642815",
+        "cited_by_count": 2,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-14T08:04:39Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-14T08:04:39Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-15T08:04:39Z"
+        }
+      },
+      "selectionScore": {
+        "total": 70,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-14T08:04:52Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "Seumetry:面向高维流式与质谱细胞术数据分析的R工具包",
+        "summary_zh": "该文献介绍Seumetry,一个将流式与质谱细胞术专用分析方法与Seurat(scRNAseq分析工具)能力结合的R框架,提供质量控制、可视化、差异群体丰度与蛋白表达分析等功能。作者用7名成人肠道黏膜样本(上皮层与固有层分别分析)的谱式流式数据展示流程,并在公共数据集上与人工门控结果进行基准比较。代码以MIT许可开源,数据存放于Zenodo。本次仅基于摘要、图注与代码静态观察整理,未运行作者代码,未验证复现结果。",
+        "learning_points": [
+          "Seumetry将细胞术专用流程(补偿、变换、异常事件与抗体聚集体去除)与Seurat分析工具衔接,形成统一工作流。",
+          "图1给出整体流程:原始数据载入R、蛋白通道补偿与数据变换、质量控制、聚类/差异丰度/差异表达及第三方单细胞工具接入。",
+          "图2展示基于二维密度与散点图检测并去除异常事件,示例通道包括SSC-H/FSC-H、CD45-PerCP/活死染料及CD3/CD4。",
+          "图3展示以通道间Pearson相关与聚集体评分阈值(示例为2)检测抗体聚集体,并用模拟聚集体掺入专家门控质谱数据做验证。",
+          "图4展示按样本中位表面蛋白表达做PCA、UMAP展示Louvain聚类注释后的免疫细胞群体、群体频率图与平均表达点图。",
+          "代码静态观察显示仓库含可视化、聚集体检测、微珠归一化等模块及对应testthat测试文件,但未执行,功能正确性未知。",
+          "作者报告在自建肠道免疫细胞数据上识别出不同免疫细胞群体,并在公共数据集上与人工门控结果对齐(属作者陈述,未独立核验)。"
+        ],
+        "limitations": [
+          "未运行作者代码,静态检查不构成复现验证,不能宣称结果可复现或与原文一致。",
+          "输入数据的具体列名、通道数量、预处理参数与图号对应关系在证据中未明示,属未知。",
+          "图2、图3、图4的具体样本量(如n=3、n=14)仅来自图注文字,未核对原始数据。",
+          "基准比较仅依据摘要描述,未获得具体指标数值或统计检验细节。",
+          "抗体聚集体验证使用模拟掺入数据,其与真实聚集体分布的差异未知。",
+          "未评估工具在不同仪器、面板或物种数据上的泛化性。",
+          "期刊指标、引用影响与同行评审状态未在证据中提供,不予评价。",
+          "许可信息(MIT)与数据可用性链接来自摘要陈述,未独立核验仓库内容。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-14T08:04:57Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "87aff43b531b8396ee4db2dbafa9a44c770f3c0d55d198c56436fbdb0d31954d",
+        "summary_fingerprint": "f7c18ccdf4396185320b9cb5cc1948dd106239718a943fcaf72cda1abae633f7",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -225696,6 +226316,48 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-cd5889a4cd8ecf4f": {
+      "tree": "spillover_matrix.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "spillover_matrix.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/compensation.R；读取行 14；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/imsb-uke/Seumetry/blob/5d44af5db4f1669e47d3189f754e8a3bb19ee51e/R/compensation.R",
+          "observedFieldReferences": [
+            {
+              "name": "fcs_colname",
+              "line": 34,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "antigen",
+              "line": 57,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "comp",
+              "line": 68,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -227314,7 +227976,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-13T08:51:50Z",
+  "generatedAt": "2026-11-14T08:04:58Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -227548,18 +228210,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:03:13Z",
+    "updatedAt": "2026-11-14T08:05:04Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 41,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

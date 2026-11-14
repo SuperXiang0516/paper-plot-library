@@ -246,29 +246,52 @@
         "10.1093/nargab/lqag140",
         "10.1371/journal.pcbi.1014835"
       ]
+    },
+    "2026-11-14": {
+      "newDOIs": [
+        "10.1093/bioinformatics/btag730"
+      ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-14T08:04:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-14T08:04:44Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-14T08:04:43Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-14T08:04:41Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/bioinformatics/btag730": {
+      "checkedAt": "2026-11-14T08:04:40Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1093/nargab/lqag140": {
       "checkedAt": "2026-11-13T08:51:42Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-13T08:51:33Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.isci.2026.117831": {
       "checkedAt": "2026-11-13T08:51:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-13T08:51:29Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -279,23 +302,11 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1093/nargab/lqag138": {
-      "checkedAt": "2026-11-13T08:49:44Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1002/advs.78630": {
       "checkedAt": "2026-11-13T08:49:42Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-13T08:49:38Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1002/advs.78607": {
       "checkedAt": "2026-11-13T08:49:36Z",
@@ -4053,61 +4064,6 @@
           "paperURL": "https://doi.org/10.1093/bioinformatics/btag710"
         },
         "updatedAt": "2026-10-20T06:43:30Z"
-      }
-    },
-    "10.1093/bioinformatics/btag730": {
-      "checkedAt": "2026-10-20T06:42:46Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag730",
-        "metadataHash": "4d353b8c3e82a6adb0fd0f678d3a84c67ad5635be8313f7c335834f326fd959e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/PMC13675103.1.xml?md5=5edb94c1dd08b799d7f3bca35976240c",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "height": 1637,
-              "id": "btag730-F3",
-              "label": "Figure 3",
-              "assetSHA256": "6016e00d736eea177c693c02c2a9147569a34a512e4c8962932dd57a4f1ab546",
-              "asset": "assets/pmc13675103-6016e00d736eea17.webp",
-              "sha256": "6016e00d736eea177c693c02c2a9147569a34a512e4c8962932dd57a4f1ab546",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f3.webp?md5=df99d51af04a8b4751ba080e5f1bbb8c",
-              "width": 1600,
-              "captionHash": "c0385a55671d1a1665375a42df13e320614a93e6f17dd11d66449aebe3952a68"
-            },
-            {
-              "license": "CC BY",
-              "height": 1001,
-              "id": "btag730-F6",
-              "label": "Figure 6",
-              "assetSHA256": "10d4d4d0337978440787bdb072250822f10845ad7636c72af30b85af130c3177",
-              "asset": "assets/pmc13675103-10d4d4d033797844.webp",
-              "sha256": "10d4d4d0337978440787bdb072250822f10845ad7636c72af30b85af130c3177",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13675103.1/btag730f6.webp?md5=4ab6b4bb24173e532dac32fe6602f622",
-              "width": 1600,
-              "captionHash": "09e6030c218ff0d84f1e78bab9f420c2046614f431e73e3e933a5c54b953d7f0"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-cd5889a4cd8ecf4f",
-          "doi": "10.1093/bioinformatics/btag730",
-          "paper": "Seumetry: a versatile and comprehensive R toolkit to accelerate high-dimensional flow and mass cytometry data analysis.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13675103",
-          "pmid": "42867153",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag730"
-        },
-        "updatedAt": "2026-10-20T06:42:42Z"
       }
     },
     "10.1093/bioinformatics/btag708": {
@@ -12112,27 +12068,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 6,
+    "elapsedSeconds": 117,
     "version": 1,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "requests": 0,
+    "requests": 41,
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:03:13Z",
+    "updatedAt": "2026-11-14T08:05:04Z",
     "maxRequests": 1800,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "endReason": "",
     "batchCount": 1,
     "status": "active",
     "maxSeconds": 2700,
     "uncertainRequests": 0,
     "date": "2026-11-14",
-    "aiAttempts": 0,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-14T08:03:13Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 1,
+    "maxAiAttempts": 165
   }
 }
