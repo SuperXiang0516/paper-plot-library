@@ -249,11 +249,42 @@
     },
     "2026-11-14": {
       "newDOIs": [
+        "10.1093/bioinformatics/btag708",
         "10.1093/bioinformatics/btag730"
       ]
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-14T08:06:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1212/nxg.0000000000200449": {
+      "checkedAt": "2026-11-14T08:06:38Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-14T08:06:36Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-14T08:06:35Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/bioinformatics/btag708": {
+      "checkedAt": "2026-11-14T08:06:20Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-14T08:04:51Z",
       "status": "pending",
@@ -290,12 +321,6 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-13T08:51:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1371/journal.pcbi.1014835": {
       "checkedAt": "2026-11-13T08:51:21Z",
       "status": "source_confirmed",
@@ -326,12 +351,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1212/nxg.0000000000200449": {
-      "checkedAt": "2026-11-12T09:02:17Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.psj.2026.107910": {
       "checkedAt": "2026-11-12T09:02:14Z",
       "status": "pending",
@@ -352,12 +371,6 @@
     },
     "10.1002/jex2.70197": {
       "checkedAt": "2026-11-12T09:00:18Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-12T09:00:12Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -4064,61 +4077,6 @@
           "paperURL": "https://doi.org/10.1093/bioinformatics/btag710"
         },
         "updatedAt": "2026-10-20T06:43:30Z"
-      }
-    },
-    "10.1093/bioinformatics/btag708": {
-      "checkedAt": "2026-10-20T06:42:45Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag708",
-        "metadataHash": "c437eb60a5c3a639c31a3cc13a93a7caa4c09e448eab7467e6635a22076a1b05",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/PMC13674355.1.xml?md5=9d4c207e692bc1bb416931a61876f048",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "height": 1775,
-              "id": "btag708-F1",
-              "label": "Figure 1",
-              "assetSHA256": "34423bc51be562ebc483e7fa7c7dea6bdcecad2ce26685e6cbcae47e1631ce5d",
-              "asset": "assets/pmc13674355-34423bc51be562eb.webp",
-              "sha256": "34423bc51be562ebc483e7fa7c7dea6bdcecad2ce26685e6cbcae47e1631ce5d",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f1.webp?md5=35862c0ef187376ae45217c69e50e15a",
-              "width": 1600,
-              "captionHash": "09ac46a13b42a988628063a33474b0d001dc1ecac1fd09cb7c1665bd34d897f8"
-            },
-            {
-              "license": "CC BY",
-              "height": 1809,
-              "id": "btag708-F2",
-              "label": "Figure 2",
-              "assetSHA256": "2fa081fc553cc325a802459867a947a4425c31837ab5e30dd19066788434a862",
-              "asset": "assets/pmc13674355-2fa081fc553cc325.webp",
-              "sha256": "2fa081fc553cc325a802459867a947a4425c31837ab5e30dd19066788434a862",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f2.webp?md5=4c1f8bb2dde89a716d86979eaf07099f",
-              "width": 1600,
-              "captionHash": "8a98189a737ba6684ee771a68db236d7b91431f2e156c25cbd61427439d7eef0"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-6d0acb7007d380ef",
-          "doi": "10.1093/bioinformatics/btag708",
-          "paper": "CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13674355",
-          "pmid": "42872486",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag708"
-        },
-        "updatedAt": "2026-10-20T06:42:36Z"
       }
     },
     "10.1038/s41514-026-00425-2": {
@@ -12068,27 +12026,22 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 124,
+    "elapsedSeconds": 225,
     "version": 1,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "requests": 41,
+    "requests": 76,
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:05:11Z",
+    "updatedAt": "2026-11-14T08:06:52Z",
     "maxRequests": 1800,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "endReason": "",
     "batchCount": 2,
     "status": "active",
     "maxSeconds": 2700,
     "uncertainRequests": 0,
     "date": "2026-11-14",
-    "aiAttempts": 1,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-14T08:05:11Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 2,
+    "maxAiAttempts": 165
   }
 }

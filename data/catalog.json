@@ -164067,6 +164067,2580 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-6d0acb7007d380ef",
+      "doi": "10.1093/bioinformatics/btag708",
+      "paper": "CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13674355",
+      "pmid": "42872486",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag708",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "456371023e0c73788b7ad73dcc1b61395055c4b287be18a33922bb827731c211"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/PMC13674355.1.xml?md5=78f8e0883110878f1cb38df3acdb27b4",
+        "figures": [
+          {
+            "id": "btag708-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of CRISPR-HAWK architecture. (A) CRISPR-HAWK designs gRNAs from a reference genome, by specifying genomic coordinates, a PAM motif, and a spacer length. Optional inputs include variant datasets for variant- and haplotype-aware guide design, genomic annotation files, and user-provided candidate guide coordinates for assessing variant effects. (B) Genomic regions of interest are extracted and (C) combined with variant data, when available, to reconstruct haplotype-resolved sequences. (D) Reconstructed haplotypes and PAM sequences are encoded using a 4-bit binary scheme that supports IUPAC ambiguity codes, enabling fast bitwise pattern matching. (E) Encoded sequences are scanned to identify PAM occurrences, and adjacent spacers are extracted to generate candidate gRNAs. (F) Candidate guides are evaluated using three complementary metrics: on-target efficiency of haplotype-matched guides, residual on-target activity of reference-designed guides on variant-containing target sequences, and guide specificity via existing predictive models. (G) Guides are annotated with functional, gene-level, and cancer-related features using default annotation tracks (ENCODE, GENCODE, COSMIC) or user-provided BED files. (H) CRISPR-HAWK generates comprehensive outputs including a table of all candidate guides identified within the input region. Optional outputs include a table of reconstructed haplotypes, graphical reports, a dedicated report for user-selected candidate guides, a genome-wide list of predicted off-target sites, and a guide activity map illustrating residual on-target activity with specificity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f1.webp?md5=35862c0ef187376ae45217c69e50e15a",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag708",
+            "asset": "assets/pmc13674355-34423bc51be562eb.webp",
+            "sha256": "34423bc51be562ebc483e7fa7c7dea6bdcecad2ce26685e6cbcae47e1631ce5d",
+            "width": 1600,
+            "height": 1775,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al.. CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.. DOI: 10.1093/bioinformatics/btag708. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "34423bc51be562ebc483e7fa7c7dea6bdcecad2ce26685e6cbcae47e1631ce5d",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag708-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Overview of CRISPR-HAWK outputs and visualizations. (A) The primary output summarizes all candidate gRNAs with their associated performance metrics in a tabular report, including on-target efficiency, residual on-target activity, and guide specificity. (B) When requested, a haplotype table is provided, listing each reconstructed haplotype alongside the corresponding samples and variants. (C) Graphical reports include scatter plots depicting residual on-target activity across variant-containing target sequences, with point size indicating the number of individuals carrying each variant, and pie charts classifying gRNAs by type (reference, spacer alternative, PAM alternative, or both). (D) Users may optionally restrict the analysis to selected candidate guides. In this mode, the tool produces a dedicated report detailing all variant-containing target sequences and their associated scores for on-target efficiency, residual on-target activity, and guide specificity. (E) A genome-wide list of predicted off-target sites is generated for each candidate gRNA using CRISPRitz. (F) The guide activity map depicts residual on-target activity with guide specificity, providing a global view of guide performance across diverse genomic backgrounds.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f2.webp?md5=4c1f8bb2dde89a716d86979eaf07099f",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag708",
+            "asset": "assets/pmc13674355-2fa081fc553cc325.webp",
+            "sha256": "2fa081fc553cc325a802459867a947a4425c31837ab5e30dd19066788434a862",
+            "width": 1600,
+            "height": 1809,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al.. CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.. DOI: 10.1093/bioinformatics/btag708. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2fa081fc553cc325a802459867a947a4425c31837ab5e30dd19066788434a862",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag708-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Variant-aware gRNA design and scoring analysis of the BCL11A +58 erythroid enhancer. (A) The clinically optimized guide sg1617 targets the +58 erythroid enhancer located within an intronic region of BCL11A. (B) Classification of gRNAs identified across three variant datasets (1000G, HGDP, and gnomAD): reference guides, spacer alternative guides (variants in spacer only), PAM alternative guides (variants creating novel PAM), and guides with variants in both PAM and spacer. (C) On-target efficiency scores (Azimuth) for the top 25 guides at the BCL11A enhancer, comparing reference sequences to haplotype-matched alternative sequences. Guides are ranked by maximum absolute score difference; sg1617 is shown in bold. Point size indicates the number of individuals carrying each variant. (D) Residual on-target activity (CFD) for the top 25 reference-designed guides at the BCL11A enhancer, showing predicted cleavage efficiency on variant-containing target sequences. Guides are ranked by maximum delta between reference and variant targets; sg1617 is shown in bold. Point size indicates the number of individuals carrying each variant. (E) Relationship between residual on-target activity and guide specificity for sg1617 and its variant-containing target sequences. Background shading indicates guide penalty, with green representing optimal combinations of high residual activity and high specificity. Off-target searches were performed with CRISPRme v2.1.7 using 1000G and HGDP variants, allowing up to six mismatches and two DNA/RNA bulges. (F) Summary of variant-containing target sequences for sg1617, reporting haplotype, population of origin (Pop), allele frequency (AF), sample count, residual on-target activity, on-target efficiency, and guide specificity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f3.webp?md5=0addadb399e88160710808d6304f5462",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag708",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al.. CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.. DOI: 10.1093/bioinformatics/btag708. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag708-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "On-target activity scores are computed using Azimuth (A), Rule Set 3 (B), CRISPRon (C), PLM-CRISPR (D), and sgDesigner (E), using genetic variants from the 1000 Genomes Project, HGDP, and gnomAD datasets. Each point represents a guide RNA; point size reflects the number of samples carrying the corresponding variant(s), while diamonds denote singleton gRNAs (variant guides carried by single individuals). Reference guides are shown in dark, whereas haplotype-matched guides are color-coded. For each model, the top 10 guides ranked by the maximum absolute difference in predicted efficiency between reference and alternative haplotypes are displayed. (F) Heatmap of pairwise Pearson correlation coefficients between efficiency scores computed across all guides identified within the BCL11A enhancer region.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f4.webp?md5=60f90f95c8165ead3147fd167ab77b19",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag708",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al.. CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.. DOI: 10.1093/bioinformatics/btag708. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag708-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Residual on-target activity of therapeutic and benchmark gRNAs across variant-containing target sites. (A) Summary of analyzed guides, including target genes, Cas nucleases, clinical status, genomic coordinates, and PAM sequences. (B) CFD scores quantifying predicted cleavage efficiency of reference-designed guides on variant-containing target sequences. Each point represents a variant-containing target sequence; point size reflects the number of individuals carrying the corresponding variant(s).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708f5.webp?md5=695993887adcd8f51ca1148423048fbe",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag708",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al.. CRISPR-HAWK: haplotype- and variant-aware guide design toolkit for CRISPR-Cas.. DOI: 10.1093/bioinformatics/btag708. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag708_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/btag708_supplementary_data.pdf?md5=5c0c27c37dd2badd333837295750b874",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/InfOmics/CRISPR-HAWK",
+          "https://github.com/pinellolab/CRISPR-HAWK"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-14T08:06:18.030535+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/pinellolab/CRISPR-HAWK",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/PMC13674355.1.xml?md5=78f8e0883110878f1cb38df3acdb27b4"
+          },
+          {
+            "url": "https://github.com/InfOmics/CRISPR-HAWK",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13674355.1/PMC13674355.1.xml?md5=78f8e0883110878f1cb38df3acdb27b4"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Alisa Kumbara; Manuel Tognon; Giulia Carone; Arianna Fontanesi; Nicola Bombieri; Rosalba Giugno; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/InfOmics/CRISPR-HAWK",
+        "commit": "0135288d95dba46c801a020976f1772c725d2794",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "paper/compute_samples_number.py",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/compute_samples_number.py",
+            "sha256": "57f5a73d505066b2a9ae89db290d28f6638b9b8a93cd0ea9ec0d12decf8c9586",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 148,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "n_samples",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "samples",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 132,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 36,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 148,
+                "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/compute_samples_number.py#L148"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "paper/generate-figures.ipynb",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "sha256": "c951ea71035ac2252b0f7296e3ef2ed69bf1390e20890fb82f78bfab44055943",
+            "language": "Python notebook",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 26,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 29,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 32,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 40,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 43,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 44,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 52,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 55,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 56,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              },
+              {
+                "path": "",
+                "reader": "pd.read_csv",
+                "line": 839,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 26,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 29,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 32,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 40,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 43,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 44,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 52,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 55,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 56,
+                "url": ""
+              },
+              {
+                "type": "io_reference",
+                "line": 839,
+                "url": ""
+              }
+            ],
+            "lineScope": "notebook code-cell concatenation"
+          },
+          {
+            "path": "src/crisprhawk/config.py",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/src/crisprhawk/config.py",
+            "sha256": "71e11cc8dca73aa9f30bab9ea994f21dad5a83546d4d9099f4601350cb9c5031",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "env_name",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "outdir",
+                "line": 41,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/crisprhawk/config_crispritz.py",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/src/crisprhawk/config_crispritz.py",
+            "sha256": "e5bc83cd926552a06816673fe4ed9e6fd93f3d4063b978729236fc4c7b7ce4bf",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/crisprhawk/config_crispron.py",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/src/crisprhawk/config_crispron.py",
+            "sha256": "2bdc9e2908ee1f38056a68380d3e9c753cf7d8f6682445d50915adb7cdb52f98",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/crisprhawk/config_sgdesigner.py",
+            "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/src/crisprhawk/config_sgdesigner.py",
+            "sha256": "a17a5f074cb93c0072f66210ee08bd0188b59b461c4bee350054fe1a55716be0",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "n_samples",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "samples",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 132,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 36,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 36,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/compute_samples_number.py",
+            "line": 148,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 26,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 29,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 32,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 40,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 43,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 44,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 52,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 55,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 56,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "dataset",
+                "line": 968,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sgRNA_sequence",
+                "line": 992,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "label",
+                "line": 993,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "guide_id",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "category",
+                "line": 84,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "delta",
+                "line": 225,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Rank",
+                "line": 304,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "rank_chr_start",
+                "line": 370,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_samples",
+                "line": 854,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "dot_size",
+                "line": 855,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "origin",
+                "line": 93,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abs_delta",
+                "line": 227,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pam",
+                "line": 265,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alts",
+                "line": 274,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_sgRNA",
+                "line": 317,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_score",
+                "line": 319,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ref_samples",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_ref",
+                "line": 547,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 664,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "start",
+                "line": 840,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_cfdon",
+                "line": 885,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "top",
+                "line": 941,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "right",
+                "line": 942,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "chr",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "stop",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "strand",
+                "line": 80,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "variant_id",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "off_target",
+                "line": 692,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "on_target",
+                "line": 693,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_sgRNA",
+                "line": 327,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "alt_score",
+                "line": 329,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+            "line": 839,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-14T08:04:39Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-14T08:06:20Z",
+        "url": "https://openalex.org/W7221801907",
+        "cited_by_count": 2,
+        "fwci": 2.6048,
+        "citation_normalized_percentile": 0.85766352,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-14T08:06:20Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-14T08:06:20Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-15T08:06:20Z"
+        }
+      },
+      "selectionScore": {
+        "total": 74.2883176,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.2883176,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-14T08:06:40Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "CRISPR-HAWK:面向CRISPR-Cas的单倍型与变异感知向导设计工具包",
+        "summary_zh": "该资料介绍CRISPR-HAWK,一个将个体与群体尺度的遗传变异和单倍型纳入gRNA设计的框架,用于弥补仅依赖参考基因组的设计工具对变异影响考虑不足的问题。摘要称在79 648个基因组上分析治疗靶点,发现变异会显著改变向导表现;在BCL11A的镰状细胞病治疗向导sg1617上识别出完全消除预测切割活性的单倍型;在七个治疗位点中82.5%的向导含改变在靶活性的变异;变异还可产生新的PAM位点从而形成参考设计无法发现的个体特异向导。图注进一步描述了从参考基因组坐标、PAM基序与间隔序列长度出发,结合可选变异数据重建单倍型序列、以4位二进制编码支持IUPAC简并码进行位模式匹配、扫描PAM并提取候选向导,以及用Azimuth、Rule Set 3、CRISPRon、PLM-CRISPR、sgDesigner等模型评估在靶效率、残余在靶活性与特异性的流程,并给出表格与图形化输出。",
+        "learning_points": [
+          "工具以参考基因组坐标、PAM基序和间隔序列长度为基本输入,变异数据集、基因组注释和用户候选向导坐标为可选输入(据Figure 1图注)。",
+          "流程包括提取目标区域、结合变异数据重建单倍型解析序列,并用支持IUPAC简并码的4位二进制编码进行快速位模式匹配(据Figure 1图注)。",
+          "候选向导通过扫描PAM并提取相邻间隔序列生成,随后用三类互补指标评估:单倍型匹配向导的在靶效率、参考设计向导在含变异靶序列上的残余在靶活性、以及基于已有预测模型的向导特异性(据Figure 1图注)。",
+          "主要输出为含在靶效率、残余在靶活性和特异性的候选gRNA表格报告,可选输出单倍型表、散点图与饼图等图形报告,以及基于CRISPRitz的全基因组脱靶位点列表(据Figure 2图注)。",
+          "BCL11A +58红系增强子分析将gRNA分为参考型、间隔序列替代型、PAM替代型及PAM与间隔序列均变异型,并按参考与单倍型匹配序列的评分差异排序展示(据Figure 3图注)。",
+          "在靶活性评分在多个模型(Azimuth、Rule Set 3、CRISPRon、PLM-CRISPR、sgDesigner)下用1000G、HGDP和gnomAD变异数据计算,并给出模型间评分的Pearson相关热图(据Figure 4图注)。",
+          "静态检查显示绘图脚本从制表符分隔的报告文件读取数据,涉及BCL11A与HBG1/HBG2在1000G、HGDP、gnomAD下的多个报告文件(据script-0、script-1)。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能据此宣称结果已复现或与原文一致(据inspection-boundary)。",
+          "输入数据的具体尺度、图号与数据文件的对应关系在证据中未明示,属未知(据inspection-boundary)。",
+          "摘要与图注中的数值(如79 648个基因组、82.5%的向导比例)为原文陈述,未在本次检查中独立核验。",
+          "各预测模型(Azimuth、Rule Set 3、CRISPRon、PLM-CRISPR、sgDesigner)的版本、参数与训练数据在证据中未说明。",
+          "图注文本在Figure 1、Figure 2、Figure 3、Figure 4处存在截断,部分细节未知。",
+          "script-2与script-3的静态观察为空,无法据此描述配置模块内容。",
+          "证据未提供期刊指标、许可条款或数据可用性细节,相关事项未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-14T08:06:46Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "7121a8cc03c2ba33635895450bb56fe4c8e1ceb09813f8deb65ff9dd59625e8b",
+        "summary_fingerprint": "8c351fda3d97b948809eb9a93f320631a5e44b9c60770901e1afbd7b4c6dd48d",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -226358,6 +228932,1823 @@
           ]
         }
       ]
+    },
+    "doi-6d0acb7007d380ef": {
+      "tree": "dynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path\ndynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/compute_samples_number.py；读取行 148；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/compute_samples_number.py",
+          "observedFieldReferences": [
+            {
+              "name": "n_samples",
+              "line": 31,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "samples",
+              "line": 41,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 132,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 36,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 36,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 36,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 36,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 26；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 29；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 32；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 40；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 43；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 44；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 52；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 55；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 56；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb；读取行 839；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/InfOmics/CRISPR-HAWK/blob/0135288d95dba46c801a020976f1772c725d2794/paper/generate-figures.ipynb",
+          "observedFieldReferences": [
+            {
+              "name": "dataset",
+              "line": 968,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sgRNA_sequence",
+              "line": 992,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "label",
+              "line": 993,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "guide_id",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "category",
+              "line": 84,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "delta",
+              "line": 225,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Rank",
+              "line": 304,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "rank_chr_start",
+              "line": 370,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_samples",
+              "line": 854,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "dot_size",
+              "line": 855,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "origin",
+              "line": 93,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "abs_delta",
+              "line": 227,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pam",
+              "line": 265,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alts",
+              "line": 274,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_sgRNA",
+              "line": 317,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_score",
+              "line": 319,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ref_samples",
+              "line": 320,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n_ref",
+              "line": 547,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 664,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "start",
+              "line": 840,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score_cfdon",
+              "line": 885,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "top",
+              "line": 941,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "right",
+              "line": 942,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "chr",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "stop",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "strand",
+              "line": 80,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "variant_id",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "off_target",
+              "line": 692,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "on_target",
+              "line": 693,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_sgRNA",
+              "line": 327,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "alt_score",
+              "line": 329,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -227976,7 +232367,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-14T08:04:58Z",
+  "generatedAt": "2026-11-14T08:06:47Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -228210,18 +232601,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:05:11Z",
+    "updatedAt": "2026-11-14T08:06:52Z",
     "batchCount": 2,
-    "requests": 41,
-    "aiAttempts": 1,
+    "requests": 76,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
