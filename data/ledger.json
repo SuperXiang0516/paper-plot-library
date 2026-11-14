@@ -249,12 +249,45 @@
     },
     "2026-11-14": {
       "newDOIs": [
+        "10.1038/s41467-026-77651-5",
         "10.1093/bioinformatics/btag708",
-        "10.1093/bioinformatics/btag730"
+        "10.1093/bioinformatics/btag730",
+        "10.1371/journal.pgen.1012361",
+        "10.3390/biom16091288"
       ]
     }
   },
   "candidates": {
+    "10.1038/s41467-026-77651-5": {
+      "checkedAt": "2026-11-14T08:08:22Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1371/journal.pgen.1012361": {
+      "checkedAt": "2026-11-14T08:08:17Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-14T08:08:12Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-14T08:08:10Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3390/biom16091288": {
+      "checkedAt": "2026-11-14T08:08:09Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1111/cas.70548": {
       "checkedAt": "2026-11-14T08:06:39Z",
       "status": "pending",
@@ -350,18 +383,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-12T09:02:14Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-12T09:02:11Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1093/bioinformatics/btag726": {
       "checkedAt": "2026-11-12T09:02:09Z",
@@ -5195,61 +5216,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.3390/biom16091288": {
-      "checkedAt": "2026-10-17T06:26:56Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3390/biom16091288",
-        "metadataHash": "5c124d75c17c7d8e3e18a601d47f29876c9441c2c247bf4ae8b26fd9482890c8",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/PMC13604200.1.xml?md5=c5b6116fbfd279e87ee4bd034199c37f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "biomolecules-16-01288-f003",
-              "sha256": "04e9487857dcb151b520827738b2cf3fae20bc4535d672a6df89a87b8fcf8dfa",
-              "height": 914,
-              "assetSHA256": "04e9487857dcb151b520827738b2cf3fae20bc4535d672a6df89a87b8fcf8dfa",
-              "asset": "assets/pmc13604200-04e9487857dcb151.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 3",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g003.webp?md5=a7145d24b7f953e9eddb292dfe118c6e",
-              "captionHash": "2a8815d26221c3c5542fc5b8f75cec4cdb12101e28f15968eda6606bda5cc0b0"
-            },
-            {
-              "id": "biomolecules-16-01288-f004",
-              "sha256": "b55a5ef3ddba5e3a967830c5c98ead6467327ae4ebcac2cc6a08b1bfa0de2fd7",
-              "height": 1022,
-              "assetSHA256": "b55a5ef3ddba5e3a967830c5c98ead6467327ae4ebcac2cc6a08b1bfa0de2fd7",
-              "asset": "assets/pmc13604200-b55a5ef3ddba5e3a.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 4",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g004.webp?md5=ea31167dd936cc8b8559a0bb8565e102",
-              "captionHash": "83a71e94995091c7dd8e0d88352100b06e3ea273a1b9132438cd670a589b307e"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-11ab4882f9a35f32",
-          "doi": "10.3390/biom16091288",
-          "paper": "scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.",
-          "journal": "Biomolecules",
-          "date": "2026-09-06",
-          "year": "2026",
-          "pmcid": "PMC13604200",
-          "pmid": "42793120",
-          "paperURL": "https://doi.org/10.3390/biom16091288"
-        },
-        "updatedAt": "2026-10-17T06:26:55Z"
-      }
     },
     "10.1093/nargab/lqag105": {
       "checkedAt": "2026-10-17T06:26:53Z",
@@ -12026,15 +11992,15 @@
     }
   },
   "dailyCollectionSession": {
-    "elapsedSeconds": 233,
+    "elapsedSeconds": 326,
     "version": 1,
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
-    "requests": 76,
+    "requests": 115,
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:07:00Z",
+    "updatedAt": "2026-11-14T08:08:33Z",
     "maxRequests": 1800,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "endReason": "",
     "batchCount": 3,
     "status": "active",
@@ -12042,11 +12008,6 @@
     "uncertainRequests": 0,
     "date": "2026-11-14",
     "aiAttempts": 2,
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-14T08:07:00Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxAiAttempts": 165
   }
 }

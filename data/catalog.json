@@ -166641,6 +166641,1187 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-a45d43772ecd1699",
+      "paper": "XGBoost-SHAP analysis prioritizes lower-frequency variants predicted to affect HNF4A binding motifs in pancreatic progenitors.",
+      "doi": "10.1371/journal.pgen.1012361",
+      "journal": "PLoS genetics",
+      "date": "2026-11-04",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pgen.1012361",
+      "pmcid": "PMC13754212",
+      "pmid": "42981441",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-7390",
+      "eissn": "1553-7404",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-14",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "95b51dfd75a32bbacdbcd8c6bd618355129509919f00099f04751af828eb137f"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/PMC13754212.1.xml?md5=5d65fb9286bf97f6c8eb62762b35a039",
+        "figures": [
+          {
+            "id": "pgen.1012361.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Model overview.Architectural schematic depicting the workflow. On the left, the primary data are shown, including snATAC-seq, whole-genome sequence information (SNP alleles: A/C) and a PWM associated with the HNF4A TF. The whole-genome sequence information was used to identify SNPs across the genome in each of the seven individuals included in the study. In the middle, the model features and training outcome are shown; for each peak in the snATAC-seq data, the read depth and peak score were obtained. Variant MAF was also included as a model feature. The snATAC-seq data were used to identify which SNPs presented allele-specific effects (ASE) on chromatin accessibility, depicted as the dark blue allele having greater sequence coverage than the light blue allele. Observed ASE status served as the model-training outcome. For five TFs, the PWM (ref), PWM (alt) and delta PWM were calculated at each SNP. On the right, the XGBoost model with predictions and SHAP analysis is shown. After training, XGBoost performance in distinguishing SNPs with and without ASE was evaluated using repeated fivefold cross-validation as well as test and validation SNP sets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.g001.webp?md5=9c9f355486f9a83d2d4a6012d4522ff5",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012361",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kelly A. Frazer; Benjamin Henson; Jennifer P. Nguyen; Wilfredo G. Gonzalez Rivera; Matteo D’Antonio. XGBoost-SHAP analysis prioritizes lower-frequency variants predicted to affect HNF4A binding motifs in pancreatic progenitors.. DOI: 10.1371/journal.pgen.1012361. Copyright holder: Frazer et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pgen.1012361.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "XGBoost improves predictive performance compared with linear models.A, C) ROC curves for A) predictions using only PDX1 at multiple ASE p value thresholds and models and C) for the “Full” XGBoost model including chromatin-accessibility features (snATAC-seq read depth and peak score) and SNP MAF and all five TFs as well as for each TF independently at an ASE p value threshold = 1e-5. The ROC curves calculated on the cross-validated training set are shown here. The test and validation SNP sets are shown in S3 Fig. B) ROC AUCs at different p value thresholds for all the models and all the transcription factors. D,E) Line plots showing the ROC AUC stratified by read depth (D) and MAF (E). In (D), the first two deciles do not include any variants with ASE, so no ROC AUC was calculated. The plots show that XGBoost had better overall predictive performance across the read-depth and MAF deciles than the linear models. F) ROC curves for models built using only transcription factor information (solid lines) or using only chromatin-accessibility features (snATAC-seq read depth and peak score) and SNP MAF (dashed line). In the panel, “Sequence” refers to these accessibility and frequency features rather than the underlying DNA sequence. “Full model” indicates the model built using the PWMs for all five TFs together with the chromatin-accessibility and MAF features.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.g002.webp?md5=36d893c6bcb32f20259cf655c9610f1c",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012361",
+            "asset": "assets/pmc13754212-b910f676c9a9339c.webp",
+            "sha256": "b910f676c9a9339ca1c251e16052c6698906f1e8fd361bc92546603965306a54",
+            "width": 1600,
+            "height": 1993,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kelly A. Frazer; Benjamin Henson; Jennifer P. Nguyen; Wilfredo G. Gonzalez Rivera; Matteo D’Antonio. XGBoost-SHAP analysis prioritizes lower-frequency variants predicted to affect HNF4A binding motifs in pancreatic progenitors.. DOI: 10.1371/journal.pgen.1012361. Copyright holder: Frazer et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b910f676c9a9339ca1c251e16052c6698906f1e8fd361bc92546603965306a54",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pgen.1012361.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "SHAP analysis of the XGBoost model.A) Scatterplot showing the UMAP coordinates of each SNP. UMAP coordinates were calculated from the SHAP values for the model features. The colors represent seven clusters obtained via k-means clustering. The cluster numbers are labeled in the figure. B-C) Bar plots showing B) the number of SNPs per cluster and C) the percentage of SNPs with significant ASE (P value < 1e-5) in each cluster. D) Scatterplot showing the UMAP coordinates of each SNP. The colors represent the read depth deciles. E) Bar plot showing the distribution of MAF deciles among SNPs within the seven clusters. The colors represent the MAF deciles, with lighter colors indicating relatively lower-MAF variants within the analyzed dataset and darker colors indicating relatively higher-MAF variants. All analyzed variants had MAF ≥ 5%. F) Bar plot showing the distribution of overlaps between each SNP and ChromHMM chromatin states in the seven clusters. G-H) Plots showing the SHAP interactions among the ten variables with the strongest effects on model predictions: G) cluster 3; H) cluster 4. Node size is proportional to feature importance, and edge width is proportional to the SHAP interaction value between each pair of features. The SHAP interactions for clusters 1, 2, 5, 6, and 7 are shown in Fig S6.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.g003.webp?md5=e22f0d96b208ffdcb7d23759cb75472b",
+            "articleURL": "https://doi.org/10.1371/journal.pgen.1012361",
+            "asset": "assets/pmc13754212-e32c93d1e79c5960.webp",
+            "sha256": "e32c93d1e79c59605ed178f1bc4e0652c477b20424993e1eaf47ef1eaa5c9787",
+            "width": 1600,
+            "height": 2040,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kelly A. Frazer; Benjamin Henson; Jennifer P. Nguyen; Wilfredo G. Gonzalez Rivera; Matteo D’Antonio. XGBoost-SHAP analysis prioritizes lower-frequency variants predicted to affect HNF4A binding motifs in pancreatic progenitors.. DOI: 10.1371/journal.pgen.1012361. Copyright holder: Frazer et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e32c93d1e79c59605ed178f1bc4e0652c477b20424993e1eaf47ef1eaa5c9787",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pgen.1012361.s001",
+            "label": "S1 Text",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s001.docx?md5=4d2f9b3a52a4a4a000d4f4cd8cb94e8f",
+            "license": "CC BY",
+            "sha256": "a9679e28c491c616971bc5867c612ebd56930ad0f5fd2084fd611860380d717a",
+            "status": "downloaded_private",
+            "bytes": 48962,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s002",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s002.gif?md5=8b7b96f8863a62621b537e68fd40c748",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s003",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s003.tif?md5=7a4e5317450e5695120982d2c3d6e5e2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s004",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s004.tif?md5=3a12175a72d010a651588686af230131",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s005",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s005.tif?md5=2c553a7e95055b52a5ce9fc8268a607e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s006",
+            "label": "S5 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s006.tif?md5=fa6d7a9cc6809394634744bb0d73cbb4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s007",
+            "label": "S6 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s007.png?md5=762139fb500d06202a73584b69a3f3dc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s008",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s008.xlsx?md5=fa9643114757ebd420b5885da6a8a655",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s009",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s009.xlsx?md5=8f0ce22a2aefb4815be85cc407299047",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s010",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s010.xlsx?md5=6269ae297270d52e238b825a4dfb3f87",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s011",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s011.xlsx?md5=91198c7481e7cc5aed7d8e1e0637fc8a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s012",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s012.xlsx?md5=aa456ddd3f7165d68b7e8fd9700aedc8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s013",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s013.txt?md5=cd1718e641bcc5cc37ad8c04f10e1c36",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s015",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s015.docx?md5=0f577950f00a3b28890363a007de7e11",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pgen.1012361.s016",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754212.1/pgen.1012361.s016.docx?md5=4a71ee92d6dbc495c9338b91cbe5f6f6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-14T08:08:14.325498+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Kelly A. Frazer; Benjamin Henson; Jennifer P. Nguyen; Wilfredo G. Gonzalez Rivera; Matteo D’Antonio"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.9",
+        "jcr": "Q2",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-14T08:08:17Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-14T08:08:17Z",
+        "url": "https://openalex.org/W7225275130",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-14T08:08:17Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-14T08:08:17Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-15T08:08:17Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-14T08:08:24Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-962da49deb5d225b",
+      "paper": "Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.",
+      "doi": "10.1038/s41467-026-77651-5",
+      "journal": "Nature communications",
+      "date": "2026-11-09",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1038/s41467-026-77651-5",
+      "pmcid": "PMC13748584",
+      "pmid": "43003833",
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-14",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f5b6515fb41cb5d7bc7201a822c1c168f200c3da0c0bc333b9dc3f18b20f8264"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/PMC13748584.1.xml?md5=47b9c7a1e152f0807726a62e7d83ba4d",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the TriSCOPE framework for integrative single-cell predictive and trajectory analysis in Alzheimer’s disease.A Outline of the predictive modeling component of our TriSCOPE approach. Including cell-specific disease classification and downstream feature importance analysis. Created in BioRender. M, A. https://BioRender.com/xvqsmfa. B Outline of the pseudotime modeling component of TriSCOPE. We choose cells based on healthy phenotype: no Amyloid pathology (CERAD), and no cognitive impairment (COGDX). Setting the transcriptional state of this healthy cell as our root, we then trace the transcriptional progression away from this cell in order to map the progression of disease. We perform this at the cell subcluster level to avoid confounding with transcriptional differences between cell types. Created in BioRender. M, A. https://BioRender.com/4tdsbmf. C A predictive classifier trained across five splits on a global scale, no cell type differentiation, on Demographics and APOE data. The second curve shows a predictive classifier trained across five splits on a global scale, no cell type differentiation, on Demographics, APOE, and Gene Expression data. D Circle plot summarizing a high-confidence set of gene features jointly supported across the three branches of the TriSCOPE framework. Genes shown were selected based on concordant evidence from predictive modeling, donor-aware differential expression, and pseudotime analysis: specifically, genes that were (i) predictive in at least two independent model splits, (ii) differentially expressed with FDR-adjusted P < 0.05 and |log₂ fold change | > 0.25, and (iii) ranked within the top 1% of trajectory-associated genes based on pseudotime influence. Genes are displayed by major brain cell type, including Microglia (Mic), Astrocytes (Ast), Excitatory Neurons (Exc), Inhibitory Neurons (Inh), Oligodendrocytes (Oli), and Oligodendrocyte Progenitor Cells (Opc), highlighting convergent molecular candidates implicated in Alzheimer’s disease vulnerability. No statistical test was applied to the intersection itself; genes were selected by jointly applying the three criteria above. Differential expression significance was determined using a donor-aware Poisson generalized linear mixed model (two-sided Wald test, Benjamini–Hochberg corrected). Created in BioRender. M, A. (https://BioRender.com/gsdej2o). Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_Fig1_HTML.webp?md5=ed9610f6686c4266fa08ca18ab44f5d1",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77651-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel. Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.. DOI: 10.1038/s41467-026-77651-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Cell-type-specific predictive modeling reveals diverse transcriptional determinants of clinical Alzheimer’s disease status.A Receiver operating characteristic (ROC) curves summarizing the results from five independent runs of classification experiments performed on six major brain cell types: Astrocytes, Excitatory Neurons, Inhibitory Neurons, Microglia, Oligodendrocytes, and Oligodendrocyte Progenitor Cells. For each cell type, classifiers were trained using four feature sets: (1) a combined set including demographic variables (age at death, sex, education), APOE genotype, and gene expression data (black curves); (2) demographic variables and APOE genotype only (gray curves); (3) gene expression plus APOE genotype (red curves); and (4) gene expression only (blue curves). Mean area under the curve (AUC) values ± standard deviation are reported in the figure legends for each curve. Lighter lines represent individual splits; bold lines indicate mean performance. Higher AUC values reflect better discrimination between Alzheimer’s disease and control cells. B Top predictive genes identified from gene expression–based classifiers across major brain cell types. Normalized feature importance scores for the top 15 gene features used to classify Alzheimer’s disease versus control cells, shown separately for each major brain cell type: Astrocytes, Excitatory Neurons, Inhibitory Neurons, Microglia, Oligodendrocytes, and Oligodendrocyte Progenitor Cells. Feature importance was computed for each gene as the raw importance assigned by the classifier in each of five independent train-test splits, divided by the sum of all raw importances in that split to obtain a normalized score. Mean normalized importance across five splits was then calculated for each gene, and the 15 genes with the highest mean scores per cell type are displayed. Standard deviations are reported in Supplementary Data 2. Bars represent mean normalized importance, highlighting genes most strongly contributing to Alzheimer’s disease prediction in each cell type. C Heatmap showing the top 30 most predictive features from the combined classifiers trained on demographic variables (age at death, sex, education), APOE genotype, and gene expression data, separately for each major cell type: Astrocytes, Excitatory Neurons, Inhibitory Neurons, Microglia, Oligodendrocytes, and Oligodendrocyte Progenitor Cells OPCs. Feature importance for each feature was computed as the raw importance assigned by the classifier in each of five independent splits, normalized by the total importance within each split. The square root of the mean normalized importance across splits is shown for visualization. Rows represent features (genes and demographic variables), and columns represent cell types. Color intensity indicates relative feature importance, highlighting which features most strongly contributed to Alzheimer’s disease versus control classification in each cell type. D Heatmap summarizing GWAS–eQTL colocalization results for TriSCOPE-prioritized predictive genes, with shading indicating the posterior probability of a shared causal variant (PP.H4) under a Bayesian colocalization model. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_Fig2_HTML.webp?md5=b47255304075ab4086e23ce4e76e0657",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77651-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel. Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.. DOI: 10.1038/s41467-026-77651-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Integration of predictive and differential expression signatures identifies convergent disease markers across cell types.A Upset plot illustrating the overlap between genes identified as predictive (assigned nonzero feature importance in at least two out of five independent classifier splits) and genes identified as differentially expressed (FDR-adjusted P < 0.05 and |log₂ fold change | > 0.25) in Alzheimer’s disease versus control cells, analyzed separately for each major brain cell type: Astrocytes Ast, Excitatory Neurons Exc, Inhibitory Neurons Inh, Microglia Mic, Oligodendrocytes Oli, and Oligodendrocyte Progenitor Cells Opc. Bar heights represent intersection sizes, and connected dots indicate specific combinations of cell types sharing overlapping genes. Notably, the strongest overlap was observed in astrocytes and excitatory neurons, suggesting a substantial convergence of predictive and transcriptionally dysregulated signals in these cell types. B Table summarizing the number of differentially expressed genes (DEGs) identified as significantly downregulated (blue column) or upregulated (orange column) in Alzheimer’s disease versus control cells across each major brain cell type. Differential expression was performed using a donor-aware Poisson generalized linear mixed model with a log link, an offset for library size, RUV covariates as fixed effects, and a random intercept for donor (FDR-adjusted P < 0.05 and |log₂ fold change | > 0.25). C Volcano plots showing differentially expressed genes (DEGs) in Alzheimer’s disease versus control cells for each major brain cell type: Astrocytes, Excitatory Neurons, Inhibitory Neurons, Microglia, Oligodendrocytes, and Oligodendrocyte Progenitor Cells. Genes are plotted by log2 fold change (x-axis) and –log10 FDR-adjusted P value (y-axis). Genes significant for differential expression (FDR-adjusted P < 0.05) and also identified as predictive (nonzero feature importance in at least two splits) are highlighted in red. Genes significant for differential expression only are shown in blue, and non-significant genes are shown in gray. Selected predictive DEGs are labeled, illustrating key markers that contribute to both differential transcriptional changes and disease-state classification within each cell type. D Heatmap displaying log2 fold changes of the top 80 differentially expressed genes (DEGs) in Alzheimer’s disease versus control cells across six major brain cell types. Genes were selected based on having an absolute log2 fold change >0.2 in at least one cell type and were ranked by minimal FDR-adjusted P value across all cell types. Color intensity reflects log2 fold change, with red indicating upregulation and blue indicating downregulation in Alzheimer’s disease. Only genes with FDR-adjusted P < 0.05 are shown. P values in B–D are from two-sided Wald tests and were adjusted for multiple comparisons using the Benjamini–Hochberg procedure; panel A is descriptive and involves no statistical test. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_Fig3_HTML.webp?md5=59e7f770e8a975d2211c2686ac17c4c1",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77651-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel. Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.. DOI: 10.1038/s41467-026-77651-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Predictive modeling of neuropathologic amyloid burden uncovers distinct and overlapping molecular signatures across cell types.A Receiver operating characteristic (ROC) curves summarizing the results from five independent runs of classification experiments performed on six major brain cell types: Astrocytes, Excitatory Neurons, Inhibitory Neurons, Microglia, Oligodendrocytes, and Oligodendrocyte Progenitor Cells. In this analysis, the classification task was to distinguish cells from individuals with high Alzheimer’s pathology (CERAD score 1 or 2) versus controls. For each cell type, classifiers were trained using four feature sets: (1) a combined set including demographic variables (age at death, sex, education), APOE genotype, and gene expression data (black curves); (2) demographic variables and APOE genotype only (red curves); (3) gene expression plus APOE genotype (green curves); and (4) gene expression only (blue curves). Mean area under the curve (AUC) values ± standard deviation are reported in the figure legends for each curve. Lighter lines represent individual splits; bold lines indicate mean performance. Higher AUC values reflect better discrimination of cells from high- versus low-pathology individuals. B Heatmap showing the relative importance (square-root-normalized feature importance) of the top 30 most predictive gene expression features identified for CERAD score classification, across each cell type. Darker blue indicates higher importance. Gene features were ranked by their mean importance across cross-validation splits and then displayed in order of aggregate contribution. Feature importance was square-root-normalized for display. C Heatmap showing the relative importance of the top 30 combined features (genes, APOE genotype, and demographic features) for CERAD score classification, across each cell type. This includes non-gene features (e.g., APOE ε2/ε3/ε4 status, age at death), highlighting their potential contributions relative to gene expression markers. Feature importance was square-root-normalized for display. D UpSet plot illustrating the overlap between the top predictive genes for CERAD score classification and differentially expressed genes (DEGs) identified between CERAD high and low pathology groups within each cell type. Vertical bars indicate intersection sizes (overlap), and connected dots indicate cell types contributing to each intersection set. This analysis highlights cell-type-specific overlaps and shared predictive signatures. E Venn diagrams summarizing the overlap between gene features predictive of CERAD score pathology status (blue) and gene features predictive of Alzheimer’s disease diagnosis (green), for each major cell type. Gene predictors were defined as features that appeared in at least two out of five cross-validation splits. The overlap highlights shared versus distinct molecular predictors used to discriminate pathology severity (CERAD) and clinical AD status across cell types. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_Fig4_HTML.webp?md5=44d78d5935d15bff6ad468f4f34e6f5c",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77651-5",
+            "asset": "assets/pmc13748584-59d3b26f29fd4b94.webp",
+            "sha256": "59d3b26f29fd4b9424f73b0aefba79959354a9477e8019d208fbcd84dc32c2b9",
+            "width": 1600,
+            "height": 2176,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel. Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.. DOI: 10.1038/s41467-026-77651-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "59d3b26f29fd4b9424f73b0aefba79959354a9477e8019d208fbcd84dc32c2b9",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Subcluster-level predictive, trajectory, and trait enrichment analyses uncover fine-grained transcriptional programs in Alzheimer’s disease.A Receiver operating characteristic (ROC) curves summarizing subcluster-level classification of Alzheimer’s disease status using gene expression data alone. The six subclusters that exhibited the highest mean ROC performance among all subclusters analyzed. Mean area under the curve (AUC) values ± standard deviation across five cross-validation splits are indicated in the figure legends. Light blue lines represent ROC curves from individual splits, and bold lines indicate the averaged ROC curve per subcluster. Higher AUC values reflect better discrimination of Alzheimer’s disease cells from control cells within each subcluster. B Pseudotime trajectory visualizations for representative subclusters with high predictive performance or biologically relevant transcriptional signatures. For each subcluster, pseudotime was inferred using diffusion pseudotime (DPT), starting from root cells selected based on minimal amyloid pathology and minimal cognitive decline. Cells are plotted in UMAP space and colored by pseudotime values (color scale: dark purple to bright yellow), representing transcriptional progression from early to advanced disease states. C ROC curves summarizing the predictive capacity of pseudotime trajectories for distinguishing clinical AD versus control cells across significant subclusters. Pseudotime was inferred using diffusion pseudotime (DPT) initialized from root cells with a low amyloid pathology score and low cognitive impairment. D ROC curves summarizing the predictive capacity of pseudotime trajectories for distinguishing pathological AD versus control cells across significant subclusters. E Smoothed expression trajectories of top trajectory-influencing genes across pseudotime in Oligodendrocytes 3 and Astrocytes 2. F Heatmap showing top trajectory-influencing genes across major brain cell types. For each cell type, genes were identified based on their influence on pseudotime trajectories, with the top 1% of trajectory-associated genes selected within each subcluster. Color intensity indicates the number of subclusters (within a given cell type) in which a gene was ranked among the top 1% most trajectory-influential, reflecting the consistency of that gene’s association with transcriptional progression across subclusters. Source data are provided as a Source Data file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_Fig5_HTML.webp?md5=a5acc84ded0d795de6e028f42158185e",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77651-5",
+            "asset": "assets/pmc13748584-75e3bf760e95fb61.webp",
+            "sha256": "75e3bf760e95fb61336af85903b66ec92fe0009ebd241f2ff0dbfa49230f5080",
+            "width": 1600,
+            "height": 2098,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel. Single-cell machine learning uncovers genetically anchored, cell-type specific programs of Alzheimer's disease.. DOI: 10.1038/s41467-026-77651-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "75e3bf760e95fb61336af85903b66ec92fe0009ebd241f2ff0dbfa49230f5080",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM1_ESM.pdf?md5=2dd4008d63707839518d5f41e48d9e3b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM2_ESM.pdf?md5=5eaa5b9a59da16cafef48aed9667942d",
+            "license": "CC BY",
+            "sha256": "1ead9f6fd2bf91e16ed4abe9adf580d9d386b8941e82720173ef39d7a1e8b9d1",
+            "status": "downloaded_private",
+            "bytes": 51075,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM3_ESM.xlsx?md5=c29089c121f632183a55f643323043db",
+            "license": "CC BY",
+            "sha256": "4da06bd6072f3cccf4eaff0eb17f2e346b04d7c30d0b051e1d390f870bbfb69e",
+            "status": "downloaded_private",
+            "bytes": 954262,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM4_ESM.xlsx?md5=0f22d74c71ce7facf97f60466a45fbb7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM5_ESM.xlsx?md5=f8624e58d6f5a7f5bfb6c5827ca60967",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM6_ESM.xlsx?md5=6256293be6f45f53454f862f2d1574a7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM7_ESM.xlsx?md5=bb7f7ff841fb2a515ce84f18b6548e4a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM8_ESM.xlsx?md5=9e9bdb6584f1458a7e8fc9d8e0240425",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM9_ESM.xlsx?md5=051ffdd94a7c6ba9bd7a22cd5f564aff",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM10_ESM.xlsx?md5=9f9d37f191efe18a72303f1123daf553",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM11_ESM.xlsx?md5=79b88a9a9a2fde732d55cd9e3443d670",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM12",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM12_ESM.xlsx?md5=e3845a59747197a9776473cb15dcce97",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM13",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM13_ESM.xlsx?md5=5fd361629c985cb8e6ee625d0e01eec3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM14",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM14_ESM.xlsx?md5=db60bd5a9d4c3026329b161342604482",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM15",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM15_ESM.xlsx?md5=8dbf131b9c6555318176fa2f3e7164e9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM16",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM16_ESM.xlsx?md5=db362848a8edb964e40f7aa63604845a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM17",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM17_ESM.xlsx?md5=a2e434498a62aa75e6601c59fda29a5c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM18",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM18_ESM.xlsx?md5=bd848f43b760fb1e3dfd4688ff09034d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM19",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM19_ESM.xlsx?md5=e78fc00a424267e2d6e93f9e687f4765",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM20",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13748584.1/41467_2026_77651_MOESM20_ESM.xlsx?md5=40834ce08217a52f8d7ea1485606e233",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-14T08:08:18.967720+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Adithya V. Madduri; Randall J. Ellis; Chirag M. Lakhani; David A. Bennett; Chirag J. Patel"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-14T08:08:22Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-14T08:08:22Z",
+        "url": "https://openalex.org/W7128295611",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-14T08:08:22Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-14T08:08:22Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-15T08:08:22Z"
+        }
+      },
+      "selectionScore": {
+        "total": 50,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-14T08:08:25Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-11ab4882f9a35f32",
+      "doi": "10.3390/biom16091288",
+      "paper": "scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.",
+      "journal": "Biomolecules",
+      "date": "2026-09-06",
+      "year": "2026",
+      "pmcid": "PMC13604200",
+      "pmid": "42793120",
+      "paperURL": "https://doi.org/10.3390/biom16091288",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2218-273X",
+      "eissn": "2218-273X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "89fafd5601ec526757e13a605c20be19fca7ddcbbec60c189163289e6008d3ab"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/PMC13604200.1.xml?md5=88b2bfe7f45050692be63169f28911b3",
+        "figures": [
+          {
+            "id": "biomolecules-16-01288-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "scFlowReport accepts a processed, cell-type-annotated Seurat object (.rds) together with a YAML configuration file as input and executes a three-stage workflow comprising preprocessing, analytical module execution, and report generation. The analytical stage includes cell-level and pseudobulk differential expression analysis, transcription factor regulon analysis, and cell–cell communication analysis. Functional enrichment analysis is subsequently performed. scFlowReport produces a standardized set of outputs, including a portable static HTML report, standardized result tables, and publication-quality figures.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g001.webp?md5=6a39f5e9cd818971f734cf3dae2a601d",
+            "articleURL": "https://doi.org/10.3390/biom16091288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nayoung Park; Hyewon Lee; Jaebum Kim. scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.. DOI: 10.3390/biom16091288. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "biomolecules-16-01288-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Representative differential expression analysis outputs. (a) Cell-type-level summary of filtered differentially expressed genes (DEGs), stratified by direction of change. (b) Example volcano plot showing differential expression results for a representative cell type. (c) Example heatmap of representative DEGs across the comparison groups. (d) Example over-representation analysis of genes up-regulated in one comparison group. (e) Example FGSEA results showing enriched Hallmark pathways in the two comparison directions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g002.webp?md5=fafd3fbaa33322e2977b4493dd454cb6",
+            "articleURL": "https://doi.org/10.3390/biom16091288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nayoung Park; Hyewon Lee; Jaebum Kim. scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.. DOI: 10.3390/biom16091288. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "biomolecules-16-01288-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Representative SCENIC regulon analysis outputs. (a) Example summary of top regulons ranked by target gene count. (b) Example regulon activity heatmap across comparison groups. (c) Example summary of transcription factors ranked by target gene count. (d) Example differential regulon activity. (e) Example volcano plot of differential regulon activity. (f) Example functional enrichment of regulon target genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g003.webp?md5=a7145d24b7f953e9eddb292dfe118c6e",
+            "articleURL": "https://doi.org/10.3390/biom16091288",
+            "asset": "assets/pmc13604200-04e9487857dcb151.webp",
+            "sha256": "04e9487857dcb151b520827738b2cf3fae20bc4535d672a6df89a87b8fcf8dfa",
+            "width": 1600,
+            "height": 914,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nayoung Park; Hyewon Lee; Jaebum Kim. scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.. DOI: 10.3390/biom16091288. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "04e9487857dcb151b520827738b2cf3fae20bc4535d672a6df89a87b8fcf8dfa",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "biomolecules-16-01288-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Representative LIANA cell–cell communication outputs. (a) Example chord diagram summarizing inferred cell–cell communication. (b) Example heatmap of interaction counts between sender and receiver cell types. (c) Example summary of prioritized sender–receiver cell-type pairs. (d) Comparison of the total number of inferred interactions between groups. (e) Example heatmap of between-group differences in interaction counts. (f) Example functional enrichment of receptor genes from group-specific interactions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g004.webp?md5=ea31167dd936cc8b8559a0bb8565e102",
+            "articleURL": "https://doi.org/10.3390/biom16091288",
+            "asset": "assets/pmc13604200-b55a5ef3ddba5e3a.webp",
+            "sha256": "b55a5ef3ddba5e3a967830c5c98ead6467327ae4ebcac2cc6a08b1bfa0de2fd7",
+            "width": 1600,
+            "height": 1022,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nayoung Park; Hyewon Lee; Jaebum Kim. scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.. DOI: 10.3390/biom16091288. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b55a5ef3ddba5e3a967830c5c98ead6467327ae4ebcac2cc6a08b1bfa0de2fd7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "biomolecules-16-01288-f005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Representative outputs from application of scFlowReport to a public inflammatory skin dataset (AtopicDermatitis vs. Control). (a) Heatmap of representative keratinocyte differentially expressed genes. (b) Ranked gene set enrichment (FGSEA) of keratinocyte DEG results against Hallmark gene sets. Positive and negative normalized enrichment scores (NES) indicate enrichment in the AD and control directions, respectively, with bar color representing −log10(adjusted p value). (c) Differentially active SCENIC regulons in dendritic cells (dccell), from the filtered regulon differential activity table, showing mean AUCell activity difference (ΔAUC), Benjamini–Hochberg-adjusted p value, and direction of enrichment. (d) Selected AD-specific ligand–receptor pairs from the comparative LIANA interaction table for the keratinocytes → dccell axis, showing LIANA aggregate LR score and mean rank.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-g005.webp?md5=d68a092ed5708ccf8cf7a53bb73c6443",
+            "articleURL": "https://doi.org/10.3390/biom16091288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Nayoung Park; Hyewon Lee; Jaebum Kim. scFlowReport: A Reproducible Workflow for Comparative Downstream Biological Analysis of Single-Cell RNA-seq Data.. DOI: 10.3390/biom16091288. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "biomolecules-16-01288-s001",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13604200.1/biomolecules-16-01288-s001.zip?md5=b64d0586e4c96446d6923625f19e2776",
+            "license": "CC BY",
+            "sha256": "7562f0578d513a6ef5437befab98037a65c239beb2a0000f471320d4fa5eccca",
+            "status": "downloaded_private",
+            "bytes": 1476115,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-14T08:08:06.961557+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Nayoung Park; Hyewon Lee; Jaebum Kim"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-14T08:08:09Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-14T08:08:09Z",
+        "url": "https://openalex.org/W7211898724",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-14T08:08:09Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-14T08:08:09Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-15T08:08:09Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-14T08:08:26Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -230749,6 +231930,24 @@
           ]
         }
       ]
+    },
+    "doi-a45d43772ecd1699": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-962da49deb5d225b": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-11ab4882f9a35f32": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -232367,7 +233566,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-14T08:06:47Z",
+  "generatedAt": "2026-11-14T08:08:27Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -232601,18 +233800,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-14T08:03:08Z",
-    "updatedAt": "2026-11-14T08:07:00Z",
+    "updatedAt": "2026-11-14T08:08:33Z",
     "batchCount": 3,
-    "requests": 76,
+    "requests": 115,
     "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
