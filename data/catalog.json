@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-14",
+  "checkedAt": "2026-11-15",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -167822,6 +167822,802 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-a57660989d31135e",
+      "paper": "Identifying Metabolic Pathways That Drive Gestational Diabetes Mellitus: Protocol for a Prospective Observational Study.",
+      "doi": "10.2196/92064",
+      "journal": "JMIR research protocols",
+      "date": "2026-11-11",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.2196/92064",
+      "pmcid": "PMC13754176",
+      "pmid": "43013769",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article",
+        "Observational Study"
+      ],
+      "issn": "1929-0748",
+      "eissn": "1929-0748",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-15",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "2f3b673896cc4d273f2ecccae2eaf43ef60fcaa2fea2fdb11bd59160dc9acd5e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754176.1/PMC13754176.1.xml?md5=96fb4a8e3aa69e1d6a9f6d545fdb84ab",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Patient recruitment workflow. GDM: gestational diabetes mellitus; IADPSG: International Association of Diabetes and Pregnancy Study Groups; OGTT: oral glucose tolerance test; OPD: outpatient department.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754176.1/resprot-v15-e92064-g001.webp?md5=63cf40f583d740009c214e7cd632f9ae",
+            "articleURL": "https://doi.org/10.2196/92064",
+            "asset": "assets/pmc13754176-811ad76275696284.webp",
+            "sha256": "811ad762756962849e16bcedd2d4c425a45d84d38ee2ce2952ab805d8aa4944c",
+            "width": 706,
+            "height": 691,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Felix Jebasingh; Lakshmi Marri Harika; Shajith Anoop; Mandisa Christian; Sherin Daniel; Santhosh Joseph Benjamin; et al.. Identifying Metabolic Pathways That Drive Gestational Diabetes Mellitus: Protocol for a Prospective Observational Study.. DOI: 10.2196/92064. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "811ad762756962849e16bcedd2d4c425a45d84d38ee2ce2952ab805d8aa4944c",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SCHL1",
+            "label": "Checklist 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754176.1/resprot-v15-e92064-s001.pdf?md5=cf6ee0767fdc57aef1fede96aafcb99d",
+            "license": "CC BY",
+            "sha256": "eafdad19253143caff9241d9fc91c0db23cf7ee5001abaa1b19df7f9d1d63c28",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 163122,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 3,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-15T08:30:39.982280+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Felix Jebasingh; Lakshmi Marri Harika; Shajith Anoop; Mandisa Christian; Sherin Daniel; Santhosh Joseph Benjamin; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "1.6",
+        "jcr": "",
+        "cas": "医学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-15T08:30:42Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-15T08:30:42Z",
+        "url": "https://openalex.org/W7214904136",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-15T08:30:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-15T08:30:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-16T08:30:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 25,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 0,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-15T08:30:47Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-f7fecf8eb1c207de",
+      "doi": "10.1371/journal.pcbi.1014773",
+      "paper": "scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.",
+      "journal": "PLoS computational biology",
+      "date": "2026-09-08",
+      "year": "2026",
+      "pmcid": "PMC13577519",
+      "pmid": "42709872",
+      "paperURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-734X",
+      "eissn": "1553-7358",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "3fb5e0d78632d97a506dc13f6aaccdea9161543307008f98c484aa2432efa801"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/PMC13577519.1.xml?md5=ffef94bb95183e69ee355d44fff64ed2",
+        "figures": [
+          {
+            "id": "pcbi.1014773.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the scGSI framework for paired single-cell multi-omics integration.scGSI addresses three coupled challenges in paired integration: preserving modality-specific structure, exploiting cross-modal complementarity, and retaining biologically meaningful variation during alignment. (a) Biological prior bridging and preprocessing. scATAC-seq peak matrices are converted into gene activity score matrices to establish a biologically informed feature bridge to scRNA-seq. (b) Structure-aware progressive alignment. KNN graphs preserve local topology, GraphSAGE and GATv2 extract modality-specific latent features, the pull-in projection reduces initial cross-modal discrepancy, and bidirectional cross-fusion exchanges complementary paired signals. (c) Structure-preserving self-supervised objectives. RNA and ATAC reconstruction losses preserve modality-specific fidelity, cosine similarity promotes paired consistency, and fusion contrastive loss strengthens true paired correspondences against non-paired cells. (d) Alignment outcome. The learned embedding space improves paired cell-state matching while maintaining effective modality mixing. (e) Downstream biological utility. The aligned embeddings support trajectory inference and cell-state discrimination.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g001.webp?md5=3fae63b0873e81c62d01a43ec15bd4ec",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014773.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "scGSI improves paired cross-modal cell alignment on the BMMC dataset.Assessment of paired cell matching across modalities while preserving separation among closely related immune subpopulations. (A) UMAP visualization before and after integration, colored by modality (left) and cell type (right). (B) Joint scatter comparison of LAT and FOSCTTM, highlighting paired cell-matching performance across methods. Each point represents the mean performance, and error bars denote the standard deviation across multiple runs, with smaller error bars indicating more stable performance. (C) ATAC-to-RNA label transfer confusion matrix, showing the remaining ambiguity among closely related T-cell subpopulations. (D) Box plot of overall performance scores, where Performance = 17(LAT+ARI+NMI+AMI+OMI+BCI+Accuracy). (E) Marker-gene expression (HBB, LYZ, GNLY, JCHAIN) levels in ATAC cells and RNA cells after integration.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.e087.webp?md5=a6cca4b8bbbfcf53f29620685d3f16ba",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014773.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "scGSI balances modality mixing with biological variation preservation on the CITE_PBMC dataset.Assessment of the main integration tradeoff: stronger cross-modal alignment without loss of meaningful cell-state structure. (A) UMAP visualization before and after integration, colored by modality (left) and cell type (right). (B) Joint scatter comparison of omics mixing and biological variation preservation, highlighting the balance achieved by scGSI. (C) Breakdown of individual metrics within modality mixing and biological conservation, revealing which aspects of the tradeoff are best maintained. (D) Box plot of overall performance scores. (E) Purity score sensitivity analysis across neighborhood sizes, assessing the stability of biological conservation in the integrated embedding. (F) Chord diagrams of potential global cell-cell interactions inferred from aligned cell embeddings, where arc thickness and color intensity represent interaction tendency. (G) Bar chart of the top 20 cell-type interactions, quantifying the highest-ranked pairs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g003.webp?md5=bae80ae5afefda85231c8ff075ddddc8",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "assets/pmc13577519-31ff040b2b672fea.webp",
+            "sha256": "31ff040b2b672feafe0a73548018db5e75320fe4b843d602532089ac8121d249",
+            "width": 1600,
+            "height": 1533,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "31ff040b2b672feafe0a73548018db5e75320fe4b843d602532089ac8121d249",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pcbi.1014773.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "scGSI enhances downstream cell-state resolution on the TEA_PBMC dataset.Assessment of whether the integrated embeddings remain useful for downstream analysis by preserving fine-grained subtype boundaries after alignment. (A) UMAP visualization of the integrated embeddings. (B) Box plot of clustering accuracy, quantifying cell-state resolution after integration. Paired two-sided Wilcoxon signed-rank tests compare scGSI with each competing method; significance stars denote Holm-corrected p-values across all comparisons. (C) UMAP plots of K-means clustering results for scGSI, scPairing, Pamona, and UnionCom, illustrating differences in cluster compactness and subtype separation. (D) Heatmaps of clustering assignments for the same methods, showing misclassification structure across related immune lineages. (E) Violin plots of the top three marker genes for B.Naive and B.Activated, showing expression differences between the two groups. (F) Heatmap of the 40 most differentially expressed genes between the two groups, assessing whether the marker pattern is broadly supported. (G) GSEA of differentially expressed genes, testing co-enrichment in known B-cell functional pathways.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g004.webp?md5=20ef8f15fdbec4996c1d689c704e226a",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "assets/pmc13577519-f2516a63a22a22cd.webp",
+            "sha256": "f2516a63a22a22cd00804a1efdc0f3d106318c108d9015a11cce42de9a5001ad",
+            "width": 1600,
+            "height": 2089,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f2516a63a22a22cd00804a1efdc0f3d106318c108d9015a11cce42de9a5001ad",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pcbi.1014773.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "scGSI recovers biologically coherent developmental trajectories on the P0BraCor dataset.Assessment of whether the integrated embeddings preserve developmental organization beyond local geometric alignment. (A) UMAP visualization of the integrated embedding space. (B) PAGA trajectory inference graph, showing the developmental topology reconstructed from the scGSI embeddings. (C) Permutation test for trajectory consistency under a method-specific label-shuffle null. Nominal permutation p-values are shown for descriptive reference, and Holm- and Benjamini–Hochberg-adjusted p-values are provided in Table D in S1 Appendix. (D) Quantitative comparison of trajectory consistency across methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g005.webp?md5=086ab959517e85133cbf7a526c7d2df6",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014773.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Ablation and robustness analyses explain why scGSI works and how stable it is.Contribution of each architectural component, sensitivity to key hyperparameters, and ATAC degradation robustness on the TEA_PBMC and P0BraCor datasets. (A) Radar plot comparing the performance of full scGSI and ablation variants across evaluation metrics. (B) Overall performance scores under different ablations, quantifying the contribution of graph structure, similarity projection, cross-fusion, and contrastive refinement. (C) Visual comparison between graph-based and non-graph variants, illustrating the role of structure-aware encoding in preserving integration quality and cluster boundaries. (D) Sensitivity to key hyperparameters, including the number of attention heads Head, the temperature parameter τ, and the number of nearest neighbors k. (E) Sensitivity to different loss weights. (F) Robustness under simulated ATAC feature dropout (0%–80%), where 0% denotes the undisturbed baseline.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.e089.webp?md5=c158600f5d01e2f81790fb33fdb8b7b8",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014773",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo. scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.. DOI: 10.1371/journal.pcbi.1014773. Copyright holder: Chen et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pcbi.1014773.s001",
+            "label": "S1 Appendix",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.s001.pdf?md5=531f0edd138bf1f8a33f42bbec57a390",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-15T08:30:31.729394+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiang Chen; Zihan Yang; Xiaoyu Liu; Zhiyi Xie; Wenlu Guo"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.6",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-15T08:30:34Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-15T08:30:34Z",
+        "url": "https://openalex.org/W7211926463",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-15T08:30:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-15T08:30:34Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-16T08:30:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-15T08:30:48Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-73234534b31d6dfd",
+      "paper": "CannSelect: A high-quality genotyping platform for Cannabis sativa.",
+      "doi": "10.1371/journal.pone.0357319",
+      "journal": "PloS one",
+      "date": "2026-11-11",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0357319",
+      "pmcid": "PMC13754132",
+      "pmid": "43013572",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-15",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "8ffec200da7ce282a1d9bd827b3d72a5725c68a95851e111460e09fc985006df"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC0",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/PMC13754132.1.xml?md5=f694e9682ec22417867bc4be682f2df5",
+        "figures": [
+          {
+            "id": "pone.0357319.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "CannSelect v1.0 probe distribution and density per Mb by chromosome when aligned to CBDRx (cs10).For each chromosome, probe density is reflected in two tracks. The top track shows binned probe counts per Mb ranging from 0 (white), 25 (gray), and 50+ (red). The bottom track shows the location of each probe as a tick mark.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.g001.webp?md5=15d1be122b483bc173696cfa792a2a6d",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357319",
+            "asset": "assets/pmc13754132-f0db5686729c1f8f.webp",
+            "sha256": "f0db5686729c1f8fa2eca7af28ff02807a11adf381c4c156ed1c183c116d1d95",
+            "width": 1600,
+            "height": 1058,
+            "license": "CC0",
+            "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attribution": "Dustin G. Wilkerson; George M. Stack; Craig H. Carlson; Michael A. Quade; Caroline A. Dowling; Jacob A. Toth; et al.. CannSelect: A high-quality genotyping platform for Cannabis sativa.. DOI: 10.1371/journal.pone.0357319. Source: NLM PMC OA Cloud. License: CC0.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f0db5686729c1f8fa2eca7af28ff02807a11adf381c4c156ed1c183c116d1d95",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0357319.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Read and probe capture statistics and MDS using CannSelect v0.A: Mean target fold coverage per chromosome as aligned to the CBDRx (cs10) genome assembly. B: Total, unique, and aligned reads (left axis) side-by-side with percent selected and percent zero coverage (right axis) for each sample. For panels A and B, the grey bars indicate the mean, while the red error bars are the standard error of the mean. C: Multi-dimensional scaling plots for 321 ‘Carolina Dream’ and ‘BaOx’ individuals. ‘Carolina Dream’ is shown in red while ‘BaOx’ is in grey. TVE: Total Variation Explained.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.g002.webp?md5=2252c7d90f0b15290a25d260eb4dd248",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357319",
+            "asset": "assets/pmc13754132-cff20ab65adde827.webp",
+            "sha256": "cff20ab65adde8275a3b87de774ed0b638fc38268035b67b73845b8735f5ea61",
+            "width": 1600,
+            "height": 1618,
+            "license": "CC0",
+            "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attribution": "Dustin G. Wilkerson; George M. Stack; Craig H. Carlson; Michael A. Quade; Caroline A. Dowling; Jacob A. Toth; et al.. CannSelect: A high-quality genotyping platform for Cannabis sativa.. DOI: 10.1371/journal.pone.0357319. Source: NLM PMC OA Cloud. License: CC0.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "cff20ab65adde8275a3b87de774ed0b638fc38268035b67b73845b8735f5ea61",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0357319.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "GWAS Manhattan and QQ plots mapping day-neutral flowering in the ‘Carolina Dream’ and ‘BaOx’ breeding population.The red line shows the Bonferroni threshold of -log10(0.05/24918) = 5.70.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.g003.webp?md5=439b872a01fb4eca206a17b2c7b5216f",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357319",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC0",
+            "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attribution": "Dustin G. Wilkerson; George M. Stack; Craig H. Carlson; Michael A. Quade; Caroline A. Dowling; Jacob A. Toth; et al.. CannSelect: A high-quality genotyping platform for Cannabis sativa.. DOI: 10.1371/journal.pone.0357319. Source: NLM PMC OA Cloud. License: CC0.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0357319.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Percent selected for 15 replicated individuals genotyped using the CannSelect v1.0 probe set.The solid black line represents the average percent selected across all individuals (88.5%). The gray bars are the mean while the red bars are the standard error of the mean.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.g004.webp?md5=5fe7fb68d3734a1f2c2bbdae01a7dea6",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357319",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC0",
+            "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attribution": "Dustin G. Wilkerson; George M. Stack; Craig H. Carlson; Michael A. Quade; Caroline A. Dowling; Jacob A. Toth; et al.. CannSelect: A high-quality genotyping platform for Cannabis sativa.. DOI: 10.1371/journal.pone.0357319. Source: NLM PMC OA Cloud. License: CC0.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0357319.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.s001.xlsx?md5=23bf4ece3abae69eabcd6fcf24608463",
+            "license": "CC0",
+            "sha256": "ff985d662854b5dcf82fb068131efc6d78f25ac0eb259de5432c75ae04b1f999",
+            "status": "downloaded_private",
+            "bytes": 22346,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0357319.s002",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.s002.xlsx?md5=1d683ad7a2cba84d49e5e17b9737fb0a",
+            "license": "CC0",
+            "sha256": "3ab5a3024977063cc9e1e209c64fa97a9e938a4759eb2841032d7cb1966de9d4",
+            "status": "downloaded_private",
+            "bytes": 11965,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0357319.s003",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.s003.xlsx?md5=0ad1d9f8a896d73e1f0d089a217e4279",
+            "license": "CC0",
+            "sha256": "bf33340966622294c6b69bb3135bf11973ce659cf988446619af598c4effeaa1",
+            "status": "downloaded_private",
+            "bytes": 10908,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0357319.s004",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754132.1/pone.0357319.s004.xlsx?md5=2f8f4788cfee39124e3b4a6088e88fa7",
+            "license": "CC0",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-15T08:30:43.728953+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorCredit": "Dustin G. Wilkerson; George M. Stack; Craig H. Carlson; Michael A. Quade; Caroline A. Dowling; Jacob A. Toth; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-15T08:30:46Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-15T08:30:46Z",
+        "url": "https://openalex.org/W7203977751",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-15T08:30:46Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-15T08:30:46Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-16T08:30:46Z"
+        }
+      },
+      "selectionScore": {
+        "total": 33,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-15T08:30:49Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -231948,6 +232744,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-a57660989d31135e": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-f7fecf8eb1c207de": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-73234534b31d6dfd": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -233566,7 +234380,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-14T08:08:27Z",
+  "generatedAt": "2026-11-15T08:30:50Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -233800,18 +234614,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-15T08:28:43Z",
-    "updatedAt": "2026-11-15T08:28:49Z",
+    "updatedAt": "2026-11-15T08:30:58Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 39,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

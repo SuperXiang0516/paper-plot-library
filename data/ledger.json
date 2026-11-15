@@ -255,9 +255,46 @@
         "10.1371/journal.pgen.1012361",
         "10.3390/biom16091288"
       ]
+    },
+    "2026-11-15": {
+      "newDOIs": [
+        "10.1371/journal.pcbi.1014773",
+        "10.1371/journal.pone.0357319",
+        "10.2196/92064"
+      ]
     }
   },
   "candidates": {
+    "10.1371/journal.pone.0357319": {
+      "checkedAt": "2026-11-15T08:30:46Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2196/92064": {
+      "checkedAt": "2026-11-15T08:30:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-15T08:30:38Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-15T08:30:36Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pcbi.1014773": {
+      "checkedAt": "2026-11-15T08:30:35Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1038/s41467-026-77651-5": {
       "checkedAt": "2026-11-14T08:08:22Z",
       "status": "source_confirmed",
@@ -326,18 +363,6 @@
     },
     "10.1126/sciadv.aee1641": {
       "checkedAt": "2026-11-14T08:04:44Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-14T08:04:43Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-14T08:04:41Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -5222,61 +5247,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1371/journal.pcbi.1014773": {
-      "checkedAt": "2026-10-17T06:26:52Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pcbi.1014773",
-        "metadataHash": "525b76400f4ffb02e846e92d0c19b86380be450e22695ba48f880a4af1cc46f9",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/PMC13577519.1.xml?md5=ffef94bb95183e69ee355d44fff64ed2",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "pcbi.1014773.g003",
-              "sha256": "31ff040b2b672feafe0a73548018db5e75320fe4b843d602532089ac8121d249",
-              "height": 1533,
-              "assetSHA256": "31ff040b2b672feafe0a73548018db5e75320fe4b843d602532089ac8121d249",
-              "asset": "assets/pmc13577519-31ff040b2b672fea.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Fig 3",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g003.webp?md5=bae80ae5afefda85231c8ff075ddddc8",
-              "captionHash": "47fd9ea62992a17ba41e94f2b0582148f24d8ac5db067d12e59a02214f120a16"
-            },
-            {
-              "id": "pcbi.1014773.g004",
-              "sha256": "f2516a63a22a22cd00804a1efdc0f3d106318c108d9015a11cce42de9a5001ad",
-              "height": 2089,
-              "assetSHA256": "f2516a63a22a22cd00804a1efdc0f3d106318c108d9015a11cce42de9a5001ad",
-              "asset": "assets/pmc13577519-f2516a63a22a22cd.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Fig 4",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577519.1/pcbi.1014773.g004.webp?md5=20ef8f15fdbec4996c1d689c704e226a",
-              "captionHash": "b2fc3eb765762b2a0bdecdda5fb786b17a726e518cc0dfcf477d736e0e8afc68"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-f7fecf8eb1c207de",
-          "doi": "10.1371/journal.pcbi.1014773",
-          "paper": "scGSI: Graph-guided self-supervised integration of paired single-cell multi-omics.",
-          "journal": "PLoS computational biology",
-          "date": "2026-09-08",
-          "year": "2026",
-          "pmcid": "PMC13577519",
-          "pmid": "42709872",
-          "paperURL": "https://doi.org/10.1371/journal.pcbi.1014773"
-        },
-        "updatedAt": "2026-10-17T06:26:51Z"
-      }
     },
     "10.1038/s42003-026-10405-7": {
       "checkedAt": "2026-10-17T06:26:49Z",
@@ -11995,24 +11965,19 @@
     "startedAt": "2026-11-15T08:28:43Z",
     "version": 1,
     "aiAttempts": 0,
-    "updatedAt": "2026-11-15T08:28:49Z",
-    "elapsedSeconds": 7,
+    "updatedAt": "2026-11-15T08:30:58Z",
+    "elapsedSeconds": 136,
     "status": "active",
     "uncertainAiAttempts": 0,
-    "requests": 0,
+    "requests": 39,
     "date": "2026-11-15",
     "maxBatches": 36,
     "batchCount": 1,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "maxSeconds": 2700,
-    "endReason": "",
-    "inFlight": {
-      "startedAt": "2026-11-15T08:28:49Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "endReason": ""
   }
 }
