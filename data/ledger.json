@@ -258,6 +258,7 @@
     },
     "2026-11-15": {
       "newDOIs": [
+        "10.1371/journal.pcbi.1014762",
         "10.1371/journal.pcbi.1014773",
         "10.1371/journal.pone.0357319",
         "10.2196/92064"
@@ -265,6 +266,36 @@
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-15T08:32:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-15T08:32:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-15T08:32:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-15T08:32:36Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pcbi.1014762": {
+      "checkedAt": "2026-11-15T08:32:34Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pone.0357319": {
       "checkedAt": "2026-11-15T08:30:46Z",
       "status": "source_confirmed",
@@ -337,35 +368,11 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-14T08:06:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-14T08:06:35Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1093/bioinformatics/btag708": {
       "checkedAt": "2026-11-14T08:06:20Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1093/nargab/lqag138": {
-      "checkedAt": "2026-11-14T08:04:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-14T08:04:44Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1093/bioinformatics/btag730": {
       "checkedAt": "2026-11-14T08:04:40Z",
@@ -5308,61 +5315,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1371/journal.pcbi.1014762": {
-      "checkedAt": "2026-10-17T06:26:09Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pcbi.1014762",
-        "metadataHash": "ff51a01cd2a608cf79c53b78c617bd69b8c3295891c52d62364b3b5bb5c32442",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/PMC13568522.1.xml?md5=1d41f574264013f9d4ea6461a1824cda",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "pcbi.1014762.g001",
-              "sha256": "71eb6b65b7ecb296429bfa7140cea8594456c98e8df02253c0acd1db71f7cb8f",
-              "height": 1284,
-              "assetSHA256": "71eb6b65b7ecb296429bfa7140cea8594456c98e8df02253c0acd1db71f7cb8f",
-              "asset": "assets/pmc13568522-71eb6b65b7ecb296.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Fig 1",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g001.webp?md5=464d22540439955efa6b46c3c004577c",
-              "captionHash": "cde7388290804a6726bc31c835890015c8f2f6d2dc67be2d54f7fff313aec135"
-            },
-            {
-              "id": "pcbi.1014762.g002",
-              "sha256": "732205c66a8099abea411e4a85ee490ce7229dbacd769ef1f0d8ef2ee06194da",
-              "height": 1601,
-              "assetSHA256": "732205c66a8099abea411e4a85ee490ce7229dbacd769ef1f0d8ef2ee06194da",
-              "asset": "assets/pmc13568522-732205c66a8099ab.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Fig 2",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g002.webp?md5=60d07226f4086b6e250204bb889bab02",
-              "captionHash": "223796d14817b6c13a854750a93b8a0c507c90d7adecf36f72da424431428b36"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-fe4ecb7af82dfc54",
-          "doi": "10.1371/journal.pcbi.1014762",
-          "paper": "Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.",
-          "journal": "PLoS computational biology",
-          "date": "2026-09-08",
-          "year": "2026",
-          "pmcid": "PMC13568522",
-          "pmid": "42709893",
-          "paperURL": "https://doi.org/10.1371/journal.pcbi.1014762"
-        },
-        "updatedAt": "2026-10-17T06:26:08Z"
-      }
     },
     "10.3390/biom16060866": {
       "checkedAt": "2026-10-17T06:26:06Z",
@@ -11965,24 +11917,19 @@
     "startedAt": "2026-11-15T08:28:43Z",
     "version": 1,
     "aiAttempts": 0,
-    "updatedAt": "2026-11-15T08:31:08Z",
-    "elapsedSeconds": 146,
+    "updatedAt": "2026-11-15T08:32:50Z",
+    "elapsedSeconds": 247,
     "status": "active",
     "uncertainAiAttempts": 0,
-    "requests": 39,
+    "requests": 63,
     "date": "2026-11-15",
     "maxBatches": 36,
     "batchCount": 2,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "maxSeconds": 2700,
-    "endReason": "",
-    "inFlight": {
-      "startedAt": "2026-11-15T08:31:08Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "endReason": ""
   }
 }

@@ -168618,6 +168618,387 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-fe4ecb7af82dfc54",
+      "doi": "10.1371/journal.pcbi.1014762",
+      "paper": "Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.",
+      "journal": "PLoS computational biology",
+      "date": "2026-09-08",
+      "year": "2026",
+      "pmcid": "PMC13568522",
+      "pmid": "42709893",
+      "paperURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1553-734X",
+      "eissn": "1553-7358",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "85d3595cabb3fe333ed4ec016b2b6c1dad379fcffa442960acc1b1117c215394"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/PMC13568522.1.xml?md5=1d41f574264013f9d4ea6461a1824cda",
+        "figures": [
+          {
+            "id": "pcbi.1014762.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The Architecture of FOCST.FOCST consists of three main components: Model Training, Model Inference & Prediction, and Downstream Analysis. During data preprocessing, histology images are cropped around each sequencing spot into individual image patches. A. Model Training: Cropped image patches and their corresponding gene expression profiles are fed into the UNI model and a graph convolutional encoder to extract 2D visual features and spatial features, respectively. The extracted image and gene expression features are then aligned into a shared space using separate projection heads to calculate the contrastive loss. Additionally, gene expression embeddings are imputed using a Transformer-based autoencoder, with reconstruction loss computed using RMSE and the ZINB distribution. The final loss is a weighted sum of all the computed losses. B. Model Inference & Prediction: Gene expression for query image patches is predicted within the contrastive learning framework by imputing expression profiles from a reference dataset. C. Downstream Analysis: The predicted ST profiles undergo further downstream analysis to validate their clinical relevance for HER2-positive breast cancer patients.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g001.webp?md5=464d22540439955efa6b46c3c004577c",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+            "asset": "assets/pmc13568522-71eb6b65b7ecb296.webp",
+            "sha256": "71eb6b65b7ecb296429bfa7140cea8594456c98e8df02253c0acd1db71f7cb8f",
+            "width": 1600,
+            "height": 1284,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu. Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.. DOI: 10.1371/journal.pcbi.1014762. Copyright holder: Huang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "71eb6b65b7ecb296429bfa7140cea8594456c98e8df02253c0acd1db71f7cb8f",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pcbi.1014762.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Pearson Correlation Coefficient (PCC) values for FOCST and baseline models evaluated on the HER2-positive test set.A) PCC values for all 785 genes in the dataset. B) PCC values for all generated patches from a test image.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g002.webp?md5=60d07226f4086b6e250204bb889bab02",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+            "asset": "assets/pmc13568522-732205c66a8099ab.webp",
+            "sha256": "732205c66a8099abea411e4a85ee490ce7229dbacd769ef1f0d8ef2ee06194da",
+            "width": 1600,
+            "height": 1601,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu. Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.. DOI: 10.1371/journal.pcbi.1014762. Copyright holder: Huang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "732205c66a8099abea411e4a85ee490ce7229dbacd769ef1f0d8ef2ee06194da",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pcbi.1014762.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Visualization of GNAS expression profile.Comparison between ground truth expression levels, pathologist-annotated regions, FOCST, and baseline models.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g003.webp?md5=f1067105c39befcfe30f8c0334c8887d",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu. Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.. DOI: 10.1371/journal.pcbi.1014762. Copyright holder: Huang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014762.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Visualization of FASN expression profile.Comparison between ground truth expression levels, pathologist-annotated regions, FOCST, and baseline models.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g004.webp?md5=8b434148ce7087df8a85b58fff2161b7",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu. Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.. DOI: 10.1371/journal.pcbi.1014762. Copyright holder: Huang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pcbi.1014762.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Trastuzumab Treatment Response Prediction Results.A) ROC-AUC of the top 5 marker and highly variable genes benchmarked against classifier using UNI generated embeddings. B) ROC-AUC of the top 10 marker and highly variable genes. Reported are the mean and 95% confidence intervals constructed through a two-sided student’s t-interval.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.g005.webp?md5=d0d8b9b2bd2d94ec9976e23a5b1e3036",
+            "articleURL": "https://doi.org/10.1371/journal.pcbi.1014762",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu. Spatially guided translation from histology images to transcriptomic profiles using foundation model-driven contrastive learning.. DOI: 10.1371/journal.pcbi.1014762. Copyright holder: Huang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pcbi.1014762.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s001.docx?md5=722a1fd2300fc80c28f38621d319d9e3",
+            "license": "CC BY",
+            "sha256": "c18e0ee4ee1977c0cf0d4a24718a6a103cbd8bb41e8052ede02d1f3654d8f661",
+            "status": "downloaded_private",
+            "bytes": 624342,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s002.docx?md5=3087cbe67e10a298cb6dea6ab7817e27",
+            "license": "CC BY",
+            "sha256": "44ff65866234efbdb8ede35940a84b8b157d725372d7d1a58d369668e05ce4f2",
+            "status": "downloaded_private",
+            "bytes": 464155,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s003",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s003.docx?md5=37c93ac19f23efc51fadda7a440acb32",
+            "license": "CC BY",
+            "sha256": "bd1c0f2f96f1815ed234f66aa00b87727fbb4337f4583a08e29aee06b3fc5fdc",
+            "status": "downloaded_private",
+            "bytes": 13157,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s004",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s004.docx?md5=fb9d58644600828bae9aa3232b1bd652",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s005",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s005.docx?md5=1c70a8637c583596b09047c76d92ffa0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s006",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s006.docx?md5=322d5e804433966d101d34f7172c49fe",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s007",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s007.docx?md5=bab03715f8e09f6e064f7c6b31c7b631",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s008",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s008.docx?md5=8f9e3bc157386b86d40746564a6e5f31",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s009",
+            "label": "S7 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s009.docx?md5=bbc925404d4a457712ed705e371590bd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pcbi.1014762.s010",
+            "label": "S8 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13568522.1/pcbi.1014762.s010.docx?md5=944c690276ac3e5b2a4744129b50abbc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-15T08:32:33.386610+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zi Huai Huang; Ziyang Xu; Pingzhao Hu"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.6",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-15T08:30:34Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-15T08:32:34Z",
+        "url": "https://openalex.org/W7206778865",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-15T08:32:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-15T08:32:34Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-16T08:32:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 37,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-15T08:32:41Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -232762,6 +233143,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-fe4ecb7af82dfc54": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -234380,7 +234767,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-15T08:30:50Z",
+  "generatedAt": "2026-11-15T08:32:42Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -234614,18 +235001,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-15T08:28:43Z",
-    "updatedAt": "2026-11-15T08:31:08Z",
+    "updatedAt": "2026-11-15T08:32:50Z",
     "batchCount": 2,
-    "requests": 39,
+    "requests": 63,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
