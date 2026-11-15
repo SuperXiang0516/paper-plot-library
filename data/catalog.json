@@ -168999,6 +168999,302 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-42b230649060b8b8",
+      "doi": "10.1093/nargab/lqag109",
+      "paper": "VicMAG, an open-source tool for visualizing circular metagenome-assembled genomes highlighting bacterial virulence and antimicrobial resistance.",
+      "journal": "NAR genomics and bioinformatics",
+      "date": "2026-09-08",
+      "year": "2026",
+      "pmcid": "PMC13551042",
+      "pmid": "42712876",
+      "paperURL": "https://doi.org/10.1093/nargab/lqag109",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "brief-report",
+        "Journal Article"
+      ],
+      "issn": "2631-9268",
+      "eissn": "2631-9268",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "long_read",
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "b6fb613a97b7c32f6a15b5be0b2307ed9db3520b5a45949e3a9ee2dc39519c42"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/PMC13551042.1.xml?md5=23df2ce5770e07f0cb52c4476b3b42a6",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of VicMAG and processing. (A) To visualize data with VicMAG, several steps are required. Highly accurate long reads are first assembled using hifiasm-meta or metaMDBG to obtain MAGs, from which cMAGs are extracted. These cMAGs are annotated with DFAST, including identification of VFGs and ARGs. Optionally, geNomad is used to classify cMAGs as plasmid or non-plasmid. The processed data are then visualized using VicMAG. (B) VicMAG requires a directory containing multiple GenBank files and optional CSV files containing plasmid and phage information. When their file paths are provided via the command line, VicMAG generates and stores individual maps for cMAGs in an output directory, along with a summary file. The maps are subsequently sorted by sequence length and merged into a unified visualization. (C) Because cMAGs vary greatly in size, VicMAG applies cubic ratio scaling to normalize their diameters for display. The largest cMAG is assigned a maximum radius (Rmax), and the others are scaled accordingly. Each map shows VFGs, ARGs, CDSs, and phage genomes. Plasmid cMAGs are displayed without color, whereas non-plasmid cMAGs are filled with cyan for clear differentiation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109fig1.webp?md5=0941bc898ed57df688eb32a19ba0a896",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag109",
+            "asset": "assets/pmc13551042-a4518f3e914a17a1.webp",
+            "sha256": "a4518f3e914a17a14860b992519ddb88c509d78518341a22379924f0bceb07bb",
+            "width": 1600,
+            "height": 1716,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yusuke Tsuda; Yasuhiro Tanizawa; Thi My Hanh Vu; Yosuke Nishimura; Masaki Shintani; Haruka Abe; et al.. VicMAG, an open-source tool for visualizing circular metagenome-assembled genomes highlighting bacterial virulence and antimicrobial resistance.. DOI: 10.1093/nargab/lqag109. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a4518f3e914a17a14860b992519ddb88c509d78518341a22379924f0bceb07bb",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Visualization by VicMAG and maps of 353 cMAGs assembled by metaMDBG. cMAGs obtained from hospital effluent cultures grown in the presence of colistin were visualized using VicMAG.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109fig2.webp?md5=63bd0963bbc85e1463ebebc0b5f78058",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag109",
+            "asset": "assets/pmc13551042-7800167ab0eec19c.webp",
+            "sha256": "7800167ab0eec19ced03426c232929ab001b2f684e0654699689f1f4f029570c",
+            "width": 1600,
+            "height": 1745,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yusuke Tsuda; Yasuhiro Tanizawa; Thi My Hanh Vu; Yosuke Nishimura; Masaki Shintani; Haruka Abe; et al.. VicMAG, an open-source tool for visualizing circular metagenome-assembled genomes highlighting bacterial virulence and antimicrobial resistance.. DOI: 10.1093/nargab/lqag109. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7800167ab0eec19ced03426c232929ab001b2f684e0654699689f1f4f029570c",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Visualization of three cMAGs derived from gram-negative bacteria carrying phage genomes and ARGs. Three cMAGs carrying phage genomes and ARGs, including mcr genes, which confer resistance to colistin, were mapped by VicMAG.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109fig3.webp?md5=59f3b476b007c67a18b8a05da0c2c3c4",
+            "articleURL": "https://doi.org/10.1093/nargab/lqag109",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yusuke Tsuda; Yasuhiro Tanizawa; Thi My Hanh Vu; Yosuke Nishimura; Masaki Shintani; Haruka Abe; et al.. VicMAG, an open-source tool for visualizing circular metagenome-assembled genomes highlighting bacterial virulence and antimicrobial resistance.. DOI: 10.1093/nargab/lqag109. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "lqag109_Supplemental_Files",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109_supplemental_files.zip?md5=87b1d9443d374c288291ee48e992a920",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/TsudaYusuke/VicMAG"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-15T08:34:25.112070+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/TsudaYusuke/VicMAG",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/PMC13551042.1.xml?md5=23df2ce5770e07f0cb52c4476b3b42a6"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yusuke Tsuda; Yasuhiro Tanizawa; Thi My Hanh Vu; Yosuke Nishimura; Masaki Shintani; Haruka Abe; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/TsudaYusuke/VicMAG",
+        "commit": "fe2fc8826b3162a7851c13f9ccf0565c00048434",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "vicmag.py",
+            "url": "https://github.com/TsudaYusuke/VicMAG/blob/fe2fc8826b3162a7851c13f9ccf0565c00048434/vicmag.py",
+            "sha256": "b1e7fce2c12996e55f31e3a88bd4ab3b02273e0353a8939cf85c20155425671f",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "3.0",
+        "jcr": "",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-15T08:34:30Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-15T08:34:30Z",
+        "url": "https://openalex.org/W7147324680",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-15T08:34:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-15T08:34:30Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-16T08:34:30Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-15T08:34:37Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "VicMAG:用于可视化环状宏基因组组装基因组并突出细菌毒力与抗菌药物耐药性的开源工具",
+        "summary_zh": "该资料介绍 VicMAG 这一开源可视化工具,用于展示由长读长宏基因组组装得到、并注释了毒力因子基因(VFG)、抗菌药物耐药基因(ARG)和移动遗传元件(MGE)的环状宏基因组组装基因组(cMAG)。图 1 概述了流程:先用 hifiasm-meta 或 metaMDBG 组装长读长数据并提取 cMAG,再用 DFAST 注释(含 VFG、ARG 识别),可选使用 geNomad 区分质粒与非质粒,最后由 VicMAG 读取 GenBank 文件及可选 CSV 文件,生成单图与汇总文件,按序列长度排序并合并为统一可视化;因 cMAG 尺寸差异大,采用立方比例缩放归一化直径,最大 cMAG 赋最大半径,质粒 cMAG 不着色、非质粒 cMAG 以青色填充。图 2 展示对医院出水中经粘菌素培养所得 353 个 metaMDBG 组装 cMAG 的可视化;图 3 展示三个携带噬菌体基因组和 ARG(含介导粘菌素耐药的 mcr 基因)的革兰阴性菌 cMAG 图谱。作者代码未执行,静态检查不构成复现验证。",
+        "learning_points": [
+          "图 1 给出 VicMAG 的处理流程:长读长组装(hifiasm-meta 或 metaMDBG)→提取 cMAG→DFAST 注释 VFG/ARG→可选 geNomad 质粒分类→VicMAG 可视化。",
+          "VicMAG 的输入为包含多个 GenBank 文件的目录,以及可选的质粒和噬菌体信息 CSV 文件,通过命令行提供路径。",
+          "输出包括每个 cMAG 的单独图谱、一个汇总文件,并按序列长度排序后合并为统一可视化。",
+          "由于 cMAG 尺寸差异大,VicMAG 采用立方比例缩放归一化直径,最大 cMAG 赋最大半径 Rmax,其余按比例缩放。",
+          "单图展示 VFG、ARG、CDS 和噬菌体基因组;质粒 cMAG 不着色,非质粒 cMAG 以青色填充以作区分。",
+          "图 2 展示对医院出水中粘菌素培养样本的 353 个 metaMDBG 组装 cMAG 的可视化。",
+          "图 3 展示三个携带噬菌体基因组与 ARG(含 mcr 基因)的革兰阴性菌 cMAG 图谱。",
+          "资料称该工具可同时展示全部 cMAG,便于整体理解 VFG 与 ARG 在复杂微生物群落中的分布与基因组背景。"
+        ],
+        "limitations": [
+          "作者代码未执行,仅有静态观察;未进行复现验证,不能宣称结果可复现或与原文一致。",
+          "未观察到实际运行输出、性能数据或与其他工具的比较结果,相关能力未知。",
+          "图 1 中关于 geNomad 分类为“可选”步骤,其对最终可视化的具体影响未在证据中说明。",
+          "立方比例缩放对极小 cMAG 的可读性影响未在证据中说明。",
+          "图 3 来源哈希字段为空,证据完整性有限。",
+          "未观察到输入文件的具体字段结构、CSV 列名或 GenBank 记录要求,均属未知。",
+          "未观察到软件许可条款、版本兼容性或依赖环境信息。",
+          "未观察到期刊指标或工具评测指标,不应推断。",
+          "图 2 与图 3 的图号与代码模块的对应关系未明示,保持未知。",
+          "证据仅覆盖摘要与图注层面,方法细节与统计结果未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "script-0"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-15T08:34:44Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "e8d65ec2c8a6f9b19fdfb7fa5dc281afe9f45853f70ebce409311409532ceae2",
+        "summary_fingerprint": "b65ca03695ebb3a45bce069177a23629c6b90a53e57605ad46fc0d99d4e14fdd",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -233149,6 +233445,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-42b230649060b8b8": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -234767,7 +235069,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-15T08:32:42Z",
+  "generatedAt": "2026-11-15T08:34:44Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -235001,18 +235303,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-15T08:28:43Z",
-    "updatedAt": "2026-11-15T08:32:59Z",
+    "updatedAt": "2026-11-15T08:34:52Z",
     "batchCount": 3,
-    "requests": 63,
-    "aiAttempts": 0,
+    "requests": 91,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

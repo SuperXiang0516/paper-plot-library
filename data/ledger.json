@@ -258,6 +258,7 @@
     },
     "2026-11-15": {
       "newDOIs": [
+        "10.1093/nargab/lqag109",
         "10.1371/journal.pcbi.1014762",
         "10.1371/journal.pcbi.1014773",
         "10.1371/journal.pone.0357319",
@@ -266,6 +267,36 @@
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-15T08:34:37Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.118126": {
+      "checkedAt": "2026-11-15T08:34:35Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-15T08:34:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-15T08:34:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/nargab/lqag109": {
+      "checkedAt": "2026-11-15T08:34:30Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-15T08:32:40Z",
       "status": "pending",
@@ -338,29 +369,11 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-14T08:08:12Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-14T08:08:10Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.3390/biom16091288": {
       "checkedAt": "2026-11-14T08:08:09Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1111/cas.70548": {
-      "checkedAt": "2026-11-14T08:06:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1212/nxg.0000000000200449": {
       "checkedAt": "2026-11-14T08:06:38Z",
@@ -5479,61 +5492,6 @@
           "paperURL": "https://doi.org/10.1161/circgen.125.005736"
         },
         "updatedAt": "2026-10-17T06:25:46Z"
-      }
-    },
-    "10.1093/nargab/lqag109": {
-      "checkedAt": "2026-10-17T06:25:07Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/nargab/lqag109",
-        "metadataHash": "33dd114b76899d24cf3b9e9fa5851b42f25053e303616558b99793c036ef149b",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/PMC13551042.1.xml?md5=23df2ce5770e07f0cb52c4476b3b42a6",
-          "license": "CC BY",
-          "figures": [
-            {
-              "id": "F1",
-              "sha256": "a4518f3e914a17a14860b992519ddb88c509d78518341a22379924f0bceb07bb",
-              "height": 1716,
-              "assetSHA256": "a4518f3e914a17a14860b992519ddb88c509d78518341a22379924f0bceb07bb",
-              "asset": "assets/pmc13551042-a4518f3e914a17a1.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 1.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109fig1.webp?md5=0941bc898ed57df688eb32a19ba0a896",
-              "captionHash": "c7ccb88f3bbd15b9c5ad20f2ca7432075f33f6461d575f28f5ff06e645108ecf"
-            },
-            {
-              "id": "F2",
-              "sha256": "7800167ab0eec19ced03426c232929ab001b2f684e0654699689f1f4f029570c",
-              "height": 1745,
-              "assetSHA256": "7800167ab0eec19ced03426c232929ab001b2f684e0654699689f1f4f029570c",
-              "asset": "assets/pmc13551042-7800167ab0eec19c.webp",
-              "width": 1600,
-              "license": "CC BY",
-              "label": "Figure 2.",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13551042.1/lqag109fig2.webp?md5=63bd0963bbc85e1463ebebc0b5f78058",
-              "captionHash": "4882d7f41befc86557093e5d36856487cfbd5bea63a9c9975d388bccea87eb81"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-42b230649060b8b8",
-          "doi": "10.1093/nargab/lqag109",
-          "paper": "VicMAG, an open-source tool for visualizing circular metagenome-assembled genomes highlighting bacterial virulence and antimicrobial resistance.",
-          "journal": "NAR genomics and bioinformatics",
-          "date": "2026-09-08",
-          "year": "2026",
-          "pmcid": "PMC13551042",
-          "pmid": "42712876",
-          "paperURL": "https://doi.org/10.1093/nargab/lqag109"
-        },
-        "updatedAt": "2026-10-17T06:25:04Z"
       }
     },
     "10.1186/s10020-026-01554-w": {
@@ -11916,25 +11874,20 @@
   "dailyCollectionSession": {
     "startedAt": "2026-11-15T08:28:43Z",
     "version": 1,
-    "aiAttempts": 0,
-    "updatedAt": "2026-11-15T08:32:59Z",
-    "elapsedSeconds": 257,
+    "aiAttempts": 1,
+    "updatedAt": "2026-11-15T08:34:52Z",
+    "elapsedSeconds": 369,
     "status": "active",
     "uncertainAiAttempts": 0,
-    "requests": 63,
+    "requests": 91,
     "date": "2026-11-15",
     "maxBatches": 36,
     "batchCount": 3,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "maxSeconds": 2700,
-    "endReason": "",
-    "inFlight": {
-      "startedAt": "2026-11-15T08:32:59Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "endReason": ""
   }
 }
