@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-15",
+  "checkedAt": "2026-11-16",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -169295,6 +169295,331 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-f31a657af64984a9",
+      "doi": "10.1371/journal.pone.0356174",
+      "paper": "A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.",
+      "journal": "PloS one",
+      "date": "2026-09-11",
+      "year": "2026",
+      "pmcid": "PMC13567754",
+      "pmid": "42726753",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0356174",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "377bfb3febc67ac7dcc79fcf987984bc669194417696612516c06e5b9a929691"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/PMC13567754.1.xml?md5=9b320f1663fdf66d5269823059c4f76b",
+        "figures": [
+          {
+            "id": "pone.0356174.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Integrated pharmacogenomics and single-cell workflow for atopic dermatitis.Schematic overview of the three-phase analysis pipeline. Phase 1 (Target Gene Integration & Intersection): Baicalin drug targets were retrieved via PubChem SMILES and queried against STITCH, Swiss Target Prediction, and DrugBank to generate a union of potential target genes; AD-associated genes were independently mined from OMIM and GeneCards. The two sets were intersected to derive candidate target genes. Phase 2 (scRNA-seq Processing & ML Feature Selection): Public AD scRNA-seq data (GEO) were processed through normalization, ScSHC–based clustering, and cell type annotation, followed by metacell construction and pseudo-bulk matrix generation. Candidate genes were prioritized by LASSO and SVM-RFE, identifying CA2 as the top-ranked computational candidate. Phase 3 (Cellular Validation & Subpopulation Drill-Down): Cells were stratified into CA2-high and CA2-low groups; Augur separability analysis revealed keratinocytes as the most transcriptionally separable cell type under CA2 stratification. Keratinocytes were sub-clustered into 14 subpopulations (Kcs1–Kcs14) and subjected to differential and enrichment analyses based on CA2 levels. Augur and scDist analyses recalculated on subpopulations nominated Kcs9 via dual criteria (Augur AUC > 0.7 and high scDist distance); Kcs9 was further characterized by differential enrichment against other keratinocyte subpopulations, providing a computationally prioritized candidate state for experimental follow-up..",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g001.webp?md5=fb6fc122cc3e0123d1ac07733b265748",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0356174.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single-cell atlas construction and cell-type annotation of AD skin.(A) Global embedding of all cells showing major cell types in the integrated AD skin atlas. (B) UMAPs split by group (AD and HC) with cells colored by annotated cell type. (C) Stacked bar chart summarizes cell-type composition by group. (D) Dot plot of canonical marker genes across major cell types. (E) Differential expression summary by cell type (average log2 fold-change), highlighting significantly upregulated and downregulated genes across clusters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g002.webp?md5=a769ca7265e13dbb3540be0dafc79b2a",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0356174.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Machine learning consensus screening and SHAP interpretability for biomarker discovery.A) Cross-validated AUC values (mean ± SD) for 20 individual machine learning algorithms. Dashed line indicates the elite threshold (AUC = 0.8). (B) Scatter plot of pairwise algorithm performance, with x- and y-axes representing the cross-validated AUC of each individual algorithm in the pair, colored by mean combination AUC. (C) Density distribution of combination AUCs with median (solid line) and elite threshold (dashed line) indicated. (D) Dumbbell plot comparing single-algorithm AUC (blue) versus mean AUC across elite combinations in which each algorithm participated (red). (E) Algorithm participation frequency, expressed as the number of elite combinations in which each algorithm participated. (F) Heatmap of pairwise combination AUCs for all 190 algorithm pairs (excluding self-pairing). Diagonal displays single-algorithm performance for reference; color scale from blue to red indicates increasing AUC. (G) Voting results of genes across elite combinations. Red bars denote consensus genes passing the 50% vote threshold; green bars indicate non-consensus genes. (H) Global SHAP feature importance ranking based on mean absolute SHAP values derived from the XGBoost classifier. (I) SHAP beeswarm summary plot derived from the XGBoost classifier. Points are colored by normalized feature expression (blue: low; red: high); positive SHAP values favor AD prediction, negative values favor HC prediction. (J) Normalized expression distribution of six consensus genes across AD and HC groups. Significance was determined by two-sided Wilcoxon rank-sum tests (*p < 0.05, **p < 0.01, ***p < 0.001).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g003.webp?md5=0cbe6e9006b82a635df0e0fd8744cd88",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0356174.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "CA2 expression distribution across cell types and functional enrichment associated with CA2 stratification.(A) Augur AUC projected onto the integrated skin scRNA-seq UMAP, quantifying within–cell type transcriptomic separability between CA2-high vs CA2-low cells (higher AUC indicates stronger separability). (B) Augur AUC summarized across major cell types, ranking cell types by sensitivity to CA2 stratification. (C) Dot plot showing CA2 expression across major cell types; dot size indicates the fraction of expressing cells and color indicates mean expression. (D) KEGG gene set enrichment analysis (GSEA) comparing (CA2-high versus CA2-low cells), shown as normalized enrichment score (NES) with enrichment direction (red, positive; blue, negative) and significance (−log10 P value). (E) HALLMARK GSEA comparing (CA2-high versus CA2-low cells), shown as NES with enrichment direction (red, positive) and significance (−log10 P value).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g004.webp?md5=54637b78c6a3e38efd8cc3a63e26ba42",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0356174.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Subpopulation-resolved Augur and scDIST analysis nominates Kcs9 as the most CA2-associated transcriptionally divergent keratinocyte state.(A) Keratinocyte subset UMAPs split by group (AD and HC), showing 14 keratinocyte subclusters (Kcs1–Kcs14) to assess cross-group coverage and subcluster structure. (B) Dot plot of marker genes across Kcs1–Kcs14; dot size indicates the fraction of expressing cells and color indicates mean expression. (C) Keratinocyte UMAP colored by Augur AUC across all keratinocyte subclusters, where color intensity represents the magnitude of transcriptomic separability associated with CA2 expression status. (D) Augur AUC summarized by keratinocyte subcluster (Kcs1–Kcs14), ranking subclusters by CA2-stratified separability (higher AUC indicates stronger transcriptomic separability). (E) Keratinocyte UMAP colored by scDist-estimated transcriptomic distance, where color intensity represents the magnitude of CA2-associated transcriptomic distance in multivariate expression space. (F) Faceted UMAPs by keratinocyte subcluster with scDist-estimated transcriptomic distance overlaid, highlighting subcluster-specific transcriptomic distance “hotspots”. (G) Bar plot ranking scDist-estimated transcriptomic distance across Kcs1–Kcs14 (higher distance indicates stronger CA2-associated perturbation), nominating Kcs9 as the top-ranked transcriptionally divergent keratinocyte state. (H) HALLMARK GSEA for CA2-high vs CA2-low within Kcs9, reporting normalized enrichment scores (NES) and significance. (I) KEGG GSEA for CA2-high vs CA2-low within Kcs9, reporting normalized enrichment scores (NES) and significance.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g005.webp?md5=336d7d7a04b3e1ed43a9b63f2ed2f01b",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "assets/pmc13567754-825739ee86ed867b.webp",
+            "sha256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
+            "width": 1600,
+            "height": 1050,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0356174.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Molecular docking and molecular dynamics simulations support binding feasibility of baicalin to CA2.(A) Overall docking pose of baicalin in the CA2 structure; protein is shown as cartoon and baicalin as sticks to illustrate the predicted binding location within a defined pocket. (B) Zoomed-in view of the docking site highlighting key interacting residues and representative polar contacts (distances in Å), indicating a plausible hydrogen-bonding interaction network. (C) RMSD trajectories over 100 ns for protein, ligand, and the complex, assessing conformational stability and equilibration behavior during MD simulation. (D) Radius of gyration (Rg) over 100 ns (total and axis-resolved components) to evaluate global compactness of the protein in the bound state. (E) Solvent accessible surface area (SASA) over 100 ns to quantify changes in solvent exposure of the complex during MD simulation. (F) Number of protein–ligand hydrogen bonds over time to summarize persistence and dynamics of polar interactions across the trajectory. (G) Residue-wise RMSF profile of the complex to characterize local flexibility and identify regions with higher conformational fluctuations. (H) MM-PBSA binding free energy components for the baicalin–CA2 complex, reporting the contributions of molecular mechanics terms (e.g., van der Waals and electrostatics) and solvation terms (polar and nonpolar), together with the estimated overall binding free energy. (I) Per-residue free energy decomposition (MM-PBSA) showing residues with the strongest favorable contributions (“hotspots”) to the estimated binding free energy. (J) Free energy landscape (FEL) of the baicalin–CA2 complex derived from the MD trajectory, visualized as a 3D surface plot with RMSD and Rg as reaction coordinates, illustrating dominant low-energy conformational basins. (K) Two-dimensional Gibbs free energy landscape projected onto the first two principal components (PC1 and PC2) from principal component analysis (PCA) of the MD trajectory, highlighting the predominant low-energy conformational state sampled during simulation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g006.webp?md5=a33fe725ad9b34c3363dadbae0fd6533",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "assets/pmc13567754-04239b985ce88820.webp",
+            "sha256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
+            "width": 1600,
+            "height": 966,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0356174.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Graphical abstract summarizing the baicalin–CA2–Kcs9 framework in atopic dermatitis.Pharmacogenomic target mining combined with dual machine-learning feature selection (LASSO and SVM-RFE) identified CA2 as a convergent candidate target of baicalin in atopic dermatitis (AD). Single-cell RNA sequencing analysis localized CA2-associated transcriptional differences to keratinocytes, the cell type with the strongest CA2-stratified separability across major skin cell populations. Sub-clustering of keratinocytes into 14 states and dual perturbation prioritization using Augur (AUC > 0.7) and scDist nominated Kcs9 as the most CA2-associated transcriptionally divergent keratinocyte subpopulation, accompanied by enrichment signals in epithelial remodeling and metabolic programs. Molecular docking and 100-ns MD simulations supported a computationally plausible baicalin–CA2 complex (2–3 hydrogen bonds; ΔG = −22.1 kcal/mol). Together, these results nominate a testable “Baicalin–CA2–Kcs9” epidermal axis in AD.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g007.webp?md5=e72de6e3b6159f37fd790f88bd22532c",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0356174",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Boyan Yang; Guilin Zhou; Jun Dai. A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.. DOI: 10.1371/journal.pone.0356174. Copyright holder: Yang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0356174.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.s001.xlsx?md5=8329eaeda9012a989dfe178286a949ba",
+            "license": "CC BY",
+            "sha256": "0170c851dfdb5a736ead74544ee83004363630b3651d473fa69bbe05e1796ad8",
+            "status": "downloaded_private",
+            "bytes": 37469,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-16T08:38:50.021804+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Boyan Yang; Guilin Zhou; Jun Dai"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-16T08:38:52Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-16T08:38:52Z",
+        "url": "https://openalex.org/W7212229800",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-16T08:38:52Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-16T08:38:52Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-17T08:38:52Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-16T08:39:04Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -233451,6 +233776,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-f31a657af64984a9": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -235069,7 +235400,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-15T08:34:44Z",
+  "generatedAt": "2026-11-16T08:39:05Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -235303,18 +235634,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-16T08:37:14Z",
-    "updatedAt": "2026-11-16T08:37:19Z",
+    "updatedAt": "2026-11-16T08:39:11Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 28,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

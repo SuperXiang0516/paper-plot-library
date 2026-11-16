@@ -264,9 +264,44 @@
         "10.1371/journal.pone.0357319",
         "10.2196/92064"
       ]
+    },
+    "2026-11-16": {
+      "newDOIs": [
+        "10.1371/journal.pone.0356174"
+      ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-16T08:39:04Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-16T08:39:03Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-16T08:39:02Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-16T08:39:01Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pone.0356174": {
+      "checkedAt": "2026-11-16T08:38:52Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1111/cas.70548": {
       "checkedAt": "2026-11-15T08:34:37Z",
       "status": "pending",
@@ -297,18 +332,6 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1093/nargab/lqag138": {
-      "checkedAt": "2026-11-15T08:32:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-15T08:32:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.psj.2026.107986": {
       "checkedAt": "2026-11-15T08:32:37Z",
       "status": "pending",
@@ -338,18 +361,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-15T08:30:38Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-15T08:30:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pcbi.1014773": {
       "checkedAt": "2026-11-15T08:30:35Z",
@@ -6788,61 +6799,6 @@
         "updatedAt": "2026-10-16T07:01:49Z"
       }
     },
-    "10.1371/journal.pone.0356174": {
-      "checkedAt": "2026-10-16T07:01:11Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pone.0356174",
-        "metadataHash": "a88e2bbb5f56027c7fa66abe446612daf53cf3f1fb052d63a652986b89b3d9c8",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/PMC13567754.1.xml?md5=9b320f1663fdf66d5269823059c4f76b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13567754-825739ee86ed867b.webp",
-              "assetSHA256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
-              "license": "CC BY",
-              "id": "pone.0356174.g005",
-              "sha256": "825739ee86ed867b7fccbc6d194dc8b58e206861a21c0baaf5d19527f08208a9",
-              "height": 1050,
-              "label": "Fig 5",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g005.webp?md5=336d7d7a04b3e1ed43a9b63f2ed2f01b",
-              "captionHash": "248629b4092dfc935f69674402a68284462f72431342c66443b5bcfd50e80a4d"
-            },
-            {
-              "asset": "assets/pmc13567754-04239b985ce88820.webp",
-              "assetSHA256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
-              "license": "CC BY",
-              "id": "pone.0356174.g006",
-              "sha256": "04239b985ce8882031110db59a6c5b5702c6163d7703f42803382f78dd36bfe5",
-              "height": 966,
-              "label": "Fig 6",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13567754.1/pone.0356174.g006.webp?md5=a33fe725ad9b34c3363dadbae0fd6533",
-              "captionHash": "30231556ae48eb6e605914884b3625e868b9595c3e3edd23e797e023c4d5305b"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-f31a657af64984a9",
-          "doi": "10.1371/journal.pone.0356174",
-          "paper": "A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.",
-          "journal": "PloS one",
-          "date": "2026-09-11",
-          "year": "2026",
-          "pmcid": "PMC13567754",
-          "pmid": "42726753",
-          "paperURL": "https://doi.org/10.1371/journal.pone.0356174"
-        },
-        "updatedAt": "2026-10-16T07:01:10Z"
-      }
-    },
     "10.1016/j.isci.2026.116862": {
       "checkedAt": "2026-10-16T07:01:07Z",
       "status": "pending",
@@ -11876,23 +11832,18 @@
     "startedAt": "2026-11-16T08:37:14Z",
     "aiAttempts": 0,
     "batchCount": 1,
-    "elapsedSeconds": 6,
-    "requests": 0,
+    "elapsedSeconds": 117,
+    "requests": 28,
     "status": "active",
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "date": "2026-11-16",
-    "dailyNewCount": 0,
-    "updatedAt": "2026-11-16T08:37:19Z",
+    "dailyNewCount": 1,
+    "updatedAt": "2026-11-16T08:39:11Z",
     "uncertainRequests": 0,
     "endReason": "",
     "version": 1,
     "maxSeconds": 2700,
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-16T08:37:19Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
