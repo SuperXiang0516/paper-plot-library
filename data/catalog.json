@@ -170062,6 +170062,277 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-0ef9eee75fc5a526",
+      "doi": "10.1038/s41746-026-03254-5",
+      "paper": "A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.",
+      "journal": "NPJ digital medicine",
+      "date": "2026-09-14",
+      "year": "2026",
+      "pmcid": "PMC13575102",
+      "pmid": "42736338",
+      "paperURL": "https://doi.org/10.1038/s41746-026-03254-5",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2398-6352",
+      "eissn": "2398-6352",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "21a95f72f808604645911fa30e17bc46982c1738663aed7e663a92a2733b95f7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/PMC13575102.1.xml?md5=4a55e9fcec0ea7f67c9292a2d72b148a",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "NCCN risk groups are associated with distinct genomic profiles and clinical outcomes.a, b Kaplan-Meier survival analysis demonstrating significantly worse Progression-Free Survival (PFS) in the TCGA-PRAD and Biochemical Recurrence (BCR) in the MSKCC cohort for High/Very High-risk patients. c, d Forest plots multivariable Cox proportional hazards analysis confirming the NCCN High/Very High-risk group as an independent predictor of poor prognosis in both the TCGA (adjusted for age, lymph node metastasis, radiotherapy) and MSKCC cohorts (adjusted for age, ancestry, lymph node metastasis, ERG fusion). e, f Differentially Expressed Genes and Gene Set Enrichment Analysis (GSEA) of Hallmark pathways comparing High/Very High-risk to Low/Intermediate-risk tumors. g Integration of aggregate GISTIC copy number profiles with differential gene expression, demonstrating that upregulation in the High/Very High-risk group is predominantly associated with copy number deletions, whereas upregulation in the Low/Intermediate-risk group is driven by amplifications.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig1_HTML.webp?md5=ea8d90d951c6821ec95a9cdd13fb8e68",
+            "articleURL": "https://doi.org/10.1038/s41746-026-03254-5",
+            "asset": "assets/pmc13575102-54dc53cb8040b84b.webp",
+            "sha256": "54dc53cb8040b84bf170e514e35d796e768840b77453256b75e3390b76896497",
+            "width": 1600,
+            "height": 1954,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alexandra Rafeletou; Faezeh Fathi; Tatjana Kiseļova; Golnaz Taheri; Arian Lundberg. A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.. DOI: 10.1038/s41746-026-03254-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "54dc53cb8040b84bf170e514e35d796e768840b77453256b75e3390b76896497",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Integrative machine learning identifies ZNF268 epigenetic silencing as a driver of metabolic hyperactivation.a Feature selection via a LASSO Cox regression proportional hazards model coupled with bootstrap stability identified a 4-gene prognostic signature. b Multivariable Cox regression model evaluating the 4-gene signature alongside standard clinical covariates, identifying ZNF268 as a robust, independent protective factor. Targeted interaction model (ZNF268 × NCCN Risk) demonstrating context-dependent prognostic utility. Kaplan-Meier curves show ZNF268 expression can significantly stratify patients for PFS in the Low/Intermediate-risk group (c) but shows no significant stratification in the High/Very High-risk cohort (d). e Genomic region analysis of normal prostate epithelium displaying an unmethylated, DNase I hypersensitive open chromatin hub at the ZNF268 regulatory locus. f GSEA pathway mapping across clinical trajectories, revealing that early-stage ZNF268 loss is linked to a phenotypic inversion from structural/immune signaling toward metabolic hyperactivation (Comparison 1: Low/Inter-risk (Low ZNF268) vs. Low/Inter-risk (High ZNF268), Comparison 2: Low/Inter-risk (High ZNF268) vs. High/very High risk tumors, Comparison 3: Low/Inter-risk (Low ZNF268) vs. High/very High risk tumors).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig2_HTML.webp?md5=0fa07b457ea474664069f028fd222462",
+            "articleURL": "https://doi.org/10.1038/s41746-026-03254-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alexandra Rafeletou; Faezeh Fathi; Tatjana Kiseļova; Golnaz Taheri; Arian Lundberg. A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.. DOI: 10.1038/s41746-026-03254-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Divergent somatic mutational landscapes and actionable vulnerabilities dictated by ZNF268 status.a Comparative mutational frequency landscape between High ZNF268 and Low ZNF268 tumors within the clinical Low/Intermediate-risk tumors, highlighting enrichment of canonical drivers in the Low ZNF268 subgroup. b Mutational signature extraction mapping genomic alterations to distinct etiologies. c Non-random mutational clustering analysis distinguishing significant driver events strictly within Low ZNF268 tumors. d, e Gene expression correlation matrices and absolute expression levels demonstrating significant transcriptional dysregulation of highly mutated driver genes following ZNF268 loss. f GDSC drug sensitivity profiling. Heatmap-based global vulnerability mapping identifies robust, actionable therapeutic sensitivities unique to the Low ZNF268 mutational profile, particularly to MAPK pathway inhibitors (e.g., Trametinib), DNA damage response inhibitors (ATR/ATRX targeting), and PI3K/mTOR compounds.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig3_HTML.webp?md5=7bf4899e1f19397dfcf27d765addb0ca",
+            "articleURL": "https://doi.org/10.1038/s41746-026-03254-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alexandra Rafeletou; Faezeh Fathi; Tatjana Kiseļova; Golnaz Taheri; Arian Lundberg. A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.. DOI: 10.1038/s41746-026-03254-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Dynamic topological rewiring of the ZNF268 network captures an active transitional state.a Correlation-based ZNF268 co-expression networks mapped across three disease states, demonstrating structural turnover and recruitment of distinct gene modules. Positive Pearson’s correlation is shown in red; negative correlation in blue. The width of the line represents the strength of the correlation. b Assessing the sample-specific contributions of the genes through a post-hoc machine learning SHAP interpretation. c Heatmap visualization of the 15-gene core expression. (Kaplan-Meier analysis of the derived Rewiring Score, effectively stratifying PFS in the Low/Intermediate-risk group (d) while showing attenuated stratification in the High/Very High-risk group (e). Forest plots representing multivariable Cox regression models including the Rewiring Score in the TCGA-PRAD (f) and Long et al. cohort (Cancer Research 2014) (g) along with available clinical variables.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig4_HTML.webp?md5=9aaf3b0e9ff4f3d7a8ea0fdf5bbeeadc",
+            "articleURL": "https://doi.org/10.1038/s41746-026-03254-5",
+            "asset": "assets/pmc13575102-41acf9f37ba5047f.webp",
+            "sha256": "41acf9f37ba5047f9779382ce4dad200c04bc9111da72e6a7282ca68bc9df492",
+            "width": 1600,
+            "height": 2374,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Alexandra Rafeletou; Faezeh Fathi; Tatjana Kiseļova; Golnaz Taheri; Arian Lundberg. A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.. DOI: 10.1038/s41746-026-03254-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "41acf9f37ba5047f9779382ce4dad200c04bc9111da72e6a7282ca68bc9df492",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_MOESM1_ESM.pdf?md5=e87f87737bad2e0cdbbe4654aee3a187",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_MOESM2_ESM.xlsx?md5=94afa0eefbbfddbce6694da82c58d08a",
+            "license": "CC BY",
+            "sha256": "c1fb652305319656185fe27980a103bd2e87db8032f0500dc4a2ede7ba5b6a90",
+            "status": "downloaded_private",
+            "bytes": 4310664,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-16T08:42:01.415457+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Alexandra Rafeletou; Faezeh Fathi; Tatjana Kiseļova; Golnaz Taheri; Arian Lundberg"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.0",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-16T08:42:03Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-16T08:42:03Z",
+        "url": "https://openalex.org/W7212578713",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "integration",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-16T08:42:03Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-16T08:42:03Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-17T08:42:03Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-16T08:42:20Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -234230,6 +234501,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-0ef9eee75fc5a526": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -235848,7 +236125,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-16T08:40:47Z",
+  "generatedAt": "2026-11-16T08:42:21Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -236082,18 +236359,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-16T08:37:14Z",
-    "updatedAt": "2026-11-16T08:41:01Z",
+    "updatedAt": "2026-11-16T08:42:27Z",
     "batchCount": 3,
-    "requests": 61,
+    "requests": 85,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

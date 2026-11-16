@@ -267,12 +267,43 @@
     },
     "2026-11-16": {
       "newDOIs": [
+        "10.1038/s41746-026-03254-5",
         "10.1371/journal.pone.0356174",
         "10.46471/gigabyte.191"
       ]
     }
   },
   "candidates": {
+    "10.1186/s12909-026-10014-2": {
+      "checkedAt": "2026-11-16T08:42:20Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1212/nxg.0000000000200449": {
+      "checkedAt": "2026-11-16T08:42:19Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-16T08:42:11Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-16T08:42:04Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41746-026-03254-5": {
+      "checkedAt": "2026-11-16T08:42:03Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1111/cas.70548": {
       "checkedAt": "2026-11-16T08:40:41Z",
       "status": "pending",
@@ -333,18 +364,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-15T08:34:33Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-15T08:34:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1093/nargab/lqag109": {
       "checkedAt": "2026-11-15T08:34:30Z",
       "status": "source_confirmed",
@@ -392,12 +411,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1212/nxg.0000000000200449": {
-      "checkedAt": "2026-11-14T08:06:38Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1093/bioinformatics/btag708": {
       "checkedAt": "2026-11-14T08:06:20Z",
@@ -464,12 +477,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1186/s12909-026-10014-2": {
-      "checkedAt": "2026-11-12T08:58:06Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.34133/research.1470": {
       "checkedAt": "2026-11-12T08:58:04Z",
@@ -7025,61 +7032,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1038/s41746-026-03254-5": {
-      "checkedAt": "2026-10-16T06:58:47Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41746-026-03254-5",
-        "metadataHash": "4b84e2e9d8f0f7c961d511a1d04d88854754095dfac4bf800ea9c5242977cf3f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/PMC13575102.1.xml?md5=4a55e9fcec0ea7f67c9292a2d72b148a",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13575102-54dc53cb8040b84b.webp",
-              "assetSHA256": "54dc53cb8040b84bf170e514e35d796e768840b77453256b75e3390b76896497",
-              "license": "CC BY",
-              "id": "Fig1",
-              "sha256": "54dc53cb8040b84bf170e514e35d796e768840b77453256b75e3390b76896497",
-              "height": 1954,
-              "label": "Fig. 1",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig1_HTML.webp?md5=ea8d90d951c6821ec95a9cdd13fb8e68",
-              "captionHash": "4453634b3ed12e78b6c0fd7d7aa0b236b0283f0b424f76c176763ebd48833bde"
-            },
-            {
-              "asset": "assets/pmc13575102-41acf9f37ba5047f.webp",
-              "assetSHA256": "41acf9f37ba5047f9779382ce4dad200c04bc9111da72e6a7282ca68bc9df492",
-              "license": "CC BY",
-              "id": "Fig4",
-              "sha256": "41acf9f37ba5047f9779382ce4dad200c04bc9111da72e6a7282ca68bc9df492",
-              "height": 2374,
-              "label": "Fig. 4",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13575102.1/41746_2026_3254_Fig4_HTML.webp?md5=9aaf3b0e9ff4f3d7a8ea0fdf5bbeeadc",
-              "captionHash": "3a068f48d72350afd9c40698bf05d07092feb0596f652a0e83004af91e6f9d87"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-0ef9eee75fc5a526",
-          "doi": "10.1038/s41746-026-03254-5",
-          "paper": "A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer.",
-          "journal": "NPJ digital medicine",
-          "date": "2026-09-14",
-          "year": "2026",
-          "pmcid": "PMC13575102",
-          "pmid": "42736338",
-          "paperURL": "https://doi.org/10.1038/s41746-026-03254-5"
-        },
-        "updatedAt": "2026-10-16T06:58:46Z"
-      }
-    },
     "10.1016/j.patter.2026.101589": {
       "checkedAt": "2026-10-16T06:58:42Z",
       "status": "pending",
@@ -11796,23 +11748,18 @@
     "startedAt": "2026-11-16T08:37:14Z",
     "aiAttempts": 1,
     "batchCount": 3,
-    "elapsedSeconds": 227,
-    "requests": 61,
+    "elapsedSeconds": 313,
+    "requests": 85,
     "status": "active",
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "date": "2026-11-16",
-    "dailyNewCount": 2,
-    "updatedAt": "2026-11-16T08:41:01Z",
+    "dailyNewCount": 3,
+    "updatedAt": "2026-11-16T08:42:27Z",
     "uncertainRequests": 0,
     "endReason": "",
     "version": 1,
     "maxSeconds": 2700,
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-16T08:41:01Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
