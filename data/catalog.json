@@ -170333,6 +170333,270 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-0c02f46aadd5d950",
+      "doi": "10.1016/j.patter.2026.101589",
+      "paper": "Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.",
+      "journal": "Patterns (New York, N.Y.)",
+      "date": "2026-06-17",
+      "year": "2026",
+      "pmcid": "PMC13576652",
+      "pmid": "42746519",
+      "paperURL": "https://doi.org/10.1016/j.patter.2026.101589",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2666-3899",
+      "eissn": "2666-3899",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "epigenetic_profile",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "96d9752a89d36f67108911c12586a6cba9495e3d8881f28dee7fedb80d70de8f"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/PMC13576652.1.xml?md5=971eea2e4447f387cdad05e022fc35eb",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "DeepDive accurately disentangles covariate effects on single-cell epigenomes(A) Schematic overview of the DeepDive model. The model consists of a dual-network architecture that disentangles known covariates using adversarial learning while modeling residual, unknown variation with a conditional variational autoencoder.(B) Heatmap showing pseudobulk chromatin accessibility at cell-type marker peaks in the raw dataset6 (top), and the DeepDive reconstruction after disentangling and removing donor-level covariates (bottom).(C) Lineplot showing signal leakage from a simulated covariate to another as a function of increasing multicollinearity strength.(D) Precision-recall curve comparing the performance in classifying differentially accessible peaks using DeepDive, DESeq2, or observed log2 fold changes.(E) Average precision for classifying differentially accessible peaks with discrete covariates, comparing DeepDive to log fold-change-based classification as a function of increasing multicollinearity strength. Error bars represent the standard deviation across three independent simulations.(F) Average batch correction metric across the five datasets. Error bars represent the 95% confidence interval of the mean (n = 5). “Baseline” indicates a standard LSI implementation.(G) Average accuracy of logistic regression (black), DeepDive (green), and Biolord (gray) predictions for masked covariate labels across effect sizes. Error bars represent standard deviations across three simulations.(H) Average Pearson’s R2 on hold-out covariate combinations. Error bars represent standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/gr1.webp?md5=04a37716d30cc811f299a1763a83c862",
+            "articleURL": "https://doi.org/10.1016/j.patter.2026.101589",
+            "asset": "assets/pmc13576652-cc736e8b519c3cea.webp",
+            "sha256": "cc736e8b519c3cea6f4ce9c19496eb4fe50e9ee5c08e1fb19fc59cfb15b50263",
+            "width": 1600,
+            "height": 1515,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Andreas Fønss Møller; Jesper Grud Skat Madsen. Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.. DOI: 10.1016/j.patter.2026.101589. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "cc736e8b519c3cea6f4ce9c19496eb4fe50e9ee5c08e1fb19fc59cfb15b50263",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "DeepDive disentangles covariate effects in pancreatic islet cells(A) Schematic overview.(B) Heatmap showing cell-type-specific covariate importance as determined by DeepDive.(C) Boxplots showing the predicted beta-2 cell proportion based on counterfactual prediction perturbing the indicated variables for non-diabetic (ND) (top) and type 2 diabetic (T2D) (bottom) individuals.(D) Scatterplot showing the change in ChromVAR motif activity between beta subtypes (x axis) as an effect of T2D to ND counterfactual prediction (y axis).(E and F) Barplots showing the proportion of transcription factor activities associated with beta-1 and beta-2 differences, stratified by DeepDive counterfactual support and random sampling, overlapping with eQTL and metabolic GWAS colocalization data (E) or GSIS correlated targets (F).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/gr2.webp?md5=404e491a66d8c9fadb2d1e25da47cf31",
+            "articleURL": "https://doi.org/10.1016/j.patter.2026.101589",
+            "asset": "assets/pmc13576652-c4f24e1c2e7e8c9d.webp",
+            "sha256": "c4f24e1c2e7e8c9d7db01463427961ef4e99e57375e4f5068c8f8bbf62058dd9",
+            "width": 1600,
+            "height": 1749,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+            "attribution": "Andreas Fønss Møller; Jesper Grud Skat Madsen. Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.. DOI: 10.1016/j.patter.2026.101589. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c4f24e1c2e7e8c9d7db01463427961ef4e99e57375e4f5068c8f8bbf62058dd9",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mmc1",
+            "label": "Document S1. Figures S1–S6 and Note S1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/mmc1.pdf?md5=e5467ef7d9f8b0dde64e387a88f6f9f8",
+            "license": "CC BY",
+            "sha256": "4ca17def7de12fa2ed82c0436b193466ca3b5d63c73989e54e25cbd75da2b9df",
+            "status": "downloaded_private",
+            "bytes": 3707627,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 11,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "mmc2",
+            "label": "Table S1. scIB batch integration metricsBatch integration metrics across five datasets and seven methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/mmc2.xlsx?md5=00ae2591159f71ee01f59c5820fcb904",
+            "license": "CC BY",
+            "sha256": "42a4565afa4b9a2693184b744ef60e33be462e1b548df849c2a8558efdca47b4",
+            "status": "downloaded_private",
+            "bytes": 14910,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc3",
+            "label": "Table S2. Counterfactual support for transcription factor motifsTranscription factor motif activity differences between beta-1 and beta-2 subtypes and",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/mmc3.xlsx?md5=c843cf86da33377bd722f0a4de5883df",
+            "license": "CC BY",
+            "sha256": "f4ff7c63196f062a0dd35d8e4bf951a55b21690427f3c94275e2f1b5084d916d",
+            "status": "downloaded_private",
+            "bytes": 64372,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc4",
+            "label": "Table S3. Simulation parametersDescription of simulation parameters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/mmc4.xlsx?md5=d0f216af214657e5f4c5107b9af4415d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mmc5",
+            "label": "Document S2. Article plus supplemental information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/mmc5.pdf?md5=d3bf53cbb8f4b84d2c8c954191cae1d9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-16T08:43:34.526020+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+        "authorCredit": "Andreas Fønss Møller; Jesper Grud Skat Madsen"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "10.8",
+        "jcr": "",
+        "cas": "计算机科学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-16T08:43:37Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-16T08:43:38Z",
+        "url": "https://openalex.org/W7165046314",
+        "cited_by_count": 1,
+        "fwci": 1.2665,
+        "citation_normalized_percentile": 0.71108569,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-16T08:43:38Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-16T08:43:38Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-17T08:43:38Z"
+        }
+      },
+      "selectionScore": {
+        "total": 48.55542845,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.55542845,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-16T08:43:43Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -234507,6 +234771,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-0c02f46aadd5d950": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -236125,7 +236395,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-16T08:42:21Z",
+  "generatedAt": "2026-11-16T08:43:43Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -236359,18 +236629,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-16T08:37:14Z",
-    "updatedAt": "2026-11-16T08:42:35Z",
+    "updatedAt": "2026-11-16T08:43:50Z",
     "batchCount": 4,
-    "requests": 85,
+    "requests": 110,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

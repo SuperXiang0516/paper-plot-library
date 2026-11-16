@@ -267,6 +267,7 @@
     },
     "2026-11-16": {
       "newDOIs": [
+        "10.1016/j.patter.2026.101589",
         "10.1038/s41746-026-03254-5",
         "10.1371/journal.pone.0356174",
         "10.46471/gigabyte.191"
@@ -274,6 +275,36 @@
     }
   },
   "candidates": {
+    "10.1002/jex2.70197": {
+      "checkedAt": "2026-11-16T08:43:42Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aei0410": {
+      "checkedAt": "2026-11-16T08:43:41Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-16T08:43:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-11-16T08:43:39Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.patter.2026.101589": {
+      "checkedAt": "2026-11-16T08:43:38Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1186/s12909-026-10014-2": {
       "checkedAt": "2026-11-16T08:42:20Z",
       "status": "pending",
@@ -466,12 +497,6 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1002/jex2.70197": {
-      "checkedAt": "2026-11-12T09:00:18Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1093/bioinformatics/btag694": {
       "checkedAt": "2026-11-12T09:00:01Z",
       "status": "source_confirmed",
@@ -635,12 +660,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1167/iovs.67.12.73": {
-      "checkedAt": "2026-11-09T08:48:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1186/s13024-026-00960-2": {
       "checkedAt": "2026-11-09T08:48:28Z",
       "status": "source_confirmed",
@@ -655,12 +674,6 @@
     },
     "10.2337/db26-0148": {
       "checkedAt": "2026-11-09T08:46:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-11-09T08:46:30Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -7032,61 +7045,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.patter.2026.101589": {
-      "checkedAt": "2026-10-16T06:58:42Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1016/j.patter.2026.101589",
-        "metadataHash": "ec4580eac78a90489039db6f4118fb4b7f4a86777c3e613668ac958885efc2a5",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/PMC13576652.1.xml?md5=971eea2e4447f387cdad05e022fc35eb",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13576652-cc736e8b519c3cea.webp",
-              "assetSHA256": "cc736e8b519c3cea6f4ce9c19496eb4fe50e9ee5c08e1fb19fc59cfb15b50263",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "cc736e8b519c3cea6f4ce9c19496eb4fe50e9ee5c08e1fb19fc59cfb15b50263",
-              "height": 1515,
-              "label": "Figure 1",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/gr1.webp?md5=04a37716d30cc811f299a1763a83c862",
-              "captionHash": "e5ca61994b96635885e88c33b22066df817994b67fd015f102f40082dd337ab7"
-            },
-            {
-              "asset": "assets/pmc13576652-c4f24e1c2e7e8c9d.webp",
-              "assetSHA256": "c4f24e1c2e7e8c9d7db01463427961ef4e99e57375e4f5068c8f8bbf62058dd9",
-              "license": "CC BY",
-              "id": "fig2",
-              "sha256": "c4f24e1c2e7e8c9d7db01463427961ef4e99e57375e4f5068c8f8bbf62058dd9",
-              "height": 1749,
-              "label": "Figure 2",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13576652.1/gr2.webp?md5=404e491a66d8c9fadb2d1e25da47cf31",
-              "captionHash": "a0427b5c2f62fa0b58c948595cd49e1dd35c116b7efd789c3aee083ae0d347d5"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-0c02f46aadd5d950",
-          "doi": "10.1016/j.patter.2026.101589",
-          "paper": "Disentangling covariate effects on single-cell-resolved epigenomes with DeepDive.",
-          "journal": "Patterns (New York, N.Y.)",
-          "date": "2026-06-17",
-          "year": "2026",
-          "pmcid": "PMC13576652",
-          "pmid": "42746519",
-          "paperURL": "https://doi.org/10.1016/j.patter.2026.101589"
-        },
-        "updatedAt": "2026-10-16T06:58:40Z"
-      }
-    },
     "10.1016/j.molmet.2026.102408": {
       "checkedAt": "2026-10-16T06:58:35Z",
       "status": "pending",
@@ -11748,23 +11706,18 @@
     "startedAt": "2026-11-16T08:37:14Z",
     "aiAttempts": 1,
     "batchCount": 4,
-    "elapsedSeconds": 321,
-    "requests": 85,
+    "elapsedSeconds": 396,
+    "requests": 110,
     "status": "active",
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "date": "2026-11-16",
-    "dailyNewCount": 3,
-    "updatedAt": "2026-11-16T08:42:35Z",
+    "dailyNewCount": 4,
+    "updatedAt": "2026-11-16T08:43:50Z",
     "uncertainRequests": 0,
     "endReason": "",
     "version": 1,
     "maxSeconds": 2700,
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-16T08:42:35Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
