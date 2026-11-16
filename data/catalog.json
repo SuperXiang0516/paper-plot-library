@@ -169620,6 +169620,448 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-3d721a9d75932a29",
+      "doi": "10.46471/gigabyte.191",
+      "paper": "Single-cell RNA sequencing data processing using cloud-based serverless computing.",
+      "journal": "GigaByte (Hong Kong, China)",
+      "date": "2026-09-11",
+      "year": "2026",
+      "pmcid": "PMC13613206",
+      "pmid": "42798834",
+      "paperURL": "https://doi.org/10.46471/gigabyte.191",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2709-4715",
+      "eissn": "2709-4715",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "83892bd5c9ec48f72b5db6710cfbfea1a664ccde430f41182813b0ac3723b921"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613206.1/PMC13613206.1.xml?md5=6f1a249d8c836860a54471857375805c",
+        "figures": [
+          {
+            "id": "gigabyte-2026-191-g001",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of our optimized Piscem Alevin-Fry serverless architecture. Steps 1, 2 and 3 represent the pre-processing stage where AWS resources are created and input sequence files are decompressed, split into shards, and uploaded when a compressed R1/R2 pair exceeds the 7 GB direct-pass cutoff; smaller pairs are passed to a single Lambda invocation unmodified. Steps 4 and 5 represent serverless execution, which is dispatched asynchronously as each shard is uploaded, with input objects streamed from S3 directly into piscem. Steps 6 and 7 represent the post-processing phase in which shard outputs are merged into the final RAD file(s) using parallel ranged S3 reads before the Alevin-Fry step is run. In step 8, output files from Alevin quant are uploaded to S3. The stages overlap: serverless alignment proceeds while the remaining input is still being split and uploaded.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613206.1/gigabyte-2026-191-g001.webp?md5=58d8010c8e385f37f391f86baab32b0f",
+            "articleURL": "https://doi.org/10.46471/gigabyte.191",
+            "asset": "assets/pmc13613206-94ed87a91e60e12c.webp",
+            "sha256": "94ed87a91e60e12c69c91cb26abac84a1ff120f40139e82ce8c36e7838a12e1d",
+            "width": 2000,
+            "height": 1188,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Ling-Hong Hung; Niharika Nasam; Chris Biju; Wes Lloyd; Ka Yee Yeung. Single-cell RNA sequencing data processing using cloud-based serverless computing.. DOI: 10.46471/gigabyte.191. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "94ed87a91e60e12c69c91cb26abac84a1ff120f40139e82ce8c36e7838a12e1d",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [
+          "https://github.com/BioDepot/scRNA-serverless"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-16T08:40:19.092515+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/BioDepot/scRNA-serverless",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613206.1/PMC13613206.1.xml?md5=6f1a249d8c836860a54471857375805c"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Ling-Hong Hung; Niharika Nasam; Chris Biju; Wes Lloyd; Ka Yee Yeung"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/BioDepot/scRNA-serverless",
+        "commit": "f02972c92432e24170271c9095d040d7b8dfd529",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "delete_aws_resources.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/delete_aws_resources.py",
+            "sha256": "788efa73f7c0532d1edd232c6f2a82c72bfad16b7a5538d8b27c35e98a794155",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "AttachedPolicies",
+                "line": 86,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Id",
+                "line": 118,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Key",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Contents",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PolicyArn",
+                "line": 89,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NextContinuationToken",
+                "line": 42,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "delete_generated_files_s3.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/delete_generated_files_s3.py",
+            "sha256": "6d32fa4b2e61aeadbfc5fbed215a1687f246c3e3a93446a5f70730a2c972a2cc",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Key",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Contents",
+                "line": 23,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "process_fastq.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/process_fastq.py",
+            "sha256": "2afc996ba5718bc153d05f1eb2c2da812b6a34942cfed6a27b4f45e31aa4ee1d",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "ContentLength",
+                "line": 219,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Contents",
+                "line": 198,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "R1",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "R2",
+                "line": 117,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Key",
+                "line": 199,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ContinuationToken",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "NextContinuationToken",
+                "line": 265,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/build_ko_sample_manifest.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/scripts/build_ko_sample_manifest.py",
+            "sha256": "735bf5534a48296116c5e56cb474a3bdc3aa601864f6cd1e8451670f77f19b39",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "r1",
+                "line": 62,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r2",
+                "line": 63,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "priority",
+                "line": 83,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "filename",
+                "line": 45,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bytes",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "url",
+                "line": 73,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pair_name",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "combined_bytes",
+                "line": 81,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/build_sample_rad_contract.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/scripts/build_sample_rad_contract.py",
+            "sha256": "f63c541e3476421de77c1035b20b5dfbacb8e52464f0c0ac786c164314565ca3",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/plan_ko_s3_transfers.py",
+            "url": "https://github.com/BioDepot/scRNA-serverless/blob/f02972c92432e24170271c9095d040d7b8dfd529/scripts/plan_ko_s3_transfers.py",
+            "sha256": "a34917d98869747d5dca6437e44afcff3ec211ce83466ac33e235740bcf11e85",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "pair_name",
+                "line": 150,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r1_filename",
+                "line": 151,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r2_filename",
+                "line": 152,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "combined_bytes",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "priority",
+                "line": 139,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 140,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "1.6",
+        "jcr": "",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-16T08:40:22Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-16T08:40:22Z",
+        "url": "https://openalex.org/W7212278585",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-16T08:40:22Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-16T08:40:22Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-17T08:40:22Z"
+        }
+      },
+      "selectionScore": {
+        "total": 54,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 4,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-16T08:40:42Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "基于云无服务器计算的单细胞RNA测序数据处理",
+        "summary_zh": "该文献提出一种利用云无服务器函数按需构建“超级计算机”的通用方法,用于加速计算密集的单细胞RNA测序流程。作者在公开PBMC数据集和一个450 GB、含13个样本的人源scRNA-seq敲除数据集上测试,并与相同硬件上不含无服务器函数的优化流程比较执行时间,报告所有测试数据集均有加速,最大数据集达7.0倍。软件以MIT许可开源,代码与文档公开。提供的证据仅包含图1的架构图注和若干脚本的静态检查记录,未包含具体性能数据表或复现结果。",
+        "learning_points": [
+          "无服务器架构将流程分为预处理、无服务器执行和后处理三个阶段,并以异步方式调度分片任务。",
+          "当压缩的R1/R2文件对超过7 GB直传阈值时,输入会被解压、分片并上传;较小文件对则不经修改直接传给单次Lambda调用。",
+          "输入对象从S3直接流式传入piscem,分片输出通过并行范围S3读取合并为最终RAD文件,再运行Alevin-Fry。",
+          "各阶段存在重叠:无服务器比对在剩余输入仍被分片和上传时即已进行。",
+          "作者报告在三个数据集上均获得加速,最大数据集达7.0倍,但具体计时数据未在提供的证据中给出。",
+          "代码仓库包含资源清理、S3文件清理、FASTQ处理和样本清单构建等脚本,固定提交为f02972c。",
+          "软件以MIT许可开源发布,代码与文档位于公开GitHub仓库。",
+          "图1仅展示架构流程,未提供输入数据尺度与图号的对应关系。"
+        ],
+        "limitations": [
+          "作者代码未被执行,脚本仅有静态观察记录,不能视为复现验证。",
+          "未观察到具体的执行时间测量值、硬件配置细节或统计方法,7.0倍加速仅来自摘要陈述。",
+          "输入数据尺度、各图与具体分析步骤的对应关系未明示,属于未知。",
+          "未观察到期刊指标、影响因子或同行评审细节。",
+          "未观察到PBMC数据集与450 GB敲除数据集的具体样本处理参数或质控标准。",
+          "未观察到无服务器方案的成本、冷启动延迟或可扩展性上限的定量评估。",
+          "静态检查记录未展示脚本内部逻辑,无法确认其功能与流程描述的对应关系。",
+          "未观察到与除“相同硬件上不含无服务器函数的优化流程”之外的其他方法比较。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-16T08:40:47Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "3cbaf0b7550401d1fab928b300d8de787f1558b9132f0fadb424171978048691",
+        "summary_fingerprint": "85ec4dbe4a264af75b3ed105df8d0689f3e77baae3cab36183cf4b94699ab9f0",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -233782,6 +234224,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-3d721a9d75932a29": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -235400,7 +235848,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-16T08:39:05Z",
+  "generatedAt": "2026-11-16T08:40:47Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -235634,18 +236082,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-16T08:37:14Z",
-    "updatedAt": "2026-11-16T08:39:18Z",
+    "updatedAt": "2026-11-16T08:40:53Z",
     "batchCount": 2,
-    "requests": 28,
-    "aiAttempts": 0,
+    "requests": 61,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

@@ -267,11 +267,42 @@
     },
     "2026-11-16": {
       "newDOIs": [
-        "10.1371/journal.pone.0356174"
+        "10.1371/journal.pone.0356174",
+        "10.46471/gigabyte.191"
       ]
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-16T08:40:41Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.118126": {
+      "checkedAt": "2026-11-16T08:40:25Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-16T08:40:24Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-16T08:40:23Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.46471/gigabyte.191": {
+      "checkedAt": "2026-11-16T08:40:22Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-16T08:39:04Z",
       "status": "pending",
@@ -302,18 +333,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1111/cas.70548": {
-      "checkedAt": "2026-11-15T08:34:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.118126": {
-      "checkedAt": "2026-11-15T08:34:35Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.1016/j.psj.2026.107910": {
       "checkedAt": "2026-11-15T08:34:33Z",
       "status": "pending",
@@ -331,18 +350,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-15T08:32:37Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-15T08:32:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pcbi.1014762": {
       "checkedAt": "2026-11-15T08:32:34Z",
@@ -7000,49 +7007,6 @@
         "updatedAt": "2026-10-16T07:00:13Z"
       }
     },
-    "10.46471/gigabyte.191": {
-      "checkedAt": "2026-10-16T06:59:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.46471/gigabyte.191",
-        "metadataHash": "bb971b7f580b148dd2c514bc76c27ef4f17589b1daa4a619728e2e29da3a3b78",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613206.1/PMC13613206.1.xml?md5=2fac7fba9cea1058d92b50bb0caeaaa4",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13613206-94ed87a91e60e12c.webp",
-              "assetSHA256": "94ed87a91e60e12c69c91cb26abac84a1ff120f40139e82ce8c36e7838a12e1d",
-              "license": "CC BY",
-              "id": "gigabyte-2026-191-g001",
-              "sha256": "94ed87a91e60e12c69c91cb26abac84a1ff120f40139e82ce8c36e7838a12e1d",
-              "height": 1188,
-              "label": "Figure 1.",
-              "width": 2000,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613206.1/gigabyte-2026-191-g001.webp?md5=58d8010c8e385f37f391f86baab32b0f",
-              "captionHash": "7e3fdc950c65f05775538775b47bb7cc1b9a10237ba2a355ce5b7d890b4ec5b7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-3d721a9d75932a29",
-          "doi": "10.46471/gigabyte.191",
-          "paper": "Single-cell RNA sequencing data processing using cloud-based serverless computing.",
-          "journal": "GigaByte (Hong Kong, China)",
-          "date": "2026-09-11",
-          "year": "2026",
-          "pmcid": "PMC13613206",
-          "pmid": "42798834",
-          "paperURL": "https://doi.org/10.46471/gigabyte.191"
-        },
-        "updatedAt": "2026-10-16T06:59:34Z"
-      }
-    },
     "10.1038/s44324-026-00114-4": {
       "checkedAt": "2026-10-16T06:59:25Z",
       "status": "pending",
@@ -11830,25 +11794,20 @@
   "dailyCollectionSession": {
     "maxRequests": 1800,
     "startedAt": "2026-11-16T08:37:14Z",
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "batchCount": 2,
-    "elapsedSeconds": 124,
-    "requests": 28,
+    "elapsedSeconds": 219,
+    "requests": 61,
     "status": "active",
     "maxBatches": 36,
     "maxAiAttempts": 165,
     "date": "2026-11-16",
-    "dailyNewCount": 1,
-    "updatedAt": "2026-11-16T08:39:18Z",
+    "dailyNewCount": 2,
+    "updatedAt": "2026-11-16T08:40:53Z",
     "uncertainRequests": 0,
     "endReason": "",
     "version": 1,
     "maxSeconds": 2700,
-    "uncertainAiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-16T08:39:18Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainAiAttempts": 0
   }
 }
