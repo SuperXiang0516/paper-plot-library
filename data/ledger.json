@@ -11605,17 +11605,22 @@
     "aiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
-    "batchCount": 4,
+    "batchCount": 5,
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 369,
+    "elapsedSeconds": 378,
     "maxSeconds": 2700,
     "requests": 102,
     "date": "2026-11-17",
     "status": "active",
     "dailyNewCount": 4,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:51:10Z"
+    "updatedAt": "2026-11-17T09:51:19Z",
+    "inFlight": {
+      "startedAt": "2026-11-17T09:51:19Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
