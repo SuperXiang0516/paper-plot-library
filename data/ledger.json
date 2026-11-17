@@ -276,11 +276,42 @@
     },
     "2026-11-17": {
       "newDOIs": [
-        "10.3390/mps9050136"
+        "10.3390/mps9050136",
+        "10.7554/elife.108950"
       ]
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-17T09:47:59Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.118126": {
+      "checkedAt": "2026-11-17T09:47:57Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-17T09:47:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-17T09:47:54Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7554/elife.108950": {
+      "checkedAt": "2026-11-17T09:47:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-17T09:46:32Z",
       "status": "pending",
@@ -443,30 +474,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1111/cas.70548": {
-      "checkedAt": "2026-11-16T08:40:41Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.118126": {
-      "checkedAt": "2026-11-16T08:40:25Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-16T08:40:24Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-16T08:40:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.46471/gigabyte.191": {
       "checkedAt": "2026-11-16T08:40:22Z",
@@ -8412,61 +8419,6 @@
         "updatedAt": "2026-10-16T06:50:12Z"
       }
     },
-    "10.7554/elife.108950": {
-      "checkedAt": "2026-10-16T06:49:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7554/elife.108950",
-        "metadataHash": "eba0bb6bf3dfddabfea92422d6e993736f2107b8a8e743cf8c24a17bad70610b",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/PMC13577664.1.xml?md5=2bfa88b9ac1cc828eacf538488552b0b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13577664-4c5eaaf7d690d99a.webp",
-              "assetSHA256": "4c5eaaf7d690d99a5ba12d0f656ae614a822a94fa8ccda43357c645dab6d5add",
-              "license": "CC BY",
-              "id": "fig3",
-              "sha256": "4c5eaaf7d690d99a5ba12d0f656ae614a822a94fa8ccda43357c645dab6d5add",
-              "height": 1679,
-              "label": "Figure 3.",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3.webp?md5=1f157910c1c5c3e834f9a0bf520b6343",
-              "captionHash": "ca432e56d3424b6f94a4c0a1d86d6592521d8e28cd1ff182fd2b1042d49be9f5"
-            },
-            {
-              "asset": "assets/pmc13577664-621dd78bb2903af4.webp",
-              "assetSHA256": "621dd78bb2903af4d5842474c5185da23f2dacabbed64dbe23e589889f3bfa5a",
-              "license": "CC BY",
-              "id": "fig5",
-              "sha256": "621dd78bb2903af4d5842474c5185da23f2dacabbed64dbe23e589889f3bfa5a",
-              "height": 1894,
-              "label": "Figure 5.",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig5.webp?md5=b2077ffcb1f1f5f02a33720fce80963b",
-              "captionHash": "acc3b364be2c9933afdd69ba564234ce7b504df8926fc0dfcff872bc40c43657"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-d052d74b1d8fb69e",
-          "doi": "10.7554/elife.108950",
-          "paper": "Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.",
-          "journal": "eLife",
-          "date": "2026-09-15",
-          "year": "2026",
-          "pmcid": "PMC13577664",
-          "pmid": "42742132",
-          "paperURL": "https://doi.org/10.7554/elife.108950"
-        },
-        "updatedAt": "2026-10-16T06:49:28Z"
-      }
-    },
     "10.1096/fj.202603415r": {
       "checkedAt": "2026-10-16T06:49:24Z",
       "status": "pending",
@@ -11741,18 +11693,13 @@
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 107,
+    "elapsedSeconds": 186,
     "maxSeconds": 2700,
-    "requests": 28,
+    "requests": 53,
     "date": "2026-11-17",
     "status": "active",
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:46:48Z",
-    "inFlight": {
-      "startedAt": "2026-11-17T09:46:48Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-17T09:48:07Z"
   }
 }

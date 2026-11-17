@@ -171434,6 +171434,735 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-d052d74b1d8fb69e",
+      "doi": "10.7554/elife.108950",
+      "paper": "Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.",
+      "journal": "eLife",
+      "date": "2026-09-15",
+      "year": "2026",
+      "pmcid": "PMC13577664",
+      "pmid": "42742132",
+      "paperURL": "https://doi.org/10.7554/elife.108950",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2050-084X",
+      "eissn": "2050-084X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f08636199bb9b0165c0d93f3c7ef74a0cedf561bdffff23e7ba0583a362d6839"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/PMC13577664.1.xml?md5=2bfa88b9ac1cc828eacf538488552b0b",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The framework of TSvelo.(a) The preprocessing strategy in TSvelo, including velocity genes selection and initial state detection. (b) The neural ordinary differential equation (ODE) model and its optimization in TSvelo, where the parameters and latent time are optimized iteratively. The downstream application tasks of TSvelo, including precise transcription–unspliced–spliced 3D phase portrait fitting (c), cell fate prediction using predicted RNA velocity (d), and gene expression pattern analysis for multi-lineage dataset (e).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1.webp?md5=2cd538d9b3b0e10a0fc829d9f2f1307e",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s1",
+            "label": "Figure 1—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Initial state detection and the 2D velocity stream obtained by TSvelo on multiple simulation datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp1.webp?md5=5c87e2901aceb5d09860acad7fa99d08",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s2",
+            "label": "Figure 1—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Comparison between TSvelo and baseline approaches using the simulation data.For these boxplots in the top row, the whiskers extend to 1.5× the interquartile range of the distribution from the hinge. The sample sizes are 600, 1200 and 1800 for one branch, tow branches and three branches respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp2.webp?md5=479b252032acab65dc22b7ab1cc18aa5",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s3",
+            "label": "Figure 1—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The U-to-S delay scores for each Leiden cluster when treated as the initial state across all datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp3.webp?md5=c2da5fb051fbead41620d1c1c1fccea9",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s4",
+            "label": "Figure 1—figure supplement 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The quantitative comparison of TSvelo modeling results on the pancreas dataset using different transcription factor (TF)–target prior databases.The panels in the left column show the boxplot of velocity consistency, the in-cluster coherence, and the cross-boundary direction correctness, respectively. The panels in the right column show the barplot of their mean values. For these boxplots in the left column, the whiskers extend to 1.5× the interquartile range of the distribution from the hinge. 3696 samples are included in the boxplot for each method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp4.webp?md5=a8db711a17476bdf68c96cb8084c0ac5",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s5",
+            "label": "Figure 1—figure supplement 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The quantitative comparison of TSvelo modeling results on the gastrulation erythroid dataset using different transcription factor (TF)–target prior databases.The panels in the left column show the boxplot of velocity consistency, the in-cluster coherence, and the cross-boundary direction correctness, respectively. The panels in the right column show the barplot of their mean values. For these boxplots in the left column, the whiskers extend to 1.5× the interquartile range of the distribution from the hinge. 9815 samples are included in the boxplot for each method.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp5.webp?md5=d76eb860322231379039e6b7f01e9b63",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s6",
+            "label": "Figure 1—figure supplement 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Effect of the number of expectation–maximization (EM) iterations on TSvelo performance in the simulation dataset.(a) Quantitative evaluation across different iteration settings. (b) 2D visualization of inferred dynamics. The results show that TSvelo converges rapidly, and performance remains stable after three iterations due to the built-in early stopping mechanism in the EM framework. For these boxplots in the top row, the whiskers extend to 1.5× the interquartile range of the distribution from the hinge. The sample size is 1800.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp6.webp?md5=0f0e9ef6683421b8802a90cf8b0c8e74",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig1s7",
+            "label": "Figure 1—figure supplement 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The predicted velocity streams of TSvelo, Dynamo, and cellDancer on the null simulation data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig1-figsupp7.webp?md5=3aff5dfd86ae957d33a8c6846ae9706e",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Results on pancreas dataset.(a) The pseudotime learned with TSvelo. (b) The stream plot for visualizing the RNA velocity inferred by TSvelo. (c) A quantitative comparison of cell-state separability between the 3D phase portrait used in TSvelo and the traditional 2D phase portrait. The down, central, and up hinges correspond to the first quartile, median value, and third quartile, respectively. The whiskers extend to 1.5× the interquartile range of the distribution from the hinge. 3696 samples are included in the boxplot for each method. (d) The dynamics fitting on Maml3, Anxa4, and Gstz1. For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots. (e) The unspliced–spliced phase portrait fitting on Maml3, Anxa4, and Gstz1 obtained by four baseline RNA velocity approaches, including scVelo, Dynamo, UniTVelo, and cellDancer. (f) The dynamics fitting in transcription–unspliced–spliced 3D phase portrait for Maml3, Anxa4, and Gstz1. Figure 2—source data 1.Source data of the comparison between the 2D and 3D phase portrait fitting.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig2.webp?md5=fdf744505830ad3f87f794119a453b24",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s1",
+            "label": "Figure 2—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "The velocity consistency, in-cluster coherence, and cross-boundary direction correctness on pancreas dataset.The whiskers extend to 1.5× the interquartile range of the distribution from the hinge. 3696 samples are included in the boxplot for each method. In each plot, methods are ranked in descending order of their mean values. Numbers at the bottom indicate the sample size for each metric. Significance is determined using a one-sided Mann–Whitney U test. *****, ****, ***, **, and * represent p < 0.00001, 0.00001 ≤ p < 0.0001, 0.0001 ≤ p < 0.001, 0.001 ≤ p < 0.01, and 0.01 ≤ p < 0.05, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig2-figsupp1.webp?md5=41f611967e2cc7ebf268fcc33aec176b",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s2",
+            "label": "Figure 2—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dynamics fitting of velocity genes on the pancreas dataset.For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig2-figsupp2.webp?md5=5df051348746f6e30632def4248211e4",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s3",
+            "label": "Figure 2—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Dynamics fitting for additional transcription factors (TFs) on the pancreas dataset.TSvelo directly models the dynamic between transcription and spliced abundance on these genes. For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig2-figsupp3.webp?md5=098fd6f84f4db99ec9daac467d560845",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Results on gastrulation erythroid dataset.(a) The Gene Ontology (GO) terms which are mostly enriched in the selected velocity genes of TSvelo. (b) The pseudotime learned with TSvelo. (c) The stream plot for visualizing the RNA velocity inferred by TSvelo. The quantitative comparison between TSvelo and multiple baseline approaches in terms of velocity consistency (d), in-cluster coherence (e), and cross-boundary direction correctness (f). The down, central, and up hinges correspond to the first quartile, median value, and third quartile, respectively. The whiskers extend to 1.5× the interquartile range of the distribution from the hinge. 9815 samples are included in the boxplot for each method. (g) The dynamics fitting on Hsp90ab1 obtained by TSvelo. Four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots, where u, a, and alpha mean the abundance of unspliced mRNA, the abundance of spliced mRNA, and the learned transcriptional representation, respectively. (h) The phase portrait fitting on Hsp90ab1 obtained by baseline approaches. (i) The dynamics fitting on Rps26 obtained by TSvelo. (j) The transcription factors (TFs) with the highest ranked weights as identified by TSvelo. (k) Weights for Klf1’s targets, with the highest absolute weight. (l) Temporal dynamics of Klf1 and its target genes with the highest weights along pseudotime, which includes Hba-x, Alas2, and Gypa. Figure 3—source data 1.The comparison of velocity consistency across different methods. Figure 3—source data 2.The comparison of in-cluster coherence across different methods. Figure 3—source data 3.The comparison of cross-boundary direction correctness across different methods.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3.webp?md5=1f157910c1c5c3e834f9a0bf520b6343",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "assets/pmc13577664-4c5eaaf7d690d99a.webp",
+            "sha256": "4c5eaaf7d690d99a5ba12d0f656ae614a822a94fa8ccda43357c645dab6d5add",
+            "width": 1600,
+            "height": 1679,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4c5eaaf7d690d99a5ba12d0f656ae614a822a94fa8ccda43357c645dab6d5add",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig3s1",
+            "label": "Figure 3—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "The evaluation of the separability of cell-type labels in both the 2D (unspliced–spliced) phase portrait and the 3D (α–unspliced–spliced) phase portrait for the gastrulation erythroid dataset.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3-figsupp1.webp?md5=0cdd535a689cb32d431cd9dac2208ad4",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s2",
+            "label": "Figure 3—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Dynamics fitting of velocity genes on the gastrulation erythroid dataset.For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3-figsupp2.webp?md5=be6b20765663d95b250fc5f809bd7f0f",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Results on mouse brain dataset.(a) The velocity stream inferred by Multivelo. (b) The stream plot for visualization of the RNA velocity inferred by TSvelo. (c) The pseudotime learned with TSvelo. The dynamics fitting on gene Meis2 (d), Basp1 (e), and Msi2 (f) by both Multivelo and TSvelo. In each panel, the leftmost plot shows the phase portrait fitting of Multivelo, and the next two columns show TSvelo’s results. The rightmost plot shows the learned transcriptional rate (in green), unspliced abundance (in blue), and spliced abundance (in red) along the pseudotime. Since the transcriptional rate is calculated for each individual cell, we apply a Generalized Additive Model (GAM) to transcriptional representation across cells along the pseudotime and present GAM-fitting results to better visualize its trends in these plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig4.webp?md5=d1fa7104840091184a8aeadb3be12cc0",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4s1",
+            "label": "Figure 4—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Dynamics fitting for additional genes on the mouse brain dataset.For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig4-figsupp1.webp?md5=3aec265d94ecabee2653374591123c3a",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4s2",
+            "label": "Figure 4—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "The distribution of gene-wise Spearman correlation between the estimated transcription rate in TSvelo and the chromatin accessibility rate in Multivelo.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig4-figsupp2.webp?md5=51fb6bcd817ba4118a189c093f09f427",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4s3",
+            "label": "Figure 4—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Results on pons dataset.(a) The Gene Ontology (GO) terms which are mostly enriched in the selected velocity genes of TSvelo. (b) The Leiden clustering. (c) The U-to-S delay under different initial cluster choices. (d) The pseudotime learned with TSvelo. (e) The stream plot for visualization of the RNA velocity inferred by TSvelo. (f) Dynamics fitting for multiple genes on the pons dataset. For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig4-figsupp3.webp?md5=a0a22246bf4fe6563c39231d71f27a78",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Results on the multi-lineage dentate gyrus dataset.(a) The Gene Ontology (GO) terms enriched in the selected velocity genes of TSvelo. (b) The pseudotime learned with TSvelo. (c) The stream plot for visualizing the RNA velocity inferred by TSvelo. Three lineages are detected, which are Granule lineage, CA lineage, and glial lineage. (d) The velocity stream inferred by scVelo. (e) The velocity stream inferred by cellDancer. The dynamics modeling of TSvelo on three axonogenesis-related genes, Ank3 (f), Map1b (g), and Slc1a2 (h). In the leftmost plot of each panel, the lines represent the predicted spliced abundance across all lineages, with the color indicating the cell types most associated with each pseudotime point along the corresponding lineage. Additionally, expression data for each lineage are shown as translucent points. The remaining plots in each panel display the dynamics of the learned transcriptional rate (in green), unspliced abundance (in blue), and spliced abundance (in red) along pseudotime for each lineage. The transcriptional representation in these plots is also processed using GAM fitting.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig5.webp?md5=b2077ffcb1f1f5f02a33720fce80963b",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "assets/pmc13577664-621dd78bb2903af4.webp",
+            "sha256": "621dd78bb2903af4d5842474c5185da23f2dacabbed64dbe23e589889f3bfa5a",
+            "width": 1600,
+            "height": 1894,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "621dd78bb2903af4d5842474c5185da23f2dacabbed64dbe23e589889f3bfa5a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig5s1",
+            "label": "Figure 5—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Lineages segmentation on the dentate gyrus dataset.(a) The Leiden clustering. (b) The cluster–cluster graph constructed with PAGA. (c) The diffusion pseudotime when choosing initial cluster 3 as the initial one. (d) The three branches detected when choosing initial cluster 3 as the initial one. (e) U-to-S delay under different initial cluster choices. (f) The velocity stream and pseudotime inferred by TSvelo on each lineage. (g) The velocity stream obtained with the combined velocities from each lineage. (h) The combined TSvelo pseudotime from each lineage.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig5-figsupp1.webp?md5=bfa90a832747b378dd197327cf84cb0b",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5s2",
+            "label": "Figure 5—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Dynamics fitting for genes Ank3, Map1b, and Slc1a2 on each lineage of the dentate gyrus dataset.For each gene, four plots are displayed in a 2 × 2 layout: the u–t, s–t, u–s, and alpha–u plots.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig5-figsupp2.webp?md5=d8b739cd151a48508c31455bf8e08fa9",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Results on the LARRY dataset.(a) The Leiden clustering on LARRY. (b) The initial Leiden cluster detection in preprocessing. (c) The pseudotime learned with TSvelo. (d) The stream plot for visualizing the RNA velocity inferred by TSvelo. (e) The Gene Ontology (GO) terms enriched in the selected velocity genes of TSvelo. (f) The dynamics modeling of TSvelo on four genes related to neutrophil development, which are Pygl, Ms4a3, Clec12a, and Lta4h. The lines represent the predicted spliced abundance across all lineages, with the color indicating the cell types most strongly associated with each pseudotime point along the corresponding lineage. (g) The dynamics modeling of Pygl, Ms4a3, Clec12a, and Lta4h on the neutrophil lineage.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig6.webp?md5=4279be3313ab4635ff9fb5713fd22dec",
+            "articleURL": "https://doi.org/10.7554/elife.108950",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan. Comprehensive RNA velocity by modeling the cascade of gene regulation, transcription, and splicing from single-cell RNA sequencing data with TSvelo.. DOI: 10.7554/elife.108950. Copyright holder: Li et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "fig2sdata1",
+            "label": "Figure 2—source data 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig2-data1.csv?md5=f8714bba6d4e163bb1c66ff0eb220446",
+            "license": "CC BY",
+            "sha256": "b6d2d410ba1bb8b7d4a0ac81ebf76ba2206c298c4ecb115ce80b28f4499d1eb3",
+            "status": "downloaded_private",
+            "bytes": 6818,
+            "format": "csv",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3sdata1",
+            "label": "Figure 3—source data 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3-data1.zip?md5=da02d7c20925738b57b1448abce5b557",
+            "license": "CC BY",
+            "sha256": "feaaee312b321278bdafb1168e55c23b851f2da899e5db656618e0629bc38a75",
+            "status": "downloaded_private",
+            "bytes": 491291,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3sdata2",
+            "label": "Figure 3—source data 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3-data2.zip?md5=20f7bea60c4823cf60f96276381d6343",
+            "license": "CC BY",
+            "sha256": "17248af4013e070fd5e35ae6101945c94011d8cb19df32299c935391c159d8a9",
+            "status": "downloaded_private",
+            "bytes": 542,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3sdata3",
+            "label": "Figure 3—source data 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-fig3-data3.zip?md5=b3223a8070777eecc489c66f125a6a97",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mdar",
+            "label": "MDAR checklist",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13577664.1/elife-108950-mdarchecklist1.docx?md5=71289a2a9d1abaecbe0f9fd569bab9de",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-17T09:47:49.468393+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jiachen Li; Zhe Wang; Hong-Bin Shen; Ye Yuan"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-17T09:47:53Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "doi_mismatch"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-17T09:47:53Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-17T09:47:53Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-18T09:47:53Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-17T09:48:00Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -235626,6 +236355,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-d052d74b1d8fb69e": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -237244,7 +237979,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-17T09:46:33Z",
+  "generatedAt": "2026-11-17T09:48:00Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -237478,18 +238213,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-17T09:45:01Z",
-    "updatedAt": "2026-11-17T09:46:48Z",
+    "updatedAt": "2026-11-17T09:48:07Z",
     "batchCount": 2,
-    "requests": 28,
+    "requests": 53,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
