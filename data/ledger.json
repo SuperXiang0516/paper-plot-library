@@ -273,9 +273,44 @@
         "10.1371/journal.pone.0362133",
         "10.46471/gigabyte.191"
       ]
+    },
+    "2026-11-17": {
+      "newDOIs": [
+        "10.3390/mps9050136"
+      ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-17T09:46:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-17T09:46:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-17T09:46:29Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-17T09:46:27Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3390/mps9050136": {
+      "checkedAt": "2026-11-17T09:46:24Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1183/13993003.02049-2025": {
       "checkedAt": "2026-11-16T08:45:12Z",
       "status": "pending",
@@ -348,61 +383,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.3390/mps9050136": {
-      "checkedAt": "2026-11-16T08:45:02Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3390/mps9050136",
-        "metadataHash": "185372dd18588c3a401e1a35987683544425febe6b069edd58a19849a653631e",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600039.1/PMC13600039.1.xml?md5=d6c0d544d83eb10ded16ce16707100db",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13600039-aee5630bb6d22236.webp",
-              "height": 309,
-              "license": "CC BY",
-              "assetSHA256": "aee5630bb6d22236f4aa512a07956d18b1f206a2b46d9bbc501345280f6c1b47",
-              "label": "Figure 2",
-              "sha256": "aee5630bb6d22236f4aa512a07956d18b1f206a2b46d9bbc501345280f6c1b47",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600039.1/mps-09-00136-g002.webp?md5=8c4a19b45c87d55d5863081771907201",
-              "width": 1600,
-              "id": "mps-09-00136-f002",
-              "captionHash": "c5ff0caaae145f4abb66a783fbabd7c8cd6569f56c7743b3a67b82e413d70b5e"
-            },
-            {
-              "asset": "assets/pmc13600039-d8cd285426895c55.webp",
-              "height": 386,
-              "license": "CC BY",
-              "assetSHA256": "d8cd285426895c554f09d7074fd48b769c4d1b7b15e51211484ceb0ee3f979bf",
-              "label": "Figure 3",
-              "sha256": "d8cd285426895c554f09d7074fd48b769c4d1b7b15e51211484ceb0ee3f979bf",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13600039.1/mps-09-00136-g003.webp?md5=3c147eb3153c9dd6fa2b22ed0ada6c73",
-              "width": 1600,
-              "id": "mps-09-00136-f003",
-              "captionHash": "c7b12b6c8f1947591f8c0e8833a6f7f6e82b93855271d45a4cc7ff786f9320e7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-cf2accc20b3ae1b5",
-          "doi": "10.3390/mps9050136",
-          "paper": "Gradient-Free Isolation of Murine Pancreatic Islets for Single-Cell RNA Sequencing.",
-          "journal": "Methods and protocols",
-          "date": "2026-09-19",
-          "year": "2026",
-          "pmcid": "PMC13600039",
-          "pmid": "42776689",
-          "paperURL": "https://doi.org/10.3390/mps9050136"
-        },
-        "updatedAt": "2026-11-16T08:44:58Z"
-      }
     },
     "10.1002/jex2.70197": {
       "checkedAt": "2026-11-16T08:43:42Z",
@@ -493,30 +473,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1093/nargab/lqag138": {
-      "checkedAt": "2026-11-16T08:39:04Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-16T08:39:03Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-16T08:39:02Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-16T08:39:01Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pone.0356174": {
       "checkedAt": "2026-11-16T08:38:52Z",
@@ -11785,18 +11741,13 @@
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 7,
+    "elapsedSeconds": 99,
     "maxSeconds": 2700,
-    "requests": 0,
+    "requests": 28,
     "date": "2026-11-17",
     "status": "active",
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:45:07Z",
-    "inFlight": {
-      "startedAt": "2026-11-17T09:45:07Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-17T09:46:40Z"
   }
 }
