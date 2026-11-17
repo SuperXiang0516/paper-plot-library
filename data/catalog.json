@@ -172163,6 +172163,249 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-a3bc029c56237e59",
+      "doi": "10.46471/gigabyte.190",
+      "paper": "Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.",
+      "journal": "GigaByte (Hong Kong, China)",
+      "date": "2026-09-21",
+      "year": "2026",
+      "pmcid": "PMC13613207",
+      "pmid": "42798842",
+      "paperURL": "https://doi.org/10.46471/gigabyte.190",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2709-4715",
+      "eissn": "2709-4715",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "1cf041cb65844f493f237b3dabd481fd6ff73a0afee202875fcf843eaa10f37e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/PMC13613207.1.xml?md5=9a6b941fb1a9b2159aca04adeab080ba",
+        "figures": [
+          {
+            "id": "gigabyte-2026-190-g001",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Diagram of the Poly Pipeline workflow, summarizing the sequential steps from environment setup and spatial transcriptomics data processing to clustering, dimensionality reduction, gene detection, and downstream analytical modules. Components and outputs highlighted in blue indicate optional steps that can be activated according to the goals of each analysis.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g001.webp?md5=e14be0bcda679521286ae7579da391b3",
+            "articleURL": "https://doi.org/10.46471/gigabyte.190",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pedro C. Carvalho; Tori MIllsteed; Robert J. Henry; Robert Henry. Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.. DOI: 10.46471/gigabyte.190. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "gigabyte-2026-190-g002",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "PCA-based dimensionality reduction in the application of the pipeline to wheat spatial transcriptomics data representing (a) Elbow plot showing the variance explained across principal components, used to guide the selection of the number of PCs retained for downstream dimensionality reduction and clustering analyses and (b) Spatial visualization of spot-level expression/count intensity across the wheat tissue section after tissue-only filtering, illustrating heterogeneous molecular signal distribution and regions with increased transcriptional activity. Together, these panels exemplify the PCA-guided analytical module of the pipeline and its integration with spatially resolved expression visualization in wheat data [29].",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g002.webp?md5=54427e11c738762069f674178658707d",
+            "articleURL": "https://doi.org/10.46471/gigabyte.190",
+            "asset": "assets/pmc13613207-67800be0fb34790e.webp",
+            "sha256": "67800be0fb34790ecd1054a51e4bde033b3d155f5e1a5a63c0d8113853e28d29",
+            "width": 2000,
+            "height": 2790,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pedro C. Carvalho; Tori MIllsteed; Robert J. Henry; Robert Henry. Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.. DOI: 10.46471/gigabyte.190. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "67800be0fb34790ecd1054a51e4bde033b3d155f5e1a5a63c0d8113853e28d29",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "gigabyte-2026-190-g003",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Gene co-expression network construction from the application of the pipeline to wheat spatial transcriptomics data [29]. Representative hdWGCNA-derived module subnetworks generated from node and edge tables exported by the pipeline. (a–d) Co-expression subnetworks for the tan, green, red, and salmon modules, respectively. Nodes represent genes, node size reflects module membership strength, darker green nodes indicate hub genes, and edge thickness represents co-expression weight. The visualization illustrates the ability of the pipeline to move from spatial transcriptomics processing to network-level representation of gene modules and candidate hub genes in wheat data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g003.webp?md5=03a88e926450fd455e5bc8bbcb676207",
+            "articleURL": "https://doi.org/10.46471/gigabyte.190",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pedro C. Carvalho; Tori MIllsteed; Robert J. Henry; Robert Henry. Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.. DOI: 10.46471/gigabyte.190. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "gigabyte-2026-190-g004",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Spatial Leiden clustering across benchmarked spatial transcriptomics datasets. Representative Leiden clustering results generated by the pipeline for the benchmarked datasets: (a) wheat; (b) mouse; (c) Arabidopsis thaliana; and (d) rice. These panels illustrate the ability of the pipeline to identify spatially organized transcriptional domains across plant and animal spatial transcriptomics datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g004.webp?md5=e162cafc526a794026c331ad30de8314",
+            "articleURL": "https://doi.org/10.46471/gigabyte.190",
+            "asset": "assets/pmc13613207-07d587933c04eb78.webp",
+            "sha256": "07d587933c04eb78fa6bf2fa3bb5ce6828c37856dd62a0378b4b31f5e50ef671",
+            "width": 2000,
+            "height": 1624,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Pedro C. Carvalho; Tori MIllsteed; Robert J. Henry; Robert Henry. Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.. DOI: 10.46471/gigabyte.190. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "07d587933c04eb78fa6bf2fa3bb5ce6828c37856dd62a0378b4b31f5e50ef671",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-17T09:49:17.360764+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Pedro C. Carvalho; Tori MIllsteed; Robert J. Henry; Robert Henry"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "1.6",
+        "jcr": "",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-17T09:49:19Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-17T09:49:19Z",
+        "url": "https://openalex.org/W7213957854",
+        "cited_by_count": 1,
+        "fwci": 1.2665,
+        "citation_normalized_percentile": 0.71108569,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-17T09:49:19Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-17T09:49:19Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-18T09:49:19Z"
+        }
+      },
+      "selectionScore": {
+        "total": 44.55542845,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.55542845,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-17T09:49:26Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -236361,6 +236604,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-a3bc029c56237e59": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -237979,7 +238228,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-17T09:48:00Z",
+  "generatedAt": "2026-11-17T09:49:27Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -238213,18 +238462,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-17T09:45:01Z",
-    "updatedAt": "2026-11-17T09:48:16Z",
+    "updatedAt": "2026-11-17T09:49:33Z",
     "batchCount": 3,
-    "requests": 53,
+    "requests": 75,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

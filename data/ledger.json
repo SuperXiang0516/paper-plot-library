@@ -277,11 +277,42 @@
     "2026-11-17": {
       "newDOIs": [
         "10.3390/mps9050136",
+        "10.46471/gigabyte.190",
         "10.7554/elife.108950"
       ]
     }
   },
   "candidates": {
+    "10.1186/s12909-026-10014-2": {
+      "checkedAt": "2026-11-17T09:49:26Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1212/nxg.0000000000200449": {
+      "checkedAt": "2026-11-17T09:49:24Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-17T09:49:22Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-17T09:49:21Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.46471/gigabyte.190": {
+      "checkedAt": "2026-11-17T09:49:19Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1111/cas.70548": {
       "checkedAt": "2026-11-17T09:47:59Z",
       "status": "pending",
@@ -444,30 +475,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1186/s12909-026-10014-2": {
-      "checkedAt": "2026-11-16T08:42:20Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1212/nxg.0000000000200449": {
-      "checkedAt": "2026-11-16T08:42:19Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-16T08:42:11Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-16T08:42:04Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41746-026-03254-5": {
       "checkedAt": "2026-11-16T08:42:03Z",
@@ -9731,61 +9738,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.46471/gigabyte.190": {
-      "checkedAt": "2026-10-16T06:38:49Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.46471/gigabyte.190",
-        "metadataHash": "b1b6f3dcafa89e36126b2d40fb479e2b0dc04c9c224285840c8736ded155c39c",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/PMC13613207.1.xml?md5=9a6b941fb1a9b2159aca04adeab080ba",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13613207-67800be0fb34790e.webp",
-              "assetSHA256": "67800be0fb34790ecd1054a51e4bde033b3d155f5e1a5a63c0d8113853e28d29",
-              "license": "CC BY",
-              "id": "gigabyte-2026-190-g002",
-              "sha256": "67800be0fb34790ecd1054a51e4bde033b3d155f5e1a5a63c0d8113853e28d29",
-              "height": 2790,
-              "label": "Figure 2.",
-              "width": 2000,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g002.webp?md5=54427e11c738762069f674178658707d",
-              "captionHash": "d38414f02c73a69625c4d3fba3a3477e9612ac80d445d4276232f86b02d241cd"
-            },
-            {
-              "asset": "assets/pmc13613207-07d587933c04eb78.webp",
-              "assetSHA256": "07d587933c04eb78fa6bf2fa3bb5ce6828c37856dd62a0378b4b31f5e50ef671",
-              "license": "CC BY",
-              "id": "gigabyte-2026-190-g004",
-              "sha256": "07d587933c04eb78fa6bf2fa3bb5ce6828c37856dd62a0378b4b31f5e50ef671",
-              "height": 1624,
-              "label": "Figure 4.",
-              "width": 2000,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13613207.1/gigabyte-2026-190-g004.webp?md5=e162cafc526a794026c331ad30de8314",
-              "captionHash": "279f5a9f5461f7b57d684ff4695ca861a67de10bc3a24ff7f1b4574820cbe710"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-a3bc029c56237e59",
-          "doi": "10.46471/gigabyte.190",
-          "paper": "Poly pipeline: a polyvalent spatial transcriptomics workflow validated across polyploid and diploid organisms.",
-          "journal": "GigaByte (Hong Kong, China)",
-          "date": "2026-09-21",
-          "year": "2026",
-          "pmcid": "PMC13613207",
-          "pmid": "42798842",
-          "paperURL": "https://doi.org/10.46471/gigabyte.190"
-        },
-        "updatedAt": "2026-10-16T06:38:48Z"
-      }
-    },
     "10.1038/s41467-026-74757-8": {
       "checkedAt": "2026-10-16T06:38:31Z",
       "status": "pending",
@@ -11693,18 +11645,13 @@
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 195,
+    "elapsedSeconds": 272,
     "maxSeconds": 2700,
-    "requests": 53,
+    "requests": 75,
     "date": "2026-11-17",
     "status": "active",
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:48:16Z",
-    "inFlight": {
-      "startedAt": "2026-11-17T09:48:16Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-17T09:49:33Z"
   }
 }
