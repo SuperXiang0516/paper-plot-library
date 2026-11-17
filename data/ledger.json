@@ -279,11 +279,140 @@
         "10.1371/journal.pone.0358259",
         "10.3390/mps9050136",
         "10.46471/gigabyte.190",
+        "10.7554/elife.101499",
         "10.7554/elife.108950"
       ]
     }
   },
   "candidates": {
+    "10.1183/13993003.02049-2025": {
+      "checkedAt": "2026-11-17T09:52:51Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/dmso.s653174": {
+      "checkedAt": "2026-11-17T09:52:48Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7554/elife.101499": {
+      "checkedAt": "2026-11-17T09:52:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.7554/elife.109761": {
+      "checkedAt": "2026-11-17T09:52:41Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.7554/elife.109761",
+        "metadataHash": "d38080c2295c8d6925d9962f0dad05578684741570b6a0d51a837a345acfc79a",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=863b7a9a835a13a7505c529debf1d9c2",
+          "license": "CC BY",
+          "figures": [
+            {
+              "license": "CC BY",
+              "label": "Figure 3.",
+              "height": 648,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
+              "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
+              "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+              "width": 1600,
+              "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+              "id": "fig3",
+              "captionHash": "5476502ee091a9d334b0453112dd81efd9b0cbeb7d2fbbd43893f2cd40a9e2ac"
+            },
+            {
+              "license": "CC BY",
+              "label": "Figure 5.",
+              "height": 1726,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
+              "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
+              "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+              "width": 1600,
+              "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+              "id": "fig5",
+              "captionHash": "117ea4da5457d4175ad603c82a17a29ebc352aa15991b2d9da76fbb6cf48ceee"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-766672fb4c243c95",
+          "doi": "10.7554/elife.109761",
+          "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
+          "journal": "eLife",
+          "date": "2026-11-11",
+          "year": "2026",
+          "pmcid": "PMC13754279",
+          "pmid": "43012634",
+          "paperURL": "https://doi.org/10.7554/elife.109761"
+        },
+        "updatedAt": "2026-11-17T09:52:41Z"
+      }
+    },
+    "10.7717/peerj.21758": {
+      "checkedAt": "2026-11-17T09:52:37Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.7717/peerj.21758",
+        "metadataHash": "689ab41ff62bbb1bcc2561f1a127386f8b72a3c886cc2ca93ffc6b9e5741241d",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/PMC13632679.1.xml?md5=92cfec40b0cf0ddf08f7f801ec61ac17",
+          "license": "CC BY",
+          "figures": [
+            {
+              "license": "CC BY",
+              "label": "Figure 2",
+              "height": 1625,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g002.webp?md5=e301ba256b41cb1370bccd42fe079858",
+              "asset": "assets/pmc13632679-bbbfc252a2f87d2e.webp",
+              "assetSHA256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
+              "width": 1600,
+              "sha256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
+              "id": "fig-2",
+              "captionHash": "44329dd21d2578ca98c3944781e27337d14d71e4cdf8c7b4e1d1c7f7eccd0bd3"
+            },
+            {
+              "license": "CC BY",
+              "label": "Figure 4",
+              "height": 920,
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g004.webp?md5=c99f28039f90969aacd5e90dd346b3b2",
+              "asset": "assets/pmc13632679-e8b4c124cef87c87.webp",
+              "assetSHA256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
+              "width": 1599,
+              "sha256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
+              "id": "fig-4",
+              "captionHash": "26829fdc01c41049b62398562a02de2fc849b50c5d7c1174a7ede747fe21a98c"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-4855c53e4d1d1f31",
+          "doi": "10.7717/peerj.21758",
+          "paper": "ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.",
+          "journal": "PeerJ",
+          "date": "2026-09-29",
+          "year": "2026",
+          "pmcid": "PMC13632679",
+          "pmid": "42828029",
+          "paperURL": "https://doi.org/10.7717/peerj.21758"
+        },
+        "updatedAt": "2026-11-17T09:52:35Z"
+      }
+    },
     "10.1002/jex2.70197": {
       "checkedAt": "2026-11-17T09:51:00Z",
       "status": "pending",
@@ -403,73 +532,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1183/13993003.02049-2025": {
-      "checkedAt": "2026-11-16T08:45:12Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/dmso.s653174": {
-      "checkedAt": "2026-11-16T08:45:11Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.7554/elife.109761": {
-      "checkedAt": "2026-11-16T08:45:09Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7554/elife.109761",
-        "metadataHash": "d38080c2295c8d6925d9962f0dad05578684741570b6a0d51a837a345acfc79a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=863b7a9a835a13a7505c529debf1d9c2",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
-              "height": 648,
-              "license": "CC BY",
-              "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "label": "Figure 3.",
-              "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
-              "width": 1600,
-              "id": "fig3",
-              "captionHash": "5476502ee091a9d334b0453112dd81efd9b0cbeb7d2fbbd43893f2cd40a9e2ac"
-            },
-            {
-              "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
-              "height": 1726,
-              "license": "CC BY",
-              "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "label": "Figure 5.",
-              "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
-              "width": 1600,
-              "id": "fig5",
-              "captionHash": "117ea4da5457d4175ad603c82a17a29ebc352aa15991b2d9da76fbb6cf48ceee"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-766672fb4c243c95",
-          "doi": "10.7554/elife.109761",
-          "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
-          "journal": "eLife",
-          "date": "2026-11-11",
-          "year": "2026",
-          "pmcid": "PMC13754279",
-          "pmid": "43012634",
-          "paperURL": "https://doi.org/10.7554/elife.109761"
-        },
-        "updatedAt": "2026-11-16T08:45:07Z"
-      }
     },
     "10.1371/journal.pone.0362133": {
       "checkedAt": "2026-11-16T08:45:05Z",
@@ -10019,61 +10081,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.7717/peerj.21758": {
-      "checkedAt": "2026-10-16T06:34:38Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7717/peerj.21758",
-        "metadataHash": "689ab41ff62bbb1bcc2561f1a127386f8b72a3c886cc2ca93ffc6b9e5741241d",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/PMC13632679.1.xml?md5=92cfec40b0cf0ddf08f7f801ec61ac17",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13632679-bbbfc252a2f87d2e.webp",
-              "assetSHA256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
-              "license": "CC BY",
-              "id": "fig-2",
-              "sha256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
-              "height": 1625,
-              "label": "Figure 2",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g002.webp?md5=e301ba256b41cb1370bccd42fe079858",
-              "captionHash": "44329dd21d2578ca98c3944781e27337d14d71e4cdf8c7b4e1d1c7f7eccd0bd3"
-            },
-            {
-              "asset": "assets/pmc13632679-e8b4c124cef87c87.webp",
-              "assetSHA256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
-              "license": "CC BY",
-              "id": "fig-4",
-              "sha256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
-              "height": 920,
-              "label": "Figure 4",
-              "width": 1599,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g004.webp?md5=c99f28039f90969aacd5e90dd346b3b2",
-              "captionHash": "26829fdc01c41049b62398562a02de2fc849b50c5d7c1174a7ede747fe21a98c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4855c53e4d1d1f31",
-          "doi": "10.7717/peerj.21758",
-          "paper": "ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.",
-          "journal": "PeerJ",
-          "date": "2026-09-29",
-          "year": "2026",
-          "pmcid": "PMC13632679",
-          "pmid": "42828029",
-          "paperURL": "https://doi.org/10.7717/peerj.21758"
-        },
-        "updatedAt": "2026-10-16T06:34:36Z"
-      }
-    },
     "10.1016/j.isci.2026.116561": {
       "checkedAt": "2026-10-16T06:34:32Z",
       "status": "pending",
@@ -11602,25 +11609,20 @@
   "dailyCollectionSession": {
     "version": 1,
     "endReason": "",
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "maxBatches": 36,
     "maxRequests": 1800,
     "batchCount": 5,
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 378,
+    "elapsedSeconds": 484,
     "maxSeconds": 2700,
-    "requests": 102,
+    "requests": 146,
     "date": "2026-11-17",
     "status": "active",
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:51:19Z",
-    "inFlight": {
-      "startedAt": "2026-11-17T09:51:19Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-17T09:53:05Z"
   }
 }
