@@ -172406,6 +172406,404 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-4723d3bca27d4f7b",
+      "doi": "10.1371/journal.pone.0358259",
+      "paper": "Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.",
+      "journal": "PloS one",
+      "date": "2026-09-25",
+      "year": "2026",
+      "pmcid": "PMC13614635",
+      "pmid": "42789583",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0358259",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "4bb883a13a9c1cf40c26220742f5730ba173462312759fbfaa8f3a087e22d411"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/PMC13614635.1.xml?md5=3c73ea6ef0650d6c9bb1bd27b8e4911a",
+        "figures": [
+          {
+            "id": "pone.0358259.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Feature selection via LASSO regression (ST003798 cohort).(A) 10-fold cross-validation error curve showing the selected optimal λ (lambda.1se, the largest λ within one standard error of the minimum cross-validation error). (B) Coefficient trajectory for fecal lipid metabolites. Each colored line represents one lipid feature; features with non-zero coefficients at lambda.1se were selected for the final model. The complete list of selected features is available in S4 Table in S2 File.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.e002.webp?md5=929d99dea13bdf28e84bb259a8a84889",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Receiver operating characteristic (ROC) curve of the Random Forest model on the independent test set (n = 45).AUC, area under the ROC curve (0.864; 95% CI: 0.727–0.960). The diagonal dashed line represents the performance of a random classifier (AUC = 0.5).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.g002.webp?md5=c0241f8c9db7e990d1b3708714aa214c",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Fecal Lipidomic Malignancy Risk Score (FL-MRS) unmasks the hidden heterogeneity of colorectal adenomas.A blind assessment of adenoma samples (n = 58) reveals substantial metabolic diversity, with 51.7% exceeding the high-risk threshold (Cutoff = 0.446, derived from Youden’s index in the training set). The 51.7% proportion indicates substantial metabolic heterogeneity rather than direct progression risk; it far exceeds the known clinical adenoma-carcinoma progression rate (approximately 5–10%), confirming that FL-MRS should be interpreted as a CRC-like lipidomic similarity score, not a cancer risk probability.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.g003.webp?md5=110e1afb4dbb03ee3347f807f61ce5b3",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "SHAP (SHapley Additive exPlanations) summary plot illustrating global feature attribution.Each point represents the SHAP value for one sample. Features are ranked by mean absolute SHAP value (importance). Color indicates feature value (red: high; blue: low). Positive SHAP values (right of zero) drive the model toward CRC prediction; negative values drive toward healthy prediction. CE(20:4) is the most influential feature.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.g004.webp?md5=c96c88778f39cb817b8d8082acc5b6d1",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Volcano plot of metabolic differences between High-Risk and Low-Risk adenomas as defined by FL-MRS.Each point represents one lipid feature. The x-axis shows log2 fold change (positive values indicate higher abundance in the High-Risk group). The y-axis shows −log10(FDR-adjusted P-value) from Wilcoxon rank-sum tests. Dashed horizontal line: FDR < 0.0001; dashed vertical lines: |Log2FC| > 1. CE(20:4) is highlighted. This analysis serves as an internal model weight validation, as FL-MRS is itself constructed from these features.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.e005.webp?md5=0bde9827b8ee2c21ba52ca5042f022a7",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Pseudotime trajectory analysis mapping the continuous metabolic transition from healthy controls to CRC.Principal curve analysis based on the first two principal components (PC1 and PC2) of the lipidomic data (ST003798 cohort, total n = 211). Each point represents one sample. The curve represents the inferred pseudotime trajectory; λ denotes the arc-length (pseudotime) along this curve. Healthy controls were designated as the trajectory root (λ≈0). High-risk adenomas (red) show a visual trend toward the CRC terminus, though the group difference is not statistically significant (P = 0.66).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.e006.webp?md5=929d99dea13bdf28e84bb259a8a84889",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Dysregulation of key enzymes involved in CE(20:4) and arachidonic acid metabolism in the TCGA-COAD cohort.Normal tissue (n = 41) vs. primary tumor (n = 481). Boxplots show log2(TPM + 1) expression values. The center line denotes the median, box limits indicate the interquartile range (IQR), and whiskers extend to 1.5 × IQR. P-values from Welch’s t-test (confirmed by Wilcoxon rank-sum test; S10 Table in S2 File). PTGS2 (COX-2): significantly upregulated (log2FC=0.614, P = 0.013); SOAT1: significantly downregulated (log2FC=−0.402, P = 0.002); PLA2G4A: significantly downregulated (log2FC=−0.666, P = 0.003). PTGS2, prostaglandin-endoperoxide synthase 2; SOAT1, sterol O-acyltransferase 1; PLA2G4A, phospholipase A2 group IVA.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.e009.webp?md5=7cdc11f2f3a32393d1a0ae3d1c264954",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0358259.g008",
+            "label": "Fig 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "External single-molecule targeted verification of arachidonic acid-related lipid mediators across the healthy-adenoma-carcinoma continuum (ST002787, n = 102).Data are expressed as Log2 relative abundance ± standard error (SE). Between-group comparisons: Kruskal-Wallis test with Dunn’s post-hoc test and Benjamini-Hochberg correction (full results in S8 and S9 Tables in S2 File). (A) CE(20:4) (cholesteryl arachidonate): progressive increase from healthy to CRC; adenoma vs. CRC difference is not significant (P = 0.055), consistent with plateauing at the adenoma stage. (B) 8-iso Prostaglandin E2 (isoprostane; non-enzymatic lipid peroxidation product; oxidative stress marker): peaks in adenoma stage. (C) Tetranor-12(R)-HETE (12-HETE metabolite; primarily LOX pathway): peaks in adenoma stage. Significance levels: * P < 0.05, ** P < 0.01, *** P < 0.001, ns: not significant. Note: 8-iso Prostaglandin E2 and Tetranor-12(R)-HETE are not direct COX-2 enzymatic products.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.e015.webp?md5=0757fe67a770b7a694278ded63750ff6",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "failed",
+            "limitations": [
+              "Figure verification/download failed: ValueError"
+            ]
+          },
+          {
+            "id": "pone.0358259.g009",
+            "label": "Fig 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Single-cell RNA-seq analysis of the CRC tumor microenvironment (Broad Institute, c295).(A) tSNE embedding of single-cell transcriptomes, colored by cell type. (B) Feature plots showing PTGS2 expression distribution across the tSNE space. (C) Dot plot illustrating PTGS2 expression across cell types; dot size indicates the percentage of cells expressing PTGS2, and color intensity indicates mean expression level. PTGS2 is predominantly enriched in tumor-associated macrophages (TAMs) and cancer-associated fibroblasts (CAFs) rather than in malignant epithelial cells. TPM, transcripts per million. These data are from fully developed CRC tissue, not adenomas.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.g009.webp?md5=3b673456128c9358c0c3fb9fd4dfb7e5",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0358259",
+            "asset": "assets/pmc13614635-14dfce7febf8c38c.webp",
+            "sha256": "14dfce7febf8c38cb02f290bbc67f7db5406bac8975d9749e24fddc33fb10a7e",
+            "width": 1600,
+            "height": 1281,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong. Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.. DOI: 10.1371/journal.pone.0358259. Copyright holder: Tang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "14dfce7febf8c38cb02f290bbc67f7db5406bac8975d9749e24fddc33fb10a7e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0358259.s001",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.s001.pdf?md5=6f9322e31894e634871863aba103a197",
+            "license": "CC BY",
+            "sha256": "13ab2387e47a82b96ac6f59682f3132d7b40c944d0966c45c699115a80d313f0",
+            "status": "downloaded_private",
+            "bytes": 164619,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 3,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "pone.0358259.s002",
+            "label": "S2 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.s002.xlsx?md5=bd2173de20daa4da5637310d552ab4d1",
+            "license": "CC BY",
+            "sha256": "ff64a7f6a815043ca96a3149338ff3025adf4790c443f1144c57c7cdf625e787",
+            "status": "downloaded_private",
+            "bytes": 19304,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0358259.s003",
+            "label": "S3 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.s003.docx?md5=44d63f12de14492ca9beed745042af19",
+            "license": "CC BY",
+            "sha256": "0f4f28691e71453a353df67c50942eaa39cc58c3c0a512e58012a8fba145497e",
+            "status": "downloaded_private",
+            "bytes": 90227,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-17T09:50:43.105958+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Bing Tang; Yanru Chen; Xia Yang; Hanlin Gong"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-17T09:50:46Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-17T09:50:47Z",
+        "url": "https://openalex.org/W7214304351",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-17T09:50:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-17T09:50:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-18T09:50:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 37,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-17T09:51:01Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -236610,6 +237008,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-4723d3bca27d4f7b": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -238228,7 +238632,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-17T09:49:27Z",
+  "generatedAt": "2026-11-17T09:51:02Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -238462,18 +238866,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-17T09:45:01Z",
-    "updatedAt": "2026-11-17T09:49:42Z",
+    "updatedAt": "2026-11-17T09:51:10Z",
     "batchCount": 4,
-    "requests": 75,
+    "requests": 102,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

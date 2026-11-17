@@ -276,6 +276,7 @@
     },
     "2026-11-17": {
       "newDOIs": [
+        "10.1371/journal.pone.0358259",
         "10.3390/mps9050136",
         "10.46471/gigabyte.190",
         "10.7554/elife.108950"
@@ -283,6 +284,36 @@
     }
   },
   "candidates": {
+    "10.1002/jex2.70197": {
+      "checkedAt": "2026-11-17T09:51:00Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aei0410": {
+      "checkedAt": "2026-11-17T09:50:59Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1167/iovs.67.12.73": {
+      "checkedAt": "2026-11-17T09:50:57Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg1622": {
+      "checkedAt": "2026-11-17T09:50:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pone.0358259": {
+      "checkedAt": "2026-11-17T09:50:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1186/s12909-026-10014-2": {
       "checkedAt": "2026-11-17T09:49:26Z",
       "status": "pending",
@@ -445,30 +476,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1002/jex2.70197": {
-      "checkedAt": "2026-11-16T08:43:42Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aei0410": {
-      "checkedAt": "2026-11-16T08:43:41Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1167/iovs.67.12.73": {
-      "checkedAt": "2026-11-16T08:43:40Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg1622": {
-      "checkedAt": "2026-11-16T08:43:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1016/j.patter.2026.101589": {
       "checkedAt": "2026-11-16T08:43:38Z",
@@ -9872,49 +9879,6 @@
         "updatedAt": "2026-10-16T06:36:31Z"
       }
     },
-    "10.1371/journal.pone.0358259": {
-      "checkedAt": "2026-10-16T06:36:43Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pone.0358259",
-        "metadataHash": "4581149c69ea06c68a5c9d33319a5a77afe2b1390deeee352572e7114dd45607",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/PMC13614635.1.xml?md5=3c73ea6ef0650d6c9bb1bd27b8e4911a",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13614635-14dfce7febf8c38c.webp",
-              "assetSHA256": "14dfce7febf8c38cb02f290bbc67f7db5406bac8975d9749e24fddc33fb10a7e",
-              "license": "CC BY",
-              "id": "pone.0358259.g009",
-              "sha256": "14dfce7febf8c38cb02f290bbc67f7db5406bac8975d9749e24fddc33fb10a7e",
-              "height": 1281,
-              "label": "Fig 9",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13614635.1/pone.0358259.g009.webp?md5=3b673456128c9358c0c3fb9fd4dfb7e5",
-              "captionHash": "ad278efc120ac9b74d5b9166a21231d0447de0e7b27157e707955b4465681199"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4723d3bca27d4f7b",
-          "doi": "10.1371/journal.pone.0358259",
-          "paper": "Integrative computational analysis of public fecal lipidomics and transcriptomics datasets suggests a candidate association between the COX-2 pathway and CE(20:4) in colorectal adenoma-carcinoma progression.",
-          "journal": "PloS one",
-          "date": "2026-09-25",
-          "year": "2026",
-          "pmcid": "PMC13614635",
-          "pmid": "42789583",
-          "paperURL": "https://doi.org/10.1371/journal.pone.0358259"
-        },
-        "updatedAt": "2026-10-16T06:36:41Z"
-      }
-    },
     "10.1038/s41467-026-75546-z": {
       "checkedAt": "2026-10-16T06:36:36Z",
       "status": "pending",
@@ -11645,18 +11609,13 @@
     "startedAt": "2026-11-17T09:45:01Z",
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
-    "elapsedSeconds": 281,
+    "elapsedSeconds": 369,
     "maxSeconds": 2700,
-    "requests": 75,
+    "requests": 102,
     "date": "2026-11-17",
     "status": "active",
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-17T09:49:42Z",
-    "inFlight": {
-      "startedAt": "2026-11-17T09:49:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-17T09:51:10Z"
   }
 }
