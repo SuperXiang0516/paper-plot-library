@@ -285,11 +285,42 @@
     },
     "2026-11-18": {
       "newDOIs": [
+        "10.1093/bioinformatics/btag696",
         "10.7717/peerj.21758"
       ]
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-18T09:15:20Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.118126": {
+      "checkedAt": "2026-11-18T09:15:18Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107986": {
+      "checkedAt": "2026-11-18T09:15:06Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.isci.2026.117831": {
+      "checkedAt": "2026-11-18T09:14:55Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1093/bioinformatics/btag696": {
+      "checkedAt": "2026-11-18T09:14:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-18T09:13:23Z",
       "status": "pending",
@@ -452,30 +483,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1111/cas.70548": {
-      "checkedAt": "2026-11-17T09:47:59Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.118126": {
-      "checkedAt": "2026-11-17T09:47:57Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107986": {
-      "checkedAt": "2026-11-17T09:47:56Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.isci.2026.117831": {
-      "checkedAt": "2026-11-17T09:47:54Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.7554/elife.108950": {
       "checkedAt": "2026-11-17T09:47:53Z",
@@ -10616,61 +10623,6 @@
         "updatedAt": "2026-10-16T06:29:24Z"
       }
     },
-    "10.1093/bioinformatics/btag696": {
-      "checkedAt": "2026-10-16T06:28:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1093/bioinformatics/btag696",
-        "metadataHash": "e251d23ab71b4b1fab4bdd9ca6ff734c91a275bd058797d5f628c5cd1274d7e1",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/PMC13637587.1.xml?md5=9a33f8d5b22ba8db06baf3f7128b90ca",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13637587-c511d6f80161a73a.webp",
-              "assetSHA256": "c511d6f80161a73a8426149237107e3f02459858f277a33641169cdbe97f6bec",
-              "license": "CC BY",
-              "id": "btag696-F1",
-              "sha256": "c511d6f80161a73a8426149237107e3f02459858f277a33641169cdbe97f6bec",
-              "height": 633,
-              "label": "Figure 1",
-              "width": 1599,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f1.webp?md5=17368efec498781ebf5a807bb0ceabc2",
-              "captionHash": "9a7825e6ee653b318cfe2fc67a849b7f843485e8a145685807f7c9ab4a5068fa"
-            },
-            {
-              "asset": "assets/pmc13637587-acd831f1331cc50b.webp",
-              "assetSHA256": "acd831f1331cc50bb51e746fab6d6df96ec5c00260095c4e2486f0259c68098d",
-              "license": "CC BY",
-              "id": "btag696-F4",
-              "sha256": "acd831f1331cc50bb51e746fab6d6df96ec5c00260095c4e2486f0259c68098d",
-              "height": 1861,
-              "label": "Figure 4",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f4.webp?md5=bb88d2311b6f6e60a0a27e4e71c9ba91",
-              "captionHash": "97093a71db9bf82827639b51757bb159866b9f4f271d49c0eed587e47e10be16"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-8d8802827a79e964",
-          "doi": "10.1093/bioinformatics/btag696",
-          "paper": "Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.",
-          "journal": "Bioinformatics (Oxford, England)",
-          "date": "2026-10-01",
-          "year": "2026",
-          "pmcid": "PMC13637587",
-          "pmid": "42758136",
-          "paperURL": "https://doi.org/10.1093/bioinformatics/btag696"
-        },
-        "updatedAt": "2026-10-16T06:28:27Z"
-      }
-    },
     "10.1038/s41467-026-77686-8": {
       "checkedAt": "2026-10-16T06:28:18Z",
       "status": "pending",
@@ -11566,12 +11518,12 @@
     "batchCount": 2,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "elapsedSeconds": 161,
+    "elapsedSeconds": 275,
     "maxSeconds": 2700,
-    "requests": 30,
+    "requests": 66,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-18T09:13:40Z",
-    "aiAttempts": 0,
+    "updatedAt": "2026-11-18T09:15:34Z",
+    "aiAttempts": 1,
     "status": "active",
     "endReason": "",
     "maxBatches": 36,
@@ -11579,11 +11531,6 @@
     "startedAt": "2026-11-18T09:10:59Z",
     "uncertainRequests": 0,
     "version": 1,
-    "dailyNewCount": 1,
-    "inFlight": {
-      "startedAt": "2026-11-18T09:13:40Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 2
   }
 }

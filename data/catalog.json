@@ -173858,6 +173858,565 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-8d8802827a79e964",
+      "doi": "10.1093/bioinformatics/btag696",
+      "paper": "Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.",
+      "journal": "Bioinformatics (Oxford, England)",
+      "date": "2026-10-01",
+      "year": "2026",
+      "pmcid": "PMC13637587",
+      "pmid": "42758136",
+      "paperURL": "https://doi.org/10.1093/bioinformatics/btag696",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1367-4803",
+      "eissn": "1367-4811",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "epigenetic_profile",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "a704fa638fe3255fee3ac9bcb4f87b3c1b51590517c93c8dc62d23210985b857"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/PMC13637587.1.xml?md5=4deefa34d9b18f0a759ebe96f1428b5a",
+        "figures": [
+          {
+            "id": "btag696-F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "scHPGT performs biologically constrained integration of unpaired RNA and ATAC profiles. (A) Construction of a regulatory prior mask from genomic annotation and peak-gene relationships. (B) Prior masking transforms dense, weakly structured unconstrained attention into sparse attention enriched for genuine regulatory links. (C) scHPGT architecture. Heterogeneous RNA and ATAC encoders produce latent representations; the prior-guided Transformer performs masked cross-modal attention; a shared latent representation is optimized with reconstruction, prior-consistency, and adversarial objectives.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f1.webp?md5=17368efec498781ebf5a807bb0ceabc2",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "assets/pmc13637587-c511d6f80161a73a.webp",
+            "sha256": "c511d6f80161a73a8426149237107e3f02459858f277a33641169cdbe97f6bec",
+            "width": 1599,
+            "height": 633,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c511d6f80161a73a8426149237107e3f02459858f277a33641169cdbe97f6bec",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag696-F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "scHPGT balances modality mixing and biological structure preservation. (A) UMAP embeddings of PBMC3k before and after integration, colored by modality and cell type. (B) Multi-metric radar summary of ARI, NMI, F1, BE and SI across methods. (C) Trade-off between batch entropy (BE) and silhouette index (SI), showing that scHPGT achieves strong modality mixing while preserving biological structure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f2.webp?md5=e17f6706c816a347ac8bbac66e212217",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Regulatory priors guide biologically consistent attention. (A) Gene-peak attention patterns before and after prior-mask processing. (B) Genome-track visualization of masked attention at the BANK1 locus. (C) Relationship between average attention weight and distance to the transcription start site (TSS), showing distance-dependent attenuation of attention strength.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f3.webp?md5=d6fc88df0ac9be670f69b580939ceb6e",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "scHPGT attention captures regulatory relationships supported by biological evidence. (A) Genome-track example of high-attention peaks for a representative marker gene, showing prior edges, attention weights, selected top peaks, accessibility signal, and gene annotation. (B) AUROC distribution for gene-associated top peaks using independently inferred gene-peak links as reference. (C) Top motif enrichment inferred from high-attention peaks in representative cell types. (D) Differential transcription factor enrichment across cell types after cross-cell-type normalization. (E) Correlation between attention-derived regulatory activity and mRNA expression for marker transcription factors. (F) Cell-type-specific regulatory activity programs inferred from scHPGT attention.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f4.webp?md5=bb88d2311b6f6e60a0a27e4e71c9ba91",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "assets/pmc13637587-acd831f1331cc50b.webp",
+            "sha256": "acd831f1331cc50bb51e746fab6d6df96ec5c00260095c4e2486f0259c68098d",
+            "width": 1600,
+            "height": 1861,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "acd831f1331cc50bb51e746fab6d6df96ec5c00260095c4e2486f0259c68098d",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "btag696-F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "scHPGT avoids spurious alignment under missing cell populations. (A) UMAP embeddings under the Unbalance-ATAC setting, colored by modality and cell type; red and blue outlines mark populations with missing cross-modal counterparts. (B) Label-transfer confusion matrices across methods, with average transfer accuracy indicated for each method. (C) Local batch entropy for common and unique cell groups. Higher values in common groups indicate better alignment of shared states, whereas values closer to zero in unique groups indicate better preservation of modality-specific populations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f5.webp?md5=764c9a9be66234d68d2032f1a9977f13",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Evaluation of label transfer accuracy for rare cell types across datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f6.webp?md5=5b2226dee5f20c552d73419508c2a3a3",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Benchmark of fine-grained local structure and batch alignment performance across diverse datasets. (A) cLISI vs. iLISI scatter plots for five datasets. (B) Isolated label ASW scores on Unbalanced-RNA and Unbalanced-ATAC datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f7.webp?md5=b0e54c3f8faf0689a99b14d557c4ef9b",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F8",
+            "label": "Figure 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Biologically meaningful prior structure is required for regulatory-consistent integration. (A) Integration metrics across prior-processing strategies, including full prior, edge dropout, noise addition, shuffled prior, and no-prior settings. (B) Correlation between attention-derived regulatory activity and gene expression under prior perturbation. (C) Motif-enrichment patterns under full, noisy, and shuffled priors, showing loss of structured regulatory programs when the prior is corrupted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f8.webp?md5=66163833d06662115d2b5099fac3d410",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "btag696-F9",
+            "label": "Figure 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Domain-adversarial alignment is required for modality mixing. A-C UMAP embeddings and radar summaries for PBMC3k (A), mouse spleen (B) and CITE-seq/ASAP-seq PBMC (C). Removing the GRL separates RNA and ATAC modalities and reduces integration performance, whereas the full model improves modality mixing while preserving biological structure.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696f9.webp?md5=260cb04dde7224057fdcbdf9f2932c5e",
+            "articleURL": "https://doi.org/10.1093/bioinformatics/btag696",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang. Regulatory-prior-guided attention preserves biological structure during unpaired single-cell RNA-ATAC integration.. DOI: 10.1093/bioinformatics/btag696. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "sup1",
+            "label": "btag696_Supplementary_Data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/btag696_supplementary_data.pdf?md5=7306d2b08fd50deb8bf275ddb6860149",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/zlCreator/scHPGT"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-18T09:14:47.736464+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/zlCreator/scHPGT",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13637587.1/PMC13637587.1.xml?md5=4deefa34d9b18f0a759ebe96f1428b5a"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zhenglong Cheng; Jiao Zhang; Shixiong Zhang"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/zlCreator/scHPGT",
+        "commit": "ede1a30c2ee894a43205cc0b80070dcddb8ebff9",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "config.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/config.py",
+            "sha256": "a13567b0518fb23e793a596a4914f7827ddd8c524ca42343f05539cec330be7e",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "main.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/main.py",
+            "sha256": "418c4dc6195107dc15ea4b77b1ca7606c11583fad435cb482a5299f92db6958c",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "OMP_NUM_THREADS",
+                "line": 3,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source",
+                "line": 102,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type_code",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cell_type",
+                "line": 117,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "util/__init__.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/__init__.py",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "util/dataload.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/dataload.py",
+            "sha256": "6a5cd39d408aca81998463e345456aaaad86df459787aa7fa120de639b31ce39",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "",
+                "reader": "sc.read_h5ad",
+                "line": 24,
+                "status": "dynamic_path",
+                "format": "unknown",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "cell_type",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 24,
+                "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/dataload.py#L24"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "util/loss.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/loss.py",
+            "sha256": "0f6224d6be204b34a7c17a23a9cd8c5774ecc85c49b182d55cce5ecc7aeabe83",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "util/model.py",
+            "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/model.py",
+            "sha256": "4da8c5b9ea88050c897bfceda46eba52b3a6cdcab6f6edbb9008c04d513ebb9a",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "dynamic input path",
+            "path": "",
+            "reader": "sc.read_h5ad",
+            "format": "unknown",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "cell_type",
+                "line": 40,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/dataload.py",
+            "line": 24,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.5",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-18T09:14:52Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-18T09:14:53Z",
+        "url": "https://openalex.org/W7213540448",
+        "cited_by_count": 1,
+        "fwci": 1.1558,
+        "citation_normalized_percentile": 0.69469385,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-18T09:14:53Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-18T09:14:53Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-19T09:14:53Z"
+        }
+      },
+      "selectionScore": {
+        "total": 73.47346925,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.47346925,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-18T09:15:21Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "调控先验引导的注意力在非配对单细胞RNA-ATAC整合中保留生物结构",
+        "summary_zh": "该文提出 scHPGT,一种用于非配对 RNA 与染色质可及性数据整合的单细胞异质先验引导 Transformer。方法包含模态特异编码器、利用调控连接约束基因-峰注意力的先验引导跨模态 Transformer,以及域对抗目标以在共享隐空间中减小模态差异。摘要报告在 PBMC3k、小鼠脾脏、CITE-seq/ASAP-seq PBMC 与 PBMC10k 基准上改善聚类一致性、标签迁移与生物结构保留,并在部分重叠与条件偏移场景中对齐共享群体;注意力导出的连接用于恢复调控关系与转录因子程序。上述结果均为论文文本所述,作者代码未运行,未做复现验证。",
+        "learning_points": [
+          "图1展示从基因组注释与峰-基因关系构建调控先验掩码,并将稠密弱结构注意力转为稀疏、富集真实调控连接的注意力。",
+          "图1给出 scHPGT 架构:异质 RNA 与 ATAC 编码器产生隐表示,先验引导 Transformer 执行掩码跨模态注意力,共享隐表示由重建、先验一致性与对抗目标优化。",
+          "图2以 PBMC3k 的 UMAP(按模态与细胞类型着色)、ARI/NMI/F1/BE/SI 多指标雷达图及 BE-SI 权衡,说明模态混合与生物结构保留的平衡。",
+          "图3展示先验掩码前后的基因-峰注意力模式、BANK1 位点的基因组轨道可视化,以及注意力权重随 TSS 距离衰减的关系。",
+          "图4用基因组轨道示例、以独立推断的基因-峰连接为参考的 AUROC 分布、基序富集、跨细胞类型归一化的差异转录因子富集、注意力导出调控活性与 mRNA 表达相关性,以及细胞类型特异调控活性程序来评估注意力。",
+          "静态检查仅见 config.py、main.py、util/__init__.py、util/dataload.py 等文件条目,其中 dataload.py 出现 adata = sc.read_h5ad(file_name);未运行代码,不能据此推断复现结果。",
+          "论文声明代码与数据发布于 https://github.com/zlCreator/scHPGT,但本材料未验证其可用性或内容。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不构成复现验证,不能宣称结果已复现或与论文一致。",
+          "输入数据的具体尺度、预处理细节与图号对应关系在提供证据中未明示,属未知。",
+          "各基准数据集上的具体指标数值未在证据中给出,仅有图注层面的定性描述。",
+          "AUROC 参考连接来自独立推断方法,其可靠性未在证据中评估。",
+          "注意力与调控关系的解释依赖先验掩码质量,证据未提供先验覆盖度或错误率的量化。",
+          "证据未说明模型对稀疏性、噪声与部分重叠程度的敏感性边界。",
+          "期刊指标、许可与代码可复现性未在证据中确认。",
+          "图2、图3、图4 的证据条目缺少来源哈希值,元数据完整性有限。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-18T09:15:26Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "f93988c1809316e04bba36d03b9b7d9d3b0716ab9757a7764607a01907a1cf48",
+        "summary_fingerprint": "d247c46d4bc9937223c24b8af049458fc3cdac52e4a5fea31a6c3fdb02258a3a",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -238080,6 +238639,38 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-8d8802827a79e964": {
+      "tree": "dynamic input path",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "dynamic input path",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "unknown",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/dataload.py；读取行 24；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/zlCreator/scHPGT/blob/ede1a30c2ee894a43205cc0b80070dcddb8ebff9/util/dataload.py",
+          "observedFieldReferences": [
+            {
+              "name": "cell_type",
+              "line": 40,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -239698,7 +240289,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-18T09:13:25Z",
+  "generatedAt": "2026-11-18T09:15:27Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -239932,18 +240523,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-18T09:10:59Z",
-    "updatedAt": "2026-11-18T09:13:40Z",
+    "updatedAt": "2026-11-18T09:15:34Z",
     "batchCount": 2,
-    "requests": 30,
-    "aiAttempts": 0,
+    "requests": 66,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 1,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
