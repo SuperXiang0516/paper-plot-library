@@ -176275,6 +176275,347 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-83f659f47b7dbbcf",
+      "doi": "10.1172/jci.insight.197310",
+      "paper": "p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.",
+      "journal": "JCI insight",
+      "date": "2026-06-09",
+      "year": "2026",
+      "pmcid": "PMC13461164",
+      "pmid": "42262869",
+      "paperURL": "https://doi.org/10.1172/jci.insight.197310",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "issn": "2379-3708",
+      "eissn": "2379-3708",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging",
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "47f0196d1afa0631f24ee6d691d5dda6451cac5980ed4659888b447b7754181b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/PMC13461164.1.xml?md5=471d67adb6a0bbb86c77102d458f15db",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Subpopulations of senescent β cells with different functional and SASP transcriptional profiles.(A) Reanalysis of scRNA-Seq data (GSE149984) of islets isolated from C57Bl6/J male mice (7- to 8-month-old retired breeders) under 3 conditions: control (C), S961-induced insulin resistance for 2 weeks (S), and S961-induced insulin resistance followed by a 2-week recovery period (SR). (B) UMAP plot displaying the major islet-cell cluster of mouse β cells based on Ins2 expression. (C) Heatmap of senescence marker genes with individual z scores. (D) Trajectory analysis scRNA-Seq from nonsenescent to senescent mouse β cells showing different stages along a pseudo-time-course and (E) specific senescent gene expression per metabolic condition. (F) Scatter plots of average z score expression levels of hallmark and functional genes in each subpopulation; mean ± SEM; expression levels analyzed by Wilcoxon’s matched-pairs signed-rank test. Data are results from 2,939 β cells in C, 2,896 β cells from S961R conditions, and 2,513 cells from SR; islets were isolated from 4 mice per condition as previously published (1). The midpoint of 0 represents average expression across all samples. (G) Heatmap of β cell hallmark and function genes. The graph shows the expression of the genes in 3 cell subpopulations of nonsenescent β cells (Cdkn1a–/Cdkn2a–) and Cdkn1a+ and Cdkn2a+ under the 3 metabolic conditions described. (H) Scatter plots of average z score expression levels of β cell SenMayo score. Mean ± SEM; expression levels analyzed by Wilcoxon’s matched-pairs signed-rank test. (I) β SenMayo: heatmap of selected genes related to senescence and SASP in the same 3 cell subpopulations under the different metabolic conditions. **P < 0.001, ***P < 0.0001, and ****P < 0.00001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g207.jpg?md5=312cee6bf4c81278da83a4016708bd6c",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "assets/pmc13461164-426b1e69932dec36.jpg",
+            "sha256": "426b1e69932dec360881ef5684e5b8c9ed8b253e3517972584c46e7e7bb7930b",
+            "width": 764,
+            "height": 993,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "426b1e69932dec360881ef5684e5b8c9ed8b253e3517972584c46e7e7bb7930b",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "The p21+-β cell subpopulation was dysfunctional and lost its identity.(A) P2A-dTomato transgene used in the generation of p21-tdTomato mice, inserted at the end of the coding region using CRISPR. (B) Panels of different confocal microscopy channels reveal coexpression of insulin and p21 in islet cells; inset shows its nuclear localization. Representative image shown from n = 7 mice. Scale bar: 50 μm. (C) Live fluorescence with bright-field microscopy of dispersed islets isolated from 3-month-old p21-tdTomato (scale bar: 20 μm) and bright-field channel only showing live islet cells. (D) The proportion of tdTomato and p21 in islets analyzed by FACS from 6 tdTomato mice (male and female, 40–65 weeks). Each dot represents 1 mouse. ****P < 0.0001, 1-way ANOVA. (E) Islet isolation, dissociation, and sorting based on tdTomato signal to purify P21-tdTOM+ and P21-tdTOM– for functional analysis. (F) Secretion index = ratio of insulin secreted at 16.8 mM glucose compared with 2.8 mM glucose; n = 3 biological replicates; *P < 0.05 by 2-way paired t test. (G) Basal insulin secretion in P21-tdTOM+ and P21-tdTOM– cells separated by flow cytometry; n = 2–5 technical replicates from 3 biological replicates. Mean ± SEM; islets isolated from 4 male mice (53–70 weeks) and 3 female mice (51–72 weeks). *P < 0.05 by 2-way unpaired t test. (H) Loss of β cell identity at the protein level. Semiquantification of protein intensity in confocal immunofluorescent images from tdTOMhi islets with respect to tdTOMlo. Each point represents an individual islet from 3 P21-tdTOM+ female mice (17–22 weeks). (I) HMGB1 nuclear exclusion frequency in INSULIN+ cells in islets from tdTOMhi and tdTOMlo. Each point represents an individual islet from 3 P21-tdTOM+ female mice (17–22 weeks). (J) Representative images of H and I comparing protein expression of β cell hallmark genes in islets from tdTOMhi and tdTOMlo. tdTomato in red; β cell–related genes and HMGB1 in green. MFI for red channel intensity. Scale bar: 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g208.jpg?md5=934c06849416087f1b1db9bedb3288bd",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "assets/pmc13461164-99634de0fea2ece0.jpg",
+            "sha256": "99634de0fea2ece067dc2c56252bb4f9e83741bb0bed4fd4e5ff0720c80660ae",
+            "width": 764,
+            "height": 916,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "99634de0fea2ece067dc2c56252bb4f9e83741bb0bed4fd4e5ff0720c80660ae",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "F3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Secondary senescence: β cell SASP has non-cell-autonomous effects on neighboring cells.(A) Workflow to test the effects of SASP on naive MIN6 cells. (B) Effects of BCM on p21 and p16 mRNA expression of naive MIN6 cells (n = 13–14 technical replicates from 3 biological replicates) *P < 0.05, analyzed by nonparametric Wilcoxon’s test. (C) β-Gal+ activity normalized per cell number (n = 4 biological replicates). (D) Cumulative frequency graph of Ki67 staining of MIN6 cells reflecting proliferating subpopulations (cells counted: n = 2,911 for control CM, n = 3,000 for BCM (4 technical replicates in each of 2 biological replicates). (E) Protein quantification by Western blot of selected Cdkn1a+ SASP factors after treatment with p21 siRNA at 50 nM in MIN6 cells (n = 3 biological replicates). (F–I) Expression levels of Cdkn1a-SASP factors from individual samples and their correlations with Cdkn1a expression. Lines of best fit are shown, along with dotted lines indicating 95% CI. P values were calculated using the null hypothesis that the slope of the best fit line equals 0. (J) Treatment of islets from p21-tdTom mice with Cdkn1a SASP factors (LSAMP+DUSP3+GDF15+IDE) during 5 days (female and male, 12–20 weeks old). (K) Cellular subpopulations as determined by flow cytometry of dispersed islets after treatment. (L) Effects of Cdkn1a+ SASP factors on transcription of selected senescence and key β cell genes. (M) Secretion index of islets treated with Cdkn1a+ SASP factors. (N) Basal insulin secretion (n = 4 biological replicates). Mean ± SEM; expression levels analyzed by 2-way t tests. (O–R) Radar plots of qPCR results for the mean expression of senescence and SASP genes. MIN6 cells treated with an individual SASP. Mean ± SEM; n = 2 biological replicates with 2–3 technical replicates each. Concentrations of SASP proteins used in culture media are shown in Table 1. Data shown as mean ± SEM; expression levels analyzed by 2-way t tests; *P < 0.01, **P < 0.001, ***P < 0.0001, and ****P < 0.00001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g209.jpg?md5=215e5022639feaf1b116fcb84624dbcd",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Cdkn1a+ SASP factors induce secondary cellular senescence in mouse pancreatic islets in vitro.(A) Experimental design of the conditional p21 knockdown time-course on mouse islets to assess effects on transcription and function. (B) Time-course expression levels of p21 and p16 mRNA under control (Scr-siRNA) and conditional p21 knockdown (p21-SiRNA, 50nM). (C) Time-course of β cell function as reflected by secretion index at different days after conditional knockdown of p21. (D) β cell hallmark and function genes after p21 conditional knockdown (p21-siRNA) at day 6; 100 islets per condition from retired male breeders, n = 7 biological replicates; data shown as heatmap of z score for B and D, and of secretion index for C. (E) Experimental design for the evaluation of p21-SASP factors after p21 conditional knockdown (p21-siRNA) in mouse islets. (F) Secretion index from static GSIS from p21-siRNA or Scr-siRNA with/without SASP factors (LSAMP+DUSP3+GDF15+IDE) during 5 days. Islets from 33 male C57Bl/N mice were used (6–9 months). (G–P) Transcriptomic gene levels from same experiment design using islets from 24 female and male C57Bl/N mice (17 weeks to 9 months). Mean ± SEM, 1-way ANOVA, *P < 0.05, **P < 0.01, ***P < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g210.jpg?md5=d7a6f06d805b21d47148db6f6912c303",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Secondary senescence induced by Cdkn1a+ SASP factors is counteracted by JAK1/2i in mouse islets in vitro and in vivo.(A) Pathway analysis of SASP-regulating pathways in RNA-Seq data from mouse senescent β cells (6) reveals upregulation of the JAK/STAT pathway. (B) Experimental design in vitro: Treatment of islets from p21-tdTom mice with Cdkn1a SASP factors (LSAMP+DUSP3+GDF15+IDE) in combination with JAK1/2i. In vivo: male C57Bl/6N mice were fed a high-fat diet (HFD) for 6 weeks and treated for 4 weeks with JAK1/2i. n = 9 control, n = 11 HFD group, n = 13 HFD + JAK1/2i. (C) Flow cytometry analysis of dispersed islets treated with Cdkn1a SASP factors with or without JAK1/2i. (D) Transcriptional analysis of islets treated with Cdkn1a SASP factors with or without JAK1/2i. (E) Functional analysis of islets treated with Cdkn1a SASP factors with or without JAK1/2i. n = 4 independent experiments. (C–E) Mean ± SEM; expression levels analyzed by 2-way t tests with respect to control; *P < 0.01, **P < 0.001, and ****P < 0.00001. (F) Heatmap showing expression of key senescent genes in islets isolated from different treated groups. (G) Percentage of p21 (red) positive cells in INSULIN (green) positive cells determined by semiquantitative IHC in 3 groups: control, HFD, and HFD+JAK1/2i. Four 16–24-week-old female p21-tdTom mice were used in each group, and 933–1,245 islets were counted per group. *P < 0.05, ***P < 0.0001 by ordinary 1-way ANOVA followed by Tukey’s multiple comparisons test. (H) Representative images of islets immunostained for p21 (red) positive cells in INSULIN (green) in different treatment groups. Scale bar: 50 mm. (I) z score expression of senescence and SASP genes. (J) z score expression of β cell hallmark and functional genes. (K) GSIS by sampling plasma at minutes 0 and 15 during the GTT (i.p.). Mean ± SEM; *P < 0.01, **P < 0.001 by 2-way paired t test. (L) Fed plasma insulin in mice. Mean ± SEM; *P < 0.01 by 2-way unpaired t test.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g211.jpg?md5=aa48e06afc8e1178668745831eeb38c2",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Loss of function and identity in human p21+ β cells.(A) CDKN1A mRNA levels in islets from human donors without diabetes (ND) and with T2D. (B) Linear correlation between p21 protein levels in human islets and their function as expressed by the secretion index. (C) KAPP-Sen study design aimed at mapping and profiling senescent cells in both whole and dispersed human pancreas. (D and E) Heatmap and dot plot of human β cell scRNA-Seq data for selected β cell functional genes across 3 cell subpopulations: nonsenescent β cells (CDKN1A–/CDKN2A–), CDKN1A+, and CDKN2A+. (F) Pseudo-time trajectory analysis of scRNA-Seq from nonsenescent to senescent human β cells. (G) Heatmap showing expression levels of key senescence genes at various stages during the senescence trajectory. (H) scRNA-Seq expression levels of genes in the senescence Gene Ontology (GO) category and (I) Fridman gene senescent scores. Data shows individual cells in each trajectory state, mean ± SEM; expression levels analyzed via 2-way ANOVA. Quartiles of nuclear P21 protein expression derived from spatial proteomic (CODEX) data, only from β cells. (J) Coexpression of senescence proteins within cells exhibiting quartile distribution of nuclear P21. (K) Coexpression of β cell transcripts within cells exhibiting quartile distribution of nuclear P21. (L) Representative image of integrated CODEX (INSULIN [red] and p21 [green] protein) with Xenium (MAFA [orange] transcript). (M) Quartiles of nuclear CDKN1A mRNA expression from Xenium and coexpression with hallmark β cell genes. (N) Heatmap showing overlapping coexpression of nuclear P21 with β cell hallmark genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g212.jpg?md5=df1ab445ba03c2c1b6a1e57950074ba0",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Effects of JAK1/2i on secretion of human β cell function.(A) JAK1 protein levels in human islets from donors without diabetes (ND) and with type 2 diabetes (T2D). (B) linear regression of JAK1 protein levels and secretion index from human islets. (C) Analysis of data from Joslin Diabetes Center’s adult clinic. Longitudinal glycated hemoglobin (A1c) levels from individuals with T2D and who had been prescribed JAKi for medical indications independent from diabetes. The effect of the JAKi treatment was measured by the change of A1c. δA1c = (average A1c post) – (average A1c pre). (D) Mean A1c change before and after starting treatment with a specified JAKi in people with T2D. (E) Workflow of human islets from ND and T2D donors treated with JAK1/2i or JAK1/3i for 4 days. (F and G) Heatmap and dot-plot of SASP (log2 protein abundance) secretion in conditioned media collected from human untreated (control) or treated (JAK1/2i). Top upregulated human β cell SASP proteins were selected. Paired analysis per analyte was performed between conditions. Cell numbers varied from one donor to another but were constant across treatments. Donor 1: 526,000 cells/treatment; donor 2: 192,000 cells/treatment; donor 3: 231,000 cells/treatment; donors 4 and 5: 87,500 cells/treatment. (H) p21 mRNA levels in human islets from ND donors. (I) β cell function evaluated by GSIS in human islets from ND donors with 1–3 replicates per donor. (J) Effects of JAK1/2i in p21 mRNA in islets from T2D donors. (K) β cell function evaluated with islet perifusion in islets from 2 donors with T2D, BMI 38.3 and 42.2, age 58 and 55 years old, respectively. (L) Static GSIS from 2 T2D female donors using JAK1/2i (momelotinib: dark green and baricitinib: light green), both BMI 42.2, age 49 and 55 years old. (M) Matched secretion index from untreated and JAK1/2i-treated islets from individuals with T2D.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-g213.jpg?md5=3ca0137eec618dec91c1e167830b510c",
+            "articleURL": "https://doi.org/10.1172/jci.insight.197310",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al.. p21-senescent cells drive pancreatic islet dysfunction through targetable paracrine signaling in type 2 diabetes.. DOI: 10.1172/jci.insight.197310. Copyright holder: Iwasaki et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SD1",
+            "label": "Supplemental data",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-s215.pdf?md5=605d7b89dc5819992ac2a864eb41a383",
+            "license": "CC BY",
+            "sha256": "3f90b30ea8ac5844b63087b6eeb00b900bc3fb48c7308d1cf63cc2a7eba8731a",
+            "status": "downloaded_private",
+            "bytes": 2496932,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 20,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "SD2",
+            "label": "Supporting data values",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13461164.1/jciinsight-11-197310-s216.xlsx?md5=428ee453a44112677f3ec8740b90c58d",
+            "license": "CC BY",
+            "sha256": "d7cfced51de145e99c8e6cfaaef5bd57c7203b79b48595faacd886d20813b0be",
+            "status": "downloaded_private",
+            "bytes": 169656,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-18T09:18:47.932403+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Kanako Iwasaki; Priscila Carapeto; Cristian Abarca; Francesko Hela; Stephanie Sanjines; Sebastian Pena; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "6.8",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-18T09:18:51Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-18T09:18:52Z",
+        "url": "https://openalex.org/W7164003348",
+        "cited_by_count": 6,
+        "fwci": 18.0697,
+        "citation_normalized_percentile": 0.99168043,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-18T09:18:52Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-18T09:18:52Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-19T09:18:52Z"
+        }
+      },
+      "selectionScore": {
+        "total": 61.95840215,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.9584021499999995,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-18T09:19:11Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -241189,6 +241530,12 @@
           ]
         }
       ]
+    },
+    "doi-83f659f47b7dbbcf": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -242807,7 +243154,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-18T09:17:24Z",
+  "generatedAt": "2026-11-18T09:19:12Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -243041,18 +243388,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-18T09:10:59Z",
-    "updatedAt": "2026-11-18T09:17:41Z",
+    "updatedAt": "2026-11-18T09:19:19Z",
     "batchCount": 4,
-    "requests": 101,
+    "requests": 125,
     "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
