@@ -174417,6 +174417,1864 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-f54443ba75a18b6a",
+      "doi": "10.3389/fimmu.2026.1804974",
+      "paper": "Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-06-03",
+      "year": "2026",
+      "pmcid": "PMC13272428",
+      "pmid": "42317343",
+      "paperURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1664-3224",
+      "eissn": "1664-3224",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "9fda21b4f44bb327d73edc6be128e9d6cf9d5410b73606fe15c22530f77b2473"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/PMC13272428.1.xml?md5=61682b861ad3ad77362e4a9ae7a3c329",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Identification and functional characterization of senescence- and circadian rhythm-related genes in colorectal cancer (CRC). (A) Volcano plot showing differentially expressed genes (DEGs) between CRC tumor tissues and adjacent non-tumor tissues in the training cohort. Upregulated genes are shown in yellow, downregulated genes in green, and non-significant genes in gray. (B) Heatmap illustrating the expression patterns of representative DEGs between CRC and normal samples. (C) Venn diagram depicting the intersection of DEGs, senescence-related genes, and circadian rhythm-related genes. ACR, Aging-Circadian Rhythm intersection (D) Gene Ontology (GO) enrichment analysis, including biological processes (BP), cellular components (CC), and molecular functions (MF), together with Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis of the 10 candidate genes. (E) Protein-protein interaction (PPI) network of the 10 candidate genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g001.jpg?md5=eb659ac98624972d966bccb6fddcc7ad",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Development, validation, and experimental verification of a senescence- and circadian rhythm-related prognostic risk model in CRC. (A) Forest plot of univariate Cox proportional hazards regression analysis showing the associations between NOX4, CXCL1, CDKN2A, and SIX1 expression and overall survival in the training cohort. (B) Kaplan-Meier survival curves comparing overall survival between the high-SCore group (HSG) and low-SCore group (LSG) in the training cohort. (C) Time-dependent receiver operating characteristic (ROC) curves evaluating the predictive performance of the risk model in the training cohort, with area under the curve (AUC) values shown for 1-, 2-, and 3-year overall survival. (D) Kaplan-Meier survival curves comparing overall survival between the HSG and LSG in the external validation cohort GSE12945. (E) Time-dependent ROC curves assessing the predictive accuracy of the prognostic model in GSE12945, with AUC values shown for 1-, 2-, and 3-year overall survival. (F, G) Relative mRNA expression levels of the four prognostic genes in the normal colon epithelial cell line NCM460 and CRC cell lines DLD1, SW480, HCT15, HT29, and RKO, as measured by reverse transcription-quantitative PCR (RT-qPCR): NOX4 (F), CXCL1 (G). (H, I) Quantitative immunohistochemical validation of NOX4 and CXCL1 expression in the SYSUCC-CRC tissue microarray. IHC scores were significantly higher in colorectal cancer tissues than in paired adjacent non-tumor tissues (n = 120). (J) Spearman correlation heatmap among prognostic genes. The heatmap displays pairwise expression correlations among the four prognostic genes (CXCL1, CDKN2A, NOX4, SIX1). Color gradient represents the magnitude of Spearman correlation coefficients, with red indicating positive correlation and blue indicating negative correlation. Numerical values within cells indicate correlation coefficients. Significance annotation: *P < 0.05, **P < 0.01, ***P < 0.001. All P values were adjusted by the Benjamini−Hochberg (BH) method for multiple testing. (K) Spearman correlation heatmap between prognostic gene expression and pathway activity. The heatmap displays correlations between the expression levels of the four prognostic genes and the GSVA activity scores of the oxidative stress and SASP inflammatory response pathways. Color gradient represents the magnitude of Spearman correlation coefficients, with red indicating positive correlation and blue indicating negative correlation. Numerical values within cells indicate correlation coefficients. Significance annotation: *P < 0.05, **P < 0.01, ***P < 0.001. All P values were adjusted by the BH method for multiple testing.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g002.jpg?md5=9105cdba37167c60d52aed85a20d050a",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "assets/pmc13272428-2c9f3d2588cebaf3.jpg",
+            "sha256": "2c9f3d2588cebaf3af1514c68adbde088212c17627657972de8d1f7484cb995f",
+            "width": 693,
+            "height": 1021,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2c9f3d2588cebaf3af1514c68adbde088212c17627657972de8d1f7484cb995f",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Prognostic evaluation of the SCore and construction of a nomogram in CRC. (A) Forest plot of univariate Cox regression analysis evaluating the prognostic significance of the SCore and clinicopathological variables, including age, sex, T stage, M stage, and pathological stage. (B) Proportional hazards (PH) assumption test based on Schoenfeld residuals for variables included in the univariate Cox regression model. (C) Forest plot of multivariate Cox regression analysis identifying independent prognostic factors for overall survival in CRC. (D) Schoenfeld residual-based PH assumption test for variables included in the multivariate Cox regression model. (E) Nomogram integrating independent prognostic factors (SCore, age, and M stage) to predict 1-, 2-, and 3-year overall survival probabilities in CRC patients. (F) Calibration curves assessing the agreement between predicted and observed 1-, 2-, and 3-year overall survival probabilities. (G) Time-dependent ROC curves assessing the discriminative performance of the nomogram for 1-, 2-, and 3-year overall survival. *P < 0.05; ***P < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g003.jpg?md5=225c43a6ca638687b0397805e87fbe66",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Somatic mutation landscape and pathway enrichment analyses in high- and low-SCore CRC groups. (A) Oncoplot showing the somatic mutation landscape of CRC patients in the high-SCore group (HSG). Each column represents one patient and each row represents a gene; colors indicate mutation types. (B) Oncoplot depicting the somatic mutation profile of CRC patients in the low-SCore group (LSG). (C) Forest plot comparing mutation frequencies of differentially mutated genes between the HSG and LSG. (D) Distribution of consensus molecular subtypes (CMS1-CMS4) between the HSG and LSG. (E) Comparison of SCore distributions among CMS subtypes, *P < 0.05, **P < 0.01, ***P < 0.001, ns represents not significant. (F) Gene set enrichment analysis (GSEA) showing commonly enriched pathways in the HSG and LSG. (G-J) GSEA enrichment plots illustrating the top enriched pathways associated with NOX4 (G), CXCL1 (H), CDKN2A (I), and SIX1 (J).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g004.jpg?md5=e6c441a7401006c732dacf8663c5e08c",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "assets/pmc13272428-c3cf50f0d6e32174.jpg",
+            "sha256": "c3cf50f0d6e3217442eeb9caee8d118e293c695dec855228876c9dc4d716fdb1",
+            "width": 702,
+            "height": 987,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c3cf50f0d6e3217442eeb9caee8d118e293c695dec855228876c9dc4d716fdb1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "f5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Immune landscape, immune evasion features, and drug sensitivity analyses in CRC. (A) Heatmap showing the relative infiltration levels of 28 immune cell types in the HSG and LSG, estimated using single-sample gene set enrichment analysis (ssGSEA). (B) Boxplots comparing infiltration scores of seven immune cell types. *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001. (C) Correlation matrix depicting relationships among differentially infiltrated immune cell types. Circle size and color indicate correlation strength and direction. *P < 0.05, **P < 0.01, ***P < 0.001. (D) Correlation analysis between prognostic gene expression and differentially infiltrated immune cell types. (E) Differential expression of immune checkpoint-related genes between the HSG and LSG. *P < 0.05, **P < 0.01, ***P < 0.001. (F) Boxplot comparing Tumor Immune Dysfunction and Exclusion (TIDE) scores between the HSG and LSG. *P < 0.05, **P < 0.01. (G) Drug sensitivity analysis showing differences in predicted half-maximal inhibitory concentration (IC50) values between the HSG and LSG.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g005.jpg?md5=5cdfb6b5020221e72b305a022e59646b",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Single-cell transcriptomic analysis in CRC. (A) Identification of highly variable genes (HVGs) in the GSE132465 single-cell dataset. (B) Principal component analysis (PCA) significance testing using JackStraw analysis. (C) PCA scree plot showing the variance explained by each principal component. (D) t-distributed stochastic neighbor embedding (t-SNE) plot showing clustering of single cells based on selected principal components. (E) Dot plot displaying canonical marker gene expression across the 12 clusters for cell type annotation. (F) Dot plot summarizing marker gene expression across annotated major cell types. (G) Annotated t-SNE diagram, with different colors representing different clusters. (H) Bar plot comparing the proportions of different cell types between CRC tumor and normal samples. (I) Violin plots showing expression levels of CDKN2A, CXCL1, NOX4, and SIX1 across major cell types in tumor and normal samples, *P < 0.05, **P < 0.01, ***P < 0.001, NS represents not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g006.jpg?md5=bc80617ddf3368b0947f127443e4490d",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Cell-cell communication, pseudotime dynamics, and functional characteristics of T cells in CRC. (A, B) Global cell-cell communication networks inferred from ligand-receptor interactions in normal colorectal tissues (A) and CRC tumor tissues (B). Node size indicates the number of interactions, and edge thickness reflects interaction strength. (C, D) T cell-centered communication networks in normal tissues (C) and CRC tumor tissues (D). (E,3F) Bubble plots showing ligand-receptor interactions between T cells and other cell types in normal tissues (E) and CRC tumor tissues (F). (G) Pseudotime trajectory analysis of T cells, depicting differentiation into 11 cellular states along pseudotime. (H) Heatmap showing dynamic expression patterns of prognostic genes (SIX1, NOX4, CDKN2A, and CXCL1) along the T-cell pseudotime trajectory. (I) Dot plot illustrating activity levels of multiple metabolic pathways across different cell types. (J) Integrated pathway enrichment analysis (irGSEA) across multiple algorithms for different cell types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g007.jpg?md5=89a969e249a73d96c0a2a741dac65473",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f8",
+            "label": "Figure 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "NOX4 knockdown attenuates inflammatory and immunoregulatory outputs, reduces intracellular ROS levels, and impairs migratory capacity in CRC cells. (A–D) Validation of NOX4 knockdown efficiency in SW480 and SW620 cells. (A, C) Relative NOX4 mRNA expression measured by qPCR. (B, D) Western blot analysis of NOX4 and PD-L1 protein levels. (E, F) Transcriptional changes in inflammatory and immunoregulatory genes following NOX4 knockdown. (E) SW480 cells; (F) SW620 cells. Genes analyzed include IL-6, CCL2, TGFB1, MIF, PD-L1, and PD-1. (G–L) Cytokine secretion in culture supernatants measured by ELISA after NOX4 knockdown. (G, H) IL-6; (I, J) TGF-β1; (K, L) MIF. (M, N) Relative intracellular reactive oxygen species (ROS) levels in SW480 and SW620 cells following NOX4 knockdown. (O, P) Quantification of ROS fluorescence intensity. (O) SW480 cells; (P) SW620 cells. (Q, R) Transwell migration assays showing reduced migratory capacity upon NOX4 knockdown. (Q) SW480 cells; (R) SW620 cells. ns, not significant; *P < 0.05; **P < 0.01; ***P < 0.001; ****P < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g008.jpg?md5=422a82bfe8c579ed64b30d44ccd1ddd8",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1804974",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al.. Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.. DOI: 10.3389/fimmu.2026.1804974. Copyright holder: Luo, Zhan, Bao, Zheng, Wu, Xi, Liu, Li and Zhao. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SF1",
+            "label": "Supplementary Figure 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image1.tif?md5=93ea969a4183e852ffdb11851ea7754e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF2",
+            "label": "Supplementary Figure 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image2.tif?md5=2a699c87661c1c1d8deacc4fccda0ab7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF3",
+            "label": "Supplementary Figure 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image3.tif?md5=154d03cdf5ad75c63011644969be26a8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF4",
+            "label": "Supplementary Figure 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image4.tif?md5=f03b8f9d4dd13545cb24730baa18aa66",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF5",
+            "label": "Supplementary Figure 5",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image5.tif?md5=2c116031de09af2c1c525fceb945bb4b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF6",
+            "label": "Supplementary Figure 6",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image6.tif?md5=3fae50662648ddfdd0a98c91c9ab4a56",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF7",
+            "label": "Supplementary Figure 7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image7.tif?md5=3665d103720d441de03bedc54497de74",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF8",
+            "label": "Supplementary Figure 8",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image8.tif?md5=7c64b24112b9ce27125dde71c759d1fd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF9",
+            "label": "Supplementary Figure 9",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image9.tif?md5=b6a150fcc44c424e8fd8bcff0a90dcfd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF10",
+            "label": "Supplementary Figure 10",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image10.tif?md5=32128282d0461729ec9c5118c05ef553",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF11",
+            "label": "Supplementary Figure 11",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Image11.tif?md5=0da3106d13ed82fffb622304fd28ee6a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST1",
+            "label": "Supplementary Table 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table1.xlsx?md5=41c5d2ec892afc0a0ded3afe465b0c03",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST2",
+            "label": "Supplementary Table 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table2.xlsx?md5=f2e376103312f51041f5616d1c0df726",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST3",
+            "label": "Supplementary Table 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table3.xlsx?md5=2de70780ec81cea2a9937a1fe25e2dd8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST4",
+            "label": "Supplementary Table 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table4.xlsx?md5=d542b6d2e4163d0a69491310254da601",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST5",
+            "label": "Supplementary Table 5",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table5.xlsx?md5=dd2c9ef47151c7212e9ae41321b772a1",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST6",
+            "label": "Supplementary Table 6",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table6.xlsx?md5=347b94d4cc2fa73ab52b620cd5630c42",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST7",
+            "label": "Supplementary Table 7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/Table7.xlsx?md5=90488a87d3df042ae987dab70ee4dc23",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/luolz/CRC-senescence-circadian-interplay"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-18T09:16:57.610394+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/PMC13272428.1.xml?md5=61682b861ad3ad77362e4a9ae7a3c329"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Li-zhi Luo; Yu Zhan; Ru-xiang Bao; Yong-qiang Zheng; Qi-nian Wu; Shao-yan Xi; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/luolz/CRC-senescence-circadian-interplay",
+        "commit": "ffeaaa5247fa2df01acb4d3191481aae2e79c7df",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "scripts/r.00_rawdata.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r",
+            "sha256": "be968b23e59cc4bbae5cd71046074628ef1e46252eb83a9e1f10a035ec050e41",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "/data/nas2/TCGA/COAD/COAD.gdc_2025.5.rda",
+                "reader": "load",
+                "line": 33,
+                "status": "literal_path",
+                "format": "rda",
+                "readerOptions": {}
+              },
+              {
+                "path": "/data/nas2/TCGA/READ/READ.gdc_2025.5.rda",
+                "reader": "load",
+                "line": 179,
+                "status": "literal_path",
+                "format": "rda",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "results",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "file_id",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_type",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "barcode",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ID",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_type",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vital_status",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS.time",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Symbol",
+                "line": 348,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source_name_ch1",
+                "line": 382,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 33,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r#L33"
+              },
+              {
+                "type": "io_reference",
+                "line": 179,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r#L179"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/r.01_DEG_DESeq2.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+            "sha256": "09d900465e71cb5ee6dfb446400e0eb68159ec43bec6520463977a375dcc7681",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "../00_rawdata/01.count_TCGA.COADREAD_mRNA.csv",
+                "reader": "read.csv",
+                "line": 11,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "../00_rawdata/01.group_TCGA.COADREAD.csv",
+                "reader": "read.csv",
+                "line": 13,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "DEGresult_TvsN.RData",
+                "reader": "load",
+                "line": 23,
+                "status": "literal_path",
+                "format": "RData",
+                "readerOptions": {}
+              },
+              {
+                "path": "../00_rawdata/01.fpkmlog2_TCGA.COADREAD_mRNA.csv",
+                "reader": "read.csv",
+                "line": 117,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "01.volcano.pdf",
+                "writer": "pdf",
+                "line": 103
+              },
+              {
+                "path": "01.volcano.png",
+                "writer": "png",
+                "line": 106
+              },
+              {
+                "path": "01.heatmap.pdf",
+                "writer": "pdf",
+                "line": 122
+              },
+              {
+                "path": "01.heatmap.png",
+                "writer": "png",
+                "line": 135
+              }
+            ],
+            "fields": [
+              {
+                "name": "Type",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "change",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 32,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 11,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L11"
+              },
+              {
+                "type": "io_reference",
+                "line": 13,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L13"
+              },
+              {
+                "type": "io_reference",
+                "line": 23,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L23"
+              },
+              {
+                "type": "io_reference",
+                "line": 117,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L117"
+              },
+              {
+                "type": "io_reference",
+                "line": 103,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L103"
+              },
+              {
+                "type": "io_reference",
+                "line": 106,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L106"
+              },
+              {
+                "type": "io_reference",
+                "line": 122,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L122"
+              },
+              {
+                "type": "io_reference",
+                "line": 135,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r#L135"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/r.02_venn.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r",
+            "sha256": "3b047f761cc8bdf6b2d441995f6699f65d57ebc09fed4a811c243f26ea7d855e",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "../01_DEG_DESeq2/01.DEG_sig.csv",
+                "reader": "read.csv",
+                "line": 8,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              },
+              {
+                "path": "../00_rawdata/ACR.csv",
+                "reader": "read.csv",
+                "line": 9,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "01.venn.pdf",
+                "writer": "pdf",
+                "line": 17
+              },
+              {
+                "path": "01.venn.png",
+                "writer": "png",
+                "line": 30
+              }
+            ],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 8,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r#L8"
+              },
+              {
+                "type": "io_reference",
+                "line": 9,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r#L9"
+              },
+              {
+                "type": "io_reference",
+                "line": 17,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r#L17"
+              },
+              {
+                "type": "io_reference",
+                "line": 30,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r#L30"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/r.03_enrichment.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r",
+            "sha256": "2674109f9d2bbb93ec539e27402131157a48057b083b36119b74325372f02a58",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "../02_venn/01.Intersection_gene.csv",
+                "reader": "read.csv",
+                "line": 15,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "03.GO_KEGG_dot.pdf",
+                "writer": "ggsave",
+                "line": 195
+              },
+              {
+                "path": "03.GO_KEGG_dot.png",
+                "writer": "png",
+                "line": 196
+              }
+            ],
+            "fields": [
+              {
+                "name": "symbol",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ENTREZID",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvalue",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ONTOLOGY",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Count",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ymax",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ymin",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xmin",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xmax",
+                "line": 121,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 15,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r#L15"
+              },
+              {
+                "type": "io_reference",
+                "line": 195,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r#L195"
+              },
+              {
+                "type": "io_reference",
+                "line": 196,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r#L196"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/r.04_PPI.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.04_PPI.r",
+            "sha256": "bd750769762bde433b8f16bfd1a198a1a0280654bf4c0aa990e745354cc1552f",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "string_interactions_short.tsv",
+                "reader": "read_tsv",
+                "line": 19,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "symbol",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "preferredName_A",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "preferredName_B",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "node",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "degree",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "from",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "to",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 104,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 19,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.04_PPI.r#L19"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "scripts/r.05_risk_train.r",
+            "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r",
+            "sha256": "d61453298b1128d2cae1883c16709797a0d071218edebd8f33a0e8ea51e8cdfe",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "../02_venn/01.Intersection_gene.csv",
+                "reader": "read.csv",
+                "line": 14,
+                "status": "literal_path",
+                "format": "csv",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "03.Train_risk_and_survival_Distribution.pdf",
+                "writer": "ggsave",
+                "line": 208
+              },
+              {
+                "path": "03.Train_risk_and_survival_Distribution.png",
+                "writer": "ggsave",
+                "line": 209
+              },
+              {
+                "path": "05.Train_ROC.pdf",
+                "writer": "pdf",
+                "line": 285
+              },
+              {
+                "path": "05.Train_ROC.png",
+                "writer": "png",
+                "line": 288
+              }
+            ],
+            "fields": [
+              {
+                "name": "Type",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS.time",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 47,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PH.p",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR.95L",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR.95H",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvalue",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "id",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "risk",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cutpoint",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "riskScore",
+                "line": 145,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "TP",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FP",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cut.values",
+                "line": 249,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AUC",
+                "line": 250,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Time",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 318,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 14,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r#L14"
+              },
+              {
+                "type": "io_reference",
+                "line": 208,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r#L208"
+              },
+              {
+                "type": "io_reference",
+                "line": 209,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r#L209"
+              },
+              {
+                "type": "io_reference",
+                "line": 285,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r#L285"
+              },
+              {
+                "type": "io_reference",
+                "line": 288,
+                "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r#L288"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "/data/nas2/TCGA/COAD/COAD.gdc_2025.5.rda",
+            "path": "",
+            "reader": "load",
+            "format": "rda",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "results",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "file_id",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_type",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "barcode",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ID",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_type",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vital_status",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS.time",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Symbol",
+                "line": 348,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source_name_ch1",
+                "line": 382,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r",
+            "line": 33,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "/data/nas2/TCGA/READ/READ.gdc_2025.5.rda",
+            "path": "",
+            "reader": "load",
+            "format": "rda",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "results",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "file_id",
+                "line": 27,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene_type",
+                "line": 35,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 40,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "barcode",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ID",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 78,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample_type",
+                "line": 87,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Type",
+                "line": 95,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "vital_status",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS",
+                "line": 123,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS.time",
+                "line": 124,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Symbol",
+                "line": 348,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "source_name_ch1",
+                "line": 382,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r",
+            "line": 179,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../00_rawdata/01.count_TCGA.COADREAD_mRNA.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Type",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "change",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 32,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+            "line": 11,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../00_rawdata/01.group_TCGA.COADREAD.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Type",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "change",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 32,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+            "line": 13,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "DEGresult_TvsN.RData",
+            "path": "",
+            "reader": "load",
+            "format": "RData",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Type",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "change",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 32,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+            "line": 23,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../00_rawdata/01.fpkmlog2_TCGA.COADREAD_mRNA.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Type",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "change",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "padj",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "log2FoldChange",
+                "line": 32,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+            "line": 117,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../01_DEG_DESeq2/01.DEG_sig.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r",
+            "line": 8,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../00_rawdata/ACR.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r",
+            "line": 9,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../02_venn/01.Intersection_gene.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "symbol",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ENTREZID",
+                "line": 22,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvalue",
+                "line": 31,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ONTOLOGY",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Count",
+                "line": 33,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ymax",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n",
+                "line": 115,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "ymin",
+                "line": 116,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xmin",
+                "line": 120,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "xmax",
+                "line": 121,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r",
+            "line": 15,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "string_interactions_short.tsv",
+            "path": "",
+            "reader": "read_tsv",
+            "format": "tsv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "symbol",
+                "line": 17,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "preferredName_A",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "preferredName_B",
+                "line": 32,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "node",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "degree",
+                "line": 39,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score",
+                "line": 81,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "from",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "to",
+                "line": 85,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 104,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.04_PPI.r",
+            "line": 19,
+            "url": "",
+            "readerOptions": {}
+          },
+          {
+            "name": "../02_venn/01.Intersection_gene.csv",
+            "path": "",
+            "reader": "read.csv",
+            "format": "csv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Type",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "symbol",
+                "line": 15,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS.time",
+                "line": 25,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "conf.int",
+                "line": 41,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "coefficients",
+                "line": 44,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "table",
+                "line": 47,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "PH.p",
+                "line": 48,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR.95L",
+                "line": 66,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "HR.95H",
+                "line": 67,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pvalue",
+                "line": 68,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "id",
+                "line": 72,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 128,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "predicted",
+                "line": 135,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "risk",
+                "line": 138,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cutpoint",
+                "line": 142,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "riskScore",
+                "line": 145,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "OS",
+                "line": 244,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "TP",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "FP",
+                "line": 248,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "cut.values",
+                "line": 249,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "AUC",
+                "line": 250,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Time",
+                "line": 258,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "gene",
+                "line": 318,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r",
+            "line": 14,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.0",
+        "jcr": "Q1",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-18T09:17:04Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-18T09:17:04Z",
+        "url": "https://openalex.org/W7163339145",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [
+        "heatmap"
+      ],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-18T09:17:04Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-18T09:17:04Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-19T09:17:04Z"
+        }
+      },
+      "selectionScore": {
+        "total": 82,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-18T09:17:17Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "结直肠癌中衰老-昼夜节律交互评分与免疫重塑异质性:论文绘图学习注释",
+        "summary_zh": "该论文围绕结直肠癌中细胞衰老与昼夜节律失调的交互作用,构建了四基因衰老-昼夜节律交互评分(SCore),并在TCGA-COAD/READ训练队列及GSE12945、GSE39582外部队列中评估预后价值。图1展示差异表达基因、热图、DEG与衰老/昼夜节律基因交集维恩图、GO/KEGG富集及10个候选基因的PPI网络;图2展示四基因单因素Cox森林图、高低SCore组Kaplan-Meier曲线、时间依赖ROC及细胞系RT-qPCR;图3展示SCore与临床病理变量的单/多因素Cox、PH假设检验、列线图、校准曲线与时间依赖ROC;图4展示高低SCore组体细胞突变景观、CMS分布、GSEA及四个基因的富集图。作者代码仅做静态观察,未执行,不能视为复现验证。",
+        "learning_points": [
+          "图1采用火山图、热图、维恩图、GO/KEGG富集图和PPI网络组合,呈现从差异基因到候选基因的筛选与功能注释流程(figure-0)。",
+          "图2将单因素Cox森林图、Kaplan-Meier曲线和时间依赖ROC并列,用于展示四基因风险模型的预后区分能力(figure-1)。",
+          "图3通过单/多因素Cox森林图、Schoenfeld残差PH检验、列线图、校准曲线和时间依赖ROC,系统评估SCore的独立预后价值与模型校准(figure-2)。",
+          "图4将高低SCore组的oncoplot、差异突变频率森林图、CMS分布、GSEA及单基因富集图组合,用于展示突变景观与通路富集差异(figure-3)。",
+          "静态代码观察显示原始数据来自TCGA COAD/READ的RData文件,差异分析使用DESeq2流程并输出火山图与热图(script-0、script-1)。",
+          "交集分析读取DEG显著基因与ACR.csv,输出维恩图;富集分析读取交集基因并输出GO/KEGG点图(script-2、script-3)。",
+          "图注中明确标注了颜色编码、AUC时间点、显著性标记等绘图细节,可作为复刻图形元素时的参考(figure-0、figure-1、figure-2、figure-3)。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不是复现验证,不能宣称已复现论文结果或与原文一致(inspection-boundary)。",
+          "输入数据的完整尺度、预处理细节及图号与代码的精确对应关系未明示,保持未知(inspection-boundary)。",
+          "图1至图4的图注仅描述图形内容,未提供具体数值、统计参数或绘图软件版本,无法据此核对定量结果(figure-0、figure-1、figure-2、figure-3)。",
+          "静态代码仅显示部分文件读取与输出路径,未观察到随机种子、参数设置及完整分析流程(script-0、script-1、script-2、script-3)。",
+          "论文摘要中提及的单细胞分析、免疫组化验证及NOX4敲低实验,在所提供的图注与代码证据中未见对应绘图细节,相关图形复现信息未知。",
+          "期刊指标、许可信息及数据可获得性未在证据中提供,无法评估。",
+          "本注释仅为待核学习用途,不构成对论文结论或图形正确性的验证(inspection-boundary)。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-18T09:17:24Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "28a718e27666e114fddef446a93a00bc5c8da482010ebb67ff75ddf549d27a9b",
+        "summary_fingerprint": "5196dd0a5e5925cfd43392faaac6f23e467859f03b3ae421ac30ed371bf41fc8",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -238671,6 +240529,666 @@
           ]
         }
       ]
+    },
+    "doi-f54443ba75a18b6a": {
+      "tree": "/data/nas2/TCGA/COAD/COAD.gdc_2025.5.rda\n/data/nas2/TCGA/READ/READ.gdc_2025.5.rda\n../00_rawdata/01.count_TCGA.COADREAD_mRNA.csv\n../00_rawdata/01.group_TCGA.COADREAD.csv\nDEGresult_TvsN.RData\n../00_rawdata/01.fpkmlog2_TCGA.COADREAD_mRNA.csv\n../01_DEG_DESeq2/01.DEG_sig.csv\n../00_rawdata/ACR.csv\n../02_venn/01.Intersection_gene.csv\nstring_interactions_short.tsv\n../02_venn/01.Intersection_gene.csv",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "/data/nas2/TCGA/COAD/COAD.gdc_2025.5.rda",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "rda",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r；读取行 33；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r",
+          "observedFieldReferences": [
+            {
+              "name": "results",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "file_id",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_type",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 40,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "barcode",
+              "line": 41,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ID",
+              "line": 66,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_type",
+              "line": 87,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Type",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "vital_status",
+              "line": 115,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS",
+              "line": 123,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS.time",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Symbol",
+              "line": 348,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "source_name_ch1",
+              "line": 382,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "/data/nas2/TCGA/READ/READ.gdc_2025.5.rda",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "rda",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r；读取行 179；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.00_rawdata.r",
+          "observedFieldReferences": [
+            {
+              "name": "results",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "file_id",
+              "line": 27,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene_type",
+              "line": 35,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample",
+              "line": 40,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "barcode",
+              "line": 41,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ID",
+              "line": 66,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 78,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "sample_type",
+              "line": 87,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Type",
+              "line": 95,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "vital_status",
+              "line": 115,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS",
+              "line": 123,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS.time",
+              "line": 124,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Symbol",
+              "line": 348,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "source_name_ch1",
+              "line": 382,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "../00_rawdata/01.count_TCGA.COADREAD_mRNA.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r；读取行 11；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+          "observedFieldReferences": [
+            {
+              "name": "Type",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "change",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "padj",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "log2FoldChange",
+              "line": 32,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "../00_rawdata/01.group_TCGA.COADREAD.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r；读取行 13；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+          "observedFieldReferences": [
+            {
+              "name": "Type",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "change",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "padj",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "log2FoldChange",
+              "line": 32,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "DEGresult_TvsN.RData",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "RData",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r；读取行 23；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+          "observedFieldReferences": [
+            {
+              "name": "Type",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "change",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "padj",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "log2FoldChange",
+              "line": 32,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "../00_rawdata/01.fpkmlog2_TCGA.COADREAD_mRNA.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r；读取行 117；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.01_DEG_DESeq2.r",
+          "observedFieldReferences": [
+            {
+              "name": "Type",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "change",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "padj",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "log2FoldChange",
+              "line": 32,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "../01_DEG_DESeq2/01.DEG_sig.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r；读取行 8；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "../00_rawdata/ACR.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r；读取行 9；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.02_venn.r",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "../02_venn/01.Intersection_gene.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r；读取行 15；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.03_enrichment.r",
+          "observedFieldReferences": [
+            {
+              "name": "symbol",
+              "line": 17,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ENTREZID",
+              "line": 22,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvalue",
+              "line": 31,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ONTOLOGY",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Count",
+              "line": 33,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ymax",
+              "line": 115,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "n",
+              "line": 115,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "ymin",
+              "line": 116,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "xmin",
+              "line": 120,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "xmax",
+              "line": 121,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "string_interactions_short.tsv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "tsv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.04_PPI.r；读取行 19；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.04_PPI.r",
+          "observedFieldReferences": [
+            {
+              "name": "symbol",
+              "line": 17,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "preferredName_A",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "preferredName_B",
+              "line": 32,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "node",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "degree",
+              "line": 39,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "score",
+              "line": 81,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "from",
+              "line": 85,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "to",
+              "line": 85,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "value",
+              "line": 104,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "../02_venn/01.Intersection_gene.csv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "csv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r；读取行 14；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/luolz/CRC-senescence-circadian-interplay/blob/ffeaaa5247fa2df01acb4d3191481aae2e79c7df/scripts/r.05_risk_train.r",
+          "observedFieldReferences": [
+            {
+              "name": "Type",
+              "line": 12,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "symbol",
+              "line": 15,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS.time",
+              "line": 25,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "conf.int",
+              "line": 41,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "coefficients",
+              "line": 44,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "table",
+              "line": 47,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "PH.p",
+              "line": 48,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "HR",
+              "line": 51,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "HR.95L",
+              "line": 66,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "HR.95H",
+              "line": 67,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pvalue",
+              "line": 68,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "id",
+              "line": 72,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "importance",
+              "line": 128,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "predicted",
+              "line": 135,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "risk",
+              "line": 138,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cutpoint",
+              "line": 142,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "riskScore",
+              "line": 145,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "OS",
+              "line": 244,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "TP",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "FP",
+              "line": 248,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "cut.values",
+              "line": 249,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "AUC",
+              "line": 250,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Time",
+              "line": 258,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "gene",
+              "line": 318,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -240289,7 +242807,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-18T09:15:27Z",
+  "generatedAt": "2026-11-18T09:17:24Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -240523,18 +243041,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-18T09:10:59Z",
-    "updatedAt": "2026-11-18T09:15:42Z",
+    "updatedAt": "2026-11-18T09:17:32Z",
     "batchCount": 3,
-    "requests": 66,
-    "aiAttempts": 1,
+    "requests": 101,
+    "aiAttempts": 2,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

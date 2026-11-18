@@ -286,11 +286,42 @@
     "2026-11-18": {
       "newDOIs": [
         "10.1093/bioinformatics/btag696",
+        "10.3389/fimmu.2026.1804974",
         "10.7717/peerj.21758"
       ]
     }
   },
   "candidates": {
+    "10.1186/s12909-026-10014-2": {
+      "checkedAt": "2026-11-18T09:17:16Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1212/nxg.0000000000200449": {
+      "checkedAt": "2026-11-18T09:17:13Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107910": {
+      "checkedAt": "2026-11-18T09:17:10Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.psj.2026.107960": {
+      "checkedAt": "2026-11-18T09:17:07Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3389/fimmu.2026.1804974": {
+      "checkedAt": "2026-11-18T09:17:05Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
     "10.1111/cas.70548": {
       "checkedAt": "2026-11-18T09:15:20Z",
       "status": "pending",
@@ -453,30 +484,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1186/s12909-026-10014-2": {
-      "checkedAt": "2026-11-17T09:49:26Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1212/nxg.0000000000200449": {
-      "checkedAt": "2026-11-17T09:49:24Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107910": {
-      "checkedAt": "2026-11-17T09:49:22Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.psj.2026.107960": {
-      "checkedAt": "2026-11-17T09:49:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.46471/gigabyte.190": {
       "checkedAt": "2026-11-17T09:49:19Z",
@@ -1788,61 +1795,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.3389/fimmu.2026.1804974": {
-      "checkedAt": "2026-10-22T07:03:31Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "可发布正文图、代码、输入或注释不完整；未收录、不占成功名额",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fimmu.2026.1804974",
-        "metadataHash": "0e46ae8f1aeae52d8cdfb4b99b3b6075e8da1380696b3c56b692fef5cefddf8c",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/PMC13272428.1.xml?md5=61682b861ad3ad77362e4a9ae7a3c329",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 693,
-              "sha256": "2c9f3d2588cebaf3af1514c68adbde088212c17627657972de8d1f7484cb995f",
-              "label": "Figure 2",
-              "height": 1021,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g002.jpg?md5=9105cdba37167c60d52aed85a20d050a",
-              "asset": "assets/pmc13272428-2c9f3d2588cebaf3.jpg",
-              "license": "CC BY",
-              "assetSHA256": "2c9f3d2588cebaf3af1514c68adbde088212c17627657972de8d1f7484cb995f",
-              "id": "f2",
-              "captionHash": "a07fb2cd5b5619a8634752c5c0c2e5f2c3d3b98a2adbaa0d2c3527c4c3aee80a"
-            },
-            {
-              "width": 702,
-              "sha256": "c3cf50f0d6e3217442eeb9caee8d118e293c695dec855228876c9dc4d716fdb1",
-              "label": "Figure 4",
-              "height": 987,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13272428.1/fimmu-17-1804974-g004.jpg?md5=e6c441a7401006c732dacf8663c5e08c",
-              "asset": "assets/pmc13272428-c3cf50f0d6e32174.jpg",
-              "license": "CC BY",
-              "assetSHA256": "c3cf50f0d6e3217442eeb9caee8d118e293c695dec855228876c9dc4d716fdb1",
-              "id": "f4",
-              "captionHash": "fdc72347fb17820aa1ddd8793528f0c8921555893fce4193d44cd19c0de65127"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-f54443ba75a18b6a",
-          "doi": "10.3389/fimmu.2026.1804974",
-          "paper": "Senescence-circadian interplay stratifies patient prognosis and reveals immune remodeling heterogeneity in colorectal cancer.",
-          "journal": "Frontiers in immunology",
-          "date": "2026-06-03",
-          "year": "2026",
-          "pmcid": "PMC13272428",
-          "pmid": "42317343",
-          "paperURL": "https://doi.org/10.3389/fimmu.2026.1804974"
-        },
-        "updatedAt": "2026-10-22T07:03:27Z"
-      }
     },
     "10.1186/s40168-026-02433-6": {
       "checkedAt": "2026-10-22T07:03:30Z",
@@ -11518,12 +11470,12 @@
     "batchCount": 3,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "elapsedSeconds": 284,
+    "elapsedSeconds": 393,
     "maxSeconds": 2700,
-    "requests": 66,
+    "requests": 101,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-18T09:15:42Z",
-    "aiAttempts": 1,
+    "updatedAt": "2026-11-18T09:17:32Z",
+    "aiAttempts": 2,
     "status": "active",
     "endReason": "",
     "maxBatches": 36,
@@ -11531,11 +11483,6 @@
     "startedAt": "2026-11-18T09:10:59Z",
     "uncertainRequests": 0,
     "version": 1,
-    "dailyNewCount": 2,
-    "inFlight": {
-      "startedAt": "2026-11-18T09:15:42Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 3
   }
 }
