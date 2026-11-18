@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-17",
+  "checkedAt": "2026-11-18",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -173575,6 +173575,289 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-4855c53e4d1d1f31",
+      "doi": "10.7717/peerj.21758",
+      "paper": "ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.",
+      "journal": "PeerJ",
+      "date": "2026-09-29",
+      "year": "2026",
+      "pmcid": "PMC13632679",
+      "pmid": "42828029",
+      "paperURL": "https://doi.org/10.7717/peerj.21758",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2167-8359",
+      "eissn": "2167-8359",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "43492e9a0af11e45c9f07f4c574e6a7e27d50864c78042bd336ed1b87cb34e56"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/PMC13632679.1.xml?md5=92cfec40b0cf0ddf08f7f801ec61ac17",
+        "figures": [
+          {
+            "id": "fig-1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Simplified overview of the ChoCallate pipeline.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g001.webp?md5=6a9c92c8bd2c3334165ce5f986ab0d58",
+            "articleURL": "https://doi.org/10.7717/peerj.21758",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Aleksey Ermolaev; Mikhail Divashuk. ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.. DOI: 10.7717/peerj.21758. Copyright holder: Ermolaev and Divashuk. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Performance comparison of variant-calling tools used in the pipeline, including GATK4, bcftools, and FreeBayes, under different voting-consensus thresholds and coverage depths.The top row shows precision (A), sensitivity (B), and F1 score (C) for SNPs across different sequencing coverage depths. The middle row shows precision (D), sensitivity (E), and F1 score (F) for indels across different sequencing coverage depths. The bottom row shows the numbers of SNPs (G) and indels (H) detected across different sequencing coverage depths.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g002.webp?md5=e301ba256b41cb1370bccd42fe079858",
+            "articleURL": "https://doi.org/10.7717/peerj.21758",
+            "asset": "assets/pmc13632679-bbbfc252a2f87d2e.webp",
+            "sha256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
+            "width": 1600,
+            "height": 1625,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Aleksey Ermolaev; Mikhail Divashuk. ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.. DOI: 10.7717/peerj.21758. Copyright holder: Ermolaev and Divashuk. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "fig-3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "The distribution of false-negative SNPs across 1 Mbp non-overlapping windows on chromosome 2 of A. thaliana is shown for various coverage depths and calling strategies; distributions for all chromosomes appear in Fig. S1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g003.webp?md5=62a801abbd9a250fd830e8466bc27c17",
+            "articleURL": "https://doi.org/10.7717/peerj.21758",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Aleksey Ermolaev; Mikhail Divashuk. ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.. DOI: 10.7717/peerj.21758. Copyright holder: Ermolaev and Divashuk. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Genome-wide association study (GWAS) for awnedness.Top row: Empirical distributions of variant call rate (A), minor allele frequency (B), and observed heterozygosity (C) used for quality filtering of consensus calling prior to GWAS. Red dashed lines indicate the threshold applied at each filtering step. Bottom row: Results of the GWAS. (D) shows a Manhattan plot of the association between genetic variants identified by ChoCallate and the awnedness phenotype. Significant associations were detected on chromosome 5A. The horizontal red line denotes the genome-wide significance threshold determined by Bonferroni correction at a significance level of 0.01 (8.95 × 10−7). The black arrow marks variants with statistically significant association. (E) presents a quantile–quantile (Q-Q) plot of observed versus expected −log10 (P-values). The genomic inflation factor λgc exhibits a mild elevation (λgc = 1.06), likely attributable to imbalance in the phenotypic categories (150 awned and 50 awnless samples).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g004.webp?md5=c99f28039f90969aacd5e90dd346b3b2",
+            "articleURL": "https://doi.org/10.7717/peerj.21758",
+            "asset": "assets/pmc13632679-e8b4c124cef87c87.webp",
+            "sha256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
+            "width": 1599,
+            "height": 920,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Aleksey Ermolaev; Mikhail Divashuk. ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.. DOI: 10.7717/peerj.21758. Copyright holder: Ermolaev and Divashuk. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplemental Information 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-s001.xlsx?md5=1430bbea5e50ad36000870737a28a3b0",
+            "license": "CC BY",
+            "sha256": "2c1e0ea77df684ff97d5e789801a012bba8b2567d76744b5378462f5ddb851c5",
+            "status": "downloaded_private",
+            "bytes": 8761,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "supp-2",
+            "label": "Supplemental Information 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-s002.xlsx?md5=8122341ecb645eba3d306faa0788d176",
+            "license": "CC BY",
+            "sha256": "e7e978e6a19a0690d636f58a2cb75db2e36cd3168976f89787d359e21b62416f",
+            "status": "downloaded_private",
+            "bytes": 6251,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "supp-3",
+            "label": "Supplemental Information 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-s003.pdf?md5=e8af0c864d413247c79d02d4f30bda2d",
+            "license": "CC BY",
+            "sha256": "94e42b14acd6c52743afc35efe184c140da4d5775d4621af346519f57e132875",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 532118,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 60,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-18T09:12:45.190520+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Aleksey Ermolaev; Mikhail Divashuk"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.9",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-18T09:12:51Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-18T09:12:52Z",
+        "url": "https://openalex.org/W7214776084",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-18T09:12:52Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-18T09:12:52Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-19T09:12:52Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-18T09:13:24Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -237791,6 +238074,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-4855c53e4d1d1f31": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -239409,7 +239698,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-17T09:52:57Z",
+  "generatedAt": "2026-11-18T09:13:25Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -239643,18 +239932,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-18T09:10:59Z",
-    "updatedAt": "2026-11-18T09:11:05Z",
+    "updatedAt": "2026-11-18T09:13:31Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 30,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 1,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

@@ -282,9 +282,44 @@
         "10.7554/elife.101499",
         "10.7554/elife.108950"
       ]
+    },
+    "2026-11-18": {
+      "newDOIs": [
+        "10.7717/peerj.21758"
+      ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag138": {
+      "checkedAt": "2026-11-18T09:13:23Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aee1641": {
+      "checkedAt": "2026-11-18T09:13:14Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-18T09:13:04Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-18T09:12:54Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7717/peerj.21758": {
+      "checkedAt": "2026-11-18T09:12:52Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1183/13993003.02049-2025": {
       "checkedAt": "2026-11-17T09:52:51Z",
       "status": "pending",
@@ -356,61 +391,6 @@
           "paperURL": "https://doi.org/10.7554/elife.109761"
         },
         "updatedAt": "2026-11-17T09:52:41Z"
-      }
-    },
-    "10.7717/peerj.21758": {
-      "checkedAt": "2026-11-17T09:52:37Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7717/peerj.21758",
-        "metadataHash": "689ab41ff62bbb1bcc2561f1a127386f8b72a3c886cc2ca93ffc6b9e5741241d",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/PMC13632679.1.xml?md5=92cfec40b0cf0ddf08f7f801ec61ac17",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "label": "Figure 2",
-              "height": 1625,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g002.webp?md5=e301ba256b41cb1370bccd42fe079858",
-              "asset": "assets/pmc13632679-bbbfc252a2f87d2e.webp",
-              "assetSHA256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
-              "width": 1600,
-              "sha256": "bbbfc252a2f87d2e609a3379711864c6db0ad26e40183a6dfac6ec63aa9fa7f9",
-              "id": "fig-2",
-              "captionHash": "44329dd21d2578ca98c3944781e27337d14d71e4cdf8c7b4e1d1c7f7eccd0bd3"
-            },
-            {
-              "license": "CC BY",
-              "label": "Figure 4",
-              "height": 920,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13632679.1/peerj-14-21758-g004.webp?md5=c99f28039f90969aacd5e90dd346b3b2",
-              "asset": "assets/pmc13632679-e8b4c124cef87c87.webp",
-              "assetSHA256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
-              "width": 1599,
-              "sha256": "e8b4c124cef87c878db648bb32c0cfa3e8fd9f27bb71f69dbe5e347f5073c0d1",
-              "id": "fig-4",
-              "captionHash": "26829fdc01c41049b62398562a02de2fc849b50c5d7c1174a7ede747fe21a98c"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4855c53e4d1d1f31",
-          "doi": "10.7717/peerj.21758",
-          "paper": "ChoCallate: a computational pipeline for consensus germline variant calling in genomic sequencing data.",
-          "journal": "PeerJ",
-          "date": "2026-09-29",
-          "year": "2026",
-          "pmcid": "PMC13632679",
-          "pmid": "42828029",
-          "paperURL": "https://doi.org/10.7717/peerj.21758"
-        },
-        "updatedAt": "2026-11-17T09:52:35Z"
       }
     },
     "10.1002/jex2.70197": {
@@ -502,30 +482,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1093/nargab/lqag138": {
-      "checkedAt": "2026-11-17T09:46:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aee1641": {
-      "checkedAt": "2026-11-17T09:46:30Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-17T09:46:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-17T09:46:27Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.3390/mps9050136": {
       "checkedAt": "2026-11-17T09:46:24Z",
@@ -11610,11 +11566,11 @@
     "batchCount": 1,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "elapsedSeconds": 6,
+    "elapsedSeconds": 152,
     "maxSeconds": 2700,
-    "requests": 0,
+    "requests": 30,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-18T09:11:05Z",
+    "updatedAt": "2026-11-18T09:13:31Z",
     "aiAttempts": 0,
     "status": "active",
     "endReason": "",
@@ -11623,11 +11579,6 @@
     "startedAt": "2026-11-18T09:10:59Z",
     "uncertainRequests": 0,
     "version": 1,
-    "dailyNewCount": 0,
-    "inFlight": {
-      "startedAt": "2026-11-18T09:11:05Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 1
   }
 }
