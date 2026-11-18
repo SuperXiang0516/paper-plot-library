@@ -11563,14 +11563,14 @@
     }
   },
   "dailyCollectionSession": {
-    "batchCount": 1,
+    "batchCount": 2,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "elapsedSeconds": 152,
+    "elapsedSeconds": 161,
     "maxSeconds": 2700,
     "requests": 30,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-18T09:13:31Z",
+    "updatedAt": "2026-11-18T09:13:40Z",
     "aiAttempts": 0,
     "status": "active",
     "endReason": "",
@@ -11579,6 +11579,11 @@
     "startedAt": "2026-11-18T09:10:59Z",
     "uncertainRequests": 0,
     "version": 1,
-    "dailyNewCount": 1
+    "dailyNewCount": 1,
+    "inFlight": {
+      "startedAt": "2026-11-18T09:13:40Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
