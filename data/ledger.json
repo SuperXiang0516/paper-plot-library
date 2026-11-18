@@ -285,6 +285,7 @@
     },
     "2026-11-18": {
       "newDOIs": [
+        "10.1002/imt2.70150",
         "10.1093/bioinformatics/btag696",
         "10.1172/jci.insight.197310",
         "10.3389/fimmu.2026.1804974",
@@ -293,6 +294,85 @@
     }
   },
   "candidates": {
+    "10.1183/13993003.02049-2025": {
+      "checkedAt": "2026-11-18T09:21:22Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/dmso.s653174": {
+      "checkedAt": "2026-11-18T09:21:19Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1158/2159-8290.cd-25-0761": {
+      "checkedAt": "2026-11-18T09:21:17Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7554/elife.109761": {
+      "checkedAt": "2026-11-18T09:20:59Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.7554/elife.109761",
+        "metadataHash": "d38080c2295c8d6925d9962f0dad05578684741570b6a0d51a837a345acfc79a",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=a26e5785bc0f110ae148c1159e14a663",
+          "license": "CC BY",
+          "figures": [
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
+              "license": "CC BY",
+              "width": 1600,
+              "label": "Figure 3.",
+              "id": "fig3",
+              "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
+              "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+              "height": 648,
+              "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+              "captionHash": "5476502ee091a9d334b0453112dd81efd9b0cbeb7d2fbbd43893f2cd40a9e2ac"
+            },
+            {
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
+              "license": "CC BY",
+              "width": 1600,
+              "label": "Figure 5.",
+              "id": "fig5",
+              "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
+              "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+              "height": 1726,
+              "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+              "captionHash": "117ea4da5457d4175ad603c82a17a29ebc352aa15991b2d9da76fbb6cf48ceee"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-766672fb4c243c95",
+          "doi": "10.7554/elife.109761",
+          "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
+          "journal": "eLife",
+          "date": "2026-11-11",
+          "year": "2026",
+          "pmcid": "PMC13754279",
+          "pmid": "43012634",
+          "paperURL": "https://doi.org/10.7554/elife.109761"
+        },
+        "updatedAt": "2026-11-18T09:20:57Z"
+      }
+    },
+    "10.1002/imt2.70150": {
+      "checkedAt": "2026-11-18T09:20:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1002/jex2.70197": {
       "checkedAt": "2026-11-18T09:19:10Z",
       "status": "pending",
@@ -413,78 +493,11 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1183/13993003.02049-2025": {
-      "checkedAt": "2026-11-17T09:52:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/dmso.s653174": {
-      "checkedAt": "2026-11-17T09:52:48Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.7554/elife.101499": {
       "checkedAt": "2026-11-17T09:52:47Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.7554/elife.109761": {
-      "checkedAt": "2026-11-17T09:52:41Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7554/elife.109761",
-        "metadataHash": "d38080c2295c8d6925d9962f0dad05578684741570b6a0d51a837a345acfc79a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=863b7a9a835a13a7505c529debf1d9c2",
-          "license": "CC BY",
-          "figures": [
-            {
-              "license": "CC BY",
-              "label": "Figure 3.",
-              "height": 648,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
-              "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
-              "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "width": 1600,
-              "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "id": "fig3",
-              "captionHash": "5476502ee091a9d334b0453112dd81efd9b0cbeb7d2fbbd43893f2cd40a9e2ac"
-            },
-            {
-              "license": "CC BY",
-              "label": "Figure 5.",
-              "height": 1726,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
-              "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
-              "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "width": 1600,
-              "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "id": "fig5",
-              "captionHash": "117ea4da5457d4175ad603c82a17a29ebc352aa15991b2d9da76fbb6cf48ceee"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-766672fb4c243c95",
-          "doi": "10.7554/elife.109761",
-          "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
-          "journal": "eLife",
-          "date": "2026-11-11",
-          "year": "2026",
-          "pmcid": "PMC13754279",
-          "pmid": "43012634",
-          "paperURL": "https://doi.org/10.7554/elife.109761"
-        },
-        "updatedAt": "2026-11-17T09:52:41Z"
-      }
     },
     "10.1371/journal.pone.0358259": {
       "checkedAt": "2026-11-17T09:50:47Z",
@@ -795,12 +808,6 @@
     },
     "10.2337/db26-0158": {
       "checkedAt": "2026-11-09T08:49:13Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1158/2159-8290.cd-25-0761": {
-      "checkedAt": "2026-11-09T08:49:12Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -2027,61 +2034,6 @@
       "status": "pending",
       "retryClass": "transient",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/imt2.70150": {
-      "checkedAt": "2026-10-22T07:00:23Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/imt2.70150",
-        "metadataHash": "2c3a820f48c6fc2aa388bf671af875f33a57d00287885a56143b084abfe3aaef",
-        "article": {
-          "status": "inspected",
-          "version": "2",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13401611.2/PMC13401611.2.xml?md5=19e0a9d1a564c3872dcaf914c5619271",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 910,
-              "sha256": "24270109ac1e5b6aaed1439d30b03ba71f3e65874b65bdce04f6f876d5b894a6",
-              "label": "Figure 2",
-              "height": 1339,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13401611.2/IMT2-5-e70150-g005.webp?md5=5424f364373c79fd74122fb403e77b93",
-              "asset": "assets/pmc13401611-24270109ac1e5b6a.webp",
-              "license": "CC BY",
-              "assetSHA256": "24270109ac1e5b6aaed1439d30b03ba71f3e65874b65bdce04f6f876d5b894a6",
-              "id": "imt270150-fig-0002",
-              "captionHash": "996854a1783c17d52b5fee564f2100ac6f78eb7093e3a0617f531c48ecee4bd0"
-            },
-            {
-              "width": 910,
-              "sha256": "51ca2a8696d3fce204b2714cd5b27c992852b648d0bf55e80fc0caaa10405819",
-              "label": "Figure 3",
-              "height": 834,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13401611.2/IMT2-5-e70150-g008.webp?md5=f770f8cb7b06dd83fe3cc39ce0a0c37a",
-              "asset": "assets/pmc13401611-51ca2a8696d3fce2.webp",
-              "license": "CC BY",
-              "assetSHA256": "51ca2a8696d3fce204b2714cd5b27c992852b648d0bf55e80fc0caaa10405819",
-              "id": "imt270150-fig-0003",
-              "captionHash": "92b59a434c2cef7f4e56d8e0326a9ab6ac9f5feb38f734db251e218c2aa93c84"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-532149ab73857cb9",
-          "doi": "10.1002/imt2.70150",
-          "paper": "Hyperoside alleviates endometrial stromal cell senescence in unexplained recurrent spontaneous abortion via DHX9-mediated R-loop resolution.",
-          "journal": "iMeta",
-          "date": "2026-07-13",
-          "year": "2026",
-          "pmcid": "PMC13401611",
-          "pmid": "42504169",
-          "paperURL": "https://doi.org/10.1002/imt2.70150"
-        },
-        "updatedAt": "2026-10-22T07:00:22Z"
-      }
     },
     "10.1038/s41598-026-52974-x": {
       "checkedAt": "2026-10-22T07:00:20Z",
@@ -11422,11 +11374,11 @@
     "batchCount": 5,
     "uncertainAiAttempts": 0,
     "maxRequests": 1800,
-    "elapsedSeconds": 510,
+    "elapsedSeconds": 631,
     "maxSeconds": 2700,
-    "requests": 125,
+    "requests": 158,
     "maxAiAttempts": 165,
-    "updatedAt": "2026-11-18T09:19:28Z",
+    "updatedAt": "2026-11-18T09:21:30Z",
     "aiAttempts": 2,
     "status": "active",
     "endReason": "",
@@ -11435,11 +11387,6 @@
     "startedAt": "2026-11-18T09:10:59Z",
     "uncertainRequests": 0,
     "version": 1,
-    "dailyNewCount": 4,
-    "inFlight": {
-      "startedAt": "2026-11-18T09:19:28Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 5
   }
 }
