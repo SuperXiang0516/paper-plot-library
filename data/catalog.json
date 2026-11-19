@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-18",
+  "checkedAt": "2026-11-19",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -176952,6 +176952,2222 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-91d66d952f4073a4",
+      "doi": "10.1002/advs.76740",
+      "paper": "Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-07-27",
+      "year": "2026",
+      "pmcid": "PMC13403736",
+      "pmid": "42505084",
+      "paperURL": "https://doi.org/10.1002/advs.76740",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "d61b9bb896e170b757d42a53d21d90298f8145bee79c151611066cb268bf1e68"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "2",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/PMC13403736.2.xml?md5=d5ada9e310abc200769023c67c291f7b",
+        "figures": [
+          {
+            "id": "advs76740-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The age‐shift classifier enables accurate cross‐platform prediction of relative transcriptomic age. (a) Overview of the evaluated modelling strategies. Models were trained and tested exclusively on samples from healthy donors. (b–d) Schematic diagrams of the regression (b), traditional classifier (c), and age‐shift classifier (d) strategies. (e) Comparative performance in predicting relative age, assessed using leave‐one‐dataset‐out cross‐validation. All samples were rank transformed except for REG_RC and AS40_RC where raw counts were used. The y‐axis shows the Pearson Correlation Coefficient (PCC) between chronological ages and predicted age scores in the held‐out datasets. (f–h) Age predictions for single‐cell RNA‐Seq aging atlases of the retina [45] (f), skin [46] (g), and lung [44] (h). Abbreviations: REG, regression; AS30/40/50, age‐shift classifier with 30, 40, or 50 year age difference; TC_30_70 and TC_40_60, traditional classifiers with young cutoffs at 30 or 40 years and old cutoffs at 70 or 60 years; RC, raw counts.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g007.webp?md5=7d66353df3046f0d2d257568eb5fe883",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "assets/pmc13403736-b16fe6f4eb0df19c.webp",
+            "sha256": "b16fe6f4eb0df19c9c4e30448f4916e6ceb61fe2dacb5479bc2c6f2a696fc0c5",
+            "width": 820,
+            "height": 620,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b16fe6f4eb0df19c9c4e30448f4916e6ceb61fe2dacb5479bc2c6f2a696fc0c5",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs76740-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Pasta predicts transcriptomic age across tissues through p53‐linked signals. (a, b) Pearson Correlation Coefficient (PCC) of age scores for Pasta, MultiTIMER [30], and elastic net multi‐species tAge clocks [33], compared with chronological ages for healthy individuals. (a) Results from the leave‐one‐dataset‐out analysis. (b) Results on external validation datasets. (c, d) PCC of age scores for Pasta compared with chronological age for mouse datasets GSE40156 (c) and GSE167665 (d). (e) Gene set enrichment analysis (GSEA) of Pasta coefficients using the REACTOME, CGP, KEGG and miRDB gene sets from the Human MSigDB Collections. The gray lines mark the adjusted p‐value cutoff of 0.05. (f, g) Top ten genes with the most positive (f) and negative (g) coefficients.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g006.webp?md5=c55cff38511d03e622ce7867b41b5284",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76740-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Pasta identifies senescent and stem cells and may help stratify tumor grade and patient overall survival. (a‐b) Pasta's ability to discriminate between senescent and proliferative (a) or quiescent (b) cells, assessed using AUC‐ROC (Area Under the Curve of the Receiver Operating Characteristic) values, across multiple RNA‐Seq datasets. (c) Pasta's predictions on a microarray senescence time course dataset [56]. (d) Pasta was applied to pseudobulks from a SciPlex dataset generated by exposing the A549 cell line to 138 drugs [57], and the resulting age scores were evaluated for their capacity to recover senescence‐inducing drugs, as reported in Wang et al. 2017 [58]. Only the highest drug concentration (10 µM) was used for this analysis. (e, f) Pasta's ability to discriminate between stem cells (e) or induced‐pluripotent stem cells (iPSCs) (f) and fibroblasts, assessed by AUC‐ROC. (g) Pasta's age scores on a bulk RNA‐Seq OSKM‐mediated reprogramming time‐course dataset [59]. (h) Pasta's age scores on a bulk RNA‐Seq liver differentiation time‐course dataset [60]. (i) Forest plot of odds ratios for higher tumor grade per 1 standard deviation increase in Pasta's age score. Points show cancer‐specific estimates with 95% confidence intervals on a logarithmic scale. Red and black indicate significant and non‐significant false discovery rate–adjusted likelihood ratio test results, respectively. (j, k) Boxplots of Pasta's age scores for breast invasive carcinoma (j) and kidney renal clear cell carcinoma (k) patients, grouped by tumor grade. (l) Forest plot of hazard ratios per 1 standard deviation increase in Pasta's age score. Points show cancer‐specific estimates with 95% confidence intervals on a logarithmic scale. Cancer types are restricted to the 15 with the largest absolute deviation of the hazard ratio from 1 for visualization. Red and black indicate significant and non‐significant false discovery rate–adjusted likelihood ratio test results, respectively. (m–n) Kaplan–Meier survival estimates for adrenocortical carcinoma (m) and thymoma (n) patients, grouped by age score tertiles.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g001.webp?md5=92f6376b936c4b0fc838e632435f24f3",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "assets/pmc13403736-1e6a64f38336aa38.webp",
+            "sha256": "1e6a64f38336aa38e9fd8a24befc696caaae02e02c0e10c55d25e396e171df1f",
+            "width": 820,
+            "height": 848,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1e6a64f38336aa38e9fd8a24befc696caaae02e02c0e10c55d25e396e171df1f",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs76740-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Pasta identifies age‐modulatory compounds. (a–d) Yellow, blue, green, and black indicate drug classes or compounds from drug classes that induce senescence [66], promote reprogramming [67], affect both processes, or neither, respectively. (a) Volcano plot showing the most significant Rejuvenating compounds with negative delta age scores and Aging compounds with positive delta age scores. For display purposes, p‐values equal to zero were set to 10−300. (b) Proportion of compounds annotated as senescence‐inducing, pro‐reprogramming, both, or neither for significantly age‐increasing (Aging), age‐decreasing (Rejuvenating), and other (Other) compounds. (c, d) Significantly enriched mechanisms of action (MOA) for Aging (c) and Rejuvenating (d) compounds. The gray lines mark the adjusted p‐value cutoff of 0.05. (e) Heatmap of compounds by cell line showing the most significant delta age scores (see Methods). Colors indicate the square root of a metric balancing significance and effect size: ‐log10(p‐value) × mean(delta age score). Missing values are shown in gray.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g002.webp?md5=0f44f67cd28a948cf95687c7ad6bc54d",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76740-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Experimental validation of pralatrexate as a senescence‐inducer and piperlongumine as a rejuvenating agent. (a–h) Testing senescence‐induction by pralatrexate in responder A375 and non‐responder MDA‐MB‐231 cells. (a, e) Representative images from Senescence Associated Beta Galactosidase assays in A375 (a) and MDA‐MB‐231 (e) cells exposed to pralatrexate. Doxorubicin served as the positive control for senescence induction. Scale bar 10 micrometers. (b, f) qPCR analysis of CDKN1A and IL6 mRNA levels in A375 (b) and MDA‐MB‐231 (f) cells treated with pralatrexate or doxorubicin. N = 3 biological replicates; *p < 0.05; *** p < 0.001; one‐way ANOVA. (c, g) Cell proliferation by EdU incorporation in A375 (c) and MDA‐MB‐231 (g) cells after treatment with pralatrexate or doxorubicin. One representative experiment with three replicates per condition. ** p < 0.01; *** p < 0.001 (one‐way ANOVA, calculated on EdU+ cells). (d, h) Immunoblotting showing LMNB1, CDKN1A and GAPDH protein levels in A375 (d) and MDA‐MB‐231 (h) cells after treatment with pralatrexate or doxorubicin. N = 3 biological replicates. (i–l) Testing stemness‐induction of piperlongumine in responder PC3 and non‐responder MCF7 cells. (i, k) qPCR analysis of OCT4, SOX2 and NANOG levels in PC3 (i) and MCF7 (k) cells exposed to piperlongumine. * p < 0.05; Student's t test. (j,l) Immunoblotting showing OCT3/4 and alpha‐tubulin protein levels in PC3 (j) and MCF7 (l) cells treated with piperlongumine. Abbreviations: Prltx, pralatrexate; Doxo, doxorubicin; Piplng, piperlongumine; ns, non‐significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g003.webp?md5=2887af291777996658b0e4fa34566898",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76740-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Pasta identifies age‐modulatory gene perturbations. (a) Volcano plot displaying the most significant Rejuvenating gene perturbations (GPs) with negative delta age scores and Aging GPs with positive delta age scores. (b–f) Enrichment analysis using the Hallmarks of Aging [84] (b, c) and REACTOME (d–f) gene sets for Rejuvenating pooled GPs (b, d), Aging pooled GPs (c, e), and Aging pooled GPs that are also compound targets of significant Aging compounds (f). Significant results from the three GP types (OE, KD, and KO) were pooled, with overexpression results inverted (i.e., MYC OE was included in the Aging GP set). Gray lines mark the adjusted p‐value cutoff of 0.05. (g) Heatmap of GPs by cell lines showing the most significant delta age scores (see Methods). Colors indicate the square root of a metric balancing significance and effect size: ‐log10(p‐value) × mean(delta age score). Missing values are shown in gray.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g005.webp?md5=8a14a3a9b674106f38254524d21db745",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs76740-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Pasta uncovers molecular determinants of cellular propensity for aging and rejuvenation. (a) Propensity of various cell lines to shift toward older or younger states following exposure to age‐regulatory perturbations (see Methods). (b) Gene mutation counts most strongly negatively correlated with the propensity for aging. (c) TP53 mutation count versus propensity for aging. (d–i) REACTOME pathway enrichment for genes whose protein abundance (d, g, i), mRNA expression (e), and copy numbers (f, h) exhibit an absolute PCC higher than 0.4 with the propensity of cells for rejuvenation (d–f) and aging (g–i). The gray lines mark the adjusted p‐value cutoff of 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g004.webp?md5=5aae8038142b9904dd6b450cf88bd697",
+            "articleURL": "https://doi.org/10.1002/advs.76740",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al.. Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation.. DOI: 10.1002/advs.76740. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs76740-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs76740-supitem-0001",
+            "label": "Supporting File 1: advs76740‐sup‐0001‐SuppMat.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-s003.docx?md5=84b1838f1c73403832ade0c8a45fc51b",
+            "license": "CC BY",
+            "sha256": "e2aafc1346070ddc1ab7654a2d451b9e19c6468b939352e8d3d04348ab66dbfd",
+            "status": "downloaded_private",
+            "bytes": 24550,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs76740-supitem-0002",
+            "label": "Supporting File 2: advs76740‐sup‐0002‐Extended_Data.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-s001.docx?md5=197c762b13f9646a3fd1c4acb4c01ab3",
+            "license": "CC BY",
+            "sha256": "6494998aca92953afdf7a03dc453a71956dd2d46efe2a0942da8e2b13e820ee7",
+            "status": "downloaded_private",
+            "bytes": 3177200,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs76740-supitem-0003",
+            "label": "Supporting File 3: advs76740‐sup‐0003‐TableS1‐S22.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-s002.xlsx?md5=ae626f16723c62cd388b6c8118a853eb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-19T09:34:16.575090+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Jérôme Salignon; Maria Tsiokou; Patricia Marqués; Enriqueta Rodríguez‐Diaz; Hazel Ang; Federico Pietrocola; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-19T09:34:19Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-19T09:34:19Z",
+        "url": "https://openalex.org/W4411021267",
+        "cited_by_count": 5,
+        "fwci": 5.0553,
+        "citation_normalized_percentile": 0.95623632,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-19T09:34:19Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-19T09:34:19Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-20T09:34:19Z"
+        }
+      },
+      "selectionScore": {
+        "total": 66.7811816,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.7811816,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-19T09:35:47Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-7ec3fd6ebbf807cc",
+      "doi": "10.1111/acel.70674",
+      "paper": "Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.",
+      "journal": "Aging cell",
+      "date": "2026-09-01",
+      "year": "2026",
+      "pmcid": "PMC13494364",
+      "pmid": "42625389",
+      "paperURL": "https://doi.org/10.1111/acel.70674",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "58786e10943c9ca8e72426617338f57d71dfbef5c09cebab043186dfd339ad6e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/PMC13494364.1.xml?md5=633ec93803548b9962b86687019630a0",
+        "figures": [
+          {
+            "id": "acel70674-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Single‐cell transcriptomic atlas of mouse taste papillae across aging. (A) Workflow for integrative analysis using scRNA‐seq and Stereo‐seq data. (B) Left: UMAP visualization of 18 cell clusters from integrated scRNA‐seq data. Right: Bar plot showing log‐normalized cell counts per cluster, colored by celltype annotation. (C) UMAP visualization showing cells from each taste papilla type highlighted in a unique color, with cells from the other papillae shown in gray. (D) Compositional bar chart showing cell‐type proportions across samples. (E) Gene expression plot displaying expression of key marker genes in each celltype, with gray for low and red for high expression. (F) Top: Spatial (SP) distribution of cells in representative taste bud regions. Bottom: Corresponding H&E‐stained histological sections from three taste papillae types. The color scheme used in all subpanels (A–F) is consistent with that shown in panel (B). (G) Heatmap of z‐score normalized expression for the top 30 marker genes per cell type. (H) Enriched GO biological processes for each cell population.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g003.webp?md5=677e0f9ebe0760147eb1ff12c4912cf8",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "assets/pmc13494364-413944a2873d02ca.webp",
+            "sha256": "413944a2873d02ca01e9e577b27a3e79baf6025884d9be97391ad2070d11e8c0",
+            "width": 1064,
+            "height": 1494,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "413944a2873d02ca01e9e577b27a3e79baf6025884d9be97391ad2070d11e8c0",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70674-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Comparative analysis reveals cell‐type and niche signatures underlying age‐related taste function decline. (A) UMAP showing the distribution of three tissue groups. (B–D) Left: Feature plots of compartment‐specific gene expression (Epcam, non‐keratinized epithelium; Krt13, keratinized epithelium; Vim, lamina propria). Right: Violin plots showing expression levels across cell types. (E) UMAP visualization of tissue group distributions in CV, FL, and FF. (F) Stacked bar plot showing the cell‐type composition of the three tissue groups. (G) Confocal microscopy images of CV, FL and FF papillae at M3 and M24 time points. Tissues were stained for basal keratinocytes (Krt5), pan‐gustatory cells (Krt8), squamous epithelial cells (Krt13) and lamina propria (Vim). No significant structural alteration was observed with aging. (H) Representative GO term score of CV, FL, and FF across different time points. (I) Normalized expression of taste‐associated genes at M3 and M24. (J) Bar plot showing taste related GO term scores at M3 and M24. (K) Temporal changes in cellular composition of three tissue groups. (L) Spatial distribution of MTC and TPC at M2 and M24. The cascaded magnification images showing quantification of MTC‐TPC distance based on Euclidean distance to nearest neighbor, arrows indicate the directions from each MTC to its nearest TPC. (M) Box plot illustrating significantly reduced MTC‐TPC distances at M24 compared to M3. (N, O) Violin plot indicating decreased migration and proliferation scores in TPC at M24. (P) Bar plot showing age‐dependent reduction in the proportion of immature MTC. *p < 0.05, ***p < 0.001 (two‐tailed Student's t‐test). Scale bar, 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g006.webp?md5=2d5921373f8d2bee15d94a441282445b",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70674-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Gene expression alterations and impaired regeneration of taste cells with aging. (A) Diagram showing flowchart of taste cell classification analysis with machine learning. The dataset was randomly split into training and test sets at a 3:2 ratio. The model was trained with 5‐fold cross validation, and test dataset was used to evaluate the performance of model. (B) ROC curves indicating model accuracy across P0, P14, M3, M12 and M24 time points. Higher AUC values reflect improved ability to classify the time points. (C) Confusion matrix showing the distribution of prediction errors across time points. Color gradient (blue) represents classification proportion (darker = higher proportion). Overall accuracy = 98.70%. (D, E) Left: Venn diagrams showing overlap of DEGs from pairwise comparisons between M24 and other time points for MTC and TPC (orange, upregulated; green, downregulated). Right: Enriched GO terms among all up‐ (orange) and down‐regulated (green) DEGs. (F) UMAP plot showing the subclustering of MTC and TPC. (G) Dot plot depicting taste cell subtype abundance across the five time points, dot size corresponds to subtype proportion. (H) Pseudotime trajectories illustrating differentiation dynamics of taste cell subtypes from P0 to M24. Black curves represent inferred developmental paths. (I, J) Confocal images and quantification of PLCβ2 (Type II MTC marker), Krt8 (pan MTC marker) and Car4 (Type III MTC marker) signal intensities in taste organoids derived from P0, M3 and M24 aged mice. ns, not significant; **p < 0.01, ***p < 0.001, ****p < 0.0001 (unpaired t‐test). Scale bars, 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g007.webp?md5=5f4ff9c5dc8270a4d8c44e1392ed0839",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "assets/pmc13494364-7167398ee012520c.webp",
+            "sha256": "7167398ee012520cc61980390d739804812ac0082d1b2dbf6701613db05e35b7",
+            "width": 1064,
+            "height": 1292,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7167398ee012520cc61980390d739804812ac0082d1b2dbf6701613db05e35b7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70674-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Inflamm‐aging enhances intercellular communication between MF and taste cells. (A, B) Gene set score for inflammatory response and SASP across cell populations. Most cell types exhibit higher scores at M24 (red) than M3 (orange) time points. Immune cells (dashed boxes) showing significant stage‐dependent differences. (C) Left: Venn diagram showing the number of overlapping genes between M24‐upregulated DEGs per cell type and the inflammatory response gene set from (A). Right: Heatmap of key intersection genes with elevated expression across all cell types at M24. (D) Co‐localization analysis showing the co‐occurrence probability of taste cells and immune cells within whole CV at M24. MF exhibits higher co‐localization probability with TPC than with TC at shorter distances. (E) Distribution of taste and immune cells in taste bud concentrated regions of CV papillae at M3 and M24. Black arrowheads indicate rare T cells. (F) Box plots showing significantly decreased distances from MF to MTC (top) and TPC (bottom) at M24 relative to M3. Distance metrics follow Figure 2L. (G, H) Confocal images and quantification of F4/80 (macrophage marker) and Krt8 (pan MTC marker) signal intensities in CV, FL and FF papillae at M3 and M24. n = 6 sections per group. Sections were collected from 3 mice per age group. (I) Network visualization of differential interaction strength between M3 and M24. Nodes represent cell types; red edges indicate M24 > M3, blue M24 < M3; thickness reflects differential interaction strength. (J) Bar plot of total interaction count, elevated at M24 compared to M3. (K) Stacked bars showing relative information flow for pathways grouped into inflammation, growth factors, and ECM categories. (L, M) Heatmaps of the incoming (L) and outgoing (M) signaling patterns for taste and immune cells at M3 (left) and M24 (right). *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001; ns, not significant (two‐tailed Student's t‐test for B, unpaired t‐test for H). Scale bars, 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g008.webp?md5=0c0ec07c4ea0bf4238eb2248bdc01685",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70674-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Aging disrupts macrophage polarization homeostasis and impairs taste cell regeneration. (A) UMAP visualization of MF subclustering. (B) Expression patterns of molecular markers for specific MF subtypes; gray indicates low expression, and purple gradients denote elevated expression. (C, D) Heatmap showing age‐associated expression changes of key DEGs across MF subtypes. Line plots illustrate expression dynamics of key DEGs within corresponding subtypes; dashed lines indicate mean expression, and shaded areas representing 95% confidence intervals. GO terms on the right indicate enriched biological processes for each specific subtype. (E, F) Box plots of M1‐like and M2‐like polarization scores across MF subtypes at M24. (G, H) Immunofluorescence images (Arg1, Krt8, DAPI) and quantification of Arg1+ cells in CV from M3 and M24 mice. (I, J) Arg1 expression levels among all celltypes and taste cells at M3 and M24. (K) Flowchart of Macrophage‐ co‐culture system. RAW264.7 macrophages were polarized into M0‐, M1‐, or M2‐like states, and their conditioned media were applied to CV‐derived taste organoids. Created in https://BioRender.com. (L) Immunofluorescence staining of taste organoids (cultured for14 days) co‐cultured with control medium or M0/M1/M2‐like macrophage‐conditioned media, labeled with Krt8, Mki67, Car4 and DAPI. (M, N) Quantification of Krt8 and Car4 per organoid under each treatment condition. *p < 0.05, ***p < 0.001, ****p < 0.0001 (unpaired t‐test). Scale bars, 50 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g004.webp?md5=4358e04e90bbe0adc279014dc49eb891",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70674-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Thbs1‐mediated macrophage–taste cell crosstalk suppresses taste organoid proliferation and differentiation. (A) Chord diagram depicting Mif‐(Cd74 + Cd44) signaling interactions between taste cell and MF subtypes at M24; ribbon color and thickness reflects interaction specificity and strength, respectively. (B, C) Immunofluorescence images and quantification of Cd74 in CV from M3 and M24 mice. (D) Expression level of Cd74 in MF at M3 and M24. (E) Dot plot of key ligand‐receptor pairs underlying MF to taste cell subtypes interactions at M24. (F) Violin plot showing age‐related expression trends of key ligands (in MF subtypes) and corresponding receptors (in taste cell subtypes) across developmental stages. (G) Bright‐field and immunofluorescence images of taste organoids (cultured for 9 days) treated with recombinant Thbs1 at different concentrations. Organoids were stained for Ki67, Krt8, and DAPI. (H) Quantification of Ki67+ cells per organoid after Thbs1 treatment. (I, J) Quantification of organoid size and representative bright‐field images of taste organoids (cultured for 6 days) treated with Thbs1, Tgfβ1, or their combination. (K) RT‐qPCR analysis of mRNA expression levels of Lgr5, Krt8, Plcβ2, and Car4 in taste organoids (cultured for 9 days) after Thbs1 treatment (100 ng/mL). n = 3 independent experiments per group. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001 (unpaired t‐test). Scale bars, 100 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g001.webp?md5=fa7c7423587224eead53e966a96dbc28",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70674-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Age related master regulators in the transcriptional network of taste cells. (A, B) Regulatory networks of key ligand‐mediated interactions in taste cell subtypes at M24. Orange edges represent upregulated interactions and blue edges indicate downregulation. (C) Heatmap showing expression of TFs with significant shifts within taste cell subtypes in M24, identified by intersecting DEGs (|Log2FC| > 0.5, p < 0.05) with predicted TFs. (D) Visualization of the regulatory network among target genes controlled by TFs identified in (C). (E) Dot plot illustrating subtype‐specific up‐ and down‐regulation of selected TFs across taste cell subtypes in M24. Red indicates upregulation, blue represents downregulation. (F) Gene co‐expression networks highlighting modules 1, 8, and 16 in taste cells. Nodes represent genes; edges indicate co‐expression relationships. The top 15 hub genes (by connectivity) are shown in the center, surrounded by 20 peripheral genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g005.webp?md5=a6e29be273558e80d68192d4b257498f",
+            "articleURL": "https://doi.org/10.1111/acel.70674",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al.. Molecular Mechanisms of Age-Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics.. DOI: 10.1111/acel.70674. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70674-supitem-0001",
+            "label": "Figure S1: Spatially resolved single‐cell transcriptomic atlas of mouse taste papillae.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s011.pdf?md5=e70b273cf935589ebb39d6ce7a440d00",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "acel70674-supitem-0002",
+            "label": "Figure S2: Cell identify marker expression and age associated pathway remodeling across three tissues.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s002.pdf?md5=533a2a12d882be0341874e6a89426b77",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "acel70674-supitem-0003",
+            "label": "Figure S3: Gene expression patterns in taste cell subtypes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s008.pdf?md5=7cb717b1517e37db97cd9a7039ba0156",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "acel70674-supitem-0004",
+            "label": "Figure S4: Comparative analysis of MF polarization and functional effects between young and aged taste papillae (related to Figure 5).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s003.pdf?md5=3784c517d0b81c806e3e09a43250342e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0005",
+            "label": "Figure S5: Cell–cell communication analysis between MF and taste cell subtypes at M24.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s001.pdf?md5=8462a2685b45553f64eb0bce58696ef9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0006",
+            "label": "Figure S6: hdWGCNA analysis showing the gene co‐expression network between MTC and TPC in M24.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s010.pdf?md5=4048368bfd859b99c8835e247d5782fb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0007",
+            "label": "Table S1: Cell number summary across taste papillae, time points, and cell types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s004.xlsx?md5=6182ba00346723cea15cb007eb68fb37",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0008",
+            "label": "Table S2: GO term of taste sense.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s007.xlsx?md5=5edbeaf488427cd08c1993df91c1de43",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0009",
+            "label": "Table S3: Gene sets for TPC scoring.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s014.xlsx?md5=53eec2aa7eeaaf17241a09ac94be7c3e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0010",
+            "label": "Table S4: DEGs and GO enrichment between M24 and other timepoints across MTC and TPC.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s013.xlsx?md5=1d29756e172570969c596f079e3aee4d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0011",
+            "label": "Table S5: Gene list for scoring analysis.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s006.xlsx?md5=a5c7a5dff3dc56eee6a1327fc30ea87e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0012",
+            "label": "Table S6: The target genes predicted by Nichenet.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s005.xlsx?md5=ea8c0db15a48064d11fa652761d8d741",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0013",
+            "label": "Table S7: DEGs of each taste subtypes between M24 and other time points.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s012.xlsx?md5=27f8f477fe83246dea71f6331e975ae3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0014",
+            "label": "Table S8: A Primary antibodies for immunofluorescence.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s009.xlsx?md5=8ca83a9ba2c1dfc79ded1af5fdeb7afb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70674-supitem-0015",
+            "label": "Data S1: acel70674‐sup‐0015‐DataS1.docx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-s015.docx?md5=fba5c701672f22135e208648594ba9e7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-19T09:33:38.671659+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wandong Zhao; Xudong Cha; Yingqi Xie; Enhao Wang; Wenlu Xing; Zengyi Xu; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-19T09:33:42Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-19T09:33:42Z",
+        "url": "https://openalex.org/W7203883028",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-19T09:33:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-19T09:33:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-20T09:33:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-19T09:35:48Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-4296e2e2d07ccfe9",
+      "doi": "10.1038/s41538-026-00904-6",
+      "paper": "Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.",
+      "journal": "NPJ science of food",
+      "date": "2026-05-26",
+      "year": "2026",
+      "pmcid": "PMC13486760",
+      "pmid": "42191706",
+      "paperURL": "https://doi.org/10.1038/s41538-026-00904-6",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2396-8370",
+      "eissn": "2396-8370",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ec9ac08cb85de2fab3da9c6307de403dc40deee213f8dd05972810a018e53574"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/PMC13486760.1.xml?md5=6d2861ea1759b1c71e785b5381b586c6",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Identification and functional characterization of liver-specific aging-related genes.A Schematic diagram illustrating the analytical workflow for identifying liver-specific aging-related genes, including data source, differential expression analysis across age groups, and downstream clustering and functional enrichment analyses. B Temporal expression dynamics of differentially expressed genes (DEGs) during aging across mouse liver samples from 1, 3, 6, 9, 12, 15, 18, 21, 24, and 27 months (GSE132040). DEGs were grouped into nine distinct expression clusters based on their longitudinal transcriptional patterns across age stages. C Mfuzz soft clustering of liver-specific aging genes according to their dynamic transcriptional trajectories. Color intensity reflects the degree of gene membership within each cluster, with darker colors indicating higher cluster membership values. D, E Functional enrichment analyses of liver-specific aging genes. Gene Ontology (GO) and KEGG pathway enrichment analyses were performed for upregulated (D) and downregulated (E) gene sets, with GO terms categorized into biological process (BP), cellular component (CC), and molecular function (MF). F, G Age-dependent expression trends of genes derived from Gene Ontology (GO) gene sets for extracellular matrix organization (GO:0031012) (F) and inflammatory response (GO:0006954) (G), modeled using LOESS regression. These analyses reflect pathway-level transcriptional dynamics across aging.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig1_HTML.jpg?md5=2e8b297c9e37c568d88e9c1429914691",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Single-cell landscape of aging-associated transcriptional dynamics and intercellular communication in the liver.A UMAP projection showing the annotation of major liver single-cell populations. Right panels: spatial distribution of AUCell scores for aging-related gene modules with increasing trends (top) and decreasing trends (bottom). B Proportional distribution of rising and declining cells within each major liver cell type. C Cell–cell communication network depicting inferred signaling interactions among declining cells, rising cells, and other cell populations, with edge thickness proportional to communication strength. D Age-dependent expression dynamics of aging trend genes in HCs, MCs, and HSCs, modeled using locally estimated scatterplot smoothing (LOESS) regression. E Correlation analysis between aging gene score (AGS) and chronological age across different liver cell types. F Heatmap showing functional enrichment profiles of rising and declining cells relative to other cell populations. G Bar plot summarizing differential enrichment of biological processes between rising and declining cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig2_HTML.jpg?md5=586a515bdfeb47b24a7c9f49eac2c948",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Single-cell characterization of aging-associated transcriptional states in non-parenchymal liver cells.A Dot plot showing the average expression of canonical marker genes across 11 major liver cell types. B UMAP feature plots displaying the expression patterns of representative marker genes across annotated cell populations. C UMAP projection illustrating the annotation of single-cell populations derived from fibrotic liver samples. D UMAP visualization of AUCell scores for genes with increasing and decreasing aging trends, with darker red indicating higher scores. E Bar plot showing the proportion of high-AGS and low-AGS cells across different cell types. F Bar plot summarizing the number and proportion of high- and low-AGS cells in healthy and cirrhotic liver samples. G Nested donut charts depicting the distribution of high-AGS and low-AGS cells within each major cell type. H Violin plots comparing functional enrichment scores between high-AGS and low-AGS cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig3_HTML.jpg?md5=502f1dd3e0775c13fb17e1e7ead5e69b",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Heterogeneity and differentiation trajectories of macrophage subtypes during liver aging and fibrosis.A t-SNE plot showing the distribution of MP subtypes. B Nested donut charts illustrating the proportions of the four MP subtypes across high-AGS and fibrosis groups. C Bar plot showing the relative proportions of the four MP subtypes in healthy and cirrhotic liver samples. D Macrophage differentiation trajectory colored by pseudotime. E Differentiation trajectory colored by macrophage subtypes. F Expression dynamics of selected liver aging–related genes along distinct pseudotime branches. G Heatmap of DEGs along the pseudotime trajectory with associated Gene Ontology (GO) enrichment terms. H Volcano plot showing differential gene expression between high-AGS and low-AGS macrophage populations. GO enrichment analysis of upregulated (I) and downregulated (J) genes between high-AGS and low-AGS macrophage groups.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig4_HTML.jpg?md5=805cecd084988851d018b9830007e784",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Aging-associated molecular subtypes and their relationship with liver fibrosis severity.A Expression trends of upregulated senescence-related genes across liver fibrosis stages and NAFLD activity score (NAS). B Expression trends of downregulated senescence-related genes across liver fibrosis stages and NAS. C Evaluation of non-negative matrix factorization (NMF) clustering stability using cophenetic correlation coefficients for k values ranging from 2 to 10; k = 2 was selected as the optimal number of clusters. D NMF consensus matrix heatmap for k = 2, showing robust sample stratification. E Heatmap illustrating the expression patterns of liver-specific aging genes across the two NMF-defined clusters and fibrosis stages. F Proportional distribution of samples across fibrosis stages within each NMF cluster. G Distribution of aging gene scores (AGS) between the two NMF clusters. H Bar plot summarizing Gene Set Enrichment Analysis (GSEA) results for the two NMF clusters. I Distribution and statistical comparison of 22 immune cell populations inferred by CIBERSORT between the two NMF clusters. Statistical significance is indicated as follows: ****p < 0.0001; ***p < 0.001; **p < 0.01; *p < 0.05; ns not significant (p > 0.05).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig5_HTML.jpg?md5=274faeab81b67cfc3cfdc8682edd2bb5",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Identification and validation of fibrosis-associated biomarkers and construction of a predictive nomogram.A Feature selection results obtained using the Boruta algorithm. B Regression coefficient trajectories of genes selected by the Lasso algorithm. C Venn diagram showing the overlap between genes selected by Boruta and Lasso methods. D ROC curves evaluating the predictive performance of candidate biomarkers in the training dataset. E Expression patterns of the selected biomarkers across different fibrosis stages. F, G ROC curves assessing the performance of these biomarkers in the independent validation datasets GSE48452 and GSE281797. H Nomogram integrating the selected biomarkers for predicting fibrosis stage. I Calibration curves comparing predicted versus observed fibrosis stages to evaluate model accuracy. J, K ROC curves demonstrating the predictive performance of the nomogram in the training (GSE135251) and validation (GSE281797) datasets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig6_HTML.jpg?md5=d6c643b47fa7dde7fe5013f9d197652c",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "assets/pmc13486760-6288bdf96938e605.jpg",
+            "sha256": "6288bdf96938e605b42f1fc2f49b48d2a8fff230eace2da67a85032a06fa3b53",
+            "width": 758,
+            "height": 1000,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6288bdf96938e605b42f1fc2f49b48d2a8fff230eace2da67a85032a06fa3b53",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Drug screening and molecular docking analysis of liver aging-associated candidate compounds.A Schematic illustration of the construction workflow for the liver aging-associated drug screening model. B Drug ranking results based on liver aging trend genes. The top five candidate drugs, along with their corresponding small molecules and target genes, were identified and visualized through network analysis. C Predicted binding conformation of MOL000098 within the COL3A1 protein. D Binding pocket structure showing hydrogen bond donors and acceptors. E Three-dimensional interaction diagram depicting the binding between MOL000098 and COL3A1 amino acid residues. F Two-dimensional interaction map illustrating the interactions between MOL000098 and residues of COL3A1. G Predicted binding conformation of MOL000422 within the CYP1A2 protein. H Binding pocket structure showing hydrogen bond donors and acceptors. I Three-dimensional interaction diagram depicting the binding between MOL000422 and CYP1A2 amino acid residues. J Two-dimensional interaction map illustrating the interactions between MOL000422 and residues of CYP1A2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig7_HTML.jpg?md5=6d3190352aed964bcc832fd7049e0321",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Effects of Fagopyrum dibotrys (JQM) extract on liver function and macrophage foam cell formation.A Schematic illustration of the preparation process of JQM extract. B Effects of different concentrations of JQM-containing serum on HepG2 cell viability, measured by CCK-8 assay. Effects of JQM-containing serum on liver injury biomarkers: C aspartate aminotransferase (AST) and D alanine aminotransferase (ALT). E Representative images of Oil Red O staining in macrophages from the normal group, control group, and 10% JQM-treated group, showing reduced foam cell formation after JQM treatment. F Quantification of Oil Red O staining intensity in macrophages, indicating a significant decrease in lipid accumulation in the drug-treated group. Bar charts showing the intracellular cholesterol (G) and triglyceride (H) content in different groups. Treatment with JQM-containing serum significantly reduced lipid accumulation compared with the model group. Expression levels of fibrosis-related factor TGF-β (I) and pro-inflammatory cytokines TNF-α (J) and IL-1β (K) across groups, demonstrating attenuation of inflammatory and pro-fibrotic responses in the 10% JQM-treated group. Data are presented as mean ± SD. #p < 0.05, ##p < 0.005, ###p < 0.001 compared with the control group; *p < 0.05, **p < 0.005 compared with the 10% JQM-treated group.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig8_HTML.jpg?md5=0063132f4e491b9734f9948281ca8160",
+            "articleURL": "https://doi.org/10.1038/s41538-026-00904-6",
+            "asset": "assets/pmc13486760-2e4049a5c3933405.jpg",
+            "sha256": "2e4049a5c39334052427d47ddbf8c8c6333947cc87dc8794b3b8ce68ff6c3576",
+            "width": 800,
+            "height": 786,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al.. Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology.. DOI: 10.1038/s41538-026-00904-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2e4049a5c39334052427d47ddbf8c8c6333947cc87dc8794b3b8ce68ff6c3576",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_MOESM1_ESM.pdf?md5=72e5192ae833f662e701518c69c31503",
+            "license": "CC BY",
+            "sha256": "db821b936353f31d5f58abcd73de2f1bc331e729c74fed2e0470e47938bd9620",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 1368646,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 7,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_MOESM2_ESM.xlsx?md5=6e5048d0b22ae959023b838266fef902",
+            "license": "CC BY",
+            "sha256": "ff31a0143769931299996bf65012e2d5e98e13bc7c49d20087e39db91b9c4d6e",
+            "status": "downloaded_private",
+            "bytes": 9711,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_MOESM3_ESM.xlsx?md5=3051f984b3ffd5590ee8d68d7f464869",
+            "license": "CC BY",
+            "sha256": "235e3a22c0a03b20d7d8c7b826ec4d13382fbcd74393b3522cb03e3526e307e2",
+            "status": "downloaded_private",
+            "bytes": 10217,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_MOESM4_ESM.xlsx?md5=e9d9de8873c139597286392e8d0db839",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-19T09:35:24.707771+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yingqi Xu; Maohao Li; Lun Zhu; Yawen Luo; Wanlu Sheng; Panlei Jia; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "9.7",
+        "jcr": "Q1",
+        "cas": "农林科学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-19T09:35:28Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-19T09:35:28Z",
+        "url": "https://openalex.org/W7162445904",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-19T09:35:28Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-19T09:35:28Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-20T09:35:28Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-19T09:35:50Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-e68d7740742edda7",
+      "doi": "10.1111/acel.70677",
+      "paper": "LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.",
+      "journal": "Aging cell",
+      "date": "2026-09-01",
+      "year": "2026",
+      "pmcid": "PMC13498547",
+      "pmid": "42629583",
+      "paperURL": "https://doi.org/10.1111/acel.70677",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "6549faea8ed046b9467205ecbc34b5351351c4b5a7da315c78e1810df11d50c4"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/PMC13498547.1.xml?md5=410fba09b23481e2a9b69a25e1cfcf5f",
+        "figures": [
+          {
+            "id": "acel70677-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Workflow for the development of the LivAge transcriptomic clock. RNA‐seq samples from livers of different chronological ages were first compiled into a transcriptomic atlas of aging. Differentially expressed genes with age were selected and used for functional analyses, including gene set enrichment analysis (GSEA) and cellular composition estimation via deconvolution. Moreover, genes with the strongest age‐related changes were then used to perform repeated cross‐validation on the atlas data to train a preliminary elastic net regression model. Numeric transformations of the features (age and gene expression) were subsequently applied to optimize predictive performance to construct the final transcriptomic clock. Finally, the model was validated on an independent external dataset.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g003.webp?md5=89d2829ef6bbf86b4c017e57fc406ee5",
+            "articleURL": "https://doi.org/10.1111/acel.70677",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Víctor Celemín‐Capaldi; Guillermina Bea; David Roiz‐Valle; Alejandro P. Ugalde; Clea Bárcena; Pedro M. Quirós; et al.. LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.. DOI: 10.1111/acel.70677. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70677-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Differential expression analysis in a transcriptomic atlas of liver aging in mice. (a) Volcano plot showing differential gene expression across aging. Each dot represents a gene, plotted according to log2 fold change (X‐axis) and –log10 adjusted p‐value (Y axis). The statistical significance threshold was set at an adjusted p‐value of 0.05, while the fold‐change threshold was set at an absolute log2 fold change per month of 0.02. In this regard, genes significantly upregulated are shown in red, while significantly downregulated genes are shown in blue. Genes showing minimal expression changes are shown in black, and non‐significant genes are shown in gray. Selected differentially expressed genes are highlighted and labeled. (b) Gene Set Enrichment Analysis (GSEA) of Hallmark Pathways. The X‐axis represents the Normalized Enrichment Score (NES), where positive values (Red) indicate a significant activation of the pathways and negative values (Blue) indicate a significant repression, whereas the Y‐axis lists the biological pathways analyzed. The bubble plot displays the results of the GSEA performed on the MSigDB Hallmark gene set collection and is proportional to the statistical significance of the enrichment, represented as the transformed value of –log10 adjusted p‐value; a larger bubble size signifies higher statistical significance. (c) Changes in liver cell composition during aging. Scatter plots displaying the relative proportions of hepatocytes (left), Kupffer cells (middle), and B cells (right) in each sample, as estimated by cell type deconvolution of bulk RNA‐seq data. The X‐axis represents the chronological age of the samples (in months), and the Y‐axis shows the predicted percentage of each cell type. Each green dot corresponds to an individual RNA‐seq sample, while the solid line represents the fitted linear regression, with the shaded area indicating the 95% confidence interval. For each cell type, the slope of the regression and the corresponding p‐value are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g005.webp?md5=a0072be60e04e9e3ed2fe090bdfe5cf8",
+            "articleURL": "https://doi.org/10.1111/acel.70677",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Víctor Celemín‐Capaldi; Guillermina Bea; David Roiz‐Valle; Alejandro P. Ugalde; Clea Bárcena; Pedro M. Quirós; et al.. LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.. DOI: 10.1111/acel.70677. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70677-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Development of a murine transcriptomic aging clock. (a) Regression model performance matrices after applying different combinations of chronological age and gene expression transformations. These heatmaps illustrate the performance of a predictive regression model, measured by R 2, MAE and r. The X‐axis (Transformation of gene expression) represents the transformations applied to the gene expression (Binarization, No transformation, Quaternarization, Scaling, and YuGene), whereas the Y‐axis (Transformation of age) shows the transformations applied to the chronological age before model training (Scaling, Logarithmic, Log‐lineal, No transformation, and Box‐Cox). The numerical value and color intensity within each cell denote the resulting metric; from low (lighter colors) to high values (darker colors). (b) External validation of the optimized transcriptomic aging clock in male mice. Scatter plot showing the results from an independent set of 50 external RNA‐seq samples. The X‐axis represents chronological age (months), and the Y‐axis shows transcriptomic age predicted by the model. Each dot corresponds to a sample. The dashed gray line indicates perfect prediction, and the solid red line is the regression line. Performance metrics include R 2, Pearson's r, and MAE. (c) External validation of the optimized transcriptomic aging clock in female mice. Scatter plot showing the results from an independent set of 84 external RNA‐seq samples. The X‐axis represents chronological age (months), and the Y‐axis shows transcriptomic age predicted by the model. Each dot corresponds to a sample. The dashed gray line indicates perfect prediction, and the solid red line is the regression line. Performance metrics include R 2, Pearson's r, and MAE. (d) Top gene predictors of the transcriptomic aging clock. Bar plot shows the coefficients assigned to the most influential predictor genes within the aging clock. The Y‐axis displays these genes, while the X‐axis represents the model coefficients derived from Elastic Net regression. Genes are ordered by their predictive weight: Positive values (red) contribute to an older age prediction, whereas negative values (blue) contribute to a younger age prediction.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g001.webp?md5=171b1f6cee316530ac622d381df17488",
+            "articleURL": "https://doi.org/10.1111/acel.70677",
+            "asset": "assets/pmc13498547-ca002e004c052d98.webp",
+            "sha256": "ca002e004c052d98e3f7f56b49f2076ca59ef3b91b2be1cddee7dd3dcf113dc5",
+            "width": 1064,
+            "height": 775,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Víctor Celemín‐Capaldi; Guillermina Bea; David Roiz‐Valle; Alejandro P. Ugalde; Clea Bárcena; Pedro M. Quirós; et al.. LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.. DOI: 10.1111/acel.70677. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ca002e004c052d98e3f7f56b49f2076ca59ef3b91b2be1cddee7dd3dcf113dc5",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "acel70677-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Forest plots showing the effects of multiple genetic and environmental interventions in transcriptomic age. Each plot displays the β coefficients from linear regression models with AgeDev (difference between estimated biological age and chronological age, in months) as the dependent variable and experimental group as the independent variable, adjusted for potential covariates. Horizontal lines represent 95% confidence intervals around each β coefficient. Positive β values indicate accelerated aging, whereas negative β values indicate geroprotective effects. One‐tailed p‐values, displayed at the top of each point, were assessed using linear regression and corrected by the Benjamini‐Hochberg false discovery rate (FDR) procedure within each intervention category. Panels correspond to different intervention types: (a) murine models of progeria: Lmna G609G/G609G (n = 20), Zmpste24 −/− (n = 12), Terc −/− (n = 6) and Sprtn Y118C/Y118C (n = 7); (b) genetic interventions: Ames Dwarf (n = 16), iGHRKO (n = 20), GHRKO (n = 6) and Snell Dwarf (n = 6); (c) dietary and lifestyle interventions: Protein restriction (n = 16), normal vs. H‐F diet (n = 15), caloric restriction in L‐F diet (n = 6), caloric restriction in H‐F diet (n = 6), L‐F diet vs. H‐F diet (n = 6), caloric restriction for 8 months (n = 12), caloric restriction for 2 months (n = 12), exercise in H‐F diet (n = 6), exercise in L‐F diet (n = 6) and methionine restriction (n = 6); (d) pharmacological interventions: Rapamycin in H‐F diet (n = 16), metformin (n = 6), acarbose (n = 24), protandim (n = 18), KU‐0063794 (n = 12), AZD8055 (n = 12), rilmenidine (n = 12), ascorbyl‐palmitate (n = 12), rapamycin for 2 months (n = 12), rapamycin for 8 months (n = 12) and 17‐alpha‐estradiol (n = 24).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g004.webp?md5=071e070e8b3357acacda459d6f40a196",
+            "articleURL": "https://doi.org/10.1111/acel.70677",
+            "asset": "assets/pmc13498547-ca081e70d4cb6d76.webp",
+            "sha256": "ca081e70d4cb6d76fed69f8afb697902225a11d778f4f7f8f3c1d889ab255edb",
+            "width": 1064,
+            "height": 1406,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Víctor Celemín‐Capaldi; Guillermina Bea; David Roiz‐Valle; Alejandro P. Ugalde; Clea Bárcena; Pedro M. Quirós; et al.. LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.. DOI: 10.1111/acel.70677. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ca081e70d4cb6d76fed69f8afb697902225a11d778f4f7f8f3c1d889ab255edb",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70677-supitem-0001",
+            "label": "Table S1: Summary of RNA‐seq datasets used in the training and validation of LivAge. For each study, the table reports the accession number (from NCBI",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s013.pdf?md5=bda668bfdd230cea0bc70289c68a8f25",
+            "license": "CC BY",
+            "sha256": "8d93520e50e7fd8a61d03a3085bbb46080cadf35c412bf582cbbe17d5803d45d",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 120955,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "acel70677-supitem-0002",
+            "label": "Table S2: List of gene predictors employed by LivAge. For each gene included in the transcriptomic aging clock, the table reports the Ensembl gene ide",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s007.pdf?md5=9a39df113638f508b071e5511b0f7237",
+            "license": "CC BY",
+            "sha256": "6993f953ccc9d6dd3b17d031a86637bfb7195709ed891683d07b34b987a62a44",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 178659,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 6,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "acel70677-supitem-0003",
+            "label": "Table S3: Summary of RNA‐seq datasets used in the evaluation of genetic and environment interventions in estimated transcriptomic age. For each study,",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s006.pdf?md5=2fd170ee10108f510460c97f35ca839a",
+            "license": "CC BY",
+            "sha256": "cced43cbfffb4c17ad7f6657a1e7d47faee28ce203f20a1cc7dd51d37ec80abd",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 197687,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "acel70677-supitem-0004",
+            "label": "Data S1: Differential gene expression analysis in transcriptomic atlas of liver aging. For each gene, the table reports the Ensembl gene identifier, t",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s004.pdf?md5=4e80a370babacfe51afff9b36e92215c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0005",
+            "label": "Data S2: Gene set enrichment analysis results. For each pathway, the table reports the nominal p value, the adjusted p value (FDR), the standard error",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s009.pdf?md5=52c55beff6bb5d3ebe1f57fd9f5dea20",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0006",
+            "label": "Data S3: Estimated cell‐type proportions in liver RNA‐seq samples by cellular deconvolution. For each sample, the table reports the sample identifier,",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s001.pdf?md5=ef624798f026a87aa52402720d6d0648",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0007",
+            "label": "Data S4: Estimated liver transcriptomic ages by LivAge for all samples used in this study. For each sample, the table reports the sample identifier, t",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s005.pdf?md5=48dfffb2bc3030224cd1d617572f9fc2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0008",
+            "label": "Data S5: Estimated transcriptomic age by the TACO clock and by RAPToR in the validation cohort. For each sample, the table reports the sample identifi",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s008.pdf?md5=0f4f34509bc01329d1a65d52f34f0ce7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0009",
+            "label": "Data S6: Estimated cell‐type proportions in liver RNA‐seq samples by cellular deconvolution for the external validation set. For each sample, the tabl",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s011.pdf?md5=a46a3cfffc7fc427b0170adaa4e3f88c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0010",
+            "label": "Data S7: FDR‐corrected significance of transcriptomic age effects across interventions. For each intervention, the table reports its category, the int",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s010.pdf?md5=99f10fb006f6fa1c7306b70646bd610c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0011",
+            "label": "Figure S1: Bar plots representing the composition of the transcriptomic atlas of liver aging in mice (training set). (a) Distribution of liver RNA seq",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s012.pdf?md5=3a48a304c8b636139727528d5e47479e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0012",
+            "label": "Figure S2: Development of a murine transcriptomic aging clock. (a) Results of the transcriptomic age prediction computed by cross‐validation. The scat",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s002.pdf?md5=99fd1cbe1ae7b2a89aeef3dfb2446439",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "acel70677-supitem-0013",
+            "label": "Figure S3: Evaluation of alternative transcriptomic clocks. Scatter plots showing the benchmarking results on an independent validation set of 89 exte",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-s003.pdf?md5=613655e6dc1b499840197732231077df",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-19T09:35:45.036180+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Víctor Celemín‐Capaldi; Guillermina Bea; David Roiz‐Valle; Alejandro P. Ugalde; Clea Bárcena; Pedro M. Quirós; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-19T09:33:42Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-19T09:35:46Z",
+        "url": "https://openalex.org/W7203863153",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-19T09:35:46Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-19T09:35:46Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-20T09:35:46Z"
+        }
+      },
+      "selectionScore": {
+        "total": 58,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-19T09:35:51Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-766672fb4c243c95",
+      "doi": "10.7554/elife.109761",
+      "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
+      "journal": "eLife",
+      "date": "2026-11-11",
+      "year": "2026",
+      "pmcid": "PMC13754279",
+      "pmid": "43012634",
+      "paperURL": "https://doi.org/10.7554/elife.109761",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2050-084X",
+      "eissn": "2050-084X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "4e0d4449591557ebaabdbddfef1c7e579af08d8618c29da697411a1bed01da0b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=ec8c9cfe18973d02a0b8ee912e5600ee",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Strain design.(A) Pleckstrin homology (PH) domain of SLM1 gene fused with NTT1 and inserted in the vector (pAG306GPD-ccdB-chr1). The constructed (PH-NTT1) plasmid, digested with NotI, was integrated into the yeast genome. (B) In a separate construct, yeGFP sequence was fused to the 3′ end of PH-NTT1 sequence and expressed in yeast and visualized by confocal microscopy to assess cellular localization (scale bar: 5 µm). (C) Overall yeast strain design with NTT1 overexpression mediating ATP import from the extracellular environment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig1.webp?md5=2752db62c8a62028dee96beab59c9f95",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Measurement of relative ATP levels.(A) Yeast cells expressing fluorescent QUEEN ATP reporters were imaged using fluorescence microscopy (scale bar: 5 µm). Relative ATP levels were measured in cells grown in media containing (B) 2% glucose or (C) 20 mM 2-deoxyglucose (2DG) and are presented as violin plots. Sample sizes for each strain are between 265 and 315 cells. Under 2DG condition, ATP treatment did not restore ATP levels in wild-type cells, while NTT1 cells increased intracellular ATP levels (D) LC–MS/MS measurement of intracellular ATP changes in Wt and NTT1 expressing cells. A non-parametric Kruskal–Wallis test was used for comparison of groups for the QUEEN measurements. For the LC–MS/MS data, a pairwise t-test was used to compare the means of treated vs non-treated samples of each strain and determine if a statistically significant difference exists between them. Statistical significance between groups and raw QUEEN ratio, as well as LC–MS/MS data, are available in Supplementary file 1. In (D), dots show individual biological replicates (n = 3 per group); boxes show the median and interquartile range, whiskers extend to 1.5× the interquartile range, and diamonds show the mean. Cells were treated with 1 or 5 mM ATP. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001, ****p ≤ 0.0001; ns, not significant.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig2.webp?md5=f075ab6d7964c701b5cf9ca5bb6443f9",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Transcriptomic analysis of Wt and NTT1 cells with and without ATP treatment.(A) Heatmap showing hierarchical clustering of gene expression profiles from Wt and NTT1 cells cultured with ATP (red) and without ATP (green). Expression values are Z-score normalized, with red indicating higher expression and blue indicating lower expression. Three independent cultures for each group were used to isolate total RNA and perform RNA-seq analysis and each cell in the columns shows the mean value from three biological replicates. Venn diagrams displaying the number of genes uniquely or commonly (B) upregulated or (C) downregulated in Wt and NTT1 cells treated with ATP compared to untreated controls. Enrichment analysis showing significantly enriched gene ontology (GO) terms associated with genes (D) upregulated and (E) downregulated in NTT1 cells compared to their corresponding untreated controls. Circle size reflects the number of genes in each GO term, and color indicates significance level as represented by −log10 (FDR). The normalized counts and the complete list of DEGs with p-values can be found in Supplementary file 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
+            "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+            "width": 1600,
+            "height": 648,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig3s1",
+            "label": "Figure 3—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Differential expression in NTT1-overexpressing cells.(A) Volcano plot of log2 fold change vs −log10 nominal p-value for all expressed genes. Blue and red points denote genes passing p < 0.05 with negative or positive fold changes, respectively. Genes with the largest effect sizes or strongest statistical support are labeled. (B) Numbers of significantly down- and upregulated genes (p < 0.05); the asymmetry (268 down vs 92 up) is significant by binomial test against an unbiased null. (C) Functional enrichment of NTT1 vs Wt differential expression. Categories with BH-FDR <0.05 are shown, ranked by significance. Red, predominantly upregulated; blue, predominantly downregulated; circle size scales with fold enrichment. Numbers in parentheses are differentially expressed genes/total in category. Curated gene sets cover central metabolic, signaling, and biogenesis pathways in S. cerevisiae. RNA-seq was performed with n = 3 biological replicates per group.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp1.webp?md5=b658b98da49a4f5f595fe14b3ba200ea",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s2",
+            "label": "Figure 3—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Purine specificity of the NTT1 response.(A) Log2 fold changes of de novo purine (ADE), BAS1-co-regulated (HIS4), and one-carbon/folate (MTD1, SHM2, GCV2, and ADE3) genes that reached p < 0.05. Asterisks indicate p < 0.05. All thirteen captured genes are downregulated. None of the de novo pyrimidine (URA) or ribonucleotide reductase (RNR) genes reached P<0.05; the parallel pathways are transcriptionally unaffected. (B) The LC–MS/MS measurement of purine metabolites in Wt vs NTT1 cells. The raw LC–MS/MS data along with statistical values are available in Supplementary file 1. RNA-seq (A) was performed with n = 3 biological replicates per group. For LC–MS/MS (B), n = 3 biological replicates per group; error bars indicate standard deviation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp2.webp?md5=fbb9e4e23241639940ba6ee48ad1f5ce",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s3",
+            "label": "Figure 3—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Extracellular ATP treatment activates Gpa2–cAMP–PKA pathway signaling.Log2 fold change (vs untreated) for Gpa2–cAMP–PKA pathway genes in Wt (solid) and NTT1 cells (hatched) after ATP treatment. Red, upregulated; blue, downregulated (padj < 0.05); n.d., not significant. Upregulation of negative regulators alongside repression of positive components and PKA targets indicates active PKA signaling in both strains. RNA-seq was performed with n = 3 biological replicates per group.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp3.webp?md5=0a38dd5646452d7450243d48c46943dc",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s4",
+            "label": "Figure 3—figure supplement 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Gene ontology (GO) and KEGG pathway analyses for Wt cells.GO enrichment analysis for (A) upregulated and (B) downregulated genes, and KEGG pathway analysis for (C) upregulated and (D) downregulated genes in Wt cells after ATP treatment. GO categories include BP (Biological Process), CC (Cellular Component), and MF (Molecular Function).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp4.webp?md5=ec4053d7d93b70b517148699149e170a",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s5",
+            "label": "Figure 3—figure supplement 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Alteration of MAP kinase pathway in Wt cells.Genes uniquely upregulated (green) or downregulated (red) are shown for each component of the MAPK pathway in Wt cells under ATP treatment: (A) cell wall stress, (B) high osmolarity, (C) pheromone, and (D) starvation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp5.webp?md5=46ded3309551669ac05ccf59d9572783",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s6",
+            "label": "Figure 3—figure supplement 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Gene ontology (GO) and KEGG pathway analyses for NTT1 cells.GO enrichment analysis for (A) upregulated and (B) downregulated genes, and KEGG pathway analysis for (C) upregulated and (D) downregulated genes in NTT1 cells after ATP treatment compared to untreated controls. GO categories include BP (Biological Process), CC (Cellular Component), and MF (Molecular Function).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp6.webp?md5=d480e6a2169d043432bfd906291a23cc",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3s7",
+            "label": "Figure 3—figure supplement 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Snf1-mediated regulatory gene network in NTT1 cells.Genes regulated by Snf1 in NTT1 cells under ATP treatment are depicted in red (downregulated), green (upregulated), and black (no expression changes). The types of interactions are represented by arrows and lines.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3-figsupp7.webp?md5=c87d1b9f6d6f39946aab79667cad03a0",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "ATP treatment represses Hog1 activation through a mitochondria-dependent mechanism in NTT1 but not in Wt cells.(A, B) The effect of 5 mM ATP treatment on Hog1 activation was assessed by western blot analysis using two independent antibodies against phospho-Hog1 in two independent biological replicates (see Method). Pgk1 was used as an internal loading control. Uncropped membranes are provided in Figure 4—source data 1 and 2. (C) Densitometric quantification of Hog1 phosphorylation. Quantification of the immunoblots in (A) and (B). Hog1P signal is shown as background-subtracted integrated density (left) and normalized to total Hog1 (center) or to Pgk1 (right) in the same lane, each expressed relative to untreated wild-type cells. Open circles and triangles show the individual replicate values and red bars represent the rho0 isolates of each cell type. Figure 4—source data 1.PDF file containing original western blots for Figure 4A, B, indicating the relevant bands and treatments. Figure 4—source data 2.Original files for western blot analysis displayed in Figure 4A, B.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig4.webp?md5=23dffdc98f6187e25820e1e72af1f747",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Quantifications of ATP levels and replicative lifespans of the Wt strain and NTT1 strain under ATP treatment conditions.Heatmaps show intracellular ATP abundance in (A) WT and (B) NTT1 cells, as measured by the inverse of QUEEN fluorescence at the 488 nm excitation (see Method), throughout entire lifespans of single cells. Each row represents a color-coded time trace of a single yeast cell. Left: no ATP supplementation; right: 10 µM ATP supplementation. Color bar represents the relative ATP abundance (e.g., red color indicates higher ATP) (C) Average of single-cell time traces of ATP dynamics aligned by percentage of lifespan. Error bars are standard errors. (D) Replicative lifespans of Wt and NTT1 cells, with or without ATP supplementation. Wt: w/ ATP vs w/o ATP (p = 1.28E−12); NTT1-expressing cells: w/ ATP vs w/o ATP (p = 4.03E−18). p-values were calculated with Mann–Whitney U test. The raw fluorescence measurements and lifespan data and number of cells analyzed in each experiment can be found in Supplementary file 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
+            "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+            "width": 1600,
+            "height": 1726,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Replicative lifespan of different aging modes and mode distribution under ATP treatment conditions.(A) Without ATP, the mode-2 lifespans between the Wt and NTT1 cells showed no significant difference (p = 0.74). On the other hand, NTT1 cells showed significantly shorter mode-1 lifespan in comparison to the Wt control (p = 2.39E−4). (B) With ATP, the NTT1 strain showed significantly increased mode-1 lifespan (p = 1.24E−16), but not mode-2 lifespan (p = 0.15), whereas the Wt strain showed significantly increased mode-1 lifespan (p = 3.17E−7) and also mode-2 lifespan (p = 5.98E−6), which was similar to mode-1 lifespan (p = 0.4). The mode-1 lifespans between the two strains were similar (p = 0.849). Figures indicate mean replicative lifespan (mRLS) values and number of individual mothers tested in each assay (n) were also included (C) Both strains show increased percentage of mode-1 cells under the effects of ATP. The p-values were calculated using Mann–Whitney U test. The lifespan data can be found in Supplementary file 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig6.webp?md5=ed11640df24609decccf43ab8396d3f5",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig7",
+            "label": "Figure 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Replicative lifespan (RLS) analyses of rho0 isolates.RLS phenotypes of (A) parental controls and (B) their rho0 isolates were measured using a microfluidic chip under untreated and 10 mM ATP-treated (w/ATP) conditions. Elimination of mitochondrial DNA (mtDNA) in rho0 isolates alleviates the toxic effect of ATP treatment on NTT1 cells. Figures indicate mean replicative lifespan (mRLS) values and number of individual mothers tested in each assay (n) were also included. Raw lifespan data and statistical significance are provided in Supplementary file 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig7.webp?md5=1a3466924a167b80ef5786f720431a06",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig8",
+            "label": "Figure 8.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Proposed models for the effects of ATP treatment in Wt and NTT1 cells.The type-1 effect involves extracellular ATP sensing, analogous to mammalian purinergic signaling, which activates G-protein signaling and regulates the stress-associated MAPK cascade to modulate mitochondrial bioenergetic function and downstream transcriptional responses (left panel). In contrast, the type-2 effect is specific to NTT1 cells and is driven by increased intracellular ATP abundance resulting from Ntt1-mediated ATP import from the medium. In this model, elevated intracellular ATP inhibits catabolic processes, reprograms mitochondrial bioenergetic function, and, in parallel, modulates some of the same pathways associated with the type-1 ATP-sensing response (right panel). In the type-2 effect, inhibition of Hog1 activity depends on the respiratory status of mitochondria. Both type-1 and type-2 effects increase replicative lifespan (RLS), with the type-2 effect producing a greater lifespan extension.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig8.webp?md5=6cbdbb2febf61d08d7fd69340382ff6d",
+            "articleURL": "https://doi.org/10.7554/elife.109761",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al.. Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.. DOI: 10.7554/elife.109761. Copyright holder: Oz et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "fig4sdata1",
+            "label": "Figure 4—source data 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig4-data1.zip?md5=d3682122147bf3d80cc19e3be9442b6e",
+            "license": "CC BY",
+            "sha256": "acbf8d8bb2169def0910f4e73cf602f72fc949ac6df1632ba4b3562644c0f63c",
+            "status": "downloaded_private",
+            "bytes": 4581124,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig4sdata2",
+            "label": "Figure 4—source data 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig4-data2.zip?md5=08fc10898b62d6612ce067284a50bf5f",
+            "license": "CC BY",
+            "sha256": "9560fa8f5169201c28cd2500f50e1f3d08da9283cd771cacab13359267fde9f0",
+            "status": "downloaded_private",
+            "bytes": 4437809,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "supp1",
+            "label": "Supplementary file 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-supp1.xlsx?md5=6521dc239b899493624d00bd562782a2",
+            "license": "CC BY",
+            "sha256": "7a74335ca3a730bda6d8e749ac34e3b04655b0ae6c8d2c22e9ccb107751e1c6e",
+            "status": "downloaded_private",
+            "bytes": 46170,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "supp2",
+            "label": "Supplementary file 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-supp2.xlsx?md5=0696b7724081ede11b6c06ec137feb6e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "supp3",
+            "label": "Supplementary file 3.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-supp3.xlsx?md5=f616582f48695d9cac9c77e3bc342989",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "supp4",
+            "label": "Supplementary file 4.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-supp4.docx?md5=b3933d6003b080a31521a2aa49189253",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mdar",
+            "label": "MDAR checklist",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-mdarchecklist1.docx?md5=08194bf0ffe601e3b3d8ef8c41b4d157",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-19T09:33:22.262425+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Naci Oz; Hetian Su; Vedat Sari; Praveen Patnaik; Rohil Hameed; Jong Hee Song; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-19T09:33:25Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-19T09:33:25Z",
+        "url": "https://openalex.org/W7140231075",
+        "cited_by_count": 0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-19T09:33:25Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-19T09:33:25Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-20T09:33:25Z"
+        }
+      },
+      "selectionScore": {
+        "total": 57,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-19T09:35:52Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -241878,6 +244094,36 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-91d66d952f4073a4": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-7ec3fd6ebbf807cc": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-4296e2e2d07ccfe9": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-e68d7740742edda7": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-766672fb4c243c95": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -243496,7 +245742,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-18T09:21:23Z",
+  "generatedAt": "2026-11-19T09:35:53Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -243730,18 +245976,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-19T09:31:15Z",
-    "updatedAt": "2026-11-19T09:31:22Z",
+    "updatedAt": "2026-11-19T09:36:03Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 61,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

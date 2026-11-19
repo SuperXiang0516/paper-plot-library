@@ -291,9 +291,48 @@
         "10.3389/fimmu.2026.1804974",
         "10.7717/peerj.21758"
       ]
+    },
+    "2026-11-19": {
+      "newDOIs": [
+        "10.1002/advs.76740",
+        "10.1038/s41538-026-00904-6",
+        "10.1111/acel.70674",
+        "10.1111/acel.70677",
+        "10.7554/elife.109761"
+      ]
     }
   },
   "candidates": {
+    "10.1111/acel.70677": {
+      "checkedAt": "2026-11-19T09:35:46Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s41538-026-00904-6": {
+      "checkedAt": "2026-11-19T09:35:28Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/advs.76740": {
+      "checkedAt": "2026-11-19T09:34:19Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1111/acel.70674": {
+      "checkedAt": "2026-11-19T09:33:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.7554/elife.109761": {
+      "checkedAt": "2026-11-19T09:33:25Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1183/13993003.02049-2025": {
       "checkedAt": "2026-11-18T09:21:22Z",
       "status": "pending",
@@ -311,61 +350,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.7554/elife.109761": {
-      "checkedAt": "2026-11-18T09:20:59Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7554/elife.109761",
-        "metadataHash": "d38080c2295c8d6925d9962f0dad05578684741570b6a0d51a837a345acfc79a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/PMC13754279.1.xml?md5=a26e5785bc0f110ae148c1159e14a663",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig3.webp?md5=5e018ce2145f0a2d47fbb0922d1d30c6",
-              "license": "CC BY",
-              "width": 1600,
-              "label": "Figure 3.",
-              "id": "fig3",
-              "asset": "assets/pmc13754279-ae529d2f92ec2997.webp",
-              "assetSHA256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "height": 648,
-              "sha256": "ae529d2f92ec299714ebdd647ce2e0dd4f35bd48e286e0cf116a42f7f7e2aeea",
-              "captionHash": "5476502ee091a9d334b0453112dd81efd9b0cbeb7d2fbbd43893f2cd40a9e2ac"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13754279.1/elife-109761-fig5.webp?md5=496724ec730ca8543bafd49772e012b7",
-              "license": "CC BY",
-              "width": 1600,
-              "label": "Figure 5.",
-              "id": "fig5",
-              "asset": "assets/pmc13754279-d34f0a3aa9ed90d3.webp",
-              "assetSHA256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "height": 1726,
-              "sha256": "d34f0a3aa9ed90d3687a6b46d53476cefc19549154986ca8ee5be963c0a05bc4",
-              "captionHash": "117ea4da5457d4175ad603c82a17a29ebc352aa15991b2d9da76fbb6cf48ceee"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-766672fb4c243c95",
-          "doi": "10.7554/elife.109761",
-          "paper": "Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan.",
-          "journal": "eLife",
-          "date": "2026-11-11",
-          "year": "2026",
-          "pmcid": "PMC13754279",
-          "pmid": "43012634",
-          "paperURL": "https://doi.org/10.7554/elife.109761"
-        },
-        "updatedAt": "2026-11-18T09:20:57Z"
-      }
     },
     "10.1002/imt2.70150": {
       "checkedAt": "2026-11-18T09:20:53Z",
@@ -1004,176 +988,11 @@
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
     },
-    "10.1111/acel.70674": {
-      "checkedAt": "2026-11-03T08:39:14Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1111/acel.70674",
-        "metadataHash": "bb4d8f5e4d3152e9458be8c3b8ba286550604b89daf7e2d760b8d76b55b38a94",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/PMC13494364.1.xml?md5=633ec93803548b9962b86687019630a0",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g003.webp?md5=677e0f9ebe0760147eb1ff12c4912cf8",
-              "assetSHA256": "413944a2873d02ca01e9e577b27a3e79baf6025884d9be97391ad2070d11e8c0",
-              "label": "FIGURE 1",
-              "width": 1064,
-              "sha256": "413944a2873d02ca01e9e577b27a3e79baf6025884d9be97391ad2070d11e8c0",
-              "license": "CC BY",
-              "asset": "assets/pmc13494364-413944a2873d02ca.webp",
-              "id": "acel70674-fig-0001",
-              "height": 1494,
-              "captionHash": "68ebab88ebd8b022b85bc1ef9a388b0d95c9b621a0edc696fa7befef31819372"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13494364.1/ACEL-25-e70674-g007.webp?md5=5f4ff9c5dc8270a4d8c44e1392ed0839",
-              "assetSHA256": "7167398ee012520cc61980390d739804812ac0082d1b2dbf6701613db05e35b7",
-              "label": "FIGURE 3",
-              "width": 1064,
-              "sha256": "7167398ee012520cc61980390d739804812ac0082d1b2dbf6701613db05e35b7",
-              "license": "CC BY",
-              "asset": "assets/pmc13494364-7167398ee012520c.webp",
-              "id": "acel70674-fig-0003",
-              "height": 1292,
-              "captionHash": "1e0a9a71632cbb2a1fcdaa39e8bf9b681ba6d4944ad3e74341f8bda0f35f4157"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-7ec3fd6ebbf807cc",
-          "doi": "10.1111/acel.70674",
-          "paper": "Molecular Mechanisms of Age‐Related Taste Dysfunction Deciphered by Spatiotemporal Transcriptomics",
-          "journal": "Aging cell",
-          "date": "2026-09-01",
-          "year": "2026",
-          "pmcid": "PMC13494364",
-          "pmid": "42625389",
-          "paperURL": "https://doi.org/10.1111/acel.70674"
-        },
-        "updatedAt": "2026-11-03T08:39:13Z"
-      }
-    },
-    "10.1002/advs.76740": {
-      "checkedAt": "2026-11-03T08:39:06Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/advs.76740",
-        "metadataHash": "04d4f9cacd81706a7418a6843f1e5c5696584ae6e85669ae2a6232fdd421d0a7",
-        "article": {
-          "status": "inspected",
-          "version": "2",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/PMC13403736.2.xml?md5=d5ada9e310abc200769023c67c291f7b",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g007.webp?md5=7d66353df3046f0d2d257568eb5fe883",
-              "assetSHA256": "b16fe6f4eb0df19c9c4e30448f4916e6ceb61fe2dacb5479bc2c6f2a696fc0c5",
-              "label": "FIGURE 1",
-              "width": 820,
-              "sha256": "b16fe6f4eb0df19c9c4e30448f4916e6ceb61fe2dacb5479bc2c6f2a696fc0c5",
-              "license": "CC BY",
-              "asset": "assets/pmc13403736-b16fe6f4eb0df19c.webp",
-              "id": "advs76740-fig-0001",
-              "height": 620,
-              "captionHash": "44e2c892ed6a5cbff3548bf912f3061cc5afb1e550ece376041fd645d54b5320"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13403736.2/ADVS-13-e76740-g001.webp?md5=92f6376b936c4b0fc838e632435f24f3",
-              "assetSHA256": "1e6a64f38336aa38e9fd8a24befc696caaae02e02c0e10c55d25e396e171df1f",
-              "label": "FIGURE 3",
-              "width": 820,
-              "sha256": "1e6a64f38336aa38e9fd8a24befc696caaae02e02c0e10c55d25e396e171df1f",
-              "license": "CC BY",
-              "asset": "assets/pmc13403736-1e6a64f38336aa38.webp",
-              "id": "advs76740-fig-0003",
-              "height": 848,
-              "captionHash": "a4bddc8bb3ec69d387f2256d689e1bc0a7386c0f6a12ca35cf2fb7425cd07ed7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-91d66d952f4073a4",
-          "doi": "10.1002/advs.76740",
-          "paper": "Pasta, a Versatile Transcriptomic Clock, Maps the Chemical and Genetic Determinants of Aging and Rejuvenation",
-          "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
-          "date": "2026-07-27",
-          "year": "2026",
-          "pmcid": "PMC13403736",
-          "pmid": "42505084",
-          "paperURL": "https://doi.org/10.1002/advs.76740"
-        },
-        "updatedAt": "2026-11-03T08:39:04Z"
-      }
-    },
     "10.1038/s41591-026-04446-y": {
       "checkedAt": "2026-11-03T08:38:57Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1038/s41538-026-00904-6": {
-      "checkedAt": "2026-11-03T08:38:46Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41538-026-00904-6",
-        "metadataHash": "5948277fb5f2a35e3dd6beb18eda6e333d66bafbf1818d5c0cdd890f7d0e839c",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/PMC13486760.1.xml?md5=6d2861ea1759b1c71e785b5381b586c6",
-          "license": "CC BY",
-          "figures": [
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig6_HTML.jpg?md5=d6c643b47fa7dde7fe5013f9d197652c",
-              "assetSHA256": "6288bdf96938e605b42f1fc2f49b48d2a8fff230eace2da67a85032a06fa3b53",
-              "label": "Fig. 6",
-              "width": 758,
-              "sha256": "6288bdf96938e605b42f1fc2f49b48d2a8fff230eace2da67a85032a06fa3b53",
-              "license": "CC BY",
-              "asset": "assets/pmc13486760-6288bdf96938e605.jpg",
-              "id": "Fig6",
-              "height": 1000,
-              "captionHash": "4f81197066b3da378510d6aa66681371048fcce8f7368d1a749763b7ce8ba3ef"
-            },
-            {
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13486760.1/41538_2026_904_Fig8_HTML.jpg?md5=0063132f4e491b9734f9948281ca8160",
-              "assetSHA256": "2e4049a5c39334052427d47ddbf8c8c6333947cc87dc8794b3b8ce68ff6c3576",
-              "label": "Fig. 8",
-              "width": 800,
-              "sha256": "2e4049a5c39334052427d47ddbf8c8c6333947cc87dc8794b3b8ce68ff6c3576",
-              "license": "CC BY",
-              "asset": "assets/pmc13486760-2e4049a5c3933405.jpg",
-              "id": "Fig8",
-              "height": 786,
-              "captionHash": "3ea0b89cb02a1d0b423cc2ef1362236c8e16951083cdbea06d547e713cd95398"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4296e2e2d07ccfe9",
-          "doi": "10.1038/s41538-026-00904-6",
-          "paper": "Integrated transcriptomic analysis identifies liver aging-driven fibrosis signatures and reveals therapeutic strategies based on medicine-food homology",
-          "journal": "NPJ science of food",
-          "date": "2026-05-26",
-          "year": "2026",
-          "pmcid": "PMC13486760",
-          "pmid": "42191706",
-          "paperURL": "https://doi.org/10.1038/s41538-026-00904-6"
-        },
-        "updatedAt": "2026-11-03T08:38:43Z"
-      }
     },
     "10.1111/acel.70747": {
       "checkedAt": "2026-11-03T08:37:51Z",
@@ -3534,61 +3353,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1111/acel.70677": {
-      "checkedAt": "2026-10-22T06:41:48Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1111/acel.70677",
-        "metadataHash": "03389dde0cc85eca62a3d63556924c6e85f7366c6552a2e642db72202966f0dd",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/PMC13498547.1.xml?md5=410fba09b23481e2a9b69a25e1cfcf5f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1064,
-              "sha256": "ca002e004c052d98e3f7f56b49f2076ca59ef3b91b2be1cddee7dd3dcf113dc5",
-              "label": "FIGURE 3",
-              "height": 775,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g001.webp?md5=171b1f6cee316530ac622d381df17488",
-              "asset": "assets/pmc13498547-ca002e004c052d98.webp",
-              "license": "CC BY",
-              "assetSHA256": "ca002e004c052d98e3f7f56b49f2076ca59ef3b91b2be1cddee7dd3dcf113dc5",
-              "id": "acel70677-fig-0003",
-              "captionHash": "9a02c8538bf1e3aaee3b20570fbd089796ef977f2228613cec8895b0edf2efaf"
-            },
-            {
-              "width": 1064,
-              "sha256": "ca081e70d4cb6d76fed69f8afb697902225a11d778f4f7f8f3c1d889ab255edb",
-              "label": "FIGURE 4",
-              "height": 1406,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13498547.1/ACEL-25-e70677-g004.webp?md5=071e070e8b3357acacda459d6f40a196",
-              "asset": "assets/pmc13498547-ca081e70d4cb6d76.webp",
-              "license": "CC BY",
-              "assetSHA256": "ca081e70d4cb6d76fed69f8afb697902225a11d778f4f7f8f3c1d889ab255edb",
-              "id": "acel70677-fig-0004",
-              "captionHash": "176f462ede552ff44f7bbc67d165c25d510328863fb1769b9c75c6914284b474"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-e68d7740742edda7",
-          "doi": "10.1111/acel.70677",
-          "paper": "LivAge: An Online Aging Clock for Murine Transcriptomic Age Estimation.",
-          "journal": "Aging cell",
-          "date": "2026-09-01",
-          "year": "2026",
-          "pmcid": "PMC13498547",
-          "pmid": "42629583",
-          "paperURL": "https://doi.org/10.1111/acel.70677"
-        },
-        "updatedAt": "2026-10-22T06:41:48Z"
-      }
     },
     "10.1096/fj.202601888r": {
       "checkedAt": "2026-10-22T06:41:46Z",
@@ -11372,26 +11136,21 @@
   },
   "dailyCollectionSession": {
     "aiAttempts": 0,
-    "updatedAt": "2026-11-19T09:31:22Z",
+    "updatedAt": "2026-11-19T09:36:03Z",
     "maxRequests": 1800,
-    "requests": 0,
+    "requests": 61,
     "maxAiAttempts": 165,
     "uncertainAiAttempts": 0,
     "version": 1,
-    "elapsedSeconds": 8,
+    "elapsedSeconds": 288,
     "endReason": "",
     "maxBatches": 36,
     "status": "active",
     "startedAt": "2026-11-19T09:31:15Z",
     "maxSeconds": 2700,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "uncertainRequests": 0,
     "batchCount": 1,
-    "date": "2026-11-19",
-    "inFlight": {
-      "startedAt": "2026-11-19T09:31:22Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "date": "2026-11-19"
   }
 }
