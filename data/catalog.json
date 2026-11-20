@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-19",
+  "checkedAt": "2026-11-20",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -179168,6 +179168,693 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-37ea1dab34055819",
+      "doi": "10.3389/fendo.2026.1836525",
+      "paper": "Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.",
+      "journal": "Frontiers in endocrinology",
+      "date": "2026-07-15",
+      "year": "2026",
+      "pmcid": "PMC13414927",
+      "pmid": "42528724",
+      "paperURL": "https://doi.org/10.3389/fendo.2026.1836525",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1664-2392",
+      "eissn": "1664-2392",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "6fe934467f0e4f7dedd29f4d9c5acbb639b3d2b2f979a33b58152709b1ac3da9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/PMC13414927.1.xml?md5=aebe84e5defccfccef7841274c50c3fb",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "(A–C) show the partial responder PT with the senescence scores. Dark blue color depicts lower senescence score, whereas green and yellow colors depict higher senescence scores calculated with Senepy. (b, c) show the intensity map of Ki67 immunohistochemistry staining, the purple and dark blue color depict less density of Ki67 positive cells, whereas the light blue, green and yellow colors depict higher density of Ki67 positive cells. The (D–H) show the null responder PT with the senescence scores, whereas (d–h) panels show the intensity map of Ki67 immunohistochemistry staining in null response PT. Some high Ki67 staining density areas correlate with lower senescence scores in several tissues.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g001.jpg?md5=2f12a43b59a0f0f2594eebaf9719eb60",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "(A–C) show the partial responder PT are stalled at G1/G0 cell cycle phase. PT from partial responder patients showing cells stalled at G1/G0 cell cycle phase (a–c) show the partial responder PT terminally differentiated profiles. (D–H) show the null responder PT spots at G1/G0 cell cycle phase, whereas (d–h) panels, again, show terminally differentiated profiles.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g002.jpg?md5=70d21273b01f01469a8b6e33e54f1572",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "(A–C) show reactome enriched pathways PI3K-cascade-FGFR1, transport of fatty acids, and synthesis of very long chain fatty acyl coas, Reactome enriched pathway of low senescence tumors shoing alterations in PI3K cascade-FGFR1, transport of fatty acids, synthesis of very long chain fatty acyl CoA (D–F) show gene ontology molecular function altered pathways PI3K regulator activity, lipid transfer activity and triglyceride lipase activity, alterations observed in low senescence score cells. Gene ontology molecular function of tumors with a low senescence score showung alterations in lipid transfer activity, PI3K regulator avtivity and triglyceride lipase activity",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g003.jpg?md5=8e225d25e3b6873c29feb43cbf6c10e6",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "(A1–B1) show the transcriptomic heterogeneity present in GH-secreting PT with 10 clusters each tumor. (C1–F1) show the NF-gonadotroph PT with eight to ten transcriptional clusters. The (A2–B2) show the GH-secreting PT senescence landscape with marked difference between samples. (C2–F2) show the NF-gonadotroph PT with different levels of senescence between samples. All samples depict two cell clusters, one with a high and a second with a low senescence score. (A3–F3) depict the cell identity of the cells comprising the tumor mass.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g004.jpg?md5=291f084bdf47a1946cfdf2a8638b77a7",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "(A, B) show GH-secreting PT G1/G0 cell cycle phase predominance, (A) corresponds to the aggressive somatotroph PT and contains more cells at S phase of the cell cycle. (a, b) show terminally differentiated cells in GH-secreting PT. (C–F) show the NF-gonadotroph PT stationed at G1/G0 cell cycle phase and (c–f) show terminally differentiated tumor cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g005.jpg?md5=a6dd7df738fe0fc727555ad4054340e9",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "(A, B) Altered pathway in low senescence score clusters from the snRNAseq data from somatotroph PT showed alterations in phosphatidyl inositol signaling system and serine/threonine kinase activity among other events, and (C, D) NF-gonadotroph PT show altered pathways related to sphingolipid signaling pathway and serine/threonine kinase activity among other events.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g006.jpg?md5=de03a330527cdb8d025fcd4cc945d000",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "assets/pmc13414927-4647df4ddfa23f91.jpg",
+            "sha256": "4647df4ddfa23f917f66503bbe1e0ad4702b0ec441c34b2f6e8876d7409166bb",
+            "width": 734,
+            "height": 587,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4647df4ddfa23f917f66503bbe1e0ad4702b0ec441c34b2f6e8876d7409166bb",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "f7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "(A) shows high viability in pituitary tumor primary cell culture measured by WST and calcein staining, represented by bar graph and green fluorescence image respectively. (B) shows the positive green fluorescence cells corresponding to metabolic activation of β-galactosidase an indirect marker of senescence, and the posterior elimination of positive tumor cells by dasatinib. (C) show live/dead cell staining results, it is observed shoing a dose-dependent the increment of dead cells (red staining) in a dose-dependent effect induced by dasatinib exposure and inversely the decrement of live viable cells (green staining) in a dose dependent manner, and (D) show the increased activation of caspase 3/7, again in dose dependent manner to dasatinib exposure, confirming cell death shows a dose-dependent increased activation of casoase 3/7 induced by dasatinib exposure. (C, D) results correspond to primary cell culture derived from NF-gonadotroph, PRL-, GH- and ACTH-secreting pituitary tumors.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/fendo-17-1836525-g007.jpg?md5=42c53adc1739a7475612605ef3460d25",
+            "articleURL": "https://doi.org/10.3389/fendo.2026.1836525",
+            "asset": "assets/pmc13414927-e3c54b445cbd3e65.jpg",
+            "sha256": "e3c54b445cbd3e65968ced9868f3f7665857af6ca198e703e7e0dd1b6a8ec2c0",
+            "width": 734,
+            "height": 619,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al.. Analysis of senescence in pituitary tumors from different lineages and the potential role of senolytic drugs as targeted therapies.. DOI: 10.3389/fendo.2026.1836525. Copyright holder: Andonegui-Elguera, Gonzalez-Serrano, Mercado-Medrez, Hinojosa-Alvarez, Martinez-Mendoza, Ramirez-Ramos, Reyna-Coahutle, Sanchez-Carbajal, Hernandez-Bustos, Alegria-Ortega, Gonzalez-Mejlem, Garcia-Saenz, Gomez-Apo, Escobar-España, Gonzalez-Torres, Gaytan-Cervantes, Palma-Guzman, Guinto, Guinto-Nishimura, Lopez-Felix, Zepeda-Fernandez, Estrada-Estrada, Correa-Correa, Gonzalez-Zavala, Asenscio-Montiel, Garcia-Vargas, Cantu-Chavez, Chavez-Herrera, Arreola-Rosales, Vadillo, Chavez-Gonzalez, Fajardo-Orduña, Montesinos, Monroy-Garcia, Cortes-Morales, Mendez-Rosito, Garcia-Lopez, Ramirez-Landeros, Garcia-Fuentes, Vergara-Lopez, Torres-Flores, Taniguchi-Ponciano, Marrero-Rodriguez and Mercado. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e3c54b445cbd3e65968ced9868f3f7665857af6ca198e703e7e0dd1b6a8ec2c0",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SF1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image1.jpeg?md5=e83d1b77c222d7cea4d316c493ec753e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image2.jpeg?md5=69d86cd7e6d8effadfc134920f6b00c2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image3.jpeg?md5=2483556aacd39869dd382d9fdc923ed9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image4.jpeg?md5=a942cabf69b184ecc239645a92519ffc",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image5.jpeg?md5=21c2d07f1a6c54d8a44fe3252576de79",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image6.jpeg?md5=a13396d24f0063606077f8a3123b6f9d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image7.jpeg?md5=1d02f0c9b8eeac79079b64f02a1d4758",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Image8.jpeg?md5=208184aa1259fcd96c77e1094335e09f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Table1.xlsx?md5=8b40e4a4cad6ae3689a87388794175e2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13414927.1/Table2.xlsx?md5=e02cf97cd72daa3dfeda43bff5a5ec7a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-20T09:15:03.384656+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Sergio Andonegui-Elguera; Maria J. Gonzalez-Serrano; Sophia Mercado-Medrez; Silvia Hinojosa-Alvarez; Florencia Martinez-Mendoza; Itzel Ramirez-Ramos; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.7",
+        "jcr": "Q1",
+        "cas": "医学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-20T09:15:07Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-20T09:15:08Z",
+        "url": "https://openalex.org/W7168376669",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-20T09:15:08Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-20T09:15:08Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-21T09:15:08Z"
+        }
+      },
+      "selectionScore": {
+        "total": 53,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-20T09:15:49Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-c89e0a00f97c4732",
+      "paper": "A genome-wide association study and genetic risk score for age at diabetes diagnosis support beta-cell dysfunction in young-onset diabetes in Chinese.",
+      "doi": "10.1186/s13073-026-01760-5",
+      "journal": "Genome medicine",
+      "date": "2026-11-12",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1186/s13073-026-01760-5",
+      "pmcid": "PMC13756970",
+      "pmid": "43015912",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1756-994X",
+      "eissn": "1756-994X",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-20",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "a9bb08e80502e5edefb08fa98bc352c6c3e3a28265f7e10b3346e5cb1fd0258c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/PMC13756970.1.xml?md5=49ed6813f138ecbfae4894388707b0df",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Study design and workflow of genome-wide association studies (GWAS) of age at diabetes diagnosis and related traits in Chinese population with replication in multiple in-house and publicly available databases. In stage one, we performed meta-analysis of genome-wide association studies on individuals with diabetes from discovery cohort combining HKDR and HKDB phase one cohort. Then, we replicated variants with meta-analysis p < 1E-05 in internal replication cohort. Top signals from meta-analysis of the combined discovery and internal replication cohorts were looked up in external Chinese cohort and publicly available GWAS summary statistics from different ethnic groups as external validation. We performed conditional analyses to identify secondary signals and Chinese-prioritized loci for YOD. In stage two, we used top signals and computed polygenic risk scores to evaluate their associations with glycemic traits, beta-cell function and insulin resistance in individuals with and without diabetes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_Fig1_HTML.webp?md5=659badc3117d20fc37fc5f16632163dd",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01760-5",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoqi Fan; Claudia H. T. Tam; Andrea O. Y. Luk; Eric S. H. Lau; Cadmon K. P. Lim; Mai Shi; et al.. A genome-wide association study and genetic risk score for age at diabetes diagnosis support beta-cell dysfunction in young-onset diabetes in Chinese.. DOI: 10.1186/s13073-026-01760-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Manhattan plots and Q-Q plots of genome-wide association studies (GWAS) of age at diabetes diagnosis (ADD) in discovery cohort (A) and from overall meta-GWAS of combined discovery and internal replication cohort (B), regional plots and forest plots for top variants and their corresponding results of associations with glycemic traits in the diabetes cohorts of HKDR, HKDB and PRISM (C-F). This figure shows Manhattan plots and Q-Q plots for GWAS of ADD in discovery cohort (A) and from overall meta-GWAS of combined discovery and internal replication cohort (B), regional plots and associations of HbA1c, fasting C-peptide, HOMA2%B, and HOMA2 IR with top variants identified from GWAS of ADD (C-F). The red dashed line indicates the p value of 5E-08. The values of fasting C-peptide, HOMA2%B and HOMA2 IR were logarithmically transformed with base 2. The GWAS was adjusted for sex, BMI and the first four PCs. The associations with glycemic traits were adjusted for age, sex and the first four PCs. p-values were adjusted using the Benjamini-Hochberg procedure. Abbreviations: KCNQ1, potassium voltage-gated channel subfamily Q member 1; CDKAL1, CDK5 regulatory subunit associated protein 1 like1; PAX4, paired box 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_Fig2_HTML.webp?md5=9e241432287bebbeab700ca638bafdf2",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01760-5",
+            "asset": "assets/pmc13756970-9cccff1c4f44cb7c.webp",
+            "sha256": "9cccff1c4f44cb7ca4ca9b8045596bf551b71eb956a730addf11b7a7cdf5656c",
+            "width": 1600,
+            "height": 1879,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoqi Fan; Claudia H. T. Tam; Andrea O. Y. Luk; Eric S. H. Lau; Cadmon K. P. Lim; Mai Shi; et al.. A genome-wide association study and genetic risk score for age at diabetes diagnosis support beta-cell dysfunction in young-onset diabetes in Chinese.. DOI: 10.1186/s13073-026-01760-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9cccff1c4f44cb7ca4ca9b8045596bf551b71eb956a730addf11b7a7cdf5656c",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Bar charts of validation for ADD-GRS (A) and its associations with HbA1c (B), fasting C-peptide (C), HOMA2%B (D) and HOMA2 IR (E) in diabetes. Panel (A) was for association between ADD-GRS and age at diabetes diagnosis in validation cohort of individuals with T2D from HKDB-P3 and PRISM, with adjustment of sex and the first four principal components (PCs). Panel (B) were meta-analyzed in individuals with T2D from HKDR, HKDB-P1, HKDB-P2, HKDB-P3 and PRISM with adjustment of age at assessment, sex and the first four PCs. Panel (C-E) were meta-analyzed in individuals with T2D from HKDR and PRISM with adjustment of age at assessment, sex and the first four PCs. Pper SD increase indicates p values for associations with per 1-SD increase of standardized PRS. P5th vs. 1st quintile indicates p values for associations with top 20% of the PRS compared with the bottom 20% of the PRS. All p values were adjusted for multiple comparisons by the Benjamini-Hochberg procedure",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_Fig3_HTML.webp?md5=2d14119d188e1ad00cd1a0ad5b6adbeb",
+            "articleURL": "https://doi.org/10.1186/s13073-026-01760-5",
+            "asset": "assets/pmc13756970-1bb7968912247381.webp",
+            "sha256": "1bb7968912247381b636e1436f34977fcc25d0e8965bf356869f91618cda075c",
+            "width": 1600,
+            "height": 726,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoqi Fan; Claudia H. T. Tam; Andrea O. Y. Luk; Eric S. H. Lau; Cadmon K. P. Lim; Mai Shi; et al.. A genome-wide association study and genetic risk score for age at diabetes diagnosis support beta-cell dysfunction in young-onset diabetes in Chinese.. DOI: 10.1186/s13073-026-01760-5. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "1bb7968912247381b636e1436f34977fcc25d0e8965bf356869f91618cda075c",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_MOESM1_ESM.docx?md5=889edaaa46cf1b106af6101acab84591",
+            "license": "CC BY",
+            "sha256": "51dd47379225f82b327ec5b128a162f5e968479dbcaadcc7c9179aec9faf1740",
+            "status": "downloaded_private",
+            "bytes": 2129456,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_MOESM2_ESM.xlsx?md5=20f04525038d7ea6cbda1caff8d6629f",
+            "license": "CC BY",
+            "sha256": "20676d1846f2d80d7e709c9120e068a0d774d796fc1e1b3c6231477235a14bc6",
+            "status": "downloaded_private",
+            "bytes": 261678,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756970.1/13073_2026_1760_MOESM3_ESM.xlsx?md5=2e5761a21da4e7a4cb30e08029feaeba",
+            "license": "CC BY",
+            "sha256": "f66410a0344a0b4927b11424e910ed6f2aa35341055a2f9ebb94cbf9eb76446c",
+            "status": "downloaded_private",
+            "bytes": 198387,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-20T09:15:42.499636+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Baoqi Fan; Claudia H. T. Tam; Andrea O. Y. Luk; Eric S. H. Lau; Cadmon K. P. Lim; Mai Shi; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "10.8",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-20T09:15:46Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-20T09:15:47Z",
+        "url": "https://openalex.org/W7225807401",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-20T09:15:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-20T09:15:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-21T09:15:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-20T09:15:50Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -244124,6 +244811,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-37ea1dab34055819": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-c89e0a00f97c4732": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -245742,7 +246441,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-19T09:35:53Z",
+  "generatedAt": "2026-11-20T09:15:51Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -245976,18 +246675,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-20T09:12:41Z",
-    "updatedAt": "2026-11-20T09:12:47Z",
+    "updatedAt": "2026-11-20T09:15:57Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 38,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
