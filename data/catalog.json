@@ -180489,6 +180489,202 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-89348eae76cf45aa",
+      "doi": "10.7759/cureus.114956",
+      "paper": "Nicotinamide Mononucleotide (NMN) Prevents Age-Associated Transcriptional Drift in a Tissue-Dependent Manner: Mechanistic Leads From Ras-Related Protein Rab-11A-Mediated Trafficking and Carnitine Palmitoyltransferase 2-Linked Fatty Acid Oxidation.",
+      "journal": "Cureus",
+      "date": "2026-08-21",
+      "year": "2026",
+      "pmcid": "PMC13499948",
+      "pmid": "42634749",
+      "paperURL": "https://doi.org/10.7759/cureus.114956",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2168-8184",
+      "eissn": "2168-8184",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "728895652e03e250871e4e4a09fde578c8290b221638e512811e9cd76fbc6e97"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13499948.1/PMC13499948.1.xml?md5=bd74a02cc5ffe1761ab69d84b3a18ad6",
+        "figures": [
+          {
+            "id": "FIG1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Schematic of the analysis pipeline(a) The GSE85718 design comprises 48 microarray samples spanning three metabolic tissues, two ages, two treatments, and four biological replicates per cell. (b) Probe-level data are collapsed to gene level by retaining the highest-mean probe per symbol and then quantile-normalized to yield the matrix used for modeling. (c) Within each tissue, expression is fit to an age × treatment linear model; the age-by-treatment interaction is the central test, and rescue candidates require an age effect plus an opposite-signed interaction. (d) Candidate lists are sequentially filtered by interaction effect size, statistical confidence, cross-tissue robustness with direction consistency, and pathway context via MitoCarta overlap and preranked gene set enrichment analysis (GSEA) leading-edge analysis. The schematic depicts the computational workflow only; no results are shown, and all proposed mechanistic routes remain hypotheses requiring independent validation.Image created by the author using PowerPoint (Microsoft® Corp., Redmond, WA).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13499948.1/cureus-0018-00000114956-i01.webp?md5=76609b512540845f6da125e0c21ba22d",
+            "articleURL": "https://doi.org/10.7759/cureus.114956",
+            "asset": "assets/pmc13499948-8d4fb3b5881a0bfe.webp",
+            "sha256": "8d4fb3b5881a0bfe7894e3c2c2bbe1bec2c73bdc695d2887f2aa38b831a904b5",
+            "width": 1599,
+            "height": 1061,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Nicotinamide Mononucleotide (NMN) Prevents Age-Associated Transcriptional Drift in a Tissue-Dependent Manner: Mechanistic Leads From Ras-Related Protein Rab-11A-Mediated Trafficking and Carnitine Palmitoyltransferase 2-Linked Fatty Acid Oxidation.. DOI: 10.7759/cureus.114956. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8d4fb3b5881a0bfe7894e3c2c2bbe1bec2c73bdc695d2887f2aa38b831a904b5",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "FIG2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Candidate mechanistic routes through which long-term NMN may counter age-related transcriptional driftProposed mechanistic routes by which NMN may oppose age-related transcriptional change; all panels depict hypotheses rather than measured results. (a) Rather than a single universal program, NMN engages distinct tissue-specific routes in skeletal muscle, liver, and white adipose tissue (WAT) that converge on metabolic homeostasis. (b) RAB11A, the strongest cross-tissue trafficking lead, marks recycling endosomes; its preservation could maintain receptor and membrane-cargo recycling, supporting signaling turnover and protein quality control in aged tissue. (c) CPT2, the only robust mitochondrial gene, completes the carnitine shuttle on the inner mitochondrial membrane, implicating support of long-chain fatty-acid oxidation capacity rather than broad mitochondrial biogenesis. (d) In liver, the dominant signal is suppression of fatty-acyl-CoA biosynthesis, suggesting systemic benefit through hepatic lipid remodeling and an improved plasma lipid profile. Schematics illustrate candidate mechanisms only; no quantitative findings are shown.Image created by the author using PowerPoint (Microsoft® Corp., Redmond, WA).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13499948.1/cureus-0018-00000114956-i02.webp?md5=a77fe8dc9678ce0e66d7c61e10b402c5",
+            "articleURL": "https://doi.org/10.7759/cureus.114956",
+            "asset": "assets/pmc13499948-276d1aa7ac136797.webp",
+            "sha256": "276d1aa7ac1367978d715a99583458cffe165f90a6ad18f7be76454223989590",
+            "width": 1600,
+            "height": 1082,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Nicotinamide Mononucleotide (NMN) Prevents Age-Associated Transcriptional Drift in a Tissue-Dependent Manner: Mechanistic Leads From Ras-Related Protein Rab-11A-Mediated Trafficking and Carnitine Palmitoyltransferase 2-Linked Fatty Acid Oxidation.. DOI: 10.7759/cureus.114956. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "276d1aa7ac1367978d715a99583458cffe165f90a6ad18f7be76454223989590",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-20T09:19:45.629995+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+        "authorCredit": "Ngo Cheung"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "医学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-20T09:19:48Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-20T09:19:48Z",
+        "url": "https://openalex.org/W7204003001",
+        "cited_by_count": 3,
+        "fwci": 9.0562,
+        "citation_normalized_percentile": 0.96735382,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-20T09:19:48Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-20T09:19:48Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-21T09:19:48Z"
+        }
+      },
+      "selectionScore": {
+        "total": 57.8367691,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.8367691,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-20T09:20:15Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -245469,6 +245665,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-89348eae76cf45aa": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -247087,7 +247289,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-20T09:18:05Z",
+  "generatedAt": "2026-11-20T09:20:16Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -247321,18 +247523,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-20T09:12:41Z",
-    "updatedAt": "2026-11-20T09:18:19Z",
+    "updatedAt": "2026-11-20T09:20:22Z",
     "batchCount": 3,
-    "requests": 72,
+    "requests": 102,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
