@@ -303,12 +303,44 @@
     },
     "2026-11-20": {
       "newDOIs": [
+        "10.1002/imt2.70154",
+        "10.1111/acel.70815",
         "10.1186/s13073-026-01760-5",
         "10.3389/fendo.2026.1836525"
       ]
     }
   },
   "candidates": {
+    "10.1111/cas.70548": {
+      "checkedAt": "2026-11-20T09:18:03Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s43856-026-01971-2": {
+      "checkedAt": "2026-11-20T09:17:58Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s43587-026-01258-0": {
+      "checkedAt": "2026-11-20T09:17:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1111/acel.70815": {
+      "checkedAt": "2026-11-20T09:17:49Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1002/imt2.70154": {
+      "checkedAt": "2026-11-20T09:17:16Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1093/nargab/lqag138": {
       "checkedAt": "2026-11-20T09:15:49Z",
       "status": "pending",
@@ -452,12 +484,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "作者代码声明和可读脚本已定位"
-    },
-    "10.1111/cas.70548": {
-      "checkedAt": "2026-11-18T09:15:20Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1016/j.isci.2026.118126": {
       "checkedAt": "2026-11-18T09:15:18Z",
@@ -1944,61 +1970,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1002/imt2.70154": {
-      "checkedAt": "2026-10-22T06:59:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/imt2.70154",
-        "metadataHash": "39d2c24fa70df573010a3325c95420328ad28a007388d85168f63612841db52c",
-        "article": {
-          "status": "inspected",
-          "version": "2",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13416912.2/PMC13416912.2.xml?md5=f1516ac8b459686e5561fce7b6427efb",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 911,
-              "sha256": "9d65fa5893ddfe95fadcd9acf5150f5e18e806ed9960214608000e42fe9bfd8a",
-              "label": "Figure 1",
-              "height": 1231,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13416912.2/IMT2-5-e70154-g003.webp?md5=18e339af4ea8738d27960608c9a868d6",
-              "asset": "assets/pmc13416912-9d65fa5893ddfe95.webp",
-              "license": "CC BY",
-              "assetSHA256": "9d65fa5893ddfe95fadcd9acf5150f5e18e806ed9960214608000e42fe9bfd8a",
-              "id": "imt270154-fig-0001",
-              "captionHash": "faa94ee98460500abdfd87098b92a6111793908d2967f07a7e29107ca35e3e90"
-            },
-            {
-              "width": 911,
-              "sha256": "8ac1618bba9de88d8958a8cb637ba13ab3ece7b3289526054d12f368d715c66a",
-              "label": "Figure 2",
-              "height": 1212,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13416912.2/IMT2-5-e70154-g004.webp?md5=3276fa869d2b0f53a549108469b0379b",
-              "asset": "assets/pmc13416912-8ac1618bba9de88d.webp",
-              "license": "CC BY",
-              "assetSHA256": "8ac1618bba9de88d8958a8cb637ba13ab3ece7b3289526054d12f368d715c66a",
-              "id": "imt270154-fig-0002",
-              "captionHash": "f0d5ce368287f1dce93e9b7463a6b42e8cbe95f3e5e0054c9199e6c36b948d30"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-1c9f423cfbb2487d",
-          "doi": "10.1002/imt2.70154",
-          "paper": "Bazi Bushen Capsule restores fertility by targeting mitochondrial health in aging endometrium.",
-          "journal": "iMeta",
-          "date": "2026-07-29",
-          "year": "2026",
-          "pmcid": "PMC13416912",
-          "pmid": "42529269",
-          "paperURL": "https://doi.org/10.1002/imt2.70154"
-        },
-        "updatedAt": "2026-10-22T06:59:20Z"
-      }
     },
     "10.1093/bioinformatics/btag588": {
       "checkedAt": "2026-10-22T06:58:27Z",
@@ -11103,22 +11074,17 @@
     "startedAt": "2026-11-20T09:12:41Z",
     "maxAiAttempts": 165,
     "endReason": "",
-    "elapsedSeconds": 206,
+    "elapsedSeconds": 330,
     "status": "active",
     "version": 1,
     "maxSeconds": 2700,
     "aiAttempts": 0,
     "maxBatches": 36,
-    "requests": 38,
-    "dailyNewCount": 2,
+    "requests": 72,
+    "dailyNewCount": 4,
     "date": "2026-11-20",
     "batchCount": 2,
     "uncertainRequests": 0,
-    "updatedAt": "2026-11-20T09:16:07Z",
-    "inFlight": {
-      "startedAt": "2026-11-20T09:16:07Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "updatedAt": "2026-11-20T09:18:11Z"
   }
 }
