@@ -309,9 +309,47 @@
         "10.3389/fendo.2026.1836525",
         "10.7759/cureus.114956"
       ]
+    },
+    "2026-11-21": {
+      "newDOIs": [
+        "10.1186/s44342-026-00089-0",
+        "10.3389/fimmu.2026.1848488",
+        "10.3390/ijms272110056",
+        "10.7554/elife.110625"
+      ]
     }
   },
   "candidates": {
+    "10.7554/elife.110625": {
+      "checkedAt": "2026-11-21T08:50:31Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1186/s44342-026-00089-0": {
+      "checkedAt": "2026-11-21T08:50:25Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-21T08:50:21Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3390/ijms272110056": {
+      "checkedAt": "2026-11-21T08:50:10Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.3389/fimmu.2026.1848488": {
+      "checkedAt": "2026-11-21T08:49:57Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1186/s13059-026-04326-1": {
       "checkedAt": "2026-11-20T09:20:15Z",
       "status": "source_confirmed",
@@ -435,12 +473,6 @@
     },
     "10.2147/jhc.s641006": {
       "checkedAt": "2026-11-20T09:15:39Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-20T09:15:15Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -3593,61 +3625,6 @@
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.3389/fimmu.2026.1848488": {
-      "checkedAt": "2026-10-22T06:39:07Z",
-      "status": "pending",
-      "retryClass": "transient",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fimmu.2026.1848488",
-        "metadataHash": "58533d4f539710b216028de69357f71b35404e3020728bce18597a72cbef3221",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/PMC13236947.1.xml?md5=9c3339aa7387960c9db59738704fa444",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 708,
-              "sha256": "af9645f2b7ef2804ffcc59c05b8484a0c0b240fa3ce4b16983b1430e52edf778",
-              "label": "Figure 2",
-              "height": 965,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g002.jpg?md5=76b3efd88771f2ded0fa216f8ea0161d",
-              "asset": "assets/pmc13236947-af9645f2b7ef2804.jpg",
-              "license": "CC BY",
-              "assetSHA256": "af9645f2b7ef2804ffcc59c05b8484a0c0b240fa3ce4b16983b1430e52edf778",
-              "id": "f2",
-              "captionHash": "8c4145030f4468a7a295d3ef6c93746e55f7bdfbdc2f2e69fffe983dae47fe33"
-            },
-            {
-              "width": 704,
-              "sha256": "7c3e6e43524690b7a6b50a1858c23cf1bbe4063eb7d30dd26a7f24146bf6838c",
-              "label": "Figure 13",
-              "height": 793,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g013.jpg?md5=800d759095ea35ad2e35029ed189c025",
-              "asset": "assets/pmc13236947-7c3e6e43524690b7.jpg",
-              "license": "CC BY",
-              "assetSHA256": "7c3e6e43524690b7a6b50a1858c23cf1bbe4063eb7d30dd26a7f24146bf6838c",
-              "id": "f13",
-              "captionHash": "f23bfd32511cfd9171720dab55f3b3d71b89818e2361ded6c41baa2c235c25db"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-61f1e0adbe895b02",
-          "doi": "10.3389/fimmu.2026.1848488",
-          "paper": "CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.",
-          "journal": "Frontiers in immunology",
-          "date": "2026-05-22",
-          "year": "2026",
-          "pmcid": "PMC13236947",
-          "pmid": "42253970",
-          "paperURL": "https://doi.org/10.3389/fimmu.2026.1848488"
-        },
-        "updatedAt": "2026-10-22T06:39:04Z"
-      }
     },
     "10.1080/15592294.2026.2745292": {
       "checkedAt": "2026-10-22T06:38:01Z",
@@ -11088,8 +11065,8 @@
     }
   },
   "dailyCollectionSession": {
-    "dailyNewCount": 0,
-    "requests": 0,
+    "dailyNewCount": 4,
+    "requests": 47,
     "startedAt": "2026-11-21T08:47:48Z",
     "aiAttempts": 0,
     "endReason": "",
@@ -11098,17 +11075,12 @@
     "uncertainAiAttempts": 0,
     "maxAiAttempts": 165,
     "maxSeconds": 2700,
-    "updatedAt": "2026-11-21T08:47:55Z",
+    "updatedAt": "2026-11-21T08:50:46Z",
     "version": 1,
-    "elapsedSeconds": 8,
+    "elapsedSeconds": 178,
     "date": "2026-11-21",
     "status": "active",
     "maxBatches": 36,
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-21T08:47:55Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }

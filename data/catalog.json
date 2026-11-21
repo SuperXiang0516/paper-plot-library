@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-20",
+  "checkedAt": "2026-11-21",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -180685,6 +180685,1634 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-61f1e0adbe895b02",
+      "doi": "10.3389/fimmu.2026.1848488",
+      "paper": "CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-05-22",
+      "year": "2026",
+      "pmcid": "PMC13236947",
+      "pmid": "42253970",
+      "paperURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1664-3224",
+      "eissn": "1664-3224",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "689112b20222f28c704c635266c1155bcfb23b54c6f74a9de2fa9a26cc77b180"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/PMC13236947.1.xml?md5=9c3339aa7387960c9db59738704fa444",
+        "figures": [
+          {
+            "id": "f1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "The overall workflow of this study.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g001.jpg?md5=8128c03f10bfb773cb7d5f127a42be92",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Identification and validation of CDCS subtypes by multi-omics analysis and machine learning. (A) CDCS multi-omics consensus clustering analysis visualization. (B, C) Survival analysis indicated that CDCS2 was associated with a poorer prognosis than CDCS1 in both the TCGA and META cohorts. (D) Validating CDCS subtypes in the META cohort using heatmaps. (E) The TCGA and META cohorts’ CDCS and NTP, CDCS and PAM, and NTP and PAM consistency.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g002.jpg?md5=76b3efd88771f2ded0fa216f8ea0161d",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "assets/pmc13236947-af9645f2b7ef2804.jpg",
+            "sha256": "af9645f2b7ef2804ffcc59c05b8484a0c0b240fa3ce4b16983b1430e52edf778",
+            "width": 708,
+            "height": 965,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "af9645f2b7ef2804ffcc59c05b8484a0c0b240fa3ce4b16983b1430e52edf778",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "f3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Molecular characterization of CDCS subtypes. (A) A heatmap was used to assess the association between CDCS subtypes and clinical characteristics. (B) TF networks and chromatin remodeling regulators were analyzed, revealing potential upstream regulatory mechanisms underlying subtype-specific gene expression. (C) The GO analysis for the CDCS2-related genes. (D) The KEGG analysis for the CDCS2-related genes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g003.jpg?md5=d34fd18f0d4a95ac1156c32a90168595",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Evaluation of response to chemotherapy, radiation, and EGFR-targeted treatment across CDCS subtypes. (A) Analysis of radiotherapy-predictive biomarkers, specifically cell cycle and DNA replication signatures, revealed significant enrichment in the CDCS1 subtype, suggesting a greater suitability of these patients for radiotherapy. (B) CDCS1 patients exhibited enhanced predicted sensitivity to five conventional chemotherapeutic agents (5-Fluorouracil, Cisplatin, Docetaxel, Gemcitabine, and Paclitaxel), indicating a favorable response to chemotherapy. (C) CDCS1 patients demonstrated increased sensitivity to seven EGFR-targeted agents, including Afatinib, AZD3759 (Zorifertinib), Erlotinib, Gefitinib, Lapatinib, Osimertinib, and Sapitinib, supporting potential benefit from EGFR-targeted therapy. *, p < 0.05; **, p < 0.01; ***, p < 0.001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g004.jpg?md5=25d7883e0763e98d0a8a099f6680920b",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Assessment of the tumor microenvironment in different CDCS subtypes. (A–E) Comparison of tumor microenvironment cell infiltration between CDCS1 and CDCS2. CDCS1 showed higher enrichment of immune-active cell populations, including T cells and B cells, indicating a more inflamed immune microenvironment. In contrast, CDCS2 was characterized by higher enrichment of cancer-associated fibroblasts, suggesting stromal activation and an immunosuppressive tumor microenvironment. ns, p > 0.05; *, p < 0.05; **, p < 0.01; ***, p < 0.001; ****, p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g005.jpg?md5=759e7b41d296a0b81deb8b3c09a2daf8",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f6",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Evaluation of response to immunotherapy across CDCS subtypes. (A-G) Comparison of immune-related signatures between CDCS1 and CDCS2. CDCS2 exhibited higher enrichment of immune suppression, immune exclusion, immune exhaustion, and epithelial-mesenchymal transition signatures. In contrast, CDCS1 showed higher enrichment of immunotherapy-related signatures, immune function markers, and immune checkpoint genes. These results suggest that CDCS1 may represent an immune-active subtype more likely to benefit from immunotherapy, whereas CDCS2 may represent an immune-suppressed or immune-excluded subtype. ns, p > 0.05; *, p < 0.05; **, p < 0.01; ***, p < 0.001; ****, p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g006.jpg?md5=c51635e2ea623112e626e548e2867196",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f7",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Construction of the cell death and cellular senescence index. (A) Heatmap showing the performance of 270 machine learning algorithm combinations for CDCSI construction. Model performance was evaluated using the average C-index across training and validation cohorts. The Ridge plus SuperPC algorithm achieved the highest average C-index of 0.651 and was selected as the optimal model. Six hub genes, including SERPINE1, THBS1, SRPX, FADD, SERINC3, and CSNK2A2, were included in the final CDCSI model. (B–D) Kaplan-Meier survival curves comparing overall survival between high- and low-CDCSI groups across multiple cohorts, including TCGA, META, GSE27020, GSE41613, GSE42743, and GSE65858. Patients with low CDCSI consistently exhibited better survival outcomes than those with high CDCSI.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g007.jpg?md5=4f55b74e36598fc26d1c305f7b7a5866",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f8",
+            "label": "Figure 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Comparison of CDCSI with published models. C-index comparison between CDCSI and 88 published HNSCC prognostic signatures across multiple independent cohorts. CDCSI demonstrated superior predictive performance, ranking first in the GSE41613 and META cohorts, second in the TCGA and GSE27020 cohorts, and fifth in the GSE42743 and GSE65858 cohorts. These results indicate that CDCSI has strong and stable prognostic performance compared with existing models.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g008.jpg?md5=e669b62fb9ca3e631ff0d8629a40e768",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f9",
+            "label": "Figure 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Comparison of CDCSI with clinical features. (A) Univariate Cox regression analysis evaluating the prognostic significance of CDCSI and conventional clinical variables. (B) Multivariate Cox regression analysis confirming that CDCSI is an independent prognostic factor. (C) C-index comparison between CDCSI and traditional clinical features, showing that CDCSI provides better predictive accuracy and stability. (D) Nomogram integrating CDCSI with key clinical variables to estimate individualized survival probability, thereby improving the potential clinical applicability of CDCSI.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g009.jpg?md5=42f3b87ce4fb17c0b5a80d049bb0d731",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f10",
+            "label": "Figure 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "The relationship between CDCSI and response to chemotherapy, radiation, and EGFR-targeted treatment. (A) CDCSI exhibited a negative correlation with radiotherapy-related signatures, including cell cycle and DNA replication, suggesting that lower CDCSIs may indicate greater radiosensitivity. (B) Lower CDCSI were associated with reduced IC50 values for five standard chemotherapeutic agents (5-Fluorouracil, Cisplatin, Docetaxel, Gemcitabine, and Paclitaxel), indicating higher sensitivity to chemotherapy. (C) Lower CDCSI were associated with reduced IC50 values for seven EGFR-targeted drugs (Afatinib, AZD3759 (Zorifertinib), Erlotinib, Gefitinib, Lapatinib, Osimertinib, and Sapitinib), indicating higher sensitivity to targeted therapy.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g010.jpg?md5=e7d8904b27bd6bf9f3425c92cb6eb0ec",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f11",
+            "label": "Figure 11",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "11",
+              "panel": ""
+            },
+            "caption": "The relationship between CDCSI and response to immunotherapy. (A–C) Kaplan-Meier survival analyses in three independent immunotherapy cohorts, including GSE78220, GSE135222, and IMvigor210. Patients with low CDCSI showed better survival outcomes after immunotherapy. (D) Comparison of CDCSI among different clinical response groups in the IMvigor210 cohort. Patients achieving complete response or partial response had lower CDCSI than those with stable disease or progressive disease. (E) Comparison of CDCSI between responders and non-responders in the GSE91061 cohort. Responders exhibited lower CDCSI than non-responders. (F) TIDE analysis comparing immune evasion potential between high- and low-CDCSI groups. Low-CDCSI patients showed lower TIDE scores, indicating reduced immune dysfunction and exclusion and a higher likelihood of response to immune checkpoint blockade.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g011.jpg?md5=36cf0321af2fa2aa4103ce393e544772",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f12",
+            "label": "Figure 12",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "12",
+              "panel": ""
+            },
+            "caption": "SHAP analysis for gene importance and individual contribution in CDCSI. (A) The gene importance ranking was derived from the average SHAP values, with higher values indicating greater influence on prognostic predictions. (B) The effect of individual gene expression on prognostic predictions. (C) A decomposition of the model prediction for individual patients, showing how the six genes collectively shift the baseline prediction toward the final outcome.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g012.jpg?md5=5ce58bcf19bd88053aa791b7b2b6943b",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "f13",
+            "label": "Figure 13",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "13",
+              "panel": ""
+            },
+            "caption": "Single-cell and spatial transcriptomic validation. (A) UMAP visualization of single-cell RNA sequencing data showing 24 cell clusters. (B) Annotation of the 24 clusters into 9 major cell types. (C) UMAP visualization showing the distribution of CDCSI scores across single-cell populations. (D) Violin plot comparing CDCSI scores among different cell types. Tumor cells exhibited the highest CDCSI, indicating that CDCSI is mainly enriched in malignant cell populations. (E) Spatial transcriptomic visualization showing the distribution of CDCSI scores across spots. (F) Spatial localization of CDCSI-enriched regions, showing that high CDCSI was mainly distributed in tumor-enriched areas. (G) Colocalization analysis showing a positive correlation between tumor cell abundance and CDCSI scores, supporting the spatial association between CDCSI and malignant tumor regions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g013.jpg?md5=800d759095ea35ad2e35029ed189c025",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "assets/pmc13236947-7c3e6e43524690b7.jpg",
+            "sha256": "7c3e6e43524690b7a6b50a1858c23cf1bbe4063eb7d30dd26a7f24146bf6838c",
+            "width": 704,
+            "height": 793,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7c3e6e43524690b7a6b50a1858c23cf1bbe4063eb7d30dd26a7f24146bf6838c",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "f14",
+            "label": "Figure 14",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "14",
+              "panel": ""
+            },
+            "caption": "Validation of mRNA and protein expression levels in vitro. (A) The qPCR results demonstrated that mRNA expression levels of the six CDCSI genes (SERPINE1, SERINC3, CSNK2A2, FADD, THBS1, and SRPX) were highest in the cisplatin-resistant tumor cells, intermediate in the tumor cells, and lowest in normal cells. (B) The CDCSI calculated based on qPCR data was highest in cisplatin-resistant tumor cells, intermediate in tumor cells, and lowest in normal cells. (C) WB analysis confirmed protein-level expression patterns, showing elevated levels of five genes (SERPINE1, SERINC3, CSNK2A2, FADD, THBS1) in cisplatin-resistant tumor cells compared to tumor and normal cells.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/fimmu-17-1848488-g014.jpg?md5=4c0b9958e7db1be6d9a20005885924e5",
+            "articleURL": "https://doi.org/10.3389/fimmu.2026.1848488",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xiaoqin Luo; Xian He. CDCSI: a machine learning-based interpretable cell death and cellular senescence index for prognosis improvement, immune landscape characterization, and therapeutic response prediction in head and neck squamous cell carcinoma.. DOI: 10.3389/fimmu.2026.1848488. Copyright holder: Luo and He. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SF1",
+            "label": "Supplementary Figure 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Image1.tif?md5=5840531abc6d0b845ae80b533986a8e4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SF2",
+            "label": "Supplementary Figure 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Image2.tif?md5=6f621e623e1b33301c74b563afdc7be6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST1",
+            "label": "Supplementary Table 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Table1.xlsx?md5=785669f06b12d3f7c3136748cdf7cb9e",
+            "license": "CC BY",
+            "sha256": "28a6341809bdec5536eaf9289201f6971fe230646a84597d6bb7ceda81833d2b",
+            "status": "downloaded_private",
+            "bytes": 342067,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "ST2",
+            "label": "Supplementary Table 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Table1.xlsx?md5=785669f06b12d3f7c3136748cdf7cb9e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST3",
+            "label": "Supplementary Table 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Table1.xlsx?md5=785669f06b12d3f7c3136748cdf7cb9e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ST4",
+            "label": "Supplementary Table 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/Table1.xlsx?md5=785669f06b12d3f7c3136748cdf7cb9e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/JYfantast/HNSCC"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-21T08:49:52.022835+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/JYfantast/HNSCC",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13236947.1/PMC13236947.1.xml?md5=9c3339aa7387960c9db59738704fa444"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xiaoqin Luo; Xian He"
+      },
+      "repository": {
+        "status": "unavailable",
+        "url": "https://github.com/JYfantast/HNSCC",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "GitHub inspection failed: FetchError"
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false,
+        "errorStatus": 404,
+        "lastError": "api.github.com: HTTP 404"
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.0",
+        "jcr": "Q1",
+        "cas": "医学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-21T08:49:56Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-21T08:49:56Z",
+        "url": "https://openalex.org/W7162118056",
+        "cited_by_count": 1,
+        "fwci": 4.6433,
+        "citation_normalized_percentile": 0.87711659,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "unavailable",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [
+          "repository: unavailable"
+        ],
+        "lastCheckedAt": "2026-11-21T08:49:56Z",
+        "repairSchedule": {
+          "consecutiveFailures": 1,
+          "lastAttemptAt": "2026-11-21T08:49:56Z",
+          "lastOutcome": "failure"
+        }
+      },
+      "selectionScore": {
+        "total": 61.38558295,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.38558295,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-21T08:50:32Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-11b411632953345d",
+      "paper": "Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.",
+      "doi": "10.3390/ijms272110056",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-11-09",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3390/ijms272110056",
+      "pmcid": "PMC13763732",
+      "pmid": "43028301",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1422-0067",
+      "eissn": "1422-0067",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-21",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "9ea2ec20b723b83e6e1e3bd747803f0f87a8896cefc872117e1a2c159590e278"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/PMC13763732.1.xml?md5=dad10a03b61746e20d7a96f7e0aca852",
+        "figures": [
+          {
+            "id": "ijms-27-10056-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Recovered glomerular counts and kidney mass at 8 weeks. (A) Recovered counts per kidney. (B) Recovered glomerular count per gram of kidney. (C) Kidney-to-body-weight ratio. (D) Recovered count versus kidney weight with fitted means from the additive sex- and kidney-weight-adjusted GLS model. Circles and triangles indicate males and females, respectively (5 of each per strain). Bars in (A–C) show mean ± SD. p values in (A,B) were obtained from sex-adjusted GLS models with strain-specific residual variances and Holm correction across all six strain pairs. Lines in (D) represent fitted means standardised to equal representation of both sexes and pointwise 95% CIs, shown only over observed strain-specific kidney-weight ranges. Recovered counts do not establish absolute nephron endowment. B6, C57BL/6J (blue); FVB, FVB/N (orange); BALB, BALB/c (green); DBA, DBA/2 (purple).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g001.webp?md5=b8587ef212b85665dfb99d70f579457d",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "assets/pmc13763732-8c310a44e967c7d7.webp",
+            "sha256": "8c310a44e967c7d76495c3869994c73c42d4bcc31c02a283384eab32554fd7ac",
+            "width": 1325,
+            "height": 1365,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8c310a44e967c7d76495c3869994c73c42d4bcc31c02a283384eab32554fd7ac",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-10056-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Age-associated renal and glomerular phenotypes in male C57BL/6J and FVB/N mice. (A) Representative PAS-stained superficial cortical glomeruli at 10 weeks and 1 year, at the same scale; scale bars, 50 µm. Original micrograph colours were retained. (B) Kidney weight at 8 weeks, 1 year and 1.5 years (n = 5, 5 and 3 per strain); 8-week animals are the same males as in Figure 1. (C) Per-animal mean glomerular long-axis diameter (20 glomeruli per animal; n = 5 per strain per age). (D) Semiquantitative UACR estimates (C57BL/6J n = 5, FVB/N n = 11 per age). Points represent individual animals, and error bars indicate SD; blue, C57BL/6J; orange, FVB/N. Age groups are independent. Panel (B) uses Tukey–Kramer comparisons across all six strain-by-age groups; panel (C) uses Welch tests with Holm correction across two ages. Panel (D) uses Welch tests on raw values with Holm correction applied to a single family comprising two between-strain and two within-strain age comparisons. The BSA-based UACR assay was not independently validated for band identity or linearity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g002.webp?md5=919bcd59105c59767e8ae2acb9837af4",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "assets/pmc13763732-d5634c2e138e4a17.webp",
+            "sha256": "d5634c2e138e4a179daf0a0d75dcd58637aa1a6d499a07c304c20316fc9d7dd7",
+            "width": 1447,
+            "height": 1325,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d5634c2e138e4a179daf0a0d75dcd58637aa1a6d499a07c304c20316fc9d7dd7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-10056-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Effect of strain-specific quantification on expression estimates. Mean absolute strain log2 fold change using GRCm39, an SNV-only personalised genome and an SNV-plus-indel personalised genome, for (A) genes with |uncorrected log2FC| > 1 (387 at E13.5; 563 at P1) and (B) all genes in the mapping-comparison tables (15,488 and 16,987, respectively). These mapping-comparison summaries are distinct from DESeq2 Wald statistics. Detailed mapping and coordinate-conversion checks are provided in the Supplementary Materials.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g003.webp?md5=69a1b669766bbfdb60197d0bca918ffb",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10056-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Developmental kidney expression differences between FVB/N and C57BL/6J. Volcano plots show differential expression at (A) E13.5 and (B) P1. Of 24,283 and 26,718 genes tested at E13.5 and P1, 21,415 and 24,121 had a nonmissing adjusted p value; 1796 and 1640 reached FDR < 0.1. The gene counts shown in panels A and B additionally apply the criterion |log2FC| > 0.5: 1186 genes at E13.5 and 1441 at P1. Red points meet both criteria and grey points do not; the dashed horizontal line marks FDR = 0.1, and the vertical line marks log2FC = 0. (C) Log2 fold changes in genes of the GDNF–RET axis; asterisks indicate FDR < 0.1; blue and green bars denote E13.5 and P1, respectively. Six2 was significantly lower at P1 (log2FC −0.39). (D) Gene-set enrichment for 106 kidney-related gene sets at E13.5, ordered by adjusted p value. No set reached FDR < 0.1; the minimum adjusted p value was 0.22. The corresponding minimum at P1 was 0.35. Fold changes are FVB/N versus C57BL/6J.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g004.webp?md5=251fbaf433c2ba5b567eb368d9ebb1b8",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10056-f005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Relative cell-composition estimates using the P1 reference. (A) Known versus estimated proportions in four held-out pseudo-bulk mixtures from the same reference library (r = 0.853; MAE = 0.0335); the dashed line indicates identity (y = x). (B,C) Individual bulk-sample estimates at E13.5 and P1, respectively. Each point is one animal (n = 3 males per strain per stage); bars and error bars show mean ± SD; blue, C57BL/6J; orange, FVB/N. Welch p values for the combined cap-mesenchyme and nephron-progenitor lineage are unadjusted (0.69 and 0.67). Comparisons across cell types use Bonferroni correction across nine types within each stage. Estimates are reference-dependent and do not establish absolute cell numbers or equivalence. Embryonic-reference sensitivity is shown in Supplementary Figure S3. B6, C57BL/6J; FVB, FVB/N.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g005.webp?md5=c6bee61411384ebea93835e38d83802c",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10056-f006",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Candidate prioritisation and motif-disruption overlap. (A) Gene-level filtering: assignment of an FVB private variant in an H3K27ac region within 100 kb (1236), differential expression (92), published transcription-factor peak overlap (7), and quality control (5). Darker shading indicates later filtering steps. Equal-distance assignments were retained. (B) Odds ratios and 95% CIs for motif-disruption calls versus ChIP-seq overlap among 1592 private SNVs in H3K27ac regions; displayed p values are unadjusted; squares show odds ratios, and the dashed red line marks an odds ratio of 1. (C) SIX2 window-size sensitivity (odds ratio by window half-width around the peak summit; the dashed red line marks an odds ratio of 1). The OSR1 result used 19 in-peak variants and remained significant after correction across three factors.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g006.webp?md5=875b6baa9ec28f4415d0568c4c113156",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10056-f007",
+            "label": "Figure 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Unrestricted exploratory gene-set analysis. (A) P1 results for 5337 eligible sets after applying 15–500-gene size limits. Ranking was performed after excluding the 164 genes whose counts depended strongly on the reference genome (Section 4). Benjamini–Hochberg correction was applied jointly across collections within each stage. Of 104 sets with FDR < 0.05, 58 were interferon-/immune-related, and 46 were not; 5233 were not significant. Red, interferon-/immune-related sets; blue, other significant sets; grey, nonsignificant sets; the dotted horizontal line marks FDR = 0.05. (B) Gene-level log2FC for all analysed members of the predefined HALLMARK interferon-γ and interferon-α response sets. Gene counts at E13.5/P1 are 181/194 (γ) and 95/98 (α); membership differs from that used in panel A by four or five genes (Supplementary Note S2); corresponding medians are +0.02/−0.17 and −0.02/−0.32. Dots represent genes; boxes show the interquartile range, centre lines the median, and whiskers extend to the most extreme observations within 1.5 interquartile ranges. All points are shown. Red boxes denote P1 and grey boxes E13.5; the horizontal line marks log2FC = 0. No stage × strain interaction was tested. (C) Median log2FC of programme leading-edge genes in P1 kidney and liver from GSE167328: vehicle-treated pregnant females, mated at 6–8 weeks and sampled at gestation day 11, n = 3 per strain. Filled and open bars denote kidney and liver. Red and blue fills denote interferon-related and metabolic programmes, respectively; the vertical line marks zero. Concordant enrichment was observed for interferon-related sets; differences between the datasets preclude a formal tissue-specificity claim. (D) Leading-edge log2FC distributions and selected proliferation/growth-marker transcripts; bars indicate medians; red and blue violins show interferon and mitochondrial/oxidative leading-edge genes, green points show the marker transcripts, and the horizontal line marks log2FC = 0. No significant difference was detected in the six marker transcripts (all FDR > 0.18), which does not establish equivalent proliferation.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-g007.webp?md5=14c7ed61bd1114822a2cebf1982e5bb3",
+            "articleURL": "https://doi.org/10.3390/ijms272110056",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki. Recovered Glomerular Counts in Relation to Kidney Mass and Developmental Transcriptomes in FVB/N Mice.. DOI: 10.3390/ijms272110056. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "ijms-27-10056-s001",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763732.1/ijms-27-10056-s001.zip?md5=35ae39955d012d0827822e3e9265b619",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-21T08:50:06.528586+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Tomoki Omori; Masaki Watanabe; Ryuya Nakagawa; Takeru Sasaki; Nobuya Sasaki"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-21T08:50:09Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-21T08:50:10Z",
+        "url": "https://openalex.org/W7225649784",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-21T08:50:10Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-21T08:50:10Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-22T08:50:10Z"
+        }
+      },
+      "selectionScore": {
+        "total": 58,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-21T08:50:33Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-dd7c4d15e0a59227",
+      "paper": "Association of SLC2A9 and ABCG2 variants with hyperuricemia stratified by body mass index in a Korean population.",
+      "doi": "10.1186/s44342-026-00089-0",
+      "journal": "Genomics & informatics",
+      "date": "2026-11-16",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1186/s44342-026-00089-0",
+      "pmcid": "PMC13776224",
+      "pmid": "43040401",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1598-866X",
+      "eissn": "2234-0742",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-21",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes",
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "602d45e181baaa06cbc54b6f48b36de0aa3c3135ab2db7ace5ba08f941dbfc17"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13776224.1/PMC13776224.1.xml?md5=583b68d627040162d2be583dd4c58284",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Manhattan plots of genome-wide association analyses for serum uric acid levels in the HEXA and Ansung–Ansan cohorts. Genome-wide association analyses were performed independently in the HEXA and Ansung–Ansan cohorts using an additive genetic model adjusted for age, sex, smoking status, and alcohol consumption. The y-axis represents − log10(P) values for the association of each SNP with serum uric acid levels, and the x-axis represents genomic positions across chromosomes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13776224.1/44342_2026_89_Fig1_HTML.webp?md5=9fd8832686a4eafb3ab18084e195d452",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00089-0",
+            "asset": "assets/pmc13776224-586faaf6d42cd7d3.webp",
+            "sha256": "586faaf6d42cd7d35cf2a8e6a1dd097f1045831565dc80a8497bb97cf61db0bf",
+            "width": 1599,
+            "height": 419,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dae Hyun Kim; Gitae Kim; Jooeun Jeon; Jae Woong Sull. Association of SLC2A9 and ABCG2 variants with hyperuricemia stratified by body mass index in a Korean population.. DOI: 10.1186/s44342-026-00089-0. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "586faaf6d42cd7d35cf2a8e6a1dd097f1045831565dc80a8497bb97cf61db0bf",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Associations between representative SNPs and hyperuricemia in the HEXA and Ansung–Ansan cohorts. Odds ratios (ORs) and 95% confidence intervals (CIs) for the associations between representative SNPs and hyperuricemia were estimated using multivariable logistic regression models adjusted for age, sex, smoking status, alcohol consumption, and regular exercise. Genotypes were coded using a dominant genetic model. Results are presented separately for the HEXA and Ansung–Ansan cohorts. For rs4529048, carriers of the CA/AA genotypes were compared with CC homozygotes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13776224.1/44342_2026_89_Fig2_HTML.webp?md5=d059e420e36e35ce1cc8638a595578b1",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00089-0",
+            "asset": "assets/pmc13776224-f9488c9bf8cd3e35.webp",
+            "sha256": "f9488c9bf8cd3e352eacc649682e29be0eee1737e426dbc8b0185470022666f8",
+            "width": 1415,
+            "height": 1697,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dae Hyun Kim; Gitae Kim; Jooeun Jeon; Jae Woong Sull. Association of SLC2A9 and ABCG2 variants with hyperuricemia stratified by body mass index in a Korean population.. DOI: 10.1186/s44342-026-00089-0. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f9488c9bf8cd3e352eacc649682e29be0eee1737e426dbc8b0185470022666f8",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "BMI-stratified associations between representative SNPs and hyperuricemia in the HEXA and Ansung–Ansan cohorts. Odds ratios (ORs) and 95% confidence intervals (CIs) for the associations between representative SNPs and hyperuricemia were estimated using multivariable logistic regression models stratified by four BMI categories (< 18.5, 18.5–22.9, 23.0–24.9, and ≥ 25.0 kg/m2), based on Asian-specific BMI criteria, and adjusted for age, sex, smoking status, and alcohol consumption. Results are presented separately for the HEXA and Ansung–Ansan cohorts. For rs4529048, carriers of the CA/AA genotypes were compared with CC homozygotes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13776224.1/44342_2026_89_Fig3_HTML.webp?md5=04b81fbf82e0c02c72071736a331bed4",
+            "articleURL": "https://doi.org/10.1186/s44342-026-00089-0",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Dae Hyun Kim; Gitae Kim; Jooeun Jeon; Jae Woong Sull. Association of SLC2A9 and ABCG2 variants with hyperuricemia stratified by body mass index in a Korean population.. DOI: 10.1186/s44342-026-00089-0. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13776224.1/44342_2026_89_MOESM1_ESM.docx?md5=8e4b573702fed41793a717f6d138a5b7",
+            "license": "CC BY",
+            "sha256": "50825d5227d14ca61563b29a1d72c5784f175939c497c539d8a1844e9d374000",
+            "status": "downloaded_private",
+            "bytes": 95915,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-21T08:50:22.640835+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Dae Hyun Kim; Gitae Kim; Jooeun Jeon; Jae Woong Sull"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "missing_journal",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "missing_journal"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-21T08:50:25Z",
+        "url": "https://openalex.org/W7233838158",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "missing_journal",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-21T08:50:25Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-21T08:50:25Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-22T08:50:25Z"
+        }
+      },
+      "selectionScore": {
+        "total": 14,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 4,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-21T08:50:35Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-3d8114dfb52eb217",
+      "paper": "Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.",
+      "doi": "10.7554/elife.110625",
+      "journal": "eLife",
+      "date": "2026-11-17",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.7554/elife.110625",
+      "pmcid": "PMC13777269",
+      "pmid": "43041067",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2050-084X",
+      "eissn": "2050-084X",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-21",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f16a663bdd1f983877c3623d5154aef388c3694440875d1700be7a749acd13a0"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/PMC13777269.1.xml?md5=a9ea66fb784161b8d3bde45e487b500f",
+        "figures": [
+          {
+            "id": "fig1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Exonisation rates at intronic TE insertion sites.(A) Schematic of the approach used to quantify exonisation rates. For each TE–gene breakpoint at an endogenous exon–intron junction, TEChim computes the ratio of reads supporting TE-derived splice junctions relative to canonical exon–exon junctions. (B) Ranked distribution of TE exonisation efficiencies across intronic and exonic TE insertion sites in the Drosophila brain. For each of the 264 TE–gene pairs, the breakpoint with the highest exonisation ratio is shown. Points represent mean exonisation ratios across six biological replicates. Error bars show SEM. The dashed line indicates the mean exonisation rate across all loci. Junction level exonisation ratios, replicate coverage and SEM values are provided in Supplementary file 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig1.webp?md5=463e272388b32c01210b66bf8c739654",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Antisense insertion of roo in mtd introduces cryptic splice donor and acceptor sites.(A) Schematic of the genomic locus of the mustard gene, including a roo insertion present in abCherry flies. Bar graphs show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim (grey). (B, C) Schematic of mustard transcripts -RX, -RF, and -RI, with coding sequences (orange) and UTRs (dark grey). The precise splice acceptor and donor sites on roo are also shown, and sections of roo that are spliced out are shaded in light magenta. Bar graph in B shows the number of breakpoint-spanning reads found in mRNA from abCherry midbrains by TEChim (grey) and TIDAL (red). Bar graphs in C show the number of reads that support splicing events (indicated by light grey lines) between up- and downstream exons, and two conserved loci within roo (grey bars). Each bar is labelled with the precise location of the breakpoint on roo and the reference genome. TIDAL did not find any of these reads. In addition, red arrows indicate the precise location of RT-PCR primers used by Azad et al. Note that one primer of each primer pair maps onto a section of the TE that is actually spliced out. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2.webp?md5=aad7a0d886040a257db8d3333042b512",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "assets/pmc13777269-4dbdf5ed25899300.webp",
+            "sha256": "4dbdf5ed25899300779b59f8cf69848652743803d0f5a00fea469e2cb61e8135",
+            "width": 1600,
+            "height": 1183,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4dbdf5ed25899300779b59f8cf69848652743803d0f5a00fea469e2cb61e8135",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig2s1",
+            "label": "Figure 2—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "roo repeat regions relative to detected breakpoints.Schematic of the roo consensus sequence, drawn to scale, with positions shown excluding the long terminal repeats (LTRs; top), and positions of the LTR (bottom). Coloured boxes indicate three annotated repeat features within roo (Domínguez, 2021): a 99-bp imperfect tandem duplication (positions 277–475), a 25-bp poly-A tract (552–576), and an ~85 bp CAG/AAC microsatellite (641–726). The two breakpoints detected in mtd (Figure 2) at positions 5190 and 5462, fall more than 4 kb downstream of the repeat regions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp1.webp?md5=09f0f89b6af96e9b9709dc71c3e64602",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s2",
+            "label": "Figure 2—figure supplement 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "tabor insertion in CG17698.Upper panel shows a schematic of the genomic locus of the CG17698 gene, including a tabor insertion present in abCherry flies. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Lower panel shows a schematic of the CG17698-RD transcript, with coding sequences (orange) and UTRs (dark grey). The splice acceptor site on tabor is also shown, and the section of tabor that is spliced out is shaded in light magenta. Bar graphs show the number of breakpoint-spanning reads found in mRNA from abCherry midbrains using TEChim (grey) and TIDAL (red). Bar graphs at the bottom show the number of reads that support splicing events (indicated by light grey lines) between two downstream exons and a conserved locus within tabor (grey bars). Each bar is labelled with the precise location of the breakpoint on tabor and the reference genome. TIDAL did not find any of these reads. In addition, red arrows show the precise location of RT-PCR primers used by Azad et al. Note that one primer maps onto a section of the TE that is actually spliced out. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp2.webp?md5=5d55988a3c056e1f0b0fcbaa6fd8a522",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s3",
+            "label": "Figure 2—figure supplement 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "I-element insertion in Pde1C.Upper panel shows a schematic of the genomic locus of the Pde1C gene, including an I-element insertion present in abCherry flies. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Lower panel shows a schematic of the Pde1C-RB and -RD transcripts, with coding sequences (orange) and UTRs (dark grey). The splice acceptor site on the I-element is also shown, and the section of the I-element that is spliced out is shaded in light magenta. Bar graphs show the number of breakpoint-spanning reads found in mRNA from abCherry midbrains using TEChim (grey) and TIDAL (red). Bar graph at the bottom shows the number of reads that support splicing events (indicated by light grey line) between the upstream exon and a conserved locus within the I-element (grey bar). The bar is labelled with the precise location of the breakpoint on the I-element and the reference genome. TIDAL did not find any of these reads. In addition, red arrows show the precise location of RT-PCR primers used by Azad et al. Note that one primer maps onto a section of the TE that is actually spliced out and the other primer to an exon of another splice isoform than reported in abCherry flies. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp3.webp?md5=04adb3331ccf336476daf37699c7caa5",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s4",
+            "label": "Figure 2—figure supplement 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "blood insertion in Dscam2.Upper panel shows a schematic of the genomic locus of the Dscam2 gene, including a blood insertion present in abCherry flies. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Lower panel shows a schematic of the Dscam2-RE transcript, with coding sequences (orange) and UTRs (dark grey). The splice donor site on blood is also shown, and the section of blood that is spliced out is shaded in light magenta. Bar graphs show the number of breakpoint-spanning reads found in mRNA from abCherry midbrains using TEChim (grey) and TIDAL (red). Bar graph at the bottom shows the number of reads that support splicing events (indicated by light grey line) between the downstream exons and a conserved locus within blood (grey bar). The bar is labelled with the precise location of the breakpoint on blood and the reference genome. TIDAL did not find any of these reads. In addition, red arrows show precise location of RT-PCR primers used by Azad et al. Note that one primer maps onto a section of the TE that is actually spliced out. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp4.webp?md5=74a5fcab8f4b33d7a07ea6bec89cc029",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s5",
+            "label": "Figure 2—figure supplement 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "opus insertion in mub.Upper panel shows a schematic of the genomic locus of the mub gene, including an opus insertion present in abCherry flies. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Lower panel shows a schematic of the mub-RF transcript, with UTRs (dark grey). The splice donor site on opus is also shown. The first 24 nucleotides of opus are spliced out, but this cannot be visualised at the current scale. Bar graphs show the number of breakpoint-spanning reads found in mRNA from abCherry midbrains using TEChim (grey) and TIDAL (red). Bar graph at the bottom shows the number of reads that support splicing events (indicated by light grey line) between the downstream exons and a conserved locus within opus (grey bar). The bar is labelled with the precise location of the breakpoint on opus and the reference genome. TIDAL did not find any of these reads. In addition, red arrows show precise location of PCR primers used by Azad et al. to genotype their w1118 flies. Note that these primers flank a region ~31 kb upstream of the opus insertion in abCherry flies. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp5.webp?md5=4438976de819b04354cc5442591b4681",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig2s6",
+            "label": "Figure 2—figure supplement 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "mdg3 insertion in SelR.Upper panel shows a schematic of the genomic locus of the SelR gene, including an mdg3 insertion present in abCherry flies. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Lower panel shows a schematic of the SelR-RE and -RJ transcripts, with coding sequences (orange) and UTRs (dark grey). The splice acceptor site on mdg3 is also shown, and the section of mdg3 that is spliced out is shaded in light magenta. Bar graphs show the number of breakpoint-spanning reads found in mRNA from abCherry midbrains using TEChim (grey) and TIDAL (red). Bar graph at the bottom shows the number of reads that support splicing events (indicated by light grey line) between the upstream exon and a conserved locus within mdg3 (grey bar). The bar is labelled with the precise location of the breakpoint on mdg3 and the reference genome. TIDAL did not find any of these reads. In addition, red arrows show precise location of RT-PCR primers used by Azad et al. Note that one primer maps onto a section of another splice isoform then reported in abCherry flies. Figure is drawn to scale and gDNA and mRNA are aligned to each other.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig2-figsupp6.webp?md5=dae1bc56af9b0f87f01305e1d61831de",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Accurate primer design generates independent breakpoint-spanning fragments that confirm splicing between Beadex and opus.(A) Schematic of the genomic locus of Beadex (Bx) – splice isoform −RA, drawn to scale. Primer pairs used by Azad et al. are shown in red (at the precise point where they map). The primers used here are drawn in black (forward primer: CCTGATCTCACGGTCTCTGT; reverse primer: CCTTAATGCCTGTCACCACG). The predicted band size for the spliced transcript is 647 bp. (B) Electrophoresis gel image of PCR products. The same forward and reverse primers were added to all reactions. The templates for columns 2–4 were three independent biological replicates of +RT samples, columns 5–7 are the matching samples but their −RT control, and column 8 is the no-template-control (NTC). Columns 1 and 9 contain a Quick-load 100 bp ladder. The gel image is cropped around the edges but otherwise unedited (see Figure 3—source data 1 and 2 for raw image). Dashed box indicates the fragment that was excised and Sanger sequenced. (C) Sanger sequencing result of the band from B. Sequence matches the predicted breakpoint between Bx exon 4 and position 902 within opus. Figure 3—source data 1.Raw, labelled, uncropped gel of Beadex–opus RT-PCR products from Canton-S midbrain cDNA, with −RT and no-template controls. Figure 3—source data 2.Labelled gel of Beadex–opus RT-PCR products from Canton-S midbrain cDNA, with −RT and no-template controls.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3.webp?md5=adc1e7b828eadaabcb91206c52bb9525",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "assets/pmc13777269-0072ee9621dd4ab9.webp",
+            "sha256": "0072ee9621dd4ab9ad45f0f73daa94778186cd021d9a8ff13ef7125a4d4ca200",
+            "width": 1600,
+            "height": 2118,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0072ee9621dd4ab9ad45f0f73daa94778186cd021d9a8ff13ef7125a4d4ca200",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig3s1",
+            "label": "Figure 3—figure supplement 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "supplementary",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Targeted PCR and Sanger sequencing confirms the opus insertion in Bx, previously identified by whole-genome sequencing of abCherry flies.(A) Schematic of the genomic locus of Bx – splice isoform −RA, drawn to scale. Bar graphs at the top show the number of breakpoint-spanning reads identified in gDNA-sequencing data from abCherry flies, using TEChim. Primer loci are shown in black. The predicted fragment size for a genomic locus with the opus insertion is 888 bp for the upstream and 540 bp for the downstream breakpoint. (B) Electrophoresis gel image of PCR products. The templates for columns 2–4 and 5–7 are three independent biological replicates of genomic DNA extracted from single CS flies. Columns 1 and 8 contain a Quick-load 100 bp ladder. The gel image is cropped around the edges but otherwise unedited. See the raw, unedited gel image in Figure 3—figure supplement 1—source data 1 and 2 for unedited image. Dashed boxes indicate the fragments that were excised and Sanger sequenced. (C) Sanger sequencing result of the downstream band from B. The sequence matches the predicted breakpoint between Bx and the end of the opus long terminal repeat (LTR). Note that the Sanger sequence was done with the reverse primer, hence the sequence shown is the reverse complement to the positive strand of Bx and opus. Sanger sequencing of the upstream 888 bp band (also indicated in B) confirmed flanking Bx and opus sequence, but did not resolve a continuous read across the breakpoint, likely due to a tandem repeat near the opus LTR boundary (see published response to reviewers for more details). Figure 3—figure supplement 1—source data 1.Raw, unlabelled, uncropped gel of genomic PCR products spanning the upstream and downstream opus insertion breakpoints in Beadex. Figure 3—figure supplement 1—source data 2.Labelled gel of genomic PCR products spanning the upstream (888 bp) and downstream (540 bp) opus insertion breakpoints in Beadex.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3-figsupp1.webp?md5=c52c8705a46962cb6c4051412d73e3b5",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Schematic highlighting method to assess rate of non-autonomous versus autonomous TE expression.(A, B) The average read depth per nucleotide within a TE (X) is calculated and compared with the number of breakpoint-spanning reads for the same element (Y). (C) Primarily non-autonomously expressed TEs sit in the top left half of the correlation plot, while autonomously expressed TEs are on the bottom right side. The data for this analysis is published in Treiber and Waddell, 2020a.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig4.webp?md5=052ec50aa79c229ca7e9828f1f3d59c7",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "sa3fig1",
+            "label": "Author response image 1.",
+            "labelStatus": "source_declared",
+            "reference": null,
+            "caption": "Sanger sequencing results of the 888bp band: Two segments of the raw Sanger sequencing trace are shown; the intervening, unmapped section is omitted.The left segment (grey) shows clean, high-confidence signal matching the Bx locus. The right segment (pink) shows the signal falling to near baseline within the opus LTR, so base calls in this region are log-confidence, and the trace does not resolve the breakpoint. Numbers above the sequence indicate position within the raw sequencing read.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-sa3-fig1.webp?md5=04e12324f5d947ac0f0feda9903fc268",
+            "articleURL": "https://doi.org/10.7554/elife.110625",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber. Transposons contribute to splice-isoform diversity in the &lt;i&gt;Drosophila&lt;/i&gt; brain.. DOI: 10.7554/elife.110625. Copyright holder: Choucri et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "fig3sdata1",
+            "label": "Figure 3—source data 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3-data1.zip?md5=3180950f29a09d8f1f956f8404635306",
+            "license": "CC BY",
+            "sha256": "862df7417a84e53583618967e1b3fd80c097d6574caba6e0e0cbbda771173c00",
+            "status": "downloaded_private",
+            "bytes": 416344,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3sdata2",
+            "label": "Figure 3—source data 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3-data2.zip?md5=eb456eff2b90cdef29a1cb7017eb9d28",
+            "license": "CC BY",
+            "sha256": "903648f3cc8dea19d00d79d3339eb22208a9c7f7200402fc437f73df071821d1",
+            "status": "downloaded_private",
+            "bytes": 409950,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3s1sdata1",
+            "label": "Figure 3—figure supplement 1—source data 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3-figsupp1-data1.zip?md5=ec8e23177c00d0c9f8111bf65927b90f",
+            "license": "CC BY",
+            "sha256": "889f7bc2ceedc77a92969fb69503a7495a820a2785f4bd2e7228361b59041c5b",
+            "status": "downloaded_private",
+            "bytes": 147300,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "fig3s1sdata2",
+            "label": "Figure 3—figure supplement 1—source data 2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-fig3-figsupp1-data2.zip?md5=e2b8a8de73925192dc3ca19261afa98b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "supp1",
+            "label": "Supplementary file 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-supp1.csv?md5=adfba8194956e871dab2c2a8d49eb34b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mdar",
+            "label": "MDAR checklist",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13777269.1/elife-110625-mdarchecklist1.pdf?md5=d704d81c9f458561ea70fcbb3d92f6a4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-21T08:50:26.541478+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Malak Choucri; Tina Rainey; Christoph Daniel Treiber"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-21T08:50:30Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-21T08:50:31Z",
+        "url": "https://openalex.org/W7148476765",
+        "cited_by_count": 1,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-21T08:50:31Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-21T08:50:31Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-22T08:50:31Z"
+        }
+      },
+      "selectionScore": {
+        "total": 37,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-21T08:50:36Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -245671,6 +247299,30 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-61f1e0adbe895b02": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-11b411632953345d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-dd7c4d15e0a59227": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-3d8114dfb52eb217": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -247289,7 +248941,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-20T09:20:16Z",
+  "generatedAt": "2026-11-21T08:50:37Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -247523,18 +249175,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-21T08:47:48Z",
-    "updatedAt": "2026-11-21T08:47:55Z",
+    "updatedAt": "2026-11-21T08:50:46Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 47,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
