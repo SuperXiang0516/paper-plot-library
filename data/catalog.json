@@ -182313,6 +182313,318 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-dbaf83b44f2b80f9",
+      "paper": "Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.",
+      "doi": "10.3390/ijms27219833",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-11-03",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3390/ijms27219833",
+      "pmcid": "PMC13763710",
+      "pmid": "43028081",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1422-0067",
+      "eissn": "1422-0067",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-21",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "55ff6b5b57c62617ada234ccf3b79e29e7db4f0cf7c23b55317e8c5a38aeda8b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/PMC13763710.1.xml?md5=471b78a08eac0008d615e265859b0341",
+        "figures": [
+          {
+            "id": "ijms-27-09833-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Experimental design, single-cell RNA-sequencing workflow, and integrated urethral cell atlas. (a) Study design and experimental timeline. Female Sprague–Dawley rats at 24 and 48 weeks of age were assigned to Sham, VBDO, VBDO + BAPN, and VBDO + BAPN + MAP groups, with one animal per age-by-treatment condition (total n = 8). VBD was performed at Week 0, bilateral ovariectomy at Week 1, and BAPN treatment was administered twice weekly for 4 weeks beginning at Week 2. MAP treatment was given concurrently with BAPN in the MAP group. After a 1-week washout, urethral tissues were collected at Week 7. (b) Single-cell RNA-sequencing workflow from urethral tissue dissociation and 10× Genomics sequencing to computational processing, integration, and UMAP clustering. (c) Annotated UMAP of the integrated urethral single-cell atlas showing the major transcriptionally defined cell populations. (d) Integrated UMAPs colored by individual sample, age, and treatment group to show the contribution of each experimental condition to the atlas. A detailed week-by-week experimental timeline is provided in Supplementary Figure S1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g001.webp?md5=d49afe335ec60459a98cd0ee6d13568f",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "assets/pmc13763710-d4f00fe8943d148a.webp",
+            "sha256": "d4f00fe8943d148a153116a7edb0932772034e4509d618768260dc26e1f3c618",
+            "width": 1600,
+            "height": 1070,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d4f00fe8943d148a153116a7edb0932772034e4509d618768260dc26e1f3c618",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-09833-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Treatment-associated differences in the injured urethral microenvironment and urethral muscle content in a separate histological cohort. (a) Relative proportions of major urethral cell populations identified by single-cell RNA sequencing in the Sham, VBDO, BAPN, and MAP groups. Relative cell-type distributions differed descriptively among groups; MAP-treated samples differed from BAPN and were not identical to the Sham profile. (b) Schematic summary of injury/aging-associated features and MAP-associated differences in the urethral ecosystem. (c) Representative transverse urethral sections stained with phalloidin (F-actin; green), α-smooth muscle actin (α-SMA; red), and DAPI (blue) in the indicated groups. This histological cohort consisted of 16 additional 24-week-old female Sprague–Dawley rats that were not included in the scRNA-seq cohort. Animals were assigned to Sham (n = 4), VBDO (n = 4), BAPN (n = 4), and MAP (n = 4) groups. (d) Quantification of muscle-associated staining content in the urethral cross-sections. Each dot represents one independent animal (n = 4 per group), and bars show mean ± SEM. Statistical analysis was performed using one-way ANOVA followed by Tukey’s multiple-comparisons test. Adjusted p-values are indicated for the specified pairwise comparisons; **** p < 0.0001; ns, not significant. Muscle content (%) was calculated from ImageJ 1.54r-measured positive staining areas as [(α-SMA-positive red area + phalloidin/F-actin-positive green area)/total urethral tissue region-of-interest area] × 100. This area-based measurement is not a direct measure of muscle-cell number.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g002.webp?md5=6d9022a4d9d9116541caf4a08ef6e158",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "assets/pmc13763710-e810868534485c59.webp",
+            "sha256": "e810868534485c5991da27f5a0c02a861656966a995a309195dc3c444a321820",
+            "width": 1600,
+            "height": 852,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e810868534485c5991da27f5a0c02a861656966a995a309195dc3c444a321820",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-09833-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cell-type atlas and treatment-specific expression of Krt15 and Met. (A) UMAP visualization of the integrated urethral single-cell transcriptomic dataset, with cells annotated according to major cell-type identities. (B) Treatment-split UMAP feature plots showing Krt15 expression in Sham, VBDO, VBDO + BAPN, and VBDO + BAPN + MAP groups. (C) Treatment-split UMAP feature plots showing Met expression across the same four experimental conditions. For each gene, the same UMAP coordinates and expression scale were used across treatment groups to facilitate direct visual comparison. These plots are presented as descriptive visualizations of cell-level expression patterns. For visualization, cells from the 24- and 48-week animals were displayed together within each treatment group; these plots do not constitute independent treatment-level biological replication.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g003.webp?md5=3945fba1d26a65dc77477d115c844bda",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-09833-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "MAP treatment-associated differences in CellChat-inferred intercellular communication and biological processes in urethral tissues. (a) CellChat-based comparison of relative information flow between MAP and the sham, VBDO, and BAPN groups. Each horizontal stacked bar represents a signaling pathway, with the relative contribution of MAP and the corresponding comparator normalized to a total of 1. Pathways with a greater MAP-associated fraction indicate relatively higher inferred signaling activity in MAP-treated samples, whereas pathways dominated by the comparator indicate relatively lower inferred activity in MAP-treated samples. (b) Relative information flow of representative signaling pathways in the MAP and BAPN groups. (c) Exploratory Gene Ontology biological-process enrichment analysis based on the cell-level MAP-versus-BAPN comparison. Blue bars show processes associated with genes showing lower expression in MAP-treated samples, whereas red bars show processes associated with genes showing higher expression in MAP-treated samples. Bar length represents the −log10-adjusted p-value from the exploratory cell-level analysis and does not represent treatment-group inference across independent animals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g004.webp?md5=5f4a0634fecb4c9cdf0da8c2affa81cc",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-09833-f005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "CellChat analysis identifies treatment-associated differences in predicted intercellular communication between MAP and BAPN groups. (a) Differential cell–cell interaction networks comparing the MAP and BAPN groups. The upper circle plot shows differences in the number of predicted ligand–receptor interactions in the MAP-versus-BAPN comparison, whereas the lower plot shows differences in overall interaction strength in the MAP-versus-BAPN comparison. Nodes represent major urethral cell populations, and node colors indicate cell identity. Red edges indicate interactions with greater inferred activity in MAP-treated samples, blue edges indicate interactions with lower inferred activity in MAP-treated samples, and gray edges indicate relatively unchanged inferred activity compared with BAPN samples. Edge thickness is proportional to the magnitude of the difference. (b) Heatmaps of incoming signaling activity, reflecting receptor-associated signaling received by each cell population in the BAPN and MAP groups. Rows represent signaling pathways and columns represent recipient cell types. Darker green indicates greater relative incoming signaling activity. (c) Heatmaps of outgoing signaling activity, reflecting ligand-associated signaling transmitted by each cell population in the BAPN and MAP groups. Rows represent signaling pathways and columns represent sender cell types. Darker green indicates greater relative outgoing signaling activity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g005.webp?md5=6fff55cde4d99bcbc081044a13f19488",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-09833-f006",
+            "label": "Figure 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Stem/progenitor cell signatures and selective modulation of senescence-associated secretory phenotype activity following MAP treatment. (a) Dot plot showing the expression of representative stem/progenitor-associated markers across major urethral cell populations. Dot size indicates the percentage of cells expressing each gene, and color intensity represents the average scaled expression level. (b) Dot plot comparing stem/progenitor marker expression among treatment groups. Dot size represents the percentage of expressing cells, whereas color intensity indicates average expression. (c) Heatmap of senescence-associated secretory phenotype (SASP) module scores across cell types and treatment groups. Red indicates relatively increased SASP activity, whereas blue indicates reduced SASP activity. MAP-treated samples showed a cell type–selective pattern rather than a uniform suppression of SASP signaling. (d) Schematic summary of MAP-associated selective SASP modulation within the urethral tissue microenvironment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-g006.webp?md5=553315f3429d90f97b344299f799f4cf",
+            "articleURL": "https://doi.org/10.3390/ijms27219833",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al.. Single-Cell Transcriptomic Analysis of Rat Urethral Tissue Following Simulated Childbirth Injury and Microenergy Acoustic Pulse Therapy.. DOI: 10.3390/ijms27219833. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "ijms-27-09833-s001",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13763710.1/ijms-27-09833-s001.zip?md5=273ab0840185d65669f01481595ac338",
+            "license": "CC BY",
+            "sha256": "0989f2a455655f9e6439c36ccae805934135266015abe8c62a7496855157ef43",
+            "status": "downloaded_private",
+            "bytes": 2612958,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-21T08:52:45.318183+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Guiting Lin; Liangyu Zhao; Emily Xing; Tian Bai; Hao Li; Yuan Tang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-21T08:50:09Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-21T08:52:48Z",
+        "url": "https://openalex.org/W7221137946",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "integration"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-21T08:52:48Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-21T08:52:48Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-22T08:52:48Z"
+        }
+      },
+      "selectionScore": {
+        "total": 58,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-21T08:53:08Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -247323,6 +247635,12 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-dbaf83b44f2b80f9": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -248941,7 +249259,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-21T08:50:37Z",
+  "generatedAt": "2026-11-21T08:53:09Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -249175,18 +249493,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-21T08:47:48Z",
-    "updatedAt": "2026-11-21T08:50:57Z",
+    "updatedAt": "2026-11-21T08:53:19Z",
     "batchCount": 2,
-    "requests": 47,
+    "requests": 87,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
