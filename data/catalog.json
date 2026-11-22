@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-21",
+  "checkedAt": "2026-11-22",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -182625,6 +182625,1033 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-bc3730da2e85db0d",
+      "doi": "10.1371/journal.pone.0351140",
+      "paper": "Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.",
+      "journal": "PloS one",
+      "date": "2026-06-09",
+      "year": "2026",
+      "pmcid": "PMC13249167",
+      "pmid": "42263086",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0351140",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "c25f2f4defc86cc12eb27fd86b216270f90b96af2bbd86a9ba5d8baee8fb01de"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/PMC13249167.1.xml?md5=beb02245d1d0887c29696dae43a698ce",
+        "figures": [
+          {
+            "id": "pone.0351140.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "RS enhances the anticoagulation capacity in ECs.(A) Schematic overview of experimental design. (B) Blood coagulability was assessed by CAT assay using human plasma. Representative data using duplicate samples are shown. (C) Quantification of endogenous thrombin generation, (ETP) thrombin burst peak time, and time to thrombin burst peak (n = 25 for young; n = 15 for RS; n = 10 for SIPS). The presence of RS-EC reduced ETP and thrombin burst peak height, while prolonging the time to thrombin burst peak compared with young control ECs. Data are presented as the mean ± SEM, with corresponding P-values shown in each graph.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g001.jpg?md5=e6b64e66d3e95b8f8a020ea14d07e05c",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0351140",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Akiko Katayama; Koji Ikeda; Tomoya Kitani; Ekura Yamazaki; Daisuke Ueno; Fumiaki Ito; et al.. Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.. DOI: 10.1371/journal.pone.0351140. Copyright holder: Katayama et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0351140.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Transcriptomic characterization of young, replicative senescent, and premature senescent ECs.(A) Principal component analysis (PCA) of RNA-seq data from young (gray), replicative senescent (green), and premature senescent (orange) ECs (n = 3 per group). (B) Proportional Venn diagrams showing overlap of differentially expressed genes (DEGs) in replicative (green) and premature (orange) senescent ECs versus young controls. Left, upregulated (1638/501/757), right, downregulated (1865/498/810) genes, presented as replicative-specific / common / premature-specific. (C) Top five enriched Reactome pathways identified from common, replicative-specific, and premature-specific DEGs. Bar graphs show upregulated (red) and downregulated (blue) pathways for each group. (D) Reactome enrichment analysis of coagulation and hemostasis pathways. Dot plot displays terms derived from common, replicative-specific, and premature-specific DEGs relative to young controls. Dot color indicates direction (red up, blue down), opacity represents −log10 (adjusted P value), and dot size reflects gene ratio; right corresponding scales.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g002.jpg?md5=7282c65b6ccf415a08fac71d01df71b5",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0351140",
+            "asset": "assets/pmc13249167-6592a696a671a874.jpg",
+            "sha256": "6592a696a671a8746b8111ce312e2b1823df31454f6fca461d36e9151505d5ce",
+            "width": 720,
+            "height": 1066,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Akiko Katayama; Koji Ikeda; Tomoya Kitani; Ekura Yamazaki; Daisuke Ueno; Fumiaki Ito; et al.. Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.. DOI: 10.1371/journal.pone.0351140. Copyright holder: Katayama et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6592a696a671a8746b8111ce312e2b1823df31454f6fca461d36e9151505d5ce",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0351140.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Aging exacerbates venous thrombus formation.(A) IVC ligation was performed in young and aged WT mice; thrombus weight and length quantified (n = 10 for young; n = 7 for aged). Data presented as the mean ± SEM; P-values are shown in each graph. (B) IVC ligation was performed in littermate (WT) and EC-specific SIPS (EC-SIPS) mice; thrombus weight and length quantified (n = 6 per group). Data presented as the mean ± SEM; P-values are indicated. (C) H&E-stained thrombus sections from young and aged WT mice. Bars: 1 mm. (D) H&E-stained thrombus sections from WT and EC-specific SIPS mice. Bars: 1 mm. (E) Higher magnification of thrombus sections from young and aged WT mice; arrows indicate infiltrating cells. Bars: 100 µm. (F) Higher magnification of thrombus sections from littermates and EC-specific SIPS mice; arrows indicate infiltrating cells. Bars: 100 µm. (G) MPO immunohistochemistry of thrombus sections isolated from aged WT and EC-specific SIPS mice; normal goat IgG used as negative control. Arrows indicate MPO-positive neutrophils. Bars: 100 µm. Data presented as the mean ± SEM; P-values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g003.jpg?md5=6e225b3eeee7936673ee38968f16fe69",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0351140",
+            "asset": "assets/pmc13249167-48021f51d8acac74.jpg",
+            "sha256": "48021f51d8acac740e211887a8aee71d6c7dd64d85010eb1c86d6b24e2d040b7",
+            "width": 714,
+            "height": 1200,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Akiko Katayama; Koji Ikeda; Tomoya Kitani; Ekura Yamazaki; Daisuke Ueno; Fumiaki Ito; et al.. Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.. DOI: 10.1371/journal.pone.0351140. Copyright holder: Katayama et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "48021f51d8acac740e211887a8aee71d6c7dd64d85010eb1c86d6b24e2d040b7",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0351140.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Expressional changes in genes related to coagulation and fibrinolysis in ECs isolated from aged and EC-specific SIPS mice.ECs were isolated from the lungs of young WT, aged WT, and EC-specific SIPS mice. Quantitative PCR analysis of tissue plasmin activator (tPA), tissue factor (TF), thrombomodulin (THBD), NO synthase 3 (NOS3), von Willebrand factor (vWF), and prostaglandin I2 synthase (PTGIS) was performed (n = 6 per group). Data are presented as the mean ± SEM. P-values are indicated.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g004.jpg?md5=256eb8cbe092e13ec805da9864946292",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0351140",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Akiko Katayama; Koji Ikeda; Tomoya Kitani; Ekura Yamazaki; Daisuke Ueno; Fumiaki Ito; et al.. Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.. DOI: 10.1371/journal.pone.0351140. Copyright holder: Katayama et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0351140.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s001.pdf?md5=4998b22ae02718f59c6d60cea77394ac",
+            "license": "CC BY",
+            "sha256": "70d47f1a671edebebcfdc5019758b8615fe6595f5c35ed8e2323f0e6eff24984",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 149925,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pone.0351140.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s002.pdf?md5=8dd34d390d1206bcf4d83e26323f9fb6",
+            "license": "CC BY",
+            "sha256": "d5bb97f67a60adcdfbdcbb635f85d3652298774fa2b2bca3071b16911c77ce59",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 602673,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pone.0351140.s003",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s003.pdf?md5=d7f2f48b83889ff3fa3edea18b8729ce",
+            "license": "CC BY",
+            "sha256": "54afa0c2088c27821a66ec00f13984da7ced248aa6397c7fb1ce51be27cd43e9",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 221276,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 2,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pone.0351140.s004",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s004.pdf?md5=13a37aea2e4039b17ac50a15178077f2",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0351140.s005",
+            "label": "S5 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s005.pdf?md5=36690a2c56aa0ddd1e24d8f44333c1bf",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0351140.s006",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s006.docx?md5=1e15e8cfcea1165e1dc992ecbce706cd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0351140.s007",
+            "label": "Attachment",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.s007.docx?md5=17ff8e4aff675b1c701baee38fcb7a66",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-22T08:53:20.157709+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Akiko Katayama; Koji Ikeda; Tomoya Kitani; Ekura Yamazaki; Daisuke Ueno; Fumiaki Ito; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-22T08:53:24Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-22T08:53:24Z",
+        "url": "https://openalex.org/W7164001341",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-22T08:53:24Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-22T08:53:24Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-23T08:53:24Z"
+        }
+      },
+      "selectionScore": {
+        "total": 42,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-22T08:53:53Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-c98524e0a98fe72c",
+      "doi": "10.1371/journal.pone.0362860",
+      "paper": "Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.",
+      "journal": "PloS one",
+      "date": "2026-11-16",
+      "year": "2026",
+      "pmcid": "PMC13773294",
+      "pmid": "43038217",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0362860",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "84cb66507c2cac1814178bbfce346efead59e2ca0bd0c6271e6774c42aab2743"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/PMC13773294.1.xml?md5=6160b20f826374b2bef025e0b118c505",
+        "figures": [
+          {
+            "id": "pone.0362860.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overall workflow of the integrative analysis for identifying microbiota–metabolite-associated immune genes related to MASLD fibrosis severity.Discovery compared 138 non-advanced and 68 advanced NAFLD cases. The gutMGene/ImmPort overlap yielded a 72-gene biological prior; 57 genes were testable, and 23 passed transcriptome-wide FDR screening. LASSO and balanced Random Forest selected eight features. Full-pipeline internal assessment and fixed-model external assessment were kept distinct. GSE244832 supplied cellular localization and descriptive communication context; its disease groups were not converted to the bulk fibrosis endpoint.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g001.webp?md5=d2a60185d2cbc1469dd9717edb6752d4",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362860.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Transcriptomic landscape of MASLD fibrosis severity in GSE135251.(A) PCA based on variance-stabilized expression in all 206 primary NAFLD cases. (B) Global differential expression; thresholds are transcriptome-wide adjusted P < 0.05 and |log2 fold change| > 0.5. (C) The top 25 upregulated and top 25 downregulated global DEGs, ranked within each direction by adjusted P value and shown across all 206 patients using gene-wise standardized VST values; genes are rows and patients are columns. (D) The ten GO Biological Process terms with the smallest BH-adjusted P values, using the defined gene background; GeneRatio denotes the overlap divided by 618 GO-mapped DEGs, bubble size denotes overlap count, and color denotes adjusted P value.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g002.webp?md5=04f7d0683f28aa57ef9c0c0b10bd8159",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "assets/pmc13773294-35fe2d705342e0f5.webp",
+            "sha256": "35fe2d705342e0f5472ab8a6666c840e8066cfa95144b689bc8f24ad188ba259",
+            "width": 1600,
+            "height": 1822,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "35fe2d705342e0f5472ab8a6666c840e8066cfa95144b689bc8f24ad188ba259",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0362860.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Identification of microbiota-metabolite-associated immune candidate genes.(A) Overlap of 154 human gutMGene host genes and 3,118 ImmPort immune-related genes, yielding 72 predefined genes. (B) The 23 candidates with transcriptome-wide Benjamini-Hochberg false discovery rate (FDR) <0.05 in GSE135251. Log2 fold changes compare F3-F4 (n = 68) with F0-F2 (n = 138); blue and coral indicate lower and higher expression in F3-F4, respectively. Dot size encodes -log10(FDR). No additional fold-change cutoff was applied to candidate selection. (C) Compact gutMGene network restricted to complete curated microbe-metabolite-gene chains, representing five of the eight hub genes, nine metabolites and 15 microbial species. Circles, squares and diamonds represent microbes, metabolites and hub genes, respectively. Solid and dashed lines indicate microbe-metabolite and metabolite-gene links. Up to three species per metabolite were retained from human records labeled “causally,” ranked by record count with alphabetical tie-breaking. Full eight-gene host records are retained in S1 Dataset. These database associations do not establish microbial mediation or causality in the study participants.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g003.webp?md5=8551fc26289d2c17c13fbdbb66e54fbc",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362860.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Machine-learning identification of eight hub genes.(A) Ten-fold cross-validation of least absolute shrinkage and selection operator (LASSO) logistic regression using 23 candidate genes in 206 patients (F0-F2, n = 138; F3-F4, n = 68). Points show mean binomial deviance; error bars show one standard error. Coral dashed and green dotted lines mark lambda.min (0.0152634) and lambda.1se (0.0466122), respectively. (B) Coefficient paths for all 23 candidates across log(lambda), with the same reference lines. (C) Balanced random forest (RF) importance for all 23 candidates, ranked by mean decrease in Gini. Coral highlights the RF top ten; blue indicates the remaining candidates. (D) Overlap between 15 nonzero LASSO features at lambda.min and the RF top ten, yielding eight hub genes: CCL2, MYC, CASP1, CAT, DEFB1, NLRP6, HMOX1 and SMURF2. These are discovery-stage features; the tuning curve does not represent independent validation of the final signature.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g004.webp?md5=a24370b06a55fd50ae98f4e1125559ea",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "assets/pmc13773294-c3d6e642249cbef7.webp",
+            "sha256": "c3d6e642249cbef77fc8f29c748fb7c8509802702d9a9de3d8fd9d6e3626cc61",
+            "width": 1600,
+            "height": 1815,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c3d6e642249cbef77fc8f29c748fb7c8509802702d9a9de3d8fd9d6e3626cc61",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0362860.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "External assessment of eight hub genes and model discrimination.(A) GSE130970 expression in the mixed lower-fibrosis group (F0-F2, n = 62) and advanced-fibrosis group (F3-F4, n = 16). Blue and coral boxes show log2(transcripts per million [TPM] + 1); lines indicate medians, boxes span Tukey hinges, and whiskers extend to observations within 1.5 interquartile ranges. Dots represent all 78 samples per gene. The lower-fibrosis group includes six normal controls. Labels show Benjamini-Hochberg false discovery rates (BH FDRs) across eight unadjusted Wilcoxon tests. (B) Single-gene receiver operating characteristic (ROC) curves with directions fixed from discovery; areas under the curve (AUCs) and 95% DeLong confidence intervals (CIs) are shown. The opposite SMURF2 association is retained, yielding AUC < 0.5. (C) Blue curves show GSE135251 apparent discrimination (solid) and complete-pipeline five-fold out-of-fold (OOF) discrimination (dashed). Orange curves show GSE130970 frozen count-processing transfer (solid) and fixed-weight TPM cohort-adapted transfer (dashed). External features and logistic coefficients were not refitted. The gray diagonal indicates chance discrimination. These analyses assess retrospective group discrimination, not established clinical risk prediction.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g005.webp?md5=8f5512419465413101350e98e862f1cd",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362860.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Single-nucleus localization of eight hub genes in human liver.(A) Uniform manifold approximation and projection (UMAP) visualization of liver cell populations. Endothelial and liver sinusoidal endothelial cells (LSECs) are displayed separately; B and C use nine consolidated cell categories. (B) Mean log1p(10,000-normalized) expression across nine consolidated categories, standardized within each gene across categories. (C) Dot areas are proportional to the percentage of nuclei with a nonzero count for that gene; zero detection produces no dot. B and C share a color scale: blue indicates lower and coral higher relative mean expression. Summaries use all 128,223 nuclei; the complete values are supplied in S1 Dataset and relative maxima in S2 Table. NLRP6 detection is sparse, so a relative maximum does not establish a specific cellular marker.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g006.webp?md5=00d0fc864e07f34573c1ae51b58365ec",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362860.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "CellChat analysis of immune-stromal communication across NORMAL, NAFL and NASH liver conditions.(A) Overall numbers and aggregate strengths of inferred interactions. (B) Interaction numbers and strengths for Macrophage/Kupffer-to-Fibroblast/Stellate communication and the reverse direction; strength is the sum of inferred communication probabilities. Mφ denotes macrophage and Fib denotes fibroblast. (C) Twenty retained signaling pathways: color indicates within-pathway z scores across conditions, and numbers show aggregate strengths. (D) Twenty representative retained ligand-receptor pairs: color indicates communication probability and bubble size encodes -log10(P). Zero source P values retain the original displayed cap of ten. P values derive from CellChat’s permutation procedure and do not test disease-group differences. Condition labels follow the retained processed metadata; donor-label discrepancies are described in Methods. Between-condition network differences are interpreted descriptively. Values are supplied in S1 Dataset and S4 and S6 Tables.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g007.webp?md5=be608e2e02768cb2c26d7b9d23118918",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al.. Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.. DOI: 10.1371/journal.pone.0362860. Copyright holder: Liu et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0362860.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s001.docx?md5=f6b2af39861663d8c4d16e75bef6fd72",
+            "license": "CC BY",
+            "sha256": "70e06369948357135a137b44c434d570eedbc35b503a9f9dfb7e4e37991eddb5",
+            "status": "downloaded_private",
+            "bytes": 38789,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s002",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s002.docx?md5=9ff4fdf08243b60ebb5f42182b2e402c",
+            "license": "CC BY",
+            "sha256": "7a67bb692ef6796b827fe7ce3eb85e75906ed871b8567214b148500880621c73",
+            "status": "downloaded_private",
+            "bytes": 38335,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s003",
+            "label": "S3 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s003.docx?md5=fa90cf4a43c1ba9e6601053d86e3baf6",
+            "license": "CC BY",
+            "sha256": "2dfd606f252ba7dd2153096b405b7954ba7955e68e15a58904de4390bea07a22",
+            "status": "downloaded_private",
+            "bytes": 38242,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s004",
+            "label": "S4 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s004.docx?md5=17d98ece3b9ddda70d262042cbdc84ae",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s005",
+            "label": "S5 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s005.docx?md5=ff72e687ee3e8facb0ec1f308c753e4f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s006",
+            "label": "S6 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s006.docx?md5=8b1c3ba6c4e6cb9c929f564b544cfb7a",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s007",
+            "label": "S1 Code",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s007.zip?md5=f0bfe309b5758dd4ed0e81246f5caed4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s008",
+            "label": "S1 Dataset",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s008.zip?md5=f0e697812328c6280c990aeeeb5ca3ac",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s009",
+            "label": "S2 Dataset",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s009.zip?md5=14ce37ac14d2d1c34489e5d8968a91bb",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362860.s010",
+            "label": "S3 Dataset",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.s010.zip?md5=07b969a85f6651176b146c7376f7ba75",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-22T08:53:45.711664+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zhi-yun Liu; Jing Feng; Wen-qiao Lu; Lin Wang; Qian-yu Bi; Jie Gao; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-22T08:53:24Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-22T08:53:47Z",
+        "url": "https://openalex.org/W7234256569",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-22T08:53:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-22T08:53:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-23T08:53:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 26,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-22T08:53:53Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-7bb196712a14752d",
+      "paper": "A public-data spatial transcriptomic framework for invasive lung adenocarcinoma tumor ecosystems and prognosis.",
+      "doi": "10.1371/journal.pone.0357864",
+      "journal": "PloS one",
+      "date": "2026-11-19",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0357864",
+      "pmcid": "PMC13784712",
+      "pmid": "43056411",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-22",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "0fbd7f8c31f16ef42e17839fe02ca258c4cce0377c1cd1e18c390e28f96755ae"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/PMC13784712.1.xml?md5=e35c2e6085be747e82a5079ec8f0e3d1",
+        "figures": [
+          {
+            "id": "pone.0357864.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Study design and evidentiary boundaries.GSE131907 supplies single-cell epithelial and fibroblast signatures. E-MTAB-13530 tests tumor enrichment, patient-aware and technical sensitivity, model diagnostics, and rank-based scoring. TCGA-LUAD tests survival association, benchmarks, components, purity, proliferation, and residual circularity. HRA001238/ST_LUAD is a supplementary negative proxy analysis. Green, amber, and red boxes are author-assessed summaries of supported evidence, sensitivity boundaries, and claims not established by these data, respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/pone.0357864.g001.webp?md5=39dd0023e2bc33e1db9f395c47ccf76e",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357864",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Qinguang Zou; Yinghao Chang; Mingjiang Qu; Xuejuan Gong; Chunyi Jia. A public-data spatial transcriptomic framework for invasive lung adenocarcinoma tumor ecosystems and prognosis.. DOI: 10.1371/journal.pone.0357864. Copyright holder: Zou et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0357864.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "GSE131907 single-cell reference composition.Horizontal bars show the four annotated compartments retained for signature derivation: 42,245 myeloid cells, 24,784 malignant epithelial cells, 11,683 non-malignant epithelial cells, and 4,172 fibroblasts (total n = 82,884). Numbers at bar ends give cell counts and percentages. The input matrix contained 29,634 features; mitochondrial and ribosomal genes were excluded from retained signatures, not from the original feature matrix.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/pone.0357864.g002.webp?md5=802a481b0bd7c55eb9a917cd86de4df9",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357864",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Qinguang Zou; Yinghao Chang; Mingjiang Qu; Xuejuan Gong; Chunyi Jia. A public-data spatial transcriptomic framework for invasive lung adenocarcinoma tumor ecosystems and prognosis.. DOI: 10.1371/journal.pone.0357864. Copyright holder: Zou et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0357864.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "E-MTAB-13530 section-level spatial analysis.(A) Mean log-normalized program scores across donor lung (n = 4 sections from two donors), adjacent non-involved lung (n = 16 sections from eight patients), and tumor (n = 20 sections from the same eight patients). Boxes indicate interquartile ranges, center lines medians, and whiskers 1.5 times the interquartile range. (B) Compact scores with individual section points. Tissue classes differed by Kruskal-Wallis test (H(2)=30.30, P = 2.63e-07). All eight patient-mean tumor scores exceeded paired adjacent scores (paired Wilcoxon P = 0.0078); the technically adjusted patient-clustered tumor coefficient was 6.27 (95% CI 4.22-8.31, P = 1.99e-09). Donor contrasts are descriptive.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/pone.0357864.g003.webp?md5=b4424e542c810e6b6a5a89f65b99f5be",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357864",
+            "asset": "assets/pmc13784712-e6fce3d02437e419.webp",
+            "sha256": "e6fce3d02437e4192c2607720a3a4ff50a0929482c88c434992aff778504f80e",
+            "width": 1600,
+            "height": 1545,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Qinguang Zou; Yinghao Chang; Mingjiang Qu; Xuejuan Gong; Chunyi Jia. A public-data spatial transcriptomic framework for invasive lung adenocarcinoma tumor ecosystems and prognosis.. DOI: 10.1371/journal.pone.0357864. Copyright holder: Zou et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e6fce3d02437e4192c2607720a3a4ff50a0929482c88c434992aff778504f80e",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0357864.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "TCGA-LUAD survival and compositional sensitivity.(A) Kaplan-Meier visualization by median compact-score split (low n = 251; high n = 251), with censoring marks and numbers at risk; continuous per-SD Cox models provide the primary inference. (B) Compact-score hazard ratios and 95% CIs in clinical, identical-155-sample without-purity and with-purity, cell-cycle, and proliferation-adjusted models. (C) Compact score versus the cell-cycle program in 502 tumors. (D) Compact score versus ABSOLUTE purity in 161 tumors (Spearman rho = −0.412, P = 5.68e-08); the line is an unadjusted linear fit.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/pone.0357864.g004.webp?md5=052599f5353af8a6fb0300bc98145278",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0357864",
+            "asset": "assets/pmc13784712-fa260b24f0f64ccf.webp",
+            "sha256": "fa260b24f0f64ccf0073b0ffc9195cbeea2ad13042f06961969d64ef735ad480",
+            "width": 1600,
+            "height": 1314,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Qinguang Zou; Yinghao Chang; Mingjiang Qu; Xuejuan Gong; Chunyi Jia. A public-data spatial transcriptomic framework for invasive lung adenocarcinoma tumor ecosystems and prognosis.. DOI: 10.1371/journal.pone.0357864. Copyright holder: Zou et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fa260b24f0f64ccf0073b0ffc9195cbeea2ad13042f06961969d64ef735ad480",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0357864.s001",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784712.1/pone.0357864.s001.zip?md5=5ab9e23888197925f3db53174bcaab37",
+            "license": "CC BY",
+            "sha256": "927c0bb4cdf27ca13bedb4b33efc42378ff27cf9ad85aa6595ef95dcbbb39bc3",
+            "status": "downloaded_private",
+            "bytes": 2619663,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-22T08:53:50.467811+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Qinguang Zou; Yinghao Chang; Mingjiang Qu; Xuejuan Gong; Chunyi Jia"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-22T08:53:24Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-22T08:53:52Z",
+        "url": "https://openalex.org/W7236859622",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-22T08:53:52Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-22T08:53:52Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-23T08:53:52Z"
+        }
+      },
+      "selectionScore": {
+        "total": 41,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-22T08:53:54Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -247641,6 +248668,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-bc3730da2e85db0d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-c98524e0a98fe72c": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-7bb196712a14752d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -249259,7 +250304,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-21T08:53:09Z",
+  "generatedAt": "2026-11-22T08:53:55Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -249493,18 +250538,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-22T08:51:57Z",
-    "updatedAt": "2026-11-22T08:52:02Z",
+    "updatedAt": "2026-11-22T08:54:01Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 38,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

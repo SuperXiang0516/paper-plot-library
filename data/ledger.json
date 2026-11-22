@@ -318,9 +318,46 @@
         "10.3390/ijms27219833",
         "10.7554/elife.110625"
       ]
+    },
+    "2026-11-22": {
+      "newDOIs": [
+        "10.1371/journal.pone.0351140",
+        "10.1371/journal.pone.0357864",
+        "10.1371/journal.pone.0362860"
+      ]
     }
   },
   "candidates": {
+    "10.1371/journal.pone.0357864": {
+      "checkedAt": "2026-11-22T08:53:52Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1371/journal.pone.0362860": {
+      "checkedAt": "2026-11-22T08:53:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-22T08:53:34Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-22T08:53:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pone.0351140": {
+      "checkedAt": "2026-11-22T08:53:24Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1590/1678-4685-gmb-2025-0097": {
       "checkedAt": "2026-11-21T08:53:07Z",
       "status": "source_confirmed",
@@ -376,127 +413,11 @@
         "updatedAt": "2026-11-21T08:53:04Z"
       }
     },
-    "10.1371/journal.pone.0362860": {
-      "checkedAt": "2026-11-21T08:53:01Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pone.0362860",
-        "metadataHash": "231c3a66330bdd9e9fdadf3464306f492d43c135a831bd561eb8c5599d2ed925",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/PMC13773294.1.xml?md5=6160b20f826374b2bef025e0b118c505",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 1600,
-              "assetSHA256": "35fe2d705342e0f5472ab8a6666c840e8066cfa95144b689bc8f24ad188ba259",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g002.webp?md5=04f7d0683f28aa57ef9c0c0b10bd8159",
-              "license": "CC BY",
-              "sha256": "35fe2d705342e0f5472ab8a6666c840e8066cfa95144b689bc8f24ad188ba259",
-              "height": 1822,
-              "asset": "assets/pmc13773294-35fe2d705342e0f5.webp",
-              "label": "Fig 2",
-              "id": "pone.0362860.g002",
-              "captionHash": "26bf08b0ee762420aee0b7d4c001945df715ad12ab440869bdd01ce88ed1712f"
-            },
-            {
-              "width": 1600,
-              "assetSHA256": "c3d6e642249cbef77fc8f29c748fb7c8509802702d9a9de3d8fd9d6e3626cc61",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13773294.1/pone.0362860.g004.webp?md5=a24370b06a55fd50ae98f4e1125559ea",
-              "license": "CC BY",
-              "sha256": "c3d6e642249cbef77fc8f29c748fb7c8509802702d9a9de3d8fd9d6e3626cc61",
-              "height": 1815,
-              "asset": "assets/pmc13773294-c3d6e642249cbef7.webp",
-              "label": "Fig 4",
-              "id": "pone.0362860.g004",
-              "captionHash": "32135237f888a24f1d7815a3fb09bb03ad4a19dd47ee4c5f9dfd568455ca3460"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-c98524e0a98fe72c",
-          "doi": "10.1371/journal.pone.0362860",
-          "paper": "Integrative transcriptomic and single-nucleus analyses identify microbiota-metabolite-associated immune signatures of fibrosis severity in MASLD.",
-          "journal": "PloS one",
-          "date": "2026-11-16",
-          "year": "2026",
-          "pmcid": "PMC13773294",
-          "pmid": "43038217",
-          "paperURL": "https://doi.org/10.1371/journal.pone.0362860"
-        },
-        "updatedAt": "2026-11-21T08:53:00Z"
-      }
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-21T08:52:51Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.3390/ijms27219833": {
       "checkedAt": "2026-11-21T08:52:48Z",
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1371/journal.pone.0351140": {
-      "checkedAt": "2026-11-21T08:52:36Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pone.0351140",
-        "metadataHash": "0cb747c466a56fee85bba28163b4b5bf0f84b50920fbc959dfdba03142b302ee",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/PMC13249167.1.xml?md5=beb02245d1d0887c29696dae43a698ce",
-          "license": "CC BY",
-          "figures": [
-            {
-              "width": 720,
-              "assetSHA256": "6592a696a671a8746b8111ce312e2b1823df31454f6fca461d36e9151505d5ce",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g002.jpg?md5=7282c65b6ccf415a08fac71d01df71b5",
-              "license": "CC BY",
-              "sha256": "6592a696a671a8746b8111ce312e2b1823df31454f6fca461d36e9151505d5ce",
-              "height": 1066,
-              "asset": "assets/pmc13249167-6592a696a671a874.jpg",
-              "label": "Fig 2",
-              "id": "pone.0351140.g002",
-              "captionHash": "26441b09cbbcb551d2f822da1dc142e5e33e01b42a59a9d53f5d3dd76ee9555e"
-            },
-            {
-              "width": 714,
-              "assetSHA256": "48021f51d8acac740e211887a8aee71d6c7dd64d85010eb1c86d6b24e2d040b7",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13249167.1/pone.0351140.g003.jpg?md5=6e225b3eeee7936673ee38968f16fe69",
-              "license": "CC BY",
-              "sha256": "48021f51d8acac740e211887a8aee71d6c7dd64d85010eb1c86d6b24e2d040b7",
-              "height": 1200,
-              "asset": "assets/pmc13249167-48021f51d8acac74.jpg",
-              "label": "Fig 3",
-              "id": "pone.0351140.g003",
-              "captionHash": "4ce1884da7b900b396d9bf518312785c030f22c8b3420407638ab606d2e106fa"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-bc3730da2e85db0d",
-          "doi": "10.1371/journal.pone.0351140",
-          "paper": "Replicative and stress-induced premature senescence distinctively affect the endothelial anticoagulation capacity.",
-          "journal": "PloS one",
-          "date": "2026-06-09",
-          "year": "2026",
-          "pmcid": "PMC13249167",
-          "pmid": "42263086",
-          "paperURL": "https://doi.org/10.1371/journal.pone.0351140"
-        },
-        "updatedAt": "2026-11-21T08:52:34Z"
-      }
     },
     "10.7554/elife.110625": {
       "checkedAt": "2026-11-21T08:50:31Z",
@@ -509,12 +430,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-21T08:50:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.3390/ijms272110056": {
       "checkedAt": "2026-11-21T08:50:10Z",
@@ -11187,22 +11102,17 @@
     "maxAiAttempts": 165,
     "maxRequests": 1800,
     "uncertainRequests": 0,
-    "requests": 0,
+    "requests": 38,
     "endReason": "",
     "startedAt": "2026-11-22T08:51:57Z",
     "batchCount": 1,
-    "dailyNewCount": 0,
-    "elapsedSeconds": 5,
+    "dailyNewCount": 3,
+    "elapsedSeconds": 125,
     "version": 1,
-    "updatedAt": "2026-11-22T08:52:02Z",
+    "updatedAt": "2026-11-22T08:54:01Z",
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
     "maxSeconds": 2700,
-    "aiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-22T08:52:02Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 0
   }
 }
