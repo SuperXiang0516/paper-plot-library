@@ -11105,14 +11105,19 @@
     "requests": 38,
     "endReason": "",
     "startedAt": "2026-11-22T08:51:57Z",
-    "batchCount": 1,
+    "batchCount": 2,
     "dailyNewCount": 3,
-    "elapsedSeconds": 125,
+    "elapsedSeconds": 134,
     "version": 1,
-    "updatedAt": "2026-11-22T08:54:01Z",
+    "updatedAt": "2026-11-22T08:54:10Z",
     "maxBatches": 36,
     "uncertainAiAttempts": 0,
     "maxSeconds": 2700,
-    "aiAttempts": 0
+    "aiAttempts": 0,
+    "inFlight": {
+      "startedAt": "2026-11-22T08:54:10Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
