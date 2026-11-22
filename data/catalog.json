@@ -183652,6 +183652,882 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-da2b2358268e962f",
+      "doi": "10.1002/ece3.73881",
+      "paper": "Epigenetic Aging in Brain Tissue of the Self-Fertilizing Vertebrate, &lt;i&gt;Kryptolebias marmoratus&lt;/i&gt;.",
+      "journal": "Ecology and evolution",
+      "date": "2026-06-21",
+      "year": "2026",
+      "pmcid": "PMC13283775",
+      "pmid": "42333303",
+      "paperURL": "https://doi.org/10.1002/ece3.73881",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2045-7758",
+      "eissn": "2045-7758",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "epigenetic_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "75d0e03d2e4a300bf0482dcb64c4a4108752ac99ac450ba32a62ef801d79468e"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/PMC13283775.1.xml?md5=88655ef165a582bf96159b4df9104f93",
+        "figures": [
+          {
+            "id": "ece373881-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Diagram of the main stages in building and validating the model. The green frames are steps that have been studied and optimized. Their conclusions are discussed in the materials and methods section.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-g001.jpg?md5=74d2d64e474f2e5ed964da4698cc507d",
+            "articleURL": "https://doi.org/10.1002/ece3.73881",
+            "asset": "assets/pmc13283775-9b06a56934f9e1b5.jpg",
+            "sha256": "9b06a56934f9e1b51badf809d445551d6c2adc82976e4ab4a5b9c0635d5f4946",
+            "width": 709,
+            "height": 599,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Justine Bélik; Frédéric Silvestre. Epigenetic Aging in Brain Tissue of the Self-Fertilizing Vertebrate, &lt;i&gt;Kryptolebias marmoratus&lt;/i&gt;.. DOI: 10.1002/ece3.73881. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9b06a56934f9e1b51badf809d445551d6c2adc82976e4ab4a5b9c0635d5f4946",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "ece373881-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Mangrove rivulus age estimation. Chronological age is plotted against predicted age, for both training (in gray) and testing (in red) datasets, for both all individuals (A) and individuals younger than 900 days only (B). Absolute Error for both training and testing datasets, for the regression excluding the older individuals (C). PCA of individuals using the 40 CpG sites, showing a clear separation based on age in the first principal component (D).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-g002.jpg?md5=f4958a9970e6cbbdd0b7e627cfebe90c",
+            "articleURL": "https://doi.org/10.1002/ece3.73881",
+            "asset": "assets/pmc13283775-a8450454f515bd0b.jpg",
+            "sha256": "a8450454f515bd0bd9184a6e64481190e821b6a29998a059131560a4c9dd3795",
+            "width": 709,
+            "height": 706,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Justine Bélik; Frédéric Silvestre. Epigenetic Aging in Brain Tissue of the Self-Fertilizing Vertebrate, &lt;i&gt;Kryptolebias marmoratus&lt;/i&gt;.. DOI: 10.1002/ece3.73881. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a8450454f515bd0bd9184a6e64481190e821b6a29998a059131560a4c9dd3795",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [
+          {
+            "id": "ece373881-supitem-0001",
+            "label": "Figure S1: Global methylation level with age.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-s001.jpg?md5=4a355dfde3af3ec20d5b9c61956752a6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ece373881-supitem-0002",
+            "label": "Figure S2: Leave‐one‐out cross validation for both final models (all samples included on the left, only samples < 900 days on the right).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-s003.jpg?md5=a354d853d24d91a43e660315302832b7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "ece373881-supitem-0003",
+            "label": "Figure S3: DNA methylation level of 40 selected CpG sites across chronological age.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-s004.zip?md5=f85cda2ddce26080ba61984157cc014a",
+            "license": "CC BY",
+            "sha256": "6fb02ede076686759f0bf6edd2a22a1a8d431ddbf99e31800a8ef873031e9554",
+            "status": "downloaded_private",
+            "bytes": 2884723,
+            "format": "zip",
+            "privatePath": ""
+          },
+          {
+            "id": "ece373881-supitem-0004",
+            "label": "Table S1: Identity (ID), age at death (days), and length (mm) of the fish used. Table S2: Comparison of the 70–30, 75–25, and 80–20 divisions on 3 dif",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/ECE3-16-e73881-s002.docx?md5=e0ce053ed1452a64e13a8a5511ac6fb8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/jubelik/Epigenetic-clock"
+        ],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-22T08:55:04.437656+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/jubelik/Epigenetic-clock",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13283775.1/PMC13283775.1.xml?md5=88655ef165a582bf96159b4df9104f93"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Justine Bélik; Frédéric Silvestre"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/jubelik/Epigenetic-clock",
+        "commit": "1486922e3b8f6b1e34ada29fc9db5d617c935f3a",
+        "license": "unknown",
+        "scripts": [
+          {
+            "path": "clock-young-boucle-file.R",
+            "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R",
+            "sha256": "cb71b986239de290fbb5d4a58f016502c2bb4aeec68a82a79514f22249543903",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "Clock-new-young.RDS",
+                "reader": "readRDS",
+                "line": 37,
+                "status": "literal_path",
+                "format": "RDS",
+                "readerOptions": {}
+              }
+            ],
+            "outputs": [
+              {
+                "path": "predictions_ggplot_young_log_final.pdf",
+                "writer": "pdf",
+                "line": 343
+              },
+              {
+                "path": "scatter_acp_final.pdf",
+                "writer": "pdf",
+                "line": 369
+              },
+              {
+                "path": "corcircle_acp_final.pdf",
+                "writer": "pdf",
+                "line": 373
+              },
+              {
+                "path": "fviz_pca_ind_log_final.pdf",
+                "writer": "pdf",
+                "line": 378
+              },
+              {
+                "path": "predictions_ggplot_final.pdf",
+                "writer": "pdf",
+                "line": 387
+              },
+              {
+                "path": "CpG_graphs_final.pdf",
+                "writer": "pdf",
+                "line": 412
+              }
+            ],
+            "fields": [
+              {
+                "name": "Age",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "estimate",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pval",
+                "line": 83,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 83,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "adj_pval",
+                "line": 86,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpG",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Overall",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "co",
+                "line": 374,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r.squared",
+                "line": 416,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Data",
+                "line": 474,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 37,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L37"
+              },
+              {
+                "type": "io_reference",
+                "line": 343,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L343"
+              },
+              {
+                "type": "io_reference",
+                "line": 369,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L369"
+              },
+              {
+                "type": "io_reference",
+                "line": 373,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L373"
+              },
+              {
+                "type": "io_reference",
+                "line": 378,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L378"
+              },
+              {
+                "type": "io_reference",
+                "line": 387,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L387"
+              },
+              {
+                "type": "io_reference",
+                "line": 412,
+                "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R#L412"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "pre-clock-young.R",
+            "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/pre-clock-young.R",
+            "sha256": "baf12e6e0ada418710507698de3c3579823b966652f4c0153d901c5f0527a423",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "Clock-new-young.RDS",
+            "path": "",
+            "reader": "readRDS",
+            "format": "RDS",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "Age",
+                "line": 60,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "correlation",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "estimate",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "pval",
+                "line": 83,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p.value",
+                "line": 83,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "adj_pval",
+                "line": 86,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "CpG",
+                "line": 91,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "importance",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Overall",
+                "line": 121,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "co",
+                "line": 374,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "r.squared",
+                "line": 416,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "Data",
+                "line": 474,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R",
+            "line": 37,
+            "url": "",
+            "readerOptions": {}
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed.",
+          "Repository license unverified: link-only, no copied or redistributed annotated author code."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.6",
+        "jcr": "Q2",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-22T08:55:08Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-22T08:55:09Z",
+        "url": "https://openalex.org/W7165476904",
+        "cited_by_count": 2,
+        "fwci": 2.2523,
+        "citation_normalized_percentile": 0.83967623,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-22T08:55:09Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-22T08:55:09Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-23T08:55:09Z"
+        }
+      },
+      "selectionScore": {
+        "total": 67.19838115,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 16,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.19838115,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-22T08:56:06Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "自受精脊椎动物Kryptolebias marmoratus脑组织中的表观遗传衰老",
+        "summary_zh": "该论文研究红树林鳉(Kryptolebias marmoratus)这一已知自受精脊椎动物的脑组织表观遗传衰老。摘要称对89份脑样本(年龄60至1100天)进行简化代表性亚硫酸氢盐测序,识别出40个CpG位点,其甲基化水平可预测实际年龄(R2>0.96,中位绝对误差28.7天),并称这些位点邻近基因与细胞维持和神经退行相关。图注显示模型构建与验证流程(图1),以及训练/测试集的年龄预测散点、绝对误差和40个CpG位点的PCA(图2)。作者代码未运行,仅见静态文件与输出文件名,不能据此确认复现或图表对应关系。",
+        "learning_points": [
+          "论文以自受精脊椎动物红树林鳉为体系,试图在近等基因个体中分离表观遗传与遗传效应对衰老的影响。",
+          "摘要报告使用89份脑样本、年龄跨度60至1100天,并采用简化代表性亚硫酸氢盐测序。",
+          "摘要称40个CpG位点的甲基化可高精度预测实际年龄(R2>0.96,中位绝对误差28.7天)。",
+          "图1图注描述模型构建与验证的主要阶段,绿色框为已研究并优化的步骤。",
+          "图2图注展示训练集与测试集的预测年龄对实际年龄散点图、绝对误差图,以及基于40个CpG位点的PCA。",
+          "静态查看的R脚本包含读取RDS对象及输出多个PDF文件的语句,但未执行,不能视为复现验证。",
+          "摘要称年龄相关CpG邻近基因涉及细胞维持与神经退行,如lamin-A、芳香烃受体及与人类阿尔茨海默病相关基因。"
+        ],
+        "limitations": [
+          "作者代码未运行,静态检查不构成复现验证,不能宣称结果已复现或与原文一致。",
+          "输入数据尺度、图号与具体分析步骤的对应关系未明示,相关细节未知。",
+          "摘要与图注为文本信息,未提供原始数据或统计输出以供独立核验。",
+          "图2中训练/测试划分方式、样本量分配及模型细节未在给定证据中说明。",
+          "40个CpG位点与邻近基因的具体对应关系及功能解释未在给定证据中展开。",
+          "期刊指标、许可信息及代码可运行性未在证据中提供,均属未知。",
+          "摘要所述R2与中位绝对误差等指标仅来自摘要文本,未由证据中的图表或代码输出佐证。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "script-0",
+          "script-1"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-22T08:56:13Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "94f9b53b56245eeaec08b5b3010bc682f76f0c243b7e499d7d3dbd298d152f2f",
+        "summary_fingerprint": "155b7e22b3755e408b73836c4d585a5d12c5b6deddb424853c5ee8bbb5514f2d",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
+    },
+    {
+      "id": "doi-58919dbe97d8c5c3",
+      "paper": "Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.",
+      "doi": "10.1111/acel.70811",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1111/acel.70811",
+      "pmcid": "PMC13778774",
+      "pmid": "43046864",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-22",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "single_cell_profile"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "0224dfbd4b6f66088be3383c01b49e2ec4420bcdb45735479d79b7f9b00ebb92"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/PMC13778774.1.xml?md5=20db620654fe63edf7ce4386f27da249",
+        "figures": [
+          {
+            "id": "acel70811-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Construction and characterization of a cross‐species prostate atlas. (a) Schematic overview of the study design and analytical workflow. The sc/snRNA‐seq data from Hsa, Mfa, and Mmu prostates were integrated using scGen. Spatial transcriptomic analysis was performed using ST data from five Hsa prostate samples. Seven major cell types and 45 cell subpopulations were identified for subsequent analyses. (b) UMAP visualization of the integrated single‐cell and single‐nucleus transcriptomic data from 47 prostate samples across Hsa, Mfa, and Mmu, showing seven major cell types. (c) UMAP plots showing the distribution of the seven major cell types in Hsa, Mfa, and Mmu. (d) Stacked bar plots showing the proportions of the seven major cell types in Hsa, Mfa, and Mmu, aggregated by species. (e) Venn diagram illustrating the overlap of marker genes across Hsa, Mfa, and Mmu, with 895 marker genes shared across all three species. (f) Dot plot showing the expression of canonical marker genes in the seven major cell types. Dot size represents the percentage of cells expressing each gene, and color intensity represents the average expression level. (g) Heatmap showing the top five significantly enriched KEGG pathways for each of the seven major cell types, ranked by enrichment score. The color gradient represents relative enrichment scores, with red indicating higher scores. (h) Stacked bar plots showing the proportions of the seven major cell types across the 47 prostate samples from Hsa, Mfa, and Mmu.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g007.webp?md5=218209c66a2f253517de024700544706",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "assets/pmc13778774-fb570cdbd6417a57.webp",
+            "sha256": "fb570cdbd6417a57b8bb99a86e508b8e7db5c6ecc59f8f54657d377bef484ce6",
+            "width": 1064,
+            "height": 1760,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "fb570cdbd6417a57b8bb99a86e508b8e7db5c6ecc59f8f54657d377bef484ce6",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70811-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Age‐associated changes in cellular composition, functional features, and predicted cell–cell communication. (a) UMAP plots showing the distribution of the seven major cell types across the available age groups in Hsa, Mfa, and Mmu prostate tissues. (b) Heatmap showing Ro/e values for the seven major cell types across the available species and age groups. The color gradient represents relative enrichment, with red indicating higher Ro/e values and yellow indicating lower Ro/e values. (c) Box plots showing the proportions of the seven major cell types across the available species and age groups. ns, not significant; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (d) GSVA results for five major cell types across the available species and age groups. The heatmap displays Hallmark pathway enrichment scores, with red indicating higher scores and blue indicating lower scores. (e) Circular network plots showing predicted cell–cell communication networks among the seven major cell types across the available species and age groups. Line thickness indicates the predicted number of interactions. (f) ST analysis showing the spatial distribution of the seven major cell types across the available age groups in Hsa prostate tissues. Spot colors indicate cell‐type prediction scores.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g001.webp?md5=282f3b5b4387129ed4e61d051941dd3a",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70811-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Age‐associated functional remodeling of T/NK cell subpopulations and alterations in the immune microenvironment. (a) UMAP visualization of T/NK cell subpopulations, including six CD4+ T cell subpopulations, four CD8+ T cell subpopulations, and NK cells. (b) UMAP visualizations of T/NK cell subpopulations grouped by species and age, showing the distribution of the 11 subpopulations across the available age groups of Hsa, Mfa, and Mmu. (c) Feature plots showing the expression of representative marker genes across T/NK cell subpopulations, including CD3E, CD8A, CD4, CCR7, LTB, IFNG, RORC, FOXP3, ITGAE, NKG7, GZMK, KLRG1, ZNF683, and KLRD1. Color intensity represents gene expression levels, with darker regions indicating higher expression. (d) Stacked bar chart showing the proportions of the 11 T/NK cell subpopulations across the available species and age groups. (e) Heatmap showing the Ro/e values of the 11 T/NK cell subpopulations across the available species and age groups. The color gradient represents relative enrichment, with red indicating higher enrichment and yellow indicating lower enrichment. (f) Scatter plots with trend lines showing age‐associated changes in the proportions of the 11 T/NK cell subpopulations across Hsa, Mfa, and Mmu. Different colors represent different species. (g) Violin plots showing leukocyte chemotaxis and T‐cell activation scores across T/NK cell subpopulations in the available species and age groups. (h) GSVA results for CD4_Tem across the available species and age groups. The heatmap displays Hallmark pathway enrichment scores, with red indicating higher scores and blue indicating lower scores. (i) Dot plot showing the expression of transcription factors, chemokines (CXCL and CCL), and their receptors (CCR and CXCR) related to chemotaxis and inflammation across T/NK cell subpopulations in the available species and age groups. Dot size represents the percentage of cells expressing each marker, while color intensity indicates average expression levels. (j) ST analysis showing the spatial distribution and expression of CD3E, CD4, CD8A, FOXP3, NKG7, PRF1, GNLY, and GZMB in prostate tissues across the available age groups. The color gradient represents gene expression levels, with progressively darker colors indicating higher expression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g004.webp?md5=2b5a16cca57bf24b60d5df0a286c1624",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "assets/pmc13778774-f0ba8279fbb297f7.webp",
+            "sha256": "f0ba8279fbb297f72472269a907287ba1039aade9a537316570ab860cb4c93ba",
+            "width": 1064,
+            "height": 1579,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f0ba8279fbb297f72472269a907287ba1039aade9a537316570ab860cb4c93ba",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "acel70811-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Age‐associated changes in macrophage subpopulations and their predicted interactions with structural cells. (a) UMAP visualization of myeloid cell subpopulations. (b) UMAP plots showing the distribution of the 12 myeloid cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (c) Dot plot showing representative marker gene expression across myeloid cell subpopulations. Dot size indicates the percentage of cells expressing each gene, and color intensity represents average expression levels. (d) Stacked bar plot showing the relative proportions of myeloid cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (e) Heatmap showing Ro/e values for myeloid cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. Red indicates higher Ro/e values, and yellow indicates lower Ro/e values. (f) Scatter plots with trend lines showing age‐associated changes in the proportions of myeloid cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (g) Heatmap showing the top five significantly enriched KEGG pathways in each myeloid cell subpopulation. Red indicates higher enrichment scores. (h) Violin plots showing scores related to angiogenesis, EMT, and ECM organization across myeloid cell subpopulations in the available age groups of Hsa, Mfa, and Mmu. (i) Dot plot showing KEGG pathways enriched in Macro_CX3CR1, Macro_IL1B, and Macro_LYVE1 in Old Hsa relative to Young Hsa. Dot size represents the gene ratio, and color indicates the adjusted p value (p.adjust). (j) Circular network plots showing predicted cell–cell communication between the macrophage subpopulations (Macro_IL1B, Macro_CX3CR1, and Macro_LYVE1) and structural cells (epithelial, stromal, and endothelial cells) in Middle‐aged and Old Hsa, Middle‐aged Mfa, and Old Mmu. Line width represents interaction weight. (k) Dot plot showing predicted ligand‐receptor interactions from Macro_IL1B to structural cells in Middle‐aged and Old Hsa, Middle‐aged Mfa, and Old Mmu. Dot size represents the interaction score, and color intensity indicates interaction intensity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g008.webp?md5=d1a09f08c9135ac34ff9015a6fb85479",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70811-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Age‐associated changes in epithelial cell subpopulations and EMT‐related features. (a) UMAP visualization of basal, club, hillock, and six luminal epithelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (b) Heatmap showing Ro/e values for epithelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. Red indicates higher Ro/e values, whereas yellow indicates lower Ro/e values. (c) Dot plot showing the expression of representative marker genes across the nine epithelial cell subpopulations. Dot size represents the percentage of cells expressing each gene, and color intensity indicates average expression levels. (d) Violin plots showing EMT and ECM organization scores in epithelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (e) UMAP plot showing the density distribution of stem cell proliferation scores in epithelial cell subpopulations. The color gradient represents the stem cell proliferation score, with yellow indicating higher scores. (f) Violin plots showing stem cell proliferation scores in basal cells across the available age groups of Hsa, Mfa, and Mmu. (g) Monocle2 pseudotime trajectory analysis showing differentiation trajectories among basal, club, hillock, and stromal cells, with color indicating pseudotime progression. (h) Pseudotime trajectory plots showing the trajectories of basal, club, hillock, and stromal cells stratified by species and age group. (i) Expression patterns of epithelial cell markers (CDH1, EPCAM, CLDN3, CLDN4, and OCLN), stromal cell genes (COL1A1, FN1, CDH2, VIM, ACTA2, TAGLN, and CNN1), and EMT‐related transcription factors (SNAI1, ZEB1, and TWIST1) along pseudotime. (j) ST visualization of KLK3, ACPP, EPCAM, KRT18, KRT5, and TP63 expression in Hsa prostate tissue across age groups. The color gradient indicates gene expression levels, from low to high.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g002.webp?md5=c2d03e2b82267e8d544a2c80243e7fcf",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70811-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Age‐associated changes in stromal cell subpopulations and their predicted interactions with macrophages. (a) UMAP visualization showing the distribution of six fibroblast subpopulations and three smooth muscle cell subpopulations. (b) Dot plot showing the expression of representative marker genes across fibroblast and smooth muscle cell subpopulations. Dot size indicates the percentage of cells expressing each gene, and color intensity indicates average expression levels. (c) Heatmap showing Ro/e values for stromal cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. Red indicates higher Ro/e values, whereas yellow indicates lower Ro/e values. (d) Scatter plots with trend lines showing age‐associated changes in the proportions of nine stromal cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (e) Dot plot (left) showing the number of DEGs in each stromal cell subpopulation, and bar plot (right) showing the five most significantly enriched KEGG pathways for each subpopulation. (f) Dot plot showing KEGG pathway enrichment in Fibro_IL1R1 of Old Hsa relative to Young Hsa and SMC_CNN1 of Middle‐aged Hsa relative to Hsa Young. (g) Violin plots showing ECM organization and SMC contraction scores in stromal cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (h) NMF analysis showing a clustered heatmap of six metaprograms (MP1‐MP6) in Fibro_APOD cells (top) and their distribution on UMAP (bottom). (i) Dot plot showing gene overlap and enriched pathways at the GOBP level for the six MPs in Fibro_APOD. Dot size represents the number of overlapping genes, and color intensity indicates pathway enrichment significance. (j) Circular network plots showing predicted cell–cell communication from three macrophage subpopulations (Macro_CX3CR1, Macro_IL1B, and Macro_LYVE1) to four stromal subpopulations (Fibro_APOD, Fibro_C7, Fibro_IL1R1, and SMC_CNN1) in Old Hsa. Line width indicates communication strength. (k) Dot plot showing predicted ligand‐receptor interactions from the three macrophage subpopulations to the four stromal cell subpopulations in Old Hsa. Dot size indicates interaction strength, and color intensity indicates the interaction score.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g006.webp?md5=87b13d845cebea36573e0e8125a5fd7b",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70811-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Age‐associated changes in endothelial cell subpopulations and their transcriptional features. (a) UMAP plot showing the clustering distribution of endothelial cell subpopulations, including arterial, lymphatic, tip, and venous endothelial cells. (b) UMAP visualization of endothelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (c) Feature plots showing the expression of representative marker genes GJA5, PROX1, KDR, and ACKR1 in arterial, lymphatic, tip, and venous endothelial cells. Color intensity indicates gene expression levels. (d) Heatmap showing Ro/e values of endothelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. The color gradient indicates relative enrichment, with red indicating higher Ro/e values and yellow indicating lower Ro/e values. (e) Scatter plots with trend lines showing age‐associated changes in the proportions of endothelial cell subpopulations across the available age groups of Hsa, Mfa, and Mmu. (f) Heatmap showing the top five significantly enriched KEGG pathways in each endothelial cell subpopulation. Red indicates higher enrichment scores. (g) Faceted scatter plots showing DEGs in each endothelial cell subpopulation in Old versus Young Hsa (left) and Mmu (right). Red points indicate upregulated genes, and blue points indicate downregulated genes. (h) UMAP plots showing the density distributions of sprouting angiogenesis, hypoxia, collagen biosynthetic process, and leukocyte adhesion to vascular endothelial cell scores across endothelial cell subpopulations. The color gradient indicates score intensity, with yellow indicating higher scores. (i) Violin plots showing the sprouting angiogenesis score in tip endothelial cells and the hypoxia, collagen biosynthetic process, and leukocyte adhesion to vascular endothelial cell scores in venous endothelial cells across the available age groups of Hsa, Mfa, and Mmu. (j) GSEA of tip and venous endothelial cells in Old versus Young Hsa and Mmu. Tip endothelial cells in Old Hsa and Old Mmu were enriched for cell adhesion molecule‐related pathways, whereas venous endothelial cells were enriched for ECM‐receptor interaction. (k) NMF analysis showing a clustered heatmap of six metaprograms (MP1‐MP6) in the tip endothelial cell subpopulation of Old Hsa (top), their distribution on UMAP (middle), and GO BP enrichment results (bottom). In the GOBP analysis, dot size represents the number of overlapping genes, and color intensity indicates enrichment significance.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-g005.webp?md5=8b72c7923691a6fa149758c30f0b23ae",
+            "articleURL": "https://doi.org/10.1111/acel.70811",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al.. Cross-Species Single-Cell, Single-Nucleus, and Spatial Transcriptomics Reveal Remodeling Features of the Immune Microenvironment and Tissue Architecture Associated With Prostate Aging and Benign Prostatic Hyperplasia.. DOI: 10.1111/acel.70811. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70811-supitem-0001",
+            "label": "Figure S1: Histopathological characterization of Young prostate tissues and Middle‐aged prostate tissues with BPH. Representative hematoxylin and eosi",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-s001.zip?md5=88de3c0094e12a20d230b4d1ac04c1c9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "acel70811-supitem-0002",
+            "label": "Table S1: Detailed information on all samples. Table S2: Gene sets used for AUCell analysis. Table S3: Differentially expressed genes of the seven maj",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13778774.1/ACEL-25-e70811-s002.zip?md5=f11fd31ca292a6ad46c277b7b18f02ae",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-22T08:55:22.695732+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zhuang Li; Yuanyuan Luo; Siqi Zhu; Bo Yu; Kai Li; Xuchao Dai; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-22T08:55:26Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-22T08:55:26Z",
+        "url": "https://openalex.org/W7235977684",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-22T08:55:26Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-22T08:55:26Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-23T08:55:26Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-22T08:56:14Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -248686,6 +249562,99 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-da2b2358268e962f": {
+      "tree": "Clock-new-young.RDS",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "Clock-new-young.RDS",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "RDS",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R；读取行 37；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/jubelik/Epigenetic-clock/blob/1486922e3b8f6b1e34ada29fc9db5d617c935f3a/clock-young-boucle-file.R",
+          "observedFieldReferences": [
+            {
+              "name": "Age",
+              "line": 60,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "correlation",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "estimate",
+              "line": 82,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "pval",
+              "line": 83,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "p.value",
+              "line": 83,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "adj_pval",
+              "line": 86,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "CpG",
+              "line": 91,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "importance",
+              "line": 121,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Overall",
+              "line": 121,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "co",
+              "line": 374,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "r.squared",
+              "line": 416,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "Data",
+              "line": 474,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
+    },
+    "doi-58919dbe97d8c5c3": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -250304,7 +251273,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-22T08:53:55Z",
+  "generatedAt": "2026-11-22T08:56:14Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -250538,18 +251507,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-22T08:51:57Z",
-    "updatedAt": "2026-11-22T08:54:10Z",
+    "updatedAt": "2026-11-22T08:56:21Z",
     "batchCount": 2,
-    "requests": 38,
-    "aiAttempts": 0,
+    "requests": 90,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
