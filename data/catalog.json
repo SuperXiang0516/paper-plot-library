@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-22",
+  "checkedAt": "2026-11-23",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -184528,6 +184528,1794 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-bba38afee67a5369",
+      "doi": "10.1111/acel.70848",
+      "paper": "Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.",
+      "journal": "Aging cell",
+      "date": "2026-11-01",
+      "year": "2026",
+      "pmcid": "PMC13771983",
+      "pmid": "43037147",
+      "paperURL": "https://doi.org/10.1111/acel.70848",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-9718",
+      "eissn": "1474-9726",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "multiomics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "b78009d2e7828c9e4a829b6ce17e9ced09874095c974df4a40213e4dbacc9ae4"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/PMC13771983.1.xml?md5=7fd9b3fc48b7a9496adfa35f3d9da6a0",
+        "figures": [
+          {
+            "id": "acel70848-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Submandibular duct ligation is associated with masseter degeneration, and nitrate deprivation induces senescence‐associated changes in cultured myogenic cells. (A) Schematic illustration of bilateral submandibular duct ligation in mice for 1 week. (B) Representative gross images of senescence‐associated β‐galactosidase (SA‐β‐gal) staining in isolated mouse masseter muscle from the control and ligation groups. (C) Quantification of the SA‐β‐gal‐positive area in gross masseter muscle specimens (B) from the control and ligation groups (N = 6 biologically independent samples per group). (D) Quantification of β‐galactosidase activity in mouse masseter muscle, normalized to total protein concentration, in the control and ligation groups (N = 6 biologically independent samples per group). (E–G) Representative immunofluorescence images of Fbx32 and Murf1 in transverse sections of mouse masseter muscle from the control and ligation groups, with DAPI counterstaining and corresponding quantification (n = 12 images from N = 6 biologically independent samples per group). (H, I) Immunoblot analysis of MyHC, Murf1, p16, p21, and Sialin in mouse masseter muscle from the control and ligation groups, with HSP90 as a loading control, and corresponding densitometric quantification (N = 3 biologically independent samples per group). (J, K) Representative SA‐β‐gal staining images of C2C12 cells and HSKMCs cultured under control or nitrate‐deprivation conditions, with quantification of the SA‐β‐gal‐positive area (N = 3 independent experiments per group). (L, M) Representative SA‐RED staining images of C2C12 cells and HSKMCs cultured under control or nitrate‐deprivation conditions, with quantification of SA‐Red fluorescence intensity (n = 12 images from N = 3 independent experiments per group). (N, O) Representative EdU incorporation images of C2C12 cells and HSKMCs cultured under control or nitrate‐deprivation conditions, with quantification of the EdU‐positive rate (n = 12 images from N = 3 independent experiments per group). (P) Quantification of intracellular ROS levels in C2C12 cells and HSKMCs cultured under control or nitrate‐deprivation conditions (N = 3 independent experiments per group). For all panels, data are represented as the mean ± SD. Scale bar: 20 μm in panel E and N, 50 μm in Panel J and L.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g005.webp?md5=e67f276a9cabfbd5c1e6dd9388c17b27",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70848-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Nitrate alleviates senescence‐associated degeneration in aged and D‐gal‐induced masseter muscle and myogenic cells. (A, B) Representative Sirius Red staining images of transverse sections of mouse masseter muscle and quantification of the fibrotic area in naturally aged male mice receiving control drinking water or nitrate supplementation from 15 to 18 months of age (N = 6 biologically independent samples per group). (C) Representative images of lipofuscin accumulation in transverse sections of mouse masseter muscle in naturally aged mice with or without nitrate supplementation. (D, E) Representative immunofluorescence images of Fbx32 in transverse sections of mouse masseter muscle from naturally aged mice with or without nitrate supplementation, with DAPI counterstaining, and corresponding quantification (N = 6 biologically independent samples per group). (F) Quantification of β‐galactosidase activity in mouse masseter muscle from naturally aged mice with or without nitrate supplementation, normalized to total protein content (N = 6 biologically independent samples per group). (G, H) Immunoblot analysis of MyHC, Murf1, p16, p21, and Sialin in mouse masseter muscle from naturally aged mice with or without nitrate supplementation, with HSP90 as a loading control, and corresponding quantification (N = 3 biologically independent samples per group). (I, J) Representative Sirius Red staining images of transverse sections of mouse masseter muscle and quantification of the fibrotic area in D‐gal‐treated mice with or without nitrate supplementation (N = 6 biologically independent samples per group). (K) Representative images of lipofuscin accumulation in transverse sections of mouse masseter muscle in D‐gal‐treated mice with or without nitrate supplementation. (L, M) Representative immunofluorescence images of Fbx32 in transverse sections of mouse masseter muscle from D‐gal‐treated mice with or without nitrate supplementation, with DAPI counterstaining and corresponding quantification (N = 6 biologically independent samples per group). (N) Quantification of β‐galactosidase activity in mouse masseter muscle from D‐gal‐treated mice with or without nitrate supplementation, normalized to total protein content (N = 6 biologically independent samples per group). (O, P) Immunoblot analysis of MyHC, Murf1, p16, p21, and Sialin in mouse masseter muscle from D‐gal‐treated mice with or without nitrate supplementation, with HSP90 as a loading control, and corresponding quantification (N = 3 biologically independent samples per group). (Q–S) Representative SA‐β‐gal staining images of C2C12 cells and HSKMCs cultured under control, D‐gal, or D‐gal plus 4 mM nitrate conditions, with quantification of the SA‐β‐gal‐positive area (N = 3 independent experiments per group). (T–V) Representative SA‐RED staining images of C2C12 cells and HSKMCs cultured under control, D‐gal, or D‐gal plus 4 mM nitrate conditions, with quantification of SA‐RED fluorescence intensity (N = 3 independent experiments per group). For all panels, data are represented as the mean ± SD. Scale bar: 50 μm, except in panel V, 10 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g006.webp?md5=dd67d657f30794eb5069289a1a8f28ea",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "assets/pmc13771983-3eeb92f891aff5c5.webp",
+            "sha256": "3eeb92f891aff5c559eb34eb9ffca50130dd4b25565003a9701c0bdf15d6f346",
+            "width": 1064,
+            "height": 1462,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3eeb92f891aff5c559eb34eb9ffca50130dd4b25565003a9701c0bdf15d6f346",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "acel70848-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Slc17a5 deficiency induces senescence‐associated dysfunction and abolishes nitrate responsiveness in myogenic cells. (A) Schematic illustration of the transcriptomic (top) and proteomic (bottom) workflows in control and Slc17a5‐deficient (sgSlc17a5) C2C12 cells. (B) Gene Ontology enrichment analysis of transcriptomic profiling in control and sgSlc17a5 C2C12 cells (N = 3 biologically independent samples per group). (C) KEGG pathway enrichment analysis of proteomic profiling in control and sgSlc17a5 C2C12 cells (N = 3 biologically independent samples per group). (D–F) Representative SA‐β‐gal staining images of C2C12 cells and HSKMCs cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions, with quantification of the SA‐β‐gal‐positive area in C2C12 cells (E) and HSKMCs (F) (N = 3 independent experiments per group). (G–I) Representative SA‐RED staining images of C2C12 cells and HSKMCs cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions, with quantification of SA‐RED fluorescence intensity in C2C12 cells (H) and HSKMCs (I) (n = 12 images from N = 3 independent experiments per group). (J–L) Representative EdU incorporation images of C2C12 cells and HSKMCs cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions, with quantification of the EdU‐positive rate in C2C12 cells (K) and HSKMCs (L) (n = 12 images from N = 3 independent experiments per group). (M, N) Quantification of intracellular ATP levels in C2C12 cells (M) and HSKMCs (N) cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (N = 3 independent experiments per group). (O, P) Quantification of intracellular ROS levels in C2C12 cells (O) and HSKMCs (P) cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (N = 3 independent experiments per group). (Q, R) Quantification of immunoblot analysis of MyHC, Myod1, Murf1, Lamin B1, p16, p21, and Sialin in differentiated C2C12 myotubes and HSKMCs under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (N = 3 independent experiments per group). Representative immunoblot images are shown in Figure S3. For all panels, data are represented as the mean ± SD. Scale bar: 50 μm, except in panel J, 20 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g001.webp?md5=e14736751242b1a7193fd89e8bf7a5c4",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70848-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Slc17a5 deficiency disrupts mitochondrial structural and bioenergetic homeostasis in myogenic cells. (A) Venn diagram showing the overlap between differentially regulated genes identified by transcriptomic and proteomic analyses in control and sgSlc17a5 C2C12 cells. (B) Comparison of normalized enrichment scores (NES) derived from transcriptomic and proteomic datasets for selected pathways identified by cross‐omics gene set enrichment analysis. (C, D) Representative JC‐1 staining images and quantification of the JC‐1 red/green fluorescence ratio in C2C12 cells cultured under control, nitrate, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (n = 12 images from N = 3 independent experiments per group). (E, F) Representative MitoSOX staining images and quantification of mitochondrial ROS fluorescence intensity in C2C12 cells cultured under control, nitrate, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (n = 12 images from N = 3 independent experiments per group). (G–I) Quantification of intracellular lactate levels (G), fluorometric oxygen‐consumption readout (H), and ATP levels (I) in C2C12 cells cultured under control, nitrate, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (N = 3 independent experiments per group). (J) Carbon‐weighted fractional 13C contribution from 13C6 glucose to citrate, α‐ketoglutarate, succinate, fumarate, malate, and aspartate in control and sgSlc17a5 C2C12 cells after 4 h of stable‐isotope labeling. Each point represents one biologically independent sample (N = 4 per group). (K, L) Representative TOM20 immunofluorescence images and mitochondrial skeleton analysis in C2C12 cells cultured under control, nitrate, sgSlc17a5, or sgSlc17a5 plus nitrate conditions, including quantification of branch length, branch number, network number, and network complexity (n = 12 images from N = 3 independent experiments per group). (M, N) Representative immunoblot images of NDUFB8, SDHB, UQCRC1, MTCO2, ATP5A1, and p16 in C2C12 cells cultured under control, nitrate, sgSlc17a5, or sgSlc17a5 plus nitrate conditions, with HSP90 as a loading control, and corresponding quantification (N = 3 independent experiments per group). For all panels, data are represented as the mean ± SD. Scale bar: 50 μm, except in panel K, 10 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g003.webp?md5=d703cbb54cf6369ef94f63061f823a70",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "assets/pmc13771983-0708dd7e486be662.webp",
+            "sha256": "0708dd7e486be6628a20fada4aa8390412b16c5e7ad8d9a31dcc69f57493eb9d",
+            "width": 1064,
+            "height": 1355,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0708dd7e486be6628a20fada4aa8390412b16c5e7ad8d9a31dcc69f57493eb9d",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "acel70848-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Sialin facilitates nitrate‐responsive USP48‐NDUFS1 association linked to NDUFS1 stabilization. (A) Schematic illustration of the TurboID workflow used to identify Sialin‐proximal proteins in C2C12 cells. (B) Subcellular distribution of Sialin proximal proteins identified by TurboID in C2C12 cells. (C, D) KEGG pathway enrichment analysis and GO‐BP, GO‐CC, GO‐MF enrichment analysis of Sialin‐proximal proteins identified by TurboID. (E) Venn diagram showing the overlap between significantly enriched Sialin‐proximal proteins identified by TurboID in mouse C2C12 cells and human HEK293T cells. Proteins meeting the predefined significance criterion in each dataset were converted to their corresponding gene symbols before overlap analysis. (F–I) Representative proximity ligation assay (PLA) images and quantification of Sialin‐NDUFS1 spatial proximity in C2C12 cells (F, G) and HSKMCs (H, I) cultured under control and nitrate‐treated conditions (n = 12 images from N = 3 independent experiments per group). (J–M) Representative co‐immunoprecipitation images and corresponding quantification of ubiquitin signal in NDUFS1 immunoprecipitates in C2C12 cells (J, K) and HSKMCs (L, M) cultured under control and nitrate conditions (N = 3 independent experiments per group). (N–Q) Representative co‐immunoprecipitation images and corresponding quantification of K48‐linked ubiquitin signal in NDUFS1 immunoprecipitates in C2C12 cells (N, O) and HSKMCs (P, Q) cultured under control and nitrate conditions (N = 3 independent experiments per group). (R–U) Representative PLA images and quantification of the spatial proximity between USP48 and NDUFS1 in C2C12 cells (R, S) and HSKMCs (T, U) cultured under control, sgSlc17a5, or sgSlc17a5 plus nitrate conditions (n = 6 images from N = 3 independent experiments per group). For all panels, data are represented as the mean ± SD. Scale bar: 10 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g004.webp?md5=70e1018ee6e7c11a8e6061f69e9ea911",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "acel70848-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "MitoQ rescues masseter degeneration associated with Sialin‐dependent mitochondrial dysfunction. (A) Schematic illustration of the generation of Myf5‐Cre‐mediated Slc17a5 conditional knockout mice (Myf5‐Cre+; Slc17a5 fl/fl) and the experimental design. Male mice were enrolled at 3 months of age and treated for 3 months before tissue collection at 6 months of age. Two independent cohorts were used: Control, cKO, and cKO plus nitrate; or control, cKO, and cKO plus MitoQ (N = 6 mice per group). The control and cKO groups were independently generated for each cohort and were not shared between the two experiments. (B–H) Senescence‐, atrophy‐, and mitochondrial‐associated changes in mouse masseter muscle from WT, cKO, and cKO plus nitrate groups. (B) Representative gross images of SA‐β‐gal staining in isolated mouse masseter muscle. (C) Quantification of β‐galactosidase activity in mouse masseter muscle normalized to total protein concentration (N = 3 biologically independent samples per group). (D–F) Representative immunofluorescence images of Fbx32 and Murf1 in transverse sections of mouse masseter muscle, with DAPI counterstaining, and corresponding quantification of Fbx32 (E) and Murf1 (F) (n = 12 images from N = 3 biologically independent samples per group). (G, H) Representative immunoblot images of NDUFB8, SDHB, UQCRC1, MTCO2, ATP5A1, p16, p21, and Sialin in mouse masseter muscle, with HSP90 as a loading control, and corresponding quantification (N = 3 biologically independent samples per group). (I–N) Rescue of atrophy‐ and mitochondrial‐associated changes in mouse masseter muscle from WT, cKO, and cKO plus MitoQ groups. (I) Quantification of β‐galactosidase activity in mouse masseter muscle normalized to total protein concentration (N = 3 biologically independent samples per group). (J–L) Representative immunofluorescence images of Fbx32 and Murf1 in transverse sections of mouse masseter muscle, with DAPI counterstaining, and corresponding quantification of Fbx32 (K) and Murf1 (L) (n = 12 images from N = 3 biologically independent samples per group). (M, N) Representative immunoblot images of NDUFB8, SDHB, UQCRC1, MTCO2, ATP5A1, p16, p21, and Sialin in mouse masseter muscle, with HSP90 as a loading control, and corresponding quantification (N = 3 biologically independent samples per group). For all panels, data are represented as the mean ± SD. Scale bar: 20 μm.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-g007.webp?md5=cf96211024f3d7335cdcf3897dfd59ba",
+            "articleURL": "https://doi.org/10.1111/acel.70848",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al.. Protection Against Aging-Associated Masseter Atrophy via the Nitrate-Sialin Axis Preserving Mitochondrial Homeostasis.. DOI: 10.1111/acel.70848. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "acel70848-supitem-0001",
+            "label": "Figure S1: Submandibular duct ligation and nitrate deprivation induce senescence‐associated changes in masseter muscle and myogenic cells. (A) Nitrate",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13771983.1/ACEL-25-e70848-s001.docx?md5=fadddf004270d8ab5642fc4a6abfae17",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-23T09:51:03.008858+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Zichen Cao; Qibin Wu; Sihan Kong; Ou Jiang; Tianyi Zhang; Jinsong Wang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "7.7",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-23T09:51:05Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-23T09:51:05Z",
+        "url": "https://openalex.org/W7154480794",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-23T09:51:05Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-23T09:51:05Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-24T09:51:05Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-23T09:54:06Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-f88a274712f51692",
+      "doi": "10.1038/s41586-026-10932-7",
+      "paper": "Insights into longevity and virus-driven adaptation from Myotis bat genomes.",
+      "journal": "Nature",
+      "date": "2026-08-26",
+      "year": "2026",
+      "pmcid": "PMC13626957",
+      "pmid": "42649300",
+      "paperURL": "https://doi.org/10.1038/s41586-026-10932-7",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "f3e472b7ee0aae753e039b18cd2e8674b26a2eb0f5e2a691b4d2e2b7b79b32c3"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/PMC13626957.1.xml?md5=4d72158b0593a27a02e3fe45175b2ed8",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Near-complete reference assemblies reveal a varied structural variation landscape across nine Nearctic Myotis species.a, Phylogeny of Nearctic Myotis bats in this study, including outgroup species of bat, cow, mouse and human. Branches are coloured by their estimated longevity quotient, a ratio of observed-to-expected lifespan1. b, Map of capture sites in Arizona and California for samples generated in this study; each dot colour indicates the species. c, The completion status of each chromosome in assembly. The percentages next to the ideograms indicate the proportion of T2T-assembled chromosomes across species. d, The completion status of all chromosomes within each assembly, with representative images for the species shown above. For c and d, ‘complete (T2T) status’ indicates that a chromosome is fully assembled T2T without gaps; ‘draft (T2T, gaps)’ status indicates that a chromosome is fully scaffolded with both telomeres, but has one or more gaps in the assembly; ‘incomplete’ status indicates that a chromosome was positively identified, but was not scaffolded from telomere to telomere (contains only one telomere). e, Synteny between chromosomes of nine Myotis species showing syntenic regions (grey), inversions (orange), translocations (green) and duplications (blue). The red bar below chromosome V15 (x axis) indicates a locus of approximately 10 Mb where introgression was recently described in other Myotis18. f, The distribution of TEs (top) and segmental duplications (red heat map, bottom) in M. velifer. Putative locations of centromeres are denoted by the dotted lines. g, The overall genomic proportions of TEs in M. velifer. h, Histogram of segmental duplication size distributions genome wide in M. velifer. LINE, long interspersed nuclear element; LTR, long terminal repeat; RC, rolling circle transposon; SINE, short interspersed nuclear element. Images are from iNaturalist: Juan Cruzado Cortés (M. californicus, M. volans, M. occultus, M. auriculus and M. thysanodes) under a CC BY SA 4.0 licence; and Marlo Perdicas (M. lucifugus), Ansil B. R. (M. velifer) and Issac Krone (M. evotis) under a CC BY 4.0 licence.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig1_HTML.webp?md5=059c9fe4c2ba01fc8edcb47a102fff2b",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "assets/pmc13626957-c16338e43cdeddf2.webp",
+            "sha256": "c16338e43cdeddf2b0adb961336996245eb776c51ca8034fc7adc8b7760bcad3",
+            "width": 1600,
+            "height": 1632,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c16338e43cdeddf2b0adb961336996245eb776c51ca8034fc7adc8b7760bcad3",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Evolutionary history and function of an actively segregating copy-number polymorphism of PKR in Myotis.a, The structural comparison of PKR haplotypes in two species. Orthologous regions are indicated by grey bands, syntenic duplications are indicated in green and exons are indicated by black marks. b, Cartoon of the PKR locus in the two phased haplotype assemblies of each Myotis species in this study, with the number of exons per copy. While PKR2 is present across all haplotypes, PKR1 and PKR copy 3 are polymorphic. c, Reconciled gene tree for PKRs across all haplotypes and species shown in b. Haplotype corresponding to the reference (a) and alternative (b) haplotype for each species are represented by upper- and lower-diagonal triangles, respectively. anc, ancestral. d, The effect of Myotis PKR expression on luciferase reporter translation in PKR-KO cells, measured in relative light units (RLU) and normalized to the empty pSG5 control. Human SAMD9L-GoF is a positive control for translation inhibition69. e,f, The effect of PKR on viral infection by VSV-GFP (e; Extended Data Fig. 4e) and SINV-GFP (f; 34 h after infection, Extended Data Fig. 4c), measured by flow cytometry as the percentage of GFP+ cells and by live imaging as the GFP+ area normalized to total cellular area, respectively, normalized to the pSG5 control. Although all of the conditions restricted VSV and SINV, expression of both PKR1 + PKR2 was not beneficial against these viral infections. ISG20 was used as a positive control of VSV-GFP restriction70. g, Co-immunoprecipitation (co-IP) analysis of PKR-KO cells transfected with Myotis HA-PKR1 and Myotis MYC-PKR1, Myotis MYC-PKR2 or MYC-empty vector control. Proteins were pulled-down with anti-MYC beads and lysates from 5% input or IP samples were run on a western blot and stained for HA and MYC (SINV conditions are shown in Extended Data Fig. 4c). h, Quantification of the three independent experiments (mock and SINV) for HA (left) and MYC (right). Data are mean ± s.e.m. of at least three independent experiments. Statistical significance was assessed using unpaired t-tests; *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001. mPKR, M. myotis PKR; vPKR, M. velifer PKR. Gel source data are provided in Supplementary Fig. 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig2_HTML.webp?md5=907224bd5becc5ae95a3b919a705d4fb",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "assets/pmc13626957-a3d8701920c05a39.webp",
+            "sha256": "a3d8701920c05a39a9ae23e72ce738e9300ffa7590ec65f9e536c1d956a4a7ab",
+            "width": 1591,
+            "height": 2154,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a3d8701920c05a39a9ae23e72ce738e9300ffa7590ec65f9e536c1d956a4a7ab",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Adaptation to DNA viruses, but not RNA viruses, is enriched in Myotis and other bats.a, Diagram of an example VIP, the host cell transmembrane receptor CD45, showing the strength of adaptation at each codon and the locations of direct interactions with the human adenovirus protein sec49K. b–f, The ratio of positive selection of VIP genes associated with proviral/antiviral activity (b) or no proviral/antiviral activity (c), all VIP genes (d), DNA-only VIP genes (e) and RNA-only VIP genes (f) in only Myotis bats in VIPs versus matched sets of control genes at different P value thresholds. The solid line shows the median ratio; the colour of the line and the number above each point represent the number of VIPs with significant BUSTED-MH P values at the given threshold, and therefore used with the same number of matched control genes for each ratio calculation; the grey band represents the 95% confidence interval generated by bootstrapping sets of matched control genes. The 95% confidence interval widens at lower P values because there are fewer VIPs with significant P values as the α threshold decreases, reducing power. g–i, The number of VIP genes (all VIP genes (g), DNA-only VIP genes (h) and RNA-only VIP genes (i)) inferred by CAFE to have significantly expanded or contracted in copy number on at least one branch of the Nearctic Myotis phylogeny (blue line) compared with the distribution across 100 randomized sets of non-VIP control genes (black line). The vertical dashed lines indicate the 95% highest density interval for the control gene distribution.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig3_HTML.webp?md5=0c88ab46a5b9cf3fdf2d37b5b1187b34",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Evolution of cancer risk and resistance in Myotis and other mammals.a,b, Cophylo plot of the evolution of body size (a) and lifespan (b) across Eutheria. The branch lengths in a and b are scaled proportional to the rate of change of the trait over time. c, The phylogeny of Nearctic Myotis species. Inset: the proportion of the top 100 Reactome pathways over-represented among genes under selection at each node that are associated with cancer-related processes. Bottom, the expected proportion of pathways are cancer associated after 1,000 random samples of 100 pathways from the full Reactome database. The asterisks represent nodes with proportions greater than the expected value at P ≤ 0.05 based on the Fisher’s exact test. d, The proportion of the top 100 Reactome pathways over-represented among genes under selection across all nodes in a species’ evolutionary history that are associated with cancer-related processes. e, Over-represented pathways in Reactome among the union set of genes under selection across all nodes in the evolutionary history for M. lucifugus. f, The viability and apoptosis fold change in primary skin fibroblasts of five bat species in response to different doses of NCS, a potent inducer of DNA double-strand breaks. The points represent individual replicates normalized to each species’ control; the bars represent mean ± 95% confidence intervals. NS, not significant (P > 0.05).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig4_HTML.webp?md5=3ca33ce12acdd509f5f6b338a64a3166",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Pleiotropy among genes under selection in M. lucifugus between DNA-damage-responsive genes and DNA-only VIPs.a,b, Genes that are differentially expressed in M. lucifugus primary skin fibroblasts after 6 h (a) and 18 h (b) of treatment with 100 nM NCS. c,d, Pathway-level gene set enrichment analysis (GSEA) of genes differentially expressed at 6 h (c) and 18 h (d) after treatment. e, Upset plot between genes that are differentially expressed after NCS treatment and DNA-only VIPs; the hypergeometric P value of the intersection is shown. f, Pathway-level over-representation analysis of genes that are DNA-only VIPs and are also differentially expressed in response to NCS treatment. g, Pathway-level over-representation analysis of genes identified as under selection in M. lucifugus using aBSREL that are DNA-only VIPs and are also differentially expressed in response to NCS treatment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig5_HTML.webp?md5=2d9debbc758faee2b61758390c27cc92",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Extended Data Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Contiguity statistics for 8 novel Myotis genomes.A) NG-decay plot for contig-level assemblies of bat genomes used in this paper. B) LG-decay plot for contig-level assemblies of bat genomes used in this paper. C) NG-decay plot for scaffold-level assemblies of bat genomes used in this paper. D) LG-decay plot for scaffold-level assemblies of bat genomes used in this paper. The invariance of the curves in A-D corresponding to the genomes generated in this paper is due to the high-contiguity of contigs assembled by hifiasm-hic; chromosome-level scaffolds were largely unaffected by scaffolding efforts. E) Mammalian BUSCO scores for annotations generated for the 8 new Myotis genomes. F-M) Genome assembly metric comparisons between assemblies derived from tissues or from primary cell lines. While assembly metrics do not correlate with coverage of PacBio HiFi sequencing (F), assemblies derived from primary cell lines do show improved statistics.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig6_ESM.webp?md5=cf9d5df989fb24059c5d81f123c2def6",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Extended Data Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Estimated node divergence times for Chiroptera and ASTRAL-IV scores.A) Distribution of time estimates for nodes across the full fossil-calibrated Chiroptera phylogeny. B) ASTRAL-IV scored phylogeny of all mammalian genomes used in this study. C) ASTRAL-IV scored phylogeny of Chiroptera. For B-C, the local posterior probability (LPP) scores of nodes under <90% are shown on the tree; the branch at nearctic Myotis root with low bootstrap support is highlighted in red in A.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig7_ESM.webp?md5=f558001ad24397e96e3701b82dfec41b",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig8",
+            "label": "Extended Data Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Correlations of TEs and structural variation in Myotis genomes.A) Histogram of LINE element counts in 1 Mb bins across chromosomes in M. velifer. Black lines indicate the estimated location of the centromeric region as a 20 Mb bin. B) Correlation between the proportion of bases within segmental duplications and the proportion of bases within TEs in bins across 9 Nearctic Myotis genomes. The blue line represents the linear regression of the correlation between the two proportions, and the R2, p-value, and equation for the correlations are plotted in each graph. C) Correlation between the proportion of bases within segmental duplications and the proportion of bases within TEs in bins for M. velifer per TE family. D) Synteny between chromosome V15 across 9 Myotis species. The binned distribution of transposable elements (top) and segmental duplications (red heatmap, bottom) in M. velifer are shown above the syntenic alignment in phylogenetic order. The ~20-Mb block at the subtelomeric end of Chr V15 spans several immune-related and interleukin signalling genes, including IL-1 and IL-36.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig8_ESM.webp?md5=c5da875d699839470649f13b470ff624",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig9",
+            "label": "Extended Data Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Additional functional characterization of Myotis PKR duplicates.A) Steady-state protein expression levels in PKR-KO HeLa cells expressing FLAG-tagged Myotis myotis PKR1 and/or PKR2. Western blots targeting FLAG or Tubulin (loading control) in lysate of cells transfected with either empty vector (pSG5), PKR1-FLAG, PKR2-FLAG, or an equimass mix of both PKR vectors (total 350 ng or 700 ng). B) Co-immunoprecipitation (coIP) of PKR-KO HeLa cells transfected with plasmids encoding HA-tagged Myotis myotis PKR1 and either myc-tagged Myotis myotis PKR1, myc-tagged Myotis myotis PKR2 or a myc empty vector control in SINV-GFP infected conditions. Proteins were pulled down with anti-myc coated beads and lysates from 5% input or immunoprecipitated samples were run on a western blot and stained for HA and myc. Image representative of 3 independent experiments. C) PKR-KO HeLa cells transfected with plasmids encoding an empty vector control, Myotis myotis PKR1, PKR2 or both PKR1 and PKR2 were infected with SINV-GFP at MOI 0.2 and GFP fluorescence was monitored over time by live imaging. Mean +/− standard deviation of the percentage of GFP fluorescent area over total cell area was plotted for 3 independent experiments, each representing the average value of six photos from two duplicate wells. D) Effect of PKRs on cell viability, normalized to the control. Etoposide treatments are positive controls of cell death. Only high transfection of PKRs impacted cell viability (200 ng total of DNA for 10,000 cells). mPKR, Myotis myotis PKRs; vPKR, Myotis velifer PKRs. Error bars indicate mean ± SEM for at least three independent experiments. Statistical significance was assessed using an unpaired t-test (*, p < 0.05; **, p < 0.01; ***, p < 0.001; ****, p < 0.0001). E) Effect of Myotis velifer PKRs on viral infection by VSV-GFP, measured by flow cytometry as the % of GFP+ cells, normalized to the pSG5 control. ISG20 served as a positive control of VSV-GFP restriction70. For gel source data, see Supplementary Fig. 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig9_ESM.webp?md5=5c96bddc49863713a4c77010366b81db",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig10",
+            "label": "Extended Data Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "VIP selection enrichments in bats and other mammals.A) Enrichment for selection of all VIPs (left), DNA-only VIPs (middle), and RNA-only VIPs (right) versus matched control genes in non-Myotis bats. B) Enrichment for selection of DNA-only VIPs versus matched control genes in 4 non-bat clades of mammals. C) Enrichment for selection of RNA-only VIPs versus matched control genes in 4 non-bat clades of mammals. For A-C, plots show the ratio of selection (ω) p-values of viral interacting proteins (VIPs) v.s. matched controls for VIPs and control gene sets identified as under positive selection by BUSTED-MH as a function of p-value threshold. D) CAFE p-value estimates for the birth-death rate (λ) of VIP genes and VIP-subsets compared to randomized matched sets of non-VIP genes. The 95% confidence interval of the distribution of the bootstrapped non-target control genes is indicated by the dotted lines around each distribution; the p-value estimated for the target gene sets are indicated by the solid blue line.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig10_ESM.webp?md5=ad87d5d170178252fe31fe09f66cdb4b",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig11",
+            "label": "Extended Data Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Evolution of body size and lifespan across Myotis.A-B) Estimates of body size (A), and lifespan (B) in Chiroptera with major bat families highlighted. C-D) Phylogenetic least-squares regression for lifespan (log(yrs)) as a function of body size (log(kg)) across mammals (C) and bats (D) in the Upham et al.34 phylogeny; lines represent the phylogenetically-corrected generalized least squares regression for each group indicated in the legend. E) Raincloud plots of genes under selection (padj ≤ 0.05) by aBSREL in each terminal species. Each histogram represents the distribution of the highest omega (ω) value for each gene after multiple testing correction (padj ≤ 0.05). The 95% confidence interval and median for significant ω’s are represented by the black bar and circle, respectively; the 95% confidence interval and median ω for all genes are shown in grey below. Individual genes’ ω’s are represented by coloured points. Genes that are associated with pathways previously explored in the literature for bats, such as insulin signalling, iron metabolism, DNA damage response, and SERPIN-family genes, are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig11_ESM.webp?md5=b917d16b3769314a0a649ff3a45f5915",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig12",
+            "label": "Extended Data Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "extended",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Genes differentially expressed after neocarzinostatin treatment and their overlap with DNA-only VIPs.A) Heatmap of log2 Counts Per Million (CPM) for the top 50 differentially expressed genes in M. lucifugus after 6- and 18-h of treatment with 100 nM neocarzinostatin. B) Histogram of p-values for the overlap of 10,000 simulated sets of non-NCS DE genes and non-DNA-only VIPs. The empirical false positive rate, α, is 0.0245. C) Upset plot of genes that are either 1) under selection (ABSREL, padj ≤ 0.05) in Myotis lucifugus ({aBSREL}); 2) differentially-expressed after neocarzinostatin treatment ({NCS}); or 3) are classified as DNA-only VIPs ({VIP}). The hypergeometric p-value for the set {NCS}∩{aBSREL}∩{VIP} is shown. D-G) Pathway-level overrepresentation analysis of genes that are exclusive to either {NCS} (D, E) or {VIP} (F, G) either before (D, F) or after (E, G) sub-settings for only those genes identified as under selection. Only pathways significant at FDR ≤ 0.05 are shown.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_Fig12_ESM.webp?md5=ee1a50dd1425a4d58a99558f94c2c60c",
+            "articleURL": "https://doi.org/10.1038/s41586-026-10932-7",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al.. Insights into longevity and virus-driven adaptation from Myotis bat genomes.. DOI: 10.1038/s41586-026-10932-7. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_MOESM1_ESM.pdf?md5=1a29a6c7f3f7813f5a7a12bf9b776b0d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_MOESM2_ESM.pdf?md5=d031e2f3bc85ac47fbd7e17a824c1367",
+            "license": "CC BY",
+            "sha256": "b3dc2e534d108ab7ce15434a7ece9b012f3b1a097f7cc36efdcc3bf6a895692a",
+            "status": "downloaded_private",
+            "bytes": 100487,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 4,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_MOESM3_ESM.zip?md5=5b05f43f4f64f2205701977b24ec3e49",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13626957.1/41586_2026_10932_MOESM4_ESM.pdf?md5=350ab2a75c427bd7ae61cfe08f130123",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-23T09:52:20.344301+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Juan M. Vazquez; M. Elise Lauterbur; Saba Mottaghinia; Léa Gaucherand; Sarah Maesen; Michael Singer; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "56.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-23T09:52:26Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-23T09:52:26Z",
+        "url": "https://openalex.org/W7204243208",
+        "cited_by_count": 19,
+        "fwci": 55.2438,
+        "citation_normalized_percentile": 0.99926145,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-23T09:52:26Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-23T09:52:26Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-24T09:52:26Z"
+        }
+      },
+      "selectionScore": {
+        "total": 51.99630725,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.99630725,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-23T09:54:07Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-198ba40208067f4a",
+      "doi": "10.1038/s41467-026-75836-6",
+      "paper": "A genomic catalog of the mouse gut virome reveals features associated with ageing.",
+      "journal": "Nature communications",
+      "date": "2026-07-21",
+      "year": "2026",
+      "pmcid": "PMC13503771",
+      "pmid": "42481527",
+      "paperURL": "https://doi.org/10.1038/s41467-026-75836-6",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "824ba26d5979ae2697595593beb930153dad9797a94f805a4030f64a58612064"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/PMC13503771.1.xml?md5=5498db6ab29a2123e5ee8063b31d8008",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of mouse reference gut virome (MRGV).a Summary of the MRGV construction workflow. b Completeness of 39,467 bin-level genomes and their member contigs. For boxplots, box lengths represent the interquartile range of the data (IQR), and whiskers extend to 1.5x IQR. The center bar represents the median. c Rarefaction analysis at 28,824 species-level, 11,578 genus-level, and 2629 family-level vOTUs. Heaps’ law coefficient reflects the rate of new vOTU discovery, with lower values indicating saturation and higher values indicating continued accumulation of rare taxa. d. Genome quality distribution of 109,778 all viral genomes, 39,467 bin-level genomes (vBin), and 70,311 contig-level genomes (vContig). e The length distribution of high-quality (blue) and medium-quality (gray) genomes. f The length distribution of genomes with ≥ 200 kbp. g Phylogenetic tree of 22,679 out of 28,824 MRGV species-level vOTUs based on TerL sequences.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig1_HTML.webp?md5=a38fe8c4302fc98894cd338dd0fae4dd",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "assets/pmc13503771-b1cd689cc6c09481.webp",
+            "sha256": "b1cd689cc6c09481cb53041b696c0ae3ce9c40e499db0554976c0cab5be8561c",
+            "width": 1600,
+            "height": 1814,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b1cd689cc6c09481cb53041b696c0ae3ce9c40e499db0554976c0cab5be8561c",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Taxonomic analysis of MRGV genomes and their comparison with other catalogs.a Overlap analysis of species-level vOTUs between MRGV and hcMGV (95% ANI and 85% AF). b Overlap analysis of species-level vOTUs between MRGV and UHGV (95% ANI and 85% AF). c–g Taxonomic landscape of MRGV at family- and genus-level. ICTV taxonomically annotated viral genus and families. Viral genus marked with a yellow star or a turquoise circle indicates ICTV legacy taxonomy. The number of recovered genomes grouped by family or genus rank (c). Prevalence was measured by counting viral genomes with >50% alignment coverage calculated using CoverM (d). The abundance of each viral family or genera at log10 scale (e). The distribution of genome size of each viral family or genera at log10 scale (f). Proportion of bin-derived genomes (vBin) belonging to each viral family or genera (g). h, i The number of reads aligned to each catalog, measured using 79 VLP-enriched (h) and 50 whole metagenomic sequencing datasets (i) from mouse fecal samples with Minimap2. For boxplots, box lengths represent the interquartile range of the data, and whiskers extend to the lowest and highest values within 1.5 times the interquartile range from the first and third quartiles, respectively. The center bar represents the median. Statistical significance was assessed using a two-tailed Mann-Whitney U test (n.s. non-significant, * P < 0.05, *** P < 0.001).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig2_HTML.webp?md5=8ad207c00924d9bda8e73e4773e8c8b2",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "assets/pmc13503771-7471c6c454bc5fbc.webp",
+            "sha256": "7471c6c454bc5fbcd64e03a16f0ea4f3e4e937e3b006dd8f1f8f2039a847a4ed",
+            "width": 1600,
+            "height": 1239,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7471c6c454bc5fbcd64e03a16f0ea4f3e4e937e3b006dd8f1f8f2039a847a4ed",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Protein functional landscape of MRGV and divergence between mouse and human gut virome.a Functional annotation of CDS from MRGV genomes using sequence-based (Pharokka) and structure-based (Phold) approaches. b Distribution of annotated CDSs across PHROG functional categories based on sequence (Pharokka) and structure (Phold) alignment, highlighting improved recovery of core viral functions by structure-based annotation. c Composition of MRGV protein clusters (PCs) with 30% AAI, showing proportions of clusters with known/unknown/no-hit annotations (left) and cluster size distribution (right). d Most abundant PCs within major PHROG functional categories. e Overlap of MRGV and UHGV PCs, demonstrating limited sharing of viral protein families between mouse and human. f Sankey diagram showing category-specific overlap of PCs between MRGV and UHGV. Percentages indicate the fraction of MRGV PCs with detectable homologs in UHGV for each PHROG category, revealing pervasive functional divergence across both core and accessory viral modules.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig3_HTML.webp?md5=cfeaeab834f5b1564631efb386bcee2c",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Host linkage and host breadth of mouse gut virome.a Number of linked host bacterial genomes of MRGM per phylum. b Numbers of linked viral genomes and corresponding vOTUs in parentheses per phylum. c Composition of host-virus linkage evidence by host phylum. d Family/genus-level profiles of the linked viruses per phylum across linkage evidence types. Top 20 viral genus- or family-level taxonomies with the largest host-virus connection were shown. ICTV taxonomically unclassified and other than the Top 20 viral taxa were treated as ‘Other’ groups. e Sankey summary of inferred host breadth for host-linked viral genomes, showing the distribution of links across host taxonomic ranks (single strain/species vs cross-taxon links) across evidence types.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig4_HTML.webp?md5=e828c6a72e16eeee93ecbb7e8ebb864c",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Analysis of crAss-like viruses in the mouse gut.a TerL marker gene-based phylogenetic analysis of 1382, 631, and 76 crAss-like virus genomes from MRGV, Yutin, N. et al., and ICTV VMR_MSL40.v1, respectively. ICTV families and legacy subtypes of crAss-like viruses are represented by color codes. Most outer rings show the number of tRNA genes in each viral genome, and the middle and inner rings show crAss-like viral genomes from MRGV and Yutin, N. et al., respectively. b Host breadth of crAss-like viruses. c Distribution of the number of subtype-resolved host connectivity profiles across host phyla for each evidence type. d Heatmap of the functional profiles for 1382 crAss-like viruses from MRGV. The genes were hierarchically clustered on the Euclidean metric by seaborn clustermap. The top 3 most abundant genes in each subtype belonging to 7 PHROG functional categories were selected.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig5_HTML.webp?md5=c6ac345fec20b94160d8b5d71a72c491",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Gut viral ageing clock in mice.a Kendall uniqueness on samples including cage-mates (left) and excluding cage-mates (right). Shaded bands indicate 95% confidence intervals from 1000 bootstrap resamples. b Mice age predictions by 162 bacterial genera from the MGBC pangenome catalog (Bacteria), 5576 viral genera from MRGV (Viruses), 5738 bacterial and viral genera (Bacteria + Viruses), and 776 diet-independent ageing-associated viral genera (Viral markers) using XGBoost Regressor models. For boxplots, box lengths represent the interquartile range of the data (IQR), and whiskers extend to 1.5x IQR. The center bar represents the median. Statistical significance was assessed using a two-tailed Mann-Whitney U test (n.s. non-significant, *** P < 0.001). c, d Mean CLR abundance (c) and Mean prevalence (d) distribution across mouse age groups between 776 viral ageing markers and 4800 non-significant (Background) viral genera. Error bars indicate mean ± SE across samples within that age group. e Proportional difference of lysogenic and lytic lifecycle between 776 viral ageing markers and 4800 background viruses. Significance of difference was assessed using two-tailed Fisher’s Exact Test (*** P < 0.001). f Proportions of 776 viral marker genera composed of bin-level, contig-level, or both types of genomes. Unknown group includes all viral genera that could not be assigned to the current ICTV-ratified taxonomy.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_Fig6_HTML.webp?md5=58a0dfca79b82f823bfcf390e57243c4",
+            "articleURL": "https://doi.org/10.1038/s41467-026-75836-6",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al.. A genomic catalog of the mouse gut virome reveals features associated with ageing.. DOI: 10.1038/s41467-026-75836-6. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM1_ESM.pdf?md5=5db4c5079094182abb65f051b23f645c",
+            "license": "CC BY",
+            "sha256": "ee808c107ab37b0a6416d4643850004fd90a18be7c8fcfa3ef01f94cb67ebac2",
+            "status": "downloaded_private",
+            "bytes": 904471,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 1,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM2_ESM.pdf?md5=65d3a85deb50c80b3f8184d008e27d00",
+            "license": "CC BY",
+            "sha256": "e3fe1237a4766c9bb6b8999985b03d01d1974e33ca5522f3c4580b9162598689",
+            "status": "downloaded_private",
+            "bytes": 101600,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 3,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM3_ESM.xlsx?md5=b4b83cec510100d314b452e38cd0020c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          },
+          {
+            "id": "MOESM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM4_ESM.pdf?md5=6bd9b39ce0c15becb871ddb5a6a6f273",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM5_ESM.pdf?md5=f3136fa3b49ca24129c5d67edf997465",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13503771.1/41467_2026_75836_MOESM6_ESM.zip?md5=b6a945b9ea291e8423ac3d8115822e0f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-23T09:51:14.280420+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Han-June Kim; Nayeon Kim; Jun Hyung Cha; Wonjong Kim; Junyeong Ma; Jungyeon Kim; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-23T09:51:16Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-23T09:51:16Z",
+        "url": "https://openalex.org/W7169864278",
+        "cited_by_count": 1,
+        "fwci": 1.2701,
+        "citation_normalized_percentile": 0.73217337,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-23T09:51:16Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-23T09:51:16Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-24T09:51:16Z"
+        }
+      },
+      "selectionScore": {
+        "total": 50.66086685,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 3.66086685,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-23T09:54:07Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-ee01546eed2d1f5c",
+      "doi": "10.1038/s41467-026-77064-4",
+      "paper": "Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts",
+      "journal": "Nature communications",
+      "date": "2026-08-29",
+      "year": "2026",
+      "pmcid": "PMC13526023",
+      "pmid": "42668319",
+      "paperURL": "https://doi.org/10.1038/s41467-026-77064-4",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "journal-article"
+      ],
+      "metadataSource": "Crossref",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "18472469aa621ae1a18bd853520cf558a9edc5c1b1ea2d68ad829aa752ffbf85"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/PMC13526023.1.xml?md5=54cbe7582cf1c3422e7d4a0edd6d4a39",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Correlation across diet-quality scores in the Rhineland Study.Correlation matrix with scatter plots and density distributions of diet-quality scores adherence (n = 6470 participants). For all scores except uPDI and DII, higher values indicate greater adherence to a healthier diet; for uPDI and DII, higher values indicate a less healthy or more pro-inflammatory diet. The correlation matrix is shown in the upper right triangle, with Pearson’s correlation coefficient (r) describing the relationship between each pair of scores. Correlations were tested using two-sided Pearson correlation tests; significance codes (*P < 0.05, **P < 0.01, ***P < 0.001). Scatter plots are shown in the lower left triangle, with fitted regression lines, and histograms of each diet-quality score are shown on the diagonal. Exact correlation coefficients and P values are provided in Supplementary Data 2. MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig1_HTML.webp?md5=2c3990d2c9af3f92cd6e7b3f2bf9aed6",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Overlap in high adherence (top 25%) across diet-quality scores in the Rhineland Study.UpSet plot summarizing the overlap in highest adherence (top 25%) across all ten recommendation-based diet-quality scores (n = 6470 participants). The plot has three components. The horizontal bar graph at the bottom left (“Participants in top-adherence group”) shows, for each diet-quality score, the total number of participants in the highest quartile of adherence (for the healthy diets) or the lowest quartile of adherence (for the unhealthy diets, uPDI and DII). The dot matrix at the bottom right indicates which combination of diet-quality scores defines each intersection: a single filled dot denotes participants in the top-adherence group for that score alone, whereas multiple filled dots connected by a vertical line denote participants who are simultaneously in the top-adherence group for all the connected scores. The vertical bar graph at the top (“Number of participants in intersection”) shows the number of participants in each corresponding intersection, aligned above the matrix column that defines it. Intersections are ordered from most to least frequent. MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig2_HTML.webp?md5=4775036e4ad31e55fa3009b730314b38",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Associations between recommendation-based diet quality scores and epigenetic aging outcomes in the Rhineland Study, overall and stratified by smoking status.The upper forest plots a display the β-coefficients and 95% CIs from adjusted multivariable linear regression models, which represent the adjusted mean difference in standardized epigenetic aging outcomes (SD units; z-scores) per 1-SD increase in diet quality (n = 6470 participants). Models were adjusted for batch effect, blood cell proportion, sex, smoking status, and total energy intake. Models with DunedinPACE as the outcome were additionally adjusted for chronological age (years). Models testing associations with the DASH, Nordic, EAT–Lancet, PDI, hPDI, and uPDI scores were additionally adjusted for alcohol intake (g/day). The lower forest plots b display the β-coefficients and 95% CIs from adjusted multivariable linear regression models, which represent the adjusted mean difference standardized in epigenetic aging outcomes (SD units; z-scores) per 1-SD increase in diet quality among current smokers (black lines; n = 767 participants), former smokers (dark gray lines; n = 2653 participants), and never smokers (gray lines; n = 3050 participants). Models were adjusted for batch effect, blood cell proportion, sex, and total energy intake. Models with DunedinPACE as the outcome were additionally adjusted for chronological age (years). Models testing associations with the DASH, Nordic, EAT–Lancet, PDI, hPDI, and uPDI scores were additionally adjusted for alcohol intake (g/day). P values were derived from two-sided tests of the regression coefficients, with no assumption of one-sided effects. To account for multiple comparisons, false discovery rate (FDR) correction was applied using the Benjamini–Hochberg procedure within each epigenetic aging outcome across diet quality scores. Point shapes indicate a graded level of statistical evidence after multiple-testing adjustment, distinguishing robust from suggestive associations: triangles denote BH–FDR q < 0.05, squares denote nominal P < 0.05 but q ≥ 0.05, and circles denote P ≥ 0.05. Exact P- and q values for all associations are provided in Supplementary Data 2 and 8. GrimAA DNA methylation GrimAge Acceleration, PhenoAA DNA methylation PhenoAge Acceleration, DunedinPACE DNA methylation Pace of Aging, MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index, FDR false discovery rate.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig3_HTML.webp?md5=529230e0fa0ea2d8d2517ab215d6c588",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "assets/pmc13526023-e8547f0eb8308314.webp",
+            "sha256": "e8547f0eb8308314e8f4bd36a9eef1acf6590c77d63cf7bd9f90202f512cf1f5",
+            "width": 1599,
+            "height": 925,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e8547f0eb8308314e8f4bd36a9eef1acf6590c77d63cf7bd9f90202f512cf1f5",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Manhattan plots of the epigenome-wide associations of diet quality scores in the Rhineland Study.Manhattan plots for each recommendation-based diet quality score (n = 5768 participants). Results are plotted as negative log-transformed P values (y axis) across the genome (x axis). P values were derived from two-sided tests of the regression coefficients in multivariable linear models, adjusted for age, sex, batch effects, blood cell proportion, the first ten genetic principal components to account for population stratification, and smoking status. The red horizontal line represents the epigenome-wide significance based on the Bonferroni threshold (5.95 × 10⁻⁸, 0.05 divided by the number of CpGs tested). The top CpGs of each chromosome were annotated. The full epigenome-wide summary statistics are available via Zenodo (https://doi.org/10.5281/zenodo.20511424). MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index, Chr Chromosome.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig4_HTML.webp?md5=22e9100de86b6885df561c6ce1b79f69",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Overlap in diet-associated DNA methylation (epigenome-wide significantly associated CpGs), their mapped genes, and related KEGG and GO pathways, across different recommendation-based diet quality scores.The upper UpSet panels summarize the differentially methylated CpGs (a) and mapped genes (b) that overlap across the recommendation-based diet-quality scores. The bottom left horizontal bar graph represents the total number of CpGs or mapped genes for each diet quality score. The dots in each panel’s matrix represent unique and overlapping differentially methylated CpGs or their mapped genes: a single dot denotes items unique to one score, while connected dots designate CpGs (or mapped genes) shared across the connected diet quality scores. The top bar graph in each panel recapitulates the number of differentially methylated CpGs or mapped genes for each unique or overlapping combination. The underlying overlap data are provided in Supplementary Data 18 (CpGs) and 19 (mapped genes). The lower UpSet panels summarize the number of KEGG (c) and GO (d) pathways that overlap across the recommendation-based diet-quality scores. The bottom left horizontal bar graph represents the total number of KEGG or GO pathways for each diet quality score. The dots in each panel’s matrix represent unique and overlapping KEGG or GO pathways: a single dot denotes pathways unique to one score, while connected dots designate pathways shared across the connected diet quality scores. The top bar graph in each panel recapitulates the number of KEGG or GO pathways for each unique recommendation-based diet-quality score or overlapping combinations. The underlying overlap data are provided in Supplementary Data 20 (KEGG) and 21 (GO). MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index, KEGG Kyoto Encyclopedia of Genes and Genomes, GO Gene Ontology.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig5_HTML.webp?md5=6460233999914dbed2c1c5da90f1c250",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "assets/pmc13526023-8249ec059c7d846a.webp",
+            "sha256": "8249ec059c7d846a51958cfd8ca46abc569445cbc995dd1b099e8fc1387a20b0",
+            "width": 1600,
+            "height": 1062,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8249ec059c7d846a51958cfd8ca46abc569445cbc995dd1b099e8fc1387a20b0",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Diet-specific relations between associated CpGs and their mapped gene expression levels.Forest plots showing the effect estimate of diet-associated CpGs that were significantly associated with the expression level of their mapped gene, clustered by diet quality score. Each row represents a CpG and its mapped gene, labeled as probe identifier_gene symbol (e.g., cg01676795_POR). Points represent the standardized beta estimate from the following multivariable linear model: Geney ~ intercept + CpGx + age + sex + blood cell proportion + 10 PCs + smoking status + batch effects. Error bars represent 95% confidence intervals around the β estimate. P values were derived from two-sided tests of the regression coefficients. Analyses were performed in n = 1923 participants of the Rhineland Study with both DNA methylation and gene expression data available. The corresponding effect estimates, 95% confidence intervals, and exact P values are provided in Supplementary Data 24. MDS Mediterranean Diet Score, DASH Dietary Approaches to Stop Hypertension, MIND Mediterranean–DASH Intervention for Neurodegenerative Delay, AHEI Alternate Healthy Eating Index, PDI Plant-based Diet Index, hPDI Healthful Plant-based Diet Index, uPDI Unhealthful Plant-based Diet Index, DII Dietary Inflammatory Index.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13526023.1/41467_2026_77064_Fig6_HTML.webp?md5=334cfa0504d34a13cb84cfe68a2f6c25",
+            "articleURL": "https://doi.org/10.1038/s41467-026-77064-4",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al.. Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts. DOI: 10.1038/s41467-026-77064-4. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-23T09:53:40.663591+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Juliana F. Tavares; Dan Liu; Valentina Talevi; Fabian Eichelmann; Franziska Jannasch; Matthias B. Schulze; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-23T09:51:16Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-23T09:53:41Z",
+        "url": "https://openalex.org/W7204667080",
+        "cited_by_count": 4,
+        "fwci": 14.174,
+        "citation_normalized_percentile": 0.98626531,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-23T09:53:41Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-23T09:53:41Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-24T09:53:41Z"
+        }
+      },
+      "selectionScore": {
+        "total": 47.93132655,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.93132655,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-23T09:54:08Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-95b2f31a5bc0550a",
+      "doi": "10.1186/s13059-026-04326-1",
+      "paper": "Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.",
+      "journal": "Genome biology",
+      "date": "2026-11-09",
+      "year": "2026",
+      "pmcid": "PMC13756914",
+      "pmid": "43021296",
+      "paperURL": "https://doi.org/10.1186/s13059-026-04326-1",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1474-7596",
+      "eissn": "1474-760X",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f979b628431af7c7253c31836812a82145f8e99e099a06dc81b198726169ead9"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/PMC13756914.1.xml?md5=7289d91d2935881895d96ee9ca82fb0f",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Benchmarking framework for evaluating generative models on synthetic bulk RNA-seq data generation. A Synthetic data generation workflow. Real bulk RNA-seq data are partitioned into training and test sets. Generative models (including differentially private methods, denoted by DP) are trained exclusively on the training data to generate synthetic samples. The test set is held out for evaluation purposes and not used during model training or data generation. B Privacy risk assessment via membership inference attacks (MIA).Real data is labeled as members (samples present in the training set) and non-members (held-out (test) samples) to generate a membership (query) test dataset. Both membership test dataset and synthetic data are input to black-box MIA methods (e.g. GAN-leaks [37] etc.) to predict membership scores, which quantify the risk of identifying whether specific samples were used in model training. MIA performance is quantified by AUC-ROC and true positive rate (TPR) fixed at specific false positive rate (FPR) value (i.e. TPR@FPR = 0.1) to assess potential disclosure of training samples. C Evaluation metrics across dimensions. Models are evaluated across complementary dimensions: (i) Distributional Fidelity: statistical similarity between real and synthetic distributions assessed via maximum mean discrepancy (MMD), Kullback–Leibler (KL) divergence, distance-to-closest real record, and discriminator-based metrics; (ii) Downstream Utility: preservation of predictive performance measured by relative AUC-ROC, F1 score, and overlap of important features when training classifiers on synthetic versus real data; (iii) Biological Plausibility: recovery of biologically meaningful patterns including differential expression (DE) (true positives, false negatives, false positives etc.), co-expression network edge recovery (true positives in blue, false negatives in dashed blue, false positives in dotted red) and pathway score distributions, illustrating how synthetic data (purple) may match, shift relative to, or under-disperse compared with real data (blue)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig1_HTML.webp?md5=6c3441fc7386ce01025d2ae5c2b9e688",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "assets/pmc13756914-e5ab05e5fdcef269.webp",
+            "sha256": "e5ab05e5fdcef2691038546be4b9f137054f96afd739a216e3769e714e8bdb72",
+            "width": 1420,
+            "height": 970,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "e5ab05e5fdcef2691038546be4b9f137054f96afd739a216e3769e714e8bdb72",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Differential Expression (DE) recovery analysis for TCGA-BRCA and TCGA-COMBINED datasets. It is reported at an effect-size threshold of ΔVST = 0.5 (genes with effect size exceeding 0.5 are called differentially expressed), shown as true positive rate (TPR) against realized false positive rate (FPR). The FPR axis is restricted to ≤ 0.05 to focus on the high-specificity regime; generators exceeding this are clamped to the axis edge and flagged. Each coloured point is the mean across five folds for one generative model, with error bars showing the standard deviation along each axis. Versions of the same model share a base colour and are distinguished by marker shape indicating privacy category: circles for non-DP, triangles for formally DP, and a square for the partially private P-NMF method. Models appear toward the top-left of the ROC-style axes when recovery is strong (high TPR, low FPR)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig2_HTML.webp?md5=bd929c7675456764ff6cc7e79b08d159",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "assets/pmc13756914-ad878446b14c1ccc.webp",
+            "sha256": "ad878446b14c1ccc809b39b22fee7b9b5dbf82c51d389e7180c3c8bb6166be3a",
+            "width": 1416,
+            "height": 1284,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ad878446b14c1ccc809b39b22fee7b9b5dbf82c51d389e7180c3c8bb6166be3a",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Co-expression recovery analysis for the TCGA-BRCA and TCGA-COMBINED datasets. Each facet corresponds to the correlation threshold applied to gene–gene pairs. Each colored point represents the mean metric values for a generative model across five folds, with error bars indicating the corresponding standard deviation along each axis. Versions of the same model share a base colour and are distinguished by marker shape indicating privacy category: circles for non-DP, triangles for formally DP, and a square for the partially private P-NMF method.The y-axis shows the true positive rate (fraction of real edges recovered in the synthetic network), and the x-axis shows the false edge rate (spurious edges in the synthetic network, normalized by the number of true edges in the real network). The gray dashed line indicates a reference linear trend",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig3_HTML.webp?md5=a7f63a25f96087bb1cec07942cb9c14b",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Membership inference attack (MIA) performance on the TCGA-BRCA and TCGA-COMBINED datasets. We report two complementary privacy-risk metrics in separate panels: area under the ROC curve (AUC-ROC) and true positive rate at a fixed false positive rate of 0.1 (TPR@FPR = 0.1); for both, higher values indicate greater privacy risk (random-guessing baselines: AUC-ROC = 0.5, TPR@FPR = 0.1). For each generative model, we report the. the performance of the most successful attack, with the marker shape indicating which attack that is. Each boxplot summarizes that attack's performance across the five cross-validation folds",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig4_HTML.webp?md5=3f21706d1f11733d9efad47f4857d17c",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Membership inference risk across evaluation axes.Best-performing membership inference attack (MIA) risk is quantified as AUC-ROC where for each generator, the highest AUC-ROC is selected across all evaluated attacks (higher indicates greater privacy risk). Each panel shows the relationship between MIA risk and a representative metric from another evaluation axis: relative F1 (utility), MMD (fidelity), DE recovery TPR and co-expression recovery TPR (biological plausibility). Higher values indicate better quality for F1 and the recovery metrics; lower MMD indicates better fidelity. When two metrics show a statistically significant Spearman correlation (Benjamini/Hochberg FDR-adjusted q < 0.05), a non-parametric LOESS trend line is overlaid, and the corresponding q-value is annotated. Versions of the same model share a base colour and are distinguished by marker shape indicating privacy category: circles for non-DP, triangles for formally DP, and a square for the partially private P-NMF method. (*: q < 0.05, **: q < 0.01; DE threshold: ΔVST=0.5; co-expression threshold r > 0.3)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig5_HTML.webp?md5=e4d94d621d093655522bd07f6d48523a",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "DE recovery across evaluation axes. DE recovery is the average true positive rate (TPR) of up- and down-regulated gene recovery (ΔVST > 0.5). Each panel shows the relationship between DE recovery and a representative metric from another axis: relative F1 (utility), discriminative score (fidelity), and co-expression recovery TPR and pathway KS (biological plausibility). Directions differ by metric: higher is better for DE recovery, F1, and co-expression TPR; lower is better for discriminative score and pathway KS. When two metrics show a significant Spearman correlation (Benjamini/Hochberg FDR-adjusted q < 0.05), a non-parametric LOESS trend line is overlaid, and the q-value is annotated. Versions of the same model share a base colour and are distinguished by marker shape indicating privacy category: circles for non-DP, triangles for formally DP, and a square for the partially private P-NMF method. (*: q < 0.05, **: q < 0.01; DE threshold: ΔVST=0.5; co-expression threshold r > 0.3)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig6_HTML.webp?md5=5ff6447dd77a2a0108529f0183cb5da8",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "MMD (test) across evaluation axes. Each panel shows the relationship between MMD (test), a representative distributional-fidelity metric, and a representative metric from another evaluation axis (relative F1, DE recovery TPR, co-expression recovery TPR, pathway KS). Lower MMD indicates better distributional fidelity; metric directions differ by axis (↑ better for F1 and co-expression/DE TPR, ↓ better for pathway KS). When two metrics show a statistically significant Spearman correlation (Benjamini/Hochberg FDR-adjusted q < 0.05), a non-parametric LOESS trend line is overlaid, and the corresponding q-value is annotated. Versions of the same model share a base colour and are distinguished by marker shape indicating privacy category: circles for non-DP, triangles for formally DP, and a square for the partially private P-NMF method. (*: q < 0.05, **: q < 0.01; DE threshold: ΔVST=0.5; co-expression threshold r > 0.3)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_Fig7_HTML.webp?md5=46eeb98605b24c559580559fac99937e",
+            "articleURL": "https://doi.org/10.1186/s13059-026-04326-1",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al.. Community benchmarking of generative models for privacy-preserving synthetic bulk RNA-seq data generation.. DOI: 10.1186/s13059-026-04326-1. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_MOESM1_ESM.docx?md5=d7d180f14dd0b8745be241a8a226aad8",
+            "license": "CC BY",
+            "sha256": "f0585c160591a9c3bc1940d78ee512379ce6e6e7d6d8345d6cd36374e44cea72",
+            "status": "downloaded_private",
+            "bytes": 3114288,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_MOESM2_ESM.docx?md5=3929c6e7e6e8d4f6bb269d1b8b46fd73",
+            "license": "CC BY",
+            "sha256": "ec1e69c2053fcf537a0394b14f70376637aaa4e68ff5980c62e7237e15371325",
+            "status": "downloaded_private",
+            "bytes": 3187663,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13756914.1/13059_2026_4326_MOESM3_ESM.docx?md5=2e1c273aa984990991628b5cd25773d5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-23T09:54:01.822990+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Hakime Öztürk; Tejumade Afonja; Joonas Jälkö; Ruta Binkyte; Pablo Rodriguez-Mier; Sebastian Lobentanzer; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "9.2",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-23T09:54:05Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-23T09:54:05Z",
+        "url": "https://openalex.org/W7133523950",
+        "cited_by_count": 4,
+        "fwci": 3.7688,
+        "citation_normalized_percentile": 0.93720964,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-23T09:54:05Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-23T09:54:05Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-24T09:54:05Z"
+        }
+      },
+      "selectionScore": {
+        "total": 35.6860482,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 4.6860482,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-23T09:54:09Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -249655,6 +251443,36 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-bba38afee67a5369": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-f88a274712f51692": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-198ba40208067f4a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-ee01546eed2d1f5c": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-95b2f31a5bc0550a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -251273,7 +253091,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-22T08:56:14Z",
+  "generatedAt": "2026-11-23T09:54:09Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -251507,18 +253325,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-23T09:49:07Z",
-    "updatedAt": "2026-11-23T09:49:12Z",
+    "updatedAt": "2026-11-23T09:54:17Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 58,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
