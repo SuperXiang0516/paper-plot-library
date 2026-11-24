@@ -336,9 +336,46 @@
         "10.1111/acel.70848",
         "10.1186/s13059-026-04326-1"
       ]
+    },
+    "2026-11-24": {
+      "newDOIs": [
+        "10.1002/mco2.71154",
+        "10.1007/s00122-026-05446-9",
+        "10.1371/journal.pone.0362369"
+      ]
     }
   },
   "candidates": {
+    "10.1007/s00122-026-05446-9": {
+      "checkedAt": "2026-11-24T01:20:21Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1371/journal.pone.0362369": {
+      "checkedAt": "2026-11-24T01:19:57Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-24T01:18:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-24T01:17:55Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/mco2.71154": {
+      "checkedAt": "2026-11-24T01:17:53Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1186/s13059-026-04326-1": {
       "checkedAt": "2026-11-23T09:54:05Z",
       "status": "source_confirmed",
@@ -369,116 +406,6 @@
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
     },
-    "10.1002/mco2.71154": {
-      "checkedAt": "2026-11-22T08:56:06Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1002/mco2.71154",
-        "metadataHash": "7f77e02c6b73423cc557bafb101758a7571494956e00993c22ebab5513780fe7",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/PMC13782842.1.xml?md5=e8dcaa037ce4cf91456dd0091c6ba653",
-          "license": "CC BY",
-          "figures": [
-            {
-              "label": "FIGURE 6",
-              "id": "mco271154-fig-0006",
-              "width": 700,
-              "sha256": "29257cfaa136fcda81b59891e511301674a35f8c675a7cdcbe5b618736869329",
-              "license": "CC BY",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g002.webp?md5=8c0026759f39af04a0fdc96489b29141",
-              "asset": "assets/pmc13782842-29257cfaa136fcda.webp",
-              "height": 615,
-              "assetSHA256": "29257cfaa136fcda81b59891e511301674a35f8c675a7cdcbe5b618736869329",
-              "captionHash": "bacca2ec5ddb8cb7ec4ab54e26c571d300136a2c08726690dc188a6582335f17"
-            },
-            {
-              "label": "FIGURE 7",
-              "id": "mco271154-fig-0007",
-              "width": 840,
-              "sha256": "ec1522b552735a1b8b240ecb620680f2afb70eeaed30a3cf41cdf5aeeb96acf1",
-              "license": "CC BY",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g004.webp?md5=718d2ebf7c2c9f2120132418e584b567",
-              "asset": "assets/pmc13782842-ec1522b552735a1b.webp",
-              "height": 1044,
-              "assetSHA256": "ec1522b552735a1b8b240ecb620680f2afb70eeaed30a3cf41cdf5aeeb96acf1",
-              "captionHash": "4ace115a86d249968ae0397ce68bee12613055f14afc48e6dbd7c4ee3f290b4e"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-dc74882949445f8a",
-          "doi": "10.1002/mco2.71154",
-          "paper": "Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.",
-          "journal": "MedComm",
-          "date": "2026-11-18",
-          "year": "2026",
-          "pmcid": "PMC13782842",
-          "pmid": "43060744",
-          "paperURL": "https://doi.org/10.1002/mco2.71154"
-        },
-        "updatedAt": "2026-11-22T08:56:03Z"
-      }
-    },
-    "10.1371/journal.pone.0362369": {
-      "checkedAt": "2026-11-22T08:55:45Z",
-      "status": "source_confirmed",
-      "retryClass": "transient",
-      "reason": "正文图已验证；代码、输入或注释待补齐",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pone.0362369",
-        "metadataHash": "ab02cda1a32dcf0e11a72a29898d7a0890f9dcf040677fdc848fbdf708903a7a",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/PMC13787805.1.xml?md5=3fe6efbb466aecf19173cbd3e2d67298",
-          "license": "CC BY",
-          "figures": [
-            {
-              "label": "Fig 1",
-              "id": "pone.0362369.g001",
-              "width": 1599,
-              "sha256": "8a8b44f75fd5d2e6f3eff26aa078423a36c6b2fd2f38979ac4ae6cc59e9cbb7a",
-              "license": "CC BY",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.g001.webp?md5=6ef46279663ed91c0239cf1a322b156c",
-              "asset": "assets/pmc13787805-8a8b44f75fd5d2e6.webp",
-              "height": 751,
-              "assetSHA256": "8a8b44f75fd5d2e6f3eff26aa078423a36c6b2fd2f38979ac4ae6cc59e9cbb7a",
-              "captionHash": "93801d5abcb32f8a54a12757fccf9e3b8315b03f2f324bec7b51ba378d320e42"
-            },
-            {
-              "label": "Fig 3",
-              "id": "pone.0362369.g003",
-              "width": 1600,
-              "sha256": "7220fef6881c7e8462b24dab380a8867dd2de87ee79287c331b5a97fdace9c1d",
-              "license": "CC BY",
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.g003.webp?md5=2e84b01d30cb9cb51ee176a9e16f7026",
-              "asset": "assets/pmc13787805-7220fef6881c7e84.webp",
-              "height": 799,
-              "assetSHA256": "7220fef6881c7e8462b24dab380a8867dd2de87ee79287c331b5a97fdace9c1d",
-              "captionHash": "b76e49b36eaae575d4bb6335ab8b1bbe9608728a2dd05235b93dee4846d10fd5"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-8a9cfa7706d7b713",
-          "doi": "10.1371/journal.pone.0362369",
-          "paper": "Urinary transferrin/creatinine ratio as a biomarker of reduced allograft function and rapid renal function decline in kidney transplant recipients. ",
-          "journal": "PloS one",
-          "date": "2026-11-20",
-          "year": "2026",
-          "pmcid": "PMC13787805",
-          "pmid": "43063241",
-          "paperURL": "https://doi.org/10.1371/journal.pone.0362369"
-        },
-        "updatedAt": "2026-11-22T08:55:44Z"
-      }
-    },
     "10.1111/acel.70811": {
       "checkedAt": "2026-11-22T08:55:26Z",
       "status": "source_confirmed",
@@ -502,18 +429,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-22T08:53:34Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-22T08:53:30Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pone.0351140": {
       "checkedAt": "2026-11-22T08:53:24Z",
@@ -10986,7 +10901,7 @@
   },
   "dailyCollectionSession": {
     "uncertainAiAttempts": 0,
-    "updatedAt": "2026-11-24T01:16:14Z",
+    "updatedAt": "2026-11-24T01:20:32Z",
     "batchCount": 1,
     "uncertainRequests": 0,
     "date": "2026-11-24",
@@ -10994,18 +10909,13 @@
     "maxBatches": 36,
     "version": 1,
     "maxRequests": 1800,
-    "elapsedSeconds": 7,
+    "elapsedSeconds": 265,
     "startedAt": "2026-11-24T01:16:08Z",
-    "dailyNewCount": 0,
-    "requests": 0,
+    "dailyNewCount": 3,
+    "requests": 44,
     "endReason": "",
     "maxSeconds": 2700,
     "status": "active",
-    "aiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-24T01:16:14Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-23",
+  "checkedAt": "2026-11-24",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -186316,6 +186316,992 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-8a9cfa7706d7b713",
+      "paper": "Urinary transferrin/creatinine ratio as a biomarker of reduced allograft function and rapid renal function decline in kidney transplant recipients.",
+      "doi": "10.1371/journal.pone.0362369",
+      "journal": "PloS one",
+      "date": "2026-11-20",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0362369",
+      "pmcid": "PMC13787805",
+      "pmid": "43063241",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article",
+        "Observational Study"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-24",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "7304242b274a770e8c4bc1a4c7be2f40f5260e0d7057fc326d5ae7c739642ad2"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/PMC13787805.1.xml?md5=75ec24232ed86df9b6e26007f4d7d9c8",
+        "figures": [
+          {
+            "id": "pone.0362369.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Association of urinary transferrin/creatinine ratio (uTf/Cr) with contemporaneous allograft function at sampling in kidney transplant recipients.(A) Scatter plot of uTf/Cr versus serum creatinine at sampling. (B) Scatter plot of uTf/Cr versus eGFR at sampling. Lines indicate least-squares regression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.g001.webp?md5=6ef46279663ed91c0239cf1a322b156c",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362369",
+            "asset": "assets/pmc13787805-8a8b44f75fd5d2e6.webp",
+            "sha256": "8a8b44f75fd5d2e6f3eff26aa078423a36c6b2fd2f38979ac4ae6cc59e9cbb7a",
+            "width": 1599,
+            "height": 751,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daseul Huh; Juyeon Park; Youn Kyung Kee; Dong Ho Shin; Jieun Oh; Ji Young Park; et al.. Urinary transferrin/creatinine ratio as a biomarker of reduced allograft function and rapid renal function decline in kidney transplant recipients.. DOI: 10.1371/journal.pone.0362369. Copyright holder: Huh et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "8a8b44f75fd5d2e6f3eff26aa078423a36c6b2fd2f38979ac4ae6cc59e9cbb7a",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0362369.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Relationship between urinary transferrin/creatinine ratio (uTf/Cr) and subsequent annualized eGFR change in kidney transplant recipients.Scatter plot of uTf/Cr versus annualized eGFR change (mL/min/1.73 m2/year) from sampling to the last follow-up. Lines indicate least-squares regression.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.g002.webp?md5=d168127c92a2fe23ad7fc681c3831771",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362369",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daseul Huh; Juyeon Park; Youn Kyung Kee; Dong Ho Shin; Jieun Oh; Ji Young Park; et al.. Urinary transferrin/creatinine ratio as a biomarker of reduced allograft function and rapid renal function decline in kidney transplant recipients.. DOI: 10.1371/journal.pone.0362369. Copyright holder: Huh et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362369.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Urinary transferrin/creatinine ratio (uTf/Cr) and rapid renal function decline in kidney transplant recipients.(A) Distribution of uTf/Cr between the rapid renal function decline group and the stable renal function group in kidney transplant recipients. The boxplot shows significantly higher uTf/Cr in patients with rapid renal function decline. (B) ROC curve of uTf/Cr for identifying rapid renal function decline in kidney transplant recipients. The ROC curve demonstrates that uTf/Cr discriminated between patients with and without rapid renal function decline (AUC = 0.832). uTf/Cr above 4.35 were associated with increased risk of rapid renal function decline.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.g003.webp?md5=2e84b01d30cb9cb51ee176a9e16f7026",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362369",
+            "asset": "assets/pmc13787805-7220fef6881c7e84.webp",
+            "sha256": "7220fef6881c7e8462b24dab380a8867dd2de87ee79287c331b5a97fdace9c1d",
+            "width": 1600,
+            "height": 799,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Daseul Huh; Juyeon Park; Youn Kyung Kee; Dong Ho Shin; Jieun Oh; Ji Young Park; et al.. Urinary transferrin/creatinine ratio as a biomarker of reduced allograft function and rapid renal function decline in kidney transplant recipients.. DOI: 10.1371/journal.pone.0362369. Copyright holder: Huh et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7220fef6881c7e8462b24dab380a8867dd2de87ee79287c331b5a97fdace9c1d",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0362369.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.s001.pdf?md5=d8564a568768b9427af9da2d6e1b4630",
+            "license": "CC BY",
+            "sha256": "f036efb1ffb22396e80befd74adc904f9e0a223d29ca381a1bbacfc251f4bf63",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 227195,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pone.0362369.s002",
+            "label": "S2 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.s002.pdf?md5=3f08709fa0086404b4010b290f3ad87f",
+            "license": "CC BY",
+            "sha256": "3350e8c7eda37faabfa7ad121481d6e8b88cbef004028def869a63f211b850e8",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 220074,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          },
+          {
+            "id": "pone.0362369.s003",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13787805.1/pone.0362369.s003.csv?md5=8f580c0716d04c06e5f88ed77ad38e54",
+            "license": "CC BY",
+            "sha256": "fd583852f08c95f7f0e89cc38ad62973d1bb2eee1bd28b731d6e82447bf585c5",
+            "status": "downloaded_private",
+            "bytes": 6461,
+            "format": "csv",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-24T01:19:52.017882+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Daseul Huh; Juyeon Park; Youn Kyung Kee; Dong Ho Shin; Jieun Oh; Ji Young Park; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-24T01:19:56Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-24T01:19:57Z",
+        "url": "https://openalex.org/W7237099745",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-24T01:19:57Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-24T01:19:57Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-25T01:19:57Z"
+        }
+      },
+      "selectionScore": {
+        "total": 18,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-24T01:20:22Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-dc74882949445f8a",
+      "doi": "10.1002/mco2.71154",
+      "paper": "Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.",
+      "journal": "MedComm",
+      "date": "2026-11-18",
+      "year": "2026",
+      "pmcid": "PMC13782842",
+      "pmid": "43060744",
+      "paperURL": "https://doi.org/10.1002/mco2.71154",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2688-2663",
+      "eissn": "2688-2663",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "4c4663729f89f0856c0768e7bedd818643f6b6e25614fc5bf8d82c0f18c6d23d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/PMC13782842.1.xml?md5=e8dcaa037ce4cf91456dd0091c6ba653",
+        "figures": [
+          {
+            "id": "mco271154-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Schematic presentation of the integrative workflow. Integrative workflow used to identify, select, and test in vitro antigen targets for CAR‐T cells in uveal melanoma (UM) and cutaneous melanoma (CM).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g003.webp?md5=a04b1577cad7ad0db9e7b8a1d3cc04c1",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "mco271154-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Computational identification of UM CAR target antigens. (A) Schematic flowchart outlining the sequential filtering steps. Resulting numbers of gene candidates of key pipeline steps. (B) Restrictiveness (log2‐transformed ExpressionmedianTumor vs. ExpressionmaxTissue ) of all genes with a mean TPM above 10 compared to the benchmark gene CSPG4. Less restricted genes are marked in black and more restricted genes in blue. (C) Euclidean clustered heatmap of log2‐transformed expression data per sample of all genes that are more restricted than CSPG4. The expression levels of the healthy tissues with the strongest expression are depicted in the ctrl column.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g006.webp?md5=8176621075d9d907c66df8d8b91ef94b",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "mco271154-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Evidence‐based selection of CAR target antigens for in vitro testing. The figure sketches the selection workflow followed for UM and CM. We first selected candidate antigens with a restrictiveness ratio (RR) higher than that of CSPG4, as determined by the analysis of melanoma sequencing data (Step 1; the selected gene candidates are provided for UM and CM on the outer side of the workflow scheme). Next, we used Genecard's cell localization based on COMPARTMENTS to select plasma membrane proteins (Step 2). Subsequently, we examined protein expression in cancers and healthy tissues in HPA to select antigens (Step 3). For the remaining antigens, we selected targets with a documented dominant role in cancer in general or melanoma in particular, and absence of published/patented CARs targeting the antigen (Step 4). Lastly, we checked the availability of a suitable antibody for flow cytometry‐based surface staining (Step 5). We selected all remaining antigens for in vitro analysis. In the figure, we highlighted in orange font the shared CAR‐T cell target antigens that remained after the selection procedure, and in grey an antigen that was discarded due to the lack of an available scFv sequence. See also Tables S1 and S2.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g005.webp?md5=3852b714fed55111402af6f4a5551929",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "mco271154-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Transcriptomics data from metastatic UM (Trial NCT04335890) confirm expression of candidate genes in UM. Expression of the selected candidates, as well as currently examined targets, was compared with CSPG4 and the intracellular tumor marker PRAME, which is expressed in some, but not all UMs. RNA from biopsies from metastases of UM patients from an in‐house clinical trial was sequenced, and expression levels were calculated for the indicated genes. The log2 values of the TPM (see Table S3 for TPM counts) are shown (log2(TPM + 1)).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g009.webp?md5=a0427918da41b69c32efe708737f008a",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "mco271154-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "ErbB3, SLC1A5, APH1a, and Nicastrin are expressed by different CM and UM cell lines. The following cell lines or cells were stained (blue histograms) with antigen‐specific antibodies: (1) Mel526, (2) A375M, (3) 92.1, (4) Mel270, (5) Omm2.5, 6) Omm2.3, (7) Omm1, (8) peripheral blood mononuclear cells (PBMCs) from healthy donors, (9) monocyte‐derived dendritic cells (moDCs) from PBMCs of healthy donors, and (10) HEK293T (293T). Unstained cells (red histograms) were used as controls. For Adiponectin, we performed control stainings with only the secondary donkey‐anti‐goat antibody (depicted as orange histograms).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g008.webp?md5=5e50c812aa12ce28be309fc1c0df2fcf",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "mco271154-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "The newly developed CARs are expressed on primary human cytotoxic T cells after mRNA electroporation. (A and B) Expression levels of different CAR constructs on T cells of one representative donor (out of a total of 15 independent experiments), 4 h (A) and 20–24 h (B) after electroporation. (C) Percentage of CAR‐positive T cells 4 and 20–24 h after RNA electroporation. (D) Mean fluorescence intensity (MFI) of T cells 4 and 20–24 h after RNA electroporation. (C and D) Average values with error bars (SEM). N = 2 for CAR expression 4 h after electroporation of ErbB3‐CAR H6 and ErbB3‐CAR 22. EP = electroporated. (A‐B): Histograms were created using FlowJo 10.9. (C and D) Bar graphs were generated with GraphPad Prism10.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g002.webp?md5=8c0026759f39af04a0fdc96489b29141",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "assets/pmc13782842-29257cfaa136fcda.webp",
+            "sha256": "29257cfaa136fcda81b59891e511301674a35f8c675a7cdcbe5b618736869329",
+            "width": 700,
+            "height": 615,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "29257cfaa136fcda81b59891e511301674a35f8c675a7cdcbe5b618736869329",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "mco271154-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "The newly developed CAR‐T cells upregulate the activation markers CD69 and CD25, and secrete cytokines. After overnight co‐incubation of effector T cells (CAR‐ or mock‐transfected) with several antigen‐positive or ‐negative target cells (see Methods section), the upregulation of CD69 (A, F) or CD25 (B, G) expression was determined. The bar graphs show the average percentage of activation marker expression with standard error bars (A, F + B, G). Additionally, the cytokine concentration of IL‐2 (C, H), TNF (D, I), and IFNγ (E, J) in the supernatant was determined. The bar graphs show the average cytokine concentration with standard error bars (C‐E+H‐J). The p‐values were calculated by paired or unpaired t‐test based on the difference (A, B, F, G) or the ratio (C–E + H–J) relative to control (HEK293T cells) (A–E) or CD8‐negative fraction (F–J), ns = nonsignificant, *p ≤ 0.05, **p ≤ 0.01, and ***p ≤ 0.001. The results shown originate from six T cell activation assays with different T cell donors. (A–E) MEL526 N = 6, 92.1 and Omm1 N = 5, Omm2.5 N = 3; HEK293T was used as a control. (F–J) A375M and Omm1 N = 5; a CD8‐negative fraction of a monocyte‐depleted fraction of PBMCs was used as a control.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g004.webp?md5=718d2ebf7c2c9f2120132418e584b567",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "assets/pmc13782842-ec1522b552735a1b.webp",
+            "sha256": "ec1522b552735a1b8b240ecb620680f2afb70eeaed30a3cf41cdf5aeeb96acf1",
+            "width": 840,
+            "height": 1044,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ec1522b552735a1b8b240ecb620680f2afb70eeaed30a3cf41cdf5aeeb96acf1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "mco271154-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "ErbB3‐, SLC1A5‐, and CSPG4‐specific CAR‐T cells specifically lyse antigen‐positive uveal and cutaneous melanoma cells. After overnight co‐incubation of effector T cells (CAR‐ or mock‐transfected) with antigen‐positive and antigen‐negative target cells at different target‐to‐effector ratios, the specific lysis of target cells compared to control cells was determined. For examination of ErbB3‐specific CAR‐T cells, the metastatic UM cell line Omm1 and the ErbB3‐negative cell line HEK293T were used (A). To examine SLC1A5‐specific CAR‐T cells, the metastatic CM cell line A375M was used in combination with human immune cells (monocyte‐depleted PBMCs) as an SLC1A5‐negative control (B). Results shown originate from three (A) or four (B) independent experiments with different T cell donors.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-g001.webp?md5=6be2ee21c6ff004512689706c16dfec0",
+            "articleURL": "https://doi.org/10.1002/mco2.71154",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al.. Integrative Bioinformatics-Driven Discovery of the Novel Chimeric Antigen Receptor (CAR)-T Cell Targets Erb-B2 Receptor Tyrosine Kinase 3 (ErbB3) and Solute Carrier Family 1 Member 5 (SLC1A5) in Melanoma.. DOI: 10.1002/mco2.71154. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "mco271154-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "mco271154-supitem-0001",
+            "label": "Supporting File 1: mco271154‐sup‐0001‐SuppMat.pdf",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13782842.1/MCO2-7-e71154-s001.pdf?md5=0456e2af160dbd79d6901b737820ed2c",
+            "license": "CC BY",
+            "sha256": "82941cbb01d6d9500514a09b1cbebde168aca57ebf543d31cd6582929ade54a9",
+            "status": "downloaded_private",
+            "bytes": 3206377,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 23,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-24T01:17:48.600232+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Kilian F. Juraschek; Esther Güse; Maartje M. C. Hof; Christopher Lischer; Niklas Feuchter; Beatrice Schuler‐Thurner; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-24T01:17:52Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-24T01:17:53Z",
+        "url": "https://openalex.org/W7236662820",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-24T01:17:53Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-24T01:17:53Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-25T01:17:53Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-24T01:20:23Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-fb6babb762314beb",
+      "paper": "Genetic dissection of dehulling efficiency in sunflower. ",
+      "doi": "10.1007/s00122-026-05446-9",
+      "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
+      "date": "2026-11-21",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1007/s00122-026-05446-9",
+      "pmcid": "PMC13789023",
+      "pmid": "43066746",
+      "publicationTypes": [
+        "IM",
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1432-2242",
+      "eissn": "1432-2242",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-24",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "6be942c6b26db4a7bc57b3150cf1bb7d00b0ad685007e4a7fdbd42031e2c4ac7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/PMC13789023.1.xml?md5=6491901b64e7be845186244b4948e8a2",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Scoring scheme for dehulling efficiency DE02 using a rating scale from 1 (nearly all achenes hulled) to 9 (almost all achenes dehulled). A score of 5 indicates ~ 50% dehulled achenes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig1_HTML.webp?md5=b9bb392d0178eeb10b24293f67efc3df",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Boxplots of adjusted means across environments of dehulling efficiency (DE01 and DE02) for the diversity panel (DivPanel), the hybrid components (Parents), and the hybrids. Boxplots show the median (horizontal black bar), mean (grey triangle), first and third quartiles (box), whiskers (vertical bar), and points exceeding ± 1.5 times the interquartile range (black dots). DE of checks is indicated by dots in green. Asterisks (***) above boxplots indicate significantly different means (p < 0.05)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig2_HTML.webp?md5=ad8fd17b8f9a90f28c573a5dafa3c860",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Dehulling efficiency of parental lines and hybrids. (a) Correlations between parental maintainer or restorer dehulling efficiency and hybrid values for DE01 (%) and DE02 (score 1–9). Pearson correlation coefficients (r) are shown at the bottom right of each panel (p < 0.05); non-significant correlations are indicated as n.s. (b) DE02 performance of maintainer (orange triangles) and restorer (blue squares) parents, and their corresponding hybrids (circles). Each horizontal row represents one of the 27 hybrids, arranged in descending order (from bottom to top) for mid-parent heterosis (MPH). Hybrid symbols are color-coded according to positive (green) and negative (grey) MPH",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig3_HTML.webp?md5=b78cf7db6b0086ccd0295110b39f747b",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "assets/pmc13789023-a256fea138356116.webp",
+            "sha256": "a256fea138356116c512a2622ced02318f3d48a3ceb7e3f89c33583fe4e536b1",
+            "width": 1600,
+            "height": 1182,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a256fea138356116c512a2622ced02318f3d48a3ceb7e3f89c33583fe4e536b1",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Density distribution of mid-parent and better-parent heterosis for dehulling efficiency (DE01 and DE02; in %) based on adjusted means across environments. Boxplot within the violin show the median (horizontal grey bar), first and third quartiles (grey box), whiskers (vertical grey bar), and points exceeding ± 1.5 times the interquartile range (grey dots)",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig4_HTML.webp?md5=0f27852d4d94f9e1ac884f31fbeff180",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "GWAS results for dehulling efficiency (DE01 and DE02). The Manhattan plot displays the -log10(p-value) on the y-axis against the physical position of SNPs on the x-axis. Only chromosomes with at least one significant SNP for either DE01 or DE02 are shown, with chromosome numbers indicated above the plot. The red horizontal line represents the genome-wide significance threshold at an FDR of 0.05. Significant SNPs are marked in red, while the lead SNP – defined as the SNP with the lowest p-value within a group of SNPs with an r² > 0.6 – is shown with larger points. The marker name of each lead SNP is given in bold if a QTL was detected for both DE traits otherwise in plain text",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig5_HTML.webp?md5=78cfa1f24d9f523c9145c14e82faeb2a",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Dehulling efficiency (DE02; score 1–9) of diversity panel genotypes for the three main QTL on chromosomes 9 (S18725085.0173) and 13 (SFW4482 and S18758290.0466), represented by their respective lead SNPs. DE02 values are shown according to (a) the allelic state at each SNP marker locus differentiated by maintainer (orange), restorer (blue), and other genotypes (NA, grey) or (b) according to the allele combination of the three marker loci. The allele combination ‘202’ did not occur in the diversity panel. Boxplots show the median (horizontal black bar), first and third quartiles (box), and whiskers (vertical bar) with individual genotypes indicated as circles. The mean for each allelic state or allele combination is represented by a black triangle. Significant differences among allelic states independent from the pool or allele combinations (p < 0.05) are indicated by asterisks (***) or letters (a, b), respectively. The numbers below the letters indicate the respective number of genotypes",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig6_HTML.webp?md5=3eae62538843c99c291ae4942eaed1dc",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "assets/pmc13789023-2827d08278d70c3c.webp",
+            "sha256": "2827d08278d70c3c7f2534be13245c72bdd4bed664cd053b4e9b933835ab3701",
+            "width": 1524,
+            "height": 1537,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "2827d08278d70c3c7f2534be13245c72bdd4bed664cd053b4e9b933835ab3701",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "Fig7",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Correlation of DE02 score and DE03 (predicted using image classification). The correlations are shown for different achene colors given in the grey box above each plot. The Pearson correlation coefficient (r) and the number of samples per color group (n) are shown at the bottom right of each plot",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_Fig7_HTML.webp?md5=ddd03ce6ca6d8394200fa37e805d58ed",
+            "articleURL": "https://doi.org/10.1007/s00122-026-05446-9",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al.. Genetic dissection of dehulling efficiency in sunflower. . DOI: 10.1007/s00122-026-05446-9. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_MOESM1_ESM.xlsx?md5=741d87695b91495248f3170d1c082ee7",
+            "license": "CC BY",
+            "sha256": "1ae9994182a3ca6c5263a069091dfc1a435abecfac03d05362ec65b1093c3ab1",
+            "status": "downloaded_private",
+            "bytes": 22762,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "MOESM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789023.1/122_2026_5446_MOESM2_ESM.pdf?md5=c1c69367793fe5b566dff8a9493935b4",
+            "license": "CC BY",
+            "sha256": "d62e17e13b96df52397eac95855c6c8b50bd3d613f8dd838f3812f5e1cab1145",
+            "status": "downloaded_private",
+            "bytes": 2066438,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 22,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-24T01:20:16.883811+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Melanie Stadlmeier; Nikita Genze; Volker Hahn; Nina Hofheinz; Dilan S. R. Patiranage; Peter Streb; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "error",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "EasyScholar",
+        "retrieved_at": "",
+        "metric_year": "unknown",
+        "error_reason": "metrics_rank_shape_invalid"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-24T01:20:21Z",
+        "url": "https://openalex.org/W7237341731",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "error",
+          "ai": "missing_evidence"
+        },
+        "errors": [
+          "metrics: error"
+        ],
+        "lastCheckedAt": "2026-11-24T01:20:21Z",
+        "repairSchedule": {
+          "consecutiveFailures": 1,
+          "lastAttemptAt": "2026-11-24T01:20:21Z",
+          "lastOutcome": "failure"
+        }
+      },
+      "selectionScore": {
+        "total": 33,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 8,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-24T01:20:24Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -251473,6 +252459,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-8a9cfa7706d7b713": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-dc74882949445f8a": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-fb6babb762314beb": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -253091,7 +254095,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-23T09:54:09Z",
+  "generatedAt": "2026-11-24T01:20:25Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -253325,18 +254329,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-24T01:16:08Z",
-    "updatedAt": "2026-11-24T01:16:14Z",
+    "updatedAt": "2026-11-24T01:20:32Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 44,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 3,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
