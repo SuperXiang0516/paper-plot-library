@@ -187302,6 +187302,633 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-3b63fe838ef65e40",
+      "doi": "10.1038/s41746-026-02913-x",
+      "paper": "Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.",
+      "journal": "NPJ digital medicine",
+      "date": "2026-06-23",
+      "year": "2026",
+      "pmcid": "PMC13554212",
+      "pmid": "42337381",
+      "paperURL": "https://doi.org/10.1038/s41746-026-02913-x",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2398-6352",
+      "eissn": "2398-6352",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "8d30bde4c621a358cb5ef7749755719ff32e16cb711d308f413634be56af0ec1"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/PMC13554212.1.xml?md5=2ee4bfc6be3b1336bc8ec89947206c49",
+        "figures": [
+          {
+            "id": "Fig1",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Illustration of the study framework using 100,272 eMERGE participants EHR data.a Illustration of extracting numerical embeddings from a pre-trained patient embedding model as a representation of digital phenotypes. b Illustration of patient clustering using a Gaussian Mixture model yielding 70 clusters of patients and visualized using T-SNE in two dimensional. c Topic analysis to characterize patient clusters with distinct comorbidity patterns. d Analyzing clusters and phenotype associations with age and sex. e Analyzing cross-phenotype association in cluster groups. f Investigating mortality rate differences in cluster groups and identifying phenotypes associated with premature aging. g Investigation of survival selection and characterizing aging using longitudinal data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig1_HTML.webp?md5=c15407b14f5b8f4ac82238bcb53ce93c",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "assets/pmc13554212-af89cf057a66f9eb.webp",
+            "sha256": "af89cf057a66f9ebc0400c6a8b02d59c29b31f5fc11a53e8a7d97df210fff2d3",
+            "width": 1600,
+            "height": 1758,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "af89cf057a66f9ebc0400c6a8b02d59c29b31f5fc11a53e8a7d97df210fff2d3",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig2",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Characterizing topics for each patient cluster.a Scatterplot showing T-SNE visualizations of 100,272 patients from the eMERGE cohort, colored by 70 unique cluster groups, with each dot representing a patient. b Scatterplot of the same T-SNE visualizations from a but colored by their topics defined by phecode category. c Barplot showing the fractions of the top five phenotype categories in each cluster group. d Barplot showing Fraction of female and male ratio in each cluster group. e Boxplot showing the distribution of age in each cluster group. f Stripplot showing the median age onset of the corresponding topic (left) and the number of times the specific topic occurred in the eMERGE cohort (right). g Barplot represents an example of the top 20 enriched phenotypes in cluster 47 (left) and their negative log10 p-values (right), showing in a stripplot.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig2_HTML.webp?md5=56144133814cee9696a20c824105e20d",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig3",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Age and sex are strongly associated with cluster structure and phenotype development.Scatterplot showing T-SNE visualizations of 100,272 patients from the eMERGE cohort colored by sex (a) and age (b). Scatterplot showing phenotype onset age accurately predicts patient age in c the eMERGE cohort and d the UW cohort as a validation cohort. The x-axis indicates predicted age and the y-axis indicates actual age. Points are colored by the number of phenotypes each patient has. The horizontal bands near age 95 arise from the upper-age censoring rule applied at specific recruitment sites. Vertical banding indicates insufficient information, resulting in the model defaulting to the average population age. e Boxplot showing the onset time differences of 206 phenotypes that are significantly different between the two biological sexes after Bonferroni multiple-test correction. A negative coefficient indicates late onset in females, while a positive coefficient indicates late onset in males. f Barplot showing the number of late-onset phenotypes grouped by each phenotype category in females (pink) and males (blue).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig3_HTML.webp?md5=a284132acb30734f6eb197e329858160",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig4",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Genetics and the interplay between aging in phenotypes.a–d Number of observed pleiotropies (defined by the number of significantly enriched phenotypes in a cluster that have shared genetic components) across clusters. a The median age of clusters; b represents the number of patients in the corresponding cluster; and c indicates the number of phenotypes that have shared genetic components (light green) and the number of tested phenotypes (dark green); d represents the proportion of connected phenotype (cross-phenotype association). e Network plot of genetically connected phenotypes grouped and colored by phenotype groups. Each edge represents a connection and each node represents a unique phenotype. The node size is scaled according to the number of connections the phenotype has. f Barplot (bottom) showing the number of genetically connected phenotypes by phenotype groups (x-axis). The color of the bars indicates the phenotype group, which is used to evaluate intra- and inter-group cross-phenotype association. The top line plot indicates the percentage of intra-group cross-phenotype association (a phenotype connected to another phenotype in the same group). g Scatterplot showing the relationship between heritability (h2) and median onset age of phenotypes (Spearman ρ = -0.37, p = 4.87e−12). h Pointplot showing the coefficient of genetic distance (the y-axis) in the phenotype distance regression model stratified by different age groups (the x-axis), with the vertical bar indicating 95% confidence interval.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig4_HTML.webp?md5=141f25fe7f6d2524bdc9e984183988d1",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "assets/pmc13554212-3137fd426031a8b7.webp",
+            "sha256": "3137fd426031a8b7dba76f1d612f20afe6b25e964a855b3e81ff627969e70709",
+            "width": 1600,
+            "height": 1378,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3137fd426031a8b7dba76f1d612f20afe6b25e964a855b3e81ff627969e70709",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "Fig5",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Cluster disparities in CCI index and mortality reveal premature aging phenotypes.a Scatterplot showing T-SNE visualizations of 100,272 patients from the eMERGE cohort colored CCI index. b Scatterplot showing the median CCI index of each cluster group (the y-axis), regression against age (the x-axis). Points above the regression line indicate high-risk groups for the corresponding age. c Barplot showing the top 20 enriched phenotypes in cluster 67 (left) and corresponding negative log10 p-values. Cluster 67 is a cluster group of young patients (median age 21) with relatively high risks (median CCI index = 2). Points and bars are colored according to the phenotype group. d Scatterplot showing the onset age of 327 phenotypes significantly (black) associated with the CCI index. A negative coefficient (the x-axis) indicates the early onset of these phenotypes associated with higher CCI. e Scatterplot showing 82 phenotypes that have their age significantly associated with CCI in the eMERGE cohort (negative log10 p-values shown in the y-axis) and mortality in the UW cohort (negative log10 p-values shown in the x-axis).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig5_HTML.webp?md5=f2e8cc42001511e8a5f9d21a64fa60c4",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "Fig6",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Survival selection and characteristics of successfully aged participants.a Scatterplot showing T-SNE visualizations of 17,395 patients from the eMERGE cohort with longitudinal data colored by z-scored aging rate. b The aging rate predicts labs that are known to be associated with aging. The bottom is a point plot with a confidence interval showing the coefficient of age rate and age in linear models adjusted for sex, sites, and genetic ancestry, predicting each lab respectively in the corresponding x-axis. The top bar plot represents negative log10 p-values of each lab. c A line plot illustrating how the pseudo-aging rate and genetic longevity jointly revealed survival selection in patients aged over 75. The grey line represents the average aging rate across 17,395 patients in the eMERGE cohort with longitudinal data. For each point along the x-axis, the two pink dotted lines display p-values comparing genetic longevity PRS for individuals older than the given age versus those of the same age or younger. The upper pink dotted line corresponds to the subset with longitudinal data, while the lower line reflects the full cohort of 100,272 eMERGE patients. For each point along the x-axis, p-values compare individuals older than the given age with those of the same age or younger. d Successfully aged participants (aged ≥ 75) have less multi-group comorbidity. The violin plot shows the number of phenotype categories (the y-axis) individuals have at a specific age group in decades (the x-axis). Darker green colors represent successfully aged participants, and lighter colors represent others. e 51 out of the 82 phenotypes shown in Fig. 5e have a significant association between aging rate and onset time. Each dot (bottom) here represents a phenotype (the x-axis) and its coefficient (the y-axis) in the linear model predicting onset time. A negative coefficient indicates an increased aging rate associated with an early onset time. A positive coefficient indicates an increased aging rate associated with a later onset time. The bar plot (top) represents negative log10 p-values. f Stripplot showing that the aging rate is drastically different at baseline between the successfully aged population and others while mildly associated with aging. g Scatterplot showing the pseudo-aging rate (the y-axis) between two biological sexes across different ages (the x-axis).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig6_HTML.webp?md5=90fca03e2816f72c83c0f423888b84a2",
+            "articleURL": "https://doi.org/10.1038/s41746-026-02913-x",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al.. Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.. DOI: 10.1038/s41746-026-02913-x. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "MOESM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_MOESM1_ESM.pdf?md5=309a72aead1edce09194d23b4f19e0c3",
+            "license": "CC BY",
+            "sha256": "675d89da6ddfbbe746b18284a7503951fb6d824cbbfd52fb03cc43956cdfcea9",
+            "status": "downloaded_private",
+            "bytes": 2967318,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 61,
+              "identityEvidence": "补充材料/报告标题标志出现；来源由精确 DOI JATS 附件及哈希绑定"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-24T01:22:08.087798+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Su Xian; Jordan W. Smoller; Yuan Luo; Theresa L. Walunas; Cong Liu; Atlas Khan; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "18.0",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-24T01:22:11Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-24T01:22:12Z",
+        "url": "https://openalex.org/W7165671343",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-24T01:22:12Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-24T01:22:12Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-25T01:22:12Z"
+        }
+      },
+      "selectionScore": {
+        "total": 42,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-24T01:22:54Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-5cef6d93a3c44ab6",
+      "paper": "Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.",
+      "doi": "10.1371/journal.pone.0362854",
+      "journal": "PloS one",
+      "date": "2026-11-19",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0362854",
+      "pmcid": "PMC13784717",
+      "pmid": "43056393",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-24",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "06cee3fa0ef39ef54cea99365ff30ecadf2e0c651aaf6d1253ddffbb5da1805c"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/PMC13784717.1.xml?md5=588ba03b62b746c06e983549ec28dc1f",
+        "figures": [
+          {
+            "id": "pone.0362854.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Flowchart summarizing participant recruitment, inclusion and exclusion criteria, and final classification into normal glucose tolerance (NGT) and gestational diabetes mellitus (GDM) groups.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g001.webp?md5=073faa1eff6edde9a8810d152150b02a",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362854.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Multivariate analysis of plasma metabolomic profiles in the GDM and NGT groups.(A) PCA and (B) PLS-DA score plots comparing the GDM and NGT groups. Each point represents an individual sample. Black circles represent the QC samples (repeated 31 times), red circles denote the GDM group (n = 169) and blue circle denote the NGT group (n = 101).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g002.webp?md5=e91adf3779a762fc74553dad6fcfe789",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362854.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Volcano plot shows the distribution of all identified plasma metabolites between the GDM (n = 169) and NGT (n = 101) groups.The horizontal dashed line denotes the adjusted p-value threshold of 0.05. The vertical dashed line denotes the fold-change (FC) threshold of 1. Metabolites marked with an asterisk (*) and bold indicate those with adjusted p-value <0.05, multiple linear regression (adjusted for age and pre-pregnancy BMI) p-value <0.05, FC > 1 and VIP score >1. Creatinine is not significant after adjusting with age and pre-pregnancy BMI.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g003.webp?md5=a9b4e92cc4e93337cae2aefea3234692",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362854.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Box-and-whisker plots showing the distribution of NMR-derived metabolite intensities for the 9 prioritized metabolites.(A) Acetone, (B) Citrate, (C) Glucose, (D) Succinate, (E) Glycine, (F) 3-hydroxybutyrate, (G) Leucine, (H) Phenylalanine, and (I) CH = CH bond of unsaturated lipids. Comparisons were performed between women with GDM (n = 169) and those with normal glucose tolerance (NGT; n = 101). The yellow dot represents the mean metabolite intensity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g004.webp?md5=8f17a46bef3f480c1cfa207ad7bc1a03",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "assets/pmc13784717-7ccce92765304ed0.webp",
+            "sha256": "7ccce92765304ed040b2f72d1cf931a178cd5ed41f33c507832b10524c3cc4cb",
+            "width": 1600,
+            "height": 609,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "7ccce92765304ed040b2f72d1cf931a178cd5ed41f33c507832b10524c3cc4cb",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0362854.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Receiver operating characteristic curve with 95% CI obtained from three supervised classification models.(A) Random Forest, (B) PLS-DA, and (C) Linear-SVM.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g005.webp?md5=5a21b6b5749604972fbcad019ad57dd3",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "assets/pmc13784717-5ca1c59fbc39aff3.webp",
+            "sha256": "5ca1c59fbc39aff387c39bb6cc00979d767638c8a21af80d3a7ec380f7c9c512",
+            "width": 1599,
+            "height": 486,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "5ca1c59fbc39aff387c39bb6cc00979d767638c8a21af80d3a7ec380f7c9c512",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "pone.0362854.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Pathway and disease enrichment analysis of significant plasma metabolites.(A) KEGG pathways, (B) Small Molecule Pathway Database (SMPDB), and (C) Disease-associated metabolite sets from the Human Metabolome Database (HMDB).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.g006.webp?md5=91e45edf0d435cf94d6d64e796db61d5",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362854",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al.. Untargeted plasma metabolomics reveals metabolite alterations and pathway perturbations in gestational diabetes mellitus.. DOI: 10.1371/journal.pone.0362854. Copyright holder: Chaiyachate et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0362854.s001",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.s001.xlsx?md5=f352c69abbd1002fad54d52d3bff933e",
+            "license": "CC BY",
+            "sha256": "92a123ec012a80dc11cdc97732f18924efaf203154a3bf5ac882326b3770d16c",
+            "status": "downloaded_private",
+            "bytes": 56385,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362854.s002",
+            "label": "S1 File",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13784717.1/pone.0362854.s002.docx?md5=a158ed79b25704aa068d6be70c692f51",
+            "license": "CC BY",
+            "sha256": "51237169e8e13ea8d976e384288a936074b28aa679c1e5791bf79778aa0ed902",
+            "status": "downloaded_private",
+            "bytes": 5638738,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-24T01:22:38.771107+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Kornpatchara Chaiyachate; Manasicha Pongsamakthai; Wassana Jamnongkan; Jutarop Phetcharaburanin; Nopporn Sawatjui; Ratthaphol Kraiklang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-24T01:19:56Z",
+        "metric_year": "unknown",
+        "cache_hit": true
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-24T01:22:42Z",
+        "url": "https://openalex.org/W7236751428",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-24T01:22:42Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-24T01:22:42Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-25T01:22:42Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-24T01:22:55Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -252477,6 +253104,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-3b63fe838ef65e40": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-5cef6d93a3c44ab6": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -254095,7 +254734,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-24T01:20:25Z",
+  "generatedAt": "2026-11-24T01:22:56Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -254329,18 +254968,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-24T01:16:08Z",
-    "updatedAt": "2026-11-24T01:20:44Z",
+    "updatedAt": "2026-11-24T01:23:04Z",
     "batchCount": 2,
-    "requests": 44,
+    "requests": 75,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 3,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

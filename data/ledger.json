@@ -341,11 +341,43 @@
       "newDOIs": [
         "10.1002/mco2.71154",
         "10.1007/s00122-026-05446-9",
-        "10.1371/journal.pone.0362369"
+        "10.1038/s41746-026-02913-x",
+        "10.1371/journal.pone.0362369",
+        "10.1371/journal.pone.0362854"
       ]
     }
   },
   "candidates": {
+    "10.1126/sciadv.aej1481": {
+      "checkedAt": "2026-11-24T01:22:53Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pone.0362854": {
+      "checkedAt": "2026-11-24T01:22:42Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s43587-026-01258-0": {
+      "checkedAt": "2026-11-24T01:22:32Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cell.2026.09.014": {
+      "checkedAt": "2026-11-24T01:22:22Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1038/s41746-026-02913-x": {
+      "checkedAt": "2026-11-24T01:22:12Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1007/s00122-026-05446-9": {
       "checkedAt": "2026-11-24T01:20:21Z",
       "status": "source_confirmed",
@@ -553,12 +585,6 @@
     },
     "10.1038/s43856-026-01971-2": {
       "checkedAt": "2026-11-20T09:17:58Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1038/s43587-026-01258-0": {
-      "checkedAt": "2026-11-20T09:17:53Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -7495,61 +7521,6 @@
         "updatedAt": "2026-10-16T06:52:39Z"
       }
     },
-    "10.1038/s41746-026-02913-x": {
-      "checkedAt": "2026-10-16T06:52:35Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1038/s41746-026-02913-x",
-        "metadataHash": "90aa6e9ec342a6deb0ecd4c00bf47dbd40dfc16750977e344d8126bc7be8f6c6",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/PMC13554212.1.xml?md5=2ee4bfc6be3b1336bc8ec89947206c49",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13554212-af89cf057a66f9eb.webp",
-              "assetSHA256": "af89cf057a66f9ebc0400c6a8b02d59c29b31f5fc11a53e8a7d97df210fff2d3",
-              "license": "CC BY",
-              "id": "Fig1",
-              "sha256": "af89cf057a66f9ebc0400c6a8b02d59c29b31f5fc11a53e8a7d97df210fff2d3",
-              "height": 1758,
-              "label": "Fig. 1",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig1_HTML.webp?md5=c15407b14f5b8f4ac82238bcb53ce93c",
-              "captionHash": "51b8b5a4e18ca1a756c7f3e329ab34e6115f2fa21ecc28602a98f891fd05b7a3"
-            },
-            {
-              "asset": "assets/pmc13554212-3137fd426031a8b7.webp",
-              "assetSHA256": "3137fd426031a8b7dba76f1d612f20afe6b25e964a855b3e81ff627969e70709",
-              "license": "CC BY",
-              "id": "Fig4",
-              "sha256": "3137fd426031a8b7dba76f1d612f20afe6b25e964a855b3e81ff627969e70709",
-              "height": 1378,
-              "label": "Fig. 4",
-              "width": 1600,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13554212.1/41746_2026_2913_Fig4_HTML.webp?md5=141f25fe7f6d2524bdc9e984183988d1",
-              "captionHash": "e4550d59a4648b48c41cb0e722270d71b4e1fe6840e390e7212050d277be97f0"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-3b63fe838ef65e40",
-          "doi": "10.1038/s41746-026-02913-x",
-          "paper": "Unsupervised characterization of 100,272 EHR patients identifies high-risk groups and comorbidities linked to premature aging.",
-          "journal": "NPJ digital medicine",
-          "date": "2026-06-23",
-          "year": "2026",
-          "pmcid": "PMC13554212",
-          "pmid": "42337381",
-          "paperURL": "https://doi.org/10.1038/s41746-026-02913-x"
-        },
-        "updatedAt": "2026-10-16T06:52:33Z"
-      }
-    },
     "10.1371/journal.pbio.3003866": {
       "checkedAt": "2026-10-16T06:52:28Z",
       "status": "pending",
@@ -10901,7 +10872,7 @@
   },
   "dailyCollectionSession": {
     "uncertainAiAttempts": 0,
-    "updatedAt": "2026-11-24T01:20:44Z",
+    "updatedAt": "2026-11-24T01:23:04Z",
     "batchCount": 2,
     "uncertainRequests": 0,
     "date": "2026-11-24",
@@ -10909,18 +10880,13 @@
     "maxBatches": 36,
     "version": 1,
     "maxRequests": 1800,
-    "elapsedSeconds": 276,
+    "elapsedSeconds": 416,
     "startedAt": "2026-11-24T01:16:08Z",
-    "dailyNewCount": 3,
-    "requests": 44,
+    "dailyNewCount": 5,
+    "requests": 75,
     "endReason": "",
     "maxSeconds": 2700,
     "status": "active",
-    "aiAttempts": 0,
-    "inFlight": {
-      "startedAt": "2026-11-24T01:20:44Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "aiAttempts": 0
   }
 }
