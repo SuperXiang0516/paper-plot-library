@@ -345,14 +345,44 @@
         "10.1371/journal.pone.0362369",
         "10.1371/journal.pone.0362854"
       ]
+    },
+    "2026-11-25": {
+      "newDOIs": [
+        "10.1002/advs.78884",
+        "10.1371/journal.pbio.3003866"
+      ]
     }
   },
   "candidates": {
     "10.1126/sciadv.aej1481": {
-      "checkedAt": "2026-11-24T01:22:53Z",
+      "checkedAt": "2026-11-25T10:37:11Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1002/advs.78884": {
+      "checkedAt": "2026-11-25T10:36:57Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-25T10:36:46Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1126/sciadv.aeg2088": {
+      "checkedAt": "2026-11-25T10:36:40Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pbio.3003866": {
+      "checkedAt": "2026-11-25T10:36:16Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
     },
     "10.1371/journal.pone.0362854": {
       "checkedAt": "2026-11-24T01:22:42Z",
@@ -389,18 +419,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-24T01:18:33Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1126/sciadv.aeg2088": {
-      "checkedAt": "2026-11-24T01:17:55Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1002/mco2.71154": {
       "checkedAt": "2026-11-24T01:17:53Z",
@@ -7521,61 +7539,6 @@
         "updatedAt": "2026-10-16T06:52:39Z"
       }
     },
-    "10.1371/journal.pbio.3003866": {
-      "checkedAt": "2026-10-16T06:52:28Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pbio.3003866",
-        "metadataHash": "283122dad74d0d6bee5317e947fbf7da42499d763f29878b2eee0efa76900b0f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/PMC13293388.1.xml?md5=4a88cdd78881ceaad6664c97de96e2d7",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13293388-5be912503f170c39.jpg",
-              "assetSHA256": "5be912503f170c39c80e8f5d68ffe40659c7700f8d5880442ad5b2ddc3a92970",
-              "license": "CC BY",
-              "id": "pbio.3003866.g001",
-              "sha256": "5be912503f170c39c80e8f5d68ffe40659c7700f8d5880442ad5b2ddc3a92970",
-              "height": 1116,
-              "label": "Fig 1",
-              "width": 780,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g001.jpg?md5=ed768f75080b442a8816528227a09674",
-              "captionHash": "f83ea93a015394687c976fb1499f9c0e09ea680cf1680dcbb0a7fab0b1d57326"
-            },
-            {
-              "asset": "assets/pmc13293388-010342a15e4d3dc3.jpg",
-              "assetSHA256": "010342a15e4d3dc30335359ac6dd2de7f88752a12c1f9aee726d1aea05fceb24",
-              "license": "CC BY",
-              "id": "pbio.3003866.g002",
-              "sha256": "010342a15e4d3dc30335359ac6dd2de7f88752a12c1f9aee726d1aea05fceb24",
-              "height": 807,
-              "label": "Fig 2",
-              "width": 691,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g002.jpg?md5=8508f06cb9b9643557e27aa80b9b39d4",
-              "captionHash": "53e9a73c7643bdd51c244ec2119b918c4d3236cd054111a75aff4c089552d0e7"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-6b31b6c4ed81a120",
-          "doi": "10.1371/journal.pbio.3003866",
-          "paper": "Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.",
-          "journal": "PLoS biology",
-          "date": "2026-06-24",
-          "year": "2026",
-          "pmcid": "PMC13293388",
-          "pmid": "42340984",
-          "paperURL": "https://doi.org/10.1371/journal.pbio.3003866"
-        },
-        "updatedAt": "2026-10-16T06:52:27Z"
-      }
-    },
     "10.1007/s40121-026-01372-x": {
       "checkedAt": "2026-10-16T06:52:20Z",
       "status": "pending",
@@ -10879,19 +10842,14 @@
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "date": "2026-11-25",
-    "requests": 0,
+    "requests": 39,
     "startedAt": "2026-11-25T10:31:23Z",
-    "updatedAt": "2026-11-25T10:31:30Z",
+    "updatedAt": "2026-11-25T10:37:22Z",
     "endReason": "",
-    "elapsedSeconds": 8,
+    "elapsedSeconds": 360,
     "version": 1,
     "maxRequests": 1800,
     "batchCount": 1,
-    "dailyNewCount": 0,
-    "inFlight": {
-      "startedAt": "2026-11-25T10:31:30Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 2
   }
 }

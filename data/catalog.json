@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-24",
+  "checkedAt": "2026-11-25",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -187929,6 +187929,885 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-6b31b6c4ed81a120",
+      "doi": "10.1371/journal.pbio.3003866",
+      "paper": "Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.",
+      "journal": "PLoS biology",
+      "date": "2026-06-24",
+      "year": "2026",
+      "pmcid": "PMC13293388",
+      "pmid": "42340984",
+      "paperURL": "https://doi.org/10.1371/journal.pbio.3003866",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1544-9173",
+      "eissn": "1545-7885",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "a578ecb64b925b8e9535684b65be0e732ac4621ce095f039c2d9e018d536869b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/PMC13293388.1.xml?md5=4a88cdd78881ceaad6664c97de96e2d7",
+        "figures": [
+          {
+            "id": "pbio.3003866.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Tracing cell lineages in the adult Drosophila midgut.(A) Workflow for tracing midgut cell lineages. The SMALT system, driven by the Tubulin-GAL4/UAS system, induces mutations in 500 bp readout sequences to uniquely mark individual cells. Offspring with the activated SMALT system are dissected, and their intestines are removed to isolate the midguts. The anatomical composition of the abdominal gut in Drosophila melanogaster is depicted with different labels. Sampling time points are determined to span from youth to old age after eclosion. (B) The number of mutations in the 500 bp readout sequences increases with age. Midgut samples were collected from adult female Drosophila at 3, 13, 23, and 33 days post-eclosion, with three replicates for each time point. The violin plot illustrates the distribution of mutation numbers, with a log-transformed y-axis. Gray dots represent the average mutation counts, and a black dotted line connects these averages. (C) The pie chart displays the relative proportions of substitution mutation types across all samples. (D) Phylogenetic tree for Sample 2 on Day 3, with the lineage distance labeled on the left side of the tree, representing the cumulative number of division events. (E) Phylogenetic tree for Sample 3 on Day 33, similarly labeled with the lineage distance on the left side. (F) Fluctuation of Ne over time in the midgut of adult Drosophila. Ne of midgut cell populations is estimated corresponding to the specific number of cumulative division events. Solid lines represent the estimates of Ne trajectories, while shaded pink regions indicate 95% CIs. The underlying data for panels B, C, and F can be found in S1 Data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g001.jpg?md5=ed768f75080b442a8816528227a09674",
+            "articleURL": "https://doi.org/10.1371/journal.pbio.3003866",
+            "asset": "assets/pmc13293388-5be912503f170c39.jpg",
+            "sha256": "5be912503f170c39c80e8f5d68ffe40659c7700f8d5880442ad5b2ddc3a92970",
+            "width": 780,
+            "height": 1116,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu. Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.. DOI: 10.1371/journal.pbio.3003866. Copyright holder: Gong et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "5be912503f170c39c80e8f5d68ffe40659c7700f8d5880442ad5b2ddc3a92970",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pbio.3003866.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Clonal diversity of cell populations in midgut.(A) Definition of the lineages which appear from Day 2 onwards in time-scaled phylogenetic tree. The left side of phylogenetic tree is marked with a timeline measured in days. The dashed purple line denotes the position of Day 2 in the tree. For the nodes located below this position, every highest node whose color is light brown is considered as a unique lineage. Correspondingly, the number of cells contained under this node is the size of the lineage. For those single branches whose color is green without nodes, they are the lineages each of which has only one individual. (B) The lineage stability model and the lineage extinction model show different ways of lineage-occurrence. The number in the circle represents the lineage defined according to panel a. The left side of tree is the timeline. (C) Clonal diversity denoted by lineage richness, Shannon diversity and reciprocal of the maximum lineage frequency is shown by bar charts. The three indices quantify complementary aspects of clonal diversity. Lineage richness reflects the number of detectable lineages and is therefore most sensitive to the loss of rare lineages. Shannon diversity captures both lineage number and evenness, whereas the reciprocal of the maximum lineage frequency is primarily determined by the degree of dominance of the largest lineage. The average results of three samples at each sampling time point are shown in columns and the black dots represent real results. The values on the y-axis are log-transformed. Significant differences in clonal diversity between samples from different sampling time points are indicated by the P-value from ANOVA, shown at the top right of the bar chart. (D) Ne at Day 33 is plotted across lineage distance on the x-axis. The solid blue line shows estimates derived from Fig 1F, and the brown dashed line shows predictions from the fitted Galton–Watson model. (E) A consistent decline in clonal diversity across lineage distance was observed in simulations using the Galton–Watson model with parameters fitted at Day 33. Each boxplot shows the distribution of Shannon diversity values from 1,000 stochastic iterations at each lineage distance. The underlying data for panels C, D, and E can be found in S1 Data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g002.jpg?md5=8508f06cb9b9643557e27aa80b9b39d4",
+            "articleURL": "https://doi.org/10.1371/journal.pbio.3003866",
+            "asset": "assets/pmc13293388-010342a15e4d3dc3.jpg",
+            "sha256": "010342a15e4d3dc30335359ac6dd2de7f88752a12c1f9aee726d1aea05fceb24",
+            "width": 691,
+            "height": 807,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu. Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.. DOI: 10.1371/journal.pbio.3003866. Copyright holder: Gong et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "010342a15e4d3dc30335359ac6dd2de7f88752a12c1f9aee726d1aea05fceb24",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pbio.3003866.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Changing characteristic of intestinal stem cell population in the adult Drosophila posterior midgut during the aging process.(A) The schematic diagram illustrates the Dl-GAL4/UAS system driving the SMALT system. Dl-GAL4 expression initiates in the AMPs of Drosophila larvae, which differentiate during the pupal stage to form the adult midgut. In the adult midgut, ISCs maintain Dl-GAL4 expression, enabling the SMALT system to trace the developmental history of the midgut through single-base mutations. In the experiment, the posterior part of the adult midgut served as the research material, with samples collected at 33, 43, 53, and 63 days. (B) Posterior midgut samples were taken from adult female Drosophila on Days 33, 43, 53, and 63, with three samples for each time point. The violin plot shows the distribution about the number of mutations in 500 bp readout sequence induced by Dl-GAL4/UAS system, with different colors representing different sampling time points. The black dot represents the average of mutation numbers which are from three samples at each time point and a gray dotted line is used to connect these dots. A logarithmic transformation has been applied to the y-axis values. (C) The pie chart displays the types of single-base mutations observed in the samples. (D) Trends of Ne for ISCs in the posterior midgut are represented by solid lines. The shaded regions of blue represent 95% CIs of the trends. (E) The ratios of Ne between adjacent division events of ISCs on Days 33, 43, 53, and 63 are represented by black dots, corresponding to the events of cell division. These dots are connected by black lines for each sample individually. The values on the y-axis are log-transformed. The underlying data for panels B, C, D, and E can be found in S1 Data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g003.jpg?md5=c0e23da5a2ef6dec97bf36b329826cc1",
+            "articleURL": "https://doi.org/10.1371/journal.pbio.3003866",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu. Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.. DOI: 10.1371/journal.pbio.3003866. Copyright holder: Gong et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pbio.3003866.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Age‑dependent clonal architecture of stem cell lineages.(A, B) Two time-scaled phylogenetic trees of ISC lineages in adult Drosophila posterior midguts on Days 33 and 63 are shown. The timelines are labeled on the left sides of trees which are from Sample 2 on Day 33 (A) and Sample 1 on Day 63 (B). According to Fig 2A, the dashed purple line denotes the position of Day 2 in the tree. For the nodes situated beneath this position, each topmost node that is light brown in color is regarded as a separate lineage. Each lineage is distinguished by a distinct background color. (C) Lineage richness, Shannon diversity and reciprocal of the maximum lineage frequency of ISCs are presented in bar charts. Columns show the average results of three samples at each sampling time point, with black dots indicating individual results. (D) Sensitivity to minimum clone-size thresholds of 2 and 3 shows that the observed trends persist when smaller clones are excluded. Open circles represent the mean values of the observed diversity. The underlying data for panels C and D can be found in S1 Data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g004.jpg?md5=2f2aec50c7a39cf08fb6b6cccdce0174",
+            "articleURL": "https://doi.org/10.1371/journal.pbio.3003866",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu. Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.. DOI: 10.1371/journal.pbio.3003866. Copyright holder: Gong et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pbio.3003866.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Expansive traits of intestinal stem cell lineages in the posterior midgut.(A) The distributions of lineage appearance times across the time‑scaled phylogenetic trees are represented by density plots. Each curve summarizes the results of three samples at the corresponding sampling time point. (B) The proportions of these lineages in the samples are displayed in different colors according to their time of emergence. For each sample, the height of the inner gray square within a column indicates the proportion of a specific lineage. (C) Time-scaled phylogenetic trees of ISC lineages sampled at Day 33 are shown for three biological replicates. Branch colors indicate lineage emergence time (green: 2 − 5 days; blue: 5 − 10 days; purple: > 10 days). Using a Bayesian inference model, survival probabilities were estimated for each lineage’s persistence to Day 43, Day 53, and Day 63. These probabilities are visualized as a heatmap aligned to the tips of each tree, with higher probabilities shown in red and lower in yellow. (D) Using the GNN, lineages were matched across successive sampling intervals with Day 33-43, Day 43-53, and Day 53-63. For each interval, every lineage observed at the earlier day (origin) was embedded together with all lineages from the later day (future), and a one-to-one assignment selected the most similar future counterpart. In the scatter plots, each point represents a matched pair. The color coding for the points follows the origin lineage emergence time, with green representing 2-5 days, blue representing 5-10 days, and purple representing >10 days, as shown in panel c. The x-axis shows the ratio of fitted logistic growth rates (r) for the future and origin lineages, and the y-axis shows the Bayesian posterior probability (P) that the origin lineage survives to the later day. The vertical dashed line marks a growth rate ratio of 1, and the horizontal dashed line marks P = 0.5. (E) Predicted structural evolution of ISC lineage Node-14 (Day 33, Sample 1) matched across future time points is shown using the GNN. Each panel shows the inferred lineage structure at a given time point, with growth rate (r) and survival probability (P). The underlying data for panels A, B, C, and D can be found in S1 Data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.g005.jpg?md5=cd1c8ae6d59d38c927fa758eff2ecd09",
+            "articleURL": "https://doi.org/10.1371/journal.pbio.3003866",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu. Longitudinal lineage tracing reveals early clonal attrition during Drosophila midgut aging.. DOI: 10.1371/journal.pbio.3003866. Copyright holder: Gong et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pbio.3003866.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s001.eps?md5=6f24c1decf976bcf6308eb7a723fde10",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s002.eps?md5=9c6981feaaffe7481b6270b92c1d5801",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s003",
+            "label": "S3 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s003.eps?md5=6cbab3ede1735b4ec9c2dc49bef65e59",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s004",
+            "label": "S4 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s004.eps?md5=99abd793ac594941a9478a6ffaa8a640",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s005",
+            "label": "S5 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s005.eps?md5=c0cbd230f814fc935d1f6e5bb3cdc904",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s006",
+            "label": "S6 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s006.eps?md5=1ff27dd6b06f46497e9d31447c5149e8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s007",
+            "label": "S7 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s007.eps?md5=45e5ecf2611c7183c38f77eb4a11a65c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s008",
+            "label": "S8 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s008.eps?md5=0ca9e57930242ee0a6bfdbbcff8d46a7",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s009",
+            "label": "S9 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s009.eps?md5=8b9d4a47fafa382d4cc6d7cd62262b3f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s010",
+            "label": "S10 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s010.eps?md5=2b45177b79e88c07846c1f4dcf8c5b7b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s011",
+            "label": "S11 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s011.eps?md5=ab7bbafae6eee535ed3cda0712a9d9f5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s012",
+            "label": "S12 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s012.eps?md5=7871cc7e6cb84ef4f7e7f686f06d0f41",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s013",
+            "label": "S13 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s013.eps?md5=f4e4ebde0902d57de7e6ee8ce900da4d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s014",
+            "label": "S14 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s014.eps?md5=90864ef22918e0e27d5131044c2cb919",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s015",
+            "label": "S15 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s015.eps?md5=9c4a2105943a87715482eb8f8506f11f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s016",
+            "label": "S16 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s016.eps?md5=d8e8a251dbfdea2eaadb5ae1124f92b8",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s017",
+            "label": "S17 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s017.eps?md5=8b77e60c1d7acdb5f237a84019f55e8f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s018",
+            "label": "S18 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s018.eps?md5=d8ba434aa92af291537a16cce203cd0b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s019",
+            "label": "S19 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s019.eps?md5=3cf068bb22e0297fa534029575cee725",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pbio.3003866.s020",
+            "label": "S20 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13293388.1/pbio.3003866.s020.eps?md5=c175f161dd08fcfd74079052decd217b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-25T10:36:10.776412+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Han Gong; Kehui Liu; Shanjun Deng; Jinwen Wang; Xionglei He; Li Liu"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "6.9",
+        "jcr": "Q1",
+        "cas": "生物学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-25T10:36:16Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-25T10:36:16Z",
+        "url": "https://openalex.org/W7165776866",
+        "cited_by_count": 1,
+        "fwci": 1.0015,
+        "citation_normalized_percentile": 0.70051132,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-25T10:36:16Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-25T10:36:16Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-26T10:36:16Z"
+        }
+      },
+      "selectionScore": {
+        "total": 45.5025566,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 3.5025566,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-25T10:37:11Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-0ffd5a9ab13e6188",
+      "paper": "Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.",
+      "doi": "10.1002/advs.78884",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-11-18",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.78884",
+      "pmcid": "PMC13781815",
+      "pmid": "43052200",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-25",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "8a5c0e5d4da433c8da6e9f5761f5d76bd5c1a7cc50d0c764ecfb8fcd5115dab8"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/PMC13781815.1.xml?md5=e8da53f03123a09d512558023ecfe519",
+        "figures": [
+          {
+            "id": "advs78884-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "OVA attenuates tubular injury and DNA damage in diabetic kidney disease. (A) Chemical structure and molecular formula of ovatodiolide (OVA). (B) Schematic illustration of the streptozotocin (STZ)‐induced diabetic kidney disease (DKD) mouse model and OVA treatment regimen. (C) Masson's trichrome staining was performed to evaluate collagen deposition, and immunohistochemical staining was used to assess the expression of FN, α‐SMA, and KIM‐1 in kidney tissues. Scale bars = 50 µm.(D) Western blot analysis of FN, α‐SMA, and KIM‐1 protein expression in kidney tissues. (E–G) Quantification of FN, α‐SMA, and KIM‐1 protein expression. (H) Urinary albumin‐to‐creatinine ratio (UACR) in mice from different experimental groups. (I–J) Flow cytometric analysis and quantification of intracellular ROS levels in HK‐2 cells treated with different concentrations of OVA under high‐glucose conditions. (K–L) Western blot analysis and quantification of γ‐H2AX expression in HK‐2 cells treated with different concentrations of OVA under high‐glucose conditions. Con, control group; STZ, diabetic kidney disease model group; STZ+OVA, OVA‐treated group. Data are presented as the mean ± SD. n = 6 mice per group; n = 3 independent experiments for cell‐based assays. Statistical significance was determined by one‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, ** p < 0.01, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g009.webp?md5=8f451bce466ca1276d7a28ec19df48f3",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "OVA directly binds to NME1 at residues K12 and R114 as revealed by proteomic and structural analyses.(A,B) Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses of candidate OVA‐binding proteins identified by protein microarray revealed significant enrichment of DNA damage response–related pathways. (C) Protein microarray analysis showing that OVA treatment increased the signal‐to‐noise ratio (SNR) of NME1 by approximately 109‐fold compared with the control. (D) Molecular docking analysis showing the predicted binding mode and lowest binding energy between OVA and NME1 (UniProt: P15531). (E) Two‐dimensional interaction map of the OVA–NME1 complex. (F) Electrostatic surface potential of the predicted binding interface. (G) Three‐dimensional docking model showing the predicted binding sites between OVA and NME1. (H–K) Molecular dynamics simulations of the NME1–OVA complex for 100 ns using Gromacs 2023.4, showing backbone root mean square deviation (RMSD), root mean square fluctuation (RMSF), radius of gyration (Rg), and solvent‐accessible surface area (SASA), indicating structural stability of the complex. (L–M) MM/GBSA binding free energy decomposition analysis showing the contributions of van der Waals, electrostatic, polar solvation, nonpolar solvation, gas‐phase, and total binding energies, and identifying Phe60 and Arg114 as major contributors to ligand binding. (N–O) Time‐dependent hydrogen bond analysis showing the number and distribution of hydrogen bonds formed between OVA and NME1 during molecular dynamics simulation. (P) Free energy landscape (FEL) analysis showing dominant low‐energy conformational states of the NME1–OVA complex. (Q) Surface plasmon resonance (SPR) sensorgrams showing the interaction between recombinant NME1 protein and OVA at the indicated concentrations (3.12–200 µM). Binding curves were fitted using a 1:1 binding model, yielding a KD value of 13.7 µM. (R–S) Cellular thermal shift assay (CETSA) in HK‐2 cells overexpressing NME1‐Flag showing increased thermal stability of NME1 in the presence of OVA. (T) Pull‐down assay using a biotin‐labeled OVA probe confirming direct binding between OVA and NME1. (U) Pull‐down assays using NME1 point mutants showing that mutations at K12 and R114 markedly impaired the interaction between OVA and NME1. Data are presented as the mean ± SD. n = 3 unless otherwise indicated. Statistical significance was determined by one‐way or two‐way ANOVA followed by Tukey's multiple‐comparison test. ** p < 0.01 and *** p < 0.001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g002.webp?md5=5734a3affdaa3183dae933bb355a189a",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "assets/pmc13781815-239ac71b99bdee2c.webp",
+            "sha256": "239ac71b99bdee2c10c44db4b2cb61162144170d69d51847c1e55656b6561157",
+            "width": 682,
+            "height": 1000,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "239ac71b99bdee2c10c44db4b2cb61162144170d69d51847c1e55656b6561157",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78884-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "OVA stabilizes NME1 by suppressing its ubiquitination in DKD models. (A,B) Immunohistochemical staining and quantification of NME1 in kidney tissues from patients with DKD and controls. Scale bars = 50 µm. (C,D) Western blot analysis and quantification of NME1 protein expression in HK‐2 cells treated with different concentrations of OVA under high‐glucose conditions. (E) RT‐qPCR analysis of NME1 mRNA expression in HK‐2 cells. (F) Immunofluorescence staining of NME1 (red) and LTL (green) in kidney tissues from streptozotocin (STZ)‐induced diabetic mice. Nuclei were counterstained with DAPI (blue). Scale bars = 50 µm. (G–I) Western blot analysis and quantification of NME1 and γ‐H2AX protein expression in kidney tissues from STZ‐induced diabetic mice. (J) RT‐qPCR analysis of NME1 mRNA expression in kidney tissues from STZ‐induced diabetic mice. (K) Western blot analysis of endogenous NME1 ubiquitination levels in HK‐2 cells under high‐glucose conditions with or without OVA treatment. Endogenous NME1 was immunoprecipitated using an anti‐NME1 antibody, with normal IgG serving as a negative control for the corresponding lysates. (L) Western blot analysis of NME1 ubiquitination in HK‐2 cells expressing NME1 mutants at residues K12 and R114.(M,N) Western blot analysis and quantification of NME1 protein expression in HK‐2 cells under high‐glucose conditions following CHX treatment for the indicated time periods. (O,P) Western blot analysis and quantification of NME1 protein expression in HK‐2 cells under high‐glucose conditions following MG132 treatment for the indicated time periods. Data are presented as the mean ± SD. n = 10 for human samples and n = 6 for mouse experiments. Cell‐based Western blot experiments were performed with n = 3 independent replicates, and RT‐qPCR experiments were performed with n = 4 independent replicates. Statistical significance was determined by one‐way or two‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, * p < 0.05, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g001.webp?md5=255d202ed5234ce90d49782a14d6836f",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "OVA disrupts TRIM47‐mediated ubiquitination of NME1. (A) Venn diagram showing proteins enriched in NME1 immunoprecipitation (IP) vs. IgG control in HK‐2 cells based on IP–mass spectrometry analysis. (B–D) Protein–protein docking analysis of NME1 and TRIM47, including the predicted binding interface, docking model (ΔG = −10.8 kcal/mol; interface area = 1684.4 Å2), and two‐dimensional interaction map generated by LigPlot+. (E,F) Western blot analysis and quantification of TRIM47 expression in HK‐2 cells under normal glucose (NG), high glucose (HG), or HG with OVA treatment. (G–H) Western blot analysis and quantification of TRIM47 expression in kidney tissues from control, STZ‐induced diabetic, and OVA‐treated STZ‐induced diabetic mice. (I) Co‐immunoprecipitation analysis of the endogenous interaction between NME1 and TRIM47 in HK‐2 cells. (J) Co‐immunoprecipitation analysis of the NME1–TRIM47 interaction in HK‐2 cells under NG, HG, or HG with OVA treatment. (K) NME1 ubiquitination and NME1–TRIM47 interaction in TRIM47‐HA‐overexpressing HK‐2 cells under NG, HG, or HG with OVA treatment. (L) NME1 ubiquitination and NME1–TRIM47 interaction in TRIM47‐HA‐overexpressing HK‐2 cells under HG conditions treated with increasing concentrations of OVA (1–4 µM). (M) NME1 ubiquitination and TRIM47 binding in HK‐2 cells expressing FLAG‐tagged NME1 WT, K12R, R114A, or K12R/R114A together with TRIM47‐HA under HG conditions. Data are presented as the mean ± SD. Cell‐based experiments were performed with n = 3 independent replicates, and animal experiments were performed with n = 6 mice per group. Statistical significance was determined by one‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g006.webp?md5=b21bdcc5ad7f58d769c66efd5c12005d",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "NME1 interacts with BRAT1 to facilitate ATM complex assembly and DNA damage repair signaling. (A,B) GO and KEGG pathway enrichment analyses of proteins identified by NME1 IP–mass spectrometry in HK‐2 cells. (C) Molecular docking analysis of the NME1–BRAT1 interaction showing the predicted binding mode with a binding energy of −10.7 kcal/mol. (D) Predicted binding mode and interaction interface between NME1 and BRAT1. (E) Predicted binding residues of the NME1–BRAT1 complex; NME1 is shown as green sticks and BRAT1 as red sticks, with hydrogen bonds indicated by yellow dashed lines (A°). (F) Electrostatic surface representation of the NME1–BRAT1 interaction interface. (G) Western blot analysis of NME1‐Flag overexpression efficiency in HK‐2 cells. (H) Co‐IP of NME1‐Flag followed by immunoblotting for BRAT1 in HK‐2 cells. (I,J) Western blot analysis and quantification of NME1 knockdown efficiency in HK‐2 cells transduced with three independent shNME1 constructs. (K) Co‐IP of BRAT1 followed by immunoblotting for NME1 in HK‐2 cells. (L) Co‐IP of BRAT1 followed by immunoblotting for ATM in HK‐2 cells under normal glucose (NG), high glucose (HG), or HG with OVA treatment. (M) Co‐IP of BRAT1 followed by immunoblotting for ATM in HK‐2 cells with NME1 knockdown. (N) Co‐IP of BRAT1 followed by immunoblotting for ATM in HK‐2 cells overexpressing NME1. Data are presented as the mean ± SD. Cell‐based Western blot experiments were performed with n = 3 independent replicates, except for the assessment of NME1 knockdown efficiency, which was performed with n = 5 independent replicates. Statistical significance was determined by one‐way ANOVA followed by Tukey's multiple‐comparison test. **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g010.webp?md5=80b1fa42a3b36ff6042d9068bf257db4",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "assets/pmc13781815-f215b2b729abf649.webp",
+            "sha256": "f215b2b729abf64909c53d0090bc29eea8d88e4a798510c7cc4a371d3dd85e7a",
+            "width": 727,
+            "height": 1001,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "f215b2b729abf64909c53d0090bc29eea8d88e4a798510c7cc4a371d3dd85e7a",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78884-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "NME1 is required and sufficient for OVA‐mediated protection against DNA damage in HK‐2 cells. (A,B) Immunofluorescence staining of γ‐H2AX and comet assay analysis in HK‐2 cells with NME1 knockdown under high‐glucose conditions with or without OVA treatment. Scale bars = 50 µm (γ‐H2AX immunofluorescence) and 100 µm (comet assay). (C,D) Quantification of γ‐H2AX fluorescence intensity and comet assay results in HK‐2 cells with NME1 knockdown under high‐glucose conditions with or without OVA treatment. (E,F) Flow cytometric analysis and quantification of intracellular ROS levels in HK‐2 cells with NME1 knockdown under high‐glucose conditions with or without OVA treatment. (G–H) Western blot analysis and quantification of p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, NME1, and γ‐H2AX expression in HK‐2 cells with NME1 knockdown under high‐glucose conditions with or without OVA treatment. (I,J) Immunofluorescence staining of γ‐H2AX and comet assay analysis in HK‐2 cells overexpressing NME1 under high‐glucose conditions with or without OVA treatment. Scale bars = 50 µm (γ‐H2AX immunofluorescence) and 100 µm (comet assay). (K,L) Quantification of γ‐H2AX fluorescence intensity and comet assay results in HK‐2 cells overexpressing NME1 under high‐glucose conditions with or without OVA treatment. (M,N) Flow cytometric analysis and quantification of intracellular ROS levels in HK‐2 cells overexpressing NME1 under high‐glucose conditions with or without OVA treatment. (O,P) Western blot analysis and quantification of p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, FLAG, and γ‐H2AX expression in HK‐2 cells overexpressing NME1 under high‐glucose conditions with or without OVA treatment. Data are presented as the mean ± SD. Cell‐based Western blot and flow cytometry experiments were performed with n = 3 independent replicates, and immunofluorescence and comet assay experiments were performed with n = 5 independent replicates. Statistical significance was determined by two‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, * p < 0.05, ** p < 0.01, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g003.webp?md5=86d1dde3432efb853e42bd98b1fe6f93",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0007",
+            "label": "FIGURE 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "BRAT1 and ATM are required for NME1‐mediated activation of DNA repair and cytoprotection. (A,B) Western blot analysis and quantification of BRAT1 knockdown efficiency in HK‐2 cells transduced with three independent shBRAT1 constructs. (C,D) Immunofluorescence staining and quantification of γ‐H2AX expression in HK‐2 cells overexpressing NME1‐FLAG under high‐glucose conditions with or without BRAT1 knockdown and OVA treatment. Scale bars = 50 µm. (E,F) Western blot analysis and quantification of DNA damage repair–related proteins, including p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, FLAG, and γ‐H2AX, in HK‐2 cells overexpressing NME1‐FLAG under high‐glucose conditions with or without BRAT1 knockdown and OVA treatment. (G–H) Immunofluorescence staining and quantification of γ‐H2AX expression in HK‐2 cells overexpressing NME1‐FLAG under high‐glucose conditions with or without the ATM inhibitor KU‐60019 and OVA treatment. Scale bars = 50 µm. (I,J) Western blot analysis and quantification of DNA damage repair–related proteins, including p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, FLAG, and γ‐H2AX, in HK‐2 cells overexpressing NME1‐FLAG under high‐glucose conditions with or without KU‐60019 treatment. (K) Schematic model illustrating that OVA binds to NME1, suppresses its ubiquitination, and promotes BRAT1‐dependent ATM activation to facilitate DNA damage repair. Data are presented as the mean ± SD. Cell‐based Western blot experiments were performed with n = 3 independent replicates, except for the assessment of BRAT1 knockdown efficiency, which was performed with n = 4 independent replicates. Immunofluorescence experiments were performed with n = 5 independent replicates. Statistical significance was determined by one‐way or two‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, ** p < 0.01, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g004.webp?md5=c37851cfad984f8cc7ad3ccc9d5895be",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0008",
+            "label": "FIGURE 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "The derivative ACT004 retains NME1‐dependent renoprotective effects with reduced cytotoxicity. (A) Chemical structure and molecular weight of ACT004. (B,C) Western blot analysis and quantification of γ‐H2AX expression in HK‐2 cells treated with increasing concentrations of ACT004 (0–12.5 µM) under high‐glucose conditions. (D,E) Flow cytometric analysis and quantification of intracellular ROS levels in HK‐2 cells under different conditions, including NME1‐FLAG overexpression, high‐glucose stimulation, ACT004 treatment, and ATM inhibition by KU‐60019. (F,G) Western blot analysis and quantification of DNA damage repair–related proteins, including p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, FLAG, and γ‐H2AX, in HK‐2 cells under the same conditions. (H,I) Immunofluorescence staining and quantification of γ‐H2AX expression in HK‐2 cells under the same conditions. Scale bars = 50 µm. (J,K) Flow cytometric analysis and quantification of intracellular ROS levels in HK‐2 cells under different conditions, including high‐glucose stimulation, ACT004 treatment, and NME1 knockdown. (L,M) Western blot analysis and quantification of DNA damage repair–related proteins, including p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, NME1, and γ‐H2AX, in HK‐2 cells under the same conditions. (N,O) Immunofluorescence staining and quantification of γ‐H2AX expression in HK‐2 cells under the same conditions. Scale bars = 50 µm. (P,Q) Western blot analysis and quantification of DNA damage repair–related proteins, including p‐ATM, ATM, BRAT1, p‐CHK2, CHK2, p‐p53, p53, p21, FLAG, and γ‐H2AX, in HK‐2 cells overexpressing NME1‐FLAG under different conditions, including high‐glucose stimulation, ACT004 treatment, and BRAT1 knockdown. (R,S) Immunofluorescence staining and quantification of γ‐H2AX expression in HK‐2 cells under the same conditions. Scale bars = 50 µm. (T) RT‐qPCR analysis of NME1 mRNA expression in HK‐2 cells treated with ACT004 under high‐glucose conditions. Data are presented as the mean ± SD. Cell‐based Western blot and flow cytometry experiments were performed with n = 3 independent replicates, RT‐qPCR experiments were performed with n = 4 independent replicates, and immunofluorescence experiments were performed with n = 5 independent replicates. Statistical significance was determined by one‐way or two‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, * p < 0.05, ** p < 0.01, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g005.webp?md5=32f28a5b2f74e6ce3519172c547c3789",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78884-fig-0009",
+            "label": "FIGURE 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "Genetic silencing of NME1 abolishes the therapeutic effects of OVA and ACT004 in vivo. (A) Schematic diagram of the db/db diabetic kidney disease model and treatment regimen. (B,C) Body weight and fasting blood glucose levels of db/db mice during treatment with OVA or ACT004. (D–F) Serum creatinine, blood urea nitrogen (BUN), and urinary albumin‐to‐creatinine ratio (UACR) were measured after 8 weeks of treatment to assess renal function. (G) Histological analysis of kidney tissues using periodic acid–Schiff (PAS), hematoxylin and eosin (H&E), and Masson's trichrome staining to evaluate tubular and glomerular injury as well as interstitial fibrosis, together with immunohistochemical staining of fibronectin (FN), α‐SMA, KIM‐1, and NME1 expression. Scale bars = 50 µm. (H) Western blot analysis of fibrosis markers, tubular injury markers, and DNA damage repair–related proteins, including p‐ATM, ATM, FN, KIM‐1, α‐SMA, p21, NME1, and γ‐H2AX, in kidney tissues. (I) RT‐qPCR analysis of Nme1 mRNA expression in kidney tissues. (J–P) Quantification of Western blot results. Data are presented as the mean ± SD. n = 8 mice per group. Statistical significance was determined by one‐way ANOVA followed by Tukey's multiple‐comparison test. ns p > 0.05, * p < 0.05, ** p < 0.01, *** p < 0.001, and **** p < 0.0001 for the indicated comparisons.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-g007.webp?md5=ff375deae7a958fafaa024248118ab09",
+            "articleURL": "https://doi.org/10.1002/advs.78884",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al.. Ovatodiolide Suppresses NME1 Ubiquitination and Reactivates Tubular BRAT1-ATM DNA Repair Signaling in Diabetic Kidney Disease.. DOI: 10.1002/advs.78884. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78884-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78884-supitem-0001",
+            "label": "Supporting File: advs78884‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781815.1/ADVS-9999-e78884-s001.pdf?md5=b650af17cd8105bbc5fbade16657b71f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-25T10:36:53.675581+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Yihao Long; Yuxian Wang; Danping Tao; Xiaohong Zheng; Xiaoyang He; Huizhen Wang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-25T10:36:56Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-25T10:36:57Z",
+        "url": "https://openalex.org/W7236761413",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-25T10:36:57Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-25T10:36:57Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-26T10:36:57Z"
+        }
+      },
+      "selectionScore": {
+        "total": 35,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-25T10:37:12Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -253116,6 +253995,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-6b31b6c4ed81a120": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-0ffd5a9ab13e6188": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -254734,7 +255625,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-24T01:22:56Z",
+  "generatedAt": "2026-11-25T10:37:13Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -254968,18 +255859,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-25T10:31:23Z",
-    "updatedAt": "2026-11-25T10:31:30Z",
+    "updatedAt": "2026-11-25T10:37:22Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 39,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
