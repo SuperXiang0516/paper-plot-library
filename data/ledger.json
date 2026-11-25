@@ -348,12 +348,45 @@
     },
     "2026-11-25": {
       "newDOIs": [
+        "10.1002/2211-5463.70371",
         "10.1002/advs.78884",
-        "10.1371/journal.pbio.3003866"
+        "10.1126/sciadv.aef9541",
+        "10.1371/journal.pbio.3003866",
+        "10.7759/cureus.111824"
       ]
     }
   },
   "candidates": {
+    "10.1002/2211-5463.70371": {
+      "checkedAt": "2026-11-25T10:41:01Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1126/sciadv.aef9541": {
+      "checkedAt": "2026-11-25T10:40:41Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s43587-026-01258-0": {
+      "checkedAt": "2026-11-25T10:40:36Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cell.2026.09.014": {
+      "checkedAt": "2026-11-25T10:40:29Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7759/cureus.111824": {
+      "checkedAt": "2026-11-25T10:39:27Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1126/sciadv.aej1481": {
       "checkedAt": "2026-11-25T10:37:11Z",
       "status": "pending",
@@ -389,18 +422,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1038/s43587-026-01258-0": {
-      "checkedAt": "2026-11-24T01:22:32Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1016/j.cell.2026.09.014": {
-      "checkedAt": "2026-11-24T01:22:22Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1038/s41746-026-02913-x": {
       "checkedAt": "2026-11-24T01:22:12Z",
@@ -7710,61 +7731,6 @@
         "updatedAt": "2026-10-16T06:51:32Z"
       }
     },
-    "10.7759/cureus.111824": {
-      "checkedAt": "2026-10-16T06:51:27Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7759/cureus.111824",
-        "metadataHash": "0b9b87e0dd599ba8cabf2c4854fbfe72ce55717b024f17d260c13a9b3d0349db",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/PMC13317931.1.xml?md5=501481eb0e66ab60a3f18b52929e6ee5",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13317931-6c0428a16b357766.jpg",
-              "assetSHA256": "6c0428a16b3577668f65f87390602c45c7c33555b45474f7dc3526e05563c0d1",
-              "license": "CC BY",
-              "id": "FIG1",
-              "sha256": "6c0428a16b3577668f65f87390602c45c7c33555b45474f7dc3526e05563c0d1",
-              "height": 386,
-              "label": "Figure 1",
-              "width": 750,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i01.jpg?md5=ac01713a958b1a3dfbcb990a2d0da7fb",
-              "captionHash": "a4d515b71c7705b9aa65fe12652a7fb76d91487a8ec2fbb2d944162974800bbc"
-            },
-            {
-              "asset": "assets/pmc13317931-19c3ef1b964b8f1d.jpg",
-              "assetSHA256": "19c3ef1b964b8f1dc46864064c4a0c9204c0981eb2e3121eed32dc265c334a79",
-              "license": "CC BY",
-              "id": "FIG5",
-              "sha256": "19c3ef1b964b8f1dc46864064c4a0c9204c0981eb2e3121eed32dc265c334a79",
-              "height": 528,
-              "label": "Figure 5",
-              "width": 750,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i05.jpg?md5=514a888cedb751963db08cf0b5929e5e",
-              "captionHash": "7b0fc9f7b3dd5359deae10f63e77b9b3b91595cfa491536bf6e91b2c9371b41e"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-e15c523eefe9a8ea",
-          "doi": "10.7759/cureus.111824",
-          "paper": "Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.",
-          "journal": "Cureus",
-          "date": "2026-06-30",
-          "year": "2026",
-          "pmcid": "PMC13317931",
-          "pmid": "42382379",
-          "paperURL": "https://doi.org/10.7759/cureus.111824"
-        },
-        "updatedAt": "2026-10-16T06:51:27Z"
-      }
-    },
     "10.3389/fnut.2026.1858850": {
       "checkedAt": "2026-10-16T06:51:16Z",
       "status": "pending",
@@ -10837,24 +10803,19 @@
     "maxBatches": 36,
     "status": "active",
     "uncertainAiAttempts": 0,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "maxSeconds": 2700,
     "maxAiAttempts": 165,
     "uncertainRequests": 0,
     "date": "2026-11-25",
-    "requests": 39,
+    "requests": 88,
     "startedAt": "2026-11-25T10:31:23Z",
-    "updatedAt": "2026-11-25T10:37:35Z",
+    "updatedAt": "2026-11-25T10:41:20Z",
     "endReason": "",
-    "elapsedSeconds": 373,
+    "elapsedSeconds": 597,
     "version": 1,
     "maxRequests": 1800,
     "batchCount": 2,
-    "dailyNewCount": 2,
-    "inFlight": {
-      "startedAt": "2026-11-25T10:37:35Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "dailyNewCount": 5
   }
 }

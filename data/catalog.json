@@ -188808,6 +188808,1167 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-e15c523eefe9a8ea",
+      "doi": "10.7759/cureus.111824",
+      "paper": "Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.",
+      "journal": "Cureus",
+      "date": "2026-06-30",
+      "year": "2026",
+      "pmcid": "PMC13317931",
+      "pmid": "42382379",
+      "paperURL": "https://doi.org/10.7759/cureus.111824",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2168-8184",
+      "eissn": "2168-8184",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "8816bbff132ca303203d4f0c4f929aeac956c8629b0d5acca2c5b4b660f34cab"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/PMC13317931.1.xml?md5=501481eb0e66ab60a3f18b52929e6ee5",
+        "figures": [
+          {
+            "id": "FIG1",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Data ingestion and automatic mark detectionThe GSE190102 raw archive is retrieved, its bigWig entries are scanned for histone-mark tokens, and the dominant mark is selected; a repressive-mark caveat is raised when no active mark is present.GEO: Gene Expression Omnibus, H3K27me3: histone H3 lysine 27 trimethylationCredits to Ngo CheungCreated using PowerPoint; no AI used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i01.jpg?md5=ac01713a958b1a3dfbcb990a2d0da7fb",
+            "articleURL": "https://doi.org/10.7759/cureus.111824",
+            "asset": "assets/pmc13317931-6c0428a16b357766.jpg",
+            "sha256": "6c0428a16b3577668f65f87390602c45c7c33555b45474f7dc3526e05563c0d1",
+            "width": 750,
+            "height": 386,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.. DOI: 10.7759/cureus.111824. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6c0428a16b3577668f65f87390602c45c7c33555b45474f7dc3526e05563c0d1",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "FIG2",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Consensus regions, quantification, and differential/trajectory modelingTop-signal 1 kb bins are merged into a consensus set; signal is quantified per sample, log-transformed and quantile-normalized, and then tested between 24-month and 3-month neurons and clustered across 3, 12, and 24 months.H3K27me3: histone H3 lysine 27 trimethylation, kb: kilobase, M: monthsCredits to Ngo CheungCreated using PowerPoint; no AI used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i02.jpg?md5=945a334cc103291d648d2c3f658e1655",
+            "articleURL": "https://doi.org/10.7759/cureus.111824",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.. DOI: 10.7759/cureus.111824. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "FIG3",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "ABC-inspired region-gene assignmentFor each protein-coding transcription start site from GENCODE vM25, region “activity” based on 24-month H3K27me3 signal is multiplied by a power-law contact term within a 5 Mb window; normalized ABC scores above threshold yield direction-aware region-gene links.ABC: Activity-by-Contact, H3K27me3: histone H3 lysine 27 trimethylation, Mb: megabase, M: months, TSS: transcription start siteCredits to Ngo CheungCreated using PowerPoint; no AI used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i03.jpg?md5=f08774aa633493eeb79be74838192c93",
+            "articleURL": "https://doi.org/10.7759/cureus.111824",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.. DOI: 10.7759/cureus.111824. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "FIG4",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Downstream functional interpretationFiltered, direction-split target genes feed parallel modules: Enrichr over-representation analysis for all targets, gain targets, and loss targets; STRING protein-protein interaction hub detection; preranked gene set enrichment analysis; theme categorization; and optional RNA sequencing concordance, consolidated into an auto-summary.GAIN: H3K27me3 gain, GSEA: gene set enrichment analysis, H3K27me3: histone H3 lysine 27 trimethylation, LOSS: H3K27me3 loss, ORA: over-representation analysis, PPI: protein-protein interaction, RNA-seq: ribonucleic acid sequencing, STRING: Search Tool for the Retrieval of Interacting Genes/ProteinsCredits to Ngo CheungCreated using PowerPoint; no AI used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i04.jpg?md5=58f3f2825d503f052a5679de830d352a",
+            "articleURL": "https://doi.org/10.7759/cureus.111824",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.. DOI: 10.7759/cureus.111824. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "FIG5",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Proposed mechanism by which age-associated H3K27me3 redistribution may reduce neuronal precision(a) Rather than a uniform genome-wide decline, the aged 24-month neuronal Polycomb landscape is reorganized: repressive H3K27me3 is depleted at developmental and regulatory loci yet focally gained at neuronal-identity and synaptic loci. (b) Clustered protocadherins act as a combinatorial cell-surface “barcode” that enables single-neuron self/non-self recognition and dendritic self-avoidance. Focal H3K27me3 gain over the protocadherin clusters is predicted to compress this code, narrowing isoform diversity so that neighboring neurites may show impaired discrimination and weakened self-avoidance. (c) A coordinated adhesion-scaffold-vesicle-receptor module is simultaneously repressed: gain of H3K27me3 is predicted to dampen trans-synaptic adhesion through Nlgn3, postsynaptic scaffolds through PSD-95/PSD-93 and Cask, presynaptic vesicle mobilization through Syn1, and neuromodulatory receptors through Chrm2, Chrna5, and Chrnb4, weakening the molecular infrastructure that sustains mature synapses. (d) The opposing gain and loss arms are hypothesized to converge on a progressive loss of molecular precision, impaired synaptic maintenance, and reduced plasticity, providing a candidate epigenetic route from Polycomb redistribution to circuit-level vulnerability in the aging brain. All panels are schematic and depict hypotheses, not experimental measurements.Cask: calcium/calmodulin-dependent serine protein kinase, Chrm2: cholinergic receptor muscarinic 2, Chrna5: cholinergic receptor nicotinic alpha 5 subunit, Chrnb4: cholinergic receptor nicotinic beta 4 subunit, H3K27me3: histone H3 lysine 27 trimethylation, Nlgn3: neuroligin 3, Pcdh: protocadherin, PSD-95: postsynaptic density protein 95, PSD-93: postsynaptic density protein 93, Syn1: synapsin 1Credits to Ngo CheungCreated using PowerPoint; no AI used",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13317931.1/cureus-0018-00000111824-i05.jpg?md5=514a888cedb751963db08cf0b5929e5e",
+            "articleURL": "https://doi.org/10.7759/cureus.111824",
+            "asset": "assets/pmc13317931-19c3ef1b964b8f1d.jpg",
+            "sha256": "19c3ef1b964b8f1dc46864064c4a0c9204c0981eb2e3121eed32dc265c334a79",
+            "width": 750,
+            "height": 528,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "attribution": "Ngo Cheung. Focal Polycomb-Mediated Repression of Neuronal Identity and Synaptic Maintenance Genes in Aging Neurons.. DOI: 10.7759/cureus.111824. Copyright holder: Cheung et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "19c3ef1b964b8f1dc46864064c4a0c9204c0981eb2e3121eed32dc265c334a79",
+            "checkpointAssetReused": true
+          }
+        ],
+        "supplements": [],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-25T10:39:23.290912+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+        "authorCredit": "Ngo Cheung"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "",
+        "jcr": "",
+        "cas": "医学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-25T10:39:27Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-25T10:39:27Z",
+        "url": "https://openalex.org/W7166656170",
+        "cited_by_count": 5,
+        "fwci": 5.5937,
+        "citation_normalized_percentile": 0.95621174,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-25T10:39:27Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-25T10:39:27Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-26T10:39:27Z"
+        }
+      },
+      "selectionScore": {
+        "total": 42.7810587,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 4.7810587,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-25T10:41:02Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-0ca961032f680e10",
+      "paper": "TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.",
+      "doi": "10.1126/sciadv.aef9541",
+      "journal": "Science advances",
+      "date": "2026-11-18",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1126/sciadv.aef9541",
+      "pmcid": "PMC13781095",
+      "pmid": "43050520",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2375-2548",
+      "eissn": "2375-2548",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-25",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "metabolic_disease"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "e2c25180f2ca53aa37051101f4021c4db3a0dcd8733f1af41799683a337f3c3d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/PMC13781095.1.xml?md5=0b8fc266b0ba65edb3370761d1581658",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Hepatic TLR5 expression is increased in advanced MASH fibrosis and associated with adverse patient outcomes.(A) Quantitative PCR of TLR5 from whole liver biopsy tissue, grouped by histological stage (ctrl, n = 5; steatosis, n = 9; MASH F1 and F2, n = 5; and MASH F3 and F4, n = 5). (B) Representative images of immunofluorescence of human liver biopsy tissue (n = 12) showing TLR5 (green), albumin (gray), α-SMA (red), Hoescht (blue) in control (top row), and MASH with F3 fibrosis (bottom row). Scale bar, 200 μm. (C) NanoString CosMX analysis of explant liver tissue from MASH advanced fibrosis. Red dots represent TLR5-expressing cells. (D) Zoomed representative images of immunofluorescence staining of human liver biopsy tissue showing TLR5 (green) and α-SMA (red) in MASH F3 (n = 12; scale bar, 100 μm). (E and F) Kaplan-Meier curves for liver-related events and all-cause mortality stratified by hepatic TLR5 expression in the SteatoSITE cohort. The cutpoints for TLR5-associated liver-related outcome and all-cause mortality were 4.53 and 4.66 normalized counts per million (CPM), respectively. Error bars represent means ± SD; P values determined by Kruskal-Wallis test with Dunn’s multiple comparison test. Kaplan-Meier estimator curves of all-cause mortality were compared by regular log-rank testing with weights = 1. Survival curves were adjusted for age and sex. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f1.webp?md5=15432089c744fc934ea34dfe39895760",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "assets/pmc13781095-9ae1589bf6d4b11f.webp",
+            "sha256": "9ae1589bf6d4b11f4d0040d64eabf717c852958077bd4069c7608f1850a6eee1",
+            "width": 1600,
+            "height": 1973,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "9ae1589bf6d4b11f4d0040d64eabf717c852958077bd4069c7608f1850a6eee1",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Circulating and microbial markers of TLR5-flagellin signaling in MASLD across fibrosis stages and following metabolic surgery.(A) Plasma flagellin concentration in 61 participants by histological stage (control, n = 7; steatosis, n = 10; MASH F1 and F2, n = 18; MASH F3 and F4, n = 26). (B) Plasma LPS concentration in 58 participants by histological stage (control, n = 7; steatosis, n = 16; MASH F1 and F2, n = 16; MASH F3 and F4, n = 19). (C) Stool flagellin gene load expressed as FliC gene reads as percentage of total gene reads per sample extracted from stool DNA isolated from 52 participants by histological stage (control, n = 6; steatosis, n = 12; MASH F1 and F2, n = 13; MASH F3 and F4, n = 21). (D) Paired changes in plasma flagellin concentration and (E) paired changes in plasma LPS concentration following metabolic surgery in 36 biopsy-proven MASLD participants. Error bars represent means ± SD. Statistical comparisons were performed using Wilcoxon signed-rank test or [analysis of variance (ANOVA)] with Tukey’s multiple comparisons test. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f2.webp?md5=87d057f03eb57f7756ed5f51686585d5",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "TLR5 inhibition reduces flagellin- and lipid-mediated IL-8 production in primary hepatocytes but does not affect lipid accumulation, expression of proteins associated with fatty acid oxidation, or endoplasmic reticulum stress.Primary hepatocytes treated with OA and PA (OA PA), flagellin, or combination (OA PA + flagellin) for 24 hours (A) in the presence or absence of 1 μM TH1020 (TLR5 inhibitor), Pab hTLR4 (5 μg/ml; TLR4 inhibitor), and Pab hTLR2 (5 μg/ml; TLR2 inhibitor) and (B to F) in the presence or absence of 1 μM TH1020. (A) IL-8 concentration (n = 3 to 4 technical replicates per condition). (B) Representative images of lipid deposition quantified using BODIPY 493/503 staining (green), nuclei stained with 4′,6-diamidino-2-phenylindole (DAPI) (blue) via confocal microscopy (scale bars, 50 μm), and BODIPY quantified according to relative intensity/DAPI. Experiments were performed in triplicates for each condition. [(C) to (E)] Expression of fatty acid oxidation enzymes: (C) very long chain–specific acyl-CoA dehydrogenase (ACADVL), (D) medium-chain specific acyl-CoA dehydrogenase (ACADM), and (E) long-chain 3-hydroxyl-CoA dehydrogenase (HADHA). (F) DDIT3 concentration (n = 2 independent experiments). Error bars represent means ± SD. Statistical comparisons were performed using two-tailed Student’s t tests or (ANOVA) with Tukey’s multiple comparisons test. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f3.webp?md5=ff2dc51c7b67eabbde05cb2320265f57",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "TLR5-mediated IL-8 production requires fatty acid internalization into hepatocytes and signals via MyD88.(A) HEK-Blue hTLR5 cells treated with OA and PA (OA PA) and flagellin for 24 hours. TLR5 ligand activity assessed by optical density measurements of SEAP production (n = 2 independent experiments). (B) Conditioned media of HepG2 cells treated with OA PA for 24 hours were added to untreated HepG2 cells in the presence or absence of 1 μM TH1020 (TLR5 inhibitor) to determine IL-8 concentrations (n = 3 independent experiments) [Created in BioRender. Li, W. (2026) https://BioRender.com/rmamhz4]. (C) Primary hepatocytes treated with OA PA for 24 hours in the presence or absence of fatty acid transporter protein inhibitor cocktail [10 μM obeticholic acid (FATP5 inhibitor), 80 μM SML2148 (CD36 inhibitor), and 50 μM Lipofermata (FATP2 inhibitor)]. Representative images of lipid deposition quantified using BODIPY 493/503 staining (green) and nuclei stained with DAPI (blue) via confocal microscopy (scale bars, 50 μm). Experiments were performed in technical triplicates for each condition. (D to F) IL-8 concentrations in (D) Huh7 cells treated with OA PA for 24 hours in the presence or absence of 16 μM SML2148, 10 μM Lipofermata, and 2 μM obeticholic acid and combination of 16 μM SML2148, 10 μM Lipofermata, and 2 μM obeticholic acid in a cocktail and 1 μM TH1020 (TLR5 inhibitor) with 10 μM Lipofermata (n = 3 independent experiments). (E) Primary hepatocytes treated with OA PA for 24 hours in the presence or absence of 40 μM Pepinh-TRIF (TRIF inhibitor), 40 μM TJ-M2010-5 (MyD88 inhibitor) (n = 2 independent experiments) and (F) HepG2 cells treated with OA PA for 24 hours in the presence or absence of 5 μM (5Z)-7-Oxozeaenol (TAK1 inhibitor) (n = 3 independent experiments). (G) Schematic diagram depicting TLR5 signaling in hepatocytes [Created in BioRender. Li, W. (2026) https://BioRender.com/zr89gux]. Error bars represent means ± SD. Statistical comparisons were performed using two-tailed Student’s t tests or (ANOVA) with Tukey’s multiple comparisons test. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f4.webp?md5=e5bdc1b091a8a1da69089475eb1a3d6e",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "assets/pmc13781095-79ac13730580600e.webp",
+            "sha256": "79ac13730580600e9fc0b5dfe88ca89f64f0e088964fb231f272d71ada944322",
+            "width": 1600,
+            "height": 1944,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "79ac13730580600e9fc0b5dfe88ca89f64f0e088964fb231f272d71ada944322",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "TLR5 inhibition on hepatocytes abrogates hepatic stellate cell activation.(A) Normalized RNA counts for TLR5 and TLR4 extracted from primary human hepatic stellate cells isolated from non-fibrotic, non-steatotic human livers (n = 19). (B) TGFβ1 concentration (C) Pro-collagen 1α1 concentration in LX2 cells treated with OA and PA (OA PA) and flagellin for 24 hours (n = 3 independent experiments). (D) TGFβ1 concentration and (E) pro-collagen 1α1 concentration in LX2 cells treated with conditioned media from HepG2 cells treated with OA PA and flagellin in the presence or absence of 1 μM TH1020 (TLR5 inhibitor) (n = 3 independent experiments) [Created in BioRender. Li, W. (2026) https://BioRender.com/rbjdrz0]. Error bars represent means ± SD. Statistical comparisons were performed using two-tailed Student’s t tests or (ANOVA) with Tukey’s multiple comparisons test. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f5.webp?md5=b17392ad4c6077f8d7be181789d0a969",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "TLR5 inhibition reduces collagen deposition in human precision-cut liver slice model.Schematic representation of precision-cut liver slices (PCLS) setup [Created in BioRender. Govaere, O. (2026) https://BioRender.com/8bdznxl]. PCLSs were cultured for 16 hours in the presence or absence of 1 μM TH1020 (TLR5 inhibitor) and treated with bovine serum albumin (BSA) or OA and PA (OA PA) for 24 hours (PCLS derived from three donors; further details of donors in table S4). Representative immunohistochemistry images H&E and collagen III and α-SMA quantification (% area) of PCLS shown. Technical replicates (six regions of interest per condition for each donor, resulting in 18 regions of interest in total), while statistical analyses were performed using donor-level biological replicates (n = 3). Scale bars, 100 and 50 μM. Error bars represent means ± SD. Statistical comparisons were performed using (ANOVA) with Tukey’s multiple comparisons test. Only statistically significant comparisons (P < 0.05) are highlighted.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541-f6.webp?md5=68d8ce2565a295aef5d29f96787b3781",
+            "articleURL": "https://doi.org/10.1126/sciadv.aef9541",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al.. TLR5 drives metabolic dysfunction-associated steatohepatitis through lipid- and flagellin-induced hepatocyte injury signaling.. DOI: 10.1126/sciadv.aef9541. Copyright holder: The Authors. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supplement-1",
+            "label": "Figs. S1 to S10Tables S1 to S7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13781095.1/sciadv.aef9541_sm.pdf?md5=6de11986398d15b29e02fe9c7aabd644",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "failed",
+            "bytes": 0,
+            "format": "",
+            "privatePath": "",
+            "error": "FetchError"
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-25T10:40:37.914883+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wenhao Li; Niannian Wang; Dania El Abyad; Seray Anak; Raju Kumar; Iris Ginés; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "13.9",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-25T10:40:41Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-25T10:40:41Z",
+        "url": "https://openalex.org/W7236011519",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-25T10:40:41Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-25T10:40:41Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-26T10:40:41Z"
+        }
+      },
+      "selectionScore": {
+        "total": 50,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-25T10:41:03Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-515cfd93c63903b6",
+      "paper": "DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.",
+      "doi": "10.1002/2211-5463.70371",
+      "journal": "FEBS open bio",
+      "date": "2026-11-18",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/2211-5463.70371",
+      "pmcid": "PMC13779432",
+      "pmid": "43049275",
+      "publicationTypes": [
+        "methods-article",
+        "Journal Article"
+      ],
+      "issn": "2211-5463",
+      "eissn": "2211-5463",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-25",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "long_read",
+          "short_read",
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f15d4dd814dba30abace4dce472792782efbbee8a77335d9b6a8f163bfc70e36"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/PMC13779432.1.xml?md5=65ab8dd57d034ebd0fe09fa76e63940e",
+        "figures": [
+          {
+            "id": "feb470371-fig-0001",
+            "label": "Fig. 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Overview of the sequencing data analysis pipeline implemented in DeGenRESOLVE. Abbreviations: QC, quality control; FASTA, sequence file format; FASTQ, sequence file format containing per‐base quality scores; SAM, Sequence Alignment/Map; BAM, Binary Alignment/Map; BAI, BAM index file; VCF, Variant Call Format; HTML, HyperText Markup Language; PDF, Portable Document Format; TXT, plain‐text file; GZ, gzip‐compressed file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g005.webp?md5=0d0db7ca1eecd007ca565905991456cc",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0002",
+            "label": "Fig. 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Algorithmic flowchart of the DeGenRESOLVE consensus refinement engine. Abbreviations: FASTA, FASTA sequence format; BAM, Binary Alignment/Map; VCF, Variant Call Format; IDV, maximum number of reads supporting an indel; DP, read depth; IMF, maximum fraction of reads supporting an indel (IDV/DP); ORF, open reading frame; bp, base pairs; H/N, hemagglutinin and neuraminidase.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g003.webp?md5=075257f87e6ba1dfff016ef66e47391c",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0003",
+            "label": "Fig. 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Graphical user interface of DeGenRESOLVE: Analysis tab. Abbreviations: QC, quality control; FASTA, nucleotide sequence format; FASTQ, sequence‐read format containing per‐base quality scores; GZ, gzip‐compressed file.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g002.webp?md5=b83d79fab034b3d6f26baec55b95db95",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0004",
+            "label": "Fig. 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Configuration tab of DeGenRESOLVE showing user‐configurable parameters. Abbreviations: QC, quality control; BAM, Binary Alignment/Map; IMF, maximum fraction of reads supporting an indel; HA, hemagglutinin; NA, neuraminidase; PB1, polymerase basic protein 1; PB2, polymerase basic protein 2; PA, polymerase acidic protein; NP, nucleoprotein; MP, matrix protein; NS, non‐structural protein; sup, super‐accuracy; ONT, Oxford Nanopore Technologies; N50, read length at which reads of that length or longer contain half of all sequenced bases; CPU, central processing unit.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g009.webp?md5=c46b87b0b266a92d73033efe6ec758f1",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0005",
+            "label": "Fig. 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "The Results tab of the DeGenRESOLVE desktop application, shown after analysis of the example dataset. The sidebar lists the barcodes detected in the output directory. The toolbar provides one‐click access to the raw‐read and alignment quality reports, the alignment file, the consensus sequence, the diagnostic log and the output folder. (A) Per‐barcode analysis report showing raw‐read quality metrics (NanoPlot) and mapping‐quality metrics (Qualimap). (B) The diagnostic log viewer for Barcode01, with the per‐position decision table above the run parameters and summary statistics. Abbreviations: QC, quality control; N50, read length at which reads of that length or longer contain half of all sequenced bases; STD/Std, standard deviation; bp, base pairs; H9, hemagglutinin subtype 9; N2, neuraminidase subtype 2; Pos, position; INS, insertions; DEL, deletions; AF, allele frequency; Fwd/Rev, reads on the forward/reverse strand; HP, homopolymer.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g007.webp?md5=60d819508d600c17434c5249faa5fb27",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0006",
+            "label": "Fig. 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Comparison of consensus refinement outcomes generated using BCFtools ploidy settings of 1 and 2 versus DeGenRESOLVE at representative genomic loci of Barcode01. Rows are the reference, the standard pipeline at ploidy = 1, the standard pipeline at ploidy = 2, and the DeGenRESOLVE‐curated consensus. (A) N2 segment at Position 1390: ploidy = 2 assigns W (A/T) and ploidy = 1 forces A; DeGenRESOLVE resolves to A on a 72% to 27% margin under the dominant‐consensus rule. (B) NP segment at Position 525: ploidy = 2 assigns Y (C/T) and ploidy = 1 forces C; DeGenRESOLVE retains Y, because the two alleles differ by less than one percentage point and the margin does not reach the degeneracy threshold. (C) H9 segment, Positions 272–312: ploidy = 2 assigns an ambiguity code at seven positions in this window, of which DeGenRESOLVE resolves five (283, 290, 291, 295, and 300) and retains two (277 and 293). All three panels are shown under the hac profile used for the primary analysis. Abbreviations: N2, neuraminidase subtype 2; NP, nucleoprotein; H9, hemagglutinin subtype 9; IUPAC, International Union of Pure and Applied Chemistry; hac, high‐accuracy profile.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g008.webp?md5=d7888715c64c810c72480d9fd1a79b34",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "assets/pmc13779432-80f716feae0371f7.webp",
+            "sha256": "80f716feae0371f7dc4097c7f8f901605a0e0148287fe99f1f5e37f656ec52ec",
+            "width": 1064,
+            "height": 708,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "80f716feae0371f7dc4097c7f8f901605a0e0148287fe99f1f5e37f656ec52ec",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "feb470371-fig-0007",
+            "label": "Fig. 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "IGV pileup visualization of representative loci from representative sample Barcode01. (A) N2 segment at genomic position 1390. (B) NP segment at genomic position 525. Insertions are counted at the base they follow (five at NP:525, panel B). Abbreviations: IGV, Integrative Genomics Viewer; N2, neuraminidase subtype 2; NP, nucleoprotein; DEL, deletions; INS, insertions; bp, base pairs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g001.webp?md5=f4688dde3a28e9a92b21a2b973ee10df",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "feb470371-fig-0008",
+            "label": "Fig. 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Barcode01 ambiguity resolution summary. (A) Mean sequencing coverage depth across influenza A genome segments. (B) Pie chart exhibiting overall ambiguity resolution rate. (C) Bar plot demonstrating segment‐wise ambiguity resolution rate. Abbreviations: HA, hemagglutinin; NA, neuraminidase; PB2, polymerase basic protein 2; PB1, polymerase basic protein 1; PA, polymerase acidic protein; MP, matrix protein; NP, nucleoprotein; NS, non‐structural protein; IUPAC, International Union of Pure and Applied Chemistry; hac, high‐accuracy profile.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-g006.webp?md5=14f32a5e0f9bb84676410ecc58956a5f",
+            "articleURL": "https://doi.org/10.1002/2211-5463.70371",
+            "asset": "assets/pmc13779432-0695004626359e0a.webp",
+            "sha256": "0695004626359e0a0d5a80a31873983ac667ed6ea1e798b3ea3664f2af91e5c7",
+            "width": 1064,
+            "height": 1005,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman. DeGenRESOLVE: An offline GUI-based automated nanopore sequencing pipeline for viruses with custom rule-based indel and degeneracy resolution.. DOI: 10.1002/2211-5463.70371. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "0695004626359e0a0d5a80a31873983ac667ed6ea1e798b3ea3664f2af91e5c7",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "feb470371-supitem-0001",
+            "label": "Fig. S1. Principal analytical outputs generated by DeGenRESOLVE, illustrated using Barcode01. Fig. S2. Bar plot showing total ambiguities processed pe",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-s002.docx?md5=f8961e0ef997f0c33044f6827720d629",
+            "license": "CC BY",
+            "sha256": "4a6ff958827d8e8edacf7f106fa915f9f407b5460af4c44161364835610320da",
+            "status": "downloaded_private",
+            "bytes": 2836561,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "feb470371-supitem-0002",
+            "label": "Table S1. Validation isolates of BioProject PRJNA1173216 and their outcome (spreadsheet). Table S2. Known‐mixture experiment (spreadsheet). Table S3. ",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/FEB4-9999-0-s001.xlsx?md5=70f5c3d9a30ce55da3c78edea3b8ee50",
+            "license": "CC BY",
+            "sha256": "1b198199eb8482ad6e0c13eed314c99b1c36b2319beb4115a15f2fbca25ad847",
+            "status": "downloaded_private",
+            "bytes": 92562,
+            "format": "xlsx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-25T10:40:53.984138+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13779432.1/PMC13779432.1.xml?md5=65ab8dd57d034ebd0fe09fa76e63940e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shoaib Saikat; Mohammad Enayet Hossain; Jenifar Quaiyum Ami; Rehana Parvin; Mohammed Ziaur Rahman"
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer",
+        "commit": "b50a3d7bc57f5125757a73966bea09625a014cd9",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "src/degenresolve/core/config.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/src/degenresolve/core/config.py",
+            "sha256": "0e7fb25147634abb9f89b6c50a6776201416f2a374636cb342846ed46a72784a",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "degeneracy_threshold",
+                "line": 91,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/degenresolve/gui/tabs/analysis_tab.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/src/degenresolve/gui/tabs/analysis_tab.py",
+            "sha256": "c729105a12eb3a39e040b17f2f67336fc9856762e503aef3ac0324dcaf2077ba",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "accent",
+                "line": 37,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "error",
+                "line": 170,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "border",
+                "line": 294,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "green",
+                "line": 302,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "bg",
+                "line": 480,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "placeholder",
+                "line": 421,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "src/degenresolve/gui/tabs/configuration_tab.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/src/degenresolve/gui/tabs/configuration_tab.py",
+            "sha256": "b9bee3c1073b3d64ec0f8d39bfd2219ef3fcc073f9146cec01f9876568e61870",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "barcode",
+                "line": 51,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "signature",
+                "line": 52,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indel_rules",
+                "line": 851,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "_indel_rules_split",
+                "line": 852,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "tier",
+                "line": 262,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "distinct",
+                "line": 320,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "indel_custom_percentage",
+                "line": 856,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "custom_percentage",
+                "line": 856,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "model",
+                "line": 322,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "tests/test_config.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/tests/test_config.py",
+            "sha256": "5bf2e5e65fe767b83d236f07ac14091d863214c93c8676548c791cbd82713c19",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "min_coverage",
+                "line": 12,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "degeneracy_threshold",
+                "line": 13,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "filter_mode",
+                "line": 14,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "consensus_editor.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/consensus_editor.py",
+            "sha256": "8e54c53d19a51fffe374674be600fc4dbbb2fb06a180cafd695145564ba77592",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "degenresolve.py",
+            "url": "https://github.com/Shoaib-Saikat/DeGenRESOLVE-ONT-Sequencing-Data-Analyzer/blob/b50a3d7bc57f5125757a73966bea09625a014cd9/degenresolve.py",
+            "sha256": "595b7ed2f0d7e755be822c9970ea7aad156fdae6aa3a245268664287eacddc86",
+            "language": "Python",
+            "inputs": [],
+            "outputs": [],
+            "fields": [],
+            "evidence": [],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": true
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.7",
+        "jcr": "Q3",
+        "cas": "生物学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-25T10:41:01Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-25T10:41:01Z",
+        "url": "https://openalex.org/W7236484005",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-25T10:41:01Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-25T10:41:01Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-26T10:41:01Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 12,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-25T10:41:04Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "DeGenRESOLVE:面向病毒的离线图形界面自动化纳米孔测序流程,含自定义规则式插入缺失与简并解析",
+        "summary_zh": "该文介绍 DeGenRESOLVE,一个针对已有参考基因组的扩增子式 Oxford Nanopore Technologies(ONT)病毒重测序数据的离线分析流程,不进行从头组装。流程在图形界面中整合现有工具,并用基于规则的算法对变异检出器报告为模糊的位点以及其提出的插入缺失按用户定义标准进行裁决,同时记录每次决策及其统计。摘要报告:在八个甲型流感分离株(以 Illumina 衍生基因组为参考)上,共识序列与各分离株自身基因组在 99.97% 位点一致,37 个已解析位点中 36 个一致;以近缘基因组为参考时 99.98% 的调用位点一致,参考序列分歧增大时一致性下降;血凝素裂解位点长度与参考不同时,插入缺失裁决在五个分离株中的四个重现了该位点,而无裁决时为零;已知混合样本中仅当次要等位基因超过约 40% 时才保留模糊编码,因此精炼序列是优势共识而非样本内变异的记录。",
+        "learning_points": [
+          "了解面向扩增子式 ONT 病毒重测序、依赖参考基因组的离线图形界面流程定位,明确其不做从头组装。",
+          "认识规则式共识精炼引擎:对变异检出器报告的模糊位点与插入缺失应用用户定义阈值(如 IDV、DP、IMF),并记录决策与统计。",
+          "从流程图与界面图注了解流程环节与可配置参数的组织方式(QC、FASTA/FASTQ、SAM/BAM/BAI、VCF、HTML/PDF/TXT/GZ 等文件类型)。",
+          "注意共识输出的解释边界:精炼序列为优势共识,模糊编码仅在次要等位基因超过约 40% 时保留,不记录样本内变异。",
+          "关注参考基因组近缘程度对一致性的影响:近缘参考下一致性高,参考分歧增大时一致性下降。",
+          "理解可审计与可重复性的设计意图:记录每次裁决决策,便于离线环境下的复核。",
+          "区分论文报告结果与本地验证:作者代码未运行,静态检查不构成复现验证。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不是复现验证,不能宣称已复现或与原文一致。",
+          "输入数据尺度、图号与代码/数据的对应关系未明示,相关细节未知。",
+          "摘要中的一致性数值(如 99.97%、99.98%、36/37、4/5、约 40%)为论文报告,未在本地独立核验。",
+          "流程依赖已有参考基因组且不进行从头组装,参考分歧增大时一致性下降。",
+          "输出为优势共识,不保留样本内变异信息,低比例次要等位基因可能不被表示为模糊编码。",
+          "图形界面与离线特性仅由图注与摘要描述,实际可用性与安装要求未在本地验证。",
+          "期刊指标、许可与复现结果未在证据中提供,均属未知。",
+          "证据中的代码静态观察条目未给出具体观察内容,无法据此推断实现细节。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "figure-3",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-25T10:41:10Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "70e770c31bc3d524beea98393008e8b44ef8b4063dfa950cd2d74f279db1ae49",
+        "summary_fingerprint": "d8e5200b4e278d1c19ca8fea8be3a7af0c1a0c5e74c35626f76b8727ee9d7c09",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -254007,6 +255168,24 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-e15c523eefe9a8ea": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-0ca961032f680e10": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-515cfd93c63903b6": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -255625,7 +256804,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-25T10:37:13Z",
+  "generatedAt": "2026-11-25T10:41:11Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -255859,18 +257038,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-25T10:31:23Z",
-    "updatedAt": "2026-11-25T10:37:35Z",
+    "updatedAt": "2026-11-25T10:41:20Z",
     "batchCount": 2,
-    "requests": 39,
-    "aiAttempts": 0,
+    "requests": 88,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
