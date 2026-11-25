@@ -10844,12 +10844,17 @@
     "date": "2026-11-25",
     "requests": 39,
     "startedAt": "2026-11-25T10:31:23Z",
-    "updatedAt": "2026-11-25T10:37:22Z",
+    "updatedAt": "2026-11-25T10:37:35Z",
     "endReason": "",
-    "elapsedSeconds": 360,
+    "elapsedSeconds": 373,
     "version": 1,
     "maxRequests": 1800,
-    "batchCount": 1,
-    "dailyNewCount": 2
+    "batchCount": 2,
+    "dailyNewCount": 2,
+    "inFlight": {
+      "startedAt": "2026-11-25T10:37:35Z",
+      "reservedRequests": 150,
+      "reservedAiAttempts": 15
+    }
   }
 }
