@@ -192261,6 +192261,269 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-adda9e046d4d9349",
+      "paper": "In Silico Single-Cell Transcriptomic Analysis Reveals Senescence-Associated Programs' Progress Along the Normal-Adenoma-Carcinoma Sequence in Colorectal Cancer.",
+      "doi": "10.3390/ijms27219799",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-10-31",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3390/ijms27219799",
+      "pmcid": "PMC13762944",
+      "pmid": "43028049",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1422-0067",
+      "eissn": "1422-0067",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-26",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ce82505e99615a054534e2d78545d89c3a8fefbaa01e728365d53f8b7e6c9b40"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/PMC13762944.1.xml?md5=36f77674b6e625995727c7f88f3657ea",
+        "figures": [
+          {
+            "id": "ijms-27-09799-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Senescence index landscape across cell types and tissue stages in CRC progression. (A) The module score of 11 curated senescence-associated gene sets across normal (blue), para-cancer (baby blue), adenoma (orange), and carcinoma (maroon) tissues. Gene sets include: SenMayo, T cell exhaustion, T cell senescence, DEMAGALHAES aging up, fibrotic SASP, fridman senescence up, inflammatory SASP, cell cycle arrest, CellAge 279 genes, CellAge CRC inhibit, and DDR senescence. Boxes show the interquartile range (IQR) with median; whiskers extend to 1.5× IQR. (B) Violin plot showing the distribution of the composite Senescence Index for each major cell type across all tissue samples combined. (C) Mean Senescence Index (±standard error) for each major cell type across the four tissue stages (normal, para-cancer, adenoma, and carcinoma).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/ijms-27-09799-g001.webp?md5=854f5d135f9224f5c863b58ef8ba33ad",
+            "articleURL": "https://doi.org/10.3390/ijms27219799",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xu Zhang; Wangxiong Hu. In Silico Single-Cell Transcriptomic Analysis Reveals Senescence-Associated Programs' Progress Along the Normal-Adenoma-Carcinoma Sequence in Colorectal Cancer.. DOI: 10.3390/ijms27219799. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-09799-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Spatial organization of senescence and LISA-defined clustering across eight CRC samples. (A) Heatmap showing the proportion of high-senescence-score cells within each cell type for each sample. Fibroblasts and epithelial lineages contribute substantially to the senescent compartment, although their relative contributions vary markedly across samples. (B) Box plot summarizing the senescence ratio by cell type across all samples. Fibroblasts exhibit the highest average senescence proportion, followed by epithelial populations (cancer-associated epithelial, tumor stem cell-like cell, secretory epithelial), while immune cell types such as B cells, CD4+ T cells, and Tregs show relatively lower senescence frequencies. (C) Spatial distribution of senescence categories (Non-senescent, high-senescence-score fibroblast, high-senescence-score other) across the eight CRC samples. High-senescence-score cells are not randomly distributed; instead, they show a tendency to localize toward the tumor periphery and stromal compartments. (D) LISA cluster maps for the senescence index across the eight CRC samples. High–High clusters (red) are predominantly enriched at the tumor periphery, invasive front, and adjacent stromal regions, while the tumor core is largely dominated by Low–High, High–Low, Low–Low or Not Significant clusters.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/ijms-27-09799-g002.webp?md5=1f1d76191a3c7a1c75689417d128b5b7",
+            "articleURL": "https://doi.org/10.3390/ijms27219799",
+            "asset": "assets/pmc13762944-5438fa218360600b.webp",
+            "sha256": "5438fa218360600b5b7131c748f3e5aa01d672f2a82707fb60d595b3a970dffa",
+            "width": 1600,
+            "height": 1025,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xu Zhang; Wangxiong Hu. In Silico Single-Cell Transcriptomic Analysis Reveals Senescence-Associated Programs' Progress Along the Normal-Adenoma-Carcinoma Sequence in Colorectal Cancer.. DOI: 10.3390/ijms27219799. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "5438fa218360600b5b7131c748f3e5aa01d672f2a82707fb60d595b3a970dffa",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-09799-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cell-type-specific senescence dynamics and transcriptional programs along colorectal cancer progression. (A) Overall Senescence Index across the four tissue types (normal, para-cancer, adenoma, and carcinoma) based on single cells. Carcinoma tissue displayed the highest median Senescence Index, consistent with a progressive increase in senescence score along the adenoma–carcinoma sequence. (B) Heatmap of the median Senescence Index across cell types and tissue stages. The color scale represents row-scaled Z-scores, with red indicating higher senescence scores relative to the row mean and blue indicating lower senescence scores. (C) Violin plot showing Senescence Index stratified by cell type and tissue origin. Each sub-panel represents one cell type, with the Senescence Index displayed for normal, para-cancer, adenoma, and carcinoma tissues. ** p < 0.01, **** p < 0.0001.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/ijms-27-09799-g003.webp?md5=6d86ee5a03cc10e040913cf0b6966fbc",
+            "articleURL": "https://doi.org/10.3390/ijms27219799",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xu Zhang; Wangxiong Hu. In Silico Single-Cell Transcriptomic Analysis Reveals Senescence-Associated Programs' Progress Along the Normal-Adenoma-Carcinoma Sequence in Colorectal Cancer.. DOI: 10.3390/ijms27219799. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-09799-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Senescence-associated intercellular communication network in the colorectal carcinoma microenvironment inferred by CellChat. (A) Bubble plot of significant ligand–receptor interactions originating from senescent (SEN) cell subpopulations in carcinoma tissue. Each row represents a ligand–receptor pair, and columns represent sender–receiver cell pairs (only the top interactions are shown). Dot color indicates communication probability (darker = higher), and dot size corresponds to statistical significance. (B) CellChat-inferred cell–cell communication networks showing the number of inferred ligand–receptor interactions from each senescent sender subpopulation to each target cell subset. (C) Heatmap displaying the total interaction strength (summed communication probability) for the same sender–target pairs as in (B). Malignant epithelial populations (cancer-associated epithelial_SEN, tumor stem cell-like cell_SEN) rank among the strongest outgoing signal sources. (D) Heatmap showing the number of inferred interactions in which each cell subset acts as a receiver of senescence-associated signals from the indicated sender subpopulations. (E) Bar plot of the top signaling pathways emanating from high-senescence-score cells, ranked by total communication probability. MIF and MK are the two overwhelmingly dominant pathways, followed by GALECTIN, PARs, and CCL signaling. (F) Bar chart summarizing the total communication probability received by each major cell type from all senescent senders in carcinoma. B cells, monocytes, and NK cells are the top-ranked targets.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/ijms-27-09799-g004.webp?md5=8502654d4a606199cdc083f5354dcff0",
+            "articleURL": "https://doi.org/10.3390/ijms27219799",
+            "asset": "assets/pmc13762944-96f30b40bcb46a73.webp",
+            "sha256": "96f30b40bcb46a73a722dd41fa5f471bd51c82075fb75030cfb077acbf0693b4",
+            "width": 1600,
+            "height": 1591,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xu Zhang; Wangxiong Hu. In Silico Single-Cell Transcriptomic Analysis Reveals Senescence-Associated Programs' Progress Along the Normal-Adenoma-Carcinoma Sequence in Colorectal Cancer.. DOI: 10.3390/ijms27219799. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "96f30b40bcb46a73a722dd41fa5f471bd51c82075fb75030cfb077acbf0693b4",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "ijms-27-09799-s001",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13762944.1/ijms-27-09799-s001.zip?md5=419afa5b023e8d1e2ee6a8a37a324237",
+            "license": "CC BY",
+            "sha256": "9cfe26f43c1640bc3e6e8917d4a2ab972daa2597148211526786c63a2e8e0be8",
+            "status": "downloaded_private",
+            "bytes": 3272897,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-26T10:15:43.586375+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xu Zhang; Wangxiong Hu"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-26T10:15:46Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-26T10:15:46Z",
+        "url": "https://openalex.org/W7225249867",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-26T10:15:46Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-26T10:15:46Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-27T10:15:46Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-26T10:16:11Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -258068,6 +258331,12 @@
           ]
         }
       ]
+    },
+    "doi-adda9e046d4d9349": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -259686,7 +259955,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-26T10:13:06Z",
+  "generatedAt": "2026-11-26T10:16:12Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -259920,18 +260189,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-26T10:04:12Z",
-    "updatedAt": "2026-11-26T10:13:30Z",
+    "updatedAt": "2026-11-26T10:16:22Z",
     "batchCount": 3,
-    "requests": 81,
+    "requests": 121,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"

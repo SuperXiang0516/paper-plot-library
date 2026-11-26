@@ -359,12 +359,129 @@
       "newDOIs": [
         "10.1002/advs.202517051",
         "10.1093/nargab/lqag143",
+        "10.3390/ijms27219799",
         "10.34133/csbj.0288",
         "10.7759/cureus.112717"
       ]
     }
   },
   "candidates": {
+    "10.1371/journal.pone.0362956": {
+      "checkedAt": "2026-11-26T10:16:10Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1371/journal.pone.0362956",
+        "metadataHash": "244bb6deb71cecfdc37fcbf8056bcbd46df904f11a61ebb43483eddb00858bf9",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/PMC13792449.1.xml?md5=cb67e74c5ba1cc162b924d3495707427",
+          "license": "CC BY",
+          "figures": [
+            {
+              "assetSHA256": "b3879baa458a350f2d79fcf9bd3f670d909ee57a92fe4520f5fd659387274758",
+              "id": "pone.0362956.g002",
+              "label": "Fig 2",
+              "height": 867,
+              "sha256": "b3879baa458a350f2d79fcf9bd3f670d909ee57a92fe4520f5fd659387274758",
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g002.webp?md5=bb9ba6e13680c17b0978bb437e8bfb20",
+              "width": 1600,
+              "asset": "assets/pmc13792449-b3879baa458a350f.webp",
+              "captionHash": "b7c4ba1c7db2f1fea55b4c6c8c67813d185ddce1e0f9d04f3b4528aa5468bc09"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-a6dadd29e8c5afa3",
+          "doi": "10.1371/journal.pone.0362956",
+          "paper": "BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.",
+          "journal": "PloS one",
+          "date": "2026-11-23",
+          "year": "2026",
+          "pmcid": "PMC13792449",
+          "pmid": "43071757",
+          "paperURL": "https://doi.org/10.1371/journal.pone.0362956"
+        },
+        "updatedAt": "2026-11-26T10:16:07Z"
+      }
+    },
+    "10.1080/20002297.2026.2760131": {
+      "checkedAt": "2026-11-26T10:16:04Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3390/ijms27219799": {
+      "checkedAt": "2026-11-26T10:15:46Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1038/s43587-026-01258-0": {
+      "checkedAt": "2026-11-26T10:15:30Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1371/journal.pmed.1004860": {
+      "checkedAt": "2026-11-26T10:15:21Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐",
+      "checkpoint": {
+        "version": 1,
+        "doi": "10.1371/journal.pmed.1004860",
+        "metadataHash": "5313f0b0fc4659c23e7dbbe424327757503812574c0b88b89cf98b32b414121f",
+        "article": {
+          "status": "inspected",
+          "version": "1",
+          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/PMC13387544.1.xml?md5=7634d370ceb5eea5508ad522faf3398f",
+          "license": "CC BY",
+          "figures": [
+            {
+              "assetSHA256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
+              "id": "pmed.1004860.g001",
+              "label": "Fig 1",
+              "height": 1170,
+              "sha256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g001.jpg?md5=4f05a3441a42fe9f4b95e8060b3385d2",
+              "width": 755,
+              "asset": "assets/pmc13387544-eaa25828fac5cfe1.jpg",
+              "captionHash": "20139d141d2a520ac5fd8e12e6beb61e54fd5825ee11d4865d5a46557335e224"
+            },
+            {
+              "assetSHA256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
+              "id": "pmed.1004860.g003",
+              "label": "Fig 3",
+              "height": 799,
+              "sha256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
+              "license": "CC BY",
+              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g003.jpg?md5=b46f8b6ffb48ea4cb888113bd4394040",
+              "width": 691,
+              "asset": "assets/pmc13387544-d31bfc8341a0ba45.jpg",
+              "captionHash": "c20a7e50333f584b79b9ab6456fe950083a8c6f75cc96692e40cc0dafe19adf4"
+            }
+          ]
+        },
+        "seed": {
+          "id": "doi-6518cd0d2888f7dc",
+          "doi": "10.1371/journal.pmed.1004860",
+          "paper": "Brain aging patterns among nine neurological disorders: A case-control study.",
+          "journal": "PLoS medicine",
+          "date": "2026-07-21",
+          "year": "2026",
+          "pmcid": "PMC13387544",
+          "pmid": "42479667",
+          "paperURL": "https://doi.org/10.1371/journal.pmed.1004860"
+        },
+        "updatedAt": "2026-11-26T10:15:19Z"
+      }
+    },
     "10.1093/nargab/lqag143": {
       "checkedAt": "2026-11-26T10:12:56Z",
       "status": "source_confirmed",
@@ -485,12 +602,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.1038/s43587-026-01258-0": {
-      "checkedAt": "2026-11-25T10:40:36Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.7759/cureus.111824": {
       "checkedAt": "2026-11-25T10:39:27Z",
@@ -8031,61 +8142,6 @@
         "updatedAt": "2026-10-16T06:48:25Z"
       }
     },
-    "10.1371/journal.pmed.1004860": {
-      "checkedAt": "2026-10-16T06:48:20Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1371/journal.pmed.1004860",
-        "metadataHash": "5313f0b0fc4659c23e7dbbe424327757503812574c0b88b89cf98b32b414121f",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/PMC13387544.1.xml?md5=7634d370ceb5eea5508ad522faf3398f",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13387544-eaa25828fac5cfe1.jpg",
-              "assetSHA256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
-              "license": "CC BY",
-              "id": "pmed.1004860.g001",
-              "sha256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
-              "height": 1170,
-              "label": "Fig 1",
-              "width": 755,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g001.jpg?md5=4f05a3441a42fe9f4b95e8060b3385d2",
-              "captionHash": "20139d141d2a520ac5fd8e12e6beb61e54fd5825ee11d4865d5a46557335e224"
-            },
-            {
-              "asset": "assets/pmc13387544-d31bfc8341a0ba45.jpg",
-              "assetSHA256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
-              "license": "CC BY",
-              "id": "pmed.1004860.g003",
-              "sha256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
-              "height": 799,
-              "label": "Fig 3",
-              "width": 691,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g003.jpg?md5=b46f8b6ffb48ea4cb888113bd4394040",
-              "captionHash": "c20a7e50333f584b79b9ab6456fe950083a8c6f75cc96692e40cc0dafe19adf4"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-6518cd0d2888f7dc",
-          "doi": "10.1371/journal.pmed.1004860",
-          "paper": "Brain aging patterns among nine neurological disorders: A case-control study.",
-          "journal": "PLoS medicine",
-          "date": "2026-07-21",
-          "year": "2026",
-          "pmcid": "PMC13387544",
-          "pmid": "42479667",
-          "paperURL": "https://doi.org/10.1371/journal.pmed.1004860"
-        },
-        "updatedAt": "2026-10-16T06:48:19Z"
-      }
-    },
     "10.1128/spectrum.01677-26": {
       "checkedAt": "2026-10-16T06:48:15Z",
       "status": "pending",
@@ -10801,27 +10857,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-26T10:13:30Z",
+    "updatedAt": "2026-11-26T10:16:22Z",
     "version": 1,
     "maxSeconds": 2700,
     "batchCount": 3,
-    "elapsedSeconds": 559,
+    "elapsedSeconds": 731,
     "startedAt": "2026-11-26T10:04:12Z",
-    "requests": 81,
+    "requests": 121,
     "uncertainRequests": 0,
     "endReason": "",
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "maxBatches": 36,
     "maxRequests": 1800,
     "uncertainAiAttempts": 0,
     "aiAttempts": 1,
     "status": "active",
     "date": "2026-11-26",
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-26T10:13:30Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxAiAttempts": 165
   }
 }
