@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-25",
+  "checkedAt": "2026-11-26",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -189969,6 +189969,720 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-c11a68d4f1077606",
+      "paper": "Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.",
+      "doi": "10.1002/advs.202517051",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-11-22",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1002/advs.202517051",
+      "pmcid": "PMC13789548",
+      "pmid": "43068921",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2198-3844",
+      "eissn": "2198-3844",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-26",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "ffbf939b8d487b90c5d9583f1f76f9d2a898f16c213ceeaf8d5b13e1d3b606a7"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/PMC13789548.1.xml?md5=88043127b6275fd9f250851950705c6e",
+        "figures": [
+          {
+            "id": "advs78802-fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Maternal DM leads to in vivo elevation of ACLY expression. (a) Schematic of glucose metabolism produces acetyl‐CoA catalyzed by ACLY. (b) Hematoxylin‐eosin (HE) staining (left panels) and bright‐field images (right panels) of E12.5 control mouse embryo (upper) and DM‐induced embryo with exencephaly (lower). Black arrow or arrowheads indicate exencephaly induced by maternal DM. Scale bar: 50 µm in left panels; 1 mm in right panels. (c) Western blot images show elevated ACLY protein levels induced by DM in the E8.5 cranial neural tube; (d) Quantification of relative ACLY protein levels in E8.5 (as shown in c), E9.5 (Figure S1a), and E12.5 (Figure S1b) cranial neural tube or brain tissue. Biological repeats n ≥ 3 (Student's t‐test). (e) Western blot images (upper panel) and quantification (lower panel) show the levels of ACLY protein in the E9.5 cranial neuroectoderm cells exposed to a glucose gradient. Biological replicates n = 3 (ANOVA analysis). DM: diabetes mellitus; NTD: neural tube defect; Con: control.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g003.webp?md5=ee81316054ae3ff20baacc7e8e6240fd",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78802-fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "ACLY elevation drives acetyl‐CoA, and H3K27ac increases under high glucose. (a–d) the levels of Acetyl‐CoA (a) and H3K27ac (b, c), H3K4ac (b, d) under gradient glucose exposure in E9.5 cranial neuroectoderm cells were assayed by ELISA or Western blot. The levels of Acetyl‐CoA and H3K27ac, H3K4ac were assayed by ELISA or Western blot when Acly overexpression under normal glucose conditions (5 mm) (e–h), Acly‐knockdown with high glucose (25 mm) exposure (i–l), or ACLY activity was inhibited by SB204990 under high glucose exposure (m–p). In column graphs each dot represents one biological repeat, biological replicates n ≥ 3 (ANOVA analysis). OE: overexpression; NC: negative control. KD: knockdown.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g007.webp?md5=02aa766a53026559b841468b3ab9decb",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78802-fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "In vivo inhibition of ACLY with hydroxycitric acid reduces DM‐induced NTDs. (a) Diagram illustrating the timeline of streptozotocin (STZ) injection to establish a mouse model of maternal diabetes mellitus (DM) and hydroxycitric acid (HCA) supplementation to inhibit ACLY in this model. Relative levels of Acetyl‐CoA (b); H3K27ac or H3K4ac (c); or ACLY (d) were shown in E8.5 cranial neural tube of DM embryos with or without HCA supplementation. Biological replicates n ≥ 3 (ANOVA analysis). (e) Representative images showing E12.5 mouse embryos affected by maternal DM with or without HCA supplementation. The black arrow marks the exencephaly phenotype. Scale bar: 1 mm. (f) Summary of penetrance of NTD and resorption phenotypes in maternal diabetic embryos with or without HCA supplementation (χ2 test). DM: diabetes mellitus; Con: control; NTD: neural tube defect.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g004.webp?md5=eb992f8616dae5efc857e2b02e46564b",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "assets/pmc13789548-63189b8c8f7c13f0.webp",
+            "sha256": "63189b8c8f7c13f01e7e012c828425a654f613aa9cccfc9fb8029cd1c832ca09",
+            "width": 820,
+            "height": 872,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "63189b8c8f7c13f01e7e012c828425a654f613aa9cccfc9fb8029cd1c832ca09",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78802-fig-0004",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Combined analysis of H3K27ac ChIP‐seq and RNA‐seq data shows dysregulation of downstream genes. (a) Volcanic plot of gene expression in E9.5 embryonic cranial neural tube tissue from RNA‐seq analysis. DM vs. Con: Comparison between the maternal DM group and control group. n = 3 for each group. Verified downstream genes in the TXNIP/phosphorylated (P)‐ASK1/Caspase3 axis are indicated. (b) Venn diagram of genes with altered mRNA expression from RNA‐seq and altered H3K27ac enrichment from ChIP‐seq (Fold change > 2 or < 0.5; P < 0.05 in both datasets). (c) Four quadrant diagrams showing dysregulations of 566 genes overlapped by ChIP‐seq data and RNA‐seq data in the DM group vs. control (Fold change > 2 or < 0.5 in both datasets). (d) Top 10 upregulated in cluster 2 (upper) or top 10 downregulated genes in cluster 3 (lower) in (c) are shown. (e) A schematic shows the demonstrated pathogenicity of how TXNIP involving in DM–induced NTDs [26]. The red arrow means upregulation of TXNIP. Red “P” on ASK1 represents P‐ASK1. (f) The bubble chart shows P value and gene numbers of the top 20 pathways of dysregulated genes in clusters 2 and 3 in (c) annotated with KEGG. DM: diabetes mellitus; Con: control; FC: fold change.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g005.webp?md5=07183706660cc482a98e56e2c259c034",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "assets/pmc13789548-a5d86b8617f8d515.webp",
+            "sha256": "a5d86b8617f8d515ed7dfe40b45c22700b44ef424c786960c2669d6707e378ec",
+            "width": 820,
+            "height": 908,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "a5d86b8617f8d515ed7dfe40b45c22700b44ef424c786960c2669d6707e378ec",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "advs78802-fig-0005",
+            "label": "FIGURE 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "DM exacerbates TXNIP–P‐ASK1‐apoptosis axis through elevation of ACLY. (a) Schematic shows six genomic regions (R1‐R6) residing in the promoter of Txnip gene (NM_001009935.2) which were annotated in H3K27ac ChIP‐seq dataset. TSS: Transcription Start Site. (b) Occupancy of H3K27ac (in R4 and R5 regions) in Txnip gene were validated by ChIP‐qPCR in E9.5 embryonic cranial neural tube tissue of control mice or DM mice with or without HCA supplement. n = 3 in each group (ANOVA analysis). (c) Western blot assays showing the levels of TXNIP/P‐ASK1 and cleaved‐Caspase3 axis in E8.5 cranial neural tube tissue of mouse embryos in control or affected by maternal DM with or without HCA supplementation. n = 4 in each group plus two technical replicates (ANOVA analysis). (d) Western blot assays in E9.5 neuroectoderm cells show the levels of TXNIP, P‐ASK1, and cleaved‐Caspase3 proteins when Acly was overexpressed (OE) under regular glucose concentration culture or inhibited by knockdown (KD2) or SB204990 under 25 mm high glucose concentration culture. n = 3 in each group (ANOVA analysis). (e) Western blot assays in E9.5 neuroectoderm cells show the levels of TXNIP, P‐ASK1, and cleaved‐Caspase3 proteins when Txnip was knockdown (KD) under regular 5 mm glucose concentration culture with or without Acly overexpression (OE), or knockdown (KD) under 25 mm glucose concentration culture. Each dot represents one sample. n = 3 in each group (ANOVA analysis). DM: diabetes mellitus; Con: control; HCA: hydroxycitric acid.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g002.webp?md5=6c921928784ed49922aeba2fa5728241",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "advs78802-fig-0006",
+            "label": "FIGURE 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Upregulation of the ACLY‐H3K27ac‐TXNIP axis in human fetal brain tissue affected by maternal diabetes. (a) The maternal plasma glucose content in controls (Con) or cases with NTDs (NTDs), n = 100 for each group (Student's t‐test). (b) The maternal plasma glucose content in six controls (NG‐Con) and six cases affected by maternal hyperglycemic‐associated NTDs (HG‐NTDs). Western blot assays and quantifications show the levels of ACLY protein (c), H3K27ac and H3K4ac modifications (d), and TXNIP and cleaved‐Caspase3 (e) (n ≥ 3, twice technical duplicates) (Student's t‐test). (f) A schematic of the pathogenic mechanism of how DM or high glucose‐induced elevation of ACLY leads to exacerbating TXNIP/P‐ASK1/apoptosis and NTDs. The left panel shows physiological status; the right panel represents a pathogenic condition of DM or high glucose. Yellow “P” represents phosphorylation. Orange “ac” represents acetylation. DM: diabetes mellitus; NTD: neural tube defect.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-g006.webp?md5=bada0e0ab9a6f7333f86746fe009c1ce",
+            "articleURL": "https://doi.org/10.1002/advs.202517051",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al.. Elevated ATP-Citrate Lyase Links Hyperglycemic Metabolism to Maternal Diabetes-Induced Neural Tube Defects.. DOI: 10.1002/advs.202517051. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "advs78802-supinfo-0001",
+            "label": "Supporting information",
+            "sourceURL": "",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unresolved_link",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78802-supitem-0001",
+            "label": "Supporting File: advs78802‐sup‐0001‐SuppMat.pdf.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s002.pdf?md5=104913c045716a4861b771d786939852",
+            "license": "CC BY",
+            "sha256": "b766c95f7bfadacb1d9ea88e34e2d0d2410a1f4d90cbed649a04bc9e629d2aa5",
+            "status": "downloaded_private",
+            "bytes": 1283507,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "verified",
+              "page_count": 11,
+              "identityEvidence": "论文题名片段出现在前3页"
+            }
+          },
+          {
+            "id": "advs78802-supitem-0002",
+            "label": "Supporting Table 1: advs78802‐sup‐0002‐TableS1.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s003.xlsx?md5=55a5a83abee2ea4dd7f646dfc8ae889c",
+            "license": "CC BY",
+            "sha256": "6638083d42cf4dd9182cb9839d927ca14cf4c99e14b6485da29b071994e1a68e",
+            "status": "downloaded_private",
+            "bytes": 24017,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78802-supitem-0003",
+            "label": "Supporting Table 2: advs78802‐sup‐0003‐TableS2.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s001.xlsx?md5=ea8f85c438873ece98624219901e5125",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78802-supitem-0004",
+            "label": "Supporting Table 3: advs78802‐sup‐0004‐TableS4.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s004.xlsx?md5=048341c2645bb1f08238aaf6d930f689",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78802-supitem-0005",
+            "label": "Supporting Table 4: advs78802‐sup‐0005‐TableS5.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s006.xlsx?md5=d986ee4d877aec2f3a465193118adf32",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "advs78802-supitem-0006",
+            "label": "Supporting Table 5: advs78802‐sup‐0006‐TableS6.xlsx.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13789548.1/ADVS-9999-e17051-s005.xlsx?md5=17f7b701e5a963135784f9210586e12f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-26T10:09:09.476638+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Baoling Bai; Jiaxin Cheng; Shuangshuang Yang; Dan Li; Lingyun Liu; Chunrong Sun; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "14.1",
+        "jcr": "Q1",
+        "cas": "综合性期刊1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-26T10:09:14Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-26T10:09:14Z",
+        "url": "https://openalex.org/W7237994879",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-26T10:09:14Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-26T10:09:14Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-27T10:09:14Z"
+        }
+      },
+      "selectionScore": {
+        "total": 35,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-26T10:09:19Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-71e1c2f181da69c8",
+      "paper": "Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.",
+      "doi": "10.34133/csbj.0288",
+      "journal": "Computational and structural biotechnology journal",
+      "date": "2026-11-24",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.34133/csbj.0288",
+      "pmcid": "PMC13793637",
+      "pmid": "43080454",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2001-0370",
+      "eissn": "2001-0370",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-26",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "f761b26530a5d033f6c54f1cfd4c0fffefdc83ad4a620084e762a0d59e187d56"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/PMC13793637.1.xml?md5=4dd9aa8844d990d8d36279e28a694acf",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Schematic overview of the analytical workflow for transcriptomic profiling of EVD-Ss, compared with healthy controls. Descriptive full-cohort analyses (left) are separate from the nested cross-validation pipeline (right), in which gene ranking, the number of genes, and the model hyperparameters are all selected inside every training split.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.001.webp?md5=0fb77ed4949b0cd37d912c57bbaa73b4",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Global transcriptomic quality assessment. (A) Density distributions of variance-stabilizing transformation (VST) expression by condition. (B) PCA of the variance-stabilized data (blind = FALSE and blind = TRUE), colored by condition and inferred sex, and the variance explained by the leading components. (C) Hierarchical clustering of samples using VST data. (D) Sample–sample Pearson correlation heatmap of VST data.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.002.webp?md5=88ce8f2833a562a3d999030d900ac19c",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "assets/pmc13793637-53573d9713a34c65.webp",
+            "sha256": "53573d9713a34c65e729541f809d97e435709bf70dc6ddea31ee9c5371c11fea",
+            "width": 1600,
+            "height": 942,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "53573d9713a34c65e729541f809d97e435709bf70dc6ddea31ee9c5371c11fea",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Differential expression analysis between EVD-Ss and healthy donors. (A) Volcano plot. (B) MA plot. (C) DESeq2 dispersion estimates. (D) Heatmap of top DEGs (row-wise Z-scored VST values).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.003.webp?md5=26586e861fa44cbe92962c665d24e86d",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F4",
+            "label": "Fig. 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Expression patterns and PPI network of top DEGs. (A) Violin plots of normalized expression for selected top DEGs, stratified by condition. (B) PPI network of the full-cohort DEGs generated using STRING.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.004.webp?md5=e70fd2079e2e14ee8347584e306970ea",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F5",
+            "label": "Fig. 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Functional enrichment analysis of DEGs. (A) Gene Ontology Biological Process enrichment. (B) Gene Ontology Cellular Component enrichment. (C) WikiPathways enrichment. (D) Disease–gene association enrichment (DISEASES database).",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.005.webp?md5=d23b1472e31ec9c4ec3ee41424600e70",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F6",
+            "label": "Fig. 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "(A) Per-fold ROC–AUC and average precision (AP) for the seed-42 partition. (B) Pooled out-of-fold ROC curves for the primary analysis and PC-only baseline. (C) Pooled out-of-fold precision-recall curves. (D) Number of genes selected by the inner loop across 500 outer fits. (E) Calibration of pooled out-of-fold predictions across 5 equal-sized bins. (F) Out-of-fold confusion matrix at a probability threshold of 0.5.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.006.webp?md5=5f9b1afa4f2684ca90e00156c0639e50",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "assets/pmc13793637-ecf0dd5378bfc7fa.webp",
+            "sha256": "ecf0dd5378bfc7fad8522cd93bb539a5d1575fc15f561bd9280bd43b343e4ec6",
+            "width": 1600,
+            "height": 1069,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ecf0dd5378bfc7fad8522cd93bb539a5d1575fc15f561bd9280bd43b343e4ec6",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F7",
+            "label": "Fig. 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Characterization of gene-selection stability, permutation results, and model performance. (A) Null distribution of pooled out-of-fold AUCs from 1,000 full-pipeline label permutations (gray), with the observed AUC indicated by the orange line. (B) Left panel: Selection frequency for the 20 most frequently selected genes among the 275 genes with nonzero coefficients in at least one fit; orange indicates PLCH2. Right panel: Fraction of the 500 cross-validation fits (bars) and of the 200 subsamples (line) in which each number of genes K was chosen by the inner loop. (C) Repeated-partition mean AUC with CI-As across fixed values of K (descriptive analysis). The left panel shows error bars, and the right panel shows a shaded band on a logarithmic K axis. (D) Repeated-partition mean AUC with CI-As for the primary analysis, sensitivity analyses S1 and S3 to S7, and baseline models; S2 was evaluated using the seed-42 partition only. Panel labels follow Table 1: D1 denotes the primary analysis, and “fixed gate” and “nested structure” denote the fixed-gate criterion (S1) and the alternative nested cross-validation structure (S4), respectively.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.fig.007.webp?md5=900dfc74d27f75c911ff0078c499f198",
+            "articleURL": "https://doi.org/10.34133/csbj.0288",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al.. Interpretable Blood Transcriptomic Classification of Ebola Survivors: A Machine Learning Framework for Post-Recovery Immune Profiling.. DOI: 10.34133/csbj.0288. Copyright holder: Farkad Bantun et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplementary 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13793637.1/csbj.0288.f1.zip?md5=430615892576f4621f449ff4bf922adc",
+            "license": "CC BY",
+            "sha256": "cf670881a11d455d7a5e96312f58ece0ecf1ad0f9f0d7d50d1a0548cac5a1d66",
+            "status": "downloaded_private",
+            "bytes": 36499,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-26T10:09:15.791608+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Farkad Bantun; Abdullah F. Aldairi; Hani Faidah; Ahmad O. Babalghith; Ayman K. Johargy; Faraz Ahmad; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.8",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-26T10:09:18Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-26T10:09:18Z",
+        "url": "https://openalex.org/W7225654362",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-26T10:09:18Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-26T10:09:18Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-27T10:09:18Z"
+        }
+      },
+      "selectionScore": {
+        "total": 30,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-26T10:09:20Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -255186,6 +255900,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-c11a68d4f1077606": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-71e1c2f181da69c8": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -256804,7 +257530,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-25T10:41:11Z",
+  "generatedAt": "2026-11-26T10:09:21Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -257038,18 +257764,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-26T10:04:12Z",
-    "updatedAt": "2026-11-26T10:04:20Z",
+    "updatedAt": "2026-11-26T10:09:31Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 42,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
