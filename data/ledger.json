@@ -358,11 +358,43 @@
     "2026-11-26": {
       "newDOIs": [
         "10.1002/advs.202517051",
-        "10.34133/csbj.0288"
+        "10.1093/nargab/lqag143",
+        "10.34133/csbj.0288",
+        "10.7759/cureus.112717"
       ]
     }
   },
   "candidates": {
+    "10.1093/nargab/lqag143": {
+      "checkedAt": "2026-11-26T10:12:56Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1007/s10456-026-10106-z": {
+      "checkedAt": "2026-11-26T10:12:33Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1016/j.cell.2026.09.014": {
+      "checkedAt": "2026-11-26T10:12:21Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-26T10:11:43Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.7759/cureus.112717": {
+      "checkedAt": "2026-11-26T10:11:38Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.34133/csbj.0288": {
       "checkedAt": "2026-11-26T10:09:18Z",
       "status": "source_confirmed",
@@ -460,12 +492,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.cell.2026.09.014": {
-      "checkedAt": "2026-11-25T10:40:29Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.7759/cureus.111824": {
       "checkedAt": "2026-11-25T10:39:27Z",
       "status": "source_confirmed",
@@ -483,12 +509,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-25T10:36:46Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
     "10.1371/journal.pbio.3003866": {
       "checkedAt": "2026-11-25T10:36:16Z",
@@ -7938,49 +7958,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.7759/cureus.112717": {
-      "checkedAt": "2026-10-16T06:49:22Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.7759/cureus.112717",
-        "metadataHash": "580359d662ec6102ec0526a1848253ef0c8eb43a70effbf6ece203a6a2f85b23",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13371501.1/PMC13371501.1.xml?md5=29fd4453f4f603a493241b7efea2b019",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13371501-3e95cad9f7d4ed69.jpg",
-              "assetSHA256": "3e95cad9f7d4ed69afcd9df35f32bd8609e9d0740df88d6e0eb8a0589a2a8f2b",
-              "license": "CC BY",
-              "id": "FIG1",
-              "sha256": "3e95cad9f7d4ed69afcd9df35f32bd8609e9d0740df88d6e0eb8a0589a2a8f2b",
-              "height": 632,
-              "label": "Figure 1",
-              "width": 750,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13371501.1/cureus-0018-00000112717-i01.jpg?md5=13999cf4116fc23a369727e098278ec7",
-              "captionHash": "9c15f9aed553629d1010edabffdf4a9de9ec157439b7a4d25ea6474981dd6032"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-0ffc25a9792b25a6",
-          "doi": "10.7759/cureus.112717",
-          "paper": "Polycomb-Derived Posttraumatic Stress Disorder (PTSD) Signals Diverge From Classical Aging Pathways and Converge on Neuroimmune Genes.",
-          "journal": "Cureus",
-          "date": "2026-07-15",
-          "year": "2026",
-          "pmcid": "PMC13371501",
-          "pmid": "42459169",
-          "paperURL": "https://doi.org/10.7759/cureus.112717"
-        },
-        "updatedAt": "2026-10-16T06:49:21Z"
-      }
-    },
     "10.1080/17501911.2026.2698008": {
       "checkedAt": "2026-10-16T06:49:18Z",
       "status": "pending",
@@ -10824,27 +10801,22 @@
     }
   },
   "dailyCollectionSession": {
-    "updatedAt": "2026-11-26T10:09:45Z",
+    "updatedAt": "2026-11-26T10:13:17Z",
     "version": 1,
     "maxSeconds": 2700,
     "batchCount": 2,
-    "elapsedSeconds": 334,
+    "elapsedSeconds": 546,
     "startedAt": "2026-11-26T10:04:12Z",
-    "requests": 42,
+    "requests": 81,
     "uncertainRequests": 0,
     "endReason": "",
-    "dailyNewCount": 2,
+    "dailyNewCount": 4,
     "maxBatches": 36,
     "maxRequests": 1800,
     "uncertainAiAttempts": 0,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "status": "active",
     "date": "2026-11-26",
-    "maxAiAttempts": 165,
-    "inFlight": {
-      "startedAt": "2026-11-26T10:09:45Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "maxAiAttempts": 165
   }
 }
