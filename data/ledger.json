@@ -366,12 +366,45 @@
     },
     "2026-11-27": {
       "newDOIs": [
+        "10.1007/s00424-026-03228-2",
         "10.1371/journal.pmed.1004860",
-        "10.1371/journal.pone.0362956"
+        "10.1371/journal.pone.0348338",
+        "10.1371/journal.pone.0362956",
+        "10.3389/fnut.2026.1858850"
       ]
     }
   },
   "candidates": {
+    "10.1371/journal.pone.0348338": {
+      "checkedAt": "2026-11-27T10:17:34Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1007/s00424-026-03228-2": {
+      "checkedAt": "2026-11-27T10:17:16Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1016/j.cell.2026.09.014": {
+      "checkedAt": "2026-11-27T10:16:56Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.2147/jhc.s641006": {
+      "checkedAt": "2026-11-27T10:16:43Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.3389/fnut.2026.1858850": {
+      "checkedAt": "2026-11-27T10:16:30Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pone.0362956": {
       "checkedAt": "2026-11-27T10:14:49Z",
       "status": "source_confirmed",
@@ -432,18 +465,6 @@
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
     },
-    "10.1016/j.cell.2026.09.014": {
-      "checkedAt": "2026-11-26T10:12:21Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.2147/jhc.s641006": {
-      "checkedAt": "2026-11-26T10:11:43Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
     "10.7759/cureus.112717": {
       "checkedAt": "2026-11-26T10:11:38Z",
       "status": "source_confirmed",
@@ -461,61 +482,6 @@
       "status": "source_confirmed",
       "retryClass": "transient",
       "reason": "正文图已验证；代码、输入或注释待补齐"
-    },
-    "10.3389/fnut.2026.1858850": {
-      "checkedAt": "2026-11-26T10:07:44Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.3389/fnut.2026.1858850",
-        "metadataHash": "d10a5ea70d4522b64390125a99bf3c3b9e9f3bef72c2706163a796403c4f2b02",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13368762.1/PMC13368762.1.xml?md5=622d61943c7aaf68dcb207d4d7bf002e",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13368762-7730748ded615d6f.jpg",
-              "assetSHA256": "7730748ded615d6fe9017dfececa7626e285b6e9a10f50c9187a7e0825fa213b",
-              "license": "CC BY",
-              "id": "fig1",
-              "sha256": "7730748ded615d6fe9017dfececa7626e285b6e9a10f50c9187a7e0825fa213b",
-              "height": 636,
-              "label": "Figure 1",
-              "width": 767,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13368762.1/fnut-13-1858850-g001.jpg?md5=f8c34d180f1c533b3c24a742e14edb62",
-              "captionHash": "65bac787c4e5b292c71fdf2564c4840eca2928fecb53bae8bca3eebd377f85ff"
-            },
-            {
-              "asset": "assets/pmc13368762-8f943424f7e2bd4f.jpg",
-              "assetSHA256": "8f943424f7e2bd4f22f3171cf95f00273ee63686fbb334e309ccc17362792016",
-              "license": "CC BY",
-              "id": "fig2",
-              "sha256": "8f943424f7e2bd4f22f3171cf95f00273ee63686fbb334e309ccc17362792016",
-              "height": 864,
-              "label": "Figure 2",
-              "width": 767,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13368762.1/fnut-13-1858850-g002.jpg?md5=78a36d9d557daafb9551ef5623d6ca98",
-              "captionHash": "78db1324f6bfb35495fda6510b6c5f11b4bfbb0b13a2e0fdbc93f58dfd985b56"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-71038beeacd605d3",
-          "doi": "10.3389/fnut.2026.1858850",
-          "paper": "Dietary pattern modifies associations between dietary factors and pace of epigenetic aging.",
-          "journal": "Frontiers in nutrition",
-          "date": "2026-07-01",
-          "year": "2026",
-          "pmcid": "PMC13368762",
-          "pmid": "42459792",
-          "paperURL": "https://doi.org/10.3389/fnut.2026.1858850"
-        },
-        "updatedAt": "2026-10-16T06:51:15Z"
-      }
     },
     "10.1002/2211-5463.70371": {
       "checkedAt": "2026-11-25T10:41:01Z",
@@ -10788,22 +10754,17 @@
     "version": 1,
     "maxBatches": 36,
     "maxSeconds": 2700,
-    "updatedAt": "2026-11-27T10:15:09Z",
+    "updatedAt": "2026-11-27T10:17:46Z",
     "endReason": "",
     "uncertainAiAttempts": 0,
-    "requests": 40,
+    "requests": 76,
     "date": "2026-11-27",
-    "dailyNewCount": 2,
+    "dailyNewCount": 5,
     "maxAiAttempts": 165,
     "maxRequests": 1800,
     "batchCount": 2,
-    "elapsedSeconds": 345,
+    "elapsedSeconds": 501,
     "startedAt": "2026-11-27T10:09:25Z",
-    "uncertainRequests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-27T10:15:09Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "uncertainRequests": 0
   }
 }
