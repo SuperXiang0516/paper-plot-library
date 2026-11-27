@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-26",
+  "checkedAt": "2026-11-27",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -192524,6 +192524,781 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-6518cd0d2888f7dc",
+      "doi": "10.1371/journal.pmed.1004860",
+      "paper": "Brain aging patterns among nine neurological disorders: A case-control study.",
+      "journal": "PLoS medicine",
+      "date": "2026-07-21",
+      "year": "2026",
+      "pmcid": "PMC13387544",
+      "pmid": "42479667",
+      "paperURL": "https://doi.org/10.1371/journal.pmed.1004860",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1549-1277",
+      "eissn": "1549-1676",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "26a737581cff6e02da9f7f4a462243daf96a0082b40c668a2c3798782d38a6e3"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/PMC13387544.1.xml?md5=7634d370ceb5eea5508ad522faf3398f",
+        "figures": [
+          {
+            "id": "pmed.1004860.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Flowchart of the study design.(a) The averaged gray matter volume (GMV) from each region of interest (ROI, augmented Schaefer-1016 brain atlas) were extracted from testing (ADHD, ASD, SZ, BP, MDD, AUD, TUD, A&TUD, AD, and MCI) and age-range matched training (healthy participants from HCP, GSP, and UKB) sets. (b) The performance of the extreme gradient boosting (XGBoost) model was verified on training set by 10-fold cross-validation. (c) The XGBoost model was applied to the testing set to generate individual brain age predictions and the PAD difference between specific patient group and HC was compared. (d) Identifying the brain patterns associated with the PAD difference in different diagnostic groups by incorporating interaction terms (Shapley Additive Explanations-SHAP × group) in multiple linear regression models. The age-corrected PAD was the dependent variable, while age, age2, sex, site, group, SHAP value, and SHAP × group were the independent variables. (e) Enrichment analyses on the genes that relatively over- or underexpressed in association with PAD difference T-map. ADHD, attention-deficit/hyperactivity disorder; ASD, autism spectrum disorder; SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; A&TUD, AUD and TUD; AD, Alzheimer’s disease; MCI, mild cognitive impairment; HC, healthy control; HCP, Human Connectome Project; GSP, Brain Genomics Superstruct Project; UKB, UK Biobank; PAD, predicted age difference.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g001.jpg?md5=4f05a3441a42fe9f4b95e8060b3385d2",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "assets/pmc13387544-eaa25828fac5cfe1.jpg",
+            "sha256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
+            "width": 755,
+            "height": 1170,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "eaa25828fac5cfe1c0f5270b6415031dbce16975ee30182541cc08ac56af433b",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pmed.1004860.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Age distributions and the performance of brain age predictions.(a) Age distributions of each training (up) and testing (down) sets. The gray shading under each diagnostic group represents its age-, sex-, and number-matched control group. P value represents the group difference of chronological age between the patient and HC calculated by two-sample t test. (b) Pearson correlations between the predicted brain age and chronological age, along with MAE and R2, in independent testing sets. The solid line indicates the linear regression fit. ADHD, attention-deficit/hyperactivity disorder; ASD, autism spectrum disorder; SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; A&TUD, AUD and TUD; AD, Alzheimer’s disease; MCI, mild cognitive impairment; HC, healthy control; MAE, mean absolute error; R2, coefficient of determination.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g002.jpg?md5=4ddfe91ba10d84f93da01f3d66cfa788",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pmed.1004860.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "PAD difference by diagnosis, age, and sex.(a) PAD difference between patient and HC. Cohen’s d accounting for age, age2, sex and site, 95% confidence interval (CI), and two-sided p values are provided. (b) PAD difference between patient and HC in different age subgroups. (c) PAD difference between male and female. All p values are calculated using linear model-based t-tests. (*) is used to indicate results which pass false discovery rate (FDR) correction for multiple comparisons. ADHD, attention-deficit/hyperactivity disorder; ASD, autism spectrum disorder; SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; A&TUD, AUD and TUD; AD, Alzheimer’s disease; MCI, mild cognitive impairment; HC, healthy control; CI, confidence interval.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g003.jpg?md5=b46f8b6ffb48ea4cb888113bd4394040",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "assets/pmc13387544-d31bfc8341a0ba45.jpg",
+            "sha256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
+            "width": 691,
+            "height": 799,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d31bfc8341a0ba455bf612cfd20f6c704cc5c0d5043fe3fddf4a4fcede22e577",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pmed.1004860.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "PAD difference sequence pattern validation across datasets, atlas resolutions, and different prediction models.(a) Full age range HCP was used as training sets to test PAD difference. (b) PAD difference under different scales of brain atlas, where Schaefer-216/516/816 were used to extract GMV. (c) PAD difference across different prediction models, where SVR, BPNN, and RF were used to predict brain age. Color bar indicates Cohen’s d accounting for age, age2, sex, and site. All p values are calculated using linear model-based t-tests. Significant differences (p < 0.05) are marked with a black box. HCP, Human Connectome Project; AS, augmented Schaefer; SVR, support vector regression; BPNN, back propagation neural network; RF, random forest; ADHD, attention-deficit/hyperactivity disorder; ASD, autism spectrum disorder; SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; A&TUD, AUD and TUD; AD, Alzheimer’s disease; MCI, mild cognitive impairment.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g004.jpg?md5=4f872907f047770d2057f20c6dcd5a57",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pmed.1004860.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Brain patterns associated with the PAD difference.(a) PAD difference T-maps for each diagnostic group. Color bar indicates statistical t-values of the interaction coefficients, and red/blue regions represent stronger positive/negative associations between the contribution of the identified brain features to predicting brain age and PAD in patient groups than in the HC. (b) The FDR corrected PAD difference T-maps. The deep red, deep purple, deep green, and black box represent the shared brain regions within psychiatric disorders (including SZ, BP, and MDD), addiction (including AUD and TUD), dementia (including AD and MCI), and among all patient groups. SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; AD, Alzheimer’s disease; MCI, mild cognitive impairment; PAD, predicted age difference; FDR, false discovery rate; MTC, middle temporal cortex; ITC, inferior temporal cortex; PFC, prefrontal cortex; PC, precentral cortex; CC, cingulate cortex; PUT, putamen; INS, insula; THA, thalamus; TC, temporal cortex; MOC, middle occipital cortex; FG, fusiform gyrus.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g005.jpg?md5=5fb64c4385666a3a2172f90e4c02fe55",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pmed.1004860.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Correlation between PAD and symptoms.Upper: correlation between the whole brain PAD (predicted by the whole brain 1,016 ROIs) and symptoms. Bottom: correlation between the identified brain PAD (predicted by the identified brain ROIs) and symptoms. All p values are calculated using linear model-based t-tests. Significant associations (p < 0.05) are marked with a black box. SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; AD, Alzheimer’s disease; MCI, mild cognitive impairment; PAD, predicted age difference; ROIs, regions of interest; PANSSpos/neg, positive and negative scores of the Positive and Negative Syndrome Scale; MADRS, Montgomery-Asberg Depression Rating Scale; YMRS, Young Mania Rating Scale; HDRS, Hamilton Depression Rating Scale; AUDIT, Alcohol Use Disorder Identification Test; FTND, Fagerström Test for Nicotine Dependence; MMSE, Mini‐Mental State Examination.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g006.jpg?md5=965024926001d903035e9071b1792db6",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pmed.1004860.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Significant GO terms for biological processes related to PAD difference T-maps.Significant GO terms for biological processes that the PLST+ (a) and PLST− (b) gene sets in each diagnostic group enriched were plotted in semantic space so that similar terms were represented close to each other. The top 8 significant GO terms were labeled for each analysis with redundant GO terms excluded by REViGO. Markers were scaled based on the log10 q-value (q represents the p-value after FDR correction) for the significance of each GO term. Large blue circles were highly significant, while small red circles were less so. SZ, schizophrenia; BP, bipolar disorder; MDD, major depressive disorder; AUD, alcohol use disorder; TUD, tobacco use disorder; AD, Alzheimer’s disease; MCI, mild cognitive impairment; GO, gene ontology.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.g007.jpg?md5=875dbee046fe1df04e67cb51a3611843",
+            "articleURL": "https://doi.org/10.1371/journal.pmed.1004860",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al.. Brain aging patterns among nine neurological disorders: A case-control study.. DOI: 10.1371/journal.pmed.1004860. Copyright holder: Liang et al. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pmed.1004860.s001",
+            "label": "S1 Checklist",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.s001.doc?md5=22e9dd49d66004d468b1d0ea1985069b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pmed.1004860.s002",
+            "label": "S1 Appendix",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.s002.docx?md5=dfe5d7d360f72df3a27df919983b51f8",
+            "license": "CC BY",
+            "sha256": "dab001826ee8a9851f5ed95e139f23ffee9ae8866438d136a84e15d42b1d3823",
+            "status": "downloaded_private",
+            "bytes": 84232,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pmed.1004860.s003",
+            "label": "S2 Appendix",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.s003.docx?md5=0ea02a23819ad078e1dfabcc2e6883d0",
+            "license": "CC BY",
+            "sha256": "f90f5c4b3f4c3a273fa5a051507d0a105408995ccd604ab0c9db7c0c4fc14994",
+            "status": "downloaded_private",
+            "bytes": 117269,
+            "format": "docx",
+            "privatePath": ""
+          },
+          {
+            "id": "pmed.1004860.s004",
+            "label": "S3 Appendix",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13387544.1/pmed.1004860.s004.docx?md5=32c7ad89171976e03478957f1b828edd",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-27T10:14:26.375405+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Chuang Liang; Godfrey Pearlson; Juan Bustillo; Peter Kochunov; Jiayu Chen; Xiangrong Zhang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "9.9",
+        "jcr": "Q1",
+        "cas": "医学1区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-27T10:14:29Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-27T10:14:30Z",
+        "url": "https://openalex.org/W7169827624",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-27T10:14:30Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-27T10:14:30Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-28T10:14:30Z"
+        }
+      },
+      "selectionScore": {
+        "total": 42,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-27T10:14:50Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-a6dadd29e8c5afa3",
+      "doi": "10.1371/journal.pone.0362956",
+      "paper": "BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.",
+      "journal": "PloS one",
+      "date": "2026-11-23",
+      "year": "2026",
+      "pmcid": "PMC13792449",
+      "pmid": "43071757",
+      "paperURL": "https://doi.org/10.1371/journal.pone.0362956",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "regulatory_network",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "013df5c682037683a88ef3c3de072ece84db1391137f8d84cccfe3b80ac5e263"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/PMC13792449.1.xml?md5=cb67e74c5ba1cc162b924d3495707427",
+        "figures": [
+          {
+            "id": "pone.0362956.g001",
+            "label": "Fig 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "A summary of the network inference problem.Continuous time-series gene expression data generated by an unknown network G(V, A), are transformed into a Boolean time-series dataset through K-means discretization. The Boolean dataset is then provided as input to an inference algorithm, which reconstructs an inferred Boolean network G′(V′,A′). The inferred Boolean network is compared with the target network to evaluate the structural accuracy of the inferred regulatory interactions.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.e012.webp?md5=55dd45e8931bbe1893d0562319eb3f87",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g002",
+            "label": "Fig 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Proposed Methodology.Continuous gene expression data are generated from the target network and transformed into a Boolean time-series gene expression dataset using the well-known K-means discretization method. Discretization is not required for Boolean time-series data, as the data are already represented in binary form. The BoolFunc-EA then takes this dataset as input in its first stage and performs an exhaustive search for regulatory genes. If a regulatory gene is identified, it is added to the final Boolean network; otherwise, a genetic algorithm (GA) is applied to determine the regulatory gene set. All the aggregated results are then collected to construct the final Boolean network.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g002.webp?md5=bb9ba6e13680c17b0978bb437e8bfb20",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "assets/pmc13792449-b3879baa458a350f.webp",
+            "sha256": "b3879baa458a350f2d79fcf9bd3f670d909ee57a92fe4520f5fd659387274758",
+            "width": 1600,
+            "height": 867,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b3879baa458a350f2d79fcf9bd3f670d909ee57a92fe4520f5fd659387274758",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "pone.0362956.g003",
+            "label": "Fig 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Our GA.The algorithm initializes a population P, then repeatedly selects two parents, applies crossover and mutation to produce new offspring, and replaces the parents with the new solutions. This loop continues until a stopping criterion is reached.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g003.webp?md5=0a02075d7ae45e469f4d6835314a24de",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g004",
+            "label": "Fig 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Binary chromosome representation.Each chromosome is encoded as a binary vector vi∈{0,1}, where 1 denotes inclusion of a regulatory gene and 0 denotes exclusion. Two constraints are applied: a mutual information threshold that removes weak regulatory genes, and a limit on the maximum number of genes allowed in a chromosome.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.e049.webp?md5=e6a16da11744e4e42aacb54aaa42c8bd",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g005",
+            "label": "Fig 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Specifying the update rule from a chromosome to evaluate its fitness.The chromosome, with regulatory genes v1 and v3, predicts the target gene v2(t + 1) using 8 possible update rules (AND/OR combinations). The best update rule is selected based on gene-wise dynamics consistency C(v,v′), and the chromosome’s fitness is determined by the highest consistency value.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.e061.webp?md5=87bb046b05de2a897fcccca6e163c9a7",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g006",
+            "label": "Fig 6",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Biased block crossover operator.Two parent chromosomes—Parent 1 ({v3,v4,v7,v8,v10}) and Parent 2 ({v2,v5,v6,v9})—are divided into three gene blocks. The operator performs a biased exchange: Block 1 is fully swapped, Block 2 is partially swapped at position 8, and Block 3 is unchanged, producing offspring that preserve parental structure while introducing new gene combinations.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.e077.webp?md5=39dd30c9929bd925c7388138706c0075",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g007",
+            "label": "Fig 7",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Mutation operator.Each offspring chromosome undergoes uniform random mutation with a small probability, where individual bits are flipped from 1 to 0 or from 0 to 1.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g007.webp?md5=9cbae0a5cab2fc6e9dc300f740a4445a",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g008",
+            "label": "Fig 8",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Performance on artificial datasets was evaluated between the proposed method and state-of-the-art methods.F-score performance of gene regulatory network inference methods was assessed across networks ranging from 10 to 100 nodes. BoolFunc-EA consistently achieved the highest and most stable F-scores, demonstrating robustness and scalability as network size increased. Other Boolean-based methods, such as LogicGEP, LogBTF, LBF-MI and MIBNI, showed moderate declines, while mutual information- and tree-based methods, including CLR, RelNet, and dynGenie3, experienced sharp drops in performance as network complexity grew.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g008.webp?md5=2f027c2a73a1ee70f40ebb020528aabf",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g009",
+            "label": "Fig 9",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "9",
+              "panel": ""
+            },
+            "caption": "F-score performance of network inference methods evaluated on 50 gene regulatory networks of varying sizes, ranging from 10 to 100 nodes, generated using the GeneNetWeaver tool.BoolFunc-EA consistently achieves the highest and most stable F-scores across all network sizes. Other Boolean-based methods, such as LogicGEP, LogBTF, LBF-MI and MIBNI, show moderate declines with increasing network size. Pairwise association-based methods (CLR, ReINet) and tree-based methods (Genie3-time, dynGenie3, Jump3) exhibit steeper drops in performance as network complexity grows.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g009.webp?md5=be13d503d6d8518ffff3fa9919568f61",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "pone.0362956.g010",
+            "label": "Fig 10",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "10",
+              "panel": ""
+            },
+            "caption": "Running-time comparison of BoolFunc-EA and nine benchmark inference methods on artificial networks with 10 to 100 nodes.Times (in milliseconds, on a logarithmic scale) show that BoolFunc-EA requires less time than Jump3 and LBF-MI, while achieving a runtime comparable to dynGenie3 and MIBNI across all network group sizes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.g010.webp?md5=5660d7dccd8280650f9f4d9a8c4ae194",
+            "articleURL": "https://doi.org/10.1371/journal.pone.0362956",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Shohag Barman; Rudra Pratap Deb Nath. BoolFunc-EA: A Boolean-evolutionary approach for accurate inference of gene regulatory networks from time-series gene expression data.. DOI: 10.1371/journal.pone.0362956. Copyright holder: Barman, Nath. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "pone.0362956.s001",
+            "label": "S1 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.s001.tif?md5=8483a3e1f5f50adf40925fa0e72bb794",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362956.s002",
+            "label": "S2 Fig",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.s002.tif?md5=d7efcfbc130a36f30aa578cc19778f2e",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "pone.0362956.s003",
+            "label": "S1 Table",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13792449.1/pone.0362956.s003.pdf?md5=5b01c304d4015f3dda36f4239994f21a",
+            "license": "CC BY",
+            "sha256": "16fd1559d739f716f03bd37d63e6f88f8fc3bdbf76f6c6cbb67c3667a21ef24a",
+            "status": "downloaded_private_identity_unconfirmed",
+            "bytes": 16069,
+            "format": "pdf",
+            "privatePath": "",
+            "validation": {
+              "status": "identity_unconfirmed",
+              "page_count": 1,
+              "identityEvidence": "PDF 可解析；前3页未找到论文/补充材料身份标志，需人工核查"
+            }
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-27T10:14:45.384055+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Shohag Barman; Rudra Pratap Deb Nath"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.8",
+        "jcr": "Q2",
+        "cas": "综合性期刊3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-27T10:14:49Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-27T10:14:49Z",
+        "url": "https://openalex.org/W7238803740",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-27T10:14:49Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-27T10:14:49Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-28T10:14:49Z"
+        }
+      },
+      "selectionScore": {
+        "total": 29,
+        "components": {
+          "topic": 0,
+          "method": 15,
+          "composite": 4,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-27T10:14:51Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -258337,6 +259112,18 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-6518cd0d2888f7dc": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-a6dadd29e8c5afa3": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -259955,7 +260742,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-26T10:16:12Z",
+  "generatedAt": "2026-11-27T10:14:52Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -260189,18 +260976,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-27T10:09:25Z",
-    "updatedAt": "2026-11-27T10:09:32Z",
+    "updatedAt": "2026-11-27T10:14:59Z",
     "batchCount": 1,
-    "requests": 0,
+    "requests": 40,
     "aiAttempts": 0,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 2,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
