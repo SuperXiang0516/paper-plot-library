@@ -372,9 +372,47 @@
         "10.1371/journal.pone.0362956",
         "10.3389/fnut.2026.1858850"
       ]
+    },
+    "2026-11-28": {
+      "newDOIs": [
+        "10.1101/gad.353559.125",
+        "10.1155/ije/5442834",
+        "10.3390/ijms272210421",
+        "10.34133/csbj.0276"
+      ]
     }
   },
   "candidates": {
+    "10.34133/csbj.0276": {
+      "checkedAt": "2026-11-28T09:34:34Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "作者代码声明和可读脚本已定位"
+    },
+    "10.1155/ije/5442834": {
+      "checkedAt": "2026-11-28T09:34:15Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.3390/ijms272210421": {
+      "checkedAt": "2026-11-28T09:34:04Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
+    "10.1186/s13619-026-00307-8": {
+      "checkedAt": "2026-11-28T09:33:03Z",
+      "status": "pending",
+      "retryClass": "materials",
+      "reason": "正式文献/作者代码/脚本依据尚不齐全"
+    },
+    "10.1101/gad.353559.125": {
+      "checkedAt": "2026-11-28T09:32:47Z",
+      "status": "source_confirmed",
+      "retryClass": "transient",
+      "reason": "正文图已验证；代码、输入或注释待补齐"
+    },
     "10.1371/journal.pone.0348338": {
       "checkedAt": "2026-11-27T10:17:34Z",
       "status": "source_confirmed",
@@ -419,12 +457,6 @@
     },
     "10.1126/sciadv.aeg2088": {
       "checkedAt": "2026-11-27T10:14:34Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全"
-    },
-    "10.1186/s13619-026-00307-8": {
-      "checkedAt": "2026-11-27T10:14:32Z",
       "status": "pending",
       "retryClass": "materials",
       "reason": "正式文献/作者代码/脚本依据尚不齐全"
@@ -8565,61 +8597,6 @@
         "updatedAt": "2026-10-16T06:44:53Z"
       }
     },
-    "10.1101/gad.353559.125": {
-      "checkedAt": "2026-10-16T06:44:49Z",
-      "status": "pending",
-      "retryClass": "materials",
-      "reason": "正式文献/作者代码/脚本依据尚不齐全",
-      "checkpoint": {
-        "version": 1,
-        "doi": "10.1101/gad.353559.125",
-        "metadataHash": "f787df25781273706f1eaa07fa9c6d482f9c45733d9be6cfe34aa24fe450ec59",
-        "article": {
-          "status": "inspected",
-          "version": "1",
-          "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/PMC13532663.1.xml?md5=a3cd58a7353377dec1eb678a9cbe20a9",
-          "license": "CC BY",
-          "figures": [
-            {
-              "asset": "assets/pmc13532663-32621c14f1e06767.webp",
-              "assetSHA256": "32621c14f1e06767a678597847cd1869545fdd90efb6ce0945950ed507a14152",
-              "license": "CC BY",
-              "id": "GAD353559DUTF1",
-              "sha256": "32621c14f1e06767a678597847cd1869545fdd90efb6ce0945950ed507a14152",
-              "height": 2022,
-              "label": "Figure 1.",
-              "width": 1536,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f01.webp?md5=aafbfc0e98e922acdf1ac1e34663e45d",
-              "captionHash": "ae1bf4eae38da50de103c85ce4853e4e0d81f820fe95d282a5a086f96d0ca85e"
-            },
-            {
-              "asset": "assets/pmc13532663-923569becfca8a1a.webp",
-              "assetSHA256": "923569becfca8a1aa833df9fdaf199f47a0dec35f786735ba5959e65030747ae",
-              "license": "CC BY",
-              "id": "GAD353559DUTF3",
-              "sha256": "923569becfca8a1aa833df9fdaf199f47a0dec35f786735ba5959e65030747ae",
-              "height": 1811,
-              "label": "Figure 3.",
-              "width": 1418,
-              "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f03.webp?md5=68050f060fa279d7e8a3ad6934e2bc6d",
-              "captionHash": "9a66c2f70e5add37cd1f0f31879d3526e572fec5e92e6bb303584eea12ba7b56"
-            }
-          ]
-        },
-        "seed": {
-          "id": "doi-4dee1ad755a9eec4",
-          "doi": "10.1101/gad.353559.125",
-          "paper": "Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.",
-          "journal": "Genes & development",
-          "date": "2026-08-26",
-          "year": "2026",
-          "pmcid": "PMC13532663",
-          "pmid": "42562575",
-          "paperURL": "https://doi.org/10.1101/gad.353559.125"
-        },
-        "updatedAt": "2026-10-16T06:44:49Z"
-      }
-    },
     "10.1016/j.omtn.2026.103081": {
       "checkedAt": "2026-10-16T06:43:50Z",
       "status": "pending",
@@ -10752,24 +10729,19 @@
     "endReason": "",
     "maxBatches": 36,
     "maxRequests": 1800,
-    "elapsedSeconds": 9,
+    "elapsedSeconds": 379,
     "startedAt": "2026-11-28T09:28:35Z",
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "uncertainAiAttempts": 0,
     "uncertainRequests": 0,
     "status": "active",
     "version": 1,
     "date": "2026-11-28",
-    "updatedAt": "2026-11-28T09:28:43Z",
+    "updatedAt": "2026-11-28T09:34:53Z",
     "maxAiAttempts": 165,
-    "aiAttempts": 0,
+    "aiAttempts": 1,
     "batchCount": 1,
     "maxSeconds": 2700,
-    "requests": 0,
-    "inFlight": {
-      "startedAt": "2026-11-28T09:28:43Z",
-      "reservedRequests": 150,
-      "reservedAiAttempts": 15
-    }
+    "requests": 57
   }
 }

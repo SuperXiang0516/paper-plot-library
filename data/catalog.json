@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "checkedAt": "2026-11-27",
+  "checkedAt": "2026-11-28",
   "method": "static-source-review",
   "authorCodeExecuted": false,
   "originalCount": 10,
@@ -194522,6 +194522,1614 @@
         "status": "missing_evidence",
         "error_reason": "missing_evidence"
       }
+    },
+    {
+      "id": "doi-32efc3b3c2310416",
+      "paper": "Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.",
+      "doi": "10.3390/ijms272210421",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-11-19",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3390/ijms272210421",
+      "pmcid": "PMC13805071",
+      "pmid": "43092043",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1422-0067",
+      "eissn": "1422-0067",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing",
+          "multiomics",
+          "omics"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "988401e647d429f9e06b97a738c5ff562718669645419b476b318c3f690ebb7d"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/PMC13805071.1.xml?md5=497af961d4e10947c0d9586822997266",
+        "figures": [
+          {
+            "id": "ijms-27-10421-f001",
+            "label": "Figure 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Morphological characteristics of ovaries at different laying stages. (A) Ovaries from W30 hens. (B,C) H&E-stained ovarian sections from W30 hens. (D) Ovaries from W90 hens. (E,F) H&E-stained ovarian sections from W90 hens. Yellow arrows: primordial follicles (≤0.08 mm); M: ovarian medulla; red arrows: primary follicles (0.08–1 mm); green arrows: fast-growing secondary follicles (1–3 mm); blue arrows: atretic follicles (AF); Black arrow: granulosa cell layer within the follicle.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-g001.webp?md5=6a5b7ca063db31e61da15eb2342ec966",
+            "articleURL": "https://doi.org/10.3390/ijms272210421",
+            "asset": "assets/pmc13805071-b12cf3f31338f556.webp",
+            "sha256": "b12cf3f31338f55609a3f7db93d268e69c4dd4271e978de684572acdd5f736e0",
+            "width": 1600,
+            "height": 859,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al.. Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.. DOI: 10.3390/ijms272210421. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "b12cf3f31338f55609a3f7db93d268e69c4dd4271e978de684572acdd5f736e0",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-10421-f002",
+            "label": "Figure 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Transcriptional regulation associated with ovarian aging. (A) Volcano plot of DEGs between W90 and W30 ovaries. (B) KEGG pathway enrichment of DEGs. (C) GO enrichment of DEGs (BP, MF and CC categories). (D) GSEA of HALLMARK gene sets showing significant down-regulation of IL6-JAK-STAT3 signaling in W90. (E) PPI network of W90-down-regulated genes. (F) qRT-PCR validation of selected DEGs.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-g002.webp?md5=47cdd8e203f0963193e277da3a22f391",
+            "articleURL": "https://doi.org/10.3390/ijms272210421",
+            "asset": "assets/pmc13805071-6ce4e0185231582a.webp",
+            "sha256": "6ce4e0185231582a7fa9f10b0d723e54867d9109f7f28c1948fc184e47f0da77",
+            "width": 1600,
+            "height": 2814,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al.. Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.. DOI: 10.3390/ijms272210421. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "6ce4e0185231582a7fa9f10b0d723e54867d9109f7f28c1948fc184e47f0da77",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "ijms-27-10421-f003",
+            "label": "Figure 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Translational efficiency–related regulation associated with ovarian aging. (A) Volcano plot of DTEGs between W90 and W30 ovaries. (B) KEGG enrichment of DTEGs. (C) GO enrichment of DTEGs. (D) PPI network of W90-up-regulated DTEGs, highlighting a mechanical-stress remodeling module.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-g003.webp?md5=e2ed2d6200a360bd3d7c0c2c484e64cb",
+            "articleURL": "https://doi.org/10.3390/ijms272210421",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al.. Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.. DOI: 10.3390/ijms272210421. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10421-f004",
+            "label": "Figure 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Proteomic changes associated with ovarian aging. (A) Number of DEPs between W90 and W30 ovaries. (B–D) GSEA of DEPs showing significantly down-regulated HALLMARK_E2F_TARGETS and differential regulation of multiple KEGG pathways. (E–G) Western blot validation of selected DEPs. * p < 0.05.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-g004.webp?md5=73dde1db909fc8648a0e63fe8c0889cb",
+            "articleURL": "https://doi.org/10.3390/ijms272210421",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al.. Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.. DOI: 10.3390/ijms272210421. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "ijms-27-10421-f005",
+            "label": "Figure 5",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Integrated multi-omics analysis of ovarian aging. (A) Venn diagram of DEGs, DTEGs, and DEPs. (B) GO enrichment of the 59 overlapping genes. (C) KEGG enrichment of the 59 overlapping genes. (D) Heatmap of genes with consistent expression trends (up- or down-regulation) in at least two omics layers.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-g005.webp?md5=308ec5039505549add55d39f1b749fb3",
+            "articleURL": "https://doi.org/10.3390/ijms272210421",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al.. Multi-Omics Profiles Reveal Molecular Regulation of Ovarian Aging in Chickens.. DOI: 10.3390/ijms272210421. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "ijms-27-10421-s001",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13805071.1/ijms-27-10421-s001.zip?md5=33aad98fad2f4df95e80ee96c82db865",
+            "license": "CC BY",
+            "sha256": "ae65ef3f05be2a1fc8708cd95d705daeefbcbba4858d359ce1f8d7a4b73fa047",
+            "status": "downloaded_private",
+            "bytes": 467120,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-28T09:33:58.865012+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Wenao Ma; Axiu Guo; Siyu Huang; Wenhui Zhang; Hongliang Zhang; Hao Zhang; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.6",
+        "jcr": "Q1",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-28T09:34:04Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-28T09:34:04Z",
+        "url": "https://openalex.org/W7236865111",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-28T09:34:04Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-28T09:34:04Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-29T09:34:04Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-28T09:34:35Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-4dee1ad755a9eec4",
+      "doi": "10.1101/gad.353559.125",
+      "paper": "Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.",
+      "journal": "Genes & development",
+      "date": "2026-08-26",
+      "year": "2026",
+      "pmcid": "PMC13532663",
+      "pmid": "42562575",
+      "paperURL": "https://doi.org/10.1101/gad.353559.125",
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "0890-9369",
+      "eissn": "1549-5477",
+      "metadataSource": "Europe PMC",
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "46b4eef9f987eedb28efe6081fb1c777649858c7593b2648ac67061400c9a859"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/PMC13532663.1.xml?md5=a3cd58a7353377dec1eb678a9cbe20a9",
+        "figures": [
+          {
+            "id": "GAD353559DUTF1",
+            "label": "Figure 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 extends life span through transcriptional activation of prolongevity pathways. (A) Life spans of N2 control (blue) and bet-1B overexpression in the hypodermis (col-19p, magenta), intestine (gly-19p; yellow), muscle (myo-3p; pink), and neurons (rgef-1p; green) grown on empty vector (EV) from L1. (***) P < 0.001, by log rank testing. See Supplemental Table S1 for complete life span statistics. Intestine-, hypodermis-, and muscle-specific life spans have been previously published (Garcia et al. 2023) and are adapted here for ease of comparison. (B) Life spans of N2 control (blue) and neuronal bet-1 (rgef-1p; green) grown on EV or bet-1 RNAi (light blue, yellow) from L1. (***) P < 0.001, (*) P < 0.05 by log rank testing. See Supplemental Table S1 for complete life span statistics. (C) RNA-seq was performed in day 1 animals in glp-4(bn2) animals grown at 22°C to eliminate contamination from progeny and germline. Volcano plot showing all differentially expressed genes in green and unchanged genes in black for neuronal bet-1 (rgef-1p::bet-1). (D) Volcano plot showing all differentially expressed genes in blue and unchanged genes in black for whole-animal bet-1 (bet-1p::bet-1). All differentially expressed genes are in Supplemental Table S2. (E) Bar plot displaying the overlap of all significant DEGs between neuronal bet-1 (rgef-1p::bet-1) and whole-animal bet-1 (bet-1p::bet-1) animals in the glp-4(bn2) background grown on EV at 22°C. Statistical significance of overlap was assessed using Fisher's exact test. (F) Bar plot displaying the overlap of all significant DEGs between neuronal bet-1 (rgef-1p::bet-1) grown on EV versus a previously published daf-2(e1370) mutant data set (Son et al. 2017). Statistical significance of overlap was assessed using Fisher's exact test. (G) Venn diagram of overlapping upregulated DEGs in whole-animal bet-1 (bet-1p::bet-1), neuronal bet-1 (rgef-1p::bet-1), and daf-2(e1370) animals. (H) Venn diagram of overlapping downregulated DEGs in whole-animal bet-1 (bet-1p::bet-1), neuronal bet-1 (rgef-1p::bet-1), and daf-2(e1370) animals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f01.webp?md5=aafbfc0e98e922acdf1ac1e34663e45d",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "assets/pmc13532663-32621c14f1e06767.webp",
+            "sha256": "32621c14f1e06767a678597847cd1869545fdd90efb6ce0945950ed507a14152",
+            "width": 1536,
+            "height": 2022,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "32621c14f1e06767a678597847cd1869545fdd90efb6ce0945950ed507a14152",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "GAD353559DUTF2",
+            "label": "Figure 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 promotes life span through hsf-1 and daf-16. (A) Representative fluorescent images of day 1 adult animals expressing hsp-16.2p::GFP grown on EV (control), hsf-1, or bet-1 RNAi bacteria from L1. Animals were heat-shocked at 34°C for 2 h followed by a 2 h recovery at 20°C. Data is representative of three independent replicates. Scale bar, 500 µm. (B) Quantification of A presented as arbitrary fluorescent units, which are integrated fluorescence intensity measurements using ImageJ Fiji. Lines represent the median and interquartile range. Quantification is only provided for heat-shocked samples. Data is representative of three independent replicates. (**) P < 0.01 measured by the nonparametric Mann–Whitney testing. (C) Heat map of heat-shock response gene expression (GO:0009408) showing bet-1p::bet-1 and rgef-1p::bet-1 animals compared to glp-4(bn2) control worms. Warmer colors indicate increased expression, and cooler colors indicate decreased expression. See Supplemental Table S4 for all raw gene counts for heat map. (D) Representative fluorescent images of day 1 adult animals expressing hsp-16.2p::GFP grown on EV or daf-16 RNAi bacteria from L1. Animals were heat-shocked for 2 h at 34°C followed by a 2 h recovery at 20°C. Data is representative of three independent replicates. Scale bar, 500 µm. (E) Quantification of D performed similarly to B.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f02.webp?md5=6c5c303bed72d0bcfff2846e2c6e2e5d",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GAD353559DUTF3",
+            "label": "Figure 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "RNA-seq reveals transcriptomic changes of neuronal bet-1 are largely daf-16 and hsf-1 dependent. RNA-seq was performed in day 7 animals in N2 background to avoid contamination with progeny and germ cells and potential confounding factors of growing hsf-1 knockdown animals at elevated temperature of 22°C required for glp-4(bn2) animals. (A) Volcano plot showing all differentially expressed genes in green and unchanged genes in black for neuronal bet-1 (rgef-1p::bet-1) grown on EV control. (B) Volcano plot showing all differentially expressed genes in yellow and unchanged genes in black for neuronal bet-1 (rgef-1p::bet-1) grown on daf-16 RNAi against an N2 control grown on daf-16 RNAi. (C) Volcano plot showing all differentially expressed genes in purple and unchanged genes in black for neuronal bet-1 (rgef-1p::bet-1) grown on hsf-1 RNAi against an N2 control grown on hsf-1 RNAi. All differentially expressed genes are in Supplemental Table S2. (D) Top gene ontology terms from the significantly upregulated genes (P < 0.05) in neuronal bet-1 (rgef-1p::bet-1) grown on EV control. See Supplemental Table S3 for all GO terms. (E) Heat map of genes with larger than a 1.5 log2(fold change [FC]) in either direction (upregulated or downregulated) in neuronal bet-1 (rgef-1p::bet-1) grown on EV (control) compared to N2 control grown on EV. daf-16 represents fold changes of neuronal bet-1 (rgef-1p::bet-1) grown on daf-16 RNAi against an N2 control grown on daf-16 RNAi. hsf-1 represents fold changes of neuronal bet-1 (rgef-1p::bet-1) grown on hsf-1 RNAi against an N2 control grown on hsf-1 RNAi. Warmer colors indicate increased expression and cooler colors indicate decreased expression. DEGs with log2(fold change) >1.5 are shown for ease of visibility. See Supplemental Table S4 for all raw gene counts for heat map. (F) Bar plot displaying the overlap of all significant DEGs between neuronal bet-1 (rgef-1p::bet-1) grown on EV compared to N2 control grown on EV versus neuronal bet-1 (rgef-1p::bet-1) grown on daf-16 RNAi compared to N2 control grown on daf-16 RNAi. Statistical significance of overlap was assessed using Fisher's exact test. (G) Bar plot displaying the overlap of all significant DEGs between neuronal bet-1 (rgef-1p::bet-1) grown on EV compared to N2 control grown on EV versus neuronal bet-1 (rgef-1p::bet-1) grown on hsf-1 RNAi compared to N2 control grown on hsf-1 RNAi. Statistical significance of overlap was assessed using Fisher's exact test. (H) Venn diagram of overlapping upregulated DEGs in neuronal bet-1 grown on EV, daf-16, or hsf-1 RNAi. (I) Venn diagram of overlapping downregulated DEGs in neuronal bet-1 grown on EV, daf-16, or hsf-1 RNAi.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f03.webp?md5=68050f060fa279d7e8a3ad6934e2bc6d",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "assets/pmc13532663-923569becfca8a1a.webp",
+            "sha256": "923569becfca8a1aa833df9fdaf199f47a0dec35f786735ba5959e65030747ae",
+            "width": 1418,
+            "height": 1811,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "923569becfca8a1aa833df9fdaf199f47a0dec35f786735ba5959e65030747ae",
+            "checkpointAssetReused": true
+          },
+          {
+            "id": "GAD353559DUTF4",
+            "label": "Figure 4.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 animals display reduced age-associated defects in autophagy. (A) Heat map of autophagy gene expression (GO:0006914) showing bet-1p::bet-1 and rgef-1p::bet-1 animals compared to glp-4(bn2) control worms. Warmer colors indicate increased expression, and cooler colors indicate decreased expression. See Supplemental Table S4 for all raw gene counts for heat map. (B) Electron microscopy was performed in the intestine of wild-type control and neuronal bet-1 animals grown on EV RNAi from L1 at day 1 and day 8 of adulthood. White arrowheads indicate autophagosome-like structures. Scale bar, 500 nm. (C) Quantification of B as number of autophagosome-like structures per EM image field (∼20 µm2 field per image). Fourteen images per sample were quantified. (D) Representative images of GFP::LGG-1 and GFP::LGG-1(G116A) puncta in proximal intestinal cells of wild-type and rgef-1p::bet-1 animals on day 1 of adulthood. Dashed lines represent single intestinal cells. White arrowheads point to LGG-1::GFP puncta. Scale bar, 10 µm. (E) GFP::LGG-1-positive puncta were quantified from three independent experiments in proximal intestinal cells [LGG-1: N = 73, LGG-1(G116A): N = 69, LGG-1; rgef-1p::bet-1: N = 57, and LGG-1(G116A); rgef-1p::bet-1: N = 72 cells]. (F) Representative images of GFP::LGG-1 and GFP::LGG-1(G116A) puncta in muscle of wild-type and rgef-1p::bet-1 animals on day 1 of adulthood. White arrowheads point to LGG-1::GFP puncta. Scale bar, 10 µm. (G) GFP::LGG-1-positive puncta were quantified from three independent experiments in body-wall muscle (LGG-1: N = 57; LGG-1(G116A): N = 35; LGG-1; rgef-1p::bet-1: N = 52; LGG-1(G116A); rgef-1p::bet-1: N = 36). Error bars indicate 95% CI. (ns) P > 0.05, (****) P < 0.0001, by two-way ANOVA with Šídák's multiple comparisons test. Data are shown as a superplot of three independent replicates, with each different shade of blue or green representing a single replicate.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f04.webp?md5=ad312a7e0a24e09a3e6859eb03c4f772",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GAD353559DUTF5",
+            "label": "Figure 5.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "5",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 animals display improved pathogen resistance. (A) Heat map of immune response gene expression (GO:0006955) showing bet-1p::bet-1 and rgef-1p::bet-1 animals compared to glp-4(bn2) control worms. Warmer colors indicate increased expression and cooler colors indicate decreased expression. See Supplemental Table S4 for all raw gene counts for heat map. (B) Survival plots of N2 control (blue) and neuronal bet-1 (rgef-1p::bet-1; green) animals following exposure to E. faecalis starting at the L4 stage. (***) P < 0.001 using log rank testing. (C) Proportion of surviving N2 control (blue), whole-animal bet-1 (bet-1p::bet-1; light blue), and neuronal bet-1 (rgef-1p::bet-1; green) animals exposed to PA14 at day 1 of adulthood. Survival was scored every 2 h for 8 h. Data are pooled from three biological replicates, each of which included three technical replicates. (****) P < 0.0001, (***) P < 0.001, (**) P < 0.01, (*) P < 0.05, (ns) nonsignificant (P > 0.05) by two-way ANOVA. (D) Intestinal lumen diameter in N2 control (blue) and neuronal bet-1 (rgef-1p::bet-1; green) animals at day 1 of adulthood, with a representative image of each strain shown with and without PA14 exposure. Data are pooled from three biological replicates, each containing three technical replicates. (***) P < 0.001, (ns) nonsignificant (P > 0.05) by two-way ANOVA. (E) Proportion of surviving N2 control (blue), neuronal bet-1 (rgef-1p::bet-1; green), N2 + daf-16 RNAi (blue, hollow circles), and neuronal bet-1 + daf-16 RNAi (green, hollow circles) animals exposed to PA14 at day 1 of adulthood. Survival was scored every 2 h for 8 h. Data are pooled from three biological replicates, each containing three technical replicates. (****) P < 0.0001, (***) P < 0.001, (ns) nonsignificant (P > 0.05) by two-way ANOVA. (F) Proportion of surviving N2 control (blue), neuronal bet-1 (rgef-1p::bet-1; green), N2 + hsf-1 RNAi (blue hollow circles), and neuronal bet-1 + hsf-1 RNAi (green hollow circles) animals exposed to PA14 at day 1 of adulthood. Survival was scored every 2 h for 8 h. Data are pooled from three biological replicates, each containing three technical replicates. (****) P < 0.0001, (***) P < 0.001, (**) P < 0.01, (*) P < 0.05, (ns) nonsignificant (P > 0.05) by two-way ANOVA.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f05.webp?md5=da47353b6c86aa74885ed77e19737baf",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GAD353559DUTF6",
+            "label": "Figure 6.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "6",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 has only minor changes to lipid levels in late life. Lipidomics was performed in day 1 and day 5 animals in glp-4(bn2) animals grown at 22°C to eliminate contamination from progeny and germline. (A) Volcano plot showing all differentially abundant lipids for control day 5 animals compared to control day 1 animals. (B) Volcano plot showing all differentially abundant lipids for neuronal bet-1 (rgef-1p::bet-1) day 5 animals compared to neuronal bet-1 day 1 animals. (C) Volcano plot showing all differentially abundant lipids for neuronal bet-1 (rgef-1p::bet-1) day 1 animals compared to control day 1 animals. (D) Volcano plot showing all differentially abundant lipids for neuronal bet-1 (rgef-1p::bet-1) day 5 animals compared to control day 5 animals. (E) Spearman correlation plot of all lipids measured. (Green) Lower abundance, (purple) higher abundance. Plots specific for neutral lipids and membrane lipids are available in Supplemental Figure S13, D and E. All raw values are in Supplemental Table S5. (F) Unique differentially abundant lipids were calculated comparing day 5 versus day 1 for control (left) and neuronal bet-1 (rgef-1p::bet-1) (right). All positive numbers are numbers of lipids in each category that are increased in abundance with age and all negative numbers are numbers of lipids in each category that reduced in abundance with age in each condition. The legend at the bottom right applies to A–F. Significance thresholds of log2FC of >1 or <−1 and FDR of <0.05 were set for A–D.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f06.webp?md5=99f628ba7e3dd71b8b2eb4c91accd84c",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GAD353559DUTF7",
+            "label": "Figure 7.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "7",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 extends life span through neurotransmitter signaling. (A) Life spans of N2 control and neuronal bet-1 (rgef-1p) animals grown on EV or hsf-1 RNAi from L1. (***) P < 0.001 using log rank testing. See Supplemental Table S1 for complete life span statistics. (B) Life spans of N2 control and neuronal bet-1 (rgef-1p) animals grown on EV or daf-16 RNAi from L1. (***) P < 0.001, (n.s.) not significant (P > 0.05) using log rank testing. See Supplemental Table S1 for complete life span statistics. (C) Schematic of neuronal signaling mediated by neurotransmitter release through UNC-13 and neuropeptide release through UNC-31. (D) Life span comparing unc-13(s69) neurotransmitter release mutants with (green) and without (control; blue) the rgef-1p::bet-1B transgene grown on EV from L1. (n.s.) not significant (P > 0.05) by log rank testing. See Supplemental Table S1 for complete life span statistics. (E) Life span comparing unc-31(e928) neuropeptide release mutants with (green) and without (control, blue) the rgef-1p::bet-1B transgene grown on EV from L1. (***) P < 0.001 using log rank testing. See Supplemental Table S1 for complete life span statistics.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f07.webp?md5=d05edfbddffde26fdaef0a959e5a93ba",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "GAD353559DUTF8",
+            "label": "Figure 8.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "8",
+              "panel": ""
+            },
+            "caption": "Neuronal bet-1 animals require hsf-1 in neurons and intestine and daf-16 and bet-1 in neurons for life span extension. (A) Life spans of MAH667 (neuron-specific RNAi) control and MAH677 with neuronal bet-1 overexpression (rgef-1p) grown on EV or bet-1 RNAi from L1. (B) Life spans of MAH667 (neuron-specific RNAi) control and MAH677 with neuronal bet-1 overexpression (rgef-1p) grown on EV or daf-16 RNAi from L1. (C) Life spans of MAH667 (neuron-specific RNAi) control and MAH677 with neuronal bet-1 overexpression (rgef-1p) animals grown on EV or hsf-1 RNAi from L1. For A–C, all life spans were performed at the same time and can be directly compared to each other. (D) Life spans of VP303 (intestine-specific RNAi) control and VP303 with neuronal bet-1 overexpression (rgef-1p) grown on EV or bet-1 RNAi from L1. (E) Life spans of VP303 (intestine-specific RNAi) control and VP303 with neuronal bet-1 overexpression (rgef-1p) grown on EV or daf-16 RNAi from L1. (F) Life spans of VP303 (intestine-specific RNAi) control and VP303 with neuronal bet-1 overexpression (rgef-1p) animals grown on EV or hsf-1 RNAi from L1. For D–F, all life spans were performed at the same time and can be directly compared to each other. (***) P < 0.001, (n.s.) not significant (P > 0.05) using log rank testing compared to their respective controls. Life span conditions were separated for ease of visibility. See Supplemental Table S1 for complete life span statistics. (G) Model for neuronal bet-1 driving proteostasis via HSF-1 and immune response to promote longevity.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/1523f08.webp?md5=01ab506f07364737fcd983be9c6d86f0",
+            "articleURL": "https://doi.org/10.1101/gad.353559.125",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al.. Neuronal expression of bromodomain proteins alters neuronal health and peripheral protein homeostasis to promote longevity.. DOI: 10.1101/gad.353559.125. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SD1",
+            "label": "Supplement 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S1.xlsb?md5=bc114524578292c20301c50f9cc60bd9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "unsupported_format_link_only",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD2",
+            "label": "Supplement 2",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S2.xlsx?md5=3b903fec3be176a91b45d9a10ddd7713",
+            "license": "CC BY",
+            "sha256": "b4c7e6f332083b11a58ca722ef19fc31a27fb111d808b37fdbbee6f8752ee32e",
+            "status": "downloaded_private",
+            "bytes": 649449,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "SD3",
+            "label": "Supplement 3",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S3.xlsx?md5=9020fb83f42378466a1ecabde5874c2a",
+            "license": "CC BY",
+            "sha256": "c70a626cc669b1c5ed42c30ddc493612b1c2596d443240425557df462f5484a2",
+            "status": "downloaded_private",
+            "bytes": 241869,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "SD4",
+            "label": "Supplement 4",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S4.xlsx?md5=55ea9fe11031f230b84335990f932795",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD5",
+            "label": "Supplement 5",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S5.xlsx?md5=77805119c4cabe9fe4d9ed6ba784e8f0",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD6",
+            "label": "Supplement 6",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S6.xlsx?md5=9fdde19b0c557d7ea88adbc6c4d55b8d",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD7",
+            "label": "Supplement 7",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S7.xlsx?md5=d9455c1b90af938d21bc81f271d2f42f",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD8",
+            "label": "Supplement 8",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Table_S8.xlsx?md5=6e06f32f11957be74d55ff759be69c9b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SD9",
+            "label": "Supplement 9",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13532663.1/Supplemental_Data.pdf?md5=d9b7a87191f7236c60087343b0ec75e4",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "No verified reusable image downloaded; figure links remain available.",
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-28T09:32:44.486924+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Naibedya Dutta; Daniel Hicks; Edgar Esparza; Anna Entin; Priyadharshini Vijayakumar; Caitlin M. Lange; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "not_applicable",
+        "if": "",
+        "jcr": "",
+        "cas": "",
+        "source": "preprint",
+        "retrieved_at": "2026-11-28T09:32:47Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-28T09:32:47Z",
+        "url": "https://openalex.org/W7197033050",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "not_applicable",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-28T09:32:47Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-28T09:32:47Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-29T09:32:47Z"
+        }
+      },
+      "selectionScore": {
+        "total": 42,
+        "components": {
+          "topic": 12,
+          "method": 0,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-28T09:34:36Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-dac6bfa4fd91a10d",
+      "paper": "Total Serum Bilirubin Levels Are Not Associated With Risk of Incident Type 2 Diabetes in Community-Dwelling Adults: Propensity Score Analysis Using Longitudinal Cohort Data Over 16-Year Period.",
+      "doi": "10.1155/ije/5442834",
+      "journal": "International journal of endocrinology",
+      "date": "2026-11-25",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.1155/ije/5442834",
+      "pmcid": "PMC13798253",
+      "pmid": "43095481",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "1687-8337",
+      "eissn": "1687-8345",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "expansion",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics"
+        ],
+        "topicMatches": [
+          "diabetes"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "58bc9d21ff841fd5da129c0e6dcd7bbc171381530cf916203b6cd3c0f4ba755b"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13798253.1/PMC13798253.1.xml?md5=f5964d9d008a7d8b1f6fe3647b786ba5",
+        "figures": [
+          {
+            "id": "fig-0001",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Flowchart for selection of the study population. AST, aspartate aminotransferase; ALT, alanine aminotransferase; GGT, gamma‐glutamyl transferase; DM, diabetes.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13798253.1/IJE-2026-5442834-g001.webp?md5=cc2cbb69ea9001ff4fb7df79595238a8",
+            "articleURL": "https://doi.org/10.1155/ije/5442834",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Da-Hye Son; Mid-Eum Moon; Ae-Hee Kim; Soyoung Jeon; Hye Sun Lee; Yong-Jae Lee. Total Serum Bilirubin Levels Are Not Associated With Risk of Incident Type 2 Diabetes in Community-Dwelling Adults: Propensity Score Analysis Using Longitudinal Cohort Data Over 16-Year Period.. DOI: 10.1155/ije/5442834. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "fig-0002",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "The cumulative incidence of Type 2 diabetes mellitus based on sex‐specific quartiles of serum total bilirubin levels before and after propensity score matching: (a) men before matching, (b) men after matching, (c) women before matching, and (d) women after matching.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13798253.1/IJE-2026-5442834-g002.webp?md5=0b6220f90658adfffe34be17f5f96c9c",
+            "articleURL": "https://doi.org/10.1155/ije/5442834",
+            "asset": "assets/pmc13798253-c126bd74af370be2.webp",
+            "sha256": "c126bd74af370be2ad1fcbdd0766344ed923b27c385a16b3d4ddce3f628c6c26",
+            "width": 600,
+            "height": 450,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Da-Hye Son; Mid-Eum Moon; Ae-Hee Kim; Soyoung Jeon; Hye Sun Lee; Yong-Jae Lee. Total Serum Bilirubin Levels Are Not Associated With Risk of Incident Type 2 Diabetes in Community-Dwelling Adults: Propensity Score Analysis Using Longitudinal Cohort Data Over 16-Year Period.. DOI: 10.1155/ije/5442834. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "c126bd74af370be2ad1fcbdd0766344ed923b27c385a16b3d4ddce3f628c6c26",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "fig-0003",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Cox proportional hazard spline curve for incident Type 2 diabetes mellitus according to serum total bilirubin levels: (a) men and (b) women. The black line represents the hazard ratio for incident Type 2 diabetes mellitus according to serum total bilirubin levels. The dashed black area represents 95% confidence interval for the hazard ratio. The vertical lines represent the quartile boundaries.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13798253.1/IJE-2026-5442834-g003.webp?md5=0276c45bf0d07503c8899e571ab10860",
+            "articleURL": "https://doi.org/10.1155/ije/5442834",
+            "asset": "assets/pmc13798253-ab55caa17ab194a7.webp",
+            "sha256": "ab55caa17ab194a7869dc9593f5c41f350750b0f61a9e62e3adba9483bfbf9d6",
+            "width": 600,
+            "height": 306,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Da-Hye Son; Mid-Eum Moon; Ae-Hee Kim; Soyoung Jeon; Hye Sun Lee; Yong-Jae Lee. Total Serum Bilirubin Levels Are Not Associated With Risk of Incident Type 2 Diabetes in Community-Dwelling Adults: Propensity Score Analysis Using Longitudinal Cohort Data Over 16-Year Period.. DOI: 10.1155/ije/5442834. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "ab55caa17ab194a7869dc9593f5c41f350750b0f61a9e62e3adba9483bfbf9d6",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "link-0001",
+            "label": "Supporting Information Supporting information provides additional information on covariate balance and the robustness of the main findings. Supporting",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13798253.1/IJE-2026-5442834-s001.docx?md5=d7ee523d543696e3bae6e468aa6686c4",
+            "license": "CC BY",
+            "sha256": "fd8822c592026784a8b583d63c13095a706520ed48acf66742b413a7f36ce923",
+            "status": "downloaded_private",
+            "bytes": 45578,
+            "format": "docx",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-28T09:34:12.589802+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Da-Hye Son; Mid-Eum Moon; Ae-Hee Kim; Soyoung Jeon; Hye Sun Lee; Yong-Jae Lee"
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "2.5",
+        "jcr": "Q3",
+        "cas": "医学4区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-28T09:34:15Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-28T09:34:15Z",
+        "url": "https://openalex.org/W7239817345",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-28T09:34:15Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-28T09:34:15Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-29T09:34:15Z"
+        }
+      },
+      "selectionScore": {
+        "total": 26,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 16,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-28T09:34:37Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
+    },
+    {
+      "id": "doi-a365ae53824881ad",
+      "paper": "ENCORE: An End-to-End Pipeline to Reconstruct Enzyme-Constrained Metabolic Models for Microbial Communities and Identify Reporter Metabolites from Metagenomes.",
+      "doi": "10.34133/csbj.0276",
+      "journal": "Computational and structural biotechnology journal",
+      "date": "2026-11-25",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.34133/csbj.0276",
+      "pmcid": "PMC13796957",
+      "pmid": "43095125",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2001-0370",
+      "eissn": "2001-0370",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "tools",
+        "reason": "eligible",
+        "methodMatches": [
+          "omics",
+          "method_tool"
+        ],
+        "topicMatches": [],
+        "source": "verified-metadata",
+        "titleDOIHash": "d2eb416c06da4ec8f47f16d73ac5bdd7569aa7a836c3ab801bd0f6bf8568a5d8"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/PMC13796957.1.xml?md5=466574efb6f111ab8a6622c7b53bc45e",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "Fig. 1.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "ENzyme-constrained COmmunity REporter-metabolite pipeline (ENCORE) workflow. Quality-filtered metagenomic reads are assembled into contigs, binned, refined, and reassembled into metagenome-assembled genomes (MAGs). Medium-quality MAGs are taxonomically classified to species level with GTDB-Tk, and microbial abundances are estimated. The genome-scale metabolic model (GEM) is reconstructed by CarveMe for each MAG, and enzyme constraints are added to reconstruct it further into an enzyme-constrained GEM (ecGEM) using GECKO 3.0. Subsequently, flux balance analysis (FBA) estimates maximum growth, and flux variability analysis (FVA) identifies mandatory uptake and secretion reactions. These reactions are then constructed into a microbe–metabolite network of potential producer–metabolite–consumer relationships. ENCORE also provides metagenomic and microbial differential abundance analysis. The species abundance and the statistical differential abundance profiles are then combined with the exchange reaction directions to prioritize reporter metabolites. Increased producers or decreased consumers contribute to a predicted increase in a metabolite, with the converse contributing to a predicted decrease. Metabolites with a network-null-adjusted nominal P value < 0.05 are defined as reporter metabolites. In this study, the combined metabolic activator (CMA) cohort was used to assess the pipeline feasibility by comparing predicted reporter metabolites with CMA components and clinical metabolomic data. The evaluated pipeline was applied to the Parkinson’s disease (PD) cohort for potential disease mechanism and biomarker discovery.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/csbj.0276.fig.001.webp?md5=db0cd1343b74c55271c9d2ea37f295a4",
+            "articleURL": "https://doi.org/10.34133/csbj.0276",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinmeng Liao; Hong Yang; Han Jin; Woonghee Kim; Ozlem Altay; Adil Mardinoglu; et al.. ENCORE: An End-to-End Pipeline to Reconstruct Enzyme-Constrained Metabolic Models for Microbial Communities and Identify Reporter Metabolites from Metagenomes.. DOI: 10.34133/csbj.0276. Copyright holder: Xinmeng Liao et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F2",
+            "label": "Fig. 2.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "ENzyme-constrained COmmunity REporter-metabolite pipeline (ENCORE) analysis of gut microbial metabolic potential in the combined metabolic activators (CMA) cohort. (A) Alpha diversity of the observed species counts and Shannon index between groups day 0 and day 84. ns, not significant. (B) Principal coordinates analysis of microbial community composition based on Bray–Curtis dissimilarity between the day 0 and day 84 groups. (C) Top 2 phyla (left) and top 5 genera (right) with the highest abundance in the CMA cohort. (D) Changes in the number of mandatory exchange reactions after applying enzyme constraints. An increase indicates more mandatory exchange reactions in the ecGEM compared with the paired GEM (left). Similarity of distinct mandatory exchange reactions between species-specific GEMs and ecGEMs (right). (E) Overlap of the mandatory uptake and secretion reactions between GEMs and ecGEMs. (F) Reporter metabolites (corrected P value < 0.05) identified from the microbe–metabolite network and the uptake-specific microbe-metabolite subnetwork of the CMA cohort. The asterisk indicates that the metabolite also reaches the significance of corrected false discovery rate (FDR) < 0.05. (G) Reporter metabolites (corrected P value < 0.05) highly relevant to significantly altered clinical metabolites. The bar plot shows the corresponding clinical metabolite changes, with differential abundance assessed using limma. All displayed clinical metabolites had adjusted P values < 0.05. For reporter metabolites, red indicates predicted increased reporter metabolites. (H) Microbial association with L-serine in the microbe–metabolite network. The schematic illustration was created in BioRender.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/csbj.0276.fig.002.webp?md5=bf5e06c73cc2e92aa4e8c9d43436722e",
+            "articleURL": "https://doi.org/10.34133/csbj.0276",
+            "asset": "assets/pmc13796957-3c9b926b2c9cc2b8.webp",
+            "sha256": "3c9b926b2c9cc2b80f48b2a77838ad2565e9be6c4d19bb6f8ebd0c28ce44076a",
+            "width": 1600,
+            "height": 2045,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinmeng Liao; Hong Yang; Han Jin; Woonghee Kim; Ozlem Altay; Adil Mardinoglu; et al.. ENCORE: An End-to-End Pipeline to Reconstruct Enzyme-Constrained Metabolic Models for Microbial Communities and Identify Reporter Metabolites from Metagenomes.. DOI: 10.34133/csbj.0276. Copyright holder: Xinmeng Liao et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "3c9b926b2c9cc2b80f48b2a77838ad2565e9be6c4d19bb6f8ebd0c28ce44076a",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "Fig. 3.",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "ENzyme-constrained COmmunity REporter-metabolite pipeline (ENCORE) analysis of gut microbial metabolic potential in the Parkinson’s disease (PD) cohort. (A) Alpha diversity of the observed species counts and Shannon index between groups mild and moderate PD. ns, not significant. (B) Principal coordinates analysis of microbial community composition based on Bray–Curtis dissimilarity between the mild and moderate PD groups. (C) Top 10 species with the highest abundance in the PD cohort. (D) Reporter metabolites (corrected false discovery rate [FDR] < 0.05) identified from the microbe–metabolite network of the PD cohort. Increases and decreases are considered moderate versus mild PD. The number of edges represents the number of species associated with each reporter metabolite. (E) Significantly enriched metabolic pathways identified using the reporter metabolites (corrected P value < 0.05) predicted from the PD cohort (left panel). The significant enrichment metabolic pathways were considered as the ones with FDR-adjusted P < 0.05. Hit ratio represents the proportion of metabolites in each pathway matched by the reporter metabolites. The right panel shows the reporter metabolites that hit each pathway.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/csbj.0276.fig.003.webp?md5=9abc780ce13c7b188cb82e320e2fb20e",
+            "articleURL": "https://doi.org/10.34133/csbj.0276",
+            "asset": "assets/pmc13796957-4081e349166867a0.webp",
+            "sha256": "4081e349166867a0d2fd971cbe33ec04f9c5e6aa178aacfb64cdeb3bf484d1d5",
+            "width": 1600,
+            "height": 1474,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Xinmeng Liao; Hong Yang; Han Jin; Woonghee Kim; Ozlem Altay; Adil Mardinoglu; et al.. ENCORE: An End-to-End Pipeline to Reconstruct Enzyme-Constrained Metabolic Models for Microbial Communities and Identify Reporter Metabolites from Metagenomes.. DOI: 10.34133/csbj.0276. Copyright holder: Xinmeng Liao et al.. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "4081e349166867a0d2fd971cbe33ec04f9c5e6aa178aacfb64cdeb3bf484d1d5",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          }
+        ],
+        "supplements": [
+          {
+            "id": "supp-1",
+            "label": "Supplementary 1",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/csbj.0276.f1.zip?md5=ea22be7b292d4599369a57fde22c73cc",
+            "license": "CC BY",
+            "sha256": "64b822a81604310bcb3d2058de68a91962551e80afb2a302e202e76a148971fa",
+            "status": "downloaded_private",
+            "bytes": 2756082,
+            "format": "zip",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [
+          "https://github.com/XinmengLiao/ENCORE"
+        ],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-28T09:34:28.439389+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [
+          {
+            "url": "https://github.com/XinmengLiao/ENCORE",
+            "scope": "author_code_availability",
+            "status": "source_declared",
+            "sectionID": "",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13796957.1/PMC13796957.1.xml?md5=466574efb6f111ab8a6622c7b53bc45e"
+          }
+        ],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Xinmeng Liao; Hong Yang; Han Jin; Woonghee Kim; Ozlem Altay; Adil Mardinoglu; et al."
+      },
+      "repository": {
+        "status": "inspected",
+        "url": "https://github.com/XinmengLiao/ENCORE",
+        "commit": "9a7419b498719c034a1db952726d1df4fe366cb5",
+        "license": "MIT",
+        "scripts": [
+          {
+            "path": "Scripts/PythonScripts/adjust_coverage.py",
+            "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/PythonScripts/adjust_coverage.py",
+            "sha256": "fed3d52412316fc99c5df788e59cb9c7e8a6f96e01aef29df941687694dca447",
+            "language": "Python",
+            "inputs": [
+              {
+                "path": "coverage_table.tsv",
+                "reader": "pd.read_csv",
+                "line": 4,
+                "status": "literal_path",
+                "format": "tsv",
+                "readerOptions": {
+                  "sep": "\t"
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 4,
+                "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/PythonScripts/adjust_coverage.py#L4"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "Scripts/RScripts/DAA_RM.R",
+            "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/DAA_RM.R",
+            "sha256": "71af768100565718fcf4ecc6a1db76f7a33dcd6aeb157c3b4378766ee2d8b5dd",
+            "language": "R",
+            "inputs": [],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "Sample",
+                "line": 82,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "classification",
+                "line": 105,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "value",
+                "line": 144,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "relative_abundance",
+                "line": 272,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "sample",
+                "line": 276,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "microbe",
+                "line": 282,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "abundance_weight",
+                "line": 288,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "score_weight",
+                "line": 298,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "z_abundance",
+                "line": 306,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "reaction_sign",
+                "line": 312,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "edge_Z",
+                "line": 318,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "metabolite",
+                "line": 340,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_abundance_samples",
+                "line": 389,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "all.met",
+                "line": 391,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "edge.scores",
+                "line": 393,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "microbial.background",
+                "line": 394,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "k",
+                "line": 398,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_background",
+                "line": 398,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_secrete",
+                "line": 398,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "n_uptake",
+                "line": 398,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "p_corrected",
+                "line": 399,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [],
+            "lineScope": "source file"
+          },
+          {
+            "path": "Scripts/RScripts/modelVis.R",
+            "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R",
+            "sha256": "00617f41209af0dbba64f5f22208578d4f0e1c81409ef94620e8e7e1cab91d8f",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "GEMs.stats",
+                "reader": "read.delim",
+                "line": 5,
+                "status": "literal_path",
+                "format": "stats",
+                "readerOptions": {
+                  "header": null
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "path": "modelVis.pdf",
+                "writer": "ggsave",
+                "line": 38
+              }
+            ],
+            "fields": [
+              {
+                "name": "V5",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "V1",
+                "line": 6,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 5,
+                "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R#L5"
+              },
+              {
+                "type": "io_reference",
+                "line": 38,
+                "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R#L38"
+              }
+            ],
+            "lineScope": "source file"
+          },
+          {
+            "path": "Scripts/RScripts/taxonomy.R",
+            "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R",
+            "sha256": "8dfae3b58ee221d8c2c52b291a78fb7b8ec42a06f5ec8eefc5c2e1a860e274fd",
+            "language": "R",
+            "inputs": [
+              {
+                "path": "kegglist.txt",
+                "reader": "read.csv",
+                "line": 27,
+                "status": "literal_path",
+                "format": "txt",
+                "readerOptions": {
+                  "header": 0
+                }
+              },
+              {
+                "path": "UniprotID.txt",
+                "reader": "read.csv",
+                "line": 31,
+                "status": "literal_path",
+                "format": "txt",
+                "readerOptions": {
+                  "header": 0
+                }
+              }
+            ],
+            "outputs": [],
+            "fields": [
+              {
+                "name": "classification",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "user_genome",
+                "line": 24,
+                "kind": "code_field_reference"
+              }
+            ],
+            "evidence": [
+              {
+                "type": "io_reference",
+                "line": 27,
+                "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R#L27"
+              },
+              {
+                "type": "io_reference",
+                "line": 31,
+                "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R#L31"
+              }
+            ],
+            "lineScope": "source file"
+          }
+        ],
+        "inputs": [
+          {
+            "name": "coverage_table.tsv",
+            "path": "",
+            "reader": "pd.read_csv",
+            "format": "tsv",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [],
+            "scriptURL": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/PythonScripts/adjust_coverage.py",
+            "line": 4,
+            "url": "",
+            "readerOptions": {
+              "sep": "\t"
+            }
+          },
+          {
+            "name": "GEMs.stats",
+            "path": "",
+            "reader": "read.delim",
+            "format": "stats",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "V5",
+                "line": 6,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "V1",
+                "line": 6,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R",
+            "line": 5,
+            "url": "",
+            "readerOptions": {
+              "header": null
+            }
+          },
+          {
+            "name": "kegglist.txt",
+            "path": "",
+            "reader": "read.csv",
+            "format": "txt",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "classification",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "user_genome",
+                "line": 24,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R",
+            "line": 27,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          },
+          {
+            "name": "UniprotID.txt",
+            "path": "",
+            "reader": "read.csv",
+            "format": "txt",
+            "status": "path_not_resolved",
+            "orientation": "unknown",
+            "scale": "unknown",
+            "fields": [],
+            "observedFieldReferences": [
+              {
+                "name": "classification",
+                "line": 11,
+                "kind": "code_field_reference"
+              },
+              {
+                "name": "user_genome",
+                "line": 24,
+                "kind": "code_field_reference"
+              }
+            ],
+            "scriptURL": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R",
+            "line": 31,
+            "url": "",
+            "readerOptions": {
+              "header": 0
+            }
+          }
+        ],
+        "figureMappings": [],
+        "limitations": [
+          "Static inspection only. No code, installer, notebook, pickle or RDS was executed."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "4.8",
+        "jcr": "Q2",
+        "cas": "生物学3区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-28T09:34:33Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-28T09:34:34Z",
+        "url": "https://openalex.org/W7081656997",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "association",
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "partial",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "inspected",
+          "metrics": "matched",
+          "ai": "generated"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-28T09:34:34Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-28T09:34:34Z",
+          "lastOutcome": "automatic_complete",
+          "nextAttemptAt": "2026-11-29T09:34:34Z"
+        }
+      },
+      "selectionScore": {
+        "total": 55,
+        "components": {
+          "topic": 0,
+          "method": 0,
+          "composite": 20,
+          "usability": 25,
+          "image": 10,
+          "journalPreference": 0,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-28T09:34:38Z",
+      "ai": {
+        "status": "generated",
+        "title_zh": "ENCORE:从宏基因组重建微生物群落酶约束代谢模型并识别报告代谢物的端到端流程",
+        "summary_zh": "该文介绍 ENCORE(ENzyme-constrained COmmunity REporter-metabolite pipeline),一个从宏基因组序列重建酶约束基因组尺度代谢模型(ecGEM),并基于潜在交叉喂养关系生成群落水平微生物—代谢物互作网络、进而识别报告代谢物的整合框架。文中以两个土耳其队列的帕金森病(PD)患者肠道宏基因组与血液代谢组数据评估流程,并在 23 名轻中度 PD 患者接受 84 天联合代谢激活剂(CMA)干预的数据中检验可行性;另在 26 名轻度与 18 名中度 PD 患者中考察 PD 进展相关的微生物组驱动代谢变化。摘要称 ENCORE 将 L-丝氨酸列为报告代谢物,45% 的模型代谢物—临床代谢组配对呈一致变化,报告代谢物富集于多条代谢通路,多数涉及碳代谢。需注意:作者代码未运行,静态检查不构成复现验证;输入数据尺度与图号对应关系未明示处保持未知。",
+        "learning_points": [
+          "ENCORE 的流程起点是质控后的宏基因组 reads,经组装、分箱、提纯与重组装获得 MAGs,再用 GTDB-Tk 将中等质量 MAG 分类到种水平并估计丰度(据 Fig. 1 图注)。",
+          "每个 MAG 用 CarveMe 重建 GEM,再用 GECKO 3.0 加入酶约束得到 ecGEM;随后用 FBA 估计最大生长、用 FVA 识别强制性摄取与分泌反应(据 Fig. 1 图注)。",
+          "强制性交换反应被构建为潜在生产者—代谢物—消费者关系的微生物—代谢物网络,并结合物种丰度与统计差异丰度及交换反应方向来优先排序报告代谢物(据 Fig. 1 图注)。",
+          "Fig. 2 展示 CMA 队列分析,包括 alpha 多样性、Bray–Curtis PCoA、优势门/属、酶约束前后强制性交换反应数量与重叠情况,以及报告代谢物(校正 P < 0.05)。",
+          "Fig. 3 展示 PD 队列中轻度与中度组的比较,包括多样性、群落组成、优势物种、报告代谢物(校正 FDR < 0.05)及基于报告代谢物的通路富集(FDR 校正 P < 0.05)。",
+          "静态观察到的脚本涉及 coverage_table.tsv 读取、GEMs.stats 读取与 modelVis.pdf 输出、kegglist.txt 与 UniprotID.txt 读取等,但未运行,不能据此推断完整流程或结果。",
+          "摘要报告在 23 名轻中度 PD 患者 84 天 CMA 干预中,L-丝氨酸被优先列为报告代谢物,45% 的模型代谢物—临床代谢组配对变化一致;此为作者摘要陈述,未独立验证。"
+        ],
+        "limitations": [
+          "作者代码未执行,静态检查不是复现验证,不能宣称已复现或与原文结果一致。",
+          "未观察到输入数据的完整列名、数据结构与规模;仅静态看到部分文件名(如 coverage_table.tsv、GEMs.stats、kegglist.txt、UniprotID.txt),其余未知。",
+          "图号与具体脚本、具体输入文件之间的对应关系未明示,无法确认哪段代码生成哪张图。",
+          "未观察到软件版本、参数设置与运行环境信息,流程可复现性未知。",
+          "未观察到许可信息、期刊指标或代码仓库完整结构,相关事项未知。",
+          "摘要中的队列规模、干预时长与一致性比例等均为作者陈述,未由提供的证据独立核验。",
+          "酶约束模型依赖酶动力学与丰度参数,其不确定性对报告代谢物识别的影响未在证据中说明。",
+          "报告代谢物的统计显著性与生物学可解释性之间的关系未在证据中展开,需进一步验证。",
+          "摘要提到需进一步验证与改进,说明方法尚处评估阶段,临床适用性未知。",
+          "作者代码未运行；静态检查不等于图形复现或结果验证。"
+        ],
+        "evidence_ids": [
+          "publication",
+          "inspection-boundary",
+          "figure-0",
+          "figure-1",
+          "figure-2",
+          "script-0",
+          "script-1",
+          "script-2",
+          "script-3"
+        ],
+        "review_required": true,
+        "author_code_executed": false,
+        "generated_at": "2026-11-28T09:34:43Z",
+        "model": "deepseek-flash",
+        "source_fingerprint": "87f48b981a778d487d19c8c43b9d9637ff2f58cd303d844fd6e48d067b879627",
+        "summary_fingerprint": "1562bbcf38914f52fbbb27f9a9a7a1bc524ee67ee5bf42ae4b501924e6368aa6",
+        "ai_attempts": 1,
+        "max_ai_attempts": 3,
+        "retry_success_count": 0
+      }
     }
   ],
   "inputSpecs": {
@@ -260365,6 +261973,140 @@
       "shape": "未知",
       "status": "未核",
       "files": []
+    },
+    "doi-32efc3b3c2310416": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-4dee1ad755a9eec4": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-dac6bfa4fd91a10d": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
+    },
+    "doi-a365ae53824881ad": {
+      "tree": "coverage_table.tsv\nGEMs.stats\nkegglist.txt\nUniprotID.txt",
+      "shape": "方向/单位待核",
+      "status": "静态输入候选；未执行",
+      "files": [
+        {
+          "name": "coverage_table.tsv",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "tsv",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/PythonScripts/adjust_coverage.py；读取行 4；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/PythonScripts/adjust_coverage.py",
+          "observedFieldReferences": []
+        },
+        {
+          "name": "GEMs.stats",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "stats",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R；读取行 5；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/modelVis.R",
+          "observedFieldReferences": [
+            {
+              "name": "V5",
+              "line": 6,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "V1",
+              "line": 6,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "kegglist.txt",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "txt",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R；读取行 27；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R",
+          "observedFieldReferences": [
+            {
+              "name": "classification",
+              "line": 11,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "user_genome",
+              "line": 24,
+              "kind": "code_field_reference"
+            }
+          ]
+        },
+        {
+          "name": "UniprotID.txt",
+          "role": "脚本输入候选；不等于选图直接输入已核",
+          "format": "txt",
+          "orientation": "未知",
+          "encoding": "仅表头 UTF-8 检查；全文件编码未核",
+          "scale": "未知；不推断归一化",
+          "note": "代码读取路径已观察；未读真实表头",
+          "fields": [],
+          "preview": "真实表头未知",
+          "csv": "# 未核实表头",
+          "mapping": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R；读取行 31；图号对应仍待核",
+          "checks": [
+            "核对直接绘图对象与作者脚本版本",
+            "核对连接键、矩阵方向、单位、缺失值与变换"
+          ],
+          "url": "https://github.com/XinmengLiao/ENCORE/blob/9a7419b498719c034a1db952726d1df4fe366cb5/Scripts/RScripts/taxonomy.R",
+          "observedFieldReferences": [
+            {
+              "name": "classification",
+              "line": 11,
+              "kind": "code_field_reference"
+            },
+            {
+              "name": "user_genome",
+              "line": 24,
+              "kind": "code_field_reference"
+            }
+          ]
+        }
+      ]
     }
   },
   "taxonomy": {
@@ -261983,7 +263725,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-27T10:17:38Z",
+  "generatedAt": "2026-11-28T09:34:44Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -262217,18 +263959,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-28T09:28:35Z",
-    "updatedAt": "2026-11-28T09:28:43Z",
+    "updatedAt": "2026-11-28T09:34:53Z",
     "batchCount": 1,
-    "requests": 0,
-    "aiAttempts": 0,
+    "requests": 57,
+    "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 0,
+    "dailyNewCount": 4,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
