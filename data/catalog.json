@@ -196130,6 +196130,392 @@
         "max_ai_attempts": 3,
         "retry_success_count": 0
       }
+    },
+    {
+      "id": "doi-cb6b10fdccfd8140",
+      "paper": "Age-related changes in the phenotype and function of mouse skin macrophages and their modulation by the secretome of peripheral blood mononuclear cells.",
+      "doi": "10.3389/fcell.2026.1964728",
+      "journal": "Frontiers in cell and developmental biology",
+      "date": "2026-11-06",
+      "year": "2026",
+      "paperURL": "https://doi.org/10.3389/fcell.2026.1964728",
+      "pmcid": "PMC13797290",
+      "pmid": "43095319",
+      "publicationTypes": [
+        "research-article",
+        "Journal Article"
+      ],
+      "issn": "2296-634X",
+      "eissn": "2296-634X",
+      "metadataSource": "Europe PMC",
+      "metadataURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "citedByCount": 0,
+      "citationSource": "Europe PMC",
+      "citationRetrievedAt": "2026-11-28",
+      "codeURLs": [],
+      "isPreprint": false,
+      "isRetracted": false,
+      "name": "自动发现 · 选图待核",
+      "figure": "",
+      "codeURL": "",
+      "scriptURL": "",
+      "lang": "待核",
+      "langs": [],
+      "topic": "自动发现",
+      "description": "选图、脚本对应及输入结构正在检查",
+      "graphForms": [],
+      "analysisFunctions": [],
+      "formClassificationStatus": "pending",
+      "functionClassificationStatus": "pending",
+      "runPerformed": false,
+      "collectionBatch": "automatic",
+      "limitations": [
+        "静态检查不等于复现；自动建议标签需核验"
+      ],
+      "researchScope": {
+        "version": 3,
+        "policy": "aging-sequencing-metabolic",
+        "status": "included",
+        "tier": "primary",
+        "reason": "eligible",
+        "methodMatches": [
+          "sequencing"
+        ],
+        "topicMatches": [
+          "aging"
+        ],
+        "source": "verified-metadata",
+        "titleDOIHash": "edd41883dfab4c5d17ab82a939ed9c4a1523078558078e7b8fb242d377480c78"
+      },
+      "maxFigureDownloads": 2,
+      "maxSupplementDownloads": 3,
+      "maxFileBytes": 6000000,
+      "article": {
+        "status": "inspected",
+        "license": "CC BY",
+        "version": "1",
+        "xmlURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/PMC13797290.1.xml?md5=12483a28e3e9a1fba633bf5fcd9ab5ac",
+        "figures": [
+          {
+            "id": "F1",
+            "label": "FIGURE 1",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "1",
+              "panel": ""
+            },
+            "caption": "Morphological and cellular changes between young, middle-aged, and aged mouse skin. (A) Haematoxylin-and-eosin staining of young (8-week-old), middle-aged (26-week-old), and aged (52-week-old) mouse dorsal skin. (B) UMAP of the integrated single-cell RNA-sequencing dataset from young, middle-aged, and aged mouse skin, showing the major identified cell types split by condition and illustrating changes in cellular composition and transcriptional profile. (C) Dot plot of the cluster markers used to annotate the cell types; dot size indicates the percentage of cells expressing each gene, and color indicates average expression. (D) Stacked bar graph comparing the relative distribution of the identified cell types across age groups. (E) Diverging bar plot showing differentially expressed genes for each cell type. A cutoff of log2 fold change >0.25 and adjusted p-value <0.05 (Benjamini–Hochberg correction) was applied for quantification. EC/SMC, endothelial cells/smooth-muscle cells; LC/DC, Langerhans cells/dendritic cells; Mac, macrophages.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/fcell-14-1964728-g001.webp?md5=68aad4ca6d38421a6ae394e9abeae4d4",
+            "articleURL": "https://doi.org/10.3389/fcell.2026.1964728",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Salek; Katharina Klas; Lisa Auer; Attila Placido Sachslehner; Daniel Bormann; Bahar Golabi; et al.. Age-related changes in the phenotype and function of mouse skin macrophages and their modulation by the secretome of peripheral blood mononuclear cells.. DOI: 10.3389/fcell.2026.1964728. Copyright holder: Salek, Klas, Auer, Sachslehner, Bormann, Golabi, Röder, Kühtreiber, Pfisterer, Weninger, Aigner, Ankersmit and Mildner. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          },
+          {
+            "id": "F2",
+            "label": "FIGURE 2",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "2",
+              "panel": ""
+            },
+            "caption": "Characterization of macrophage subsets in the single-cell RNA-sequencing dataset. (A) UMAP of the four macrophage subclusters (Mac1–Mac4) identified across 3 pooled samples split by age (young, 8 weeks; middle-aged, 26 weeks; aged, 52 weeks; three mice per age group). (B) Stacked bar plot showing the proportional distribution of each macrophage subcluster across age groups. (C) Dot plot of the top five differentially expressed genes (DEGs) per macrophage cluster, calculated against all other macrophage clusters using MAST and ranked by log2 fold change; dot size indicates the percentage of cells expressing each gene, and color indicates average expression. (D) Feature plots of the monocyte-derived markers Cd14 and S100a8 and the tissue-resident markers Fcgr1 and Mrc1 in the macrophage subset. (E) Volcano plot of DEGs in Mac1 versus all other macrophage clusters; selected genes with |log2 fold change| > 1 and adjusted p < 0.05 (MAST; Benjamini–Hochberg correction) are labelled. (F) EnrichR analysis of significantly upregulated Mac1 genes (adjusted p < 0.05; MAST; Benjamini–Hochberg correction); the databases used were GO Biological Processes 2025, GO Molecular Functions 2025, and MGI Mammalian Phenotype Level 4 2025. (G,I,K) Volcano plots of DEGs in Mac2 (G), Mac3 (I), and Mac4 (K) versus Mac1; selected genes with |log2 fold change| > 1 and adjusted p < 0.05 (MAST; Benjamini–Hochberg correction) are labelled. (H,J,L) EnrichR analysis of significantly upregulated genes (adjusted p < 0.05; MAST; Benjamini–Hochberg correction) for Mac2 (H), Mac3 (J), and Mac4 (L) relative to Mac1. The databases used for Mac2 were GO Biological Processes 2025, GO Cellular Components 2025, and GO Molecular Functions 2025; for Mac3, GO Biological Processes 2025, GO Cellular Components 2025, and WikiPathways 2024; and for Mac4, GO Biological Processes 2025, GO Molecular Functions 2025, and WikiPathways 2024 Mouse. (M,N) Immunofluorescence staining of young and aged mouse skin for the macrophage marker F4/80 (magenta), together with S100a8 or S100a9 (yellow) and nuclei (Hoechst, blue). Scale bar, 50 µm. (O) Quantification of F4/80 and S100a8/a9 staining. The number of F4/80 positive and double positive cells was counted in 5 fields of view per animal and 3 animals per age group. Statistical significance was assessed using an ordinary one-way ANOVA with a Tukey’s multiple comparison test. (*: p < 0.05; **: p < 0.01). Bars show mean + SD; individual points represent individual animals.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/fcell-14-1964728-g002.webp?md5=f42828fcd122d149383eee2f5b1ff97f",
+            "articleURL": "https://doi.org/10.3389/fcell.2026.1964728",
+            "asset": "assets/pmc13797290-138c2c5e79452480.webp",
+            "sha256": "138c2c5e7945248008ff016860ff8825c8b358c13f485b597da192486ace27db",
+            "width": 1600,
+            "height": 2306,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Salek; Katharina Klas; Lisa Auer; Attila Placido Sachslehner; Daniel Bormann; Bahar Golabi; et al.. Age-related changes in the phenotype and function of mouse skin macrophages and their modulation by the secretome of peripheral blood mononuclear cells.. DOI: 10.3389/fcell.2026.1964728. Copyright holder: Salek, Klas, Auer, Sachslehner, Bormann, Golabi, Röder, Kühtreiber, Pfisterer, Weninger, Aigner, Ankersmit and Mildner. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "138c2c5e7945248008ff016860ff8825c8b358c13f485b597da192486ace27db",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F3",
+            "label": "FIGURE 3",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "3",
+              "panel": ""
+            },
+            "caption": "Age-dependent changes in cell–cell communication in mouse skin. Three animals were pooled per condition. (A) Circle plots of relative cell–cell signaling interactions predicted between macrophages and other cell types (CellChat); arrow direction indicates signal direction, and line thickness indicates the number of interactions relative to total signals in each age group. (B) Absolute numbers of incoming and outgoing predicted signals for each cell type in young (pink), middle-aged (blue), and aged (orange) skin. (C) Bubble plot of predicted cell–cell signaling between macrophage subsets and the whole fibroblast subset; signal pairs with p < 0.05 are shown for each age group. (D) Feature plots of Thbs1 and Spp1 expression in macrophage subsets across age groups. (E,F) Volcano plots of DEGs in aged versus young (E) and aged versus middle-aged (F) fibroblasts; genes with |log2 fold change| > 1 and adjusted p < 0.05 (MAST; Benjamini–Hochberg correction) are highlighted, and selected genes are labelled. (G) Feature plot of the calculated fibrosis-associated module score across fibroblast subclusters. (H) Western blot of COL5A3 in dermal lysates from young and aged mouse skin, with equal total protein loaded per sample and visualized by Ponceau S staining. (I) Representative SHG images of young and aged dermis; z-stacks (five optical sections) were projected by maximum-intensity projection and displayed with a FIRE lookup table. Scale bar, 50 µm. EC/SMC, endothelial cells/smooth-muscle cells; LC/DC, Langerhans cells/dendritic cells; Mac, macrophages; SHG, second-harmonic generation. Young, 8 weeks; middle-aged, 26 weeks; aged, 52 weeks.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/fcell-14-1964728-g003.webp?md5=23c2f1ffc872b4ddf5791cb9745442de",
+            "articleURL": "https://doi.org/10.3389/fcell.2026.1964728",
+            "asset": "assets/pmc13797290-d49b3e01a68d24ac.webp",
+            "sha256": "d49b3e01a68d24ac77666c5660925921ecbbde8433196dfff8c06b833e137077",
+            "width": 1600,
+            "height": 1674,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Salek; Katharina Klas; Lisa Auer; Attila Placido Sachslehner; Daniel Bormann; Bahar Golabi; et al.. Age-related changes in the phenotype and function of mouse skin macrophages and their modulation by the secretome of peripheral blood mononuclear cells.. DOI: 10.3389/fcell.2026.1964728. Copyright holder: Salek, Klas, Auer, Sachslehner, Bormann, Golabi, Röder, Kühtreiber, Pfisterer, Weninger, Aigner, Ankersmit and Mildner. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "downloaded",
+            "limitations": [],
+            "assetSHA256": "d49b3e01a68d24ac77666c5660925921ecbbde8433196dfff8c06b833e137077",
+            "modification": "Original source bytes; no crop",
+            "resolutionStatus": "Original PMC cloud source dimensions; maximum publisher resolution not verified"
+          },
+          {
+            "id": "F4",
+            "label": "FIGURE 4",
+            "labelStatus": "source_declared",
+            "reference": {
+              "scope": "main",
+              "number": "4",
+              "panel": ""
+            },
+            "caption": "Effect of PBMC-sec treatment on mouse skin at different ages. (A) Experimental setup of PBMC-sec treatment for single-cell RNA-sequencing analysis. Created in BioRender. Salek, M. (2026) https://BioRender.com/n3lfxdf. (B) UMAP of the scRNA-seq macrophage subset comparing young, middle-aged, and aged mouse skin with and without PBMC-sec treatment (three animals pooled per condition). (C) Diverging bar plot showing differentially expressed genes for each cell type. A cutoff of |log2 fold change| > 0.25 and adjusted p-value <0.05 (MAST; Benjamini–Hochberg correction) was applied for quantification. (D) Bar graph of the relative distribution of macrophage subclusters in treated and untreated samples across ages. (E) Volcano plot of up- and downregulated genes in the whole fibroblast subset (treated versus untreated aged skin); selected genes with |log2 fold change| > 1 and adjusted p < 0.05 (MAST; Benjamini–Hochberg correction) are labelled. (F) Heatmap showing the mean relative expression of selected collagen, collagen-associated and TGF‐β downstream genes across age and treatment conditions in the fibroblast subset.",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/fcell-14-1964728-g004.webp?md5=d70bb2d33121f2227f4c9a1a08dcd465",
+            "articleURL": "https://doi.org/10.3389/fcell.2026.1964728",
+            "asset": "",
+            "sha256": "",
+            "width": null,
+            "height": null,
+            "license": "CC BY",
+            "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+            "attribution": "Melanie Salek; Katharina Klas; Lisa Auer; Attila Placido Sachslehner; Daniel Bormann; Bahar Golabi; et al.. Age-related changes in the phenotype and function of mouse skin macrophages and their modulation by the secretome of peripheral blood mononuclear cells.. DOI: 10.3389/fcell.2026.1964728. Copyright holder: Salek, Klas, Auer, Sachslehner, Bormann, Golabi, Röder, Kühtreiber, Pfisterer, Weninger, Aigner, Ankersmit and Mildner. Source: NLM PMC OA Cloud. License: CC BY.",
+            "reuseStatus": "allowed",
+            "downloadStatus": "pending",
+            "limitations": []
+          }
+        ],
+        "supplements": [
+          {
+            "id": "SM1",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table2.xlsx?md5=6ae573226a203e07819e5d7a04faeec0",
+            "license": "CC BY",
+            "sha256": "de28dee8895ae8ac82e8a1f5fbe63230e98312b6220debded2eb4be7548f663a",
+            "status": "downloaded_private",
+            "bytes": 9629,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "SM2",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table3.xlsx?md5=d2722d6c7046134397fb85ab939821c3",
+            "license": "CC BY",
+            "sha256": "3bc0f66a2c78f29b4caf78b7cda695f280c135d8e6b946c8fee14ce81a1cb6e2",
+            "status": "downloaded_private",
+            "bytes": 3830977,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "SM3",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table9.xlsx?md5=034aab3e2a7651ad90229a8e80958836",
+            "license": "CC BY",
+            "sha256": "9bbdeeb4af5d2dd38c54cdb2fb52146f654406bb9c486495b8f30d15dcecc90c",
+            "status": "downloaded_private",
+            "bytes": 1274592,
+            "format": "xlsx",
+            "privatePath": ""
+          },
+          {
+            "id": "SM4",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table6.xlsx?md5=e4e6625290f580cb667560958f9789df",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM5",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table4.xlsx?md5=40880b4eff81258080e31a6b03f3acd6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM6",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table1.xlsx?md5=d7fbfb334a7df663bae431fc88a725b6",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM7",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/DataSheet2.docx?md5=04eb8bd63454af81d3107b286b13e05b",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM8",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table10.xlsx?md5=ea7d50ecdf1e67848d22479572c64bb9",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM9",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table5.xlsx?md5=c5b8cf713c71edd624584940157b00a3",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM10",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table7.xlsx?md5=c80b5327d400cb080446e4560f13893c",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM11",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/Table8.xlsx?md5=4f425d7e7007097f0ac490aec761a2d5",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          },
+          {
+            "id": "SM12",
+            "label": "Supporting information",
+            "sourceURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13797290.1/DataSheet1.docx?md5=f48f479ec9ab71613218fc7d28df9740",
+            "license": "CC BY",
+            "sha256": "",
+            "status": "deferred_count_limit",
+            "bytes": 0,
+            "format": "",
+            "privatePath": ""
+          }
+        ],
+        "codeURLs": [],
+        "limitations": [
+          "Image captions, script output names and category tags do not prove exact panel-to-code correspondence."
+        ],
+        "retrievedAt": "2026-11-28T09:37:15.552272+00:00",
+        "source": "PMC OA Cloud",
+        "codeURLEvidence": [],
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "authorCredit": "Melanie Salek; Katharina Klas; Lisa Auer; Attila Placido Sachslehner; Daniel Bormann; Bahar Golabi; et al."
+      },
+      "repository": {
+        "status": "not_found",
+        "url": "",
+        "commit": "",
+        "license": "unknown",
+        "scripts": [],
+        "inputs": [],
+        "figureMappings": [],
+        "limitations": [
+          "No exact public GitHub repository URL found in supplied evidence."
+        ],
+        "authorCodeExecuted": false,
+        "sourceScanLimited": false
+      },
+      "metrics": {
+        "status": "matched",
+        "if": "5.3",
+        "jcr": "Q1",
+        "cas": "生物学2区",
+        "source": "EasyScholar",
+        "retrieved_at": "2026-11-28T09:37:21Z",
+        "metric_year": "unknown"
+      },
+      "citations": {
+        "status": "matched",
+        "source": "OpenAlex",
+        "retrievedAt": "2026-11-28T09:37:21Z",
+        "url": "https://openalex.org/W7225395569",
+        "cited_by_count": 0,
+        "fwci": 0.0,
+        "citation_normalized_percentile": 0.0,
+        "normalization": "FWCI/其百分位按类型、年份、领域归一；缺失值不按0解释"
+      },
+      "suggestedGraphForms": [],
+      "suggestedAnalysisFunctions": [
+        "differential",
+        "prediction"
+      ],
+      "dimensionLinkScope": "selected-case",
+      "dimensionLinkEvidence": "标签共现不证明逐分面图形—功能—代码对应；自动建议待核",
+      "automation": {
+        "status": "pending",
+        "stages": {
+          "metadata": "matched",
+          "article": "inspected",
+          "repository": "not_found",
+          "metrics": "matched",
+          "ai": "missing_evidence"
+        },
+        "errors": [],
+        "lastCheckedAt": "2026-11-28T09:37:21Z",
+        "repairSchedule": {
+          "consecutiveFailures": 0,
+          "lastAttemptAt": "2026-11-28T09:37:21Z",
+          "lastOutcome": "incomplete",
+          "nextAttemptAt": "2026-11-29T09:37:21Z"
+        }
+      },
+      "selectionScore": {
+        "total": 62,
+        "components": {
+          "topic": 12,
+          "method": 15,
+          "composite": 20,
+          "usability": 0,
+          "image": 10,
+          "journalPreference": 5,
+          "normalizedCitationPreference": 0,
+          "categoryGap": 0
+        },
+        "meaning": "采集优先级；期刊/引用仅为编辑偏好，不是研究质量评判"
+      },
+      "admittedAt": "2026-11-28T09:39:10Z",
+      "ai": {
+        "status": "missing_evidence",
+        "error_reason": "missing_evidence"
+      }
     }
   ],
   "inputSpecs": {
@@ -262107,6 +262493,12 @@
           ]
         }
       ]
+    },
+    "doi-cb6b10fdccfd8140": {
+      "tree": "输入待定位",
+      "shape": "未知",
+      "status": "未核",
+      "files": []
     }
   },
   "taxonomy": {
@@ -263725,7 +264117,7 @@
   },
   "siteId": "paper-plot-library",
   "siteName": "论文绘图案例库",
-  "generatedAt": "2026-11-28T09:34:44Z",
+  "generatedAt": "2026-11-28T09:39:11Z",
   "bootstrap": {
     "status": "needs_attention",
     "totalCount": 55,
@@ -263959,18 +264351,18 @@
     "status": "active",
     "endReason": "",
     "startedAt": "2026-11-28T09:28:35Z",
-    "updatedAt": "2026-11-28T09:35:06Z",
+    "updatedAt": "2026-11-28T09:39:22Z",
     "batchCount": 2,
-    "requests": 57,
+    "requests": 115,
     "aiAttempts": 1,
     "uncertainRequests": 0,
     "uncertainAiAttempts": 0,
     "maxBatches": 36,
     "maxRequests": 1800,
     "maxAiAttempts": 165,
-    "dailyNewCount": 4,
+    "dailyNewCount": 5,
     "targetCount": 5,
-    "inFlightCount": 1,
+    "inFlightCount": 0,
     "localCheckpointSaved": true
   },
   "researchScopePolicy": "aging-sequencing-metabolic"
